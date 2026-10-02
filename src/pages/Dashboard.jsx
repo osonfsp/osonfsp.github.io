@@ -13,7 +13,8 @@ import {
 import { arztbriefe, cases, getCase, pairs, words } from "../data/index";
 import { useRouter } from "../lib/router";
 import { avg, formatDate } from "../lib/utils";
-import { useApp } from "../state/AppContext";
+import { streakOf, useApp } from "../state/AppContext";
+import { dueCount } from "../components/WordTrainer";
 
 export function DashboardPage() {
   let { ready: e, user: t, progress: a, overall: n, logout: i, resetProgress: l } = useApp(),
@@ -33,7 +34,9 @@ export function DashboardPage() {
     c = Math.round(avg(a.arztbrief.map((f) => f.score))),
     h = Math.round(avg(a.simulations.map((f) => f.score))),
     b = a.exams[0],
-    y = cases.find((f) => !a.solvedCases.includes(f.id));
+    y = cases.find((f) => !a.solvedCases.includes(f.id)),
+    K = streakOf(a.days),
+    Q = dueCount(words, a.wordReview);
   return (
     <div className="page">
       <PageHeader
@@ -56,6 +59,19 @@ export function DashboardPage() {
       <div className="grid gap-4 lg:grid-cols-[320px_1fr]">
         <div className="card flex flex-col items-center text-center">
           <ProgressRing value={n} size={140} label="Umumiy progress" />
+          <div className="mt-4 grid w-full grid-cols-2 gap-2 text-sm">
+            <div className="rounded-xl bg-amber-50 p-2.5 dark:bg-amber-950/40">
+              <div className="text-xl font-bold">🔥 {K}</div>
+              <div className="text-xs muted">ketma-ket kun</div>
+            </div>
+            <Link
+              href="/woerter"
+              className="rounded-xl bg-teal-50 p-2.5 transition hover:bg-teal-100 dark:bg-teal-950/40"
+            >
+              <div className="text-xl font-bold">📇 {Q}</div>
+              <div className="text-xs muted">bugun takrorlash</div>
+            </Link>
+          </div>
           <p className="mt-4 text-sm muted">
             Fälle, so‘zlar, kartochkalar, Arztbrief va Prüfung bo‘yicha o‘rtacha.
           </p>

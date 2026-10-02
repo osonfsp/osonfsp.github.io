@@ -10,12 +10,26 @@ const EMPTY_PROGRESS = {
     simulations: [],
     exams: [],
     activity: [],
+    wordReview: {},
+    days: [],
   },
   USER_KEY = "fsp.user",
   PROGRESS_KEY = "fsp.progress",
+  // Leitner qutilari: n-qutidagi so‘z REVIEW_DAYS[n] kundan keyin qaytadi
+  REVIEW_DAYS = [0, 1, 3, 7, 14, 30],
+  LEARNED_BOX = 3,
+  today = () => new Date().toLocaleDateString("sv"),
+  addDays = (d, n) => {
+    let t = new Date(`${d}T12:00:00`);
+    return (t.setDate(t.getDate() + n), t.toLocaleDateString("sv"));
+  },
+  withDay = (e) => {
+    let t = today();
+    return e.days.includes(t) ? e : { ...e, days: [t, ...e.days].slice(0, 400) };
+  },
   toggleIn = (e, t) => (e.includes(t) ? e.filter((a) => a !== t) : [...e, t]),
   withActivity = (e, t, a) => ({
-    ...e,
+    ...withDay(e),
     activity: [
       {
         label: t,
@@ -82,6 +96,20 @@ export function AppProvider({ children: e }) {
           ...v,
           learnedWords: toggleIn(v.learnedWords, m),
         })),
+      [r],
+    ),
+    R = useCallback(
+      (m, v) =>
+        r((N) => {
+          let C = N.wordReview[m]?.box ?? 0,
+            k = v ? Math.min(C + 1, REVIEW_DAYS.length - 1) : 0,
+            L = k >= LEARNED_BOX && !N.learnedWords.includes(m);
+          return withDay({
+            ...N,
+            wordReview: { ...N.wordReview, [m]: { box: k, due: addDays(today(), REVIEW_DAYS[k]) } },
+            learnedWords: L ? [...N.learnedWords, m] : N.learnedWords,
+          });
+        }),
       [r],
     ),
     p = useCallback(
@@ -157,14 +185,27 @@ export function AppProvider({ children: e }) {
         importProgress: x,
         toggleCase: y,
         toggleWord: f,
+        reviewWord: R,
         togglePair: p,
         addArztbrief: A,
         addSimulation: w,
         addExam: D,
       }),
-      [t, n, l, g, c, h, b, x, y, f, p, A, w, D],
+      [t, n, l, g, c, h, b, x, y, f, R, p, A, w, D],
     );
   return <AppContext.Provider value={d}>{e}</AppContext.Provider>;
+}
+
+export { today, addDays };
+
+// Ketma-ket kunlar: bugun yoki kecha mashq qilingan bo‘lsa, zanjir uzilmagan
+export function streakOf(e = []) {
+  let t = new Set(e),
+    a = today();
+  if (!t.has(a)) a = addDays(a, -1);
+  let n = 0;
+  for (; t.has(a); a = addDays(a, -1)) n++;
+  return n;
 }
 
 export function useApp() {
