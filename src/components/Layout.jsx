@@ -64,8 +64,8 @@ export function Header() {
     <header className="sticky top-0 z-40 border-b border-slate-200 bg-white/85 backdrop-blur dark:border-slate-800 dark:bg-slate-950/85">
       <div className="container-app flex h-16 items-center justify-between gap-3">
         <Link href="/" className="flex items-center gap-2.5">
-          <span className="grid h-9 w-9 place-items-center rounded-xl bg-teal-600 text-lg font-bold text-white">
-            F
+          <span className="grid h-9 w-9 place-items-center rounded-xl bg-teal-600 text-sm font-extrabold text-white">
+            O
           </span>
           <span className="leading-tight">
             <span className="block text-sm font-semibold text-slate-900 dark:text-white">OsonFSP</span>

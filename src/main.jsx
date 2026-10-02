@@ -36,3 +36,10 @@ createRoot(document.getElementById("app")).render(
     </div>
   </AppProvider>,
 );
+
+// Offline ishlash va telefonga o‘rnatish (PWA). Artifact versiyasida sw.js yo‘q.
+if (import.meta.env.PROD && import.meta.env.MODE !== "artifact" && "serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("./sw.js").catch(() => {});
+  });
+}
