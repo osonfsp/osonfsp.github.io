@@ -76,8 +76,8 @@ export function PatientChat({ caseData, messages, onMessages, showHints = true, 
     onMessages(withQuestion);
     setDraft("");
     setWaiting(true);
-    const { reply } = await askPatient(caseData, withQuestion, question);
-    onMessages([...withQuestion, { role: "patient", text: reply }]);
+    const { reply, ai } = await askPatient(caseData, withQuestion, question);
+    onMessages([...withQuestion, { role: "patient", text: reply, ai }]);
     setWaiting(false);
     if (voice) speak(reply);
     inputRef.current?.focus();
@@ -165,6 +165,11 @@ export function PatientChat({ caseData, messages, onMessages, showHints = true, 
                 )}
               >
                 {m.role === "arzt" ? "Arzt (Sie)" : "Patient"}
+                {m.ai && (
+                  <span className="rounded bg-violet-100 px-1 text-[10px] font-semibold text-violet-700 dark:bg-violet-900 dark:text-violet-200">
+                    AI
+                  </span>
+                )}
                 {m.role === "patient" && <Speak text={m.text} className="-my-1 h-6 w-6 text-xs" />}
               </p>
               {m.text}

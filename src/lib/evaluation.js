@@ -1,9 +1,6 @@
 import { avg, clamp, normalize, sleep, stem } from "./utils";
 import { loc, tr } from "./i18n";
-
-async function askAI(e, t) {
-  return null;
-}
+import { aiPatientReply, aiReviewAnamnese, aiReviewArztArzt, aiReviewArztbrief, mergeAI } from "./ai";
 
 export const ANAMNESE_TOPICS = [
   {
@@ -131,12 +128,8 @@ function localPatientReply(e, t) {
 }
 
 export async function askPatient(e, t, a) {
-  let n = await askAI("patientSimulation", {
-    caseData: e,
-    history: t,
-    question: a,
-  });
-  if (n?.reply) return n;
+  let reply = await aiPatientReply(e, t);
+  if (reply) return { reply, ai: true };
   return (await sleep(450), localPatientReply(e, a));
 }
 
@@ -672,13 +665,9 @@ function evaluateAnamneseLocal(e, t, a = "") {
 }
 
 export async function evaluateAnamnese(e, t, a = "") {
-  let n = await askAI("evaluateAnamnese", {
-    caseData: e,
-    messages: t,
-    summary: a,
-  });
-  if (n?.criteria) return n;
-  return (await sleep(500), evaluateAnamneseLocal(e, t, a));
+  let local = evaluateAnamneseLocal(e, t, a),
+    ai = await aiReviewAnamnese(e, t, a);
+  return ai ? mergeAI(local, ai) : (await sleep(500), local);
 }
 
 const BRIEF_SECTIONS = [
@@ -901,12 +890,9 @@ function correctArztbriefLocal(e, t) {
 }
 
 export async function correctArztbrief(e, t) {
-  let a = await askAI("correctArztbrief", {
-    exercise: e,
-    text: t,
-  });
-  if (a?.criteria) return a;
-  return (await sleep(600), correctArztbriefLocal(e, t));
+  let local = correctArztbriefLocal(e, t),
+    ai = t.trim() ? await aiReviewArztbrief(e, t) : null;
+  return ai ? mergeAI(local, ai) : (await sleep(600), local);
 }
 
 export const ARZT_ARZT_QUESTIONS = [
@@ -1050,10 +1036,7 @@ function evaluateArztArztLocal(e, t) {
 }
 
 export async function evaluateArztArzt(e, t) {
-  let a = await askAI("evaluateArztArzt", {
-    caseData: e,
-    answers: t,
-  });
-  if (a?.criteria) return a;
-  return (await sleep(500), evaluateArztArztLocal(e, t));
+  let local = evaluateArztArztLocal(e, t),
+    ai = await aiReviewArztArzt(e, t);
+  return ai ? mergeAI(local, ai) : (await sleep(500), local);
 }

@@ -32,6 +32,8 @@ function read() {
     storage.set(TRIAL_KEY, trialStart);
   }
   let trialEnd = new Date(new Date(trialStart).getTime() + TRIAL_HOURS * 36e5);
+  // Artifact versiyasi faqat egasi uchun (shaxsiy): sinov uchun hech qanday cheklov yo‘q
+  if (import.meta.env.MODE === "artifact") plan = { id: "owner", until: "2999-01-01T00:00:00Z" };
   return {
     usage,
     plan: plan && new Date(plan.until) > new Date() ? plan : null,

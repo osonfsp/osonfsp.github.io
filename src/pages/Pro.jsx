@@ -63,8 +63,14 @@ export function ProPage() {
       {plan ? (
         <p className="card mb-4 border-emerald-300 bg-emerald-50 text-sm dark:border-emerald-900 dark:bg-emerald-950/30">
           ✅ {tr("Faol tarif", "Активный тариф")}:{" "}
-          <b>{plan.id === "week" ? tr("1 haftalik", "1 неделя") : tr("1 oylik", "1 месяц")}</b> —{" "}
-          {tr("", "до ")}
+          <b>
+            {plan.id === "owner"
+              ? tr("Egasi (test rejimi)", "Владелец (тестовый режим)")
+              : plan.id === "week"
+                ? tr("1 haftalik", "1 неделя")
+                : tr("1 oylik", "1 месяц")}
+          </b>{" "}
+          — {tr("", "до ")}
           {new Date(plan.until).toLocaleDateString(LOCALE)}
           {tr(" gacha", "")}.
         </p>
