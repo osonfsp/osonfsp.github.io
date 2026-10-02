@@ -16,6 +16,7 @@ import { avg, formatDate } from "../lib/utils";
 import { streakOf, useApp } from "../state/AppContext";
 import { dueCount } from "../components/WordTrainer";
 import { tr } from "../lib/i18n";
+import { buildPlan } from "../lib/daily";
 
 export function DashboardPage() {
   let { ready: e, user: t, progress: a, overall: n, logout: i, resetProgress: l } = useApp(),
@@ -96,6 +97,31 @@ export function DashboardPage() {
           {tr("Chiqish", "Выйти")}
         </button>
       </PageHeader>
+      {(() => {
+        let plan = buildPlan(a),
+          next = plan.tasks.find((t) => !t.done);
+        return (
+          <Link
+            href="/bugun"
+            className="card mb-4 flex items-center gap-4 border-2 border-teal-500 p-4 transition hover:shadow-lg"
+          >
+            <span className="text-3xl" aria-hidden>
+              📅
+            </span>
+            <span className="min-w-0 flex-1">
+              <span className="block font-semibold">
+                {tr("Bugungi mashq", "Практика на сегодня")} · {plan.doneCount}/{plan.tasks.length}
+              </span>
+              <span className="block truncate text-sm muted">
+                {next
+                  ? `${tr("Keyingisi", "Следующее")}: ${next.title} — ${next.desc}`
+                  : tr("Bugungi reja bajarildi 🎉", "План на сегодня выполнен 🎉")}
+              </span>
+            </span>
+            <span className="btn-primary shrink-0">{next ? tr("Davom etish", "Продолжить") : "✓"}</span>
+          </Link>
+        );
+      })()}
       <div className="grid gap-4 lg:grid-cols-[320px_1fr]">
         <div className="card flex flex-col items-center text-center">
           <ProgressRing value={n} size={140} label={tr("Umumiy progress", "Общий прогресс")} />

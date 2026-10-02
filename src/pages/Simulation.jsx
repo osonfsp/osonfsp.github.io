@@ -7,6 +7,7 @@ import { evaluateAnamnese } from "../lib/evaluation";
 import { useRouter, useSearchParams } from "../lib/router";
 import { useApp } from "../state/AppContext";
 import { tr } from "../lib/i18n";
+import { SectionIntro } from "../components/SectionIntro";
 
 function SimulationView() {
   let e = useSearchParams(),
@@ -67,6 +68,7 @@ function SimulationView() {
           ))}
         </select>
       </PageHeader>
+      <SectionIntro id="simulation" />
       {r === "chat" && (
         <div className="grid gap-4 lg:grid-cols-[minmax(0,1fr)_300px]">
           <PatientChat caseData={i} messages={l} onMessages={s} />

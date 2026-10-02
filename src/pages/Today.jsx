@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "../components/Link";
 import { PageHeader, ProgressBar } from "../components/ui";
 import { buildPlan, getProfile, markDone } from "../lib/daily";
-import { LOCALE, tr } from "../lib/i18n";
+import { formatDay, tr } from "../lib/i18n";
 import { cx } from "../lib/utils";
 import { streakOf, useApp } from "../state/AppContext";
 
@@ -18,7 +18,7 @@ export function TodayPage() {
   return (
     <div className="page max-w-3xl">
       <PageHeader
-        eyebrow={new Date().toLocaleDateString(LOCALE, { weekday: "long", day: "numeric", month: "long" })}
+        eyebrow={formatDay(new Date(), { weekday: true })}
         title={tr("Bugungi mashq", "Практика на сегодня")}
         subtitle={tr(
           "3 ta qisqa vazifa — kuniga 20–25 daqiqa. Tartib bilan bajaring.",

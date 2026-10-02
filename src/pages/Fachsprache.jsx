@@ -5,6 +5,7 @@ import { cx, shuffle } from "../lib/utils";
 import { useApp } from "../state/AppContext";
 import { Speak } from "../components/Speak";
 import { loc, tr } from "../lib/i18n";
+import { SectionIntro } from "../components/SectionIntro";
 
 function FlipCard({ p: e, known: t, onToggle: a }) {
   let [n, i] = useState(false);
@@ -164,6 +165,7 @@ export function FachsprachePage() {
           🎯 Test
         </button>
       </PageHeader>
+      <SectionIntro id="fachsprache" />
       {a === "cards" ? (
         <>
           <div className="card mb-5">

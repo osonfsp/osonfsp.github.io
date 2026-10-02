@@ -6,6 +6,7 @@ import { useRouter, useSearchParams } from "../lib/router";
 import { cx } from "../lib/utils";
 import { useApp } from "../state/AppContext";
 import { tr } from "../lib/i18n";
+import { SectionIntro } from "../components/SectionIntro";
 
 const DIFFICULTY_STYLES = {
   leicht: "bg-emerald-50 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300",
@@ -43,8 +44,10 @@ export function CasesPage() {
   let { progress: e } = useApp(),
     params = useSearchParams(),
     router = useRouter(),
-    section = CASE_SECTIONS.some((s) => s.id === params.get("bolim")) ? params.get("bolim") : "all",
-    setSection = (id) => router.replace(id === "all" ? "/faelle" : `/faelle?bolim=${id}`),
+    // Bo‘lim tanlanmaguncha faqat bo‘lim kartochkalari ko‘rinadi (38 ta Fall birdan emas)
+    bolim = params.get("bolim"),
+    section = bolim === "all" || CASE_SECTIONS.some((s) => s.id === bolim) ? bolim : null,
+    setSection = (id) => router.replace(`/faelle?bolim=${id}`),
     [q, setQ] = useState(""),
     [level, setLevel] = useState("all"),
     solved = (c) => e.solvedCases.includes(c.id),
@@ -61,10 +64,12 @@ export function CasesPage() {
               c.category,
               CATEGORY_LABELS[c.category] ?? "",
             ].some((x) => x.toLowerCase().includes(s)));
-      return CASE_SECTIONS.filter((sec) => section === "all" || sec.id === section).flatMap((sec) =>
-        sec.categories
-          .map((cat) => ({ sec, cat, items: cases.filter((c) => c.category === cat && match(c)) }))
-          .filter((g) => g.items.length),
+      if (!section && !s) return [];
+      return CASE_SECTIONS.filter((sec) => !section || section === "all" || sec.id === section).flatMap(
+        (sec) =>
+          sec.categories
+            .map((cat) => ({ sec, cat, items: cases.filter((c) => c.category === cat && match(c)) }))
+            .filter((g) => g.items.length),
       );
     }, [section, q, level]),
     shown = groups.reduce((n, g) => n + g.items.length, 0);
@@ -83,6 +88,7 @@ export function CasesPage() {
           {tr(" yechildi", " решено")}
         </span>
       </PageHeader>
+      <SectionIntro id="faelle" />
 
       {/* Bo‘limlar */}
       <div className="mb-5 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
@@ -152,7 +158,7 @@ export function CasesPage() {
         {groups.map((g) => (
           <section key={g.cat}>
             <h2 className="mb-3 flex flex-wrap items-baseline gap-x-2 text-lg font-bold">
-              {section === "all" && <span aria-hidden>{g.sec.icon}</span>}
+              {section !== g.sec.id && <span aria-hidden>{g.sec.icon}</span>}
               {CATEGORY_LABELS[g.cat] ?? g.cat}
               <span className="text-sm font-normal muted">
                 · {g.cat} · {g.items.length}
@@ -166,8 +172,17 @@ export function CasesPage() {
           </section>
         ))}
       </div>
-      {!shown && (
+      {!shown && (section || q.trim()) && (
         <p className="card text-center muted">{tr("Hech narsa topilmadi.", "Ничего не найдено.")}</p>
+      )}
+      {!section && !q.trim() && (
+        <p className="card text-center text-sm muted">
+          👆{" "}
+          {tr(
+            "Yuqoridan mutaxassislikni tanlang — shu bo‘limdagi Fall’lar ochiladi.",
+            "Выберите специальность выше — откроются кейсы этого раздела.",
+          )}
+        </p>
       )}
     </div>
   );

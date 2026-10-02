@@ -15,6 +15,7 @@ import { useApp } from "../state/AppContext";
 import { FreeLeft, Paywall } from "../components/Paywall";
 import { consume, usePlan } from "../lib/plan";
 import { tr } from "../lib/i18n";
+import { SectionIntro } from "../components/SectionIntro";
 
 function Timer({ minutes: e, resetKey: t, onExpire: o }) {
   let [a, n] = useState(e * 60);
@@ -174,81 +175,7 @@ export function ExamPage() {
             "3 части, как на настоящем FSP. Примерно 20 минут на каждую часть.",
           )}
         />
-        <div className="grid gap-4 sm:grid-cols-3">
-          {[
-            [
-              "\uD83D\uDCAC",
-              "Teil 1",
-              "Patienten-Anamnese",
-              tr(
-                "Virtual bemordan anamnez yig‘asiz. Yordamchi maslahatlar o‘chirilgan.",
-                "Вы собираете анамнез у виртуального пациента. Подсказки отключены.",
-              ),
-            ],
-            [
-              "✍️",
-              "Teil 2",
-              "Dokumentation",
-              tr("Shu bemor bo‘yicha Arztbrief yozasiz.", "Вы пишете Arztbrief по этому пациенту."),
-            ],
-            [
-              "\uD83D\uDC68‍⚕️",
-              "Teil 3",
-              "Arzt-Arzt-Gespräch",
-              tr(
-                "Bemorni Oberarzt’ga taqdim etasiz, 5 ta savolga javob berasiz va bitta Fachbegriff’ni tushuntirasiz.",
-                "Вы представляете пациента Oberarzt, отвечаете на 5 вопросов и объясняете один Fachbegriff.",
-              ),
-            ],
-          ].map(([z, k, O, te]) => (
-            <div key={k} className="card">
-              <span className="text-2xl" aria-hidden>
-                {z}
-              </span>
-              <p className="mt-3 text-xs font-semibold uppercase tracking-wider text-teal-600 dark:text-teal-400">
-                {k}
-              </p>
-              <h2 className="font-semibold">{O}</h2>
-              <p className="mt-1 text-sm muted">{te}</p>
-            </div>
-          ))}
-        </div>
-        <div className="card mt-4 border-teal-200 bg-teal-50/60 text-sm dark:border-teal-900 dark:bg-teal-950/30">
-          <h2 className="section-title">
-            🇩🇪 {tr("Haqiqiy FSP qoidalari bo‘yicha", "По правилам настоящего FSP")}
-          </h2>
-          <ul className="space-y-1.5">
-            <li>
-              •{" "}
-              {tr(
-                "3 qism, har biri 20 daqiqa (jami 60 daqiqa). Vaqt tugashi bilan keyingi qismga avtomatik o‘tiladi.",
-                "3 части по 20 минут (всего 60 минут). Когда время выходит, следующая часть начинается автоматически.",
-              )}
-            </li>
-            <li>
-              •{" "}
-              {tr(
-                "Talab qilinadigan daraja: C1 (tibbiy nemis tili).",
-                "Требуемый уровень: C1 (медицинский немецкий).",
-              )}
-            </li>
-            <li>
-              •{" "}
-              {tr(
-                "Natija faqat „bestanden“ yoki „nicht bestanden“ — baho qo‘yilmaydi.",
-                "Результат только „bestanden“ или „nicht bestanden“ — оценок нет.",
-              )}
-            </li>
-            <li>
-              • {tr("Bu yerda har bir qism kamida", "Здесь каждая часть должна набрать не менее")}{" "}
-              <b>{PASS_MARK}%</b>
-              {tr(
-                " bo‘lishi kerak. Bitta qism yiqilsa, imtihon „nicht bestanden“ bo‘ladi.",
-                ". Если не сдана хотя бы одна часть, экзамен — „nicht bestanden“.",
-              )}
-            </li>
-          </ul>
-        </div>
+        <SectionIntro id="pruefung" />
         {!CU("exam") ? (
           <div className="mt-4">
             <Paywall kind="exam" />
@@ -292,6 +219,89 @@ export function ExamPage() {
             </button>
           </div>
         )}
+        <details className="card mt-4 text-sm">
+          <summary className="cursor-pointer font-semibold">
+            📖{" "}
+            {tr("Imtihon qanday o‘tadi? (3 qism va qoidalar)", "Как проходит экзамен? (3 части и правила)")}
+          </summary>
+          <div className="mt-4">
+            <div className="grid gap-4 sm:grid-cols-3">
+              {[
+                [
+                  "\uD83D\uDCAC",
+                  "Teil 1",
+                  "Patienten-Anamnese",
+                  tr(
+                    "Virtual bemordan anamnez yig‘asiz. Yordamchi maslahatlar o‘chirilgan.",
+                    "Вы собираете анамнез у виртуального пациента. Подсказки отключены.",
+                  ),
+                ],
+                [
+                  "✍️",
+                  "Teil 2",
+                  "Dokumentation",
+                  tr("Shu bemor bo‘yicha Arztbrief yozasiz.", "Вы пишете Arztbrief по этому пациенту."),
+                ],
+                [
+                  "\uD83D\uDC68‍⚕️",
+                  "Teil 3",
+                  "Arzt-Arzt-Gespräch",
+                  tr(
+                    "Bemorni Oberarzt’ga taqdim etasiz, 5 ta savolga javob berasiz va bitta Fachbegriff’ni tushuntirasiz.",
+                    "Вы представляете пациента Oberarzt, отвечаете на 5 вопросов и объясняете один Fachbegriff.",
+                  ),
+                ],
+              ].map(([z, k, O, te]) => (
+                <div key={k} className="card">
+                  <span className="text-2xl" aria-hidden>
+                    {z}
+                  </span>
+                  <p className="mt-3 text-xs font-semibold uppercase tracking-wider text-teal-600 dark:text-teal-400">
+                    {k}
+                  </p>
+                  <h2 className="font-semibold">{O}</h2>
+                  <p className="mt-1 text-sm muted">{te}</p>
+                </div>
+              ))}
+            </div>
+            <div className="card mt-4 border-teal-200 bg-teal-50/60 text-sm dark:border-teal-900 dark:bg-teal-950/30">
+              <h2 className="section-title">
+                🇩🇪 {tr("Haqiqiy FSP qoidalari bo‘yicha", "По правилам настоящего FSP")}
+              </h2>
+              <ul className="space-y-1.5">
+                <li>
+                  •{" "}
+                  {tr(
+                    "3 qism, har biri 20 daqiqa (jami 60 daqiqa). Vaqt tugashi bilan keyingi qismga avtomatik o‘tiladi.",
+                    "3 части по 20 минут (всего 60 минут). Когда время выходит, следующая часть начинается автоматически.",
+                  )}
+                </li>
+                <li>
+                  •{" "}
+                  {tr(
+                    "Talab qilinadigan daraja: C1 (tibbiy nemis tili).",
+                    "Требуемый уровень: C1 (медицинский немецкий).",
+                  )}
+                </li>
+                <li>
+                  •{" "}
+                  {tr(
+                    "Natija faqat „bestanden“ yoki „nicht bestanden“ — baho qo‘yilmaydi.",
+                    "Результат только „bestanden“ или „nicht bestanden“ — оценок нет.",
+                  )}
+                </li>
+                <li>
+                  • {tr("Bu yerda har bir qism kamida", "Здесь каждая часть должна набрать не менее")}{" "}
+                  <b>{PASS_MARK}%</b>
+                  {tr(
+                    " bo‘lishi kerak. Bitta qism yiqilsa, imtihon „nicht bestanden“ bo‘ladi.",
+                    ". Если не сдана хотя бы одна часть, экзамен — „nicht bestanden“.",
+                  )}
+                </li>
+              </ul>
+            </div>
+          </div>
+        </details>
         <div className="mt-4">
           <Disclaimer />
         </div>

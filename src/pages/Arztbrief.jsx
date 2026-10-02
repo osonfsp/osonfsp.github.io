@@ -6,6 +6,7 @@ import { correctArztbrief } from "../lib/evaluation";
 import { useParams } from "../lib/router";
 import { useApp } from "../state/AppContext";
 import { loc, tr } from "../lib/i18n";
+import { SectionIntro } from "../components/SectionIntro";
 
 export function ArztbriefListPage() {
   let { progress: e } = useApp();
@@ -19,6 +20,7 @@ export function ArztbriefListPage() {
           "Напишите Arztbrief по клиническим данным. Сайт автоматически проверит структуру, Fachsprache, построение фраз и ключевые сведения.",
         )}
       />
+      <SectionIntro id="arztbrief" />
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {arztbriefe.map((t) => {
           let a = getCase(t.caseId),

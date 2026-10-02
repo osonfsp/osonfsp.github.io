@@ -8,6 +8,7 @@ import { tr } from "../lib/i18n";
 import { useParams } from "../lib/router";
 import { cx } from "../lib/utils";
 import { useApp } from "../state/AppContext";
+import { SectionIntro } from "../components/SectionIntro";
 
 const RATES = [
   [0.8, "0.8×"],
@@ -27,6 +28,7 @@ export function HoerenListPage() {
           "Пациент рассказывает о жалобах по-немецки — без текста. Вы записываете услышанное, а сайт показывает, что вы пропустили. На настоящем FSP понять быструю речь пациента — одна из самых трудных задач.",
         )}
       />
+      <SectionIntro id="hoeren" />
       {!canSpeak() && (
         <p className="card mb-4 border-rose-300 text-sm text-rose-700">
           {tr(

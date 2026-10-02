@@ -7,6 +7,7 @@ import redemittel from "../data/redemittel.json";
 import { loc, tr } from "../lib/i18n";
 import { FREE_LIMITS, TRIAL_HOURS } from "../lib/plan";
 import { cx } from "../lib/utils";
+import { getProfile } from "../lib/daily";
 
 const PHRASES = redemittel.reduce((n, g) => n + g.items.length, 0);
 
@@ -65,7 +66,8 @@ function Tilt({ className, children, href }) {
       <span
         className="pointer-events-none absolute inset-0 opacity-0 transition group-hover:opacity-100"
         style={{
-          background: "radial-gradient(300px circle at var(--mx) var(--my), rgba(255,255,255,0.35), transparent 60%)",
+          background:
+            "radial-gradient(300px circle at var(--mx) var(--my), rgba(255,255,255,0.35), transparent 60%)",
         }}
         aria-hidden
       />
@@ -80,7 +82,13 @@ const GLASS =
   "rounded-3xl border border-white/60 bg-white/55 shadow-xl shadow-teal-900/5 backdrop-blur-xl dark:border-white/10 dark:bg-slate-900/50";
 
 export function HomePage() {
-  const marquee = words.slice(0, 40);
+  const marquee = words.slice(0, 40),
+    // yangi odam → 3 ta savol; qaytgan foydalanuvchi → bugungi vazifalar
+    returning = !!getProfile(),
+    startHref = returning ? "/bugun" : "/start",
+    startLabel = returning
+      ? tr("📅 Bugungi mashq", "📅 Практика на сегодня")
+      : tr("Bepul boshlash", "Начать бесплатно");
   const teile = [
     {
       n: "1",
@@ -157,10 +165,10 @@ export function HomePage() {
           </p>
           <div className="mt-7 flex flex-col gap-3 sm:flex-row">
             <Link
-              href="/faelle"
+              href={startHref}
               className="btn bg-gradient-to-r from-teal-600 to-cyan-600 px-7 py-3.5 text-base text-white shadow-lg shadow-teal-600/30 transition hover:-translate-y-0.5 hover:shadow-xl hover:shadow-teal-600/40"
             >
-              {tr("Bepul boshlash", "Начать бесплатно")} →
+              {startLabel} →
             </Link>
             <Link
               href="/pruefung"
@@ -385,10 +393,10 @@ export function HomePage() {
                 )}
               </p>
               <Link
-                href="/login"
+                href={startHref}
                 className="btn mt-6 bg-white px-7 py-3.5 text-base font-semibold text-teal-800 shadow-lg hover:bg-teal-50"
               >
-                {tr("Bepul boshlash", "Начать бесплатно")} →
+                {startLabel} →
               </Link>
             </div>
             <div className="grid grid-cols-3 gap-3">

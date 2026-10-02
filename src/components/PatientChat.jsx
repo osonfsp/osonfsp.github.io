@@ -93,6 +93,7 @@ function useDictation(onText) {
 export function PatientChat({ caseData, messages, onMessages, showHints = true, disabled }) {
   const [draft, setDraft] = useState("");
   const [waiting, setWaiting] = useState(false);
+  const [hintsOpen, setHintsOpen] = useState(false);
   const [voice, setVoice] = useState(() => storage.get(VOICE_KEY, false));
   const scrollRef = useRef(null);
   const inputRef = useRef(null);
@@ -236,7 +237,22 @@ export function PatientChat({ caseData, messages, onMessages, showHints = true, 
         )}
       </div>
       {showHints && (
-        <div className="no-scrollbar flex gap-2 overflow-x-auto border-t border-slate-200 px-4 py-2 dark:border-slate-800">
+        <div className="border-t border-slate-200 px-4 py-1.5 dark:border-slate-800">
+          <button
+            type="button"
+            className="text-xs font-medium text-teal-700 hover:underline dark:text-teal-400"
+            onClick={() => setHintsOpen((o) => !o)}
+            aria-expanded={hintsOpen}
+          >
+            💡{" "}
+            {hintsOpen
+              ? tr("Namunalarni yashirish", "Скрыть подсказки")
+              : tr("Savol namunalari", "Примеры вопросов")}
+          </button>
+        </div>
+      )}
+      {showHints && hintsOpen && (
+        <div className="no-scrollbar flex gap-2 overflow-x-auto px-4 pb-2">
           {ANAMNESE_TOPICS.filter((t) => !asked.has(t.key)).map((t) => (
             <button
               key={t.key}

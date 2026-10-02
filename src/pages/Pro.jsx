@@ -4,7 +4,7 @@ import { PageHeader } from "../components/ui";
 import { trackEvent } from "../lib/analytics";
 import { FREE_LIMITS, TRIAL_HOURS, usePlan } from "../lib/plan";
 import { cx } from "../lib/utils";
-import { LOCALE, tr } from "../lib/i18n";
+import { formatDay, tr } from "../lib/i18n";
 
 const OFFERS = [
   {
@@ -71,7 +71,7 @@ export function ProPage() {
                 : tr("1 oylik", "1 месяц")}
           </b>{" "}
           — {tr("", "до ")}
-          {new Date(plan.until).toLocaleDateString(LOCALE)}
+          {formatDay(plan.until, { year: true })}
           {tr(" gacha", "")}.
         </p>
       ) : (

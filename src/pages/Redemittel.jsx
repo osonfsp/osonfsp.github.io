@@ -4,6 +4,7 @@ import { FilterChips, PageHeader, SearchInput } from "../components/ui";
 import redemittel from "../data/redemittel.json";
 import { cx } from "../lib/utils";
 import { tr } from "../lib/i18n";
+import { SectionIntro } from "../components/SectionIntro";
 
 const TEILE = [...new Set(redemittel.map((g) => g.teil))];
 
@@ -41,6 +42,7 @@ export function RedemittelPage() {
             : tr("👁 Tarjimani ko‘rsatish", "👁 Показать перевод")}
         </button>
       </PageHeader>
+      <SectionIntro id="redemittel" />
       <div className="mb-5 space-y-3">
         <SearchInput
           value={a}

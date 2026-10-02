@@ -7,6 +7,7 @@ import { evaluateAufklaerung } from "../lib/aufklaerung";
 import { tr } from "../lib/i18n";
 import { useParams } from "../lib/router";
 import { useApp } from "../state/AppContext";
+import { SectionIntro } from "../components/SectionIntro";
 
 const best = (list, id) => Math.max(0, ...(list ?? []).filter((x) => x.id === id).map((x) => x.score));
 
@@ -22,6 +23,7 @@ export function AufklaerungListPage() {
           "На FSP после анамнеза нужно простым языком объяснить пациенту запланированное обследование: зачем, как проходит, подготовка, боль, риски и вопросы.",
         )}
       />
+      <SectionIntro id="aufklaerung" />
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {procedures.map((p) => {
           let s = best(e.aufklaerung, p.id);

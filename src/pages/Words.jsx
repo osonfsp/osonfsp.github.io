@@ -7,6 +7,7 @@ import { Speak } from "../components/Speak";
 import { dueCount, WordTrainer } from "../components/WordTrainer";
 import { loc, tr } from "../lib/i18n";
 import { useSearchParams } from "../lib/router";
+import { SectionIntro } from "../components/SectionIntro";
 
 export function WordsPage() {
   let { progress: e, toggleWord: t } = useApp(),
@@ -44,6 +45,7 @@ export function WordsPage() {
           </button>
         )}
       </PageHeader>
+      <SectionIntro id="woerter" />
       {T && (
         <>
           <div className="mb-4">

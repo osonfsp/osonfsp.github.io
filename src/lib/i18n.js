@@ -54,3 +54,33 @@ export function setLang(id) {
 
 // Sana formatlari uchun
 export const LOCALE = LANG === "ru" ? "ru-RU" : "uz-UZ";
+
+// Brauzerlar o‘zbekcha sanani to‘liq bilmaydi ("M10 3, SAT") — o‘zimiz formatlaymiz
+const UZ_MONTHS = [
+  "yanvar",
+  "fevral",
+  "mart",
+  "aprel",
+  "may",
+  "iyun",
+  "iyul",
+  "avgust",
+  "sentabr",
+  "oktabr",
+  "noyabr",
+  "dekabr",
+];
+const UZ_DAYS = ["yakshanba", "dushanba", "seshanba", "chorshanba", "payshanba", "juma", "shanba"];
+export function formatDay(d, { weekday = false, year = false } = {}) {
+  d = new Date(d);
+  if (LANG === "ru")
+    return d.toLocaleDateString("ru-RU", {
+      day: "numeric",
+      month: "long",
+      ...(weekday && { weekday: "long" }),
+      ...(year && { year: "numeric" }),
+    });
+  let s = `${d.getDate()}-${UZ_MONTHS[d.getMonth()]}`;
+  if (year) s += ` ${d.getFullYear()}`;
+  return weekday ? `${s}, ${UZ_DAYS[d.getDay()]}` : s;
+}
