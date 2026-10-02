@@ -11,8 +11,49 @@ const VOICE_KEY = "fsp.voice";
 const SpeechRecognition =
   typeof window !== "undefined" ? (window.SpeechRecognition ?? window.webkitSpeechRecognition) : undefined;
 
+// Ovozli kiritish xatolari: foydalanuvchiga nima qilish kerakligini aytamiz
+const OPEN_SITE = tr(
+  " Ovozli savolni osonfsp.github.io saytida Chrome, Edge yoki Safari orqali ishlating.",
+  " Используйте голосовой ввод на сайте osonfsp.github.io в Chrome, Edge или Safari.",
+);
+const inFrame = (() => {
+  try {
+    return window.self !== window.top;
+  } catch {
+    return true;
+  }
+})();
+function dictationError(code) {
+  if (code === "no-speech")
+    return tr(
+      "Ovoz eshitilmadi — mikrofonga yaqinroq gapiring.",
+      "Голос не услышан — говорите ближе к микрофону.",
+    );
+  if (code === "audio-capture") return tr("Mikrofon topilmadi.", "Микрофон не найден.");
+  if (code === "aborted") return "";
+  if (inFrame)
+    return (
+      tr(
+        "Bu oynada mikrofon yoki nutqni tanish xizmati yopiq.",
+        "В этом окне микрофон или распознавание речи недоступны.",
+      ) + OPEN_SITE
+    );
+  if (code === "not-allowed" || code === "service-not-allowed")
+    return tr(
+      "Mikrofonga ruxsat berilmagan. Brauzer manzil satridagi 🔒 belgisidan mikrofonga ruxsat bering.",
+      "Нет доступа к микрофону. Разрешите его через значок 🔒 в адресной строке браузера.",
+    );
+  if (code === "network")
+    return tr(
+      "Nutqni tanish xizmatiga ulanib bo‘lmadi — internetni tekshiring.",
+      "Нет связи с сервисом распознавания речи — проверьте интернет.",
+    );
+  return tr("Ovozli kiritish ishlamadi.", "Голосовой ввод не сработал.") + OPEN_SITE;
+}
+
 function useDictation(onText) {
   const [listening, setListening] = useState(false);
+  const [error, setError] = useState("");
   const rec = useRef(null);
   useEffect(() => () => rec.current?.abort(), []);
   if (!SpeechRecognition) return { supported: false };
@@ -30,17 +71,23 @@ function useDictation(onText) {
       const text = [...ev.results].map((res) => res[0].transcript).join("");
       onText(prefix + text);
     };
-    r.onend = r.onerror = () => setListening(false);
+    r.onend = () => setListening(false);
+    r.onerror = (ev) => {
+      setListening(false);
+      setError(dictationError(ev.error));
+    };
     rec.current = r;
     stopSpeaking();
+    setError("");
     try {
       r.start();
       setListening(true);
-    } catch {
+    } catch (e) {
       setListening(false);
+      setError(dictationError(e?.name));
     }
   };
-  return { supported: true, listening, toggle };
+  return { supported: true, listening, toggle, error };
 }
 
 export function PatientChat({ caseData, messages, onMessages, showHints = true, disabled }) {
@@ -267,9 +314,17 @@ export function PatientChat({ caseData, messages, onMessages, showHints = true, 
           className="btn-primary h-[44px] shrink-0"
           disabled={waiting || !draft.trim() || disabled}
         >
-          Yuborish
+          {tr("Yuborish", "Отправить")}
         </button>
       </form>
+      {dictation.error && (
+        <p
+          className="border-t border-slate-200 px-4 py-2 text-xs text-rose-600 dark:border-slate-800"
+          role="alert"
+        >
+          🎤 {dictation.error}
+        </p>
+      )}
     </div>
   );
 }
