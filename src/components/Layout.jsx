@@ -68,7 +68,7 @@ export function Header() {
             F
           </span>
           <span className="leading-tight">
-            <span className="block text-sm font-semibold text-slate-900 dark:text-white">FSP Deutsch</span>
+            <span className="block text-sm font-semibold text-slate-900 dark:text-white">OsonFSP</span>
             <span className="block text-xs muted">Uzbek Doctors</span>
           </span>
         </Link>
@@ -143,7 +143,7 @@ export function Footer() {
     <footer className="mt-12 border-t border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-950">
       <div className="container-app flex flex-col gap-4 py-8 text-sm sm:flex-row sm:items-start sm:justify-between">
         <div className="max-w-md">
-          <p className="font-semibold text-slate-900 dark:text-white">FSP Deutsch – Uzbek Doctors</p>
+          <p className="font-semibold text-slate-900 dark:text-white">OsonFSP – Uzbek Doctors</p>
           <p className="mt-1 muted">
             O‘quv platformasi. Natijalar faqat mashq uchun — rasmiy FSP natijasini bashorat qilmaydi. Klinik
             holatlar o‘quv maqsadida soddalashtirilgan.

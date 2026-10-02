@@ -1,4 +1,4 @@
-# FSP Deutsch – Uzbek Doctors
+# OsonFSP – Uzbek Doctors
 
 O‘zbek shifokorlari uchun **Fachsprachprüfung (FSP)** tayyorgarlik platformasi:
 klinik holatlar, AI-bemor bilan anamnez simulyatsiyasi, Arztbrief mashqlari,
