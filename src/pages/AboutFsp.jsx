@@ -21,6 +21,27 @@ const EXAM_PARTS = [
       cta: "To‘liq Prüfung",
     },
   ],
+  // O‘zbekiston — „Drittstaat“ (YeI’dan tashqari): Approbation’gacha bo‘lgan odatiy yo‘l
+  PATH_STEPS = [
+    [
+      "Hujjatlar",
+      "Yer (Bundesland) Approbationsbehörde’siga diplom tan olinishi uchun ariza (Antrag auf Approbation).",
+    ],
+    ["B2 — umumiy nemis tili", "Goethe, telc yoki ÖSD kabi B2 sertifikati — odatda FSP’ga yozilish sharti."],
+    [
+      "C1 — Fachsprachprüfung",
+      "Landesärztekammer’da: 3 × 20 daqiqa, natija „bestanden“ yoki „nicht bestanden“.",
+    ],
+    [
+      "Berufserlaubnis (ixtiyoriy)",
+      "§ 10 BÄO bo‘yicha vaqtinchalik ishlash ruxsati — FSP’dan keyin berilishi mumkin.",
+    ],
+    [
+      "Kenntnisprüfung",
+      "Diplom to‘liq teng deb topilmasa — tibbiy bilim imtihoni (og‘zaki-amaliy, bemor bilan).",
+    ],
+    ["Approbation", "Germaniyada shifokor sifatida doimiy va cheklovsiz ishlash huquqi."],
+  ],
   TIPS = [
     "Bemorga doim „Sie“ bilan murojaat qiling va Fachbegriffe’ni sodda so‘zlarga almashtiring.",
     "Anamnezni tizimli olib boring: Beginn → Lokalisation → Charakter → Ausstrahlung → Begleitsymptome → Vorerkrankungen → Medikamente → Allergien → Familie → Sozial → Noxen.",
@@ -51,6 +72,42 @@ export function AboutFspPage() {
             </Link>
           </div>
         ))}
+      </div>
+      <div className="card mt-6">
+        <h2 className="text-lg font-semibold">🇩🇪 Approbation’gacha yo‘l (YeI’dan tashqari davlatlar)</h2>
+        <ol className="mt-3 space-y-3 text-sm">
+          {PATH_STEPS.map(([e, t], a) => (
+            <li key={e} className="flex gap-3">
+              <span className="grid h-7 w-7 shrink-0 place-items-center rounded-full bg-teal-600 text-xs font-bold text-white">
+                {a + 1}
+              </span>
+              <span>
+                <b>{e}</b>
+                <span className="block muted">{t}</span>
+              </span>
+            </li>
+          ))}
+        </ol>
+      </div>
+      <div className="card mt-6">
+        <h2 className="text-lg font-semibold">Imtihon qanday o‘tkaziladi?</h2>
+        <ul className="mt-3 space-y-2 text-sm">
+          {[
+            "Imtihon yakka tartibda, taxminan 60 daqiqa davom etadi (3 qism × 20 daqiqa).",
+            "Komissiya kamida 3 kishidan iborat, ulardan kamida 2 nafari shifokor.",
+            "Teil 1’da bemor rolini odatda aktyor yoki komissiya a’zosi o‘ynaydi.",
+            "Natija baho emas: faqat „bestanden“ yoki „nicht bestanden“.",
+            "Yiqilgan bo‘lsangiz, qayta topshirish mumkin; kutish muddati va to‘lov palataga bog‘liq.",
+          ].map((e) => (
+            <li key={e} className="flex gap-2">
+              <span className="text-teal-600">•</span>
+              {e}
+            </li>
+          ))}
+        </ul>
+        <Link href="/pruefung" className="btn-primary mt-4 inline-flex">
+          Mashq imtihonini topshirish →
+        </Link>
       </div>
       <div className="card mt-6">
         <h2 className="text-lg font-semibold">Nimalar baholanadi?</h2>

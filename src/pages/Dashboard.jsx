@@ -36,6 +36,25 @@ export function DashboardPage() {
     b = a.exams[0],
     y = cases.find((f) => !a.solvedCases.includes(f.id)),
     K = streakOf(a.days),
+    ex = a.exams.filter((f) => typeof f.passed == "boolean"),
+    passN = ex.filter((f) => f.passed).length,
+    last3 = ex.slice(0, 3),
+    ready =
+      last3.length === 3 && last3.every((f) => f.passed)
+        ? ["🟢", "Imtihonga tayyorsiz", "Oxirgi 3 ta mashq imtihonining hammasi „bestanden“."]
+        : passN
+          ? [
+              "🟡",
+              "Tayyorlanish davom etmoqda",
+              "Ketma-ket 3 marta „bestanden“ oling — shunda tayyor deb hisoblanasiz.",
+            ]
+          : ex.length
+            ? [
+                "🔴",
+                "Hali tayyor emas",
+                "„Nicht bestanden“ bo‘lgan qismlarni alohida mashq qiling va qayta topshiring.",
+              ]
+            : ["⚪", "Hali baholanmagan", "Mashq imtihonini topshiring va natijangizni ko‘ring."],
     Q = dueCount(words, a.wordReview);
   return (
     <div className="page">
@@ -118,7 +137,13 @@ export function DashboardPage() {
             icon="🎯"
             label="FSP simulation"
             value={a.exams.length}
-            hint={b ? `Oxirgi: ${b.total}%` : "Hali topshirilmagan"}
+            hint={
+              b
+                ? typeof b.passed == "boolean"
+                  ? `Oxirgi: ${b.passed ? "bestanden ✅" : "nicht bestanden ❌"}`
+                  : `Oxirgi: ${b.total}%`
+                : "Hali topshirilmagan"
+            }
           />
         </div>
       </div>
@@ -127,6 +152,24 @@ export function DashboardPage() {
           <h2 className="section-title">FSP simulation natijalari</h2>
           {b ? (
             <>
+              {typeof b.passed == "boolean" && (
+                <p
+                  className={`mb-2 text-lg font-extrabold ${b.passed ? "text-emerald-600" : "text-rose-600"}`}
+                >
+                  {b.passed ? "✅ BESTANDEN" : "❌ NICHT BESTANDEN"}
+                </p>
+              )}
+              <div className="mb-4 rounded-xl bg-slate-50 p-3 text-sm dark:bg-slate-800/60">
+                <b>
+                  {ready[0]} {ready[1]}
+                </b>
+                <p className="text-xs muted">{ready[2]}</p>
+                {ex.length > 0 && (
+                  <p className="mt-1 text-xs muted">
+                    O‘tilgan: {passN} / {ex.length} ta mashq imtihoni
+                  </p>
+                )}
+              </div>
               <p className="mb-4 text-sm muted">
                 {formatDate(b.date)}
                 {" · "}
@@ -145,7 +188,7 @@ export function DashboardPage() {
                       .map((f, p) => (
                         <div
                           key={p}
-                          className="flex-1 rounded-t bg-teal-500/80"
+                          className={`flex-1 rounded-t ${f.passed === false ? "bg-rose-400/80" : f.passed ? "bg-emerald-500/80" : "bg-teal-500/80"}`}
                           style={{
                             height: `${Math.max(6, f.total)}%`,
                           }}

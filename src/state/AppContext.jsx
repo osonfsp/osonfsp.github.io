@@ -156,7 +156,7 @@ export function AppProvider({ children: e }) {
               ...v,
               exams: [m, ...v.exams].slice(0, 30),
             },
-            `FSP Prüfung Simulation — ${m.total}%`,
+            `FSP Prüfung — ${m.passed === undefined ? `${m.total}%` : m.passed ? "bestanden ✅" : "nicht bestanden ❌"}`,
             "/pruefung",
           ),
         ),

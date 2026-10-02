@@ -7,13 +7,17 @@ import { ARZT_ARZT_QUESTIONS, correctArztbrief, evaluateAnamnese, evaluateArztAr
 import { avg, clamp, cx } from "../lib/utils";
 import { useApp } from "../state/AppContext";
 
-function Timer({ minutes: e, resetKey: t }) {
+function Timer({ minutes: e, resetKey: t, onExpire: o }) {
   let [a, n] = useState(e * 60);
   useEffect(() => {
     n(e * 60);
     let s = setInterval(() => n((r) => Math.max(0, r - 1)), 1000);
     return () => clearInterval(s);
   }, [e, t]);
+  // Haqiqiy imtihondagidek: vaqt tugashi bilan keyingi qismga o‘tiladi
+  useEffect(() => {
+    if (a === 0 && o) o();
+  }, [a]);
   let i = String(Math.floor(a / 60)).padStart(2, "0"),
     l = String(a % 60).padStart(2, "0");
   return (
@@ -36,6 +40,14 @@ function Timer({ minutes: e, resetKey: t }) {
 }
 
 const PART_MINUTES = 20,
+  // Ärztekammer faqat „bestanden / nicht bestanden“ deydi, ball qo‘ymaydi. Bu yerda taxminiy chegara:
+  // har bir qism kamida 60% bo‘lishi kerak — bitta qism yiqilsa, butun imtihon yiqiladi.
+  PASS_MARK = 60,
+  PART_NAMES = {
+    t1: "Teil 1 · Arzt-Patienten-Gespräch",
+    t2: "Teil 2 · Dokumentation",
+    t3: "Teil 3 · Arzt-Arzt-Gespräch",
+  },
   EXAM_STEPS = [
     {
       key: "t1",
@@ -103,11 +115,15 @@ export function ExamPage() {
         ),
         "Medizinisches Verständnis": clamp(te.criteria["Medizinisches Verständnis"] ?? 0),
       },
-      va = clamp(avg(Object.values(Ze)));
+      va = clamp(avg(Object.values(Ze))),
+      parts = { t1: k.score, t2: O.score, t3: te.score },
+      passed = Object.values(parts).every((P) => P >= PASS_MARK);
     (d({
       t1: k,
       t2: O,
       t3: te,
+      parts,
+      passed,
     }),
       v(Ze),
       e({
@@ -115,9 +131,16 @@ export function ExamPage() {
         date: new Date().toISOString(),
         scores: Ze,
         total: va,
+        parts,
+        passed,
       }),
       D(false),
       a("result"));
+  }
+  function expire() {
+    if (t === "t1") a("t2");
+    else if (t === "t2") a("t3");
+    else if (t === "t3" && !w) C([...y, p.trim()]);
   }
   function x() {
     let z = [...y, p.trim()];
@@ -154,6 +177,21 @@ export function ExamPage() {
               <p className="mt-1 text-sm muted">{te}</p>
             </div>
           ))}
+        </div>
+        <div className="card mt-4 border-teal-200 bg-teal-50/60 text-sm dark:border-teal-900 dark:bg-teal-950/30">
+          <h2 className="section-title">🇩🇪 Haqiqiy FSP qoidalari bo‘yicha</h2>
+          <ul className="space-y-1.5">
+            <li>
+              • 3 qism, har biri 20 daqiqa (jami 60 daqiqa). Vaqt tugashi bilan keyingi qismga avtomatik
+              o‘tiladi.
+            </li>
+            <li>• Talab qilinadigan daraja: C1 (tibbiy nemis tili).</li>
+            <li>• Natija faqat „bestanden“ yoki „nicht bestanden“ — baho qo‘yilmaydi.</li>
+            <li>
+              • Bu yerda har bir qism kamida <b>{PASS_MARK}%</b> bo‘lishi kerak. Bitta qism yiqilsa, imtihon
+              „nicht bestanden“ bo‘ladi.
+            </li>
+          </ul>
         </div>
         <div className="card mt-4">
           <h2 className="section-title">Fall tanlang</h2>
@@ -200,7 +238,7 @@ export function ExamPage() {
             </li>
           ))}
         </ol>
-        {t !== "result" && <Timer minutes={PART_MINUTES} resetKey={`${n.c.id}-${t}`} />}
+        {t !== "result" && <Timer minutes={PART_MINUTES} resetKey={`${n.c.id}-${t}`} onExpire={expire} />}
       </div>
       {t === "t1" && (
         <div className="grid gap-4 lg:grid-cols-[1fr_300px]">
@@ -308,6 +346,51 @@ export function ExamPage() {
       )}
       {t === "result" && m && g && (
         <div className="space-y-4">
+          <div
+            className={cx(
+              "card border-2 text-center",
+              g.passed
+                ? "border-emerald-400 bg-emerald-50 dark:border-emerald-700 dark:bg-emerald-950/40"
+                : "border-rose-400 bg-rose-50 dark:border-rose-700 dark:bg-rose-950/40",
+            )}
+            role="status"
+          >
+            <p className="text-4xl">{g.passed ? "✅" : "❌"}</p>
+            <h2
+              className={cx(
+                "mt-2 text-2xl font-extrabold tracking-wide",
+                g.passed ? "text-emerald-700 dark:text-emerald-400" : "text-rose-700 dark:text-rose-400",
+              )}
+            >
+              {g.passed ? "BESTANDEN" : "NICHT BESTANDEN"}
+            </h2>
+            <p className="mt-1 text-sm muted">
+              {g.passed
+                ? "Taxminiy natija: bu darajada haqiqiy FSP’dan o‘tish ehtimoli yuqori."
+                : "Taxminiy natija: hozirgi darajada haqiqiy FSP’dan o‘tish qiyin. Quyidagi qismlarni mashq qiling."}
+            </p>
+            <div className="mx-auto mt-4 grid max-w-2xl gap-2 text-left sm:grid-cols-3">
+              {Object.entries(g.parts).map(([z, k]) => (
+                <div
+                  key={z}
+                  className={cx(
+                    "rounded-xl border bg-white p-3 dark:bg-slate-900",
+                    k >= PASS_MARK
+                      ? "border-emerald-300 dark:border-emerald-800"
+                      : "border-rose-300 dark:border-rose-800",
+                  )}
+                >
+                  <div className="text-xs muted">{PART_NAMES[z]}</div>
+                  <div className="mt-1 flex items-baseline justify-between">
+                    <b className="text-lg">{k}%</b>
+                    <span className={k >= PASS_MARK ? "text-emerald-600" : "text-rose-600"}>
+                      {k >= PASS_MARK ? "✓ o‘tdi" : `✗ ${PASS_MARK}% dan past`}
+                    </span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
           <div className="grid gap-4 lg:grid-cols-[320px_1fr]">
             <div className="card flex flex-col items-center text-center">
               <ProgressRing value={avg(Object.values(m))} size={150} label="Mashq natijasi" />
