@@ -8,7 +8,9 @@ const synth = typeof window !== "undefined" ? window.speechSynthesis : undefined
 function germanVoice() {
   const voices = synth?.getVoices() ?? [];
   return (
-    voices.find((v) => v.lang === "de-DE" && /google|natural|online/i.test(v.name)) ??
+    // Eng tabiiy ovozlar birinchi: Edge "Natural", keyin Google / Apple
+    voices.find((v) => v.lang === "de-DE" && /natural/i.test(v.name)) ??
+    voices.find((v) => v.lang === "de-DE" && /google|online|anna|premium|enhanced/i.test(v.name)) ??
     voices.find((v) => v.lang === "de-DE") ??
     voices.find((v) => v.lang?.startsWith("de"))
   );
@@ -30,6 +32,29 @@ export function speak(text, { rate = 0.9, onEnd } = {}) {
 }
 
 export const stopSpeaking = () => synth?.cancel();
+
+// Uzun matnni gap-gap qilib o‘qiydi (Chrome uzun bitta matnni ~15 soniyada uzib qo‘yadi).
+// onProgress(i) — i-gap boshlandi; onEnd() — hammasi tugadi yoki to‘xtatildi.
+export function speakSequence(sentences, { rate = 1, onProgress, onEnd } = {}) {
+  if (!canSpeak() || !sentences.length) return onEnd?.();
+  synth.cancel();
+  const v = germanVoice();
+  let done = false;
+  const finish = () => !done && ((done = true), onEnd?.());
+  sentences.forEach((s, i) => {
+    const u = new SpeechSynthesisUtterance(s.replace(/[„“"]/g, ""));
+    u.lang = "de-DE";
+    u.rate = rate;
+    if (v) u.voice = v;
+    u.onstart = () => onProgress?.(i);
+    if (i === sentences.length - 1) u.onend = finish;
+    u.onerror = finish;
+    synth.speak(u);
+  });
+}
+
+// Qaysi ovoz ishlatilayotgani (foydalanuvchiga ko‘rsatish uchun)
+export const voiceName = () => germanVoice()?.name ?? "";
 
 // Kichik 🔊 tugma. <button> ichida ham ishlatish mumkin bo'lishi uchun <span role="button">.
 export function Speak({ text, className, label = tr("Nemischa tinglash", "Послушать по-немецки") }) {

@@ -65,6 +65,7 @@ const NAV_GROUPS = [
     { href: "/pruefung", icon: "🎯", label: tr("Prüfung", "Экзамен") },
   ],
   [
+    { href: "/hoeren", icon: "🎧", label: tr("Hörverstehen", "Аудирование") },
     { href: "/woerter", icon: "📚", label: tr("Wörter", "Слова") },
     { href: "/fachsprache", icon: "🔁", label: "Fach ↔ Patient" },
     { href: "/redemittel", icon: "🗣️", label: "Redemittel" },

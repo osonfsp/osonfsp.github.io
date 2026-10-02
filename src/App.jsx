@@ -11,6 +11,7 @@ import { DashboardPage } from "./pages/Dashboard";
 import { ExamPage } from "./pages/Exam";
 import { FachsprachePage } from "./pages/Fachsprache";
 import { HomePage } from "./pages/Home";
+import { HoerenListPage, HoerenPage } from "./pages/Hoeren";
 import { LoginPage } from "./pages/Login";
 import { ProPage } from "./pages/Pro";
 import { RedemittelPage } from "./pages/Redemittel";
@@ -45,12 +46,14 @@ const ROUTES = [
   [/^\/woerter$/, WordsPage],
   [/^\/fachsprache$/, FachsprachePage],
   [/^\/redemittel$/, RedemittelPage],
+  [/^\/hoeren$/, HoerenListPage],
+  [/^\/hoeren\/[^/]+$/, HoerenPage],
   [/^\/pro$/, ProPage],
   [/^\/pruefung$/, ExamPage],
   [/^\/admin$/, AdminPage],
 ];
 
-const MATERIALS = /^\/(faelle|simulation|arztbrief|aufklaerung|woerter|fachsprache|redemittel)(\/|$)/;
+const MATERIALS = /^\/(faelle|simulation|arztbrief|aufklaerung|hoeren|woerter|fachsprache|redemittel)(\/|$)/;
 
 export function Router() {
   const pathname = usePathname();
