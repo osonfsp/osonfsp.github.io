@@ -4,69 +4,35 @@ import { usePathname } from "../lib/router";
 import { cx } from "../lib/utils";
 import { useApp } from "../state/AppContext";
 import { LANG, LANGS, setLang, tr } from "../lib/i18n";
+import { TrialBar } from "./Paywall";
+
+const SIDEBAR_KEY = "fsp.sidebar";
 
 function ThemeToggle() {
   let [e, t] = useState(false);
+  useEffect(() => t(document.documentElement.classList.contains("dark")), []);
   return (
-    useEffect(() => t(document.documentElement.classList.contains("dark")), []),
-    (
-      <button
-        onClick={() => {
-          let n = !e;
-          (t(n), document.documentElement.classList.toggle("dark", n));
-          try {
-            localStorage.setItem("fsp.theme", n ? "dark" : "light");
-          } catch {}
-        }}
-        className="btn-ghost px-2.5"
-        aria-label={tr("Kun/tun rejimini almashtirish", "Переключить светлую/тёмную тему")}
-        title={tr("Kun/tun rejimi", "Светлая/тёмная тема")}
-      >
-        <span aria-hidden>{e ? "☀️" : "\uD83C\uDF19"}</span>
-      </button>
-    )
+    <button
+      onClick={() => {
+        let n = !e;
+        (t(n), document.documentElement.classList.toggle("dark", n));
+        try {
+          localStorage.setItem("fsp.theme", n ? "dark" : "light");
+        } catch {}
+      }}
+      className="grid h-8 w-8 place-items-center rounded-lg text-white/70 hover:bg-white/10 hover:text-white"
+      aria-label={tr("Kun/tun rejimini almashtirish", "Переключить светлую/тёмную тему")}
+      title={tr("Kun/tun rejimi", "Светлая/тёмная тема")}
+    >
+      <span aria-hidden>{e ? "☀️" : "🌙"}</span>
+    </button>
   );
 }
-
-const NAV_LINKS = [
-  {
-    href: "/faelle",
-    label: tr("Fälle", "Кейсы"),
-  },
-  {
-    href: "/simulation",
-    label: tr("Simulation", "Симуляция"),
-  },
-  {
-    href: "/arztbrief",
-    label: "Arztbrief",
-  },
-  {
-    href: "/woerter",
-    label: tr("Wörter", "Слова"),
-  },
-  {
-    href: "/fachsprache",
-    label: "Fach ↔ Patient",
-  },
-  {
-    href: "/redemittel",
-    label: "Redemittel",
-  },
-  {
-    href: "/pruefung",
-    label: tr("Prüfung", "Экзамен"),
-  },
-  {
-    href: "/pro",
-    label: tr("Tariflar", "Тарифы"),
-  },
-];
 
 function LangSwitch() {
   return (
     <div
-      className="flex rounded-lg border border-slate-200 p-0.5 text-xs font-semibold dark:border-slate-700"
+      className="flex rounded-lg border border-white/15 p-0.5 text-xs font-semibold"
       role="group"
       aria-label="Til / Язык"
     >
@@ -76,9 +42,7 @@ function LangSwitch() {
           onClick={() => l.id !== LANG && setLang(l.id)}
           className={cx(
             "rounded-md px-2 py-1",
-            l.id === LANG
-              ? "bg-teal-600 text-white"
-              : "text-slate-600 hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-800",
+            l.id === LANG ? "bg-teal-500 text-white" : "text-white/60 hover:bg-white/10 hover:text-white",
           )}
           aria-pressed={l.id === LANG}
           title={l.label}
@@ -90,88 +54,216 @@ function LangSwitch() {
   );
 }
 
-export function Header() {
-  let e = usePathname(),
-    { user: t } = useApp(),
-    [a, n] = useState(false);
-  useEffect(() => n(false), [e]);
-  let i = (l) => e === l || e.startsWith(`${l}/`);
+// Yon menyu bo‘limlari (Claude / ChatGPT / Telegram uslubida ustun bo‘lib)
+const NAV_GROUPS = [
+  [
+    { href: "/", icon: "🏠", label: tr("Bosh sahifa", "Главная") },
+    { href: "/faelle", icon: "🩺", label: tr("Fälle", "Кейсы") },
+    { href: "/simulation", icon: "💬", label: tr("Simulation", "Симуляция") },
+    { href: "/arztbrief", icon: "✍️", label: "Arztbrief" },
+    { href: "/pruefung", icon: "🎯", label: tr("Prüfung", "Экзамен") },
+  ],
+  [
+    { href: "/woerter", icon: "📚", label: tr("Wörter", "Слова") },
+    { href: "/fachsprache", icon: "🔁", label: "Fach ↔ Patient" },
+    { href: "/redemittel", icon: "🗣️", label: "Redemittel" },
+  ],
+  [
+    { href: "/pro", icon: "💳", label: tr("Tariflar", "Тарифы") },
+    { href: "/fsp", icon: "🏛️", label: tr("FSP haqida", "Об FSP") },
+  ],
+];
+
+const GROUP_TITLES = [tr("Mashq", "Практика"), tr("O‘rganish", "Изучение"), tr("Boshqa", "Прочее")];
+
+function Logo() {
   return (
-    <header className="sticky top-0 z-40 border-b border-slate-200 bg-white/85 backdrop-blur dark:border-slate-800 dark:bg-slate-950/85">
-      <div className="container-app flex h-16 items-center justify-between gap-3">
-        <Link href="/" className="flex items-center gap-2.5">
-          <span className="grid h-9 w-9 place-items-center rounded-xl bg-teal-600 text-sm font-extrabold text-white">
-            O
-          </span>
-          <span className="leading-tight">
-            <span className="block text-sm font-semibold text-slate-900 dark:text-white">OsonFSP</span>
-            <span className="block text-xs muted">{tr("Uzbek Doctors", "FSP для врачей")}</span>
-          </span>
-        </Link>
-        <nav className="hidden items-center gap-1 lg:flex" aria-label={tr("Asosiy menyu", "Главное меню")}>
-          {NAV_LINKS.map((l) => (
-            <Link
-              key={l.href}
-              href={l.href}
-              className={cx(
-                "rounded-lg px-3 py-2 text-sm font-medium transition",
-                i(l.href)
-                  ? "bg-teal-50 text-teal-700 dark:bg-teal-950 dark:text-teal-300"
-                  : "text-slate-600 hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-800",
-              )}
-            >
-              {l.label}
-            </Link>
-          ))}
-        </nav>
-        <div className="flex items-center gap-1.5">
-          <LangSwitch />
-          <ThemeToggle />
-          <Link href={t ? "/dashboard" : "/login"} className="btn-primary hidden sm:inline-flex">
-            {t ? "Dashboard" : tr("Kirish", "Войти")}
-          </Link>
-          <button
-            className="btn-ghost px-2.5 lg:hidden"
-            onClick={() => n((l) => !l)}
-            aria-label={tr("Menyu", "Меню")}
-            aria-expanded={a}
-          >
-            <span aria-hidden className="text-lg">
-              {a ? "✕" : "☰"}
-            </span>
-          </button>
-        </div>
-      </div>
-      {a && (
-        <nav
-          className="border-t border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-950 lg:hidden"
-          aria-label={tr("Mobil menyu", "Мобильное меню")}
+    <Link href="/" className="flex items-center gap-2.5">
+      <span className="grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-teal-500 text-sm font-extrabold text-white">
+        O
+      </span>
+      <span className="leading-tight">
+        <span className="block text-sm font-semibold text-white">OsonFSP</span>
+        <span className="block text-xs text-white/50">{tr("Uzbek Doctors", "FSP для врачей")}</span>
+      </span>
+    </Link>
+  );
+}
+
+// "Yon panel" belgisi (Claude/ChatGPT dagi kabi)
+function SidebarIcon() {
+  return (
+    <svg
+      viewBox="0 0 20 20"
+      className="h-5 w-5"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.6"
+      aria-hidden
+    >
+      <rect x="2.5" y="3.5" width="15" height="13" rx="2.5" />
+      <path d="M7.5 3.5v13" />
+    </svg>
+  );
+}
+
+function Sidebar({ onClose }) {
+  let path = usePathname(),
+    { user } = useApp(),
+    active = (h) => (h === "/" ? path === "/" : path === h || path.startsWith(`${h}/`));
+  return (
+    <div className="flex h-full flex-col bg-[#0b1f26] text-white">
+      <div className="flex h-14 shrink-0 items-center justify-between gap-2 px-4">
+        <Logo />
+        <button
+          onClick={onClose}
+          className="grid h-8 w-8 place-items-center rounded-lg text-white/60 hover:bg-white/10 hover:text-white"
+          aria-label={tr("Menyuni yopish", "Закрыть меню")}
+          title={tr("Menyuni yopish", "Закрыть меню")}
         >
-          <div className="container-app grid gap-1 py-3">
-            {[
-              {
-                href: t ? "/dashboard" : "/login",
-                label: t ? "Dashboard" : tr("Kirish", "Войти"),
-              },
-              ...NAV_LINKS,
-            ].map((l) => (
+          <SidebarIcon />
+        </button>
+      </div>
+      <nav className="flex-1 overflow-y-auto px-3 pb-4" aria-label={tr("Asosiy menyu", "Главное меню")}>
+        {NAV_GROUPS.map((g, gi) => (
+          <div key={gi} className="mt-4 first:mt-2">
+            <p className="px-3 pb-1 text-[11px] font-semibold uppercase tracking-wider text-white/40">
+              {GROUP_TITLES[gi]}
+            </p>
+            {g.map((l) => (
               <Link
                 key={l.href}
                 href={l.href}
                 className={cx(
-                  "rounded-lg px-3 py-2.5 text-sm font-medium",
-                  i(l.href)
-                    ? "bg-teal-50 text-teal-700 dark:bg-teal-950 dark:text-teal-300"
-                    : "hover:bg-slate-100 dark:hover:bg-slate-800",
+                  "flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium transition",
+                  active(l.href)
+                    ? "bg-teal-500/15 text-white shadow-[inset_3px_0_0_#14b8a6]"
+                    : "text-white/70 hover:bg-white/5 hover:text-white",
                 )}
+                aria-current={active(l.href) ? "page" : undefined}
               >
+                <span className="w-5 text-center" aria-hidden>
+                  {l.icon}
+                </span>
                 {l.label}
               </Link>
             ))}
           </div>
-        </nav>
+        ))}
+      </nav>
+      <div className="shrink-0 space-y-3 border-t border-white/10 p-3">
+        <Link
+          href={user ? "/dashboard" : "/login"}
+          className={cx(
+            "flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium",
+            active("/dashboard") || active("/login")
+              ? "bg-teal-500/15 text-white"
+              : "text-white/80 hover:bg-white/5",
+          )}
+        >
+          <span className="grid h-7 w-7 shrink-0 place-items-center rounded-full bg-teal-500/20 text-xs font-bold text-teal-200">
+            {user ? (user.name.trim()[0] ?? "?").toUpperCase() : "→"}
+          </span>
+          <span className="truncate">{user ? user.name : tr("Kirish", "Войти")}</span>
+          {user && <span className="ml-auto text-xs text-white/40">Dashboard</span>}
+        </Link>
+        <div className="flex items-center justify-between px-1">
+          <LangSwitch />
+          <ThemeToggle />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function readOpen() {
+  try {
+    return localStorage.getItem(SIDEBAR_KEY) !== "closed";
+  } catch {
+    return true;
+  }
+}
+
+export function AppShell({ children }) {
+  let path = usePathname(),
+    { user } = useApp(),
+    // Kompyuterda: yon panel ochiq/yopiq (eslab qolinadi). Telefonda: ustiga chiqadigan menyu.
+    [desktopOpen, setDesktopOpen] = useState(readOpen),
+    [mobileOpen, setMobileOpen] = useState(false);
+  useEffect(() => setMobileOpen(false), [path]);
+  useEffect(() => {
+    try {
+      localStorage.setItem(SIDEBAR_KEY, desktopOpen ? "open" : "closed");
+    } catch {}
+  }, [desktopOpen]);
+  useEffect(() => {
+    if (!mobileOpen) return;
+    let k = (e) => e.key === "Escape" && setMobileOpen(false);
+    window.addEventListener("keydown", k);
+    return () => window.removeEventListener("keydown", k);
+  }, [mobileOpen]);
+  let toggle = () =>
+    window.matchMedia("(min-width: 1024px)").matches ? setDesktopOpen((o) => !o) : setMobileOpen(true);
+  return (
+    <div className="min-h-screen">
+      {/* Kompyuter: chapda qotirilgan panel */}
+      <aside
+        className={cx(
+          "fixed inset-y-0 left-0 z-40 hidden w-64 transition-transform duration-200 lg:block",
+          !desktopOpen && "-translate-x-full",
+        )}
+        aria-hidden={!desktopOpen}
+      >
+        <Sidebar onClose={() => setDesktopOpen(false)} />
+      </aside>
+      {/* Telefon: ustiga chiqadigan menyu */}
+      {mobileOpen && (
+        <div className="fixed inset-0 z-50 lg:hidden" role="dialog" aria-modal="true">
+          <button
+            className="absolute inset-0 bg-black/50"
+            onClick={() => setMobileOpen(false)}
+            aria-label={tr("Menyuni yopish", "Закрыть меню")}
+          />
+          <div className="absolute inset-y-0 left-0 w-72 max-w-[85vw] shadow-2xl">
+            <Sidebar onClose={() => setMobileOpen(false)} />
+          </div>
+        </div>
       )}
-    </header>
+      <div
+        className={cx(
+          "flex min-h-screen flex-col transition-[padding] duration-200",
+          desktopOpen && "lg:pl-64",
+        )}
+      >
+        <header className="sticky top-0 z-30 flex h-14 items-center gap-3 border-b border-teal-900/10 bg-white/70 px-4 backdrop-blur dark:border-white/5 dark:bg-slate-950/70">
+          <button
+            onClick={toggle}
+            className={cx(
+              "grid h-9 w-9 place-items-center rounded-lg text-slate-600 hover:bg-slate-900/5 dark:text-slate-300 dark:hover:bg-white/10",
+              desktopOpen && "lg:hidden",
+            )}
+            aria-label={tr("Menyuni ochish", "Открыть меню")}
+            title={tr("Menyuni ochish", "Открыть меню")}
+          >
+            <SidebarIcon />
+          </button>
+          <Link href="/" className={cx("flex items-center gap-2", desktopOpen && "lg:hidden")}>
+            <span className="grid h-8 w-8 place-items-center rounded-lg bg-teal-600 text-xs font-extrabold text-white">
+              O
+            </span>
+            <span className="text-sm font-semibold text-slate-900 dark:text-white">OsonFSP</span>
+          </Link>
+          <div className="ml-auto">
+            <Link href={user ? "/dashboard" : "/login"} className="btn-primary px-3 py-1.5">
+              {user ? "Dashboard" : tr("Kirish", "Войти")}
+            </Link>
+          </div>
+        </header>
+        <TrialBar />
+        <main className="flex-1">{children}</main>
+        <Footer />
+      </div>
+    </div>
   );
 }
 

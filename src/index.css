@@ -144,13 +144,13 @@ header.sticky {
     @apply btn bg-teal-600 text-white hover:bg-teal-700;
   }
   .btn-outline {
-    @apply btn border border-slate-300 bg-white hover:bg-slate-50 dark:border-slate-700 dark:bg-slate-900 dark:hover:bg-slate-800;
+    @apply btn border border-slate-300 bg-white text-slate-800 hover:bg-slate-50 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:hover:bg-slate-800;
   }
   .btn-ghost {
     @apply btn hover:bg-slate-100 dark:hover:bg-slate-800;
   }
   .input {
-    @apply w-full rounded-xl border border-slate-300 bg-white px-3 py-2.5 text-sm outline-none transition placeholder:text-slate-400 focus:border-teal-500 focus:ring-2 focus:ring-teal-500/20 dark:border-slate-700 dark:bg-slate-900;
+    @apply w-full rounded-xl border border-slate-300 bg-white px-3 py-2.5 text-sm text-slate-800 outline-none dark:text-slate-100 transition placeholder:text-slate-400 focus:border-teal-500 focus:ring-2 focus:ring-teal-500/20 dark:border-slate-700 dark:bg-slate-900;
   }
   .label {
     @apply mb-1 block text-sm font-medium text-slate-700 dark:text-slate-300;

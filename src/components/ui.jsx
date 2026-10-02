@@ -91,17 +91,27 @@ export function StatCard({ icon: e, label: t, value: a, hint: n, progress: i }) 
 
 export function PageHeader({ eyebrow: e, title: t, subtitle: a, children: n }) {
   return (
-    <div className="mb-6 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
-      <div>
-        {e && (
-          <p className="text-xs font-semibold uppercase tracking-wider text-teal-600 dark:text-teal-400">
-            {e}
-          </p>
+    <div className="relative mb-6 overflow-hidden rounded-2xl bg-[#0b1f26] px-5 py-6 text-white shadow-lg shadow-teal-950/10 sm:px-7 sm:py-8">
+      <div
+        className="pointer-events-none absolute inset-0"
+        style={{
+          background:
+            "radial-gradient(520px 220px at 0% 0%, rgba(45,212,191,0.22), transparent 70%), radial-gradient(420px 220px at 100% 120%, rgba(56,189,248,0.14), transparent 70%)",
+        }}
+        aria-hidden
+      />
+      <div className="relative flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+        <div>
+          {e && <p className="text-xs font-semibold uppercase tracking-wider text-teal-300">{e}</p>}
+          <h1 className="mt-1 text-2xl font-bold tracking-tight text-white sm:text-3xl">{t}</h1>
+          {a && <p className="mt-2 max-w-2xl text-white/70">{a}</p>}
+        </div>
+        {n && (
+          <div className="flex flex-wrap gap-2 [&_.btn-ghost:hover]:bg-white/10 [&_.btn-ghost]:text-white">
+            {n}
+          </div>
         )}
-        <h1 className="mt-1 text-2xl font-bold tracking-tight sm:text-3xl">{t}</h1>
-        {a && <p className="mt-2 max-w-2xl muted">{a}</p>}
       </div>
-      {n && <div className="flex flex-wrap gap-2">{n}</div>}
     </div>
   );
 }

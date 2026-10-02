@@ -1,7 +1,6 @@
 import { createRoot } from "react-dom/client";
 import { Router } from "./App";
-import { Footer, Header } from "./components/Layout";
-import { TrialBar } from "./components/Paywall";
+import { AppShell } from "./components/Layout";
 import { AppProvider } from "./state/AppContext";
 import { trackPage } from "./lib/analytics";
 import { subscribe } from "./lib/router";
@@ -30,14 +29,9 @@ window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", app
 
 createRoot(document.getElementById("app")).render(
   <AppProvider>
-    <div className="flex min-h-screen flex-col">
-      <Header />
-      <TrialBar />
-      <main className="flex-1">
-        <Router />
-      </main>
-      <Footer />
-    </div>
+    <AppShell>
+      <Router />
+    </AppShell>
   </AppProvider>,
 );
 

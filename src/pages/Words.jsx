@@ -96,10 +96,16 @@ export function WordsPage() {
               return (
                 <article
                   key={b.id}
-                  className={cx("card flex flex-col p-4", y && "border-emerald-300 dark:border-emerald-900")}
+                  className={cx(
+                    "card flex min-w-0 flex-col p-4",
+                    y && "border-emerald-300 dark:border-emerald-900",
+                  )}
                 >
                   <div className="flex items-start justify-between gap-2">
-                    <h2 className="flex items-center gap-1 font-semibold">
+                    <h2
+                      lang="de"
+                      className="flex min-w-0 items-center gap-1 font-semibold [overflow-wrap:anywhere] [hyphens:auto]"
+                    >
                       {b.de}
                       <Speak text={b.de} />
                     </h2>
