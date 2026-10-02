@@ -49,6 +49,10 @@ const NAV_LINKS = [
     label: "Fach ↔ Patient",
   },
   {
+    href: "/redemittel",
+    label: "Redemittel",
+  },
+  {
     href: "/pruefung",
     label: "Prüfung",
   },

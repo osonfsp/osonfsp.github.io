@@ -24,7 +24,19 @@ const FEATURES = [
       href: "/pruefung",
       icon: "\uD83C\uDFAF",
       title: "Prüfung Simulation",
-      text: "FSP formatidagi 3 qismli mashq imtihoni — taymer bilan.",
+      text: "FSP formatidagi 3 qismli mashq imtihoni — taymer va „bestanden / nicht bestanden“ xulosasi bilan.",
+    },
+    {
+      href: "/redemittel",
+      icon: "🗣️",
+      title: "Redemittel",
+      text: "Imtihonda kerak bo‘ladigan tayyor iboralar — 3 qism bo‘yicha, tarjima va talaffuz bilan.",
+    },
+    {
+      href: "/fsp",
+      icon: "🏛️",
+      title: "FSP va Approbation",
+      text: "Germaniya tizimi: B2 → FSP (C1) → Kenntnisprüfung → Approbation. Imtihon qoidalari.",
     },
   ],
   STEPS = [
@@ -131,7 +143,7 @@ export function HomePage() {
       <section className="container-app py-14">
         <h2 className="text-2xl font-bold tracking-tight">Asosiy bo‘limlar</h2>
         <p className="mt-2 muted">Har bir bo‘lim FSP imtihonining aniq qismiga tayyorlaydi.</p>
-        <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {FEATURES.map((e) => (
             <Link key={e.href} href={e.href} className="card card-hover group">
               <span className="text-3xl" aria-hidden>

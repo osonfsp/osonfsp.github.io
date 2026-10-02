@@ -10,6 +10,7 @@ import { ExamPage } from "./pages/Exam";
 import { FachsprachePage } from "./pages/Fachsprache";
 import { HomePage } from "./pages/Home";
 import { LoginPage } from "./pages/Login";
+import { RedemittelPage } from "./pages/Redemittel";
 import { SimulationPage } from "./pages/Simulation";
 import { WordsPage } from "./pages/Words";
 
@@ -37,6 +38,7 @@ const ROUTES = [
   [/^\/arztbrief\/[^/]+$/, ArztbriefPage],
   [/^\/woerter$/, WordsPage],
   [/^\/fachsprache$/, FachsprachePage],
+  [/^\/redemittel$/, RedemittelPage],
   [/^\/pruefung$/, ExamPage],
   [/^\/admin$/, AdminPage],
 ];
