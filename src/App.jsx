@@ -1,4 +1,5 @@
 import { Link } from "./components/Link";
+import { MaterialsGate } from "./components/Paywall";
 import { usePathname } from "./lib/router";
 import { AboutFspPage } from "./pages/AboutFsp";
 import { AdminPage } from "./pages/Admin";
@@ -45,8 +46,17 @@ const ROUTES = [
   [/^\/admin$/, AdminPage],
 ];
 
+const MATERIALS = /^\/(faelle|simulation|arztbrief|woerter|fachsprache|redemittel)(\/|$)/;
+
 export function Router() {
   const pathname = usePathname();
   const Page = ROUTES.find(([re]) => re.test(pathname))?.[1] ?? NotFoundPage;
+  // O‘quv materiallari: 1 kunlik bepul sinov yoki faol tarif kerak
+  if (MATERIALS.test(pathname))
+    return (
+      <MaterialsGate>
+        <Page key={pathname} />
+      </MaterialsGate>
+    );
   return <Page key={pathname} />;
 }

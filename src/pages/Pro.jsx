@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "../components/Link";
 import { PageHeader } from "../components/ui";
 import { trackEvent } from "../lib/analytics";
-import { FREE_LIMIT, PRACTICE, usePlan } from "../lib/plan";
+import { FREE_LIMITS, TRIAL_HOURS, usePlan } from "../lib/plan";
 import { cx } from "../lib/utils";
 
 const OFFERS = [
@@ -10,12 +10,11 @@ const OFFERS = [
     id: "free",
     name: "Bepul",
     price: "$0",
-    note: "doimiy",
+    note: "sinov",
     items: [
-      "Fälle, lug‘at, Redemittel, kartochkalar — cheklovsiz",
-      `Patienten-Simulation — ${FREE_LIMIT} marta`,
-      `Arztbrief tekshiruvi — ${FREE_LIMIT} marta`,
-      `Prüfung simulyatsiyasi — ${FREE_LIMIT} marta`,
+      `Barcha materiallar — 1 kun (${TRIAL_HOURS} soat)`,
+      "Fälle, Simulation, Arztbrief, lug‘at, Redemittel",
+      `Prüfung simulyatsiyasi — ${FREE_LIMITS.exam} marta`,
     ],
   },
   {
@@ -24,8 +23,8 @@ const OFFERS = [
     price: "$9",
     note: "7 kun",
     items: [
-      "Bepul tarifdagi hammasi",
-      "Barcha mashqlar — cheklovsiz",
+      "Barcha materiallar — 7 kun",
+      "Prüfung simulyatsiyasi — cheklovsiz",
       "Imtihon oldidan jadal tayyorgarlik uchun",
     ],
   },
@@ -36,22 +35,23 @@ const OFFERS = [
     note: "30 kun",
     featured: true,
     items: [
-      "Bepul tarifdagi hammasi",
-      "Barcha mashqlar — cheklovsiz",
+      "Barcha materiallar — 30 kun",
+      "Prüfung simulyatsiyasi — cheklovsiz",
       "Haftalikdan 2 baravardan ko‘proq tejamli",
     ],
   },
 ];
 
 export function ProPage() {
-  let { plan, left } = usePlan(),
+  let { plan, left, limit, trialActive, trialEnd } = usePlan(),
+    hours = Math.max(0, Math.ceil((trialEnd - new Date()) / 36e5)),
     [asked, setAsked] = useState(null);
   return (
     <div className="page max-w-5xl">
       <PageHeader
         eyebrow="Tariflar"
         title="OsonFSP tariflari"
-        subtitle="O‘qish materiallari doim bepul. Amaliy mashqlar bepul rejimda 3 martadan ochiq — keyin cheklovsiz davom etish uchun tarif tanlang."
+        subtitle={`Bepul sinovda barcha materiallar ${TRIAL_HOURS} soat ochiq va ${FREE_LIMITS.exam} ta imtihon topshirish mumkin. Keyin davom etish uchun tarif tanlang.`}
       />
       {plan ? (
         <p className="card mb-4 border-emerald-300 bg-emerald-50 text-sm dark:border-emerald-900 dark:bg-emerald-950/30">
@@ -60,17 +60,20 @@ export function ProPage() {
         </p>
       ) : (
         <div className="card mb-4 text-sm">
-          <h2 className="section-title">Bepul urinishlaringiz</h2>
-          <div className="grid gap-2 sm:grid-cols-3">
-            {Object.entries(PRACTICE).map(([k, v]) => (
-              <div key={k} className="rounded-xl bg-slate-50 p-3 dark:bg-slate-800/60">
-                <div className="text-xs muted">{v}</div>
-                <b className="text-lg">
-                  {left(k)} / {FREE_LIMIT}
-                </b>{" "}
-                <span className="text-xs muted">qoldi</span>
-              </div>
-            ))}
+          <h2 className="section-title">Bepul sinovingiz</h2>
+          <div className="grid gap-2 sm:grid-cols-2">
+            <div className="rounded-xl bg-slate-50 p-3 dark:bg-slate-800/60">
+              <div className="text-xs muted">Materiallar</div>
+              <b className="text-lg">{trialActive ? `${hours} soat` : "tugadi"}</b>{" "}
+              {trialActive && <span className="text-xs muted">qoldi</span>}
+            </div>
+            <div className="rounded-xl bg-slate-50 p-3 dark:bg-slate-800/60">
+              <div className="text-xs muted">Prüfung simulyatsiyasi</div>
+              <b className="text-lg">
+                {left("exam")} / {limit("exam")}
+              </b>{" "}
+              <span className="text-xs muted">qoldi</span>
+            </div>
           </div>
         </div>
       )}
@@ -101,7 +104,7 @@ export function ProPage() {
             </ul>
             {o.id === "free" ? (
               <Link href="/faelle" className="btn-outline mt-5 w-full">
-                Bepul boshlash
+                Sinov
               </Link>
             ) : (
               <button

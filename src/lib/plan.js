@@ -1,13 +1,12 @@
 import { useSyncExternalStore } from "react";
 import { storage } from "./storage";
 
-// Bepul rejimda har bir amaliy mashq turi FREE_LIMIT martagacha ochiq.
-// Haftalik/oylik tarif faol bo‘lsa — cheklovsiz.
-export const FREE_LIMIT = 3;
+// Bepul rejim: birinchi kirishdan boshlab TRIAL_HOURS soat davomida barcha materiallar ochiq,
+// Prüfung simulyatsiyasi esa FREE_LIMITS bo‘yicha. Haftalik/oylik tarif faol bo‘lsa — hammasi cheklovsiz.
+export const TRIAL_HOURS = 24;
+export const FREE_LIMITS = { exam: 1 };
 
 export const PRACTICE = {
-  simulation: "Patienten-Simulation",
-  arztbrief: "Arztbrief tekshiruvi",
   exam: "Prüfung simulyatsiyasi",
 };
 
@@ -18,6 +17,7 @@ export const PLANS = [
 
 const USAGE_KEY = "fsp.usage",
   PLAN_KEY = "fsp.plan",
+  TRIAL_KEY = "fsp.trial",
   listeners = new Set(),
   notify = () => listeners.forEach((f) => f());
 
@@ -25,13 +25,24 @@ let snapshot = null;
 function read() {
   let usage = storage.get(USAGE_KEY, {}),
     plan = storage.get(PLAN_KEY, null),
-    active = !!plan && new Date(plan.until) > new Date();
-  return { usage, plan: active ? plan : null };
+    trialStart = storage.get(TRIAL_KEY, null);
+  if (!trialStart && typeof window !== "undefined") {
+    trialStart = new Date().toISOString();
+    storage.set(TRIAL_KEY, trialStart);
+  }
+  let trialEnd = new Date(new Date(trialStart).getTime() + TRIAL_HOURS * 36e5);
+  return {
+    usage,
+    plan: plan && new Date(plan.until) > new Date() ? plan : null,
+    trialEnd,
+  };
 }
 
 function subscribe(f) {
   listeners.add(f);
-  return () => listeners.delete(f);
+  // Sinov muddati tugashi sahifani yangilamasdan ham sezilsin
+  let t = setInterval(() => ((snapshot = null), f()), 60e3);
+  return () => (listeners.delete(f), clearInterval(t));
 }
 
 function getSnapshot() {
@@ -39,13 +50,19 @@ function getSnapshot() {
 }
 
 export function usePlan() {
-  let { usage, plan } = useSyncExternalStore(subscribe, getSnapshot, getSnapshot),
-    used = (kind) => usage[kind] ?? 0;
+  let { usage, plan, trialEnd } = useSyncExternalStore(subscribe, getSnapshot, getSnapshot),
+    trialActive = trialEnd > new Date(),
+    used = (kind) => usage[kind] ?? 0,
+    limit = (kind) => FREE_LIMITS[kind] ?? 0;
   return {
     plan,
+    trialActive,
+    trialEnd,
+    hasMaterials: !!plan || trialActive,
     used,
-    left: (kind) => (plan ? Infinity : Math.max(0, FREE_LIMIT - used(kind))),
-    canUse: (kind) => !!plan || used(kind) < FREE_LIMIT,
+    limit,
+    left: (kind) => (plan ? Infinity : Math.max(0, limit(kind) - used(kind))),
+    canUse: (kind) => !!plan || used(kind) < limit(kind),
   };
 }
 

@@ -6,8 +6,6 @@ import { cases, getCase } from "../data/index";
 import { evaluateAnamnese } from "../lib/evaluation";
 import { useRouter, useSearchParams } from "../lib/router";
 import { useApp } from "../state/AppContext";
-import { Paywall, FreeLeft } from "../components/Paywall";
-import { consume, usePlan } from "../lib/plan";
 
 function SimulationView() {
   let e = useSearchParams(),
@@ -19,16 +17,14 @@ function SimulationView() {
     [r, c] = useState("chat"),
     [h, b] = useState(""),
     [y, f] = useState(false),
-    [p, A] = useState(null),
-    { canUse: CU } = usePlan();
+    [p, A] = useState(null);
   useEffect(() => {
     (s([]), c("chat"), b(""), A(null));
   }, [i.id]);
   async function w() {
     f(true);
     let g = await evaluateAnamnese(i, l, h);
-    (consume("simulation"),
-      A(g),
+    (A(g),
       c("result"),
       f(false),
       a(
@@ -48,7 +44,6 @@ function SimulationView() {
         title="Bemor bilan anamnez"
         subtitle="Siz — Arzt, virtual bemor — Patient. Bemor hamma narsani biladi, lekin faqat siz so‘ragan narsani aytadi."
       >
-        <FreeLeft kind="simulation" />
         <select
           className="input w-auto min-w-[240px]"
           value={i.id}
@@ -64,8 +59,7 @@ function SimulationView() {
           ))}
         </select>
       </PageHeader>
-      {r === "chat" && !CU("simulation") && <Paywall kind="simulation" />}
-      {r === "chat" && CU("simulation") && (
+      {r === "chat" && (
         <div className="grid gap-4 lg:grid-cols-[1fr_300px]">
           <PatientChat caseData={i} messages={l} onMessages={s} />
           <aside className="space-y-4">
