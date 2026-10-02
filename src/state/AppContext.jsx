@@ -55,6 +55,15 @@ export function AppProvider({ children: e }) {
       (storage.remove(USER_KEY), i(null));
     }, []),
     b = useCallback(() => r(() => EMPTY_PROGRESS), [r]),
+    x = useCallback(
+      (m, v) => {
+        if (v) (storage.set(USER_KEY, v), i(v));
+        r(() =>
+          withActivity({ ...EMPTY_PROGRESS, ...m }, "Progress boshqa qurilmadan ko‘chirildi", "/dashboard"),
+        );
+      },
+      [r],
+    ),
     y = useCallback(
       (m) =>
         r((v) => {
@@ -145,6 +154,7 @@ export function AppProvider({ children: e }) {
         login: c,
         logout: h,
         resetProgress: b,
+        importProgress: x,
         toggleCase: y,
         toggleWord: f,
         togglePair: p,
@@ -152,7 +162,7 @@ export function AppProvider({ children: e }) {
         addSimulation: w,
         addExam: D,
       }),
-      [t, n, l, g, c, h, b, y, f, p, A, w, D],
+      [t, n, l, g, c, h, b, x, y, f, p, A, w, D],
     );
   return <AppContext.Provider value={d}>{e}</AppContext.Provider>;
 }

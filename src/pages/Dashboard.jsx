@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { Link } from "../components/Link";
+import { ProgressTransfer } from "../components/ProgressTransfer";
 import {
   ConfirmButton,
   PageHeader,
@@ -194,6 +195,7 @@ export function DashboardPage() {
           })}
         </div>
       </div>
+      <ProgressTransfer />
     </div>
   );
 }
