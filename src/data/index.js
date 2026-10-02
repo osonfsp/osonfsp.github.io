@@ -14,6 +14,7 @@ export const CASE_CATEGORIES = [
     "Nephrologie",
     "Endokrinologie",
     "Chirurgie",
+    "Urologie",
     "Allgemeinmedizin",
   ],
   WORD_CATEGORIES = [

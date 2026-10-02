@@ -974,5 +974,989 @@
       "EKG",
       "Kreatinin"
     ]
+  },
+  {
+    "id": "c11",
+    "title": "Lungenembolie",
+    "category": "Pneumologie",
+    "difficulty": "schwer",
+    "patient": {
+      "name": "Sabine Hoffmann",
+      "age": 34,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Plötzliche Atemnot und Brustschmerzen beim Einatmen"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit ca. 3 Stunden plötzlich aufgetretene Dyspnoe und atemabhängige, stechende Thoraxschmerzen rechts, begleitet von Tachykardie und einmaliger Hämoptyse. Seit einer Woche Schwellung und Schmerzen in der linken Wade nach einem Langstreckenflug.",
+      "vorerkrankungen": "Keine relevanten Vorerkrankungen. Z. n. Sectio caesarea vor 4 Jahren.",
+      "medikamente": "Orales Kontrazeptivum (Ethinylestradiol/Levonorgestrel) 1-0-0",
+      "allergien": "Keine bekannten Allergien",
+      "familienanamnese": "Mutter mit tiefer Beinvenenthrombose mit 45 Jahren.",
+      "sozialanamnese": "Ledig, Unternehmensberaterin, viel beruflich unterwegs. Nikotinabusus 10 Zigaretten/Tag seit 15 Jahren, Alkohol gelegentlich."
+    },
+    "sprache": [
+      {
+        "patient": "Ich bekomme plötzlich ganz schlecht Luft.",
+        "fach": "Die Patientin berichtet über akut aufgetretene Dyspnoe."
+      },
+      {
+        "patient": "Es sticht in der Brust, wenn ich einatme.",
+        "fach": "Es bestehen atemabhängige, stechende Thoraxschmerzen."
+      },
+      {
+        "patient": "Ich habe etwas Blut abgehustet.",
+        "fach": "Es kam zu einer einmaligen Hämoptyse."
+      },
+      {
+        "patient": "Mein linkes Bein ist seit dem Flug dick.",
+        "fach": "Seit einem Langstreckenflug besteht eine Schwellung des linken Unterschenkels."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Lungenembolie",
+        "patient": "Blutgerinnsel in der Lunge",
+        "uz": "o‘pka arteriyasi emboliyasi"
+      },
+      {
+        "de": "Hämoptyse",
+        "patient": "Bluthusten",
+        "uz": "qon tupurish"
+      },
+      {
+        "de": "Tachykardie",
+        "patient": "Herzrasen",
+        "uz": "yurak urishining tezlashishi"
+      },
+      {
+        "de": "atemabhängig",
+        "patient": "beim Atmen stärker",
+        "uz": "nafas bilan bog‘liq"
+      },
+      {
+        "de": "Antikoagulation",
+        "patient": "Blutverdünnung",
+        "uz": "qon ivishiga qarshi davo"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich bekomme ganz plötzlich so schlecht Luft, und es sticht in der Brust.",
+      "answers": {
+        "beginn": "Das hat vor ungefähr drei Stunden ganz plötzlich angefangen, als ich in der Küche stand.",
+        "lokalisation": "Rechts in der Brust, ungefähr hier unten an den Rippen.",
+        "charakter": "Es sticht, vor allem wenn ich tief einatme. Ungefähr eine 6 von 10.",
+        "ausstrahlung": "Nein, das bleibt eigentlich hier rechts.",
+        "begleit": "Mein Herz rast, und ich habe einmal etwas Blut abgehustet. Außerdem ist mein linkes Bein seit einer Woche dick und tut in der Wade weh, seit dem Flug aus Bangkok.",
+        "vegetativ": "Fieber habe ich nicht. Appetit, Schlaf, Stuhlgang und Wasserlassen sind normal.",
+        "vorerkrankungen": "Eigentlich bin ich gesund. Vor vier Jahren hatte ich einen Kaiserschnitt.",
+        "medikamente": "Ich nehme nur die Pille.",
+        "allergien": "Nein, Allergien habe ich keine.",
+        "familie": "Meine Mutter hatte mit 45 eine Thrombose im Bein.",
+        "sozial": "Ich bin ledig und arbeite als Unternehmensberaterin, ich fliege sehr viel.",
+        "noxen": "Ich rauche etwa zehn Zigaretten am Tag, seit 15 Jahren. Alkohol nur selten, Drogen nie."
+      }
+    },
+    "verdachtsdiagnose": "Lungenembolie bei V. a. tiefe Beinvenenthrombose links",
+    "diagnoseKeywords": [
+      "lungenembolie",
+      "lungenarterienembolie",
+      "embolie",
+      "lae"
+    ],
+    "differenzialdiagnosen": [
+      "Pneumothorax",
+      "Pneumonie",
+      "Akutes Koronarsyndrom",
+      "Pleuritis"
+    ],
+    "untersuchungen": [
+      "D-Dimere",
+      "CT-Angiographie",
+      "EKG",
+      "Blutgasanalyse",
+      "Kompressionssonographie"
+    ]
+  },
+  {
+    "id": "c12",
+    "title": "COPD-Exazerbation",
+    "category": "Pneumologie",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Werner Schulz",
+      "age": 67,
+      "gender": "männlich",
+      "hauptbeschwerde": "Zunehmende Atemnot und Husten mit gelbem Auswurf"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 4 Tagen zunehmende Belastungsdyspnoe, inzwischen Ruhedyspnoe, verstärkter produktiver Husten mit gelb-grünlichem Sputum und subfebrilen Temperaturen bis 38,0 °C. Exspiratorisches Giemen.",
+      "vorerkrankungen": "COPD GOLD 3 seit 8 Jahren, arterielle Hypertonie, Z. n. Leistenhernien-OP rechts.",
+      "medikamente": "Tiotropium/Olodaterol 2 Hübe 1-0-0, Salbutamol-Spray bei Bedarf, Amlodipin 5 mg 1-0-0",
+      "allergien": "Keine bekannten Allergien",
+      "familienanamnese": "Vater an Lungenkrebs verstorben.",
+      "sozialanamnese": "Verwitwet, lebt allein, Rentner (ehemals Bauarbeiter). Nikotinabusus 50 pack years, weiterhin aktiv rauchend. Alkohol: 2 Bier/Tag."
+    },
+    "sprache": [
+      {
+        "patient": "Ich kriege seit ein paar Tagen immer schlechter Luft.",
+        "fach": "Der Patient berichtet über seit vier Tagen progrediente Dyspnoe."
+      },
+      {
+        "patient": "Ich huste viel und es kommt gelber Schleim.",
+        "fach": "Es besteht ein produktiver Husten mit gelblichem Sputum."
+      },
+      {
+        "patient": "Beim Atmen pfeift es.",
+        "fach": "Auskultatorisch zeigt sich ein exspiratorisches Giemen."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Exazerbation",
+        "patient": "Verschlechterung",
+        "uz": "kasallikning kuchayishi"
+      },
+      {
+        "de": "Sputum",
+        "patient": "Auswurf / Schleim",
+        "uz": "balg‘am"
+      },
+      {
+        "de": "Giemen",
+        "patient": "Pfeifen beim Atmen",
+        "uz": "xirillash (hushtaksimon)"
+      },
+      {
+        "de": "Ruhedyspnoe",
+        "patient": "Atemnot auch in Ruhe",
+        "uz": "tinch holatdagi hansirash"
+      },
+      {
+        "de": "subfebril",
+        "patient": "leicht erhöhte Temperatur",
+        "uz": "subfebril (biroz ko‘tarilgan) harorat"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich krieg so schlecht Luft, Herr Doktor. Und dieser Husten wird immer schlimmer.",
+      "answers": {
+        "beginn": "Seit ungefähr vier Tagen wird es immer schlimmer. Am Anfang nur beim Treppensteigen, jetzt schon beim Sitzen.",
+        "lokalisation": "Schmerzen habe ich nicht richtig, die Brust fühlt sich eng an.",
+        "charakter": "Es ist wie ein Engegefühl, und beim Ausatmen pfeift es.",
+        "ausstrahlung": "Nein, es strahlt nirgendwohin aus.",
+        "begleit": "Ich huste viel, und es kommt gelb-grüner Schleim. Gestern hatte ich 38 Grad.",
+        "vegetativ": "Ich habe wenig Appetit und schlafe schlecht, weil ich nachts husten muss. Stuhlgang und Wasserlassen sind normal.",
+        "vorerkrankungen": "Ich habe seit acht Jahren COPD und hohen Blutdruck. Und ich hatte mal einen Leistenbruch rechts.",
+        "medikamente": "Ich nehme Spiolto morgens zwei Hübe, bei Bedarf mein Salbutamol-Spray, und Amlodipin 5 mg morgens.",
+        "allergien": "Nein, keine Allergien.",
+        "familie": "Mein Vater ist an Lungenkrebs gestorben.",
+        "sozial": "Meine Frau ist vor zwei Jahren gestorben, ich lebe allein. Ich war Bauarbeiter, jetzt bin ich Rentner.",
+        "noxen": "Ich rauche immer noch, seit 50 Jahren eine Schachtel am Tag. Abends trinke ich zwei Bier. Drogen nicht."
+      }
+    },
+    "verdachtsdiagnose": "Infektexazerbierte COPD (AECOPD)",
+    "diagnoseKeywords": [
+      "copd",
+      "exazerbation",
+      "aecopd",
+      "bronchitis"
+    ],
+    "differenzialdiagnosen": [
+      "Pneumonie",
+      "Herzinsuffizienz",
+      "Lungenembolie",
+      "Asthma bronchiale"
+    ],
+    "untersuchungen": [
+      "Blutgasanalyse",
+      "Röntgen-Thorax",
+      "CRP",
+      "Blutbild",
+      "Sputumkultur"
+    ]
+  },
+  {
+    "id": "c13",
+    "title": "Vorhofflimmern",
+    "category": "Kardiologie",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Ingrid Wagner",
+      "age": 72,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Herzrasen und Schwindel seit dem Morgen"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit heute Morgen bestehendes unregelmäßiges Herzrasen mit Palpitationen, leichtem Schwindel und Belastungsdyspnoe. Keine Synkope, keine Thoraxschmerzen. Ähnliche, kürzere Episoden in den letzten Wochen.",
+      "vorerkrankungen": "Arterielle Hypertonie, Diabetes mellitus Typ 2, Hypothyreose.",
+      "medikamente": "Metformin 1000 mg 1-0-1, Candesartan 8 mg 1-0-0, L-Thyroxin 75 µg 1-0-0",
+      "allergien": "Kontrastmittel (Urtikaria)",
+      "familienanamnese": "Bruder mit Schlaganfall mit 70 Jahren.",
+      "sozialanamnese": "Verwitwet, lebt mit ihrer Tochter, pensionierte Lehrerin. Nichtraucherin, kein Alkohol."
+    },
+    "sprache": [
+      {
+        "patient": "Mein Herz rast und stolpert.",
+        "fach": "Die Patientin klagt über Palpitationen mit unregelmäßigem Herzschlag."
+      },
+      {
+        "patient": "Mir ist schwindelig.",
+        "fach": "Begleitend besteht Schwindel."
+      },
+      {
+        "patient": "Ich bin nicht ohnmächtig geworden.",
+        "fach": "Eine Synkope wird verneint."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Vorhofflimmern",
+        "patient": "unregelmäßiger Herzschlag",
+        "uz": "bo‘lmachalar fibrillyatsiyasi"
+      },
+      {
+        "de": "Palpitationen",
+        "patient": "Herzklopfen / Herzstolpern",
+        "uz": "yurak o‘ynashi"
+      },
+      {
+        "de": "Synkope",
+        "patient": "Ohnmacht",
+        "uz": "hushdan ketish"
+      },
+      {
+        "de": "Arrhythmie",
+        "patient": "Herzrhythmusstörung",
+        "uz": "yurak ritmining buzilishi"
+      },
+      {
+        "de": "Antikoagulation",
+        "patient": "Blutverdünnung",
+        "uz": "qon ivishiga qarshi davo"
+      }
+    ],
+    "simulation": {
+      "opening": "Mein Herz rast schon seit heute früh, und es schlägt so durcheinander.",
+      "answers": {
+        "beginn": "Heute Morgen beim Aufstehen hat es angefangen. In den letzten Wochen hatte ich das schon ein paar Mal kurz.",
+        "lokalisation": "Ich spüre es hier in der Brust und bis in den Hals.",
+        "charakter": "Es klopft schnell und ganz unregelmäßig, wie ein Stolpern. Schmerzen habe ich nicht.",
+        "ausstrahlung": "Nein, Schmerzen, die ausstrahlen, habe ich nicht.",
+        "begleit": "Mir ist ein bisschen schwindelig, und beim Treppensteigen bekomme ich schneller keine Luft. Ohnmächtig war ich nicht.",
+        "vegetativ": "Appetit und Schlaf sind normal, Stuhlgang und Wasserlassen auch. Ich habe nicht abgenommen.",
+        "vorerkrankungen": "Ich habe hohen Blutdruck, Zucker und eine Unterfunktion der Schilddrüse.",
+        "medikamente": "Metformin 1000 morgens und abends, Candesartan 8 mg morgens und L-Thyroxin 75 morgens.",
+        "allergien": "Ja, gegen Kontrastmittel. Da hatte ich Nesselsucht.",
+        "familie": "Mein Bruder hatte mit 70 einen Schlaganfall.",
+        "sozial": "Ich bin Witwe und wohne bei meiner Tochter. Früher war ich Lehrerin.",
+        "noxen": "Ich habe nie geraucht und trinke keinen Alkohol. Drogen natürlich auch nicht."
+      }
+    },
+    "verdachtsdiagnose": "Tachykardes Vorhofflimmern (Erstdiagnose)",
+    "diagnoseKeywords": [
+      "vorhofflimmern",
+      "absolute arrhythmie",
+      "tachyarrhythmie",
+      "vhf"
+    ],
+    "differenzialdiagnosen": [
+      "Vorhofflattern",
+      "Hyperthyreose",
+      "Supraventrikuläre Tachykardie",
+      "Akutes Koronarsyndrom"
+    ],
+    "untersuchungen": [
+      "EKG",
+      "TSH",
+      "Elektrolyte",
+      "Echo (Echokardiographie)",
+      "Langzeit-EKG"
+    ]
+  },
+  {
+    "id": "c14",
+    "title": "Akute Pankreatitis",
+    "category": "Gastroenterologie",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Thomas Richter",
+      "age": 46,
+      "gender": "männlich",
+      "hauptbeschwerde": "Starke Oberbauchschmerzen mit Erbrechen"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit gestern Abend nach Alkoholexzess bestehende stärkste, gürtelförmig in den Rücken ausstrahlende Oberbauchschmerzen (NRS 9/10), mehrfaches Erbrechen, Appetitlosigkeit. Linderung in vornübergebeugter Haltung.",
+      "vorerkrankungen": "Fettleber, Hypertriglyzeridämie, Gicht.",
+      "medikamente": "Allopurinol 300 mg 1-0-0",
+      "allergien": "Keine bekannten Allergien",
+      "familienanamnese": "Mutter mit Gallensteinen.",
+      "sozialanamnese": "Geschieden, ein Sohn, Gastwirt. Alkohol: täglich ca. 4–5 Bier und am Wochenende Schnaps. Nikotin: 20 pack years."
+    },
+    "sprache": [
+      {
+        "patient": "Ich habe ganz schlimme Bauchschmerzen oben.",
+        "fach": "Der Patient klagt über stärkste Oberbauchschmerzen."
+      },
+      {
+        "patient": "Das zieht wie ein Gürtel bis in den Rücken.",
+        "fach": "Die Schmerzen strahlen gürtelförmig in den Rücken aus."
+      },
+      {
+        "patient": "Ich musste mehrmals brechen.",
+        "fach": "Es kam zu rezidivierendem Erbrechen (Emesis)."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Pankreatitis",
+        "patient": "Entzündung der Bauchspeicheldrüse",
+        "uz": "pankreatit (oshqozon osti bezi yallig‘lanishi)"
+      },
+      {
+        "de": "Epigastrium",
+        "patient": "Oberbauch / Magengegend",
+        "uz": "epigastriy (qorin yuqori qismi)"
+      },
+      {
+        "de": "Emesis",
+        "patient": "Erbrechen",
+        "uz": "qusish"
+      },
+      {
+        "de": "Lipase",
+        "patient": "Wert für die Bauchspeicheldrüse",
+        "uz": "lipaza"
+      },
+      {
+        "de": "Alkoholabusus",
+        "patient": "zu viel Alkohol trinken",
+        "uz": "alkoholni suiiste’mol qilish"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe so schlimme Bauchschmerzen, ich halte das kaum aus. Und ich muss ständig brechen.",
+      "answers": {
+        "beginn": "Gestern Abend fing es an, nach einer Feier. Seitdem wird es immer schlimmer.",
+        "lokalisation": "Oben in der Mitte vom Bauch, unter den Rippen.",
+        "charakter": "Ein dumpfer, bohrender Schmerz, eine 9 von 10. Wenn ich mich nach vorne beuge, wird es ein bisschen besser.",
+        "ausstrahlung": "Ja, es zieht wie ein Gürtel rundherum bis in den Rücken.",
+        "begleit": "Ich habe mindestens fünfmal gebrochen. Fieber weiß ich nicht, mir ist eher kalt.",
+        "vegetativ": "Essen kann ich gar nichts. Stuhlgang hatte ich seit gestern nicht, Wasserlassen ist normal. Geschlafen habe ich kaum.",
+        "vorerkrankungen": "Ich habe eine Fettleber, zu hohe Blutfette und Gicht.",
+        "medikamente": "Nur Allopurinol 300 mg morgens.",
+        "allergien": "Nein, keine Allergien.",
+        "familie": "Meine Mutter hatte Gallensteine.",
+        "sozial": "Ich bin geschieden, habe einen Sohn und eine eigene Kneipe.",
+        "noxen": "Ehrlich gesagt trinke ich jeden Tag vier, fünf Bier, am Wochenende auch Schnaps. Ich rauche seit 20 Jahren eine Schachtel. Drogen nehme ich nicht."
+      }
+    },
+    "verdachtsdiagnose": "Akute Pankreatitis (äthyltoxisch)",
+    "diagnoseKeywords": [
+      "pankreatitis",
+      "bauchspeicheldrüse"
+    ],
+    "differenzialdiagnosen": [
+      "Ulkusperforation",
+      "Cholezystitis",
+      "Hinterwandinfarkt",
+      "Mesenterialischämie"
+    ],
+    "untersuchungen": [
+      "Lipase",
+      "Sonographie (Abdomen)",
+      "CRP",
+      "Blutbild",
+      "Leberwerte"
+    ]
+  },
+  {
+    "id": "c15",
+    "title": "Obere gastrointestinale Blutung",
+    "category": "Gastroenterologie",
+    "difficulty": "schwer",
+    "patient": {
+      "name": "Helmut Braun",
+      "age": 61,
+      "gender": "männlich",
+      "hauptbeschwerde": "Schwarzer Stuhl und Bluterbrechen"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 2 Tagen schwarzer, teerartiger Stuhl (Meläna), heute einmaliges kaffeesatzartiges Erbrechen (Hämatemesis), Schwindel beim Aufstehen und Schwäche. Seit Wochen epigastrische Schmerzen, besonders nüchtern.",
+      "vorerkrankungen": "Gonarthrose beidseits, koronare Herzkrankheit mit Stent-Implantation vor 2 Jahren.",
+      "medikamente": "ASS 100 mg 1-0-0, Ibuprofen 600 mg bis 3x täglich (seit 4 Wochen wegen Knieschmerzen), Bisoprolol 2,5 mg 1-0-0",
+      "allergien": "Keine bekannten Allergien",
+      "familienanamnese": "Vater mit Magenkrebs.",
+      "sozialanamnese": "Verheiratet, Taxifahrer. Nikotin: 15 Zigaretten/Tag. Alkohol: abends 1–2 Gläser Wein."
+    },
+    "sprache": [
+      {
+        "patient": "Mein Stuhl ist ganz schwarz wie Teer.",
+        "fach": "Der Patient berichtet über Teerstuhl (Meläna)."
+      },
+      {
+        "patient": "Ich habe etwas wie Kaffeesatz erbrochen.",
+        "fach": "Es kam zu einer kaffeesatzartigen Hämatemesis."
+      },
+      {
+        "patient": "Wenn ich aufstehe, wird mir schwarz vor Augen.",
+        "fach": "Es besteht ein orthostatischer Schwindel."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Meläna",
+        "patient": "Teerstuhl / schwarzer Stuhl",
+        "uz": "melena (qora, smolasimon najas)"
+      },
+      {
+        "de": "Hämatemesis",
+        "patient": "Bluterbrechen",
+        "uz": "qon qusish"
+      },
+      {
+        "de": "Ulcus ventriculi",
+        "patient": "Magengeschwür",
+        "uz": "oshqozon yarasi"
+      },
+      {
+        "de": "NSAR",
+        "patient": "Schmerzmittel wie Ibuprofen",
+        "uz": "nosteroid yallig‘lanishga qarshi dorilar"
+      },
+      {
+        "de": "Gastroskopie",
+        "patient": "Magenspiegelung",
+        "uz": "gastroskopiya"
+      }
+    ],
+    "simulation": {
+      "opening": "Mein Stuhl ist seit zwei Tagen ganz schwarz, und heute habe ich so etwas Braunes gebrochen.",
+      "answers": {
+        "beginn": "Der schwarze Stuhl kam vor zwei Tagen. Heute Morgen habe ich einmal gebrochen, das sah aus wie Kaffeesatz.",
+        "lokalisation": "Seit ein paar Wochen tut es mir oben im Magen weh.",
+        "charakter": "Ein brennender Schmerz, vor allem wenn ich nichts gegessen habe. Ungefähr eine 5.",
+        "ausstrahlung": "Nein, das strahlt nicht aus.",
+        "begleit": "Mir ist schwindelig, wenn ich aufstehe, und ich fühle mich sehr schwach.",
+        "vegetativ": "Appetit habe ich wenig. Der Stuhl ist schwarz und eher weich. Wasserlassen normal. Schlaf geht so.",
+        "vorerkrankungen": "Ich habe Arthrose in beiden Knien und eine Herzerkrankung, vor zwei Jahren habe ich einen Stent bekommen.",
+        "medikamente": "ASS 100 morgens, Bisoprolol 2,5 morgens, und seit vier Wochen nehme ich wegen der Knie bis zu dreimal am Tag Ibuprofen 600.",
+        "allergien": "Allergien habe ich keine.",
+        "familie": "Mein Vater hatte Magenkrebs.",
+        "sozial": "Ich bin verheiratet und fahre Taxi.",
+        "noxen": "Ich rauche etwa 15 Zigaretten am Tag und trinke abends ein, zwei Gläser Wein. Drogen nie."
+      }
+    },
+    "verdachtsdiagnose": "Obere GI-Blutung, V. a. Ulcus ventriculi/duodeni unter NSAR und ASS",
+    "diagnoseKeywords": [
+      "gi-blutung",
+      "gastrointestinale blutung",
+      "ulkus",
+      "ulcus",
+      "magengeschwür",
+      "ulkusblutung"
+    ],
+    "differenzialdiagnosen": [
+      "Ösophagusvarizenblutung",
+      "Mallory-Weiss-Syndrom",
+      "Magenkarzinom",
+      "Erosive Gastritis"
+    ],
+    "untersuchungen": [
+      "Gastroskopie",
+      "Blutbild",
+      "Gerinnung",
+      "Blutgruppe und Kreuzprobe",
+      "Harnstoff"
+    ]
+  },
+  {
+    "id": "c16",
+    "title": "Migräne",
+    "category": "Neurologie",
+    "difficulty": "leicht",
+    "patient": {
+      "name": "Julia Neumann",
+      "age": 27,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Starke einseitige Kopfschmerzen mit Übelkeit"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit heute Mittag pulsierende, linksseitige Kopfschmerzen (NRS 8/10) mit Übelkeit, Photo- und Phonophobie, Verstärkung bei körperlicher Aktivität. Zuvor ca. 20 Minuten Flimmersehen (Aura). Ähnliche Attacken ca. 2x/Monat seit der Pubertät.",
+      "vorerkrankungen": "Keine.",
+      "medikamente": "Ibuprofen 400 mg bei Bedarf (wirkt kaum noch)",
+      "allergien": "Keine bekannten Allergien",
+      "familienanamnese": "Mutter leidet ebenfalls an Migräne.",
+      "sozialanamnese": "In einer Partnerschaft, Grafikdesignerin, viel Bildschirmarbeit, derzeit beruflicher Stress. Nichtraucherin, Alkohol selten."
+    },
+    "sprache": [
+      {
+        "patient": "Mein Kopf pocht auf der linken Seite.",
+        "fach": "Die Patientin berichtet über pulsierende, linksseitige Kopfschmerzen."
+      },
+      {
+        "patient": "Licht und Lärm sind kaum auszuhalten.",
+        "fach": "Es bestehen Photo- und Phonophobie."
+      },
+      {
+        "patient": "Vorher habe ich so ein Flimmern gesehen.",
+        "fach": "Den Kopfschmerzen ging eine visuelle Aura voraus."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Cephalgie",
+        "patient": "Kopfschmerzen",
+        "uz": "bosh og‘rig‘i"
+      },
+      {
+        "de": "Photophobie",
+        "patient": "Lichtempfindlichkeit",
+        "uz": "yorug‘likdan bezovtalanish"
+      },
+      {
+        "de": "Phonophobie",
+        "patient": "Lärmempfindlichkeit",
+        "uz": "shovqindan bezovtalanish"
+      },
+      {
+        "de": "Aura",
+        "patient": "Sehstörung vor dem Kopfschmerz",
+        "uz": "aura (og‘riqdan oldingi ko‘rish buzilishi)"
+      },
+      {
+        "de": "hemikraniell",
+        "patient": "auf einer Kopfseite",
+        "uz": "boshning bir tomonida"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe so starke Kopfschmerzen, mir ist übel, und das Licht tut mir weh.",
+      "answers": {
+        "beginn": "Heute Mittag hat es angefangen. Vorher habe ich ungefähr 20 Minuten so ein Flimmern vor den Augen gesehen.",
+        "lokalisation": "Auf der linken Seite, an der Schläfe und hinter dem Auge.",
+        "charakter": "Es pocht und hämmert, eine 8 von 10. Wenn ich mich bewege, wird es schlimmer.",
+        "ausstrahlung": "Es zieht manchmal in den Nacken, aber nicht weiter.",
+        "begleit": "Mir ist sehr übel, gebrochen habe ich einmal. Licht und Lärm kann ich kaum aushalten. Lähmungen oder Fieber habe ich nicht.",
+        "vegetativ": "Appetit habe ich gerade keinen. Sonst ist alles normal, Stuhlgang und Wasserlassen auch. Ich schlafe in letzter Zeit wenig.",
+        "vorerkrankungen": "Nein, ich bin sonst gesund. Diese Kopfschmerzen habe ich aber seit der Pubertät, ungefähr zweimal im Monat.",
+        "medikamente": "Ich nehme dann Ibuprofen 400, aber das hilft kaum noch. Die Pille nehme ich nicht.",
+        "allergien": "Nein.",
+        "familie": "Meine Mutter hat auch Migräne.",
+        "sozial": "Ich lebe mit meinem Freund zusammen und bin Grafikdesignerin. Im Moment habe ich viel Stress bei der Arbeit.",
+        "noxen": "Ich rauche nicht, Alkohol trinke ich selten, Drogen nehme ich nicht."
+      }
+    },
+    "verdachtsdiagnose": "Migräne mit Aura",
+    "diagnoseKeywords": [
+      "migräne",
+      "migraene"
+    ],
+    "differenzialdiagnosen": [
+      "Spannungskopfschmerz",
+      "Subarachnoidalblutung",
+      "Clusterkopfschmerz",
+      "Sinusvenenthrombose"
+    ],
+    "untersuchungen": [
+      "Neurologische Untersuchung",
+      "Blutdruckmessung",
+      "Kopfschmerztagebuch",
+      "MRT (Schädel) bei Warnzeichen"
+    ]
+  },
+  {
+    "id": "c17",
+    "title": "Nierenkolik (Urolithiasis)",
+    "category": "Urologie",
+    "difficulty": "leicht",
+    "patient": {
+      "name": "Stefan Koch",
+      "age": 39,
+      "gender": "männlich",
+      "hauptbeschwerde": "Kolikartige Schmerzen in der rechten Flanke"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit ca. 4 Stunden wellenartige, kolikartige Flankenschmerzen rechts (NRS 10/10) mit Ausstrahlung in die Leiste und den Hoden, Bewegungsdrang, Übelkeit, Erbrechen. Makrohämaturie bemerkt. Kein Fieber.",
+      "vorerkrankungen": "Z. n. Nierenstein links vor 5 Jahren (spontaner Abgang).",
+      "medikamente": "Keine Dauermedikation",
+      "allergien": "Metamizol (Hautausschlag)",
+      "familienanamnese": "Vater mit rezidivierenden Nierensteinen.",
+      "sozialanamnese": "Verheiratet, ein Kind, IT-Fachmann. Trinkt wenig (ca. 1 Liter/Tag), viel Fleisch. Nichtraucher, Alkohol gelegentlich."
+    },
+    "sprache": [
+      {
+        "patient": "Die Schmerzen kommen in Wellen und sind unerträglich.",
+        "fach": "Der Patient klagt über kolikartige Schmerzen von höchster Intensität."
+      },
+      {
+        "patient": "Es zieht bis in die Leiste.",
+        "fach": "Die Schmerzen strahlen in die rechte Leiste aus."
+      },
+      {
+        "patient": "Mein Urin ist rot.",
+        "fach": "Es besteht eine Makrohämaturie."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Urolithiasis",
+        "patient": "Nierensteine / Harnsteine",
+        "uz": "siydik-tosh kasalligi"
+      },
+      {
+        "de": "Kolik",
+        "patient": "Schmerzen, die in Wellen kommen",
+        "uz": "sanchiq (to‘lqinsimon og‘riq)"
+      },
+      {
+        "de": "Makrohämaturie",
+        "patient": "Blut im Urin (sichtbar)",
+        "uz": "siydikda ko‘zga ko‘rinadigan qon"
+      },
+      {
+        "de": "Flanke",
+        "patient": "Seite / Nierengegend",
+        "uz": "biqin (bel yon tomoni)"
+      },
+      {
+        "de": "Harnstau",
+        "patient": "Urin staut sich",
+        "uz": "siydik dimlanishi"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe wahnsinnige Schmerzen rechts an der Seite, ich kann nicht stillsitzen.",
+      "answers": {
+        "beginn": "Vor ungefähr vier Stunden, ganz plötzlich bei der Arbeit.",
+        "lokalisation": "Rechts hinten an der Seite, unter den Rippen.",
+        "charakter": "Es kommt in Wellen, krampfartig, eine 10 von 10. Ich muss mich ständig bewegen.",
+        "ausstrahlung": "Ja, es zieht nach vorne in die Leiste und bis in den Hoden.",
+        "begleit": "Mir ist übel, ich habe zweimal gebrochen. Mein Urin ist rötlich. Fieber habe ich nicht.",
+        "vegetativ": "Appetit habe ich keinen. Ich muss oft auf Toilette, es kommt aber wenig. Stuhlgang ist normal.",
+        "vorerkrankungen": "Vor fünf Jahren hatte ich links einen Nierenstein, der ist von allein abgegangen.",
+        "medikamente": "Ich nehme keine Medikamente regelmäßig.",
+        "allergien": "Ja, gegen Novalgin, da bekomme ich Ausschlag.",
+        "familie": "Mein Vater hat auch immer wieder Nierensteine.",
+        "sozial": "Ich bin verheiratet, habe eine Tochter und arbeite in der IT. Ich trinke ehrlich gesagt zu wenig, vielleicht einen Liter am Tag.",
+        "noxen": "Ich rauche nicht. Alkohol mal ein Bier am Wochenende, Drogen nein."
+      }
+    },
+    "verdachtsdiagnose": "Nierenkolik rechts bei V. a. Ureterolithiasis",
+    "diagnoseKeywords": [
+      "nierenkolik",
+      "urolithiasis",
+      "ureterolithiasis",
+      "nierenstein",
+      "harnleiterstein",
+      "nephrolithiasis"
+    ],
+    "differenzialdiagnosen": [
+      "Appendizitis",
+      "Pyelonephritis",
+      "Hodentorsion",
+      "Gallenkolik"
+    ],
+    "untersuchungen": [
+      "Urinstatus",
+      "Sonographie (Nieren)",
+      "Low-Dose-CT",
+      "Kreatinin",
+      "CRP"
+    ]
+  },
+  {
+    "id": "c18",
+    "title": "Hyperthyreose (Morbus Basedow)",
+    "category": "Endokrinologie",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Anna Schmitt",
+      "age": 31,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Gewichtsverlust, Herzrasen und Nervosität"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit ca. 3 Monaten ungewollter Gewichtsverlust von 6 kg trotz gesteigertem Appetit, Palpitationen, innere Unruhe, Schlafstörungen, feinschlägiger Tremor, Wärmeintoleranz und vermehrtes Schwitzen. Häufiger weicher Stuhlgang. Seit einigen Wochen Augendruck und Fremdkörpergefühl.",
+      "vorerkrankungen": "Keine.",
+      "medikamente": "Keine",
+      "allergien": "Keine bekannten Allergien",
+      "familienanamnese": "Schwester mit Hashimoto-Thyreoiditis.",
+      "sozialanamnese": "Verheiratet, keine Kinder, Krankenschwester im Schichtdienst. Raucherin (8 Zigaretten/Tag), Alkohol gelegentlich."
+    },
+    "sprache": [
+      {
+        "patient": "Ich nehme ab, obwohl ich viel esse.",
+        "fach": "Die Patientin berichtet über einen ungewollten Gewichtsverlust bei Polyphagie."
+      },
+      {
+        "patient": "Mir ist immer zu warm und ich schwitze viel.",
+        "fach": "Es bestehen Wärmeintoleranz und Hyperhidrose."
+      },
+      {
+        "patient": "Meine Hände zittern.",
+        "fach": "Es zeigt sich ein feinschlägiger Tremor."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Hyperthyreose",
+        "patient": "Schilddrüsenüberfunktion",
+        "uz": "gipertireoz (qalqonsimon bez giperfunksiyasi)"
+      },
+      {
+        "de": "Tremor",
+        "patient": "Zittern",
+        "uz": "titroq"
+      },
+      {
+        "de": "Hyperhidrose",
+        "patient": "starkes Schwitzen",
+        "uz": "ko‘p terlash"
+      },
+      {
+        "de": "Exophthalmus",
+        "patient": "hervortretende Augen",
+        "uz": "ko‘zning bo‘rtib chiqishi"
+      },
+      {
+        "de": "Struma",
+        "patient": "vergrößerte Schilddrüse / Kropf",
+        "uz": "buqoq"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe in drei Monaten sechs Kilo abgenommen, und mein Herz rast ständig.",
+      "answers": {
+        "beginn": "Das geht seit ungefähr drei Monaten so, langsam immer schlimmer.",
+        "lokalisation": "Schmerzen habe ich eigentlich keine. Nur die Augen drücken etwas.",
+        "charakter": "Ich bin ständig unruhig und nervös, das Herz klopft schnell.",
+        "ausstrahlung": "Nein, Schmerzen, die ausstrahlen, habe ich nicht.",
+        "begleit": "Meine Hände zittern, mir ist immer zu warm und ich schwitze viel. Die Augen brennen, als wäre Sand drin.",
+        "vegetativ": "Ich habe viel mehr Hunger als früher und nehme trotzdem ab. Ich muss öfter auf Toilette, der Stuhl ist weich. Schlafen kann ich schlecht.",
+        "vorerkrankungen": "Nein, ich war bisher gesund.",
+        "medikamente": "Ich nehme keine Medikamente, auch nicht die Pille.",
+        "allergien": "Nein, keine.",
+        "familie": "Meine Schwester hat Hashimoto.",
+        "sozial": "Ich bin verheiratet, wir haben keine Kinder. Ich bin Krankenschwester im Schichtdienst.",
+        "noxen": "Ich rauche etwa acht Zigaretten am Tag. Alkohol nur selten, Drogen nie."
+      }
+    },
+    "verdachtsdiagnose": "Hyperthyreose, V. a. Morbus Basedow mit endokriner Orbitopathie",
+    "diagnoseKeywords": [
+      "hyperthyreose",
+      "basedow",
+      "graves",
+      "schilddrüsenüberfunktion",
+      "thyreotoxikose"
+    ],
+    "differenzialdiagnosen": [
+      "Schilddrüsenautonomie",
+      "Thyreoiditis",
+      "Angststörung",
+      "Phäochromozytom"
+    ],
+    "untersuchungen": [
+      "TSH",
+      "fT3 und fT4",
+      "TRAK",
+      "Sonographie (Schilddrüse)",
+      "EKG"
+    ]
+  },
+  {
+    "id": "c19",
+    "title": "Mechanischer Ileus",
+    "category": "Chirurgie",
+    "difficulty": "schwer",
+    "patient": {
+      "name": "Gisela Krüger",
+      "age": 76,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Bauchschmerzen, Erbrechen und kein Stuhlgang"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 2 Tagen zunehmende kolikartige, diffuse Bauchschmerzen, ausladendes Abdomen, seit 2 Tagen kein Stuhlgang und kein Windabgang (Stuhl- und Windverhalt), seit heute Erbrechen, zuletzt übelriechend. Hochgestellte, klingende Darmgeräusche.",
+      "vorerkrankungen": "Z. n. Hysterektomie und Cholezystektomie (Verwachsungen möglich), Herzinsuffizienz NYHA II, Osteoporose.",
+      "medikamente": "Torasemid 10 mg 1-0-0, Ramipril 2,5 mg 1-0-0, Vitamin D 1000 IE 1-0-0",
+      "allergien": "Keine bekannten Allergien",
+      "familienanamnese": "Bruder mit Darmkrebs.",
+      "sozialanamnese": "Verwitwet, lebt allein, Unterstützung durch Pflegedienst. Nichtraucherin, kein Alkohol."
+    },
+    "sprache": [
+      {
+        "patient": "Mein Bauch ist ganz dick und hart.",
+        "fach": "Es zeigt sich ein meteoristisch geblähtes Abdomen."
+      },
+      {
+        "patient": "Ich kann seit zwei Tagen nicht auf Toilette und keine Winde lassen.",
+        "fach": "Es besteht seit zwei Tagen ein Stuhl- und Windverhalt."
+      },
+      {
+        "patient": "Das Erbrochene riecht furchtbar.",
+        "fach": "Es kam zu übelriechendem, fäkulentem Erbrechen (Miserere)."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Ileus",
+        "patient": "Darmverschluss",
+        "uz": "ichak tutilishi"
+      },
+      {
+        "de": "Meteorismus",
+        "patient": "Blähungen / dicker Bauch",
+        "uz": "qorin dam bo‘lishi"
+      },
+      {
+        "de": "Miserere",
+        "patient": "Koterbrechen",
+        "uz": "najas qusish"
+      },
+      {
+        "de": "Adhäsionen",
+        "patient": "Verwachsungen",
+        "uz": "bitishmalar"
+      },
+      {
+        "de": "Laparotomie",
+        "patient": "Bauchoperation mit Schnitt",
+        "uz": "laparotomiya (qorinni ochish operatsiyasi)"
+      }
+    ],
+    "simulation": {
+      "opening": "Mein Bauch tut so weh und ist ganz dick. Seit zwei Tagen kann ich nicht auf Toilette.",
+      "answers": {
+        "beginn": "Seit vorgestern. Erst nur ein bisschen, dann immer schlimmer.",
+        "lokalisation": "Im ganzen Bauch, nicht an einer bestimmten Stelle.",
+        "charakter": "Es kommt krampfartig in Wellen, eine 7 von 10. Dazwischen ist es etwas besser.",
+        "ausstrahlung": "Nein, es bleibt im Bauch.",
+        "begleit": "Heute habe ich dreimal gebrochen, das letzte Mal hat es ganz schrecklich gerochen. Winde gehen auch keine ab.",
+        "vegetativ": "Essen kann ich nichts. Stuhlgang seit zwei Tagen nicht. Wasserlassen ist weniger als sonst. Schlafen kann ich vor Schmerzen kaum.",
+        "vorerkrankungen": "Mir wurden die Gebärmutter und die Gallenblase entfernt. Außerdem habe ich ein schwaches Herz und Osteoporose.",
+        "medikamente": "Torasemid 10 und Ramipril 2,5 morgens, und Vitamin D.",
+        "allergien": "Nein, Allergien habe ich nicht.",
+        "familie": "Mein Bruder hatte Darmkrebs.",
+        "sozial": "Ich bin Witwe und lebe allein. Morgens kommt der Pflegedienst.",
+        "noxen": "Ich habe nie geraucht und trinke keinen Alkohol."
+      }
+    },
+    "verdachtsdiagnose": "Mechanischer Dünndarmileus, V. a. Bridenileus",
+    "diagnoseKeywords": [
+      "ileus",
+      "darmverschluss",
+      "bridenileus",
+      "obstruktion"
+    ],
+    "differenzialdiagnosen": [
+      "Paralytischer Ileus",
+      "Kolonkarzinom",
+      "Inkarzerierte Hernie",
+      "Mesenterialischämie"
+    ],
+    "untersuchungen": [
+      "Röntgen-Abdomen",
+      "CT-Abdomen",
+      "Sonographie (Abdomen)",
+      "Blutbild",
+      "Laktat"
+    ]
+  },
+  {
+    "id": "c20",
+    "title": "Eisenmangelanämie",
+    "category": "Innere Medizin",
+    "difficulty": "leicht",
+    "patient": {
+      "name": "Maria Lehmann",
+      "age": 42,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Müdigkeit und Leistungsabfall"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit ca. 4 Monaten zunehmende Müdigkeit, Leistungsknick, Belastungsdyspnoe beim Treppensteigen, Konzentrationsstörungen, brüchige Nägel und vermehrter Haarausfall. Seit einem Jahr verstärkte und verlängerte Regelblutungen (Hypermenorrhö).",
+      "vorerkrankungen": "Uterus myomatosus (bekannt seit 2 Jahren).",
+      "medikamente": "Keine",
+      "allergien": "Laktoseintoleranz",
+      "familienanamnese": "Keine Besonderheiten.",
+      "sozialanamnese": "Verheiratet, drei Kinder, Verkäuferin. Ernährt sich überwiegend vegetarisch. Nichtraucherin, Alkohol selten."
+    },
+    "sprache": [
+      {
+        "patient": "Ich bin ständig müde und schlapp.",
+        "fach": "Die Patientin klagt über Abgeschlagenheit und einen Leistungsknick."
+      },
+      {
+        "patient": "Meine Periode ist sehr stark und dauert lange.",
+        "fach": "Es besteht eine Hypermenorrhö."
+      },
+      {
+        "patient": "Ich bin ganz blass geworden.",
+        "fach": "Klinisch zeigt sich eine Blässe der Haut und Schleimhäute."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Anämie",
+        "patient": "Blutarmut",
+        "uz": "kamqonlik"
+      },
+      {
+        "de": "Hypermenorrhö",
+        "patient": "sehr starke Periode",
+        "uz": "kuchli hayz qon ketishi"
+      },
+      {
+        "de": "Ferritin",
+        "patient": "Eisenspeicher-Wert",
+        "uz": "ferritin (temir zaxirasi)"
+      },
+      {
+        "de": "Abgeschlagenheit",
+        "patient": "Müdigkeit / Schlappheit",
+        "uz": "holsizlik"
+      },
+      {
+        "de": "Blässe",
+        "patient": "blasse Haut",
+        "uz": "rangparlik"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich bin seit Monaten so müde, ich schaffe kaum noch meinen Alltag.",
+      "answers": {
+        "beginn": "Ungefähr seit vier Monaten, es wird langsam immer schlimmer.",
+        "lokalisation": "Schmerzen habe ich eigentlich nicht. Ich bin einfach kraftlos.",
+        "charakter": "Ich bin ständig erschöpft, auch wenn ich genug schlafe.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Beim Treppensteigen bin ich schnell außer Atem. Meine Nägel brechen und ich verliere viele Haare. Meine Periode ist seit einem Jahr sehr stark und dauert sieben, acht Tage.",
+        "vegetativ": "Appetit ist normal, Gewicht auch. Stuhlgang ist normal, nicht schwarz. Wasserlassen normal. Schlafen kann ich gut, aber ich bin trotzdem müde.",
+        "vorerkrankungen": "Ich habe Myome in der Gebärmutter, das weiß ich seit zwei Jahren.",
+        "medikamente": "Ich nehme keine Medikamente.",
+        "allergien": "Ich vertrage keine Milch, ich habe eine Laktoseintoleranz.",
+        "familie": "In meiner Familie ist nichts Besonderes bekannt.",
+        "sozial": "Ich bin verheiratet, habe drei Kinder und arbeite als Verkäuferin. Fleisch esse ich fast nie.",
+        "noxen": "Ich rauche nicht, Alkohol trinke ich selten, Drogen nie."
+      }
+    },
+    "verdachtsdiagnose": "Eisenmangelanämie bei Hypermenorrhö (Uterus myomatosus)",
+    "diagnoseKeywords": [
+      "eisenmangel",
+      "anämie",
+      "anaemie",
+      "blutarmut"
+    ],
+    "differenzialdiagnosen": [
+      "Hypothyreose",
+      "Vitamin-B12-Mangel",
+      "Gastrointestinale Blutung",
+      "Depression"
+    ],
+    "untersuchungen": [
+      "Blutbild",
+      "Ferritin",
+      "Transferrinsättigung",
+      "Gynäkologische Untersuchung",
+      "Stuhltest auf okkultes Blut"
+    ]
   }
 ]
