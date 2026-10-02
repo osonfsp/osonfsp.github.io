@@ -1022,5 +1022,587 @@
       }
     ],
     "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Stefan Koch, 39 Jahre, der sich vom 02.10.2026 bis zum 04.10.2026 in unserer stationären Behandlung befand.\n\nAnamnese:\nDer Patient stellte sich mit kolikartigen Flankenschmerzen rechts mit Ausstrahlung in die Leiste, Übelkeit und Makrohämaturie vor. Anamnestisch ist ein Nierenstein links bekannt. Die tägliche Trinkmenge ist gering. Es besteht eine Allergie gegen Metamizol.\n\nBefunde:\nIm Urinstatus zeigte sich eine Mikrohämaturie ohne Leukozyturie. Sonographisch fand sich ein Harnstau Grad I rechts. Im Low-Dose-CT stellte sich ein 5 mm großes Konkrement im distalen rechten Ureter dar.\n\nDiagnose:\nNierenkolik bei distaler Ureterolithiasis rechts.\n\nTherapie und Verlauf:\nUnter Analgesie mit Diclofenac und Paracetamol sowie medikamentöser Austreibungstherapie mit Tamsulosin kam es zum spontanen Steinabgang. Der Harnstau war sonographisch rückläufig.\n\nProcedere:\nWir empfehlen eine Trinkmenge von mindestens 2,5 Litern täglich, eine Steinanalyse sowie eine urologische Kontrolle in vier Wochen.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab11",
+    "caseId": "c25",
+    "title": "Spontanpneumothorax links",
+    "task": "Bemorning statsionar davolanishi haqida uy shifokoriga Arztbrief yozing.",
+    "taskRu": "Напишите семейному врачу Arztbrief о стационарном лечении пациента.",
+    "facts": [
+      "Patient: Tim Bauer, 21 Jahre, männlich",
+      "Stationäre Aufnahme: 29.09.2026 – Entlassung: 03.10.2026",
+      "Plötzliche, atemabhängige Thoraxschmerzen links mit Dyspnoe, kein Trauma",
+      "Risikofaktoren: Nikotinabusus (5 pack years), schlanker Habitus",
+      "Klinik: abgeschwächtes Atemgeräusch und hypersonorer Klopfschall links, SpO2 93 %",
+      "Röntgen-Thorax: Pneumothorax links mit 3 cm Mantelsaum",
+      "Therapie: Anlage einer Thoraxdrainage, vollständige Reexpansion der Lunge, Drainage am 3. Tag entfernt"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patient ma’lumotlari (Herr Bauer)",
+        "labelRu": "Данные пациента (Herr Bauer)",
+        "keywords": [
+          "bauer"
+        ]
+      },
+      {
+        "label": "Asosiy shikoyat: Thoraxschmerzen",
+        "labelRu": "Основная жалоба: Thoraxschmerzen",
+        "keywords": [
+          "thoraxschmerz",
+          "brustschmerz"
+        ]
+      },
+      {
+        "label": "Dyspnoe",
+        "labelRu": "Dyspnoe",
+        "keywords": [
+          "dyspnoe",
+          "atemnot"
+        ]
+      },
+      {
+        "label": "Travma yo‘qligi",
+        "labelRu": "Отсутствие травмы",
+        "keywords": [
+          "trauma"
+        ]
+      },
+      {
+        "label": "Nikotinabusus",
+        "labelRu": "Nikotinabusus",
+        "keywords": [
+          "nikotin",
+          "raucher",
+          "rauchen"
+        ]
+      },
+      {
+        "label": "Auskultation / Perkussion",
+        "labelRu": "Аускультация / перкуссия",
+        "keywords": [
+          "atemgeräusch",
+          "klopfschall",
+          "auskultat"
+        ]
+      },
+      {
+        "label": "Röntgen-Thorax",
+        "labelRu": "Röntgen-Thorax",
+        "keywords": [
+          "röntgen"
+        ]
+      },
+      {
+        "label": "Diagnoz (Pneumothorax)",
+        "labelRu": "Диагноз (Pneumothorax)",
+        "keywords": [
+          "pneumothorax"
+        ]
+      },
+      {
+        "label": "Davolash (Thoraxdrainage)",
+        "labelRu": "Лечение (Thoraxdrainage)",
+        "keywords": [
+          "drainage"
+        ]
+      },
+      {
+        "label": "Tavsiya: Nikotinkarenz / Flugverbot",
+        "labelRu": "Рекомендация: отказ от курения / полётов",
+        "keywords": [
+          "nikotinkarenz",
+          "rauchstopp",
+          "flug",
+          "tauchen"
+        ]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Tim Bauer, 21 Jahre, der sich vom 29.09.2026 bis zum 03.10.2026 in unserer stationären Behandlung befand.\n\nAnamnese:\nDer Patient stellte sich mit plötzlich in Ruhe aufgetretenen, atemabhängigen Thoraxschmerzen links und zunehmender Dyspnoe vor. Ein Trauma wurde verneint. Es besteht ein Nikotinabusus von ca. 5 pack years.\n\nBefunde:\nAuskultatorisch zeigte sich ein abgeschwächtes Atemgeräusch links bei hypersonorem Klopfschall. Die Sauerstoffsättigung betrug 93 %. Im Röntgen-Thorax stellte sich ein Pneumothorax links mit einem Mantelsaum von 3 cm dar.\n\nDiagnose:\nPrimärer Spontanpneumothorax links.\n\nTherapie und Verlauf:\nWir legten eine Thoraxdrainage an. Darunter kam es zur vollständigen Reexpansion der Lunge. Die Drainage konnte am dritten Tag entfernt werden.\n\nProcedere:\nWir empfehlen eine strikte Nikotinkarenz, den Verzicht auf Flugreisen für zwei Wochen sowie auf Tauchen. Eine Röntgenkontrolle in einer Woche ist empfehlenswert.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab12",
+    "caseId": "c26",
+    "title": "Dekompensierte Leberzirrhose",
+    "task": "Bemorning statsionar davolanishi haqida uy shifokoriga Arztbrief yozing. Alkoholdan voz kechish tavsiyasini unutmang.",
+    "taskRu": "Напишите семейному врачу Arztbrief о стационарном лечении пациента. Не забудьте рекомендацию отказаться от алкоголя.",
+    "facts": [
+      "Patient: Horst Lange, 59 Jahre, männlich",
+      "Stationäre Aufnahme: 24.09.2026 – Entlassung: 04.10.2026",
+      "Zunehmender Bauchumfang, Ikterus, Beinödeme, Verwirrtheit",
+      "Alkoholabusus seit 20 Jahren",
+      "Sonographie: Leberzirrhose mit ausgeprägtem Aszites, Splenomegalie",
+      "Labor: Bilirubin 4,8 mg/dl, Albumin 2,6 g/dl, INR 1,7; Aszites-Punktat ohne Hinweis auf spontan bakterielle Peritonitis",
+      "Therapie: Aszitespunktion (5 l) mit Albuminsubstitution, Spironolacton und Furosemid, Lactulose bei hepatischer Enzephalopathie"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patient ma’lumotlari (Herr Lange)",
+        "labelRu": "Данные пациента (Herr Lange)",
+        "keywords": [
+          "lange"
+        ]
+      },
+      {
+        "label": "Aszites",
+        "labelRu": "Aszites",
+        "keywords": [
+          "aszites"
+        ]
+      },
+      {
+        "label": "Ikterus",
+        "labelRu": "Ikterus",
+        "keywords": [
+          "ikterus",
+          "gelb"
+        ]
+      },
+      {
+        "label": "Hepatische Enzephalopathie",
+        "labelRu": "Печёночная энцефалопатия",
+        "keywords": [
+          "enzephalopathie",
+          "verwirrt"
+        ]
+      },
+      {
+        "label": "Alkoholabusus",
+        "labelRu": "Alkoholabusus",
+        "keywords": [
+          "alkohol"
+        ]
+      },
+      {
+        "label": "Sonographie",
+        "labelRu": "УЗИ (Sonographie)",
+        "keywords": [
+          "sonograph"
+        ]
+      },
+      {
+        "label": "Laborwerte (Bilirubin, Albumin, INR)",
+        "labelRu": "Лабораторные данные (Bilirubin, Albumin, INR)",
+        "keywords": [
+          "bilirubin",
+          "albumin",
+          "inr"
+        ]
+      },
+      {
+        "label": "Diagnoz (Leberzirrhose)",
+        "labelRu": "Диагноз (Leberzirrhose)",
+        "keywords": [
+          "leberzirrhose",
+          "zirrhose"
+        ]
+      },
+      {
+        "label": "Davolash (Punktion, Diuretika, Lactulose)",
+        "labelRu": "Лечение (пункция, диуретики, лактулоза)",
+        "keywords": [
+          "punktion",
+          "spironolacton",
+          "furosemid",
+          "lactulose"
+        ]
+      },
+      {
+        "label": "Tavsiya: Alkoholkarenz",
+        "labelRu": "Рекомендация: отказ от алкоголя",
+        "keywords": [
+          "alkoholkarenz",
+          "abstinenz",
+          "verzicht"
+        ]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Horst Lange, 59 Jahre, der sich vom 24.09.2026 bis zum 04.10.2026 in unserer stationären Behandlung befand.\n\nAnamnese:\nDer Patient stellte sich mit seit drei Wochen zunehmendem Bauchumfang, Ikterus, Beinödemen und fremdanamnestisch beschriebener Verwirrtheit vor. Es besteht ein Alkoholabusus seit 20 Jahren.\n\nBefunde:\nSonographisch zeigten sich eine Leberzirrhose mit ausgeprägtem Aszites und eine Splenomegalie. Laborchemisch fanden sich ein Bilirubin von 4,8 mg/dl, ein Albumin von 2,6 g/dl und ein INR von 1,7. Das Aszites-Punktat ergab keinen Hinweis auf eine spontan bakterielle Peritonitis.\n\nDiagnose:\nDekompensierte äthyltoxische Leberzirrhose mit Aszites und hepatischer Enzephalopathie.\n\nTherapie und Verlauf:\nEs erfolgte eine Aszitespunktion von 5 Litern mit Albuminsubstitution. Wir leiteten eine diuretische Therapie mit Spironolacton und Furosemid sowie eine Therapie mit Lactulose ein. Darunter besserte sich die Vigilanz deutlich.\n\nProcedere:\nWir empfehlen eine strikte Alkoholkarenz, tägliche Gewichtskontrollen, eine natriumarme Kost, Kontrollen der Elektrolyte und Nierenwerte in einer Woche sowie eine Vorstellung in der hepatologischen Ambulanz.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab13",
+    "caseId": "c29",
+    "title": "Akute Sigmadivertikulitis",
+    "task": "Bemorning statsionar davolanishi haqida uy shifokoriga Arztbrief yozing. Penitsillin allergiyasini hisobga oling.",
+    "taskRu": "Напишите семейному врачу Arztbrief о стационарном лечении пациентки. Учтите аллергию на пенициллин.",
+    "facts": [
+      "Patientin: Monika Krause, 64 Jahre, weiblich",
+      "Stationäre Aufnahme: 28.09.2026 – Entlassung: 04.10.2026",
+      "Seit 2 Tagen Schmerzen im linken Unterbauch, Fieber 38,6 °C, Inappetenz",
+      "Bekannte Divertikulose, Allergie: Penicillin",
+      "Labor: Leukozyten 15.800/µl, CRP 140 mg/l",
+      "CT-Abdomen: Sigmadivertikulitis ohne Abszess oder Perforation",
+      "Therapie: Antibiose mit Ciprofloxacin und Metronidazol, Nahrungskarenz, anschließend Kostaufbau"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patientin ma’lumotlari (Frau Krause)",
+        "labelRu": "Данные пациентки (Frau Krause)",
+        "keywords": [
+          "krause"
+        ]
+      },
+      {
+        "label": "Asosiy shikoyat: linker Unterbauch",
+        "labelRu": "Основная жалоба: левая подвздошная область",
+        "keywords": [
+          "unterbauch"
+        ]
+      },
+      {
+        "label": "Fieber",
+        "labelRu": "Fieber",
+        "keywords": [
+          "fieber"
+        ]
+      },
+      {
+        "label": "Allergiya (Penicillin)",
+        "labelRu": "Аллергия (Penicillin)",
+        "keywords": [
+          "penicillin"
+        ]
+      },
+      {
+        "label": "Labor (Leukozyten, CRP)",
+        "labelRu": "Лабораторные данные (Leukozyten, CRP)",
+        "keywords": [
+          "leukozyt",
+          "crp"
+        ]
+      },
+      {
+        "label": "CT topilmasi",
+        "labelRu": "Данные КТ",
+        "keywords": [
+          "ct des abdomens",
+          "ct-abdomen",
+          "computertomograph"
+        ]
+      },
+      {
+        "label": "Asoratlar yo‘qligi (Abszess/Perforation)",
+        "labelRu": "Нет осложнений (абсцесс/перфорация)",
+        "keywords": [
+          "abszess",
+          "perforation"
+        ]
+      },
+      {
+        "label": "Diagnoz (Divertikulitis)",
+        "labelRu": "Диагноз (Divertikulitis)",
+        "keywords": [
+          "divertikulitis"
+        ]
+      },
+      {
+        "label": "Davolash (Antibiose)",
+        "labelRu": "Лечение (антибиотики)",
+        "keywords": [
+          "antibio",
+          "ciprofloxacin",
+          "metronidazol"
+        ]
+      },
+      {
+        "label": "Tavsiya: Koloskopie",
+        "labelRu": "Рекомендация: колоноскопия",
+        "keywords": [
+          "koloskopie"
+        ]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihre Patientin Frau Monika Krause, 64 Jahre, die sich vom 28.09.2026 bis zum 04.10.2026 in unserer stationären Behandlung befand.\n\nAnamnese:\nDie Patientin stellte sich mit seit zwei Tagen bestehenden Schmerzen im linken Unterbauch, Fieber bis 38,6 °C und Inappetenz vor. Eine Divertikulose ist bekannt. Es besteht eine Allergie gegen Penicillin.\n\nBefunde:\nLaborchemisch zeigten sich eine Leukozytose von 15.800/µl und ein CRP von 140 mg/l. In der CT des Abdomens stellte sich eine Sigmadivertikulitis ohne Abszess und ohne Perforation dar.\n\nDiagnose:\nAkute unkomplizierte Sigmadivertikulitis.\n\nTherapie und Verlauf:\nWir behandelten mit einer Antibiose aus Ciprofloxacin und Metronidazol unter initialer Nahrungskarenz. Der anschließende Kostaufbau wurde gut toleriert, die Entzündungswerte waren rückläufig.\n\nProcedere:\nWir empfehlen eine Koloskopie in sechs bis acht Wochen, eine ballaststoffreiche Ernährung und ausreichende Flüssigkeitszufuhr.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab14",
+    "caseId": "c31",
+    "title": "Schenkelhalsfraktur nach Sturz",
+    "task": "Operatsiyadan keyingi chiqish xati (Entlassbrief) yozing. Antikoagulyatsiya va reabilitatsiyaga e’tibor bering.",
+    "taskRu": "Напишите выписное письмо после операции (Entlassbrief). Учтите антикоагуляцию и реабилитацию.",
+    "facts": [
+      "Patientin: Gertrud Schulze, 82 Jahre, weiblich",
+      "Stationäre Aufnahme: 22.09.2026 – Entlassung: 06.10.2026",
+      "Häuslicher Sturz, Schmerzen in der linken Leiste, Bein verkürzt und außenrotiert",
+      "Vorerkrankungen: Vorhofflimmern unter Apixaban, Herzinsuffizienz, Osteoporose",
+      "Röntgen: mediale Schenkelhalsfraktur links (Garden IV)",
+      "Therapie: Pausieren von Apixaban, Implantation einer zementierten Hüft-Totalendoprothese links am Folgetag",
+      "Verlauf: Mobilisation mit Rollator unter Vollbelastung, Wunde reizlos"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patientin ma’lumotlari (Frau Schulze)",
+        "labelRu": "Данные пациентки (Frau Schulze)",
+        "keywords": [
+          "schulze"
+        ]
+      },
+      {
+        "label": "Sturz",
+        "labelRu": "Падение",
+        "keywords": [
+          "sturz",
+          "gestürzt"
+        ]
+      },
+      {
+        "label": "Klinik: verkürzt, außenrotiert",
+        "labelRu": "Клиника: укорочение, наружная ротация",
+        "keywords": [
+          "verkürzt",
+          "außenrotiert"
+        ]
+      },
+      {
+        "label": "Antikoagulation (Apixaban)",
+        "labelRu": "Антикоагуляция (Apixaban)",
+        "keywords": [
+          "apixaban",
+          "antikoagul"
+        ]
+      },
+      {
+        "label": "Röntgen",
+        "labelRu": "Röntgen",
+        "keywords": [
+          "röntgen"
+        ]
+      },
+      {
+        "label": "Diagnoz (Schenkelhalsfraktur)",
+        "labelRu": "Диагноз (Schenkelhalsfraktur)",
+        "keywords": [
+          "schenkelhalsfraktur"
+        ]
+      },
+      {
+        "label": "Operatsiya (Endoprothese)",
+        "labelRu": "Операция (эндопротез)",
+        "keywords": [
+          "endoprothese",
+          "totalendoprothese",
+          "prothese"
+        ]
+      },
+      {
+        "label": "Mobilisation / Vollbelastung",
+        "labelRu": "Мобилизация / полная нагрузка",
+        "keywords": [
+          "mobilis",
+          "vollbelastung"
+        ]
+      },
+      {
+        "label": "Osteoporose-Therapie",
+        "labelRu": "Лечение остеопороза",
+        "keywords": [
+          "osteoporose"
+        ]
+      },
+      {
+        "label": "Tavsiya: Reha / Physiotherapie",
+        "labelRu": "Рекомендация: реабилитация / физиотерапия",
+        "keywords": [
+          "reha",
+          "physiotherapie"
+        ]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihre Patientin Frau Gertrud Schulze, 82 Jahre, die sich vom 22.09.2026 bis zum 06.10.2026 in unserer stationären Behandlung befand.\n\nAnamnese:\nDie Patientin stellte sich nach einem häuslichen Sturz mit Schmerzen in der linken Leiste vor. Klinisch zeigte sich ein verkürztes und außenrotiertes linkes Bein. Vorbekannt sind ein Vorhofflimmern unter Antikoagulation mit Apixaban, eine Herzinsuffizienz und eine Osteoporose.\n\nBefunde:\nIm Röntgen zeigte sich eine mediale Schenkelhalsfraktur links (Garden IV).\n\nDiagnose:\nMediale Schenkelhalsfraktur links nach Sturz.\n\nTherapie und Verlauf:\nNach Pausieren von Apixaban erfolgte am Folgetag die Implantation einer zementierten Hüft-Totalendoprothese links. Die Mobilisation mit dem Rollator unter Vollbelastung gelang gut, die Wunde ist reizlos.\n\nProcedere:\nWir empfehlen die Fortführung der Antikoagulation mit Apixaban, eine Anschlussheilbehandlung (Reha) mit Physiotherapie, die Optimierung der Osteoporose-Therapie sowie die Entfernung des Nahtmaterials am 12. postoperativen Tag.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab15",
+    "caseId": "c34",
+    "title": "Erysipel des Unterschenkels",
+    "task": "Bemorning statsionar davolanishi haqida uy shifokoriga Arztbrief yozing.",
+    "taskRu": "Напишите семейному врачу Arztbrief о стационарном лечении пациента.",
+    "facts": [
+      "Patient: Rolf Peters, 56 Jahre, männlich",
+      "Stationäre Aufnahme: 30.09.2026 – Entlassung: 05.10.2026",
+      "Scharf begrenzte, überwärmte Rötung am rechten Unterschenkel, Fieber 39,2 °C, Schüttelfrost",
+      "Eintrittspforte: Interdigitalmykose rechts",
+      "Vorerkrankungen: Diabetes mellitus Typ 2, chronisch venöse Insuffizienz",
+      "Labor: Leukozyten 14.200/µl, CRP 98 mg/l; Kompressionssonographie: keine Thrombose",
+      "Therapie: Penicillin G i. v., Hochlagerung, antimykotische Lokaltherapie"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patient ma’lumotlari (Herr Peters)",
+        "labelRu": "Данные пациента (Herr Peters)",
+        "keywords": [
+          "peters"
+        ]
+      },
+      {
+        "label": "Rötung / Überwärmung",
+        "labelRu": "Покраснение / гипертермия",
+        "keywords": [
+          "rötung",
+          "überwärm"
+        ]
+      },
+      {
+        "label": "Fieber / Schüttelfrost",
+        "labelRu": "Fieber / Schüttelfrost",
+        "keywords": [
+          "fieber",
+          "schüttelfrost"
+        ]
+      },
+      {
+        "label": "Eintrittspforte (Mykose)",
+        "labelRu": "Входные ворота (микоз)",
+        "keywords": [
+          "mykose",
+          "eintrittspforte"
+        ]
+      },
+      {
+        "label": "Diabetes mellitus",
+        "labelRu": "Diabetes mellitus",
+        "keywords": [
+          "diabetes"
+        ]
+      },
+      {
+        "label": "Labor (Leukozyten, CRP)",
+        "labelRu": "Лабораторные данные (Leukozyten, CRP)",
+        "keywords": [
+          "leukozyt",
+          "crp"
+        ]
+      },
+      {
+        "label": "TVT istisno qilingan",
+        "labelRu": "ТГВ исключён",
+        "keywords": [
+          "thrombose",
+          "kompressionssonographie"
+        ]
+      },
+      {
+        "label": "Diagnoz (Erysipel)",
+        "labelRu": "Диагноз (Erysipel)",
+        "keywords": [
+          "erysipel"
+        ]
+      },
+      {
+        "label": "Davolash (Penicillin)",
+        "labelRu": "Лечение (Penicillin)",
+        "keywords": [
+          "penicillin",
+          "antibio"
+        ]
+      },
+      {
+        "label": "Tavsiya: Mykosebehandlung / Hochlagerung",
+        "labelRu": "Рекомендация: лечение микоза / возвышенное положение",
+        "keywords": [
+          "antimykot",
+          "hochlager",
+          "fußpflege"
+        ]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Rolf Peters, 56 Jahre, der sich vom 30.09.2026 bis zum 05.10.2026 in unserer stationären Behandlung befand.\n\nAnamnese:\nDer Patient stellte sich mit einer scharf begrenzten, überwärmten Rötung am rechten Unterschenkel, Fieber bis 39,2 °C und Schüttelfrost vor. Als Eintrittspforte fand sich eine Interdigitalmykose rechts. Vorbekannt sind ein Diabetes mellitus Typ 2 und eine chronisch venöse Insuffizienz.\n\nBefunde:\nLaborchemisch zeigten sich eine Leukozytose von 14.200/µl und ein CRP von 98 mg/l. Die Kompressionssonographie ergab keinen Hinweis auf eine Thrombose.\n\nDiagnose:\nErysipel des rechten Unterschenkels bei Interdigitalmykose.\n\nTherapie und Verlauf:\nUnter intravenöser Therapie mit Penicillin G, Hochlagerung und antimykotischer Lokaltherapie bildeten sich Rötung und Fieber rasch zurück.\n\nProcedere:\nWir empfehlen die orale Fortführung der Antibiose für insgesamt zehn Tage, die konsequente antimykotische Behandlung, eine sorgfältige Fußpflege sowie eine Optimierung der Blutzuckereinstellung.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab16",
+    "caseId": "c35",
+    "title": "Bakterielle Meningitis",
+    "task": "Bemorning statsionar davolanishi haqida uy shifokoriga Arztbrief yozing. Kontakt shaxslar profilaktikasiga e’tibor bering.",
+    "taskRu": "Напишите семейному врачу Arztbrief о стационарном лечении пациента. Учтите профилактику у контактных лиц.",
+    "facts": [
+      "Patient: Felix Weiß, 19 Jahre, männlich",
+      "Stationäre Aufnahme: 21.09.2026 – Entlassung: 05.10.2026",
+      "Stärkste Kopfschmerzen, Fieber 39,8 °C, Meningismus, Photophobie, Petechien an den Beinen",
+      "Labor: Leukozyten 22.000/µl, CRP 280 mg/l",
+      "Lumbalpunktion: trüber Liquor, granulozytäre Pleozytose, Nachweis von Neisseria meningitidis",
+      "Therapie: Dexamethason und Ceftriaxon i. v. unmittelbar nach Blutkulturen",
+      "Meldung an das Gesundheitsamt, Chemoprophylaxe der engen Kontaktpersonen"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patient ma’lumotlari (Herr Weiß)",
+        "labelRu": "Данные пациента (Herr Weiß)",
+        "keywords": [
+          "weiß",
+          "weiss"
+        ]
+      },
+      {
+        "label": "Kopfschmerzen / Fieber",
+        "labelRu": "Головная боль / лихорадка",
+        "keywords": [
+          "kopfschmerz",
+          "fieber"
+        ]
+      },
+      {
+        "label": "Meningismus",
+        "labelRu": "Менингизм",
+        "keywords": [
+          "meningismus",
+          "nackensteif"
+        ]
+      },
+      {
+        "label": "Petechien",
+        "labelRu": "Петехии",
+        "keywords": [
+          "petechien"
+        ]
+      },
+      {
+        "label": "Lumbalpunktion",
+        "labelRu": "Люмбальная пункция",
+        "keywords": [
+          "lumbalpunktion",
+          "liquor"
+        ]
+      },
+      {
+        "label": "Erreger (Meningokokken)",
+        "labelRu": "Возбудитель (менингококк)",
+        "keywords": [
+          "neisseria",
+          "meningokokken"
+        ]
+      },
+      {
+        "label": "Diagnoz (Meningitis)",
+        "labelRu": "Диагноз (Meningitis)",
+        "keywords": [
+          "meningitis"
+        ]
+      },
+      {
+        "label": "Davolash (Ceftriaxon, Dexamethason)",
+        "labelRu": "Лечение (Ceftriaxon, Dexamethason)",
+        "keywords": [
+          "ceftriaxon",
+          "dexamethason"
+        ]
+      },
+      {
+        "label": "Meldung Gesundheitsamt",
+        "labelRu": "Уведомление Gesundheitsamt",
+        "keywords": [
+          "gesundheitsamt",
+          "meldung"
+        ]
+      },
+      {
+        "label": "Chemoprophylaxe der Kontaktpersonen",
+        "labelRu": "Химиопрофилактика контактных лиц",
+        "keywords": [
+          "prophylaxe",
+          "kontaktperson"
+        ]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Felix Weiß, 19 Jahre, der sich vom 21.09.2026 bis zum 05.10.2026 in unserer stationären Behandlung befand.\n\nAnamnese:\nDer Patient stellte sich mit stärksten Kopfschmerzen, Fieber bis 39,8 °C, Meningismus und Photophobie vor. An den Beinen zeigten sich Petechien.\n\nBefunde:\nLaborchemisch fanden sich eine Leukozytose von 22.000/µl und ein CRP von 280 mg/l. Die Lumbalpunktion ergab einen trüben Liquor mit granulozytärer Pleozytose; es wurde Neisseria meningitidis nachgewiesen.\n\nDiagnose:\nAkute bakterielle Meningitis durch Meningokokken.\n\nTherapie und Verlauf:\nUnmittelbar nach Abnahme der Blutkulturen erfolgte eine Therapie mit Dexamethason und Ceftriaxon intravenös. Darunter besserte sich der Zustand rasch, neurologische Defizite bestehen nicht.\n\nProcedere:\nDie Erkrankung wurde dem Gesundheitsamt gemeldet. Die engen Kontaktpersonen erhielten eine Chemoprophylaxe. Wir empfehlen eine Hörprüfung in vier Wochen und die Überprüfung des Impfstatus.\n\nMit freundlichen kollegialen Grüßen"
   }
 ]

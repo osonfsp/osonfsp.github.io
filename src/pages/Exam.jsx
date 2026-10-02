@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "../components/Link";
 import { PatientChat } from "../components/PatientChat";
 import { Disclaimer, FeedbackList, PageHeader, ProgressRing, ScoreBars, Spinner } from "../components/ui";
-import { arztbriefe, getCase } from "../data/index";
+import { CASE_SECTIONS, arztbriefe, getCase } from "../data/index";
 import {
   ARZT_ARZT_QUESTIONS,
   correctArztbrief,
@@ -259,17 +259,33 @@ export function ExamPage() {
               <h2 className="section-title mb-0">{tr("Fall tanlang", "Выберите кейс")}</h2>
               <FreeLeft kind="exam" />
             </div>
-            <div className="grid gap-2 sm:grid-cols-2">
-              {EXAM_CASES.map((z, k) => (
-                <button
-                  key={z.c.id}
-                  className="rounded-xl border border-slate-200 p-3 text-left text-sm transition hover:border-teal-400 dark:border-slate-700"
-                  onClick={() => N(k)}
-                >
-                  <span className="text-xs muted">{z.c.category}</span>
-                  <span className="block font-medium">{z.c.patient.hauptbeschwerde}</span>
-                </button>
-              ))}
+            <div className="space-y-4">
+              {CASE_SECTIONS.map((sec) => {
+                let items = EXAM_CASES.map((z, k) => [z, k]).filter(([z]) =>
+                  sec.categories.includes(z.c.category),
+                );
+                return (
+                  items.length > 0 && (
+                    <div key={sec.id}>
+                      <p className="mb-2 text-xs font-semibold uppercase tracking-wider muted">
+                        {sec.icon} {sec.label}
+                      </p>
+                      <div className="grid gap-2 sm:grid-cols-2">
+                        {items.map(([z, k]) => (
+                          <button
+                            key={z.c.id}
+                            className="rounded-xl border border-slate-200 p-3 text-left text-sm transition hover:border-teal-400 dark:border-slate-700"
+                            onClick={() => N(k)}
+                          >
+                            <span className="text-xs muted">{z.c.category}</span>
+                            <span className="block font-medium">{z.c.patient.hauptbeschwerde}</span>
+                          </button>
+                        ))}
+                      </div>
+                    </div>
+                  )
+                );
+              })}
             </div>
             <button className="btn-primary mt-4 w-full sm:w-auto" onClick={() => N()}>
               🎲 {tr("Tasodifiy Fall bilan boshlash", "Начать со случайного кейса")}
