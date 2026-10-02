@@ -85,7 +85,7 @@ export function PatientChat({ caseData, messages, onMessages, showHints = true, 
 
   const { patient } = caseData;
   return (
-    <div className="card flex flex-col p-0">
+    <div className="card flex min-w-0 flex-col p-0">
       <div className="flex items-center gap-3 border-b border-slate-200 px-4 py-3 dark:border-slate-800">
         <span
           className="grid h-10 w-10 place-items-center rounded-full bg-slate-100 text-lg dark:bg-slate-800"

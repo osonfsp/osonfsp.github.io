@@ -285,7 +285,7 @@ export function ExamPage() {
   return (
     <div className="page">
       <div className="mb-6 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-        <ol className="no-scrollbar flex gap-2 overflow-x-auto">
+        <ol className="no-scrollbar flex min-w-0 gap-2 overflow-x-auto">
           {EXAM_STEPS.map((z, k) => (
             <li
               key={z.key}
@@ -306,7 +306,7 @@ export function ExamPage() {
         {t !== "result" && <Timer minutes={PART_MINUTES} resetKey={`${n.c.id}-${t}`} onExpire={expire} />}
       </div>
       {t === "t1" && (
-        <div className="grid gap-4 lg:grid-cols-[1fr_300px]">
+        <div className="grid gap-4 lg:grid-cols-[minmax(0,1fr)_300px]">
           <PatientChat caseData={n.c} messages={l} onMessages={s} showHints={false} />
           <aside className="space-y-4">
             <div className="card text-sm">
