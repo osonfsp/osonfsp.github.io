@@ -4,6 +4,7 @@ import { usePathname } from "./lib/router";
 import { AboutFspPage } from "./pages/AboutFsp";
 import { AdminPage } from "./pages/Admin";
 import { ArztbriefListPage, ArztbriefPage } from "./pages/Arztbrief";
+import { AufklaerungListPage, AufklaerungPage } from "./pages/Aufklaerung";
 import { CaseDetailPage } from "./pages/CaseDetail";
 import { CasesPage } from "./pages/Cases";
 import { DashboardPage } from "./pages/Dashboard";
@@ -39,6 +40,8 @@ const ROUTES = [
   [/^\/simulation$/, SimulationPage],
   [/^\/arztbrief$/, ArztbriefListPage],
   [/^\/arztbrief\/[^/]+$/, ArztbriefPage],
+  [/^\/aufklaerung$/, AufklaerungListPage],
+  [/^\/aufklaerung\/[^/]+$/, AufklaerungPage],
   [/^\/woerter$/, WordsPage],
   [/^\/fachsprache$/, FachsprachePage],
   [/^\/redemittel$/, RedemittelPage],
@@ -47,7 +50,7 @@ const ROUTES = [
   [/^\/admin$/, AdminPage],
 ];
 
-const MATERIALS = /^\/(faelle|simulation|arztbrief|woerter|fachsprache|redemittel)(\/|$)/;
+const MATERIALS = /^\/(faelle|simulation|arztbrief|aufklaerung|woerter|fachsprache|redemittel)(\/|$)/;
 
 export function Router() {
   const pathname = usePathname();

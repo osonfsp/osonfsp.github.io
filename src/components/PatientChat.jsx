@@ -91,7 +91,7 @@ export function PatientChat({ caseData, messages, onMessages, showHints = true, 
           className="grid h-10 w-10 place-items-center rounded-full bg-slate-100 text-lg dark:bg-slate-800"
           aria-hidden
         >
-          🧑‍🦳
+          🧑
         </span>
         <div className="min-w-0">
           <p className="truncate text-sm font-semibold">

@@ -30,6 +30,16 @@ const JOURNEY = [
     badge: tr("🎤 Ovozda ham", "🎤 Можно голосом"),
   },
   {
+    href: "/aufklaerung",
+    icon: "🗨️",
+    station: tr("Shifokor xonasi · Teil 1", "Кабинет врача · Teil 1"),
+    title: tr("Tekshiruvni tushuntirish (Aufklärung)", "Объяснение обследования (Aufklärung)"),
+    text: tr(
+      "Gastroskopiya, KT, MRT, lyumbal punksiya va boshqalarni bemorga sodda tilda tushuntiring.",
+      "Объясните пациенту простым языком гастроскопию, КТ, МРТ, люмбальную пункцию и другое.",
+    ),
+  },
+  {
     href: "/arztbrief",
     icon: "✍️",
     station: tr("Hujjatlar · Teil 2", "Документация · Teil 2"),

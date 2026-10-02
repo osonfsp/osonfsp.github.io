@@ -72,7 +72,7 @@ export function CaseDetailPage() {
           </button>
         </div>
       </div>
-      <div className="mt-6 grid gap-4 lg:grid-cols-[320px_1fr]">
+      <div className="mt-6 grid grid-cols-[minmax(0,1fr)] gap-4 lg:grid-cols-[320px_minmax(0,1fr)]">
         <aside className="card h-fit">
           <h2 className="section-title">Patient</h2>
           <dl className="space-y-3 text-sm">

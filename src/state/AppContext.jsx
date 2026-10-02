@@ -8,6 +8,7 @@ const EMPTY_PROGRESS = {
     learnedWords: [],
     knownPairs: [],
     arztbrief: [],
+    aufklaerung: [],
     simulations: [],
     exams: [],
     activity: [],
@@ -133,6 +134,17 @@ export function AppProvider({ children: e }) {
         })),
       [r],
     ),
+    AK = useCallback(
+      (m, v) =>
+        r((N) =>
+          withActivity(
+            { ...N, aufklaerung: [m, ...(N.aufklaerung ?? [])].slice(0, 50) },
+            `Aufklärung: ${v} — ${m.score}%`,
+            `/aufklaerung/${m.id}`,
+          ),
+        ),
+      [r],
+    ),
     A = useCallback(
       (m, v) =>
         r((N) =>
@@ -201,10 +213,11 @@ export function AppProvider({ children: e }) {
         reviewWord: R,
         togglePair: p,
         addArztbrief: A,
+        addAufklaerung: AK,
         addSimulation: w,
         addExam: D,
       }),
-      [t, n, l, g, c, h, b, x, y, f, R, p, A, w, D],
+      [t, n, l, g, c, h, b, x, y, f, R, p, A, AK, w, D],
     );
   return <AppContext.Provider value={d}>{e}</AppContext.Provider>;
 }

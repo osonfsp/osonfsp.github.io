@@ -60,6 +60,7 @@ const NAV_GROUPS = [
     { href: "/", icon: "🏠", label: tr("Bosh sahifa", "Главная") },
     { href: "/faelle", icon: "🩺", label: tr("Fälle", "Кейсы") },
     { href: "/simulation", icon: "💬", label: tr("Simulation", "Симуляция") },
+    { href: "/aufklaerung", icon: "🗨️", label: tr("Aufklärung", "Aufklärung") },
     { href: "/arztbrief", icon: "✍️", label: "Arztbrief" },
     { href: "/pruefung", icon: "🎯", label: tr("Prüfung", "Экзамен") },
   ],
