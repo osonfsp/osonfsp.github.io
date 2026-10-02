@@ -2977,5 +2977,930 @@
       "Sonographie (Abdomen)",
       "Urinstatus"
     ]
+  },
+  {
+    "id": "c30",
+    "title": "Distale Radiusfraktur",
+    "category": "Unfallchirurgie",
+    "difficulty": "leicht",
+    "patient": {
+      "name": "Elfriede Hartmann",
+      "age": 74,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Sturz auf die ausgestreckte Hand, Schmerzen im Handgelenk"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Vor 2 Stunden auf glattem Gehweg ausgerutscht und auf die ausgestreckte rechte Hand gestürzt. Seitdem starke Schmerzen und Schwellung am rechten Handgelenk, sichtbare Fehlstellung (Fourchette-Stellung). Kein Kopfanprall, keine Bewusstlosigkeit. Finger können bewegt werden, kein Kribbeln.",
+      "vorerkrankungen": "Osteoporose, arterielle Hypertonie, Katarakt-OP beidseits.",
+      "medikamente": "Alendronsäure 70 mg 1x wöchentlich, Colecalciferol 1000 IE 1-0-0, Ramipril 5 mg 1-0-0",
+      "allergien": "Pflaster (Hautrötung)",
+      "familienanamnese": "Mutter mit Hüftfraktur im Alter.",
+      "sozialanamnese": "Verwitwet, Rentnerin, lebt allein im 2. Stock ohne Aufzug, Rechtshänderin. Nichtraucherin, kein Alkohol."
+    },
+    "sprache": [
+      {
+        "patient": "Ich bin auf die Hand gefallen.",
+        "fach": "Die Patientin stürzte auf die ausgestreckte rechte Hand."
+      },
+      {
+        "patient": "Das Handgelenk sieht ganz schief aus.",
+        "fach": "Es zeigt sich eine Fehlstellung im Sinne einer Fourchette-Stellung."
+      },
+      {
+        "patient": "Die Finger kann ich bewegen und spüre alles.",
+        "fach": "Durchblutung, Motorik und Sensibilität (DMS) sind intakt."
+      }
+    ],
+    "terms": [
+      {
+        "de": "distale Radiusfraktur",
+        "patient": "Handgelenksbruch",
+        "uz": "bilak suyagining distal sinishi",
+        "ru": "перелом лучевой кости в типичном месте"
+      },
+      {
+        "de": "Fehlstellung",
+        "patient": "schief stehender Knochen",
+        "uz": "noto‘g‘ri holat (deformatsiya)",
+        "ru": "смещение, деформация"
+      },
+      {
+        "de": "DMS",
+        "patient": "Durchblutung, Bewegung, Gefühl",
+        "uz": "qon aylanishi, harakat, sezgi",
+        "ru": "кровоснабжение, моторика, чувствительность"
+      },
+      {
+        "de": "Reposition",
+        "patient": "Knochen wieder einrichten",
+        "uz": "repozitsiya (suyakni joyiga solish)",
+        "ru": "репозиция"
+      },
+      {
+        "de": "Gipsschiene",
+        "patient": "Gips",
+        "uz": "gips longeta",
+        "ru": "гипсовая лонгета"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich bin auf dem Glatteis ausgerutscht und auf die Hand gefallen. Das Handgelenk tut furchtbar weh.",
+      "answers": {
+        "beginn": "Vor ungefähr zwei Stunden, auf dem Weg zum Bäcker.",
+        "lokalisation": "Das rechte Handgelenk, auf der Daumenseite.",
+        "charakter": "Es tut sehr weh, eine 8 von 10, besonders wenn ich die Hand bewege. Es ist dick geworden und sieht schief aus.",
+        "ausstrahlung": "Es zieht ein bisschen in den Unterarm.",
+        "begleit": "Die Finger kann ich bewegen, und ich spüre alles. Den Kopf habe ich mir nicht gestoßen, ohnmächtig war ich nicht.",
+        "vegetativ": "Appetit, Schlaf, Stuhlgang und Wasserlassen sind normal.",
+        "vorerkrankungen": "Ich habe Osteoporose und hohen Blutdruck. Und an beiden Augen wurde der graue Star operiert.",
+        "medikamente": "Alendronsäure einmal pro Woche, Vitamin D jeden Morgen und Ramipril 5 mg.",
+        "allergien": "Auf Pflaster bekomme ich rote Haut.",
+        "familie": "Meine Mutter hatte im Alter einen Oberschenkelhalsbruch.",
+        "sozial": "Ich bin Witwe und wohne allein im zweiten Stock ohne Aufzug. Ich bin Rechtshänderin.",
+        "noxen": "Ich rauche nicht und trinke keinen Alkohol."
+      }
+    },
+    "verdachtsdiagnose": "Distale Radiusfraktur rechts (Typ Colles) bei Osteoporose",
+    "diagnoseKeywords": [
+      "radiusfraktur",
+      "colles",
+      "handgelenksfraktur",
+      "radius"
+    ],
+    "differenzialdiagnosen": [
+      "Skaphoidfraktur",
+      "Handgelenksdistorsion",
+      "Ulnafraktur",
+      "Luxation"
+    ],
+    "untersuchungen": [
+      "Röntgen (Handgelenk in 2 Ebenen)",
+      "DMS-Kontrolle",
+      "CT (Handgelenk)",
+      "Knochendichtemessung"
+    ]
+  },
+  {
+    "id": "c31",
+    "title": "Schenkelhalsfraktur",
+    "category": "Unfallchirurgie",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Gertrud Schulze",
+      "age": 82,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Sturz in der Wohnung, kann nicht mehr aufstehen"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Heute Morgen in der Wohnung über einen Teppich gestolpert und auf die linke Hüfte gefallen. Seitdem starke Schmerzen in der linken Leiste, Gehen und Aufstehen unmöglich. Das linke Bein ist verkürzt und außenrotiert. Kein Kopfanprall, kein Schwindel vor dem Sturz.",
+      "vorerkrankungen": "Vorhofflimmern, Herzinsuffizienz (NYHA II), Osteoporose, leichte Demenz.",
+      "medikamente": "Apixaban 5 mg 1-0-1, Bisoprolol 2,5 mg 1-0-0, Torasemid 10 mg 1-0-0",
+      "allergien": "Keine bekannten Allergien",
+      "familienanamnese": "Nicht erhebbar / keine Besonderheiten.",
+      "sozialanamnese": "Verwitwet, lebt allein, Unterstützung durch Tochter und Pflegedienst, Rollator. Nichtraucherin, kein Alkohol."
+    },
+    "sprache": [
+      {
+        "patient": "Ich kann das Bein nicht mehr belasten.",
+        "fach": "Es besteht eine Belastungsunfähigkeit des linken Beins."
+      },
+      {
+        "patient": "Das Bein ist kürzer und nach außen gedreht.",
+        "fach": "Klinisch zeigt sich ein verkürztes und außenrotiertes linkes Bein."
+      },
+      {
+        "patient": "Ich nehme einen Blutverdünner.",
+        "fach": "Die Patientin steht unter oraler Antikoagulation mit Apixaban."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Schenkelhalsfraktur",
+        "patient": "Oberschenkelhalsbruch",
+        "uz": "son suyagi bo‘ynining sinishi",
+        "ru": "перелом шейки бедра"
+      },
+      {
+        "de": "außenrotiert",
+        "patient": "nach außen gedreht",
+        "uz": "tashqariga burilgan",
+        "ru": "ротированный кнаружи"
+      },
+      {
+        "de": "Belastungsunfähigkeit",
+        "patient": "kann nicht auftreten",
+        "uz": "oyoqqa tayana olmaslik",
+        "ru": "невозможность опоры"
+      },
+      {
+        "de": "Hüftendoprothese",
+        "patient": "künstliches Hüftgelenk",
+        "uz": "son bo‘g‘imi endoprotezi",
+        "ru": "эндопротез тазобедренного сустава"
+      },
+      {
+        "de": "Antikoagulation",
+        "patient": "Blutverdünnung",
+        "uz": "qon ivishiga qarshi davo",
+        "ru": "антикоагуляция"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich bin in der Wohnung hingefallen und kann nicht mehr aufstehen. Die Hüfte tut so weh.",
+      "answers": {
+        "beginn": "Heute Morgen gegen acht, ich bin über den Teppich gestolpert.",
+        "lokalisation": "Links in der Leiste und in der Hüfte.",
+        "charakter": "Ein starker Schmerz, eine 9 von 10, wenn ich das Bein bewege. Auftreten geht gar nicht.",
+        "ausstrahlung": "Es zieht bis ins Knie.",
+        "begleit": "Vor dem Sturz war mir nicht schwindelig, ich bin einfach gestolpert. Den Kopf habe ich nicht angeschlagen.",
+        "vegetativ": "Appetit ist normal. Stuhlgang und Wasserlassen sind normal, nachts muss ich öfter raus.",
+        "vorerkrankungen": "Ich habe Vorhofflimmern, ein schwaches Herz und Osteoporose. Und manchmal vergesse ich Dinge.",
+        "medikamente": "Eliquis 5 mg morgens und abends, Bisoprolol morgens und eine Wassertablette, Torasemid.",
+        "allergien": "Nein, keine.",
+        "familie": "Das weiß ich nicht mehr so genau.",
+        "sozial": "Ich bin Witwe und wohne allein. Meine Tochter kommt jeden Tag, und morgens kommt der Pflegedienst. Ich laufe mit einem Rollator.",
+        "noxen": "Ich habe nie geraucht und trinke keinen Alkohol."
+      }
+    },
+    "verdachtsdiagnose": "Mediale Schenkelhalsfraktur links nach Sturz, unter oraler Antikoagulation",
+    "diagnoseKeywords": [
+      "schenkelhalsfraktur",
+      "oberschenkelhalsbruch",
+      "hüftfraktur",
+      "femurfraktur",
+      "schenkelhals"
+    ],
+    "differenzialdiagnosen": [
+      "Pertrochantäre Femurfraktur",
+      "Beckenfraktur",
+      "Hüftprellung",
+      "Hüftluxation"
+    ],
+    "untersuchungen": [
+      "Röntgen (Becken und Hüfte)",
+      "Blutbild",
+      "Gerinnung",
+      "EKG",
+      "CT (Becken)"
+    ]
+  },
+  {
+    "id": "c32",
+    "title": "Akuter Harnverhalt bei Prostatahyperplasie",
+    "category": "Urologie",
+    "difficulty": "leicht",
+    "patient": {
+      "name": "Dieter Klein",
+      "age": 74,
+      "gender": "männlich",
+      "hauptbeschwerde": "Kann seit gestern Abend kein Wasser lassen"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit gestern Abend kein Wasserlassen mehr möglich, zunehmende Unterbauchschmerzen und Druckgefühl. Seit Monaten schwacher Harnstrahl, verzögerter Miktionsbeginn, Nachträufeln und Nykturie (3–4x). Gestern Abend Erkältungsmittel eingenommen.",
+      "vorerkrankungen": "Benigne Prostatahyperplasie (bekannt, bisher unbehandelt), arterielle Hypertonie, Diabetes mellitus Typ 2.",
+      "medikamente": "Metformin 500 mg 1-0-1, Lisinopril 10 mg 1-0-0, gestern Grippostad C (Kombinationspräparat)",
+      "allergien": "Keine bekannten Allergien",
+      "familienanamnese": "Bruder mit Prostatakarzinom.",
+      "sozialanamnese": "Verheiratet, Rentner (ehemals Busfahrer). Ex-Raucher. Alkohol gelegentlich."
+    },
+    "sprache": [
+      {
+        "patient": "Ich kann kein Wasser lassen.",
+        "fach": "Es besteht ein akuter Harnverhalt."
+      },
+      {
+        "patient": "Der Strahl ist schon lange schwach, und nachts muss ich oft raus.",
+        "fach": "Anamnestisch bestehen ein abgeschwächter Harnstrahl und Nykturie."
+      },
+      {
+        "patient": "Mein Bauch unten ist ganz prall.",
+        "fach": "Es zeigt sich eine prall gefüllte, tastbare Harnblase."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Harnverhalt",
+        "patient": "kann nicht Wasser lassen",
+        "uz": "siydik tutilishi",
+        "ru": "острая задержка мочи"
+      },
+      {
+        "de": "benigne Prostatahyperplasie",
+        "patient": "gutartig vergrößerte Prostata",
+        "uz": "prostata bezining xavfsiz kattalashishi",
+        "ru": "доброкачественная гиперплазия предстательной железы"
+      },
+      {
+        "de": "Nykturie",
+        "patient": "nachts Wasser lassen müssen",
+        "uz": "tunda siyish",
+        "ru": "никтурия"
+      },
+      {
+        "de": "Blasenkatheter",
+        "patient": "Schlauch in die Blase",
+        "uz": "siydik qopi kateteri",
+        "ru": "мочевой катетер"
+      },
+      {
+        "de": "Restharn",
+        "patient": "Urin, der in der Blase bleibt",
+        "uz": "qoldiq siydik",
+        "ru": "остаточная моча"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich kann seit gestern Abend kein Wasser lassen, und der Bauch tut mir unten so weh.",
+      "answers": {
+        "beginn": "Seit gestern Abend, ungefähr seit zehn Uhr. Der Strahl ist aber schon seit Monaten schwach.",
+        "lokalisation": "Unten im Bauch, über dem Schambein.",
+        "charakter": "Ein starker Druck, als würde die Blase platzen, eine 8 von 10.",
+        "ausstrahlung": "Nein, das bleibt unten im Bauch.",
+        "begleit": "Es kommen nur ein paar Tropfen. Fieber oder Blut im Urin habe ich nicht bemerkt.",
+        "vegetativ": "Appetit ist normal. Seit Monaten muss ich nachts drei-, viermal raus, es dauert, bis es läuft, und danach tröpfelt es. Stuhlgang ist normal.",
+        "vorerkrankungen": "Der Urologe hat gesagt, die Prostata ist vergrößert, behandelt wurde das aber nicht. Außerdem habe ich hohen Blutdruck und Zucker.",
+        "medikamente": "Metformin 500 morgens und abends, Lisinopril 10 morgens. Und gestern habe ich wegen einer Erkältung Grippostad genommen.",
+        "allergien": "Keine Allergien.",
+        "familie": "Mein Bruder hat Prostatakrebs.",
+        "sozial": "Ich bin verheiratet und Rentner, früher war ich Busfahrer.",
+        "noxen": "Früher habe ich geraucht, seit zehn Jahren nicht mehr. Alkohol ab und zu ein Bier."
+      }
+    },
+    "verdachtsdiagnose": "Akuter Harnverhalt bei benigner Prostatahyperplasie (ausgelöst durch anticholinerg wirkendes Erkältungsmittel)",
+    "diagnoseKeywords": [
+      "harnverhalt",
+      "harnretention",
+      "prostatahyperplasie",
+      "bph"
+    ],
+    "differenzialdiagnosen": [
+      "Prostatakarzinom",
+      "Harnröhrenstriktur",
+      "Neurogene Blasenentleerungsstörung",
+      "Blasenstein"
+    ],
+    "untersuchungen": [
+      "Sonographie (Harnblase)",
+      "Blasenkatheter",
+      "Urinstatus",
+      "Kreatinin",
+      "PSA"
+    ]
+  },
+  {
+    "id": "c33",
+    "title": "Hypothyreose",
+    "category": "Endokrinologie",
+    "difficulty": "leicht",
+    "patient": {
+      "name": "Sandra Meyer",
+      "age": 45,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Müdigkeit, Gewichtszunahme und ständiges Frieren"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit ca. 6 Monaten zunehmende Müdigkeit, Antriebslosigkeit, Gewichtszunahme von 7 kg ohne Ernährungsumstellung, Kälteintoleranz, Obstipation, trockene Haut, brüchige Haare und Konzentrationsstörungen. Regelblutung verstärkt.",
+      "vorerkrankungen": "Vitiligo, Z. n. Cholezystektomie.",
+      "medikamente": "Keine",
+      "allergien": "Keine bekannten Allergien",
+      "familienanamnese": "Mutter und Schwester mit Hashimoto-Thyreoiditis.",
+      "sozialanamnese": "Verheiratet, ein Sohn, Bankangestellte. Nichtraucherin, Alkohol selten."
+    },
+    "sprache": [
+      {
+        "patient": "Mir ist immer kalt, auch wenn alle anderen schwitzen.",
+        "fach": "Die Patientin berichtet über eine ausgeprägte Kälteintoleranz."
+      },
+      {
+        "patient": "Ich habe zugenommen, obwohl ich nicht mehr esse.",
+        "fach": "Es kam zu einer ungewollten Gewichtszunahme von 7 kg."
+      },
+      {
+        "patient": "Ich kann schlecht auf die Toilette.",
+        "fach": "Es besteht eine Obstipation."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Hypothyreose",
+        "patient": "Schilddrüsenunterfunktion",
+        "uz": "gipotireoz (qalqonsimon bez faoliyati pasayishi)",
+        "ru": "гипотиреоз"
+      },
+      {
+        "de": "Kälteintoleranz",
+        "patient": "friert ständig",
+        "uz": "sovuqni ko‘tara olmaslik",
+        "ru": "непереносимость холода"
+      },
+      {
+        "de": "Antriebslosigkeit",
+        "patient": "keine Energie",
+        "uz": "g‘ayratsizlik",
+        "ru": "апатия, отсутствие сил"
+      },
+      {
+        "de": "Hashimoto-Thyreoiditis",
+        "patient": "Entzündung der Schilddrüse durch das Immunsystem",
+        "uz": "Xashimoto autoimmun tireoiditi",
+        "ru": "аутоиммунный тиреоидит Хашимото"
+      },
+      {
+        "de": "L-Thyroxin",
+        "patient": "Schilddrüsenhormon-Tablette",
+        "uz": "L-tiroksin",
+        "ru": "L-тироксин"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich bin seit Monaten so müde und habe zugenommen, obwohl ich nicht mehr esse.",
+      "answers": {
+        "beginn": "Ungefähr seit einem halben Jahr, schleichend.",
+        "lokalisation": "Schmerzen habe ich eigentlich keine, nur manchmal Muskelschmerzen.",
+        "charakter": "Ich bin ständig erschöpft und habe zu nichts Lust. Ich kann mich schlecht konzentrieren.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Mir ist immer kalt, die Haut ist trocken, und die Haare brechen ab. Meine Periode ist stärker geworden.",
+        "vegetativ": "Appetit normal, aber sieben Kilo mehr. Ich habe Verstopfung. Ich schlafe viel und bin trotzdem müde. Wasserlassen ist normal.",
+        "vorerkrankungen": "Ich habe Weißfleckenkrankheit, und die Gallenblase wurde mir entfernt.",
+        "medikamente": "Ich nehme keine Medikamente.",
+        "allergien": "Keine Allergien.",
+        "familie": "Meine Mutter und meine Schwester haben beide Hashimoto.",
+        "sozial": "Ich bin verheiratet, habe einen Sohn und arbeite in einer Bank.",
+        "noxen": "Ich rauche nicht, Alkohol trinke ich selten."
+      }
+    },
+    "verdachtsdiagnose": "Primäre Hypothyreose, am ehesten bei Hashimoto-Thyreoiditis",
+    "diagnoseKeywords": [
+      "hypothyreose",
+      "hashimoto",
+      "schilddrüsenunterfunktion"
+    ],
+    "differenzialdiagnosen": [
+      "Depression",
+      "Eisenmangelanämie",
+      "Chronisches Erschöpfungssyndrom",
+      "Hyperkortisolismus"
+    ],
+    "untersuchungen": [
+      "TSH",
+      "fT4",
+      "TPO-Antikörper",
+      "Sonographie (Schilddrüse)",
+      "Blutbild"
+    ]
+  },
+  {
+    "id": "c34",
+    "title": "Erysipel",
+    "category": "Infektiologie",
+    "difficulty": "leicht",
+    "patient": {
+      "name": "Rolf Peters",
+      "age": 56,
+      "gender": "männlich",
+      "hauptbeschwerde": "Rotes, heißes, geschwollenes Bein und Fieber"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit gestern scharf begrenzte, flammende Rötung, Überwärmung und schmerzhafte Schwellung am rechten Unterschenkel, rasch zunehmend. Fieber bis 39,2 °C mit Schüttelfrost. Seit Wochen juckende, schuppende Haut zwischen den Zehen rechts (Eintrittspforte).",
+      "vorerkrankungen": "Diabetes mellitus Typ 2, Adipositas, chronisch venöse Insuffizienz.",
+      "medikamente": "Metformin 1000 mg 1-0-1, Empagliflozin 10 mg 1-0-0",
+      "allergien": "Keine bekannten Allergien",
+      "familienanamnese": "Keine Besonderheiten.",
+      "sozialanamnese": "Verheiratet, Gärtner. Raucher (20 Zigaretten/Tag). Alkohol gelegentlich."
+    },
+    "sprache": [
+      {
+        "patient": "Mein Bein ist knallrot und heiß.",
+        "fach": "Es zeigt sich eine scharf begrenzte, überwärmte Rötung am rechten Unterschenkel."
+      },
+      {
+        "patient": "Ich hatte Schüttelfrost und hohes Fieber.",
+        "fach": "Begleitend bestehen Fieber bis 39,2 °C und Schüttelfrost."
+      },
+      {
+        "patient": "Zwischen den Zehen juckt und schuppt es seit Wochen.",
+        "fach": "Als Eintrittspforte kommt eine Interdigitalmykose in Betracht."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Erysipel",
+        "patient": "Wundrose",
+        "uz": "saramas (erizipela)",
+        "ru": "рожа (рожистое воспаление)"
+      },
+      {
+        "de": "Überwärmung",
+        "patient": "die Haut ist heiß",
+        "uz": "terining qizishi",
+        "ru": "местное повышение температуры"
+      },
+      {
+        "de": "Eintrittspforte",
+        "patient": "Stelle, wo die Bakterien hineinkamen",
+        "uz": "infeksiya kirish joyi",
+        "ru": "входные ворота инфекции"
+      },
+      {
+        "de": "Interdigitalmykose",
+        "patient": "Fußpilz zwischen den Zehen",
+        "uz": "barmoqlararo zamburug‘",
+        "ru": "межпальцевой микоз"
+      },
+      {
+        "de": "Hochlagerung",
+        "patient": "Bein hochlegen",
+        "uz": "oyoqni baland qo‘yish",
+        "ru": "возвышенное положение конечности"
+      }
+    ],
+    "simulation": {
+      "opening": "Mein rechtes Bein ist seit gestern knallrot, dick und heiß, und ich habe hohes Fieber.",
+      "answers": {
+        "beginn": "Seit gestern Mittag, und die Rötung wird schnell größer.",
+        "lokalisation": "Am rechten Unterschenkel, vorne und an der Seite.",
+        "charakter": "Es spannt und brennt, eine 6 von 10. Die Haut ist ganz heiß, die Rötung hat einen scharfen Rand.",
+        "ausstrahlung": "In der Leiste rechts tut es auch etwas weh.",
+        "begleit": "Ich hatte heute Nacht Schüttelfrost und 39,2 Fieber. Zwischen den Zehen rechts juckt und schuppt es schon seit Wochen.",
+        "vegetativ": "Appetit weniger, Schlaf schlecht wegen Fieber. Stuhlgang und Wasserlassen sind normal.",
+        "vorerkrankungen": "Ich habe Zucker, Übergewicht und Krampfadern mit dicken Beinen.",
+        "medikamente": "Metformin 1000 morgens und abends und Jardiance 10 morgens.",
+        "allergien": "Keine Allergien.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich bin verheiratet und arbeite als Gärtner.",
+        "noxen": "Ich rauche eine Schachtel am Tag. Alkohol am Wochenende ein, zwei Bier."
+      }
+    },
+    "verdachtsdiagnose": "Erysipel des rechten Unterschenkels bei Interdigitalmykose als Eintrittspforte",
+    "diagnoseKeywords": [
+      "erysipel",
+      "wundrose",
+      "phlegmone"
+    ],
+    "differenzialdiagnosen": [
+      "Tiefe Beinvenenthrombose",
+      "Phlegmone",
+      "Kontaktdermatitis",
+      "Nekrotisierende Fasziitis"
+    ],
+    "untersuchungen": [
+      "Blutbild",
+      "CRP",
+      "Blutkulturen",
+      "Kompressionssonographie",
+      "Blutzucker"
+    ]
+  },
+  {
+    "id": "c35",
+    "title": "Bakterielle Meningitis",
+    "category": "Neurologie",
+    "difficulty": "schwer",
+    "patient": {
+      "name": "Felix Weiß",
+      "age": 19,
+      "gender": "männlich",
+      "hauptbeschwerde": "Starke Kopfschmerzen, Fieber und Nackensteifigkeit"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit heute Morgen rasch zunehmende, stärkste holozephale Kopfschmerzen, Fieber bis 39,8 °C, Nackensteifigkeit, Lichtempfindlichkeit, Übelkeit und zweimaliges Erbrechen. Laut Mitbewohner seit einer Stunde zunehmend schläfrig. Kleine rote Flecken an den Beinen bemerkt.",
+      "vorerkrankungen": "Keine.",
+      "medikamente": "Paracetamol 1 g heute Morgen",
+      "allergien": "Keine bekannten Allergien",
+      "familienanamnese": "Keine Besonderheiten.",
+      "sozialanamnese": "Ledig, Student im 1. Semester, wohnt im Studentenwohnheim. Impfstatus unklar. Gelegentlich Alkohol, Nichtraucher."
+    },
+    "sprache": [
+      {
+        "patient": "Mein Nacken ist ganz steif, ich kann das Kinn nicht auf die Brust legen.",
+        "fach": "Es besteht ein Meningismus."
+      },
+      {
+        "patient": "Licht tut mir in den Augen weh.",
+        "fach": "Begleitend besteht eine Photophobie."
+      },
+      {
+        "patient": "An den Beinen habe ich kleine rote Pünktchen.",
+        "fach": "An den unteren Extremitäten zeigen sich Petechien."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Meningitis",
+        "patient": "Hirnhautentzündung",
+        "uz": "meningit (miya pardasi yallig‘lanishi)",
+        "ru": "менингит"
+      },
+      {
+        "de": "Meningismus",
+        "patient": "steifer Nacken",
+        "uz": "meningeal belgilar (ensa mushaklari rigidligi)",
+        "ru": "менингизм (ригидность затылочных мышц)"
+      },
+      {
+        "de": "Petechien",
+        "patient": "kleine rote Punkte auf der Haut",
+        "uz": "petexiyalar (nuqtali qon quyilishlar)",
+        "ru": "петехии"
+      },
+      {
+        "de": "Lumbalpunktion",
+        "patient": "Nervenwasser aus dem Rücken entnehmen",
+        "uz": "lyumbal punksiya",
+        "ru": "люмбальная пункция"
+      },
+      {
+        "de": "Bewusstseinsstörung",
+        "patient": "ist sehr schläfrig oder verwirrt",
+        "uz": "es-hush buzilishi",
+        "ru": "нарушение сознания"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe so wahnsinnige Kopfschmerzen und hohes Fieber, und mein Nacken ist ganz steif.",
+      "answers": {
+        "beginn": "Heute Morgen beim Aufwachen fing es an, und es wird immer schlimmer.",
+        "lokalisation": "Der ganze Kopf tut weh, und der Nacken.",
+        "charakter": "Die schlimmsten Kopfschmerzen meines Lebens, eine 9 von 10. Ich kann den Kopf kaum nach vorne beugen.",
+        "ausstrahlung": "Es zieht vom Nacken in den Rücken.",
+        "begleit": "Ich habe fast 40 Fieber, Licht tut mir weh, ich habe zweimal gebrochen. An den Beinen habe ich kleine rote Pünktchen gesehen. Ich bin so müde.",
+        "vegetativ": "Essen kann ich nichts. Wasserlassen war heute wenig. Stuhlgang normal.",
+        "vorerkrankungen": "Nein, ich war immer gesund.",
+        "medikamente": "Heute Morgen habe ich ein Paracetamol genommen, das hat nicht geholfen.",
+        "allergien": "Keine Allergien.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich studiere im ersten Semester und wohne im Studentenwohnheim. Welche Impfungen ich habe, weiß ich nicht genau.",
+        "noxen": "Ich rauche nicht. Am Wochenende war eine Party, da habe ich getrunken. Drogen nein."
+      }
+    },
+    "verdachtsdiagnose": "Akute bakterielle Meningitis, V. a. Meningokokken-Infektion mit Petechien",
+    "diagnoseKeywords": [
+      "meningitis",
+      "meningokokken",
+      "hirnhautentzündung"
+    ],
+    "differenzialdiagnosen": [
+      "Subarachnoidalblutung",
+      "Virale Enzephalitis",
+      "Sepsis",
+      "Migräne"
+    ],
+    "untersuchungen": [
+      "Blutkulturen",
+      "Lumbalpunktion",
+      "CRP",
+      "Blutbild",
+      "cCT"
+    ]
+  },
+  {
+    "id": "c36",
+    "title": "Lumbaler Bandscheibenvorfall",
+    "category": "Neurologie",
+    "difficulty": "leicht",
+    "patient": {
+      "name": "Markus Schmitz",
+      "age": 42,
+      "gender": "männlich",
+      "hauptbeschwerde": "Rückenschmerzen mit Ausstrahlung ins linke Bein"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 5 Tagen nach dem Heben einer schweren Kiste akute lumbale Rückenschmerzen mit Ausstrahlung über die Außenseite des linken Beins bis zum Fußrücken, Kribbeln am Fußrücken links. Verstärkung beim Husten und Niesen. Keine Blasen- oder Mastdarmstörung, kein Taubheitsgefühl im Genitalbereich.",
+      "vorerkrankungen": "Rezidivierende Lumbago, Adipositas.",
+      "medikamente": "Ibuprofen 600 mg bis 3x täglich seit 5 Tagen",
+      "allergien": "Keine bekannten Allergien",
+      "familienanamnese": "Keine Besonderheiten.",
+      "sozialanamnese": "Verheiratet, zwei Kinder, Paketzusteller. Raucher (10 Zigaretten/Tag). Alkohol gelegentlich."
+    },
+    "sprache": [
+      {
+        "patient": "Der Schmerz zieht vom Rücken bis in den Fuß.",
+        "fach": "Es bestehen lumbale Schmerzen mit radikulärer Ausstrahlung in das linke Bein."
+      },
+      {
+        "patient": "Auf dem Fußrücken kribbelt es.",
+        "fach": "Begleitend bestehen Parästhesien am linken Fußrücken (Dermatom L5)."
+      },
+      {
+        "patient": "Mit dem Wasserlassen und Stuhlgang ist alles normal.",
+        "fach": "Blasen- und Mastdarmstörungen werden verneint."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Bandscheibenvorfall",
+        "patient": "Bandscheibe ist herausgerutscht",
+        "uz": "umurtqalararo disk churrasi",
+        "ru": "грыжа межпозвоночного диска"
+      },
+      {
+        "de": "radikulär",
+        "patient": "von der Nervenwurzel ausgehend",
+        "uz": "radikulyar (nerv ildizi bo‘yicha)",
+        "ru": "корешковый"
+      },
+      {
+        "de": "Dermatom",
+        "patient": "Hautbereich eines Nervs",
+        "uz": "dermatom",
+        "ru": "дерматом"
+      },
+      {
+        "de": "Kaudasyndrom",
+        "patient": "Notfall mit Blasenstörung und Taubheit im Genitalbereich",
+        "uz": "ot dumi sindromi",
+        "ru": "синдром конского хвоста"
+      },
+      {
+        "de": "Lasègue-Zeichen",
+        "patient": "Schmerz beim Anheben des gestreckten Beins",
+        "uz": "Lasseg belgisi",
+        "ru": "симптом Ласега"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe so starke Rückenschmerzen, die ins linke Bein ziehen, seit ich eine schwere Kiste gehoben habe.",
+      "answers": {
+        "beginn": "Vor fünf Tagen, beim Heben einer schweren Kiste bei der Arbeit. Es hat richtig geknackt.",
+        "lokalisation": "Unten im Rücken, mehr links.",
+        "charakter": "Ein stechender, ziehender Schmerz, eine 7 von 10. Beim Husten oder Niesen schießt es richtig ein.",
+        "ausstrahlung": "Ja, außen am linken Bein entlang bis auf den Fußrücken.",
+        "begleit": "Auf dem linken Fußrücken kribbelt es. Lähmungen habe ich nicht bemerkt. Mit Wasserlassen und Stuhlgang ist alles normal, im Intimbereich ist auch kein Taubheitsgefühl.",
+        "vegetativ": "Appetit normal. Schlafen kann ich schlecht wegen der Schmerzen. Stuhlgang und Wasserlassen normal.",
+        "vorerkrankungen": "Ich hatte schon öfter Hexenschuss. Und ich habe Übergewicht.",
+        "medikamente": "Seit fünf Tagen nehme ich bis zu dreimal Ibuprofen 600.",
+        "allergien": "Keine Allergien.",
+        "familie": "Nichts Besonderes bekannt.",
+        "sozial": "Ich bin verheiratet, habe zwei Kinder und bin Paketzusteller, ich muss viel heben.",
+        "noxen": "Ich rauche zehn Zigaretten am Tag, Alkohol ab und zu ein Bier."
+      }
+    },
+    "verdachtsdiagnose": "Lumbaler Bandscheibenvorfall L4/L5 links mit radikulärer Symptomatik L5, ohne Kaudasyndrom",
+    "diagnoseKeywords": [
+      "bandscheibenvorfall",
+      "bandscheibenprolaps",
+      "diskusprolaps",
+      "lumboischialgie",
+      "radikulopathie"
+    ],
+    "differenzialdiagnosen": [
+      "Lumbago ohne Radikulopathie",
+      "Spinalkanalstenose",
+      "Wirbelkörperfraktur",
+      "Kaudasyndrom"
+    ],
+    "untersuchungen": [
+      "Neurologische Untersuchung",
+      "Lasègue-Test",
+      "MRT (LWS)",
+      "Röntgen (LWS)"
+    ]
+  },
+  {
+    "id": "c37",
+    "title": "Erstmaliger epileptischer Anfall",
+    "category": "Neurologie",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Kevin Jung",
+      "age": 24,
+      "gender": "männlich",
+      "hauptbeschwerde": "Bewusstlosigkeit mit Zuckungen, vom Freund beobachtet"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Heute früh beim Frühstück laut Freund plötzlicher Bewusstseinsverlust mit Sturz, Verkrampfung und rhythmischen Zuckungen aller Extremitäten für ca. 2 Minuten, danach 20 Minuten verwirrt. Zungenbiss seitlich, Einnässen. Jetzt Muskelkater und Kopfschmerzen. Keine Erinnerung an das Ereignis. Vorher 2 Nächte kaum geschlafen (Prüfungszeit) und gestern viel Alkohol.",
+      "vorerkrankungen": "Keine. Fieberkrämpfe im Kleinkindalter.",
+      "medikamente": "Keine",
+      "allergien": "Keine bekannten Allergien",
+      "familienanamnese": "Onkel mit Epilepsie.",
+      "sozialanamnese": "Ledig, Jurastudent, wohnt in WG, besitzt Führerschein und fährt täglich Auto. Alkohol am Wochenende reichlich, Nichtraucher, gelegentlich Cannabis."
+    },
+    "sprache": [
+      {
+        "patient": "Mein Freund sagt, ich habe am ganzen Körper gezuckt.",
+        "fach": "Fremdanamnestisch wurde ein generalisierter tonisch-klonischer Anfall beobachtet."
+      },
+      {
+        "patient": "Ich habe mir auf die Zunge gebissen.",
+        "fach": "Es zeigt sich ein lateraler Zungenbiss."
+      },
+      {
+        "patient": "Danach war ich eine Weile ganz durcheinander.",
+        "fach": "Es bestand eine postiktale Verwirrtheit von ca. 20 Minuten."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Krampfanfall",
+        "patient": "epileptischer Anfall",
+        "uz": "tutqanoq xuruji",
+        "ru": "судорожный припадок"
+      },
+      {
+        "de": "tonisch-klonisch",
+        "patient": "erst verkrampft, dann zuckend",
+        "uz": "tonik-klonik",
+        "ru": "тонико-клонический"
+      },
+      {
+        "de": "postiktal",
+        "patient": "nach dem Anfall",
+        "uz": "xurujdan keyingi",
+        "ru": "постиктальный"
+      },
+      {
+        "de": "Fremdanamnese",
+        "patient": "Bericht von einer anderen Person",
+        "uz": "boshqa shaxsdan olingan anamnez",
+        "ru": "анамнез со слов окружающих"
+      },
+      {
+        "de": "EEG",
+        "patient": "Messung der Hirnströme",
+        "uz": "EEG (elektroensefalografiya)",
+        "ru": "ЭЭГ"
+      }
+    ],
+    "simulation": {
+      "opening": "Mein Freund hat mich ins Krankenhaus gebracht. Er sagt, ich bin umgefallen und habe am ganzen Körper gezuckt.",
+      "answers": {
+        "beginn": "Heute Morgen beim Frühstück. Ich selbst erinnere mich an nichts, ich bin erst im Krankenwagen richtig wach geworden.",
+        "lokalisation": "Jetzt tun mir alle Muskeln weh und der Kopf. Und die Zunge an der Seite.",
+        "charakter": "Wie ein starker Muskelkater, und dumpfe Kopfschmerzen, eine 4 von 10.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Mein Freund sagt, ich war erst ganz steif, dann habe ich ungefähr zwei Minuten gezuckt und danach 20 Minuten wirres Zeug geredet. Ich habe mir auf die Zunge gebissen und in die Hose gemacht.",
+        "vegetativ": "Ich habe die letzten zwei Nächte kaum geschlafen, wegen Prüfungen. Appetit, Stuhlgang und Wasserlassen sonst normal.",
+        "vorerkrankungen": "Als Kleinkind hatte ich Fieberkrämpfe, sonst nichts.",
+        "medikamente": "Ich nehme keine Medikamente.",
+        "allergien": "Nein.",
+        "familie": "Mein Onkel hat Epilepsie.",
+        "sozial": "Ich studiere Jura und wohne in einer WG. Ich fahre jeden Tag mit dem Auto zur Uni.",
+        "noxen": "Gestern Abend habe ich ziemlich viel getrunken, am Wochenende eigentlich immer. Ab und zu kiffe ich. Rauchen tue ich nicht."
+      }
+    },
+    "verdachtsdiagnose": "Erstmaliger generalisierter tonisch-klonischer Anfall, provoziert durch Schlafentzug und Alkohol",
+    "diagnoseKeywords": [
+      "epileptischer anfall",
+      "krampfanfall",
+      "grand mal",
+      "epilepsie",
+      "tonisch-klonisch"
+    ],
+    "differenzialdiagnosen": [
+      "Konvulsive Synkope",
+      "Psychogener Anfall",
+      "Hypoglykämie",
+      "Intrazerebrale Blutung"
+    ],
+    "untersuchungen": [
+      "EEG",
+      "MRT (Schädel)",
+      "Blutzucker",
+      "Elektrolyte",
+      "Drogenscreening"
+    ]
+  },
+  {
+    "id": "c38",
+    "title": "Akute Gastroenteritis mit Exsikkose",
+    "category": "Allgemeinmedizin",
+    "difficulty": "leicht",
+    "patient": {
+      "name": "Sophie Lorenz",
+      "age": 31,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Durchfall und Erbrechen seit gestern"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit gestern Abend wässrige Diarrhö (ca. 10x/Tag, ohne Blut), Erbrechen (5x), krampfartige Bauchschmerzen, Fieber bis 38,3 °C. Seit heute Schwindel beim Aufstehen, Mundtrockenheit, wenig Urin. Mittags davor Hähnchensalat im Restaurant gegessen, Begleitperson hat ähnliche Beschwerden.",
+      "vorerkrankungen": "Keine.",
+      "medikamente": "Orales Kontrazeptivum",
+      "allergien": "Keine bekannten Allergien",
+      "familienanamnese": "Keine Besonderheiten.",
+      "sozialanamnese": "Ledig, Erzieherin im Kindergarten, keine Auslandsreise. Nichtraucherin, Alkohol selten."
+    },
+    "sprache": [
+      {
+        "patient": "Ich habe ständig wässrigen Durchfall.",
+        "fach": "Die Patientin berichtet über wässrige Diarrhö ca. zehnmal täglich."
+      },
+      {
+        "patient": "Mir ist schwindelig, wenn ich aufstehe, und der Mund ist trocken.",
+        "fach": "Es bestehen klinische Zeichen einer Exsikkose."
+      },
+      {
+        "patient": "Meine Freundin hat das Gleiche, wir haben zusammen gegessen.",
+        "fach": "Eine Kontaktperson mit gleicher Exposition zeigt ähnliche Symptome."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Gastroenteritis",
+        "patient": "Magen-Darm-Grippe",
+        "uz": "gastroenterit",
+        "ru": "гастроэнтерит"
+      },
+      {
+        "de": "Exsikkose",
+        "patient": "Austrocknung",
+        "uz": "organizmning suvsizlanishi",
+        "ru": "эксикоз (обезвоживание)"
+      },
+      {
+        "de": "wässrige Diarrhö",
+        "patient": "flüssiger Durchfall",
+        "uz": "suvsimon ich ketish",
+        "ru": "водянистая диарея"
+      },
+      {
+        "de": "Infektionsschutzgesetz",
+        "patient": "Gesetz zu ansteckenden Krankheiten, Meldepflicht",
+        "uz": "infeksiyadan himoya qonuni",
+        "ru": "закон о защите от инфекций"
+      },
+      {
+        "de": "orale Rehydratation",
+        "patient": "viel trinken mit Salz und Zucker",
+        "uz": "og‘iz orqali suyuqlik tiklash",
+        "ru": "оральная регидратация"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe seit gestern Abend ständig Durchfall und muss immer wieder brechen.",
+      "answers": {
+        "beginn": "Gestern Abend gegen acht. Mittags hatte ich im Restaurant einen Hähnchensalat gegessen.",
+        "lokalisation": "Im ganzen Bauch, eher um den Nabel herum.",
+        "charakter": "Krampfartig, es kommt in Wellen, eine 5 von 10. Vor dem Stuhlgang ist es am schlimmsten.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Ich habe fünfmal gebrochen und 38,3 Fieber. Wenn ich aufstehe, wird mir schwindelig, und mein Mund ist ganz trocken.",
+        "vegetativ": "Ich habe ungefähr zehnmal am Tag wässrigen Durchfall, ohne Blut. Wasserlassen war heute kaum. Essen kann ich nichts, auch Trinken bleibt schlecht drin.",
+        "vorerkrankungen": "Nein, ich bin gesund.",
+        "medikamente": "Nur die Pille.",
+        "allergien": "Keine Allergien.",
+        "familie": "Nichts Besonderes. Aber meine Freundin, mit der ich gegessen habe, hat das Gleiche.",
+        "sozial": "Ich bin Erzieherin im Kindergarten. Im Ausland war ich in letzter Zeit nicht.",
+        "noxen": "Ich rauche nicht und trinke selten Alkohol."
+      }
+    },
+    "verdachtsdiagnose": "Akute infektiöse Gastroenteritis (V. a. Lebensmittelinfektion) mit Exsikkose",
+    "diagnoseKeywords": [
+      "gastroenteritis",
+      "lebensmittelinfektion",
+      "enteritis",
+      "lebensmittelvergiftung"
+    ],
+    "differenzialdiagnosen": [
+      "Appendizitis",
+      "Chronisch-entzündliche Darmerkrankung",
+      "Clostridioides-difficile-Infektion",
+      "Extrauteringravidität"
+    ],
+    "untersuchungen": [
+      "Elektrolyte",
+      "Kreatinin",
+      "Blutbild",
+      "Stuhlkultur",
+      "Schwangerschaftstest"
+    ]
   }
 ]

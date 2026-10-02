@@ -25,7 +25,7 @@ export const CASE_CATEGORIES = [
     { id: "kardiologie", icon: "❤️", label: tr("Kardiologiya", "Кардиология"), categories: ["Kardiologie"] },
     {
       id: "innere",
-      icon: "🫁",
+      icon: "💊",
       label: tr("Terapiya (ichki kasalliklar)", "Терапия (внутренние болезни)"),
       categories: [
         "Innere Medizin",
