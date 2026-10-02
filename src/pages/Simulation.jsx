@@ -2,7 +2,7 @@ import { Suspense, useEffect, useState } from "react";
 import { Link } from "../components/Link";
 import { PatientChat } from "../components/PatientChat";
 import { Disclaimer, FeedbackList, PageHeader, ProgressRing, ScoreBars, Spinner } from "../components/ui";
-import { cases, getCase } from "../data/index";
+import { CASE_SECTIONS, cases, getCase } from "../data/index";
 import { evaluateAnamnese } from "../lib/evaluation";
 import { useRouter, useSearchParams } from "../lib/router";
 import { useApp } from "../state/AppContext";
@@ -54,12 +54,16 @@ function SimulationView() {
           onChange={(g) => t.replace(`/simulation?case=${g.target.value}`)}
           aria-label={tr("Fall tanlash", "Выбор кейса")}
         >
-          {cases.map((g) => (
-            <option key={g.id} value={g.id}>
-              {g.category}
-              {": "}
-              {g.patient.hauptbeschwerde}
-            </option>
+          {CASE_SECTIONS.map((sec) => (
+            <optgroup key={sec.id} label={sec.label}>
+              {cases
+                .filter((g) => sec.categories.includes(g.category))
+                .map((g) => (
+                  <option key={g.id} value={g.id}>
+                    {g.title}: {g.patient.hauptbeschwerde}
+                  </option>
+                ))}
+            </optgroup>
           ))}
         </select>
       </PageHeader>

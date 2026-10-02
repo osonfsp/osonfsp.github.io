@@ -2058,5 +2058,924 @@
       "Gynäkologische Untersuchung",
       "Stuhltest auf okkultes Blut"
     ]
+  },
+  {
+    "id": "c21",
+    "title": "Stabile Angina pectoris",
+    "category": "Kardiologie",
+    "difficulty": "leicht",
+    "patient": {
+      "name": "Günter Möller",
+      "age": 63,
+      "gender": "männlich",
+      "hauptbeschwerde": "Brustenge beim Treppensteigen seit einigen Wochen"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit ca. 6 Wochen belastungsabhängiges retrosternales Druckgefühl beim Treppensteigen (2. Stock) und bei Kälte, Dauer 3–5 Minuten, sistiert in Ruhe innerhalb weniger Minuten. Keine Ruhebeschwerden, keine Synkope. Leichte Belastungsdyspnoe.",
+      "vorerkrankungen": "Arterielle Hypertonie, Diabetes mellitus Typ 2, Hypercholesterinämie.",
+      "medikamente": "Metformin 1000 mg 1-0-1, Ramipril 5 mg 1-0-0",
+      "allergien": "Keine bekannten Allergien",
+      "familienanamnese": "Bruder mit 58 Jahren Herzinfarkt.",
+      "sozialanamnese": "Verheiratet, Hausmeister. Ex-Raucher (35 pack years, seit 2 Jahren rauchfrei). Alkohol gelegentlich."
+    },
+    "sprache": [
+      {
+        "patient": "Wenn ich die Treppe hochgehe, wird es eng in der Brust.",
+        "fach": "Der Patient berichtet über belastungsabhängige retrosternale Engegefühle."
+      },
+      {
+        "patient": "Wenn ich stehen bleibe, geht es nach ein paar Minuten weg.",
+        "fach": "Die Beschwerden sistieren in Ruhe innerhalb weniger Minuten."
+      },
+      {
+        "patient": "Bei Kälte ist es schlimmer.",
+        "fach": "Die Symptomatik wird durch Kälte provoziert."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Angina pectoris",
+        "patient": "Brustenge",
+        "uz": "stenokardiya (ko‘krakdagi siqilish)",
+        "ru": "стенокардия"
+      },
+      {
+        "de": "belastungsabhängig",
+        "patient": "bei Anstrengung",
+        "uz": "jismoniy zo‘riqishga bog‘liq",
+        "ru": "связанный с нагрузкой"
+      },
+      {
+        "de": "Ergometrie",
+        "patient": "Belastungs-EKG (Fahrrad)",
+        "uz": "veloergometriya",
+        "ru": "велоэргометрия (нагрузочная ЭКГ)"
+      },
+      {
+        "de": "koronare Herzkrankheit (KHK)",
+        "patient": "Verengung der Herzkranzgefäße",
+        "uz": "yurak ishemik kasalligi",
+        "ru": "ишемическая болезнь сердца"
+      },
+      {
+        "de": "Nitrospray",
+        "patient": "Spray unter die Zunge",
+        "uz": "nitroglitserin spreyi",
+        "ru": "нитроспрей"
+      }
+    ],
+    "simulation": {
+      "opening": "Seit ein paar Wochen wird es mir eng in der Brust, wenn ich die Treppen hochgehe.",
+      "answers": {
+        "beginn": "Das hat vor ungefähr sechs Wochen angefangen. Am Anfang nur selten, jetzt fast jedes Mal im zweiten Stock.",
+        "lokalisation": "Hier hinter dem Brustbein, in der Mitte.",
+        "charakter": "Ein Druck, als würde jemand auf die Brust drücken. So eine 5 von 10. Nach drei, vier Minuten Pause ist es weg.",
+        "ausstrahlung": "Manchmal zieht es ein bisschen in den Hals, aber nicht in die Arme.",
+        "begleit": "Ich bin dabei etwas kurzatmig. Kalten Schweiß oder Übelkeit hatte ich nicht. Bei Kälte draußen ist es schlimmer.",
+        "vegetativ": "Appetit, Schlaf, Stuhlgang und Wasserlassen sind normal. Gewicht ist gleich geblieben.",
+        "vorerkrankungen": "Ich habe hohen Blutdruck, Zucker und zu hohes Cholesterin.",
+        "medikamente": "Metformin 1000 morgens und abends und Ramipril 5 mg morgens.",
+        "allergien": "Nein, keine Allergien.",
+        "familie": "Mein Bruder hatte mit 58 einen Herzinfarkt.",
+        "sozial": "Ich bin verheiratet und arbeite als Hausmeister, da muss ich viel Treppen steigen.",
+        "noxen": "Ich habe 35 Jahre geraucht, seit zwei Jahren nicht mehr. Alkohol nur ab und zu ein Bier. Drogen nie."
+      }
+    },
+    "verdachtsdiagnose": "Stabile Angina pectoris bei V. a. koronare Herzkrankheit",
+    "diagnoseKeywords": [
+      "angina pectoris",
+      "khk",
+      "koronare herzkrankheit",
+      "angina"
+    ],
+    "differenzialdiagnosen": [
+      "Akutes Koronarsyndrom",
+      "Refluxkrankheit",
+      "Aortenklappenstenose",
+      "Muskuloskelettale Thoraxschmerzen"
+    ],
+    "untersuchungen": [
+      "EKG",
+      "Ergometrie",
+      "Echo (Echokardiographie)",
+      "Troponin",
+      "Koronarangiographie"
+    ]
+  },
+  {
+    "id": "c22",
+    "title": "Hypertensive Entgleisung",
+    "category": "Kardiologie",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Renate Fuchs",
+      "age": 69,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Starke Kopfschmerzen und Schwindel, Blutdruck 220/115"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit heute Morgen okzipital betonte, drückende Kopfschmerzen, Schwindel, Übelkeit und Ohrensausen. Zu Hause gemessener Blutdruck 220/115 mmHg. Keine Brustschmerzen, keine Lähmungen, keine Sehstörungen. Antihypertensiva seit einer Woche nicht eingenommen, da das Rezept abgelaufen war.",
+      "vorerkrankungen": "Arterielle Hypertonie seit 15 Jahren, Adipositas (BMI 32), Gonarthrose.",
+      "medikamente": "Amlodipin 10 mg 1-0-0, Hydrochlorothiazid 25 mg 1-0-0 (seit 1 Woche pausiert)",
+      "allergien": "ACE-Hemmer (Reizhusten)",
+      "familienanamnese": "Mutter mit Schlaganfall mit 72 Jahren.",
+      "sozialanamnese": "Verwitwet, Rentnerin (ehemals Verkäuferin), lebt allein. Nichtraucherin, kein Alkohol."
+    },
+    "sprache": [
+      {
+        "patient": "Mein Blutdruck war heute über 200.",
+        "fach": "Die Patientin stellte sich mit einer hypertensiven Entgleisung (RR 220/115 mmHg) vor."
+      },
+      {
+        "patient": "Ich habe meine Tabletten eine Woche nicht genommen.",
+        "fach": "Die antihypertensive Medikation wurde seit einer Woche nicht eingenommen."
+      },
+      {
+        "patient": "Es rauscht in meinen Ohren.",
+        "fach": "Begleitend bestehen Tinnitus und Schwindel."
+      }
+    ],
+    "terms": [
+      {
+        "de": "hypertensive Entgleisung",
+        "patient": "sehr hoher Blutdruck",
+        "uz": "gipertonik kriz",
+        "ru": "гипертонический криз"
+      },
+      {
+        "de": "Endorganschaden",
+        "patient": "Schaden an Herz, Gehirn, Niere oder Augen",
+        "uz": "nishon a’zolar shikastlanishi",
+        "ru": "поражение органов-мишеней"
+      },
+      {
+        "de": "Antihypertensivum",
+        "patient": "Blutdrucktablette",
+        "uz": "qon bosimini tushiruvchi dori",
+        "ru": "антигипертензивное средство"
+      },
+      {
+        "de": "Non-Adhärenz",
+        "patient": "Tabletten nicht regelmäßig einnehmen",
+        "uz": "dorini muntazam ichmaslik",
+        "ru": "несоблюдение режима лечения"
+      },
+      {
+        "de": "Fundoskopie",
+        "patient": "Augenspiegelung",
+        "uz": "ko‘z tubini ko‘rish",
+        "ru": "осмотр глазного дна"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe so starke Kopfschmerzen und mein Blutdruck war heute Morgen 220 zu 115.",
+      "answers": {
+        "beginn": "Heute Morgen beim Aufstehen fing es an. Dann habe ich gemessen und mich erschrocken.",
+        "lokalisation": "Vor allem hinten am Kopf, im Nacken.",
+        "charakter": "Ein drückender, dumpfer Schmerz, ungefähr eine 7 von 10.",
+        "ausstrahlung": "Es zieht ein bisschen in den Nacken. Brustschmerzen habe ich nicht.",
+        "begleit": "Mir ist schwindelig und etwas übel, und es rauscht in den Ohren. Sehstörungen oder Lähmungen habe ich nicht.",
+        "vegetativ": "Appetit ist normal, Schlaf schlecht in letzter Zeit. Stuhlgang und Wasserlassen sind normal.",
+        "vorerkrankungen": "Ich habe seit 15 Jahren hohen Blutdruck, etwas Übergewicht und Arthrose in den Knien.",
+        "medikamente": "Eigentlich Amlodipin 10 und HCT 25 morgens. Aber seit einer Woche nehme ich nichts, weil das Rezept abgelaufen war.",
+        "allergien": "Von Ramipril habe ich so einen Reizhusten bekommen.",
+        "familie": "Meine Mutter hatte mit 72 einen Schlaganfall.",
+        "sozial": "Ich bin Witwe und wohne allein. Früher war ich Verkäuferin, jetzt bin ich Rentnerin.",
+        "noxen": "Ich rauche nicht und trinke keinen Alkohol."
+      }
+    },
+    "verdachtsdiagnose": "Hypertensive Entgleisung bei Non-Adhärenz (ohne Hinweis auf Endorganschaden)",
+    "diagnoseKeywords": [
+      "hypertensive entgleisung",
+      "hypertensive krise",
+      "hypertensiver notfall",
+      "hypertonie"
+    ],
+    "differenzialdiagnosen": [
+      "Hypertensiver Notfall",
+      "Schlaganfall",
+      "Hirnblutung",
+      "Sekundäre Hypertonie"
+    ],
+    "untersuchungen": [
+      "Blutdruckmessung",
+      "EKG",
+      "Kreatinin",
+      "Urinstatus",
+      "Fundoskopie"
+    ]
+  },
+  {
+    "id": "c23",
+    "title": "Akute Perikarditis",
+    "category": "Kardiologie",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Jonas Wolf",
+      "age": 28,
+      "gender": "männlich",
+      "hauptbeschwerde": "Stechende Brustschmerzen, besser im Sitzen"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 2 Tagen stechende, retrosternale Thoraxschmerzen, verstärkt beim tiefen Einatmen und im Liegen, Besserung beim Vorbeugen im Sitzen. Vor 10 Tagen grippaler Infekt. Subfebrile Temperaturen bis 37,9 °C.",
+      "vorerkrankungen": "Keine.",
+      "medikamente": "Ibuprofen 400 mg bei Bedarf",
+      "allergien": "Keine bekannten Allergien",
+      "familienanamnese": "Keine Herzerkrankungen bekannt.",
+      "sozialanamnese": "Ledig, Student der Informatik, Freizeitsportler (Fußball). Nichtraucher, Alkohol am Wochenende."
+    },
+    "sprache": [
+      {
+        "patient": "Wenn ich mich hinlege, wird der Schmerz schlimmer.",
+        "fach": "Die Thoraxschmerzen sind lageabhängig und nehmen im Liegen zu."
+      },
+      {
+        "patient": "Wenn ich mich nach vorne beuge, wird es besser.",
+        "fach": "Linderung tritt beim Vorbeugen im Sitzen ein."
+      },
+      {
+        "patient": "Vor anderthalb Wochen hatte ich eine Grippe.",
+        "fach": "Anamnestisch bestand vor ca. 10 Tagen ein viraler Infekt der oberen Atemwege."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Perikarditis",
+        "patient": "Herzbeutelentzündung",
+        "uz": "perikardit (yurak xaltasi yallig‘lanishi)",
+        "ru": "перикардит"
+      },
+      {
+        "de": "lageabhängig",
+        "patient": "hängt von der Körperhaltung ab",
+        "uz": "tana holatiga bog‘liq",
+        "ru": "зависящий от положения тела"
+      },
+      {
+        "de": "Perikardreiben",
+        "patient": "Reibegeräusch am Herzen",
+        "uz": "perikard ishqalanish shovqini",
+        "ru": "шум трения перикарда"
+      },
+      {
+        "de": "Perikarderguss",
+        "patient": "Flüssigkeit im Herzbeutel",
+        "uz": "perikardda suyuqlik yig‘ilishi",
+        "ru": "перикардиальный выпот"
+      },
+      {
+        "de": "ST-Hebung",
+        "patient": "Veränderung im EKG",
+        "uz": "ST segmenti ko‘tarilishi",
+        "ru": "подъём сегмента ST"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe seit zwei Tagen so stechende Schmerzen in der Brust, vor allem wenn ich liege.",
+      "answers": {
+        "beginn": "Seit vorgestern. Vor ungefähr zehn Tagen hatte ich eine richtige Erkältung mit Fieber.",
+        "lokalisation": "In der Mitte der Brust, hinter dem Brustbein.",
+        "charakter": "Es sticht, besonders wenn ich tief einatme oder mich hinlege. Ungefähr eine 6. Wenn ich mich vorbeuge, wird es besser.",
+        "ausstrahlung": "Manchmal zieht es in die linke Schulter.",
+        "begleit": "Ich habe leicht erhöhte Temperatur, gestern 37,9. Atemnot habe ich kaum. Herzrasen manchmal.",
+        "vegetativ": "Appetit etwas weniger, Schlaf schlecht, weil ich nicht liegen kann. Stuhlgang und Wasserlassen sind normal.",
+        "vorerkrankungen": "Nein, ich war immer gesund.",
+        "medikamente": "Ich habe ein paar Mal Ibuprofen 400 genommen, das hat etwas geholfen.",
+        "allergien": "Keine Allergien.",
+        "familie": "In meiner Familie hat niemand etwas am Herzen.",
+        "sozial": "Ich bin Student, Informatik, und spiele Fußball im Verein.",
+        "noxen": "Ich rauche nicht. Am Wochenende trinke ich mal ein paar Bier. Drogen nehme ich nicht."
+      }
+    },
+    "verdachtsdiagnose": "Akute (postvirale) Perikarditis",
+    "diagnoseKeywords": [
+      "perikarditis",
+      "herzbeutelentzündung",
+      "myoperikarditis"
+    ],
+    "differenzialdiagnosen": [
+      "Akutes Koronarsyndrom",
+      "Myokarditis",
+      "Lungenembolie",
+      "Pneumothorax"
+    ],
+    "untersuchungen": [
+      "EKG",
+      "Echo (Echokardiographie)",
+      "Troponin",
+      "CRP",
+      "Auskultation"
+    ]
+  },
+  {
+    "id": "c24",
+    "title": "Exazerbation eines Asthma bronchiale",
+    "category": "Pneumologie",
+    "difficulty": "leicht",
+    "patient": {
+      "name": "Lena Schröder",
+      "age": 22,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Atemnot und pfeifende Atmung seit gestern Abend"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit gestern Abend zunehmende Dyspnoe mit exspiratorischem Giemen, Engegefühl in der Brust und trockenem Reizhusten, nachts verstärkt. Auslöser: Umzug mit viel Staub und Kontakt zu einer Katze. Bedarfsspray hat nur kurz geholfen (5 Hübe in der Nacht).",
+      "vorerkrankungen": "Allergisches Asthma bronchiale seit der Kindheit, allergische Rhinitis.",
+      "medikamente": "Budesonid/Formoterol 160/4,5 µg 1-0-1 (unregelmäßig), Salbutamol-Spray bei Bedarf",
+      "allergien": "Hausstaubmilben, Katzenhaare, Birkenpollen",
+      "familienanamnese": "Vater mit Heuschnupfen.",
+      "sozialanamnese": "Ledig, Studentin der Pharmazie, wohnt in einer WG. Nichtraucherin, Alkohol selten."
+    },
+    "sprache": [
+      {
+        "patient": "Beim Ausatmen pfeift es.",
+        "fach": "Auskultatorisch zeigt sich ein exspiratorisches Giemen."
+      },
+      {
+        "patient": "Mein Spray hilft nur kurz.",
+        "fach": "Das kurzwirksame Beta-2-Sympathomimetikum zeigt nur eine kurze Wirkung."
+      },
+      {
+        "patient": "Nachts ist es am schlimmsten.",
+        "fach": "Die Beschwerden treten nächtlich verstärkt auf."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Asthma bronchiale",
+        "patient": "Asthma",
+        "uz": "bronxial astma",
+        "ru": "бронхиальная астма"
+      },
+      {
+        "de": "Exazerbation",
+        "patient": "Verschlechterung",
+        "uz": "kasallikning kuchayishi",
+        "ru": "обострение"
+      },
+      {
+        "de": "Peak-Flow",
+        "patient": "Messung, wie stark man ausatmen kann",
+        "uz": "nafas chiqarish cho‘qqi tezligi",
+        "ru": "пиковая скорость выдоха"
+      },
+      {
+        "de": "Inhalationstechnik",
+        "patient": "wie man das Spray benutzt",
+        "uz": "ingalyatorni to‘g‘ri ishlatish",
+        "ru": "техника ингаляции"
+      },
+      {
+        "de": "Bronchospasmus",
+        "patient": "Verkrampfung der Atemwege",
+        "uz": "bronxospazm",
+        "ru": "бронхоспазм"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich bekomme so schlecht Luft, und beim Atmen pfeift es. Mein Spray hilft kaum noch.",
+      "answers": {
+        "beginn": "Seit gestern Abend. Wir sind umgezogen, da war viel Staub, und die neue Mitbewohnerin hat eine Katze.",
+        "lokalisation": "Die ganze Brust fühlt sich eng an.",
+        "charakter": "Wie ein Band um die Brust. Beim Ausatmen pfeift es. Die Atemnot ist ungefähr eine 7 von 10.",
+        "ausstrahlung": "Nein, Schmerzen, die ausstrahlen, habe ich nicht.",
+        "begleit": "Ich huste trocken, besonders nachts. Fieber habe ich nicht. Heute Nacht habe ich fünfmal das Spray genommen.",
+        "vegetativ": "Geschlafen habe ich kaum. Appetit, Stuhlgang und Wasserlassen sind normal.",
+        "vorerkrankungen": "Ich habe seit der Kindheit allergisches Asthma und Heuschnupfen.",
+        "medikamente": "Symbicort 160 morgens und abends, aber ehrlich gesagt nicht regelmäßig. Und Salbutamol bei Bedarf.",
+        "allergien": "Gegen Hausstaubmilben, Katzenhaare und Birkenpollen.",
+        "familie": "Mein Vater hat Heuschnupfen.",
+        "sozial": "Ich studiere Pharmazie und wohne in einer WG.",
+        "noxen": "Ich rauche nicht, Alkohol trinke ich selten, Drogen nie."
+      }
+    },
+    "verdachtsdiagnose": "Exazerbation eines allergischen Asthma bronchiale",
+    "diagnoseKeywords": [
+      "asthma",
+      "exazerbation",
+      "asthmaanfall"
+    ],
+    "differenzialdiagnosen": [
+      "Pneumonie",
+      "Pneumothorax",
+      "Anaphylaxie",
+      "Vocal-Cord-Dysfunktion"
+    ],
+    "untersuchungen": [
+      "Peak-Flow",
+      "Blutgasanalyse",
+      "Pulsoxymetrie",
+      "Lungenfunktion",
+      "Röntgen-Thorax"
+    ]
+  },
+  {
+    "id": "c25",
+    "title": "Spontanpneumothorax",
+    "category": "Pneumologie",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Tim Bauer",
+      "age": 21,
+      "gender": "männlich",
+      "hauptbeschwerde": "Plötzliche einseitige Brustschmerzen und Atemnot"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Vor 3 Stunden in Ruhe plötzlich einsetzende, stechende Thoraxschmerzen links mit Ausstrahlung in die linke Schulter, atemabhängig, sowie zunehmende Dyspnoe und trockener Reizhusten. Kein Trauma.",
+      "vorerkrankungen": "Keine.",
+      "medikamente": "Keine",
+      "allergien": "Keine bekannten Allergien",
+      "familienanamnese": "Keine Besonderheiten.",
+      "sozialanamnese": "Ledig, Auszubildender (Mechatroniker), groß und schlank (1,92 m, 70 kg). Raucher seit 5 Jahren (1 Schachtel/Tag). Cannabis gelegentlich."
+    },
+    "sprache": [
+      {
+        "patient": "Es hat plötzlich links in der Brust gestochen.",
+        "fach": "Der Patient berichtet über akut einsetzende, stechende linksthorakale Schmerzen."
+      },
+      {
+        "patient": "Ich bekomme immer schlechter Luft.",
+        "fach": "Es besteht eine progrediente Dyspnoe."
+      },
+      {
+        "patient": "Ich habe mich nicht gestoßen oder so.",
+        "fach": "Ein Trauma wird verneint."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Pneumothorax",
+        "patient": "Luft zwischen Lunge und Brustwand, Lunge fällt zusammen",
+        "uz": "pnevmotoraks",
+        "ru": "пневмоторакс"
+      },
+      {
+        "de": "abgeschwächtes Atemgeräusch",
+        "patient": "man hört die Atmung leiser",
+        "uz": "susaygan nafas shovqini",
+        "ru": "ослабленное дыхание"
+      },
+      {
+        "de": "hypersonorer Klopfschall",
+        "patient": "lauter Ton beim Abklopfen",
+        "uz": "qutisimon perkutor tovush",
+        "ru": "коробочный перкуторный звук"
+      },
+      {
+        "de": "Thoraxdrainage",
+        "patient": "Schlauch in den Brustkorb",
+        "uz": "plevra drenaji",
+        "ru": "плевральный дренаж"
+      },
+      {
+        "de": "Spannungspneumothorax",
+        "patient": "lebensgefährlicher Druck im Brustkorb",
+        "uz": "zo‘riqqan pnevmotoraks",
+        "ru": "напряжённый пневмоторакс"
+      }
+    ],
+    "simulation": {
+      "opening": "Vor ein paar Stunden hat es plötzlich links in der Brust gestochen, und jetzt bekomme ich schlecht Luft.",
+      "answers": {
+        "beginn": "Vor ungefähr drei Stunden, ganz plötzlich, als ich auf dem Sofa saß.",
+        "lokalisation": "Links in der Brust, seitlich.",
+        "charakter": "Ein stechender Schmerz, beim Einatmen schlimmer. Ungefähr eine 6 von 10.",
+        "ausstrahlung": "Es zieht in die linke Schulter.",
+        "begleit": "Ich bekomme immer schlechter Luft und muss trocken husten. Fieber habe ich nicht. Gestoßen habe ich mich nicht.",
+        "vegetativ": "Appetit, Schlaf, Stuhlgang und Wasserlassen sind normal.",
+        "vorerkrankungen": "Nein, ich hatte nie etwas Ernstes.",
+        "medikamente": "Ich nehme keine Medikamente.",
+        "allergien": "Keine Allergien.",
+        "familie": "In der Familie ist nichts bekannt.",
+        "sozial": "Ich mache eine Ausbildung zum Mechatroniker und wohne bei meinen Eltern.",
+        "noxen": "Ich rauche seit fünf Jahren eine Schachtel am Tag. Ab und zu kiffe ich am Wochenende. Alkohol wenig."
+      }
+    },
+    "verdachtsdiagnose": "Primärer Spontanpneumothorax links",
+    "diagnoseKeywords": [
+      "pneumothorax"
+    ],
+    "differenzialdiagnosen": [
+      "Lungenembolie",
+      "Akutes Koronarsyndrom",
+      "Pleuritis",
+      "Rippenprellung"
+    ],
+    "untersuchungen": [
+      "Röntgen-Thorax",
+      "Auskultation",
+      "Perkussion",
+      "Pulsoxymetrie",
+      "Sonographie (Thorax)"
+    ]
+  },
+  {
+    "id": "c26",
+    "title": "Dekompensierte Leberzirrhose",
+    "category": "Gastroenterologie",
+    "difficulty": "schwer",
+    "patient": {
+      "name": "Horst Lange",
+      "age": 59,
+      "gender": "männlich",
+      "hauptbeschwerde": "Zunehmender Bauchumfang und Gelbfärbung der Haut"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 3 Wochen zunehmender Bauchumfang (Aszites), Beinödeme, Gelbfärbung von Haut und Skleren (Ikterus), Müdigkeit, Juckreiz, dunkler Urin. Die Ehefrau bemerkte zuletzt Verwirrtheit und Schläfrigkeit am Tag.",
+      "vorerkrankungen": "Alkoholische Fettleber (vor 5 Jahren diagnostiziert), arterielle Hypertonie.",
+      "medikamente": "Bisoprolol 5 mg 1-0-0",
+      "allergien": "Keine bekannten Allergien",
+      "familienanamnese": "Vater an Leberkrebs verstorben.",
+      "sozialanamnese": "Verheiratet, Frührentner (ehemals Kraftfahrer). Alkohol: seit 20 Jahren ca. 1 Flasche Wein + 3 Bier täglich. Nikotin 25 pack years."
+    },
+    "sprache": [
+      {
+        "patient": "Mein Bauch wird immer dicker.",
+        "fach": "Es besteht eine Zunahme des Bauchumfangs bei V. a. Aszites."
+      },
+      {
+        "patient": "Meine Haut und die Augen sind gelb.",
+        "fach": "Es zeigt sich ein Sklerenikterus und Ikterus der Haut."
+      },
+      {
+        "patient": "Meine Frau sagt, ich bin manchmal verwirrt.",
+        "fach": "Fremdanamnestisch bestehen Verwirrtheit und Somnolenz, V. a. hepatische Enzephalopathie."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Leberzirrhose",
+        "patient": "Schrumpfleber",
+        "uz": "jigar sirrozi",
+        "ru": "цирроз печени"
+      },
+      {
+        "de": "Aszites",
+        "patient": "Bauchwasser",
+        "uz": "assit (qorin bo‘shlig‘ida suyuqlik)",
+        "ru": "асцит"
+      },
+      {
+        "de": "Ikterus",
+        "patient": "Gelbsucht",
+        "uz": "sariqlik",
+        "ru": "желтуха"
+      },
+      {
+        "de": "hepatische Enzephalopathie",
+        "patient": "Verwirrtheit durch die Leber",
+        "uz": "jigar ensefalopatiyasi",
+        "ru": "печёночная энцефалопатия"
+      },
+      {
+        "de": "Aszitespunktion",
+        "patient": "Bauchwasser abpunktieren",
+        "uz": "laparotsentez (assit punksiyasi)",
+        "ru": "лапароцентез"
+      }
+    ],
+    "simulation": {
+      "opening": "Mein Bauch wird seit Wochen immer dicker, und meine Frau sagt, ich bin ganz gelb.",
+      "answers": {
+        "beginn": "Seit ungefähr drei Wochen, es wird immer schlimmer.",
+        "lokalisation": "Der ganze Bauch ist dick und gespannt. Richtig weh tut es nicht.",
+        "charakter": "Eher ein Spannungsgefühl, ungefähr eine 3 von 10.",
+        "ausstrahlung": "Nein, das strahlt nicht aus.",
+        "begleit": "Meine Haut und die Augen sind gelb, es juckt überall, und die Beine sind dick. Meine Frau sagt, ich bin manchmal verwirrt und schlafe tagsüber viel.",
+        "vegetativ": "Ich habe wenig Appetit, aber das Gewicht steigt wegen dem Bauch. Der Urin ist dunkel wie Cola, der Stuhl eher hell.",
+        "vorerkrankungen": "Vor fünf Jahren hat man mir gesagt, dass ich eine Fettleber habe. Und hohen Blutdruck.",
+        "medikamente": "Ich nehme Bisoprolol 5 mg morgens.",
+        "allergien": "Keine Allergien.",
+        "familie": "Mein Vater ist an Leberkrebs gestorben.",
+        "sozial": "Ich bin verheiratet und Frührentner, früher war ich LKW-Fahrer.",
+        "noxen": "Ich trinke seit 20 Jahren jeden Tag eine Flasche Wein und ein paar Bier. Rauchen tue ich auch, eine halbe Schachtel. Drogen nein."
+      }
+    },
+    "verdachtsdiagnose": "Dekompensierte äthyltoxische Leberzirrhose mit Aszites und V. a. hepatische Enzephalopathie",
+    "diagnoseKeywords": [
+      "leberzirrhose",
+      "zirrhose",
+      "dekompensiert"
+    ],
+    "differenzialdiagnosen": [
+      "Hepatozelluläres Karzinom",
+      "Herzinsuffizienz",
+      "Pfortaderthrombose",
+      "Spontan bakterielle Peritonitis"
+    ],
+    "untersuchungen": [
+      "Sonographie (Abdomen)",
+      "Leberwerte",
+      "Gerinnung",
+      "Albumin",
+      "Aszitespunktion"
+    ]
+  },
+  {
+    "id": "c27",
+    "title": "Gastroösophageale Refluxkrankheit",
+    "category": "Gastroenterologie",
+    "difficulty": "leicht",
+    "patient": {
+      "name": "Petra Zimmermann",
+      "age": 48,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Sodbrennen und saures Aufstoßen seit Monaten"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit ca. 4 Monaten retrosternales Brennen (Sodbrennen) und saures Aufstoßen, vor allem nach üppigen Mahlzeiten, im Liegen und nachts. Gelegentlich nächtlicher Reizhusten. Keine Schluckbeschwerden, kein Gewichtsverlust, keine Teerstühle.",
+      "vorerkrankungen": "Adipositas (BMI 31), Hashimoto-Thyreoiditis.",
+      "medikamente": "L-Thyroxin 100 µg 1-0-0",
+      "allergien": "Keine bekannten Allergien",
+      "familienanamnese": "Keine Besonderheiten.",
+      "sozialanamnese": "Verheiratet, zwei Kinder, Bürokauffrau, viel Stress. Kaffee 5 Tassen/Tag, Nichtraucherin, abends oft ein Glas Wein."
+    },
+    "sprache": [
+      {
+        "patient": "Es brennt hinter dem Brustbein.",
+        "fach": "Die Patientin berichtet über retrosternales Brennen (Pyrosis)."
+      },
+      {
+        "patient": "Mir kommt Saures hoch, besonders im Liegen.",
+        "fach": "Es bestehen saure Regurgitationen, verstärkt in Rückenlage."
+      },
+      {
+        "patient": "Schlucken kann ich normal.",
+        "fach": "Eine Dysphagie wird verneint."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Refluxkrankheit",
+        "patient": "Magensäure fließt in die Speiseröhre zurück",
+        "uz": "gastroezofageal reflyuks kasalligi",
+        "ru": "гастроэзофагеальная рефлюксная болезнь"
+      },
+      {
+        "de": "Pyrosis",
+        "patient": "Sodbrennen",
+        "uz": "jig‘ildon qaynashi",
+        "ru": "изжога"
+      },
+      {
+        "de": "Dysphagie",
+        "patient": "Schluckbeschwerden",
+        "uz": "yutish qiyinlashuvi",
+        "ru": "дисфагия"
+      },
+      {
+        "de": "Alarmsymptome",
+        "patient": "Warnzeichen",
+        "uz": "xavfli belgilar",
+        "ru": "тревожные симптомы"
+      },
+      {
+        "de": "Protonenpumpenhemmer",
+        "patient": "Magenschutz-Tablette",
+        "uz": "proton pompa ingibitori",
+        "ru": "ингибитор протонной помпы"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe seit Monaten so ein Brennen hinter dem Brustbein, und mir stößt es sauer auf.",
+      "answers": {
+        "beginn": "Seit ungefähr vier Monaten, es wird langsam häufiger.",
+        "lokalisation": "Hinter dem Brustbein und oben im Magen.",
+        "charakter": "Ein Brennen, ungefähr eine 4 von 10. Nach großen Mahlzeiten und abends im Bett ist es am schlimmsten.",
+        "ausstrahlung": "Es zieht manchmal bis in den Hals.",
+        "begleit": "Mir stößt es sauer auf, nachts muss ich manchmal husten. Schlucken kann ich normal, abgenommen habe ich nicht, der Stuhl ist nicht schwarz.",
+        "vegetativ": "Appetit ist gut, eher zu gut. Schlaf ist wegen dem Brennen gestört. Stuhlgang und Wasserlassen sind normal.",
+        "vorerkrankungen": "Ich habe Übergewicht und Hashimoto.",
+        "medikamente": "Ich nehme L-Thyroxin 100 morgens.",
+        "allergien": "Keine Allergien.",
+        "familie": "In meiner Familie gibt es keine Magen- oder Darmerkrankungen.",
+        "sozial": "Ich bin verheiratet, habe zwei Kinder und arbeite im Büro, da ist viel Stress.",
+        "noxen": "Ich rauche nicht. Ich trinke viel Kaffee, fünf Tassen am Tag, und abends oft ein Glas Wein."
+      }
+    },
+    "verdachtsdiagnose": "Gastroösophageale Refluxkrankheit (GERD) ohne Alarmsymptome",
+    "diagnoseKeywords": [
+      "reflux",
+      "gerd",
+      "refluxkrankheit",
+      "refluxösophagitis"
+    ],
+    "differenzialdiagnosen": [
+      "Akutes Koronarsyndrom",
+      "Gastritis",
+      "Ulcus ventriculi",
+      "Ösophaguskarzinom"
+    ],
+    "untersuchungen": [
+      "Gastroskopie",
+      "EKG",
+      "PPI-Test",
+      "Blutbild",
+      "24-h-pH-Metrie"
+    ]
+  },
+  {
+    "id": "c28",
+    "title": "Inkarzerierte Leistenhernie",
+    "category": "Chirurgie",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Herbert Schwarz",
+      "age": 71,
+      "gender": "männlich",
+      "hauptbeschwerde": "Schmerzhafte Schwellung in der rechten Leiste"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 5 Stunden zunehmende, starke Schmerzen in der rechten Leiste mit prall-elastischer, nicht mehr reponierbarer Schwellung. Seit 2 Stunden Übelkeit und einmaliges Erbrechen. Die Schwellung sei seit einem Jahr bekannt, ließ sich bisher aber immer zurückdrücken.",
+      "vorerkrankungen": "Benigne Prostatahyperplasie, COPD (GOLD 2), chronische Obstipation.",
+      "medikamente": "Tamsulosin 0,4 mg 0-0-1, Tiotropium 1 Hub 1-0-0",
+      "allergien": "Keine bekannten Allergien",
+      "familienanamnese": "Keine Besonderheiten.",
+      "sozialanamnese": "Verheiratet, Rentner (ehemals Lagerarbeiter, schweres Heben). Ex-Raucher (40 pack years). Alkohol gelegentlich."
+    },
+    "sprache": [
+      {
+        "patient": "Die Beule in der Leiste geht nicht mehr zurück.",
+        "fach": "Die Leistenschwellung ist nicht mehr reponibel."
+      },
+      {
+        "patient": "Sie ist hart und tut sehr weh.",
+        "fach": "Es zeigt sich eine prall-elastische, druckdolente Schwellung."
+      },
+      {
+        "patient": "Ich musste einmal brechen.",
+        "fach": "Begleitend bestehen Nausea und einmalige Emesis."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Leistenhernie",
+        "patient": "Leistenbruch",
+        "uz": "chov churrasi",
+        "ru": "паховая грыжа"
+      },
+      {
+        "de": "Inkarzeration",
+        "patient": "eingeklemmter Bruch",
+        "uz": "churraning qisilishi",
+        "ru": "ущемление"
+      },
+      {
+        "de": "reponibel",
+        "patient": "lässt sich zurückdrücken",
+        "uz": "joyiga solinadigan",
+        "ru": "вправимый"
+      },
+      {
+        "de": "Bruchpforte",
+        "patient": "Lücke in der Bauchwand",
+        "uz": "churra darvozasi",
+        "ru": "грыжевые ворота"
+      },
+      {
+        "de": "Herniotomie",
+        "patient": "Bruchoperation",
+        "uz": "churra operatsiyasi",
+        "ru": "грыжесечение"
+      }
+    ],
+    "simulation": {
+      "opening": "Mein Leistenbruch rechts lässt sich nicht mehr zurückdrücken und tut furchtbar weh.",
+      "answers": {
+        "beginn": "Seit ungefähr fünf Stunden. Die Beule habe ich schon ein Jahr, aber bisher ging sie immer zurück.",
+        "lokalisation": "Rechts in der Leiste, genau an der Beule.",
+        "charakter": "Ein starker, ziehender Schmerz, eine 8 von 10. Die Beule ist ganz hart.",
+        "ausstrahlung": "Es zieht in den rechten Hoden und in den Unterbauch.",
+        "begleit": "Mir ist übel und ich habe einmal gebrochen. Fieber habe ich nicht.",
+        "vegetativ": "Appetit habe ich gerade keinen. Stuhlgang hatte ich heute noch nicht, Winde gehen noch ab. Wasserlassen ist wegen der Prostata etwas schwach.",
+        "vorerkrankungen": "Ich habe eine vergrößerte Prostata, COPD und oft Verstopfung.",
+        "medikamente": "Tamsulosin abends und Spiriva morgens einen Hub.",
+        "allergien": "Nein.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich bin verheiratet und Rentner. Früher habe ich im Lager schwer gehoben.",
+        "noxen": "Ich habe 40 Jahre geraucht, seit fünf Jahren nicht mehr. Alkohol nur selten."
+      }
+    },
+    "verdachtsdiagnose": "Inkarzerierte Leistenhernie rechts",
+    "diagnoseKeywords": [
+      "inkarzeriert",
+      "leistenhernie",
+      "leistenbruch",
+      "hernie"
+    ],
+    "differenzialdiagnosen": [
+      "Femoralhernie",
+      "Lymphadenitis",
+      "Hodentorsion",
+      "Leistenabszess"
+    ],
+    "untersuchungen": [
+      "Sonographie (Leiste)",
+      "Blutbild",
+      "Laktat",
+      "Röntgen-Abdomen",
+      "Gerinnung"
+    ]
+  },
+  {
+    "id": "c29",
+    "title": "Sigmadivertikulitis",
+    "category": "Chirurgie",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Monika Krause",
+      "age": 64,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Schmerzen im linken Unterbauch und Fieber"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 2 Tagen zunehmende, dumpfe Schmerzen im linken Unterbauch, Fieber bis 38,6 °C, Appetitlosigkeit und Übelkeit. Stuhlgang breiig, kein Blut. Ähnliche, mildere Episode vor einem Jahr.",
+      "vorerkrankungen": "Divertikulose des Sigmas (Koloskopie vor 2 Jahren), arterielle Hypertonie, Adipositas.",
+      "medikamente": "Candesartan 16 mg 1-0-0",
+      "allergien": "Penicillin (Atemnot)",
+      "familienanamnese": "Mutter mit Darmkrebs mit 75 Jahren.",
+      "sozialanamnese": "Verheiratet, Rentnerin (ehemals Lehrerin). Ballaststoffarme Ernährung, wenig Bewegung. Nichtraucherin, Alkohol selten."
+    },
+    "sprache": [
+      {
+        "patient": "Mir tut der Bauch links unten weh.",
+        "fach": "Die Patientin klagt über Schmerzen im linken Unterbauch."
+      },
+      {
+        "patient": "Ich habe Fieber und keinen Appetit.",
+        "fach": "Begleitend bestehen Fieber bis 38,6 °C und Inappetenz."
+      },
+      {
+        "patient": "Gegen Penicillin bekomme ich Atemnot.",
+        "fach": "Es besteht eine Penicillinallergie mit Dyspnoe."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Divertikulitis",
+        "patient": "Entzündung von Darmausstülpungen",
+        "uz": "divertikulit",
+        "ru": "дивертикулит"
+      },
+      {
+        "de": "linker Unterbauch",
+        "patient": "unten links im Bauch",
+        "uz": "qorinning chap pastki qismi",
+        "ru": "левая подвздошная область"
+      },
+      {
+        "de": "Abwehrspannung",
+        "patient": "der Bauch wird beim Tasten hart",
+        "uz": "qorin mushaklarining himoya taranglashuvi",
+        "ru": "защитное напряжение мышц"
+      },
+      {
+        "de": "Perforation",
+        "patient": "Durchbruch des Darms",
+        "uz": "perforatsiya (teshilish)",
+        "ru": "перфорация"
+      },
+      {
+        "de": "Sigmaresektion",
+        "patient": "Entfernung eines Darmstücks",
+        "uz": "sigmasimon ichak rezeksiyasi",
+        "ru": "резекция сигмовидной кишки"
+      }
+    ],
+    "simulation": {
+      "opening": "Mir tut seit zwei Tagen der Bauch links unten weh, und ich habe Fieber.",
+      "answers": {
+        "beginn": "Seit zwei Tagen, langsam immer schlimmer. Vor einem Jahr hatte ich so etwas schon einmal, aber schwächer.",
+        "lokalisation": "Links unten im Bauch.",
+        "charakter": "Ein dumpfer, dauernder Schmerz, eine 6 von 10. Wenn ich mich bewege, wird es schlimmer.",
+        "ausstrahlung": "Nein, das bleibt links unten.",
+        "begleit": "Ich habe Fieber, gestern 38,6, und mir ist übel. Gebrochen habe ich nicht.",
+        "vegetativ": "Appetit habe ich keinen. Der Stuhl ist breiig, aber ohne Blut. Wasserlassen ist normal.",
+        "vorerkrankungen": "Bei einer Darmspiegelung hat man Divertikel gefunden. Außerdem habe ich hohen Blutdruck und Übergewicht.",
+        "medikamente": "Candesartan 16 mg morgens.",
+        "allergien": "Ja, gegen Penicillin, da habe ich schlecht Luft bekommen.",
+        "familie": "Meine Mutter hatte mit 75 Darmkrebs.",
+        "sozial": "Ich bin verheiratet und pensionierte Lehrerin. Ich esse ehrlich gesagt wenig Gemüse und bewege mich wenig.",
+        "noxen": "Ich rauche nicht, Alkohol trinke ich selten."
+      }
+    },
+    "verdachtsdiagnose": "Akute Sigmadivertikulitis (Rezidiv)",
+    "diagnoseKeywords": [
+      "divertikulitis",
+      "sigmadivertikulitis"
+    ],
+    "differenzialdiagnosen": [
+      "Kolonkarzinom",
+      "Ovarialtorsion",
+      "Harnleiterstein",
+      "Chronisch-entzündliche Darmerkrankung"
+    ],
+    "untersuchungen": [
+      "CT-Abdomen",
+      "Blutbild",
+      "CRP",
+      "Sonographie (Abdomen)",
+      "Urinstatus"
+    ]
   }
 ]
