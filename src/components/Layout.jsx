@@ -177,27 +177,25 @@ export function Header() {
 
 export function Footer() {
   return (
-    <footer className="mt-12 border-t border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-950">
+    <footer className="mt-12 bg-[#0b1f26] text-white/60">
       <div className="container-app flex flex-col gap-4 py-8 text-sm sm:flex-row sm:items-start sm:justify-between">
         <div className="max-w-md">
-          <p className="font-semibold text-slate-900 dark:text-white">
-            OsonFSP – {tr("Uzbek Doctors", "FSP для врачей")}
-          </p>
-          <p className="mt-1 muted">
+          <p className="font-semibold text-white">OsonFSP – {tr("Uzbek Doctors", "FSP для врачей")}</p>
+          <p className="mt-1">
             {tr(
               "O‘quv platformasi. Natijalar faqat mashq uchun — rasmiy FSP natijasini bashorat qilmaydi. Klinik holatlar o‘quv maqsadida soddalashtirilgan.",
               "Учебная платформа. Результаты носят тренировочный характер и не предсказывают официальный результат FSP. Клинические случаи упрощены в учебных целях.",
             )}
           </p>
         </div>
-        <nav className="flex flex-wrap gap-x-5 gap-y-2 muted">
-          <Link href="/fsp" className="hover:text-teal-600">
+        <nav className="flex flex-wrap gap-x-5 gap-y-2">
+          <Link href="/fsp" className="hover:text-teal-300">
             {tr("FSP haqida", "Об FSP")}
           </Link>
-          <Link href="/dashboard" className="hover:text-teal-600">
+          <Link href="/dashboard" className="hover:text-teal-300">
             Dashboard
           </Link>
-          <Link href="/admin" className="hover:text-teal-600">
+          <Link href="/admin" className="hover:text-teal-300">
             Admin
           </Link>
         </nav>

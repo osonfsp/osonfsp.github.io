@@ -26,7 +26,7 @@ img {
 
 /* Klinik oq-moviy palitra; Tailwind tokenlari (slate + teal) ustiga quriladi */
 :root {
-  --bg: #eaf1ee;
+  --bg: #dbe9e5;
   --fg: #1e293b;
   --accent: #0d9488;
   --track: #e2e8f0;
@@ -49,7 +49,7 @@ img {
   color-scheme: dark;
 }
 :root:not(.dark) {
-  --bg: #eaf1ee;
+  --bg: #dbe9e5;
   --fg: #1e293b;
   --track: #e2e8f0;
   color-scheme: light;
@@ -65,6 +65,32 @@ body {
     Roboto,
     Arial,
     sans-serif;
+}
+/* Fon: yumshoq yalpiz-moviy tus + burchaklarda xira yorug‘lik (ko‘zni charchatmaydi) */
+body {
+  background:
+    radial-gradient(1100px 520px at 0% -8%, rgba(13, 148, 136, 0.14), transparent 70%),
+    radial-gradient(900px 480px at 100% 0%, rgba(14, 116, 144, 0.12), transparent 70%), var(--bg);
+  background-attachment: fixed;
+}
+.dark body {
+  background:
+    radial-gradient(1100px 520px at 0% -8%, rgba(45, 212, 191, 0.08), transparent 70%),
+    radial-gradient(900px 480px at 100% 0%, rgba(56, 189, 248, 0.07), transparent 70%), var(--bg);
+  background-attachment: fixed;
+}
+/* EKG chizig‘i bo‘ylab yuguruvchi impuls */
+@keyframes ekg-run {
+  from {
+    stroke-dashoffset: 1200;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.ekg-pulse {
+  stroke-dasharray: 140 1060;
+  animation: ekg-run 3.2s linear infinite;
 }
 header.sticky {
   top: env(safe-area-inset-top, 0px) !important;
@@ -89,7 +115,7 @@ header.sticky {
 
 @layer base {
   body {
-    @apply bg-slate-50 text-slate-800 antialiased dark:bg-slate-950 dark:text-slate-200;
+    @apply text-slate-800 antialiased dark:text-slate-200;
   }
   h1,
   h2,
