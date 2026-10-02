@@ -9,6 +9,7 @@ const EMPTY_PROGRESS = {
     knownPairs: [],
     arztbrief: [],
     aufklaerung: [],
+    hoeren: [],
     simulations: [],
     exams: [],
     activity: [],
@@ -120,7 +121,10 @@ export function AppProvider({ children: e }) {
             L = k >= LEARNED_BOX && !N.learnedWords.includes(m);
           return withDay({
             ...N,
-            wordReview: { ...N.wordReview, [m]: { box: k, due: addDays(today(), REVIEW_DAYS[k]) } },
+            wordReview: {
+              ...N.wordReview,
+              [m]: { box: k, due: addDays(today(), REVIEW_DAYS[k]), last: today() },
+            },
             learnedWords: L ? [...N.learnedWords, m] : N.learnedWords,
           });
         }),
@@ -132,6 +136,17 @@ export function AppProvider({ children: e }) {
           ...v,
           knownPairs: toggleIn(v.knownPairs, m),
         })),
+      [r],
+    ),
+    HO = useCallback(
+      (m, v) =>
+        r((N) =>
+          withActivity(
+            { ...N, hoeren: [m, ...(N.hoeren ?? [])].slice(0, 50) },
+            `Hörverstehen: ${v} — ${m.score}%`,
+            `/hoeren/${m.id}`,
+          ),
+        ),
       [r],
     ),
     AK = useCallback(
@@ -214,10 +229,11 @@ export function AppProvider({ children: e }) {
         togglePair: p,
         addArztbrief: A,
         addAufklaerung: AK,
+        addHoeren: HO,
         addSimulation: w,
         addExam: D,
       }),
-      [t, n, l, g, c, h, b, x, y, f, R, p, A, AK, w, D],
+      [t, n, l, g, c, h, b, x, y, f, R, p, A, AK, HO, w, D],
     );
   return <AppContext.Provider value={d}>{e}</AppContext.Provider>;
 }

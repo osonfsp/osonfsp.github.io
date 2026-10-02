@@ -6,13 +6,15 @@ import { useApp } from "../state/AppContext";
 import { Speak } from "../components/Speak";
 import { dueCount, WordTrainer } from "../components/WordTrainer";
 import { loc, tr } from "../lib/i18n";
+import { useSearchParams } from "../lib/router";
 
 export function WordsPage() {
   let { progress: e, toggleWord: t } = useApp(),
     [a, n] = useState(""),
     [i, l] = useState("all"),
     [s, r] = useState(false),
-    [T, setT] = useState(false),
+    mashq = useSearchParams().get("mashq") === "1",
+    [T, setT] = useState(mashq),
     P = useMemo(() => words.filter((y) => i === "all" || y.category === i), [i]),
     due = dueCount(words, e.wordReview),
     c = useMemo(() => {

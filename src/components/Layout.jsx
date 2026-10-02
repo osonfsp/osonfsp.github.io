@@ -5,6 +5,7 @@ import { cx } from "../lib/utils";
 import { useApp } from "../state/AppContext";
 import { LANG, LANGS, setLang, tr } from "../lib/i18n";
 import { TrialBar } from "./Paywall";
+import { buildPlan } from "../lib/daily";
 
 const SIDEBAR_KEY = "fsp.sidebar";
 
@@ -111,8 +112,9 @@ function SidebarIcon() {
 
 function Sidebar({ onClose }) {
   let path = usePathname(),
-    { user } = useApp(),
-    active = (h) => (h === "/" ? path === "/" : path === h || path.startsWith(`${h}/`));
+    { user, progress } = useApp(),
+    active = (h) => (h === "/" ? path === "/" : path === h || path.startsWith(`${h}/`)),
+    plan = buildPlan(progress);
   return (
     <div className="flex h-full flex-col bg-[#0b1f26] text-white">
       <div className="flex h-14 shrink-0 items-center justify-between gap-2 px-4">
@@ -127,6 +129,23 @@ function Sidebar({ onClose }) {
         </button>
       </div>
       <nav className="flex-1 overflow-y-auto px-3 pb-4" aria-label={tr("Asosiy menyu", "Главное меню")}>
+        {/* Eng muhim kirish nuqtasi: bugungi 3 vazifa */}
+        <Link
+          href="/bugun"
+          className={cx(
+            "mt-1 flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-semibold transition",
+            active("/bugun") ? "bg-teal-500 text-white" : "bg-teal-500/15 text-teal-100 hover:bg-teal-500/25",
+          )}
+          aria-current={active("/bugun") ? "page" : undefined}
+        >
+          <span className="w-5 text-center" aria-hidden>
+            📅
+          </span>
+          {tr("Bugungi mashq", "Практика на сегодня")}
+          <span className="ml-auto rounded-full bg-white/15 px-2 py-0.5 text-xs">
+            {plan.doneCount}/{plan.tasks.length}
+          </span>
+        </Link>
         {NAV_GROUPS.map((g, gi) => (
           <div key={gi} className="mt-4 first:mt-2">
             <p className="px-3 pb-1 text-[11px] font-semibold uppercase tracking-wider text-white/40">

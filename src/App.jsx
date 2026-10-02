@@ -11,6 +11,8 @@ import { DashboardPage } from "./pages/Dashboard";
 import { ExamPage } from "./pages/Exam";
 import { FachsprachePage } from "./pages/Fachsprache";
 import { HomePage } from "./pages/Home";
+import { StartPage } from "./pages/Start";
+import { TodayPage } from "./pages/Today";
 import { HoerenListPage, HoerenPage } from "./pages/Hoeren";
 import { LoginPage } from "./pages/Login";
 import { ProPage } from "./pages/Pro";
@@ -34,6 +36,8 @@ function NotFoundPage() {
 const ROUTES = [
   [/^\/$/, HomePage],
   [/^\/fsp$/, AboutFspPage],
+  [/^\/start$/, StartPage],
+  [/^\/bugun$/, TodayPage],
   [/^\/login$/, LoginPage],
   [/^\/dashboard$/, DashboardPage],
   [/^\/faelle$/, CasesPage],

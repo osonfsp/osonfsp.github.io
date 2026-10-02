@@ -7,6 +7,7 @@ import { checkHoeren, fieldLabel, HOER_FIELDS, monologue } from "../lib/hoeren";
 import { tr } from "../lib/i18n";
 import { useParams } from "../lib/router";
 import { cx } from "../lib/utils";
+import { useApp } from "../state/AppContext";
 
 const RATES = [
   [0.8, "0.8×"],
@@ -82,7 +83,8 @@ export function HoerenPage() {
     [playing, setPlaying] = useState(false),
     [current, setCurrent] = useState(-1),
     [notes, setNotes] = useState({}),
-    [result, setResult] = useState(null);
+    [result, setResult] = useState(null),
+    { addHoeren } = useApp();
   useEffect(() => () => stopSpeaking(), []);
   if (!c)
     return (
@@ -115,7 +117,9 @@ export function HoerenPage() {
     check = () => {
       stopSpeaking();
       setPlaying(false);
-      setResult(checkHoeren(c, notes));
+      let r = checkHoeren(c, notes);
+      setResult(r);
+      addHoeren({ id: c.id, score: r.total, date: new Date().toISOString() }, c.title);
     },
     reset = () => (setNotes({}), setResult(null), setPlays(0));
   return (
