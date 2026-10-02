@@ -10,7 +10,7 @@ import {
   Spinner,
   StatCard,
 } from "../components/ui";
-import { arztbriefe, cases, getCase, pairs, words } from "../data/index";
+import { CASE_SECTIONS, arztbriefe, cases, getCase, pairs, words } from "../data/index";
 import { useRouter } from "../lib/router";
 import { avg, formatDate } from "../lib/utils";
 import { streakOf, useApp } from "../state/AppContext";
@@ -265,24 +265,57 @@ export function DashboardPage() {
       </div>
       <div className="card mt-4">
         <h2 className="section-title">{tr("Fälle bo‘yicha holat", "Статус по кейсам")}</h2>
-        <div className="grid gap-3 sm:grid-cols-2">
-          {cases.map((f) => {
-            let p = a.solvedCases.includes(f.id),
-              A = Math.max(0, ...a.simulations.filter((w) => w.id === f.id).map((w) => w.score));
+        <div className="space-y-3">
+          {CASE_SECTIONS.map((sec) => {
+            let list = cases.filter((f) => sec.categories.includes(f.category)),
+              done = list.filter((f) => a.solvedCases.includes(f.id)).length;
             return (
-              <Link
-                key={f.id}
-                href={`/faelle/${f.id}`}
-                className="rounded-xl border border-slate-200 p-3 transition hover:border-teal-300 dark:border-slate-800"
+              <details
+                key={sec.id}
+                className="group rounded-xl border border-slate-200 p-3 dark:border-slate-800"
               >
-                <div className="flex items-center justify-between gap-2 text-sm">
-                  <span className="truncate font-medium">
-                    {p ? "✅" : "○"} {f.title}
+                <summary className="flex cursor-pointer list-none items-center gap-3">
+                  <span className="text-xl" aria-hidden>
+                    {sec.icon}
                   </span>
-                  <span className="shrink-0 text-xs muted">{A ? `${A}%` : "—"}</span>
+                  <span className="min-w-0 flex-1">
+                    <span className="flex items-center justify-between gap-2 text-sm font-semibold">
+                      {sec.label}
+                      <span className="shrink-0 text-xs font-normal muted">
+                        {done}/{list.length}
+                      </span>
+                    </span>
+                    <ProgressBar
+                      value={list.length ? (done / list.length) * 100 : 0}
+                      className="mt-1.5 h-1.5"
+                    />
+                  </span>
+                  <span className="text-xs muted transition group-open:rotate-180" aria-hidden>
+                    ▼
+                  </span>
+                </summary>
+                <div className="mt-3 grid gap-2 sm:grid-cols-2">
+                  {list.map((f) => {
+                    let p = a.solvedCases.includes(f.id),
+                      A = Math.max(0, ...a.simulations.filter((w) => w.id === f.id).map((w) => w.score));
+                    return (
+                      <Link
+                        key={f.id}
+                        href={`/faelle/${f.id}`}
+                        className="rounded-lg border border-slate-200 p-2.5 transition hover:border-teal-300 dark:border-slate-800"
+                      >
+                        <div className="flex items-center justify-between gap-2 text-sm">
+                          <span className="truncate font-medium">
+                            {p ? "✅" : "○"} {f.title}
+                          </span>
+                          <span className="shrink-0 text-xs muted">{A ? `${A}%` : "—"}</span>
+                        </div>
+                        <ProgressBar value={A} auto className="mt-2 h-1.5" />
+                      </Link>
+                    );
+                  })}
                 </div>
-                <ProgressBar value={A} auto className="mt-2 h-1.5" />
-              </Link>
+              </details>
             );
           })}
         </div>

@@ -1222,5 +1222,347 @@
     "ru": "зоб",
     "example": "Palpatorisch zeigte sich eine diffuse Struma.",
     "category": "Krankheiten"
+  },
+  {
+    "id": "w137",
+    "de": "die Angina pectoris",
+    "patient": "Brustenge",
+    "uz": "stenokardiya",
+    "ru": "стенокардия",
+    "example": "Der Patient berichtet über eine belastungsabhängige Angina pectoris.",
+    "category": "Krankheiten"
+  },
+  {
+    "id": "w138",
+    "de": "die koronare Herzkrankheit (KHK)",
+    "patient": "Verengung der Herzkranzgefäße",
+    "uz": "yurak ishemik kasalligi",
+    "ru": "ишемическая болезнь сердца (ИБС)",
+    "example": "Es besteht der Verdacht auf eine koronare Herzkrankheit.",
+    "category": "Krankheiten"
+  },
+  {
+    "id": "w139",
+    "de": "die Ergometrie",
+    "patient": "Belastungs-EKG auf dem Fahrrad",
+    "uz": "veloergometriya",
+    "ru": "велоэргометрия",
+    "example": "Zur weiteren Abklärung empfehlen wir eine Ergometrie.",
+    "category": "Untersuchungen"
+  },
+  {
+    "id": "w140",
+    "de": "die Perikarditis",
+    "patient": "Herzbeutelentzündung",
+    "uz": "perikardit",
+    "ru": "перикардит",
+    "example": "Wir stellten die Diagnose einer akuten Perikarditis.",
+    "category": "Krankheiten"
+  },
+  {
+    "id": "w141",
+    "de": "der Perikarderguss",
+    "patient": "Flüssigkeit im Herzbeutel",
+    "uz": "perikardda suyuqlik",
+    "ru": "перикардиальный выпот",
+    "example": "Echokardiographisch zeigte sich kein Perikarderguss.",
+    "category": "Diagnostik"
+  },
+  {
+    "id": "w142",
+    "de": "der Pneumothorax",
+    "patient": "zusammengefallene Lunge",
+    "uz": "pnevmotoraks",
+    "ru": "пневмоторакс",
+    "example": "Im Röntgen-Thorax stellte sich ein Pneumothorax links dar.",
+    "category": "Krankheiten"
+  },
+  {
+    "id": "w143",
+    "de": "die Thoraxdrainage",
+    "patient": "Schlauch in den Brustkorb",
+    "uz": "plevra drenaji",
+    "ru": "плевральный дренаж",
+    "example": "Es erfolgte die Anlage einer Thoraxdrainage.",
+    "category": "Therapie"
+  },
+  {
+    "id": "w144",
+    "de": "der Bronchospasmus",
+    "patient": "Verkrampfung der Atemwege",
+    "uz": "bronxospazm",
+    "ru": "бронхоспазм",
+    "example": "Der Bronchospasmus besserte sich unter Salbutamol.",
+    "category": "Symptome"
+  },
+  {
+    "id": "w145",
+    "de": "der Peak-Flow",
+    "patient": "Messung der Ausatemstärke",
+    "uz": "nafas chiqarish cho‘qqi tezligi",
+    "ru": "пиковая скорость выдоха",
+    "example": "Der Peak-Flow lag bei 60 % des Sollwertes.",
+    "category": "Untersuchungen"
+  },
+  {
+    "id": "w146",
+    "de": "die Leberzirrhose",
+    "patient": "Schrumpfleber",
+    "uz": "jigar sirrozi",
+    "ru": "цирроз печени",
+    "example": "Es besteht eine äthyltoxische Leberzirrhose.",
+    "category": "Krankheiten"
+  },
+  {
+    "id": "w147",
+    "de": "der Aszites",
+    "patient": "Bauchwasser",
+    "uz": "assit",
+    "ru": "асцит",
+    "example": "Sonographisch zeigte sich ausgeprägter Aszites.",
+    "category": "Symptome"
+  },
+  {
+    "id": "w148",
+    "de": "der Ikterus",
+    "patient": "Gelbsucht",
+    "uz": "sariqlik",
+    "ru": "желтуха",
+    "example": "Klinisch fiel ein Sklerenikterus auf.",
+    "category": "Symptome"
+  },
+  {
+    "id": "w149",
+    "de": "die hepatische Enzephalopathie",
+    "patient": "Verwirrtheit durch Leberversagen",
+    "uz": "jigar ensefalopatiyasi",
+    "ru": "печёночная энцефалопатия",
+    "example": "Unter Lactulose besserte sich die hepatische Enzephalopathie.",
+    "category": "Krankheiten"
+  },
+  {
+    "id": "w150",
+    "de": "die Pyrosis",
+    "patient": "Sodbrennen",
+    "uz": "jig‘ildon qaynashi",
+    "ru": "изжога",
+    "example": "Die Patientin klagt über Pyrosis nach den Mahlzeiten.",
+    "category": "Symptome"
+  },
+  {
+    "id": "w151",
+    "de": "die Dysphagie",
+    "patient": "Schluckbeschwerden",
+    "uz": "yutish qiyinlashuvi",
+    "ru": "дисфагия",
+    "example": "Eine Dysphagie wird verneint.",
+    "category": "Symptome"
+  },
+  {
+    "id": "w152",
+    "de": "die Leistenhernie",
+    "patient": "Leistenbruch",
+    "uz": "chov churrasi",
+    "ru": "паховая грыжа",
+    "example": "Es zeigte sich eine inkarzerierte Leistenhernie rechts.",
+    "category": "Krankheiten"
+  },
+  {
+    "id": "w153",
+    "de": "die Inkarzeration",
+    "patient": "Einklemmung",
+    "uz": "qisilish",
+    "ru": "ущемление",
+    "example": "Bei Inkarzeration ist eine Notfalloperation erforderlich.",
+    "category": "Krankheiten"
+  },
+  {
+    "id": "w154",
+    "de": "die Divertikulitis",
+    "patient": "Entzündung von Darmausstülpungen",
+    "uz": "divertikulit",
+    "ru": "дивертикулит",
+    "example": "Die CT bestätigte eine Sigmadivertikulitis.",
+    "category": "Krankheiten"
+  },
+  {
+    "id": "w155",
+    "de": "die Abwehrspannung",
+    "patient": "harter Bauch beim Tasten",
+    "uz": "himoya taranglashuvi",
+    "ru": "защитное напряжение мышц",
+    "example": "Im linken Unterbauch bestand eine lokale Abwehrspannung.",
+    "category": "Untersuchungen"
+  },
+  {
+    "id": "w156",
+    "de": "die Perforation",
+    "patient": "Durchbruch",
+    "uz": "perforatsiya (teshilish)",
+    "ru": "перфорация",
+    "example": "Eine Perforation konnte ausgeschlossen werden.",
+    "category": "Krankheiten"
+  },
+  {
+    "id": "w157",
+    "de": "die Radiusfraktur",
+    "patient": "Bruch der Speiche am Handgelenk",
+    "uz": "bilak suyagi sinishi",
+    "ru": "перелом лучевой кости",
+    "example": "Röntgenologisch bestätigte sich eine distale Radiusfraktur.",
+    "category": "Krankheiten"
+  },
+  {
+    "id": "w158",
+    "de": "die Schenkelhalsfraktur",
+    "patient": "Oberschenkelhalsbruch",
+    "uz": "son suyagi bo‘yni sinishi",
+    "ru": "перелом шейки бедра",
+    "example": "Nach dem Sturz zeigte sich eine mediale Schenkelhalsfraktur.",
+    "category": "Krankheiten"
+  },
+  {
+    "id": "w159",
+    "de": "die Reposition",
+    "patient": "Einrichten des Knochens",
+    "uz": "repozitsiya (joyiga solish)",
+    "ru": "репозиция",
+    "example": "Die Fraktur wurde in Bruchspaltanästhesie reponiert.",
+    "category": "Therapie"
+  },
+  {
+    "id": "w160",
+    "de": "die Endoprothese",
+    "patient": "künstliches Gelenk",
+    "uz": "endoprotez",
+    "ru": "эндопротез",
+    "example": "Es erfolgte die Implantation einer Hüft-Endoprothese.",
+    "category": "Therapie"
+  },
+  {
+    "id": "w161",
+    "de": "der Harnverhalt",
+    "patient": "kann nicht Wasser lassen",
+    "uz": "siydik tutilishi",
+    "ru": "задержка мочи",
+    "example": "Bei akutem Harnverhalt wurde ein Blasenkatheter gelegt.",
+    "category": "Symptome"
+  },
+  {
+    "id": "w162",
+    "de": "die benigne Prostatahyperplasie",
+    "patient": "gutartig vergrößerte Prostata",
+    "uz": "prostataning xavfsiz kattalashishi",
+    "ru": "доброкачественная гиперплазия простаты",
+    "example": "Ursächlich ist eine benigne Prostatahyperplasie.",
+    "category": "Krankheiten"
+  },
+  {
+    "id": "w163",
+    "de": "die Nykturie",
+    "patient": "nachts Wasser lassen",
+    "uz": "tunda siyish",
+    "ru": "никтурия",
+    "example": "Der Patient berichtet über Nykturie drei- bis viermal pro Nacht.",
+    "category": "Symptome"
+  },
+  {
+    "id": "w164",
+    "de": "der Blasenkatheter",
+    "patient": "Schlauch in die Blase",
+    "uz": "siydik kateteri",
+    "ru": "мочевой катетер",
+    "example": "Über den Blasenkatheter entleerten sich 900 ml Urin.",
+    "category": "Therapie"
+  },
+  {
+    "id": "w165",
+    "de": "das Erysipel",
+    "patient": "Wundrose",
+    "uz": "saramas (erizipela)",
+    "ru": "рожа",
+    "example": "Es zeigte sich ein Erysipel am rechten Unterschenkel.",
+    "category": "Krankheiten"
+  },
+  {
+    "id": "w166",
+    "de": "die Meningitis",
+    "patient": "Hirnhautentzündung",
+    "uz": "meningit",
+    "ru": "менингит",
+    "example": "Wir stellten die Diagnose einer bakteriellen Meningitis.",
+    "category": "Krankheiten"
+  },
+  {
+    "id": "w167",
+    "de": "der Meningismus",
+    "patient": "steifer Nacken",
+    "uz": "ensa mushaklari rigidligi",
+    "ru": "менингизм",
+    "example": "Klinisch bestand ein deutlicher Meningismus.",
+    "category": "Symptome"
+  },
+  {
+    "id": "w168",
+    "de": "die Petechien",
+    "patient": "kleine rote Punkte auf der Haut",
+    "uz": "petexiyalar",
+    "ru": "петехии",
+    "example": "An beiden Beinen zeigten sich Petechien.",
+    "category": "Symptome"
+  },
+  {
+    "id": "w169",
+    "de": "der Bandscheibenvorfall",
+    "patient": "herausgerutschte Bandscheibe",
+    "uz": "disk churrasi",
+    "ru": "грыжа межпозвоночного диска",
+    "example": "Im MRT zeigte sich ein Bandscheibenvorfall L4/L5.",
+    "category": "Krankheiten"
+  },
+  {
+    "id": "w170",
+    "de": "der Krampfanfall",
+    "patient": "epileptischer Anfall",
+    "uz": "tutqanoq xuruji",
+    "ru": "судорожный припадок",
+    "example": "Es kam zu einem generalisierten Krampfanfall.",
+    "category": "Krankheiten"
+  },
+  {
+    "id": "w171",
+    "de": "das EEG",
+    "patient": "Messung der Hirnströme",
+    "uz": "EEG (elektroensefalografiya)",
+    "ru": "ЭЭГ",
+    "example": "Das EEG zeigte keine epilepsietypischen Potenziale.",
+    "category": "Untersuchungen"
+  },
+  {
+    "id": "w172",
+    "de": "die Gastroenteritis",
+    "patient": "Magen-Darm-Infekt",
+    "uz": "gastroenterit",
+    "ru": "гастроэнтерит",
+    "example": "Am ehesten liegt eine infektiöse Gastroenteritis vor.",
+    "category": "Krankheiten"
+  },
+  {
+    "id": "w173",
+    "de": "die Exsikkose",
+    "patient": "Austrocknung",
+    "uz": "suvsizlanish",
+    "ru": "эксикоз (обезвоживание)",
+    "example": "Die Exsikkose wurde mit Infusionen behandelt.",
+    "category": "Symptome"
+  },
+  {
+    "id": "w174",
+    "de": "die Fundoskopie",
+    "patient": "Augenspiegelung",
+    "uz": "ko‘z tubini ko‘rish",
+    "ru": "осмотр глазного дна",
+    "example": "Die Fundoskopie ergab keine hypertensive Retinopathie.",
+    "category": "Untersuchungen"
   }
 ]

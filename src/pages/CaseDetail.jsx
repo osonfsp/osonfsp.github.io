@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "../components/Link";
-import { DIFFICULTY_LABELS, getArztbriefForCase, getCase } from "../data/index";
+import { CATEGORY_LABELS, DIFFICULTY_LABELS, getArztbriefForCase, getCase, sectionOf } from "../data/index";
 import { useParams } from "../lib/router";
 import { useApp } from "../state/AppContext";
 import { Speak } from "../components/Speak";
@@ -36,13 +36,16 @@ export function CaseDetailPage() {
     h = a.solvedCases.includes(t.id);
   return (
     <div className="page">
-      <Link href="/faelle" className="text-sm muted hover:text-teal-600">
-        ← {tr("Barcha Fälle", "Все кейсы")}
+      <Link
+        href={`/faelle?bolim=${sectionOf(t.category)?.id ?? ""}`}
+        className="text-sm muted hover:text-teal-600"
+      >
+        ← {sectionOf(t.category)?.label ?? tr("Barcha Fälle", "Все кейсы")}
       </Link>
       <div className="mt-3 flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
         <div>
           <p className="text-xs font-semibold uppercase tracking-wider text-teal-600 dark:text-teal-400">
-            {t.category}
+            {CATEGORY_LABELS[t.category] ?? t.category}
             {" · "}
             {DIFFICULTY_LABELS[t.difficulty]}
           </p>
