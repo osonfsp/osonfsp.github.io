@@ -452,5 +452,465 @@
       }
     ],
     "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Thomas Wagner, 52 Jahre, der sich vom 28.09. bis 02.10.2026 in unserer stationären Behandlung befand.\n\nAnamnese:\nDer Patient berichtete über seit sechs Wochen bestehende Polydipsie, Polyurie und Nykturie sowie über Abgeschlagenheit, verschwommenes Sehen und einen ungewollten Gewichtsverlust von 5 kg. Vorbekannt sind eine Adipositas (BMI 33), eine arterielle Hypertonie und eine Steatosis hepatis. Familienanamnestisch sind Vater und Bruder an einem Diabetes mellitus Typ 2 erkrankt.\n\nBefunde:\nDer Gelegenheitsblutzucker betrug 345 mg/dl, das HbA1c 10,2 %. Ketone im Urin waren negativ, das Kreatinin lag im Normbereich.\n\nDiagnose:\nDiabetes mellitus Typ 2, Erstdiagnose, mit symptomatischer Hyperglykämie.\n\nTherapie und Verlauf:\nWir begannen eine Therapie mit Metformin 500 mg 1-0-1 (einschleichend, Zieldosis 1000 mg 1-0-1) sowie mit einem Basalinsulin (10 IE abends). Der Patient nahm an einer Diabetesschulung und einer Ernährungsberatung teil. Hierunter zeigten sich rückläufige Blutzuckerwerte.\n\nProcedere:\nWir empfehlen eine HbA1c-Kontrolle in drei Monaten, eine augenärztliche Untersuchung sowie regelmäßige Fußinspektionen. Eine Gewichtsreduktion und eine Nikotinkarenz sind anzustreben.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab6",
+    "caseId": "c11",
+    "title": "Lungenembolie bei Beinvenenthrombose",
+    "task": "Bemorning statsionar davolanishi haqida uy shifokoriga Arztbrief yozing: murojaat sababi, anamnez, topilmalar, diagnoz, davolash va keyingi tavsiyalar.",
+    "facts": [
+      "Patientin: Sabine Hoffmann, 34 Jahre, weiblich",
+      "Stationäre Aufnahme: 30.09.2026 – Entlassung: 05.10.2026",
+      "Akute Dyspnoe, atemabhängige Thoraxschmerzen rechts, Tachykardie, einmalige Hämoptyse",
+      "Seit einer Woche Schwellung der linken Wade nach Langstreckenflug",
+      "Risikofaktoren: orale Kontrazeption, Nikotinabusus (10 Zig./Tag)",
+      "Labor: D-Dimere deutlich erhöht, Troponin negativ",
+      "CT-Angiographie: Lungenarterienembolie rechts (Segmentarterien), keine Rechtsherzbelastung",
+      "Kompressionssonographie: tiefe Beinvenenthrombose links (V. poplitea)",
+      "Therapie: Antikoagulation mit Apixaban, Absetzen der Pille"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patientin ma’lumotlari (Frau Hoffmann)",
+        "keywords": [
+          "hoffmann"
+        ]
+      },
+      {
+        "label": "Asosiy shikoyat: Dyspnoe",
+        "keywords": [
+          "dyspnoe",
+          "atemnot"
+        ]
+      },
+      {
+        "label": "Thoraxschmerzen (atemabhängig)",
+        "keywords": [
+          "thoraxschmerz",
+          "atemabhängig"
+        ]
+      },
+      {
+        "label": "Hämoptyse",
+        "keywords": [
+          "hämoptyse",
+          "bluthusten"
+        ]
+      },
+      {
+        "label": "Xavf omillari (Pille, Flug, Nikotin)",
+        "keywords": [
+          "kontrazept",
+          "pille",
+          "flug",
+          "nikotin"
+        ]
+      },
+      {
+        "label": "D-Dimere",
+        "keywords": [
+          "d-dimer"
+        ]
+      },
+      {
+        "label": "CT-Angiographie",
+        "keywords": [
+          "ct-angiographie",
+          "angio-ct",
+          "ct-angio"
+        ]
+      },
+      {
+        "label": "TVT topilmasi (Beinvenenthrombose)",
+        "keywords": [
+          "thrombose",
+          "tvt"
+        ]
+      },
+      {
+        "label": "Diagnoz (Lungenembolie)",
+        "keywords": [
+          "lungenembolie",
+          "lungenarterienembolie"
+        ]
+      },
+      {
+        "label": "Davolash (Antikoagulation)",
+        "keywords": [
+          "antikoagul",
+          "apixaban"
+        ]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihre Patientin Frau Sabine Hoffmann, 34 Jahre, die sich vom 30.09.2026 bis zum 05.10.2026 in unserer stationären Behandlung befand.\n\nAnamnese:\nDie Patientin stellte sich mit akut aufgetretener Dyspnoe und atemabhängigen, stechenden Thoraxschmerzen rechts vor. Begleitend bestanden eine Tachykardie sowie eine einmalige Hämoptyse. Seit einer Woche bestehe nach einem Langstreckenflug eine Schwellung der linken Wade. Als Risikofaktoren sind eine orale Kontrazeption und ein Nikotinabusus bekannt.\n\nBefunde:\nLaborchemisch zeigten sich deutlich erhöhte D-Dimere bei negativem Troponin. In der CT-Angiographie stellte sich eine Lungenarterienembolie der rechten Segmentarterien ohne Zeichen einer Rechtsherzbelastung dar. Die Kompressionssonographie bestätigte eine tiefe Beinvenenthrombose der linken V. poplitea.\n\nDiagnose:\nLungenarterienembolie rechts bei tiefer Beinvenenthrombose links.\n\nTherapie und Verlauf:\nWir leiteten eine Antikoagulation mit Apixaban ein. Die orale Kontrazeption wurde beendet. Unter Therapie besserte sich die Dyspnoe rasch.\n\nProcedere:\nWir empfehlen die Fortführung der Antikoagulation für mindestens drei Monate, eine Kompressionstherapie, eine nichthormonelle Verhütung sowie eine Nikotinkarenz.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab7",
+    "caseId": "c14",
+    "title": "Akute äthyltoxische Pankreatitis",
+    "task": "Bemorning statsionar davolanishi haqida uy shifokoriga Arztbrief yozing.",
+    "facts": [
+      "Patient: Thomas Richter, 46 Jahre, männlich",
+      "Stationäre Aufnahme: 28.09.2026 – Entlassung: 06.10.2026",
+      "Stärkste gürtelförmige Oberbauchschmerzen mit Ausstrahlung in den Rücken, rezidivierendes Erbrechen",
+      "Alkoholabusus (täglich 4–5 Bier), Nikotinabusus 20 pack years",
+      "Vorerkrankungen: Fettleber, Hypertriglyzeridämie, Gicht",
+      "Labor: Lipase 1850 U/l, CRP 95 mg/l, Leukozytose",
+      "Sonographie: ödematös vergrößertes Pankreas, keine Gallensteine",
+      "Therapie: Nahrungskarenz, intravenöse Flüssigkeit, Analgesie, frühzeitiger enteraler Kostaufbau"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patient ma’lumotlari (Herr Richter)",
+        "keywords": [
+          "richter"
+        ]
+      },
+      {
+        "label": "Asosiy shikoyat: Oberbauchschmerzen",
+        "keywords": [
+          "oberbauch",
+          "epigastri",
+          "bauchschmerz"
+        ]
+      },
+      {
+        "label": "Gürtelförmige Ausstrahlung",
+        "keywords": [
+          "gürtelförmig",
+          "rücken"
+        ]
+      },
+      {
+        "label": "Erbrechen",
+        "keywords": [
+          "erbrechen",
+          "emesis"
+        ]
+      },
+      {
+        "label": "Alkoholabusus",
+        "keywords": [
+          "alkohol"
+        ]
+      },
+      {
+        "label": "Lipase",
+        "keywords": [
+          "lipase"
+        ]
+      },
+      {
+        "label": "Sonographie topilmasi",
+        "keywords": [
+          "sonographi",
+          "ultraschall"
+        ]
+      },
+      {
+        "label": "Diagnoz (Pankreatitis)",
+        "keywords": [
+          "pankreatitis"
+        ]
+      },
+      {
+        "label": "Davolash (Flüssigkeit, Analgesie)",
+        "keywords": [
+          "flüssigkeit",
+          "infusion",
+          "analges",
+          "volumen"
+        ]
+      },
+      {
+        "label": "Tavsiya: Alkoholkarenz",
+        "keywords": [
+          "alkoholkarenz",
+          "alkoholabstinenz",
+          "abstinenz",
+          "verzicht"
+        ]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Thomas Richter, 46 Jahre, der sich vom 28.09.2026 bis zum 06.10.2026 in unserer stationären Behandlung befand.\n\nAnamnese:\nDer Patient stellte sich mit stärksten, gürtelförmig in den Rücken ausstrahlenden Oberbauchschmerzen und rezidivierendem Erbrechen vor. Es besteht ein langjähriger Alkoholabusus sowie ein Nikotinabusus von 20 pack years. Vorbekannt sind eine Fettleber, eine Hypertriglyzeridämie und eine Gicht.\n\nBefunde:\nLaborchemisch zeigten sich eine auf 1850 U/l erhöhte Lipase, ein CRP von 95 mg/l sowie eine Leukozytose. Sonographisch stellte sich ein ödematös vergrößertes Pankreas ohne Nachweis von Gallensteinen dar.\n\nDiagnose:\nAkute ödematöse Pankreatitis, am ehesten äthyltoxischer Genese.\n\nTherapie und Verlauf:\nUnter Nahrungskarenz, intravenöser Flüssigkeitstherapie und Analgesie besserten sich die Beschwerden rasch. Der enterale Kostaufbau wurde gut toleriert.\n\nProcedere:\nWir empfehlen eine strikte Alkoholkarenz, eine Nikotinkarenz, die Kontrolle der Triglyzeride sowie eine Anbindung an eine Suchtberatung.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab8",
+    "caseId": "c13",
+    "title": "Tachykardes Vorhofflimmern",
+    "task": "Bemorning statsionar davolanishi haqida uy shifokoriga Arztbrief yozing. Antikoagulyatsiya sababini ko‘rsatishni unutmang.",
+    "facts": [
+      "Patientin: Ingrid Wagner, 72 Jahre, weiblich",
+      "Stationäre Aufnahme: 01.10.2026 – Entlassung: 04.10.2026",
+      "Seit dem Morgen unregelmäßiges Herzrasen, Schwindel, Belastungsdyspnoe, keine Synkope",
+      "Vorerkrankungen: arterielle Hypertonie, Diabetes mellitus Typ 2, Hypothyreose",
+      "Allergie: Kontrastmittel",
+      "EKG: tachykardes Vorhofflimmern, Herzfrequenz 138/min",
+      "Labor: TSH normal, Elektrolyte normal, Troponin negativ",
+      "Echokardiographie: normale linksventrikuläre Funktion",
+      "CHA2DS2-VASc-Score: 5",
+      "Therapie: Frequenzkontrolle mit Bisoprolol, Antikoagulation mit Apixaban"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patientin ma’lumotlari (Frau Wagner)",
+        "keywords": [
+          "wagner"
+        ]
+      },
+      {
+        "label": "Asosiy shikoyat: Palpitationen",
+        "keywords": [
+          "palpitation",
+          "herzrasen",
+          "herzstolpern"
+        ]
+      },
+      {
+        "label": "Schwindel / Dyspnoe",
+        "keywords": [
+          "schwindel",
+          "dyspnoe"
+        ]
+      },
+      {
+        "label": "Vorerkrankungen (Hypertonie, Diabetes)",
+        "keywords": [
+          "hypertonie",
+          "diabetes"
+        ]
+      },
+      {
+        "label": "Allergiya (Kontrastmittel)",
+        "keywords": [
+          "kontrastmittel"
+        ]
+      },
+      {
+        "label": "EKG topilmasi",
+        "keywords": [
+          "ekg"
+        ]
+      },
+      {
+        "label": "CHA2DS2-VASc",
+        "keywords": [
+          "cha2ds2",
+          "cha₂ds₂",
+          "chads"
+        ]
+      },
+      {
+        "label": "Diagnoz (Vorhofflimmern)",
+        "keywords": [
+          "vorhofflimmern"
+        ]
+      },
+      {
+        "label": "Frequenzkontrolle (Betablocker)",
+        "keywords": [
+          "bisoprolol",
+          "betablocker",
+          "frequenzkontrolle"
+        ]
+      },
+      {
+        "label": "Antikoagulation",
+        "keywords": [
+          "antikoagul",
+          "apixaban",
+          "doak",
+          "noak"
+        ]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihre Patientin Frau Ingrid Wagner, 72 Jahre, die sich vom 01.10.2026 bis zum 04.10.2026 in unserer stationären Behandlung befand.\n\nAnamnese:\nDie Patientin stellte sich mit seit dem Morgen bestehenden unregelmäßigen Palpitationen, Schwindel und Belastungsdyspnoe vor. Eine Synkope wurde verneint. Vorbekannt sind eine arterielle Hypertonie, ein Diabetes mellitus Typ 2 und eine Hypothyreose. Es besteht eine Kontrastmittelallergie.\n\nBefunde:\nIm EKG zeigte sich ein tachykardes Vorhofflimmern mit einer Herzfrequenz von 138/min. TSH, Elektrolyte und Troponin lagen im Normbereich. Echokardiographisch fand sich eine normale linksventrikuläre Funktion.\n\nDiagnose:\nTachykardes Vorhofflimmern, Erstdiagnose. CHA2DS2-VASc-Score 5.\n\nTherapie und Verlauf:\nUnter Frequenzkontrolle mit Bisoprolol normalisierte sich die Herzfrequenz. Aufgrund des erhöhten Schlaganfallrisikos leiteten wir eine Antikoagulation mit Apixaban ein.\n\nProcedere:\nWir empfehlen die dauerhafte Fortführung der Antikoagulation, regelmäßige Kontrollen der Nierenfunktion sowie eine ambulante kardiologische Vorstellung zur Prüfung einer rhythmuserhaltenden Therapie.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab9",
+    "caseId": "c15",
+    "title": "Ulkusblutung unter NSAR",
+    "task": "Bemorning statsionar davolanishi haqida uy shifokoriga Arztbrief yozing. Dori-darmonlarga oid tavsiyalarga alohida e’tibor bering.",
+    "facts": [
+      "Patient: Helmut Braun, 61 Jahre, männlich",
+      "Stationäre Aufnahme: 27.09.2026 – Entlassung: 03.10.2026",
+      "Seit 2 Tagen Meläna, einmalige kaffeesatzartige Hämatemesis, orthostatischer Schwindel",
+      "Medikation: ASS 100 mg, Ibuprofen 600 mg bis 3x täglich seit 4 Wochen, Bisoprolol 2,5 mg",
+      "Vorerkrankungen: KHK mit Stent vor 2 Jahren, Gonarthrose beidseits",
+      "Labor: Hämoglobin 7,9 g/dl, Harnstoff erhöht",
+      "Gastroskopie: Ulcus duodeni mit Gefäßstumpf (Forrest IIa), endoskopische Blutstillung",
+      "Helicobacter-pylori-Test negativ",
+      "Therapie: 2 Erythrozytenkonzentrate, Pantoprazol i. v., Absetzen von Ibuprofen"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patient ma’lumotlari (Herr Braun)",
+        "keywords": [
+          "braun"
+        ]
+      },
+      {
+        "label": "Meläna",
+        "keywords": [
+          "meläna",
+          "teerstuhl"
+        ]
+      },
+      {
+        "label": "Hämatemesis",
+        "keywords": [
+          "hämatemesis",
+          "kaffeesatz"
+        ]
+      },
+      {
+        "label": "NSAR / Ibuprofen",
+        "keywords": [
+          "ibuprofen",
+          "nsar"
+        ]
+      },
+      {
+        "label": "Hämoglobin",
+        "keywords": [
+          "hämoglobin",
+          "hb "
+        ]
+      },
+      {
+        "label": "Gastroskopie",
+        "keywords": [
+          "gastroskopie",
+          "ögd",
+          "endoskop"
+        ]
+      },
+      {
+        "label": "Diagnoz (Ulkus)",
+        "keywords": [
+          "ulcus",
+          "ulkus"
+        ]
+      },
+      {
+        "label": "Blutstillung / Transfusion",
+        "keywords": [
+          "blutstillung",
+          "erythrozytenkonzentrat",
+          "transfusion",
+          "clip"
+        ]
+      },
+      {
+        "label": "PPI",
+        "keywords": [
+          "pantoprazol",
+          "protonenpumpen",
+          "ppi"
+        ]
+      },
+      {
+        "label": "Tavsiya: NSAR meiden",
+        "keywords": [
+          "meiden",
+          "verzicht",
+          "abgesetzt",
+          "absetzen",
+          "pausier"
+        ]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Helmut Braun, 61 Jahre, der sich vom 27.09.2026 bis zum 03.10.2026 in unserer stationären Behandlung befand.\n\nAnamnese:\nDer Patient stellte sich mit seit zwei Tagen bestehender Meläna, einmaliger kaffeesatzartiger Hämatemesis und orthostatischem Schwindel vor. Wegen einer Gonarthrose nahm er seit vier Wochen bis zu dreimal täglich Ibuprofen 600 mg zusätzlich zu ASS 100 mg ein. Vorbekannt ist eine KHK mit Stentimplantation vor zwei Jahren.\n\nBefunde:\nLaborchemisch zeigten sich ein Hämoglobin von 7,9 g/dl und ein erhöhter Harnstoff. In der Gastroskopie stellte sich ein Ulcus duodeni mit sichtbarem Gefäßstumpf (Forrest IIa) dar. Der Helicobacter-pylori-Test war negativ.\n\nDiagnose:\nObere gastrointestinale Blutung bei Ulcus duodeni (Forrest IIa) unter NSAR- und ASS-Einnahme.\n\nTherapie und Verlauf:\nEs erfolgte eine endoskopische Blutstillung. Wir transfundierten zwei Erythrozytenkonzentrate und behandelten mit Pantoprazol intravenös. Ibuprofen wurde abgesetzt. Im Verlauf kam es zu keiner erneuten Blutung.\n\nProcedere:\nWir empfehlen die Fortführung von Pantoprazol 40 mg 1-0-1 für acht Wochen, die Fortführung von ASS aus kardiologischer Indikation sowie den dauerhaften Verzicht auf NSAR. Zur Analgesie kann Paracetamol eingesetzt werden. Eine Kontrolle des Blutbildes in einer Woche ist empfehlenswert.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab10",
+    "caseId": "c17",
+    "title": "Ureterolithiasis rechts",
+    "task": "Bemorning statsionar davolanishi haqida uy shifokoriga qisqa Arztbrief yozing.",
+    "facts": [
+      "Patient: Stefan Koch, 39 Jahre, männlich",
+      "Stationäre Aufnahme: 02.10.2026 – Entlassung: 04.10.2026",
+      "Kolikartige Flankenschmerzen rechts mit Ausstrahlung in die Leiste, Übelkeit, Makrohämaturie",
+      "Anamnese: Z. n. Nierenstein links, geringe Trinkmenge",
+      "Allergie: Metamizol",
+      "Urinstatus: Mikrohämaturie, keine Leukozyturie",
+      "Sonographie: Harnstau Grad I rechts",
+      "Low-Dose-CT: 5 mm Konkrement im distalen Ureter rechts",
+      "Therapie: Analgesie mit Diclofenac und Paracetamol, medikamentöse Austreibungstherapie mit Tamsulosin, spontaner Steinabgang"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patient ma’lumotlari (Herr Koch)",
+        "keywords": [
+          "koch"
+        ]
+      },
+      {
+        "label": "Asosiy shikoyat: Flankenschmerzen",
+        "keywords": [
+          "flanke"
+        ]
+      },
+      {
+        "label": "Kolik xarakteri",
+        "keywords": [
+          "kolik"
+        ]
+      },
+      {
+        "label": "Hämaturie",
+        "keywords": [
+          "hämaturie"
+        ]
+      },
+      {
+        "label": "Allergiya (Metamizol)",
+        "keywords": [
+          "metamizol",
+          "novalgin"
+        ]
+      },
+      {
+        "label": "Sonographie (Harnstau)",
+        "keywords": [
+          "harnstau",
+          "sonographi"
+        ]
+      },
+      {
+        "label": "CT topilmasi (Konkrement)",
+        "keywords": [
+          "konkrement",
+          "low-dose",
+          "computertomograph"
+        ]
+      },
+      {
+        "label": "Diagnoz (Urolithiasis)",
+        "keywords": [
+          "urolithiasis",
+          "ureterolithiasis",
+          "harnleiterstein",
+          "nierenkolik"
+        ]
+      },
+      {
+        "label": "Davolash (Analgesie, Tamsulosin)",
+        "keywords": [
+          "tamsulosin",
+          "diclofenac",
+          "analges"
+        ]
+      },
+      {
+        "label": "Tavsiya: Trinkmenge",
+        "keywords": [
+          "trinkmenge",
+          "flüssigkeitszufuhr",
+          "trinken"
+        ]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Stefan Koch, 39 Jahre, der sich vom 02.10.2026 bis zum 04.10.2026 in unserer stationären Behandlung befand.\n\nAnamnese:\nDer Patient stellte sich mit kolikartigen Flankenschmerzen rechts mit Ausstrahlung in die Leiste, Übelkeit und Makrohämaturie vor. Anamnestisch ist ein Nierenstein links bekannt. Die tägliche Trinkmenge ist gering. Es besteht eine Allergie gegen Metamizol.\n\nBefunde:\nIm Urinstatus zeigte sich eine Mikrohämaturie ohne Leukozyturie. Sonographisch fand sich ein Harnstau Grad I rechts. Im Low-Dose-CT stellte sich ein 5 mm großes Konkrement im distalen rechten Ureter dar.\n\nDiagnose:\nNierenkolik bei distaler Ureterolithiasis rechts.\n\nTherapie und Verlauf:\nUnter Analgesie mit Diclofenac und Paracetamol sowie medikamentöser Austreibungstherapie mit Tamsulosin kam es zum spontanen Steinabgang. Der Harnstau war sonographisch rückläufig.\n\nProcedere:\nWir empfehlen eine Trinkmenge von mindestens 2,5 Litern täglich, eine Steinanalyse sowie eine urologische Kontrolle in vier Wochen.\n\nMit freundlichen kollegialen Grüßen"
   }
 ]
