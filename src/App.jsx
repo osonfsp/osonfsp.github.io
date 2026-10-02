@@ -15,14 +15,15 @@ import { ProPage } from "./pages/Pro";
 import { RedemittelPage } from "./pages/Redemittel";
 import { SimulationPage } from "./pages/Simulation";
 import { WordsPage } from "./pages/Words";
+import { tr } from "./lib/i18n";
 
 function NotFoundPage() {
   return (
     <div className="page flex flex-col items-center py-24 text-center">
       <p className="text-5xl font-bold text-teal-600">404</p>
-      <h1 className="mt-3 text-xl font-semibold">Sahifa topilmadi</h1>
+      <h1 className="mt-3 text-xl font-semibold">{tr("Sahifa topilmadi", "Страница не найдена")}</h1>
       <Link href="/" className="btn-primary mt-6">
-        Bosh sahifaga
+        {tr("Bosh sahifaga", "На главную")}
       </Link>
     </div>
   );

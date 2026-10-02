@@ -2,6 +2,7 @@ import cases from "./cases.json";
 import words from "./words.json";
 import pairs from "./pairs.json";
 import arztbriefe from "./arztbriefe.json";
+import { tr } from "../lib/i18n";
 
 export { cases, words, pairs, arztbriefe };
 
@@ -28,9 +29,9 @@ export const CASE_CATEGORIES = [
     "Therapie",
   ],
   DIFFICULTY_LABELS = {
-    leicht: "Oson",
-    mittel: "O‘rta",
-    schwer: "Qiyin",
+    leicht: tr("Oson", "Лёгкий"),
+    mittel: tr("O‘rta", "Средний"),
+    schwer: tr("Qiyin", "Сложный"),
   },
   getCase = (e) => cases.find((t) => t.id === e),
   getArztbrief = (e) => arztbriefe.find((t) => t.id === e),

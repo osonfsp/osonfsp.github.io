@@ -5,62 +5,99 @@
     "items": [
       [
         "Guten Tag, mein Name ist Dr. … Ich bin hier Assistenzarzt / Assistenzärztin.",
-        "Assalomu alaykum, mening ismim Dr. … Men shu yerda assistent shifokorman."
+        "Assalomu alaykum, mening ismim Dr. … Men shu yerda assistent shifokorman.",
+        "Здравствуйте, меня зовут доктор … Я здесь работаю ассистентом."
       ],
       [
         "Ich würde Ihnen gern einige Fragen stellen. Ist das in Ordnung?",
-        "Sizga bir nechta savol bermoqchiman. Mumkinmi?"
+        "Sizga bir nechta savol bermoqchiman. Mumkinmi?",
+        "Я хотел(а) бы задать вам несколько вопросов. Вы не против?"
       ],
-      ["Wie darf ich Sie ansprechen?", "Sizga qanday murojaat qilsam bo‘ladi?"],
-      ["Was führt Sie heute zu uns?", "Bugun sizni bizga nima olib keldi?"],
-      ["Erzählen Sie bitte, welche Beschwerden Sie haben.", "Qanday shikoyatlaringiz borligini aytib bering."]
+      ["Wie darf ich Sie ansprechen?", "Sizga qanday murojaat qilsam bo‘ladi?", "Как мне к вам обращаться?"],
+      ["Was führt Sie heute zu uns?", "Bugun sizni bizga nima olib keldi?", "Что привело вас к нам сегодня?"],
+      [
+        "Erzählen Sie bitte, welche Beschwerden Sie haben.",
+        "Qanday shikoyatlaringiz borligini aytib bering.",
+        "Расскажите, пожалуйста, на что вы жалуетесь."
+      ]
     ]
   },
   {
     "teil": "Teil 1 · Arzt-Patienten-Gespräch",
     "group": "Aktuelle Beschwerden",
     "items": [
-      ["Seit wann haben Sie diese Beschwerden?", "Bu shikoyatlar qachondan beri bor?"],
+      [
+        "Seit wann haben Sie diese Beschwerden?",
+        "Bu shikoyatlar qachondan beri bor?",
+        "С какого времени у вас эти жалобы?"
+      ],
       [
         "Wie hat es angefangen – plötzlich oder langsam?",
-        "Qanday boshlandi – to‘satdanmi yoki asta-sekinmi?"
+        "Qanday boshlandi – to‘satdanmi yoki asta-sekinmi?",
+        "Как это началось — внезапно или постепенно?"
       ],
       [
         "Wo genau haben Sie die Schmerzen? Können Sie mir die Stelle zeigen?",
-        "Og‘riq aynan qayerda? Joyini ko‘rsata olasizmi?"
+        "Og‘riq aynan qayerda? Joyini ko‘rsata olasizmi?",
+        "Где именно болит? Можете показать место?"
       ],
       [
         "Wie würden Sie die Schmerzen beschreiben – drückend, stechend, brennend oder ziehend?",
-        "Og‘riqni qanday ta’riflaysiz – siquvchi, sanchuvchi, achishtiruvchi yoki tortuvchi?"
+        "Og‘riqni qanday ta’riflaysiz – siquvchi, sanchuvchi, achishtiruvchi yoki tortuvchi?",
+        "Как бы вы описали боль — давящая, колющая, жгучая или тянущая?"
       ],
       [
         "Wie stark sind die Schmerzen auf einer Skala von 0 bis 10?",
-        "0 dan 10 gacha shkalada og‘riq qanchalik kuchli?"
+        "0 dan 10 gacha shkalada og‘riq qanchalik kuchli?",
+        "Насколько сильна боль по шкале от 0 до 10?"
       ],
-      ["Strahlen die Schmerzen irgendwohin aus?", "Og‘riq biror joyga tarqaladimi?"],
+      [
+        "Strahlen die Schmerzen irgendwohin aus?",
+        "Og‘riq biror joyga tarqaladimi?",
+        "Отдаёт ли боль куда-нибудь?"
+      ],
       [
         "Gibt es etwas, das die Beschwerden verbessert oder verschlechtert?",
-        "Shikoyatlarni yengillashtiradigan yoki kuchaytiradigan narsa bormi?"
+        "Shikoyatlarni yengillashtiradigan yoki kuchaytiradigan narsa bormi?",
+        "Есть ли что-то, что облегчает или усиливает жалобы?"
       ],
-      ["Hatten Sie solche Beschwerden schon einmal?", "Ilgari ham shunday shikoyatlar bo‘lganmi?"]
+      [
+        "Hatten Sie solche Beschwerden schon einmal?",
+        "Ilgari ham shunday shikoyatlar bo‘lganmi?",
+        "Бывали ли у вас такие жалобы раньше?"
+      ]
     ]
   },
   {
     "teil": "Teil 1 · Arzt-Patienten-Gespräch",
     "group": "Begleitsymptome und vegetative Anamnese",
     "items": [
-      ["Haben Sie Fieber, Schüttelfrost oder Nachtschweiß?", "Isitma, qaltirash yoki tungi terlash bormi?"],
-      ["Ist Ihnen übel? Mussten Sie erbrechen?", "Ko‘nglingiz aynayaptimi? Qusdingizmi?"],
+      [
+        "Haben Sie Fieber, Schüttelfrost oder Nachtschweiß?",
+        "Isitma, qaltirash yoki tungi terlash bormi?",
+        "Есть ли у вас температура, озноб или ночная потливость?"
+      ],
+      [
+        "Ist Ihnen übel? Mussten Sie erbrechen?",
+        "Ko‘nglingiz aynayaptimi? Qusdingizmi?",
+        "Вас тошнит? Была ли рвота?"
+      ],
       [
         "Haben Sie in letzter Zeit ungewollt abgenommen?",
-        "Oxirgi paytda o‘zingiz istamagan holda vazn yo‘qotdingizmi?"
+        "Oxirgi paytda o‘zingiz istamagan holda vazn yo‘qotdingizmi?",
+        "Вы в последнее время непреднамеренно похудели?"
       ],
-      ["Wie sind Ihr Appetit und Ihr Durst?", "Ishtahangiz va chanqog‘ingiz qanday?"],
+      [
+        "Wie sind Ihr Appetit und Ihr Durst?",
+        "Ishtahangiz va chanqog‘ingiz qanday?",
+        "Как у вас с аппетитом и жаждой?"
+      ],
       [
         "Haben Sie Probleme beim Stuhlgang oder beim Wasserlassen?",
-        "Ich kelishi yoki siyishda muammo bormi?"
+        "Ich kelishi yoki siyishda muammo bormi?",
+        "Есть ли проблемы со стулом или мочеиспусканием?"
       ],
-      ["Wie schlafen Sie?", "Qanday uxlayapsiz?"]
+      ["Wie schlafen Sie?", "Qanday uxlayapsiz?", "Как вы спите?"]
     ]
   },
   {
@@ -69,18 +106,29 @@
     "items": [
       [
         "Haben Sie Vorerkrankungen, zum Beispiel Bluthochdruck oder Zucker?",
-        "Oldingi kasalliklaringiz bormi, masalan, yuqori qon bosimi yoki qand kasalligi?"
+        "Oldingi kasalliklaringiz bormi, masalan, yuqori qon bosimi yoki qand kasalligi?",
+        "Есть ли у вас хронические заболевания, например повышенное давление или сахарный диабет?"
       ],
-      ["Wurden Sie schon einmal operiert?", "Ilgari operatsiya bo‘lganmisiz?"],
+      [
+        "Wurden Sie schon einmal operiert?",
+        "Ilgari operatsiya bo‘lganmisiz?",
+        "Вас когда-нибудь оперировали?"
+      ],
       [
         "Nehmen Sie regelmäßig Medikamente ein? Wenn ja, welche und in welcher Dosierung?",
-        "Muntazam dori ichasizmi? Ha bo‘lsa, qaysi va qancha dozada?"
+        "Muntazam dori ichasizmi? Ha bo‘lsa, qaysi va qancha dozada?",
+        "Принимаете ли вы регулярно лекарства? Если да, какие и в какой дозировке?"
       ],
-      ["Haben Sie Allergien, zum Beispiel gegen Medikamente?", "Allergiyangiz bormi, masalan, dorilarga?"],
-      ["Wie äußert sich die Allergie?", "Allergiya qanday namoyon bo‘ladi?"],
+      [
+        "Haben Sie Allergien, zum Beispiel gegen Medikamente?",
+        "Allergiyangiz bormi, masalan, dorilarga?",
+        "Есть ли у вас аллергии, например на лекарства?"
+      ],
+      ["Wie äußert sich die Allergie?", "Allergiya qanday namoyon bo‘ladi?", "Как проявляется аллергия?"],
       [
         "Wann war Ihre letzte Regelblutung? Könnten Sie schwanger sein?",
-        "Oxirgi hayzingiz qachon bo‘lgan? Homilador bo‘lishingiz mumkinmi?"
+        "Oxirgi hayzingiz qachon bo‘lgan? Homilador bo‘lishingiz mumkinmi?",
+        "Когда была последняя менструация? Возможна ли беременность?"
       ]
     ]
   },
@@ -88,12 +136,28 @@
     "teil": "Teil 1 · Arzt-Patienten-Gespräch",
     "group": "Familien- und Sozialanamnese, Noxen",
     "items": [
-      ["Gibt es in Ihrer Familie bekannte Erkrankungen?", "Oilangizda ma’lum kasalliklar bormi?"],
-      ["Was sind Sie von Beruf?", "Kasbingiz nima?"],
-      ["Wie wohnen Sie – allein oder mit Familie?", "Qanday yashaysiz – yolg‘izmi yoki oila bilanmi?"],
-      ["Rauchen Sie? Wenn ja, wie viel und seit wann?", "Chekasizmi? Ha bo‘lsa, qancha va qachondan beri?"],
-      ["Trinken Sie Alkohol? Wie viel ungefähr?", "Spirtli ichimlik ichasizmi? Taxminan qancha?"],
-      ["Nehmen Sie Drogen?", "Giyohvand moddalar iste’mol qilasizmi?"]
+      [
+        "Gibt es in Ihrer Familie bekannte Erkrankungen?",
+        "Oilangizda ma’lum kasalliklar bormi?",
+        "Есть ли в вашей семье известные заболевания?"
+      ],
+      ["Was sind Sie von Beruf?", "Kasbingiz nima?", "Кем вы работаете?"],
+      [
+        "Wie wohnen Sie – allein oder mit Familie?",
+        "Qanday yashaysiz – yolg‘izmi yoki oila bilanmi?",
+        "Как вы живёте — одни или с семьёй?"
+      ],
+      [
+        "Rauchen Sie? Wenn ja, wie viel und seit wann?",
+        "Chekasizmi? Ha bo‘lsa, qancha va qachondan beri?",
+        "Вы курите? Если да, сколько и как давно?"
+      ],
+      [
+        "Trinken Sie Alkohol? Wie viel ungefähr?",
+        "Spirtli ichimlik ichasizmi? Taxminan qancha?",
+        "Пьёте ли вы алкоголь? Примерно сколько?"
+      ],
+      ["Nehmen Sie Drogen?", "Giyohvand moddalar iste’mol qilasizmi?", "Употребляете ли вы наркотики?"]
     ]
   },
   {
@@ -102,24 +166,29 @@
     "items": [
       [
         "Vielen Dank für Ihre Geduld. Ich fasse kurz zusammen: …",
-        "Sabringiz uchun rahmat. Qisqacha xulosa qilaman: …"
+        "Sabringiz uchun rahmat. Qisqacha xulosa qilaman: …",
+        "Спасибо за терпение. Кратко подведу итог: …"
       ],
       [
         "Wir möchten jetzt einige Untersuchungen durchführen, zum Beispiel eine Blutabnahme und ein EKG.",
-        "Endi bir nechta tekshiruv o‘tkazmoqchimiz, masalan, qon olish va EKG."
+        "Endi bir nechta tekshiruv o‘tkazmoqchimiz, masalan, qon olish va EKG.",
+        "Сейчас мы хотели бы провести несколько обследований, например взять кровь и сделать ЭКГ."
       ],
       [
         "Bei der Ultraschalluntersuchung schauen wir uns Ihre Organe mit Schallwellen an. Das tut nicht weh.",
-        "Ultratovush tekshiruvida a’zolaringizni tovush to‘lqinlari yordamida ko‘ramiz. Bu og‘riqsiz."
+        "Ultratovush tekshiruvida a’zolaringizni tovush to‘lqinlari yordamida ko‘ramiz. Bu og‘riqsiz.",
+        "При УЗИ мы осматриваем ваши органы с помощью звуковых волн. Это не больно."
       ],
-      ["Haben Sie noch Fragen?", "Yana savollaringiz bormi?"],
+      ["Haben Sie noch Fragen?", "Yana savollaringiz bormi?", "У вас остались вопросы?"],
       [
         "Wenn Ihre Beschwerden stärker werden, melden Sie sich bitte sofort.",
-        "Agar shikoyatlaringiz kuchaysa, darhol xabar bering."
+        "Agar shikoyatlaringiz kuchaysa, darhol xabar bering.",
+        "Если жалобы усилятся, пожалуйста, сразу сообщите."
       ],
       [
         "Ich bespreche die Befunde mit meinem Oberarzt und komme dann wieder zu Ihnen.",
-        "Natijalarni katta shifokorim bilan muhokama qilib, keyin yoningizga qaytaman."
+        "Natijalarni katta shifokorim bilan muhokama qilib, keyin yoningizga qaytaman.",
+        "Я обсужу результаты с моим старшим врачом и вернусь к вам."
       ]
     ]
   },
@@ -127,41 +196,77 @@
     "teil": "Teil 2 · Dokumentation",
     "group": "Arztbrief – Einleitung und Anamnese",
     "items": [
-      ["Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,", "Hurmatli hamkasblar,"],
+      [
+        "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,",
+        "Hurmatli hamkasblar,",
+        "Уважаемые коллеги,"
+      ],
       [
         "wir berichten über Ihren Patienten Herrn …, geb. am …, der sich vom … bis zum … in unserer stationären Behandlung befand.",
-        "… dan … gacha bizda statsionar davolangan bemoringiz janob … haqida xabar beramiz."
+        "… dan … gacha bizda statsionar davolangan bemoringiz janob … haqida xabar beramiz.",
+        "сообщаем о вашем пациенте господине …, дата рождения …, который находился на стационарном лечении у нас с … по …."
       ],
       [
         "Der Patient stellte sich mit seit … bestehenden … in unserer Notaufnahme vor.",
-        "Bemor … dan beri davom etayotgan … bilan shoshilinch bo‘limimizga murojaat qildi."
+        "Bemor … dan beri davom etayotgan … bilan shoshilinch bo‘limimizga murojaat qildi.",
+        "Пациент обратился в наше приёмное отделение с … , существующими с … ."
       ],
-      ["Begleitend bestanden …", "Qo‘shimcha ravishda … kuzatildi."],
-      ["… wurde verneint.", "… inkor qilindi (bemorda yo‘q)."],
-      ["An Vorerkrankungen sind … bekannt.", "Oldingi kasalliklardan … ma’lum."],
-      ["Es besteht ein Nikotinabusus von ca. … pack years.", "Taxminan … pack years chekish anamnezi bor."]
+      ["Begleitend bestanden …", "Qo‘shimcha ravishda … kuzatildi.", "Сопутствующе отмечались …"],
+      ["… wurde verneint.", "… inkor qilindi (bemorda yo‘q).", "… отрицалось."],
+      [
+        "An Vorerkrankungen sind … bekannt.",
+        "Oldingi kasalliklardan … ma’lum.",
+        "Из сопутствующих заболеваний известны …"
+      ],
+      [
+        "Es besteht ein Nikotinabusus von ca. … pack years.",
+        "Taxminan … pack years chekish anamnezi bor.",
+        "Стаж курения около … пачко-лет."
+      ]
     ]
   },
   {
     "teil": "Teil 2 · Dokumentation",
     "group": "Arztbrief – Befunde, Diagnose, Procedere",
     "items": [
-      ["Bei der körperlichen Untersuchung zeigte sich …", "Fizikal ko‘rikda … aniqlandi."],
-      ["Laborchemisch fand sich ein erhöhtes …", "Laboratoriyada … ko‘tarilgani aniqlandi."],
-      ["Im EKG zeigten sich …", "EKG’da … kuzatildi."],
-      ["Sonographisch stellte sich … dar.", "Sonografiyada … aniqlandi."],
-      ["Wir stellten die Diagnose …", "Biz … tashxisini qo‘ydik."],
+      [
+        "Bei der körperlichen Untersuchung zeigte sich …",
+        "Fizikal ko‘rikda … aniqlandi.",
+        "При физикальном обследовании выявлено …"
+      ],
+      [
+        "Laborchemisch fand sich ein erhöhtes …",
+        "Laboratoriyada … ko‘tarilgani aniqlandi.",
+        "Лабораторно определялся повышенный …"
+      ],
+      ["Im EKG zeigten sich …", "EKG’da … kuzatildi.", "На ЭКГ выявлено …"],
+      ["Sonographisch stellte sich … dar.", "Sonografiyada … aniqlandi.", "При УЗИ визуализировался …"],
+      ["Wir stellten die Diagnose …", "Biz … tashxisini qo‘ydik.", "Мы поставили диагноз …"],
       [
         "Unter Therapie mit … besserten sich die Beschwerden rasch.",
-        "… bilan davolashda shikoyatlar tez yaxshilandi."
+        "… bilan davolashda shikoyatlar tez yaxshilandi.",
+        "На фоне терапии … жалобы быстро уменьшились."
       ],
-      ["Der weitere Verlauf gestaltete sich komplikationslos.", "Keyingi kechish asoratsiz o‘tdi."],
+      [
+        "Der weitere Verlauf gestaltete sich komplikationslos.",
+        "Keyingi kechish asoratsiz o‘tdi.",
+        "Дальнейшее течение без осложнений."
+      ],
       [
         "Wir entlassen den Patienten in gutem Allgemeinzustand.",
-        "Bemorni yaxshi umumiy holatda javob beramiz."
+        "Bemorni yaxshi umumiy holatda javob beramiz.",
+        "Выписываем пациента в хорошем общем состоянии."
       ],
-      ["Wir empfehlen eine Kontrolle von … in … Wochen.", "… haftadan keyin … nazoratini tavsiya qilamiz."],
-      ["Mit freundlichen kollegialen Grüßen", "Hurmat bilan (hamkasblarcha salom bilan)"]
+      [
+        "Wir empfehlen eine Kontrolle von … in … Wochen.",
+        "… haftadan keyin … nazoratini tavsiya qilamiz.",
+        "Рекомендуем контроль … через … недель."
+      ],
+      [
+        "Mit freundlichen kollegialen Grüßen",
+        "Hurmat bilan (hamkasblarcha salom bilan)",
+        "С уважением (по-коллегиальному)"
+      ]
     ]
   },
   {
@@ -170,40 +275,74 @@
     "items": [
       [
         "Ich möchte Ihnen Herrn / Frau …, … Jahre alt, vorstellen.",
-        "Sizga janob / xonim … ni, … yosh, taqdim etmoqchiman."
+        "Sizga janob / xonim … ni, … yosh, taqdim etmoqchiman.",
+        "Разрешите представить вам господина / госпожу …, … лет."
       ],
       [
         "Der Patient kam heute mit seit … bestehenden … zu uns.",
-        "Bemor bugun … dan beri davom etayotgan … bilan keldi."
+        "Bemor bugun … dan beri davom etayotgan … bilan keldi.",
+        "Пациент поступил сегодня с … , существующими с … ."
       ],
       [
         "Die Schmerzen sind von drückendem Charakter und strahlen in … aus.",
-        "Og‘riq siquvchi xarakterda va … ga tarqaladi."
+        "Og‘riq siquvchi xarakterda va … ga tarqaladi.",
+        "Боль давящего характера, иррадиирует в …"
       ],
       [
         "Vorerkrankungen: … Dauermedikation: … Allergien: …",
-        "Oldingi kasalliklar: … Doimiy dorilar: … Allergiyalar: …"
+        "Oldingi kasalliklar: … Doimiy dorilar: … Allergiyalar: …",
+        "Сопутствующие заболевания: … Постоянные лекарства: … Аллергии: …"
       ],
-      ["Die Familienanamnese ist bezüglich … positiv.", "Oilaviy anamnez … bo‘yicha ijobiy."]
+      [
+        "Die Familienanamnese ist bezüglich … positiv.",
+        "Oilaviy anamnez … bo‘yicha ijobiy.",
+        "Семейный анамнез отягощён по …"
+      ]
     ]
   },
   {
     "teil": "Teil 3 · Arzt-Arzt-Gespräch",
     "group": "Diagnose, Differenzialdiagnosen, Procedere",
     "items": [
-      ["Aufgrund der Anamnese gehe ich von … aus.", "Anamnez asosida … deb hisoblayman."],
-      ["Meine Verdachtsdiagnose ist …, weil …", "Mening taxminiy tashxisim …, chunki …"],
+      [
+        "Aufgrund der Anamnese gehe ich von … aus.",
+        "Anamnez asosida … deb hisoblayman.",
+        "На основании анамнеза я предполагаю …"
+      ],
+      [
+        "Meine Verdachtsdiagnose ist …, weil …",
+        "Mening taxminiy tashxisim …, chunki …",
+        "Мой предварительный диагноз — …, потому что …"
+      ],
       [
         "Differenzialdiagnostisch kommen … und … in Betracht.",
-        "Differensial tashxis sifatida … va … ni ko‘rib chiqish kerak."
+        "Differensial tashxis sifatida … va … ni ko‘rib chiqish kerak.",
+        "В дифференциальной диагностике следует рассмотреть … и … ."
       ],
-      ["… halte ich für weniger wahrscheinlich, da …", "… ni kamroq ehtimol deb hisoblayman, chunki …"],
-      ["Zur weiteren Abklärung würde ich … veranlassen.", "Qo‘shimcha aniqlashtirish uchun … ni buyurardim."],
-      ["Therapeutisch würde ich mit … beginnen.", "Davolashni … bilan boshlardim."],
-      ["Darf ich kurz nachfragen, ob Sie … meinen?", "Aniqlashtirib olsam, … ni nazarda tutyapsizmi?"],
+      [
+        "… halte ich für weniger wahrscheinlich, da …",
+        "… ni kamroq ehtimol deb hisoblayman, chunki …",
+        "… считаю менее вероятным, так как …"
+      ],
+      [
+        "Zur weiteren Abklärung würde ich … veranlassen.",
+        "Qo‘shimcha aniqlashtirish uchun … ni buyurardim.",
+        "Для дальнейшего уточнения я бы назначил(а) …"
+      ],
+      [
+        "Therapeutisch würde ich mit … beginnen.",
+        "Davolashni … bilan boshlardim.",
+        "Лечение я бы начал(а) с …"
+      ],
+      [
+        "Darf ich kurz nachfragen, ob Sie … meinen?",
+        "Aniqlashtirib olsam, … ni nazarda tutyapsizmi?",
+        "Позвольте уточнить: вы имеете в виду …?"
+      ],
       [
         "Das müsste ich in der Leitlinie nachschlagen.",
-        "Buni klinik tavsiyanomadan tekshirib ko‘rishim kerak."
+        "Buni klinik tavsiyanomadan tekshirib ko‘rishim kerak.",
+        "Это мне нужно было бы посмотреть в клинических рекомендациях."
       ]
     ]
   }

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { cx } from "../lib/utils";
+import { tr } from "../lib/i18n";
 
 // Brauzerning o'z nemischa ovozi (Web Speech API) — bepul, internet va AI talab qilmaydi.
 const synth = typeof window !== "undefined" ? window.speechSynthesis : undefined;
@@ -31,7 +32,7 @@ export function speak(text, { rate = 0.9, onEnd } = {}) {
 export const stopSpeaking = () => synth?.cancel();
 
 // Kichik 🔊 tugma. <button> ichida ham ishlatish mumkin bo'lishi uchun <span role="button">.
-export function Speak({ text, className, label = "Nemischa tinglash" }) {
+export function Speak({ text, className, label = tr("Nemischa tinglash", "Послушать по-немецки") }) {
   const [playing, setPlaying] = useState(false);
   useEffect(() => () => playing && stopSpeaking(), [playing]);
   if (!canSpeak()) return null;

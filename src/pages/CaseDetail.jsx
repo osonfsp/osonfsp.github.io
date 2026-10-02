@@ -4,6 +4,7 @@ import { DIFFICULTY_LABELS, getArztbriefForCase, getCase } from "../data/index";
 import { useParams } from "../lib/router";
 import { useApp } from "../state/AppContext";
 import { Speak } from "../components/Speak";
+import { loc, tr } from "../lib/i18n";
 
 const ANAMNESE_FIELDS = [
   ["aktuelleBeschwerden", "Aktuelle Beschwerden"],
@@ -24,9 +25,9 @@ export function CaseDetailPage() {
     return (
       <div className="page">
         <p className="card">
-          {"Fall topilmadi. "}
+          {tr("Fall topilmadi. ", "Кейс не найден. ")}
           <Link href="/faelle" className="text-teal-600 hover:underline">
-            Ro‘yxatga qaytish
+            {tr("Ro‘yxatga qaytish", "Вернуться к списку")}
           </Link>
         </p>
       </div>
@@ -36,7 +37,7 @@ export function CaseDetailPage() {
   return (
     <div className="page">
       <Link href="/faelle" className="text-sm muted hover:text-teal-600">
-        ← Barcha Fälle
+        ← {tr("Barcha Fälle", "Все кейсы")}
       </Link>
       <div className="mt-3 flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
         <div>
@@ -51,7 +52,7 @@ export function CaseDetailPage() {
         </div>
         <div className="flex flex-wrap gap-2">
           <Link href={`/simulation?case=${t.id}`} className="btn-primary">
-            💬 Simulyatsiya
+            💬 {tr("Simulyatsiya", "Симуляция")}
           </Link>
           {c && (
             <Link href={`/arztbrief/${c.id}`} className="btn-outline">
@@ -64,7 +65,7 @@ export function CaseDetailPage() {
             }
             onClick={() => n(t.id)}
           >
-            {h ? "✅ Yechilgan" : "Yechildi deb belgilash"}
+            {h ? tr("✅ Yechilgan", "✅ Решено") : tr("Yechildi deb belgilash", "Отметить как решённый")}
           </button>
         </div>
       </div>
@@ -85,8 +86,11 @@ export function CaseDetailPage() {
             ))}
           </dl>
           <p className="mt-4 rounded-lg bg-teal-50 p-3 text-xs text-teal-800 dark:bg-teal-950/40 dark:text-teal-200">
-            💡 Maslahat: avval simulyatsiyada anamnezni o‘zingiz yig‘ing, keyin quyidagi ma’lumot bilan
-            solishtiring.
+            💡{" "}
+            {tr(
+              "Maslahat: avval simulyatsiyada anamnezni o‘zingiz yig‘ing, keyin quyidagi ma’lumot bilan solishtiring.",
+              "Совет: сначала соберите анамнез сами в симуляции, затем сравните с данными ниже.",
+            )}
           </p>
         </aside>
         <div className="space-y-4">
@@ -94,7 +98,7 @@ export function CaseDetailPage() {
             <div className="flex items-center justify-between gap-2">
               <h2 className="section-title mb-0">Anamnese</h2>
               <button className="btn-ghost text-xs" onClick={() => l((b) => !b)}>
-                {i ? "Yashirish" : "Ko‘rsatish"}
+                {i ? tr("Yashirish", "Скрыть") : tr("Ko‘rsatish", "Показать")}
               </button>
             </div>
             {i ? (
@@ -107,7 +111,12 @@ export function CaseDetailPage() {
                 ))}
               </dl>
             ) : (
-              <p className="mt-2 text-sm muted">Anamnez yashirilgan — o‘zingizni sinab ko‘rish uchun.</p>
+              <p className="mt-2 text-sm muted">
+                {tr(
+                  "Anamnez yashirilgan — o‘zingizni sinab ko‘rish uchun.",
+                  "Анамнез скрыт — чтобы вы могли проверить себя.",
+                )}
+              </p>
             )}
           </section>
           <section className="card">
@@ -145,7 +154,7 @@ export function CaseDetailPage() {
                   <tr>
                     <th className="pb-2 font-medium">Deutsch (Fach)</th>
                     <th className="pb-2 font-medium">Patientensprache</th>
-                    <th className="pb-2 font-medium">O‘zbekcha</th>
+                    <th className="pb-2 font-medium">{tr("O‘zbekcha", "Русский")}</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-slate-100 dark:divide-slate-800">
@@ -158,7 +167,7 @@ export function CaseDetailPage() {
                         </span>
                       </td>
                       <td className="py-2.5 pr-3">{b.patient}</td>
-                      <td className="py-2.5 muted">{b.uz}</td>
+                      <td className="py-2.5 muted">{loc(b)}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -167,9 +176,11 @@ export function CaseDetailPage() {
           </section>
           <section className="card">
             <div className="flex items-center justify-between gap-2">
-              <h2 className="section-title mb-0">Verdachtsdiagnose va keyingi qadamlar</h2>
+              <h2 className="section-title mb-0">
+                {tr("Verdachtsdiagnose va keyingi qadamlar", "Verdachtsdiagnose и дальнейшие шаги")}
+              </h2>
               <button className="btn-ghost text-xs" onClick={() => r((b) => !b)}>
-                {s ? "Yashirish" : "Javobni ko‘rish"}
+                {s ? tr("Yashirish", "Скрыть") : tr("Javobni ko‘rish", "Показать ответ")}
               </button>
             </div>
             {s ? (
@@ -187,7 +198,10 @@ export function CaseDetailPage() {
               </div>
             ) : (
               <p className="mt-2 text-sm muted">
-                Avval o‘zingiz o‘ylab ko‘ring: qaysi diagnoz, qanday DD va tekshiruvlar?
+                {tr(
+                  "Avval o‘zingiz o‘ylab ko‘ring: qaysi diagnoz, qanday DD va tekshiruvlar?",
+                  "Сначала подумайте сами: какой диагноз, какие DD и обследования?",
+                )}
               </p>
             )}
           </section>

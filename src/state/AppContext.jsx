@@ -1,6 +1,7 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
 import { arztbriefe, cases, getCase, pairs, words } from "../data/index";
 import { storage } from "../lib/storage";
+import { tr } from "../lib/i18n";
 
 const EMPTY_PROGRESS = {
     solvedCases: [],
@@ -61,7 +62,9 @@ export function AppProvider({ children: e }) {
     }, []),
     c = useCallback(
       (m) => {
-        (storage.set(USER_KEY, m), i(m), r((v) => withActivity(v, "Platformaga kirildi", "/dashboard")));
+        (storage.set(USER_KEY, m),
+          i(m),
+          r((v) => withActivity(v, tr("Platformaga kirildi", "Вход на платформу"), "/dashboard")));
       },
       [r],
     ),
@@ -73,7 +76,11 @@ export function AppProvider({ children: e }) {
       (m, v) => {
         if (v) (storage.set(USER_KEY, v), i(v));
         r(() =>
-          withActivity({ ...EMPTY_PROGRESS, ...m }, "Progress boshqa qurilmadan ko‘chirildi", "/dashboard"),
+          withActivity(
+            { ...EMPTY_PROGRESS, ...m },
+            tr("Progress boshqa qurilmadan ko‘chirildi", "Прогресс перенесён с другого устройства"),
+            "/dashboard",
+          ),
         );
       },
       [r],
@@ -86,7 +93,13 @@ export function AppProvider({ children: e }) {
               ...v,
               solvedCases: toggleIn(v.solvedCases, m),
             };
-          return N ? withActivity(C, `Fall yechildi: ${getCase(m)?.title ?? m}`, `/faelle/${m}`) : C;
+          return N
+            ? withActivity(
+                C,
+                `${tr("Fall yechildi", "Кейс решён")}: ${getCase(m)?.title ?? m}`,
+                `/faelle/${m}`,
+              )
+            : C;
         }),
       [r],
     ),
@@ -210,6 +223,6 @@ export function streakOf(e = []) {
 
 export function useApp() {
   let e = useContext(AppContext);
-  if (!e) throw Error("useApp() AppProvider ichida ishlatilishi kerak");
+  if (!e) throw Error("useApp() must be used inside AppProvider");
   return e;
 }

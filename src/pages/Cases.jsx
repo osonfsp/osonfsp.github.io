@@ -4,6 +4,7 @@ import { FilterChips, PageHeader, SearchInput } from "../components/ui";
 import { CASE_CATEGORIES, DIFFICULTY_LABELS, cases } from "../data/index";
 import { cx } from "../lib/utils";
 import { useApp } from "../state/AppContext";
+import { tr } from "../lib/i18n";
 
 const DIFFICULTY_STYLES = {
   leicht: "bg-emerald-50 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300",
@@ -30,16 +31,26 @@ export function CasesPage() {
     <div className="page">
       <PageHeader
         eyebrow="Klinische Fälle"
-        title="Klinik holatlar"
-        subtitle="Fall tanlang: bemor ma’lumotlari, anamnez, Patientensprache ↔ Fachsprache va muhim terminlar."
+        title={tr("Klinik holatlar", "Клинические случаи")}
+        subtitle={tr(
+          "Fall tanlang: bemor ma’lumotlari, anamnez, Patientensprache ↔ Fachsprache va muhim terminlar.",
+          "Выберите кейс: данные пациента, анамнез, Patientensprache ↔ Fachsprache и ключевые термины.",
+        )}
       >
         <span className="badge bg-teal-50 text-teal-700 dark:bg-teal-950 dark:text-teal-300">
           {e.solvedCases.length}/{cases.length}
-          {" yechildi"}
+          {tr(" yechildi", " решено")}
         </span>
       </PageHeader>
       <div className="mb-5 space-y-3">
-        <SearchInput value={n} onChange={i} placeholder="Qidirish: diagnoz, shikoyat, bemor ismi…" />
+        <SearchInput
+          value={n}
+          onChange={i}
+          placeholder={tr(
+            "Qidirish: diagnoz, shikoyat, bemor ismi…",
+            "Поиск: диагноз, жалоба, имя пациента…",
+          )}
+        />
         <FilterChips options={CASE_CATEGORIES} value={t} onChange={a} />
       </div>
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -66,15 +77,19 @@ export function CasesPage() {
               </p>
               <div className="mt-auto flex items-center justify-between pt-4 text-sm">
                 <span className={r ? "text-emerald-600" : "muted"}>
-                  {r ? "✅ Yechilgan" : "○ Yechilmagan"}
+                  {r ? tr("✅ Yechilgan", "✅ Решено") : tr("○ Yechilmagan", "○ Не решено")}
                 </span>
-                <span className="font-medium text-teal-600 dark:text-teal-400">Ochish →</span>
+                <span className="font-medium text-teal-600 dark:text-teal-400">
+                  {tr("Ochish →", "Открыть →")}
+                </span>
               </div>
             </Link>
           );
         })}
       </div>
-      {!l.length && <p className="card text-center muted">Hech narsa topilmadi.</p>}
+      {!l.length && (
+        <p className="card text-center muted">{tr("Hech narsa topilmadi.", "Ничего не найдено.")}</p>
+      )}
     </div>
   );
 }

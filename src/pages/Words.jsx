@@ -5,6 +5,7 @@ import { cx } from "../lib/utils";
 import { useApp } from "../state/AppContext";
 import { Speak } from "../components/Speak";
 import { dueCount, WordTrainer } from "../components/WordTrainer";
+import { loc, tr } from "../lib/i18n";
 
 export function WordsPage() {
   let { progress: e, toggleWord: t } = useApp(),
@@ -20,7 +21,7 @@ export function WordsPage() {
         (y) =>
           (i === "all" || y.category === i) &&
           (!s || !e.learnedWords.includes(y.id)) &&
-          (!b || [y.de, y.patient, y.uz, y.example].some((f) => f.toLowerCase().includes(b))),
+          (!b || [y.de, y.patient, y.uz, y.ru ?? "", y.example].some((f) => f.toLowerCase().includes(b))),
       );
     }, [a, i, s, e.learnedWords]),
     h = e.learnedWords.length;
@@ -28,12 +29,15 @@ export function WordsPage() {
     <div className="page">
       <PageHeader
         eyebrow="Medizinische Wörter"
-        title="Tibbiy lug‘at"
-        subtitle="Har bir termin: Fachsprache, Patientensprache, o‘zbekcha ma’nosi va misol gap."
+        title={tr("Tibbiy lug‘at", "Медицинский словарь")}
+        subtitle={tr(
+          "Har bir termin: Fachsprache, Patientensprache, o‘zbekcha ma’nosi va misol gap.",
+          "Каждый термин: Fachsprache, Patientensprache, перевод на русский и пример.",
+        )}
       >
         {!T && (
           <button className="btn-primary" onClick={() => (setT(true), window.scrollTo({ top: 0 }))}>
-            📇 Kartochka mashqi
+            📇 {tr("Kartochka mashqi", "Тренировка карточками")}
             {due > 0 && <span className="ml-1.5 rounded-full bg-white/25 px-2 text-xs">{due}</span>}
           </button>
         )}
@@ -51,7 +55,7 @@ export function WordsPage() {
           <div className="card mb-5">
             <div className="mb-2 flex justify-between text-sm">
               <span>
-                {"O‘rganildi: "}
+                {tr("O‘rganildi: ", "Выучено: ")}
                 <b>{h}</b>
                 {" / "}
                 {words.length}
@@ -64,7 +68,10 @@ export function WordsPage() {
             <SearchInput
               value={a}
               onChange={n}
-              placeholder="Qidirish: nemischa, o‘zbekcha yoki Patientensprache…"
+              placeholder={tr(
+                "Qidirish: nemischa, o‘zbekcha yoki Patientensprache…",
+                "Поиск: по-немецки, по-русски или Patientensprache…",
+              )}
             />
             <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
               <FilterChips options={WORD_CATEGORIES} value={i} onChange={l} />
@@ -75,12 +82,12 @@ export function WordsPage() {
                   checked={s}
                   onChange={(b) => r(b.target.checked)}
                 />
-                Faqat o‘rganilmaganlar
+                {tr("Faqat o‘rganilmaganlar", "Только невыученные")}
               </label>
             </div>
             <p className="text-xs muted">
               {c.length}
-              {" ta termin"}
+              {tr(" ta termin", " терминов")}
             </p>
           </div>
           <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
@@ -108,11 +115,15 @@ export function WordsPage() {
                       <dd>„{b.patient}“</dd>
                     </div>
                     <div>
-                      <dt className="text-[11px] font-semibold uppercase tracking-wider muted">O‘zbekcha</dt>
-                      <dd>{b.uz}</dd>
+                      <dt className="text-[11px] font-semibold uppercase tracking-wider muted">
+                        {tr("O‘zbekcha", "Перевод")}
+                      </dt>
+                      <dd>{loc(b)}</dd>
                     </div>
                     <div>
-                      <dt className="text-[11px] font-semibold uppercase tracking-wider muted">Misol</dt>
+                      <dt className="text-[11px] font-semibold uppercase tracking-wider muted">
+                        {tr("Misol", "Пример")}
+                      </dt>
                       <dd className="flex items-start gap-1 italic muted">
                         <span className="flex-1">{b.example}</span>
                         <Speak text={b.example} className="-mt-1 not-italic" />
@@ -123,13 +134,15 @@ export function WordsPage() {
                     className={cx("mt-4 self-start", y ? "chip-on" : "chip-off")}
                     onClick={() => t(b.id)}
                   >
-                    {y ? "✓ O‘rganildi" : "O‘rgandim"}
+                    {y ? tr("✓ O‘rganildi", "✓ Выучено") : tr("O‘rgandim", "Выучил(а)")}
                   </button>
                 </article>
               );
             })}
           </div>
-          {!c.length && <p className="card text-center muted">Hech narsa topilmadi.</p>}
+          {!c.length && (
+            <p className="card text-center muted">{tr("Hech narsa topilmadi.", "Ничего не найдено.")}</p>
+          )}
         </>
       )}
     </div>

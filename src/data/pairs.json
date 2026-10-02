@@ -4,6 +4,7 @@
     "fach": "Dyspnoe",
     "patient": "Atemnot / schlecht Luft bekommen",
     "uz": "nafas qisishi",
+    "ru": "одышка",
     "fachSatz": "Der Patient berichtet über Dyspnoe.",
     "patientSatz": "Bekommen Sie schlecht Luft?"
   },
@@ -12,6 +13,7 @@
     "fach": "Cephalgie",
     "patient": "Kopfschmerzen haben",
     "uz": "bosh og‘rig‘i",
+    "ru": "головная боль",
     "fachSatz": "Es bestehen okzipitale Cephalgien.",
     "patientSatz": "Haben Sie Kopfschmerzen?"
   },
@@ -20,6 +22,7 @@
     "fach": "Emesis",
     "patient": "Erbrechen / sich übergeben",
     "uz": "qusish",
+    "ru": "рвота",
     "fachSatz": "Es kam zu zweimaliger Emesis.",
     "patientSatz": "Mussten Sie sich übergeben?"
   },
@@ -28,6 +31,7 @@
     "fach": "Diarrhö",
     "patient": "Durchfall haben",
     "uz": "ich ketishi",
+    "ru": "диарея",
     "fachSatz": "Die Patientin klagt über wässrige Diarrhö.",
     "patientSatz": "Haben Sie Durchfall?"
   },
@@ -36,6 +40,7 @@
     "fach": "Obstipation",
     "patient": "Verstopfung haben",
     "uz": "qabziyat",
+    "ru": "запор",
     "fachSatz": "Es besteht eine chronische Obstipation.",
     "patientSatz": "Haben Sie Verstopfung?"
   },
@@ -44,6 +49,7 @@
     "fach": "Hypertonie",
     "patient": "Bluthochdruck haben",
     "uz": "qon bosimi yuqoriligi",
+    "ru": "повышенное давление",
     "fachSatz": "Eine arterielle Hypertonie ist bekannt.",
     "patientSatz": "Haben Sie Bluthochdruck?"
   },
@@ -52,6 +58,7 @@
     "fach": "Nausea",
     "patient": "Übelkeit / mir ist übel",
     "uz": "ko‘ngil aynishi",
+    "ru": "тошнота",
     "fachSatz": "Begleitend besteht Nausea.",
     "patientSatz": "Ist Ihnen übel?"
   },
@@ -60,6 +67,7 @@
     "fach": "Pruritus",
     "patient": "Juckreiz / es juckt",
     "uz": "qichishish",
+    "ru": "зуд",
     "fachSatz": "Die Patientin klagt über Pruritus.",
     "patientSatz": "Juckt die Haut?"
   },
@@ -68,6 +76,7 @@
     "fach": "Vertigo",
     "patient": "Schwindel / mir ist schwindelig",
     "uz": "bosh aylanishi",
+    "ru": "головокружение",
     "fachSatz": "Der Patient gibt Vertigo an.",
     "patientSatz": "Ist Ihnen schwindelig?"
   },
@@ -76,6 +85,7 @@
     "fach": "Synkope",
     "patient": "in Ohnmacht fallen",
     "uz": "hushdan ketish",
+    "ru": "обморок",
     "fachSatz": "Es kam zu einer Synkope.",
     "patientSatz": "Sind Sie ohnmächtig geworden?"
   },
@@ -84,6 +94,7 @@
     "fach": "Palpitationen",
     "patient": "Herzklopfen / Herzrasen",
     "uz": "yurak urib ketishi",
+    "ru": "сердцебиение",
     "fachSatz": "Die Patientin berichtet über Palpitationen.",
     "patientSatz": "Haben Sie Herzklopfen oder Herzrasen?"
   },
@@ -92,6 +103,7 @@
     "fach": "Dysurie",
     "patient": "Brennen beim Wasserlassen",
     "uz": "siyishda achishish",
+    "ru": "жжение при мочеиспускании",
     "fachSatz": "Es besteht eine Dysurie.",
     "patientSatz": "Brennt es beim Wasserlassen?"
   },
@@ -100,6 +112,7 @@
     "fach": "Hämoptyse",
     "patient": "Blut husten",
     "uz": "qon tupurish",
+    "ru": "кровохарканье",
     "fachSatz": "Hämoptysen werden verneint.",
     "patientSatz": "Husten Sie Blut ab?"
   },
@@ -108,6 +121,7 @@
     "fach": "Myokardinfarkt",
     "patient": "Herzinfarkt",
     "uz": "miokard infarkti",
+    "ru": "инфаркт миокарда",
     "fachSatz": "Z. n. Myokardinfarkt 2015.",
     "patientSatz": "Hatten Sie schon einmal einen Herzinfarkt?"
   },
@@ -116,6 +130,7 @@
     "fach": "Apoplex",
     "patient": "Schlaganfall",
     "uz": "insult",
+    "ru": "инсульт",
     "fachSatz": "Familienanamnestisch ist ein Apoplex bekannt.",
     "patientSatz": "Hatte jemand in Ihrer Familie einen Schlaganfall?"
   },
@@ -124,6 +139,7 @@
     "fach": "Pneumonie",
     "patient": "Lungenentzündung",
     "uz": "zotiljam",
+    "ru": "пневмония",
     "fachSatz": "Radiologisch zeigt sich eine Pneumonie.",
     "patientSatz": "Sie haben eine Lungenentzündung."
   },
@@ -132,6 +148,7 @@
     "fach": "Antikoagulation",
     "patient": "Blutverdünner nehmen",
     "uz": "qonni suyultirish",
+    "ru": "разжижение крови",
     "fachSatz": "Die orale Antikoagulation wurde pausiert.",
     "patientSatz": "Nehmen Sie Blutverdünner?"
   },
@@ -140,6 +157,7 @@
     "fach": "Analgetikum",
     "patient": "Schmerzmittel",
     "uz": "og‘riq qoldiruvchi",
+    "ru": "обезболивающее",
     "fachSatz": "Der Patient erhielt ein Analgetikum.",
     "patientSatz": "Haben Sie ein Schmerzmittel genommen?"
   },
@@ -148,6 +166,7 @@
     "fach": "Sonographie",
     "patient": "Ultraschall",
     "uz": "ultratovush tekshiruvi",
+    "ru": "УЗИ",
     "fachSatz": "Eine Sonographie des Abdomens wurde durchgeführt.",
     "patientSatz": "Wir machen jetzt einen Ultraschall vom Bauch."
   },
@@ -156,6 +175,7 @@
     "fach": "Gastroskopie",
     "patient": "Magenspiegelung",
     "uz": "gastroskopiya",
+    "ru": "гастроскопия",
     "fachSatz": "Eine Gastroskopie ist geplant.",
     "patientSatz": "Wir möchten eine Magenspiegelung machen."
   },
@@ -164,6 +184,7 @@
     "fach": "Tachykardie",
     "patient": "Herzrasen",
     "uz": "yurak urishining tezlashishi",
+    "ru": "учащённое сердцебиение",
     "fachSatz": "Es besteht eine Tachykardie.",
     "patientSatz": "Haben Sie Herzrasen?"
   },
@@ -172,6 +193,7 @@
     "fach": "Meläna",
     "patient": "schwarzer Stuhl",
     "uz": "melena",
+    "ru": "мелена",
     "fachSatz": "Der Patient berichtet über Meläna.",
     "patientSatz": "Ist Ihr Stuhl schwarz?"
   },
@@ -180,6 +202,7 @@
     "fach": "Hämatemesis",
     "patient": "Blut erbrechen",
     "uz": "qon qusish",
+    "ru": "рвота кровью",
     "fachSatz": "Es kam zu einer Hämatemesis.",
     "patientSatz": "Haben Sie Blut erbrochen?"
   },
@@ -188,6 +211,7 @@
     "fach": "Hämaturie",
     "patient": "Blut im Urin",
     "uz": "siydikda qon",
+    "ru": "кровь в моче",
     "fachSatz": "Es besteht eine Makrohämaturie.",
     "patientSatz": "Haben Sie Blut im Urin bemerkt?"
   },
@@ -196,6 +220,7 @@
     "fach": "Photophobie",
     "patient": "Lichtempfindlichkeit",
     "uz": "yorug‘likdan bezovtalanish",
+    "ru": "светобоязнь",
     "fachSatz": "Es besteht eine Photophobie.",
     "patientSatz": "Stört Sie helles Licht?"
   },
@@ -204,6 +229,7 @@
     "fach": "Ileus",
     "patient": "Darmverschluss",
     "uz": "ichak tutilishi",
+    "ru": "кишечная непроходимость",
     "fachSatz": "Es besteht der Verdacht auf einen Ileus.",
     "patientSatz": "Wir vermuten einen Darmverschluss."
   },
@@ -212,6 +238,7 @@
     "fach": "Anämie",
     "patient": "Blutarmut",
     "uz": "kamqonlik",
+    "ru": "анемия",
     "fachSatz": "Laborchemisch zeigte sich eine Anämie.",
     "patientSatz": "Sie haben zu wenig rote Blutkörperchen."
   },
@@ -220,6 +247,7 @@
     "fach": "Pankreatitis",
     "patient": "Entzündung der Bauchspeicheldrüse",
     "uz": "pankreatit",
+    "ru": "панкреатит",
     "fachSatz": "Es liegt eine akute Pankreatitis vor.",
     "patientSatz": "Ihre Bauchspeicheldrüse ist entzündet."
   },
@@ -228,6 +256,7 @@
     "fach": "Hyperthyreose",
     "patient": "Schilddrüsenüberfunktion",
     "uz": "gipertireoz",
+    "ru": "гипертиреоз",
     "fachSatz": "Es besteht eine Hyperthyreose.",
     "patientSatz": "Ihre Schilddrüse arbeitet zu stark."
   },
@@ -236,6 +265,7 @@
     "fach": "Koloskopie",
     "patient": "Darmspiegelung",
     "uz": "kolonoskopiya",
+    "ru": "колоноскопия",
     "fachSatz": "Eine Koloskopie wird empfohlen.",
     "patientSatz": "Wir möchten eine Darmspiegelung machen."
   }

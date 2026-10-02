@@ -3,6 +3,7 @@ import { ANAMNESE_TOPICS, askPatient, askedTopics } from "../lib/evaluation";
 import { storage } from "../lib/storage";
 import { cx } from "../lib/utils";
 import { Speak, canSpeak, speak, stopSpeaking } from "./Speak";
+import { tr } from "../lib/i18n";
 
 const VOICE_KEY = "fsp.voice";
 
@@ -109,10 +110,10 @@ export function PatientChat({ caseData, messages, onMessages, showHints = true, 
               type="button"
               className={cx(voice ? "chip-on" : "chip-off", "px-2.5")}
               onClick={toggleVoice}
-              title="Bemor javoblarini ovoz chiqarib o‘qish"
+              title={tr("Bemor javoblarini ovoz chiqarib o‘qish", "Озвучивать ответы пациента")}
               aria-pressed={voice}
             >
-              {voice ? "🔊 Ovoz" : "🔇 Ovoz"}
+              {voice ? "🔊" : "🔇"} {tr("Ovoz", "Звук")}
             </button>
           )}
           <span className="text-xs muted tabular-nums">
@@ -126,14 +127,23 @@ export function PatientChat({ caseData, messages, onMessages, showHints = true, 
       >
         {!messages.length && (
           <div className="rounded-xl bg-slate-50 p-4 text-sm muted dark:bg-slate-800/50">
-            {"Siz — shifokorsiz. O‘zingizni tanishtiring va nemis tilida savol bering. Masalan: "}
+            {tr(
+              "Siz — shifokorsiz. O‘zingizni tanishtiring va nemis tilida savol bering. Masalan: ",
+              "Вы — врач. Представьтесь и задавайте вопросы на немецком. Например: ",
+            )}
             <em>„Guten Tag, ich bin Dr. … Was führt Sie zu uns?“</em>
             <br />
-            Bemor faqat siz so‘ragan narsaga javob beradi.
+            {tr(
+              "Bemor faqat siz so‘ragan narsaga javob beradi.",
+              "Пациент отвечает только на то, что вы спросили.",
+            )}
             {dictation.supported && (
               <>
                 <br />
-                🎤 tugmasi bilan savolni ovozda ham berishingiz mumkin.
+                {tr(
+                  "🎤 tugmasi bilan savolni ovozda ham berishingiz mumkin.",
+                  "Кнопкой 🎤 можно задавать вопросы голосом.",
+                )}
               </>
             )}
           </div>
@@ -189,7 +199,9 @@ export function PatientChat({ caseData, messages, onMessages, showHints = true, 
             </button>
           ))}
           {asked.size === ANAMNESE_TOPICS.length && (
-            <span className="text-xs text-emerald-600">✅ Barcha asosiy mavzular so‘raldi</span>
+            <span className="text-xs text-emerald-600">
+              {tr("✅ Barcha asosiy mavzular so‘raldi", "✅ Все основные темы затронуты")}
+            </span>
           )}
         </div>
       )}
@@ -205,7 +217,11 @@ export function PatientChat({ caseData, messages, onMessages, showHints = true, 
           rows={1}
           lang="de"
           className="input max-h-32 min-h-[44px] resize-none"
-          placeholder={dictation.listening ? "Gapiring… (nemischa)" : "Savolingizni nemischa yozing…"}
+          placeholder={
+            dictation.listening
+              ? tr("Gapiring… (nemischa)", "Говорите… (по-немецки)")
+              : tr("Savolingizni nemischa yozing…", "Напишите вопрос по-немецки…")
+          }
           value={draft}
           disabled={disabled}
           onChange={(ev) => setDraft(ev.target.value)}
@@ -227,8 +243,16 @@ export function PatientChat({ caseData, messages, onMessages, showHints = true, 
             )}
             onClick={() => dictation.toggle(draft)}
             disabled={disabled}
-            title={dictation.listening ? "To‘xtatish" : "Ovozda savol berish (nemischa)"}
-            aria-label={dictation.listening ? "To‘xtatish" : "Ovozda savol berish"}
+            title={
+              dictation.listening
+                ? tr("To‘xtatish", "Остановить")
+                : tr("Ovozda savol berish (nemischa)", "Задать вопрос голосом (по-немецки)")
+            }
+            aria-label={
+              dictation.listening
+                ? tr("To‘xtatish", "Остановить")
+                : tr("Ovozda savol berish", "Задать вопрос голосом")
+            }
           >
             {dictation.listening ? "⏹" : "🎤"}
           </button>

@@ -1,64 +1,95 @@
 import { Link } from "../components/Link";
 import { arztbriefe, cases, pairs, words } from "../data/index";
+import { tr } from "../lib/i18n";
 
 const FEATURES = [
     {
       href: "/faelle",
       icon: "\uD83E\uDE7A",
       title: "Fälle",
-      text: "Klinik holatlar: anamnez, Patientensprache ↔ Fachsprache, muhim terminlar.",
+      text: tr(
+        "Klinik holatlar: anamnez, Patientensprache ↔ Fachsprache, muhim terminlar.",
+        "Клинические случаи: анамнез, Patientensprache ↔ Fachsprache, ключевые термины.",
+      ),
     },
     {
       href: "/woerter",
       icon: "\uD83D\uDCDA",
       title: "Medizinische Wörter",
-      text: `${words.length} ta termin — nemischa, sodda tilda va o‘zbekcha ma’nosi bilan.`,
+      text: tr(
+        `${words.length} ta termin — nemischa, sodda tilda va o‘zbekcha ma’nosi bilan.`,
+        `${words.length} терминов — на немецком, простым языком и с переводом на русский.`,
+      ),
     },
     {
       href: "/arztbrief",
       icon: "✍️",
       title: "Arztbrief",
-      text: "Shifokor xatini yozing va struktura, grammatika, Fachsprache bo‘yicha tahlil oling.",
+      text: tr(
+        "Shifokor xatini yozing va struktura, grammatika, Fachsprache bo‘yicha tahlil oling.",
+        "Пишите врачебные письма и получайте разбор структуры, грамматики и Fachsprache.",
+      ),
     },
     {
       href: "/pruefung",
       icon: "\uD83C\uDFAF",
       title: "Prüfung Simulation",
-      text: "FSP formatidagi 3 qismli mashq imtihoni — taymer va „bestanden / nicht bestanden“ xulosasi bilan.",
+      text: tr(
+        "FSP formatidagi 3 qismli mashq imtihoni — taymer va „bestanden / nicht bestanden“ xulosasi bilan.",
+        "Пробный экзамен из 3 частей в формате FSP — с таймером и итогом „bestanden / nicht bestanden“.",
+      ),
     },
     {
       href: "/redemittel",
       icon: "🗣️",
       title: "Redemittel",
-      text: "Imtihonda kerak bo‘ladigan tayyor iboralar — 3 qism bo‘yicha, tarjima va talaffuz bilan.",
+      text: tr(
+        "Imtihonda kerak bo‘ladigan tayyor iboralar — 3 qism bo‘yicha, tarjima va talaffuz bilan.",
+        "Готовые фразы для экзамена — по 3 частям, с переводом и произношением.",
+      ),
     },
     {
       href: "/fsp",
       icon: "🏛️",
-      title: "FSP va Approbation",
-      text: "Germaniya tizimi: B2 → FSP (C1) → Kenntnisprüfung → Approbation. Imtihon qoidalari.",
+      title: tr("FSP va Approbation", "FSP и Approbation"),
+      text: tr(
+        "Germaniya tizimi: B2 → FSP (C1) → Kenntnisprüfung → Approbation. Imtihon qoidalari.",
+        "Система Германии: B2 → FSP (C1) → Kenntnisprüfung → Approbation. Правила экзамена.",
+      ),
     },
   ],
   STEPS = [
     {
       n: "1",
-      title: "Fall tanlang",
-      text: "Kardiologiya, nevrologiya, xirurgiya va boshqa yo‘nalishlardagi real holatlar.",
+      title: tr("Fall tanlang", "Выберите кейс"),
+      text: tr(
+        "Kardiologiya, nevrologiya, xirurgiya va boshqa yo‘nalishlardagi real holatlar.",
+        "Реальные случаи из кардиологии, неврологии, хирургии и других областей.",
+      ),
     },
     {
       n: "2",
-      title: "Bemordan anamnez oling",
-      text: "Virtual bemor faqat siz so‘ragan narsaga javob beradi — xuddi imtihondagidek.",
+      title: tr("Bemordan anamnez oling", "Соберите анамнез"),
+      text: tr(
+        "Virtual bemor faqat siz so‘ragan narsaga javob beradi — xuddi imtihondagidek.",
+        "Виртуальный пациент отвечает только на то, что вы спросили, — как на экзамене.",
+      ),
     },
     {
       n: "3",
-      title: "Arztbrief yozing",
-      text: "Yozganingizni Fachsprache va struktura bo‘yicha tekshiring.",
+      title: tr("Arztbrief yozing", "Напишите Arztbrief"),
+      text: tr(
+        "Yozganingizni Fachsprache va struktura bo‘yicha tekshiring.",
+        "Проверьте текст на Fachsprache и структуру.",
+      ),
     },
     {
       n: "4",
-      title: "Natijani kuzating",
-      text: "Dashboard’da progress, xatolar va o‘sishingizni ko‘ring.",
+      title: tr("Natijani kuzating", "Следите за прогрессом"),
+      text: tr(
+        "Dashboard’da progress, xatolar va o‘sishingizni ko‘ring.",
+        "В Dashboard — прогресс, ошибки и ваш рост.",
+      ),
     },
   ];
 
@@ -72,26 +103,29 @@ export function HomePage() {
               Fachsprachprüfung · B2/C1 Medizin
             </span>
             <h1 className="mt-5 text-4xl font-bold leading-tight tracking-tight sm:text-5xl">
-              FSP imtihoniga tayyorlaning.
+              {tr("FSP imtihoniga tayyorlaning.", "Подготовьтесь к FSP.")}
               <span className="block text-teal-600 dark:text-teal-400">
-                Tibbiy nemis tilini amaliy o‘rganing.
+                {tr("Tibbiy nemis tilini amaliy o‘rganing.", "Медицинский немецкий — на практике.")}
               </span>
             </h1>
             <p className="mt-5 max-w-xl text-lg muted">
-              O‘zbek shifokorlari uchun FSP tayyorgarlik platformasi.
+              {tr(
+                "O‘zbek shifokorlari uchun FSP tayyorgarlik platformasi.",
+                "Платформа подготовки к FSP для русскоязычных врачей.",
+              )}
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Link href="/faelle" className="btn-primary px-6 py-3 text-base">
-                Mashqni boshlash
+                {tr("Mashqni boshlash", "Начать практику")}
               </Link>
               <Link href="/fsp" className="btn-outline px-6 py-3 text-base">
-                FSP qanday ishlaydi?
+                {tr("FSP qanday ishlaydi?", "Как устроен FSP?")}
               </Link>
             </div>
             <dl className="mt-10 grid max-w-md grid-cols-3 gap-4">
               {[
-                [cases.length, "klinik Fall"],
-                [words.length, "termin"],
+                [cases.length, tr("klinik Fall", "клинических кейсов")],
+                [words.length, tr("termin", "терминов")],
                 [arztbriefe.length, "Arztbrief"],
               ].map(([e, t]) => (
                 <div key={String(t)}>
@@ -141,8 +175,13 @@ export function HomePage() {
         </div>
       </section>
       <section className="container-app py-14">
-        <h2 className="text-2xl font-bold tracking-tight">Asosiy bo‘limlar</h2>
-        <p className="mt-2 muted">Har bir bo‘lim FSP imtihonining aniq qismiga tayyorlaydi.</p>
+        <h2 className="text-2xl font-bold tracking-tight">{tr("Asosiy bo‘limlar", "Основные разделы")}</h2>
+        <p className="mt-2 muted">
+          {tr(
+            "Har bir bo‘lim FSP imtihonining aniq qismiga tayyorlaydi.",
+            "Каждый раздел готовит к конкретной части экзамена FSP.",
+          )}
+        </p>
         <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {FEATURES.map((e) => (
             <Link key={e.href} href={e.href} className="card card-hover group">
@@ -152,7 +191,7 @@ export function HomePage() {
               <h3 className="mt-4 font-semibold">{e.title}</h3>
               <p className="mt-1.5 text-sm muted">{e.text}</p>
               <span className="mt-4 inline-block text-sm font-medium text-teal-600 group-hover:underline dark:text-teal-400">
-                Ochish →
+                {tr("Ochish →", "Открыть →")}
               </span>
             </Link>
           ))}
@@ -161,28 +200,33 @@ export function HomePage() {
       <section className="container-app grid gap-4 pb-14 md:grid-cols-2">
         <Link href="/simulation" className="card card-hover">
           <p className="text-xs font-semibold uppercase tracking-wider text-teal-600 dark:text-teal-400">
-            Teil 1 mashqi
+            {tr("Teil 1 mashqi", "Тренировка Teil 1")}
           </p>
           <h3 className="mt-2 text-lg font-semibold">💬 Patienten-Simulation</h3>
           <p className="mt-1 text-sm muted">
-            Virtual bemordan anamnez oling. Oxirida to‘liqlik, grammatika, Patientensprache va savollar sifati
-            bo‘yicha baho olasiz.
+            {tr(
+              "Virtual bemordan anamnez oling. Oxirida to‘liqlik, grammatika, Patientensprache va savollar sifati bo‘yicha baho olasiz.",
+              "Соберите анамнез у виртуального пациента. В конце — оценка полноты, грамматики, Patientensprache и качества вопросов.",
+            )}
           </p>
         </Link>
         <Link href="/fachsprache" className="card card-hover">
           <p className="text-xs font-semibold uppercase tracking-wider text-teal-600 dark:text-teal-400">
-            Eng muhim ko‘nikma
+            {tr("Eng muhim ko‘nikma", "Самый важный навык")}
           </p>
           <h3 className="mt-2 text-lg font-semibold">🔁 Fachsprache ↔ Patientensprache</h3>
           <p className="mt-1 text-sm muted">
             {pairs.length}
-            {" ta kartochka va test: „Dyspnoe“ → „schlecht Luft bekommen“."}
+            {tr(
+              " ta kartochka va test: „Dyspnoe“ → „schlecht Luft bekommen“.",
+              " карточек и тест: „Dyspnoe“ → „schlecht Luft bekommen“.",
+            )}
           </p>
         </Link>
       </section>
       <section className="border-y border-slate-200 bg-white py-14 dark:border-slate-800 dark:bg-slate-900/40">
         <div className="container-app">
-          <h2 className="text-2xl font-bold tracking-tight">Qanday ishlaydi?</h2>
+          <h2 className="text-2xl font-bold tracking-tight">{tr("Qanday ishlaydi?", "Как это работает?")}</h2>
           <ol className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {STEPS.map((e) => (
               <li key={e.n} className="card">
@@ -199,11 +243,18 @@ export function HomePage() {
       <section className="container-app py-14">
         <div className="card flex flex-col items-start gap-4 bg-teal-600 text-white sm:flex-row sm:items-center sm:justify-between dark:bg-teal-700">
           <div>
-            <h2 className="text-xl font-bold text-white">Bugun birinchi Fall’ni yeching</h2>
-            <p className="mt-1 text-teal-50">Ro‘yxatdan o‘tish bepul — progress qurilmangizda saqlanadi.</p>
+            <h2 className="text-xl font-bold text-white">
+              {tr("Bugun birinchi Fall’ni yeching", "Решите первый кейс сегодня")}
+            </h2>
+            <p className="mt-1 text-teal-50">
+              {tr(
+                "Ro‘yxatdan o‘tish bepul — progress qurilmangizda saqlanadi.",
+                "Регистрация бесплатна — прогресс хранится на вашем устройстве.",
+              )}
+            </p>
           </div>
           <Link href="/login" className="btn bg-white text-teal-700 hover:bg-teal-50">
-            Boshlash
+            {tr("Boshlash", "Начать")}
           </Link>
         </div>
       </section>

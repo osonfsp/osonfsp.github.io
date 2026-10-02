@@ -1,5 +1,6 @@
 import { PRACTICE, usePlan } from "../lib/plan";
 import { Link } from "./Link";
+import { tr } from "../lib/i18n";
 
 // Bepul imkoniyat tugaganda sahifa o‘rniga ko‘rsatiladi.
 // kind: "materials" — 1 kunlik sinov tugadi; "exam" — bepul imtihon ishlatildi.
@@ -12,16 +13,27 @@ export function Paywall({ kind = "materials" }) {
         🔒
       </p>
       <h2 className="mt-3 text-lg font-semibold">
-        {exam ? "Bepul imtihon ishlatildi" : "1 kunlik sinov muddati tugadi"}
+        {exam
+          ? tr("Bepul imtihon ishlatildi", "Бесплатный экзамен использован")
+          : tr("1 kunlik sinov muddati tugadi", "Пробный день закончился")}
       </h2>
       <p className="mt-2 text-sm muted">
         {exam
-          ? `${PRACTICE.exam} bepul rejimda ${limit("exam")} marta ochiq edi.`
-          : "Materiallar bepul rejimda 1 kun davomida ochiq edi."}{" "}
-        Davom etish uchun tarif tanlang — 1 haftalik yoki 1 oylik.
+          ? tr(
+              `${PRACTICE.exam} bepul rejimda ${limit("exam")} marta ochiq edi.`,
+              `Пробный экзамен в бесплатном режиме доступен ${limit("exam")} раз.`,
+            )
+          : tr(
+              "Materiallar bepul rejimda 1 kun davomida ochiq edi.",
+              "В бесплатном режиме материалы доступны 1 день.",
+            )}{" "}
+        {tr(
+          "Davom etish uchun tarif tanlang — 1 haftalik yoki 1 oylik.",
+          "Чтобы продолжить, выберите тариф — на 1 неделю или на 1 месяц.",
+        )}
       </p>
       <Link href="/pro" className="btn-primary mt-5 inline-flex">
-        Tariflarni ko‘rish
+        {tr("Tariflarni ko‘rish", "Посмотреть тарифы")}
       </Link>
     </div>
   );
@@ -48,7 +60,7 @@ export function FreeLeft({ kind }) {
       href="/pro"
       className="inline-flex items-center rounded-full bg-amber-50 px-3 py-1 text-xs font-medium text-amber-800 ring-1 ring-amber-200 hover:bg-amber-100 dark:bg-amber-950/40 dark:text-amber-300 dark:ring-amber-900"
     >
-      Bepul: {left(kind)} / {limit(kind)} qoldi
+      {tr("Bepul", "Бесплатно")}: {left(kind)} / {limit(kind)} {tr("qoldi", "осталось")}
     </Link>
   );
 }
@@ -64,8 +76,11 @@ export function TrialBar() {
       className="block bg-amber-50 py-1.5 text-center text-xs font-medium text-amber-900 hover:bg-amber-100 dark:bg-amber-950/40 dark:text-amber-200"
     >
       {trialActive
-        ? `🎁 Bepul sinov: materiallar yana ${h} soat ochiq · Tariflar →`
-        : "⏳ Bepul sinov tugadi · Tarif tanlang →"}
+        ? tr(
+            `🎁 Bepul sinov: materiallar yana ${h} soat ochiq · Tariflar →`,
+            `🎁 Пробный доступ: материалы открыты ещё ${h} ч · Тарифы →`,
+          )
+        : tr("⏳ Bepul sinov tugadi · Tarif tanlang →", "⏳ Пробный доступ закончился · Выберите тариф →")}
     </Link>
   );
 }

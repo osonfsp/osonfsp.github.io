@@ -4,6 +4,7 @@
     "caseId": "c1",
     "title": "Akuter Myokardinfarkt (STEMI)",
     "task": "Quyidagi ma’lumotlar asosida uy shifokoriga (Hausarzt) Arztbrief yozing: murojaat, anamnez, topilmalar, diagnoz, davolash va tavsiyalar.",
+    "taskRu": "Напишите Arztbrief семейному врачу (Hausarzt) на основе данных ниже: обращение, анамнез, находки, диагноз, лечение и рекомендации.",
     "facts": [
       "Patient: Klaus Weber, 58 Jahre, männlich",
       "Aufnahme: 02.10.2026, Notaufnahme",
@@ -19,12 +20,14 @@
     "keyPoints": [
       {
         "label": "Patient ma’lumotlari (Herr Weber)",
+        "labelRu": "Данные пациента (Herr Weber)",
         "keywords": [
           "weber"
         ]
       },
       {
         "label": "Asosiy shikoyat: Thoraxschmerzen",
+        "labelRu": "Основная жалоба: Thoraxschmerzen",
         "keywords": [
           "thoraxschmerz",
           "brustschmerz"
@@ -32,12 +35,14 @@
       },
       {
         "label": "Irradiatsiya (linker Arm)",
+        "labelRu": "Иррадиация (linker Arm)",
         "keywords": [
           "arm"
         ]
       },
       {
         "label": "Vegetativ belgilar (Nausea/Kaltschweiß)",
+        "labelRu": "Вегетативные признаки (Nausea/Kaltschweiß)",
         "keywords": [
           "kaltschwei",
           "nausea",
@@ -47,6 +52,7 @@
       },
       {
         "label": "Xavf omillari (Hypertonie, Nikotin)",
+        "labelRu": "Факторы риска (Hypertonie, Nikotin)",
         "keywords": [
           "hypertonie",
           "nikotin",
@@ -56,12 +62,14 @@
       },
       {
         "label": "Allergiya (Penicillin)",
+        "labelRu": "Аллергия (Penicillin)",
         "keywords": [
           "penicillin"
         ]
       },
       {
         "label": "EKG topilmasi (ST-Hebung)",
+        "labelRu": "Данные ЭКГ (ST-Hebung)",
         "keywords": [
           "st-hebung",
           "st-strecken",
@@ -71,12 +79,14 @@
       },
       {
         "label": "Troponin",
+        "labelRu": "Troponin",
         "keywords": [
           "troponin"
         ]
       },
       {
         "label": "Diagnoz (STEMI / Myokardinfarkt)",
+        "labelRu": "Диагноз (STEMI / Myokardinfarkt)",
         "keywords": [
           "stemi",
           "myokardinfarkt",
@@ -85,6 +95,7 @@
       },
       {
         "label": "Davolash (PCI / Stent)",
+        "labelRu": "Лечение (PCI / Stent)",
         "keywords": [
           "pci",
           "stent",
@@ -99,6 +110,7 @@
     "caseId": "c2",
     "title": "Ambulant erworbene Pneumonie",
     "task": "Bemorning statsionar davolanishi haqida uy shifokoriga Arztbrief yozing.",
+    "taskRu": "Напишите семейному врачу Arztbrief о стационарном лечении пациентки.",
     "facts": [
       "Patientin: Anna Schmidt, 67 Jahre, weiblich",
       "Stationäre Aufnahme: 01.10.2026",
@@ -112,12 +124,14 @@
     "keyPoints": [
       {
         "label": "Patientin ma’lumotlari (Frau Schmidt)",
+        "labelRu": "Данные пациентки (Frau Schmidt)",
         "keywords": [
           "schmidt"
         ]
       },
       {
         "label": "Husten / Auswurf",
+        "labelRu": "Husten / Auswurf",
         "keywords": [
           "husten",
           "auswurf",
@@ -126,12 +140,14 @@
       },
       {
         "label": "Fieber",
+        "labelRu": "Fieber",
         "keywords": [
           "fieber"
         ]
       },
       {
         "label": "Dyspnoe",
+        "labelRu": "Dyspnoe",
         "keywords": [
           "dyspnoe",
           "atemnot"
@@ -139,12 +155,14 @@
       },
       {
         "label": "Vorerkrankung COPD",
+        "labelRu": "Vorerkrankung COPD",
         "keywords": [
           "copd"
         ]
       },
       {
         "label": "Auskultation (Rasselgeräusche)",
+        "labelRu": "Auskultation (Rasselgeräusche)",
         "keywords": [
           "rasselgeräusch",
           "auskultat"
@@ -152,6 +170,7 @@
       },
       {
         "label": "Labor (CRP, Leukozyten)",
+        "labelRu": "Labor (CRP, Leukozyten)",
         "keywords": [
           "crp",
           "leukozyt"
@@ -159,6 +178,7 @@
       },
       {
         "label": "Röntgen (Infiltrat)",
+        "labelRu": "Röntgen (Infiltrat)",
         "keywords": [
           "infiltrat",
           "röntgen"
@@ -166,12 +186,14 @@
       },
       {
         "label": "Diagnoz (Pneumonie)",
+        "labelRu": "Диагноз (Pneumonie)",
         "keywords": [
           "pneumonie"
         ]
       },
       {
         "label": "Antibiotik terapiya",
+        "labelRu": "Антибиотикотерапия",
         "keywords": [
           "ampicillin",
           "sulbactam",
@@ -187,6 +209,7 @@
     "caseId": "c7",
     "title": "Akute Appendizitis",
     "task": "Operatsiyadan keyingi chiqish xati (Entlassbrief) yozing.",
+    "taskRu": "Напишите выписное письмо после операции (Entlassbrief).",
     "facts": [
       "Patient: Lukas Schulz, 22 Jahre, männlich",
       "Aufnahme: 30.09.2026",
@@ -200,12 +223,14 @@
     "keyPoints": [
       {
         "label": "Patient ma’lumotlari (Herr Schulz)",
+        "labelRu": "Данные пациента (Herr Schulz)",
         "keywords": [
           "schulz"
         ]
       },
       {
         "label": "Og‘riq migratsiyasi (periumbilikal)",
+        "labelRu": "Миграция боли (periumbilikal)",
         "keywords": [
           "periumbilikal",
           "bauchnabel",
@@ -215,12 +240,14 @@
       },
       {
         "label": "Rechter Unterbauch",
+        "labelRu": "Rechter Unterbauch",
         "keywords": [
           "unterbauch"
         ]
       },
       {
         "label": "Harorat / Fieber",
+        "labelRu": "Температура / Fieber",
         "keywords": [
           "38,3",
           "fieber",
@@ -230,6 +257,7 @@
       },
       {
         "label": "Klinik belgilari (McBurney, Loslassschmerz)",
+        "labelRu": "Клинические признаки (McBurney, Loslassschmerz)",
         "keywords": [
           "mcburney",
           "loslassschmerz",
@@ -238,6 +266,7 @@
       },
       {
         "label": "Labor (Leukozyten, CRP)",
+        "labelRu": "Labor (Leukozyten, CRP)",
         "keywords": [
           "leukozyt",
           "crp"
@@ -245,18 +274,21 @@
       },
       {
         "label": "Sonographie",
+        "labelRu": "Sonographie",
         "keywords": [
           "sonograph"
         ]
       },
       {
         "label": "Diagnoz (Appendizitis)",
+        "labelRu": "Диагноз (Appendizitis)",
         "keywords": [
           "appendizitis"
         ]
       },
       {
         "label": "Operatsiya (Appendektomie)",
+        "labelRu": "Операция (Appendektomie)",
         "keywords": [
           "appendektomie",
           "laparoskop"
@@ -264,6 +296,7 @@
       },
       {
         "label": "Kechish / Entlassung",
+        "labelRu": "Течение / Entlassung",
         "keywords": [
           "entlass",
           "verlauf"
@@ -277,6 +310,7 @@
     "caseId": "c4",
     "title": "Ischämischer Schlaganfall",
     "task": "Stroke Unit’dan nevrolog/uy shifokoriga Arztbrief yozing. Vaqt oynasi (Zeitfenster) va antikoagulyatsiyaga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из Stroke Unit неврологу/семейному врачу. Обратите внимание на временное окно (Zeitfenster) и антикоагуляцию.",
     "facts": [
       "Patient: Peter Hoffmann, 72 Jahre, männlich",
       "Aufnahme: 02.10.2026, 09:10 Uhr (Symptombeginn 08:15 Uhr)",
@@ -290,12 +324,14 @@
     "keyPoints": [
       {
         "label": "Patient ma’lumotlari (Herr Hoffmann)",
+        "labelRu": "Данные пациента (Herr Hoffmann)",
         "keywords": [
           "hoffmann"
         ]
       },
       {
         "label": "Simptom boshlanish vaqti",
+        "labelRu": "Время начала симптомов",
         "keywords": [
           "08:15",
           "symptombeginn",
@@ -305,6 +341,7 @@
       },
       {
         "label": "Hemiparese",
+        "labelRu": "Hemiparese",
         "keywords": [
           "hemiparese",
           "parese"
@@ -312,6 +349,7 @@
       },
       {
         "label": "Nutq buzilishi",
+        "labelRu": "Нарушение речи",
         "keywords": [
           "dysarthrie",
           "aphasie",
@@ -320,12 +358,14 @@
       },
       {
         "label": "Vorhofflimmern",
+        "labelRu": "Vorhofflimmern",
         "keywords": [
           "vorhofflimmern"
         ]
       },
       {
         "label": "Antikoagulyatsiya to‘xtatilgan",
+        "labelRu": "Антикоагуляция прервана",
         "keywords": [
           "apixaban",
           "antikoag",
@@ -334,6 +374,7 @@
       },
       {
         "label": "cCT (Blutung yo‘q)",
+        "labelRu": "cCT (Blutung нет)",
         "keywords": [
           "blutung",
           "cct"
@@ -341,12 +382,14 @@
       },
       {
         "label": "NIHSS",
+        "labelRu": "NIHSS",
         "keywords": [
           "nihss"
         ]
       },
       {
         "label": "Diagnoz (Schlaganfall / Apoplex)",
+        "labelRu": "Диагноз (Schlaganfall / Apoplex)",
         "keywords": [
           "schlaganfall",
           "apoplex",
@@ -356,6 +399,7 @@
       },
       {
         "label": "Lysetherapie / Stroke Unit",
+        "labelRu": "Lysetherapie / Stroke Unit",
         "keywords": [
           "lyse",
           "alteplase",
@@ -370,6 +414,7 @@
     "caseId": "c6",
     "title": "Diabetes mellitus Typ 2 – Erstdiagnose",
     "task": "Statsionar davolanishdan so‘ng uy shifokoriga Arztbrief yozing. Terapiya va kuzatuv tavsiyalarini aniq yozing.",
+    "taskRu": "Напишите семейному врачу Arztbrief после стационарного лечения. Чётко опишите терапию и рекомендации по наблюдению.",
     "facts": [
       "Patient: Thomas Wagner, 52 Jahre, männlich",
       "Stationärer Aufenthalt: 28.09.–02.10.2026",
@@ -383,12 +428,14 @@
     "keyPoints": [
       {
         "label": "Patient ma’lumotlari (Herr Wagner)",
+        "labelRu": "Данные пациента (Herr Wagner)",
         "keywords": [
           "wagner"
         ]
       },
       {
         "label": "Asosiy simptomlar (Polydipsie/Polyurie)",
+        "labelRu": "Основные симптомы (Polydipsie/Polyurie)",
         "keywords": [
           "polydipsie",
           "polyurie"
@@ -396,6 +443,7 @@
       },
       {
         "label": "Vazn yo‘qotish",
+        "labelRu": "Потеря веса",
         "keywords": [
           "gewichtsverlust",
           "gewichtsabnahme",
@@ -404,6 +452,7 @@
       },
       {
         "label": "Xavf omillari (Adipositas, Familie)",
+        "labelRu": "Факторы риска (Adipositas, Familie)",
         "keywords": [
           "adipositas",
           "familienanamnes",
@@ -412,6 +461,7 @@
       },
       {
         "label": "Blutzucker",
+        "labelRu": "Blutzucker",
         "keywords": [
           "blutzucker",
           "glukose"
@@ -419,30 +469,35 @@
       },
       {
         "label": "HbA1c",
+        "labelRu": "HbA1c",
         "keywords": [
           "hba1c"
         ]
       },
       {
         "label": "Diagnoz (Diabetes mellitus Typ 2)",
+        "labelRu": "Диагноз (Diabetes mellitus Typ 2)",
         "keywords": [
           "diabetes mellitus"
         ]
       },
       {
         "label": "Metformin",
+        "labelRu": "Metformin",
         "keywords": [
           "metformin"
         ]
       },
       {
         "label": "Insulin",
+        "labelRu": "Insulin",
         "keywords": [
           "insulin"
         ]
       },
       {
         "label": "Kuzatuv (Schulung, Augenarzt, Kontrolle)",
+        "labelRu": "Наблюдение (Schulung, Augenarzt, Kontrolle)",
         "keywords": [
           "schulung",
           "augenärzt",
@@ -458,6 +513,7 @@
     "caseId": "c11",
     "title": "Lungenembolie bei Beinvenenthrombose",
     "task": "Bemorning statsionar davolanishi haqida uy shifokoriga Arztbrief yozing: murojaat sababi, anamnez, topilmalar, diagnoz, davolash va keyingi tavsiyalar.",
+    "taskRu": "Напишите семейному врачу Arztbrief о стационарном лечении пациентки: причина обращения, анамнез, находки, диагноз, лечение и дальнейшие рекомендации.",
     "facts": [
       "Patientin: Sabine Hoffmann, 34 Jahre, weiblich",
       "Stationäre Aufnahme: 30.09.2026 – Entlassung: 05.10.2026",
@@ -472,12 +528,14 @@
     "keyPoints": [
       {
         "label": "Patientin ma’lumotlari (Frau Hoffmann)",
+        "labelRu": "Данные пациентки (Frau Hoffmann)",
         "keywords": [
           "hoffmann"
         ]
       },
       {
         "label": "Asosiy shikoyat: Dyspnoe",
+        "labelRu": "Основная жалоба: Dyspnoe",
         "keywords": [
           "dyspnoe",
           "atemnot"
@@ -485,6 +543,7 @@
       },
       {
         "label": "Thoraxschmerzen (atemabhängig)",
+        "labelRu": "Thoraxschmerzen (atemabhängig)",
         "keywords": [
           "thoraxschmerz",
           "atemabhängig"
@@ -492,6 +551,7 @@
       },
       {
         "label": "Hämoptyse",
+        "labelRu": "Hämoptyse",
         "keywords": [
           "hämoptyse",
           "bluthusten"
@@ -499,6 +559,7 @@
       },
       {
         "label": "Xavf omillari (Pille, Flug, Nikotin)",
+        "labelRu": "Факторы риска (Pille, Flug, Nikotin)",
         "keywords": [
           "kontrazept",
           "pille",
@@ -508,12 +569,14 @@
       },
       {
         "label": "D-Dimere",
+        "labelRu": "D-Dimere",
         "keywords": [
           "d-dimer"
         ]
       },
       {
         "label": "CT-Angiographie",
+        "labelRu": "CT-Angiographie",
         "keywords": [
           "ct-angiographie",
           "angio-ct",
@@ -522,6 +585,7 @@
       },
       {
         "label": "TVT topilmasi (Beinvenenthrombose)",
+        "labelRu": "Данные о ТГВ (Beinvenenthrombose)",
         "keywords": [
           "thrombose",
           "tvt"
@@ -529,6 +593,7 @@
       },
       {
         "label": "Diagnoz (Lungenembolie)",
+        "labelRu": "Диагноз (Lungenembolie)",
         "keywords": [
           "lungenembolie",
           "lungenarterienembolie"
@@ -536,6 +601,7 @@
       },
       {
         "label": "Davolash (Antikoagulation)",
+        "labelRu": "Лечение (Antikoagulation)",
         "keywords": [
           "antikoagul",
           "apixaban"
@@ -549,6 +615,7 @@
     "caseId": "c14",
     "title": "Akute äthyltoxische Pankreatitis",
     "task": "Bemorning statsionar davolanishi haqida uy shifokoriga Arztbrief yozing.",
+    "taskRu": "Напишите семейному врачу Arztbrief о стационарном лечении пациента.",
     "facts": [
       "Patient: Thomas Richter, 46 Jahre, männlich",
       "Stationäre Aufnahme: 28.09.2026 – Entlassung: 06.10.2026",
@@ -562,12 +629,14 @@
     "keyPoints": [
       {
         "label": "Patient ma’lumotlari (Herr Richter)",
+        "labelRu": "Данные пациента (Herr Richter)",
         "keywords": [
           "richter"
         ]
       },
       {
         "label": "Asosiy shikoyat: Oberbauchschmerzen",
+        "labelRu": "Основная жалоба: Oberbauchschmerzen",
         "keywords": [
           "oberbauch",
           "epigastri",
@@ -576,6 +645,7 @@
       },
       {
         "label": "Gürtelförmige Ausstrahlung",
+        "labelRu": "Gürtelförmige Ausstrahlung",
         "keywords": [
           "gürtelförmig",
           "rücken"
@@ -583,6 +653,7 @@
       },
       {
         "label": "Erbrechen",
+        "labelRu": "Erbrechen",
         "keywords": [
           "erbrechen",
           "emesis"
@@ -590,18 +661,21 @@
       },
       {
         "label": "Alkoholabusus",
+        "labelRu": "Alkoholabusus",
         "keywords": [
           "alkohol"
         ]
       },
       {
         "label": "Lipase",
+        "labelRu": "Lipase",
         "keywords": [
           "lipase"
         ]
       },
       {
         "label": "Sonographie topilmasi",
+        "labelRu": "Данные УЗИ (Sonographie)",
         "keywords": [
           "sonographi",
           "ultraschall"
@@ -609,12 +683,14 @@
       },
       {
         "label": "Diagnoz (Pankreatitis)",
+        "labelRu": "Диагноз (Pankreatitis)",
         "keywords": [
           "pankreatitis"
         ]
       },
       {
         "label": "Davolash (Flüssigkeit, Analgesie)",
+        "labelRu": "Лечение (Flüssigkeit, Analgesie)",
         "keywords": [
           "flüssigkeit",
           "infusion",
@@ -624,6 +700,7 @@
       },
       {
         "label": "Tavsiya: Alkoholkarenz",
+        "labelRu": "Рекомендация: Alkoholkarenz",
         "keywords": [
           "alkoholkarenz",
           "alkoholabstinenz",
@@ -639,6 +716,7 @@
     "caseId": "c13",
     "title": "Tachykardes Vorhofflimmern",
     "task": "Bemorning statsionar davolanishi haqida uy shifokoriga Arztbrief yozing. Antikoagulyatsiya sababini ko‘rsatishni unutmang.",
+    "taskRu": "Напишите семейному врачу Arztbrief о стационарном лечении пациентки. Не забудьте указать показание к антикоагуляции.",
     "facts": [
       "Patientin: Ingrid Wagner, 72 Jahre, weiblich",
       "Stationäre Aufnahme: 01.10.2026 – Entlassung: 04.10.2026",
@@ -654,12 +732,14 @@
     "keyPoints": [
       {
         "label": "Patientin ma’lumotlari (Frau Wagner)",
+        "labelRu": "Данные пациентки (Frau Wagner)",
         "keywords": [
           "wagner"
         ]
       },
       {
         "label": "Asosiy shikoyat: Palpitationen",
+        "labelRu": "Основная жалоба: Palpitationen",
         "keywords": [
           "palpitation",
           "herzrasen",
@@ -668,6 +748,7 @@
       },
       {
         "label": "Schwindel / Dyspnoe",
+        "labelRu": "Schwindel / Dyspnoe",
         "keywords": [
           "schwindel",
           "dyspnoe"
@@ -675,6 +756,7 @@
       },
       {
         "label": "Vorerkrankungen (Hypertonie, Diabetes)",
+        "labelRu": "Vorerkrankungen (Hypertonie, Diabetes)",
         "keywords": [
           "hypertonie",
           "diabetes"
@@ -682,18 +764,21 @@
       },
       {
         "label": "Allergiya (Kontrastmittel)",
+        "labelRu": "Аллергия (Kontrastmittel)",
         "keywords": [
           "kontrastmittel"
         ]
       },
       {
         "label": "EKG topilmasi",
+        "labelRu": "Данные ЭКГ",
         "keywords": [
           "ekg"
         ]
       },
       {
         "label": "CHA2DS2-VASc",
+        "labelRu": "CHA2DS2-VASc",
         "keywords": [
           "cha2ds2",
           "cha₂ds₂",
@@ -702,12 +787,14 @@
       },
       {
         "label": "Diagnoz (Vorhofflimmern)",
+        "labelRu": "Диагноз (Vorhofflimmern)",
         "keywords": [
           "vorhofflimmern"
         ]
       },
       {
         "label": "Frequenzkontrolle (Betablocker)",
+        "labelRu": "Frequenzkontrolle (Betablocker)",
         "keywords": [
           "bisoprolol",
           "betablocker",
@@ -716,6 +803,7 @@
       },
       {
         "label": "Antikoagulation",
+        "labelRu": "Antikoagulation",
         "keywords": [
           "antikoagul",
           "apixaban",
@@ -731,6 +819,7 @@
     "caseId": "c15",
     "title": "Ulkusblutung unter NSAR",
     "task": "Bemorning statsionar davolanishi haqida uy shifokoriga Arztbrief yozing. Dori-darmonlarga oid tavsiyalarga alohida e’tibor bering.",
+    "taskRu": "Напишите семейному врачу Arztbrief о стационарном лечении пациента. Особое внимание уделите рекомендациям по лекарствам.",
     "facts": [
       "Patient: Helmut Braun, 61 Jahre, männlich",
       "Stationäre Aufnahme: 27.09.2026 – Entlassung: 03.10.2026",
@@ -745,12 +834,14 @@
     "keyPoints": [
       {
         "label": "Patient ma’lumotlari (Herr Braun)",
+        "labelRu": "Данные пациента (Herr Braun)",
         "keywords": [
           "braun"
         ]
       },
       {
         "label": "Meläna",
+        "labelRu": "Meläna",
         "keywords": [
           "meläna",
           "teerstuhl"
@@ -758,6 +849,7 @@
       },
       {
         "label": "Hämatemesis",
+        "labelRu": "Hämatemesis",
         "keywords": [
           "hämatemesis",
           "kaffeesatz"
@@ -765,6 +857,7 @@
       },
       {
         "label": "NSAR / Ibuprofen",
+        "labelRu": "NSAR / Ibuprofen",
         "keywords": [
           "ibuprofen",
           "nsar"
@@ -772,6 +865,7 @@
       },
       {
         "label": "Hämoglobin",
+        "labelRu": "Hämoglobin",
         "keywords": [
           "hämoglobin",
           "hb "
@@ -779,6 +873,7 @@
       },
       {
         "label": "Gastroskopie",
+        "labelRu": "Gastroskopie",
         "keywords": [
           "gastroskopie",
           "ögd",
@@ -787,6 +882,7 @@
       },
       {
         "label": "Diagnoz (Ulkus)",
+        "labelRu": "Диагноз (Ulkus)",
         "keywords": [
           "ulcus",
           "ulkus"
@@ -794,6 +890,7 @@
       },
       {
         "label": "Blutstillung / Transfusion",
+        "labelRu": "Blutstillung / Transfusion",
         "keywords": [
           "blutstillung",
           "erythrozytenkonzentrat",
@@ -803,6 +900,7 @@
       },
       {
         "label": "PPI",
+        "labelRu": "PPI",
         "keywords": [
           "pantoprazol",
           "protonenpumpen",
@@ -811,6 +909,7 @@
       },
       {
         "label": "Tavsiya: NSAR meiden",
+        "labelRu": "Рекомендация: NSAR meiden",
         "keywords": [
           "meiden",
           "verzicht",
@@ -827,6 +926,7 @@
     "caseId": "c17",
     "title": "Ureterolithiasis rechts",
     "task": "Bemorning statsionar davolanishi haqida uy shifokoriga qisqa Arztbrief yozing.",
+    "taskRu": "Напишите семейному врачу краткий Arztbrief о стационарном лечении пациента.",
     "facts": [
       "Patient: Stefan Koch, 39 Jahre, männlich",
       "Stationäre Aufnahme: 02.10.2026 – Entlassung: 04.10.2026",
@@ -841,30 +941,35 @@
     "keyPoints": [
       {
         "label": "Patient ma’lumotlari (Herr Koch)",
+        "labelRu": "Данные пациента (Herr Koch)",
         "keywords": [
           "koch"
         ]
       },
       {
         "label": "Asosiy shikoyat: Flankenschmerzen",
+        "labelRu": "Основная жалоба: Flankenschmerzen",
         "keywords": [
           "flanke"
         ]
       },
       {
         "label": "Kolik xarakteri",
+        "labelRu": "Коликообразный характер",
         "keywords": [
           "kolik"
         ]
       },
       {
         "label": "Hämaturie",
+        "labelRu": "Hämaturie",
         "keywords": [
           "hämaturie"
         ]
       },
       {
         "label": "Allergiya (Metamizol)",
+        "labelRu": "Аллергия (Metamizol)",
         "keywords": [
           "metamizol",
           "novalgin"
@@ -872,6 +977,7 @@
       },
       {
         "label": "Sonographie (Harnstau)",
+        "labelRu": "Sonographie (Harnstau)",
         "keywords": [
           "harnstau",
           "sonographi"
@@ -879,6 +985,7 @@
       },
       {
         "label": "CT topilmasi (Konkrement)",
+        "labelRu": "Данные КТ (Konkrement)",
         "keywords": [
           "konkrement",
           "low-dose",
@@ -887,6 +994,7 @@
       },
       {
         "label": "Diagnoz (Urolithiasis)",
+        "labelRu": "Диагноз (Urolithiasis)",
         "keywords": [
           "urolithiasis",
           "ureterolithiasis",
@@ -896,6 +1004,7 @@
       },
       {
         "label": "Davolash (Analgesie, Tamsulosin)",
+        "labelRu": "Лечение (Analgesie, Tamsulosin)",
         "keywords": [
           "tamsulosin",
           "diclofenac",
@@ -904,6 +1013,7 @@
       },
       {
         "label": "Tavsiya: Trinkmenge",
+        "labelRu": "Рекомендация: Trinkmenge",
         "keywords": [
           "trinkmenge",
           "flüssigkeitszufuhr",

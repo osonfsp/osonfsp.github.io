@@ -40,27 +40,32 @@
       {
         "de": "Thoraxschmerzen",
         "patient": "Brustschmerzen",
-        "uz": "ko‘krak qafasidagi og‘riq"
+        "uz": "ko‘krak qafasidagi og‘riq",
+        "ru": "боль в грудной клетке"
       },
       {
         "de": "retrosternal",
         "patient": "hinter dem Brustbein",
-        "uz": "to‘sh suyagi orqasida"
+        "uz": "to‘sh suyagi orqasida",
+        "ru": "за грудиной"
       },
       {
         "de": "Nausea",
         "patient": "Übelkeit",
-        "uz": "ko‘ngil aynishi"
+        "uz": "ko‘ngil aynishi",
+        "ru": "тошнота"
       },
       {
         "de": "Diaphorese",
         "patient": "starkes Schwitzen",
-        "uz": "kuchli terlash"
+        "uz": "kuchli terlash",
+        "ru": "обильное потоотделение"
       },
       {
         "de": "Myokardinfarkt",
         "patient": "Herzinfarkt",
-        "uz": "miokard infarkti"
+        "uz": "miokard infarkti",
+        "ru": "инфаркт миокарда"
       }
     ],
     "simulation": {
@@ -140,27 +145,32 @@
       {
         "de": "Pneumonie",
         "patient": "Lungenentzündung",
-        "uz": "zotiljam (pnevmoniya)"
+        "uz": "zotiljam (pnevmoniya)",
+        "ru": "пневмония"
       },
       {
         "de": "Auswurf (Sputum)",
         "patient": "Schleim abhusten",
-        "uz": "balg‘am"
+        "uz": "balg‘am",
+        "ru": "мокрота"
       },
       {
         "de": "Belastungsdyspnoe",
         "patient": "Atemnot bei Anstrengung",
-        "uz": "jismoniy zo‘riqishda nafas qisishi"
+        "uz": "jismoniy zo‘riqishda nafas qisishi",
+        "ru": "одышка при нагрузке"
       },
       {
         "de": "Schüttelfrost",
         "patient": "Zittern vor Kälte bei Fieber",
-        "uz": "et uvishib qaltirash"
+        "uz": "et uvishib qaltirash",
+        "ru": "озноб"
       },
       {
         "de": "Hämoptysen",
         "patient": "Blut abhusten",
-        "uz": "qon tupurish"
+        "uz": "qon tupurish",
+        "ru": "кровохарканье"
       }
     ],
     "simulation": {
@@ -236,27 +246,32 @@
       {
         "de": "Cholezystitis",
         "patient": "Gallenblasenentzündung",
-        "uz": "xoletsistit (o‘t pufagi yallig‘lanishi)"
+        "uz": "xoletsistit (o‘t pufagi yallig‘lanishi)",
+        "ru": "холецистит (воспаление желчного пузыря)"
       },
       {
         "de": "Cholezystolithiasis",
         "patient": "Gallensteine",
-        "uz": "o‘t pufagida tosh"
+        "uz": "o‘t pufagida tosh",
+        "ru": "камни в желчном пузыре"
       },
       {
         "de": "kolikartig",
         "patient": "krampfartig, in Wellen",
-        "uz": "sanchiqsimon, to‘lqinsimon"
+        "uz": "sanchiqsimon, to‘lqinsimon",
+        "ru": "коликообразный, волнообразный"
       },
       {
         "de": "Emesis",
         "patient": "Erbrechen",
-        "uz": "qusish"
+        "uz": "qusish",
+        "ru": "рвота"
       },
       {
         "de": "Ikterus",
         "patient": "Gelbsucht",
-        "uz": "sariqlik"
+        "uz": "sariqlik",
+        "ru": "желтуха"
       }
     ],
     "simulation": {
@@ -332,27 +347,32 @@
       {
         "de": "Hemiparese",
         "patient": "Halbseitenlähmung, Schwäche auf einer Seite",
-        "uz": "bir tomonlama falajlik (gemiparez)"
+        "uz": "bir tomonlama falajlik (gemiparez)",
+        "ru": "односторонний парез (гемипарез)"
       },
       {
         "de": "Dysarthrie",
         "patient": "verwaschene Sprache",
-        "uz": "nutqning noaniqligi (dizartriya)"
+        "uz": "nutqning noaniqligi (dizartriya)",
+        "ru": "нечёткая речь (дизартрия)"
       },
       {
         "de": "Apoplex",
         "patient": "Schlaganfall",
-        "uz": "insult"
+        "uz": "insult",
+        "ru": "инсульт"
       },
       {
         "de": "Vorhofflimmern",
         "patient": "unregelmäßiger Herzschlag",
-        "uz": "bo‘lmachalar fibrillyatsiyasi"
+        "uz": "bo‘lmachalar fibrillyatsiyasi",
+        "ru": "фибрилляция предсердий"
       },
       {
         "de": "Antikoagulation",
         "patient": "Blutverdünnung",
-        "uz": "qonni suyultirish (antikoagulyatsiya)"
+        "uz": "qonni suyultirish (antikoagulyatsiya)",
+        "ru": "антикоагуляция (разжижение крови)"
       }
     ],
     "simulation": {
@@ -431,27 +451,32 @@
       {
         "de": "Pyelonephritis",
         "patient": "Nierenbeckenentzündung",
-        "uz": "pielonefrit"
+        "uz": "pielonefrit",
+        "ru": "пиелонефрит"
       },
       {
         "de": "Dysurie",
         "patient": "Brennen beim Wasserlassen",
-        "uz": "siyishda achishish"
+        "uz": "siyishda achishish",
+        "ru": "жжение при мочеиспускании"
       },
       {
         "de": "Pollakisurie",
         "patient": "häufiges Wasserlassen kleiner Mengen",
-        "uz": "tez-tez oz-ozdan siyish"
+        "uz": "tez-tez oz-ozdan siyish",
+        "ru": "учащённое мочеиспускание малыми порциями"
       },
       {
         "de": "Flankenschmerz",
         "patient": "Schmerzen an der Seite",
-        "uz": "biqindagi og‘riq"
+        "uz": "biqindagi og‘riq",
+        "ru": "боль в боку"
       },
       {
         "de": "Nierenlagerklopfschmerz",
         "patient": "Schmerz beim Abklopfen der Niere",
-        "uz": "buyrak sohasini urganda og‘riq"
+        "uz": "buyrak sohasini urganda og‘riq",
+        "ru": "боль при поколачивании в области почек"
       }
     ],
     "simulation": {
@@ -527,27 +552,32 @@
       {
         "de": "Polydipsie",
         "patient": "großer Durst",
-        "uz": "kuchli chanqoq"
+        "uz": "kuchli chanqoq",
+        "ru": "сильная жажда"
       },
       {
         "de": "Polyurie",
         "patient": "viel Wasserlassen",
-        "uz": "ko‘p siyish"
+        "uz": "ko‘p siyish",
+        "ru": "обильное мочеиспускание"
       },
       {
         "de": "Nykturie",
         "patient": "nachts Wasser lassen müssen",
-        "uz": "tunda siyish"
+        "uz": "tunda siyish",
+        "ru": "ночное мочеиспускание"
       },
       {
         "de": "Parästhesien",
         "patient": "Kribbeln, Ameisenlaufen",
-        "uz": "uvishish"
+        "uz": "uvishish",
+        "ru": "онемение, покалывание"
       },
       {
         "de": "Hyperglykämie",
         "patient": "zu hoher Zucker",
-        "uz": "giperglikemiya (qand miqdori yuqori)"
+        "uz": "giperglikemiya (qand miqdori yuqori)",
+        "ru": "гипергликемия (высокий сахар)"
       }
     ],
     "simulation": {
@@ -624,27 +654,32 @@
       {
         "de": "Appendizitis",
         "patient": "Blinddarmentzündung",
-        "uz": "appenditsit"
+        "uz": "appenditsit",
+        "ru": "аппендицит"
       },
       {
         "de": "periumbilikal",
         "patient": "um den Bauchnabel herum",
-        "uz": "kindik atrofida"
+        "uz": "kindik atrofida",
+        "ru": "в области пупка"
       },
       {
         "de": "Inappetenz",
         "patient": "keinen Appetit",
-        "uz": "ishtahasizlik"
+        "uz": "ishtahasizlik",
+        "ru": "отсутствие аппетита"
       },
       {
         "de": "Loslassschmerz",
         "patient": "Schmerz, wenn man loslässt",
-        "uz": "qo‘lni tez olganda og‘riq (Blumberg)"
+        "uz": "qo‘lni tez olganda og‘riq (Blumberg)",
+        "ru": "боль при резком отпускании (Щёткин–Блюмберг)"
       },
       {
         "de": "Appendektomie",
         "patient": "Blinddarm-OP",
-        "uz": "appendektomiya"
+        "uz": "appendektomiya",
+        "ru": "аппендэктомия"
       }
     ],
     "simulation": {
@@ -720,27 +755,32 @@
       {
         "de": "Cephalgie",
         "patient": "Kopfschmerzen",
-        "uz": "bosh og‘rig‘i"
+        "uz": "bosh og‘rig‘i",
+        "ru": "головная боль"
       },
       {
         "de": "okzipital",
         "patient": "am Hinterkopf",
-        "uz": "ensa sohasida"
+        "uz": "ensa sohasida",
+        "ru": "в затылочной области"
       },
       {
         "de": "Schwankschwindel",
         "patient": "Schwindel wie auf einem Schiff",
-        "uz": "chayqaluvchi bosh aylanishi"
+        "uz": "chayqaluvchi bosh aylanishi",
+        "ru": "шаткое головокружение"
       },
       {
         "de": "Tinnitus",
         "patient": "Ohrensausen",
-        "uz": "quloq shang‘illashi"
+        "uz": "quloq shang‘illashi",
+        "ru": "шум в ушах"
       },
       {
         "de": "arterielle Hypertonie",
         "patient": "Bluthochdruck",
-        "uz": "arterial gipertenziya"
+        "uz": "arterial gipertenziya",
+        "ru": "артериальная гипертензия"
       }
     ],
     "simulation": {
@@ -817,27 +857,32 @@
       {
         "de": "Thrombose",
         "patient": "Blutgerinnsel",
-        "uz": "tromboz (qon laxtasi)"
+        "uz": "tromboz (qon laxtasi)",
+        "ru": "тромбоз (сгусток крови)"
       },
       {
         "de": "Ödem",
         "patient": "Schwellung, Wassereinlagerung",
-        "uz": "shish"
+        "uz": "shish",
+        "ru": "отёк"
       },
       {
         "de": "Varikosis",
         "patient": "Krampfadern",
-        "uz": "varikoz (venalarning kengayishi)"
+        "uz": "varikoz (venalarning kengayishi)",
+        "ru": "варикоз (расширение вен)"
       },
       {
         "de": "Lungenembolie",
         "patient": "Blutgerinnsel in der Lunge",
-        "uz": "o‘pka emboliyasi"
+        "uz": "o‘pka emboliyasi",
+        "ru": "тромбоэмболия лёгочной артерии"
       },
       {
         "de": "Antikoagulation",
         "patient": "Blutverdünnung",
-        "uz": "antikoagulyatsiya"
+        "uz": "antikoagulyatsiya",
+        "ru": "антикоагуляция"
       }
     ],
     "simulation": {
@@ -915,27 +960,32 @@
       {
         "de": "Herzinsuffizienz",
         "patient": "Herzschwäche",
-        "uz": "yurak yetishmovchiligi"
+        "uz": "yurak yetishmovchiligi",
+        "ru": "сердечная недостаточность"
       },
       {
         "de": "Orthopnoe",
         "patient": "Atemnot im Liegen",
-        "uz": "yotganda nafas qisishi (ortopnoe)"
+        "uz": "yotganda nafas qisishi (ortopnoe)",
+        "ru": "одышка в положении лёжа (ортопноэ)"
       },
       {
         "de": "Unterschenkelödeme",
         "patient": "geschwollene Beine",
-        "uz": "boldir shishlari"
+        "uz": "boldir shishlari",
+        "ru": "отёки голеней"
       },
       {
         "de": "Diuretikum",
         "patient": "Wassertablette",
-        "uz": "siydik haydovchi dori"
+        "uz": "siydik haydovchi dori",
+        "ru": "мочегонное"
       },
       {
         "de": "Nykturie",
         "patient": "nachts Wasser lassen müssen",
-        "uz": "tunda siyish"
+        "uz": "tunda siyish",
+        "ru": "ночное мочеиспускание"
       }
     ],
     "simulation": {
@@ -1016,27 +1066,32 @@
       {
         "de": "Lungenembolie",
         "patient": "Blutgerinnsel in der Lunge",
-        "uz": "o‘pka arteriyasi emboliyasi"
+        "uz": "o‘pka arteriyasi emboliyasi",
+        "ru": "тромбоэмболия лёгочной артерии"
       },
       {
         "de": "Hämoptyse",
         "patient": "Bluthusten",
-        "uz": "qon tupurish"
+        "uz": "qon tupurish",
+        "ru": "кровохарканье"
       },
       {
         "de": "Tachykardie",
         "patient": "Herzrasen",
-        "uz": "yurak urishining tezlashishi"
+        "uz": "yurak urishining tezlashishi",
+        "ru": "тахикардия"
       },
       {
         "de": "atemabhängig",
         "patient": "beim Atmen stärker",
-        "uz": "nafas bilan bog‘liq"
+        "uz": "nafas bilan bog‘liq",
+        "ru": "связанный с дыханием"
       },
       {
         "de": "Antikoagulation",
         "patient": "Blutverdünnung",
-        "uz": "qon ivishiga qarshi davo"
+        "uz": "qon ivishiga qarshi davo",
+        "ru": "антикоагулянтная терапия"
       }
     ],
     "simulation": {
@@ -1114,27 +1169,32 @@
       {
         "de": "Exazerbation",
         "patient": "Verschlechterung",
-        "uz": "kasallikning kuchayishi"
+        "uz": "kasallikning kuchayishi",
+        "ru": "обострение"
       },
       {
         "de": "Sputum",
         "patient": "Auswurf / Schleim",
-        "uz": "balg‘am"
+        "uz": "balg‘am",
+        "ru": "мокрота"
       },
       {
         "de": "Giemen",
         "patient": "Pfeifen beim Atmen",
-        "uz": "xirillash (hushtaksimon)"
+        "uz": "xirillash (hushtaksimon)",
+        "ru": "свистящие хрипы"
       },
       {
         "de": "Ruhedyspnoe",
         "patient": "Atemnot auch in Ruhe",
-        "uz": "tinch holatdagi hansirash"
+        "uz": "tinch holatdagi hansirash",
+        "ru": "одышка в покое"
       },
       {
         "de": "subfebril",
         "patient": "leicht erhöhte Temperatur",
-        "uz": "subfebril (biroz ko‘tarilgan) harorat"
+        "uz": "subfebril (biroz ko‘tarilgan) harorat",
+        "ru": "субфебрильная температура"
       }
     ],
     "simulation": {
@@ -1212,27 +1272,32 @@
       {
         "de": "Vorhofflimmern",
         "patient": "unregelmäßiger Herzschlag",
-        "uz": "bo‘lmachalar fibrillyatsiyasi"
+        "uz": "bo‘lmachalar fibrillyatsiyasi",
+        "ru": "фибрилляция предсердий"
       },
       {
         "de": "Palpitationen",
         "patient": "Herzklopfen / Herzstolpern",
-        "uz": "yurak o‘ynashi"
+        "uz": "yurak o‘ynashi",
+        "ru": "сердцебиение, перебои"
       },
       {
         "de": "Synkope",
         "patient": "Ohnmacht",
-        "uz": "hushdan ketish"
+        "uz": "hushdan ketish",
+        "ru": "обморок"
       },
       {
         "de": "Arrhythmie",
         "patient": "Herzrhythmusstörung",
-        "uz": "yurak ritmining buzilishi"
+        "uz": "yurak ritmining buzilishi",
+        "ru": "нарушение сердечного ритма"
       },
       {
         "de": "Antikoagulation",
         "patient": "Blutverdünnung",
-        "uz": "qon ivishiga qarshi davo"
+        "uz": "qon ivishiga qarshi davo",
+        "ru": "антикоагулянтная терапия"
       }
     ],
     "simulation": {
@@ -1310,27 +1375,32 @@
       {
         "de": "Pankreatitis",
         "patient": "Entzündung der Bauchspeicheldrüse",
-        "uz": "pankreatit (oshqozon osti bezi yallig‘lanishi)"
+        "uz": "pankreatit (oshqozon osti bezi yallig‘lanishi)",
+        "ru": "панкреатит (воспаление поджелудочной железы)"
       },
       {
         "de": "Epigastrium",
         "patient": "Oberbauch / Magengegend",
-        "uz": "epigastriy (qorin yuqori qismi)"
+        "uz": "epigastriy (qorin yuqori qismi)",
+        "ru": "эпигастрий (верхняя часть живота)"
       },
       {
         "de": "Emesis",
         "patient": "Erbrechen",
-        "uz": "qusish"
+        "uz": "qusish",
+        "ru": "рвота"
       },
       {
         "de": "Lipase",
         "patient": "Wert für die Bauchspeicheldrüse",
-        "uz": "lipaza"
+        "uz": "lipaza",
+        "ru": "липаза"
       },
       {
         "de": "Alkoholabusus",
         "patient": "zu viel Alkohol trinken",
-        "uz": "alkoholni suiiste’mol qilish"
+        "uz": "alkoholni suiiste’mol qilish",
+        "ru": "злоупотребление алкоголем"
       }
     ],
     "simulation": {
@@ -1406,27 +1476,32 @@
       {
         "de": "Meläna",
         "patient": "Teerstuhl / schwarzer Stuhl",
-        "uz": "melena (qora, smolasimon najas)"
+        "uz": "melena (qora, smolasimon najas)",
+        "ru": "мелена (чёрный дёгтеобразный стул)"
       },
       {
         "de": "Hämatemesis",
         "patient": "Bluterbrechen",
-        "uz": "qon qusish"
+        "uz": "qon qusish",
+        "ru": "рвота кровью"
       },
       {
         "de": "Ulcus ventriculi",
         "patient": "Magengeschwür",
-        "uz": "oshqozon yarasi"
+        "uz": "oshqozon yarasi",
+        "ru": "язва желудка"
       },
       {
         "de": "NSAR",
         "patient": "Schmerzmittel wie Ibuprofen",
-        "uz": "nosteroid yallig‘lanishga qarshi dorilar"
+        "uz": "nosteroid yallig‘lanishga qarshi dorilar",
+        "ru": "НПВС (нестероидные противовоспалительные)"
       },
       {
         "de": "Gastroskopie",
         "patient": "Magenspiegelung",
-        "uz": "gastroskopiya"
+        "uz": "gastroskopiya",
+        "ru": "гастроскопия"
       }
     ],
     "simulation": {
@@ -1506,27 +1581,32 @@
       {
         "de": "Cephalgie",
         "patient": "Kopfschmerzen",
-        "uz": "bosh og‘rig‘i"
+        "uz": "bosh og‘rig‘i",
+        "ru": "головная боль"
       },
       {
         "de": "Photophobie",
         "patient": "Lichtempfindlichkeit",
-        "uz": "yorug‘likdan bezovtalanish"
+        "uz": "yorug‘likdan bezovtalanish",
+        "ru": "светобоязнь"
       },
       {
         "de": "Phonophobie",
         "patient": "Lärmempfindlichkeit",
-        "uz": "shovqindan bezovtalanish"
+        "uz": "shovqindan bezovtalanish",
+        "ru": "звукобоязнь"
       },
       {
         "de": "Aura",
         "patient": "Sehstörung vor dem Kopfschmerz",
-        "uz": "aura (og‘riqdan oldingi ko‘rish buzilishi)"
+        "uz": "aura (og‘riqdan oldingi ko‘rish buzilishi)",
+        "ru": "аура (нарушение зрения перед болью)"
       },
       {
         "de": "hemikraniell",
         "patient": "auf einer Kopfseite",
-        "uz": "boshning bir tomonida"
+        "uz": "boshning bir tomonida",
+        "ru": "с одной стороны головы"
       }
     ],
     "simulation": {
@@ -1601,27 +1681,32 @@
       {
         "de": "Urolithiasis",
         "patient": "Nierensteine / Harnsteine",
-        "uz": "siydik-tosh kasalligi"
+        "uz": "siydik-tosh kasalligi",
+        "ru": "мочекаменная болезнь"
       },
       {
         "de": "Kolik",
         "patient": "Schmerzen, die in Wellen kommen",
-        "uz": "sanchiq (to‘lqinsimon og‘riq)"
+        "uz": "sanchiq (to‘lqinsimon og‘riq)",
+        "ru": "колика (волнообразная боль)"
       },
       {
         "de": "Makrohämaturie",
         "patient": "Blut im Urin (sichtbar)",
-        "uz": "siydikda ko‘zga ko‘rinadigan qon"
+        "uz": "siydikda ko‘zga ko‘rinadigan qon",
+        "ru": "видимая кровь в моче"
       },
       {
         "de": "Flanke",
         "patient": "Seite / Nierengegend",
-        "uz": "biqin (bel yon tomoni)"
+        "uz": "biqin (bel yon tomoni)",
+        "ru": "бок (боковая поясничная область)"
       },
       {
         "de": "Harnstau",
         "patient": "Urin staut sich",
-        "uz": "siydik dimlanishi"
+        "uz": "siydik dimlanishi",
+        "ru": "застой мочи"
       }
     ],
     "simulation": {
@@ -1701,27 +1786,32 @@
       {
         "de": "Hyperthyreose",
         "patient": "Schilddrüsenüberfunktion",
-        "uz": "gipertireoz (qalqonsimon bez giperfunksiyasi)"
+        "uz": "gipertireoz (qalqonsimon bez giperfunksiyasi)",
+        "ru": "гипертиреоз (повышенная функция щитовидной железы)"
       },
       {
         "de": "Tremor",
         "patient": "Zittern",
-        "uz": "titroq"
+        "uz": "titroq",
+        "ru": "тремор (дрожь)"
       },
       {
         "de": "Hyperhidrose",
         "patient": "starkes Schwitzen",
-        "uz": "ko‘p terlash"
+        "uz": "ko‘p terlash",
+        "ru": "повышенная потливость"
       },
       {
         "de": "Exophthalmus",
         "patient": "hervortretende Augen",
-        "uz": "ko‘zning bo‘rtib chiqishi"
+        "uz": "ko‘zning bo‘rtib chiqishi",
+        "ru": "экзофтальм (пучеглазие)"
       },
       {
         "de": "Struma",
         "patient": "vergrößerte Schilddrüse / Kropf",
-        "uz": "buqoq"
+        "uz": "buqoq",
+        "ru": "зоб"
       }
     ],
     "simulation": {
@@ -1800,27 +1890,32 @@
       {
         "de": "Ileus",
         "patient": "Darmverschluss",
-        "uz": "ichak tutilishi"
+        "uz": "ichak tutilishi",
+        "ru": "кишечная непроходимость"
       },
       {
         "de": "Meteorismus",
         "patient": "Blähungen / dicker Bauch",
-        "uz": "qorin dam bo‘lishi"
+        "uz": "qorin dam bo‘lishi",
+        "ru": "вздутие живота"
       },
       {
         "de": "Miserere",
         "patient": "Koterbrechen",
-        "uz": "najas qusish"
+        "uz": "najas qusish",
+        "ru": "каловая рвота"
       },
       {
         "de": "Adhäsionen",
         "patient": "Verwachsungen",
-        "uz": "bitishmalar"
+        "uz": "bitishmalar",
+        "ru": "спайки"
       },
       {
         "de": "Laparotomie",
         "patient": "Bauchoperation mit Schnitt",
-        "uz": "laparotomiya (qorinni ochish operatsiyasi)"
+        "uz": "laparotomiya (qorinni ochish operatsiyasi)",
+        "ru": "лапаротомия (полостная операция)"
       }
     ],
     "simulation": {
@@ -1898,27 +1993,32 @@
       {
         "de": "Anämie",
         "patient": "Blutarmut",
-        "uz": "kamqonlik"
+        "uz": "kamqonlik",
+        "ru": "анемия (малокровие)"
       },
       {
         "de": "Hypermenorrhö",
         "patient": "sehr starke Periode",
-        "uz": "kuchli hayz qon ketishi"
+        "uz": "kuchli hayz qon ketishi",
+        "ru": "обильные менструации"
       },
       {
         "de": "Ferritin",
         "patient": "Eisenspeicher-Wert",
-        "uz": "ferritin (temir zaxirasi)"
+        "uz": "ferritin (temir zaxirasi)",
+        "ru": "ферритин (запасы железа)"
       },
       {
         "de": "Abgeschlagenheit",
         "patient": "Müdigkeit / Schlappheit",
-        "uz": "holsizlik"
+        "uz": "holsizlik",
+        "ru": "слабость, разбитость"
       },
       {
         "de": "Blässe",
         "patient": "blasse Haut",
-        "uz": "rangparlik"
+        "uz": "rangparlik",
+        "ru": "бледность"
       }
     ],
     "simulation": {

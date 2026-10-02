@@ -6,6 +6,7 @@ import { cases, getCase } from "../data/index";
 import { evaluateAnamnese } from "../lib/evaluation";
 import { useRouter, useSearchParams } from "../lib/router";
 import { useApp } from "../state/AppContext";
+import { tr } from "../lib/i18n";
 
 function SimulationView() {
   let e = useSearchParams(),
@@ -41,14 +42,17 @@ function SimulationView() {
     <div className="page">
       <PageHeader
         eyebrow="Patienten-Simulation"
-        title="Bemor bilan anamnez"
-        subtitle="Siz — Arzt, virtual bemor — Patient. Bemor hamma narsani biladi, lekin faqat siz so‘ragan narsani aytadi."
+        title={tr("Bemor bilan anamnez", "Сбор анамнеза у пациента")}
+        subtitle={tr(
+          "Siz — Arzt, virtual bemor — Patient. Bemor hamma narsani biladi, lekin faqat siz so‘ragan narsani aytadi.",
+          "Вы — Arzt, виртуальный пациент — Patient. Пациент знает всё, но отвечает только на то, что вы спросили.",
+        )}
       >
         <select
           className="input w-auto min-w-[240px]"
           value={i.id}
           onChange={(g) => t.replace(`/simulation?case=${g.target.value}`)}
-          aria-label="Fall tanlash"
+          aria-label={tr("Fall tanlash", "Выбор кейса")}
         >
           {cases.map((g) => (
             <option key={g.id} value={g.id}>
@@ -64,26 +68,40 @@ function SimulationView() {
           <PatientChat caseData={i} messages={l} onMessages={s} />
           <aside className="space-y-4">
             <div className="card">
-              <h2 className="section-title">Vazifa</h2>
+              <h2 className="section-title">{tr("Vazifa", "Задание")}</h2>
               <ol className="list-decimal space-y-1.5 pl-4 text-sm">
-                <li>O‘zingizni tanishtiring.</li>
-                <li>Tizimli anamnez oling (12 mavzu).</li>
-                <li>Bemor bilan sodda tilda gaplashing.</li>
-                <li>Oxirida Fachsprache’da qisqa xulosa yozing.</li>
+                <li>{tr("O‘zingizni tanishtiring.", "Представьтесь.")}</li>
+                <li>
+                  {tr("Tizimli anamnez oling (12 mavzu).", "Соберите анамнез систематически (12 тем).")}
+                </li>
+                <li>{tr("Bemor bilan sodda tilda gaplashing.", "Говорите с пациентом простым языком.")}</li>
+                <li>
+                  {tr(
+                    "Oxirida Fachsprache’da qisqa xulosa yozing.",
+                    "В конце напишите краткое резюме на Fachsprache.",
+                  )}
+                </li>
               </ol>
             </div>
             <button className="btn-primary w-full" disabled={D < 1} onClick={() => c("summary")}>
-              Anamnezni yakunlash →
+              {tr("Anamnezni yakunlash →", "Завершить анамнез →")}
             </button>
-            {D < 1 && <p className="text-xs muted">Kamida bitta savol bering.</p>}
+            {D < 1 && (
+              <p className="text-xs muted">
+                {tr("Kamida bitta savol bering.", "Задайте хотя бы один вопрос.")}
+              </p>
+            )}
           </aside>
         </div>
       )}
       {r === "summary" && (
         <div className="card mx-auto max-w-3xl">
-          <h2 className="text-lg font-semibold">Fachsprache xulosasi</h2>
+          <h2 className="text-lg font-semibold">{tr("Fachsprache xulosasi", "Резюме на Fachsprache")}</h2>
           <p className="mt-1 text-sm muted">
-            Yig‘ilgan anamnezni 3–5 gapda Fachsprache’da yozing (ixtiyoriy, lekin tavsiya etiladi).
+            {tr(
+              "Yig‘ilgan anamnezni 3–5 gapda Fachsprache’da yozing (ixtiyoriy, lekin tavsiya etiladi).",
+              "Изложите собранный анамнез в 3–5 предложениях на Fachsprache (необязательно, но рекомендуется).",
+            )}
           </p>
           <textarea
             className="input mt-4 min-h-[180px]"
@@ -94,12 +112,12 @@ function SimulationView() {
           />
           <div className="mt-4 flex flex-wrap items-center justify-between gap-3">
             <button className="btn-ghost" onClick={() => c("chat")}>
-              ← Suhbatga qaytish
+              ← {tr("Suhbatga qaytish", "Вернуться к беседе")}
             </button>
             <div className="flex items-center gap-3">
               {y && <Spinner />}
               <button className="btn-primary" onClick={w} disabled={y}>
-                Baholash
+                {tr("Baholash", "Оценить")}
               </button>
             </div>
           </div>
@@ -129,16 +147,16 @@ function SimulationView() {
                   (s([]), b(""), A(null), c("chat"));
                 }}
               >
-                Qaytadan urinish
+                {tr("Qaytadan urinish", "Попробовать снова")}
               </button>
               <Link href={`/faelle/${i.id}`} className="btn-outline">
-                Fall tafsilotlari
+                {tr("Fall tafsilotlari", "Подробности кейса")}
               </Link>
             </div>
             <Disclaimer />
           </div>
           <div className="card">
-            <h2 className="mb-4 text-lg font-semibold">Batafsil tahlil</h2>
+            <h2 className="mb-4 text-lg font-semibold">{tr("Batafsil tahlil", "Подробный разбор")}</h2>
             <FeedbackList items={p.feedback} />
           </div>
         </div>
@@ -152,7 +170,7 @@ export function SimulationPage() {
     <Suspense
       fallback={
         <div className="page">
-          <Spinner label="Yuklanmoqda…" />
+          <Spinner label={tr("Yuklanmoqda…", "Загрузка…")} />
         </div>
       }
     >

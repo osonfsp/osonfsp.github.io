@@ -1,5 +1,6 @@
 import { useSyncExternalStore } from "react";
 import { storage } from "./storage";
+import { tr } from "./i18n";
 
 // Bepul rejim: birinchi kirishdan boshlab TRIAL_HOURS soat davomida barcha materiallar ochiq,
 // Prüfung simulyatsiyasi esa FREE_LIMITS bo‘yicha. Haftalik/oylik tarif faol bo‘lsa — hammasi cheklovsiz.
@@ -7,12 +8,12 @@ export const TRIAL_HOURS = 24;
 export const FREE_LIMITS = { exam: 1 };
 
 export const PRACTICE = {
-  exam: "Prüfung simulyatsiyasi",
+  exam: tr("Prüfung simulyatsiyasi", "Пробный экзамен"),
 };
 
 export const PLANS = [
-  { id: "week", name: "1 haftalik", price: "$9", days: 7 },
-  { id: "month", name: "1 oylik", price: "$15", days: 30 },
+  { id: "week", name: tr("1 haftalik", "1 неделя"), price: "$9", days: 7 },
+  { id: "month", name: tr("1 oylik", "1 месяц"), price: "$15", days: 30 },
 ];
 
 const USAGE_KEY = "fsp.usage",

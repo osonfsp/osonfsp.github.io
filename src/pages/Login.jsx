@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "../lib/router";
 import { useApp } from "../state/AppContext";
+import { tr } from "../lib/i18n";
 
 export function LoginPage() {
   let { user: e, ready: t, login: a } = useApp(),
@@ -14,8 +15,13 @@ export function LoginPage() {
     (
       <div className="page flex justify-center">
         <div className="card w-full max-w-md">
-          <h1 className="text-2xl font-bold">Kirish</h1>
-          <p className="mt-1 text-sm muted">Demo rejim: ma’lumotlar faqat shu brauzerda saqlanadi.</p>
+          <h1 className="text-2xl font-bold">{tr("Kirish", "Вход")}</h1>
+          <p className="mt-1 text-sm muted">
+            {tr(
+              "Demo rejim: ma’lumotlar faqat shu brauzerda saqlanadi.",
+              "Демо-режим: данные хранятся только в этом браузере.",
+            )}
+          </p>
           <form
             className="mt-6 space-y-4"
             onSubmit={(c) => {
@@ -29,7 +35,7 @@ export function LoginPage() {
           >
             <div>
               <label className="label" htmlFor="name">
-                Ism
+                {tr("Ism", "Имя")}
               </label>
               <input
                 id="name"
@@ -55,7 +61,7 @@ export function LoginPage() {
               />
             </div>
             <button className="btn-primary w-full" type="submit">
-              Davom etish
+              {tr("Davom etish", "Продолжить")}
             </button>
           </form>
         </div>

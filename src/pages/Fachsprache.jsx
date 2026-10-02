@@ -4,6 +4,7 @@ import { pairs } from "../data/index";
 import { cx, shuffle } from "../lib/utils";
 import { useApp } from "../state/AppContext";
 import { Speak } from "../components/Speak";
+import { loc, tr } from "../lib/i18n";
 
 function FlipCard({ p: e, known: t, onToggle: a }) {
   let [n, i] = useState(false);
@@ -16,7 +17,7 @@ function FlipCard({ p: e, known: t, onToggle: a }) {
             t && "border-emerald-300 dark:border-emerald-900",
           )}
           onClick={() => i(true)}
-          aria-label={`${e.fach} — aylantirish`}
+          aria-label={`${e.fach} — ${tr("aylantirish", "перевернуть")}`}
         >
           <span className="text-[11px] font-semibold uppercase tracking-wider text-teal-600 dark:text-teal-400">
             Fachsprache
@@ -26,7 +27,7 @@ function FlipCard({ p: e, known: t, onToggle: a }) {
             <Speak text={e.fach} />
           </span>
           <span className="mt-2 text-xs muted">{e.fachSatz}</span>
-          <span className="mt-4 text-xs muted">Bosing → Patientensprache</span>
+          <span className="mt-4 text-xs muted">{tr("Bosing", "Нажмите")} → Patientensprache</span>
         </button>
         <div className="flip-face flip-back card absolute inset-0 flex flex-col justify-between bg-teal-50 dark:bg-teal-950/40">
           <div>
@@ -39,7 +40,7 @@ function FlipCard({ p: e, known: t, onToggle: a }) {
             </p>
             <p className="mt-1 text-sm muted">
               {"\uD83C\uDDFA\uD83C\uDDFF "}
-              {e.uz}
+              {loc(e)}
             </p>
             <p className="mt-2 flex items-start gap-1 text-sm italic">
               <span>„{e.patientSatz}“</span>
@@ -48,10 +49,10 @@ function FlipCard({ p: e, known: t, onToggle: a }) {
           </div>
           <div className="flex gap-2">
             <button className="btn-ghost flex-1 text-xs" onClick={() => i(false)}>
-              ↺ Orqaga
+              ↺ {tr("Orqaga", "Назад")}
             </button>
             <button className={cx("flex-1", t ? "chip-on" : "chip-off")} onClick={a}>
-              {t ? "✓ Bilaman" : "Bilaman"}
+              {t ? tr("✓ Bilaman", "✓ Знаю") : tr("Bilaman", "Знаю")}
             </button>
           </div>
         </div>
@@ -86,7 +87,9 @@ function PairQuiz() {
   return (
     <div className="card mx-auto max-w-xl">
       <div className="flex items-center justify-between text-sm">
-        <span className="muted">Fachbegriff’ni bemor tiliga o‘giring</span>
+        <span className="muted">
+          {tr("Fachbegriff’ni bemor tiliga o‘giring", "Переведите Fachbegriff на язык пациента")}
+        </span>
         <span className="font-semibold tabular-nums">
           {l.right}/{l.total}
         </span>
@@ -118,10 +121,12 @@ function PairQuiz() {
       {n && (
         <div className="mt-5 flex items-center justify-between gap-3">
           <p className="text-sm">
-            {n === t.correct.id ? "✅ To‘g‘ri!" : `❌ To‘g‘ri javob: ${t.correct.patient}`}{" "}
+            {n === t.correct.id
+              ? tr("✅ To‘g‘ri!", "✅ Верно!")
+              : `❌ ${tr("To‘g‘ri javob", "Правильный ответ")}: ${t.correct.patient}`}{" "}
             <span className="muted">
               {"· "}
-              {t.correct.uz}
+              {loc(t.correct)}
             </span>
           </p>
           <button
@@ -130,7 +135,7 @@ function PairQuiz() {
               (a(e()), i(null));
             }}
           >
-            Keyingi →
+            {tr("Keyingi →", "Дальше →")}
           </button>
         </div>
       )}
@@ -146,11 +151,14 @@ export function FachsprachePage() {
     <div className="page">
       <PageHeader
         eyebrow="Fachsprache → Patientensprache"
-        title="Ikki tilda gapirishni o‘rganing"
-        subtitle="FSP’da bemor bilan sodda tilda, hamkasb bilan Fachsprache’da gaplashish kerak. Kartochkani bosib aylantiring."
+        title={tr("Ikki tilda gapirishni o‘rganing", "Учитесь говорить на двух регистрах")}
+        subtitle={tr(
+          "FSP’da bemor bilan sodda tilda, hamkasb bilan Fachsprache’da gaplashish kerak. Kartochkani bosib aylantiring.",
+          "На FSP с пациентом нужно говорить простым языком, а с коллегой — на Fachsprache. Нажмите на карточку, чтобы перевернуть её.",
+        )}
       >
         <button className={a === "cards" ? "chip-on" : "chip-off"} onClick={() => n("cards")}>
-          🗂 Kartochkalar
+          🗂 {tr("Kartochkalar", "Карточки")}
         </button>
         <button className={a === "quiz" ? "chip-on" : "chip-off"} onClick={() => n("quiz")}>
           🎯 Test
@@ -161,7 +169,7 @@ export function FachsprachePage() {
           <div className="card mb-5">
             <div className="mb-2 flex justify-between text-sm">
               <span>
-                {"Bilaman: "}
+                {tr("Bilaman: ", "Знаю: ")}
                 <b>{i}</b>
                 {" / "}
                 {pairs.length}

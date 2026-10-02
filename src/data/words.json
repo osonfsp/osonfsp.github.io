@@ -4,6 +4,7 @@
     "de": "die Dyspnoe",
     "patient": "Atemnot, schlecht Luft bekommen",
     "uz": "nafas qisishi",
+    "ru": "одышка",
     "example": "Der Patient klagt über Belastungsdyspnoe.",
     "category": "Symptome"
   },
@@ -12,6 +13,7 @@
     "de": "die Cephalgie",
     "patient": "Kopfschmerzen",
     "uz": "bosh og‘rig‘i",
+    "ru": "головная боль",
     "example": "Die Patientin berichtet über seit drei Tagen bestehende Cephalgien.",
     "category": "Symptome"
   },
@@ -20,6 +22,7 @@
     "de": "die Nausea",
     "patient": "Übelkeit, mir ist schlecht",
     "uz": "ko‘ngil aynishi",
+    "ru": "тошнота",
     "example": "Es bestehen Nausea und Inappetenz.",
     "category": "Symptome"
   },
@@ -28,6 +31,7 @@
     "de": "die Emesis",
     "patient": "Erbrechen, sich übergeben",
     "uz": "qusish",
+    "ru": "рвота",
     "example": "Es kam zu zweimaliger Emesis.",
     "category": "Symptome"
   },
@@ -36,6 +40,7 @@
     "de": "die Diarrhö",
     "patient": "Durchfall",
     "uz": "ich ketishi (diareya)",
+    "ru": "диарея (понос)",
     "example": "Seit gestern besteht wässrige Diarrhö.",
     "category": "Symptome"
   },
@@ -44,6 +49,7 @@
     "de": "die Obstipation",
     "patient": "Verstopfung",
     "uz": "qabziyat",
+    "ru": "запор",
     "example": "Die Patientin leidet unter chronischer Obstipation.",
     "category": "Symptome"
   },
@@ -52,6 +58,7 @@
     "de": "der Vertigo",
     "patient": "Schwindel, mir ist schwindelig",
     "uz": "bosh aylanishi",
+    "ru": "головокружение",
     "example": "Der Patient gibt einen Drehschwindel (Vertigo) an.",
     "category": "Symptome"
   },
@@ -60,6 +67,7 @@
     "de": "die Synkope",
     "patient": "Ohnmacht, kurz bewusstlos sein",
     "uz": "hushdan ketish",
+    "ru": "обморок",
     "example": "Es kam zu einer kurzen Synkope.",
     "category": "Symptome"
   },
@@ -68,6 +76,7 @@
     "de": "die Palpitationen",
     "patient": "Herzklopfen, Herzrasen",
     "uz": "yurak urib ketishi",
+    "ru": "сердцебиение",
     "example": "Die Patientin berichtet über Palpitationen.",
     "category": "Symptome"
   },
@@ -76,6 +85,7 @@
     "de": "die Thoraxschmerzen",
     "patient": "Brustschmerzen",
     "uz": "ko‘krak qafasidagi og‘riq",
+    "ru": "боль в грудной клетке",
     "example": "Der Patient klagt über retrosternale Thoraxschmerzen.",
     "category": "Symptome"
   },
@@ -84,6 +94,7 @@
     "de": "das Fieber",
     "patient": "Fieber, hohe Temperatur",
     "uz": "isitma",
+    "ru": "лихорадка (жар)",
     "example": "Seit zwei Tagen besteht Fieber bis 39 °C.",
     "category": "Symptome"
   },
@@ -92,6 +103,7 @@
     "de": "der Pruritus",
     "patient": "Juckreiz, es juckt",
     "uz": "qichishish",
+    "ru": "зуд",
     "example": "Die Patientin klagt über generalisierten Pruritus.",
     "category": "Symptome"
   },
@@ -100,6 +112,7 @@
     "de": "die Dysurie",
     "patient": "Brennen beim Wasserlassen",
     "uz": "siyishda achishish",
+    "ru": "жжение при мочеиспускании",
     "example": "Es bestehen Dysurie und Pollakisurie.",
     "category": "Symptome"
   },
@@ -108,6 +121,7 @@
     "de": "die Polyurie",
     "patient": "viel Wasserlassen",
     "uz": "ko‘p siyish",
+    "ru": "обильное мочеиспускание",
     "example": "Der Patient berichtet über Polyurie und Polydipsie.",
     "category": "Symptome"
   },
@@ -116,6 +130,7 @@
     "de": "die Polydipsie",
     "patient": "großer Durst, viel trinken",
     "uz": "kuchli chanqoq",
+    "ru": "сильная жажда",
     "example": "Seit Wochen besteht eine Polydipsie.",
     "category": "Symptome"
   },
@@ -124,6 +139,7 @@
     "de": "die Hämoptyse",
     "patient": "Bluthusten, Blut abhusten",
     "uz": "qon tupurish",
+    "ru": "кровохарканье",
     "example": "Hämoptysen werden verneint.",
     "category": "Symptome"
   },
@@ -132,6 +148,7 @@
     "de": "die Inappetenz",
     "patient": "Appetitlosigkeit, keinen Hunger",
     "uz": "ishtahasizlik",
+    "ru": "отсутствие аппетита",
     "example": "Seit gestern besteht eine Inappetenz.",
     "category": "Symptome"
   },
@@ -140,6 +157,7 @@
     "de": "der Tremor",
     "patient": "Zittern",
     "uz": "titrash",
+    "ru": "тремор (дрожь)",
     "example": "Es zeigt sich ein feinschlägiger Tremor beider Hände.",
     "category": "Symptome"
   },
@@ -148,6 +166,7 @@
     "de": "die Ödeme",
     "patient": "Wassereinlagerungen, geschwollene Beine",
     "uz": "shishlar",
+    "ru": "отёки",
     "example": "Es zeigen sich beidseitige prätibiale Ödeme.",
     "category": "Symptome"
   },
@@ -156,6 +175,7 @@
     "de": "die Parästhesie",
     "patient": "Kribbeln, Ameisenlaufen",
     "uz": "uvishish",
+    "ru": "онемение, покалывание",
     "example": "Der Patient berichtet über Parästhesien beider Füße.",
     "category": "Symptome"
   },
@@ -164,6 +184,7 @@
     "de": "die arterielle Hypertonie",
     "patient": "Bluthochdruck",
     "uz": "arterial gipertenziya",
+    "ru": "артериальная гипертензия",
     "example": "Eine arterielle Hypertonie ist seit zehn Jahren bekannt.",
     "category": "Krankheiten"
   },
@@ -172,6 +193,7 @@
     "de": "der Diabetes mellitus",
     "patient": "Zuckerkrankheit, Zucker",
     "uz": "qandli diabet",
+    "ru": "сахарный диабет",
     "example": "Es besteht ein Diabetes mellitus Typ 2.",
     "category": "Krankheiten"
   },
@@ -180,6 +202,7 @@
     "de": "der Myokardinfarkt",
     "patient": "Herzinfarkt",
     "uz": "miokard infarkti",
+    "ru": "инфаркт миокарда",
     "example": "Der Vater verstarb an einem Myokardinfarkt.",
     "category": "Krankheiten"
   },
@@ -188,6 +211,7 @@
     "de": "der Apoplex",
     "patient": "Schlaganfall",
     "uz": "insult",
+    "ru": "инсульт",
     "example": "Die Mutter erlitt mit 75 Jahren einen Apoplex.",
     "category": "Krankheiten"
   },
@@ -196,6 +220,7 @@
     "de": "die Pneumonie",
     "patient": "Lungenentzündung",
     "uz": "zotiljam (pnevmoniya)",
+    "ru": "пневмония",
     "example": "Radiologisch zeigt sich eine Pneumonie im rechten Unterlappen.",
     "category": "Krankheiten"
   },
@@ -204,6 +229,7 @@
     "de": "die Appendizitis",
     "patient": "Blinddarmentzündung",
     "uz": "appenditsit",
+    "ru": "аппендицит",
     "example": "Es besteht der Verdacht auf eine akute Appendizitis.",
     "category": "Krankheiten"
   },
@@ -212,6 +238,7 @@
     "de": "die Cholezystitis",
     "patient": "Gallenblasenentzündung",
     "uz": "xoletsistit",
+    "ru": "холецистит",
     "example": "Sonographisch zeigt sich eine akute Cholezystitis.",
     "category": "Krankheiten"
   },
@@ -220,6 +247,7 @@
     "de": "die Cholezystolithiasis",
     "patient": "Gallensteine",
     "uz": "o‘t pufagi tosh kasalligi",
+    "ru": "желчнокаменная болезнь",
     "example": "Eine Cholezystolithiasis ist vorbekannt.",
     "category": "Krankheiten"
   },
@@ -228,6 +256,7 @@
     "de": "die Pyelonephritis",
     "patient": "Nierenbeckenentzündung",
     "uz": "pielonefrit",
+    "ru": "пиелонефрит",
     "example": "Klinisch besteht der Verdacht auf eine Pyelonephritis.",
     "category": "Krankheiten"
   },
@@ -236,6 +265,7 @@
     "de": "die Herzinsuffizienz",
     "patient": "Herzschwäche",
     "uz": "yurak yetishmovchiligi",
+    "ru": "сердечная недостаточность",
     "example": "Es liegt eine dekompensierte Herzinsuffizienz vor.",
     "category": "Krankheiten"
   },
@@ -244,6 +274,7 @@
     "de": "die tiefe Venenthrombose",
     "patient": "Blutgerinnsel im Bein",
     "uz": "chuqur vena trombozi",
+    "ru": "тромбоз глубоких вен",
     "example": "Sonographisch wurde eine tiefe Venenthrombose bestätigt.",
     "category": "Krankheiten"
   },
@@ -252,6 +283,7 @@
     "de": "die Lungenembolie",
     "patient": "Blutgerinnsel in der Lunge",
     "uz": "o‘pka arteriyasi emboliyasi",
+    "ru": "тромбоэмболия лёгочной артерии",
     "example": "Eine Lungenembolie muss ausgeschlossen werden.",
     "category": "Krankheiten"
   },
@@ -260,6 +292,7 @@
     "de": "das Asthma bronchiale",
     "patient": "Asthma",
     "uz": "bronxial astma",
+    "ru": "бронхиальная астма",
     "example": "Seit der Kindheit besteht ein Asthma bronchiale.",
     "category": "Krankheiten"
   },
@@ -268,6 +301,7 @@
     "de": "die Gastritis",
     "patient": "Magenschleimhautentzündung",
     "uz": "gastrit",
+    "ru": "гастрит",
     "example": "Gastroskopisch zeigt sich eine Gastritis.",
     "category": "Krankheiten"
   },
@@ -276,6 +310,7 @@
     "de": "die COPD",
     "patient": "Raucherlunge",
     "uz": "o‘pkaning surunkali obstruktiv kasalligi",
+    "ru": "хроническая обструктивная болезнь лёгких (ХОБЛ)",
     "example": "Bei bekannter COPD besteht eine Exazerbation.",
     "category": "Krankheiten"
   },
@@ -284,6 +319,7 @@
     "de": "die Hypothyreose",
     "patient": "Schilddrüsenunterfunktion",
     "uz": "gipotireoz",
+    "ru": "гипотиреоз",
     "example": "Die Hypothyreose wird mit L-Thyroxin behandelt.",
     "category": "Krankheiten"
   },
@@ -292,6 +328,7 @@
     "de": "die Hyperthyreose",
     "patient": "Schilddrüsenüberfunktion",
     "uz": "gipertireoz",
+    "ru": "гипертиреоз",
     "example": "Laborchemisch zeigt sich eine Hyperthyreose.",
     "category": "Krankheiten"
   },
@@ -300,6 +337,7 @@
     "de": "die Nephrolithiasis",
     "patient": "Nierensteine",
     "uz": "buyrak tosh kasalligi",
+    "ru": "мочекаменная болезнь (нефролитиаз)",
     "example": "Eine Nephrolithiasis ist anamnestisch bekannt.",
     "category": "Krankheiten"
   },
@@ -308,6 +346,7 @@
     "de": "die Auskultation",
     "patient": "Abhören",
     "uz": "auskultatsiya (eshitib tekshirish)",
+    "ru": "аускультация (выслушивание)",
     "example": "Auskultatorisch zeigen sich feuchte Rasselgeräusche.",
     "category": "Untersuchungen"
   },
@@ -316,6 +355,7 @@
     "de": "die Palpation",
     "patient": "Abtasten",
     "uz": "palpatsiya (paypaslab tekshirish)",
+    "ru": "пальпация (ощупывание)",
     "example": "Bei der Palpation besteht ein Druckschmerz im rechten Unterbauch.",
     "category": "Untersuchungen"
   },
@@ -324,6 +364,7 @@
     "de": "die Perkussion",
     "patient": "Abklopfen",
     "uz": "perkussiya (urib tekshirish)",
+    "ru": "перкуссия (выстукивание)",
     "example": "Perkutorisch zeigt sich eine Dämpfung rechts basal.",
     "category": "Untersuchungen"
   },
@@ -332,6 +373,7 @@
     "de": "die Inspektion",
     "patient": "Anschauen",
     "uz": "ko‘zdan kechirish",
+    "ru": "осмотр",
     "example": "Inspektorisch zeigt sich eine Rötung des Unterschenkels.",
     "category": "Untersuchungen"
   },
@@ -340,6 +382,7 @@
     "de": "die Blutdruckmessung",
     "patient": "Blutdruck messen",
     "uz": "qon bosimini o‘lchash",
+    "ru": "измерение артериального давления",
     "example": "Die Blutdruckmessung ergab 175/100 mmHg.",
     "category": "Untersuchungen"
   },
@@ -348,6 +391,7 @@
     "de": "die körperliche Untersuchung",
     "patient": "den Körper untersuchen",
     "uz": "fizikal tekshiruv",
+    "ru": "физикальное обследование",
     "example": "In der körperlichen Untersuchung zeigt sich ein reduzierter Allgemeinzustand.",
     "category": "Untersuchungen"
   },
@@ -356,6 +400,7 @@
     "de": "die Pulsoxymetrie",
     "patient": "Sauerstoff im Blut messen (Fingerclip)",
     "uz": "pulsoksimetriya",
+    "ru": "пульсоксиметрия",
     "example": "Die Pulsoxymetrie zeigt eine Sättigung von 89 %.",
     "category": "Untersuchungen"
   },
@@ -364,6 +409,7 @@
     "de": "die Blutentnahme",
     "patient": "Blut abnehmen",
     "uz": "qon olish",
+    "ru": "забор крови",
     "example": "Es erfolgte eine Blutentnahme.",
     "category": "Untersuchungen"
   },
@@ -372,6 +418,7 @@
     "de": "der neurologische Status",
     "patient": "Nerven und Reflexe prüfen",
     "uz": "nevrologik status",
+    "ru": "неврологический статус",
     "example": "Im neurologischen Status zeigt sich eine Hemiparese rechts.",
     "category": "Untersuchungen"
   },
@@ -380,6 +427,7 @@
     "de": "die digital-rektale Untersuchung",
     "patient": "Untersuchung des Enddarms mit dem Finger",
     "uz": "barmoq bilan rektal tekshiruv",
+    "ru": "пальцевое ректальное исследование",
     "example": "Die digital-rektale Untersuchung war unauffällig.",
     "category": "Untersuchungen"
   },
@@ -388,6 +436,7 @@
     "de": "der Urinstatus",
     "patient": "Urin untersuchen",
     "uz": "siydik tahlili",
+    "ru": "анализ мочи",
     "example": "Im Urinstatus zeigen sich Leukozyten und Nitrit.",
     "category": "Untersuchungen"
   },
@@ -396,6 +445,7 @@
     "de": "die Vitalparameter",
     "patient": "Puls, Blutdruck, Temperatur",
     "uz": "hayotiy ko‘rsatkichlar",
+    "ru": "жизненные показатели",
     "example": "Die Vitalparameter waren stabil.",
     "category": "Untersuchungen"
   },
@@ -404,6 +454,7 @@
     "de": "das Analgetikum",
     "patient": "Schmerzmittel",
     "uz": "og‘riq qoldiruvchi dori",
+    "ru": "обезболивающее",
     "example": "Der Patient erhielt ein Analgetikum.",
     "category": "Medikamente"
   },
@@ -412,6 +463,7 @@
     "de": "das Antibiotikum",
     "patient": "Mittel gegen Bakterien",
     "uz": "antibiotik",
+    "ru": "антибиотик",
     "example": "Es wurde eine antibiotische Therapie eingeleitet.",
     "category": "Medikamente"
   },
@@ -420,6 +472,7 @@
     "de": "das Antihypertensivum",
     "patient": "Blutdrucksenker, Blutdrucktablette",
     "uz": "qon bosimini tushiruvchi dori",
+    "ru": "антигипертензивное средство",
     "example": "Die antihypertensive Therapie wurde angepasst.",
     "category": "Medikamente"
   },
@@ -428,6 +481,7 @@
     "de": "das Antikoagulans",
     "patient": "Blutverdünner",
     "uz": "qon suyultiruvchi dori (antikoagulyant)",
+    "ru": "антикоагулянт (разжижает кровь)",
     "example": "Die Patientin nimmt ein orales Antikoagulans ein.",
     "category": "Medikamente"
   },
@@ -436,6 +490,7 @@
     "de": "das Antipyretikum",
     "patient": "fiebersenkendes Mittel",
     "uz": "isitma tushiruvchi dori",
+    "ru": "жаропонижающее",
     "example": "Paracetamol wurde als Antipyretikum verabreicht.",
     "category": "Medikamente"
   },
@@ -444,6 +499,7 @@
     "de": "das Diuretikum",
     "patient": "Wassertablette",
     "uz": "siydik haydovchi dori",
+    "ru": "мочегонное (диуретик)",
     "example": "Das Diuretikum wurde eigenmächtig abgesetzt.",
     "category": "Medikamente"
   },
@@ -452,6 +508,7 @@
     "de": "das Antiemetikum",
     "patient": "Mittel gegen Übelkeit",
     "uz": "qusishga qarshi dori",
+    "ru": "противорвотное",
     "example": "Gegen die Nausea erhielt die Patientin ein Antiemetikum.",
     "category": "Medikamente"
   },
@@ -460,6 +517,7 @@
     "de": "der Protonenpumpenhemmer",
     "patient": "Magenschutz",
     "uz": "proton pompa ingibitori",
+    "ru": "ингибитор протонной помпы",
     "example": "Ein Protonenpumpenhemmer wurde verordnet.",
     "category": "Medikamente"
   },
@@ -468,6 +526,7 @@
     "de": "das Insulin",
     "patient": "Insulin, Zuckerspritze",
     "uz": "insulin",
+    "ru": "инсулин",
     "example": "Es wurde eine Basalinsulintherapie begonnen.",
     "category": "Medikamente"
   },
@@ -476,6 +535,7 @@
     "de": "das Metformin",
     "patient": "Zuckertablette",
     "uz": "metformin (qand tushiruvchi tabletka)",
+    "ru": "метформин (сахароснижающая таблетка)",
     "example": "Metformin wurde einschleichend dosiert.",
     "category": "Medikamente"
   },
@@ -484,6 +544,7 @@
     "de": "der Betablocker",
     "patient": "Tablette, die den Puls senkt",
     "uz": "beta-blokator",
+    "ru": "бета-блокатор",
     "example": "Der Patient nimmt einen Betablocker ein.",
     "category": "Medikamente"
   },
@@ -492,6 +553,7 @@
     "de": "die Acetylsalicylsäure (ASS)",
     "patient": "Aspirin",
     "uz": "atsetilsalitsil kislota (aspirin)",
+    "ru": "ацетилсалициловая кислота (аспирин)",
     "example": "Präklinisch wurden 250 mg ASS i. v. verabreicht.",
     "category": "Medikamente"
   },
@@ -500,6 +562,7 @@
     "de": "das Statin",
     "patient": "Cholesterinsenker",
     "uz": "statin (xolesterin tushiruvchi)",
+    "ru": "статин (снижает холестерин)",
     "example": "Die Statintherapie sollte fortgeführt werden.",
     "category": "Medikamente"
   },
@@ -508,6 +571,7 @@
     "de": "das Abdomen",
     "patient": "Bauch",
     "uz": "qorin",
+    "ru": "живот",
     "example": "Das Abdomen ist weich, ohne Druckschmerz.",
     "category": "Körperteile"
   },
@@ -516,6 +580,7 @@
     "de": "der Thorax",
     "patient": "Brustkorb",
     "uz": "ko‘krak qafasi",
+    "ru": "грудная клетка",
     "example": "Der Thorax ist symmetrisch.",
     "category": "Körperteile"
   },
@@ -524,6 +589,7 @@
     "de": "das Sternum",
     "patient": "Brustbein",
     "uz": "to‘sh suyagi",
+    "ru": "грудина",
     "example": "Die Schmerzen werden retrosternal angegeben.",
     "category": "Körperteile"
   },
@@ -532,6 +598,7 @@
     "de": "die Extremitäten",
     "patient": "Arme und Beine",
     "uz": "qo‘l-oyoqlar",
+    "ru": "конечности",
     "example": "An den unteren Extremitäten zeigen sich Ödeme.",
     "category": "Körperteile"
   },
@@ -540,6 +607,7 @@
     "de": "die Leiste",
     "patient": "Leiste",
     "uz": "chov sohasi",
+    "ru": "паховая область",
     "example": "In der rechten Leiste tastet sich eine Schwellung.",
     "category": "Körperteile"
   },
@@ -548,6 +616,7 @@
     "de": "die Flanke",
     "patient": "Seite, Nierengegend",
     "uz": "biqin",
+    "ru": "бок (поясничная область)",
     "example": "Es besteht ein Klopfschmerz der linken Flanke.",
     "category": "Körperteile"
   },
@@ -556,6 +625,7 @@
     "de": "das Epigastrium",
     "patient": "Magengegend, Oberbauch",
     "uz": "to‘sh osti (epigastral) soha",
+    "ru": "эпигастральная область",
     "example": "Die Schmerzen sind im Epigastrium lokalisiert.",
     "category": "Körperteile"
   },
@@ -564,6 +634,7 @@
     "de": "der Unterbauch",
     "patient": "unterer Bauch",
     "uz": "qorinning pastki qismi",
+    "ru": "нижняя часть живота",
     "example": "Es besteht ein Druckschmerz im rechten Unterbauch.",
     "category": "Körperteile"
   },
@@ -572,6 +643,7 @@
     "de": "die Wirbelsäule",
     "patient": "Rücken, Rückgrat",
     "uz": "umurtqa pog‘onasi",
+    "ru": "позвоночник",
     "example": "Die Wirbelsäule ist nicht klopfschmerzhaft.",
     "category": "Körperteile"
   },
@@ -580,6 +652,7 @@
     "de": "das Cor",
     "patient": "Herz",
     "uz": "yurak",
+    "ru": "сердце",
     "example": "Cor: Herztöne rein, rhythmisch.",
     "category": "Körperteile"
   },
@@ -588,6 +661,7 @@
     "de": "die Pulmo",
     "patient": "Lunge",
     "uz": "o‘pka",
+    "ru": "лёгкое",
     "example": "Pulmo: vesikuläres Atemgeräusch beidseits.",
     "category": "Körperteile"
   },
@@ -596,6 +670,7 @@
     "de": "das Hepar",
     "patient": "Leber",
     "uz": "jigar",
+    "ru": "печень",
     "example": "Das Hepar ist nicht vergrößert tastbar.",
     "category": "Körperteile"
   },
@@ -604,6 +679,7 @@
     "de": "der Ren",
     "patient": "Niere",
     "uz": "buyrak",
+    "ru": "почка",
     "example": "Beide Renes sind sonographisch unauffällig.",
     "category": "Körperteile"
   },
@@ -612,6 +688,7 @@
     "de": "das Blutbild",
     "patient": "Blutwerte",
     "uz": "qon umumiy tahlili",
+    "ru": "общий анализ крови",
     "example": "Im Blutbild zeigt sich eine Leukozytose.",
     "category": "Labor"
   },
@@ -620,6 +697,7 @@
     "de": "die Leukozytose",
     "patient": "zu viele weiße Blutkörperchen",
     "uz": "leykotsitoz",
+    "ru": "лейкоцитоз",
     "example": "Laborchemisch besteht eine Leukozytose von 16.000/µl.",
     "category": "Labor"
   },
@@ -628,6 +706,7 @@
     "de": "das CRP",
     "patient": "Entzündungswert",
     "uz": "CRP (yallig‘lanish ko‘rsatkichi)",
+    "ru": "CRP (С-реактивный белок, маркер воспаления)",
     "example": "Das CRP ist mit 180 mg/l deutlich erhöht.",
     "category": "Labor"
   },
@@ -636,6 +715,7 @@
     "de": "das Troponin",
     "patient": "Herzwert",
     "uz": "troponin (yurak mushagi shikastlanish belgisi)",
+    "ru": "тропонин (маркер повреждения миокарда)",
     "example": "Das Troponin T war erhöht.",
     "category": "Labor"
   },
@@ -644,6 +724,7 @@
     "de": "die D-Dimere",
     "patient": "Wert für Blutgerinnsel",
     "uz": "D-dimer",
+    "ru": "D-димер",
     "example": "Die D-Dimere sind erhöht.",
     "category": "Labor"
   },
@@ -652,6 +733,7 @@
     "de": "das HbA1c",
     "patient": "Langzeitzucker",
     "uz": "HbA1c (uzoq muddatli qand ko‘rsatkichi)",
+    "ru": "HbA1c (гликированный гемоглобин)",
     "example": "Das HbA1c beträgt 10,2 %.",
     "category": "Labor"
   },
@@ -660,6 +742,7 @@
     "de": "das Kreatinin",
     "patient": "Nierenwert",
     "uz": "kreatinin (buyrak ko‘rsatkichi)",
+    "ru": "креатинин (показатель функции почек)",
     "example": "Das Kreatinin liegt im Normbereich.",
     "category": "Labor"
   },
@@ -668,6 +751,7 @@
     "de": "die Elektrolyte",
     "patient": "Salze im Blut (Natrium, Kalium)",
     "uz": "elektrolitlar",
+    "ru": "электролиты",
     "example": "Die Elektrolyte sind ausgeglichen.",
     "category": "Labor"
   },
@@ -676,6 +760,7 @@
     "de": "die Transaminasen",
     "patient": "Leberwerte",
     "uz": "transaminazalar (jigar fermentlari)",
+    "ru": "трансаминазы (печёночные ферменты)",
     "example": "Die Transaminasen sind leicht erhöht.",
     "category": "Labor"
   },
@@ -684,6 +769,7 @@
     "de": "das Hämoglobin (Hb)",
     "patient": "roter Blutfarbstoff",
     "uz": "gemoglobin",
+    "ru": "гемоглобин",
     "example": "Das Hämoglobin beträgt 13,5 g/dl.",
     "category": "Labor"
   },
@@ -692,6 +778,7 @@
     "de": "die Blutgasanalyse (BGA)",
     "patient": "Sauerstoff- und Säurewerte im Blut",
     "uz": "qon gazlari tahlili",
+    "ru": "анализ газов крови",
     "example": "In der BGA zeigt sich eine respiratorische Partialinsuffizienz.",
     "category": "Labor"
   },
@@ -700,6 +787,7 @@
     "de": "die Lipase",
     "patient": "Bauchspeicheldrüsenwert",
     "uz": "lipaza (oshqozon osti bezi fermenti)",
+    "ru": "липаза (фермент поджелудочной железы)",
     "example": "Die Lipase ist im Normbereich.",
     "category": "Labor"
   },
@@ -708,6 +796,7 @@
     "de": "der Blutzucker",
     "patient": "Zuckerwert",
     "uz": "qondagi qand miqdori",
+    "ru": "уровень сахара в крови",
     "example": "Der Blutzucker betrug 345 mg/dl.",
     "category": "Labor"
   },
@@ -716,6 +805,7 @@
     "de": "das EKG",
     "patient": "Herzstromkurve",
     "uz": "EKG (elektrokardiogramma)",
+    "ru": "ЭКГ (электрокардиограмма)",
     "example": "Im EKG zeigen sich ST-Hebungen in II, III und aVF.",
     "category": "Diagnostik"
   },
@@ -724,6 +814,7 @@
     "de": "die Sonographie",
     "patient": "Ultraschall",
     "uz": "ultratovush tekshiruvi (UTT)",
+    "ru": "УЗИ (ультразвуковое исследование)",
     "example": "Sonographisch zeigt sich eine verdickte Gallenblasenwand.",
     "category": "Diagnostik"
   },
@@ -732,6 +823,7 @@
     "de": "das Röntgen-Thorax",
     "patient": "Röntgenbild der Lunge",
     "uz": "ko‘krak qafasi rentgeni",
+    "ru": "рентген грудной клетки",
     "example": "Im Röntgen-Thorax zeigt sich ein Infiltrat rechts basal.",
     "category": "Diagnostik"
   },
@@ -740,6 +832,7 @@
     "de": "die Computertomographie (CT)",
     "patient": "CT, Röhre",
     "uz": "kompyuter tomografiya",
+    "ru": "компьютерная томография (КТ)",
     "example": "Im cCT zeigt sich kein Hinweis auf eine Blutung.",
     "category": "Diagnostik"
   },
@@ -748,6 +841,7 @@
     "de": "die Magnetresonanztomographie (MRT)",
     "patient": "Kernspin, Röhre mit Magnet",
     "uz": "magnit-rezonans tomografiya",
+    "ru": "магнитно-резонансная томография (МРТ)",
     "example": "Eine MRT des Schädels wurde veranlasst.",
     "category": "Diagnostik"
   },
@@ -756,6 +850,7 @@
     "de": "die Gastroskopie",
     "patient": "Magenspiegelung",
     "uz": "gastroskopiya",
+    "ru": "гастроскопия",
     "example": "Eine Gastroskopie ist geplant.",
     "category": "Diagnostik"
   },
@@ -764,6 +859,7 @@
     "de": "die Koloskopie",
     "patient": "Darmspiegelung",
     "uz": "kolonoskopiya",
+    "ru": "колоноскопия",
     "example": "Wir empfehlen eine Koloskopie.",
     "category": "Diagnostik"
   },
@@ -772,6 +868,7 @@
     "de": "die Echokardiographie",
     "patient": "Herzultraschall",
     "uz": "exokardiografiya (yurak UTT)",
+    "ru": "эхокардиография (УЗИ сердца)",
     "example": "Echokardiographisch zeigt sich eine reduzierte Pumpfunktion.",
     "category": "Diagnostik"
   },
@@ -780,6 +877,7 @@
     "de": "die Koronarangiographie",
     "patient": "Herzkatheter",
     "uz": "koronar angiografiya",
+    "ru": "коронарная ангиография",
     "example": "Es erfolgte eine notfallmäßige Koronarangiographie.",
     "category": "Diagnostik"
   },
@@ -788,6 +886,7 @@
     "de": "die Lumbalpunktion",
     "patient": "Nervenwasser entnehmen",
     "uz": "lyumbal punksiya",
+    "ru": "люмбальная пункция",
     "example": "Zum Ausschluss einer Meningitis erfolgte eine Lumbalpunktion.",
     "category": "Diagnostik"
   },
@@ -796,6 +895,7 @@
     "de": "die Appendektomie",
     "patient": "Blinddarm-OP",
     "uz": "appendektomiya",
+    "ru": "аппендэктомия",
     "example": "Es erfolgte eine laparoskopische Appendektomie.",
     "category": "Therapie"
   },
@@ -804,6 +904,7 @@
     "de": "die Cholezystektomie",
     "patient": "Gallenblasen-OP",
     "uz": "xoletsistektomiya",
+    "ru": "холецистэктомия",
     "example": "Eine frühelektive Cholezystektomie ist geplant.",
     "category": "Therapie"
   },
@@ -812,6 +913,7 @@
     "de": "die Lysetherapie",
     "patient": "Medikament, das das Gerinnsel auflöst",
     "uz": "tromboliz terapiyasi",
+    "ru": "тромболитическая терапия",
     "example": "Es wurde eine systemische Lysetherapie durchgeführt.",
     "category": "Therapie"
   },
@@ -820,6 +922,7 @@
     "de": "die PCI (perkutane Koronarintervention)",
     "patient": "Herzkatheter mit Stent",
     "uz": "PCI (stent qo‘yish)",
+    "ru": "ЧКВ (установка стента)",
     "example": "Es erfolgte eine PCI mit Stentimplantation der RCA.",
     "category": "Therapie"
   },
@@ -828,6 +931,7 @@
     "de": "die Infusion",
     "patient": "Tropf",
     "uz": "infuziya (tomchi)",
+    "ru": "инфузия (капельница)",
     "example": "Die Patientin erhielt eine Infusion.",
     "category": "Therapie"
   },
@@ -836,6 +940,7 @@
     "de": "die Physiotherapie",
     "patient": "Krankengymnastik",
     "uz": "fizioterapiya (davolash gimnastikasi)",
+    "ru": "физиотерапия (лечебная гимнастика)",
     "example": "Eine Physiotherapie wurde begonnen.",
     "category": "Therapie"
   },
@@ -844,6 +949,7 @@
     "de": "die Sauerstoffgabe",
     "patient": "Sauerstoff bekommen",
     "uz": "kislorod berish",
+    "ru": "подача кислорода",
     "example": "Unter Sauerstoffgabe von 2 l/min stieg die Sättigung auf 95 %.",
     "category": "Therapie"
   },
@@ -852,6 +958,7 @@
     "de": "die Thromboseprophylaxe",
     "patient": "Spritze gegen Blutgerinnsel",
     "uz": "tromboz profilaktikasi",
+    "ru": "профилактика тромбоза",
     "example": "Eine medikamentöse Thromboseprophylaxe wurde durchgeführt.",
     "category": "Therapie"
   },
@@ -860,6 +967,7 @@
     "de": "die Ernährungsberatung",
     "patient": "Beratung zum Essen",
     "uz": "ovqatlanish bo‘yicha maslahat",
+    "ru": "консультация по питанию",
     "example": "Eine Ernährungsberatung wurde empfohlen.",
     "category": "Therapie"
   },
@@ -868,6 +976,7 @@
     "de": "die Tachykardie",
     "patient": "Herzrasen",
     "uz": "yurak urishining tezlashishi",
+    "ru": "тахикардия (учащённое сердцебиение)",
     "example": "Bei Aufnahme bestand eine Tachykardie von 120/min.",
     "category": "Symptome"
   },
@@ -876,6 +985,7 @@
     "de": "die Meläna",
     "patient": "Teerstuhl, schwarzer Stuhl",
     "uz": "melena (qora, smolasimon najas)",
+    "ru": "мелена (чёрный дёгтеобразный стул)",
     "example": "Der Patient berichtet über Meläna seit zwei Tagen.",
     "category": "Symptome"
   },
@@ -884,6 +994,7 @@
     "de": "die Hämatemesis",
     "patient": "Bluterbrechen",
     "uz": "qon qusish",
+    "ru": "рвота кровью",
     "example": "Es kam zu einer kaffeesatzartigen Hämatemesis.",
     "category": "Symptome"
   },
@@ -892,6 +1003,7 @@
     "de": "die Photophobie",
     "patient": "Lichtempfindlichkeit",
     "uz": "yorug‘likdan bezovtalanish",
+    "ru": "светобоязнь",
     "example": "Begleitend bestehen Photo- und Phonophobie.",
     "category": "Symptome"
   },
@@ -900,6 +1012,7 @@
     "de": "die Hämaturie",
     "patient": "Blut im Urin",
     "uz": "siydikda qon",
+    "ru": "кровь в моче (гематурия)",
     "example": "Im Urinstatus zeigte sich eine Mikrohämaturie.",
     "category": "Symptome"
   },
@@ -908,6 +1021,7 @@
     "de": "der Meteorismus",
     "patient": "Blähungen, dicker Bauch",
     "uz": "qorin dam bo‘lishi",
+    "ru": "вздутие живота",
     "example": "Das Abdomen ist meteoristisch gebläht.",
     "category": "Symptome"
   },
@@ -916,6 +1030,7 @@
     "de": "die Abgeschlagenheit",
     "patient": "Müdigkeit, Schlappheit",
     "uz": "holsizlik",
+    "ru": "слабость, разбитость",
     "example": "Die Patientin klagt über Abgeschlagenheit seit Monaten.",
     "category": "Symptome"
   },
@@ -924,6 +1039,7 @@
     "de": "die Hyperhidrose",
     "patient": "starkes Schwitzen",
     "uz": "ko‘p terlash",
+    "ru": "повышенная потливость",
     "example": "Es bestehen Wärmeintoleranz und Hyperhidrose.",
     "category": "Symptome"
   },
@@ -932,6 +1048,7 @@
     "de": "das Vorhofflimmern",
     "patient": "unregelmäßiger Herzschlag",
     "uz": "bo‘lmachalar fibrillyatsiyasi",
+    "ru": "фибрилляция предсердий",
     "example": "Im EKG zeigte sich ein tachykardes Vorhofflimmern.",
     "category": "Krankheiten"
   },
@@ -940,6 +1057,7 @@
     "de": "die Pankreatitis",
     "patient": "Entzündung der Bauchspeicheldrüse",
     "uz": "pankreatit",
+    "ru": "панкреатит",
     "example": "Es wurde eine akute Pankreatitis diagnostiziert.",
     "category": "Krankheiten"
   },
@@ -948,6 +1066,7 @@
     "de": "das Ulcus duodeni",
     "patient": "Zwölffingerdarmgeschwür",
     "uz": "o‘n ikki barmoqli ichak yarasi",
+    "ru": "язва двенадцатиперстной кишки",
     "example": "Gastroskopisch fand sich ein Ulcus duodeni.",
     "category": "Krankheiten"
   },
@@ -956,6 +1075,7 @@
     "de": "die Migräne",
     "patient": "anfallsartige, starke Kopfschmerzen",
     "uz": "migren",
+    "ru": "мигрень",
     "example": "Die Patientin leidet seit der Pubertät an Migräne mit Aura.",
     "category": "Krankheiten"
   },
@@ -964,6 +1084,7 @@
     "de": "der Ileus",
     "patient": "Darmverschluss",
     "uz": "ichak tutilishi",
+    "ru": "кишечная непроходимость",
     "example": "Radiologisch zeigte sich ein mechanischer Ileus.",
     "category": "Krankheiten"
   },
@@ -972,6 +1093,7 @@
     "de": "die Anämie",
     "patient": "Blutarmut",
     "uz": "kamqonlik",
+    "ru": "анемия (малокровие)",
     "example": "Laborchemisch zeigte sich eine Eisenmangelanämie.",
     "category": "Krankheiten"
   },
@@ -980,6 +1102,7 @@
     "de": "die Kompressionssonographie",
     "patient": "Ultraschall der Beinvenen",
     "uz": "venalar kompression sonografiyasi",
+    "ru": "компрессионное УЗИ вен",
     "example": "Die Kompressionssonographie bestätigte eine Thrombose.",
     "category": "Untersuchungen"
   },
@@ -988,6 +1111,7 @@
     "de": "das Langzeit-EKG",
     "patient": "EKG über 24 Stunden",
     "uz": "sutkalik EKG (Holter)",
+    "ru": "суточное мониторирование ЭКГ (Холтер)",
     "example": "Ein Langzeit-EKG wurde ambulant empfohlen.",
     "category": "Untersuchungen"
   },
@@ -996,6 +1120,7 @@
     "de": "die CT-Angiographie",
     "patient": "Computertomographie der Blutgefäße",
     "uz": "KT-angiografiya",
+    "ru": "КТ-ангиография",
     "example": "In der CT-Angiographie zeigte sich eine Lungenembolie.",
     "category": "Diagnostik"
   },
@@ -1004,6 +1129,7 @@
     "de": "das TSH",
     "patient": "Schilddrüsenwert",
     "uz": "TTG (tireotrop gormon)",
+    "ru": "ТТГ (тиреотропный гормон)",
     "example": "Das TSH war supprimiert.",
     "category": "Labor"
   },
@@ -1012,6 +1138,7 @@
     "de": "das Ferritin",
     "patient": "Eisenspeicher-Wert",
     "uz": "ferritin (temir zaxirasi)",
+    "ru": "ферритин (запасы железа)",
     "example": "Das Ferritin war deutlich erniedrigt.",
     "category": "Labor"
   },
@@ -1020,6 +1147,7 @@
     "de": "das Laktat",
     "patient": "Milchsäure-Wert im Blut",
     "uz": "laktat",
+    "ru": "лактат",
     "example": "Das Laktat war erhöht.",
     "category": "Labor"
   },
@@ -1028,6 +1156,7 @@
     "de": "der Harnstau",
     "patient": "Urin staut sich in der Niere",
     "uz": "siydik dimlanishi",
+    "ru": "застой мочи",
     "example": "Sonographisch zeigte sich ein Harnstau Grad I.",
     "category": "Diagnostik"
   },
@@ -1036,6 +1165,7 @@
     "de": "das Apixaban",
     "patient": "Blutverdünner (Tablette)",
     "uz": "apiksaban (antikoagulyant)",
+    "ru": "апиксабан (антикоагулянт)",
     "example": "Wir leiteten eine Antikoagulation mit Apixaban ein.",
     "category": "Medikamente"
   },
@@ -1044,6 +1174,7 @@
     "de": "das Tamsulosin",
     "patient": "Mittel, damit der Stein leichter abgeht",
     "uz": "tamsulozin",
+    "ru": "тамсулозин",
     "example": "Eine Austreibungstherapie mit Tamsulosin wurde begonnen.",
     "category": "Medikamente"
   },
@@ -1052,6 +1183,7 @@
     "de": "das Pantoprazol",
     "patient": "Magenschutz",
     "uz": "pantoprazol",
+    "ru": "пантопразол",
     "example": "Pantoprazol wurde intravenös verabreicht.",
     "category": "Medikamente"
   },
@@ -1060,6 +1192,7 @@
     "de": "die Nahrungskarenz",
     "patient": "nichts essen dürfen",
     "uz": "ovqat yemaslik (och turish)",
+    "ru": "голод (без приёма пищи)",
     "example": "Der Patient erhielt zunächst eine Nahrungskarenz.",
     "category": "Therapie"
   },
@@ -1068,6 +1201,7 @@
     "de": "die Bluttransfusion",
     "patient": "Blut bekommen",
     "uz": "qon quyish",
+    "ru": "переливание крови",
     "example": "Es wurden zwei Erythrozytenkonzentrate transfundiert.",
     "category": "Therapie"
   },
@@ -1076,6 +1210,7 @@
     "de": "die Ösophagogastroduodenoskopie (ÖGD)",
     "patient": "Magenspiegelung",
     "uz": "ezofagogastroduodenoskopiya",
+    "ru": "эзофагогастродуоденоскопия (ЭГДС)",
     "example": "Eine ÖGD mit Blutstillung wurde durchgeführt.",
     "category": "Untersuchungen"
   },
@@ -1084,6 +1219,7 @@
     "de": "die Struma",
     "patient": "Kropf, vergrößerte Schilddrüse",
     "uz": "buqoq",
+    "ru": "зоб",
     "example": "Palpatorisch zeigte sich eine diffuse Struma.",
     "category": "Krankheiten"
   }

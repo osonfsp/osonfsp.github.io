@@ -1,5 +1,6 @@
 import { useMemo, useState } from "react";
 import { cx } from "../lib/utils";
+import { tr } from "../lib/i18n";
 
 export function ProgressBar({ value: e, auto: t = false, className: a }) {
   let n = Math.max(0, Math.min(100, Math.round(e))),
@@ -49,13 +50,20 @@ export function ProgressRing({ value: e, size: t = 112, label: a }) {
   );
 }
 
+// Baholash mezonlari kalitlari o‘zbekcha qoladi (kod ularga tayanadi), faqat ko‘rinishi tarjima qilinadi
+const CRITERIA_RU = {
+  "Anamnese to‘liqligi": "Полнота анамнеза",
+  "Savollar sifati": "Качество вопросов",
+  "Muhim ma’lumotlar": "Ключевые сведения",
+};
+
 export function ScoreBars({ scores: e }) {
   return (
     <div className="space-y-3">
       {Object.entries(e).map(([t, a]) => (
         <div key={t}>
           <div className="mb-1 flex justify-between gap-2 text-sm">
-            <span>{t}</span>
+            <span>{tr(t, CRITERIA_RU[t])}</span>
             <span className="font-semibold tabular-nums">{a}%</span>
           </div>
           <ProgressBar value={a} auto />
@@ -98,7 +106,7 @@ export function PageHeader({ eyebrow: e, title: t, subtitle: a, children: n }) {
   );
 }
 
-export function FilterChips({ options: e, value: t, onChange: a, allLabel: n = "Barchasi" }) {
+export function FilterChips({ options: e, value: t, onChange: a, allLabel: n = tr("Barchasi", "Все") }) {
   return (
     <div className="no-scrollbar -mx-4 flex gap-2 overflow-x-auto px-4 pb-1 sm:mx-0 sm:flex-wrap sm:px-0">
       <button className={t === "all" ? "chip-on" : "chip-off"} onClick={() => a("all")}>
@@ -140,9 +148,9 @@ const STATUS_ICONS = {
     error: "❌",
   },
   STATUS_LABELS = {
-    ok: "To‘g‘ri",
-    warn: "Yaxshilash kerak",
-    error: "Xato",
+    ok: tr("To‘g‘ri", "Верно"),
+    warn: tr("Yaxshilash kerak", "Можно улучшить"),
+    error: tr("Xato", "Ошибка"),
   },
   STATUS_STYLES = {
     ok: "border-emerald-200 bg-emerald-50 dark:border-emerald-900/60 dark:bg-emerald-950/30",
@@ -173,7 +181,7 @@ export function FeedbackList({ items: e }) {
     <div>
       <div className="mb-4 flex flex-wrap gap-2">
         <button className={t === "all" ? "chip-on" : "chip-off"} onClick={() => a("all")}>
-          Barchasi ({e.length})
+          {tr("Barchasi", "Все")} ({e.length})
         </button>
         {["ok", "warn", "error"].map((l) => (
           <button key={l} className={t === l ? "chip-on" : "chip-off"} onClick={() => a(l)}>
@@ -200,7 +208,11 @@ export function FeedbackList({ items: e }) {
             </ul>
           </div>
         ))}
-        {!i.length && <p className="text-sm muted">Bu filtr bo‘yicha natija yo‘q.</p>}
+        {!i.length && (
+          <p className="text-sm muted">
+            {tr("Bu filtr bo‘yicha natija yo‘q.", "По этому фильтру ничего нет.")}
+          </p>
+        )}
       </div>
     </div>
   );
@@ -209,8 +221,11 @@ export function FeedbackList({ items: e }) {
 export function Disclaimer() {
   return (
     <p className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-xs muted dark:border-slate-800 dark:bg-slate-900/50">
-      ℹ️ Bu faqat mashq natijasi. U rasmiy FSP imtihonidan o‘tish yoki o‘tmaslikni kafolatlamaydi va bashorat
-      qilmaydi.
+      ℹ️{" "}
+      {tr(
+        "Bu faqat mashq natijasi. U rasmiy FSP imtihonidan o‘tish yoki o‘tmaslikni kafolatlamaydi va bashorat qilmaydi.",
+        "Это только тренировочный результат. Он не гарантирует и не предсказывает сдачу официального экзамена FSP.",
+      )}
     </p>
   );
 }
@@ -219,7 +234,7 @@ export function ConfirmButton({
   children: e,
   onConfirm: t,
   className: a,
-  confirmLabel: n = "Tasdiqlaysizmi? Yana bosing",
+  confirmLabel: n = tr("Tasdiqlaysizmi? Yana bosing", "Уверены? Нажмите ещё раз"),
 }) {
   let [i, l] = useState(false);
   return (
@@ -236,7 +251,7 @@ export function ConfirmButton({
   );
 }
 
-export function Spinner({ label: e = "Tahlil qilinmoqda…" }) {
+export function Spinner({ label: e = tr("Tahlil qilinmoqda…", "Идёт анализ…") }) {
   return (
     <span className="inline-flex items-center gap-2 text-sm muted">
       <span className="h-4 w-4 animate-spin rounded-full border-2 border-teal-600 border-t-transparent" />
