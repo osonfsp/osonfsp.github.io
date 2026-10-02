@@ -3,7 +3,13 @@ import { Link } from "../components/Link";
 import { PatientChat } from "../components/PatientChat";
 import { Disclaimer, FeedbackList, PageHeader, ProgressRing, ScoreBars, Spinner } from "../components/ui";
 import { arztbriefe, getCase } from "../data/index";
-import { ARZT_ARZT_QUESTIONS, correctArztbrief, evaluateAnamnese, evaluateArztArzt } from "../lib/evaluation";
+import {
+  ARZT_ARZT_QUESTIONS,
+  correctArztbrief,
+  evaluateAnamnese,
+  evaluateArztArzt,
+  termQuestion,
+} from "../lib/evaluation";
 import { avg, clamp, cx } from "../lib/utils";
 import { useApp } from "../state/AppContext";
 
@@ -80,9 +86,13 @@ export function ExamPage() {
     [p, A] = useState(""),
     [w, D] = useState(false),
     [g, d] = useState(null),
-    [m, v] = useState(null);
+    [m, v] = useState(null),
+    [term, setTerm] = useState(null),
+    QS = term ? [...ARZT_ARZT_QUESTIONS, termQuestion(term)] : ARZT_ARZT_QUESTIONS;
   function N(z) {
-    let k = z ?? Math.floor(Math.random() * EXAM_CASES.length);
+    let k = z ?? Math.floor(Math.random() * EXAM_CASES.length),
+      tr = EXAM_CASES[k].c.terms;
+    setTerm(tr[Math.floor(Math.random() * tr.length)]);
     (i(EXAM_CASES[k]), s([]), c(""), f([]), b(0), A(""), d(null), v(null), a("t1"));
   }
   async function C(z) {
@@ -93,9 +103,10 @@ export function ExamPage() {
         correctArztbrief(n.ex, r),
         evaluateArztArzt(
           n.c,
-          ARZT_ARZT_QUESTIONS.map((Zs, rg) => ({
+          QS.map((Zs, rg) => ({
             question: Zs,
             answer: z[rg] ?? "",
+            term: rg === ARZT_ARZT_QUESTIONS.length ? term : undefined,
           })),
         ),
       ]),
@@ -144,7 +155,7 @@ export function ExamPage() {
   }
   function x() {
     let z = [...y, p.trim()];
-    if ((f(z), A(""), h + 1 < ARZT_ARZT_QUESTIONS.length)) b(h + 1);
+    if ((f(z), A(""), h + 1 < QS.length)) b(h + 1);
     else C(z);
   }
   if (t === "intro" || !n)
@@ -164,7 +175,12 @@ export function ExamPage() {
               "AI-bemordan anamnez yig‘asiz. Yordamchi maslahatlar o‘chirilgan.",
             ],
             ["✍️", "Teil 2", "Dokumentation", "Shu bemor bo‘yicha Arztbrief yozasiz."],
-            ["\uD83D\uDC68‍⚕️", "Teil 3", "Arzt-Arzt-Gespräch", "Oberarzt’ning 5 ta savoliga javob berasiz."],
+            [
+              "\uD83D\uDC68‍⚕️",
+              "Teil 3",
+              "Arzt-Arzt-Gespräch",
+              "Bemorni Oberarzt’ga taqdim etasiz, 5 ta savolga javob berasiz va bitta Fachbegriff’ni tushuntirasiz.",
+            ],
           ].map(([z, k, O, te]) => (
             <div key={k} className="card">
               <span className="text-2xl" aria-hidden>
@@ -292,7 +308,7 @@ export function ExamPage() {
         <div className="card mx-auto max-w-3xl">
           <h2 className="section-title">Teil 3 · Arzt-Arzt-Gespräch</h2>
           <div className="space-y-3">
-            {ARZT_ARZT_QUESTIONS.slice(0, h + 1).map((z, k) => (
+            {QS.slice(0, h + 1).map((z, k) => (
               <div key={z} className="space-y-2">
                 <div className="flex gap-2">
                   <span
@@ -330,10 +346,10 @@ export function ExamPage() {
                   {"Savol "}
                   {h + 1}
                   {" / "}
-                  {ARZT_ARZT_QUESTIONS.length}
+                  {QS.length}
                 </span>
                 <button className="btn-primary" onClick={x} disabled={!p.trim()}>
-                  {h + 1 < ARZT_ARZT_QUESTIONS.length ? "Javob berish →" : "Imtihonni yakunlash"}
+                  {h + 1 < QS.length ? "Javob berish →" : "Imtihonni yakunlash"}
                 </button>
               </div>
             </div>

@@ -840,6 +840,23 @@ export const ARZT_ARZT_QUESTIONS = [
   "Wie würden Sie dem Patienten die Diagnose in einfachen Worten erklären?",
 ];
 
+// Teil 3 da Oberarzt odatda bitta Fachbegriff’ni tushuntirishni so‘raydi
+export const termQuestion = (e) => `Was bedeutet der Fachbegriff „${e.de}“? Erklären Sie ihn bitte.`;
+
+function scoreTermAnswer(e, t) {
+  let a = normalize(t),
+    n = e.patient
+      .split(/[^a-zäöüß]+/i)
+      .filter((l) => l.length >= 4)
+      .map((l) => normalize(l).slice(0, 5)),
+    i = n.some((l) => a.includes(l)),
+    words = t.split(/\s+/).filter(Boolean).length;
+  return {
+    score: clamp((i ? 70 : 0) + (words >= 6 ? 30 : words * 5)),
+    hit: i,
+  };
+}
+
 function evaluateArztArztLocal(e, t) {
   let a = (E) => t[E]?.answer ?? "",
     n = [],
@@ -917,12 +934,21 @@ function evaluateArztArztLocal(e, t) {
       category: "Bemorga tushuntirish",
       message: v >= 12 ? "Tushuntirish sodda tilda." : "Tushuntirish juda qisqa.",
     });
+  let T = t[5]?.term ? scoreTermAnswer(t[5].term, a(5)) : null;
+  if (T)
+    n.push({
+      status: T.hit && T.score >= 70 ? "ok" : "warn",
+      category: "Fachbegriff tushuntirish",
+      message: T.hit
+        ? `„${t[5].term.de}“ to‘g‘ri tushuntirildi.`
+        : `„${t[5].term.de}“ = „${t[5].term.patient}“ (${t[5].term.uz}). Masalan: „Das bedeutet ${t[5].term.patient}.“`,
+    });
   let x = {
     Kommunikation: clamp(avg([c, C])),
-    "Medizinisches Verständnis": clamp(avg([f, w, d])),
+    "Medizinisches Verständnis": clamp(avg(T ? [f, w, d, T.score] : [f, w, d])),
   };
   return {
-    score: clamp(avg([c, f, w, d, C])),
+    score: clamp(avg(T ? [c, f, w, d, C, T.score] : [c, f, w, d, C])),
     criteria: x,
     feedback: n,
   };
