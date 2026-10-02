@@ -59,6 +59,19 @@ function SimulationView() {
           ))}
         </select>
       </PageHeader>
+      <Link
+        href="/pro"
+        className="mb-4 flex items-center gap-3 rounded-xl border border-teal-200 bg-teal-50 px-4 py-3 text-sm transition hover:border-teal-400 dark:border-teal-900 dark:bg-teal-950/30"
+      >
+        <span className="text-xl" aria-hidden>
+          🤖
+        </span>
+        <span className="flex-1">
+          Hozir bemor oldindan tayyorlangan javoblar bilan gapiradi.{" "}
+          <b>Erkin suhbat quradigan haqiqiy AI-bemor</b> — tez orada.
+        </span>
+        <span className="shrink-0 font-medium text-teal-700 dark:text-teal-400">Batafsil →</span>
+      </Link>
       {r === "chat" && (
         <div className="grid gap-4 lg:grid-cols-[1fr_300px]">
           <PatientChat caseData={i} messages={l} onMessages={s} />

@@ -56,6 +56,10 @@ const NAV_LINKS = [
     href: "/pruefung",
     label: "Prüfung",
   },
+  {
+    href: "/pro",
+    label: "Pro ✨",
+  },
 ];
 
 export function Header() {

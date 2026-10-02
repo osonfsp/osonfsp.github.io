@@ -2,6 +2,8 @@ import { createRoot } from "react-dom/client";
 import { Router } from "./App";
 import { Footer, Header } from "./components/Layout";
 import { AppProvider } from "./state/AppContext";
+import { trackPage } from "./lib/analytics";
+import { subscribe } from "./lib/router";
 import "./index.css";
 
 const root = document.documentElement;
@@ -43,3 +45,12 @@ if (import.meta.env.PROD && import.meta.env.MODE !== "artifact" && "serviceWorke
     navigator.serviceWorker.register("./sw.js").catch(() => {});
   });
 }
+
+// Sahifa ko‘rishlarini sanash (faqat osonfsp.github.io da)
+let lastPath = null;
+function trackCurrent() {
+  let path = (window.location.hash.slice(1) || "/").split("?")[0];
+  if (path !== lastPath) ((lastPath = path), trackPage(path));
+}
+trackCurrent();
+subscribe(() => setTimeout(trackCurrent));
