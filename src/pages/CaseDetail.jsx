@@ -3,6 +3,7 @@ import { Link } from "../components/Link";
 import { DIFFICULTY_LABELS, getArztbriefForCase, getCase } from "../data/index";
 import { useParams } from "../lib/router";
 import { useApp } from "../state/AppContext";
+import { Speak } from "../components/Speak";
 
 const ANAMNESE_FIELDS = [
   ["aktuelleBeschwerden", "Aktuelle Beschwerden"],
@@ -118,13 +119,19 @@ export function CaseDetailPage() {
                     <span className="mb-1 block text-[11px] font-semibold uppercase tracking-wider muted">
                       Patient
                     </span>
-                    „{b.patient}“
+                    <span className="flex items-start gap-1">
+                      <span className="flex-1">„{b.patient}“</span>
+                      <Speak text={b.patient} className="-mt-1" />
+                    </span>
                   </p>
                   <p className="rounded-xl bg-teal-50 p-3 text-sm dark:bg-teal-950/40">
                     <span className="mb-1 block text-[11px] font-semibold uppercase tracking-wider text-teal-700 dark:text-teal-300">
                       Fachsprache
                     </span>
-                    {b.fach}
+                    <span className="flex items-start gap-1">
+                      <span className="flex-1">{b.fach}</span>
+                      <Speak text={b.fach} className="-mt-1" />
+                    </span>
                   </p>
                 </div>
               ))}
@@ -144,7 +151,12 @@ export function CaseDetailPage() {
                 <tbody className="divide-y divide-slate-100 dark:divide-slate-800">
                   {t.terms.map((b) => (
                     <tr key={b.de}>
-                      <td className="py-2.5 pr-3 font-medium">{b.de}</td>
+                      <td className="py-2.5 pr-3 font-medium">
+                        <span className="inline-flex items-center gap-1">
+                          {b.de}
+                          <Speak text={b.de} />
+                        </span>
+                      </td>
                       <td className="py-2.5 pr-3">{b.patient}</td>
                       <td className="py-2.5 muted">{b.uz}</td>
                     </tr>

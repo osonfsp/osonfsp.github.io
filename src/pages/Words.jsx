@@ -3,6 +3,7 @@ import { FilterChips, PageHeader, ProgressBar, SearchInput } from "../components
 import { WORD_CATEGORIES, words } from "../data/index";
 import { cx } from "../lib/utils";
 import { useApp } from "../state/AppContext";
+import { Speak } from "../components/Speak";
 
 export function WordsPage() {
   let { progress: e, toggleWord: t } = useApp(),
@@ -70,7 +71,10 @@ export function WordsPage() {
               className={cx("card flex flex-col p-4", y && "border-emerald-300 dark:border-emerald-900")}
             >
               <div className="flex items-start justify-between gap-2">
-                <h2 className="font-semibold">{b.de}</h2>
+                <h2 className="flex items-center gap-1 font-semibold">
+                  {b.de}
+                  <Speak text={b.de} />
+                </h2>
                 <span className="badge shrink-0 bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-300">
                   {b.category}
                 </span>
@@ -88,7 +92,10 @@ export function WordsPage() {
                 </div>
                 <div>
                   <dt className="text-[11px] font-semibold uppercase tracking-wider muted">Misol</dt>
-                  <dd className="italic muted">{b.example}</dd>
+                  <dd className="flex items-start gap-1 italic muted">
+                    <span className="flex-1">{b.example}</span>
+                    <Speak text={b.example} className="-mt-1 not-italic" />
+                  </dd>
                 </div>
               </dl>
               <button className={cx("mt-4 self-start", y ? "chip-on" : "chip-off")} onClick={() => t(b.id)}>

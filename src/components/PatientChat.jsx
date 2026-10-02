@@ -1,39 +1,88 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { ANAMNESE_TOPICS, askPatient, askedTopics } from "../lib/evaluation";
+import { storage } from "../lib/storage";
 import { cx } from "../lib/utils";
+import { Speak, canSpeak, speak, stopSpeaking } from "./Speak";
 
-export function PatientChat({ caseData: e, messages: t, onMessages: a, showHints: n = true, disabled: i }) {
-  let [l, s] = useState(""),
-    [r, c] = useState(false),
-    h = useRef(null),
-    b = useRef(null);
+const VOICE_KEY = "fsp.voice";
+
+// Brauzerning nemischa nutqni tanish imkoniyati (Chrome, Edge, Safari). Bo'lmasa — mikrofon tugmasi ko'rinmaydi.
+const SpeechRecognition =
+  typeof window !== "undefined" ? (window.SpeechRecognition ?? window.webkitSpeechRecognition) : undefined;
+
+function useDictation(onText) {
+  const [listening, setListening] = useState(false);
+  const rec = useRef(null);
+  useEffect(() => () => rec.current?.abort(), []);
+  if (!SpeechRecognition) return { supported: false };
+  const toggle = (baseText) => {
+    if (listening) {
+      rec.current?.stop();
+      return;
+    }
+    const r = new SpeechRecognition();
+    r.lang = "de-DE";
+    r.interimResults = true;
+    r.continuous = false;
+    const prefix = baseText.trim() ? `${baseText.trim()} ` : "";
+    r.onresult = (ev) => {
+      const text = [...ev.results].map((res) => res[0].transcript).join("");
+      onText(prefix + text);
+    };
+    r.onend = r.onerror = () => setListening(false);
+    rec.current = r;
+    stopSpeaking();
+    try {
+      r.start();
+      setListening(true);
+    } catch {
+      setListening(false);
+    }
+  };
+  return { supported: true, listening, toggle };
+}
+
+export function PatientChat({ caseData, messages, onMessages, showHints = true, disabled }) {
+  const [draft, setDraft] = useState("");
+  const [waiting, setWaiting] = useState(false);
+  const [voice, setVoice] = useState(() => storage.get(VOICE_KEY, false));
+  const scrollRef = useRef(null);
+  const inputRef = useRef(null);
+  const dictation = useDictation(setDraft);
+
   useEffect(() => {
-    let p = h.current;
-    if (p) p.scrollTop = p.scrollHeight;
-  }, [t, r]);
-  let y = useMemo(() => askedTopics(t.filter((p) => p.role === "arzt").map((p) => p.text)), [t]);
-  async function f(p) {
-    let A = p.trim();
-    if (!A || r || i) return;
-    let w = [
-      ...t,
-      {
-        role: "arzt",
-        text: A,
-      },
-    ];
-    (a(w), s(""), c(true));
-    let D = await askPatient(e, w, A);
-    (a([
-      ...w,
-      {
-        role: "patient",
-        text: D.reply,
-      },
-    ]),
-      c(false),
-      b.current?.focus());
+    const el = scrollRef.current;
+    if (el) el.scrollTop = el.scrollHeight;
+  }, [messages, waiting]);
+  useEffect(() => () => stopSpeaking(), []);
+
+  const asked = useMemo(
+    () => askedTopics(messages.filter((m) => m.role === "arzt").map((m) => m.text)),
+    [messages],
+  );
+
+  const toggleVoice = () => {
+    const next = !voice;
+    setVoice(next);
+    storage.set(VOICE_KEY, next);
+    if (!next) stopSpeaking();
+  };
+
+  async function send(text) {
+    const question = text.trim();
+    if (!question || waiting || disabled) return;
+    const withQuestion = [...messages, { role: "arzt", text: question }];
+    onMessages(withQuestion);
+    setDraft("");
+    setWaiting(true);
+    const { reply } = await askPatient(caseData, withQuestion, question);
+    onMessages([...withQuestion, { role: "patient", text: reply }]);
+    setWaiting(false);
+    if (voice) speak(reply);
+    inputRef.current?.focus();
   }
+
+  const { patient } = caseData;
   return (
     <div className="card flex flex-col p-0">
       <div className="flex items-center gap-3 border-b border-slate-200 px-4 py-3 dark:border-slate-800">
@@ -45,51 +94,74 @@ export function PatientChat({ caseData: e, messages: t, onMessages: a, showHints
         </span>
         <div className="min-w-0">
           <p className="truncate text-sm font-semibold">
-            {e.patient.gender === "weiblich" ? "Frau" : "Herr"} {e.patient.name.split(" ").slice(-1)[0]}{" "}
+            {patient.gender === "weiblich" ? "Frau" : "Herr"} {patient.name.split(" ").slice(-1)[0]}{" "}
             <span className="font-normal muted">· Patient (AI)</span>
           </p>
           <p className="truncate text-xs muted">
-            {e.patient.age}
+            {patient.age}
             {" J. · "}
-            {e.patient.hauptbeschwerde}
+            {patient.hauptbeschwerde}
           </p>
         </div>
-        <span className="ml-auto text-xs muted tabular-nums">
-          {y.size}/{ANAMNESE_TOPICS.length}
-        </span>
+        <div className="ml-auto flex items-center gap-2">
+          {canSpeak() && (
+            <button
+              type="button"
+              className={cx(voice ? "chip-on" : "chip-off", "px-2.5")}
+              onClick={toggleVoice}
+              title="Bemor javoblarini ovoz chiqarib o‘qish"
+              aria-pressed={voice}
+            >
+              {voice ? "🔊 Ovoz" : "🔇 Ovoz"}
+            </button>
+          )}
+          <span className="text-xs muted tabular-nums">
+            {asked.size}/{ANAMNESE_TOPICS.length}
+          </span>
+        </div>
       </div>
-      <div ref={h} className="h-[52vh] min-h-[280px] space-y-3 overflow-y-auto px-4 py-4 sm:h-[420px]">
-        {!t.length && (
+      <div
+        ref={scrollRef}
+        className="h-[52vh] min-h-[280px] space-y-3 overflow-y-auto px-4 py-4 sm:h-[420px]"
+      >
+        {!messages.length && (
           <div className="rounded-xl bg-slate-50 p-4 text-sm muted dark:bg-slate-800/50">
             {"Siz — shifokorsiz. O‘zingizni tanishtiring va nemis tilida savol bering. Masalan: "}
             <em>„Guten Tag, ich bin Dr. … Was führt Sie zu uns?“</em>
             <br />
             Bemor faqat siz so‘ragan narsaga javob beradi.
+            {dictation.supported && (
+              <>
+                <br />
+                🎤 tugmasi bilan savolni ovozda ham berishingiz mumkin.
+              </>
+            )}
           </div>
         )}
-        {t.map((p, A) => (
-          <div key={A} className={cx("flex", p.role === "arzt" ? "justify-end" : "justify-start")}>
+        {messages.map((m, i) => (
+          <div key={i} className={cx("flex", m.role === "arzt" ? "justify-end" : "justify-start")}>
             <div
               className={cx(
                 "max-w-[85%] rounded-2xl px-3.5 py-2 text-sm",
-                p.role === "arzt"
+                m.role === "arzt"
                   ? "rounded-br-md bg-teal-600 text-white"
                   : "rounded-bl-md bg-slate-100 dark:bg-slate-800",
               )}
             >
               <p
                 className={cx(
-                  "mb-0.5 text-[11px] font-medium",
-                  p.role === "arzt" ? "text-teal-100" : "muted",
+                  "mb-0.5 flex items-center gap-1 text-[11px] font-medium",
+                  m.role === "arzt" ? "text-teal-100" : "muted",
                 )}
               >
-                {p.role === "arzt" ? "Arzt (Sie)" : "Patient"}
+                {m.role === "arzt" ? "Arzt (Sie)" : "Patient"}
+                {m.role === "patient" && <Speak text={m.text} className="-my-1 h-6 w-6 text-xs" />}
               </p>
-              {p.text}
+              {m.text}
             </div>
           </div>
         ))}
-        {r && (
+        {waiting && (
           <div className="flex justify-start">
             <div className="rounded-2xl rounded-bl-md bg-slate-100 px-4 py-3 dark:bg-slate-800">
               <span className="inline-flex gap-1">
@@ -101,44 +173,71 @@ export function PatientChat({ caseData: e, messages: t, onMessages: a, showHints
           </div>
         )}
       </div>
-      {n && (
+      {showHints && (
         <div className="no-scrollbar flex gap-2 overflow-x-auto border-t border-slate-200 px-4 py-2 dark:border-slate-800">
-          {ANAMNESE_TOPICS.filter((p) => !y.has(p.key)).map((p) => (
+          {ANAMNESE_TOPICS.filter((t) => !asked.has(t.key)).map((t) => (
             <button
-              key={p.key}
+              key={t.key}
               className="chip-off"
               onClick={() => {
-                (s(p.example), b.current?.focus());
+                setDraft(t.example);
+                inputRef.current?.focus();
               }}
-              title={p.label}
+              title={t.label}
             >
-              {p.example.length > 38 ? `${p.example.slice(0, 36)}…` : p.example}
+              {t.example.length > 38 ? `${t.example.slice(0, 36)}…` : t.example}
             </button>
           ))}
-          {y.size === ANAMNESE_TOPICS.length && (
+          {asked.size === ANAMNESE_TOPICS.length && (
             <span className="text-xs text-emerald-600">✅ Barcha asosiy mavzular so‘raldi</span>
           )}
         </div>
       )}
       <form
         className="flex items-end gap-2 border-t border-slate-200 p-3 dark:border-slate-800"
-        onSubmit={(p) => {
-          (p.preventDefault(), f(l));
+        onSubmit={(ev) => {
+          ev.preventDefault();
+          send(draft);
         }}
       >
         <textarea
-          ref={b}
+          ref={inputRef}
           rows={1}
+          lang="de"
           className="input max-h-32 min-h-[44px] resize-none"
-          placeholder="Savolingizni nemischa yozing…"
-          value={l}
-          disabled={i}
-          onChange={(p) => s(p.target.value)}
-          onKeyDown={(p) => {
-            if (p.key === "Enter" && !p.shiftKey) (p.preventDefault(), f(l));
+          placeholder={dictation.listening ? "Gapiring… (nemischa)" : "Savolingizni nemischa yozing…"}
+          value={draft}
+          disabled={disabled}
+          onChange={(ev) => setDraft(ev.target.value)}
+          onKeyDown={(ev) => {
+            if (ev.key === "Enter" && !ev.shiftKey) {
+              ev.preventDefault();
+              send(draft);
+            }
           }}
         />
-        <button type="submit" className="btn-primary h-[44px] shrink-0" disabled={r || !l.trim() || i}>
+        {dictation.supported && (
+          <button
+            type="button"
+            className={cx(
+              "btn h-[44px] w-[44px] shrink-0 px-0",
+              dictation.listening
+                ? "animate-pulse bg-rose-600 text-white hover:bg-rose-700"
+                : "border border-slate-300 bg-white hover:bg-slate-50 dark:border-slate-700 dark:bg-slate-900 dark:hover:bg-slate-800",
+            )}
+            onClick={() => dictation.toggle(draft)}
+            disabled={disabled}
+            title={dictation.listening ? "To‘xtatish" : "Ovozda savol berish (nemischa)"}
+            aria-label={dictation.listening ? "To‘xtatish" : "Ovozda savol berish"}
+          >
+            {dictation.listening ? "⏹" : "🎤"}
+          </button>
+        )}
+        <button
+          type="submit"
+          className="btn-primary h-[44px] shrink-0"
+          disabled={waiting || !draft.trim() || disabled}
+        >
           Yuborish
         </button>
       </form>

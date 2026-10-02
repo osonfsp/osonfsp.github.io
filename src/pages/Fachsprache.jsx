@@ -3,6 +3,7 @@ import { PageHeader, ProgressBar } from "../components/ui";
 import { pairs } from "../data/index";
 import { cx, shuffle } from "../lib/utils";
 import { useApp } from "../state/AppContext";
+import { Speak } from "../components/Speak";
 
 function FlipCard({ p: e, known: t, onToggle: a }) {
   let [n, i] = useState(false);
@@ -20,7 +21,10 @@ function FlipCard({ p: e, known: t, onToggle: a }) {
           <span className="text-[11px] font-semibold uppercase tracking-wider text-teal-600 dark:text-teal-400">
             Fachsprache
           </span>
-          <span className="mt-2 text-2xl font-bold text-slate-900 dark:text-white">{e.fach}</span>
+          <span className="mt-2 flex items-center gap-1 text-2xl font-bold text-slate-900 dark:text-white">
+            {e.fach}
+            <Speak text={e.fach} />
+          </span>
           <span className="mt-2 text-xs muted">{e.fachSatz}</span>
           <span className="mt-4 text-xs muted">Bosing → Patientensprache</span>
         </button>
@@ -29,12 +33,18 @@ function FlipCard({ p: e, known: t, onToggle: a }) {
             <span className="text-[11px] font-semibold uppercase tracking-wider text-teal-700 dark:text-teal-300">
               Patientensprache
             </span>
-            <p className="mt-1 text-lg font-semibold">{e.patient}</p>
+            <p className="mt-1 flex items-center gap-1 text-lg font-semibold">
+              {e.patient}
+              <Speak text={e.patient} />
+            </p>
             <p className="mt-1 text-sm muted">
               {"\uD83C\uDDFA\uD83C\uDDFF "}
               {e.uz}
             </p>
-            <p className="mt-2 text-sm italic">„{e.patientSatz}“</p>
+            <p className="mt-2 flex items-start gap-1 text-sm italic">
+              <span>„{e.patientSatz}“</span>
+              <Speak text={e.patientSatz} className="-mt-1 not-italic" />
+            </p>
           </div>
           <div className="flex gap-2">
             <button className="btn-ghost flex-1 text-xs" onClick={() => i(false)}>
