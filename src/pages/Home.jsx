@@ -1,336 +1,419 @@
+import { useEffect, useRef, useState } from "react";
+import { Helix3D } from "../components/Helix3D";
 import { Link } from "../components/Link";
-import { arztbriefe, cases, pairs, words } from "../data/index";
+import { CASE_SECTIONS, arztbriefe, cases, words } from "../data/index";
+import aufklaerung from "../data/aufklaerung.json";
 import redemittel from "../data/redemittel.json";
-import { tr } from "../lib/i18n";
+import { loc, tr } from "../lib/i18n";
 import { FREE_LIMITS, TRIAL_HOURS } from "../lib/plan";
+import { cx } from "../lib/utils";
 
 const PHRASES = redemittel.reduce((n, g) => n + g.items.length, 0);
 
-// Imtihon kunidagi tartib: har bir bekat — saytning bitta bo‘limi
-const JOURNEY = [
-  {
-    href: "/faelle",
-    icon: "🩺",
-    station: tr("Qabulxona", "Приёмная"),
-    title: tr("Klinik holatlar", "Клинические случаи"),
-    text: tr(
-      `${cases.length} ta Fall: kardiologiya, pulmonologiya, gastroenterologiya, nevrologiya, xirurgiya va boshqalar.`,
-      `${cases.length} кейсов: кардиология, пульмонология, гастроэнтерология, неврология, хирургия и другие.`,
-    ),
-  },
-  {
-    href: "/simulation",
-    icon: "💬",
-    station: tr("Shifokor xonasi · Teil 1", "Кабинет врача · Teil 1"),
-    title: tr("Bemor bilan suhbat", "Беседа с пациентом"),
-    text: tr(
-      "Virtual bemordan anamnez oling — yozib yoki ovozda. Oxirida batafsil baho.",
-      "Соберите анамнез у виртуального пациента — текстом или голосом. В конце — подробная оценка.",
-    ),
-    badge: tr("🎤 Ovozda ham", "🎤 Можно голосом"),
-  },
-  {
-    href: "/aufklaerung",
-    icon: "🗨️",
-    station: tr("Shifokor xonasi · Teil 1", "Кабинет врача · Teil 1"),
-    title: tr("Tekshiruvni tushuntirish (Aufklärung)", "Объяснение обследования (Aufklärung)"),
-    text: tr(
-      "Gastroskopiya, KT, MRT, lyumbal punksiya va boshqalarni bemorga sodda tilda tushuntiring.",
-      "Объясните пациенту простым языком гастроскопию, КТ, МРТ, люмбальную пункцию и другое.",
-    ),
-  },
-  {
-    href: "/arztbrief",
-    icon: "✍️",
-    station: tr("Hujjatlar · Teil 2", "Документация · Teil 2"),
-    title: "Arztbrief",
-    text: tr(
-      `${arztbriefe.length} ta mashq: struktura, Fachsprache va muhim ma’lumotlar avtomatik tekshiriladi.`,
-      `${arztbriefe.length} упражнений: структура, Fachsprache и ключевые сведения проверяются автоматически.`,
-    ),
-  },
-  {
-    href: "/pruefung",
-    icon: "👨‍⚕️",
-    station: tr("Ordinatorlar xonasi · Teil 3", "Ординаторская · Teil 3"),
-    title: tr("Oberarzt bilan suhbat", "Разговор с Oberarzt"),
-    text: tr(
-      "Bemorni taqdim eting, diagnozni asoslang va Fachbegriff’ni tushuntiring.",
-      "Представьте пациента, обоснуйте диагноз и объясните Fachbegriff.",
-    ),
-  },
-  {
-    href: "/pruefung",
-    icon: "🎯",
-    station: tr("Natija", "Результат"),
-    title: tr("To‘liq imtihon simulyatsiyasi", "Полная симуляция экзамена"),
-    text: tr(
-      "3 qism × 20 daqiqa, taymer bilan. Oxirida: „bestanden“ yoki „nicht bestanden“.",
-      "3 части × 20 минут, с таймером. В конце: „bestanden“ или „nicht bestanden“.",
-    ),
-  },
-];
-
-const TILES = [
-  {
-    href: "/woerter",
-    icon: "📚",
-    title: tr("Tibbiy lug‘at", "Медицинский словарь"),
-    text: tr(
-      `${words.length} ta termin, kartochka mashqi`,
-      `${words.length} терминов, тренировка карточками`,
-    ),
-  },
-  {
-    href: "/fachsprache",
-    icon: "🔁",
-    title: "Fach ↔ Patient",
-    text: tr(`${pairs.length} ta juftlik va test`, `${pairs.length} пар и тест`),
-  },
-  {
-    href: "/redemittel",
-    icon: "🗣️",
-    title: "Redemittel",
-    text: tr(`${PHRASES} ta tayyor ibora`, `${PHRASES} готовых фраз`),
-  },
-  {
-    href: "/dashboard",
-    icon: "🔥",
-    title: tr("Kunlik odat", "Ежедневная привычка"),
-    text: tr("Ketma-ket kunlar va takrorlash", "Серия дней и повторения"),
-  },
-];
-
-// EKG chizig‘i: bo‘limlar orasidagi ajratgich
-function EkgDivider() {
-  const d =
-    "M0 30 H140 l10 -12 l10 24 l10 -12 H300 l8 -22 l10 44 l8 -22 H470 l10 -12 l10 24 l10 -12 H640 l8 -26 l10 52 l8 -26 H820 l10 -12 l10 24 l10 -12 H1000 l8 -22 l10 44 l8 -22 H1200";
+// 0 dan boshlab sanab chiqadigan raqam (ko‘ringanda boshlanadi)
+function CountUp({ to, suffix = "" }) {
+  const ref = useRef(null),
+    [n, setN] = useState(0);
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return setN(to);
+    let raf = 0;
+    const io = new IntersectionObserver(([e]) => {
+      if (!e.isIntersecting) return;
+      io.disconnect();
+      const start = performance.now();
+      const step = (now) => {
+        const k = Math.min(1, (now - start) / 1400);
+        setN(Math.round(to * (1 - Math.pow(1 - k, 3))));
+        if (k < 1) raf = requestAnimationFrame(step);
+      };
+      raf = requestAnimationFrame(step);
+    });
+    io.observe(el);
+    return () => (io.disconnect(), cancelAnimationFrame(raf));
+  }, [to]);
   return (
-    <div className="container-app" aria-hidden>
-      <svg viewBox="0 0 1200 60" className="h-10 w-full sm:h-14" preserveAspectRatio="none">
-        <path
-          d={d}
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="1.5"
-          className="text-teal-600/30 dark:text-teal-400/25"
-        />
-        <path
-          d={d}
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2.5"
-          strokeLinecap="round"
-          className="ekg-pulse text-teal-500 drop-shadow-[0_0_6px_rgba(20,184,166,0.8)]"
-        />
-      </svg>
+    <span ref={ref} className="tabular-nums">
+      {n}
+      {suffix}
+    </span>
+  );
+}
+
+// Sichqoncha ostida 3D egiladigan kartochka
+function Tilt({ className, children, href }) {
+  const ref = useRef(null);
+  const move = (e) => {
+    const el = ref.current;
+    if (!el || e.pointerType === "touch") return;
+    const r = el.getBoundingClientRect(),
+      x = (e.clientX - r.left) / r.width - 0.5,
+      y = (e.clientY - r.top) / r.height - 0.5;
+    el.style.transform = `perspective(900px) rotateX(${-y * 8}deg) rotateY(${x * 10}deg) translateZ(0)`;
+    el.style.setProperty("--mx", `${(x + 0.5) * 100}%`);
+    el.style.setProperty("--my", `${(y + 0.5) * 100}%`);
+  };
+  const leave = () => ref.current && (ref.current.style.transform = "");
+  return (
+    <div
+      ref={ref}
+      className={cx("tilt group relative overflow-hidden", className)}
+      onPointerMove={move}
+      onPointerLeave={leave}
+    >
+      <span
+        className="pointer-events-none absolute inset-0 opacity-0 transition group-hover:opacity-100"
+        style={{
+          background: "radial-gradient(300px circle at var(--mx) var(--my), rgba(255,255,255,0.35), transparent 60%)",
+        }}
+        aria-hidden
+      />
+      <Link href={href} className="relative block h-full">
+        {children}
+      </Link>
     </div>
   );
 }
 
+const GLASS =
+  "rounded-3xl border border-white/60 bg-white/55 shadow-xl shadow-teal-900/5 backdrop-blur-xl dark:border-white/10 dark:bg-slate-900/50";
+
 export function HomePage() {
+  const marquee = words.slice(0, 40);
+  const teile = [
+    {
+      n: "1",
+      icon: "💬",
+      title: "Arzt-Patienten-Gespräch",
+      front: tr(
+        "Bemordan anamnez olish va tekshiruvni tushuntirish",
+        "Анамнез у пациента и объяснение обследования",
+      ),
+      back: tr(
+        "Virtual bemor faqat so‘ralgan narsaga javob beradi. Oxirida 12 mavzu bo‘yicha baho, Patientensprache va savollar sifati.",
+        "Виртуальный пациент отвечает только на заданные вопросы. В конце — оценка по 12 темам, Patientensprache и качеству вопросов.",
+      ),
+      href: "/simulation",
+      grad: "from-teal-400 to-cyan-500",
+    },
+    {
+      n: "2",
+      icon: "✍️",
+      title: "Dokumentation",
+      front: tr("Arztbrief yozish", "Написание Arztbrief"),
+      back: tr(
+        `${arztbriefe.length} ta mashq: struktura, Fachsprache, grammatika va muhim ma’lumotlar avtomatik tekshiriladi.`,
+        `${arztbriefe.length} упражнений: структура, Fachsprache, грамматика и ключевые сведения проверяются автоматически.`,
+      ),
+      href: "/arztbrief",
+      grad: "from-violet-400 to-fuchsia-500",
+    },
+    {
+      n: "3",
+      icon: "👨‍⚕️",
+      title: "Arzt-Arzt-Gespräch",
+      front: tr("Oberarzt’ga bemorni taqdim etish", "Представление пациента Oberarzt"),
+      back: tr(
+        "Taqdimot, Verdachtsdiagnose, DD, tekshiruvlar va Fachbegriff’ni tushuntirish — taymer bilan, „bestanden / nicht bestanden“.",
+        "Представление, Verdachtsdiagnose, DD, обследования и объяснение Fachbegriff — с таймером, „bestanden / nicht bestanden“.",
+      ),
+      href: "/pruefung",
+      grad: "from-amber-400 to-rose-500",
+    },
+  ];
+  const [flipped, setFlipped] = useState(null);
+
   return (
-    <>
-      {/* Hero: to‘q fon, markazda yorug‘lik */}
-      <section className="relative overflow-hidden bg-[#0b1f26] text-white">
-        <div
-          className="pointer-events-none absolute inset-0"
-          style={{
-            background:
-              "radial-gradient(700px 380px at 50% -10%, rgba(45,212,191,0.28), transparent 70%), radial-gradient(500px 300px at 85% 110%, rgba(56,189,248,0.18), transparent 70%)",
-          }}
-        />
-        <div className="container-app relative py-14 text-center sm:py-20">
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-teal-300/80">
-            {tr("Chet eldan kelgan shifokorlar uchun", "Для врачей с иностранным дипломом")}
-          </p>
-          <h1 className="mx-auto mt-4 max-w-3xl text-4xl font-extrabold leading-tight tracking-tight text-white sm:text-6xl">
-            <span className="bg-gradient-to-r from-teal-300 to-sky-300 bg-clip-text text-transparent">
-              Fachsprachprüfung
-            </span>
-            <span className="block">{tr("ishonch bilan topshiring", "сдать уверенно")}</span>
-          </h1>
-
-          {/* Namunaviy chat */}
-          <div className="mx-auto mt-8 max-w-md rounded-2xl border border-white/15 bg-white/5 p-4 text-left text-sm shadow-2xl shadow-teal-950/50 backdrop-blur">
-            <p className="flex items-center gap-2 text-[11px] font-semibold uppercase tracking-wider text-white/60">
-              <span className="h-2 w-2 rounded-full bg-emerald-400" />
-              {tr("Imtihon simulyatsiyasi", "Симуляция экзамена")}
-            </p>
-            <p className="mt-3 max-w-[85%] rounded-2xl rounded-bl-md bg-white/10 px-3.5 py-2">
-              Ich habe so einen Druck auf der Brust — und es zieht in den linken Arm …
-            </p>
-            <p className="ml-auto mt-2 max-w-[85%] rounded-2xl rounded-br-md bg-teal-500 px-3.5 py-2 text-white">
-              Seit wann haben Sie das? Und wie stark ist der Schmerz — auf einer Skala von 0 bis 10?
-            </p>
-            <p className="mt-3 inline-flex rounded-full border border-emerald-400/40 bg-emerald-400/10 px-3 py-1 text-xs font-medium text-emerald-300">
-              ✓ Beginn · ✓ Intensität · ✓ Sie-Form
-            </p>
-          </div>
-
-          <div className="mt-6 flex flex-wrap justify-center gap-2 text-[11px] font-semibold uppercase tracking-wider">
-            {[
-              tr(`${cases.length} ta klinik Fall`, `${cases.length} клинических кейсов`),
-              tr(`${words.length} ta termin`, `${words.length} терминов`),
-              tr(`${PHRASES} ta Redemittel`, `${PHRASES} Redemittel`),
-              tr("O‘zbekcha · Ruscha", "Узбекский · Русский"),
-            ].map((t) => (
-              <span
-                key={t}
-                className="rounded-full border border-white/15 bg-white/5 px-3 py-1.5 text-white/80"
-              >
-                {t}
-              </span>
-            ))}
-          </div>
-
-          <p className="mx-auto mt-6 max-w-xl text-base text-white/75 sm:text-lg">
-            {tr(
-              "Anamnez, Arztbrief va bemorni taqdim etishni mashq qiling — imtihon tartibida, natijani darhol ko‘rasiz.",
-              "Тренируйте анамнез, Arztbrief и представление пациента — в порядке экзамена, с мгновенным результатом.",
-            )}
-          </p>
-          <div className="mt-7 flex flex-col justify-center gap-3 sm:flex-row">
-            <Link href="/faelle" className="btn bg-teal-500 px-6 py-3 text-base text-white hover:bg-teal-400">
-              {tr("Bepul boshlash", "Начать бесплатно")}
-            </Link>
-            <Link
-              href="/fsp"
-              className="btn border border-white/25 px-6 py-3 text-base text-white hover:bg-white/10"
-            >
-              {tr("FSP qanday ishlaydi?", "Как устроен FSP?")}
-            </Link>
-          </div>
-          <p className="mt-3 text-xs text-white/50">
-            {tr(
-              `${TRIAL_HOURS} soat bepul · to‘lov ma’lumotlari so‘ralmaydi`,
-              `${TRIAL_HOURS} ч бесплатно · без платёжных данных`,
-            )}
-          </p>
-        </div>
-      </section>
-
-      <div className="py-6">
-        <EkgDivider />
+    <div className="relative overflow-hidden">
+      {/* Suzib yuruvchi rangli fon */}
+      <div className="pointer-events-none absolute inset-0 -z-0" aria-hidden>
+        <span className="blob left-[-10%] top-[-8%] h-[38rem] w-[38rem] bg-teal-300" />
+        <span className="blob right-[-12%] top-[10%] h-[34rem] w-[34rem] bg-violet-300 [animation-delay:-6s]" />
+        <span className="blob bottom-[-10%] left-[25%] h-[30rem] w-[30rem] bg-amber-200 [animation-delay:-12s]" />
       </div>
 
-      {/* Imtihon kunidagi yo‘l */}
-      <section className="container-app pb-14">
-        <p className="text-center text-xs font-semibold uppercase tracking-wider text-teal-700 dark:text-teal-400">
-          {tr("Xuddi imtihon kunidagidek", "Как в настоящий день экзамена")}
-        </p>
-        <h2 className="mt-2 text-center text-2xl font-bold tracking-tight sm:text-3xl">
-          {tr("FSP bo‘ylab yo‘lingiz", "Ваш путь через FSP")}
-        </h2>
-        <p className="mx-auto mt-2 max-w-xl text-center muted">
-          {tr(
-            "Imtihonning har bir bosqichi — alohida mashq bo‘limi, imtihondagi tartibda.",
-            "Каждый этап экзамена — отдельный раздел для тренировки, в том же порядке, что и на экзамене.",
-          )}
-        </p>
-        <ol className="relative mx-auto mt-8 max-w-3xl space-y-4">
-          <span
-            className="absolute bottom-6 left-5 top-6 w-px bg-gradient-to-b from-teal-500/60 via-teal-500/30 to-transparent"
-            aria-hidden
-          />
-          {JOURNEY.map((s) => (
-            <li key={s.station} className="relative flex gap-4">
-              <span className="relative z-10 grid h-10 w-10 shrink-0 place-items-center rounded-full border-2 border-teal-500 bg-white text-lg shadow-[0_0_0_4px_rgba(20,184,166,0.12)] dark:bg-slate-900">
-                {s.icon}
-              </span>
-              <Link href={s.href} className="card card-hover flex-1 p-4">
-                <p className="text-[11px] font-bold uppercase tracking-wider text-teal-700 dark:text-teal-400">
-                  {s.station}
-                </p>
-                <h3 className="mt-1 font-semibold">{s.title}</h3>
-                <p className="mt-1 text-sm muted">{s.text}</p>
-                {s.badge && (
-                  <span className="mt-2 inline-flex rounded-full bg-teal-50 px-2.5 py-0.5 text-xs font-medium text-teal-700 ring-1 ring-teal-200 dark:bg-teal-950/50 dark:text-teal-300 dark:ring-teal-900">
-                    {s.badge}
-                  </span>
-                )}
-              </Link>
-            </li>
-          ))}
-        </ol>
-        <div className="mx-auto mt-6 grid max-w-3xl grid-cols-2 gap-3 sm:grid-cols-4">
-          {TILES.map((t) => (
-            <Link key={t.href} href={t.href} className="card card-hover p-4 text-center">
-              <span className="text-2xl" aria-hidden>
-                {t.icon}
-              </span>
-              <h3 className="mt-2 text-sm font-semibold">{t.title}</h3>
-              <p className="mt-0.5 text-xs muted">{t.text}</p>
-            </Link>
-          ))}
-        </div>
-      </section>
-
-      {/* Narxlar */}
-      <section className="border-y border-teal-900/10 bg-white/50 py-14 dark:border-white/5 dark:bg-slate-900/40">
-        <div className="container-app text-center">
-          <p className="text-xs font-semibold uppercase tracking-wider text-teal-700 dark:text-teal-400">
-            {tr("Narxlar", "Цены")}
+      {/* HERO */}
+      <section className="container-app relative grid items-center gap-8 py-10 sm:py-16 lg:grid-cols-[1.05fr_0.95fr]">
+        <div>
+          <span className="inline-flex items-center gap-2 rounded-full border border-teal-600/20 bg-white/70 px-3 py-1 text-xs font-semibold text-teal-800 backdrop-blur dark:bg-slate-900/60 dark:text-teal-300">
+            <span className="relative flex h-2 w-2">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-teal-400 opacity-75" />
+              <span className="relative inline-flex h-2 w-2 rounded-full bg-teal-500" />
+            </span>
+            Fachsprachprüfung · C1 Medizin
+          </span>
+          <h1 className="mt-5 text-4xl font-black leading-[1.05] tracking-tight sm:text-6xl">
+            {tr("Tibbiy nemis tili", "Медицинский немецкий")}
+            <span className="block bg-gradient-to-r from-teal-600 via-cyan-600 to-violet-600 bg-clip-text pb-1 text-transparent dark:from-teal-300 dark:via-cyan-300 dark:to-violet-300">
+              {tr("endi oson.", "теперь просто.")}
+            </span>
+          </h1>
+          <p className="mt-5 max-w-xl text-lg text-slate-600 dark:text-slate-300">
+            {tr(
+              "FSP’ga o‘zbek tilida tayyorlaning: virtual bemor bilan suhbat, Arztbrief, Oberarzt’ga taqdimot va haqiqiy formatdagi imtihon.",
+              "Готовьтесь к FSP на родном языке: беседа с виртуальным пациентом, Arztbrief, представление Oberarzt и экзамен в реальном формате.",
+            )}
           </p>
-          <h2 className="mt-2 text-2xl font-bold tracking-tight sm:text-3xl">
-            {tr("Muddatni tanlang", "Выберите период")}
-          </h2>
-          <div className="mx-auto mt-8 grid max-w-3xl gap-3 sm:grid-cols-3">
+          <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+            <Link
+              href="/faelle"
+              className="btn bg-gradient-to-r from-teal-600 to-cyan-600 px-7 py-3.5 text-base text-white shadow-lg shadow-teal-600/30 transition hover:-translate-y-0.5 hover:shadow-xl hover:shadow-teal-600/40"
+            >
+              {tr("Bepul boshlash", "Начать бесплатно")} →
+            </Link>
+            <Link
+              href="/pruefung"
+              className="btn border border-slate-300 bg-white/70 px-7 py-3.5 text-base text-slate-800 backdrop-blur hover:bg-white dark:border-slate-700 dark:bg-slate-900/60 dark:text-slate-100"
+            >
+              🎯 {tr("Mashq imtihoni", "Пробный экзамен")}
+            </Link>
+          </div>
+          <p className="mt-3 text-xs muted">
+            {tr(
+              `${TRIAL_HOURS} soat bepul · karta talab qilinmaydi`,
+              `${TRIAL_HOURS} ч бесплатно · без карты`,
+            )}
+          </p>
+          <dl className="mt-8 grid max-w-lg grid-cols-3 gap-3">
             {[
-              [
-                tr("Bepul sinov", "Пробный доступ"),
-                "$0",
-                tr(
-                  `${TRIAL_HOURS} soat · ${FREE_LIMITS.exam} imtihon`,
-                  `${TRIAL_HOURS} ч · ${FREE_LIMITS.exam} экзамен`,
-                ),
-                false,
-              ],
-              [tr("1 hafta", "1 неделя"), "$9", tr("barcha materiallar", "все материалы"), false],
-              [tr("1 oy", "1 месяц"), "$15", tr("eng tejamli", "самый выгодный"), true],
-            ].map(([n, p, s, hot]) => (
-              <Link
-                key={n}
-                href="/pro"
-                className={`card card-hover p-5 ${hot ? "border-2 border-teal-500 shadow-lg shadow-teal-900/10" : ""}`}
-              >
-                <p className="text-[11px] font-bold uppercase tracking-wider muted">{n}</p>
-                <p className="mt-2 text-3xl font-extrabold text-slate-900 dark:text-white">{p}</p>
-                <p className="mt-1 text-xs muted">{s}</p>
-              </Link>
+              [cases.length, tr("klinik Fall", "клинических кейсов")],
+              [words.length, tr("tibbiy termin", "терминов")],
+              [PHRASES, "Redemittel"],
+            ].map(([v, l]) => (
+              <div key={l} className={cx(GLASS, "rounded-2xl p-3")}>
+                <dt className="text-2xl font-black text-slate-900 dark:text-white">
+                  <CountUp to={v} />
+                </dt>
+                <dd className="text-xs muted">{l}</dd>
+              </div>
             ))}
+          </dl>
+        </div>
+
+        {/* 3D sahna */}
+        <div className="relative mx-auto aspect-square w-full max-w-[520px]">
+          <div className="absolute inset-[8%] rounded-full bg-gradient-to-br from-teal-200/60 via-white/30 to-violet-200/60 blur-2xl dark:from-teal-900/40 dark:to-violet-900/40" />
+          <Helix3D className="absolute inset-0 h-full w-full" />
+          <div className={cx(GLASS, "float-y absolute left-0 top-[12%] rounded-2xl px-3.5 py-2.5 text-sm")}>
+            <p className="text-[11px] font-semibold uppercase tracking-wider text-teal-700 dark:text-teal-300">
+              Anamnese
+            </p>
+            <p className="font-semibold">12/12 ✓</p>
+          </div>
+          <div
+            className={cx(
+              GLASS,
+              "float-y absolute bottom-[14%] left-[4%] rounded-2xl px-3.5 py-2.5 text-sm [animation-delay:-2s]",
+            )}
+          >
+            <p className="text-[11px] font-semibold uppercase tracking-wider text-violet-700 dark:text-violet-300">
+              Arztbrief
+            </p>
+            <p className="font-semibold">92%</p>
+          </div>
+          <div
+            className={cx(
+              GLASS,
+              "float-y absolute right-0 top-[40%] rounded-2xl px-4 py-3 text-sm [animation-delay:-3.5s]",
+            )}
+          >
+            <p className="text-lg font-black text-emerald-600 dark:text-emerald-400">BESTANDEN</p>
+            <p className="text-[11px] muted">FSP-Simulation</p>
           </div>
         </div>
       </section>
 
-      {/* Yakuniy chaqiruv */}
-      <section className="container-app py-14">
-        <div className="relative overflow-hidden rounded-3xl bg-[#0b1f26] px-6 py-12 text-center text-white">
-          <div
-            className="pointer-events-none absolute inset-0"
-            style={{
-              background: "radial-gradient(500px 260px at 50% 0%, rgba(45,212,191,0.25), transparent 70%)",
-            }}
-          />
-          <div className="relative">
-            <h2 className="text-2xl font-bold text-white sm:text-3xl">
-              {tr("Birinchi Fall’ga tayyormisiz?", "Готовы к первому случаю?")}
-            </h2>
-            <p className="mx-auto mt-3 max-w-md text-white/70">
-              {tr(
-                "Ro‘yxatdan o‘tish 30 soniya oladi. Progress qurilmangizda saqlanadi.",
-                "Регистрация занимает 30 секунд. Прогресс хранится на вашем устройстве.",
-              )}
-            </p>
-            <Link
-              href="/login"
-              className="btn mt-6 bg-teal-500 px-6 py-3 text-base text-white hover:bg-teal-400"
+      {/* Tibbiy so‘zlar oqimi */}
+      <section
+        className="marquee relative border-y border-teal-900/10 bg-white/40 py-4 backdrop-blur dark:border-white/5 dark:bg-slate-900/40"
+        aria-label={tr("Tibbiy terminlar", "Медицинские термины")}
+      >
+        <div className="marquee-track gap-3">
+          {[...marquee, ...marquee].map((w, i) => (
+            <span
+              key={i}
+              className="flex shrink-0 items-center gap-2 rounded-full border border-slate-200 bg-white/80 px-4 py-1.5 text-sm dark:border-slate-700 dark:bg-slate-900/80"
+              aria-hidden={i >= marquee.length}
             >
-              {tr("Bepul boshlash", "Начать бесплатно")}
-            </Link>
+              <b className="font-semibold">{w.de}</b>
+              <span className="muted">· {loc(w)}</span>
+            </span>
+          ))}
+        </div>
+      </section>
+
+      {/* Bento */}
+      <section className="container-app relative py-14">
+        <h2 className="text-3xl font-black tracking-tight sm:text-4xl">
+          {tr("Bitta joyda —", "Всё в одном месте —")}{" "}
+          <span className="bg-gradient-to-r from-teal-600 to-violet-600 bg-clip-text text-transparent dark:from-teal-300 dark:to-violet-300">
+            {tr("butun FSP", "весь FSP")}
+          </span>
+        </h2>
+        <div className="mt-8 grid auto-rows-[minmax(150px,auto)] gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <Tilt href="/faelle" className={cx(GLASS, "sm:col-span-2 lg:row-span-2")}>
+            <div className="flex h-full flex-col p-6">
+              <span className="text-4xl">🩺</span>
+              <h3 className="mt-3 text-2xl font-bold">
+                {tr(`${cases.length} ta klinik Fall`, `${cases.length} клинических кейсов`)}
+              </h3>
+              <p className="mt-2 muted">
+                {tr("Mutaxassislik bo‘yicha bo‘limlarga ajratilgan:", "Разделены по специальностям:")}
+              </p>
+              <div className="mt-4 flex flex-wrap gap-2">
+                {CASE_SECTIONS.map((s) => (
+                  <span
+                    key={s.id}
+                    className="rounded-full bg-teal-600/10 px-3 py-1 text-sm font-medium text-teal-800 dark:bg-teal-400/10 dark:text-teal-200"
+                  >
+                    {s.icon} {s.label} · {cases.filter((c) => s.categories.includes(c.category)).length}
+                  </span>
+                ))}
+              </div>
+              <span className="mt-auto pt-6 text-sm font-semibold text-teal-700 dark:text-teal-300">
+                {tr("Fall tanlash →", "Выбрать кейс →")}
+              </span>
+            </div>
+          </Tilt>
+          <Tilt
+            href="/aufklaerung"
+            className={cx(GLASS, "bg-gradient-to-br from-violet-500/15 to-transparent")}
+          >
+            <div className="p-5">
+              <span className="text-3xl">🗨️</span>
+              <h3 className="mt-2 font-bold">Aufklärung</h3>
+              <p className="mt-1 text-sm muted">
+                {tr(
+                  `${aufklaerung.length} ta tekshiruvni bemorga tushuntirish`,
+                  `Объяснение ${aufklaerung.length} обследований пациенту`,
+                )}
+              </p>
+            </div>
+          </Tilt>
+          <Tilt href="/woerter" className={cx(GLASS, "bg-gradient-to-br from-amber-400/15 to-transparent")}>
+            <div className="p-5">
+              <span className="text-3xl">📇</span>
+              <h3 className="mt-2 font-bold">{tr("Kartochkalar", "Карточки")}</h3>
+              <p className="mt-1 text-sm muted">
+                {tr("Aqlli takrorlash: 1-3-7-14-30 kun", "Умное повторение: 1-3-7-14-30 дней")}
+              </p>
+            </div>
+          </Tilt>
+          <Tilt href="/redemittel" className={cx(GLASS, "bg-gradient-to-br from-cyan-400/15 to-transparent")}>
+            <div className="p-5">
+              <span className="text-3xl">🗣️</span>
+              <h3 className="mt-2 font-bold">Redemittel</h3>
+              <p className="mt-1 text-sm muted">
+                {tr(`${PHRASES} ta ibora, talaffuz bilan`, `${PHRASES} фраз с произношением`)}
+              </p>
+            </div>
+          </Tilt>
+          <Tilt
+            href="/fachsprache"
+            className={cx(GLASS, "bg-gradient-to-br from-rose-400/15 to-transparent")}
+          >
+            <div className="p-5">
+              <span className="text-3xl">🔁</span>
+              <h3 className="mt-2 font-bold">Fach ↔ Patient</h3>
+              <p className="mt-1 text-sm muted">„Dyspnoe“ → „schlecht Luft bekommen“</p>
+            </div>
+          </Tilt>
+        </div>
+      </section>
+
+      {/* 3 qism — aylanuvchi 3D kartochkalar */}
+      <section className="container-app relative pb-14">
+        <p className="text-xs font-bold uppercase tracking-[0.2em] text-teal-700 dark:text-teal-400">
+          {tr("Imtihon tuzilishi", "Структура экзамена")}
+        </p>
+        <h2 className="mt-2 text-3xl font-black tracking-tight sm:text-4xl">
+          {tr("3 qism × 20 daqiqa", "3 части × 20 минут")}
+        </h2>
+        <p className="mt-2 muted">
+          {tr("Kartochka ustiga boring yoki bosing.", "Наведите на карточку или нажмите.")}
+        </p>
+        <div className="mt-8 grid gap-5 md:grid-cols-3">
+          {teile.map((t) => (
+            <div
+              key={t.n}
+              className={cx("flip h-64 cursor-pointer", flipped === t.n && "is-flipped")}
+              onClick={() => setFlipped((f) => (f === t.n ? null : t.n))}
+            >
+              <div className="flip-inner">
+                <div
+                  className={cx(
+                    "flip-face flex flex-col justify-between rounded-3xl bg-gradient-to-br p-6 text-white shadow-xl",
+                    t.grad,
+                  )}
+                >
+                  <span className="text-6xl font-black opacity-30">Teil {t.n}</span>
+                  <div>
+                    <span className="text-3xl">{t.icon}</span>
+                    <h3 className="mt-2 text-xl font-bold text-white">{t.title}</h3>
+                    <p className="mt-1 text-sm text-white/85">{t.front}</p>
+                  </div>
+                </div>
+                <div className={cx(GLASS, "flip-face flip-back flex flex-col p-6")}>
+                  <h3 className="font-bold">
+                    Teil {t.n} · {t.title}
+                  </h3>
+                  <p className="mt-3 flex-1 text-sm text-slate-600 dark:text-slate-300">{t.back}</p>
+                  <Link href={t.href} className="btn-primary self-start" onClick={(e) => e.stopPropagation()}>
+                    {tr("Mashq qilish →", "Тренироваться →")}
+                  </Link>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Narx + chaqiruv */}
+      <section className="container-app relative pb-16">
+        <div className="relative overflow-hidden rounded-[2rem] bg-gradient-to-br from-teal-600 via-cyan-700 to-violet-700 p-8 text-white shadow-2xl sm:p-12">
+          <span className="blob right-[-10%] top-[-30%] h-80 w-80 bg-white/40" aria-hidden />
+          <div className="relative grid items-center gap-8 lg:grid-cols-[1.2fr_1fr]">
+            <div>
+              <h2 className="text-3xl font-black text-white sm:text-4xl">
+                {tr("Bugun boshlang — birinchi kun bepul", "Начните сегодня — первый день бесплатно")}
+              </h2>
+              <p className="mt-3 max-w-md text-white/80">
+                {tr(
+                  `${TRIAL_HOURS} soat barcha materiallar va ${FREE_LIMITS.exam} ta to‘liq imtihon. Keyin — haftasiga yoki oyiga.`,
+                  `${TRIAL_HOURS} ч все материалы и ${FREE_LIMITS.exam} полный экзамен. Дальше — на неделю или месяц.`,
+                )}
+              </p>
+              <Link
+                href="/login"
+                className="btn mt-6 bg-white px-7 py-3.5 text-base font-semibold text-teal-800 shadow-lg hover:bg-teal-50"
+              >
+                {tr("Bepul boshlash", "Начать бесплатно")} →
+              </Link>
+            </div>
+            <div className="grid grid-cols-3 gap-3">
+              {[
+                [tr("Sinov", "Пробный"), "$0", `${TRIAL_HOURS}h`],
+                [tr("Hafta", "Неделя"), "$9", "7d"],
+                [tr("Oy", "Месяц"), "$15", "30d"],
+              ].map(([n, p, d], i) => (
+                <Link
+                  key={n}
+                  href="/pro"
+                  className={cx(
+                    "rounded-2xl border border-white/25 bg-white/10 p-4 text-center backdrop-blur transition hover:-translate-y-1 hover:bg-white/20",
+                    i === 2 && "ring-2 ring-white",
+                  )}
+                >
+                  <p className="text-[11px] font-bold uppercase tracking-wider text-white/70">{n}</p>
+                  <p className="mt-1 text-2xl font-black">{p}</p>
+                  <p className="text-xs text-white/60">{d}</p>
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 }
