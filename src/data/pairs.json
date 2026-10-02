@@ -158,5 +158,85 @@
     "uz": "gastroskopiya",
     "fachSatz": "Eine Gastroskopie ist geplant.",
     "patientSatz": "Wir möchten eine Magenspiegelung machen."
+  },
+  {
+    "id": "p21",
+    "fach": "Tachykardie",
+    "patient": "Herzrasen",
+    "uz": "yurak urishining tezlashishi",
+    "fachSatz": "Es besteht eine Tachykardie.",
+    "patientSatz": "Haben Sie Herzrasen?"
+  },
+  {
+    "id": "p22",
+    "fach": "Meläna",
+    "patient": "schwarzer Stuhl",
+    "uz": "melena",
+    "fachSatz": "Der Patient berichtet über Meläna.",
+    "patientSatz": "Ist Ihr Stuhl schwarz?"
+  },
+  {
+    "id": "p23",
+    "fach": "Hämatemesis",
+    "patient": "Blut erbrechen",
+    "uz": "qon qusish",
+    "fachSatz": "Es kam zu einer Hämatemesis.",
+    "patientSatz": "Haben Sie Blut erbrochen?"
+  },
+  {
+    "id": "p24",
+    "fach": "Hämaturie",
+    "patient": "Blut im Urin",
+    "uz": "siydikda qon",
+    "fachSatz": "Es besteht eine Makrohämaturie.",
+    "patientSatz": "Haben Sie Blut im Urin bemerkt?"
+  },
+  {
+    "id": "p25",
+    "fach": "Photophobie",
+    "patient": "Lichtempfindlichkeit",
+    "uz": "yorug‘likdan bezovtalanish",
+    "fachSatz": "Es besteht eine Photophobie.",
+    "patientSatz": "Stört Sie helles Licht?"
+  },
+  {
+    "id": "p26",
+    "fach": "Ileus",
+    "patient": "Darmverschluss",
+    "uz": "ichak tutilishi",
+    "fachSatz": "Es besteht der Verdacht auf einen Ileus.",
+    "patientSatz": "Wir vermuten einen Darmverschluss."
+  },
+  {
+    "id": "p27",
+    "fach": "Anämie",
+    "patient": "Blutarmut",
+    "uz": "kamqonlik",
+    "fachSatz": "Laborchemisch zeigte sich eine Anämie.",
+    "patientSatz": "Sie haben zu wenig rote Blutkörperchen."
+  },
+  {
+    "id": "p28",
+    "fach": "Pankreatitis",
+    "patient": "Entzündung der Bauchspeicheldrüse",
+    "uz": "pankreatit",
+    "fachSatz": "Es liegt eine akute Pankreatitis vor.",
+    "patientSatz": "Ihre Bauchspeicheldrüse ist entzündet."
+  },
+  {
+    "id": "p29",
+    "fach": "Hyperthyreose",
+    "patient": "Schilddrüsenüberfunktion",
+    "uz": "gipertireoz",
+    "fachSatz": "Es besteht eine Hyperthyreose.",
+    "patientSatz": "Ihre Schilddrüse arbeitet zu stark."
+  },
+  {
+    "id": "p30",
+    "fach": "Koloskopie",
+    "patient": "Darmspiegelung",
+    "uz": "kolonoskopiya",
+    "fachSatz": "Eine Koloskopie wird empfohlen.",
+    "patientSatz": "Wir möchten eine Darmspiegelung machen."
   }
 ]

@@ -862,5 +862,229 @@
     "uz": "ovqatlanish bo‘yicha maslahat",
     "example": "Eine Ernährungsberatung wurde empfohlen.",
     "category": "Therapie"
+  },
+  {
+    "id": "w109",
+    "de": "die Tachykardie",
+    "patient": "Herzrasen",
+    "uz": "yurak urishining tezlashishi",
+    "example": "Bei Aufnahme bestand eine Tachykardie von 120/min.",
+    "category": "Symptome"
+  },
+  {
+    "id": "w110",
+    "de": "die Meläna",
+    "patient": "Teerstuhl, schwarzer Stuhl",
+    "uz": "melena (qora, smolasimon najas)",
+    "example": "Der Patient berichtet über Meläna seit zwei Tagen.",
+    "category": "Symptome"
+  },
+  {
+    "id": "w111",
+    "de": "die Hämatemesis",
+    "patient": "Bluterbrechen",
+    "uz": "qon qusish",
+    "example": "Es kam zu einer kaffeesatzartigen Hämatemesis.",
+    "category": "Symptome"
+  },
+  {
+    "id": "w112",
+    "de": "die Photophobie",
+    "patient": "Lichtempfindlichkeit",
+    "uz": "yorug‘likdan bezovtalanish",
+    "example": "Begleitend bestehen Photo- und Phonophobie.",
+    "category": "Symptome"
+  },
+  {
+    "id": "w113",
+    "de": "die Hämaturie",
+    "patient": "Blut im Urin",
+    "uz": "siydikda qon",
+    "example": "Im Urinstatus zeigte sich eine Mikrohämaturie.",
+    "category": "Symptome"
+  },
+  {
+    "id": "w114",
+    "de": "der Meteorismus",
+    "patient": "Blähungen, dicker Bauch",
+    "uz": "qorin dam bo‘lishi",
+    "example": "Das Abdomen ist meteoristisch gebläht.",
+    "category": "Symptome"
+  },
+  {
+    "id": "w115",
+    "de": "die Abgeschlagenheit",
+    "patient": "Müdigkeit, Schlappheit",
+    "uz": "holsizlik",
+    "example": "Die Patientin klagt über Abgeschlagenheit seit Monaten.",
+    "category": "Symptome"
+  },
+  {
+    "id": "w116",
+    "de": "die Hyperhidrose",
+    "patient": "starkes Schwitzen",
+    "uz": "ko‘p terlash",
+    "example": "Es bestehen Wärmeintoleranz und Hyperhidrose.",
+    "category": "Symptome"
+  },
+  {
+    "id": "w117",
+    "de": "das Vorhofflimmern",
+    "patient": "unregelmäßiger Herzschlag",
+    "uz": "bo‘lmachalar fibrillyatsiyasi",
+    "example": "Im EKG zeigte sich ein tachykardes Vorhofflimmern.",
+    "category": "Krankheiten"
+  },
+  {
+    "id": "w118",
+    "de": "die Pankreatitis",
+    "patient": "Entzündung der Bauchspeicheldrüse",
+    "uz": "pankreatit",
+    "example": "Es wurde eine akute Pankreatitis diagnostiziert.",
+    "category": "Krankheiten"
+  },
+  {
+    "id": "w119",
+    "de": "das Ulcus duodeni",
+    "patient": "Zwölffingerdarmgeschwür",
+    "uz": "o‘n ikki barmoqli ichak yarasi",
+    "example": "Gastroskopisch fand sich ein Ulcus duodeni.",
+    "category": "Krankheiten"
+  },
+  {
+    "id": "w120",
+    "de": "die Migräne",
+    "patient": "anfallsartige, starke Kopfschmerzen",
+    "uz": "migren",
+    "example": "Die Patientin leidet seit der Pubertät an Migräne mit Aura.",
+    "category": "Krankheiten"
+  },
+  {
+    "id": "w121",
+    "de": "der Ileus",
+    "patient": "Darmverschluss",
+    "uz": "ichak tutilishi",
+    "example": "Radiologisch zeigte sich ein mechanischer Ileus.",
+    "category": "Krankheiten"
+  },
+  {
+    "id": "w122",
+    "de": "die Anämie",
+    "patient": "Blutarmut",
+    "uz": "kamqonlik",
+    "example": "Laborchemisch zeigte sich eine Eisenmangelanämie.",
+    "category": "Krankheiten"
+  },
+  {
+    "id": "w123",
+    "de": "die Kompressionssonographie",
+    "patient": "Ultraschall der Beinvenen",
+    "uz": "venalar kompression sonografiyasi",
+    "example": "Die Kompressionssonographie bestätigte eine Thrombose.",
+    "category": "Untersuchungen"
+  },
+  {
+    "id": "w124",
+    "de": "das Langzeit-EKG",
+    "patient": "EKG über 24 Stunden",
+    "uz": "sutkalik EKG (Holter)",
+    "example": "Ein Langzeit-EKG wurde ambulant empfohlen.",
+    "category": "Untersuchungen"
+  },
+  {
+    "id": "w125",
+    "de": "die CT-Angiographie",
+    "patient": "Computertomographie der Blutgefäße",
+    "uz": "KT-angiografiya",
+    "example": "In der CT-Angiographie zeigte sich eine Lungenembolie.",
+    "category": "Diagnostik"
+  },
+  {
+    "id": "w126",
+    "de": "das TSH",
+    "patient": "Schilddrüsenwert",
+    "uz": "TTG (tireotrop gormon)",
+    "example": "Das TSH war supprimiert.",
+    "category": "Labor"
+  },
+  {
+    "id": "w127",
+    "de": "das Ferritin",
+    "patient": "Eisenspeicher-Wert",
+    "uz": "ferritin (temir zaxirasi)",
+    "example": "Das Ferritin war deutlich erniedrigt.",
+    "category": "Labor"
+  },
+  {
+    "id": "w128",
+    "de": "das Laktat",
+    "patient": "Milchsäure-Wert im Blut",
+    "uz": "laktat",
+    "example": "Das Laktat war erhöht.",
+    "category": "Labor"
+  },
+  {
+    "id": "w129",
+    "de": "der Harnstau",
+    "patient": "Urin staut sich in der Niere",
+    "uz": "siydik dimlanishi",
+    "example": "Sonographisch zeigte sich ein Harnstau Grad I.",
+    "category": "Diagnostik"
+  },
+  {
+    "id": "w130",
+    "de": "das Apixaban",
+    "patient": "Blutverdünner (Tablette)",
+    "uz": "apiksaban (antikoagulyant)",
+    "example": "Wir leiteten eine Antikoagulation mit Apixaban ein.",
+    "category": "Medikamente"
+  },
+  {
+    "id": "w131",
+    "de": "das Tamsulosin",
+    "patient": "Mittel, damit der Stein leichter abgeht",
+    "uz": "tamsulozin",
+    "example": "Eine Austreibungstherapie mit Tamsulosin wurde begonnen.",
+    "category": "Medikamente"
+  },
+  {
+    "id": "w132",
+    "de": "das Pantoprazol",
+    "patient": "Magenschutz",
+    "uz": "pantoprazol",
+    "example": "Pantoprazol wurde intravenös verabreicht.",
+    "category": "Medikamente"
+  },
+  {
+    "id": "w133",
+    "de": "die Nahrungskarenz",
+    "patient": "nichts essen dürfen",
+    "uz": "ovqat yemaslik (och turish)",
+    "example": "Der Patient erhielt zunächst eine Nahrungskarenz.",
+    "category": "Therapie"
+  },
+  {
+    "id": "w134",
+    "de": "die Bluttransfusion",
+    "patient": "Blut bekommen",
+    "uz": "qon quyish",
+    "example": "Es wurden zwei Erythrozytenkonzentrate transfundiert.",
+    "category": "Therapie"
+  },
+  {
+    "id": "w135",
+    "de": "die Ösophagogastroduodenoskopie (ÖGD)",
+    "patient": "Magenspiegelung",
+    "uz": "ezofagogastroduodenoskopiya",
+    "example": "Eine ÖGD mit Blutstillung wurde durchgeführt.",
+    "category": "Untersuchungen"
+  },
+  {
+    "id": "w136",
+    "de": "die Struma",
+    "patient": "Kropf, vergrößerte Schilddrüse",
+    "uz": "buqoq",
+    "example": "Palpatorisch zeigte sich eine diffuse Struma.",
+    "category": "Krankheiten"
   }
 ]
