@@ -2,131 +2,135 @@ import { useState } from "react";
 import { Link } from "../components/Link";
 import { PageHeader } from "../components/ui";
 import { trackEvent } from "../lib/analytics";
+import { FREE_LIMIT, PRACTICE, usePlan } from "../lib/plan";
 import { cx } from "../lib/utils";
 
-const PLANS = [
+const OFFERS = [
   {
-    id: "bepul",
+    id: "free",
     name: "Bepul",
     price: "$0",
-    note: "hozir mavjud",
+    note: "doimiy",
     items: [
-      "Barcha Fälle, lug‘at, Redemittel",
-      "Kartochka mashqi va Prüfung simulyatsiyasi",
-      "Qoidaga asoslangan baholash",
-      "AI chiqqach: 3 ta bepul AI-bemor sinovi",
+      "Fälle, lug‘at, Redemittel, kartochkalar — cheklovsiz",
+      `Patienten-Simulation — ${FREE_LIMIT} marta`,
+      `Arztbrief tekshiruvi — ${FREE_LIMIT} marta`,
+      `Prüfung simulyatsiyasi — ${FREE_LIMIT} marta`,
     ],
   },
   {
-    id: "standart",
-    name: "Standart",
+    id: "week",
+    name: "1 haftalik",
     price: "$9",
-    note: "oyiga",
+    note: "7 kun",
     items: [
       "Bepul tarifdagi hammasi",
-      "AI-bemor: oyiga 30 ta suhbat",
-      "AI Arztbrief tekshiruvi: 15 ta",
-      "AI bilan to‘liq Prüfung: 4 ta",
+      "Barcha mashqlar — cheklovsiz",
+      "Imtihon oldidan jadal tayyorgarlik uchun",
     ],
   },
   {
-    id: "pro",
-    name: "Pro",
+    id: "month",
+    name: "1 oylik",
     price: "$15",
-    note: "oyiga",
+    note: "30 kun",
     featured: true,
     items: [
-      "Standart’dagi hammasi",
-      "AI-bemor: oyiga 80 ta suhbat",
-      "AI Arztbrief tekshiruvi: 40 ta",
-      "AI bilan to‘liq Prüfung: 12 ta",
+      "Bepul tarifdagi hammasi",
+      "Barcha mashqlar — cheklovsiz",
+      "Haftalikdan 2 baravardan ko‘proq tejamli",
     ],
-  },
-  {
-    id: "paket",
-    name: "FSP paketi",
-    price: "$36",
-    note: "3 oyga ($12/oy)",
-    items: ["Pro — 3 oy davomida", "Imtihongacha tayyorgarlik uchun", "Oylik to‘lovdan 20% arzon"],
   },
 ];
 
-const readVoted = () => {
-  try {
-    return PLANS.filter((p) => localStorage.getItem(`fsp.ev.pro-interest/${p.id}`)).map((p) => p.id);
-  } catch {
-    return [];
-  }
-};
-
 export function ProPage() {
-  let [voted, setVoted] = useState(readVoted);
+  let { plan, left } = usePlan(),
+    [asked, setAsked] = useState(null);
   return (
     <div className="page max-w-5xl">
       <PageHeader
-        eyebrow="Tez orada"
-        title="OsonFSP Pro — AI bilan mashq"
-        subtitle="Haqiqiy suhbatdoshdek javob beradigan AI-bemor, xatingizni shifokordek tekshiradigan AI va to‘liq imtihon. Hozir ishlab chiqilmoqda — sizga qaysi tarif kerakligini bildiring."
+        eyebrow="Tariflar"
+        title="OsonFSP tariflari"
+        subtitle="O‘qish materiallari doim bepul. Amaliy mashqlar bepul rejimda 3 martadan ochiq — keyin cheklovsiz davom etish uchun tarif tanlang."
       />
-      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-        {PLANS.map((p) => {
-          let done = voted.includes(p.id);
-          return (
-            <div
-              key={p.id}
-              className={cx(
-                "card flex flex-col",
-                p.featured && "border-2 border-teal-500 dark:border-teal-600",
-              )}
-            >
-              {p.featured && (
-                <span className="badge mb-2 self-start bg-teal-600 text-white">Tavsiya etiladi</span>
-              )}
-              <h2 className="text-lg font-semibold">{p.name}</h2>
-              <p className="mt-1">
-                <span className="text-3xl font-extrabold">{p.price}</span>{" "}
-                <span className="text-sm muted">{p.note}</span>
-              </p>
-              <ul className="mt-4 flex-1 space-y-2 text-sm">
-                {p.items.map((i) => (
-                  <li key={i} className="flex gap-2">
-                    <span className="text-teal-600">✓</span>
-                    {i}
-                  </li>
-                ))}
-              </ul>
-              {p.id === "bepul" ? (
-                <Link href="/faelle" className="btn-outline mt-5 w-full">
-                  Hozir boshlash
-                </Link>
-              ) : (
-                <button
-                  className={cx("mt-5 w-full", done ? "btn-outline" : "btn-primary")}
-                  disabled={done}
-                  onClick={() => {
-                    trackEvent(`pro-interest/${p.id}`, { once: true });
-                    setVoted((v) => [...v, p.id]);
-                  }}
-                >
-                  {done ? "✓ Qayd etildi" : "Menga shu kerak"}
-                </button>
-              )}
-            </div>
-          );
-        })}
+      {plan ? (
+        <p className="card mb-4 border-emerald-300 bg-emerald-50 text-sm dark:border-emerald-900 dark:bg-emerald-950/30">
+          ✅ Faol tarif: <b>{plan.id === "week" ? "1 haftalik" : "1 oylik"}</b> —{" "}
+          {new Date(plan.until).toLocaleDateString("uz")} gacha.
+        </p>
+      ) : (
+        <div className="card mb-4 text-sm">
+          <h2 className="section-title">Bepul urinishlaringiz</h2>
+          <div className="grid gap-2 sm:grid-cols-3">
+            {Object.entries(PRACTICE).map(([k, v]) => (
+              <div key={k} className="rounded-xl bg-slate-50 p-3 dark:bg-slate-800/60">
+                <div className="text-xs muted">{v}</div>
+                <b className="text-lg">
+                  {left(k)} / {FREE_LIMIT}
+                </b>{" "}
+                <span className="text-xs muted">qoldi</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+      <div className="grid gap-4 md:grid-cols-3">
+        {OFFERS.map((o) => (
+          <div
+            key={o.id}
+            className={cx(
+              "card flex flex-col",
+              o.featured && "border-2 border-teal-500 dark:border-teal-600",
+            )}
+          >
+            {o.featured && (
+              <span className="badge mb-2 self-start bg-teal-600 text-white">Tavsiya etiladi</span>
+            )}
+            <h2 className="text-lg font-semibold">{o.name}</h2>
+            <p className="mt-1">
+              <span className="text-3xl font-extrabold">{o.price}</span>{" "}
+              <span className="text-sm muted">{o.note}</span>
+            </p>
+            <ul className="mt-4 flex-1 space-y-2 text-sm">
+              {o.items.map((i) => (
+                <li key={i} className="flex gap-2">
+                  <span className="text-teal-600">✓</span>
+                  {i}
+                </li>
+              ))}
+            </ul>
+            {o.id === "free" ? (
+              <Link href="/faelle" className="btn-outline mt-5 w-full">
+                Bepul boshlash
+              </Link>
+            ) : (
+              <button
+                className="btn-primary mt-5 w-full"
+                onClick={() => {
+                  trackEvent(`buy-click/${o.id}`, { once: true });
+                  setAsked(o);
+                }}
+              >
+                Sotib olish
+              </button>
+            )}
+          </div>
+        ))}
       </div>
-      {voted.length > 0 && (
-        <p
-          className="card mt-4 border-emerald-300 bg-emerald-50 text-sm dark:border-emerald-900 dark:bg-emerald-950/30"
+      {asked && (
+        <div
+          className="card mt-4 border-amber-300 bg-amber-50 text-sm dark:border-amber-900 dark:bg-amber-950/30"
           role="status"
         >
-          Rahmat! Fikringiz hisobga olindi. Pro ishga tushganda saytda e’lon qilamiz.
-        </p>
+          <b>
+            {asked.name} — {asked.price}
+          </b>
+          <p className="mt-1">
+            Onlayn to‘lov tez orada ulanadi. So‘rovingiz qayd etildi — to‘lov ishga tushishi bilan shu
+            sahifada sotib olishingiz mumkin bo‘ladi.
+          </p>
+        </div>
       )}
-      <p className="mt-4 text-xs muted">
-        Narxlar taxminiy. Hech qanday to‘lov olinmaydi va shaxsiy ma’lumot so‘ralmaydi — faqat qaysi tarifga
-        qiziqish borligi anonim sanaladi.
-      </p>
     </div>
   );
 }

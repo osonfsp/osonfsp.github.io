@@ -48,7 +48,7 @@ const FEATURES = [
     {
       n: "2",
       title: "Bemordan anamnez oling",
-      text: "AI-bemor faqat siz so‘ragan narsaga javob beradi — xuddi imtihondagidek.",
+      text: "Virtual bemor faqat siz so‘ragan narsaga javob beradi — xuddi imtihondagidek.",
     },
     {
       n: "3",
@@ -165,7 +165,7 @@ export function HomePage() {
           </p>
           <h3 className="mt-2 text-lg font-semibold">💬 Patienten-Simulation</h3>
           <p className="mt-1 text-sm muted">
-            AI-bemordan anamnez oling. Oxirida to‘liqlik, grammatika, Patientensprache va savollar sifati
+            Virtual bemordan anamnez oling. Oxirida to‘liqlik, grammatika, Patientensprache va savollar sifati
             bo‘yicha baho olasiz.
           </p>
         </Link>

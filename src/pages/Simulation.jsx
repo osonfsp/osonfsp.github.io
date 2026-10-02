@@ -6,6 +6,8 @@ import { cases, getCase } from "../data/index";
 import { evaluateAnamnese } from "../lib/evaluation";
 import { useRouter, useSearchParams } from "../lib/router";
 import { useApp } from "../state/AppContext";
+import { Paywall, FreeLeft } from "../components/Paywall";
+import { consume, usePlan } from "../lib/plan";
 
 function SimulationView() {
   let e = useSearchParams(),
@@ -17,14 +19,16 @@ function SimulationView() {
     [r, c] = useState("chat"),
     [h, b] = useState(""),
     [y, f] = useState(false),
-    [p, A] = useState(null);
+    [p, A] = useState(null),
+    { canUse: CU } = usePlan();
   useEffect(() => {
     (s([]), c("chat"), b(""), A(null));
   }, [i.id]);
   async function w() {
     f(true);
     let g = await evaluateAnamnese(i, l, h);
-    (A(g),
+    (consume("simulation"),
+      A(g),
       c("result"),
       f(false),
       a(
@@ -41,9 +45,10 @@ function SimulationView() {
     <div className="page">
       <PageHeader
         eyebrow="Patienten-Simulation"
-        title="AI-bemor bilan anamnez"
-        subtitle="Siz — Arzt, AI — Patient. Bemor hamma narsani biladi, lekin faqat siz so‘ragan narsani aytadi."
+        title="Bemor bilan anamnez"
+        subtitle="Siz — Arzt, virtual bemor — Patient. Bemor hamma narsani biladi, lekin faqat siz so‘ragan narsani aytadi."
       >
+        <FreeLeft kind="simulation" />
         <select
           className="input w-auto min-w-[240px]"
           value={i.id}
@@ -59,20 +64,8 @@ function SimulationView() {
           ))}
         </select>
       </PageHeader>
-      <Link
-        href="/pro"
-        className="mb-4 flex items-center gap-3 rounded-xl border border-teal-200 bg-teal-50 px-4 py-3 text-sm transition hover:border-teal-400 dark:border-teal-900 dark:bg-teal-950/30"
-      >
-        <span className="text-xl" aria-hidden>
-          🤖
-        </span>
-        <span className="flex-1">
-          Hozir bemor oldindan tayyorlangan javoblar bilan gapiradi.{" "}
-          <b>Erkin suhbat quradigan haqiqiy AI-bemor</b> — tez orada.
-        </span>
-        <span className="shrink-0 font-medium text-teal-700 dark:text-teal-400">Batafsil →</span>
-      </Link>
-      {r === "chat" && (
+      {r === "chat" && !CU("simulation") && <Paywall kind="simulation" />}
+      {r === "chat" && CU("simulation") && (
         <div className="grid gap-4 lg:grid-cols-[1fr_300px]">
           <PatientChat caseData={i} messages={l} onMessages={s} />
           <aside className="space-y-4">

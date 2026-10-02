@@ -58,7 +58,7 @@ const NAV_LINKS = [
   },
   {
     href: "/pro",
-    label: "Pro ✨",
+    label: "Tariflar",
   },
 ];
 

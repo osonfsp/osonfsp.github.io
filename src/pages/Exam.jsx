@@ -12,6 +12,8 @@ import {
 } from "../lib/evaluation";
 import { avg, clamp, cx } from "../lib/utils";
 import { useApp } from "../state/AppContext";
+import { FreeLeft, Paywall } from "../components/Paywall";
+import { consume, usePlan } from "../lib/plan";
 
 function Timer({ minutes: e, resetKey: t, onExpire: o }) {
   let [a, n] = useState(e * 60);
@@ -88,6 +90,7 @@ export function ExamPage() {
     [g, d] = useState(null),
     [m, v] = useState(null),
     [term, setTerm] = useState(null),
+    { canUse: CU } = usePlan(),
     QS = term ? [...ARZT_ARZT_QUESTIONS, termQuestion(term)] : ARZT_ARZT_QUESTIONS;
   function N(z) {
     let k = z ?? Math.floor(Math.random() * EXAM_CASES.length),
@@ -146,6 +149,7 @@ export function ExamPage() {
         passed,
       }),
       D(false),
+      consume("exam"),
       a("result"));
   }
   function expire() {
@@ -172,7 +176,7 @@ export function ExamPage() {
               "\uD83D\uDCAC",
               "Teil 1",
               "Patienten-Anamnese",
-              "AI-bemordan anamnez yig‘asiz. Yordamchi maslahatlar o‘chirilgan.",
+              "Virtual bemordan anamnez yig‘asiz. Yordamchi maslahatlar o‘chirilgan.",
             ],
             ["✍️", "Teil 2", "Dokumentation", "Shu bemor bo‘yicha Arztbrief yozasiz."],
             [
@@ -209,24 +213,33 @@ export function ExamPage() {
             </li>
           </ul>
         </div>
-        <div className="card mt-4">
-          <h2 className="section-title">Fall tanlang</h2>
-          <div className="grid gap-2 sm:grid-cols-2">
-            {EXAM_CASES.map((z, k) => (
-              <button
-                key={z.c.id}
-                className="rounded-xl border border-slate-200 p-3 text-left text-sm transition hover:border-teal-400 dark:border-slate-700"
-                onClick={() => N(k)}
-              >
-                <span className="text-xs muted">{z.c.category}</span>
-                <span className="block font-medium">{z.c.patient.hauptbeschwerde}</span>
-              </button>
-            ))}
+        {!CU("exam") ? (
+          <div className="mt-4">
+            <Paywall kind="exam" />
           </div>
-          <button className="btn-primary mt-4 w-full sm:w-auto" onClick={() => N()}>
-            🎲 Tasodifiy Fall bilan boshlash
-          </button>
-        </div>
+        ) : (
+          <div className="card mt-4">
+            <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
+              <h2 className="section-title mb-0">Fall tanlang</h2>
+              <FreeLeft kind="exam" />
+            </div>
+            <div className="grid gap-2 sm:grid-cols-2">
+              {EXAM_CASES.map((z, k) => (
+                <button
+                  key={z.c.id}
+                  className="rounded-xl border border-slate-200 p-3 text-left text-sm transition hover:border-teal-400 dark:border-slate-700"
+                  onClick={() => N(k)}
+                >
+                  <span className="text-xs muted">{z.c.category}</span>
+                  <span className="block font-medium">{z.c.patient.hauptbeschwerde}</span>
+                </button>
+              ))}
+            </div>
+            <button className="btn-primary mt-4 w-full sm:w-auto" onClick={() => N()}>
+              🎲 Tasodifiy Fall bilan boshlash
+            </button>
+          </div>
+        )}
         <div className="mt-4">
           <Disclaimer />
         </div>

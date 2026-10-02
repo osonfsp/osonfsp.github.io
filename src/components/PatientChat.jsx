@@ -95,7 +95,7 @@ export function PatientChat({ caseData, messages, onMessages, showHints = true, 
         <div className="min-w-0">
           <p className="truncate text-sm font-semibold">
             {patient.gender === "weiblich" ? "Frau" : "Herr"} {patient.name.split(" ").slice(-1)[0]}{" "}
-            <span className="font-normal muted">· Patient (AI)</span>
+            <span className="font-normal muted">· Patient</span>
           </p>
           <p className="truncate text-xs muted">
             {patient.age}
