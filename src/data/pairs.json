@@ -1,0 +1,162 @@
+[
+  {
+    "id": "p1",
+    "fach": "Dyspnoe",
+    "patient": "Atemnot / schlecht Luft bekommen",
+    "uz": "nafas qisishi",
+    "fachSatz": "Der Patient berichtet über Dyspnoe.",
+    "patientSatz": "Bekommen Sie schlecht Luft?"
+  },
+  {
+    "id": "p2",
+    "fach": "Cephalgie",
+    "patient": "Kopfschmerzen haben",
+    "uz": "bosh og‘rig‘i",
+    "fachSatz": "Es bestehen okzipitale Cephalgien.",
+    "patientSatz": "Haben Sie Kopfschmerzen?"
+  },
+  {
+    "id": "p3",
+    "fach": "Emesis",
+    "patient": "Erbrechen / sich übergeben",
+    "uz": "qusish",
+    "fachSatz": "Es kam zu zweimaliger Emesis.",
+    "patientSatz": "Mussten Sie sich übergeben?"
+  },
+  {
+    "id": "p4",
+    "fach": "Diarrhö",
+    "patient": "Durchfall haben",
+    "uz": "ich ketishi",
+    "fachSatz": "Die Patientin klagt über wässrige Diarrhö.",
+    "patientSatz": "Haben Sie Durchfall?"
+  },
+  {
+    "id": "p5",
+    "fach": "Obstipation",
+    "patient": "Verstopfung haben",
+    "uz": "qabziyat",
+    "fachSatz": "Es besteht eine chronische Obstipation.",
+    "patientSatz": "Haben Sie Verstopfung?"
+  },
+  {
+    "id": "p6",
+    "fach": "Hypertonie",
+    "patient": "Bluthochdruck haben",
+    "uz": "qon bosimi yuqoriligi",
+    "fachSatz": "Eine arterielle Hypertonie ist bekannt.",
+    "patientSatz": "Haben Sie Bluthochdruck?"
+  },
+  {
+    "id": "p7",
+    "fach": "Nausea",
+    "patient": "Übelkeit / mir ist übel",
+    "uz": "ko‘ngil aynishi",
+    "fachSatz": "Begleitend besteht Nausea.",
+    "patientSatz": "Ist Ihnen übel?"
+  },
+  {
+    "id": "p8",
+    "fach": "Pruritus",
+    "patient": "Juckreiz / es juckt",
+    "uz": "qichishish",
+    "fachSatz": "Die Patientin klagt über Pruritus.",
+    "patientSatz": "Juckt die Haut?"
+  },
+  {
+    "id": "p9",
+    "fach": "Vertigo",
+    "patient": "Schwindel / mir ist schwindelig",
+    "uz": "bosh aylanishi",
+    "fachSatz": "Der Patient gibt Vertigo an.",
+    "patientSatz": "Ist Ihnen schwindelig?"
+  },
+  {
+    "id": "p10",
+    "fach": "Synkope",
+    "patient": "in Ohnmacht fallen",
+    "uz": "hushdan ketish",
+    "fachSatz": "Es kam zu einer Synkope.",
+    "patientSatz": "Sind Sie ohnmächtig geworden?"
+  },
+  {
+    "id": "p11",
+    "fach": "Palpitationen",
+    "patient": "Herzklopfen / Herzrasen",
+    "uz": "yurak urib ketishi",
+    "fachSatz": "Die Patientin berichtet über Palpitationen.",
+    "patientSatz": "Haben Sie Herzklopfen oder Herzrasen?"
+  },
+  {
+    "id": "p12",
+    "fach": "Dysurie",
+    "patient": "Brennen beim Wasserlassen",
+    "uz": "siyishda achishish",
+    "fachSatz": "Es besteht eine Dysurie.",
+    "patientSatz": "Brennt es beim Wasserlassen?"
+  },
+  {
+    "id": "p13",
+    "fach": "Hämoptyse",
+    "patient": "Blut husten",
+    "uz": "qon tupurish",
+    "fachSatz": "Hämoptysen werden verneint.",
+    "patientSatz": "Husten Sie Blut ab?"
+  },
+  {
+    "id": "p14",
+    "fach": "Myokardinfarkt",
+    "patient": "Herzinfarkt",
+    "uz": "miokard infarkti",
+    "fachSatz": "Z. n. Myokardinfarkt 2015.",
+    "patientSatz": "Hatten Sie schon einmal einen Herzinfarkt?"
+  },
+  {
+    "id": "p15",
+    "fach": "Apoplex",
+    "patient": "Schlaganfall",
+    "uz": "insult",
+    "fachSatz": "Familienanamnestisch ist ein Apoplex bekannt.",
+    "patientSatz": "Hatte jemand in Ihrer Familie einen Schlaganfall?"
+  },
+  {
+    "id": "p16",
+    "fach": "Pneumonie",
+    "patient": "Lungenentzündung",
+    "uz": "zotiljam",
+    "fachSatz": "Radiologisch zeigt sich eine Pneumonie.",
+    "patientSatz": "Sie haben eine Lungenentzündung."
+  },
+  {
+    "id": "p17",
+    "fach": "Antikoagulation",
+    "patient": "Blutverdünner nehmen",
+    "uz": "qonni suyultirish",
+    "fachSatz": "Die orale Antikoagulation wurde pausiert.",
+    "patientSatz": "Nehmen Sie Blutverdünner?"
+  },
+  {
+    "id": "p18",
+    "fach": "Analgetikum",
+    "patient": "Schmerzmittel",
+    "uz": "og‘riq qoldiruvchi",
+    "fachSatz": "Der Patient erhielt ein Analgetikum.",
+    "patientSatz": "Haben Sie ein Schmerzmittel genommen?"
+  },
+  {
+    "id": "p19",
+    "fach": "Sonographie",
+    "patient": "Ultraschall",
+    "uz": "ultratovush tekshiruvi",
+    "fachSatz": "Eine Sonographie des Abdomens wurde durchgeführt.",
+    "patientSatz": "Wir machen jetzt einen Ultraschall vom Bauch."
+  },
+  {
+    "id": "p20",
+    "fach": "Gastroskopie",
+    "patient": "Magenspiegelung",
+    "uz": "gastroskopiya",
+    "fachSatz": "Eine Gastroskopie ist geplant.",
+    "patientSatz": "Wir möchten eine Magenspiegelung machen."
+  }
+]

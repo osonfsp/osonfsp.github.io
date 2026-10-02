@@ -1,0 +1,978 @@
+[
+  {
+    "id": "c1",
+    "title": "Akutes Koronarsyndrom",
+    "category": "Kardiologie",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Klaus Weber",
+      "age": 58,
+      "gender": "männlich",
+      "hauptbeschwerde": "Brustschmerzen seit 2 Stunden"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit ca. 2 Stunden bestehende, drückende retrosternale Thoraxschmerzen mit Ausstrahlung in den linken Arm und Unterkiefer, begleitet von Kaltschweißigkeit, Nausea und leichter Dyspnoe. Schmerzintensität 8/10 (NRS). Beginn unter Belastung (Treppensteigen).",
+      "vorerkrankungen": "Arterielle Hypertonie seit 10 Jahren, Hypercholesterinämie. Z. n. Appendektomie im Kindesalter.",
+      "medikamente": "Ramipril 5 mg 1-0-0, Simvastatin 20 mg 0-0-1",
+      "allergien": "Penicillin (Exanthem)",
+      "familienanamnese": "Vater mit 62 Jahren an Myokardinfarkt verstorben. Mutter: Diabetes mellitus Typ 2.",
+      "sozialanamnese": "Verheiratet, zwei erwachsene Kinder, LKW-Fahrer. Nikotinabusus ca. 30 pack years, Alkohol gelegentlich."
+    },
+    "sprache": [
+      {
+        "patient": "Ich habe seit zwei Stunden starke Schmerzen in der Brust.",
+        "fach": "Der Patient stellt sich mit seit zwei Stunden bestehenden Thoraxschmerzen vor."
+      },
+      {
+        "patient": "Das drückt wie ein Elefant auf der Brust.",
+        "fach": "Die Schmerzen werden als drückend beschrieben."
+      },
+      {
+        "patient": "Es zieht in den linken Arm.",
+        "fach": "Es besteht eine Ausstrahlung in den linken Arm."
+      },
+      {
+        "patient": "Mir ist übel und ich schwitze kalt.",
+        "fach": "Begleitend bestehen Nausea und Kaltschweißigkeit."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Thoraxschmerzen",
+        "patient": "Brustschmerzen",
+        "uz": "ko‘krak qafasidagi og‘riq"
+      },
+      {
+        "de": "retrosternal",
+        "patient": "hinter dem Brustbein",
+        "uz": "to‘sh suyagi orqasida"
+      },
+      {
+        "de": "Nausea",
+        "patient": "Übelkeit",
+        "uz": "ko‘ngil aynishi"
+      },
+      {
+        "de": "Diaphorese",
+        "patient": "starkes Schwitzen",
+        "uz": "kuchli terlash"
+      },
+      {
+        "de": "Myokardinfarkt",
+        "patient": "Herzinfarkt",
+        "uz": "miokard infarkti"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe so starke Schmerzen in der Brust. Das hat vor ungefähr zwei Stunden angefangen.",
+      "answers": {
+        "beginn": "Das hat vor ungefähr zwei Stunden angefangen, ganz plötzlich, als ich die Treppe hochgegangen bin.",
+        "lokalisation": "Hier, in der Mitte der Brust, hinter dem Brustbein.",
+        "charakter": "Es drückt ganz stark, wie ein Elefant auf der Brust. Auf einer Skala von 1 bis 10 ungefähr eine 8.",
+        "ausstrahlung": "Ja, das zieht in den linken Arm und ein bisschen in den Kiefer.",
+        "begleit": "Mir ist übel und ich habe kalten Schweiß. Ein bisschen schlecht Luft bekomme ich auch.",
+        "vegetativ": "Appetit habe ich gerade keinen. Schlaf, Stuhlgang und Wasserlassen sind normal.",
+        "vorerkrankungen": "Ich habe seit etwa zehn Jahren Bluthochdruck und zu hohes Cholesterin. Als Kind wurde mir der Blinddarm entfernt.",
+        "medikamente": "Ich nehme Ramipril 5 mg morgens und Simvastatin 20 mg abends.",
+        "allergien": "Ja, gegen Penicillin. Da habe ich einen Ausschlag bekommen.",
+        "familie": "Mein Vater ist mit 62 an einem Herzinfarkt gestorben. Meine Mutter hat Zucker.",
+        "sozial": "Ich bin verheiratet, habe zwei erwachsene Kinder und arbeite als LKW-Fahrer.",
+        "noxen": "Ich rauche seit 30 Jahren etwa eine Schachtel am Tag. Alkohol nur am Wochenende ein Bier. Drogen nehme ich nicht."
+      }
+    },
+    "verdachtsdiagnose": "Akutes Koronarsyndrom (V. a. Myokardinfarkt)",
+    "diagnoseKeywords": [
+      "koronarsyndrom",
+      "myokardinfarkt",
+      "herzinfarkt",
+      "stemi",
+      "acs",
+      "infarkt"
+    ],
+    "differenzialdiagnosen": [
+      "Lungenembolie",
+      "Aortendissektion",
+      "Perikarditis",
+      "Pneumothorax"
+    ],
+    "untersuchungen": [
+      "EKG",
+      "Troponin",
+      "Echo (Echokardiographie)",
+      "Koronarangiographie",
+      "Blutbild"
+    ]
+  },
+  {
+    "id": "c2",
+    "title": "Ambulant erworbene Pneumonie",
+    "category": "Pneumologie",
+    "difficulty": "leicht",
+    "patient": {
+      "name": "Anna Schmidt",
+      "age": 67,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Husten, Fieber und Atemnot seit 3 Tagen"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 3 Tagen produktiver Husten mit gelblich-grünem Auswurf, Fieber bis 39,2 °C mit Schüttelfrost, Belastungsdyspnoe sowie rechtsseitige atemabhängige Thoraxschmerzen. Keine Hämoptysen.",
+      "vorerkrankungen": "COPD GOLD II, Diabetes mellitus Typ 2. Z. n. Cholezystektomie 2010.",
+      "medikamente": "Tiotropium-Inhalation 1x täglich, Metformin 1000 mg 1-0-1",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Mutter: Asthma bronchiale. Vater: KHK.",
+      "sozialanamnese": "Verwitwet, lebt allein, Rentnerin (ehemals Friseurin). Ex-Raucherin (40 pack years, seit 5 Jahren abstinent), kein Alkohol."
+    },
+    "sprache": [
+      {
+        "patient": "Ich huste seit drei Tagen gelb-grünen Schleim ab.",
+        "fach": "Die Patientin berichtet über seit drei Tagen bestehenden produktiven Husten mit gelblich-grünem Auswurf."
+      },
+      {
+        "patient": "Beim Treppensteigen bekomme ich schlecht Luft.",
+        "fach": "Es besteht eine Belastungsdyspnoe."
+      },
+      {
+        "patient": "Rechts in der Brust sticht es beim Einatmen.",
+        "fach": "Die Patientin klagt über rechtsseitige atemabhängige Thoraxschmerzen."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Pneumonie",
+        "patient": "Lungenentzündung",
+        "uz": "zotiljam (pnevmoniya)"
+      },
+      {
+        "de": "Auswurf (Sputum)",
+        "patient": "Schleim abhusten",
+        "uz": "balg‘am"
+      },
+      {
+        "de": "Belastungsdyspnoe",
+        "patient": "Atemnot bei Anstrengung",
+        "uz": "jismoniy zo‘riqishda nafas qisishi"
+      },
+      {
+        "de": "Schüttelfrost",
+        "patient": "Zittern vor Kälte bei Fieber",
+        "uz": "et uvishib qaltirash"
+      },
+      {
+        "de": "Hämoptysen",
+        "patient": "Blut abhusten",
+        "uz": "qon tupurish"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich huste seit drei Tagen ganz schlimm und habe Fieber. Und ich bekomme schlecht Luft.",
+      "answers": {
+        "beginn": "Angefangen hat es vor drei Tagen, erst nur Husten, am nächsten Tag kam dann das Fieber dazu.",
+        "lokalisation": "Der Husten kommt tief aus der Brust. Und rechts unten in der Brust tut es weh, wenn ich tief einatme.",
+        "charakter": "Das Stechen rechts ist so eine 5 von 10. Der Husten ist feucht, ich huste gelb-grünen Schleim ab.",
+        "ausstrahlung": "Nein, das bleibt rechts in der Brust.",
+        "begleit": "Ich habe Fieber bis 39,2 Grad und hatte Schüttelfrost. Beim Treppensteigen bekomme ich schlecht Luft. Blut habe ich nicht abgehustet.",
+        "vegetativ": "Ich habe kaum Appetit und schlafe schlecht, weil ich so viel huste. Stuhlgang und Wasserlassen sind normal.",
+        "vorerkrankungen": "Ich habe eine COPD, also eine Raucherlunge, und Zucker. Die Gallenblase wurde mir 2010 entfernt.",
+        "medikamente": "Ich inhaliere einmal am Tag Spiriva und nehme Metformin 1000 morgens und abends.",
+        "allergien": "Allergien habe ich keine.",
+        "familie": "Meine Mutter hatte Asthma, mein Vater hatte etwas mit den Herzkranzgefäßen.",
+        "sozial": "Ich bin verwitwet und lebe allein. Früher war ich Friseurin, jetzt bin ich Rentnerin.",
+        "noxen": "Ich habe 40 Jahre geraucht, aber vor fünf Jahren aufgehört. Alkohol trinke ich nicht."
+      }
+    },
+    "verdachtsdiagnose": "Ambulant erworbene Pneumonie (rechts)",
+    "diagnoseKeywords": [
+      "pneumonie",
+      "lungenentzündung"
+    ],
+    "differenzialdiagnosen": [
+      "COPD-Exazerbation",
+      "Lungenembolie",
+      "Bronchialkarzinom",
+      "Herzinsuffizienz"
+    ],
+    "untersuchungen": [
+      "Röntgen-Thorax",
+      "CRP",
+      "Blutbild",
+      "BGA (Blutgasanalyse)",
+      "Blutkultur"
+    ]
+  },
+  {
+    "id": "c3",
+    "title": "Akute Cholezystitis",
+    "category": "Gastroenterologie",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Maria Fischer",
+      "age": 45,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Schmerzen im rechten Oberbauch seit gestern"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit gestern Abend nach fettreicher Mahlzeit bestehende, initial kolikartige, inzwischen persistierende Schmerzen im rechten Oberbauch mit Ausstrahlung in die rechte Schulter. Nausea, zweimalige Emesis, Temperatur 38,1 °C. Kein Ikterus.",
+      "vorerkrankungen": "Bekannte Cholezystolithiasis (sonographisch 2025), Adipositas, Hypothyreose. Keine Voroperationen.",
+      "medikamente": "L-Thyroxin 75 µg 1-0-0, orale Kontrazeption",
+      "allergien": "Pflasterallergie (Kontaktdermatitis)",
+      "familienanamnese": "Mutter: Z. n. Cholezystektomie. Vater: Kolonkarzinom.",
+      "sozialanamnese": "Verheiratet, drei Kinder, Lehrerin. Nichtraucherin, Alkohol selten."
+    },
+    "sprache": [
+      {
+        "patient": "Ich habe furchtbare Bauchschmerzen rechts oben.",
+        "fach": "Die Patientin klagt über Schmerzen im rechten Oberbauch."
+      },
+      {
+        "patient": "Das zieht bis in die rechte Schulter.",
+        "fach": "Die Schmerzen strahlen in die rechte Schulter aus."
+      },
+      {
+        "patient": "Ich habe zweimal erbrochen.",
+        "fach": "Es kam zu zweimaliger Emesis."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Cholezystitis",
+        "patient": "Gallenblasenentzündung",
+        "uz": "xoletsistit (o‘t pufagi yallig‘lanishi)"
+      },
+      {
+        "de": "Cholezystolithiasis",
+        "patient": "Gallensteine",
+        "uz": "o‘t pufagida tosh"
+      },
+      {
+        "de": "kolikartig",
+        "patient": "krampfartig, in Wellen",
+        "uz": "sanchiqsimon, to‘lqinsimon"
+      },
+      {
+        "de": "Emesis",
+        "patient": "Erbrechen",
+        "uz": "qusish"
+      },
+      {
+        "de": "Ikterus",
+        "patient": "Gelbsucht",
+        "uz": "sariqlik"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe seit gestern Abend furchtbare Bauchschmerzen hier rechts oben, und mir ist so übel.",
+      "answers": {
+        "beginn": "Gestern Abend nach dem Essen – wir hatten Schweinebraten mit viel Soße – fing es an.",
+        "lokalisation": "Hier rechts oben im Bauch, unter den Rippen.",
+        "charakter": "Erst kamen die Schmerzen in Wellen, krampfartig. Jetzt sind sie dauerhaft, so eine 7 von 10.",
+        "ausstrahlung": "Ja, das zieht bis in die rechte Schulter.",
+        "begleit": "Mir ist übel, ich habe zweimal erbrochen und heute Morgen hatte ich 38,1 Grad. Gelb geworden bin ich, glaube ich, nicht.",
+        "vegetativ": "Appetit habe ich keinen. Der Stuhlgang war normal und der Urin ist nicht dunkel.",
+        "vorerkrankungen": "Man hat bei mir letztes Jahr Gallensteine im Ultraschall gesehen. Außerdem habe ich eine Schilddrüsenunterfunktion und Übergewicht. Operiert wurde ich noch nie.",
+        "medikamente": "Ich nehme L-Thyroxin 75 morgens und die Pille.",
+        "allergien": "Ich vertrage keine Pflaster, davon bekomme ich einen Ausschlag.",
+        "familie": "Meiner Mutter wurde die Gallenblase entfernt. Mein Vater hatte Darmkrebs.",
+        "sozial": "Ich bin verheiratet, habe drei Kinder und arbeite als Lehrerin.",
+        "noxen": "Ich rauche nicht. Alkohol trinke ich nur selten, mal ein Glas Wein."
+      }
+    },
+    "verdachtsdiagnose": "Akute Cholezystitis bei Cholezystolithiasis",
+    "diagnoseKeywords": [
+      "cholezystitis",
+      "gallenblasenentzündung"
+    ],
+    "differenzialdiagnosen": [
+      "Choledocholithiasis",
+      "Pankreatitis",
+      "Ulkus (Ulcus duodeni)",
+      "Hepatitis"
+    ],
+    "untersuchungen": [
+      "Sonographie",
+      "Lipase",
+      "Transaminasen",
+      "Bilirubin",
+      "CRP"
+    ]
+  },
+  {
+    "id": "c4",
+    "title": "Ischämischer Schlaganfall",
+    "category": "Neurologie",
+    "difficulty": "schwer",
+    "patient": {
+      "name": "Peter Hoffmann",
+      "age": 72,
+      "gender": "männlich",
+      "hauptbeschwerde": "Plötzliche Schwäche im rechten Arm und Sprachstörung"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Vor ca. 1 Stunde (Symptombeginn 08:15 Uhr) plötzlich aufgetretene, brachiofazial betonte Hemiparese rechts sowie Dysarthrie und Wortfindungsstörungen. Keine Cephalgie, keine Bewusstlosigkeit, keine Sehstörungen.",
+      "vorerkrankungen": "Vorhofflimmern, arterielle Hypertonie. Z. n. Hüft-TEP links 2018.",
+      "medikamente": "Bisoprolol 5 mg 1-0-0, Amlodipin 5 mg 1-0-0. Apixaban 5 mg 1-0-1 vor 2 Wochen eigenmächtig abgesetzt (Epistaxis).",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Mutter: Schlaganfall mit 75 Jahren.",
+      "sozialanamnese": "Verheiratet, Rentner (ehemals Ingenieur), lebt mit Ehefrau im Einfamilienhaus. Ex-Raucher seit 20 Jahren, 1–2 Gläser Wein täglich."
+    },
+    "sprache": [
+      {
+        "patient": "Mein rechter Arm ist so schwach, ich kann ihn kaum heben.",
+        "fach": "Der Patient weist eine Hemiparese rechts auf."
+      },
+      {
+        "patient": "Ich finde manchmal die Wörter nicht.",
+        "fach": "Es bestehen Wortfindungsstörungen."
+      },
+      {
+        "patient": "Den Blutverdünner habe ich vor zwei Wochen weggelassen.",
+        "fach": "Die orale Antikoagulation wurde vor zwei Wochen eigenmächtig abgesetzt."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Hemiparese",
+        "patient": "Halbseitenlähmung, Schwäche auf einer Seite",
+        "uz": "bir tomonlama falajlik (gemiparez)"
+      },
+      {
+        "de": "Dysarthrie",
+        "patient": "verwaschene Sprache",
+        "uz": "nutqning noaniqligi (dizartriya)"
+      },
+      {
+        "de": "Apoplex",
+        "patient": "Schlaganfall",
+        "uz": "insult"
+      },
+      {
+        "de": "Vorhofflimmern",
+        "patient": "unregelmäßiger Herzschlag",
+        "uz": "bo‘lmachalar fibrillyatsiyasi"
+      },
+      {
+        "de": "Antikoagulation",
+        "patient": "Blutverdünnung",
+        "uz": "qonni suyultirish (antikoagulyatsiya)"
+      }
+    ],
+    "simulation": {
+      "opening": "(spricht etwas verwaschen) Mein rechter Arm … der ist so schwach, und das Sprechen fällt mir schwer.",
+      "answers": {
+        "beginn": "Vor etwa einer Stunde beim Frühstück, so um Viertel nach acht. Plötzlich ist mir die Kaffeetasse aus der rechten Hand gefallen.",
+        "lokalisation": "Der rechte Arm und auch das rechte Bein sind schwach. Und mein Mund hängt rechts etwas, sagt meine Frau.",
+        "charakter": "Schmerzen habe ich keine. Der Arm ist schwer wie Blei, ich kann ihn kaum heben.",
+        "ausstrahlung": "Nein, Schmerzen, die irgendwohin ziehen, habe ich nicht.",
+        "begleit": "Ich finde manchmal die Wörter nicht. Kopfschmerzen, Übelkeit oder Sehstörungen habe ich nicht. Bewusstlos war ich nicht.",
+        "vegetativ": "Appetit, Schlaf, Stuhlgang und Wasserlassen waren bisher normal.",
+        "vorerkrankungen": "Ich habe Vorhofflimmern und Bluthochdruck. 2018 habe ich eine neue Hüfte links bekommen.",
+        "medikamente": "Bisoprolol 5 und Amlodipin 5 morgens. Den Blutverdünner Eliquis habe ich vor zwei Wochen weggelassen, weil ich so oft Nasenbluten hatte.",
+        "allergien": "Nein, keine Allergien.",
+        "familie": "Meine Mutter hatte mit 75 einen Schlaganfall.",
+        "sozial": "Ich bin verheiratet und wohne mit meiner Frau in einem Haus. Ich war Ingenieur, jetzt bin ich in Rente.",
+        "noxen": "Früher habe ich geraucht, seit 20 Jahren nicht mehr. Abends trinke ich ein bis zwei Gläser Wein."
+      }
+    },
+    "verdachtsdiagnose": "Akuter ischämischer Schlaganfall (Apoplex) links, kardioembolisch bei Vorhofflimmern",
+    "diagnoseKeywords": [
+      "schlaganfall",
+      "apoplex",
+      "insult",
+      "ischäm",
+      "hirninfarkt"
+    ],
+    "differenzialdiagnosen": [
+      "Hirnblutung (intrazerebrale Blutung)",
+      "TIA",
+      "Hypoglykämie",
+      "Todd-Parese"
+    ],
+    "untersuchungen": [
+      "CT (cCT, CT-Angiographie)",
+      "Blutzucker",
+      "Gerinnung",
+      "EKG",
+      "MRT"
+    ]
+  },
+  {
+    "id": "c5",
+    "title": "Akute Pyelonephritis",
+    "category": "Nephrologie",
+    "difficulty": "leicht",
+    "patient": {
+      "name": "Laura Becker",
+      "age": 29,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Fieber und Schmerzen in der linken Flanke"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 2 Tagen Dysurie und Pollakisurie, seit gestern Fieber bis 39,5 °C mit Schüttelfrost und dumpfen Schmerzen in der linken Flanke. Nausea ohne Emesis.",
+      "vorerkrankungen": "Rezidivierende Harnwegsinfekte (2–3x/Jahr), sonst keine. Keine Voroperationen.",
+      "medikamente": "Orale Kontrazeption",
+      "allergien": "Cotrimoxazol (Exanthem)",
+      "familienanamnese": "Unauffällig",
+      "sozialanamnese": "Ledig, in Partnerschaft, Bürokauffrau. Nichtraucherin, Alkohol gelegentlich. Letzte Menstruation vor 2 Wochen, keine Schwangerschaft."
+    },
+    "sprache": [
+      {
+        "patient": "Es brennt beim Wasserlassen.",
+        "fach": "Die Patientin berichtet über Dysurie."
+      },
+      {
+        "patient": "Ich muss ständig auf die Toilette, es kommt aber nur wenig.",
+        "fach": "Es besteht eine Pollakisurie."
+      },
+      {
+        "patient": "Links an der Seite im Rücken tut es weh.",
+        "fach": "Die Patientin klagt über Flankenschmerzen links."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Pyelonephritis",
+        "patient": "Nierenbeckenentzündung",
+        "uz": "pielonefrit"
+      },
+      {
+        "de": "Dysurie",
+        "patient": "Brennen beim Wasserlassen",
+        "uz": "siyishda achishish"
+      },
+      {
+        "de": "Pollakisurie",
+        "patient": "häufiges Wasserlassen kleiner Mengen",
+        "uz": "tez-tez oz-ozdan siyish"
+      },
+      {
+        "de": "Flankenschmerz",
+        "patient": "Schmerzen an der Seite",
+        "uz": "biqindagi og‘riq"
+      },
+      {
+        "de": "Nierenlagerklopfschmerz",
+        "patient": "Schmerz beim Abklopfen der Niere",
+        "uz": "buyrak sohasini urganda og‘riq"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe Fieber und starke Schmerzen links an der Seite, im Rücken.",
+      "answers": {
+        "beginn": "Vor zwei Tagen fing es mit Brennen beim Wasserlassen an, seit gestern habe ich Fieber und die Schmerzen in der Seite.",
+        "lokalisation": "Hier links hinten, an der Seite unter den Rippen.",
+        "charakter": "Ein dumpfer, dauerhafter Schmerz, so 6 von 10.",
+        "ausstrahlung": "Manchmal zieht es etwas nach vorne in den Unterbauch.",
+        "begleit": "Ich habe Fieber bis 39,5 und hatte gestern Schüttelfrost. Mir ist etwas übel, erbrochen habe ich nicht.",
+        "vegetativ": "Ich muss ständig auf die Toilette, es kommt aber nur wenig, und es brennt. Der Urin riecht komisch. Meine letzte Periode war vor zwei Wochen, schwanger bin ich nicht.",
+        "vorerkrankungen": "Ich hatte schon öfter Blasenentzündungen, so zwei- bis dreimal im Jahr. Sonst bin ich gesund, operiert wurde ich nie.",
+        "medikamente": "Nur die Pille.",
+        "allergien": "Ja, gegen Cotrimoxazol, das ist ein Antibiotikum. Da hatte ich Ausschlag.",
+        "familie": "In meiner Familie gibt es keine besonderen Krankheiten.",
+        "sozial": "Ich bin ledig, habe einen Freund und arbeite als Bürokauffrau.",
+        "noxen": "Ich rauche nicht, Alkohol nur mal am Wochenende."
+      }
+    },
+    "verdachtsdiagnose": "Akute Pyelonephritis links",
+    "diagnoseKeywords": [
+      "pyelonephritis",
+      "nierenbeckenentzündung"
+    ],
+    "differenzialdiagnosen": [
+      "Nephrolithiasis",
+      "Zystitis",
+      "Adnexitis",
+      "Appendizitis"
+    ],
+    "untersuchungen": [
+      "Urinstatus",
+      "Urinkultur",
+      "Sonographie",
+      "Kreatinin",
+      "CRP"
+    ]
+  },
+  {
+    "id": "c6",
+    "title": "Diabetes mellitus Typ 2 – Erstdiagnose",
+    "category": "Endokrinologie",
+    "difficulty": "leicht",
+    "patient": {
+      "name": "Thomas Wagner",
+      "age": 52,
+      "gender": "männlich",
+      "hauptbeschwerde": "Starker Durst und häufiges Wasserlassen"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit ca. 6 Wochen Polydipsie (5–6 l/Tag), Polyurie und Nykturie (3–4x/Nacht), Abgeschlagenheit, ungewollter Gewichtsverlust von 5 kg, verschwommenes Sehen, abendliche Parästhesien der Füße.",
+      "vorerkrankungen": "Adipositas (BMI 33), arterielle Hypertonie, Steatosis hepatis.",
+      "medikamente": "Candesartan 8 mg 1-0-0",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Vater und Bruder: Diabetes mellitus Typ 2.",
+      "sozialanamnese": "Verheiratet, eine Tochter, Bürotätigkeit (Versicherung), wenig körperliche Aktivität. Nikotinabusus 15 pack years, Alkohol 2–3 Bier/Woche."
+    },
+    "sprache": [
+      {
+        "patient": "Ich habe ständig Durst und muss dauernd auf die Toilette.",
+        "fach": "Der Patient berichtet über Polydipsie und Polyurie."
+      },
+      {
+        "patient": "Nachts muss ich drei- bis viermal raus.",
+        "fach": "Es besteht eine Nykturie."
+      },
+      {
+        "patient": "Ich habe 5 Kilo abgenommen, obwohl ich normal esse.",
+        "fach": "Es kam zu einem ungewollten Gewichtsverlust von 5 kg."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Polydipsie",
+        "patient": "großer Durst",
+        "uz": "kuchli chanqoq"
+      },
+      {
+        "de": "Polyurie",
+        "patient": "viel Wasserlassen",
+        "uz": "ko‘p siyish"
+      },
+      {
+        "de": "Nykturie",
+        "patient": "nachts Wasser lassen müssen",
+        "uz": "tunda siyish"
+      },
+      {
+        "de": "Parästhesien",
+        "patient": "Kribbeln, Ameisenlaufen",
+        "uz": "uvishish"
+      },
+      {
+        "de": "Hyperglykämie",
+        "patient": "zu hoher Zucker",
+        "uz": "giperglikemiya (qand miqdori yuqori)"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe in letzter Zeit ständig Durst und muss dauernd auf die Toilette. Meine Frau hat gesagt, ich soll das abklären lassen.",
+      "answers": {
+        "beginn": "Das geht seit ungefähr sechs Wochen so und wird immer schlimmer.",
+        "lokalisation": "Schmerzen habe ich eigentlich nirgendwo.",
+        "charakter": "Ich trinke mittlerweile fünf, sechs Liter am Tag und bin trotzdem durstig. Ich fühle mich total schlapp.",
+        "ausstrahlung": "Nein, Schmerzen habe ich ja keine.",
+        "begleit": "Ich bin ständig müde, sehe manchmal verschwommen, und meine Füße kribbeln abends ein bisschen.",
+        "vegetativ": "Ich habe in sechs Wochen ungewollt 5 Kilo abgenommen, obwohl ich normal esse. Nachts muss ich drei- bis viermal Wasser lassen. Der Stuhlgang ist normal.",
+        "vorerkrankungen": "Ich habe Übergewicht, Bluthochdruck und eine Fettleber. Operiert wurde ich noch nie.",
+        "medikamente": "Ich nehme Candesartan 8 morgens für den Blutdruck.",
+        "allergien": "Allergien sind mir keine bekannt.",
+        "familie": "Mein Vater und mein Bruder haben beide Zucker.",
+        "sozial": "Ich bin verheiratet, wir haben eine Tochter. Ich arbeite im Büro bei einer Versicherung und bewege mich leider wenig.",
+        "noxen": "Ich rauche etwa zehn Zigaretten am Tag, seit 30 Jahren. Bier trinke ich zwei, drei pro Woche."
+      }
+    },
+    "verdachtsdiagnose": "Diabetes mellitus Typ 2 (Erstdiagnose) mit symptomatischer Hyperglykämie",
+    "diagnoseKeywords": [
+      "diabetes",
+      "hyperglyk",
+      "zuckerkrankheit"
+    ],
+    "differenzialdiagnosen": [
+      "LADA (Typ-1-Diabetes)",
+      "Insipidus (Diabetes insipidus)",
+      "Hyperkalzämie",
+      "Hyperthyreose"
+    ],
+    "untersuchungen": [
+      "HbA1c",
+      "Blutzucker",
+      "Urinstatus",
+      "Kreatinin",
+      "Lipidprofil"
+    ]
+  },
+  {
+    "id": "c7",
+    "title": "Akute Appendizitis",
+    "category": "Chirurgie",
+    "difficulty": "leicht",
+    "patient": {
+      "name": "Lukas Schulz",
+      "age": 22,
+      "gender": "männlich",
+      "hauptbeschwerde": "Bauchschmerzen rechts unten seit gestern"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit gestern Abend zunächst periumbilikale, dann in den rechten Unterbauch gewanderte, stechende Dauerschmerzen (7/10), verstärkt beim Gehen und Husten. Inappetenz, Nausea, einmalige Emesis, Temperatur 38,3 °C.",
+      "vorerkrankungen": "Keine. Keine Voroperationen.",
+      "medikamente": "Keine Dauermedikation; gestern einmalig Ibuprofen 400 mg.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig",
+      "sozialanamnese": "Ledig, Student (Maschinenbau), lebt in einer WG. Nichtraucher, Alkohol am Wochenende."
+    },
+    "sprache": [
+      {
+        "patient": "Zuerst tat es um den Bauchnabel weh, jetzt rechts unten.",
+        "fach": "Die Schmerzen begannen periumbilikal und wanderten in den rechten Unterbauch."
+      },
+      {
+        "patient": "Ich habe gar keinen Hunger.",
+        "fach": "Es besteht eine Inappetenz."
+      },
+      {
+        "patient": "Ich habe einmal gebrochen.",
+        "fach": "Es kam zu einmaliger Emesis."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Appendizitis",
+        "patient": "Blinddarmentzündung",
+        "uz": "appenditsit"
+      },
+      {
+        "de": "periumbilikal",
+        "patient": "um den Bauchnabel herum",
+        "uz": "kindik atrofida"
+      },
+      {
+        "de": "Inappetenz",
+        "patient": "keinen Appetit",
+        "uz": "ishtahasizlik"
+      },
+      {
+        "de": "Loslassschmerz",
+        "patient": "Schmerz, wenn man loslässt",
+        "uz": "qo‘lni tez olganda og‘riq (Blumberg)"
+      },
+      {
+        "de": "Appendektomie",
+        "patient": "Blinddarm-OP",
+        "uz": "appendektomiya"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe seit gestern Bauchschmerzen, jetzt vor allem rechts unten. Es wird immer schlimmer.",
+      "answers": {
+        "beginn": "Gestern Abend gegen 20 Uhr hat es angefangen.",
+        "lokalisation": "Zuerst war es um den Bauchnabel herum, jetzt ist es hier rechts unten.",
+        "charakter": "Ein dauerhafter, stechender Schmerz, ungefähr 7 von 10. Beim Gehen und Husten wird es schlimmer.",
+        "ausstrahlung": "Der Schmerz ist vom Bauchnabel nach rechts unten gewandert. Sonst strahlt nichts aus.",
+        "begleit": "Mir ist übel, ich habe einmal erbrochen und vorhin 38,3 Grad gemessen.",
+        "vegetativ": "Ich habe gar keinen Hunger. Stuhlgang hatte ich seit gestern nicht, Wasserlassen ist normal.",
+        "vorerkrankungen": "Ich bin eigentlich gesund und wurde noch nie operiert.",
+        "medikamente": "Ich nehme sonst nichts. Gestern habe ich eine Ibuprofen 400 genommen, die hat kaum geholfen.",
+        "allergien": "Ich habe keine Allergien.",
+        "familie": "In meiner Familie sind alle gesund.",
+        "sozial": "Ich bin ledig, studiere Maschinenbau und wohne in einer WG.",
+        "noxen": "Ich rauche nicht. Am Wochenende trinke ich mal ein paar Bier, Drogen nehme ich nicht."
+      }
+    },
+    "verdachtsdiagnose": "Akute Appendizitis",
+    "diagnoseKeywords": [
+      "appendizitis",
+      "blinddarm"
+    ],
+    "differenzialdiagnosen": [
+      "Gastroenteritis",
+      "Ileitis (Morbus Crohn)",
+      "Nephrolithiasis",
+      "Meckel-Divertikulitis"
+    ],
+    "untersuchungen": [
+      "Sonographie",
+      "Blutbild",
+      "CRP",
+      "Urinstatus",
+      "Palpation"
+    ]
+  },
+  {
+    "id": "c8",
+    "title": "Arterielle Hypertonie – Erstdiagnose",
+    "category": "Allgemeinmedizin",
+    "difficulty": "leicht",
+    "patient": {
+      "name": "Sabine Koch",
+      "age": 55,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Kopfschmerzen und Schwindel seit einer Woche"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit einer Woche morgens betonte, dumpf-drückende okzipitale Cephalgien (5/10) mit Ausstrahlung in den Nacken, intermittierender Schwankschwindel, Tinnitus. Selbst gemessene Blutdruckwerte bis 175/100 mmHg. Keine neurologischen Ausfälle, kein Thoraxschmerz, keine Dyspnoe.",
+      "vorerkrankungen": "Migräne in der Jugend, Adipositas Grad I. Z. n. Sectio caesarea 1998.",
+      "medikamente": "Keine Dauermedikation; bei Bedarf Paracetamol.",
+      "allergien": "Gräserpollen (Rhinitis allergica)",
+      "familienanamnese": "Mutter und Schwester: arterielle Hypertonie. Vater: Apoplex mit 70 Jahren.",
+      "sozialanamnese": "Verheiratet, zwei Kinder, Verkäuferin im Schichtdienst, hohe Stressbelastung. Nichtraucherin, Alkohol selten, ca. 6 Tassen Kaffee/Tag."
+    },
+    "sprache": [
+      {
+        "patient": "Ich habe morgens Kopfschmerzen am Hinterkopf.",
+        "fach": "Die Patientin berichtet über morgens betonte okzipitale Cephalgien."
+      },
+      {
+        "patient": "Mir ist oft schwindelig, als wäre ich auf einem Schiff.",
+        "fach": "Es besteht ein intermittierender Schwankschwindel."
+      },
+      {
+        "patient": "Zu Hause hatte ich 175 zu 100.",
+        "fach": "Die Patientin gibt selbst gemessene Blutdruckwerte bis 175/100 mmHg an."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Cephalgie",
+        "patient": "Kopfschmerzen",
+        "uz": "bosh og‘rig‘i"
+      },
+      {
+        "de": "okzipital",
+        "patient": "am Hinterkopf",
+        "uz": "ensa sohasida"
+      },
+      {
+        "de": "Schwankschwindel",
+        "patient": "Schwindel wie auf einem Schiff",
+        "uz": "chayqaluvchi bosh aylanishi"
+      },
+      {
+        "de": "Tinnitus",
+        "patient": "Ohrensausen",
+        "uz": "quloq shang‘illashi"
+      },
+      {
+        "de": "arterielle Hypertonie",
+        "patient": "Bluthochdruck",
+        "uz": "arterial gipertenziya"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe seit einer Woche Kopfschmerzen und mir ist oft schwindelig. Mein Blutdruck war zu Hause sehr hoch.",
+      "answers": {
+        "beginn": "Seit etwa einer Woche, vor allem morgens nach dem Aufstehen.",
+        "lokalisation": "Am Hinterkopf, manchmal im ganzen Kopf.",
+        "charakter": "Es ist ein dumpfer, drückender Kopfschmerz, so 5 von 10. Der Schwindel ist eher ein Schwanken, als ob ich auf einem Schiff wäre.",
+        "ausstrahlung": "Manchmal zieht es in den Nacken.",
+        "begleit": "Ab und zu habe ich Ohrensausen. Sehstörungen, Lähmungen, Brustschmerzen oder Atemnot habe ich nicht. Zu Hause habe ich 175 zu 100 gemessen.",
+        "vegetativ": "Ich schlafe schlecht, weil ich so viel Stress habe. Appetit ist normal, Stuhlgang und Wasserlassen auch.",
+        "vorerkrankungen": "Als junges Mädchen hatte ich Migräne. Ich bin etwas übergewichtig. 1998 hatte ich einen Kaiserschnitt.",
+        "medikamente": "Regelmäßig nehme ich nichts, nur manchmal Paracetamol gegen die Kopfschmerzen.",
+        "allergien": "Ich habe Heuschnupfen, gegen Gräser.",
+        "familie": "Meine Mutter und meine Schwester haben Bluthochdruck. Mein Vater hatte mit 70 einen Schlaganfall.",
+        "sozial": "Ich bin verheiratet, habe zwei Kinder und arbeite als Verkäuferin im Schichtdienst. Ich habe viel Stress.",
+        "noxen": "Ich rauche nicht und trinke kaum Alkohol, aber sehr viel Kaffee, sechs Tassen am Tag."
+      }
+    },
+    "verdachtsdiagnose": "Arterielle Hypertonie (Erstdiagnose), symptomatisch mit Cephalgien und Schwindel",
+    "diagnoseKeywords": [
+      "hypertonie",
+      "bluthochdruck",
+      "hypertensiv"
+    ],
+    "differenzialdiagnosen": [
+      "Sekundäre Hypertonie",
+      "Spannungskopfschmerz",
+      "Migräne",
+      "Raumforderung (intrakraniell)"
+    ],
+    "untersuchungen": [
+      "Langzeit-Blutdruckmessung",
+      "EKG",
+      "Kreatinin",
+      "Urinstatus",
+      "Fundoskopie"
+    ]
+  },
+  {
+    "id": "c9",
+    "title": "Tiefe Beinvenenthrombose",
+    "category": "Innere Medizin",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Monika Richter",
+      "age": 63,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Geschwollenes, schmerzhaftes linkes Bein"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 3 Tagen zunehmende Schwellung und ziehende Schmerzen im linken Unterschenkel mit Überwärmung und Rötung, belastungsabhängig verstärkt. Vor 10 Tagen Langstreckenflug (12 h). Keine Dyspnoe, kein Thoraxschmerz, kein Fieber.",
+      "vorerkrankungen": "Mammakarzinom rechts 2021 (Z. n. Operation und Chemotherapie), Varikosis.",
+      "medikamente": "Tamoxifen 20 mg 1-0-0",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Schwester: Lungenembolie mit 50 Jahren.",
+      "sozialanamnese": "Verheiratet, Rentnerin (ehemals Sekretärin), kürzlich 3 Wochen Urlaub in Thailand. Nichtraucherin, Alkohol selten."
+    },
+    "sprache": [
+      {
+        "patient": "Mein linkes Bein ist dick und tut weh.",
+        "fach": "Die Patientin klagt über eine schmerzhafte Schwellung des linken Unterschenkels."
+      },
+      {
+        "patient": "Das Bein ist warm und etwas rot.",
+        "fach": "Es zeigen sich Überwärmung und Rötung."
+      },
+      {
+        "patient": "Vor zehn Tagen bin ich zwölf Stunden geflogen.",
+        "fach": "Anamnestisch erfolgte vor zehn Tagen ein Langstreckenflug."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Thrombose",
+        "patient": "Blutgerinnsel",
+        "uz": "tromboz (qon laxtasi)"
+      },
+      {
+        "de": "Ödem",
+        "patient": "Schwellung, Wassereinlagerung",
+        "uz": "shish"
+      },
+      {
+        "de": "Varikosis",
+        "patient": "Krampfadern",
+        "uz": "varikoz (venalarning kengayishi)"
+      },
+      {
+        "de": "Lungenembolie",
+        "patient": "Blutgerinnsel in der Lunge",
+        "uz": "o‘pka emboliyasi"
+      },
+      {
+        "de": "Antikoagulation",
+        "patient": "Blutverdünnung",
+        "uz": "antikoagulyatsiya"
+      }
+    ],
+    "simulation": {
+      "opening": "Mein linkes Bein ist seit ein paar Tagen dick und tut weh.",
+      "answers": {
+        "beginn": "Seit drei Tagen, es wird jeden Tag schlimmer. Vor zehn Tagen bin ich aus Thailand zurückgeflogen, zwölf Stunden Flug.",
+        "lokalisation": "Die linke Wade, der ganze Unterschenkel ist geschwollen.",
+        "charakter": "Ein ziehender Schmerz, wie Muskelkater, so 4 bis 5 von 10. Beim Gehen ist es schlimmer.",
+        "ausstrahlung": "Manchmal zieht es bis in die Kniekehle.",
+        "begleit": "Das Bein ist warm und etwas rot. Atemnot oder Brustschmerzen habe ich nicht, Fieber auch nicht.",
+        "vegetativ": "Appetit, Schlaf, Stuhlgang und Wasserlassen sind normal. Abgenommen habe ich nicht.",
+        "vorerkrankungen": "2021 hatte ich Brustkrebs rechts, wurde operiert und bekam eine Chemotherapie. Außerdem habe ich Krampfadern.",
+        "medikamente": "Ich nehme Tamoxifen 20 einmal am Tag.",
+        "allergien": "Allergien habe ich keine.",
+        "familie": "Meine Schwester hatte mit 50 eine Lungenembolie.",
+        "sozial": "Ich bin verheiratet und Rentnerin, früher war ich Sekretärin. Wir waren gerade drei Wochen in Thailand im Urlaub.",
+        "noxen": "Ich rauche nicht und trinke nur selten ein Glas Sekt."
+      }
+    },
+    "verdachtsdiagnose": "Tiefe Beinvenenthrombose links",
+    "diagnoseKeywords": [
+      "thrombose",
+      "tvt",
+      "venenthrombose",
+      "phlebothrombose"
+    ],
+    "differenzialdiagnosen": [
+      "Erysipel",
+      "Baker-Zyste",
+      "Muskelfaserriss",
+      "Lymphödem"
+    ],
+    "untersuchungen": [
+      "Kompressionssonographie",
+      "D-Dimere",
+      "Wells-Score",
+      "Blutbild",
+      "Gerinnung"
+    ]
+  },
+  {
+    "id": "c10",
+    "title": "Dekompensierte Herzinsuffizienz",
+    "category": "Innere Medizin",
+    "difficulty": "schwer",
+    "patient": {
+      "name": "Gerhard Klein",
+      "age": 78,
+      "gender": "männlich",
+      "hauptbeschwerde": "Zunehmende Atemnot und geschwollene Beine"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 2 Wochen zunehmende Belastungsdyspnoe (aktuell nach einer Etage), Orthopnoe (schläft mit 3 Kissen), paroxysmale nächtliche Dyspnoe, Nykturie, beidseitige Unterschenkelödeme, Gewichtszunahme von 4 kg. Kein Thoraxschmerz.",
+      "vorerkrankungen": "KHK, Z. n. Myokardinfarkt 2015 mit Stentimplantation, Vorhofflimmern, chronische Niereninsuffizienz Stadium 3.",
+      "medikamente": "Ramipril 2,5 mg 1-0-1, Bisoprolol 5 mg 1-0-0, Torasemid 10 mg 1-0-0 (seit 1 Woche eigenmächtig pausiert), Apixaban 5 mg 1-0-1, Atorvastatin 40 mg 0-0-1",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Bruder: Herzinsuffizienz.",
+      "sozialanamnese": "Verwitwet, lebt allein, Tochter unterstützt beim Einkaufen. Ex-Raucher seit 20 Jahren, kein Alkohol."
+    },
+    "sprache": [
+      {
+        "patient": "Ich bekomme immer schlechter Luft, schon nach einer Etage.",
+        "fach": "Der Patient berichtet über eine progrediente Belastungsdyspnoe."
+      },
+      {
+        "patient": "Im Liegen ist es am schlimmsten, ich schlafe mit drei Kissen.",
+        "fach": "Es besteht eine Orthopnoe."
+      },
+      {
+        "patient": "Meine Beine sind ganz dick geworden.",
+        "fach": "Es zeigen sich beidseitige Unterschenkelödeme."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Herzinsuffizienz",
+        "patient": "Herzschwäche",
+        "uz": "yurak yetishmovchiligi"
+      },
+      {
+        "de": "Orthopnoe",
+        "patient": "Atemnot im Liegen",
+        "uz": "yotganda nafas qisishi (ortopnoe)"
+      },
+      {
+        "de": "Unterschenkelödeme",
+        "patient": "geschwollene Beine",
+        "uz": "boldir shishlari"
+      },
+      {
+        "de": "Diuretikum",
+        "patient": "Wassertablette",
+        "uz": "siydik haydovchi dori"
+      },
+      {
+        "de": "Nykturie",
+        "patient": "nachts Wasser lassen müssen",
+        "uz": "tunda siyish"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich bekomme seit zwei Wochen immer schlechter Luft, und meine Beine sind ganz dick geworden.",
+      "answers": {
+        "beginn": "Seit etwa zwei Wochen wird es von Tag zu Tag schlimmer.",
+        "lokalisation": "Die Luftnot spüre ich in der Brust, und beide Unterschenkel sind geschwollen.",
+        "charakter": "Früher konnte ich zwei Etagen laufen, jetzt schaffe ich kaum noch eine. Im Liegen ist es am schlimmsten, ich schlafe mit drei Kissen.",
+        "ausstrahlung": "Nein, Schmerzen, die ausstrahlen, habe ich nicht.",
+        "begleit": "Nachts wache ich manchmal auf und muss mich hinsetzen, weil ich keine Luft bekomme. Ich huste nachts etwas. Brustschmerzen habe ich nicht.",
+        "vegetativ": "Ich habe in zwei Wochen 4 Kilo zugenommen. Nachts muss ich oft Wasser lassen. Der Appetit ist weniger geworden.",
+        "vorerkrankungen": "2015 hatte ich einen Herzinfarkt und habe einen Stent bekommen. Außerdem habe ich Vorhofflimmern und eine Nierenschwäche.",
+        "medikamente": "Ramipril, Bisoprolol, Eliquis und Atorvastatin. Die Wassertablette Torasemid habe ich seit einer Woche weggelassen, weil ich nachts so oft raus musste.",
+        "allergien": "Keine Allergien.",
+        "familie": "Mein Bruder hatte auch eine Herzschwäche.",
+        "sozial": "Ich bin verwitwet und lebe allein in meiner Wohnung. Meine Tochter hilft mir beim Einkaufen.",
+        "noxen": "Ich habe vor 20 Jahren mit dem Rauchen aufgehört. Alkohol trinke ich nicht."
+      }
+    },
+    "verdachtsdiagnose": "Akut dekompensierte Herzinsuffizienz (bei Pausieren des Diuretikums)",
+    "diagnoseKeywords": [
+      "herzinsuffizienz",
+      "herzschwäche",
+      "dekompens"
+    ],
+    "differenzialdiagnosen": [
+      "Pneumonie",
+      "Lungenembolie",
+      "ACS (akutes Koronarsyndrom)",
+      "Niereninsuffizienz"
+    ],
+    "untersuchungen": [
+      "NT-proBNP",
+      "Echo (Echokardiographie)",
+      "Röntgen-Thorax",
+      "EKG",
+      "Kreatinin"
+    ]
+  }
+]

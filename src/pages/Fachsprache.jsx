@@ -1,0 +1,174 @@
+import { useState } from "react";
+import { PageHeader, ProgressBar } from "../components/ui";
+import { pairs } from "../data/index";
+import { cx, shuffle } from "../lib/utils";
+import { useApp } from "../state/AppContext";
+
+function FlipCard({ p: e, known: t, onToggle: a }) {
+  let [n, i] = useState(false);
+  return (
+    <div className={cx("flip h-56", n && "flipped")}>
+      <div className="flip-inner relative h-full w-full">
+        <button
+          className={cx(
+            "flip-face card absolute inset-0 flex flex-col items-center justify-center text-center",
+            t && "border-emerald-300 dark:border-emerald-900",
+          )}
+          onClick={() => i(true)}
+          aria-label={`${e.fach} — aylantirish`}
+        >
+          <span className="text-[11px] font-semibold uppercase tracking-wider text-teal-600 dark:text-teal-400">
+            Fachsprache
+          </span>
+          <span className="mt-2 text-2xl font-bold text-slate-900 dark:text-white">{e.fach}</span>
+          <span className="mt-2 text-xs muted">{e.fachSatz}</span>
+          <span className="mt-4 text-xs muted">Bosing → Patientensprache</span>
+        </button>
+        <div className="flip-face flip-back card absolute inset-0 flex flex-col justify-between bg-teal-50 dark:bg-teal-950/40">
+          <div>
+            <span className="text-[11px] font-semibold uppercase tracking-wider text-teal-700 dark:text-teal-300">
+              Patientensprache
+            </span>
+            <p className="mt-1 text-lg font-semibold">{e.patient}</p>
+            <p className="mt-1 text-sm muted">
+              {"\uD83C\uDDFA\uD83C\uDDFF "}
+              {e.uz}
+            </p>
+            <p className="mt-2 text-sm italic">„{e.patientSatz}“</p>
+          </div>
+          <div className="flex gap-2">
+            <button className="btn-ghost flex-1 text-xs" onClick={() => i(false)}>
+              ↺ Orqaga
+            </button>
+            <button className={cx("flex-1", t ? "chip-on" : "chip-off")} onClick={a}>
+              {t ? "✓ Bilaman" : "Bilaman"}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function PairQuiz() {
+  let e = () => {
+      let c = pairs[Math.floor(Math.random() * pairs.length)],
+        h = shuffle([c, ...shuffle(pairs.filter((b) => b.id !== c.id)).slice(0, 3)]);
+      return {
+        correct: c,
+        options: h,
+      };
+    },
+    [t, a] = useState(e),
+    [n, i] = useState(null),
+    [l, s] = useState({
+      right: 0,
+      total: 0,
+    }),
+    r = (c) => {
+      if (n) return;
+      (i(c),
+        s((h) => ({
+          right: h.right + (c === t.correct.id ? 1 : 0),
+          total: h.total + 1,
+        })));
+    };
+  return (
+    <div className="card mx-auto max-w-xl">
+      <div className="flex items-center justify-between text-sm">
+        <span className="muted">Fachbegriff’ni bemor tiliga o‘giring</span>
+        <span className="font-semibold tabular-nums">
+          {l.right}/{l.total}
+        </span>
+      </div>
+      <p className="mt-6 text-center text-3xl font-bold text-slate-900 dark:text-white">{t.correct.fach}</p>
+      <div className="mt-6 grid gap-2">
+        {t.options.map((c) => {
+          let h = !n
+            ? ""
+            : c.id === t.correct.id
+              ? "border-emerald-400 bg-emerald-50 dark:bg-emerald-950/40"
+              : c.id === n
+                ? "border-rose-400 bg-rose-50 dark:bg-rose-950/40"
+                : "opacity-60";
+          return (
+            <button
+              key={c.id}
+              className={cx(
+                "rounded-xl border border-slate-200 px-4 py-3 text-left text-sm transition hover:border-teal-400 dark:border-slate-700",
+                h,
+              )}
+              onClick={() => r(c.id)}
+            >
+              {c.patient}
+            </button>
+          );
+        })}
+      </div>
+      {n && (
+        <div className="mt-5 flex items-center justify-between gap-3">
+          <p className="text-sm">
+            {n === t.correct.id ? "✅ To‘g‘ri!" : `❌ To‘g‘ri javob: ${t.correct.patient}`}{" "}
+            <span className="muted">
+              {"· "}
+              {t.correct.uz}
+            </span>
+          </p>
+          <button
+            className="btn-primary shrink-0"
+            onClick={() => {
+              (a(e()), i(null));
+            }}
+          >
+            Keyingi →
+          </button>
+        </div>
+      )}
+    </div>
+  );
+}
+
+export function FachsprachePage() {
+  let { progress: e, togglePair: t } = useApp(),
+    [a, n] = useState("cards"),
+    i = e.knownPairs.length;
+  return (
+    <div className="page">
+      <PageHeader
+        eyebrow="Fachsprache → Patientensprache"
+        title="Ikki tilda gapirishni o‘rganing"
+        subtitle="FSP’da bemor bilan sodda tilda, hamkasb bilan Fachsprache’da gaplashish kerak. Kartochkani bosib aylantiring."
+      >
+        <button className={a === "cards" ? "chip-on" : "chip-off"} onClick={() => n("cards")}>
+          🗂 Kartochkalar
+        </button>
+        <button className={a === "quiz" ? "chip-on" : "chip-off"} onClick={() => n("quiz")}>
+          🎯 Test
+        </button>
+      </PageHeader>
+      {a === "cards" ? (
+        <>
+          <div className="card mb-5">
+            <div className="mb-2 flex justify-between text-sm">
+              <span>
+                {"Bilaman: "}
+                <b>{i}</b>
+                {" / "}
+                {pairs.length}
+              </span>
+              <span className="muted">{Math.round((i / pairs.length) * 100)}%</span>
+            </div>
+            <ProgressBar value={(i / pairs.length) * 100} />
+          </div>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {pairs.map((l) => (
+              <FlipCard key={l.id} p={l} known={e.knownPairs.includes(l.id)} onToggle={() => t(l.id)} />
+            ))}
+          </div>
+        </>
+      ) : (
+        <PairQuiz />
+      )}
+    </div>
+  );
+}
