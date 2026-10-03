@@ -5,6 +5,7 @@ import { useParams } from "../lib/router";
 import { useApp } from "../state/AppContext";
 import { Speak } from "../components/Speak";
 import { loc, tr } from "../lib/i18n";
+import { CategoryBadge } from "../components/ui";
 
 const ANAMNESE_FIELDS = [
   ["aktuelleBeschwerden", "Aktuelle Beschwerden"],
@@ -44,9 +45,8 @@ export function CaseDetailPage() {
       </Link>
       <div className="mt-3 flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
         <div>
-          <p className="text-xs font-semibold uppercase tracking-wider text-teal-600 dark:text-teal-400">
-            {CATEGORY_LABELS[t.category] ?? t.category}
-            {" · "}
+          <p className="flex flex-wrap items-center gap-2 text-xs font-semibold uppercase tracking-wider text-teal-600 dark:text-teal-400">
+            <CategoryBadge category={t.category} className="normal-case tracking-normal" />
             {DIFFICULTY_LABELS[t.difficulty]}
           </p>
           <h1 className="mt-1 text-2xl font-bold sm:text-3xl">

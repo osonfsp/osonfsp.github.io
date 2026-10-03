@@ -7,6 +7,7 @@ import { cx } from "../lib/utils";
 import { useApp } from "../state/AppContext";
 import { tr } from "../lib/i18n";
 import { SectionIntro } from "../components/SectionIntro";
+import { CategoryBadge, categoryIcon } from "../components/ui";
 
 const DIFFICULTY_STYLES = {
   leicht: "bg-emerald-50 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300",
@@ -18,7 +19,7 @@ function CaseCard({ c, solved }) {
   return (
     <Link href={`/faelle/${c.id}`} className="card card-hover flex flex-col">
       <div className="flex items-center justify-between gap-2">
-        <span className="text-xs font-medium text-teal-700 dark:text-teal-400">{c.category}</span>
+        <CategoryBadge category={c.category} className="!py-0.5 !text-xs" />
         <span className={cx("badge", DIFFICULTY_STYLES[c.difficulty])}>
           {DIFFICULTY_LABELS[c.difficulty]}
         </span>
@@ -158,7 +159,7 @@ export function CasesPage() {
         {groups.map((g) => (
           <section key={g.cat}>
             <h2 className="mb-3 flex flex-wrap items-baseline gap-x-2 text-xl font-bold text-teal-900 dark:text-teal-100">
-              {section !== g.sec.id && <span aria-hidden>{g.sec.icon}</span>}
+              <span aria-hidden>{categoryIcon(g.cat)}</span>
               {CATEGORY_LABELS[g.cat] ?? g.cat}
               <span className="text-sm font-normal muted">
                 · {g.cat} · {g.items.length}

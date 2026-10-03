@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { Link } from "../components/Link";
 import { canSpeak, speakSequence, stopSpeaking, voiceName } from "../components/Speak";
-import { PageHeader, ProgressBar, ProgressRing } from "../components/ui";
+import { categoryIcon, PageHeader, ProgressBar, ProgressRing } from "../components/ui";
 import { CASE_SECTIONS, DIFFICULTY_LABELS, cases, getCase } from "../data/index";
 import { checkHoeren, fieldLabel, HOER_FIELDS, monologue } from "../lib/hoeren";
 import { tr } from "../lib/i18n";
@@ -61,7 +61,7 @@ export function HoerenListPage() {
                     <span className="min-w-0">
                       <span className="block truncate font-semibold">{c.patient.hauptbeschwerde}</span>
                       <span className="text-xs muted">
-                        {c.category} · {DIFFICULTY_LABELS[c.difficulty]}
+                        {categoryIcon(c.category)} {c.category} · {DIFFICULTY_LABELS[c.difficulty]}
                       </span>
                     </span>
                   </Link>
