@@ -273,6 +273,20 @@ export function Spinner({ label: e = tr("Tahlil qilinmoqda…", "Идёт ана
   );
 }
 
+// Buyrak belgisi — Unicode’da buyrak emojisi yo‘q, shuning uchun o‘zimiz chizamiz
+function KidneyIcon() {
+  return (
+    <svg viewBox="0 0 24 24" className="inline-block h-[1.15em] w-[1.15em] align-[-0.2em]" aria-hidden>
+      <path d="M8.4 12.2C6 13.2 4.6 15.8 4.2 21.5" fill="none" stroke="#f59e0b" strokeWidth="1.8" strokeLinecap="round" />
+      <path
+        d="M12.5 2.5c4 0 6.5 4 6.5 9.5s-2.5 9.5-6.5 9.5c-3.4 0-6-2.3-6-5.1 0-2.2 2.5-2.6 2.5-4.4S6.5 9.8 6.5 7.6c0-2.8 2.6-5.1 6-5.1z"
+        fill="#be123c"
+      />
+      <path d="M14.6 5.6c1.6.9 2.5 3.3 2.5 6.4" fill="none" stroke="#fda4af" strokeWidth="1.3" strokeLinecap="round" />
+    </svg>
+  );
+}
+
 // Fan (mutaxassislik) belgisi: har bir fan o‘z belgisi va rangida — ro‘yxatlarda tez ajratish uchun
 export const CATEGORY_STYLE = {
   Kardiologie: ["❤️", "bg-rose-100 text-rose-800 ring-rose-200 dark:bg-rose-500/15 dark:text-rose-200 dark:ring-rose-500/30"],
@@ -284,7 +298,7 @@ export const CATEGORY_STYLE = {
   Infektiologie: ["🦠", "bg-lime-100 text-lime-800 ring-lime-200 dark:bg-lime-500/15 dark:text-lime-200 dark:ring-lime-500/30"],
   Chirurgie: ["🔪", "bg-amber-100 text-amber-900 ring-amber-200 dark:bg-amber-500/15 dark:text-amber-200 dark:ring-amber-500/30"],
   Unfallchirurgie: ["🦴", "bg-stone-200 text-stone-800 ring-stone-300 dark:bg-stone-500/20 dark:text-stone-200 dark:ring-stone-500/40"],
-  Urologie: ["🔬", "bg-yellow-100 text-yellow-900 ring-yellow-300 dark:bg-yellow-500/15 dark:text-yellow-200 dark:ring-yellow-500/30"],
+  Urologie: [<KidneyIcon key="k" />, "bg-yellow-100 text-yellow-900 ring-yellow-300 dark:bg-yellow-500/15 dark:text-yellow-200 dark:ring-yellow-500/30"],
   Neurologie: ["🧠", "bg-violet-100 text-violet-800 ring-violet-200 dark:bg-violet-500/15 dark:text-violet-200 dark:ring-violet-500/30"],
   Allgemeinmedizin: ["🏥", "bg-emerald-100 text-emerald-800 ring-emerald-200 dark:bg-emerald-500/15 dark:text-emerald-200 dark:ring-emerald-500/30"],
 };
