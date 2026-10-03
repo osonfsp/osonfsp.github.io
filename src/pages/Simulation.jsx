@@ -9,17 +9,29 @@ import { useApp } from "../state/AppContext";
 import { tr } from "../lib/i18n";
 import { SectionIntro } from "../components/SectionIntro";
 
+// Tasodifiy Fall: avval hali yechilmaganlardan, joriy Fall’dan boshqasi
+function randomCase(solved, exclude) {
+  let pool = cases.filter((c) => c.id !== exclude && !solved.includes(c.id));
+  if (!pool.length) pool = cases.filter((c) => c.id !== exclude);
+  return pool[Math.floor(Math.random() * pool.length)].id;
+}
+
 function SimulationView() {
   let e = useSearchParams(),
     t = useRouter(),
-    { addSimulation: a } = useApp(),
-    n = e.get("case") ?? cases[0].id,
-    i = getCase(n) ?? cases[0],
+    { addSimulation: a, progress: pr } = useApp(),
+    // URL’da Fall bo‘lmasa — har safar boshqa (tasodifiy) Fall, doim 1-Fall emas
+    [fallback] = useState(() => randomCase(pr.solvedCases, null)),
+    n = e.get("case") ?? fallback,
+    i = getCase(n) ?? getCase(fallback),
     [l, s] = useState([]),
     [r, c] = useState("chat"),
     [h, b] = useState(""),
     [y, f] = useState(false),
     [p, A] = useState(null);
+  useEffect(() => {
+    if (!e.get("case")) t.replace(`/simulation?case=${fallback}`);
+  }, []);
   useEffect(() => {
     (s([]), c("chat"), b(""), A(null));
   }, [i.id]);
@@ -49,8 +61,16 @@ function SimulationView() {
           "Вы — Arzt, виртуальный пациент — Patient. Пациент знает всё, но отвечает только на то, что вы спросили.",
         )}
       >
+        <button
+          type="button"
+          className="btn-outline"
+          onClick={() => t.replace(`/simulation?case=${randomCase(pr.solvedCases, i.id)}`)}
+          title={tr("Boshqa tasodifiy Fall", "Другой случайный кейс")}
+        >
+          🎲 {tr("Tasodifiy", "Случайный")}
+        </button>
         <select
-          className="input w-auto min-w-[240px]"
+          className="input min-w-0 flex-1 sm:w-80 sm:flex-none"
           value={i.id}
           onChange={(g) => t.replace(`/simulation?case=${g.target.value}`)}
           aria-label={tr("Fall tanlash", "Выбор кейса")}

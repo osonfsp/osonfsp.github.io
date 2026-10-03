@@ -101,13 +101,13 @@ export function PageHeader({ eyebrow: e, title: t, subtitle: a, children: n }) {
         aria-hidden
       />
       <div className="relative flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
-        <div>
+        <div className="min-w-0 sm:flex-1">
           {e && <p className="text-xs font-semibold uppercase tracking-wider text-teal-300">{e}</p>}
           <h1 className="mt-1 text-2xl font-bold tracking-tight text-white sm:text-3xl">{t}</h1>
           {a && <p className="mt-2 max-w-2xl text-white/70">{a}</p>}
         </div>
         {n && (
-          <div className="flex flex-wrap gap-2 [&_.btn-ghost:hover]:bg-white/10 [&_.btn-ghost]:text-white">
+          <div className="flex flex-wrap gap-2 sm:max-w-[60%] sm:justify-end [&_.btn-ghost:hover]:bg-white/10 [&_.btn-ghost]:text-white">
             {n}
           </div>
         )}

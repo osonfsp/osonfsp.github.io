@@ -44,7 +44,7 @@ export function CasesPage() {
   let { progress: e } = useApp(),
     params = useSearchParams(),
     router = useRouter(),
-    // Bo‘lim tanlanmaguncha faqat bo‘lim kartochkalari ko‘rinadi (38 ta Fall birdan emas)
+    // Bo‘lim tanlanmaguncha faqat bo‘lim kartochkalari ko‘rinadi (50 ta Fall birdan emas)
     bolim = params.get("bolim"),
     section = bolim === "all" || CASE_SECTIONS.some((s) => s.id === bolim) ? bolim : null,
     setSection = (id) => router.replace(`/faelle?bolim=${id}`),

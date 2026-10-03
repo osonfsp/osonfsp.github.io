@@ -3902,5 +3902,1238 @@
       "Stuhlkultur",
       "Schwangerschaftstest"
     ]
+  },
+  {
+    "id": "c39",
+    "title": "Synkope bei bradykarder Herzrhythmusstörung",
+    "category": "Kardiologie",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Ernst Vogel",
+      "age": 78,
+      "gender": "männlich",
+      "hauptbeschwerde": "Zweimal kurz bewusstlos geworden"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Heute zweimal plötzlich ohne Vorwarnung für wenige Sekunden bewusstlos zusammengesackt, einmal im Sitzen, einmal beim Gehen. Danach sofort wieder orientiert. Seit einigen Tagen Müdigkeit und Schwindel. Keine Zuckungen, kein Zungenbiss, kein Einnässen. Prellung am rechten Unterarm.",
+      "vorerkrankungen": "Arterielle Hypertonie, koronare Herzkrankheit, Vorhofflimmern.",
+      "medikamente": "Bisoprolol 5 mg 1-0-0, Verapamil 80 mg 1-0-1 (seit 2 Wochen neu vom Hausarzt), Apixaban 5 mg 1-0-1, Ramipril 5 mg 1-0-0",
+      "allergien": "Keine bekannten Allergien",
+      "familienanamnese": "Keine plötzlichen Todesfälle in der Familie bekannt.",
+      "sozialanamnese": "Verheiratet, Rentner (ehemals Schreiner), lebt mit Ehefrau. Ex-Raucher (20 pack years). Alkohol selten."
+    },
+    "sprache": [
+      {
+        "patient": "Ich bin einfach umgekippt, ohne dass ich etwas gemerkt habe.",
+        "fach": "Der Patient berichtet über eine Synkope ohne Prodromi."
+      },
+      {
+        "patient": "Nach ein paar Sekunden war ich wieder da.",
+        "fach": "Die Bewusstlosigkeit dauerte nur wenige Sekunden, ohne postiktale Phase."
+      },
+      {
+        "patient": "Der Hausarzt hat mir vor zwei Wochen eine neue Tablette gegeben.",
+        "fach": "Vor zwei Wochen wurde Verapamil neu angesetzt."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Synkope",
+        "patient": "kurze Ohnmacht",
+        "uz": "hushdan ketish",
+        "ru": "обморок"
+      },
+      {
+        "de": "Prodromi",
+        "patient": "Warnzeichen vorher",
+        "uz": "oldindan keladigan belgilar",
+        "ru": "предвестники"
+      },
+      {
+        "de": "Bradykardie",
+        "patient": "langsamer Herzschlag",
+        "uz": "bradikardiya (sekin yurak urishi)",
+        "ru": "брадикардия"
+      },
+      {
+        "de": "AV-Block",
+        "patient": "Störung der Reizleitung im Herzen",
+        "uz": "AV-blokada",
+        "ru": "АВ-блокада"
+      },
+      {
+        "de": "Herzschrittmacher",
+        "patient": "kleines Gerät, das den Herzschlag steuert",
+        "uz": "yurak stimulyatori",
+        "ru": "кардиостимулятор"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich bin heute zweimal einfach umgekippt. Meine Frau hat sich furchtbar erschrocken.",
+      "answers": {
+        "beginn": "Heute Vormittag das erste Mal, beim Zeitunglesen im Sessel, und mittags noch einmal beim Gehen in der Küche.",
+        "lokalisation": "Schmerzen habe ich keine, nur der rechte Arm tut weh, auf den bin ich gefallen.",
+        "charakter": "Es ging ganz schnell, ich habe vorher nichts gemerkt. Nach ein paar Sekunden war ich wieder wach und wusste, wo ich bin.",
+        "ausstrahlung": "Nein, Brustschmerzen oder so hatte ich nicht.",
+        "begleit": "Seit ein paar Tagen bin ich sehr müde und mir ist öfter schwindelig. Gezuckt habe ich laut meiner Frau nicht, auf die Zunge gebissen auch nicht, eingenässt auch nicht.",
+        "vegetativ": "Appetit ist normal, ich schlafe viel. Stuhlgang und Wasserlassen sind normal.",
+        "vorerkrankungen": "Ich habe hohen Blutdruck, eine Verengung am Herzen und Vorhofflimmern.",
+        "medikamente": "Bisoprolol 5 morgens, Eliquis 5 morgens und abends, Ramipril 5 morgens. Und vor zwei Wochen hat mir der Hausarzt Verapamil 80 dazugegeben, morgens und abends.",
+        "allergien": "Keine Allergien.",
+        "familie": "In meiner Familie ist niemand plötzlich gestorben.",
+        "sozial": "Ich bin verheiratet und Rentner, früher war ich Schreiner.",
+        "noxen": "Ich habe vor 15 Jahren mit dem Rauchen aufgehört. Alkohol nur selten ein Glas Wein."
+      }
+    },
+    "verdachtsdiagnose": "Rezidivierende Synkopen bei V. a. bradykarde Herzrhythmusstörung (z. B. höhergradiger AV-Block) unter Bisoprolol und Verapamil",
+    "diagnoseKeywords": [
+      "synkope",
+      "bradykard",
+      "av-block",
+      "bradykardie",
+      "rhythmusstörung"
+    ],
+    "differenzialdiagnosen": [
+      "Orthostatische Synkope",
+      "Epileptischer Anfall",
+      "Aortenklappenstenose",
+      "Ventrikuläre Tachykardie"
+    ],
+    "untersuchungen": [
+      "EKG",
+      "Langzeit-EKG",
+      "Elektrolyte",
+      "Echo (Echokardiographie)",
+      "Schellong-Test"
+    ]
+  },
+  {
+    "id": "c40",
+    "title": "Urosepsis",
+    "category": "Infektiologie",
+    "difficulty": "schwer",
+    "patient": {
+      "name": "Hildegard Roth",
+      "age": 79,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Hohes Fieber, Schüttelfrost und Verwirrtheit"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 3 Tagen Brennen beim Wasserlassen und häufiger Harndrang, seit gestern Fieber bis 39,6 °C mit Schüttelfrost, Schmerzen in der rechten Flanke, zunehmende Schwäche. Laut Tochter seit heute zeitweise verwirrt. Blutdruck beim Hausbesuch 90/55 mmHg, Puls 118/min.",
+      "vorerkrankungen": "Diabetes mellitus Typ 2, Herzinsuffizienz, rezidivierende Harnwegsinfekte.",
+      "medikamente": "Metformin 500 mg 1-0-1, Torasemid 10 mg 1-0-0, Bisoprolol 2,5 mg 1-0-0",
+      "allergien": "Cotrimoxazol (Hautausschlag)",
+      "familienanamnese": "Keine Besonderheiten.",
+      "sozialanamnese": "Verwitwet, lebt allein, Tochter wohnt in der Nähe. Nichtraucherin, kein Alkohol."
+    },
+    "sprache": [
+      {
+        "patient": "Mir ist so kalt, ich zittere am ganzen Körper.",
+        "fach": "Es besteht Schüttelfrost bei Fieber bis 39,6 °C."
+      },
+      {
+        "patient": "Beim Wasserlassen brennt es seit drei Tagen.",
+        "fach": "Seit drei Tagen bestehen Dysurie und Pollakisurie."
+      },
+      {
+        "patient": "Meine Tochter sagt, ich rede manchmal durcheinander.",
+        "fach": "Fremdanamnestisch besteht eine akute Verwirrtheit."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Sepsis",
+        "patient": "Blutvergiftung",
+        "uz": "sepsis (qon zaharlanishi)",
+        "ru": "сепсис"
+      },
+      {
+        "de": "Schüttelfrost",
+        "patient": "starkes Zittern mit Kälte",
+        "uz": "titroq bilan et uvishishi",
+        "ru": "озноб"
+      },
+      {
+        "de": "Hypotonie",
+        "patient": "niedriger Blutdruck",
+        "uz": "past qon bosimi",
+        "ru": "гипотония"
+      },
+      {
+        "de": "Blutkulturen",
+        "patient": "Blutproben, um Bakterien zu finden",
+        "uz": "qon ekmasi",
+        "ru": "посев крови"
+      },
+      {
+        "de": "qSOFA",
+        "patient": "kurzer Test auf schwere Infektion",
+        "uz": "qSOFA shkalasi",
+        "ru": "шкала qSOFA"
+      }
+    ],
+    "simulation": {
+      "opening": "Mir geht es so schlecht, ich habe hohes Fieber und zittere am ganzen Körper.",
+      "answers": {
+        "beginn": "Das Brennen beim Wasserlassen habe ich seit drei Tagen, das Fieber seit gestern Abend.",
+        "lokalisation": "Rechts hinten in der Seite tut es weh, und unten im Bauch.",
+        "charakter": "Ein dumpfer Schmerz in der Seite, ungefähr eine 6 von 10. Ich fühle mich ganz schwach.",
+        "ausstrahlung": "Es zieht ein bisschen nach vorne in den Unterbauch.",
+        "begleit": "Ich hatte Schüttelfrost und fast 40 Fieber. Mir ist schwindelig. Meine Tochter sagt, ich rede manchmal durcheinander.",
+        "vegetativ": "Ich habe keinen Appetit und trinke wenig. Ich muss ständig auf die Toilette, aber es kommt nur wenig, und es brennt. Stuhlgang normal.",
+        "vorerkrankungen": "Ich habe Zucker, ein schwaches Herz und oft Blasenentzündungen.",
+        "medikamente": "Metformin 500 morgens und abends, Torasemid 10 und Bisoprolol 2,5 morgens.",
+        "allergien": "Von Cotrimoxazol habe ich mal einen Ausschlag bekommen.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich bin Witwe und wohne allein, meine Tochter wohnt nebenan.",
+        "noxen": "Ich habe nie geraucht und trinke keinen Alkohol."
+      }
+    },
+    "verdachtsdiagnose": "Urosepsis bei Pyelonephritis rechts",
+    "diagnoseKeywords": [
+      "urosepsis",
+      "sepsis",
+      "pyelonephritis"
+    ],
+    "differenzialdiagnosen": [
+      "Pneumonie",
+      "Cholangitis",
+      "Harnstauungsniere",
+      "Endokarditis"
+    ],
+    "untersuchungen": [
+      "Blutkulturen",
+      "Laktat",
+      "Urinkultur",
+      "Blutbild",
+      "Sonographie (Nieren)"
+    ]
+  },
+  {
+    "id": "c41",
+    "title": "Gallenkolik bei Cholezystolithiasis",
+    "category": "Chirurgie",
+    "difficulty": "leicht",
+    "patient": {
+      "name": "Claudia Berger",
+      "age": 44,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Krampfartige Schmerzen im rechten Oberbauch nach dem Essen"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Gestern Abend nach einem fettreichen Essen kolikartige Schmerzen im rechten Oberbauch mit Ausstrahlung in die rechte Schulter, Übelkeit, einmaliges Erbrechen, nach 3 Stunden spontan abgeklungen. Ähnliche, kürzere Episoden in den letzten Monaten. Kein Fieber, keine Gelbfärbung, Stuhl und Urin normal gefärbt.",
+      "vorerkrankungen": "Adipositas (BMI 33), Z. n. drei Schwangerschaften.",
+      "medikamente": "Orales Kontrazeptivum",
+      "allergien": "Keine bekannten Allergien",
+      "familienanamnese": "Mutter mit Gallensteinen, cholezystektomiert.",
+      "sozialanamnese": "Verheiratet, drei Kinder, Friseurin. Nichtraucherin, Alkohol selten."
+    },
+    "sprache": [
+      {
+        "patient": "Die Schmerzen kamen in Wellen, rechts oben im Bauch.",
+        "fach": "Die Patientin berichtet über kolikartige Schmerzen im rechten Oberbauch."
+      },
+      {
+        "patient": "Es zog bis in die rechte Schulter.",
+        "fach": "Die Schmerzen strahlten in die rechte Schulter aus."
+      },
+      {
+        "patient": "Das ging nach drei Stunden von selbst weg.",
+        "fach": "Die Beschwerden sistierten nach drei Stunden spontan."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Cholezystolithiasis",
+        "patient": "Gallensteine",
+        "uz": "o‘t pufagida tosh",
+        "ru": "желчнокаменная болезнь"
+      },
+      {
+        "de": "Gallenkolik",
+        "patient": "krampfartige Schmerzen durch Gallensteine",
+        "uz": "o‘t sanchig‘i",
+        "ru": "желчная колика"
+      },
+      {
+        "de": "rechter Oberbauch",
+        "patient": "rechts oben im Bauch",
+        "uz": "qorinning o‘ng yuqori qismi",
+        "ru": "правое подреберье"
+      },
+      {
+        "de": "Murphy-Zeichen",
+        "patient": "Schmerz beim Einatmen bei Druck unter dem Rippenbogen",
+        "uz": "Merfi belgisi",
+        "ru": "симптом Мерфи"
+      },
+      {
+        "de": "laparoskopische Cholezystektomie",
+        "patient": "Entfernung der Gallenblase per Schlüsselloch-OP",
+        "uz": "laparoskopik xoletsistektomiya",
+        "ru": "лапароскопическая холецистэктомия"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich hatte gestern Abend ganz schlimme Bauchschmerzen rechts oben. Jetzt geht es wieder, aber ich habe Angst, dass es wiederkommt.",
+      "answers": {
+        "beginn": "Gestern Abend, ungefähr eine Stunde nach dem Essen. Es gab Schweinebraten mit viel Soße. So etwas hatte ich in den letzten Monaten schon ein paar Mal, aber kürzer.",
+        "lokalisation": "Rechts oben im Bauch, unter den Rippen.",
+        "charakter": "Krampfartig, in Wellen, ungefähr eine 8 von 10. Nach drei Stunden ist es von selbst weggegangen.",
+        "ausstrahlung": "Ja, es zog bis in die rechte Schulter und in den Rücken.",
+        "begleit": "Mir war übel, ich habe einmal gebrochen. Fieber hatte ich nicht, gelb war ich auch nicht.",
+        "vegetativ": "Appetit ist jetzt wieder normal. Der Stuhl hat eine normale Farbe, der Urin auch. Schlafen konnte ich gestern schlecht.",
+        "vorerkrankungen": "Ich habe Übergewicht und drei Kinder bekommen, sonst bin ich gesund.",
+        "medikamente": "Ich nehme nur die Pille.",
+        "allergien": "Keine Allergien.",
+        "familie": "Meine Mutter hatte auch Gallensteine, ihr wurde die Gallenblase entfernt.",
+        "sozial": "Ich bin verheiratet, habe drei Kinder und arbeite als Friseurin.",
+        "noxen": "Ich rauche nicht, Alkohol trinke ich selten."
+      }
+    },
+    "verdachtsdiagnose": "Symptomatische Cholezystolithiasis mit Gallenkolik",
+    "diagnoseKeywords": [
+      "gallenkolik",
+      "cholezystolithiasis",
+      "gallensteine",
+      "cholelithiasis"
+    ],
+    "differenzialdiagnosen": [
+      "Akute Cholezystitis",
+      "Choledocholithiasis",
+      "Ulcus duodeni",
+      "Akute Pankreatitis"
+    ],
+    "untersuchungen": [
+      "Sonographie (Abdomen)",
+      "Leberwerte",
+      "Lipase",
+      "Blutbild",
+      "CRP"
+    ]
+  },
+  {
+    "id": "c42",
+    "title": "Akuter Gichtanfall",
+    "category": "Allgemeinmedizin",
+    "difficulty": "leicht",
+    "patient": {
+      "name": "Bernd Jäger",
+      "age": 55,
+      "gender": "männlich",
+      "hauptbeschwerde": "Plötzliche starke Schmerzen im großen Zeh"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Heute Nacht plötzlich einsetzende, stärkste Schmerzen im Großzehengrundgelenk rechts mit Rötung, Schwellung und Überwärmung. Selbst die Bettdecke war unerträglich. Am Vorabend Grillfest mit viel Fleisch und Bier. Kein Trauma. Leicht erhöhte Temperatur (37,8 °C).",
+      "vorerkrankungen": "Arterielle Hypertonie, Adipositas, Fettstoffwechselstörung.",
+      "medikamente": "Hydrochlorothiazid 25 mg 1-0-0, Candesartan 8 mg 1-0-0",
+      "allergien": "Keine bekannten Allergien",
+      "familienanamnese": "Vater mit Gicht.",
+      "sozialanamnese": "Verheiratet, Lagerleiter. Alkohol: täglich 2–3 Bier. Nichtraucher."
+    },
+    "sprache": [
+      {
+        "patient": "Mein großer Zeh tut so weh, dass nicht mal die Bettdecke drauf darf.",
+        "fach": "Der Patient klagt über stärkste Schmerzen im Großzehengrundgelenk mit Berührungsempfindlichkeit."
+      },
+      {
+        "patient": "Der Zeh ist rot, dick und heiß.",
+        "fach": "Es bestehen Rötung, Schwellung und Überwärmung des Gelenks."
+      },
+      {
+        "patient": "Gestern hatten wir ein Grillfest mit viel Fleisch und Bier.",
+        "fach": "Am Vortag erfolgte ein purinreiches Essen mit Alkoholkonsum."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Gicht (Arthritis urica)",
+        "patient": "Gelenkentzündung durch Harnsäure",
+        "uz": "podagra",
+        "ru": "подагра"
+      },
+      {
+        "de": "Großzehengrundgelenk",
+        "patient": "Gelenk am großen Zeh",
+        "uz": "bosh barmoq asosidagi bo‘g‘im",
+        "ru": "плюснефаланговый сустав большого пальца"
+      },
+      {
+        "de": "Harnsäure",
+        "patient": "Abbauprodukt im Blut",
+        "uz": "siydik kislotasi",
+        "ru": "мочевая кислота"
+      },
+      {
+        "de": "Podagra",
+        "patient": "Gichtanfall am großen Zeh",
+        "uz": "bosh barmoq podagrasi",
+        "ru": "подагрический артрит большого пальца"
+      },
+      {
+        "de": "Gelenkpunktion",
+        "patient": "Flüssigkeit aus dem Gelenk entnehmen",
+        "uz": "bo‘g‘im punksiyasi",
+        "ru": "пункция сустава"
+      }
+    ],
+    "simulation": {
+      "opening": "Mein großer Zeh tut so weh, ich konnte heute Nacht nicht mal die Bettdecke darauf ertragen.",
+      "answers": {
+        "beginn": "Heute Nacht gegen drei Uhr bin ich davon aufgewacht. Es kam ganz plötzlich.",
+        "lokalisation": "Am rechten großen Zeh, unten am Gelenk.",
+        "charakter": "Ein brennender, pochender Schmerz, eine 9 von 10. Schon die kleinste Berührung tut weh.",
+        "ausstrahlung": "Nein, das bleibt am Zeh.",
+        "begleit": "Der Zeh ist rot, dick und heiß. Ich habe leicht erhöhte Temperatur, 37,8. Gestoßen habe ich mich nicht.",
+        "vegetativ": "Appetit, Stuhlgang und Wasserlassen sind normal. Geschlafen habe ich wegen der Schmerzen kaum.",
+        "vorerkrankungen": "Ich habe hohen Blutdruck, Übergewicht und zu hohe Blutfette.",
+        "medikamente": "HCT 25 und Candesartan 8, beides morgens.",
+        "allergien": "Keine Allergien.",
+        "familie": "Mein Vater hatte auch Gicht.",
+        "sozial": "Ich bin verheiratet und Lagerleiter. Gestern hatten wir ein Grillfest mit viel Fleisch.",
+        "noxen": "Ich trinke jeden Tag zwei, drei Bier, gestern mehr. Ich rauche nicht."
+      }
+    },
+    "verdachtsdiagnose": "Akuter Gichtanfall (Podagra) rechts",
+    "diagnoseKeywords": [
+      "gicht",
+      "podagra",
+      "arthritis urica",
+      "gichtanfall"
+    ],
+    "differenzialdiagnosen": [
+      "Septische Arthritis",
+      "Pseudogicht (Chondrokalzinose)",
+      "Erysipel",
+      "Aktivierte Arthrose"
+    ],
+    "untersuchungen": [
+      "Harnsäure",
+      "CRP",
+      "Blutbild",
+      "Gelenkpunktion",
+      "Röntgen (Fuß)"
+    ]
+  },
+  {
+    "id": "c43",
+    "title": "Akute unkomplizierte Zystitis",
+    "category": "Allgemeinmedizin",
+    "difficulty": "leicht",
+    "patient": {
+      "name": "Lisa Krämer",
+      "age": 26,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Brennen beim Wasserlassen und ständiger Harndrang"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 2 Tagen Brennen beim Wasserlassen, häufiger Harndrang mit kleinen Mengen und ziehende Schmerzen über dem Schambein. Kein Fieber, keine Flankenschmerzen, kein vaginaler Ausfluss. Letzte Regelblutung vor 2 Wochen, Schwangerschaft unwahrscheinlich.",
+      "vorerkrankungen": "Keine. Eine ähnliche Episode vor 2 Jahren.",
+      "medikamente": "Orales Kontrazeptivum",
+      "allergien": "Keine bekannten Allergien",
+      "familienanamnese": "Keine Besonderheiten.",
+      "sozialanamnese": "Ledig, feste Partnerschaft seit kurzem, Lehrerin. Trinkt eher wenig. Nichtraucherin, Alkohol selten."
+    },
+    "sprache": [
+      {
+        "patient": "Es brennt beim Pinkeln.",
+        "fach": "Die Patientin berichtet über Dysurie."
+      },
+      {
+        "patient": "Ich muss ständig auf die Toilette, es kommt aber nur wenig.",
+        "fach": "Es besteht eine Pollakisurie mit kleinen Harnmengen."
+      },
+      {
+        "patient": "Fieber oder Schmerzen in der Seite habe ich nicht.",
+        "fach": "Fieber und Flankenschmerzen werden verneint."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Zystitis",
+        "patient": "Blasenentzündung",
+        "uz": "sistit (siydik pufagi yallig‘lanishi)",
+        "ru": "цистит"
+      },
+      {
+        "de": "Dysurie",
+        "patient": "Brennen beim Wasserlassen",
+        "uz": "siyishda achishish",
+        "ru": "дизурия"
+      },
+      {
+        "de": "Pollakisurie",
+        "patient": "häufiges Wasserlassen in kleinen Mengen",
+        "uz": "tez-tez oz-ozdan siyish",
+        "ru": "поллакиурия"
+      },
+      {
+        "de": "suprapubisch",
+        "patient": "über dem Schambein",
+        "uz": "qov suyagi ustida",
+        "ru": "надлобковый"
+      },
+      {
+        "de": "Urinstix",
+        "patient": "Teststreifen für den Urin",
+        "uz": "siydik test-chizig‘i",
+        "ru": "тест-полоска мочи"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe seit zwei Tagen so ein Brennen beim Wasserlassen und muss ständig auf die Toilette.",
+      "answers": {
+        "beginn": "Seit vorgestern. Vor zwei Jahren hatte ich so etwas schon einmal.",
+        "lokalisation": "Unten im Bauch, über dem Schambein.",
+        "charakter": "Ein ziehender Schmerz, ungefähr eine 4 von 10, und beim Wasserlassen brennt es stark.",
+        "ausstrahlung": "Nein, in die Seite oder den Rücken zieht nichts.",
+        "begleit": "Fieber habe ich nicht. Ausfluss habe ich auch nicht. Der Urin riecht etwas stärker.",
+        "vegetativ": "Ich muss ständig, aber es kommen nur ein paar Tropfen. Stuhlgang, Appetit und Schlaf sind normal. Meine letzte Periode war vor zwei Wochen.",
+        "vorerkrankungen": "Nein, ich bin gesund.",
+        "medikamente": "Ich nehme die Pille.",
+        "allergien": "Keine Allergien.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich bin Lehrerin und habe seit kurzem einen neuen Freund. Ich trinke ehrlich gesagt eher wenig.",
+        "noxen": "Ich rauche nicht, Alkohol selten, Drogen nie."
+      }
+    },
+    "verdachtsdiagnose": "Akute unkomplizierte Zystitis",
+    "diagnoseKeywords": [
+      "zystitis",
+      "harnwegsinfekt",
+      "blasenentzündung",
+      "hwi"
+    ],
+    "differenzialdiagnosen": [
+      "Pyelonephritis",
+      "Urethritis (sexuell übertragbare Infektion)",
+      "Vaginitis",
+      "Schwangerschaft"
+    ],
+    "untersuchungen": [
+      "Urinstatus",
+      "Urinkultur",
+      "Schwangerschaftstest",
+      "Sonographie (Nieren)"
+    ]
+  },
+  {
+    "id": "c44",
+    "title": "Akutes Nierenversagen",
+    "category": "Nephrologie",
+    "difficulty": "schwer",
+    "patient": {
+      "name": "Walter Schuster",
+      "age": 72,
+      "gender": "männlich",
+      "hauptbeschwerde": "Schwäche, Schwindel und kaum noch Urin"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 4 Tagen wässrige Durchfälle (Magen-Darm-Infekt in der Familie), seitdem wenig getrunken. Seit 2 Tagen zunehmende Schwäche, Schwindel beim Aufstehen und deutlich weniger Urin (heute kaum). Wegen Rückenschmerzen seit einer Woche zusätzlich Ibuprofen eingenommen. Alle Dauermedikamente weiter eingenommen.",
+      "vorerkrankungen": "Herzinsuffizienz, arterielle Hypertonie, chronische Niereninsuffizienz Stadium 2.",
+      "medikamente": "Ramipril 10 mg 1-0-0, Torasemid 10 mg 1-0-0, Spironolacton 25 mg 1-0-0, Ibuprofen 600 mg 1-1-1 (seit 1 Woche)",
+      "allergien": "Keine bekannten Allergien",
+      "familienanamnese": "Keine Besonderheiten.",
+      "sozialanamnese": "Verheiratet, Rentner (ehemals Postbote). Nichtraucher, Alkohol gelegentlich."
+    },
+    "sprache": [
+      {
+        "patient": "Ich muss kaum noch Wasser lassen.",
+        "fach": "Es besteht eine Oligurie."
+      },
+      {
+        "patient": "Seit vier Tagen habe ich Durchfall und trinke wenig.",
+        "fach": "Bei viertägiger Diarrhö und geringer Trinkmenge besteht V. a. Exsikkose."
+      },
+      {
+        "patient": "Wegen dem Rücken nehme ich seit einer Woche Ibuprofen.",
+        "fach": "Seit einer Woche erfolgt eine Einnahme von NSAR."
+      }
+    ],
+    "terms": [
+      {
+        "de": "akutes Nierenversagen",
+        "patient": "die Nieren arbeiten plötzlich nicht mehr richtig",
+        "uz": "o‘tkir buyrak yetishmovchiligi",
+        "ru": "острая почечная недостаточность"
+      },
+      {
+        "de": "Oligurie",
+        "patient": "sehr wenig Urin",
+        "uz": "oliguriya (siydikning kamayishi)",
+        "ru": "олигурия"
+      },
+      {
+        "de": "prärenal",
+        "patient": "durch zu wenig Flüssigkeit",
+        "uz": "prerenal (buyrakdan oldingi sabab)",
+        "ru": "преренальный"
+      },
+      {
+        "de": "Hyperkaliämie",
+        "patient": "zu viel Kalium im Blut",
+        "uz": "giperkaliyemiya",
+        "ru": "гиперкалиемия"
+      },
+      {
+        "de": "nephrotoxisch",
+        "patient": "schädlich für die Niere",
+        "uz": "buyrakka zararli",
+        "ru": "нефротоксичный"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich fühle mich so schwach und schwindelig, und ich muss kaum noch Wasser lassen.",
+      "answers": {
+        "beginn": "Der Durchfall fing vor vier Tagen an, die ganze Familie hatte das. Seit zwei Tagen bin ich so schwach, und heute kommt kaum noch Urin.",
+        "lokalisation": "Schmerzen habe ich eigentlich nur im Rücken, wie schon länger.",
+        "charakter": "Ich fühle mich kraftlos, und wenn ich aufstehe, dreht sich alles.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Ich hatte vier Tage lang wässrigen Durchfall, fünf-, sechsmal am Tag. Gebrochen habe ich nicht. Mein Mund ist ganz trocken.",
+        "vegetativ": "Ich habe wenig gegessen und getrunken. Heute habe ich nur einmal ein bisschen Wasser gelassen, sehr dunkel. Schlafen tue ich viel.",
+        "vorerkrankungen": "Ich habe ein schwaches Herz, hohen Blutdruck und die Nieren sind schon etwas schwächer.",
+        "medikamente": "Ramipril 10, Torasemid 10 und Spironolacton 25, alles morgens. Und wegen dem Rücken seit einer Woche dreimal am Tag Ibuprofen 600. Ich habe alles weiter genommen.",
+        "allergien": "Keine Allergien.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich bin verheiratet und Rentner, früher war ich Postbote.",
+        "noxen": "Ich rauche nicht. Alkohol nur mal ein Glas Wein."
+      }
+    },
+    "verdachtsdiagnose": "Akutes prärenales Nierenversagen bei Exsikkose unter ACE-Hemmer, Diuretika und NSAR",
+    "diagnoseKeywords": [
+      "nierenversagen",
+      "nierenschädigung",
+      "akute niereninsuffizienz",
+      "anv",
+      "aki"
+    ],
+    "differenzialdiagnosen": [
+      "Postrenales Nierenversagen (Harnstau)",
+      "Akute interstitielle Nephritis",
+      "Kardiorenales Syndrom",
+      "Rhabdomyolyse"
+    ],
+    "untersuchungen": [
+      "Kreatinin",
+      "Kalium",
+      "Blutgasanalyse",
+      "Urinstatus",
+      "Sonographie (Nieren)"
+    ]
+  },
+  {
+    "id": "c45",
+    "title": "Hypoglykämie unter Sulfonylharnstoff",
+    "category": "Endokrinologie",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Paul Schreiber",
+      "age": 67,
+      "gender": "männlich",
+      "hauptbeschwerde": "Zittern, Schwitzen und Verwirrtheit"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Heute Mittag nach 3 Stunden Gartenarbeit ohne Mittagessen plötzlich Schwitzen, Zittern, Herzrasen, Heißhunger und Verwirrtheit. Ehefrau maß einen Blutzucker von 42 mg/dl und gab ihm Saft, danach rasche Besserung. Ähnliche, leichtere Episode vor einer Woche.",
+      "vorerkrankungen": "Diabetes mellitus Typ 2 seit 12 Jahren, chronische Niereninsuffizienz Stadium 3, arterielle Hypertonie.",
+      "medikamente": "Glibenclamid 3,5 mg 1-0-1, Metformin 500 mg 1-0-1, Amlodipin 5 mg 1-0-0",
+      "allergien": "Keine bekannten Allergien",
+      "familienanamnese": "Mutter mit Diabetes mellitus Typ 2.",
+      "sozialanamnese": "Verheiratet, Rentner (ehemals Busfahrer). Nichtraucher, Alkohol gelegentlich ein Bier."
+    },
+    "sprache": [
+      {
+        "patient": "Ich habe plötzlich stark geschwitzt und gezittert.",
+        "fach": "Der Patient berichtet über plötzliche Hyperhidrose und Tremor."
+      },
+      {
+        "patient": "Ich war ganz durcheinander und hatte Heißhunger.",
+        "fach": "Begleitend bestanden Verwirrtheit und Heißhunger."
+      },
+      {
+        "patient": "Meine Frau hat 42 gemessen.",
+        "fach": "Fremdanamnestisch wurde ein Blutzucker von 42 mg/dl gemessen."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Hypoglykämie",
+        "patient": "Unterzucker",
+        "uz": "gipoglikemiya (qand pasayishi)",
+        "ru": "гипогликемия"
+      },
+      {
+        "de": "Sulfonylharnstoff",
+        "patient": "Tablette, die Insulin freisetzt",
+        "uz": "sulfonilmochevina guruhi dorisi",
+        "ru": "препарат сульфонилмочевины"
+      },
+      {
+        "de": "Heißhunger",
+        "patient": "sehr starker Hunger",
+        "uz": "kuchli ochlik hissi",
+        "ru": "сильный голод"
+      },
+      {
+        "de": "Glukose",
+        "patient": "Zucker",
+        "uz": "glyukoza",
+        "ru": "глюкоза"
+      },
+      {
+        "de": "Niereninsuffizienz",
+        "patient": "Nierenschwäche",
+        "uz": "buyrak yetishmovchiligi",
+        "ru": "почечная недостаточность"
+      }
+    ],
+    "simulation": {
+      "opening": "Heute Mittag ging es mir plötzlich ganz schlecht. Ich habe gezittert und geschwitzt, und meine Frau sagt, mein Zucker war ganz niedrig.",
+      "answers": {
+        "beginn": "Heute gegen ein Uhr mittags, nach der Gartenarbeit. Vor einer Woche hatte ich so etwas schon einmal, aber schwächer.",
+        "lokalisation": "Schmerzen habe ich keine. Mir ging es am ganzen Körper schlecht.",
+        "charakter": "Ich habe gezittert, geschwitzt, das Herz hat gerast, und ich hatte einen Riesenhunger. Ich war ganz durcheinander.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Meine Frau hat 42 gemessen und mir Apfelsaft gegeben, danach ging es schnell besser. Ohnmächtig war ich nicht.",
+        "vegetativ": "Heute habe ich das Mittagessen ausgelassen, weil ich im Garten war. Stuhlgang und Wasserlassen sind normal. Schlaf ist normal.",
+        "vorerkrankungen": "Ich habe seit zwölf Jahren Zucker, die Nieren sind schwächer, und ich habe hohen Blutdruck.",
+        "medikamente": "Glibenclamid 3,5 morgens und abends, Metformin 500 morgens und abends und Amlodipin 5 morgens.",
+        "allergien": "Keine Allergien.",
+        "familie": "Meine Mutter hatte auch Zucker.",
+        "sozial": "Ich bin verheiratet und Rentner, früher war ich Busfahrer. Ich bin viel im Garten.",
+        "noxen": "Ich rauche nicht. Ab und zu ein Bier."
+      }
+    },
+    "verdachtsdiagnose": "Hypoglykämie unter Sulfonylharnstoff (Glibenclamid) bei Niereninsuffizienz und ausgelassener Mahlzeit",
+    "diagnoseKeywords": [
+      "hypoglykämie",
+      "unterzucker",
+      "hypoglykaemie"
+    ],
+    "differenzialdiagnosen": [
+      "Transitorische ischämische Attacke",
+      "Herzrhythmusstörung",
+      "Hyperthyreose",
+      "Epileptischer Anfall"
+    ],
+    "untersuchungen": [
+      "Blutzucker",
+      "HbA1c",
+      "Kreatinin",
+      "EKG",
+      "Elektrolyte"
+    ]
+  },
+  {
+    "id": "c46",
+    "title": "Herpes zoster",
+    "category": "Infektiologie",
+    "difficulty": "leicht",
+    "patient": {
+      "name": "Ursula Brandt",
+      "age": 68,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Brennende Schmerzen und Bläschen am Brustkorb links"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 4 Tagen brennende, gürtelförmige Schmerzen am linken Brustkorb, seit gestern gruppiert stehende Bläschen auf gerötetem Grund in einem streifenförmigen Areal von der Wirbelsäule bis unter die Brust, nicht über die Mittellinie hinaus. Leichtes Krankheitsgefühl, kein Fieber.",
+      "vorerkrankungen": "Rheumatoide Arthritis, Osteoporose.",
+      "medikamente": "Prednisolon 7,5 mg 1-0-0, Methotrexat 15 mg 1x wöchentlich, Folsäure 5 mg 1x wöchentlich",
+      "allergien": "Keine bekannten Allergien",
+      "familienanamnese": "Keine Besonderheiten.",
+      "sozialanamnese": "Verwitwet, Rentnerin, betreut regelmäßig ihre Enkelin (2 Jahre). Nichtraucherin, kein Alkohol."
+    },
+    "sprache": [
+      {
+        "patient": "Es brennt wie Feuer am Brustkorb links.",
+        "fach": "Die Patientin berichtet über brennende, gürtelförmige Schmerzen links thorakal."
+      },
+      {
+        "patient": "Seit gestern sind da kleine Bläschen in einem Streifen.",
+        "fach": "Es zeigen sich gruppierte Vesikel auf erythematösem Grund, dermatombezogen."
+      },
+      {
+        "patient": "Ich nehme Kortison und Methotrexat wegen Rheuma.",
+        "fach": "Es besteht eine Immunsuppression mit Prednisolon und Methotrexat."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Herpes zoster",
+        "patient": "Gürtelrose",
+        "uz": "o‘rab oluvchi temiratki (herpes zoster)",
+        "ru": "опоясывающий лишай"
+      },
+      {
+        "de": "Vesikel",
+        "patient": "Bläschen",
+        "uz": "pufakchalar",
+        "ru": "пузырьки (везикулы)"
+      },
+      {
+        "de": "Dermatom",
+        "patient": "Hautbereich eines Nervs",
+        "uz": "dermatom",
+        "ru": "дерматом"
+      },
+      {
+        "de": "Immunsuppression",
+        "patient": "geschwächtes Abwehrsystem durch Medikamente",
+        "uz": "immunitetning dori bilan susaytirilishi",
+        "ru": "иммуносупрессия"
+      },
+      {
+        "de": "Post-Zoster-Neuralgie",
+        "patient": "Nervenschmerzen nach der Gürtelrose",
+        "uz": "zosterdan keyingi nevralgiya",
+        "ru": "постгерпетическая невралгия"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe seit ein paar Tagen so brennende Schmerzen am Brustkorb, und seit gestern sind da Bläschen.",
+      "answers": {
+        "beginn": "Die Schmerzen habe ich seit vier Tagen, die Bläschen seit gestern Abend.",
+        "lokalisation": "Links am Brustkorb, wie ein Streifen vom Rücken bis vorne unter die Brust. Nur links, nicht rechts.",
+        "charakter": "Es brennt wie Feuer und sticht manchmal, eine 7 von 10. Schon die Kleidung tut weh.",
+        "ausstrahlung": "Es zieht im Streifen um die linke Seite herum, wie ein halber Gürtel.",
+        "begleit": "Ich fühle mich etwas krank und schlapp. Fieber habe ich nicht. Atemnot oder Druck auf der Brust habe ich nicht.",
+        "vegetativ": "Appetit ist normal, Schlaf schlecht wegen der Schmerzen. Stuhlgang und Wasserlassen normal.",
+        "vorerkrankungen": "Ich habe Rheuma in den Händen und Osteoporose.",
+        "medikamente": "Prednisolon 7,5 morgens, Methotrexat 15 einmal in der Woche und Folsäure einmal in der Woche.",
+        "allergien": "Keine Allergien.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich bin Witwe und Rentnerin. Ich passe oft auf meine zweijährige Enkelin auf.",
+        "noxen": "Ich rauche nicht und trinke keinen Alkohol."
+      }
+    },
+    "verdachtsdiagnose": "Herpes zoster (thorakales Dermatom links) bei Immunsuppression",
+    "diagnoseKeywords": [
+      "herpes zoster",
+      "zoster",
+      "gürtelrose"
+    ],
+    "differenzialdiagnosen": [
+      "Akutes Koronarsyndrom",
+      "Herpes simplex",
+      "Kontaktdermatitis",
+      "Interkostalneuralgie"
+    ],
+    "untersuchungen": [
+      "Klinische Untersuchung",
+      "PCR aus Bläschenflüssigkeit",
+      "EKG",
+      "Blutbild",
+      "Kreatinin"
+    ]
+  },
+  {
+    "id": "c47",
+    "title": "Transitorische ischämische Attacke (TIA)",
+    "category": "Neurologie",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Rainer Zimmer",
+      "age": 66,
+      "gender": "männlich",
+      "hauptbeschwerde": "Kurzzeitige Schwäche der rechten Hand und Sprachstörung"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Heute Morgen um 8 Uhr beim Frühstück plötzlich Schwäche und Ungeschicklichkeit der rechten Hand (Tasse fallen gelassen) sowie Wortfindungsstörungen für ca. 20 Minuten, danach vollständige Rückbildung. Keine Kopfschmerzen, keine Sehstörung. Jetzt beschwerdefrei.",
+      "vorerkrankungen": "Arterielle Hypertonie, Hypercholesterinämie, Diabetes mellitus Typ 2.",
+      "medikamente": "Amlodipin 10 mg 1-0-0, Metformin 1000 mg 1-0-1 (Statin selbst abgesetzt wegen Muskelschmerzen)",
+      "allergien": "Keine bekannten Allergien",
+      "familienanamnese": "Vater mit Schlaganfall mit 70 Jahren.",
+      "sozialanamnese": "Verheiratet, Taxiunternehmer, fährt täglich Auto. Raucher (40 pack years). Alkohol: 1–2 Bier am Abend."
+    },
+    "sprache": [
+      {
+        "patient": "Mir ist plötzlich die Tasse aus der rechten Hand gefallen.",
+        "fach": "Es trat plötzlich eine Schwäche der rechten Hand auf."
+      },
+      {
+        "patient": "Ich habe die Wörter nicht gefunden.",
+        "fach": "Begleitend bestanden Wortfindungsstörungen."
+      },
+      {
+        "patient": "Nach 20 Minuten war alles wieder gut.",
+        "fach": "Die Symptome bildeten sich nach ca. 20 Minuten vollständig zurück."
+      }
+    ],
+    "terms": [
+      {
+        "de": "TIA",
+        "patient": "Durchblutungsstörung im Gehirn, die von selbst vorbeigeht",
+        "uz": "tranzitor ishemik ataka",
+        "ru": "транзиторная ишемическая атака"
+      },
+      {
+        "de": "Wortfindungsstörung",
+        "patient": "die Wörter nicht finden",
+        "uz": "so‘z topishda qiynalish",
+        "ru": "нарушение подбора слов"
+      },
+      {
+        "de": "Karotisstenose",
+        "patient": "Verengung der Halsschlagader",
+        "uz": "uyqu arteriyasi torayishi",
+        "ru": "стеноз сонной артерии"
+      },
+      {
+        "de": "Duplexsonographie",
+        "patient": "Ultraschall der Blutgefäße",
+        "uz": "dupleks sonografiya",
+        "ru": "дуплексное сканирование"
+      },
+      {
+        "de": "Sekundärprophylaxe",
+        "patient": "Vorbeugung, damit es nicht wieder passiert",
+        "uz": "ikkilamchi profilaktika",
+        "ru": "вторичная профилактика"
+      }
+    ],
+    "simulation": {
+      "opening": "Heute Morgen konnte ich meine rechte Hand kurz nicht richtig bewegen und habe die Wörter nicht gefunden. Jetzt ist alles wieder gut.",
+      "answers": {
+        "beginn": "Heute Morgen um acht beim Frühstück, ganz plötzlich. Nach ungefähr zwanzig Minuten war es vorbei.",
+        "lokalisation": "Die rechte Hand und der rechte Arm. Und das Sprechen.",
+        "charakter": "Die Hand war schwach und ungeschickt, mir ist die Tasse runtergefallen. Ich wusste, was ich sagen will, aber die Wörter kamen nicht.",
+        "ausstrahlung": "Nein, Schmerzen hatte ich keine.",
+        "begleit": "Kopfschmerzen, Sehstörungen oder Schwindel hatte ich nicht. Jetzt geht es mir wieder ganz normal.",
+        "vegetativ": "Appetit, Schlaf, Stuhlgang und Wasserlassen sind normal.",
+        "vorerkrankungen": "Ich habe hohen Blutdruck, zu hohes Cholesterin und Zucker.",
+        "medikamente": "Amlodipin 10 morgens und Metformin 1000 morgens und abends. Das Cholesterinmittel habe ich vor einem halben Jahr selbst abgesetzt, weil mir die Muskeln wehgetan haben.",
+        "allergien": "Keine Allergien.",
+        "familie": "Mein Vater hatte mit 70 einen Schlaganfall.",
+        "sozial": "Ich bin verheiratet und habe ein Taxiunternehmen, ich fahre selbst jeden Tag.",
+        "noxen": "Ich rauche seit 40 Jahren eine Schachtel am Tag. Abends trinke ich ein, zwei Bier."
+      }
+    },
+    "verdachtsdiagnose": "Transitorische ischämische Attacke (TIA) im Stromgebiet der linken A. cerebri media",
+    "diagnoseKeywords": [
+      "tia",
+      "transitorische ischämische attacke",
+      "transitorisch"
+    ],
+    "differenzialdiagnosen": [
+      "Ischämischer Schlaganfall",
+      "Hypoglykämie",
+      "Migräne mit Aura",
+      "Fokaler epileptischer Anfall"
+    ],
+    "untersuchungen": [
+      "MRT (Schädel)",
+      "Duplexsonographie (Halsgefäße)",
+      "EKG",
+      "Langzeit-EKG",
+      "Blutzucker"
+    ]
+  },
+  {
+    "id": "c48",
+    "title": "Kolonkarzinom",
+    "category": "Gastroenterologie",
+    "difficulty": "schwer",
+    "patient": {
+      "name": "Josef Huber",
+      "age": 69,
+      "gender": "männlich",
+      "hauptbeschwerde": "Blut im Stuhl und Gewichtsverlust"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit ca. 3 Monaten veränderte Stuhlgewohnheiten mit Wechsel zwischen Verstopfung und Durchfall, mehrfach dunkelrotes Blut auf dem Stuhl, ungewollter Gewichtsverlust von 6 kg, zunehmende Müdigkeit und Leistungsknick. Gelegentlich krampfartige Bauchschmerzen links. Noch nie eine Darmspiegelung.",
+      "vorerkrankungen": "Arterielle Hypertonie, Hämorrhoiden (vor 10 Jahren behandelt).",
+      "medikamente": "Lisinopril 10 mg 1-0-0",
+      "allergien": "Keine bekannten Allergien",
+      "familienanamnese": "Vater mit 72 Jahren an Darmkrebs verstorben.",
+      "sozialanamnese": "Verheiratet, Rentner (ehemals Metzger). Viel rotes Fleisch, wenig Ballaststoffe. Ex-Raucher (30 pack years). Alkohol: täglich 1–2 Bier."
+    },
+    "sprache": [
+      {
+        "patient": "Mal habe ich Verstopfung, mal Durchfall.",
+        "fach": "Es besteht ein Wechsel zwischen Obstipation und Diarrhö."
+      },
+      {
+        "patient": "Auf dem Stuhl war mehrmals Blut.",
+        "fach": "Der Patient berichtet über rezidivierende peranale Blutabgänge (Hämatochezie)."
+      },
+      {
+        "patient": "Ich habe sechs Kilo abgenommen, ohne es zu wollen.",
+        "fach": "Es besteht ein ungewollter Gewichtsverlust von 6 kg in 3 Monaten."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Kolonkarzinom",
+        "patient": "Darmkrebs",
+        "uz": "yo‘g‘on ichak saratoni",
+        "ru": "рак толстой кишки"
+      },
+      {
+        "de": "Hämatochezie",
+        "patient": "Blut im Stuhl",
+        "uz": "najasda qizil qon",
+        "ru": "кровь в кале (гематохезия)"
+      },
+      {
+        "de": "B-Symptomatik",
+        "patient": "Gewichtsverlust, Fieber, Nachtschweiß",
+        "uz": "B-simptomlar (vazn yo‘qotish, isitma, tungi terlash)",
+        "ru": "B-симптомы"
+      },
+      {
+        "de": "Tumormarker CEA",
+        "patient": "Blutwert bei Darmkrebs",
+        "uz": "CEA o‘sma markeri",
+        "ru": "онкомаркер РЭА"
+      },
+      {
+        "de": "Staging",
+        "patient": "Untersuchungen, wie weit der Krebs ist",
+        "uz": "kasallik bosqichini aniqlash",
+        "ru": "стадирование"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe seit ein paar Monaten Probleme mit dem Stuhlgang, und jetzt war auch Blut dabei.",
+      "answers": {
+        "beginn": "Seit ungefähr drei Monaten. Das Blut habe ich in den letzten Wochen mehrmals gesehen.",
+        "lokalisation": "Manchmal habe ich Bauchkrämpfe links unten.",
+        "charakter": "Krampfartig, nicht sehr stark, eine 3 bis 4 von 10. Das Blut ist dunkelrot, auf dem Stuhl.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Ich bin ständig müde und schaffe nicht mehr so viel. Fieber habe ich nicht. Nachts schwitze ich manchmal.",
+        "vegetativ": "Ich habe sechs Kilo abgenommen, ohne es zu wollen, und weniger Appetit. Mal habe ich Verstopfung, mal Durchfall. Wasserlassen ist normal.",
+        "vorerkrankungen": "Ich habe hohen Blutdruck. Vor zehn Jahren hatte ich Hämorrhoiden, die wurden behandelt.",
+        "medikamente": "Lisinopril 10 morgens.",
+        "allergien": "Keine Allergien.",
+        "familie": "Mein Vater ist mit 72 an Darmkrebs gestorben.",
+        "sozial": "Ich bin verheiratet und Rentner, früher war ich Metzger. Ich esse viel Fleisch. Eine Darmspiegelung hatte ich noch nie.",
+        "noxen": "Ich habe 30 Jahre geraucht, seit acht Jahren nicht mehr. Jeden Abend ein, zwei Bier."
+      }
+    },
+    "verdachtsdiagnose": "V. a. Kolonkarzinom (linksseitig) mit B-Symptomatik",
+    "diagnoseKeywords": [
+      "kolonkarzinom",
+      "darmkrebs",
+      "kolorektales karzinom",
+      "karzinom"
+    ],
+    "differenzialdiagnosen": [
+      "Hämorrhoidalblutung",
+      "Divertikelblutung",
+      "Chronisch-entzündliche Darmerkrankung",
+      "Angiodysplasie"
+    ],
+    "untersuchungen": [
+      "Koloskopie mit Biopsie",
+      "Blutbild",
+      "CEA",
+      "CT (Thorax und Abdomen)",
+      "Leberwerte"
+    ]
+  },
+  {
+    "id": "c49",
+    "title": "Supinationstrauma des oberen Sprunggelenks",
+    "category": "Unfallchirurgie",
+    "difficulty": "leicht",
+    "patient": {
+      "name": "Nina Hahn",
+      "age": 32,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Umgeknickt beim Joggen, Knöchel geschwollen"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Vor 2 Stunden beim Joggen auf unebenem Weg mit dem rechten Fuß nach außen umgeknickt (Supinationstrauma). Sofort starke Schmerzen am Außenknöchel, rasche Schwellung, Bluterguss. Auftreten nur unter starken Schmerzen, wenige Schritte möglich. Kein Knacken gehört. Gefühl im Fuß normal.",
+      "vorerkrankungen": "Keine. Vor 5 Jahren schon einmal am selben Fuß umgeknickt.",
+      "medikamente": "Keine",
+      "allergien": "Keine bekannten Allergien",
+      "familienanamnese": "Keine Besonderheiten.",
+      "sozialanamnese": "Ledig, Bankkauffrau, läuft dreimal pro Woche. Nichtraucherin, Alkohol selten."
+    },
+    "sprache": [
+      {
+        "patient": "Ich bin mit dem Fuß nach außen umgeknickt.",
+        "fach": "Die Patientin erlitt ein Supinationstrauma des rechten oberen Sprunggelenks."
+      },
+      {
+        "patient": "Der Knöchel ist ganz dick und blau.",
+        "fach": "Es zeigen sich eine Schwellung und ein Hämatom am Außenknöchel."
+      },
+      {
+        "patient": "Ich kann nur ein paar Schritte gehen.",
+        "fach": "Eine Belastung ist nur eingeschränkt möglich."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Supinationstrauma",
+        "patient": "Umknicken nach außen",
+        "uz": "oyoq panjasining tashqariga qayrilishi",
+        "ru": "супинационная травма (подворот стопы)"
+      },
+      {
+        "de": "oberes Sprunggelenk (OSG)",
+        "patient": "Knöchelgelenk",
+        "uz": "yuqori to‘piq bo‘g‘imi",
+        "ru": "голеностопный сустав"
+      },
+      {
+        "de": "Außenbandruptur",
+        "patient": "Riss der Bänder außen am Knöchel",
+        "uz": "tashqi boylamlar uzilishi",
+        "ru": "разрыв наружных связок"
+      },
+      {
+        "de": "Ottawa-Regeln",
+        "patient": "Regeln, wann man röntgen muss",
+        "uz": "Ottava qoidalari (rentgen ko‘rsatmasi)",
+        "ru": "оттавские правила"
+      },
+      {
+        "de": "PECH-Regel",
+        "patient": "Pause, Eis, Kompression, Hochlagern",
+        "uz": "PECH qoidasi: dam, muz, bog‘lam, baland qo‘yish",
+        "ru": "правило PECH: покой, лёд, компрессия, возвышение"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich bin beim Joggen umgeknickt, und jetzt ist mein Knöchel ganz dick.",
+      "answers": {
+        "beginn": "Vor ungefähr zwei Stunden, im Park auf einem unebenen Weg.",
+        "lokalisation": "Rechts am Außenknöchel, vor allem davor und darunter.",
+        "charakter": "Ein stechender Schmerz, beim Auftreten eine 7 von 10, in Ruhe eine 4.",
+        "ausstrahlung": "Es zieht ein bisschen den Fuß entlang nach vorne.",
+        "begleit": "Der Knöchel ist dick und blau geworden. Ich kann nur ein paar Schritte humpeln. Ein Knacken habe ich nicht gehört. Der Fuß kribbelt nicht, ich spüre alles.",
+        "vegetativ": "Appetit, Schlaf, Stuhlgang und Wasserlassen sind normal.",
+        "vorerkrankungen": "Nein. Vor fünf Jahren bin ich mit demselben Fuß schon einmal umgeknickt.",
+        "medikamente": "Ich nehme keine Medikamente.",
+        "allergien": "Keine Allergien.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich arbeite in einer Bank und laufe dreimal pro Woche.",
+        "noxen": "Ich rauche nicht, Alkohol trinke ich selten."
+      }
+    },
+    "verdachtsdiagnose": "Supinationstrauma des rechten OSG, V. a. Außenbandläsion, Ausschluss einer Außenknöchelfraktur",
+    "diagnoseKeywords": [
+      "supinationstrauma",
+      "sprunggelenk",
+      "osg",
+      "außenband",
+      "distorsion"
+    ],
+    "differenzialdiagnosen": [
+      "Außenknöchelfraktur (Weber)",
+      "Fraktur der Basis des 5. Mittelfußknochens",
+      "Syndesmosenverletzung",
+      "Kontusion"
+    ],
+    "untersuchungen": [
+      "Röntgen (OSG in 2 Ebenen)",
+      "Klinische Untersuchung (Ottawa-Regeln)",
+      "Sonographie (Bänder)",
+      "DMS-Kontrolle"
+    ]
+  },
+  {
+    "id": "c50",
+    "title": "Anaphylaktische Reaktion nach Wespenstich",
+    "category": "Allgemeinmedizin",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Kai Schubert",
+      "age": 35,
+      "gender": "männlich",
+      "hauptbeschwerde": "Juckende Quaddeln, geschwollene Lippen und Atemnot nach Wespenstich"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Vor ca. 20 Minuten im Garten von einer Wespe in den rechten Unterarm gestochen. Wenige Minuten später Juckreiz am ganzen Körper, Quaddeln, Schwellung der Lippen und Augenlider, Engegefühl im Hals, leichte Atemnot, Schwindel und Übelkeit. Keine Bewusstlosigkeit.",
+      "vorerkrankungen": "Allergisches Asthma bronchiale (leicht), Heuschnupfen. Vor 2 Jahren nach Wespenstich starke lokale Schwellung.",
+      "medikamente": "Salbutamol-Spray bei Bedarf",
+      "allergien": "Gräserpollen; Insektengift bisher nicht abgeklärt",
+      "familienanamnese": "Mutter mit Heuschnupfen.",
+      "sozialanamnese": "Verheiratet, Gärtner. Nichtraucher, Alkohol selten."
+    },
+    "sprache": [
+      {
+        "patient": "Mich hat eine Wespe gestochen, und jetzt juckt es überall.",
+        "fach": "Nach einem Wespenstich besteht generalisierter Juckreiz mit Urtikaria."
+      },
+      {
+        "patient": "Meine Lippen sind ganz dick, und der Hals fühlt sich eng an.",
+        "fach": "Es bestehen ein Angioödem der Lippen und ein Engegefühl im Hals."
+      },
+      {
+        "patient": "Mir ist schwindelig und ich bekomme schlecht Luft.",
+        "fach": "Begleitend bestehen Schwindel und Dyspnoe."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Anaphylaxie",
+        "patient": "schwere allergische Reaktion",
+        "uz": "anafilaksiya",
+        "ru": "анафилаксия"
+      },
+      {
+        "de": "Urtikaria",
+        "patient": "Nesselsucht, Quaddeln",
+        "uz": "eshakemi (urtikariya)",
+        "ru": "крапивница"
+      },
+      {
+        "de": "Angioödem",
+        "patient": "Schwellung von Lippen und Gesicht",
+        "uz": "angionevrotik shish",
+        "ru": "ангионевротический отёк"
+      },
+      {
+        "de": "Adrenalin-Autoinjektor",
+        "patient": "Notfall-Spritze gegen Allergie",
+        "uz": "adrenalin avtoinyektori",
+        "ru": "автоинъектор адреналина"
+      },
+      {
+        "de": "Hyposensibilisierung",
+        "patient": "Behandlung, die die Allergie abschwächt",
+        "uz": "giposensibilizatsiya (allergen-spetsifik terapiya)",
+        "ru": "аллерген-специфическая иммунотерапия"
+      }
+    ],
+    "simulation": {
+      "opening": "Mich hat eine Wespe gestochen, und jetzt juckt es überall, meine Lippen sind dick und ich bekomme schlecht Luft.",
+      "answers": {
+        "beginn": "Vor ungefähr zwanzig Minuten im Garten. Ein paar Minuten nach dem Stich fing es an.",
+        "lokalisation": "Gestochen wurde ich am rechten Unterarm. Jetzt juckt es am ganzen Körper, und die Lippen und Augen sind geschwollen.",
+        "charakter": "Es juckt furchtbar, überall sind rote Quaddeln. Der Hals fühlt sich eng an.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Ich bekomme etwas schlecht Luft, mir ist schwindelig und übel. Ohnmächtig war ich nicht.",
+        "vegetativ": "Ich habe einmal Durchfall gehabt, seit dem Stich. Sonst ist alles normal.",
+        "vorerkrankungen": "Ich habe leichtes Asthma und Heuschnupfen. Vor zwei Jahren war mein Arm nach einem Wespenstich sehr dick geschwollen.",
+        "medikamente": "Nur mein Salbutamol-Spray bei Bedarf.",
+        "allergien": "Gegen Gräserpollen. Ob ich gegen Wespen allergisch bin, wurde nie getestet.",
+        "familie": "Meine Mutter hat Heuschnupfen.",
+        "sozial": "Ich bin verheiratet und arbeite als Gärtner.",
+        "noxen": "Ich rauche nicht, Alkohol trinke ich selten."
+      }
+    },
+    "verdachtsdiagnose": "Anaphylaktische Reaktion (Grad II–III) nach Wespenstich",
+    "diagnoseKeywords": [
+      "anaphylax",
+      "anaphylaktisch",
+      "allergische reaktion",
+      "insektengiftallergie"
+    ],
+    "differenzialdiagnosen": [
+      "Hereditäres Angioödem",
+      "Asthmaanfall",
+      "Vasovagale Reaktion",
+      "Panikattacke"
+    ],
+    "untersuchungen": [
+      "Vitalparameter",
+      "Pulsoxymetrie",
+      "Tryptase",
+      "EKG",
+      "Allergietestung (später)"
+    ]
   }
 ]

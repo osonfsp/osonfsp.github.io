@@ -6,6 +6,7 @@ import { useApp } from "../state/AppContext";
 import { LANG, LANGS, setLang, tr } from "../lib/i18n";
 import { TrialBar } from "./Paywall";
 import { buildPlan } from "../lib/daily";
+import { FEEDBACK_TELEGRAM } from "../lib/config";
 
 const SIDEBAR_KEY = "fsp.sidebar";
 
@@ -172,6 +173,27 @@ function Sidebar({ onClose }) {
           </div>
         ))}
       </nav>
+      {FEEDBACK_TELEGRAM && (
+        <div className="shrink-0 px-3 pb-2">
+          <a
+            href={FEEDBACK_TELEGRAM}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-3 rounded-xl border border-sky-400/30 bg-sky-500/10 px-3 py-2.5 text-sm font-medium text-sky-100 transition hover:bg-sky-500/20"
+          >
+            <span className="w-5 text-center" aria-hidden>
+              ✉️
+            </span>
+            <span className="flex-1">
+              {tr("Taklif va shikoyatlar", "Предложения и жалобы")}
+              <span className="block text-[11px] font-normal text-sky-200/70">
+                {tr("Telegram orqali yozing", "Напишите в Telegram")}
+              </span>
+            </span>
+            <span aria-hidden>↗</span>
+          </a>
+        </div>
+      )}
       <div className="shrink-0 space-y-3 border-t border-white/10 p-3">
         <Link
           href={user ? "/dashboard" : "/login"}
