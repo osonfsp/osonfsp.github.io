@@ -279,3 +279,37 @@ header.sticky {
   transform-style: preserve-3d;
   will-change: transform;
 }
+
+/* Lug‘at maydonlari: har birining o‘z rangi (ko‘z bilan tez ajratish uchun) */
+@layer components {
+  .wf {
+    @apply rounded-lg border-l-4 px-2.5 py-1.5;
+  }
+  .wf-label {
+    @apply block text-[11px] font-bold uppercase tracking-wider;
+  }
+  .wf-uz {
+    @apply wf border-emerald-500 bg-emerald-50 text-emerald-950 dark:bg-emerald-950/40 dark:text-emerald-100;
+  }
+  .wf-uz .wf-label {
+    @apply text-emerald-700 dark:text-emerald-300;
+  }
+  .wf-pat {
+    @apply wf border-amber-500 bg-amber-50 text-amber-950 dark:bg-amber-950/40 dark:text-amber-100;
+  }
+  .wf-pat .wf-label {
+    @apply text-amber-700 dark:text-amber-300;
+  }
+  .wf-ex {
+    @apply wf border-violet-500 bg-violet-50 text-violet-950 dark:bg-violet-950/40 dark:text-violet-100;
+  }
+  .wf-ex .wf-label {
+    @apply text-violet-700 dark:text-violet-300;
+  }
+  .wf-fach {
+    @apply wf border-teal-600 bg-teal-50 text-teal-950 dark:bg-teal-950/40 dark:text-teal-100;
+  }
+  .wf-fach .wf-label {
+    @apply text-teal-700 dark:text-teal-300;
+  }
+}

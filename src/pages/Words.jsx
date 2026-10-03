@@ -118,23 +118,19 @@ export function WordsPage() {
                     </span>
                   </div>
                   <dl className="mt-3 space-y-2 text-sm">
-                    <div>
-                      <dt className="text-[11px] font-semibold uppercase tracking-wider muted">
-                        Patientensprache
+                    <div className="wf-uz">
+                      <dt className="wf-label">📗 {tr("O‘zbekcha", "Перевод")}</dt>
+                      <dd className="font-semibold">{loc(b)}</dd>
+                    </div>
+                    <div className="wf-pat">
+                      <dt className="wf-label">
+                        🧑 {tr("Bemor tilida (Patientensprache)", "Языком пациента")}
                       </dt>
                       <dd>„{b.patient}“</dd>
                     </div>
-                    <div>
-                      <dt className="text-[11px] font-semibold uppercase tracking-wider muted">
-                        {tr("O‘zbekcha", "Перевод")}
-                      </dt>
-                      <dd>{loc(b)}</dd>
-                    </div>
-                    <div>
-                      <dt className="text-[11px] font-semibold uppercase tracking-wider muted">
-                        {tr("Misol", "Пример")}
-                      </dt>
-                      <dd className="flex items-start gap-1 italic muted">
+                    <div className="wf-ex">
+                      <dt className="wf-label">💬 {tr("Misol", "Пример")}</dt>
+                      <dd className="flex items-start gap-1 italic">
                         <span className="flex-1">{b.example}</span>
                         <Speak text={b.example} className="-mt-1 not-italic" />
                       </dd>

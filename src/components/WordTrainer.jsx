@@ -131,36 +131,28 @@ export function WordTrainer({ pool, onClose }) {
           <span className="mt-6 w-full space-y-2.5 border-t border-slate-200 pt-5 text-left dark:border-slate-800">
             {/* Orqa tomon: javob + yordamchi ma’lumotlar, har biri nomi bilan */}
             {front ? (
-              <span className="block">
-                <span className="block text-[11px] font-semibold uppercase tracking-wider muted">
-                  Fachsprache
-                </span>
-                <span className="flex items-center gap-1 text-2xl font-semibold text-teal-700 dark:text-teal-400">
+              <span className="wf-fach block">
+                <span className="wf-label">🩺 Fachsprache</span>
+                <span className="flex items-center gap-1 text-2xl font-semibold">
                   {w.de}
                   <Speak text={w.de} />
                 </span>
               </span>
             ) : (
-              <span className="block">
-                <span className="block text-[11px] font-semibold uppercase tracking-wider muted">
-                  {tr("O‘zbekcha", "Перевод")}
-                </span>
-                <span className="block text-2xl font-semibold text-teal-700 dark:text-teal-400">
-                  {loc(w)}
-                </span>
+              <span className="wf-uz block">
+                <span className="wf-label">📗 {tr("O‘zbekcha", "Перевод")}</span>
+                <span className="block text-2xl font-semibold">{loc(w)}</span>
               </span>
             )}
-            <span className="block">
-              <span className="block text-[11px] font-semibold uppercase tracking-wider muted">
-                {tr("Bemor tilida (Patientensprache)", "Языком пациента (Patientensprache)")}
+            <span className="wf-pat block">
+              <span className="wf-label">
+                🧑 {tr("Bemor tilida (Patientensprache)", "Языком пациента (Patientensprache)")}
               </span>
               <span className="block">„{w.patient}“</span>
             </span>
-            <span className="block">
-              <span className="block text-[11px] font-semibold uppercase tracking-wider muted">
-                {tr("Misol", "Пример")}
-              </span>
-              <span className="block text-sm italic muted">{w.example}</span>
+            <span className="wf-ex block">
+              <span className="wf-label">💬 {tr("Misol", "Пример")}</span>
+              <span className="block text-sm italic">{w.example}</span>
             </span>
           </span>
         ) : (
