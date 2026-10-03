@@ -284,7 +284,7 @@ export const CATEGORY_STYLE = {
   Infektiologie: ["🦠", "bg-lime-100 text-lime-800 ring-lime-200 dark:bg-lime-500/15 dark:text-lime-200 dark:ring-lime-500/30"],
   Chirurgie: ["🔪", "bg-amber-100 text-amber-900 ring-amber-200 dark:bg-amber-500/15 dark:text-amber-200 dark:ring-amber-500/30"],
   Unfallchirurgie: ["🦴", "bg-stone-200 text-stone-800 ring-stone-300 dark:bg-stone-500/20 dark:text-stone-200 dark:ring-stone-500/40"],
-  Urologie: ["🚽", "bg-yellow-100 text-yellow-900 ring-yellow-300 dark:bg-yellow-500/15 dark:text-yellow-200 dark:ring-yellow-500/30"],
+  Urologie: ["🔬", "bg-yellow-100 text-yellow-900 ring-yellow-300 dark:bg-yellow-500/15 dark:text-yellow-200 dark:ring-yellow-500/30"],
   Neurologie: ["🧠", "bg-violet-100 text-violet-800 ring-violet-200 dark:bg-violet-500/15 dark:text-violet-200 dark:ring-violet-500/30"],
   Allgemeinmedizin: ["🏥", "bg-emerald-100 text-emerald-800 ring-emerald-200 dark:bg-emerald-500/15 dark:text-emerald-200 dark:ring-emerald-500/30"],
 };
