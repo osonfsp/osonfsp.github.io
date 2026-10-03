@@ -29,7 +29,7 @@ export function ArztbriefListPage() {
           return (
             <Link key={t.id} href={`/arztbrief/${t.id}`} className="card card-hover flex flex-col">
               <span className="text-xs font-medium text-teal-600 dark:text-teal-400">{a?.category}</span>
-              <h2 className="mt-1 font-semibold">{t.title}</h2>
+              <h2 className="mt-1 text-lg font-bold text-teal-900 dark:text-teal-100">{t.title}</h2>
               <p className="mt-1 text-sm muted">
                 {a?.patient.name}
                 {", "}
@@ -92,7 +92,7 @@ function ArztbriefEditor({ exercise: e, onResult: t }) {
     <div className="space-y-6">
       <div className="card">
         <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
-          <h2 className="text-lg font-semibold">✍️ {tr("Arztbrief editori", "Редактор Arztbrief")}</h2>
+          <h2 className="h-title">✍️ {tr("Arztbrief editori", "Редактор Arztbrief")}</h2>
           <div className="flex gap-2">
             <button className="btn-ghost text-xs" onClick={() => n(ARZTBRIEF_TEMPLATE)}>
               {tr("Shablonni qo‘yish", "Вставить шаблон")}

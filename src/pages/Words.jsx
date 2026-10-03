@@ -9,6 +9,8 @@ import { loc, tr } from "../lib/i18n";
 import { useSearchParams } from "../lib/router";
 import { SectionIntro } from "../components/SectionIntro";
 
+const PAGE = 12;
+
 export function WordsPage() {
   let { progress: e, toggleWord: t } = useApp(),
     [a, n] = useState(""),
@@ -27,7 +29,8 @@ export function WordsPage() {
           (!b || [y.de, y.patient, y.uz, y.ru ?? "", y.example].some((f) => f.toLowerCase().includes(b))),
       );
     }, [a, i, s, e.learnedWords]),
-    h = e.learnedWords.length;
+    h = e.learnedWords.length,
+    [limit, setLimit] = useState(PAGE);
   return (
     <div className="page">
       <PageHeader
@@ -78,7 +81,7 @@ export function WordsPage() {
               )}
             />
             <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-              <FilterChips options={WORD_CATEGORIES} value={i} onChange={l} />
+              <FilterChips options={WORD_CATEGORIES} value={i} onChange={(v) => (l(v), setLimit(PAGE))} />
               <label className="flex shrink-0 cursor-pointer items-center gap-2 text-sm">
                 <input
                   type="checkbox"
@@ -95,7 +98,7 @@ export function WordsPage() {
             </p>
           </div>
           <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            {c.map((b) => {
+            {c.slice(0, limit).map((b) => {
               let y = e.learnedWords.includes(b.id);
               return (
                 <article
@@ -146,6 +149,13 @@ export function WordsPage() {
               );
             })}
           </div>
+          {c.length > limit && (
+            <div className="mt-5 text-center">
+              <button className="btn-outline" onClick={() => setLimit(limit + PAGE * 2)}>
+                {tr(`Yana ko‘rsatish (${c.length - limit} ta qoldi)`, `Показать ещё (осталось ${c.length - limit})`)}
+              </button>
+            </div>
+          )}
           {!c.length && (
             <p className="card text-center muted">{tr("Hech narsa topilmadi.", "Ничего не найдено.")}</p>
           )}

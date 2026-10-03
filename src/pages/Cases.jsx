@@ -23,7 +23,7 @@ function CaseCard({ c, solved }) {
           {DIFFICULTY_LABELS[c.difficulty]}
         </span>
       </div>
-      <h3 className="mt-2 font-semibold">{c.title}</h3>
+      <h3 className="mt-2 text-lg font-bold text-teal-900 dark:text-teal-100">{c.title}</h3>
       <p className="mt-1 text-sm muted">
         {c.patient.name}, {c.patient.age} J., {c.patient.gender}
       </p>
@@ -44,7 +44,7 @@ export function CasesPage() {
   let { progress: e } = useApp(),
     params = useSearchParams(),
     router = useRouter(),
-    // Bo‘lim tanlanmaguncha faqat bo‘lim kartochkalari ko‘rinadi (50 ta Fall birdan emas)
+    // Bo‘lim tanlanmaguncha faqat bo‘lim kartochkalari ko‘rinadi (60 dan ortiq Fall birdan emas)
     bolim = params.get("bolim"),
     section = bolim === "all" || CASE_SECTIONS.some((s) => s.id === bolim) ? bolim : null,
     setSection = (id) => router.replace(`/faelle?bolim=${id}`),
@@ -157,7 +157,7 @@ export function CasesPage() {
       <div className="space-y-8">
         {groups.map((g) => (
           <section key={g.cat}>
-            <h2 className="mb-3 flex flex-wrap items-baseline gap-x-2 text-lg font-bold">
+            <h2 className="mb-3 flex flex-wrap items-baseline gap-x-2 text-xl font-bold text-teal-900 dark:text-teal-100">
               {section !== g.sec.id && <span aria-hidden>{g.sec.icon}</span>}
               {CATEGORY_LABELS[g.cat] ?? g.cat}
               <span className="text-sm font-normal muted">

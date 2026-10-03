@@ -5135,5 +5135,1231 @@
       "EKG",
       "Allergietestung (später)"
     ]
+  },
+  {
+    "id": "c51",
+    "title": "Akute Aortendissektion",
+    "category": "Kardiologie",
+    "difficulty": "schwer",
+    "patient": {
+      "name": "Werner Lang",
+      "age": 63,
+      "gender": "männlich",
+      "hauptbeschwerde": "Plötzlicher reißender Brustschmerz bis in den Rücken"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Vor 1 Stunde beim Tragen einer schweren Kiste plötzlich stärkste, reißende Schmerzen hinter dem Brustbein (10/10), die sofort zwischen die Schulterblätter ausstrahlten und nach unten wandern. Kaltschweißig, kurz schwarz vor Augen, Übelkeit. Der linke Arm fühlt sich kühler an.",
+      "vorerkrankungen": "Arterielle Hypertonie seit 15 Jahren, schlecht eingestellt. Bekannte Erweiterung der Aorta ascendens (4,6 cm), Kontrolle versäumt.",
+      "medikamente": "Ramipril 5 mg 1-0-0 (unregelmäßige Einnahme)",
+      "allergien": "Keine bekannten Allergien",
+      "familienanamnese": "Bruder mit 58 Jahren plötzlich verstorben (Ursache unklar).",
+      "sozialanamnese": "Verheiratet, Speditionskaufmann. Raucher (35 pack years). Alkohol: am Wochenende 3–4 Bier."
+    },
+    "sprache": [
+      {
+        "patient": "Es hat sich angefühlt, als ob mich etwas innen zerreißt.",
+        "fach": "Der Patient beschreibt einen plötzlich einsetzenden, reißenden Thoraxschmerz."
+      },
+      {
+        "patient": "Der Schmerz ist sofort in den Rücken gegangen und wandert nach unten.",
+        "fach": "Die Schmerzen strahlen in den Rücken interskapulär aus und wandern nach kaudal."
+      },
+      {
+        "patient": "Mein linker Arm ist kälter als der rechte.",
+        "fach": "Es besteht eine Seitendifferenz der Extremitätenperfusion."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Aortendissektion",
+        "patient": "Einriss in der Wand der Hauptschlagader",
+        "uz": "aorta devorining qatlanib yorilishi (aorta disseksiyasi)",
+        "ru": "расслоение аорты"
+      },
+      {
+        "de": "Blutdruckdifferenz",
+        "patient": "unterschiedlicher Blutdruck an beiden Armen",
+        "uz": "ikki qo‘ldagi qon bosimi farqi",
+        "ru": "разница давления на руках"
+      },
+      {
+        "de": "Aneurysma",
+        "patient": "Aussackung eines Blutgefäßes",
+        "uz": "anevrizma (qon tomir bo‘rtishi)",
+        "ru": "аневризма"
+      },
+      {
+        "de": "CT-Angiographie",
+        "patient": "Computertomographie der Blutgefäße mit Kontrastmittel",
+        "uz": "KT-angiografiya",
+        "ru": "КТ-ангиография"
+      },
+      {
+        "de": "interskapulär",
+        "patient": "zwischen den Schulterblättern",
+        "uz": "kurak suyaklari orasida",
+        "ru": "межлопаточно"
+      }
+    ],
+    "simulation": {
+      "opening": "Vor einer Stunde hatte ich plötzlich einen furchtbaren Schmerz in der Brust, als ob etwas reißt. Jetzt tut auch der Rücken weh.",
+      "answers": {
+        "beginn": "Vor ungefähr einer Stunde, ganz plötzlich, als ich eine schwere Kiste getragen habe. Der Schmerz war sofort voll da.",
+        "lokalisation": "Hinter dem Brustbein, und jetzt vor allem zwischen den Schulterblättern.",
+        "charakter": "Reißend, wie ein Messer. Das ist der schlimmste Schmerz meines Lebens, eine 10 von 10.",
+        "ausstrahlung": "Er ist sofort in den Rücken gegangen und wandert jetzt nach unten Richtung Bauch.",
+        "begleit": "Ich war kaltschweißig, mir war kurz schwarz vor Augen und übel. Der linke Arm fühlt sich kälter an als der rechte.",
+        "vegetativ": "Bis heute war Appetit, Schlaf, Stuhlgang und Wasserlassen normal.",
+        "vorerkrankungen": "Ich habe seit 15 Jahren hohen Blutdruck. Der Hausarzt hat mal gesagt, dass meine Hauptschlagader erweitert ist, aber zur Kontrolle bin ich nicht gegangen.",
+        "medikamente": "Ramipril 5 morgens, aber ehrlich gesagt nehme ich es nicht regelmäßig.",
+        "allergien": "Keine Allergien.",
+        "familie": "Mein Bruder ist mit 58 plötzlich gestorben, man weiß nicht genau woran.",
+        "sozial": "Ich bin verheiratet und arbeite in einer Spedition.",
+        "noxen": "Ich rauche seit 35 Jahren eine Schachtel am Tag. Am Wochenende trinke ich drei, vier Bier."
+      }
+    },
+    "verdachtsdiagnose": "V. a. akute Aortendissektion (Typ A nach Stanford)",
+    "diagnoseKeywords": [
+      "aortendissektion",
+      "dissektion"
+    ],
+    "differenzialdiagnosen": [
+      "Akutes Koronarsyndrom",
+      "Lungenembolie",
+      "Spannungspneumothorax",
+      "Perikarditis"
+    ],
+    "untersuchungen": [
+      "Blutdruck an beiden Armen",
+      "EKG",
+      "CT-Angiographie (Thorax und Abdomen)",
+      "Transösophageale Echokardiographie",
+      "Troponin, D-Dimere"
+    ]
+  },
+  {
+    "id": "c52",
+    "title": "Bronchialkarzinom",
+    "category": "Pneumologie",
+    "difficulty": "schwer",
+    "patient": {
+      "name": "Gerhard Busch",
+      "age": 66,
+      "gender": "männlich",
+      "hauptbeschwerde": "Husten seit Wochen und Blut im Auswurf"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit ca. 2 Monaten zunehmender Reizhusten, seit 2 Wochen mehrfach blutig tingierter Auswurf. Ungewollter Gewichtsverlust von 7 kg in 3 Monaten, Nachtschweiß, Leistungsminderung. Belastungsdyspnoe. Heiserkeit seit 3 Wochen. Kein Fieber.",
+      "vorerkrankungen": "COPD GOLD 2, arterielle Hypertonie.",
+      "medikamente": "Tiotropium Inhalation 1-0-0, Salbutamol-Spray bei Bedarf, Amlodipin 5 mg 1-0-0",
+      "allergien": "Keine bekannten Allergien",
+      "familienanamnese": "Vater an Lungenkrebs verstorben (70 Jahre).",
+      "sozialanamnese": "Verheiratet, ehemaliger Dachdecker (Asbestkontakt in den 80er-Jahren). Raucher seit dem 16. Lebensjahr (50 pack years). Alkohol gelegentlich."
+    },
+    "sprache": [
+      {
+        "patient": "Ich huste seit zwei Monaten, und jetzt ist Blut dabei.",
+        "fach": "Seit 2 Monaten besteht ein Reizhusten, seit 2 Wochen mit Hämoptysen."
+      },
+      {
+        "patient": "Ich schwitze nachts so, dass ich den Schlafanzug wechseln muss.",
+        "fach": "Der Patient berichtet über ausgeprägten Nachtschweiß."
+      },
+      {
+        "patient": "Meine Stimme ist seit Wochen heiser.",
+        "fach": "Seit 3 Wochen besteht eine Heiserkeit (Dysphonie)."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Bronchialkarzinom",
+        "patient": "Lungenkrebs",
+        "uz": "o‘pka saratoni (bronx karsinomasi)",
+        "ru": "рак лёгкого"
+      },
+      {
+        "de": "Hämoptysen",
+        "patient": "Blut im Auswurf",
+        "uz": "qon aralash balg‘am (gemoptiz)",
+        "ru": "кровохарканье"
+      },
+      {
+        "de": "Nachtschweiß",
+        "patient": "nachts stark schwitzen",
+        "uz": "tungi terlash",
+        "ru": "ночная потливость"
+      },
+      {
+        "de": "Bronchoskopie",
+        "patient": "Lungenspiegelung",
+        "uz": "bronxoskopiya",
+        "ru": "бронхоскопия"
+      },
+      {
+        "de": "Rekurrensparese",
+        "patient": "Lähmung des Stimmbandnervs",
+        "uz": "qaytuvchi nerv falaji (ovoz bo‘g‘ilishi)",
+        "ru": "парез возвратного нерва"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich huste schon seit Wochen, und in letzter Zeit ist auch Blut im Auswurf. Das macht mir Angst.",
+      "answers": {
+        "beginn": "Der Husten ist seit ungefähr zwei Monaten da, das Blut seit zwei Wochen.",
+        "lokalisation": "Im Brustkorb, eher rechts. Richtige Schmerzen habe ich nicht.",
+        "charakter": "Ein trockener, kitzelnder Husten. Manchmal sind rote Fäden im Schleim, einmal war es ein Teelöffel Blut.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Ich bin seit drei Wochen heiser und bekomme beim Treppensteigen schlechter Luft. Fieber habe ich nicht.",
+        "vegetativ": "Ich habe sieben Kilo abgenommen, ohne es zu wollen, und habe wenig Appetit. Nachts schwitze ich so stark, dass ich den Schlafanzug wechseln muss. Stuhlgang und Wasserlassen sind normal.",
+        "vorerkrankungen": "Ich habe COPD und hohen Blutdruck.",
+        "medikamente": "Spiriva morgens, Salbutamol bei Bedarf und Amlodipin 5 morgens.",
+        "allergien": "Keine Allergien.",
+        "familie": "Mein Vater ist mit 70 an Lungenkrebs gestorben.",
+        "sozial": "Ich bin verheiratet und war Dachdecker. In den 80er-Jahren hatten wir viel mit Asbest zu tun.",
+        "noxen": "Ich rauche seit ich 16 bin, eine Schachtel am Tag. Alkohol nur selten."
+      }
+    },
+    "verdachtsdiagnose": "V. a. Bronchialkarzinom mit B-Symptomatik und Heiserkeit (DD Rekurrensparese)",
+    "diagnoseKeywords": [
+      "bronchialkarzinom",
+      "lungenkarzinom",
+      "lungenkrebs",
+      "karzinom"
+    ],
+    "differenzialdiagnosen": [
+      "Lungentuberkulose",
+      "Pneumonie",
+      "Bronchiektasen",
+      "Mesotheliom"
+    ],
+    "untersuchungen": [
+      "Röntgen-Thorax",
+      "CT-Thorax",
+      "Bronchoskopie mit Biopsie",
+      "Blutbild, CRP",
+      "Lungenfunktionsprüfung"
+    ]
+  },
+  {
+    "id": "c53",
+    "title": "Morbus Crohn – Schub",
+    "category": "Gastroenterologie",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Lea Schneider",
+      "age": 24,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Bauchschmerzen rechts unten und Durchfall seit Wochen"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 6 Wochen krampfartige Bauchschmerzen im rechten Unterbauch, 5–6 breiige Durchfälle pro Tag ohne Blut, nachts Stuhldrang. Gewichtsverlust von 4 kg, Müdigkeit, subfebrile Temperaturen bis 38,0 °C. Seit 1 Woche schmerzhafte Aphthen im Mund.",
+      "vorerkrankungen": "Keine bekannten Vorerkrankungen. Vor 1 Jahr Analfissur.",
+      "medikamente": "Orale Kontrazeption, Ibuprofen 400 mg bei Bedarf (in den letzten Wochen häufig)",
+      "allergien": "Keine bekannten Allergien",
+      "familienanamnese": "Onkel mütterlicherseits mit Morbus Crohn.",
+      "sozialanamnese": "Ledig, Studentin (Lehramt). Raucherin (5 Zigaretten/Tag). Alkohol am Wochenende."
+    },
+    "sprache": [
+      {
+        "patient": "Ich habe seit Wochen Durchfall, fünf-, sechsmal am Tag.",
+        "fach": "Seit 6 Wochen bestehen 5–6 breiige Diarrhöen täglich."
+      },
+      {
+        "patient": "Rechts unten im Bauch krampft es.",
+        "fach": "Die Patientin klagt über krampfartige Schmerzen im rechten Unterbauch."
+      },
+      {
+        "patient": "Im Mund habe ich wunde Stellen.",
+        "fach": "Es bestehen orale Aphthen."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Morbus Crohn",
+        "patient": "chronische Darmentzündung",
+        "uz": "Kron kasalligi",
+        "ru": "болезнь Крона"
+      },
+      {
+        "de": "Diarrhö",
+        "patient": "Durchfall",
+        "uz": "ich ketishi (diareya)",
+        "ru": "диарея"
+      },
+      {
+        "de": "Aphthen",
+        "patient": "wunde Stellen im Mund",
+        "uz": "og‘izdagi yarachalar (aftalar)",
+        "ru": "афты"
+      },
+      {
+        "de": "Calprotectin",
+        "patient": "Entzündungswert im Stuhl",
+        "uz": "najasdagi kalprotektin",
+        "ru": "фекальный кальпротектин"
+      },
+      {
+        "de": "Fistel",
+        "patient": "krankhafter Gang zwischen Organen",
+        "uz": "oqma (fistula)",
+        "ru": "свищ"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe seit Wochen Bauchschmerzen und Durchfall, und es wird einfach nicht besser.",
+      "answers": {
+        "beginn": "Seit ungefähr sechs Wochen. Am Anfang dachte ich, es ist ein Magen-Darm-Infekt.",
+        "lokalisation": "Rechts unten im Bauch.",
+        "charakter": "Krampfartig, vor allem nach dem Essen, ungefähr 6 von 10.",
+        "ausstrahlung": "Nein, es bleibt rechts unten.",
+        "begleit": "Ich bin ständig müde und habe abends leichtes Fieber, bis 38. Seit einer Woche habe ich wunde Stellen im Mund.",
+        "vegetativ": "Ich habe fünf, sechs Mal am Tag breiigen Durchfall, auch nachts. Blut habe ich nicht gesehen. Ich habe vier Kilo abgenommen. Wasserlassen ist normal. Meine Periode ist regelmäßig, die letzte war vor zwei Wochen.",
+        "vorerkrankungen": "Eigentlich nichts. Letztes Jahr hatte ich einen Einriss am After.",
+        "medikamente": "Die Pille, und in letzter Zeit oft Ibuprofen 400 gegen die Schmerzen.",
+        "allergien": "Keine Allergien.",
+        "familie": "Der Bruder meiner Mutter hat Morbus Crohn.",
+        "sozial": "Ich bin ledig und studiere Lehramt.",
+        "noxen": "Ich rauche fünf Zigaretten am Tag. Am Wochenende trinke ich etwas Alkohol."
+      }
+    },
+    "verdachtsdiagnose": "V. a. Morbus Crohn (Erstmanifestation / akuter Schub) mit Ileitis terminalis",
+    "diagnoseKeywords": [
+      "morbus crohn",
+      "crohn",
+      "chronisch-entzündliche darmerkrankung",
+      "ced"
+    ],
+    "differenzialdiagnosen": [
+      "Colitis ulcerosa",
+      "Infektiöse Enteritis (z. B. Yersinien)",
+      "Appendizitis",
+      "Reizdarmsyndrom"
+    ],
+    "untersuchungen": [
+      "Calprotectin im Stuhl",
+      "Blutbild, CRP",
+      "Ileokoloskopie mit Biopsie",
+      "Darmsonographie",
+      "Stuhlkultur"
+    ]
+  },
+  {
+    "id": "c54",
+    "title": "Diabetische Ketoazidose",
+    "category": "Endokrinologie",
+    "difficulty": "schwer",
+    "patient": {
+      "name": "Tim Weber",
+      "age": 19,
+      "gender": "männlich",
+      "hauptbeschwerde": "Starker Durst, Erbrechen und Bauchschmerzen"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 3 Wochen starker Durst, häufiges Wasserlassen (auch nachts), Gewichtsverlust von 6 kg. Seit gestern Übelkeit, mehrfaches Erbrechen, diffuse Bauchschmerzen, zunehmende Schläfrigkeit. Mutter bemerkt schnelle, tiefe Atmung und „Nagellackentferner-Geruch“ aus dem Mund.",
+      "vorerkrankungen": "Keine bekannten Vorerkrankungen. Vor 4 Wochen grippaler Infekt.",
+      "medikamente": "Keine",
+      "allergien": "Keine bekannten Allergien",
+      "familienanamnese": "Großmutter mit Hashimoto-Thyreoiditis.",
+      "sozialanamnese": "Ledig, Auszubildender (Mechatroniker), wohnt bei den Eltern. Nichtraucher, Alkohol selten."
+    },
+    "sprache": [
+      {
+        "patient": "Ich habe ständig Durst und muss dauernd aufs Klo.",
+        "fach": "Es bestehen Polydipsie und Polyurie."
+      },
+      {
+        "patient": "Er atmet so schnell und tief.",
+        "fach": "Fremdanamnestisch besteht eine vertiefte, beschleunigte Atmung (Kußmaul-Atmung)."
+      },
+      {
+        "patient": "Er riecht aus dem Mund nach Nagellack.",
+        "fach": "Es besteht ein Azetongeruch der Ausatemluft."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Ketoazidose",
+        "patient": "gefährliche Übersäuerung des Blutes bei Zuckerkrankheit",
+        "uz": "diabetik ketoatsidoz",
+        "ru": "диабетический кетоацидоз"
+      },
+      {
+        "de": "Polydipsie",
+        "patient": "starker Durst",
+        "uz": "kuchli chanqoq (polidipsiya)",
+        "ru": "полидипсия"
+      },
+      {
+        "de": "Polyurie",
+        "patient": "viel Wasserlassen",
+        "uz": "ko‘p siyish (poliuriya)",
+        "ru": "полиурия"
+      },
+      {
+        "de": "Kußmaul-Atmung",
+        "patient": "tiefe, schnelle Atmung",
+        "uz": "Kussmaul nafasi (chuqur, tez nafas)",
+        "ru": "дыхание Куссмауля"
+      },
+      {
+        "de": "Blutgasanalyse",
+        "patient": "Untersuchung von Säure und Gasen im Blut",
+        "uz": "qon gazlari tahlili",
+        "ru": "анализ газов крови"
+      }
+    ],
+    "simulation": {
+      "opening": "Mir ist seit gestern total schlecht, ich muss ständig brechen, und ich habe so einen Durst.",
+      "answers": {
+        "beginn": "Den Durst habe ich seit ungefähr drei Wochen. Seit gestern muss ich brechen und habe Bauchschmerzen.",
+        "lokalisation": "Der Bauch tut überall weh, nicht an einer bestimmten Stelle.",
+        "charakter": "Ein dumpfer Schmerz, ungefähr 5 von 10. Ich fühle mich total schlapp und müde.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Ich habe heute schon fünfmal gebrochen. Meine Mutter sagt, ich atme so schnell und rieche aus dem Mund komisch, wie Nagellack.",
+        "vegetativ": "Ich trinke vier, fünf Liter am Tag und muss ständig aufs Klo, auch nachts. Ich habe sechs Kilo abgenommen, obwohl ich viel gegessen habe. Stuhlgang ist normal.",
+        "vorerkrankungen": "Eigentlich war ich nie krank. Vor vier Wochen hatte ich eine Grippe.",
+        "medikamente": "Ich nehme keine Medikamente.",
+        "allergien": "Keine Allergien.",
+        "familie": "Meine Oma hat Hashimoto. Zucker hat in der Familie niemand.",
+        "sozial": "Ich mache eine Ausbildung zum Mechatroniker und wohne noch bei meinen Eltern.",
+        "noxen": "Ich rauche nicht, Alkohol trinke ich selten."
+      }
+    },
+    "verdachtsdiagnose": "Diabetische Ketoazidose bei V. a. Erstmanifestation eines Diabetes mellitus Typ 1",
+    "diagnoseKeywords": [
+      "ketoazidose",
+      "ketoacidose",
+      "dka",
+      "diabetes mellitus typ 1"
+    ],
+    "differenzialdiagnosen": [
+      "Akute Gastroenteritis",
+      "Akute Pankreatitis",
+      "Appendizitis",
+      "Hyperosmolares hyperglykämisches Syndrom"
+    ],
+    "untersuchungen": [
+      "Blutzucker",
+      "Blutgasanalyse",
+      "Ketone im Urin und Blut",
+      "Elektrolyte (Kalium)",
+      "HbA1c"
+    ]
+  },
+  {
+    "id": "c55",
+    "title": "Subarachnoidalblutung",
+    "category": "Neurologie",
+    "difficulty": "schwer",
+    "patient": {
+      "name": "Sabine Kaiser",
+      "age": 48,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Plötzlicher, extrem starker Kopfschmerz"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Vor 2 Stunden beim Sport schlagartig einsetzender, stärkster Kopfschmerz im Hinterkopf („wie ein Schlag“, 10/10), der schlimmste ihres Lebens. Danach zweimal Erbrechen, Nackensteifigkeit, Lichtempfindlichkeit. Kurze Bewusstlosigkeit von ca. 1 Minute laut Trainingspartnerin. Keine Lähmungen.",
+      "vorerkrankungen": "Arterielle Hypertonie. Selten Spannungskopfschmerzen, aber „ganz anders als jetzt“.",
+      "medikamente": "Candesartan 8 mg 1-0-0",
+      "allergien": "Penicillin (Hautausschlag)",
+      "familienanamnese": "Mutter mit 52 Jahren an einer Hirnblutung verstorben.",
+      "sozialanamnese": "Verheiratet, zwei Kinder, Steuerberaterin. Raucherin (15 Zigaretten/Tag). Alkohol gelegentlich."
+    },
+    "sprache": [
+      {
+        "patient": "Das war, als hätte mir jemand mit dem Hammer auf den Kopf geschlagen.",
+        "fach": "Die Patientin berichtet über einen perakut einsetzenden Vernichtungskopfschmerz."
+      },
+      {
+        "patient": "Mein Nacken ist ganz steif.",
+        "fach": "Es besteht ein Meningismus."
+      },
+      {
+        "patient": "Das Licht tut mir in den Augen weh.",
+        "fach": "Begleitend besteht eine Photophobie."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Subarachnoidalblutung",
+        "patient": "Blutung zwischen den Hirnhäuten",
+        "uz": "subaraxnoidal qon quyilishi",
+        "ru": "субарахноидальное кровоизлияние"
+      },
+      {
+        "de": "Vernichtungskopfschmerz",
+        "patient": "schlimmster Kopfschmerz des Lebens",
+        "uz": "hayotdagi eng kuchli bosh og‘rig‘i (\"momaqaldiroq\" og‘rig‘i)",
+        "ru": "громоподобная головная боль"
+      },
+      {
+        "de": "Meningismus",
+        "patient": "steifer Nacken",
+        "uz": "meningizm (ensa mushaklari qotishi)",
+        "ru": "менингизм"
+      },
+      {
+        "de": "Lumbalpunktion",
+        "patient": "Untersuchung des Nervenwassers aus dem Rücken",
+        "uz": "lyumbal punksiya",
+        "ru": "люмбальная пункция"
+      },
+      {
+        "de": "Aneurysma",
+        "patient": "Aussackung eines Blutgefäßes",
+        "uz": "anevrizma",
+        "ru": "аневризма"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe plötzlich so starke Kopfschmerzen bekommen, so etwas hatte ich noch nie.",
+      "answers": {
+        "beginn": "Vor zwei Stunden beim Sport, ganz plötzlich, innerhalb von einer Sekunde.",
+        "lokalisation": "Hinten am Kopf, jetzt der ganze Kopf und der Nacken.",
+        "charakter": "Wie ein Schlag mit dem Hammer. Das ist der schlimmste Kopfschmerz meines Lebens, 10 von 10.",
+        "ausstrahlung": "In den Nacken und in den Rücken.",
+        "begleit": "Ich habe zweimal gebrochen, der Nacken ist steif und das Licht tut weh. Meine Trainingspartnerin sagt, ich war eine Minute weg. Lähmungen habe ich nicht.",
+        "vegetativ": "Vorher war alles normal: Appetit, Schlaf, Stuhlgang und Wasserlassen.",
+        "vorerkrankungen": "Ich habe hohen Blutdruck. Manchmal habe ich Spannungskopfschmerzen, aber die sind ganz anders.",
+        "medikamente": "Candesartan 8 morgens.",
+        "allergien": "Gegen Penicillin, da bekomme ich Ausschlag.",
+        "familie": "Meine Mutter ist mit 52 an einer Hirnblutung gestorben.",
+        "sozial": "Ich bin verheiratet, habe zwei Kinder und arbeite als Steuerberaterin.",
+        "noxen": "Ich rauche 15 Zigaretten am Tag. Alkohol nur gelegentlich."
+      }
+    },
+    "verdachtsdiagnose": "V. a. aneurysmatische Subarachnoidalblutung",
+    "diagnoseKeywords": [
+      "subarachnoidalblutung",
+      "sab",
+      "hirnblutung",
+      "subarachnoidal"
+    ],
+    "differenzialdiagnosen": [
+      "Intrazerebrale Blutung",
+      "Meningitis",
+      "Migräne",
+      "Reversibles zerebrales Vasokonstriktionssyndrom"
+    ],
+    "untersuchungen": [
+      "Natives CT des Schädels",
+      "CT-Angiographie",
+      "Lumbalpunktion (bei unauffälligem CT)",
+      "Gerinnung",
+      "Blutdruckkontrolle"
+    ]
+  },
+  {
+    "id": "c56",
+    "title": "Periphere arterielle Verschlusskrankheit (pAVK)",
+    "category": "Chirurgie",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Horst Wagner",
+      "age": 71,
+      "gender": "männlich",
+      "hauptbeschwerde": "Wadenschmerzen beim Gehen"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit ca. 6 Monaten krampfartige Schmerzen in der linken Wade nach etwa 200 m Gehstrecke, die nach kurzem Stehenbleiben innerhalb von 2–3 Minuten verschwinden. Gehstrecke in den letzten Wochen auf 100 m verkürzt. Linker Fuß oft kalt. Keine Ruheschmerzen, keine Wunden.",
+      "vorerkrankungen": "Diabetes mellitus Typ 2, arterielle Hypertonie, Hypercholesterinämie, KHK mit Stent vor 3 Jahren.",
+      "medikamente": "ASS 100 mg 1-0-0, Atorvastatin 40 mg 0-0-1, Metformin 1000 mg 1-0-1, Ramipril 5 mg 1-0-0",
+      "allergien": "Keine bekannten Allergien",
+      "familienanamnese": "Vater mit Herzinfarkt mit 65 Jahren.",
+      "sozialanamnese": "Verheiratet, Rentner (ehemals Lagerarbeiter). Raucher (45 pack years), raucht weiterhin 10 Zigaretten/Tag. Alkohol selten."
+    },
+    "sprache": [
+      {
+        "patient": "Nach 100 Metern bekomme ich Krämpfe in der Wade und muss stehen bleiben.",
+        "fach": "Es besteht eine Claudicatio intermittens mit einer schmerzfreien Gehstrecke von 100 m."
+      },
+      {
+        "patient": "Wenn ich kurz stehen bleibe, geht es wieder.",
+        "fach": "Die Beschwerden sind in Ruhe innerhalb weniger Minuten rückläufig."
+      },
+      {
+        "patient": "Mein linker Fuß ist oft kalt.",
+        "fach": "Der Patient berichtet über ein Kältegefühl im linken Fuß."
+      }
+    ],
+    "terms": [
+      {
+        "de": "pAVK",
+        "patient": "Durchblutungsstörung der Beine („Schaufensterkrankheit“)",
+        "uz": "periferik arteriyalar okkluziv kasalligi",
+        "ru": "облитерирующий атеросклероз артерий ног"
+      },
+      {
+        "de": "Claudicatio intermittens",
+        "patient": "Wadenschmerzen beim Gehen",
+        "uz": "vaqti-vaqti bilan oqsoqlanish (klaudikatsiya)",
+        "ru": "перемежающаяся хромота"
+      },
+      {
+        "de": "Gehstrecke",
+        "patient": "wie weit man ohne Schmerzen gehen kann",
+        "uz": "og‘riqsiz yurish masofasi",
+        "ru": "дистанция ходьбы"
+      },
+      {
+        "de": "Knöchel-Arm-Index",
+        "patient": "Vergleich des Blutdrucks am Knöchel und am Arm",
+        "uz": "to‘piq-yelka indeksi",
+        "ru": "лодыжечно-плечевой индекс"
+      },
+      {
+        "de": "Gehtraining",
+        "patient": "regelmäßiges Gehen als Therapie",
+        "uz": "yurish mashqlari",
+        "ru": "тренировочная ходьба"
+      }
+    ],
+    "simulation": {
+      "opening": "Wenn ich spazieren gehe, bekomme ich nach kurzer Zeit Krämpfe in der linken Wade und muss stehen bleiben.",
+      "answers": {
+        "beginn": "Seit ungefähr einem halben Jahr. Am Anfang nach 200 Metern, jetzt schon nach 100 Metern.",
+        "lokalisation": "In der linken Wade.",
+        "charakter": "Wie ein Krampf, ziemlich stark, 7 von 10. Wenn ich zwei, drei Minuten stehen bleibe, ist es weg.",
+        "ausstrahlung": "Nein, es bleibt in der Wade.",
+        "begleit": "Der linke Fuß ist oft kalt. In Ruhe oder nachts habe ich keine Schmerzen. Wunden am Fuß habe ich nicht.",
+        "vegetativ": "Appetit, Schlaf, Stuhlgang und Wasserlassen sind normal.",
+        "vorerkrankungen": "Ich habe Zucker, hohen Blutdruck und hohes Cholesterin. Vor drei Jahren habe ich einen Stent am Herzen bekommen.",
+        "medikamente": "ASS 100 morgens, Atorvastatin 40 abends, Metformin 1000 morgens und abends und Ramipril 5 morgens.",
+        "allergien": "Keine Allergien.",
+        "familie": "Mein Vater hatte mit 65 einen Herzinfarkt.",
+        "sozial": "Ich bin verheiratet und Rentner, früher war ich Lagerarbeiter.",
+        "noxen": "Ich rauche immer noch, zehn Zigaretten am Tag. Früher waren es mehr. Alkohol selten."
+      }
+    },
+    "verdachtsdiagnose": "Periphere arterielle Verschlusskrankheit (pAVK) links, Stadium IIb nach Fontaine",
+    "diagnoseKeywords": [
+      "pavk",
+      "arterielle verschlusskrankheit",
+      "claudicatio",
+      "schaufensterkrankheit"
+    ],
+    "differenzialdiagnosen": [
+      "Spinalkanalstenose (Claudicatio spinalis)",
+      "Tiefe Beinvenenthrombose",
+      "Diabetische Polyneuropathie",
+      "Baker-Zyste"
+    ],
+    "untersuchungen": [
+      "Pulsstatus",
+      "Knöchel-Arm-Index",
+      "Farbkodierte Duplexsonographie",
+      "Laufbandtest",
+      "HbA1c, Lipidprofil"
+    ]
+  },
+  {
+    "id": "c57",
+    "title": "Hodentorsion",
+    "category": "Urologie",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Jonas Peters",
+      "age": 16,
+      "gender": "männlich",
+      "hauptbeschwerde": "Plötzliche starke Schmerzen im linken Hoden"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 3 Stunden plötzlich aus dem Schlaf heraus einsetzende, sehr starke Schmerzen im linken Hoden (9/10) mit Ausstrahlung in die Leiste und den Unterbauch. Übelkeit, einmal Erbrechen. Hoden geschwollen und hochstehend. Kein Fieber, kein Brennen beim Wasserlassen, kein Trauma.",
+      "vorerkrankungen": "Keine. Vor einigen Monaten kurze, selbstlimitierende Hodenschmerzen links.",
+      "medikamente": "Keine",
+      "allergien": "Keine bekannten Allergien",
+      "familienanamnese": "Keine Besonderheiten.",
+      "sozialanamnese": "Schüler (10. Klasse), lebt bei den Eltern, spielt Fußball. Nichtraucher, kein Alkohol. Nicht sexuell aktiv."
+    },
+    "sprache": [
+      {
+        "patient": "Ich bin nachts von starken Schmerzen im Hoden aufgewacht.",
+        "fach": "Der Patient berichtet über perakut einsetzende Hodenschmerzen links aus dem Schlaf heraus."
+      },
+      {
+        "patient": "Der Schmerz zieht bis in die Leiste.",
+        "fach": "Die Schmerzen strahlen in die linke Leiste und den Unterbauch aus."
+      },
+      {
+        "patient": "Mir ist schlecht, und ich habe einmal gebrochen.",
+        "fach": "Begleitend bestehen Nausea und einmaliges Erbrechen."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Hodentorsion",
+        "patient": "verdrehter Hoden",
+        "uz": "moyak buralishi",
+        "ru": "перекрут яичка"
+      },
+      {
+        "de": "Skrotum",
+        "patient": "Hodensack",
+        "uz": "yorg‘oq",
+        "ru": "мошонка"
+      },
+      {
+        "de": "Prehn-Zeichen",
+        "patient": "Test: Anheben des Hodens",
+        "uz": "Pren belgisi",
+        "ru": "симптом Прена"
+      },
+      {
+        "de": "Epididymitis",
+        "patient": "Nebenhodenentzündung",
+        "uz": "moyak ortig‘i yallig‘lanishi (epididimit)",
+        "ru": "эпидидимит"
+      },
+      {
+        "de": "Freilegung",
+        "patient": "operative Untersuchung des Hodens",
+        "uz": "moyakni jarrohlik yo‘li bilan ochib ko‘rish",
+        "ru": "оперативная ревизия яичка"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe seit heute Nacht ganz schlimme Schmerzen im Hoden. Das ist mir ein bisschen peinlich.",
+      "answers": {
+        "beginn": "Vor ungefähr drei Stunden, ich bin davon aufgewacht. Es kam ganz plötzlich.",
+        "lokalisation": "Im linken Hoden.",
+        "charakter": "Ein sehr starker, ziehender Schmerz, 9 von 10. Der Hoden ist dick und steht irgendwie höher.",
+        "ausstrahlung": "In die linke Leiste und in den Unterbauch.",
+        "begleit": "Mir ist übel, ich habe einmal gebrochen. Fieber habe ich nicht. Beim Wasserlassen brennt nichts.",
+        "vegetativ": "Appetit und Stuhlgang waren bis gestern normal. Wasserlassen ist normal.",
+        "vorerkrankungen": "Nein. Vor ein paar Monaten hatte ich schon einmal kurz Schmerzen dort, aber das ging nach einer halben Stunde weg.",
+        "medikamente": "Ich nehme keine Medikamente.",
+        "allergien": "Keine Allergien.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich gehe in die zehnte Klasse, wohne bei meinen Eltern und spiele Fußball. Verletzt habe ich mich nicht.",
+        "noxen": "Ich rauche nicht und trinke keinen Alkohol."
+      }
+    },
+    "verdachtsdiagnose": "V. a. Hodentorsion links (urologischer Notfall)",
+    "diagnoseKeywords": [
+      "hodentorsion",
+      "torsion"
+    ],
+    "differenzialdiagnosen": [
+      "Epididymitis",
+      "Hydatidentorsion",
+      "Inkarzerierte Leistenhernie",
+      "Nierenkolik"
+    ],
+    "untersuchungen": [
+      "Klinische Untersuchung (Prehn-Zeichen, Kremasterreflex)",
+      "Doppler-Sonographie des Hodens",
+      "Urinstatus",
+      "Sofortige operative Freilegung bei Verdacht"
+    ]
+  },
+  {
+    "id": "c58",
+    "title": "Pankreaskarzinom",
+    "category": "Gastroenterologie",
+    "difficulty": "schwer",
+    "patient": {
+      "name": "Monika Roth",
+      "age": 72,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Gelbe Haut und Augen, dunkler Urin"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 10 Tagen von der Tochter bemerkte Gelbfärbung der Augen und der Haut, starker Juckreiz, dunkler, bierbrauner Urin und heller, lehmfarbener Stuhl. Keine Schmerzen. Seit 2 Monaten Appetitlosigkeit, Gewichtsverlust von 8 kg, dumpfe Rückenschmerzen im mittleren Rücken. Vor 3 Monaten neu ein Diabetes festgestellt.",
+      "vorerkrankungen": "Diabetes mellitus Typ 2 (Erstdiagnose vor 3 Monaten), arterielle Hypertonie.",
+      "medikamente": "Metformin 500 mg 1-0-1, Bisoprolol 2,5 mg 1-0-0",
+      "allergien": "Keine bekannten Allergien",
+      "familienanamnese": "Bruder an Bauchspeicheldrüsenkrebs verstorben.",
+      "sozialanamnese": "Verwitwet, Rentnerin (ehemals Verkäuferin), lebt allein, Tochter wohnt in der Nähe. Ex-Raucherin (20 pack years). Alkohol selten."
+    },
+    "sprache": [
+      {
+        "patient": "Meine Augen sind ganz gelb geworden.",
+        "fach": "Es besteht ein Sklerenikterus."
+      },
+      {
+        "patient": "Der Urin ist dunkel wie Bier, der Stuhl ganz hell.",
+        "fach": "Die Patientin berichtet über bierbraunen Urin und acholischen Stuhl."
+      },
+      {
+        "patient": "Es juckt am ganzen Körper.",
+        "fach": "Begleitend besteht ein generalisierter Pruritus."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Ikterus",
+        "patient": "Gelbsucht",
+        "uz": "sariqlik",
+        "ru": "желтуха"
+      },
+      {
+        "de": "Pankreaskarzinom",
+        "patient": "Bauchspeicheldrüsenkrebs",
+        "uz": "me’da osti bezi saratoni",
+        "ru": "рак поджелудочной железы"
+      },
+      {
+        "de": "Courvoisier-Zeichen",
+        "patient": "tastbare, schmerzlose Gallenblase",
+        "uz": "Kurvuazye belgisi",
+        "ru": "симптом Курвуазье"
+      },
+      {
+        "de": "Pruritus",
+        "patient": "Juckreiz",
+        "uz": "qichishish",
+        "ru": "кожный зуд"
+      },
+      {
+        "de": "ERCP",
+        "patient": "Spiegelung der Gallenwege",
+        "uz": "endoskopik retrograd xolangiopankreatografiya",
+        "ru": "ЭРХПГ"
+      }
+    ],
+    "simulation": {
+      "opening": "Meine Tochter hat gesagt, dass meine Augen ganz gelb sind. Und es juckt überall.",
+      "answers": {
+        "beginn": "Die gelben Augen hat meine Tochter vor zehn Tagen bemerkt. Abgenommen habe ich schon seit zwei Monaten.",
+        "lokalisation": "Schmerzen im Bauch habe ich eigentlich nicht. Nur im mittleren Rücken habe ich so einen dumpfen Schmerz.",
+        "charakter": "Der Rücken ist ein dumpfer Druck, 3 bis 4 von 10. Der Juckreiz ist viel schlimmer.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Es juckt am ganzen Körper, besonders nachts. Fieber habe ich nicht.",
+        "vegetativ": "Ich habe keinen Appetit mehr und acht Kilo abgenommen. Der Urin ist dunkel wie Bier, und der Stuhl ist ganz hell, fast weiß. Schlaf ist schlecht wegen dem Jucken.",
+        "vorerkrankungen": "Vor drei Monaten hat der Hausarzt gesagt, dass ich Zucker habe. Und ich habe hohen Blutdruck.",
+        "medikamente": "Metformin 500 morgens und abends und Bisoprolol 2,5 morgens.",
+        "allergien": "Keine Allergien.",
+        "familie": "Mein Bruder ist an Bauchspeicheldrüsenkrebs gestorben.",
+        "sozial": "Ich bin Witwe und lebe allein. Meine Tochter wohnt in der Nähe und hilft mir.",
+        "noxen": "Ich habe 20 Jahre geraucht, seit 15 Jahren nicht mehr. Alkohol trinke ich selten."
+      }
+    },
+    "verdachtsdiagnose": "V. a. Pankreaskopfkarzinom mit schmerzlosem Verschlussikterus",
+    "diagnoseKeywords": [
+      "pankreaskarzinom",
+      "pankreaskopfkarzinom",
+      "bauchspeicheldrüsenkrebs",
+      "pankreas"
+    ],
+    "differenzialdiagnosen": [
+      "Choledocholithiasis",
+      "Cholangiozellulares Karzinom",
+      "Papillenkarzinom",
+      "Hepatitis"
+    ],
+    "untersuchungen": [
+      "Abdomensonographie",
+      "Bilirubin, Cholestaseparameter",
+      "CA 19-9",
+      "CT-Abdomen",
+      "Endosonographie / ERCP"
+    ]
+  },
+  {
+    "id": "c59",
+    "title": "Morbus Parkinson",
+    "category": "Neurologie",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Heinz Krämer",
+      "age": 68,
+      "gender": "männlich",
+      "hauptbeschwerde": "Zittern der rechten Hand und langsamere Bewegungen"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit ca. 1 Jahr langsam zunehmendes Zittern der rechten Hand in Ruhe, das bei Bewegung nachlässt. Ehefrau bemerkt, dass er langsamer geht, kleine Schritte macht und den rechten Arm beim Gehen nicht mehr mitschwingt. Handschrift kleiner geworden. Geruchssinn seit Jahren vermindert. Leise Stimme, Verstopfung.",
+      "vorerkrankungen": "Benigne Prostatahyperplasie, Depression (seit 2 Jahren).",
+      "medikamente": "Tamsulosin 0,4 mg 0-0-1, Sertralin 50 mg 1-0-0",
+      "allergien": "Keine bekannten Allergien",
+      "familienanamnese": "Keine neurologischen Erkrankungen bekannt.",
+      "sozialanamnese": "Verheiratet, Rentner (ehemals Landwirt, langjähriger Kontakt mit Pflanzenschutzmitteln). Nichtraucher. Alkohol: 1 Glas Wein am Abend."
+    },
+    "sprache": [
+      {
+        "patient": "Meine rechte Hand zittert, wenn sie ruhig auf dem Tisch liegt.",
+        "fach": "Es besteht ein Ruhetremor der rechten Hand."
+      },
+      {
+        "patient": "Ich laufe mit ganz kleinen Schritten.",
+        "fach": "Es zeigt sich ein kleinschrittiges Gangbild."
+      },
+      {
+        "patient": "Meine Schrift ist immer kleiner geworden.",
+        "fach": "Der Patient berichtet über eine Mikrographie."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Ruhetremor",
+        "patient": "Zittern in Ruhe",
+        "uz": "tinch holatdagi titroq",
+        "ru": "тремор покоя"
+      },
+      {
+        "de": "Rigor",
+        "patient": "Steifheit der Muskeln",
+        "uz": "mushaklar rigidligi (qotishi)",
+        "ru": "ригидность"
+      },
+      {
+        "de": "Bradykinese",
+        "patient": "verlangsamte Bewegungen",
+        "uz": "harakatlarning sekinlashishi",
+        "ru": "брадикинезия"
+      },
+      {
+        "de": "Mikrographie",
+        "patient": "immer kleinere Schrift",
+        "uz": "yozuvning maydalashishi",
+        "ru": "микрография"
+      },
+      {
+        "de": "Hyposmie",
+        "patient": "schlechter Geruchssinn",
+        "uz": "hid bilishning pasayishi",
+        "ru": "гипосмия"
+      }
+    ],
+    "simulation": {
+      "opening": "Meine rechte Hand zittert seit einiger Zeit, und meine Frau sagt, dass ich viel langsamer geworden bin.",
+      "answers": {
+        "beginn": "Ungefähr seit einem Jahr, es ist langsam schlimmer geworden.",
+        "lokalisation": "Vor allem die rechte Hand und der rechte Arm.",
+        "charakter": "Die Hand zittert, wenn sie ruhig liegt. Wenn ich etwas greife, wird es besser. Schmerzen habe ich nicht, aber der Arm fühlt sich steif an.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Ich laufe mit kleinen Schritten, und der rechte Arm schwingt nicht mehr mit. Meine Schrift ist ganz klein geworden, und ich spreche leiser. Riechen kann ich seit Jahren schlecht. Gestürzt bin ich nicht.",
+        "vegetativ": "Ich habe oft Verstopfung, nur alle drei, vier Tage Stuhlgang. Nachts muss ich wegen der Prostata zweimal raus. Appetit ist normal. Im Schlaf schlage ich manchmal um mich, sagt meine Frau.",
+        "vorerkrankungen": "Ich habe eine vergrößerte Prostata und seit zwei Jahren eine Depression.",
+        "medikamente": "Tamsulosin 0,4 abends und Sertralin 50 morgens.",
+        "allergien": "Keine Allergien.",
+        "familie": "In der Familie hatte niemand so etwas.",
+        "sozial": "Ich bin verheiratet und war Landwirt. Wir haben viel mit Pflanzenschutzmitteln gearbeitet.",
+        "noxen": "Ich habe nie geraucht. Abends trinke ich ein Glas Wein."
+      }
+    },
+    "verdachtsdiagnose": "V. a. idiopathisches Parkinson-Syndrom (Morbus Parkinson)",
+    "diagnoseKeywords": [
+      "parkinson",
+      "morbus parkinson",
+      "parkinson-syndrom"
+    ],
+    "differenzialdiagnosen": [
+      "Essentieller Tremor",
+      "Medikamentös induziertes Parkinsonoid",
+      "Normaldruckhydrozephalus",
+      "Multisystematrophie"
+    ],
+    "untersuchungen": [
+      "Neurologische Untersuchung",
+      "L-Dopa-Test",
+      "MRT des Schädels",
+      "DaTSCAN",
+      "TSH"
+    ]
+  },
+  {
+    "id": "c60",
+    "title": "Rheumatoide Arthritis",
+    "category": "Innere Medizin",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Elena Wolf",
+      "age": 45,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Schmerzhafte, geschwollene Fingergelenke beider Hände"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 3 Monaten Schmerzen und Schwellung der Fingergrund- und Mittelgelenke beider Hände sowie der Handgelenke, symmetrisch. Morgensteifigkeit über 1 Stunde. Faustschluss erschwert, Probleme beim Öffnen von Flaschen. Müdigkeit, leichte Temperaturen. Keine Hautveränderungen.",
+      "vorerkrankungen": "Hypothyreose (Hashimoto).",
+      "medikamente": "L-Thyroxin 75 µg 1-0-0, Ibuprofen 600 mg bei Bedarf (aktuell 2–3x täglich)",
+      "allergien": "Keine bekannten Allergien",
+      "familienanamnese": "Mutter mit rheumatoider Arthritis.",
+      "sozialanamnese": "Verheiratet, ein Sohn, Friseurin (Arbeit zunehmend eingeschränkt). Raucherin (10 Zigaretten/Tag). Alkohol selten."
+    },
+    "sprache": [
+      {
+        "patient": "Morgens sind meine Hände über eine Stunde lang ganz steif.",
+        "fach": "Es besteht eine Morgensteifigkeit von über 60 Minuten."
+      },
+      {
+        "patient": "Die Fingergelenke an beiden Händen sind dick und tun weh.",
+        "fach": "Es bestehen symmetrische Schwellungen der MCP- und PIP-Gelenke beidseits."
+      },
+      {
+        "patient": "Ich kann keine Faust mehr machen.",
+        "fach": "Der Faustschluss ist schmerzhaft eingeschränkt."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Rheumatoide Arthritis",
+        "patient": "Gelenkrheuma",
+        "uz": "revmatoid artrit",
+        "ru": "ревматоидный артрит"
+      },
+      {
+        "de": "Morgensteifigkeit",
+        "patient": "steife Gelenke am Morgen",
+        "uz": "ertalabki qotishlik",
+        "ru": "утренняя скованность"
+      },
+      {
+        "de": "Synovitis",
+        "patient": "Entzündung der Gelenkinnenhaut",
+        "uz": "sinovit (bo‘g‘im pardasi yallig‘lanishi)",
+        "ru": "синовит"
+      },
+      {
+        "de": "Rheumafaktor",
+        "patient": "Blutwert bei Rheuma",
+        "uz": "revmatoid omil",
+        "ru": "ревматоидный фактор"
+      },
+      {
+        "de": "Anti-CCP-Antikörper",
+        "patient": "spezieller Rheuma-Blutwert",
+        "uz": "anti-CCP antitanachalari",
+        "ru": "антитела к ЦЦП"
+      }
+    ],
+    "simulation": {
+      "opening": "Meine Finger tun seit Monaten weh und sind geschwollen, morgens kann ich die Hände kaum bewegen.",
+      "answers": {
+        "beginn": "Seit ungefähr drei Monaten, es kam langsam.",
+        "lokalisation": "An beiden Händen, die Fingergrundgelenke und die mittleren Gelenke, und beide Handgelenke.",
+        "charakter": "Ein dumpfer, bohrender Schmerz, 6 von 10. Die Gelenke sind dick und warm.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Morgens sind die Hände über eine Stunde steif. Ich bin ständig müde und habe manchmal leichte Temperatur. Hautausschlag habe ich nicht.",
+        "vegetativ": "Appetit ist etwas weniger, Gewicht ist gleich. Stuhlgang und Wasserlassen normal. Schlaf ist schlecht wegen der Schmerzen.",
+        "vorerkrankungen": "Ich habe Hashimoto, eine Schilddrüsenunterfunktion.",
+        "medikamente": "L-Thyroxin 75 morgens und Ibuprofen 600, im Moment zwei, drei Mal am Tag.",
+        "allergien": "Keine Allergien.",
+        "familie": "Meine Mutter hat auch Rheuma, ihre Finger sind ganz verformt.",
+        "sozial": "Ich bin verheiratet, habe einen Sohn und arbeite als Friseurin. Im Moment schaffe ich die Arbeit kaum.",
+        "noxen": "Ich rauche zehn Zigaretten am Tag. Alkohol selten."
+      }
+    },
+    "verdachtsdiagnose": "V. a. rheumatoide Arthritis (symmetrische Polyarthritis der Hände)",
+    "diagnoseKeywords": [
+      "rheumatoide arthritis",
+      "polyarthritis",
+      "rheuma"
+    ],
+    "differenzialdiagnosen": [
+      "Psoriasisarthritis",
+      "Systemischer Lupus erythematodes",
+      "Fingerpolyarthrose",
+      "Reaktive Arthritis"
+    ],
+    "untersuchungen": [
+      "Rheumafaktor, Anti-CCP-Antikörper",
+      "BSG, CRP",
+      "Röntgen beider Hände",
+      "Gelenksonographie",
+      "Blutbild, Nierenwerte"
+    ]
+  },
+  {
+    "id": "c61",
+    "title": "Infektiöse Endokarditis",
+    "category": "Infektiologie",
+    "difficulty": "schwer",
+    "patient": {
+      "name": "Dieter Hoffmann",
+      "age": 59,
+      "gender": "männlich",
+      "hauptbeschwerde": "Fieber seit Wochen und starke Schwäche"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 3 Wochen wiederkehrendes Fieber bis 39 °C mit Schüttelfrost, Nachtschweiß, ausgeprägte Abgeschlagenheit, Gewichtsverlust von 4 kg, Gelenk- und Muskelschmerzen. Vor 5 Wochen Zahnextraktion ohne Antibiotikaprophylaxe. Seit einigen Tagen kleine schmerzhafte rote Knötchen an den Fingerkuppen. Hausarzt hörte ein neues Herzgeräusch.",
+      "vorerkrankungen": "Biologischer Aortenklappenersatz vor 4 Jahren, arterielle Hypertonie.",
+      "medikamente": "Ramipril 5 mg 1-0-0, ASS 100 mg 1-0-0",
+      "allergien": "Keine bekannten Allergien",
+      "familienanamnese": "Keine Besonderheiten.",
+      "sozialanamnese": "Verheiratet, Lehrer. Nichtraucher, Alkohol gelegentlich. Kein Drogenkonsum."
+    },
+    "sprache": [
+      {
+        "patient": "Ich habe seit drei Wochen immer wieder Fieber mit Schüttelfrost.",
+        "fach": "Seit 3 Wochen bestehen rezidivierende Fieberschübe bis 39 °C mit Schüttelfrost."
+      },
+      {
+        "patient": "Vor ein paar Wochen wurde mir ein Zahn gezogen.",
+        "fach": "Vor 5 Wochen erfolgte eine Zahnextraktion ohne Endokarditisprophylaxe."
+      },
+      {
+        "patient": "An den Fingerspitzen habe ich kleine rote, schmerzhafte Knötchen.",
+        "fach": "Es zeigen sich schmerzhafte Osler-Knötchen an den Fingerkuppen."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Endokarditis",
+        "patient": "Entzündung der Herzinnenhaut / Herzklappe",
+        "uz": "endokardit",
+        "ru": "эндокардит"
+      },
+      {
+        "de": "Herzklappenprothese",
+        "patient": "künstliche Herzklappe",
+        "uz": "yurak klapani protezi",
+        "ru": "протез клапана сердца"
+      },
+      {
+        "de": "Blutkulturen",
+        "patient": "Blutproben zur Suche nach Bakterien",
+        "uz": "qon ekmasi",
+        "ru": "посев крови"
+      },
+      {
+        "de": "transösophageale Echokardiographie",
+        "patient": "Herzultraschall durch die Speiseröhre",
+        "uz": "qizilo‘ngach orqali exokardiografiya",
+        "ru": "чреспищеводная ЭхоКГ"
+      },
+      {
+        "de": "Osler-Knötchen",
+        "patient": "schmerzhafte Knötchen an den Fingern",
+        "uz": "Osler tugunchalari",
+        "ru": "узелки Ослера"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe seit Wochen immer wieder Fieber und fühle mich total kraftlos.",
+      "answers": {
+        "beginn": "Seit ungefähr drei Wochen. Vorher, vor fünf Wochen, wurde mir ein Backenzahn gezogen.",
+        "lokalisation": "Mir tut alles weh, die Gelenke und die Muskeln. An den Fingerspitzen habe ich kleine schmerzhafte Knötchen.",
+        "charakter": "Das Fieber kommt immer wieder, bis 39 Grad, mit Schüttelfrost. Die Knötchen sind klein, rot und tun weh.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Ich schwitze nachts stark und bin total schlapp. Mein Hausarzt hat ein neues Geräusch am Herzen gehört. Atemnot habe ich nur ein bisschen beim Treppensteigen.",
+        "vegetativ": "Ich habe wenig Appetit und vier Kilo abgenommen. Stuhlgang und Wasserlassen sind normal.",
+        "vorerkrankungen": "Vor vier Jahren habe ich eine neue Aortenklappe bekommen, eine biologische. Und ich habe hohen Blutdruck.",
+        "medikamente": "Ramipril 5 und ASS 100, beides morgens.",
+        "allergien": "Keine Allergien.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich bin verheiratet und arbeite als Lehrer. Drogen habe ich nie genommen.",
+        "noxen": "Ich rauche nicht, Alkohol nur gelegentlich."
+      }
+    },
+    "verdachtsdiagnose": "V. a. Prothesenendokarditis der Aortenklappe nach Zahnextraktion",
+    "diagnoseKeywords": [
+      "endokarditis",
+      "prothesenendokarditis"
+    ],
+    "differenzialdiagnosen": [
+      "Sepsis anderer Ursache",
+      "Malignes Lymphom",
+      "Rheumatisches Fieber",
+      "Tuberkulose"
+    ],
+    "untersuchungen": [
+      "Mindestens 3 Blutkulturpaare",
+      "Transösophageale Echokardiographie",
+      "Blutbild, CRP, Procalcitonin",
+      "Urinstatus",
+      "EKG"
+    ]
+  },
+  {
+    "id": "c62",
+    "title": "Commotio cerebri nach Sturz",
+    "category": "Unfallchirurgie",
+    "difficulty": "leicht",
+    "patient": {
+      "name": "Felix Neumann",
+      "age": 28,
+      "gender": "männlich",
+      "hauptbeschwerde": "Kopfschmerzen und Übelkeit nach Fahrradsturz"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Vor 2 Stunden mit dem Fahrrad ohne Helm gestürzt, mit dem Kopf auf den Asphalt aufgeschlagen. Kurze Bewusstlosigkeit (laut Passant unter 1 Minute). Kann sich an den Sturz selbst nicht erinnern. Seitdem Kopfschmerzen, Übelkeit, einmal Erbrochen, leichter Schwindel. Platzwunde an der Stirn. Keine Lähmungen, keine Sehstörungen.",
+      "vorerkrankungen": "Keine.",
+      "medikamente": "Keine (keine Blutverdünner)",
+      "allergien": "Keine bekannten Allergien",
+      "familienanamnese": "Keine Besonderheiten.",
+      "sozialanamnese": "Ledig, Softwareentwickler, fährt täglich mit dem Fahrrad zur Arbeit. Nichtraucher. Gestern Abend 2 Bier, heute kein Alkohol."
+    },
+    "sprache": [
+      {
+        "patient": "Ich weiß nicht mehr, wie ich gefallen bin.",
+        "fach": "Es besteht eine Amnesie für das Sturzereignis."
+      },
+      {
+        "patient": "Ich war kurz weg, sagt der Mann, der mir geholfen hat.",
+        "fach": "Fremdanamnestisch bestand eine kurze Bewusstlosigkeit von unter 1 Minute."
+      },
+      {
+        "patient": "Mir ist übel, und ich habe einmal gebrochen.",
+        "fach": "Begleitend bestehen Nausea und einmaliges Erbrechen."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Commotio cerebri",
+        "patient": "Gehirnerschütterung",
+        "uz": "miya chayqalishi",
+        "ru": "сотрясение головного мозга"
+      },
+      {
+        "de": "Amnesie",
+        "patient": "Gedächtnislücke",
+        "uz": "xotira yo‘qolishi (amneziya)",
+        "ru": "амнезия"
+      },
+      {
+        "de": "Glasgow Coma Scale",
+        "patient": "Punkteskala für das Bewusstsein",
+        "uz": "Glazgo koma shkalasi",
+        "ru": "шкала комы Глазго"
+      },
+      {
+        "de": "Platzwunde",
+        "patient": "aufgeplatzte Wunde",
+        "uz": "yorilgan yara",
+        "ru": "рваная рана"
+      },
+      {
+        "de": "Epiduralhämatom",
+        "patient": "Blutung zwischen Schädel und harter Hirnhaut",
+        "uz": "epidural gematoma",
+        "ru": "эпидуральная гематома"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich bin mit dem Fahrrad gestürzt und auf den Kopf gefallen. Jetzt habe ich Kopfschmerzen, und mir ist übel.",
+      "answers": {
+        "beginn": "Vor ungefähr zwei Stunden, auf dem Weg zur Arbeit.",
+        "lokalisation": "Die Kopfschmerzen sind vor allem vorne an der Stirn, dort habe ich auch eine Wunde.",
+        "charakter": "Ein drückender Kopfschmerz, 5 von 10.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Ich war kurz bewusstlos, sagt der Passant, nicht mal eine Minute. An den Sturz selbst kann ich mich nicht erinnern. Mir ist übel, ich habe einmal gebrochen und ein bisschen schwindelig. Ich sehe normal und kann alles bewegen.",
+        "vegetativ": "Appetit, Schlaf, Stuhlgang und Wasserlassen waren normal.",
+        "vorerkrankungen": "Ich bin gesund.",
+        "medikamente": "Ich nehme keine Medikamente, auch keine Blutverdünner.",
+        "allergien": "Keine Allergien.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich bin ledig und arbeite als Softwareentwickler. Einen Helm hatte ich leider nicht auf.",
+        "noxen": "Ich rauche nicht. Gestern Abend hatte ich zwei Bier, heute nichts."
+      }
+    },
+    "verdachtsdiagnose": "Commotio cerebri (leichtes Schädel-Hirn-Trauma) mit Platzwunde frontal",
+    "diagnoseKeywords": [
+      "commotio",
+      "gehirnerschütterung",
+      "schädel-hirn-trauma",
+      "sht"
+    ],
+    "differenzialdiagnosen": [
+      "Epiduralhämatom",
+      "Subdurales Hämatom",
+      "Kontusionsblutung",
+      "HWS-Distorsion"
+    ],
+    "untersuchungen": [
+      "Neurologische Untersuchung, GCS",
+      "CT des Schädels (Bewusstlosigkeit, Erbrechen)",
+      "Wundversorgung, Tetanusschutz prüfen",
+      "Stationäre Überwachung 24 h"
+    ]
   }
 ]

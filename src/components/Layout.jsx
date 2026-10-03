@@ -56,29 +56,65 @@ function LangSwitch() {
   );
 }
 
-// Yon menyu bo‘limlari (Claude / ChatGPT / Telegram uslubida ustun bo‘lib)
+// Yon menyu bo‘limlari (Claude / ChatGPT / Telegram uslubida ustun bo‘lib).
+// Yangi foydalanuvchi adashmasligi uchun: asosiy 5 ta bo‘lim doim ko‘rinadi,
+// qo‘shimcha mashqlar esa yig‘ilgan holda turadi.
 const NAV_GROUPS = [
-  [
-    { href: "/", icon: "🏠", label: tr("Bosh sahifa", "Главная") },
-    { href: "/faelle", icon: "🩺", label: tr("Fälle", "Кейсы") },
-    { href: "/simulation", icon: "💬", label: tr("Simulation", "Симуляция") },
-    { href: "/aufklaerung", icon: "🗨️", label: tr("Aufklärung", "Aufklärung") },
-    { href: "/arztbrief", icon: "✍️", label: "Arztbrief" },
-    { href: "/pruefung", icon: "🎯", label: tr("Prüfung", "Экзамен") },
-  ],
-  [
-    { href: "/hoeren", icon: "🎧", label: tr("Hörverstehen", "Аудирование") },
-    { href: "/woerter", icon: "📚", label: tr("Wörter", "Слова") },
-    { href: "/fachsprache", icon: "🔁", label: "Fach ↔ Patient" },
-    { href: "/redemittel", icon: "🗣️", label: "Redemittel" },
-  ],
-  [
-    { href: "/pro", icon: "💳", label: tr("Tariflar", "Тарифы") },
-    { href: "/fsp", icon: "🏛️", label: tr("FSP haqida", "Об FSP") },
-  ],
+  {
+    title: tr("Asosiy", "Основное"),
+    items: [
+      { href: "/", icon: "🏠", label: tr("Bosh sahifa", "Главная") },
+      { href: "/faelle", icon: "🩺", label: tr("Fälle", "Кейсы") },
+      { href: "/simulation", icon: "💬", label: tr("Simulation", "Симуляция"), tag: "Teil 1" },
+      { href: "/arztbrief", icon: "✍️", label: "Arztbrief", tag: "Teil 2" },
+      { href: "/pruefung", icon: "🎯", label: tr("Prüfung", "Экзамен"), tag: "1–3" },
+    ],
+  },
+  {
+    title: tr("Qo‘shimcha mashqlar", "Дополнительно"),
+    more: true,
+    items: [
+      { href: "/woerter", icon: "📚", label: tr("Wörter", "Слова") },
+      { href: "/redemittel", icon: "🗣️", label: "Redemittel" },
+      { href: "/fachsprache", icon: "🔁", label: "Fach ↔ Patient" },
+      { href: "/aufklaerung", icon: "🗨️", label: tr("Aufklärung", "Aufklärung") },
+      { href: "/hoeren", icon: "🎧", label: tr("Hörverstehen", "Аудирование") },
+    ],
+  },
+  {
+    title: tr("Boshqa", "Прочее"),
+    items: [
+      { href: "/pro", icon: "💳", label: tr("Tariflar", "Тарифы") },
+      { href: "/fsp", icon: "🏛️", label: tr("FSP haqida", "Об FSP") },
+    ],
+  },
 ];
+const MORE_KEY = "fsp.nav.more";
 
-const GROUP_TITLES = [tr("Mashq", "Практика"), tr("O‘rganish", "Изучение"), tr("Boshqa", "Прочее")];
+function NavItem({ l, on }) {
+  return (
+    <Link
+      href={l.href}
+      className={cx(
+        "flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium transition",
+        on
+          ? "bg-teal-500/15 text-white shadow-[inset_3px_0_0_#14b8a6]"
+          : "text-white/70 hover:bg-white/5 hover:text-white",
+      )}
+      aria-current={on ? "page" : undefined}
+    >
+      <span className="w-5 text-center" aria-hidden>
+        {l.icon}
+      </span>
+      <span className="flex-1">{l.label}</span>
+      {l.tag && (
+        <span className="rounded-md bg-white/10 px-1.5 py-0.5 text-[10px] font-semibold text-teal-200/80">
+          {l.tag}
+        </span>
+      )}
+    </Link>
+  );
+}
 
 function Logo() {
   return (
@@ -115,7 +151,21 @@ function Sidebar({ onClose }) {
   let path = usePathname(),
     { user, progress } = useApp(),
     active = (h) => (h === "/" ? path === "/" : path === h || path.startsWith(`${h}/`)),
-    plan = buildPlan(progress);
+    plan = buildPlan(progress),
+    [more, setMore] = useState(() => {
+      try {
+        return localStorage.getItem(MORE_KEY) === "1";
+      } catch {
+        return false;
+      }
+    }),
+    toggleMore = () => {
+      let v = !more;
+      setMore(v);
+      try {
+        localStorage.setItem(MORE_KEY, v ? "1" : "0");
+      } catch {}
+    };
   return (
     <div className="flex h-full flex-col bg-[#0b1f26] text-white">
       <div className="flex h-14 shrink-0 items-center justify-between gap-2 px-4">
@@ -147,31 +197,31 @@ function Sidebar({ onClose }) {
             {plan.doneCount}/{plan.tasks.length}
           </span>
         </Link>
-        {NAV_GROUPS.map((g, gi) => (
-          <div key={gi} className="mt-4 first:mt-2">
-            <p className="px-3 pb-1 text-[11px] font-semibold uppercase tracking-wider text-white/40">
-              {GROUP_TITLES[gi]}
-            </p>
-            {g.map((l) => (
-              <Link
-                key={l.href}
-                href={l.href}
-                className={cx(
-                  "flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium transition",
-                  active(l.href)
-                    ? "bg-teal-500/15 text-white shadow-[inset_3px_0_0_#14b8a6]"
-                    : "text-white/70 hover:bg-white/5 hover:text-white",
-                )}
-                aria-current={active(l.href) ? "page" : undefined}
-              >
-                <span className="w-5 text-center" aria-hidden>
-                  {l.icon}
-                </span>
-                {l.label}
-              </Link>
-            ))}
-          </div>
-        ))}
+        {NAV_GROUPS.map((g) => {
+          // Qo‘shimcha bo‘lim: ochilgan bo‘lsa yoki hozir uning ichidagi sahifada bo‘lsak — ko‘rinadi
+          let open = !g.more || more || g.items.some((l) => active(l.href));
+          return (
+            <div key={g.title} className="mt-4 first:mt-2">
+              {g.more ? (
+                <button
+                  onClick={toggleMore}
+                  className="flex w-full items-center justify-between rounded-md px-3 pb-1 text-[11px] font-semibold uppercase tracking-wider text-white/40 hover:text-white/70"
+                  aria-expanded={open}
+                >
+                  {g.title}
+                  <span className="normal-case tracking-normal">
+                    {open ? "▾" : `▸ ${g.items.length}`}
+                  </span>
+                </button>
+              ) : (
+                <p className="px-3 pb-1 text-[11px] font-semibold uppercase tracking-wider text-white/40">
+                  {g.title}
+                </p>
+              )}
+              {open && g.items.map((l) => <NavItem key={l.href} l={l} on={active(l.href)} />)}
+            </div>
+          );
+        })}
       </nav>
       {FEEDBACK_TELEGRAM && (
         <div className="shrink-0 px-3 pb-2">
@@ -329,9 +379,6 @@ export function Footer() {
           </Link>
           <Link href="/dashboard" className="hover:text-teal-300">
             Dashboard
-          </Link>
-          <Link href="/admin" className="hover:text-teal-300">
-            Admin
           </Link>
         </nav>
       </div>

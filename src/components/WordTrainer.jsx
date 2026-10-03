@@ -48,7 +48,7 @@ export function WordTrainer({ pool, onClose }) {
     return (
       <div className="card mx-auto max-w-xl text-center">
         <p className="text-4xl">{total ? "🎉" : "✅"}</p>
-        <h2 className="mt-3 text-lg font-semibold">
+        <h2 className="mt-3 h-title">
           {total
             ? tr("Sessiya tugadi!", "Сессия завершена!")
             : tr("Hozircha takrorlash kerak bo‘lgan so‘z yo‘q", "Сейчас нет слов для повторения")}

@@ -113,7 +113,7 @@ export function AboutFspPage() {
       <div className="space-y-4">
         {EXAM_PARTS.map((e) => (
           <div key={e.t} className="card">
-            <h2 className="text-lg font-semibold">{e.t}</h2>
+            <h2 className="h-title">{e.t}</h2>
             <p className="mt-2 text-sm muted">{e.d}</p>
             <Link
               href={e.href}
@@ -126,7 +126,7 @@ export function AboutFspPage() {
         ))}
       </div>
       <div className="card mt-6">
-        <h2 className="text-lg font-semibold">
+        <h2 className="h-title">
           🇩🇪 {tr("Approbation’gacha yo‘l (YeI’dan tashqari davlatlar)", "Путь к Approbation (страны вне ЕС)")}
         </h2>
         <ol className="mt-3 space-y-3 text-sm">
@@ -144,7 +144,7 @@ export function AboutFspPage() {
         </ol>
       </div>
       <div className="card mt-6">
-        <h2 className="text-lg font-semibold">
+        <h2 className="h-title">
           {tr("Imtihon qanday o‘tkaziladi?", "Как проходит экзамен?")}
         </h2>
         <ul className="mt-3 space-y-2 text-sm">
@@ -181,7 +181,7 @@ export function AboutFspPage() {
         </Link>
       </div>
       <div className="card mt-6">
-        <h2 className="text-lg font-semibold">{tr("Nimalar baholanadi?", "Что оценивается?")}</h2>
+        <h2 className="h-title">{tr("Nimalar baholanadi?", "Что оценивается?")}</h2>
         <ul className="mt-3 grid gap-2 text-sm sm:grid-cols-2">
           {[
             tr("Kommunikation (bemor va hamkasb bilan)", "Kommunikation (с пациентом и коллегой)"),
@@ -199,7 +199,7 @@ export function AboutFspPage() {
         </ul>
       </div>
       <div className="card mt-6">
-        <h2 className="text-lg font-semibold">{tr("Foydali maslahatlar", "Полезные советы")}</h2>
+        <h2 className="h-title">{tr("Foydali maslahatlar", "Полезные советы")}</h2>
         <ul className="mt-3 space-y-2 text-sm">
           {TIPS.map((e) => (
             <li key={e} className="flex gap-2">

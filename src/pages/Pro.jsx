@@ -109,7 +109,7 @@ export function ProPage() {
                 {tr("Tavsiya etiladi", "Рекомендуем")}
               </span>
             )}
-            <h2 className="text-lg font-semibold">{o.name}</h2>
+            <h2 className="h-title">{o.name}</h2>
             <p className="mt-1">
               <span className="text-3xl font-extrabold">{o.price}</span>{" "}
               <span className="text-sm muted">{o.note}</span>

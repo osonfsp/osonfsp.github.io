@@ -170,8 +170,17 @@ header.sticky {
   .muted {
     @apply text-slate-500 dark:text-slate-400;
   }
+  /* Bo‘lim sarlavhasi: katta, rangli, chap tomonda urg‘u chizig‘i bilan */
   .section-title {
-    @apply mb-3 text-sm font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400;
+    @apply mb-4 flex items-center gap-2.5 text-lg font-bold tracking-tight text-teal-800 dark:text-teal-300 sm:text-xl;
+  }
+  .section-title::before {
+    content: "";
+    @apply h-[1.1em] w-1.5 shrink-0 rounded-full bg-gradient-to-b from-teal-500 to-cyan-400;
+  }
+  /* Kartochka ichidagi asosiy sarlavha */
+  .h-title {
+    @apply text-xl font-bold tracking-tight text-teal-900 dark:text-teal-100;
   }
 }
 

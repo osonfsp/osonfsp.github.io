@@ -122,7 +122,7 @@ function SimulationView() {
       )}
       {r === "summary" && (
         <div className="card mx-auto max-w-3xl">
-          <h2 className="text-lg font-semibold">{tr("Fachsprache xulosasi", "Резюме на Fachsprache")}</h2>
+          <h2 className="h-title">{tr("Fachsprache xulosasi", "Резюме на Fachsprache")}</h2>
           <p className="mt-1 text-sm muted">
             {tr(
               "Yig‘ilgan anamnezni 3–5 gapda Fachsprache’da yozing (ixtiyoriy, lekin tavsiya etiladi).",
@@ -182,7 +182,7 @@ function SimulationView() {
             <Disclaimer />
           </div>
           <div className="card">
-            <h2 className="mb-4 text-lg font-semibold">{tr("Batafsil tahlil", "Подробный разбор")}</h2>
+            <h2 className="mb-4 h-title">{tr("Batafsil tahlil", "Подробный разбор")}</h2>
             <FeedbackList items={p.feedback} />
           </div>
         </div>

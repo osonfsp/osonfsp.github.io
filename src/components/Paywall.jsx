@@ -12,7 +12,7 @@ export function Paywall({ kind = "materials" }) {
       <p className="text-4xl" aria-hidden>
         🔒
       </p>
-      <h2 className="mt-3 text-lg font-semibold">
+      <h2 className="mt-3 h-title">
         {exam
           ? tr("Bepul imtihon ishlatildi", "Бесплатный экзамен использован")
           : tr("1 kunlik sinov muddati tugadi", "Пробный день закончился")}

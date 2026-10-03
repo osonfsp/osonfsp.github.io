@@ -102,9 +102,11 @@ export function PageHeader({ eyebrow: e, title: t, subtitle: a, children: n }) {
       />
       <div className="relative flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
         <div className="min-w-0 sm:flex-1">
-          {e && <p className="text-xs font-semibold uppercase tracking-wider text-teal-300">{e}</p>}
-          <h1 className="mt-1 text-2xl font-bold tracking-tight text-white sm:text-3xl">{t}</h1>
-          {a && <p className="mt-2 max-w-2xl text-white/70">{a}</p>}
+          {e && <p className="text-xs font-bold uppercase tracking-[0.18em] text-teal-300">{e}</p>}
+          <h1 className="mt-1 bg-gradient-to-r from-white via-teal-100 to-cyan-300 bg-clip-text pb-1 text-3xl font-extrabold tracking-tight text-transparent sm:text-4xl">
+            {t}
+          </h1>
+          {a && <p className="mt-2 max-w-2xl text-base text-white/75 sm:text-lg">{a}</p>}
         </div>
         {n && (
           <div className="flex flex-wrap gap-2 sm:max-w-[60%] sm:justify-end [&_.btn-ghost:hover]:bg-white/10 [&_.btn-ghost]:text-white">

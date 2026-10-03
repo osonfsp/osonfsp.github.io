@@ -32,7 +32,7 @@ export function AufklaerungListPage() {
               <span className="text-2xl" aria-hidden>
                 {p.icon}
               </span>
-              <h2 className="mt-2 font-semibold">{p.name}</h2>
+              <h2 className="mt-2 text-lg font-bold text-teal-900 dark:text-teal-100">{p.name}</h2>
               <p className="mt-1 flex-1 text-sm muted">{tr(p.uz, p.ru)}</p>
               <div className="mt-4">
                 <div className="mb-1 flex justify-between text-xs muted">

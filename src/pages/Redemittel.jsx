@@ -9,14 +9,15 @@ import { SectionIntro } from "../components/SectionIntro";
 const TEILE = [...new Set(redemittel.map((g) => g.teil))];
 
 export function RedemittelPage() {
-  let [e, t] = useState("all"),
+  // Hammasi birdan emas: Teil 1 dan boshlanadi
+  let [e, t] = useState(TEILE[0]),
     [a, n] = useState(""),
     [i, l] = useState(true),
     [s, r] = useState({}),
     c = useMemo(() => {
       let h = a.trim().toLowerCase();
       return redemittel
-        .filter((b) => e === "all" || b.teil === e)
+        .filter((b) => h || e === "all" || b.teil === e)
         .map((b) => ({
           ...b,
           items: b.items
@@ -65,7 +66,7 @@ export function RedemittelPage() {
             <p className="text-xs font-semibold uppercase tracking-wider text-teal-600 dark:text-teal-400">
               {b.teil}
             </p>
-            <h2 className="mb-3 font-semibold">{b.group}</h2>
+            <h2 className="section-title">{b.group}</h2>
             <ul className="divide-y divide-slate-100 dark:divide-slate-800">
               {b.items.map(([y, f]) => {
                 let p = i || s[y];

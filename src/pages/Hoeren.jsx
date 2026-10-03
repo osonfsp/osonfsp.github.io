@@ -42,7 +42,7 @@ export function HoerenListPage() {
           let list = cases.filter((c) => sec.categories.includes(c.category));
           return (
             <section key={sec.id}>
-              <h2 className="mb-3 text-lg font-bold">
+              <h2 className="mb-3 text-xl font-bold text-teal-900 dark:text-teal-100">
                 {sec.icon} {sec.label}
               </h2>
               <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
