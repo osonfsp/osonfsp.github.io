@@ -345,13 +345,13 @@ export function HomePage() {
           {teile.map((t) => (
             <div
               key={t.n}
-              className={cx("flip h-64 cursor-pointer", flipped === t.n && "is-flipped")}
+              className={cx("flip3d h-64 cursor-pointer", flipped === t.n && "is-flipped")}
               onClick={() => setFlipped((f) => (f === t.n ? null : t.n))}
             >
-              <div className="flip-inner">
+              <div className="flip3d-inner">
                 <div
                   className={cx(
-                    "flip-face flex flex-col justify-between rounded-3xl bg-gradient-to-br p-6 text-white shadow-xl",
+                    "flip3d-face flex flex-col justify-between rounded-3xl bg-gradient-to-br p-6 text-white shadow-xl",
                     t.grad,
                   )}
                 >
@@ -362,7 +362,7 @@ export function HomePage() {
                     <p className="mt-1 text-sm text-white/85">{t.front}</p>
                   </div>
                 </div>
-                <div className={cx(GLASS, "flip-face flip-back flex flex-col p-6")}>
+                <div className={cx(GLASS, "flip3d-face flip3d-back flex flex-col p-6")}>
                   <h3 className="font-bold">
                     Teil {t.n} · {t.title}
                   </h3>

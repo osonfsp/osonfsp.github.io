@@ -118,35 +118,62 @@ export function WordTrainer({ pool, onClose }) {
         <span className="badge mb-4 bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-300">
           {w.category} · {box ? tr(`${box}-quti`, `ячейка ${box}`) : tr("yangi", "новое")}
         </span>
+        {/* Old tomon: faqat savol — javob (nemischa so‘z) ko‘rinmaydi */}
         {front ? (
-          <>
-            <span className="text-2xl font-semibold">{loc(w)}</span>
-            <span className="mt-2 text-sm muted">„{w.patient}“</span>
-          </>
+          <span className="text-3xl font-semibold">{loc(w)}</span>
         ) : (
-          <span className="flex items-center gap-1 text-2xl font-semibold">
+          <span className="flex items-center gap-1 text-3xl font-semibold">
             {w.de}
             <Speak text={w.de} />
           </span>
         )}
         {flipped ? (
-          <span className="mt-6 w-full border-t border-slate-200 pt-5 dark:border-slate-800">
+          <span className="mt-6 w-full space-y-2.5 border-t border-slate-200 pt-5 text-left dark:border-slate-800">
+            {/* Orqa tomon: javob + yordamchi ma’lumotlar, har biri nomi bilan */}
             {front ? (
-              <span className="flex items-center justify-center gap-1 text-xl font-semibold text-teal-700 dark:text-teal-400">
-                {w.de}
-                <Speak text={w.de} />
+              <span className="block">
+                <span className="block text-[11px] font-semibold uppercase tracking-wider muted">
+                  Fachsprache
+                </span>
+                <span className="flex items-center gap-1 text-2xl font-semibold text-teal-700 dark:text-teal-400">
+                  {w.de}
+                  <Speak text={w.de} />
+                </span>
               </span>
             ) : (
-              <>
-                <span className="block text-xl font-semibold text-teal-700 dark:text-teal-400">{loc(w)}</span>
-                <span className="mt-1 block text-sm muted">„{w.patient}“</span>
-              </>
+              <span className="block">
+                <span className="block text-[11px] font-semibold uppercase tracking-wider muted">
+                  {tr("O‘zbekcha", "Перевод")}
+                </span>
+                <span className="block text-2xl font-semibold text-teal-700 dark:text-teal-400">
+                  {loc(w)}
+                </span>
+              </span>
             )}
-            <span className="mt-3 block text-sm italic muted">{w.example}</span>
+            <span className="block">
+              <span className="block text-[11px] font-semibold uppercase tracking-wider muted">
+                {tr("Bemor tilida (Patientensprache)", "Языком пациента (Patientensprache)")}
+              </span>
+              <span className="block">„{w.patient}“</span>
+            </span>
+            <span className="block">
+              <span className="block text-[11px] font-semibold uppercase tracking-wider muted">
+                {tr("Misol", "Пример")}
+              </span>
+              <span className="block text-sm italic muted">{w.example}</span>
+            </span>
           </span>
         ) : (
           <span className="mt-6 text-xs muted">
-            {tr("Javobni eslang, keyin kartochkani bosing", "Вспомните ответ, затем нажмите на карточку")}
+            {front
+              ? tr(
+                  "Nemischa Fachbegriff’ni eslang, keyin kartochkani bosing",
+                  "Вспомните немецкий Fachbegriff, затем нажмите на карточку",
+                )
+              : tr(
+                  "Ma’nosini eslang, keyin kartochkani bosing",
+                  "Вспомните значение, затем нажмите на карточку",
+                )}
           </span>
         )}
       </button>

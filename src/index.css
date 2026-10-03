@@ -251,27 +251,27 @@ header.sticky {
 .float-y {
   animation: float-y 5s ease-in-out infinite;
 }
-.flip {
+.flip3d {
   perspective: 1000px;
 }
-.flip-inner {
+.flip3d-inner {
   position: relative;
   height: 100%;
   transition: transform 0.7s cubic-bezier(0.2, 0.8, 0.2, 1);
   transform-style: preserve-3d;
 }
-.flip:hover .flip-inner,
-.flip:focus-within .flip-inner,
-.flip.is-flipped .flip-inner {
+.flip3d:hover .flip3d-inner,
+.flip3d:focus-within .flip3d-inner,
+.flip3d.is-flipped .flip3d-inner {
   transform: rotateY(180deg);
 }
-.flip-face {
+.flip3d-face {
   position: absolute;
   inset: 0;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 }
-.flip-back {
+.flip3d-back {
   transform: rotateY(180deg);
 }
 .tilt {
