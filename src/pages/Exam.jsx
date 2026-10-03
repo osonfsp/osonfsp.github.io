@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "../components/Link";
 import { PatientChat } from "../components/PatientChat";
-import { Disclaimer, FeedbackList, PageHeader, ProgressRing, ScoreBars, Spinner } from "../components/ui";
+import { CategoryBadge, Disclaimer, FeedbackList, PageHeader, ProgressRing, ScoreBars, Spinner } from "../components/ui";
 import { CASE_SECTIONS, arztbriefe, getCase } from "../data/index";
 import {
   ARZT_ARZT_QUESTIONS,
@@ -194,8 +194,8 @@ export function ExamPage() {
                 return (
                   items.length > 0 && (
                     <div key={sec.id}>
-                      <p className="mb-2 text-xs font-semibold uppercase tracking-wider muted">
-                        {sec.icon} {sec.label}
+                      <p className="mb-2 flex items-center gap-2 text-base font-bold text-teal-900 dark:text-teal-100">
+                        <span aria-hidden>{sec.icon}</span> {sec.label}
                       </p>
                       <div className="grid gap-2 sm:grid-cols-2">
                         {items.map(([z, k]) => (
@@ -204,8 +204,8 @@ export function ExamPage() {
                             className="rounded-xl border border-slate-200 p-3 text-left text-sm transition hover:border-teal-400 dark:border-slate-700"
                             onClick={() => N(k)}
                           >
-                            <span className="text-xs muted">{z.c.category}</span>
-                            <span className="block font-medium">{z.c.patient.hauptbeschwerde}</span>
+                            <CategoryBadge category={z.c.category} className="!py-0.5 !text-xs" />
+                            <span className="mt-2 block font-medium">{z.c.patient.hauptbeschwerde}</span>
                           </button>
                         ))}
                       </div>

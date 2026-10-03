@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "../components/Link";
-import { FeedbackList, PageHeader, ProgressBar, ProgressRing, ScoreBars, Spinner } from "../components/ui";
+import { CategoryBadge, FeedbackList, PageHeader, ProgressBar, ProgressRing, ScoreBars, Spinner } from "../components/ui";
 import { arztbriefe, getArztbrief, getCase } from "../data/index";
 import { correctArztbrief } from "../lib/evaluation";
 import { useParams } from "../lib/router";
@@ -28,8 +28,8 @@ export function ArztbriefListPage() {
             i = n.length ? Math.max(...n.map((l) => l.score)) : 0;
           return (
             <Link key={t.id} href={`/arztbrief/${t.id}`} className="card card-hover flex flex-col">
-              <span className="text-xs font-medium text-teal-600 dark:text-teal-400">{a?.category}</span>
-              <h2 className="mt-1 text-lg font-bold text-teal-900 dark:text-teal-100">{t.title}</h2>
+              {a && <CategoryBadge category={a.category} />}
+              <h2 className="mt-3 text-lg font-bold text-teal-900 dark:text-teal-100">{t.title}</h2>
               <p className="mt-1 text-sm muted">
                 {a?.patient.name}
                 {", "}

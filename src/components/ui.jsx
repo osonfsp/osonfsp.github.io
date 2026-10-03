@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react";
 import { cx } from "../lib/utils";
 import { tr } from "../lib/i18n";
+import { CATEGORY_LABELS, sectionOf } from "../data/index";
 
 export function ProgressBar({ value: e, auto: t = false, className: a }) {
   let n = Math.max(0, Math.min(100, Math.round(e))),
@@ -268,6 +269,27 @@ export function Spinner({ label: e = tr("Tahlil qilinmoqda…", "Идёт ана
     <span className="inline-flex items-center gap-2 text-sm muted">
       <span className="h-4 w-4 animate-spin rounded-full border-2 border-teal-600 border-t-transparent" />
       {e}
+    </span>
+  );
+}
+
+// Fan (mutaxassislik) belgisi: har bir bo‘lim o‘z rangida — ro‘yxatlarda tez ajratish uchun
+export const SECTION_COLORS = {
+  kardiologie: "bg-rose-100 text-rose-800 ring-rose-200 dark:bg-rose-500/15 dark:text-rose-200 dark:ring-rose-500/30",
+  innere: "bg-sky-100 text-sky-800 ring-sky-200 dark:bg-sky-500/15 dark:text-sky-200 dark:ring-sky-500/30",
+  chirurgie: "bg-amber-100 text-amber-900 ring-amber-200 dark:bg-amber-500/15 dark:text-amber-200 dark:ring-amber-500/30",
+  neurologie: "bg-violet-100 text-violet-800 ring-violet-200 dark:bg-violet-500/15 dark:text-violet-200 dark:ring-violet-500/30",
+  allgemein: "bg-emerald-100 text-emerald-800 ring-emerald-200 dark:bg-emerald-500/15 dark:text-emerald-200 dark:ring-emerald-500/30",
+};
+
+export function CategoryBadge({ category, className = "" }) {
+  let sec = sectionOf(category);
+  return (
+    <span
+      className={`inline-flex items-center gap-1.5 self-start rounded-full px-2.5 py-1 text-sm font-semibold ring-1 ${SECTION_COLORS[sec?.id] ?? SECTION_COLORS.allgemein} ${className}`}
+    >
+      <span aria-hidden>{sec?.icon}</span>
+      {CATEGORY_LABELS[category] ?? category}
     </span>
   );
 }
