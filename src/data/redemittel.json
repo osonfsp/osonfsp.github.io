@@ -295,6 +295,54 @@
     ]
   },
   {
+    "teil": "Teil 1 · Arzt-Patienten-Gespräch",
+    "group": "Empathie und schwierige Situationen",
+    "items": [
+      [
+        "Ich verstehe, dass Sie sich Sorgen machen.",
+        "Xavotirlanayotganingizni tushunaman.",
+        "Я понимаю, что вы волнуетесь.",
+        "Endişelendiğinizi anlıyorum.",
+        "I understand that you are worried."
+      ],
+      [
+        "Das ist sicher sehr unangenehm für Sie.",
+        "Bu siz uchun, albatta, juda noqulay.",
+        "Это, конечно, очень неприятно для вас.",
+        "Bu sizin için kesinlikle çok rahatsız edici.",
+        "That must be very unpleasant for you."
+      ],
+      [
+        "Lassen Sie sich ruhig Zeit.",
+        "Shoshilmang, bemalol gapiring.",
+        "Не торопитесь.",
+        "Acele etmeyin, rahatça anlatın.",
+        "Take your time."
+      ],
+      [
+        "Können Sie das bitte noch einmal langsamer sagen?",
+        "Iltimos, buni yana bir bor sekinroq aytib bera olasizmi?",
+        "Не могли бы вы повторить это помедленнее?",
+        "Bunu lütfen bir kez daha yavaşça söyler misiniz?",
+        "Could you please say that again more slowly?"
+      ],
+      [
+        "Habe ich Sie richtig verstanden, dass …?",
+        "Sizni to‘g‘ri tushundimmi, …?",
+        "Правильно ли я вас понял(а), что …?",
+        "Sizi doğru anladım mı, …?",
+        "Have I understood you correctly that …?"
+      ],
+      [
+        "Wir kümmern uns gut um Sie.",
+        "Biz sizga yaxshi g‘amxo‘rlik qilamiz.",
+        "Мы о вас хорошо позаботимся.",
+        "Size iyi bakacağız.",
+        "We will take good care of you."
+      ]
+    ]
+  },
+  {
     "teil": "Teil 2 · Dokumentation",
     "group": "Arztbrief – Einleitung und Anamnese",
     "items": [
@@ -525,6 +573,205 @@
         "Это мне нужно было бы посмотреть в клинических рекомендациях.",
         "Bunu klinik kılavuzdan kontrol etmem gerekir.",
         "I would need to check that in the clinical guideline."
+      ]
+    ]
+  },
+  {
+    "teil": "Teil 3 · Arzt-Arzt-Gespräch",
+    "group": "Befunde vorstellen",
+    "items": [
+      [
+        "Bei der körperlichen Untersuchung fiel … auf.",
+        "Fizikal tekshiruvda … aniqlandi.",
+        "При физикальном обследовании обращало на себя внимание …",
+        "Fizik muayenede … dikkat çekti.",
+        "On physical examination, … was noticeable."
+      ],
+      [
+        "Die Vitalparameter waren stabil: Blutdruck …, Puls …, Sättigung …",
+        "Hayotiy ko‘rsatkichlar barqaror edi: qon bosimi …, puls …, saturatsiya …",
+        "Жизненные показатели были стабильны: давление …, пульс …, сатурация …",
+        "Vital bulgular stabildi: tansiyon …, nabız …, satürasyon …",
+        "Vital signs were stable: blood pressure …, pulse …, saturation …"
+      ],
+      [
+        "Laborchemisch zeigten sich erhöhte Entzündungswerte.",
+        "Laboratoriyada yallig‘lanish ko‘rsatkichlari ko‘tarilgani aniqlandi.",
+        "Лабораторно определялись повышенные маркеры воспаления.",
+        "Laboratuvarda yüksek iltihap değerleri saptandı.",
+        "Laboratory tests showed raised inflammatory markers."
+      ],
+      [
+        "Im EKG sahen wir …, Hinweise auf eine Ischämie gab es nicht.",
+        "EKG’da … ko‘rdik, ishemiya belgilari yo‘q edi.",
+        "На ЭКГ мы видели …, признаков ишемии не было.",
+        "EKG’de … gördük, iskemi bulgusu yoktu.",
+        "The ECG showed …; there were no signs of ischaemia."
+      ],
+      [
+        "Die Bildgebung ergab …",
+        "Tasviriy tekshiruvlar … ni ko‘rsatdi.",
+        "Визуализация показала …",
+        "Görüntüleme … gösterdi.",
+        "Imaging showed …"
+      ],
+      [
+        "Die Befunde passen gut zu …",
+        "Topilmalar … ga yaxshi mos keladi.",
+        "Находки хорошо соответствуют …",
+        "Bulgular … ile iyi uyumlu.",
+        "The findings fit well with …"
+      ],
+      [
+        "Auffällig war außerdem …",
+        "Bundan tashqari … e’tiborni tortdi.",
+        "Кроме того, обращало на себя внимание …",
+        "Ayrıca … dikkat çekiciydi.",
+        "Also noticeable was …"
+      ]
+    ]
+  },
+  {
+    "teil": "Teil 3 · Arzt-Arzt-Gespräch",
+    "group": "Fachbegriffe erklären",
+    "items": [
+      [
+        "Unter … versteht man …",
+        "… deganda … tushuniladi.",
+        "Под … понимают …",
+        "… denince … anlaşılır.",
+        "… means …"
+      ],
+      [
+        "Es handelt sich dabei um eine Entzündung von …",
+        "Bu … ning yallig‘lanishidir.",
+        "Речь идёт о воспалении …",
+        "Bu, … iltihabıdır.",
+        "This is an inflammation of …"
+      ],
+      [
+        "Typische Symptome sind …",
+        "Odatiy belgilari: …",
+        "Типичные симптомы — …",
+        "Tipik belirtiler şunlardır: …",
+        "Typical symptoms are …"
+      ],
+      [
+        "Die häufigste Ursache ist …",
+        "Eng ko‘p uchraydigan sabab — …",
+        "Самая частая причина — …",
+        "En sık neden …",
+        "The most common cause is …"
+      ],
+      [
+        "Diagnostiziert wird es mit Hilfe von …",
+        "U … yordamida tashxislanadi.",
+        "Диагноз ставят с помощью …",
+        "… yardımıyla teşhis edilir.",
+        "It is diagnosed with the help of …"
+      ],
+      [
+        "Dem Patienten würde ich es so erklären: …",
+        "Bemorga buni shunday tushuntirgan bo‘lardim: …",
+        "Пациенту я бы объяснил(а) это так: …",
+        "Hastaya bunu şöyle açıklardım: …",
+        "I would explain it to the patient like this: …"
+      ]
+    ]
+  },
+  {
+    "teil": "Teil 3 · Arzt-Arzt-Gespräch",
+    "group": "Rückfragen und Unsicherheit",
+    "items": [
+      [
+        "Entschuldigung, könnten Sie die Frage bitte wiederholen?",
+        "Kechirasiz, savolni takrorlay olasizmi?",
+        "Извините, не могли бы вы повторить вопрос?",
+        "Affedersiniz, soruyu tekrar edebilir misiniz?",
+        "Sorry, could you please repeat the question?"
+      ],
+      [
+        "Meinen Sie damit …?",
+        "Bu bilan … ni nazarda tutyapsizmi?",
+        "Вы имеете в виду …?",
+        "Bununla … mı kastediyorsunuz?",
+        "Do you mean …?"
+      ],
+      [
+        "Da bin ich mir nicht ganz sicher, ich würde es nachschlagen.",
+        "Bunga to‘liq ishonchim komil emas, tekshirib ko‘rardim.",
+        "В этом я не совсем уверен(а), я бы это уточнил(а).",
+        "Bundan tam emin değilim, kontrol ederdim.",
+        "I am not entirely sure; I would look it up."
+      ],
+      [
+        "Das würde ich mit meinem Oberarzt besprechen.",
+        "Buni katta shifokorim bilan muhokama qilardim.",
+        "Я бы обсудил(а) это со своим старшим врачом.",
+        "Bunu üst hekimimle görüşürdüm.",
+        "I would discuss that with my senior doctor."
+      ],
+      [
+        "Nach meinem Kenntnisstand …",
+        "Mening bilishimcha, …",
+        "Насколько мне известно, …",
+        "Bildiğim kadarıyla …",
+        "As far as I know, …"
+      ],
+      [
+        "Einen Moment bitte, ich überlege kurz.",
+        "Bir daqiqa, bir oz o‘ylab olay.",
+        "Минуточку, я подумаю.",
+        "Bir dakika, kısaca düşüneyim.",
+        "One moment please, let me think."
+      ]
+    ]
+  },
+  {
+    "teil": "Teil 3 · Arzt-Arzt-Gespräch",
+    "group": "Therapie und Procedere begründen",
+    "items": [
+      [
+        "Ich würde den Patienten stationär aufnehmen, weil …",
+        "Bemorni statsionarga yotqizardim, chunki …",
+        "Я бы госпитализировал(а) пациента, потому что …",
+        "Hastayı yatırırdım, çünkü …",
+        "I would admit the patient because …"
+      ],
+      [
+        "Als Erstes würde ich … geben.",
+        "Birinchi navbatda … berardim.",
+        "В первую очередь я бы назначил(а) …",
+        "İlk olarak … verirdim.",
+        "First of all, I would give …"
+      ],
+      [
+        "Bei Verschlechterung würde ich … veranlassen.",
+        "Ahvol yomonlashsa, … ni buyurardim.",
+        "При ухудшении я бы назначил(а) …",
+        "Kötüleşme olursa … isterdim.",
+        "If the condition worsened, I would arrange …"
+      ],
+      [
+        "Wichtig ist eine engmaschige Kontrolle von …",
+        "… ni muntazam nazorat qilish muhim.",
+        "Важен частый контроль …",
+        "…’nin sık kontrolü önemlidir.",
+        "Close monitoring of … is important."
+      ],
+      [
+        "Ich würde ein Konsil der … anfordern.",
+        "… mutaxassisi konsultatsiyasini so‘rardim.",
+        "Я бы запросил(а) консультацию …",
+        "… konsültasyonu isterdim.",
+        "I would request a consultation from …"
+      ],
+      [
+        "Langfristig sollten die Risikofaktoren optimiert werden.",
+        "Uzoq muddatda xavf omillarini kamaytirish kerak.",
+        "В долгосрочной перспективе следует скорректировать факторы риска.",
+        "Uzun vadede risk faktörleri iyileştirilmelidir.",
+        "In the long term, the risk factors should be optimised."
       ]
     ]
   }
