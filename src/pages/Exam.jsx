@@ -54,7 +54,7 @@ function Timer({ minutes: e, resetKey: t, onExpire: o }) {
       {i}:{l}
       {a === 0 && (
         <span className="font-sans font-medium">
-          {tr(" · vaqt tugadi", " · время вышло", " · süre doldu")}
+          {tr(" · vaqt tugadi", " · время вышло", " · süre doldu", " · time is up")}
         </span>
       )}
     </span>
@@ -181,11 +181,12 @@ export function ExamPage() {
       <div className="page max-w-4xl">
         <PageHeader
           eyebrow="FSP Prüfung Simulation"
-          title={tr("Mashq imtihoni", "Пробный экзамен", "Deneme sınavı")}
+          title={tr("Mashq imtihoni", "Пробный экзамен", "Deneme sınavı", "Practice exam")}
           subtitle={tr(
             "Haqiqiy FSP formatiga o‘xshash 3 bosqich. Har bir bosqichga taxminan 20 daqiqa.",
             "3 части, как на настоящем FSP. Примерно 20 минут на каждую часть.",
             "Gerçek FSP formatına benzer 3 aşama. Her aşama için yaklaşık 20 dakika.",
+            "3 stages like the real FSP format. About 20 minutes for each stage.",
           )}
         />
         <SectionIntro id="pruefung" />
@@ -196,7 +197,9 @@ export function ExamPage() {
         ) : (
           <div className="card mt-4">
             <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
-              <h2 className="section-title mb-0">{tr("Fall tanlang", "Выберите кейс", "Vaka seçin")}</h2>
+              <h2 className="section-title mb-0">
+                {tr("Fall tanlang", "Выберите кейс", "Vaka seçin", "Choose a case")}
+              </h2>
               <FreeLeft kind="exam" />
             </div>
             <div className="space-y-4">
@@ -233,6 +236,7 @@ export function ExamPage() {
                 "Tasodifiy Fall bilan boshlash",
                 "Начать со случайного кейса",
                 "Rastgele bir vakayla başla",
+                "Start with a random case",
               )}
             </button>
           </div>
@@ -244,6 +248,7 @@ export function ExamPage() {
               "Imtihon qanday o‘tadi? (3 qism va qoidalar)",
               "Как проходит экзамен? (3 части и правила)",
               "Sınav nasıl geçer? (3 bölüm ve kurallar)",
+              "How does the exam work? (3 parts and rules)",
             )}
           </summary>
           <div className="mt-4">
@@ -257,6 +262,7 @@ export function ExamPage() {
                     "Virtual bemordan anamnez yig‘asiz. Yordamchi maslahatlar o‘chirilgan.",
                     "Вы собираете анамнез у виртуального пациента. Подсказки отключены.",
                     "Sanal hastadan anamnez alırsınız. Yardımcı ipuçları kapalıdır.",
+                    "You take a history from a virtual patient. Hints are turned off.",
                   ),
                 ],
                 [
@@ -267,6 +273,7 @@ export function ExamPage() {
                     "Shu bemor bo‘yicha Arztbrief yozasiz.",
                     "Вы пишете Arztbrief по этому пациенту.",
                     "Bu hasta için Arztbrief yazarsınız.",
+                    "You write an Arztbrief for this patient.",
                   ),
                 ],
                 [
@@ -277,6 +284,7 @@ export function ExamPage() {
                     "Bemorni Oberarzt’ga taqdim etasiz, 5 ta savolga javob berasiz va bitta Fachbegriff’ni tushuntirasiz.",
                     "Вы представляете пациента Oberarzt, отвечаете на 5 вопросов и объясняете один Fachbegriff.",
                     "Hastayı Oberarzt’a sunar, 5 soruyu cevaplar ve bir Fachbegriff’i açıklarsınız.",
+                    "You present the patient to the Oberarzt, answer 5 questions and explain one Fachbegriff.",
                   ),
                 ],
               ].map(([z, k, O, te]) => (
@@ -302,6 +310,7 @@ export function ExamPage() {
                   "Haqiqiy FSP qoidalari bo‘yicha",
                   "По правилам настоящего FSP",
                   "Gerçek FSP kurallarına göre",
+                  "Following real FSP rules",
                 )}
               </h2>
               <ul className="space-y-1.5">
@@ -311,6 +320,7 @@ export function ExamPage() {
                     "3 qism, har biri 20 daqiqa (jami 60 daqiqa). Vaqt tugashi bilan keyingi qismga avtomatik o‘tiladi.",
                     "3 части по 20 минут (всего 60 минут). Когда время выходит, следующая часть начинается автоматически.",
                     "3 bölüm, her biri 20 dakika (toplam 60 dakika). Süre dolunca otomatik olarak sonraki bölüme geçilir.",
+                    "3 parts of 20 minutes each (60 minutes in total). When time runs out, the next part starts automatically.",
                   )}
                 </li>
                 <li>
@@ -319,6 +329,7 @@ export function ExamPage() {
                     "Talab qilinadigan daraja: C1 (tibbiy nemis tili).",
                     "Требуемый уровень: C1 (медицинский немецкий).",
                     "Gerekli seviye: C1 (tıbbi Almanca).",
+                    "Required level: C1 (medical German).",
                   )}
                 </li>
                 <li>
@@ -327,6 +338,7 @@ export function ExamPage() {
                     "Natija faqat „bestanden“ yoki „nicht bestanden“ — baho qo‘yilmaydi.",
                     "Результат только „bestanden“ или „nicht bestanden“ — оценок нет.",
                     "Sonuç yalnızca „bestanden“ veya „nicht bestanden“ — not verilmez.",
+                    "The result is only „bestanden“ or „nicht bestanden“ — no grades.",
                   )}
                 </li>
                 <li>
@@ -335,12 +347,14 @@ export function ExamPage() {
                     "Bu yerda har bir qism kamida",
                     "Здесь каждая часть должна набрать не менее",
                     "Burada her bölümden en az",
+                    "Here each part needs at least",
                   )}{" "}
                   <b>{PASS_MARK}%</b>
                   {tr(
                     " bo‘lishi kerak. Bitta qism yiqilsa, imtihon „nicht bestanden“ bo‘ladi.",
                     ". Если не сдана хотя бы одна часть, экзамен — „nicht bestanden“.",
                     " alınmalıdır. Bir bölüm başarısız olursa sınav „nicht bestanden“ olur.",
+                    ". If one part fails, the exam is „nicht bestanden“.",
                   )}
                 </li>
               </ul>
@@ -381,17 +395,20 @@ export function ExamPage() {
           <PatientChat caseData={n.c} messages={l} onMessages={s} showHints={false} />
           <aside className="space-y-4">
             <div className="card text-sm">
-              <h2 className="section-title">{tr("Teil 1 vazifasi", "Задание Teil 1", "Teil 1 görevi")}</h2>
+              <h2 className="section-title">
+                {tr("Teil 1 vazifasi", "Задание Teil 1", "Teil 1 görevi", "Teil 1 task")}
+              </h2>
               <p>
                 {tr(
                   "Bemordan to‘liq anamnez oling. Bemor bilan Patientensprache’da gaplashing.",
                   "Соберите полный анамнез. Говорите с пациентом на Patientensprache.",
                   "Hastadan eksiksiz anamnez alın. Hastayla Patientensprache ile konuşun.",
+                  "Take a complete history. Talk to the patient in Patientensprache.",
                 )}
               </p>
             </div>
             <button className="btn-primary w-full" disabled={!l.length} onClick={() => a("t2")}>
-              {tr("Teil 2 ga o‘tish →", "К Teil 2 →", "Teil 2’ye geç →")}
+              {tr("Teil 2 ga o‘tish →", "К Teil 2 →", "Teil 2’ye geç →", "Go to Teil 2 →")}
             </button>
           </aside>
         </div>
@@ -400,13 +417,14 @@ export function ExamPage() {
         <div className="grid gap-4 lg:grid-cols-[340px_1fr]">
           <aside className="card h-fit text-sm">
             <h2 className="section-title">
-              Teil 2 · {tr("Klinik ma’lumotlar", "Клинические данные", "Klinik bilgiler")}
+              Teil 2 · {tr("Klinik ma’lumotlar", "Клинические данные", "Klinik bilgiler", "Clinical data")}
             </h2>
             <p className="mb-3 muted">
               {tr(
                 "Anamnezingiz va quyidagi topilmalar asosida Arztbrief yozing.",
                 "Напишите Arztbrief на основе вашего анамнеза и данных ниже.",
                 "Anamneziniz ve aşağıdaki bulgulara dayanarak Arztbrief yazın.",
+                "Write an Arztbrief based on your history and the findings below.",
               )}
             </p>
             <ul className="space-y-2">
@@ -429,10 +447,10 @@ export function ExamPage() {
             <div className="mt-3 flex items-center justify-between gap-3">
               <span className="text-xs muted">
                 {r.trim() ? r.trim().split(/\s+/).length : 0}
-                {tr(" so‘z", " слов", " kelime")}
+                {tr(" so‘z", " слов", " kelime", " words")}
               </span>
               <button className="btn-primary" disabled={!r.trim()} onClick={() => a("t3")}>
-                {tr("Teil 3 ga o‘tish →", "К Teil 3 →", "Teil 3’e geç →")}
+                {tr("Teil 3 ga o‘tish →", "К Teil 3 →", "Teil 3’e geç →", "Go to Teil 3 →")}
               </button>
             </div>
           </div>
@@ -477,26 +495,32 @@ export function ExamPage() {
                   "Javobingizni nemischa yozing…",
                   "Напишите ответ по-немецки…",
                   "Cevabınızı Almanca yazın…",
+                  "Write your answer in German…",
                 )}
               />
               <div className="mt-3 flex justify-between gap-2 text-xs muted">
                 <span>
-                  {tr("Savol ", "Вопрос ", "Soru ")}
+                  {tr("Savol ", "Вопрос ", "Soru ", "Question ")}
                   {h + 1}
                   {" / "}
                   {QS.length}
                 </span>
                 <button className="btn-primary" onClick={x} disabled={!p.trim()}>
                   {h + 1 < QS.length
-                    ? tr("Javob berish →", "Ответить →", "Cevapla →")
-                    : tr("Imtihonni yakunlash", "Завершить экзамен", "Sınavı bitir")}
+                    ? tr("Javob berish →", "Ответить →", "Cevapla →", "Answer →")
+                    : tr("Imtihonni yakunlash", "Завершить экзамен", "Sınavı bitir", "Finish exam")}
                 </button>
               </div>
             </div>
           ) : (
             <div className="mt-6">
               <Spinner
-                label={tr("Natijalar hisoblanmoqda…", "Подсчёт результатов…", "Sonuçlar hesaplanıyor…")}
+                label={tr(
+                  "Natijalar hisoblanmoqda…",
+                  "Подсчёт результатов…",
+                  "Sonuçlar hesaplanıyor…",
+                  "Calculating results…",
+                )}
               />
             </div>
           )}
@@ -528,11 +552,13 @@ export function ExamPage() {
                     "Taxminiy natija: bu darajada haqiqiy FSP’dan o‘tish ehtimoli yuqori.",
                     "Ориентировочный результат: на таком уровне шансы сдать настоящий FSP высоки.",
                     "Tahmini sonuç: bu seviyede gerçek FSP’yi geçme olasılığınız yüksek.",
+                    "Estimated result: at this level you have a good chance of passing the real FSP.",
                   )
                 : tr(
                     "Taxminiy natija: hozirgi darajada haqiqiy FSP’dan o‘tish qiyin. Quyidagi qismlarni mashq qiling.",
                     "Ориентировочный результат: на текущем уровне сдать настоящий FSP будет трудно. Потренируйте части ниже.",
                     "Tahmini sonuç: mevcut seviyede gerçek FSP’yi geçmek zor. Aşağıdaki bölümleri çalışın.",
+                    "Estimated result: at your current level passing the real FSP would be difficult. Practise the parts below.",
                   )}
             </p>
             <div className="mx-auto mt-4 grid max-w-2xl gap-2 text-left sm:grid-cols-3">
@@ -551,8 +577,13 @@ export function ExamPage() {
                     <b className="text-lg">{k}%</b>
                     <span className={k >= PASS_MARK ? "text-emerald-600" : "text-rose-600"}>
                       {k >= PASS_MARK
-                        ? tr("✓ o‘tdi", "✓ сдано", "✓ geçti")
-                        : tr(`✗ ${PASS_MARK}% dan past`, `✗ ниже ${PASS_MARK}%`, `✗ %${PASS_MARK} altında`)}
+                        ? tr("✓ o‘tdi", "✓ сдано", "✓ geçti", "✓ passed")
+                        : tr(
+                            `✗ ${PASS_MARK}% dan past`,
+                            `✗ ниже ${PASS_MARK}%`,
+                            `✗ %${PASS_MARK} altında`,
+                            `✗ below ${PASS_MARK}%`,
+                          )}
                     </span>
                   </div>
                 </div>
@@ -564,7 +595,7 @@ export function ExamPage() {
               <ProgressRing
                 value={avg(Object.values(m))}
                 size={150}
-                label={tr("Mashq natijasi", "Результат", "Alıştırma sonucu")}
+                label={tr("Mashq natijasi", "Результат", "Alıştırma sonucu", "Practice result")}
               />
               <p className="mt-4 text-sm font-medium">{n.c.title}</p>
               <p className="text-xs muted">
@@ -575,7 +606,9 @@ export function ExamPage() {
               </p>
             </div>
             <div className="card">
-              <h2 className="section-title">{tr("Mezonlar bo‘yicha", "По критериям", "Kriterlere göre")}</h2>
+              <h2 className="section-title">
+                {tr("Mezonlar bo‘yicha", "По критериям", "Kriterlere göre", "By criteria")}
+              </h2>
               <ScoreBars scores={m} />
             </div>
           </div>
@@ -602,7 +635,7 @@ export function ExamPage() {
           </details>
           <div className="flex flex-wrap gap-2">
             <button className="btn-primary" onClick={() => a("intro")}>
-              {tr("Yangi imtihon", "Новый экзамен", "Yeni sınav")}
+              {tr("Yangi imtihon", "Новый экзамен", "Yeni sınav", "New exam")}
             </button>
             <Link href="/dashboard" className="btn-outline">
               Dashboard

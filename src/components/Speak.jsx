@@ -60,7 +60,7 @@ export const voiceName = () => germanVoice()?.name ?? "";
 export function Speak({
   text,
   className,
-  label = tr("Nemischa tinglash", "Послушать по-немецки", "Almanca dinle"),
+  label = tr("Nemischa tinglash", "Послушать по-немецки", "Almanca dinle", "Listen in German"),
 }) {
   const [playing, setPlaying] = useState(false);
   useEffect(() => () => playing && stopSpeaking(), [playing]);

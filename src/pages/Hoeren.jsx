@@ -13,7 +13,7 @@ import { SectionIntro } from "../components/SectionIntro";
 const RATES = [
   [0.8, "0.8×"],
   [1, "1×"],
-  [1.25, tr("1.25× (imtihon)", "1.25× (экзамен)", "1.25× (sınav)")],
+  [1.25, tr("1.25× (imtihon)", "1.25× (экзамен)", "1.25× (sınav)", "1.25× (exam)")],
 ];
 const EXAM_PLAYS = 2;
 
@@ -22,11 +22,12 @@ export function HoerenListPage() {
     <div className="page">
       <PageHeader
         eyebrow="Hörverstehen"
-        title={tr("Eshitib tushunish", "Аудирование", "Dinlediğini anlama")}
+        title={tr("Eshitib tushunish", "Аудирование", "Dinlediğini anlama", "Listening comprehension")}
         subtitle={tr(
           "Bemor o‘z shikoyatini nemischa gapirib beradi — matnsiz. Eshitganingizni yozasiz, sayt nimani o‘tkazib yuborganingizni ko‘rsatadi. Haqiqiy FSP’da bemorni tez nutqda tushunish eng qiyin qismlardan biri.",
           "Пациент рассказывает о жалобах по-немецки — без текста. Вы записываете услышанное, а сайт показывает, что вы пропустили. На настоящем FSP понять быструю речь пациента — одна из самых трудных задач.",
           "Hasta şikâyetini Almanca anlatır — metin olmadan. Duyduklarınızı yazarsınız, site neyi kaçırdığınızı gösterir. Gerçek FSP’de hızlı konuşan hastayı anlamak en zor kısımlardan biridir.",
+          "The patient describes their complaint in German — without text. You write down what you hear, and the site shows what you missed. In the real FSP, understanding a fast-speaking patient is one of the hardest parts.",
         )}
       />
       <SectionIntro id="hoeren" />
@@ -36,6 +37,7 @@ export function HoerenListPage() {
             "Bu brauzerda nemischa ovoz yo‘q. Chrome, Edge yoki Safari’da oching.",
             "В этом браузере нет немецкого голоса. Откройте в Chrome, Edge или Safari.",
             "Bu tarayıcıda Almanca ses yok. Chrome, Edge veya Safari’de açın.",
+            "This browser has no German voice. Open it in Chrome, Edge or Safari.",
           )}
         </p>
       )}
@@ -94,9 +96,9 @@ export function HoerenPage() {
     return (
       <div className="page">
         <p className="card">
-          {tr("Fall topilmadi. ", "Кейс не найден. ", "Vaka bulunamadı. ")}
+          {tr("Fall topilmadi. ", "Кейс не найден. ", "Vaka bulunamadı. ", "Case not found. ")}
           <Link href="/hoeren" className="text-teal-600 hover:underline">
-            {tr("Ro‘yxatga qaytish", "Вернуться к списку", "Listeye dön")}
+            {tr("Ro‘yxatga qaytish", "Вернуться к списку", "Listeye dön", "Back to the list")}
           </Link>
         </p>
       </div>
@@ -129,7 +131,7 @@ export function HoerenPage() {
   return (
     <div className="page">
       <Link href="/hoeren" className="text-sm muted hover:text-teal-600">
-        ← {tr("Barcha mashqlar", "Все упражнения", "Tüm alıştırmalar")}
+        ← {tr("Barcha mashqlar", "Все упражнения", "Tüm alıştırmalar", "All exercises")}
       </Link>
       <h1 className="mt-3 text-2xl font-bold sm:text-3xl">🎧 {c.patient.hauptbeschwerde}</h1>
       <p className="mt-1 muted">
@@ -147,7 +149,9 @@ export function HoerenPage() {
               playing ? "bg-rose-600 hover:bg-rose-700" : "bg-teal-600 hover:bg-teal-700 disabled:opacity-40",
             )}
             aria-label={
-              playing ? tr("To‘xtatish", "Остановить", "Durdur") : tr("Tinglash", "Слушать", "Dinle")
+              playing
+                ? tr("To‘xtatish", "Остановить", "Durdur", "Stop")
+                : tr("Tinglash", "Слушать", "Dinle", "Listen")
             }
           >
             {playing ? "⏹" : "▶"}
@@ -155,11 +159,12 @@ export function HoerenPage() {
           <div className="flex-1">
             <p className="font-semibold">
               {playing
-                ? tr("Bemor gapiryapti…", "Пациент говорит…", "Hasta konuşuyor…")
+                ? tr("Bemor gapiryapti…", "Пациент говорит…", "Hasta konuşuyor…", "The patient is speaking…")
                 : tr(
                     "Tinglang va eshitganingizni pastga yozing",
                     "Слушайте и записывайте услышанное ниже",
                     "Dinleyin ve duyduklarınızı aşağıya yazın",
+                    "Listen and write down what you hear below",
                   )}
             </p>
             <ProgressBar
@@ -172,11 +177,13 @@ export function HoerenPage() {
                     `Imtihon rejimi: yana ${left} marta tinglash mumkin`,
                     `Режим экзамена: осталось прослушиваний — ${left}`,
                     `Sınav modu: ${left} kez daha dinleyebilirsiniz`,
+                    `Exam mode: you can listen ${left} more time(s)`,
                   )
                 : tr(
                     "Mashq rejimi: cheklovsiz",
                     "Режим тренировки: без ограничений",
                     "Alıştırma modu: sınırsız",
+                    "Practice mode: unlimited",
                   )}
               {voiceName() && ` · ${voiceName()}`}
             </p>
@@ -204,6 +211,7 @@ export function HoerenPage() {
               `Imtihon rejimi (${EXAM_PLAYS} marta)`,
               `Режим экзамена (${EXAM_PLAYS} раза)`,
               `Sınav modu (${EXAM_PLAYS} kez)`,
+              `Exam mode (${EXAM_PLAYS} times)`,
             )}
           </label>
         </div>
@@ -216,6 +224,7 @@ export function HoerenPage() {
             "Qaydlaringiz (nemischa, qisqa)",
             "Ваши заметки (по-немецки, кратко)",
             "Notlarınız (Almanca, kısa)",
+            "Your notes (in German, short)",
           )}
         </h2>
         <div className="grid gap-3 sm:grid-cols-2">
@@ -253,7 +262,12 @@ export function HoerenPage() {
                     lang="de"
                   >
                     <span className="muted">
-                      {tr("Bemor aytgan: ", "Пациент сказал: ", "Hastanın söyledikleri: ")}
+                      {tr(
+                        "Bemor aytgan: ",
+                        "Пациент сказал: ",
+                        "Hastanın söyledikleri: ",
+                        "The patient said: ",
+                      )}
                     </span>
                     „{r.answer}“
                   </span>
@@ -269,11 +283,11 @@ export function HoerenPage() {
               onClick={check}
               disabled={!Object.values(notes).some((v) => v.trim())}
             >
-              {tr("Tekshirish", "Проверить", "Kontrol et")}
+              {tr("Tekshirish", "Проверить", "Kontrol et", "Check")}
             </button>
           ) : (
             <button className="btn-outline" onClick={reset}>
-              {tr("Qaytadan", "Заново", "Yeniden")}
+              {tr("Qaytadan", "Заново", "Yeniden", "Start again")}
             </button>
           )}
         </div>
@@ -282,7 +296,10 @@ export function HoerenPage() {
       {result && (
         <div className="card mt-4">
           <div className="flex flex-col items-center gap-6 sm:flex-row sm:items-start">
-            <ProgressRing value={result.total} label={tr("Tushunish", "Понимание", "Anlama")} />
+            <ProgressRing
+              value={result.total}
+              label={tr("Tushunish", "Понимание", "Anlama", "Comprehension")}
+            />
             <div className="flex-1 text-sm">
               <p className="font-semibold">
                 {result.total >= 75
@@ -290,17 +307,20 @@ export function HoerenPage() {
                       "Juda yaxshi! Bemorni yaxshi tushundingiz.",
                       "Отлично! Вы хорошо поняли пациента.",
                       "Çok iyi! Hastayı iyi anladınız.",
+                      "Excellent! You understood the patient well.",
                     )
                   : result.total >= 50
                     ? tr(
                         "Yomon emas. Raqamlar va tafsilotlarga e’tibor bering.",
                         "Неплохо. Обратите внимание на цифры и детали.",
                         "Fena değil. Sayılara ve ayrıntılara dikkat edin.",
+                        "Not bad. Pay attention to numbers and details.",
                       )
                     : tr(
                         "Yana tinglang: avval 0.8× tezlikda, keyin 1× da.",
                         "Послушайте ещё: сначала на 0.8×, потом на 1×.",
                         "Tekrar dinleyin: önce 0.8× hızda, sonra 1× hızda.",
+                        "Listen again: first at 0.8× speed, then at 1×.",
                       )}
               </p>
               <p className="mt-2 muted">
@@ -308,13 +328,14 @@ export function HoerenPage() {
                   "Ball muhim so‘zlar va raqamlar (doza, muddat) yozilganiga qarab hisoblanadi.",
                   "Балл считается по ключевым словам и цифрам (дозы, сроки), которые вы записали.",
                   "Puan, önemli kelimeleri ve sayıları (doz, süre) yazıp yazmadığınıza göre hesaplanır.",
+                  "The score depends on whether you wrote down the key words and numbers (doses, durations).",
                 )}
               </p>
             </div>
           </div>
           <details className="mt-4">
             <summary className="cursor-pointer text-sm font-semibold">
-              {tr("📄 To‘liq matn", "📄 Полный текст", "📄 Tam metin")}
+              {tr("📄 To‘liq matn", "📄 Полный текст", "📄 Tam metin", "📄 Full text")}
             </summary>
             <p
               lang="de"

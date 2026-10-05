@@ -9,63 +9,80 @@ import { formatDay, LANG, tr } from "../lib/i18n";
 const OFFERS = [
   {
     id: "free",
-    name: tr("Bepul", "Бесплатно", "Ücretsiz"),
+    name: tr("Bepul", "Бесплатно", "Ücretsiz", "Free"),
     price: "$0",
-    note: tr("sinov", "пробный", "deneme"),
+    note: tr("sinov", "пробный", "deneme", "trial"),
     items: [
       tr(
         `Barcha materiallar — 1 kun (${TRIAL_HOURS} soat)`,
         `Все материалы — 1 день (${TRIAL_HOURS} ч)`,
         `Tüm materyaller — 1 gün (${TRIAL_HOURS} saat)`,
+        `All materials — 1 day (${TRIAL_HOURS} hours)`,
       ),
       tr(
         "Fälle, Simulation, Arztbrief, lug‘at, Redemittel",
         "Кейсы, симуляция, Arztbrief, словарь, Redemittel",
         "Vakalar, simülasyon, Arztbrief, sözlük, Redemittel",
+        "Cases, simulation, Arztbrief, dictionary, Redemittel",
       ),
       tr(
         `Prüfung simulyatsiyasi — ${FREE_LIMITS.exam} marta`,
         `Пробный экзамен — ${FREE_LIMITS.exam} раз`,
         `Prüfung simülasyonu — ${FREE_LIMITS.exam} kez`,
+        `Prüfung simulation — ${FREE_LIMITS.exam} time(s)`,
       ),
     ],
   },
   {
     id: "week",
-    name: tr("1 haftalik", "1 неделя", "1 haftalık"),
+    name: tr("1 haftalik", "1 неделя", "1 haftalık", "1 week"),
     price: "$9",
-    note: tr("7 kun", "7 дней", "7 gün"),
+    note: tr("7 kun", "7 дней", "7 gün", "7 days"),
     items: [
-      tr("Barcha materiallar — 7 kun", "Все материалы — 7 дней", "Tüm materyaller — 7 gün"),
+      tr(
+        "Barcha materiallar — 7 kun",
+        "Все материалы — 7 дней",
+        "Tüm materyaller — 7 gün",
+        "All materials — 7 days",
+      ),
       tr(
         "Prüfung simulyatsiyasi — cheklovsiz",
         "Пробный экзамен — без ограничений",
         "Prüfung simülasyonu — sınırsız",
+        "Prüfung simulation — unlimited",
       ),
       tr(
         "Imtihon oldidan jadal tayyorgarlik uchun",
         "Для интенсивной подготовки перед экзаменом",
         "Sınav öncesi yoğun hazırlık için",
+        "For intensive preparation before the exam",
       ),
     ],
   },
   {
     id: "month",
-    name: tr("1 oylik", "1 месяц", "1 aylık"),
+    name: tr("1 oylik", "1 месяц", "1 aylık", "1 month"),
     price: "$15",
-    note: tr("30 kun", "30 дней", "30 gün"),
+    note: tr("30 kun", "30 дней", "30 gün", "30 days"),
     featured: true,
     items: [
-      tr("Barcha materiallar — 30 kun", "Все материалы — 30 дней", "Tüm materyaller — 30 gün"),
+      tr(
+        "Barcha materiallar — 30 kun",
+        "Все материалы — 30 дней",
+        "Tüm materyaller — 30 gün",
+        "All materials — 30 days",
+      ),
       tr(
         "Prüfung simulyatsiyasi — cheklovsiz",
         "Пробный экзамен — без ограничений",
         "Prüfung simülasyonu — sınırsız",
+        "Prüfung simulation — unlimited",
       ),
       tr(
         "Haftalikdan 2 baravardan ko‘proq tejamli",
         "Более чем в 2 раза выгоднее недельного",
         "Haftalık paketten 2 kattan fazla avantajlı",
+        "More than 2× better value than weekly",
       ),
     ],
   },
@@ -78,52 +95,62 @@ export function ProPage() {
   return (
     <div className="page max-w-5xl">
       <PageHeader
-        eyebrow={tr("Tariflar", "Тарифы", "Paketler")}
+        eyebrow={tr("Tariflar", "Тарифы", "Paketler", "Plans")}
         eyebrowLang={LANG}
-        title={tr("OsonFSP tariflari", "Тарифы OsonFSP", "OsonFSP paketleri")}
+        title={tr("OsonFSP tariflari", "Тарифы OsonFSP", "OsonFSP paketleri", "OsonFSP plans")}
         subtitle={tr(
           `Bepul sinovda barcha materiallar ${TRIAL_HOURS} soat ochiq va ${FREE_LIMITS.exam} ta imtihon topshirish mumkin. Keyin davom etish uchun tarif tanlang.`,
           `В пробном режиме все материалы открыты ${TRIAL_HOURS} ч и можно сдать ${FREE_LIMITS.exam} экзамен. Затем выберите тариф, чтобы продолжить.`,
           `Ücretsiz denemede tüm materyaller ${TRIAL_HOURS} saat açıktır ve ${FREE_LIMITS.exam} sınava girebilirsiniz. Sonra devam etmek için bir paket seçin.`,
+          `In the free trial all materials are open for ${TRIAL_HOURS} hours and you can take ${FREE_LIMITS.exam} exam. Then choose a plan to continue.`,
         )}
       />
       {plan ? (
         <p className="card mb-4 border-emerald-300 bg-emerald-50 text-sm dark:border-emerald-900 dark:bg-emerald-950/30">
-          ✅ {tr("Faol tarif", "Активный тариф", "Aktif paket")}:{" "}
+          ✅ {tr("Faol tarif", "Активный тариф", "Aktif paket", "Active plan")}:{" "}
           <b>
             {plan.id === "owner"
-              ? tr("Egasi (test rejimi)", "Владелец (тестовый режим)", "Sahibi (test modu)")
+              ? tr(
+                  "Egasi (test rejimi)",
+                  "Владелец (тестовый режим)",
+                  "Sahibi (test modu)",
+                  "Owner (test mode)",
+                )
               : plan.id === "week"
-                ? tr("1 haftalik", "1 неделя", "1 haftalık")
-                : tr("1 oylik", "1 месяц", "1 aylık")}
+                ? tr("1 haftalik", "1 неделя", "1 haftalık", "1 week")
+                : tr("1 oylik", "1 месяц", "1 aylık", "1 month")}
           </b>{" "}
-          — {tr("", "до ", "")}
+          — {tr("", "до ", "", "until ")}
           {formatDay(plan.until, { year: true })}
-          {tr(" gacha", "", " tarihine kadar")}.
+          {tr(" gacha", "", " tarihine kadar", "")}.
         </p>
       ) : (
         <div className="card mb-4 text-sm">
           <h2 className="section-title">
-            {tr("Bepul sinovingiz", "Ваш пробный доступ", "Ücretsiz denemeniz")}
+            {tr("Bepul sinovingiz", "Ваш пробный доступ", "Ücretsiz denemeniz", "Your free trial")}
           </h2>
           <div className="grid gap-2 sm:grid-cols-2">
             <div className="rounded-xl bg-slate-50 p-3 dark:bg-slate-800/60">
-              <div className="text-xs muted">{tr("Materiallar", "Материалы", "Materyaller")}</div>
+              <div className="text-xs muted">
+                {tr("Materiallar", "Материалы", "Materyaller", "Materials")}
+              </div>
               <b className="text-lg">
                 {trialActive
-                  ? tr(`${hours} soat`, `${hours} ч`, `${hours} saat`)
-                  : tr("tugadi", "закончился", "sona erdi")}
+                  ? tr(`${hours} soat`, `${hours} ч`, `${hours} saat`, `${hours} hours`)
+                  : tr("tugadi", "закончился", "sona erdi", "ended")}
               </b>{" "}
-              {trialActive && <span className="text-xs muted">{tr("qoldi", "осталось", "kaldı")}</span>}
+              {trialActive && (
+                <span className="text-xs muted">{tr("qoldi", "осталось", "kaldı", "left")}</span>
+              )}
             </div>
             <div className="rounded-xl bg-slate-50 p-3 dark:bg-slate-800/60">
               <div className="text-xs muted">
-                {tr("Prüfung simulyatsiyasi", "Пробный экзамен", "Prüfung simülasyonu")}
+                {tr("Prüfung simulyatsiyasi", "Пробный экзамен", "Prüfung simülasyonu", "Prüfung simulation")}
               </div>
               <b className="text-lg">
                 {left("exam")} / {limit("exam")}
               </b>{" "}
-              <span className="text-xs muted">{tr("qoldi", "осталось", "kaldı")}</span>
+              <span className="text-xs muted">{tr("qoldi", "осталось", "kaldı", "left")}</span>
             </div>
           </div>
         </div>
@@ -139,7 +166,7 @@ export function ProPage() {
           >
             {o.featured && (
               <span className="badge mb-2 self-start bg-teal-600 text-white">
-                {tr("Tavsiya etiladi", "Рекомендуем", "Önerilen")}
+                {tr("Tavsiya etiladi", "Рекомендуем", "Önerilen", "Recommended")}
               </span>
             )}
             <h2 className="h-title">{o.name}</h2>
@@ -157,7 +184,7 @@ export function ProPage() {
             </ul>
             {o.id === "free" ? (
               <Link href="/faelle" className="btn-outline mt-5 w-full">
-                {tr("Sinov", "Попробовать", "Deneme")}
+                {tr("Sinov", "Попробовать", "Deneme", "Trial")}
               </Link>
             ) : (
               <button
@@ -167,7 +194,7 @@ export function ProPage() {
                   setAsked(o);
                 }}
               >
-                {tr("Sotib olish", "Купить", "Satın al")}
+                {tr("Sotib olish", "Купить", "Satın al", "Buy")}
               </button>
             )}
           </div>
@@ -186,6 +213,7 @@ export function ProPage() {
               "Onlayn to‘lov tez orada ulanadi. So‘rovingiz qayd etildi — to‘lov ishga tushishi bilan shu sahifada sotib olishingiz mumkin bo‘ladi.",
               "Онлайн-оплата скоро будет подключена. Ваш запрос учтён — как только оплата заработает, купить можно будет на этой странице.",
               "Online ödeme yakında eklenecek. Talebiniz kaydedildi — ödeme açılır açılmaz bu sayfadan satın alabileceksiniz.",
+              "Online payment is coming soon. Your request has been noted — as soon as payment is live, you will be able to buy on this page.",
             )}
           </p>
         </div>

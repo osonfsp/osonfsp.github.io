@@ -35,6 +35,7 @@ export function ProgressTransfer() {
             "Kod nusxalandi. Endi uni boshqa qurilmada joylang.",
             "Код скопирован. Теперь вставьте его на другом устройстве.",
             "Kod kopyalandı. Şimdi diğer cihaza yapıştırın.",
+            "Code copied. Now paste it on the other device.",
           ),
         });
       } catch {
@@ -44,6 +45,7 @@ export function ProgressTransfer() {
             "Avtomatik nusxalab bo‘lmadi — kodni qo‘lda belgilab nusxalang.",
             "Не удалось скопировать автоматически — выделите и скопируйте код вручную.",
             "Otomatik kopyalanamadı — kodu elle seçip kopyalayın.",
+            "Could not copy automatically — select and copy the code manually.",
           ),
         });
       }
@@ -59,6 +61,7 @@ export function ProgressTransfer() {
               "Progress muvaffaqiyatli yuklandi ✅",
               "Прогресс успешно загружен ✅",
               "İlerleme başarıyla yüklendi ✅",
+              "Progress loaded successfully ✅",
             ),
           }));
       } catch {
@@ -68,6 +71,7 @@ export function ProgressTransfer() {
             "Kod noto‘g‘ri yoki to‘liq emas. Qaytadan nusxalab ko‘ring.",
             "Код неверный или неполный. Скопируйте его ещё раз.",
             "Kod hatalı veya eksik. Yeniden kopyalayıp deneyin.",
+            "The code is wrong or incomplete. Copy it again and retry.",
           ),
         });
       }
@@ -79,6 +83,7 @@ export function ProgressTransfer() {
           "Progressni boshqa qurilmaga ko‘chirish",
           "Перенос прогресса на другое устройство",
           "İlerlemeyi başka cihaza taşı",
+          "Move progress to another device",
         )}
       </h2>
       <p className="mb-4 text-sm muted">
@@ -86,12 +91,13 @@ export function ProgressTransfer() {
           "Telefon va kompyuter progressi alohida saqlanadi. Bir qurilmada kodni nusxalang, ikkinchisida joylang — progress to‘liq ko‘chadi (u yerdagi eski progress almashtiriladi).",
           "Прогресс на телефоне и компьютере хранится отдельно. Скопируйте код на одном устройстве и вставьте на другом — прогресс перенесётся полностью (старый прогресс там будет заменён).",
           "Telefon ve bilgisayardaki ilerleme ayrı saklanır. Bir cihazda kodu kopyalayın, diğerine yapıştırın — ilerleme tamamen taşınır (oradaki eski ilerlemenin yerini alır).",
+          "Progress on your phone and computer is stored separately. Copy the code on one device and paste it on the other — all progress is transferred (the old progress there is replaced).",
         )}
       </p>
       <div className="grid gap-4 lg:grid-cols-2">
         <div>
           <p className="mb-2 text-sm font-medium">
-            1. {tr("Shu qurilmadagi kod", "Код этого устройства", "Bu cihazın kodu")}
+            1. {tr("Shu qurilmadagi kod", "Код этого устройства", "Bu cihazın kodu", "This device’s code")}
           </p>
           <textarea
             readOnly
@@ -100,12 +106,18 @@ export function ProgressTransfer() {
             className="input h-24 w-full resize-none font-mono text-xs"
           />
           <button type="button" className="btn-primary mt-2" onClick={c}>
-            {tr("Kodni nusxalash", "Скопировать код", "Kodu kopyala")}
+            {tr("Kodni nusxalash", "Скопировать код", "Kodu kopyala", "Copy code")}
           </button>
         </div>
         <div>
           <p className="mb-2 text-sm font-medium">
-            2. {tr("Boshqa qurilmadan olingan kod", "Код с другого устройства", "Başka cihazdan alınan kod")}
+            2.{" "}
+            {tr(
+              "Boshqa qurilmadan olingan kod",
+              "Код с другого устройства",
+              "Başka cihazdan alınan kod",
+              "Code from another device",
+            )}
           </p>
           <textarea
             value={n}
@@ -114,7 +126,7 @@ export function ProgressTransfer() {
             className="input h-24 w-full resize-none font-mono text-xs"
           />
           <button type="button" className="btn-outline mt-2" disabled={!n.trim()} onClick={h}>
-            {tr("Progressni yuklash", "Загрузить прогресс", "İlerlemeyi yükle")}
+            {tr("Progressni yuklash", "Загрузить прогресс", "İlerlemeyi yükle", "Load progress")}
           </button>
         </div>
       </div>

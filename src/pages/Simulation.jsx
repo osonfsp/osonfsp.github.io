@@ -55,26 +55,37 @@ function SimulationView() {
     <div className="page">
       <PageHeader
         eyebrow="Patienten-Simulation"
-        title={tr("Bemor bilan anamnez", "Сбор анамнеза у пациента", "Hastayla anamnez")}
+        title={tr(
+          "Bemor bilan anamnez",
+          "Сбор анамнеза у пациента",
+          "Hastayla anamnez",
+          "History taking with the patient",
+        )}
         subtitle={tr(
           "Siz — Arzt, virtual bemor — Patient. Bemor hamma narsani biladi, lekin faqat siz so‘ragan narsani aytadi.",
           "Вы — Arzt, виртуальный пациент — Patient. Пациент знает всё, но отвечает только на то, что вы спросили.",
           "Siz Arzt’sınız, sanal hasta ise Patient. Hasta her şeyi bilir ama yalnızca sizin sorduğunuzu söyler.",
+          "You are the Arzt, the virtual patient is the Patient. The patient knows everything but only tells you what you ask.",
         )}
       >
         <button
           type="button"
           className="btn-outline"
           onClick={() => t.replace(`/simulation?case=${randomCase(pr.solvedCases, i.id)}`)}
-          title={tr("Boshqa tasodifiy Fall", "Другой случайный кейс", "Başka rastgele vaka")}
+          title={tr(
+            "Boshqa tasodifiy Fall",
+            "Другой случайный кейс",
+            "Başka rastgele vaka",
+            "Another random case",
+          )}
         >
-          🎲 {tr("Tasodifiy", "Случайный", "Rastgele")}
+          🎲 {tr("Tasodifiy", "Случайный", "Rastgele", "Random")}
         </button>
         <select
           className="input min-w-0 flex-1 sm:w-80 sm:flex-none"
           value={i.id}
           onChange={(g) => t.replace(`/simulation?case=${g.target.value}`)}
-          aria-label={tr("Fall tanlash", "Выбор кейса", "Vaka seçimi")}
+          aria-label={tr("Fall tanlash", "Выбор кейса", "Vaka seçimi", "Choose a case")}
         >
           {CASE_SECTIONS.map((sec) => (
             <optgroup key={sec.id} label={sec.label}>
@@ -95,14 +106,22 @@ function SimulationView() {
           <PatientChat caseData={i} messages={l} onMessages={s} />
           <aside className="space-y-4">
             <div className="card">
-              <h2 className="section-title">{tr("Vazifa", "Задание", "Görev")}</h2>
+              <h2 className="section-title">{tr("Vazifa", "Задание", "Görev", "Task")}</h2>
               <ol className="list-decimal space-y-1.5 pl-4 text-sm">
-                <li>{tr("O‘zingizni tanishtiring.", "Представьтесь.", "Kendinizi tanıtın.")}</li>
+                <li>
+                  {tr(
+                    "O‘zingizni tanishtiring.",
+                    "Представьтесь.",
+                    "Kendinizi tanıtın.",
+                    "Introduce yourself.",
+                  )}
+                </li>
                 <li>
                   {tr(
                     "Tizimli anamnez oling (12 mavzu).",
                     "Соберите анамнез систематически (12 тем).",
                     "Sistemli anamnez alın (12 konu).",
+                    "Take a systematic history (12 topics).",
                   )}
                 </li>
                 <li>
@@ -110,6 +129,7 @@ function SimulationView() {
                     "Bemor bilan sodda tilda gaplashing.",
                     "Говорите с пациентом простым языком.",
                     "Hastayla sade bir dille konuşun.",
+                    "Talk to the patient in plain language.",
                   )}
                 </li>
                 <li>
@@ -117,16 +137,22 @@ function SimulationView() {
                     "Oxirida Fachsprache’da qisqa xulosa yozing.",
                     "В конце напишите краткое резюме на Fachsprache.",
                     "Sonunda Fachsprache ile kısa bir özet yazın.",
+                    "At the end, write a short summary in Fachsprache.",
                   )}
                 </li>
               </ol>
             </div>
             <button className="btn-primary w-full" disabled={D < 1} onClick={() => c("summary")}>
-              {tr("Anamnezni yakunlash →", "Завершить анамнез →", "Anamnezi bitir →")}
+              {tr("Anamnezni yakunlash →", "Завершить анамнез →", "Anamnezi bitir →", "Finish history →")}
             </button>
             {D < 1 && (
               <p className="text-xs muted">
-                {tr("Kamida bitta savol bering.", "Задайте хотя бы один вопрос.", "En az bir soru sorun.")}
+                {tr(
+                  "Kamida bitta savol bering.",
+                  "Задайте хотя бы один вопрос.",
+                  "En az bir soru sorun.",
+                  "Ask at least one question.",
+                )}
               </p>
             )}
           </aside>
@@ -135,13 +161,14 @@ function SimulationView() {
       {r === "summary" && (
         <div className="card mx-auto max-w-3xl">
           <h2 className="h-title">
-            {tr("Fachsprache xulosasi", "Резюме на Fachsprache", "Fachsprache özeti")}
+            {tr("Fachsprache xulosasi", "Резюме на Fachsprache", "Fachsprache özeti", "Fachsprache summary")}
           </h2>
           <p className="mt-1 text-sm muted">
             {tr(
               "Yig‘ilgan anamnezni 3–5 gapda Fachsprache’da yozing (ixtiyoriy, lekin tavsiya etiladi).",
               "Изложите собранный анамнез в 3–5 предложениях на Fachsprache (необязательно, но рекомендуется).",
               "Alınan anamnezi 3–5 cümleyle Fachsprache ile yazın (isteğe bağlı ama önerilir).",
+              "Summarise the history in 3–5 sentences in Fachsprache (optional but recommended).",
             )}
           </p>
           <textarea
@@ -153,12 +180,12 @@ function SimulationView() {
           />
           <div className="mt-4 flex flex-wrap items-center justify-between gap-3">
             <button className="btn-ghost" onClick={() => c("chat")}>
-              ← {tr("Suhbatga qaytish", "Вернуться к беседе", "Görüşmeye dön")}
+              ← {tr("Suhbatga qaytish", "Вернуться к беседе", "Görüşmeye dön", "Back to the conversation")}
             </button>
             <div className="flex items-center gap-3">
               {y && <Spinner />}
               <button className="btn-primary" onClick={w} disabled={y}>
-                {tr("Baholash", "Оценить", "Değerlendir")}
+                {tr("Baholash", "Оценить", "Değerlendir", "Assess")}
               </button>
             </div>
           </div>
@@ -188,16 +215,18 @@ function SimulationView() {
                   (s([]), b(""), A(null), c("chat"));
                 }}
               >
-                {tr("Qaytadan urinish", "Попробовать снова", "Tekrar dene")}
+                {tr("Qaytadan urinish", "Попробовать снова", "Tekrar dene", "Try again")}
               </button>
               <Link href={`/faelle/${i.id}`} className="btn-outline">
-                {tr("Fall tafsilotlari", "Подробности кейса", "Vaka ayrıntıları")}
+                {tr("Fall tafsilotlari", "Подробности кейса", "Vaka ayrıntıları", "Case details")}
               </Link>
             </div>
             <Disclaimer />
           </div>
           <div className="card">
-            <h2 className="mb-4 h-title">{tr("Batafsil tahlil", "Подробный разбор", "Ayrıntılı analiz")}</h2>
+            <h2 className="mb-4 h-title">
+              {tr("Batafsil tahlil", "Подробный разбор", "Ayrıntılı analiz", "Detailed analysis")}
+            </h2>
             <FeedbackList items={p.feedback} />
           </div>
         </div>
@@ -211,7 +240,7 @@ export function SimulationPage() {
     <Suspense
       fallback={
         <div className="page">
-          <Spinner label={tr("Yuklanmoqda…", "Загрузка…", "Yükleniyor…")} />
+          <Spinner label={tr("Yuklanmoqda…", "Загрузка…", "Yükleniyor…", "Loading…")} />
         </div>
       }
     >

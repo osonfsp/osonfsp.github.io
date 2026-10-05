@@ -8,12 +8,12 @@ export const TRIAL_HOURS = 24;
 export const FREE_LIMITS = { exam: 1 };
 
 export const PRACTICE = {
-  exam: tr("Prüfung simulyatsiyasi", "Пробный экзамен", "Prüfung simülasyonu"),
+  exam: tr("Prüfung simulyatsiyasi", "Пробный экзамен", "Prüfung simülasyonu", "Prüfung simulation"),
 };
 
 export const PLANS = [
-  { id: "week", name: tr("1 haftalik", "1 неделя", "1 haftalık"), price: "$9", days: 7 },
-  { id: "month", name: tr("1 oylik", "1 месяц", "1 aylık"), price: "$15", days: 30 },
+  { id: "week", name: tr("1 haftalik", "1 неделя", "1 haftalık", "1 week"), price: "$9", days: 7 },
+  { id: "month", name: tr("1 oylik", "1 месяц", "1 aylık", "1 month"), price: "$15", days: 30 },
 ];
 
 const USAGE_KEY = "fsp.usage",

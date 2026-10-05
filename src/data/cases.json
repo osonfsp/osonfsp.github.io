@@ -42,35 +42,40 @@
         "patient": "Brustschmerzen",
         "uz": "ko‘krak qafasidagi og‘riq",
         "ru": "боль в грудной клетке",
-        "tr": "göğüs ağrısı"
+        "tr": "göğüs ağrısı",
+        "en": "chest pain"
       },
       {
         "de": "retrosternal",
         "patient": "hinter dem Brustbein",
         "uz": "to‘sh suyagi orqasida",
         "ru": "за грудиной",
-        "tr": "göğüs kemiğinin arkasında"
+        "tr": "göğüs kemiğinin arkasında",
+        "en": "behind the breastbone"
       },
       {
         "de": "Nausea",
         "patient": "Übelkeit",
         "uz": "ko‘ngil aynishi",
         "ru": "тошнота",
-        "tr": "bulantı"
+        "tr": "bulantı",
+        "en": "nausea"
       },
       {
         "de": "Diaphorese",
         "patient": "starkes Schwitzen",
         "uz": "kuchli terlash",
         "ru": "обильное потоотделение",
-        "tr": "aşırı terleme"
+        "tr": "aşırı terleme",
+        "en": "heavy sweating"
       },
       {
         "de": "Myokardinfarkt",
         "patient": "Herzinfarkt",
         "uz": "miokard infarkti",
         "ru": "инфаркт миокарда",
-        "tr": "miyokard enfarktüsü"
+        "tr": "miyokard enfarktüsü",
+        "en": "myocardial infarction"
       }
     ],
     "simulation": {
@@ -134,35 +139,40 @@
         "patient": "Lungenentzündung",
         "uz": "zotiljam (pnevmoniya)",
         "ru": "пневмония",
-        "tr": "zatürre (pnömoni)"
+        "tr": "zatürre (pnömoni)",
+        "en": "pneumonia"
       },
       {
         "de": "Auswurf (Sputum)",
         "patient": "Schleim abhusten",
         "uz": "balg‘am",
         "ru": "мокрота",
-        "tr": "balgam"
+        "tr": "balgam",
+        "en": "sputum"
       },
       {
         "de": "Belastungsdyspnoe",
         "patient": "Atemnot bei Anstrengung",
         "uz": "jismoniy zo‘riqishda nafas qisishi",
         "ru": "одышка при нагрузке",
-        "tr": "eforla nefes darlığı"
+        "tr": "eforla nefes darlığı",
+        "en": "shortness of breath on exertion"
       },
       {
         "de": "Schüttelfrost",
         "patient": "Zittern vor Kälte bei Fieber",
         "uz": "et uvishib qaltirash",
         "ru": "озноб",
-        "tr": "titreme (üşüme ile)"
+        "tr": "titreme (üşüme ile)",
+        "en": "chills with shivering"
       },
       {
         "de": "Hämoptysen",
         "patient": "Blut abhusten",
         "uz": "qon tupurish",
         "ru": "кровохарканье",
-        "tr": "kan tükürme"
+        "tr": "kan tükürme",
+        "en": "coughing up blood"
       }
     ],
     "simulation": {
@@ -226,35 +236,40 @@
         "patient": "Gallenblasenentzündung",
         "uz": "xoletsistit (o‘t pufagi yallig‘lanishi)",
         "ru": "холецистит (воспаление желчного пузыря)",
-        "tr": "kolesistit (safra kesesi iltihabı)"
+        "tr": "kolesistit (safra kesesi iltihabı)",
+        "en": "cholecystitis (inflammation of the gallbladder)"
       },
       {
         "de": "Cholezystolithiasis",
         "patient": "Gallensteine",
         "uz": "o‘t pufagida tosh",
         "ru": "камни в желчном пузыре",
-        "tr": "safra kesesi taşı"
+        "tr": "safra kesesi taşı",
+        "en": "gallstones"
       },
       {
         "de": "kolikartig",
         "patient": "krampfartig, in Wellen",
         "uz": "sanchiqsimon, to‘lqinsimon",
         "ru": "коликообразный, волнообразный",
-        "tr": "kolik tarzında, dalga dalga"
+        "tr": "kolik tarzında, dalga dalga",
+        "en": "colicky, wave-like"
       },
       {
         "de": "Emesis",
         "patient": "Erbrechen",
         "uz": "qusish",
         "ru": "рвота",
-        "tr": "kusma"
+        "tr": "kusma",
+        "en": "vomiting"
       },
       {
         "de": "Ikterus",
         "patient": "Gelbsucht",
         "uz": "sariqlik",
         "ru": "желтуха",
-        "tr": "sarılık"
+        "tr": "sarılık",
+        "en": "jaundice"
       }
     ],
     "simulation": {
@@ -318,35 +333,40 @@
         "patient": "Halbseitenlähmung, Schwäche auf einer Seite",
         "uz": "bir tomonlama falajlik (gemiparez)",
         "ru": "односторонний парез (гемипарез)",
-        "tr": "tek taraflı felç (hemiparezi)"
+        "tr": "tek taraflı felç (hemiparezi)",
+        "en": "one-sided weakness (hemiparesis)"
       },
       {
         "de": "Dysarthrie",
         "patient": "verwaschene Sprache",
         "uz": "nutqning noaniqligi (dizartriya)",
         "ru": "нечёткая речь (дизартрия)",
-        "tr": "konuşmanın netleşmemesi (dizartri)"
+        "tr": "konuşmanın netleşmemesi (dizartri)",
+        "en": "slurred speech (dysarthria)"
       },
       {
         "de": "Apoplex",
         "patient": "Schlaganfall",
         "uz": "insult",
         "ru": "инсульт",
-        "tr": "inme"
+        "tr": "inme",
+        "en": "stroke"
       },
       {
         "de": "Vorhofflimmern",
         "patient": "unregelmäßiger Herzschlag",
         "uz": "bo‘lmachalar fibrillyatsiyasi",
         "ru": "фибрилляция предсердий",
-        "tr": "atriyal fibrilasyon"
+        "tr": "atriyal fibrilasyon",
+        "en": "atrial fibrillation"
       },
       {
         "de": "Antikoagulation",
         "patient": "Blutverdünnung",
         "uz": "qonni suyultirish (antikoagulyatsiya)",
         "ru": "антикоагуляция (разжижение крови)",
-        "tr": "kan sulandırma (antikoagülasyon)"
+        "tr": "kan sulandırma (antikoagülasyon)",
+        "en": "blood thinning (anticoagulation)"
       }
     ],
     "simulation": {
@@ -410,35 +430,40 @@
         "patient": "Nierenbeckenentzündung",
         "uz": "pielonefrit",
         "ru": "пиелонефрит",
-        "tr": "piyelonefrit"
+        "tr": "piyelonefrit",
+        "en": "pyelonephritis"
       },
       {
         "de": "Dysurie",
         "patient": "Brennen beim Wasserlassen",
         "uz": "siyishda achishish",
         "ru": "жжение при мочеиспускании",
-        "tr": "idrar yaparken yanma"
+        "tr": "idrar yaparken yanma",
+        "en": "burning on urination"
       },
       {
         "de": "Pollakisurie",
         "patient": "häufiges Wasserlassen kleiner Mengen",
         "uz": "tez-tez oz-ozdan siyish",
         "ru": "учащённое мочеиспускание малыми порциями",
-        "tr": "sık sık az miktarda idrar yapma"
+        "tr": "sık sık az miktarda idrar yapma",
+        "en": "frequent passing of small amounts of urine"
       },
       {
         "de": "Flankenschmerz",
         "patient": "Schmerzen an der Seite",
         "uz": "biqindagi og‘riq",
         "ru": "боль в боку",
-        "tr": "böğür ağrısı"
+        "tr": "böğür ağrısı",
+        "en": "flank pain"
       },
       {
         "de": "Nierenlagerklopfschmerz",
         "patient": "Schmerz beim Abklopfen der Niere",
         "uz": "buyrak sohasini urganda og‘riq",
         "ru": "боль при поколачивании в области почек",
-        "tr": "böbrek bölgesine vurmakla ağrı"
+        "tr": "böbrek bölgesine vurmakla ağrı",
+        "en": "pain on tapping over the kidney"
       }
     ],
     "simulation": {
@@ -502,35 +527,40 @@
         "patient": "großer Durst",
         "uz": "kuchli chanqoq",
         "ru": "сильная жажда",
-        "tr": "aşırı susama"
+        "tr": "aşırı susama",
+        "en": "intense thirst"
       },
       {
         "de": "Polyurie",
         "patient": "viel Wasserlassen",
         "uz": "ko‘p siyish",
         "ru": "обильное мочеиспускание",
-        "tr": "çok idrar yapma"
+        "tr": "çok idrar yapma",
+        "en": "passing a lot of urine"
       },
       {
         "de": "Nykturie",
         "patient": "nachts Wasser lassen müssen",
         "uz": "tunda siyish",
         "ru": "ночное мочеиспускание",
-        "tr": "gece idrara çıkma"
+        "tr": "gece idrara çıkma",
+        "en": "urinating at night"
       },
       {
         "de": "Parästhesien",
         "patient": "Kribbeln, Ameisenlaufen",
         "uz": "uvishish",
         "ru": "онемение, покалывание",
-        "tr": "uyuşma, karıncalanma"
+        "tr": "uyuşma, karıncalanma",
+        "en": "numbness, tingling"
       },
       {
         "de": "Hyperglykämie",
         "patient": "zu hoher Zucker",
         "uz": "giperglikemiya (qand miqdori yuqori)",
         "ru": "гипергликемия (высокий сахар)",
-        "tr": "hiperglisemi (yüksek kan şekeri)"
+        "tr": "hiperglisemi (yüksek kan şekeri)",
+        "en": "hyperglycaemia (high blood sugar)"
       }
     ],
     "simulation": {
@@ -599,35 +629,40 @@
         "patient": "Blinddarmentzündung",
         "uz": "appenditsit",
         "ru": "аппендицит",
-        "tr": "apandisit"
+        "tr": "apandisit",
+        "en": "appendicitis"
       },
       {
         "de": "periumbilikal",
         "patient": "um den Bauchnabel herum",
         "uz": "kindik atrofida",
         "ru": "в области пупка",
-        "tr": "göbek çevresinde"
+        "tr": "göbek çevresinde",
+        "en": "around the navel"
       },
       {
         "de": "Inappetenz",
         "patient": "keinen Appetit",
         "uz": "ishtahasizlik",
         "ru": "отсутствие аппетита",
-        "tr": "iştahsızlık"
+        "tr": "iştahsızlık",
+        "en": "loss of appetite"
       },
       {
         "de": "Loslassschmerz",
         "patient": "Schmerz, wenn man loslässt",
         "uz": "qo‘lni tez olganda og‘riq (Blumberg)",
         "ru": "боль при резком отпускании (Щёткин–Блюмберг)",
-        "tr": "elin aniden çekilmesiyle ağrı (Blumberg)"
+        "tr": "elin aniden çekilmesiyle ağrı (Blumberg)",
+        "en": "pain on quick release of pressure (Blumberg)"
       },
       {
         "de": "Appendektomie",
         "patient": "Blinddarm-OP",
         "uz": "appendektomiya",
         "ru": "аппендэктомия",
-        "tr": "apendektomi"
+        "tr": "apendektomi",
+        "en": "appendectomy"
       }
     ],
     "simulation": {
@@ -696,35 +731,40 @@
         "patient": "Kopfschmerzen",
         "uz": "bosh og‘rig‘i",
         "ru": "головная боль",
-        "tr": "baş ağrısı"
+        "tr": "baş ağrısı",
+        "en": "headache"
       },
       {
         "de": "okzipital",
         "patient": "am Hinterkopf",
         "uz": "ensa sohasida",
         "ru": "в затылочной области",
-        "tr": "ense bölgesinde"
+        "tr": "ense bölgesinde",
+        "en": "in the back of the head"
       },
       {
         "de": "Schwankschwindel",
         "patient": "Schwindel wie auf einem Schiff",
         "uz": "chayqaluvchi bosh aylanishi",
         "ru": "шаткое головокружение",
-        "tr": "sallantılı baş dönmesi"
+        "tr": "sallantılı baş dönmesi",
+        "en": "unsteady dizziness"
       },
       {
         "de": "Tinnitus",
         "patient": "Ohrensausen",
         "uz": "quloq shang‘illashi",
         "ru": "шум в ушах",
-        "tr": "kulak çınlaması"
+        "tr": "kulak çınlaması",
+        "en": "ringing in the ears"
       },
       {
         "de": "arterielle Hypertonie",
         "patient": "Bluthochdruck",
         "uz": "arterial gipertenziya",
         "ru": "артериальная гипертензия",
-        "tr": "arteriyel hipertansiyon"
+        "tr": "arteriyel hipertansiyon",
+        "en": "arterial hypertension"
       }
     ],
     "simulation": {
@@ -793,35 +833,40 @@
         "patient": "Blutgerinnsel",
         "uz": "tromboz (qon laxtasi)",
         "ru": "тромбоз (сгусток крови)",
-        "tr": "tromboz (kan pıhtısı)"
+        "tr": "tromboz (kan pıhtısı)",
+        "en": "thrombosis (blood clot)"
       },
       {
         "de": "Ödem",
         "patient": "Schwellung, Wassereinlagerung",
         "uz": "shish",
         "ru": "отёк",
-        "tr": "ödem (şişlik)"
+        "tr": "ödem (şişlik)",
+        "en": "swelling (oedema)"
       },
       {
         "de": "Varikosis",
         "patient": "Krampfadern",
         "uz": "varikoz (venalarning kengayishi)",
         "ru": "варикоз (расширение вен)",
-        "tr": "varis (toplardamarların genişlemesi)"
+        "tr": "varis (toplardamarların genişlemesi)",
+        "en": "varicose veins"
       },
       {
         "de": "Lungenembolie",
         "patient": "Blutgerinnsel in der Lunge",
         "uz": "o‘pka emboliyasi",
         "ru": "тромбоэмболия лёгочной артерии",
-        "tr": "pulmoner emboli"
+        "tr": "pulmoner emboli",
+        "en": "pulmonary embolism"
       },
       {
         "de": "Antikoagulation",
         "patient": "Blutverdünnung",
         "uz": "antikoagulyatsiya",
         "ru": "антикоагуляция",
-        "tr": "antikoagülasyon"
+        "tr": "antikoagülasyon",
+        "en": "anticoagulation"
       }
     ],
     "simulation": {
@@ -885,35 +930,40 @@
         "patient": "Herzschwäche",
         "uz": "yurak yetishmovchiligi",
         "ru": "сердечная недостаточность",
-        "tr": "kalp yetmezliği"
+        "tr": "kalp yetmezliği",
+        "en": "heart failure"
       },
       {
         "de": "Orthopnoe",
         "patient": "Atemnot im Liegen",
         "uz": "yotganda nafas qisishi (ortopnoe)",
         "ru": "одышка в положении лёжа (ортопноэ)",
-        "tr": "yatınca nefes darlığı (ortopne)"
+        "tr": "yatınca nefes darlığı (ortopne)",
+        "en": "shortness of breath lying down (orthopnoea)"
       },
       {
         "de": "Unterschenkelödeme",
         "patient": "geschwollene Beine",
         "uz": "boldir shishlari",
         "ru": "отёки голеней",
-        "tr": "bacaklarda ödem"
+        "tr": "bacaklarda ödem",
+        "en": "swollen lower legs"
       },
       {
         "de": "Diuretikum",
         "patient": "Wassertablette",
         "uz": "siydik haydovchi dori",
         "ru": "мочегонное",
-        "tr": "idrar söktürücü ilaç"
+        "tr": "idrar söktürücü ilaç",
+        "en": "water tablet (diuretic)"
       },
       {
         "de": "Nykturie",
         "patient": "nachts Wasser lassen müssen",
         "uz": "tunda siyish",
         "ru": "ночное мочеиспускание",
-        "tr": "gece idrara çıkma"
+        "tr": "gece idrara çıkma",
+        "en": "urinating at night"
       }
     ],
     "simulation": {
@@ -986,35 +1036,40 @@
         "patient": "Blutgerinnsel in der Lunge",
         "uz": "o‘pka arteriyasi emboliyasi",
         "ru": "тромбоэмболия лёгочной артерии",
-        "tr": "pulmoner arter embolisi"
+        "tr": "pulmoner arter embolisi",
+        "en": "pulmonary artery embolism"
       },
       {
         "de": "Hämoptyse",
         "patient": "Bluthusten",
         "uz": "qon tupurish",
         "ru": "кровохарканье",
-        "tr": "kan tükürme"
+        "tr": "kan tükürme",
+        "en": "coughing up blood"
       },
       {
         "de": "Tachykardie",
         "patient": "Herzrasen",
         "uz": "yurak urishining tezlashishi",
         "ru": "тахикардия",
-        "tr": "kalp atışının hızlanması"
+        "tr": "kalp atışının hızlanması",
+        "en": "fast heartbeat"
       },
       {
         "de": "atemabhängig",
         "patient": "beim Atmen stärker",
         "uz": "nafas bilan bog‘liq",
         "ru": "связанный с дыханием",
-        "tr": "solunumla ilişkili"
+        "tr": "solunumla ilişkili",
+        "en": "related to breathing"
       },
       {
         "de": "Antikoagulation",
         "patient": "Blutverdünnung",
         "uz": "qon ivishiga qarshi davo",
         "ru": "антикоагулянтная терапия",
-        "tr": "pıhtılaşmayı önleyici tedavi"
+        "tr": "pıhtılaşmayı önleyici tedavi",
+        "en": "anticoagulant therapy"
       }
     ],
     "simulation": {
@@ -1078,35 +1133,40 @@
         "patient": "Verschlechterung",
         "uz": "kasallikning kuchayishi",
         "ru": "обострение",
-        "tr": "hastalığın alevlenmesi"
+        "tr": "hastalığın alevlenmesi",
+        "en": "flare-up of the disease"
       },
       {
         "de": "Sputum",
         "patient": "Auswurf / Schleim",
         "uz": "balg‘am",
         "ru": "мокрота",
-        "tr": "balgam"
+        "tr": "balgam",
+        "en": "sputum"
       },
       {
         "de": "Giemen",
         "patient": "Pfeifen beim Atmen",
         "uz": "xirillash (hushtaksimon)",
         "ru": "свистящие хрипы",
-        "tr": "hışıltı (ıslık sesi gibi)"
+        "tr": "hışıltı (ıslık sesi gibi)",
+        "en": "wheezing"
       },
       {
         "de": "Ruhedyspnoe",
         "patient": "Atemnot auch in Ruhe",
         "uz": "tinch holatdagi hansirash",
         "ru": "одышка в покое",
-        "tr": "istirahatte nefes darlığı"
+        "tr": "istirahatte nefes darlığı",
+        "en": "shortness of breath at rest"
       },
       {
         "de": "subfebril",
         "patient": "leicht erhöhte Temperatur",
         "uz": "subfebril (biroz ko‘tarilgan) harorat",
         "ru": "субфебрильная температура",
-        "tr": "subfebril (hafif yükselmiş) ateş"
+        "tr": "subfebril (hafif yükselmiş) ateş",
+        "en": "low-grade (slightly raised) temperature"
       }
     ],
     "simulation": {
@@ -1170,35 +1230,40 @@
         "patient": "unregelmäßiger Herzschlag",
         "uz": "bo‘lmachalar fibrillyatsiyasi",
         "ru": "фибрилляция предсердий",
-        "tr": "atriyal fibrilasyon"
+        "tr": "atriyal fibrilasyon",
+        "en": "atrial fibrillation"
       },
       {
         "de": "Palpitationen",
         "patient": "Herzklopfen / Herzstolpern",
         "uz": "yurak o‘ynashi",
         "ru": "сердцебиение, перебои",
-        "tr": "çarpıntı"
+        "tr": "çarpıntı",
+        "en": "palpitations"
       },
       {
         "de": "Synkope",
         "patient": "Ohnmacht",
         "uz": "hushdan ketish",
         "ru": "обморок",
-        "tr": "bayılma"
+        "tr": "bayılma",
+        "en": "fainting"
       },
       {
         "de": "Arrhythmie",
         "patient": "Herzrhythmusstörung",
         "uz": "yurak ritmining buzilishi",
         "ru": "нарушение сердечного ритма",
-        "tr": "kalp ritim bozukluğu"
+        "tr": "kalp ritim bozukluğu",
+        "en": "heart rhythm disorder"
       },
       {
         "de": "Antikoagulation",
         "patient": "Blutverdünnung",
         "uz": "qon ivishiga qarshi davo",
         "ru": "антикоагулянтная терапия",
-        "tr": "pıhtılaşmayı önleyici tedavi"
+        "tr": "pıhtılaşmayı önleyici tedavi",
+        "en": "anticoagulant therapy"
       }
     ],
     "simulation": {
@@ -1267,35 +1332,40 @@
         "patient": "Entzündung der Bauchspeicheldrüse",
         "uz": "pankreatit (oshqozon osti bezi yallig‘lanishi)",
         "ru": "панкреатит (воспаление поджелудочной железы)",
-        "tr": "pankreatit (pankreas iltihabı)"
+        "tr": "pankreatit (pankreas iltihabı)",
+        "en": "pancreatitis (inflammation of the pancreas)"
       },
       {
         "de": "Epigastrium",
         "patient": "Oberbauch / Magengegend",
         "uz": "epigastriy (qorin yuqori qismi)",
         "ru": "эпигастрий (верхняя часть живота)",
-        "tr": "epigastrium (karnın üst kısmı)"
+        "tr": "epigastrium (karnın üst kısmı)",
+        "en": "epigastrium (upper abdomen)"
       },
       {
         "de": "Emesis",
         "patient": "Erbrechen",
         "uz": "qusish",
         "ru": "рвота",
-        "tr": "kusma"
+        "tr": "kusma",
+        "en": "vomiting"
       },
       {
         "de": "Lipase",
         "patient": "Wert für die Bauchspeicheldrüse",
         "uz": "lipaza",
         "ru": "липаза",
-        "tr": "lipaz"
+        "tr": "lipaz",
+        "en": "lipase"
       },
       {
         "de": "Alkoholabusus",
         "patient": "zu viel Alkohol trinken",
         "uz": "alkoholni suiiste’mol qilish",
         "ru": "злоупотребление алкоголем",
-        "tr": "alkol kötüye kullanımı"
+        "tr": "alkol kötüye kullanımı",
+        "en": "alcohol misuse"
       }
     ],
     "simulation": {
@@ -1364,35 +1434,40 @@
         "patient": "Teerstuhl / schwarzer Stuhl",
         "uz": "melena (qora, smolasimon najas)",
         "ru": "мелена (чёрный дёгтеобразный стул)",
-        "tr": "melena (siyah, katran gibi dışkı)"
+        "tr": "melena (siyah, katran gibi dışkı)",
+        "en": "melaena (black, tarry stool)"
       },
       {
         "de": "Hämatemesis",
         "patient": "Bluterbrechen",
         "uz": "qon qusish",
         "ru": "рвота кровью",
-        "tr": "kan kusma"
+        "tr": "kan kusma",
+        "en": "vomiting blood"
       },
       {
         "de": "Ulcus ventriculi",
         "patient": "Magengeschwür",
         "uz": "oshqozon yarasi",
         "ru": "язва желудка",
-        "tr": "mide ülseri"
+        "tr": "mide ülseri",
+        "en": "stomach ulcer"
       },
       {
         "de": "NSAR",
         "patient": "Schmerzmittel wie Ibuprofen",
         "uz": "nosteroid yallig‘lanishga qarshi dorilar",
         "ru": "НПВС (нестероидные противовоспалительные)",
-        "tr": "nonsteroid antiinflamatuvar ilaçlar"
+        "tr": "nonsteroid antiinflamatuvar ilaçlar",
+        "en": "non-steroidal anti-inflammatory drugs"
       },
       {
         "de": "Gastroskopie",
         "patient": "Magenspiegelung",
         "uz": "gastroskopiya",
         "ru": "гастроскопия",
-        "tr": "gastroskopi"
+        "tr": "gastroskopi",
+        "en": "gastroscopy"
       }
     ],
     "simulation": {
@@ -1468,35 +1543,40 @@
         "patient": "Kopfschmerzen",
         "uz": "bosh og‘rig‘i",
         "ru": "головная боль",
-        "tr": "baş ağrısı"
+        "tr": "baş ağrısı",
+        "en": "headache"
       },
       {
         "de": "Photophobie",
         "patient": "Lichtempfindlichkeit",
         "uz": "yorug‘likdan bezovtalanish",
         "ru": "светобоязнь",
-        "tr": "ışıktan rahatsız olma"
+        "tr": "ışıktan rahatsız olma",
+        "en": "sensitivity to light"
       },
       {
         "de": "Phonophobie",
         "patient": "Lärmempfindlichkeit",
         "uz": "shovqindan bezovtalanish",
         "ru": "звукобоязнь",
-        "tr": "sesten rahatsız olma"
+        "tr": "sesten rahatsız olma",
+        "en": "sensitivity to noise"
       },
       {
         "de": "Aura",
         "patient": "Sehstörung vor dem Kopfschmerz",
         "uz": "aura (og‘riqdan oldingi ko‘rish buzilishi)",
         "ru": "аура (нарушение зрения перед болью)",
-        "tr": "aura (ağrıdan önce görme bozukluğu)"
+        "tr": "aura (ağrıdan önce görme bozukluğu)",
+        "en": "aura (visual disturbance before the pain)"
       },
       {
         "de": "hemikraniell",
         "patient": "auf einer Kopfseite",
         "uz": "boshning bir tomonida",
         "ru": "с одной стороны головы",
-        "tr": "başın bir tarafında"
+        "tr": "başın bir tarafında",
+        "en": "on one side of the head"
       }
     ],
     "simulation": {
@@ -1570,35 +1650,40 @@
         "patient": "Nierensteine / Harnsteine",
         "uz": "siydik-tosh kasalligi",
         "ru": "мочекаменная болезнь",
-        "tr": "idrar yolu taş hastalığı"
+        "tr": "idrar yolu taş hastalığı",
+        "en": "urinary stone disease"
       },
       {
         "de": "Kolik",
         "patient": "Schmerzen, die in Wellen kommen",
         "uz": "sanchiq (to‘lqinsimon og‘riq)",
         "ru": "колика (волнообразная боль)",
-        "tr": "kolik (dalga dalga gelen ağrı)"
+        "tr": "kolik (dalga dalga gelen ağrı)",
+        "en": "colic (wave-like pain)"
       },
       {
         "de": "Makrohämaturie",
         "patient": "Blut im Urin (sichtbar)",
         "uz": "siydikda ko‘zga ko‘rinadigan qon",
         "ru": "видимая кровь в моче",
-        "tr": "idrarda gözle görülen kan"
+        "tr": "idrarda gözle görülen kan",
+        "en": "visible blood in the urine"
       },
       {
         "de": "Flanke",
         "patient": "Seite / Nierengegend",
         "uz": "biqin (bel yon tomoni)",
         "ru": "бок (боковая поясничная область)",
-        "tr": "böğür (belin yan tarafı)"
+        "tr": "böğür (belin yan tarafı)",
+        "en": "flank (side of the lower back)"
       },
       {
         "de": "Harnstau",
         "patient": "Urin staut sich",
         "uz": "siydik dimlanishi",
         "ru": "застой мочи",
-        "tr": "idrar birikmesi (staz)"
+        "tr": "idrar birikmesi (staz)",
+        "en": "urinary obstruction"
       }
     ],
     "simulation": {
@@ -1669,35 +1754,40 @@
         "patient": "Schilddrüsenüberfunktion",
         "uz": "gipertireoz (qalqonsimon bez giperfunksiyasi)",
         "ru": "гипертиреоз (повышенная функция щитовидной железы)",
-        "tr": "hipertiroidi (tiroid bezinin aşırı çalışması)"
+        "tr": "hipertiroidi (tiroid bezinin aşırı çalışması)",
+        "en": "hyperthyroidism (overactive thyroid)"
       },
       {
         "de": "Tremor",
         "patient": "Zittern",
         "uz": "titroq",
         "ru": "тремор (дрожь)",
-        "tr": "titreme (tremor)"
+        "tr": "titreme (tremor)",
+        "en": "tremor"
       },
       {
         "de": "Hyperhidrose",
         "patient": "starkes Schwitzen",
         "uz": "ko‘p terlash",
         "ru": "повышенная потливость",
-        "tr": "aşırı terleme"
+        "tr": "aşırı terleme",
+        "en": "heavy sweating"
       },
       {
         "de": "Exophthalmus",
         "patient": "hervortretende Augen",
         "uz": "ko‘zning bo‘rtib chiqishi",
         "ru": "экзофтальм (пучеглазие)",
-        "tr": "gözlerin dışarı fırlaması"
+        "tr": "gözlerin dışarı fırlaması",
+        "en": "bulging eyes"
       },
       {
         "de": "Struma",
         "patient": "vergrößerte Schilddrüse / Kropf",
         "uz": "buqoq",
         "ru": "зоб",
-        "tr": "guatr"
+        "tr": "guatr",
+        "en": "goitre"
       }
     ],
     "simulation": {
@@ -1761,35 +1851,40 @@
         "patient": "Darmverschluss",
         "uz": "ichak tutilishi",
         "ru": "кишечная непроходимость",
-        "tr": "bağırsak tıkanması"
+        "tr": "bağırsak tıkanması",
+        "en": "bowel obstruction"
       },
       {
         "de": "Meteorismus",
         "patient": "Blähungen / dicker Bauch",
         "uz": "qorin dam bo‘lishi",
         "ru": "вздутие живота",
-        "tr": "karında şişkinlik"
+        "tr": "karında şişkinlik",
+        "en": "bloating"
       },
       {
         "de": "Miserere",
         "patient": "Koterbrechen",
         "uz": "najas qusish",
         "ru": "каловая рвота",
-        "tr": "dışkı kusma"
+        "tr": "dışkı kusma",
+        "en": "faecal vomiting"
       },
       {
         "de": "Adhäsionen",
         "patient": "Verwachsungen",
         "uz": "bitishmalar",
         "ru": "спайки",
-        "tr": "yapışıklıklar"
+        "tr": "yapışıklıklar",
+        "en": "adhesions"
       },
       {
         "de": "Laparotomie",
         "patient": "Bauchoperation mit Schnitt",
         "uz": "laparotomiya (qorinni ochish operatsiyasi)",
         "ru": "лапаротомия (полостная операция)",
-        "tr": "laparotomi (karnı açma ameliyatı)"
+        "tr": "laparotomi (karnı açma ameliyatı)",
+        "en": "laparotomy (open abdominal surgery)"
       }
     ],
     "simulation": {
@@ -1858,35 +1953,40 @@
         "patient": "Blutarmut",
         "uz": "kamqonlik",
         "ru": "анемия (малокровие)",
-        "tr": "kansızlık"
+        "tr": "kansızlık",
+        "en": "anaemia"
       },
       {
         "de": "Hypermenorrhö",
         "patient": "sehr starke Periode",
         "uz": "kuchli hayz qon ketishi",
         "ru": "обильные менструации",
-        "tr": "aşırı adet kanaması"
+        "tr": "aşırı adet kanaması",
+        "en": "heavy menstrual bleeding"
       },
       {
         "de": "Ferritin",
         "patient": "Eisenspeicher-Wert",
         "uz": "ferritin (temir zaxirasi)",
         "ru": "ферритин (запасы железа)",
-        "tr": "ferritin (demir deposu)"
+        "tr": "ferritin (demir deposu)",
+        "en": "ferritin (iron stores)"
       },
       {
         "de": "Abgeschlagenheit",
         "patient": "Müdigkeit / Schlappheit",
         "uz": "holsizlik",
         "ru": "слабость, разбитость",
-        "tr": "halsizlik"
+        "tr": "halsizlik",
+        "en": "fatigue, weakness"
       },
       {
         "de": "Blässe",
         "patient": "blasse Haut",
         "uz": "rangparlik",
         "ru": "бледность",
-        "tr": "solukluk"
+        "tr": "solukluk",
+        "en": "pallor"
       }
     ],
     "simulation": {
@@ -1961,35 +2061,40 @@
         "patient": "Brustenge",
         "uz": "stenokardiya (ko‘krakdagi siqilish)",
         "ru": "стенокардия",
-        "tr": "anjina pektoris (göğüste sıkışma)"
+        "tr": "anjina pektoris (göğüste sıkışma)",
+        "en": "angina pectoris (chest tightness)"
       },
       {
         "de": "belastungsabhängig",
         "patient": "bei Anstrengung",
         "uz": "jismoniy zo‘riqishga bog‘liq",
         "ru": "связанный с нагрузкой",
-        "tr": "eforla ilişkili"
+        "tr": "eforla ilişkili",
+        "en": "related to exertion"
       },
       {
         "de": "Ergometrie",
         "patient": "Belastungs-EKG (Fahrrad)",
         "uz": "veloergometriya",
         "ru": "велоэргометрия (нагрузочная ЭКГ)",
-        "tr": "bisiklet ergometrisi"
+        "tr": "bisiklet ergometrisi",
+        "en": "cycle ergometry"
       },
       {
         "de": "koronare Herzkrankheit (KHK)",
         "patient": "Verengung der Herzkranzgefäße",
         "uz": "yurak ishemik kasalligi",
         "ru": "ишемическая болезнь сердца",
-        "tr": "koroner arter hastalığı"
+        "tr": "koroner arter hastalığı",
+        "en": "coronary heart disease"
       },
       {
         "de": "Nitrospray",
         "patient": "Spray unter die Zunge",
         "uz": "nitroglitserin spreyi",
         "ru": "нитроспрей",
-        "tr": "nitrogliserin spreyi"
+        "tr": "nitrogliserin spreyi",
+        "en": "nitroglycerin spray"
       }
     ],
     "simulation": {
@@ -2058,35 +2163,40 @@
         "patient": "sehr hoher Blutdruck",
         "uz": "gipertonik kriz",
         "ru": "гипертонический криз",
-        "tr": "hipertansif kriz"
+        "tr": "hipertansif kriz",
+        "en": "hypertensive crisis"
       },
       {
         "de": "Endorganschaden",
         "patient": "Schaden an Herz, Gehirn, Niere oder Augen",
         "uz": "nishon a’zolar shikastlanishi",
         "ru": "поражение органов-мишеней",
-        "tr": "hedef organ hasarı"
+        "tr": "hedef organ hasarı",
+        "en": "end-organ damage"
       },
       {
         "de": "Antihypertensivum",
         "patient": "Blutdrucktablette",
         "uz": "qon bosimini tushiruvchi dori",
         "ru": "антигипертензивное средство",
-        "tr": "tansiyon düşürücü ilaç"
+        "tr": "tansiyon düşürücü ilaç",
+        "en": "blood pressure medication"
       },
       {
         "de": "Non-Adhärenz",
         "patient": "Tabletten nicht regelmäßig einnehmen",
         "uz": "dorini muntazam ichmaslik",
         "ru": "несоблюдение режима лечения",
-        "tr": "ilacı düzenli almama"
+        "tr": "ilacı düzenli almama",
+        "en": "not taking medication regularly"
       },
       {
         "de": "Fundoskopie",
         "patient": "Augenspiegelung",
         "uz": "ko‘z tubini ko‘rish",
         "ru": "осмотр глазного дна",
-        "tr": "göz dibi muayenesi"
+        "tr": "göz dibi muayenesi",
+        "en": "examination of the back of the eye"
       }
     ],
     "simulation": {
@@ -2155,35 +2265,40 @@
         "patient": "Herzbeutelentzündung",
         "uz": "perikardit (yurak xaltasi yallig‘lanishi)",
         "ru": "перикардит",
-        "tr": "perikardit (kalp zarı iltihabı)"
+        "tr": "perikardit (kalp zarı iltihabı)",
+        "en": "pericarditis (inflammation of the sac around the heart)"
       },
       {
         "de": "lageabhängig",
         "patient": "hängt von der Körperhaltung ab",
         "uz": "tana holatiga bog‘liq",
         "ru": "зависящий от положения тела",
-        "tr": "vücut pozisyonuna bağlı"
+        "tr": "vücut pozisyonuna bağlı",
+        "en": "dependent on body position"
       },
       {
         "de": "Perikardreiben",
         "patient": "Reibegeräusch am Herzen",
         "uz": "perikard ishqalanish shovqini",
         "ru": "шум трения перикарда",
-        "tr": "perikardiyal sürtünme sesi"
+        "tr": "perikardiyal sürtünme sesi",
+        "en": "pericardial friction rub"
       },
       {
         "de": "Perikarderguss",
         "patient": "Flüssigkeit im Herzbeutel",
         "uz": "perikardda suyuqlik yig‘ilishi",
         "ru": "перикардиальный выпот",
-        "tr": "perikardiyal sıvı birikmesi"
+        "tr": "perikardiyal sıvı birikmesi",
+        "en": "pericardial effusion"
       },
       {
         "de": "ST-Hebung",
         "patient": "Veränderung im EKG",
         "uz": "ST segmenti ko‘tarilishi",
         "ru": "подъём сегмента ST",
-        "tr": "ST segment yükselmesi"
+        "tr": "ST segment yükselmesi",
+        "en": "ST-segment elevation"
       }
     ],
     "simulation": {
@@ -2247,35 +2362,40 @@
         "patient": "Asthma",
         "uz": "bronxial astma",
         "ru": "бронхиальная астма",
-        "tr": "bronşiyal astım"
+        "tr": "bronşiyal astım",
+        "en": "bronchial asthma"
       },
       {
         "de": "Exazerbation",
         "patient": "Verschlechterung",
         "uz": "kasallikning kuchayishi",
         "ru": "обострение",
-        "tr": "hastalığın alevlenmesi"
+        "tr": "hastalığın alevlenmesi",
+        "en": "flare-up of the disease"
       },
       {
         "de": "Peak-Flow",
         "patient": "Messung, wie stark man ausatmen kann",
         "uz": "nafas chiqarish cho‘qqi tezligi",
         "ru": "пиковая скорость выдоха",
-        "tr": "tepe ekspiratuvar akım hızı"
+        "tr": "tepe ekspiratuvar akım hızı",
+        "en": "peak expiratory flow"
       },
       {
         "de": "Inhalationstechnik",
         "patient": "wie man das Spray benutzt",
         "uz": "ingalyatorni to‘g‘ri ishlatish",
         "ru": "техника ингаляции",
-        "tr": "inhaler’ı doğru kullanma"
+        "tr": "inhaler’ı doğru kullanma",
+        "en": "correct inhaler technique"
       },
       {
         "de": "Bronchospasmus",
         "patient": "Verkrampfung der Atemwege",
         "uz": "bronxospazm",
         "ru": "бронхоспазм",
-        "tr": "bronkospazm"
+        "tr": "bronkospazm",
+        "en": "bronchospasm"
       }
     ],
     "simulation": {
@@ -2339,35 +2459,40 @@
         "patient": "Luft zwischen Lunge und Brustwand, Lunge fällt zusammen",
         "uz": "pnevmotoraks",
         "ru": "пневмоторакс",
-        "tr": "pnömotoraks"
+        "tr": "pnömotoraks",
+        "en": "pneumothorax"
       },
       {
         "de": "abgeschwächtes Atemgeräusch",
         "patient": "man hört die Atmung leiser",
         "uz": "susaygan nafas shovqini",
         "ru": "ослабленное дыхание",
-        "tr": "azalmış solunum sesleri"
+        "tr": "azalmış solunum sesleri",
+        "en": "reduced breath sounds"
       },
       {
         "de": "hypersonorer Klopfschall",
         "patient": "lauter Ton beim Abklopfen",
         "uz": "qutisimon perkutor tovush",
         "ru": "коробочный перкуторный звук",
-        "tr": "hipersonor perküsyon sesi"
+        "tr": "hipersonor perküsyon sesi",
+        "en": "hyperresonant percussion note"
       },
       {
         "de": "Thoraxdrainage",
         "patient": "Schlauch in den Brustkorb",
         "uz": "plevra drenaji",
         "ru": "плевральный дренаж",
-        "tr": "göğüs tüpü drenajı"
+        "tr": "göğüs tüpü drenajı",
+        "en": "chest drain"
       },
       {
         "de": "Spannungspneumothorax",
         "patient": "lebensgefährlicher Druck im Brustkorb",
         "uz": "zo‘riqqan pnevmotoraks",
         "ru": "напряжённый пневмоторакс",
-        "tr": "tansiyon pnömotoraks"
+        "tr": "tansiyon pnömotoraks",
+        "en": "tension pneumothorax"
       }
     ],
     "simulation": {
@@ -2437,35 +2562,40 @@
         "patient": "Schrumpfleber",
         "uz": "jigar sirrozi",
         "ru": "цирроз печени",
-        "tr": "karaciğer sirozu"
+        "tr": "karaciğer sirozu",
+        "en": "liver cirrhosis"
       },
       {
         "de": "Aszites",
         "patient": "Bauchwasser",
         "uz": "assit (qorin bo‘shlig‘ida suyuqlik)",
         "ru": "асцит",
-        "tr": "asit (karın boşluğunda sıvı)"
+        "tr": "asit (karın boşluğunda sıvı)",
+        "en": "ascites (fluid in the abdomen)"
       },
       {
         "de": "Ikterus",
         "patient": "Gelbsucht",
         "uz": "sariqlik",
         "ru": "желтуха",
-        "tr": "sarılık"
+        "tr": "sarılık",
+        "en": "jaundice"
       },
       {
         "de": "hepatische Enzephalopathie",
         "patient": "Verwirrtheit durch die Leber",
         "uz": "jigar ensefalopatiyasi",
         "ru": "печёночная энцефалопатия",
-        "tr": "hepatik ensefalopati"
+        "tr": "hepatik ensefalopati",
+        "en": "hepatic encephalopathy"
       },
       {
         "de": "Aszitespunktion",
         "patient": "Bauchwasser abpunktieren",
         "uz": "laparotsentez (assit punksiyasi)",
         "ru": "лапароцентез",
-        "tr": "parasentez (asit ponksiyonu)"
+        "tr": "parasentez (asit ponksiyonu)",
+        "en": "paracentesis (ascitic tap)"
       }
     ],
     "simulation": {
@@ -2534,35 +2664,40 @@
         "patient": "Magensäure fließt in die Speiseröhre zurück",
         "uz": "gastroezofageal reflyuks kasalligi",
         "ru": "гастроэзофагеальная рефлюксная болезнь",
-        "tr": "gastroözofageal reflü hastalığı"
+        "tr": "gastroözofageal reflü hastalığı",
+        "en": "gastro-oesophageal reflux disease"
       },
       {
         "de": "Pyrosis",
         "patient": "Sodbrennen",
         "uz": "jig‘ildon qaynashi",
         "ru": "изжога",
-        "tr": "mide yanması"
+        "tr": "mide yanması",
+        "en": "heartburn"
       },
       {
         "de": "Dysphagie",
         "patient": "Schluckbeschwerden",
         "uz": "yutish qiyinlashuvi",
         "ru": "дисфагия",
-        "tr": "yutma güçlüğü"
+        "tr": "yutma güçlüğü",
+        "en": "difficulty swallowing"
       },
       {
         "de": "Alarmsymptome",
         "patient": "Warnzeichen",
         "uz": "xavfli belgilar",
         "ru": "тревожные симптомы",
-        "tr": "alarm belirtileri"
+        "tr": "alarm belirtileri",
+        "en": "red-flag symptoms"
       },
       {
         "de": "Protonenpumpenhemmer",
         "patient": "Magenschutz-Tablette",
         "uz": "proton pompa ingibitori",
         "ru": "ингибитор протонной помпы",
-        "tr": "proton pompası inhibitörü"
+        "tr": "proton pompası inhibitörü",
+        "en": "proton pump inhibitor"
       }
     ],
     "simulation": {
@@ -2626,35 +2761,40 @@
         "patient": "Leistenbruch",
         "uz": "chov churrasi",
         "ru": "паховая грыжа",
-        "tr": "kasık fıtığı"
+        "tr": "kasık fıtığı",
+        "en": "inguinal hernia"
       },
       {
         "de": "Inkarzeration",
         "patient": "eingeklemmter Bruch",
         "uz": "churraning qisilishi",
         "ru": "ущемление",
-        "tr": "fıtığın boğulması"
+        "tr": "fıtığın boğulması",
+        "en": "incarceration of the hernia"
       },
       {
         "de": "reponibel",
         "patient": "lässt sich zurückdrücken",
         "uz": "joyiga solinadigan",
         "ru": "вправимый",
-        "tr": "yerine itilebilen"
+        "tr": "yerine itilebilen",
+        "en": "reducible"
       },
       {
         "de": "Bruchpforte",
         "patient": "Lücke in der Bauchwand",
         "uz": "churra darvozasi",
         "ru": "грыжевые ворота",
-        "tr": "fıtık kapısı"
+        "tr": "fıtık kapısı",
+        "en": "hernial orifice"
       },
       {
         "de": "Herniotomie",
         "patient": "Bruchoperation",
         "uz": "churra operatsiyasi",
         "ru": "грыжесечение",
-        "tr": "fıtık ameliyatı"
+        "tr": "fıtık ameliyatı",
+        "en": "hernia repair"
       }
     ],
     "simulation": {
@@ -2718,35 +2858,40 @@
         "patient": "Entzündung von Darmausstülpungen",
         "uz": "divertikulit",
         "ru": "дивертикулит",
-        "tr": "divertikülit"
+        "tr": "divertikülit",
+        "en": "diverticulitis"
       },
       {
         "de": "linker Unterbauch",
         "patient": "unten links im Bauch",
         "uz": "qorinning chap pastki qismi",
         "ru": "левая подвздошная область",
-        "tr": "karnın sol alt kısmı"
+        "tr": "karnın sol alt kısmı",
+        "en": "left lower abdomen"
       },
       {
         "de": "Abwehrspannung",
         "patient": "der Bauch wird beim Tasten hart",
         "uz": "qorin mushaklarining himoya taranglashuvi",
         "ru": "защитное напряжение мышц",
-        "tr": "karın kaslarında defans"
+        "tr": "karın kaslarında defans",
+        "en": "guarding of the abdominal muscles"
       },
       {
         "de": "Perforation",
         "patient": "Durchbruch des Darms",
         "uz": "perforatsiya (teshilish)",
         "ru": "перфорация",
-        "tr": "perforasyon (delinme)"
+        "tr": "perforasyon (delinme)",
+        "en": "perforation"
       },
       {
         "de": "Sigmaresektion",
         "patient": "Entfernung eines Darmstücks",
         "uz": "sigmasimon ichak rezeksiyasi",
         "ru": "резекция сигмовидной кишки",
-        "tr": "sigmoid kolon rezeksiyonu"
+        "tr": "sigmoid kolon rezeksiyonu",
+        "en": "sigmoid resection"
       }
     ],
     "simulation": {
@@ -2815,35 +2960,40 @@
         "patient": "Handgelenksbruch",
         "uz": "bilak suyagining distal sinishi",
         "ru": "перелом лучевой кости в типичном месте",
-        "tr": "distal radius kırığı"
+        "tr": "distal radius kırığı",
+        "en": "distal radius fracture"
       },
       {
         "de": "Fehlstellung",
         "patient": "schief stehender Knochen",
         "uz": "noto‘g‘ri holat (deformatsiya)",
         "ru": "смещение, деформация",
-        "tr": "yanlış pozisyon (deformite)"
+        "tr": "yanlış pozisyon (deformite)",
+        "en": "malalignment (deformity)"
       },
       {
         "de": "DMS",
         "patient": "Durchblutung, Bewegung, Gefühl",
         "uz": "qon aylanishi, harakat, sezgi",
         "ru": "кровоснабжение, моторика, чувствительность",
-        "tr": "dolaşım, motor fonksiyon, duyu"
+        "tr": "dolaşım, motor fonksiyon, duyu",
+        "en": "circulation, motor function, sensation"
       },
       {
         "de": "Reposition",
         "patient": "Knochen wieder einrichten",
         "uz": "repozitsiya (suyakni joyiga solish)",
         "ru": "репозиция",
-        "tr": "redüksiyon (kemiğin yerine oturtulması)"
+        "tr": "redüksiyon (kemiğin yerine oturtulması)",
+        "en": "reduction (setting the bone)"
       },
       {
         "de": "Gipsschiene",
         "patient": "Gips",
         "uz": "gips longeta",
         "ru": "гипсовая лонгета",
-        "tr": "alçı atel"
+        "tr": "alçı atel",
+        "en": "plaster splint"
       }
     ],
     "simulation": {
@@ -2912,35 +3062,40 @@
         "patient": "Oberschenkelhalsbruch",
         "uz": "son suyagi bo‘ynining sinishi",
         "ru": "перелом шейки бедра",
-        "tr": "femur boynu kırığı"
+        "tr": "femur boynu kırığı",
+        "en": "femoral neck fracture"
       },
       {
         "de": "außenrotiert",
         "patient": "nach außen gedreht",
         "uz": "tashqariga burilgan",
         "ru": "ротированный кнаружи",
-        "tr": "dışa dönük"
+        "tr": "dışa dönük",
+        "en": "externally rotated"
       },
       {
         "de": "Belastungsunfähigkeit",
         "patient": "kann nicht auftreten",
         "uz": "oyoqqa tayana olmaslik",
         "ru": "невозможность опоры",
-        "tr": "bacağa basamama"
+        "tr": "bacağa basamama",
+        "en": "unable to bear weight"
       },
       {
         "de": "Hüftendoprothese",
         "patient": "künstliches Hüftgelenk",
         "uz": "son bo‘g‘imi endoprotezi",
         "ru": "эндопротез тазобедренного сустава",
-        "tr": "kalça protezi"
+        "tr": "kalça protezi",
+        "en": "hip replacement"
       },
       {
         "de": "Antikoagulation",
         "patient": "Blutverdünnung",
         "uz": "qon ivishiga qarshi davo",
         "ru": "антикоагуляция",
-        "tr": "pıhtılaşmayı önleyici tedavi"
+        "tr": "pıhtılaşmayı önleyici tedavi",
+        "en": "anticoagulant therapy"
       }
     ],
     "simulation": {
@@ -3010,35 +3165,40 @@
         "patient": "kann nicht Wasser lassen",
         "uz": "siydik tutilishi",
         "ru": "острая задержка мочи",
-        "tr": "idrar retansiyonu"
+        "tr": "idrar retansiyonu",
+        "en": "urinary retention"
       },
       {
         "de": "benigne Prostatahyperplasie",
         "patient": "gutartig vergrößerte Prostata",
         "uz": "prostata bezining xavfsiz kattalashishi",
         "ru": "доброкачественная гиперплазия предстательной железы",
-        "tr": "benign prostat hiperplazisi"
+        "tr": "benign prostat hiperplazisi",
+        "en": "benign prostatic hyperplasia"
       },
       {
         "de": "Nykturie",
         "patient": "nachts Wasser lassen müssen",
         "uz": "tunda siyish",
         "ru": "никтурия",
-        "tr": "gece idrara çıkma"
+        "tr": "gece idrara çıkma",
+        "en": "urinating at night"
       },
       {
         "de": "Blasenkatheter",
         "patient": "Schlauch in die Blase",
         "uz": "siydik qopi kateteri",
         "ru": "мочевой катетер",
-        "tr": "idrar sondası"
+        "tr": "idrar sondası",
+        "en": "urinary catheter"
       },
       {
         "de": "Restharn",
         "patient": "Urin, der in der Blase bleibt",
         "uz": "qoldiq siydik",
         "ru": "остаточная моча",
-        "tr": "rezidüel idrar"
+        "tr": "rezidüel idrar",
+        "en": "residual urine"
       }
     ],
     "simulation": {
@@ -3107,35 +3267,40 @@
         "patient": "Schilddrüsenunterfunktion",
         "uz": "gipotireoz (qalqonsimon bez faoliyati pasayishi)",
         "ru": "гипотиреоз",
-        "tr": "hipotiroidi (tiroid bezinin az çalışması)"
+        "tr": "hipotiroidi (tiroid bezinin az çalışması)",
+        "en": "hypothyroidism (underactive thyroid)"
       },
       {
         "de": "Kälteintoleranz",
         "patient": "friert ständig",
         "uz": "sovuqni ko‘tara olmaslik",
         "ru": "непереносимость холода",
-        "tr": "soğuğa dayanamama"
+        "tr": "soğuğa dayanamama",
+        "en": "cold intolerance"
       },
       {
         "de": "Antriebslosigkeit",
         "patient": "keine Energie",
         "uz": "g‘ayratsizlik",
         "ru": "апатия, отсутствие сил",
-        "tr": "isteksizlik, enerji eksikliği"
+        "tr": "isteksizlik, enerji eksikliği",
+        "en": "lack of drive, low energy"
       },
       {
         "de": "Hashimoto-Thyreoiditis",
         "patient": "Entzündung der Schilddrüse durch das Immunsystem",
         "uz": "Xashimoto autoimmun tireoiditi",
         "ru": "аутоиммунный тиреоидит Хашимото",
-        "tr": "Haşimoto otoimmün tiroiditi"
+        "tr": "Haşimoto otoimmün tiroiditi",
+        "en": "Hashimoto’s autoimmune thyroiditis"
       },
       {
         "de": "L-Thyroxin",
         "patient": "Schilddrüsenhormon-Tablette",
         "uz": "L-tiroksin",
         "ru": "L-тироксин",
-        "tr": "L-tiroksin"
+        "tr": "L-tiroksin",
+        "en": "levothyroxine"
       }
     ],
     "simulation": {
@@ -3204,35 +3369,40 @@
         "patient": "Wundrose",
         "uz": "saramas (erizipela)",
         "ru": "рожа (рожистое воспаление)",
-        "tr": "erizipel (yılancık)"
+        "tr": "erizipel (yılancık)",
+        "en": "erysipelas"
       },
       {
         "de": "Überwärmung",
         "patient": "die Haut ist heiß",
         "uz": "terining qizishi",
         "ru": "местное повышение температуры",
-        "tr": "ciltte ısı artışı"
+        "tr": "ciltte ısı artışı",
+        "en": "warmth of the skin"
       },
       {
         "de": "Eintrittspforte",
         "patient": "Stelle, wo die Bakterien hineinkamen",
         "uz": "infeksiya kirish joyi",
         "ru": "входные ворота инфекции",
-        "tr": "enfeksiyonun giriş yeri"
+        "tr": "enfeksiyonun giriş yeri",
+        "en": "portal of entry of the infection"
       },
       {
         "de": "Interdigitalmykose",
         "patient": "Fußpilz zwischen den Zehen",
         "uz": "barmoqlararo zamburug‘",
         "ru": "межпальцевой микоз",
-        "tr": "parmak arası mantar"
+        "tr": "parmak arası mantar",
+        "en": "athlete’s foot (between the toes)"
       },
       {
         "de": "Hochlagerung",
         "patient": "Bein hochlegen",
         "uz": "oyoqni baland qo‘yish",
         "ru": "возвышенное положение конечности",
-        "tr": "bacağı yukarı kaldırma"
+        "tr": "bacağı yukarı kaldırma",
+        "en": "elevating the leg"
       }
     ],
     "simulation": {
@@ -3301,35 +3471,40 @@
         "patient": "Hirnhautentzündung",
         "uz": "meningit (miya pardasi yallig‘lanishi)",
         "ru": "менингит",
-        "tr": "menenjit (beyin zarı iltihabı)"
+        "tr": "menenjit (beyin zarı iltihabı)",
+        "en": "meningitis (inflammation of the meninges)"
       },
       {
         "de": "Meningismus",
         "patient": "steifer Nacken",
         "uz": "meningeal belgilar (ensa mushaklari rigidligi)",
         "ru": "менингизм (ригидность затылочных мышц)",
-        "tr": "meningeal belirtiler (ense sertliği)"
+        "tr": "meningeal belirtiler (ense sertliği)",
+        "en": "meningeal signs (neck stiffness)"
       },
       {
         "de": "Petechien",
         "patient": "kleine rote Punkte auf der Haut",
         "uz": "petexiyalar (nuqtali qon quyilishlar)",
         "ru": "петехии",
-        "tr": "peteşi (nokta şeklinde kanamalar)"
+        "tr": "peteşi (nokta şeklinde kanamalar)",
+        "en": "petechiae (pinpoint bleeding)"
       },
       {
         "de": "Lumbalpunktion",
         "patient": "Nervenwasser aus dem Rücken entnehmen",
         "uz": "lyumbal punksiya",
         "ru": "люмбальная пункция",
-        "tr": "lomber ponksiyon"
+        "tr": "lomber ponksiyon",
+        "en": "lumbar puncture"
       },
       {
         "de": "Bewusstseinsstörung",
         "patient": "ist sehr schläfrig oder verwirrt",
         "uz": "es-hush buzilishi",
         "ru": "нарушение сознания",
-        "tr": "bilinç bozukluğu"
+        "tr": "bilinç bozukluğu",
+        "en": "impaired consciousness"
       }
     ],
     "simulation": {
@@ -3393,35 +3568,40 @@
         "patient": "Bandscheibe ist herausgerutscht",
         "uz": "umurtqalararo disk churrasi",
         "ru": "грыжа межпозвоночного диска",
-        "tr": "bel fıtığı (disk hernisi)"
+        "tr": "bel fıtığı (disk hernisi)",
+        "en": "slipped disc (disc herniation)"
       },
       {
         "de": "radikulär",
         "patient": "von der Nervenwurzel ausgehend",
         "uz": "radikulyar (nerv ildizi bo‘yicha)",
         "ru": "корешковый",
-        "tr": "radiküler (sinir kökü boyunca)"
+        "tr": "radiküler (sinir kökü boyunca)",
+        "en": "radicular (along a nerve root)"
       },
       {
         "de": "Dermatom",
         "patient": "Hautbereich eines Nervs",
         "uz": "dermatom",
         "ru": "дерматом",
-        "tr": "dermatom"
+        "tr": "dermatom",
+        "en": "dermatome"
       },
       {
         "de": "Kaudasyndrom",
         "patient": "Notfall mit Blasenstörung und Taubheit im Genitalbereich",
         "uz": "ot dumi sindromi",
         "ru": "синдром конского хвоста",
-        "tr": "kauda ekina sendromu"
+        "tr": "kauda ekina sendromu",
+        "en": "cauda equina syndrome"
       },
       {
         "de": "Lasègue-Zeichen",
         "patient": "Schmerz beim Anheben des gestreckten Beins",
         "uz": "Lasseg belgisi",
         "ru": "симптом Ласега",
-        "tr": "Lasègue belirtisi"
+        "tr": "Lasègue belirtisi",
+        "en": "Lasègue sign"
       }
     ],
     "simulation": {
@@ -3496,35 +3676,40 @@
         "patient": "epileptischer Anfall",
         "uz": "tutqanoq xuruji",
         "ru": "судорожный припадок",
-        "tr": "nöbet (konvülziyon)"
+        "tr": "nöbet (konvülziyon)",
+        "en": "seizure"
       },
       {
         "de": "tonisch-klonisch",
         "patient": "erst verkrampft, dann zuckend",
         "uz": "tonik-klonik",
         "ru": "тонико-клонический",
-        "tr": "tonik-klonik"
+        "tr": "tonik-klonik",
+        "en": "tonic-clonic"
       },
       {
         "de": "postiktal",
         "patient": "nach dem Anfall",
         "uz": "xurujdan keyingi",
         "ru": "постиктальный",
-        "tr": "postiktal (nöbet sonrası)"
+        "tr": "postiktal (nöbet sonrası)",
+        "en": "postictal"
       },
       {
         "de": "Fremdanamnese",
         "patient": "Bericht von einer anderen Person",
         "uz": "boshqa shaxsdan olingan anamnez",
         "ru": "анамнез со слов окружающих",
-        "tr": "başkasından alınan anamnez (heteroanamnez)"
+        "tr": "başkasından alınan anamnez (heteroanamnez)",
+        "en": "history from a third party (collateral history)"
       },
       {
         "de": "EEG",
         "patient": "Messung der Hirnströme",
         "uz": "EEG (elektroensefalografiya)",
         "ru": "ЭЭГ",
-        "tr": "EEG (elektroensefalografi)"
+        "tr": "EEG (elektroensefalografi)",
+        "en": "EEG (electroencephalography)"
       }
     ],
     "simulation": {
@@ -3599,35 +3784,40 @@
         "patient": "Magen-Darm-Grippe",
         "uz": "gastroenterit",
         "ru": "гастроэнтерит",
-        "tr": "gastroenterit"
+        "tr": "gastroenterit",
+        "en": "gastroenteritis"
       },
       {
         "de": "Exsikkose",
         "patient": "Austrocknung",
         "uz": "organizmning suvsizlanishi",
         "ru": "эксикоз (обезвоживание)",
-        "tr": "vücudun susuz kalması (dehidratasyon)"
+        "tr": "vücudun susuz kalması (dehidratasyon)",
+        "en": "dehydration"
       },
       {
         "de": "wässrige Diarrhö",
         "patient": "flüssiger Durchfall",
         "uz": "suvsimon ich ketish",
         "ru": "водянистая диарея",
-        "tr": "sulu ishal"
+        "tr": "sulu ishal",
+        "en": "watery diarrhoea"
       },
       {
         "de": "Infektionsschutzgesetz",
         "patient": "Gesetz zu ansteckenden Krankheiten, Meldepflicht",
         "uz": "infeksiyadan himoya qonuni",
         "ru": "закон о защите от инфекций",
-        "tr": "enfeksiyondan korunma yasası"
+        "tr": "enfeksiyondan korunma yasası",
+        "en": "Infection Protection Act"
       },
       {
         "de": "orale Rehydratation",
         "patient": "viel trinken mit Salz und Zucker",
         "uz": "og‘iz orqali suyuqlik tiklash",
         "ru": "оральная регидратация",
-        "tr": "ağızdan sıvı yerine koyma"
+        "tr": "ağızdan sıvı yerine koyma",
+        "en": "oral rehydration"
       }
     ],
     "simulation": {
@@ -3696,35 +3886,40 @@
         "patient": "kurze Ohnmacht",
         "uz": "hushdan ketish",
         "ru": "обморок",
-        "tr": "bayılma"
+        "tr": "bayılma",
+        "en": "fainting"
       },
       {
         "de": "Prodromi",
         "patient": "Warnzeichen vorher",
         "uz": "oldindan keladigan belgilar",
         "ru": "предвестники",
-        "tr": "öncü belirtiler"
+        "tr": "öncü belirtiler",
+        "en": "warning signs (prodrome)"
       },
       {
         "de": "Bradykardie",
         "patient": "langsamer Herzschlag",
         "uz": "bradikardiya (sekin yurak urishi)",
         "ru": "брадикардия",
-        "tr": "bradikardi (yavaş kalp atışı)"
+        "tr": "bradikardi (yavaş kalp atışı)",
+        "en": "bradycardia (slow heartbeat)"
       },
       {
         "de": "AV-Block",
         "patient": "Störung der Reizleitung im Herzen",
         "uz": "AV-blokada",
         "ru": "АВ-блокада",
-        "tr": "AV blok"
+        "tr": "AV blok",
+        "en": "AV block"
       },
       {
         "de": "Herzschrittmacher",
         "patient": "kleines Gerät, das den Herzschlag steuert",
         "uz": "yurak stimulyatori",
         "ru": "кардиостимулятор",
-        "tr": "kalp pili"
+        "tr": "kalp pili",
+        "en": "pacemaker"
       }
     ],
     "simulation": {
@@ -3793,35 +3988,40 @@
         "patient": "Blutvergiftung",
         "uz": "sepsis (qon zaharlanishi)",
         "ru": "сепсис",
-        "tr": "sepsis (kan zehirlenmesi)"
+        "tr": "sepsis (kan zehirlenmesi)",
+        "en": "sepsis (blood poisoning)"
       },
       {
         "de": "Schüttelfrost",
         "patient": "starkes Zittern mit Kälte",
         "uz": "titroq bilan et uvishishi",
         "ru": "озноб",
-        "tr": "titreme ile üşüme"
+        "tr": "titreme ile üşüme",
+        "en": "shivering with chills"
       },
       {
         "de": "Hypotonie",
         "patient": "niedriger Blutdruck",
         "uz": "past qon bosimi",
         "ru": "гипотония",
-        "tr": "düşük tansiyon"
+        "tr": "düşük tansiyon",
+        "en": "low blood pressure"
       },
       {
         "de": "Blutkulturen",
         "patient": "Blutproben, um Bakterien zu finden",
         "uz": "qon ekmasi",
         "ru": "посев крови",
-        "tr": "kan kültürü"
+        "tr": "kan kültürü",
+        "en": "blood culture"
       },
       {
         "de": "qSOFA",
         "patient": "kurzer Test auf schwere Infektion",
         "uz": "qSOFA shkalasi",
         "ru": "шкала qSOFA",
-        "tr": "qSOFA skoru"
+        "tr": "qSOFA skoru",
+        "en": "qSOFA score"
       }
     ],
     "simulation": {
@@ -3885,35 +4085,40 @@
         "patient": "Gallensteine",
         "uz": "o‘t pufagida tosh",
         "ru": "желчнокаменная болезнь",
-        "tr": "safra kesesi taşı"
+        "tr": "safra kesesi taşı",
+        "en": "gallstones"
       },
       {
         "de": "Gallenkolik",
         "patient": "krampfartige Schmerzen durch Gallensteine",
         "uz": "o‘t sanchig‘i",
         "ru": "желчная колика",
-        "tr": "safra koliği"
+        "tr": "safra koliği",
+        "en": "biliary colic"
       },
       {
         "de": "rechter Oberbauch",
         "patient": "rechts oben im Bauch",
         "uz": "qorinning o‘ng yuqori qismi",
         "ru": "правое подреберье",
-        "tr": "karnın sağ üst kısmı"
+        "tr": "karnın sağ üst kısmı",
+        "en": "right upper abdomen"
       },
       {
         "de": "Murphy-Zeichen",
         "patient": "Schmerz beim Einatmen bei Druck unter dem Rippenbogen",
         "uz": "Merfi belgisi",
         "ru": "симптом Мерфи",
-        "tr": "Murphy belirtisi"
+        "tr": "Murphy belirtisi",
+        "en": "Murphy’s sign"
       },
       {
         "de": "laparoskopische Cholezystektomie",
         "patient": "Entfernung der Gallenblase per Schlüsselloch-OP",
         "uz": "laparoskopik xoletsistektomiya",
         "ru": "лапароскопическая холецистэктомия",
-        "tr": "laparoskopik kolesistektomi"
+        "tr": "laparoskopik kolesistektomi",
+        "en": "laparoscopic cholecystectomy"
       }
     ],
     "simulation": {
@@ -3982,35 +4187,40 @@
         "patient": "Gelenkentzündung durch Harnsäure",
         "uz": "podagra",
         "ru": "подагра",
-        "tr": "gut"
+        "tr": "gut",
+        "en": "gout"
       },
       {
         "de": "Großzehengrundgelenk",
         "patient": "Gelenk am großen Zeh",
         "uz": "bosh barmoq asosidagi bo‘g‘im",
         "ru": "плюснефаланговый сустав большого пальца",
-        "tr": "başparmak tabanındaki eklem"
+        "tr": "başparmak tabanındaki eklem",
+        "en": "joint at the base of the big toe"
       },
       {
         "de": "Harnsäure",
         "patient": "Abbauprodukt im Blut",
         "uz": "siydik kislotasi",
         "ru": "мочевая кислота",
-        "tr": "ürik asit"
+        "tr": "ürik asit",
+        "en": "uric acid"
       },
       {
         "de": "Podagra",
         "patient": "Gichtanfall am großen Zeh",
         "uz": "bosh barmoq podagrasi",
         "ru": "подагрический артрит большого пальца",
-        "tr": "başparmak gutu (podagra)"
+        "tr": "başparmak gutu (podagra)",
+        "en": "gout of the big toe (podagra)"
       },
       {
         "de": "Gelenkpunktion",
         "patient": "Flüssigkeit aus dem Gelenk entnehmen",
         "uz": "bo‘g‘im punksiyasi",
         "ru": "пункция сустава",
-        "tr": "eklem ponksiyonu"
+        "tr": "eklem ponksiyonu",
+        "en": "joint aspiration"
       }
     ],
     "simulation": {
@@ -4079,35 +4289,40 @@
         "patient": "Blasenentzündung",
         "uz": "sistit (siydik pufagi yallig‘lanishi)",
         "ru": "цистит",
-        "tr": "sistit (mesane iltihabı)"
+        "tr": "sistit (mesane iltihabı)",
+        "en": "cystitis (bladder infection)"
       },
       {
         "de": "Dysurie",
         "patient": "Brennen beim Wasserlassen",
         "uz": "siyishda achishish",
         "ru": "дизурия",
-        "tr": "idrar yaparken yanma"
+        "tr": "idrar yaparken yanma",
+        "en": "burning on urination"
       },
       {
         "de": "Pollakisurie",
         "patient": "häufiges Wasserlassen in kleinen Mengen",
         "uz": "tez-tez oz-ozdan siyish",
         "ru": "поллакиурия",
-        "tr": "sık sık az miktarda idrar yapma"
+        "tr": "sık sık az miktarda idrar yapma",
+        "en": "frequent passing of small amounts of urine"
       },
       {
         "de": "suprapubisch",
         "patient": "über dem Schambein",
         "uz": "qov suyagi ustida",
         "ru": "надлобковый",
-        "tr": "kasık kemiğinin üstünde (suprapubik)"
+        "tr": "kasık kemiğinin üstünde (suprapubik)",
+        "en": "above the pubic bone (suprapubic)"
       },
       {
         "de": "Urinstix",
         "patient": "Teststreifen für den Urin",
         "uz": "siydik test-chizig‘i",
         "ru": "тест-полоска мочи",
-        "tr": "idrar test çubuğu"
+        "tr": "idrar test çubuğu",
+        "en": "urine dipstick"
       }
     ],
     "simulation": {
@@ -4176,35 +4391,40 @@
         "patient": "die Nieren arbeiten plötzlich nicht mehr richtig",
         "uz": "o‘tkir buyrak yetishmovchiligi",
         "ru": "острая почечная недостаточность",
-        "tr": "akut böbrek yetmezliği"
+        "tr": "akut böbrek yetmezliği",
+        "en": "acute kidney injury"
       },
       {
         "de": "Oligurie",
         "patient": "sehr wenig Urin",
         "uz": "oliguriya (siydikning kamayishi)",
         "ru": "олигурия",
-        "tr": "oligüri (idrarın azalması)"
+        "tr": "oligüri (idrarın azalması)",
+        "en": "oliguria (reduced urine output)"
       },
       {
         "de": "prärenal",
         "patient": "durch zu wenig Flüssigkeit",
         "uz": "prerenal (buyrakdan oldingi sabab)",
         "ru": "преренальный",
-        "tr": "prerenal (böbrek öncesi neden)"
+        "tr": "prerenal (böbrek öncesi neden)",
+        "en": "prerenal (cause before the kidney)"
       },
       {
         "de": "Hyperkaliämie",
         "patient": "zu viel Kalium im Blut",
         "uz": "giperkaliyemiya",
         "ru": "гиперкалиемия",
-        "tr": "hiperkalemi"
+        "tr": "hiperkalemi",
+        "en": "hyperkalaemia"
       },
       {
         "de": "nephrotoxisch",
         "patient": "schädlich für die Niere",
         "uz": "buyrakka zararli",
         "ru": "нефротоксичный",
-        "tr": "böbreğe zararlı (nefrotoksik)"
+        "tr": "böbreğe zararlı (nefrotoksik)",
+        "en": "harmful to the kidney (nephrotoxic)"
       }
     ],
     "simulation": {
@@ -4273,35 +4493,40 @@
         "patient": "Unterzucker",
         "uz": "gipoglikemiya (qand pasayishi)",
         "ru": "гипогликемия",
-        "tr": "hipoglisemi (kan şekeri düşüklüğü)"
+        "tr": "hipoglisemi (kan şekeri düşüklüğü)",
+        "en": "hypoglycaemia (low blood sugar)"
       },
       {
         "de": "Sulfonylharnstoff",
         "patient": "Tablette, die Insulin freisetzt",
         "uz": "sulfonilmochevina guruhi dorisi",
         "ru": "препарат сульфонилмочевины",
-        "tr": "sülfonilüre grubu ilaç"
+        "tr": "sülfonilüre grubu ilaç",
+        "en": "sulfonylurea drug"
       },
       {
         "de": "Heißhunger",
         "patient": "sehr starker Hunger",
         "uz": "kuchli ochlik hissi",
         "ru": "сильный голод",
-        "tr": "aşırı açlık hissi"
+        "tr": "aşırı açlık hissi",
+        "en": "intense hunger"
       },
       {
         "de": "Glukose",
         "patient": "Zucker",
         "uz": "glyukoza",
         "ru": "глюкоза",
-        "tr": "glukoz"
+        "tr": "glukoz",
+        "en": "glucose"
       },
       {
         "de": "Niereninsuffizienz",
         "patient": "Nierenschwäche",
         "uz": "buyrak yetishmovchiligi",
         "ru": "почечная недостаточность",
-        "tr": "böbrek yetmezliği"
+        "tr": "böbrek yetmezliği",
+        "en": "kidney failure"
       }
     ],
     "simulation": {
@@ -4370,35 +4595,40 @@
         "patient": "Gürtelrose",
         "uz": "o‘rab oluvchi temiratki (herpes zoster)",
         "ru": "опоясывающий лишай",
-        "tr": "zona (herpes zoster)"
+        "tr": "zona (herpes zoster)",
+        "en": "shingles (herpes zoster)"
       },
       {
         "de": "Vesikel",
         "patient": "Bläschen",
         "uz": "pufakchalar",
         "ru": "пузырьки (везикулы)",
-        "tr": "kabarcıklar (veziküller)"
+        "tr": "kabarcıklar (veziküller)",
+        "en": "blisters (vesicles)"
       },
       {
         "de": "Dermatom",
         "patient": "Hautbereich eines Nervs",
         "uz": "dermatom",
         "ru": "дерматом",
-        "tr": "dermatom"
+        "tr": "dermatom",
+        "en": "dermatome"
       },
       {
         "de": "Immunsuppression",
         "patient": "geschwächtes Abwehrsystem durch Medikamente",
         "uz": "immunitetning dori bilan susaytirilishi",
         "ru": "иммуносупрессия",
-        "tr": "bağışıklığın ilaçla baskılanması"
+        "tr": "bağışıklığın ilaçla baskılanması",
+        "en": "drug-induced immunosuppression"
       },
       {
         "de": "Post-Zoster-Neuralgie",
         "patient": "Nervenschmerzen nach der Gürtelrose",
         "uz": "zosterdan keyingi nevralgiya",
         "ru": "постгерпетическая невралгия",
-        "tr": "postherpetik nevralji"
+        "tr": "postherpetik nevralji",
+        "en": "postherpetic neuralgia"
       }
     ],
     "simulation": {
@@ -4473,35 +4703,40 @@
         "patient": "Durchblutungsstörung im Gehirn, die von selbst vorbeigeht",
         "uz": "tranzitor ishemik ataka",
         "ru": "транзиторная ишемическая атака",
-        "tr": "geçici iskemik atak"
+        "tr": "geçici iskemik atak",
+        "en": "transient ischaemic attack"
       },
       {
         "de": "Wortfindungsstörung",
         "patient": "die Wörter nicht finden",
         "uz": "so‘z topishda qiynalish",
         "ru": "нарушение подбора слов",
-        "tr": "kelime bulmada zorlanma"
+        "tr": "kelime bulmada zorlanma",
+        "en": "difficulty finding words"
       },
       {
         "de": "Karotisstenose",
         "patient": "Verengung der Halsschlagader",
         "uz": "uyqu arteriyasi torayishi",
         "ru": "стеноз сонной артерии",
-        "tr": "şah damarı daralması"
+        "tr": "şah damarı daralması",
+        "en": "carotid artery stenosis"
       },
       {
         "de": "Duplexsonographie",
         "patient": "Ultraschall der Blutgefäße",
         "uz": "dupleks sonografiya",
         "ru": "дуплексное сканирование",
-        "tr": "dupleks ultrasonografi"
+        "tr": "dupleks ultrasonografi",
+        "en": "duplex ultrasound"
       },
       {
         "de": "Sekundärprophylaxe",
         "patient": "Vorbeugung, damit es nicht wieder passiert",
         "uz": "ikkilamchi profilaktika",
         "ru": "вторичная профилактика",
-        "tr": "ikincil korunma"
+        "tr": "ikincil korunma",
+        "en": "secondary prevention"
       }
     ],
     "simulation": {
@@ -4570,35 +4805,40 @@
         "patient": "Darmkrebs",
         "uz": "yo‘g‘on ichak saratoni",
         "ru": "рак толстой кишки",
-        "tr": "kalın bağırsak kanseri"
+        "tr": "kalın bağırsak kanseri",
+        "en": "colon cancer"
       },
       {
         "de": "Hämatochezie",
         "patient": "Blut im Stuhl",
         "uz": "najasda qizil qon",
         "ru": "кровь в кале (гематохезия)",
-        "tr": "dışkıda kırmızı kan"
+        "tr": "dışkıda kırmızı kan",
+        "en": "red blood in the stool"
       },
       {
         "de": "B-Symptomatik",
         "patient": "Gewichtsverlust, Fieber, Nachtschweiß",
         "uz": "B-simptomlar (vazn yo‘qotish, isitma, tungi terlash)",
         "ru": "B-симптомы",
-        "tr": "B semptomları (kilo kaybı, ateş, gece terlemesi)"
+        "tr": "B semptomları (kilo kaybı, ateş, gece terlemesi)",
+        "en": "B symptoms (weight loss, fever, night sweats)"
       },
       {
         "de": "Tumormarker CEA",
         "patient": "Blutwert bei Darmkrebs",
         "uz": "CEA o‘sma markeri",
         "ru": "онкомаркер РЭА",
-        "tr": "CEA tümör belirteci"
+        "tr": "CEA tümör belirteci",
+        "en": "CEA tumour marker"
       },
       {
         "de": "Staging",
         "patient": "Untersuchungen, wie weit der Krebs ist",
         "uz": "kasallik bosqichini aniqlash",
         "ru": "стадирование",
-        "tr": "hastalığın evrelendirilmesi"
+        "tr": "hastalığın evrelendirilmesi",
+        "en": "staging"
       }
     ],
     "simulation": {
@@ -4667,35 +4907,40 @@
         "patient": "Umknicken nach außen",
         "uz": "oyoq panjasining tashqariga qayrilishi",
         "ru": "супинационная травма (подворот стопы)",
-        "tr": "ayağın dışa doğru burkulması"
+        "tr": "ayağın dışa doğru burkulması",
+        "en": "twisting the foot outwards (inversion injury)"
       },
       {
         "de": "oberes Sprunggelenk (OSG)",
         "patient": "Knöchelgelenk",
         "uz": "yuqori to‘piq bo‘g‘imi",
         "ru": "голеностопный сустав",
-        "tr": "üst ayak bileği eklemi"
+        "tr": "üst ayak bileği eklemi",
+        "en": "upper ankle joint"
       },
       {
         "de": "Außenbandruptur",
         "patient": "Riss der Bänder außen am Knöchel",
         "uz": "tashqi boylamlar uzilishi",
         "ru": "разрыв наружных связок",
-        "tr": "dış bağların yırtılması"
+        "tr": "dış bağların yırtılması",
+        "en": "torn lateral ligaments"
       },
       {
         "de": "Ottawa-Regeln",
         "patient": "Regeln, wann man röntgen muss",
         "uz": "Ottava qoidalari (rentgen ko‘rsatmasi)",
         "ru": "оттавские правила",
-        "tr": "Ottawa kuralları (röntgen endikasyonu)"
+        "tr": "Ottawa kuralları (röntgen endikasyonu)",
+        "en": "Ottawa rules (indication for X-ray)"
       },
       {
         "de": "PECH-Regel",
         "patient": "Pause, Eis, Kompression, Hochlagern",
         "uz": "PECH qoidasi: dam, muz, bog‘lam, baland qo‘yish",
         "ru": "правило PECH: покой, лёд, компрессия, возвышение",
-        "tr": "PECH kuralı: dinlenme, buz, bandaj, yukarı kaldırma"
+        "tr": "PECH kuralı: dinlenme, buz, bandaj, yukarı kaldırma",
+        "en": "PECH rule: rest, ice, compression, elevation"
       }
     ],
     "simulation": {
@@ -4769,35 +5014,40 @@
         "patient": "schwere allergische Reaktion",
         "uz": "anafilaksiya",
         "ru": "анафилаксия",
-        "tr": "anafilaksi"
+        "tr": "anafilaksi",
+        "en": "anaphylaxis"
       },
       {
         "de": "Urtikaria",
         "patient": "Nesselsucht, Quaddeln",
         "uz": "eshakemi (urtikariya)",
         "ru": "крапивница",
-        "tr": "kurdeşen (ürtiker)"
+        "tr": "kurdeşen (ürtiker)",
+        "en": "hives (urticaria)"
       },
       {
         "de": "Angioödem",
         "patient": "Schwellung von Lippen und Gesicht",
         "uz": "angionevrotik shish",
         "ru": "ангионевротический отёк",
-        "tr": "anjiyoödem"
+        "tr": "anjiyoödem",
+        "en": "angio-oedema"
       },
       {
         "de": "Adrenalin-Autoinjektor",
         "patient": "Notfall-Spritze gegen Allergie",
         "uz": "adrenalin avtoinyektori",
         "ru": "автоинъектор адреналина",
-        "tr": "adrenalin oto-enjektörü"
+        "tr": "adrenalin oto-enjektörü",
+        "en": "adrenaline auto-injector"
       },
       {
         "de": "Hyposensibilisierung",
         "patient": "Behandlung, die die Allergie abschwächt",
         "uz": "giposensibilizatsiya (allergen-spetsifik terapiya)",
         "ru": "аллерген-специфическая иммунотерапия",
-        "tr": "hiposensitizasyon (alerjene özgü immünoterapi)"
+        "tr": "hiposensitizasyon (alerjene özgü immünoterapi)",
+        "en": "hyposensitisation (allergen immunotherapy)"
       }
     ],
     "simulation": {
@@ -4861,35 +5111,40 @@
         "patient": "Einriss in der Wand der Hauptschlagader",
         "uz": "aorta devorining qatlanib yorilishi (aorta disseksiyasi)",
         "ru": "расслоение аорты",
-        "tr": "aort duvarının katmanlarına ayrılması (aort diseksiyonu)"
+        "tr": "aort duvarının katmanlarına ayrılması (aort diseksiyonu)",
+        "en": "tearing of the aortic wall layers (aortic dissection)"
       },
       {
         "de": "Blutdruckdifferenz",
         "patient": "unterschiedlicher Blutdruck an beiden Armen",
         "uz": "ikki qo‘ldagi qon bosimi farqi",
         "ru": "разница давления на руках",
-        "tr": "iki koldaki tansiyon farkı"
+        "tr": "iki koldaki tansiyon farkı",
+        "en": "difference in blood pressure between the arms"
       },
       {
         "de": "Aneurysma",
         "patient": "Aussackung eines Blutgefäßes",
         "uz": "anevrizma (qon tomir bo‘rtishi)",
         "ru": "аневризма",
-        "tr": "anevrizma (damar balonlaşması)"
+        "tr": "anevrizma (damar balonlaşması)",
+        "en": "aneurysm (bulging of a blood vessel)"
       },
       {
         "de": "CT-Angiographie",
         "patient": "Computertomographie der Blutgefäße mit Kontrastmittel",
         "uz": "KT-angiografiya",
         "ru": "КТ-ангиография",
-        "tr": "BT anjiyografi"
+        "tr": "BT anjiyografi",
+        "en": "CT angiography"
       },
       {
         "de": "interskapulär",
         "patient": "zwischen den Schulterblättern",
         "uz": "kurak suyaklari orasida",
         "ru": "межлопаточно",
-        "tr": "kürek kemiklerinin arasında"
+        "tr": "kürek kemiklerinin arasında",
+        "en": "between the shoulder blades"
       }
     ],
     "simulation": {
@@ -4964,35 +5219,40 @@
         "patient": "Lungenkrebs",
         "uz": "o‘pka saratoni (bronx karsinomasi)",
         "ru": "рак лёгкого",
-        "tr": "akciğer kanseri (bronş karsinomu)"
+        "tr": "akciğer kanseri (bronş karsinomu)",
+        "en": "lung cancer (bronchial carcinoma)"
       },
       {
         "de": "Hämoptysen",
         "patient": "Blut im Auswurf",
         "uz": "qon aralash balg‘am (gemoptiz)",
         "ru": "кровохарканье",
-        "tr": "kanlı balgam (hemoptizi)"
+        "tr": "kanlı balgam (hemoptizi)",
+        "en": "blood-stained sputum (haemoptysis)"
       },
       {
         "de": "Nachtschweiß",
         "patient": "nachts stark schwitzen",
         "uz": "tungi terlash",
         "ru": "ночная потливость",
-        "tr": "gece terlemesi"
+        "tr": "gece terlemesi",
+        "en": "night sweats"
       },
       {
         "de": "Bronchoskopie",
         "patient": "Lungenspiegelung",
         "uz": "bronxoskopiya",
         "ru": "бронхоскопия",
-        "tr": "bronkoskopi"
+        "tr": "bronkoskopi",
+        "en": "bronchoscopy"
       },
       {
         "de": "Rekurrensparese",
         "patient": "Lähmung des Stimmbandnervs",
         "uz": "qaytuvchi nerv falaji (ovoz bo‘g‘ilishi)",
         "ru": "парез возвратного нерва",
-        "tr": "rekürren sinir felci (ses kısıklığı)"
+        "tr": "rekürren sinir felci (ses kısıklığı)",
+        "en": "recurrent laryngeal nerve palsy (hoarseness)"
       }
     ],
     "simulation": {
@@ -5062,35 +5322,40 @@
         "patient": "chronische Darmentzündung",
         "uz": "Kron kasalligi",
         "ru": "болезнь Крона",
-        "tr": "Crohn hastalığı"
+        "tr": "Crohn hastalığı",
+        "en": "Crohn’s disease"
       },
       {
         "de": "Diarrhö",
         "patient": "Durchfall",
         "uz": "ich ketishi (diareya)",
         "ru": "диарея",
-        "tr": "ishal (diyare)"
+        "tr": "ishal (diyare)",
+        "en": "diarrhoea"
       },
       {
         "de": "Aphthen",
         "patient": "wunde Stellen im Mund",
         "uz": "og‘izdagi yarachalar (aftalar)",
         "ru": "афты",
-        "tr": "ağızda yaralar (aft)"
+        "tr": "ağızda yaralar (aft)",
+        "en": "mouth ulcers (aphthae)"
       },
       {
         "de": "Calprotectin",
         "patient": "Entzündungswert im Stuhl",
         "uz": "najasdagi kalprotektin",
         "ru": "фекальный кальпротектин",
-        "tr": "dışkıda kalprotektin"
+        "tr": "dışkıda kalprotektin",
+        "en": "faecal calprotectin"
       },
       {
         "de": "Fistel",
         "patient": "krankhafter Gang zwischen Organen",
         "uz": "oqma (fistula)",
         "ru": "свищ",
-        "tr": "fistül"
+        "tr": "fistül",
+        "en": "fistula"
       }
     ],
     "simulation": {
@@ -5165,35 +5430,40 @@
         "patient": "gefährliche Übersäuerung des Blutes bei Zuckerkrankheit",
         "uz": "diabetik ketoatsidoz",
         "ru": "диабетический кетоацидоз",
-        "tr": "diyabetik ketoasidoz"
+        "tr": "diyabetik ketoasidoz",
+        "en": "diabetic ketoacidosis"
       },
       {
         "de": "Polydipsie",
         "patient": "starker Durst",
         "uz": "kuchli chanqoq (polidipsiya)",
         "ru": "полидипсия",
-        "tr": "aşırı susama (polidipsi)"
+        "tr": "aşırı susama (polidipsi)",
+        "en": "intense thirst (polydipsia)"
       },
       {
         "de": "Polyurie",
         "patient": "viel Wasserlassen",
         "uz": "ko‘p siyish (poliuriya)",
         "ru": "полиурия",
-        "tr": "çok idrar yapma (poliüri)"
+        "tr": "çok idrar yapma (poliüri)",
+        "en": "passing a lot of urine (polyuria)"
       },
       {
         "de": "Kußmaul-Atmung",
         "patient": "tiefe, schnelle Atmung",
         "uz": "Kussmaul nafasi (chuqur, tez nafas)",
         "ru": "дыхание Куссмауля",
-        "tr": "Kussmaul solunumu (derin, hızlı solunum)"
+        "tr": "Kussmaul solunumu (derin, hızlı solunum)",
+        "en": "Kussmaul breathing (deep, rapid breathing)"
       },
       {
         "de": "Blutgasanalyse",
         "patient": "Untersuchung von Säure und Gasen im Blut",
         "uz": "qon gazlari tahlili",
         "ru": "анализ газов крови",
-        "tr": "kan gazı analizi"
+        "tr": "kan gazı analizi",
+        "en": "blood gas analysis"
       }
     ],
     "simulation": {
@@ -5268,35 +5538,40 @@
         "patient": "Blutung zwischen den Hirnhäuten",
         "uz": "subaraxnoidal qon quyilishi",
         "ru": "субарахноидальное кровоизлияние",
-        "tr": "subaraknoid kanama"
+        "tr": "subaraknoid kanama",
+        "en": "subarachnoid haemorrhage"
       },
       {
         "de": "Vernichtungskopfschmerz",
         "patient": "schlimmster Kopfschmerz des Lebens",
         "uz": "hayotdagi eng kuchli bosh og‘rig‘i (\"momaqaldiroq\" og‘rig‘i)",
         "ru": "громоподобная головная боль",
-        "tr": "hayatın en şiddetli baş ağrısı (“gök gürültüsü” baş ağrısı)"
+        "tr": "hayatın en şiddetli baş ağrısı (“gök gürültüsü” baş ağrısı)",
+        "en": "the worst headache of one’s life (“thunderclap” headache)"
       },
       {
         "de": "Meningismus",
         "patient": "steifer Nacken",
         "uz": "meningizm (ensa mushaklari qotishi)",
         "ru": "менингизм",
-        "tr": "meningismus (ense sertliği)"
+        "tr": "meningismus (ense sertliği)",
+        "en": "meningism (neck stiffness)"
       },
       {
         "de": "Lumbalpunktion",
         "patient": "Untersuchung des Nervenwassers aus dem Rücken",
         "uz": "lyumbal punksiya",
         "ru": "люмбальная пункция",
-        "tr": "lomber ponksiyon"
+        "tr": "lomber ponksiyon",
+        "en": "lumbar puncture"
       },
       {
         "de": "Aneurysma",
         "patient": "Aussackung eines Blutgefäßes",
         "uz": "anevrizma",
         "ru": "аневризма",
-        "tr": "anevrizma"
+        "tr": "anevrizma",
+        "en": "aneurysm"
       }
     ],
     "simulation": {
@@ -5371,35 +5646,40 @@
         "patient": "Durchblutungsstörung der Beine („Schaufensterkrankheit“)",
         "uz": "periferik arteriyalar okkluziv kasalligi",
         "ru": "облитерирующий атеросклероз артерий ног",
-        "tr": "periferik arter tıkayıcı hastalığı"
+        "tr": "periferik arter tıkayıcı hastalığı",
+        "en": "peripheral arterial occlusive disease"
       },
       {
         "de": "Claudicatio intermittens",
         "patient": "Wadenschmerzen beim Gehen",
         "uz": "vaqti-vaqti bilan oqsoqlanish (klaudikatsiya)",
         "ru": "перемежающаяся хромота",
-        "tr": "aralıklı topallama (kladikasyon)"
+        "tr": "aralıklı topallama (kladikasyon)",
+        "en": "intermittent claudication"
       },
       {
         "de": "Gehstrecke",
         "patient": "wie weit man ohne Schmerzen gehen kann",
         "uz": "og‘riqsiz yurish masofasi",
         "ru": "дистанция ходьбы",
-        "tr": "ağrısız yürüme mesafesi"
+        "tr": "ağrısız yürüme mesafesi",
+        "en": "pain-free walking distance"
       },
       {
         "de": "Knöchel-Arm-Index",
         "patient": "Vergleich des Blutdrucks am Knöchel und am Arm",
         "uz": "to‘piq-yelka indeksi",
         "ru": "лодыжечно-плечевой индекс",
-        "tr": "ayak bileği-kol indeksi"
+        "tr": "ayak bileği-kol indeksi",
+        "en": "ankle-brachial index"
       },
       {
         "de": "Gehtraining",
         "patient": "regelmäßiges Gehen als Therapie",
         "uz": "yurish mashqlari",
         "ru": "тренировочная ходьба",
-        "tr": "yürüme egzersizleri"
+        "tr": "yürüme egzersizleri",
+        "en": "walking exercise"
       }
     ],
     "simulation": {
@@ -5474,35 +5754,40 @@
         "patient": "verdrehter Hoden",
         "uz": "moyak buralishi",
         "ru": "перекрут яичка",
-        "tr": "testis torsiyonu"
+        "tr": "testis torsiyonu",
+        "en": "testicular torsion"
       },
       {
         "de": "Skrotum",
         "patient": "Hodensack",
         "uz": "yorg‘oq",
         "ru": "мошонка",
-        "tr": "skrotum (testis torbası)"
+        "tr": "skrotum (testis torbası)",
+        "en": "scrotum"
       },
       {
         "de": "Prehn-Zeichen",
         "patient": "Test: Anheben des Hodens",
         "uz": "Pren belgisi",
         "ru": "симптом Прена",
-        "tr": "Prehn belirtisi"
+        "tr": "Prehn belirtisi",
+        "en": "Prehn’s sign"
       },
       {
         "de": "Epididymitis",
         "patient": "Nebenhodenentzündung",
         "uz": "moyak ortig‘i yallig‘lanishi (epididimit)",
         "ru": "эпидидимит",
-        "tr": "epididimit (epididim iltihabı)"
+        "tr": "epididimit (epididim iltihabı)",
+        "en": "epididymitis"
       },
       {
         "de": "Freilegung",
         "patient": "operative Untersuchung des Hodens",
         "uz": "moyakni jarrohlik yo‘li bilan ochib ko‘rish",
         "ru": "оперативная ревизия яичка",
-        "tr": "testisin cerrahi eksplorasyonu"
+        "tr": "testisin cerrahi eksplorasyonu",
+        "en": "surgical exploration of the testis"
       }
     ],
     "simulation": {
@@ -5576,35 +5861,40 @@
         "patient": "Gelbsucht",
         "uz": "sariqlik",
         "ru": "желтуха",
-        "tr": "sarılık"
+        "tr": "sarılık",
+        "en": "jaundice"
       },
       {
         "de": "Pankreaskarzinom",
         "patient": "Bauchspeicheldrüsenkrebs",
         "uz": "me’da osti bezi saratoni",
         "ru": "рак поджелудочной железы",
-        "tr": "pankreas kanseri"
+        "tr": "pankreas kanseri",
+        "en": "pancreatic cancer"
       },
       {
         "de": "Courvoisier-Zeichen",
         "patient": "tastbare, schmerzlose Gallenblase",
         "uz": "Kurvuazye belgisi",
         "ru": "симптом Курвуазье",
-        "tr": "Courvoisier belirtisi"
+        "tr": "Courvoisier belirtisi",
+        "en": "Courvoisier’s sign"
       },
       {
         "de": "Pruritus",
         "patient": "Juckreiz",
         "uz": "qichishish",
         "ru": "кожный зуд",
-        "tr": "kaşıntı"
+        "tr": "kaşıntı",
+        "en": "itching"
       },
       {
         "de": "ERCP",
         "patient": "Spiegelung der Gallenwege",
         "uz": "endoskopik retrograd xolangiopankreatografiya",
         "ru": "ЭРХПГ",
-        "tr": "endoskopik retrograd kolanjiyopankreatografi (ERCP)"
+        "tr": "endoskopik retrograd kolanjiyopankreatografi (ERCP)",
+        "en": "endoscopic retrograde cholangiopancreatography (ERCP)"
       }
     ],
     "simulation": {
@@ -5679,35 +5969,40 @@
         "patient": "Zittern in Ruhe",
         "uz": "tinch holatdagi titroq",
         "ru": "тремор покоя",
-        "tr": "istirahat tremoru"
+        "tr": "istirahat tremoru",
+        "en": "resting tremor"
       },
       {
         "de": "Rigor",
         "patient": "Steifheit der Muskeln",
         "uz": "mushaklar rigidligi (qotishi)",
         "ru": "ригидность",
-        "tr": "kas rijiditesi (sertliği)"
+        "tr": "kas rijiditesi (sertliği)",
+        "en": "muscle rigidity (stiffness)"
       },
       {
         "de": "Bradykinese",
         "patient": "verlangsamte Bewegungen",
         "uz": "harakatlarning sekinlashishi",
         "ru": "брадикинезия",
-        "tr": "hareketlerin yavaşlaması"
+        "tr": "hareketlerin yavaşlaması",
+        "en": "slowness of movement"
       },
       {
         "de": "Mikrographie",
         "patient": "immer kleinere Schrift",
         "uz": "yozuvning maydalashishi",
         "ru": "микрография",
-        "tr": "yazının küçülmesi (mikrografi)"
+        "tr": "yazının küçülmesi (mikrografi)",
+        "en": "small handwriting (micrographia)"
       },
       {
         "de": "Hyposmie",
         "patient": "schlechter Geruchssinn",
         "uz": "hid bilishning pasayishi",
         "ru": "гипосмия",
-        "tr": "koku alma azalması"
+        "tr": "koku alma azalması",
+        "en": "reduced sense of smell"
       }
     ],
     "simulation": {
@@ -5776,35 +6071,40 @@
         "patient": "Gelenkrheuma",
         "uz": "revmatoid artrit",
         "ru": "ревматоидный артрит",
-        "tr": "romatoid artrit"
+        "tr": "romatoid artrit",
+        "en": "rheumatoid arthritis"
       },
       {
         "de": "Morgensteifigkeit",
         "patient": "steife Gelenke am Morgen",
         "uz": "ertalabki qotishlik",
         "ru": "утренняя скованность",
-        "tr": "sabah tutukluğu"
+        "tr": "sabah tutukluğu",
+        "en": "morning stiffness"
       },
       {
         "de": "Synovitis",
         "patient": "Entzündung der Gelenkinnenhaut",
         "uz": "sinovit (bo‘g‘im pardasi yallig‘lanishi)",
         "ru": "синовит",
-        "tr": "sinovit (eklem zarı iltihabı)"
+        "tr": "sinovit (eklem zarı iltihabı)",
+        "en": "synovitis (inflammation of the joint lining)"
       },
       {
         "de": "Rheumafaktor",
         "patient": "Blutwert bei Rheuma",
         "uz": "revmatoid omil",
         "ru": "ревматоидный фактор",
-        "tr": "romatoid faktör"
+        "tr": "romatoid faktör",
+        "en": "rheumatoid factor"
       },
       {
         "de": "Anti-CCP-Antikörper",
         "patient": "spezieller Rheuma-Blutwert",
         "uz": "anti-CCP antitanachalari",
         "ru": "антитела к ЦЦП",
-        "tr": "anti-CCP antikorları"
+        "tr": "anti-CCP antikorları",
+        "en": "anti-CCP antibodies"
       }
     ],
     "simulation": {
@@ -5879,35 +6179,40 @@
         "patient": "Entzündung der Herzinnenhaut / Herzklappe",
         "uz": "endokardit",
         "ru": "эндокардит",
-        "tr": "endokardit"
+        "tr": "endokardit",
+        "en": "endocarditis"
       },
       {
         "de": "Herzklappenprothese",
         "patient": "künstliche Herzklappe",
         "uz": "yurak klapani protezi",
         "ru": "протез клапана сердца",
-        "tr": "kalp kapağı protezi"
+        "tr": "kalp kapağı protezi",
+        "en": "prosthetic heart valve"
       },
       {
         "de": "Blutkulturen",
         "patient": "Blutproben zur Suche nach Bakterien",
         "uz": "qon ekmasi",
         "ru": "посев крови",
-        "tr": "kan kültürü"
+        "tr": "kan kültürü",
+        "en": "blood culture"
       },
       {
         "de": "transösophageale Echokardiographie",
         "patient": "Herzultraschall durch die Speiseröhre",
         "uz": "qizilo‘ngach orqali exokardiografiya",
         "ru": "чреспищеводная ЭхоКГ",
-        "tr": "transözofageal ekokardiyografi"
+        "tr": "transözofageal ekokardiyografi",
+        "en": "transoesophageal echocardiography"
       },
       {
         "de": "Osler-Knötchen",
         "patient": "schmerzhafte Knötchen an den Fingern",
         "uz": "Osler tugunchalari",
         "ru": "узелки Ослера",
-        "tr": "Osler nodülleri"
+        "tr": "Osler nodülleri",
+        "en": "Osler’s nodes"
       }
     ],
     "simulation": {
@@ -5982,35 +6287,40 @@
         "patient": "Gehirnerschütterung",
         "uz": "miya chayqalishi",
         "ru": "сотрясение головного мозга",
-        "tr": "beyin sarsıntısı"
+        "tr": "beyin sarsıntısı",
+        "en": "concussion"
       },
       {
         "de": "Amnesie",
         "patient": "Gedächtnislücke",
         "uz": "xotira yo‘qolishi (amneziya)",
         "ru": "амнезия",
-        "tr": "hafıza kaybı (amnezi)"
+        "tr": "hafıza kaybı (amnezi)",
+        "en": "memory loss (amnesia)"
       },
       {
         "de": "Glasgow Coma Scale",
         "patient": "Punkteskala für das Bewusstsein",
         "uz": "Glazgo koma shkalasi",
         "ru": "шкала комы Глазго",
-        "tr": "Glasgow koma skalası"
+        "tr": "Glasgow koma skalası",
+        "en": "Glasgow Coma Scale"
       },
       {
         "de": "Platzwunde",
         "patient": "aufgeplatzte Wunde",
         "uz": "yorilgan yara",
         "ru": "рваная рана",
-        "tr": "yırtık yara"
+        "tr": "yırtık yara",
+        "en": "laceration"
       },
       {
         "de": "Epiduralhämatom",
         "patient": "Blutung zwischen Schädel und harter Hirnhaut",
         "uz": "epidural gematoma",
         "ru": "эпидуральная гематома",
-        "tr": "epidural hematom"
+        "tr": "epidural hematom",
+        "en": "epidural haematoma"
       }
     ],
     "simulation": {

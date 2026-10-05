@@ -26,10 +26,10 @@ function NotFoundPage() {
     <div className="page flex flex-col items-center py-24 text-center">
       <p className="text-5xl font-bold text-teal-600">404</p>
       <h1 className="mt-3 text-xl font-semibold">
-        {tr("Sahifa topilmadi", "Страница не найдена", "Sayfa bulunamadı")}
+        {tr("Sahifa topilmadi", "Страница не найдена", "Sayfa bulunamadı", "Page not found")}
       </h1>
       <Link href="/" className="btn-primary mt-6">
-        {tr("Bosh sahifaga", "На главную", "Ana sayfaya")}
+        {tr("Bosh sahifaga", "На главную", "Ana sayfaya", "To the home page")}
       </Link>
     </div>
   );

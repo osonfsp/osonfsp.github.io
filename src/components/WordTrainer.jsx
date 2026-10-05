@@ -50,17 +50,20 @@ export function WordTrainer({ pool, onClose }) {
         <p className="text-4xl">{total ? "🎉" : "✅"}</p>
         <h2 className="mt-3 h-title">
           {total
-            ? tr("Sessiya tugadi!", "Сессия завершена!", "Oturum bitti!")
+            ? tr("Sessiya tugadi!", "Сессия завершена!", "Oturum bitti!", "Session finished!")
             : tr(
                 "Hozircha takrorlash kerak bo‘lgan so‘z yo‘q",
                 "Сейчас нет слов для повторения",
                 "Şu an tekrar edilecek kelime yok",
+                "No words to review right now",
               )}
         </h2>
         {total > 0 && (
           <p className="mt-2 text-sm muted">
-            {tr("Bildim", "Знаю", "Biliyorum")}: <b className="text-emerald-600">{stats.known}</b> ·{" "}
-            {tr("Yana takrorlash", "Повторить", "Tekrar et")}: <b className="text-rose-600">{stats.again}</b>
+            {tr("Bildim", "Знаю", "Biliyorum", "I knew it")}:{" "}
+            <b className="text-emerald-600">{stats.known}</b> ·{" "}
+            {tr("Yana takrorlash", "Повторить", "Tekrar et", "Review again")}:{" "}
+            <b className="text-rose-600">{stats.again}</b>
           </p>
         )}
         <p className="mt-2 text-sm muted">
@@ -68,6 +71,7 @@ export function WordTrainer({ pool, onClose }) {
             "Bilgan so‘zlaringiz 1, 3, 7, 14 va 30 kundan keyin yana chiqadi — shunda ular uzoq xotiraga o‘tadi.",
             "Знакомые слова вернутся через 1, 3, 7, 14 и 30 дней — так они перейдут в долговременную память.",
             "Bildiğiniz kelimeler 1, 3, 7, 14 ve 30 gün sonra tekrar çıkar — böylece uzun süreli belleğe geçerler.",
+            "Words you know come back after 1, 3, 7, 14 and 30 days — that is how they move into long-term memory.",
           )}
         </p>
         <div className="mt-5 flex flex-wrap justify-center gap-2">
@@ -80,11 +84,11 @@ export function WordTrainer({ pool, onClose }) {
                 setRetried([]);
               }}
             >
-              {tr("Yana 10 ta so‘z", "Ещё 10 слов", "10 kelime daha")}
+              {tr("Yana 10 ta so‘z", "Ещё 10 слов", "10 kelime daha", "10 more words")}
             </button>
           )}
           <button className="btn-outline" onClick={onClose}>
-            {tr("Lug‘atga qaytish", "Вернуться к словарю", "Sözlüğe dön")}
+            {tr("Lug‘atga qaytish", "Вернуться к словарю", "Sözlüğe dön", "Back to the dictionary")}
           </button>
         </div>
       </div>
@@ -97,20 +101,21 @@ export function WordTrainer({ pool, onClose }) {
     <div className="mx-auto max-w-xl">
       <div className="mb-3 flex items-center justify-between gap-2 text-sm">
         <span className="muted">
-          {tr("Qoldi", "Осталось", "Kalan")}: <b>{queue.length}</b> · ✓ {stats.known} · ↺ {stats.again}
+          {tr("Qoldi", "Осталось", "Kalan", "Left")}: <b>{queue.length}</b> · ✓ {stats.known} · ↺{" "}
+          {stats.again}
         </span>
         <div className="flex gap-1">
           <button
             className={cx(front ? "chip-on" : "chip-off")}
             onClick={() => (setDir("uz-de"), setFlipped(false))}
           >
-            {tr("UZ", "RU", "TR")} → DE
+            {tr("UZ", "RU", "TR", "EN")} → DE
           </button>
           <button
             className={cx(!front ? "chip-on" : "chip-off")}
             onClick={() => (setDir("de-uz"), setFlipped(false))}
           >
-            DE → {tr("UZ", "RU", "TR")}
+            DE → {tr("UZ", "RU", "TR", "EN")}
           </button>
         </div>
       </div>
@@ -118,11 +123,13 @@ export function WordTrainer({ pool, onClose }) {
         type="button"
         onClick={() => setFlipped(true)}
         className="card flex min-h-[260px] w-full flex-col items-center justify-center text-center transition hover:border-teal-300"
-        aria-label={tr("Javobni ko‘rsatish", "Показать ответ", "Cevabı göster")}
+        aria-label={tr("Javobni ko‘rsatish", "Показать ответ", "Cevabı göster", "Show answer")}
       >
         <span className="badge mb-4 bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-300">
           {w.category} ·{" "}
-          {box ? tr(`${box}-quti`, `ячейка ${box}`, `${box}. kutu`) : tr("yangi", "новое", "yeni")}
+          {box
+            ? tr(`${box}-quti`, `ячейка ${box}`, `${box}. kutu`, `Box ${box}`)
+            : tr("yangi", "новое", "yeni", "new")}
         </span>
         {/* Old tomon: faqat savol — javob (nemischa so‘z) ko‘rinmaydi */}
         {front ? (
@@ -146,7 +153,7 @@ export function WordTrainer({ pool, onClose }) {
               </span>
             ) : (
               <span className="wf-uz block">
-                <span className="wf-label">📗 {tr("O‘zbekcha", "Перевод", "Türkçe")}</span>
+                <span className="wf-label">📗 {tr("O‘zbekcha", "Перевод", "Türkçe", "English")}</span>
                 <span className="block text-2xl font-semibold">{loc(w)}</span>
               </span>
             )}
@@ -157,12 +164,13 @@ export function WordTrainer({ pool, onClose }) {
                   "Bemor tilida (Patientensprache)",
                   "Языком пациента (Patientensprache)",
                   "Hasta dilinde (Patientensprache)",
+                  "In patient language (Patientensprache)",
                 )}
               </span>
               <span className="block">„{w.patient}“</span>
             </span>
             <span className="wf-ex block">
-              <span className="wf-label">💬 {tr("Misol", "Пример", "Örnek")}</span>
+              <span className="wf-label">💬 {tr("Misol", "Пример", "Örnek", "Example")}</span>
               <span className="block text-sm italic">{w.example}</span>
             </span>
           </span>
@@ -173,11 +181,13 @@ export function WordTrainer({ pool, onClose }) {
                   "Nemischa Fachbegriff’ni eslang, keyin kartochkani bosing",
                   "Вспомните немецкий Fachbegriff, затем нажмите на карточку",
                   "Almanca Fachbegriff’i hatırlayın, sonra karta basın",
+                  "Recall the German Fachbegriff, then tap the card",
                 )
               : tr(
                   "Ma’nosini eslang, keyin kartochkani bosing",
                   "Вспомните значение, затем нажмите на карточку",
                   "Anlamını hatırlayın, sonra karta basın",
+                  "Recall the meaning, then tap the card",
                 )}
           </span>
         )}
@@ -188,15 +198,15 @@ export function WordTrainer({ pool, onClose }) {
             className="btn-outline border-rose-300 text-rose-700 dark:text-rose-400"
             onClick={() => answer(false)}
           >
-            ↺ {tr("Bilmadim", "Не знаю", "Bilmiyorum")}
+            ↺ {tr("Bilmadim", "Не знаю", "Bilmiyorum", "I didn’t know")}
           </button>
           <button className="btn-primary" onClick={() => answer(true)}>
-            ✓ {tr("Bildim", "Знаю", "Biliyorum")}
+            ✓ {tr("Bildim", "Знаю", "Biliyorum", "I knew it")}
           </button>
         </div>
       )}
       <button className="btn-ghost mt-3 w-full" onClick={onClose}>
-        {tr("Mashqni to‘xtatish", "Остановить тренировку", "Alıştırmayı durdur")}
+        {tr("Mashqni to‘xtatish", "Остановить тренировку", "Alıştırmayı durdur", "Stop practice")}
       </button>
     </div>
   );

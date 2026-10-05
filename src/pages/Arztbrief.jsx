@@ -22,11 +22,17 @@ export function ArztbriefListPage() {
     <div className="page">
       <PageHeader
         eyebrow="Arztbrief Trainer"
-        title={tr("Shifokor xati mashqlari", "Упражнения: врачебное письмо", "Doktor mektubu alıştırmaları")}
+        title={tr(
+          "Shifokor xati mashqlari",
+          "Упражнения: врачебное письмо",
+          "Doktor mektubu alıştırmaları",
+          "Doctor’s letter practice",
+        )}
         subtitle={tr(
           "Klinik ma’lumotlar asosida Arztbrief yozing. Sayt struktura, Fachsprache, gap tuzilishi va muhim ma’lumotlarni avtomatik tekshiradi.",
           "Напишите Arztbrief по клиническим данным. Сайт автоматически проверит структуру, Fachsprache, построение фраз и ключевые сведения.",
           "Klinik bilgilere dayanarak Arztbrief yazın. Site yapıyı, Fachsprache’yi, cümle yapısını ve önemli bilgileri otomatik olarak kontrol eder.",
+          "Write an Arztbrief based on clinical data. The site automatically checks structure, Fachsprache, sentence structure and key information.",
         )}
       />
       <SectionIntro id="arztbrief" />
@@ -50,10 +56,15 @@ export function ArztbriefListPage() {
                 <div className="mb-1 flex justify-between text-xs muted">
                   <span>
                     {n.length
-                      ? tr(`${n.length} urinish`, `попыток: ${n.length}`, `${n.length} deneme`)
-                      : tr("Hali yozilmagan", "Ещё не написано", "Henüz yazılmadı")}
+                      ? tr(
+                          `${n.length} urinish`,
+                          `попыток: ${n.length}`,
+                          `${n.length} deneme`,
+                          `${n.length} attempts`,
+                        )
+                      : tr("Hali yozilmagan", "Ещё не написано", "Henüz yazılmadı", "Not written yet")}
                   </span>
-                  <span>{i ? `${tr("Eng yaxshi", "Лучший", "En iyi")}: ${i}%` : ""}</span>
+                  <span>{i ? `${tr("Eng yaxshi", "Лучший", "En iyi", "Best")}: ${i}%` : ""}</span>
                 </div>
                 <ProgressBar value={i} auto />
               </div>
@@ -101,10 +112,12 @@ function ArztbriefEditor({ exercise: e, onResult: t }) {
     <div className="space-y-6">
       <div className="card">
         <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
-          <h2 className="h-title">✍️ {tr("Arztbrief editori", "Редактор Arztbrief", "Arztbrief editörü")}</h2>
+          <h2 className="h-title">
+            ✍️ {tr("Arztbrief editori", "Редактор Arztbrief", "Arztbrief editörü", "Arztbrief editor")}
+          </h2>
           <div className="flex gap-2">
             <button className="btn-ghost text-xs" onClick={() => n(ARZTBRIEF_TEMPLATE)}>
-              {tr("Shablonni qo‘yish", "Вставить шаблон", "Şablonu ekle")}
+              {tr("Shablonni qo‘yish", "Вставить шаблон", "Şablonu ekle", "Insert template")}
             </button>
             <button
               className="btn-ghost text-xs"
@@ -112,7 +125,7 @@ function ArztbriefEditor({ exercise: e, onResult: t }) {
                 (n(""), r(null));
               }}
             >
-              {tr("Tozalash", "Очистить", "Temizle")}
+              {tr("Tozalash", "Очистить", "Temizle", "Clear")}
             </button>
           </div>
         </div>
@@ -124,6 +137,7 @@ function ArztbriefEditor({ exercise: e, onResult: t }) {
             "Arztbrief’ni shu yerga nemis tilida yozing…",
             "Пишите Arztbrief здесь на немецком…",
             "Arztbrief’i buraya Almanca yazın…",
+            "Write your Arztbrief here in German…",
           )}
           spellCheck
           lang="de"
@@ -131,12 +145,17 @@ function ArztbriefEditor({ exercise: e, onResult: t }) {
         <div className="mt-3 flex flex-wrap items-center justify-between gap-3">
           <span className="text-xs muted">
             {b}
-            {tr(" so‘z · tavsiya: 150–300", " слов · рекомендуется: 150–300", " kelime · önerilen: 150–300")}
+            {tr(
+              " so‘z · tavsiya: 150–300",
+              " слов · рекомендуется: 150–300",
+              " kelime · önerilen: 150–300",
+              " words · recommended: 150–300",
+            )}
           </span>
           <div className="flex items-center gap-3">
             {i && <Spinner />}
             <button className="btn-primary" onClick={y} disabled={i || !a.trim()}>
-              {tr("Tekshirish", "Проверить", "Kontrol et")}
+              {tr("Tekshirish", "Проверить", "Kontrol et", "Check")}
             </button>
           </div>
         </div>
@@ -144,7 +163,7 @@ function ArztbriefEditor({ exercise: e, onResult: t }) {
       {s && (
         <div className="card">
           <div className="flex flex-col items-center gap-6 sm:flex-row sm:items-start">
-            <ProgressRing value={s.score} label={tr("Umumiy", "Итого", "Genel")} />
+            <ProgressRing value={s.score} label={tr("Umumiy", "Итого", "Genel", "General")} />
             <div className="w-full flex-1">
               <ScoreBars scores={s.criteria} />
             </div>
@@ -159,7 +178,7 @@ function ArztbriefEditor({ exercise: e, onResult: t }) {
           onClick={() => h((f) => !f)}
           aria-expanded={c}
         >
-          📄 {tr("Namuna yechim", "Образец", "Örnek çözüm")} (Musterlösung)
+          📄 {tr("Namuna yechim", "Образец", "Örnek çözüm", "Model answer")} (Musterlösung)
           <span className="muted">{c ? "▲" : "▼"}</span>
         </button>
         {c ? (
@@ -172,6 +191,7 @@ function ArztbriefEditor({ exercise: e, onResult: t }) {
               "Avval o‘zingiz yozing, keyin solishtiring.",
               "Сначала напишите сами, потом сравните.",
               "Önce kendiniz yazın, sonra karşılaştırın.",
+              "Write it yourself first, then compare.",
             )}
           </p>
         )}
@@ -188,9 +208,14 @@ export function ArztbriefPage() {
     return (
       <div className="page">
         <p className="card">
-          {tr("Mashq topilmadi. ", "Упражнение не найдено. ", "Alıştırma bulunamadı. ")}
+          {tr(
+            "Mashq topilmadi. ",
+            "Упражнение не найдено. ",
+            "Alıştırma bulunamadı. ",
+            "Exercise not found. ",
+          )}
           <Link href="/arztbrief" className="text-teal-600 hover:underline">
-            {tr("Ro‘yxatga qaytish", "Вернуться к списку", "Listeye dön")}
+            {tr("Ro‘yxatga qaytish", "Вернуться к списку", "Listeye dön", "Back to the list")}
           </Link>
         </p>
       </div>
@@ -199,14 +224,14 @@ export function ArztbriefPage() {
   return (
     <div className="page">
       <Link href="/arztbrief" className="text-sm muted hover:text-teal-600">
-        ← {tr("Barcha mashqlar", "Все упражнения", "Tüm alıştırmalar")}
+        ← {tr("Barcha mashqlar", "Все упражнения", "Tüm alıştırmalar", "All exercises")}
       </Link>
       <h1 className="mt-3 text-2xl font-bold sm:text-3xl">{t.title}</h1>
       <p className="mt-2 max-w-3xl muted">{loc(t, "task")}</p>
       <div className="mt-6 grid gap-4 lg:grid-cols-[360px_1fr]">
         <aside className="card h-fit lg:sticky lg:top-20">
           <h2 className="section-title">
-            {tr("Klinik ma’lumotlar", "Клинические данные", "Klinik bilgiler")}
+            {tr("Klinik ma’lumotlar", "Клинические данные", "Klinik bilgiler", "Clinical data")}
           </h2>
           <ul className="space-y-2 text-sm">
             {t.facts.map((i) => (
@@ -221,7 +246,7 @@ export function ArztbriefPage() {
               href={`/faelle/${n.id}`}
               className="mt-4 inline-block text-sm font-medium text-teal-600 hover:underline dark:text-teal-400"
             >
-              {tr("Fall’ni ochish →", "Открыть кейс →", "Vakayı aç →")}
+              {tr("Fall’ni ochish →", "Открыть кейс →", "Vakayı aç →", "Open case →")}
             </Link>
           )}
         </aside>

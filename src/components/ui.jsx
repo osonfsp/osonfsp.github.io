@@ -62,6 +62,11 @@ const CRITERIA_TR = {
   "Savollar sifati": "Soruların kalitesi",
   "Muhim ma’lumotlar": "Önemli bilgiler",
 };
+const CRITERIA_EN = {
+  "Anamnese to‘liqligi": "Completeness of history",
+  "Savollar sifati": "Quality of questions",
+  "Muhim ma’lumotlar": "Key information",
+};
 
 export function ScoreBars({ scores: e }) {
   return (
@@ -69,7 +74,7 @@ export function ScoreBars({ scores: e }) {
       {Object.entries(e).map(([t, a]) => (
         <div key={t}>
           <div className="mb-1 flex justify-between gap-2 text-sm">
-            <span>{tr(t, CRITERIA_RU[t], CRITERIA_TR[t])}</span>
+            <span>{tr(t, CRITERIA_RU[t], CRITERIA_TR[t], CRITERIA_EN[t])}</span>
             <span className="font-semibold tabular-nums">{a}%</span>
           </div>
           <ProgressBar value={a} auto />
@@ -132,7 +137,7 @@ export function FilterChips({
   options: e,
   value: t,
   onChange: a,
-  allLabel: n = tr("Barchasi", "Все", "Tümü"),
+  allLabel: n = tr("Barchasi", "Все", "Tümü", "All"),
 }) {
   return (
     <div className="no-scrollbar -mx-4 flex gap-2 overflow-x-auto px-4 pb-1 sm:mx-0 sm:flex-wrap sm:px-0">
@@ -175,9 +180,9 @@ const STATUS_ICONS = {
     error: "❌",
   },
   STATUS_LABELS = {
-    ok: tr("To‘g‘ri", "Верно", "Doğru"),
-    warn: tr("Yaxshilash kerak", "Можно улучшить", "Geliştirilmeli"),
-    error: tr("Xato", "Ошибка", "Hata"),
+    ok: tr("To‘g‘ri", "Верно", "Doğru", "Correct"),
+    warn: tr("Yaxshilash kerak", "Можно улучшить", "Geliştirilmeli", "Needs improvement"),
+    error: tr("Xato", "Ошибка", "Hata", "Mistake"),
   },
   STATUS_STYLES = {
     ok: "border-emerald-200 bg-emerald-50 dark:border-emerald-900/60 dark:bg-emerald-950/30",
@@ -208,7 +213,7 @@ export function FeedbackList({ items: e }) {
     <div>
       <div className="mb-4 flex flex-wrap gap-2">
         <button className={t === "all" ? "chip-on" : "chip-off"} onClick={() => a("all")}>
-          {tr("Barchasi", "Все", "Tümü")} ({e.length})
+          {tr("Barchasi", "Все", "Tümü", "All")} ({e.length})
         </button>
         {["ok", "warn", "error"].map((l) => (
           <button key={l} className={t === l ? "chip-on" : "chip-off"} onClick={() => a(l)}>
@@ -241,6 +246,7 @@ export function FeedbackList({ items: e }) {
               "Bu filtr bo‘yicha natija yo‘q.",
               "По этому фильтру ничего нет.",
               "Bu filtreye uygun sonuç yok.",
+              "No results for this filter.",
             )}
           </p>
         )}
@@ -257,6 +263,7 @@ export function Disclaimer() {
         "Bu faqat mashq natijasi. U rasmiy FSP imtihonidan o‘tish yoki o‘tmaslikni kafolatlamaydi va bashorat qilmaydi.",
         "Это только тренировочный результат. Он не гарантирует и не предсказывает сдачу официального экзамена FSP.",
         "Bu yalnızca bir alıştırma sonucudur. Resmî FSP sınavını geçip geçmeyeceğinizi garanti etmez ve öngörmez.",
+        "This is a practice result only. It does not guarantee or predict whether you will pass the official FSP exam.",
       )}
     </p>
   );
@@ -270,6 +277,7 @@ export function ConfirmButton({
     "Tasdiqlaysizmi? Yana bosing",
     "Уверены? Нажмите ещё раз",
     "Emin misiniz? Tekrar basın",
+    "Are you sure? Press again",
   ),
 }) {
   let [i, l] = useState(false);
@@ -287,7 +295,9 @@ export function ConfirmButton({
   );
 }
 
-export function Spinner({ label: e = tr("Tahlil qilinmoqda…", "Идёт анализ…", "Analiz ediliyor…") }) {
+export function Spinner({
+  label: e = tr("Tahlil qilinmoqda…", "Идёт анализ…", "Analiz ediliyor…", "Analysing…"),
+}) {
   return (
     <span className="inline-flex items-center gap-2 text-sm muted">
       <span className="h-4 w-4 animate-spin rounded-full border-2 border-teal-600 border-t-transparent" />

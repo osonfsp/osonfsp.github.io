@@ -5,6 +5,7 @@
     "uz": "Gastroskopiya (oshqozonni endoskopik ko‘rish)",
     "ru": "Гастроскопия",
     "tr": "Gastroskopi (midenin endoskopik incelemesi)",
+    "en": "Gastroscopy (endoscopic examination of the stomach)",
     "icon": "🔦",
     "question": "Herr Doktor, Sie haben gesagt, ich bekomme eine Magenspiegelung. Was passiert da genau?",
     "points": [
@@ -12,18 +13,21 @@
         "uz": "Maqsad: nima uchun kerak",
         "ru": "Цель: зачем это нужно",
         "tr": "Amaç: neden gerekli",
+        "en": "Purpose: why it is needed",
         "keywords": ["damit", "um zu", "um die ursache", "wir möchten", "schauen", "ursache", "nachsehen"]
       },
       {
         "uz": "Jarayon: ingichka shlang og‘iz orqali",
         "ru": "Ход: тонкий шланг через рот",
         "tr": "İşlem: ince bir hortum ağızdan",
+        "en": "Procedure: a thin tube through the mouth",
         "keywords": ["schlauch", "kamera", "mund", "speiseröhre", "magen"]
       },
       {
         "uz": "Tayyorgarlik: och qoringa (nüchtern)",
         "ru": "Подготовка: натощак",
         "tr": "Hazırlık: aç karnına (nüchtern)",
+        "en": "Preparation: on an empty stomach (nüchtern)",
         "keywords": [
           "nüchtern",
           "nichts essen",
@@ -37,6 +41,7 @@
         "uz": "Og‘riqsizlantirish / uxlatuvchi ukol",
         "ru": "Обезболивание / седация",
         "tr": "Ağrı kesici / uyutan iğne",
+        "en": "Pain relief / sedative injection",
         "keywords": [
           "schlafspritze",
           "betäub",
@@ -51,24 +56,28 @@
         "uz": "Davomiyligi",
         "ru": "Длительность",
         "tr": "Süresi",
+        "en": "Duration",
         "keywords": ["minuten", "dauert"]
       },
       {
         "uz": "Xavflar (kamdan-kam)",
         "ru": "Риски (редко)",
         "tr": "Riskler (nadir)",
+        "en": "Risks (rare)",
         "keywords": ["risiko", "selten", "blutung", "verletzung", "komplikation"]
       },
       {
         "uz": "Keyin: mashina haydamaslik",
         "ru": "После: не садиться за руль",
         "tr": "Sonrasında: araç kullanmamak",
+        "en": "Afterwards: no driving",
         "keywords": ["auto", "fahren", "abholen", "begleit"]
       },
       {
         "uz": "Savollar va rozilik",
         "ru": "Вопросы и согласие",
         "tr": "Sorular ve onam",
+        "en": "Questions and consent",
         "keywords": ["fragen", "einverstanden", "unterschreiben", "einwilligung"]
       }
     ],
@@ -112,6 +121,7 @@
     "uz": "Kolonoskopiya (yo‘g‘on ichakni ko‘rish)",
     "ru": "Колоноскопия",
     "tr": "Kolonoskopi (kalın bağırsağın incelenmesi)",
+    "en": "Colonoscopy (examination of the large bowel)",
     "icon": "🔍",
     "question": "Ich soll eine Darmspiegelung machen lassen. Davor habe ich ehrlich gesagt Angst. Was passiert da?",
     "points": [
@@ -119,48 +129,56 @@
         "uz": "Maqsad: nima uchun kerak",
         "ru": "Цель: зачем это нужно",
         "tr": "Amaç: neden gerekli",
+        "en": "Purpose: why it is needed",
         "keywords": ["damit", "um zu", "wir möchten", "schauen", "ursache", "vorsorge", "polyp", "wucherung"]
       },
       {
         "uz": "Jarayon: shlang orqa chiqaruv teshigi orqali",
         "ru": "Ход: шланг через задний проход",
         "tr": "İşlem: hortum makattan",
+        "en": "Procedure: a tube through the back passage",
         "keywords": ["schlauch", "kamera", "after", "darm"]
       },
       {
         "uz": "Tayyorgarlik: ichakni tozalash",
         "ru": "Подготовка: очищение кишечника",
         "tr": "Hazırlık: bağırsak temizliği",
+        "en": "Preparation: bowel cleansing",
         "keywords": ["abführ", "trinklösung", "flüssigkeit", "leer", "reinig", "sauber"]
       },
       {
         "uz": "Og‘riqsizlantirish / uxlatuvchi ukol",
         "ru": "Обезболивание / седация",
         "tr": "Ağrı kesici / uyutan iğne",
+        "en": "Pain relief / sedative injection",
         "keywords": ["schlafspritze", "betäub", "schlafen", "merken nichts", "tut nicht weh"]
       },
       {
         "uz": "Davomiyligi",
         "ru": "Длительность",
         "tr": "Süresi",
+        "en": "Duration",
         "keywords": ["minuten", "dauert"]
       },
       {
         "uz": "Xavflar (kamdan-kam)",
         "ru": "Риски (редко)",
         "tr": "Riskler (nadir)",
+        "en": "Risks (rare)",
         "keywords": ["risiko", "selten", "blutung", "verletzung", "komplikation"]
       },
       {
         "uz": "Keyin: mashina haydamaslik",
         "ru": "После: не садиться за руль",
         "tr": "Sonrasında: araç kullanmamak",
+        "en": "Afterwards: no driving",
         "keywords": ["auto", "fahren", "abholen", "begleit"]
       },
       {
         "uz": "Savollar va rozilik",
         "ru": "Вопросы и согласие",
         "tr": "Sorular ve onam",
+        "en": "Questions and consent",
         "keywords": ["fragen", "einverstanden", "unterschreiben", "einwilligung"]
       }
     ],
@@ -204,6 +222,7 @@
     "uz": "Kontrast moddali kompyuter tomografiya",
     "ru": "КТ с контрастом",
     "tr": "Kontrast maddeli bilgisayarlı tomografi",
+    "en": "Computed tomography with contrast",
     "icon": "🌀",
     "question": "Ich soll in so eine Röhre und bekomme ein Kontrastmittel? Ist das gefährlich?",
     "points": [
@@ -211,48 +230,56 @@
         "uz": "Maqsad: nima uchun kerak",
         "ru": "Цель: зачем это нужно",
         "tr": "Amaç: neden gerekli",
+        "en": "Purpose: why it is needed",
         "keywords": ["damit", "um zu", "wir möchten", "genau", "bilder", "ursache"]
       },
       {
         "uz": "Jarayon: rentgen nurlari bilan suratlar, halqa",
         "ru": "Ход: рентгеновские снимки, кольцо",
         "tr": "İşlem: röntgen ışınlarıyla çekim, halka",
+        "en": "Procedure: X-ray images, a ring",
         "keywords": ["röntgen", "bilder", "ring", "liege", "röhre"]
       },
       {
         "uz": "Kontrast modda vena orqali",
         "ru": "Контраст через вену",
         "tr": "Kontrast madde damardan",
+        "en": "Contrast agent through a vein",
         "keywords": ["kontrastmittel", "vene", "zugang", "spritze"]
       },
       {
         "uz": "Issiqlik hissi — normal",
         "ru": "Чувство тепла — это нормально",
         "tr": "Sıcaklık hissi — normaldir",
+        "en": "A feeling of warmth — that is normal",
         "keywords": ["warm", "wärme", "hitze"]
       },
       {
         "uz": "Davomiyligi",
         "ru": "Длительность",
         "tr": "Süresi",
+        "en": "Duration",
         "keywords": ["minuten", "dauert"]
       },
       {
         "uz": "Allergiya, buyrak, qalqonsimon bez haqida so‘rash",
         "ru": "Спросить об аллергии, почках, щитовидной железе",
         "tr": "Alerji, böbrek ve tiroid bezini sormak",
+        "en": "Ask about allergies, kidneys and thyroid",
         "keywords": ["allergi", "niere", "schilddrüse"]
       },
       {
         "uz": "Xavflar (kamdan-kam)",
         "ru": "Риски (редко)",
         "tr": "Riskler (nadir)",
+        "en": "Risks (rare)",
         "keywords": ["risiko", "selten", "strahlen", "allergische reaktion"]
       },
       {
         "uz": "Savollar va rozilik",
         "ru": "Вопросы и согласие",
         "tr": "Sorular ve onam",
+        "en": "Questions and consent",
         "keywords": ["fragen", "einverstanden", "unterschreiben", "einwilligung"]
       }
     ],
@@ -291,6 +318,7 @@
     "uz": "Magnit-rezonans tomografiya (MRT)",
     "ru": "МРТ",
     "tr": "Manyetik rezonans görüntüleme (MR)",
+    "en": "Magnetic resonance imaging (MRI)",
     "icon": "🧲",
     "question": "Mein Hausarzt sagt, ich brauche ein MRT vom Kopf. Was muss ich da beachten?",
     "points": [
@@ -298,48 +326,56 @@
         "uz": "Maqsad: nima uchun kerak",
         "ru": "Цель: зачем это нужно",
         "tr": "Amaç: neden gerekli",
+        "en": "Purpose: why it is needed",
         "keywords": ["damit", "um zu", "wir möchten", "genau", "bilder", "ursache"]
       },
       {
         "uz": "Jarayon: magnit maydon, rentgen nurlari yo‘q",
         "ru": "Ход: магнитное поле, без рентгена",
         "tr": "İşlem: manyetik alan, röntgen ışını yok",
+        "en": "Procedure: magnetic field, no X-rays",
         "keywords": ["magnet", "keine röntgen", "ohne röntgen", "keine strahl"]
       },
       {
         "uz": "Shovqin, quloqchin",
         "ru": "Шум, наушники",
         "tr": "Gürültü, kulaklık",
+        "en": "Noise, headphones",
         "keywords": ["laut", "klopf", "kopfhörer", "ohrstöpsel", "geräusch"]
       },
       {
         "uz": "Qimirlamay yotish, tor joy",
         "ru": "Лежать неподвижно, тесное пространство",
         "tr": "Hareketsiz yatmak, dar alan",
+        "en": "Lying still, narrow space",
         "keywords": ["still", "ruhig liegen", "eng", "röhre"]
       },
       {
         "uz": "Davomiyligi",
         "ru": "Длительность",
         "tr": "Süresi",
+        "en": "Duration",
         "keywords": ["minuten", "dauert"]
       },
       {
         "uz": "Metall, kardiostimulyator haqida so‘rash",
         "ru": "Спросить о металле, кардиостимуляторе",
         "tr": "Metal ve kalp pilini sormak",
+        "en": "Ask about metal and pacemakers",
         "keywords": ["metall", "herzschrittmacher", "implantat", "schmuck"]
       },
       {
         "uz": "Qo‘ng‘iroq tugmasi / aloqa",
         "ru": "Кнопка вызова / связь",
         "tr": "Çağrı düğmesi / iletişim",
+        "en": "Call button / communication",
         "keywords": ["klingel", "knopf", "sprechen", "melden"]
       },
       {
         "uz": "Savollar va rozilik",
         "ru": "Вопросы и согласие",
         "tr": "Sorular ve onam",
+        "en": "Questions and consent",
         "keywords": ["fragen", "einverstanden", "unterschreiben", "einwilligung"]
       }
     ],
@@ -373,6 +409,7 @@
     "uz": "Lyumbal punksiya (orqa miya suyuqligini olish)",
     "ru": "Люмбальная пункция",
     "tr": "Lomber ponksiyon (beyin omurilik sıvısı alınması)",
+    "en": "Lumbar puncture (taking spinal fluid)",
     "icon": "💉",
     "question": "Sie wollen mir Wasser aus dem Rücken nehmen? Kann ich danach gelähmt sein?",
     "points": [
@@ -380,48 +417,56 @@
         "uz": "Maqsad: nima uchun kerak",
         "ru": "Цель: зачем это нужно",
         "tr": "Amaç: neden gerekli",
+        "en": "Purpose: why it is needed",
         "keywords": ["damit", "um zu", "wir möchten", "untersuchen", "entzündung", "ursache"]
       },
       {
         "uz": "Jarayon: bel sohasida nina bilan suyuqlik olish",
         "ru": "Ход: прокол иглой в пояснице",
         "tr": "İşlem: bel bölgesinden iğneyle sıvı alınması",
+        "en": "Procedure: taking fluid with a needle in the lower back",
         "keywords": ["nadel", "rücken", "nervenwasser", "einstich"]
       },
       {
         "uz": "Orqa miya shikastlanmasligi",
         "ru": "Спинной мозг не повреждается",
         "tr": "Omurilik zarar görmez",
+        "en": "The spinal cord is not injured",
         "keywords": ["rückenmark", "unterhalb", "nicht verletzt", "keine lähmung", "nicht gelähmt"]
       },
       {
         "uz": "Holat: o‘tirib, oldinga egilish",
         "ru": "Положение: сидя, наклонившись вперёд",
         "tr": "Pozisyon: oturarak, öne eğilmek",
+        "en": "Position: sitting, bending forward",
         "keywords": ["sitzen", "vorbeugen", "rund", "katzenbuckel", "liegen"]
       },
       {
         "uz": "Mahalliy og‘riqsizlantirish",
         "ru": "Местное обезболивание",
         "tr": "Lokal anestezi",
+        "en": "Local anaesthetic",
         "keywords": ["betäub", "spritze", "tut kaum weh", "pieks"]
       },
       {
         "uz": "Davomiyligi",
         "ru": "Длительность",
         "tr": "Süresi",
+        "en": "Duration",
         "keywords": ["minuten", "dauert"]
       },
       {
         "uz": "Xavflar: bosh og‘rig‘i, infeksiya, qon ketish",
         "ru": "Риски: головная боль, инфекция, кровотечение",
         "tr": "Riskler: baş ağrısı, enfeksiyon, kanama",
+        "en": "Risks: headache, infection, bleeding",
         "keywords": ["kopfschmerz", "infektion", "blutung", "selten", "risiko"]
       },
       {
         "uz": "Savollar va rozilik",
         "ru": "Вопросы и согласие",
         "tr": "Sorular ve onam",
+        "en": "Questions and consent",
         "keywords": ["fragen", "einverstanden", "unterschreiben", "einwilligung"]
       }
     ],
@@ -460,6 +505,7 @@
     "uz": "Koronar angiografiya (yurak kateteri)",
     "ru": "Коронарография (катетеризация сердца)",
     "tr": "Koroner anjiyografi (kalp kateteri)",
+    "en": "Coronary angiography (cardiac catheter)",
     "icon": "❤️",
     "question": "Ein Herzkatheter? Da schieben Sie mir etwas bis ins Herz? Das klingt gefährlich.",
     "points": [
@@ -467,48 +513,56 @@
         "uz": "Maqsad: tomirlar torayganini ko‘rish",
         "ru": "Цель: увидеть сужение сосудов",
         "tr": "Amaç: damarlardaki daralmayı görmek",
+        "en": "Purpose: to see narrowed vessels",
         "keywords": ["herzkranzgefäße", "verengung", "verengt", "damit", "um zu"]
       },
       {
         "uz": "Jarayon: bilak yoki chov orqali ingichka shlang",
         "ru": "Ход: тонкая трубка через запястье или пах",
         "tr": "İşlem: bilekten veya kasıktan ince bir tüp",
+        "en": "Procedure: a thin tube through the wrist or groin",
         "keywords": ["handgelenk", "leiste", "schlauch", "katheter", "blutgefäß", "ader"]
       },
       {
         "uz": "Kontrast modda va rentgen",
         "ru": "Контраст и рентген",
         "tr": "Kontrast madde ve röntgen",
+        "en": "Contrast agent and X-ray",
         "keywords": ["kontrastmittel", "röntgen"]
       },
       {
         "uz": "Mahalliy og‘riqsizlantirish, bemor hushida",
         "ru": "Местная анестезия, пациент в сознании",
         "tr": "Lokal anestezi, hasta uyanık",
+        "en": "Local anaesthetic, the patient is awake",
         "keywords": ["betäub", "wach", "örtlich"]
       },
       {
         "uz": "Darhol davolash imkoniyati (stent)",
         "ru": "Возможность сразу лечить (стент)",
         "tr": "Hemen tedavi imkânı (stent)",
+        "en": "Treatment possible straight away (stent)",
         "keywords": ["stent", "aufdehnen", "ballon", "gleich behandeln"]
       },
       {
         "uz": "Xavflar (kamdan-kam)",
         "ru": "Риски (редко)",
         "tr": "Riskler (nadir)",
+        "en": "Risks (rare)",
         "keywords": ["risiko", "selten", "bluterguss", "blutung", "rhythmus", "allergi"]
       },
       {
         "uz": "Keyin: bosuvchi bog‘lam, yotib turish",
         "ru": "После: давящая повязка, постельный режим",
         "tr": "Sonrasında: baskılı bandaj, yatak istirahati",
+        "en": "Afterwards: pressure bandage, bed rest",
         "keywords": ["druckverband", "liegen", "danach", "schonen"]
       },
       {
         "uz": "Savollar va rozilik",
         "ru": "Вопросы и согласие",
         "tr": "Sorular ve onam",
+        "en": "Questions and consent",
         "keywords": ["fragen", "einverstanden", "unterschreiben", "einwilligung"]
       }
     ],
@@ -552,6 +606,7 @@
     "uz": "Veloergometriya (yuklama bilan EKG)",
     "ru": "Нагрузочная ЭКГ (велоэргометрия)",
     "tr": "Bisiklet ergometrisi (efor EKG’si)",
+    "en": "Cycle ergometry (exercise ECG)",
     "icon": "🚴",
     "question": "Ich soll auf ein Fahrrad und dabei wird mein Herz gemessen? Wozu ist das gut?",
     "points": [
@@ -559,48 +614,56 @@
         "uz": "Maqsad: zo‘riqishda yurak qon bilan ta’minlanishini tekshirish",
         "ru": "Цель: проверить кровоснабжение сердца при нагрузке",
         "tr": "Amaç: efor sırasında kalbin kanlanmasını kontrol etmek",
+        "en": "Purpose: to check the heart’s blood supply under exertion",
         "keywords": ["belastung", "durchblutung", "anstrengung", "damit", "um zu"]
       },
       {
         "uz": "Jarayon: velosiped, kuchlanish asta oshadi",
         "ru": "Ход: велосипед, нагрузка постепенно растёт",
         "tr": "İşlem: bisiklet, yük yavaş yavaş artar",
+        "en": "Procedure: bicycle, the load increases gradually",
         "keywords": ["fahrrad", "treten", "schwerer", "stufe", "steigern"]
       },
       {
         "uz": "EKG elektrodlari va qon bosimi",
         "ru": "Электроды ЭКГ и давление",
         "tr": "EKG elektrotları ve tansiyon",
+        "en": "ECG electrodes and blood pressure",
         "keywords": ["elektrod", "kleber", "blutdruck", "ekg"]
       },
       {
         "uz": "Shikoyat bo‘lsa darhol aytish",
         "ru": "Сразу сообщить о жалобах",
         "tr": "Şikâyet olursa hemen söylemek",
+        "en": "Say immediately if there are symptoms",
         "keywords": ["sofort", "sagen", "melden", "beschwerden", "schmerzen", "abbrechen"]
       },
       {
         "uz": "Shifokor doim yonida",
         "ru": "Врач всё время рядом",
         "tr": "Doktor her zaman yanında",
+        "en": "A doctor is always present",
         "keywords": ["arzt", "dabei", "neben", "überwach"]
       },
       {
         "uz": "Davomiyligi",
         "ru": "Длительность",
         "tr": "Süresi",
+        "en": "Duration",
         "keywords": ["minuten", "dauert"]
       },
       {
         "uz": "Tayyorgarlik: qulay kiyim, poyabzal",
         "ru": "Подготовка: удобная одежда и обувь",
         "tr": "Hazırlık: rahat kıyafet ve ayakkabı",
+        "en": "Preparation: comfortable clothes and shoes",
         "keywords": ["schuhe", "kleidung", "sportkleidung", "bequem"]
       },
       {
         "uz": "Savollar va rozilik",
         "ru": "Вопросы и согласие",
         "tr": "Sorular ve onam",
+        "en": "Questions and consent",
         "keywords": ["fragen", "einverstanden", "unterschreiben", "einwilligung"]
       }
     ],
@@ -634,6 +697,7 @@
     "uz": "Siydik qopiga kateter qo‘yish",
     "ru": "Установка мочевого катетера",
     "tr": "Mesaneye sonda takılması",
+    "en": "Inserting a urinary catheter",
     "icon": "🚿",
     "question": "Die Schwester sagt, ich bekomme einen Katheter in die Blase. Tut das weh?",
     "points": [
@@ -641,48 +705,56 @@
         "uz": "Maqsad: siydikni chiqarish",
         "ru": "Цель: вывести мочу",
         "tr": "Amaç: idrarı boşaltmak",
+        "en": "Purpose: to drain urine",
         "keywords": ["urin", "blase", "entleeren", "ablaufen", "damit", "um zu"]
       },
       {
         "uz": "Jarayon: ingichka shlang siydik yo‘li orqali",
         "ru": "Ход: тонкая трубка через мочеиспускательный канал",
         "tr": "İşlem: idrar yolundan ince bir tüp",
+        "en": "Procedure: a thin tube through the urethra",
         "keywords": ["schlauch", "harnröhre"]
       },
       {
         "uz": "Gel bilan og‘riqsizlantirish",
         "ru": "Обезболивающий гель",
         "tr": "Jel ile uyuşturma",
+        "en": "Numbing gel",
         "keywords": ["gel", "betäub", "unangenehm", "tut kaum weh"]
       },
       {
         "uz": "Gigiyena / sterillik",
         "ru": "Гигиена / стерильность",
         "tr": "Hijyen / sterilite",
+        "en": "Hygiene / sterility",
         "keywords": ["steril", "desinfiz", "sauber", "hygien"]
       },
       {
         "uz": "Ballon bilan mahkamlanadi",
         "ru": "Фиксация баллоном",
         "tr": "Balonla sabitlenir",
+        "en": "Held in place by a balloon",
         "keywords": ["ballon", "halten", "rutscht nicht"]
       },
       {
         "uz": "Davomiyligi",
         "ru": "Длительность",
         "tr": "Süresi",
+        "en": "Duration",
         "keywords": ["minuten", "dauert", "kurz"]
       },
       {
         "uz": "Xavflar: infeksiya, shikastlanish",
         "ru": "Риски: инфекция, травма",
         "tr": "Riskler: enfeksiyon, yaralanma",
+        "en": "Risks: infection, injury",
         "keywords": ["infektion", "verletzung", "selten", "risiko"]
       },
       {
         "uz": "Savollar va rozilik",
         "ru": "Вопросы и согласие",
         "tr": "Sorular ve onam",
+        "en": "Questions and consent",
         "keywords": ["fragen", "einverstanden"]
       }
     ],

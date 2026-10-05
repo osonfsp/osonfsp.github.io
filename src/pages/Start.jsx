@@ -18,12 +18,18 @@ export function StartPage() {
           "FSP imtihoningizgacha qancha vaqt bor?",
           "Сколько времени до вашего FSP?",
           "FSP sınavınıza ne kadar zaman var?",
+          "How much time until your FSP exam?",
         ),
         opts: EXAM_IN,
       },
       {
         key: "level",
-        q: tr("Nemis tili darajangiz qanday?", "Какой у вас уровень немецкого?", "Almanca seviyeniz nedir?"),
+        q: tr(
+          "Nemis tili darajangiz qanday?",
+          "Какой у вас уровень немецкого?",
+          "Almanca seviyeniz nedir?",
+          "What is your German level?",
+        ),
         opts: LEVELS,
       },
       {
@@ -32,6 +38,7 @@ export function StartPage() {
           "Qaysi qism siz uchun eng qiyin?",
           "Какая часть для вас самая трудная?",
           "Sizin için en zor bölüm hangisi?",
+          "Which part is the hardest for you?",
         ),
         opts: WEAK,
       },
@@ -76,6 +83,7 @@ export function StartPage() {
                 `Savol ${step + 1} / ${questions.length}`,
                 `Вопрос ${step + 1} / ${questions.length}`,
                 `Soru ${step + 1} / ${questions.length}`,
+                `Question ${step + 1} / ${questions.length}`,
               )}
             </p>
             <h1 className="mt-2 text-2xl font-bold">{questions[step].q}</h1>
@@ -102,10 +110,10 @@ export function StartPage() {
                 disabled={!step}
                 onClick={() => setStep((s) => s - 1)}
               >
-                ← {tr("Orqaga", "Назад", "Geri")}
+                ← {tr("Orqaga", "Назад", "Geri", "Back")}
               </button>
               <button className="muted hover:text-teal-600" onClick={skip}>
-                {tr("O‘tkazib yuborish →", "Пропустить →", "Atla →")}
+                {tr("O‘tkazib yuborish →", "Пропустить →", "Atla →", "Skip →")}
               </button>
             </div>
           </>
@@ -113,17 +121,27 @@ export function StartPage() {
           <div className="text-center">
             <p className="text-5xl">🎯</p>
             <h1 className="mt-3 text-2xl font-bold">
-              {tr("Rejangiz tayyor!", "Ваш план готов!", "Planınız hazır!")}
+              {tr("Rejangiz tayyor!", "Ваш план готов!", "Planınız hazır!", "Your plan is ready!")}
             </h1>
             <p className="mx-auto mt-3 max-w-md muted">{recommendation(getProfile())}</p>
             <div className="mx-auto mt-5 max-w-sm rounded-2xl bg-teal-50 p-4 text-left text-sm dark:bg-teal-950/40">
               <p className="font-semibold">
-                {tr("Har kuni sizni kutadi:", "Каждый день вас ждут:", "Her gün sizi bekleyenler:")}
+                {tr(
+                  "Har kuni sizni kutadi:",
+                  "Каждый день вас ждут:",
+                  "Her gün sizi bekleyenler:",
+                  "Waiting for you every day:",
+                )}
               </p>
               <ul className="mt-2 space-y-1">
                 <li>
                   📇{" "}
-                  {tr("So‘z takrorlash — 5 daqiqa", "Повторение слов — 5 минут", "Kelime tekrarı — 5 dakika")}
+                  {tr(
+                    "So‘z takrorlash — 5 daqiqa",
+                    "Повторение слов — 5 минут",
+                    "Kelime tekrarı — 5 dakika",
+                    "Word review — 5 minutes",
+                  )}
                 </li>
                 <li>
                   💬{" "}
@@ -131,6 +149,7 @@ export function StartPage() {
                     "Bemor bilan suhbat — 10 daqiqa",
                     "Беседа с пациентом — 10 минут",
                     "Hastayla görüşme — 10 dakika",
+                    "Talking with the patient — 10 minutes",
                   )}
                 </li>
                 <li>
@@ -139,6 +158,7 @@ export function StartPage() {
                     "Zaif qismingizga mashq — 5–15 daqiqa",
                     "Задание на слабую часть — 5–15 минут",
                     "Zayıf bölümünüz için alıştırma — 5–15 dakika",
+                    "Practice for your weak part — 5–15 minutes",
                   )}
                 </li>
               </ul>
@@ -148,6 +168,7 @@ export function StartPage() {
                 "Bugungi mashqni boshlash →",
                 "Начать сегодняшнюю практику →",
                 "Bugünkü alıştırmaya başla →",
+                "Start today’s practice →",
               )}
             </Link>
             <p className="mt-3 text-xs muted">
@@ -155,6 +176,7 @@ export function StartPage() {
                 "Javoblarni keyin istalgan vaqt o‘zgartirish mumkin.",
                 "Ответы можно изменить в любой момент.",
                 "Cevapları daha sonra istediğiniz zaman değiştirebilirsiniz.",
+                "You can change your answers at any time.",
               )}
             </p>
           </div>

@@ -29,7 +29,7 @@ export function DashboardPage() {
   )
     return (
       <div className="page">
-        <Spinner label={tr("Yuklanmoqda…", "Загрузка…", "Yükleniyor…")} />
+        <Spinner label={tr("Yuklanmoqda…", "Загрузка…", "Yükleniyor…", "Loading…")} />
       </div>
     );
   let r = new Set(a.arztbrief.map((f) => f.id)).size,
@@ -45,40 +45,54 @@ export function DashboardPage() {
       last3.length === 3 && last3.every((f) => f.passed)
         ? [
             "🟢",
-            tr("Imtihonga tayyorsiz", "Вы готовы к экзамену", "Sınava hazırsınız"),
+            tr(
+              "Imtihonga tayyorsiz",
+              "Вы готовы к экзамену",
+              "Sınava hazırsınız",
+              "You are ready for the exam",
+            ),
             tr(
               "Oxirgi 3 ta mashq imtihonining hammasi „bestanden“.",
               "Последние 3 пробных экзамена — все „bestanden“.",
               "Son 3 deneme sınavının hepsi „bestanden“.",
+              "Your last 3 practice exams were all „bestanden“.",
             ),
           ]
         : passN
           ? [
               "🟡",
-              tr("Tayyorlanish davom etmoqda", "Подготовка продолжается", "Hazırlık devam ediyor"),
+              tr(
+                "Tayyorlanish davom etmoqda",
+                "Подготовка продолжается",
+                "Hazırlık devam ediyor",
+                "Preparation in progress",
+              ),
               tr(
                 "Ketma-ket 3 marta „bestanden“ oling — shunda tayyor deb hisoblanasiz.",
                 "Получите „bestanden“ 3 раза подряд — тогда вы готовы.",
                 "Art arda 3 kez „bestanden“ alın — o zaman hazır sayılırsınız.",
+                "Get „bestanden“ 3 times in a row — then you count as ready.",
               ),
             ]
           : ex.length
             ? [
                 "🔴",
-                tr("Hali tayyor emas", "Пока не готовы", "Henüz hazır değil"),
+                tr("Hali tayyor emas", "Пока не готовы", "Henüz hazır değil", "Not ready yet"),
                 tr(
                   "„Nicht bestanden“ bo‘lgan qismlarni alohida mashq qiling va qayta topshiring.",
                   "Потренируйте части с „nicht bestanden“ отдельно и сдайте снова.",
                   "„Nicht bestanden“ olan bölümleri ayrıca çalışın ve tekrar girin.",
+                  "Practise the parts marked „nicht bestanden“ separately and try again.",
                 ),
               ]
             : [
                 "⚪",
-                tr("Hali baholanmagan", "Пока без оценки", "Henüz değerlendirilmedi"),
+                tr("Hali baholanmagan", "Пока без оценки", "Henüz değerlendirilmedi", "Not assessed yet"),
                 tr(
                   "Mashq imtihonini topshiring va natijangizni ko‘ring.",
                   "Сдайте пробный экзамен и посмотрите результат.",
                   "Deneme sınavına girin ve sonucunuzu görün.",
+                  "Take a practice exam and see your result.",
                 ),
               ],
     Q = dueCount(words, a.wordReview);
@@ -86,15 +100,16 @@ export function DashboardPage() {
     <div className="page">
       <PageHeader
         eyebrow="Dashboard"
-        title={`${tr("Salom", "Здравствуйте", "Merhaba")}, ${t.name}!`}
+        title={`${tr("Salom", "Здравствуйте", "Merhaba", "Hello")}, ${t.name}!`}
         subtitle={tr(
           "O‘quv jarayoningiz va natijalaringiz.",
           "Ваш учебный процесс и результаты.",
           "Öğrenme süreciniz ve sonuçlarınız.",
+          "Your learning progress and results.",
         )}
       >
         <ConfirmButton className="btn-outline" onConfirm={l}>
-          {tr("Progressni tozalash", "Сбросить прогресс", "İlerlemeyi sıfırla")}
+          {tr("Progressni tozalash", "Сбросить прогресс", "İlerlemeyi sıfırla", "Reset progress")}
         </ConfirmButton>
         <button
           className="btn-ghost"
@@ -102,7 +117,7 @@ export function DashboardPage() {
             (i(), s.push("/"));
           }}
         >
-          {tr("Chiqish", "Выйти", "Çıkış")}
+          {tr("Chiqish", "Выйти", "Çıkış", "Sign out")}
         </button>
       </PageHeader>
       {(() => {
@@ -118,21 +133,22 @@ export function DashboardPage() {
             </span>
             <span className="min-w-0 flex-1">
               <span className="block font-semibold">
-                {tr("Bugungi mashq", "Практика на сегодня", "Bugünkü alıştırma")} · {plan.doneCount}/
-                {plan.tasks.length}
+                {tr("Bugungi mashq", "Практика на сегодня", "Bugünkü alıştırma", "Today’s practice")} ·{" "}
+                {plan.doneCount}/{plan.tasks.length}
               </span>
               <span className="block truncate text-sm muted">
                 {next
-                  ? `${tr("Keyingisi", "Следующее", "Sıradaki")}: ${next.title} — ${next.desc}`
+                  ? `${tr("Keyingisi", "Следующее", "Sıradaki", "Next")}: ${next.title} — ${next.desc}`
                   : tr(
                       "Bugungi reja bajarildi 🎉",
                       "План на сегодня выполнен 🎉",
                       "Bugünkü plan tamamlandı 🎉",
+                      "Today’s plan done 🎉",
                     )}
               </span>
             </span>
             <span className="btn-primary shrink-0">
-              {next ? tr("Davom etish", "Продолжить", "Devam et") : "✓"}
+              {next ? tr("Davom etish", "Продолжить", "Devam et", "Continue") : "✓"}
             </span>
           </Link>
         );
@@ -142,12 +158,14 @@ export function DashboardPage() {
           <ProgressRing
             value={n}
             size={140}
-            label={tr("Umumiy progress", "Общий прогресс", "Genel ilerleme")}
+            label={tr("Umumiy progress", "Общий прогресс", "Genel ilerleme", "Overall progress")}
           />
           <div className="mt-4 grid w-full grid-cols-2 gap-2 text-sm">
             <div className="rounded-xl bg-amber-50 p-2.5 dark:bg-amber-950/40">
               <div className="text-xl font-bold">🔥 {K}</div>
-              <div className="text-xs muted">{tr("ketma-ket kun", "дней подряд", "gün art arda")}</div>
+              <div className="text-xs muted">
+                {tr("ketma-ket kun", "дней подряд", "gün art arda", "day streak")}
+              </div>
             </div>
             <Link
               href="/woerter"
@@ -155,7 +173,7 @@ export function DashboardPage() {
             >
               <div className="text-xl font-bold">📇 {Q}</div>
               <div className="text-xs muted">
-                {tr("bugun takrorlash", "повторить сегодня", "bugün tekrar")}
+                {tr("bugun takrorlash", "повторить сегодня", "bugün tekrar", "to review today")}
               </div>
             </Link>
           </div>
@@ -164,11 +182,12 @@ export function DashboardPage() {
               "Fälle, so‘zlar, kartochkalar, Arztbrief va Prüfung bo‘yicha o‘rtacha.",
               "Среднее по кейсам, словам, карточкам, Arztbrief и экзамену.",
               "Vakalar, kelimeler, kartlar, Arztbrief ve Prüfung ortalaması.",
+              "Average across cases, words, flashcards, Arztbrief and Prüfung.",
             )}
           </p>
           {y && (
             <Link href={`/faelle/${y.id}`} className="btn-primary mt-4 w-full">
-              {tr("Keyingi Fall: ", "Следующий кейс: ", "Sıradaki vaka: ")}
+              {tr("Keyingi Fall: ", "Следующий кейс: ", "Sıradaki vaka: ", "Next case: ")}
               {y.title}
             </Link>
           )}
@@ -176,24 +195,29 @@ export function DashboardPage() {
         <div className="grid gap-4 sm:grid-cols-2">
           <StatCard
             icon="🩺"
-            label={tr("Yechilgan Fälle", "Решённые кейсы", "Çözülen vakalar")}
+            label={tr("Yechilgan Fälle", "Решённые кейсы", "Çözülen vakalar", "Solved cases")}
             value={`${a.solvedCases.length} / ${cases.length}`}
             progress={(a.solvedCases.length / cases.length) * 100}
           />
           <StatCard
             icon="📚"
-            label={tr("O‘rganilgan so‘zlar", "Выученные слова", "Öğrenilen kelimeler")}
+            label={tr("O‘rganilgan so‘zlar", "Выученные слова", "Öğrenilen kelimeler", "Words learned")}
             value={`${a.learnedWords.length} / ${words.length}`}
             progress={(a.learnedWords.length / words.length) * 100}
           />
           <StatCard
             icon="✍️"
-            label={tr("Arztbrief mashqlari", "Упражнения Arztbrief", "Arztbrief alıştırmaları")}
+            label={tr(
+              "Arztbrief mashqlari",
+              "Упражнения Arztbrief",
+              "Arztbrief alıştırmaları",
+              "Arztbrief exercises",
+            )}
             value={`${r} / ${arztbriefe.length}`}
             hint={
               a.arztbrief.length
-                ? `${tr("O‘rtacha ball", "Средний балл", "Ortalama puan")}: ${c}%`
-                : tr("Hali urinish yo‘q", "Попыток пока нет", "Henüz deneme yok")
+                ? `${tr("O‘rtacha ball", "Средний балл", "Ortalama puan", "Average score")}: ${c}%`
+                : tr("Hali urinish yo‘q", "Попыток пока нет", "Henüz deneme yok", "No attempts yet")
             }
             progress={(r / arztbriefe.length) * 100}
           />
@@ -203,13 +227,18 @@ export function DashboardPage() {
             value={a.simulations.length}
             hint={
               a.simulations.length
-                ? `${tr("O‘rtacha ball", "Средний балл", "Ortalama puan")}: ${h}%`
-                : tr("Hali urinish yo‘q", "Попыток пока нет", "Henüz deneme yok")
+                ? `${tr("O‘rtacha ball", "Средний балл", "Ortalama puan", "Average score")}: ${h}%`
+                : tr("Hali urinish yo‘q", "Попыток пока нет", "Henüz deneme yok", "No attempts yet")
             }
           />
           <StatCard
             icon="🔁"
-            label={tr("Fach ↔ Patient kartochkalar", "Карточки Fach ↔ Patient", "Fach ↔ Patient kartları")}
+            label={tr(
+              "Fach ↔ Patient kartochkalar",
+              "Карточки Fach ↔ Patient",
+              "Fach ↔ Patient kartları",
+              "Fach ↔ Patient flashcards",
+            )}
             value={`${a.knownPairs.length} / ${pairs.length}`}
             progress={(a.knownPairs.length / pairs.length) * 100}
           />
@@ -220,9 +249,9 @@ export function DashboardPage() {
             hint={
               b
                 ? typeof b.passed == "boolean"
-                  ? `${tr("Oxirgi", "Последний", "Son")}: ${b.passed ? "bestanden ✅" : "nicht bestanden ❌"}`
-                  : `${tr("Oxirgi", "Последний", "Son")}: ${b.total}%`
-                : tr("Hali topshirilmagan", "Ещё не сдавали", "Henüz girilmedi")
+                  ? `${tr("Oxirgi", "Последний", "Son", "Latest")}: ${b.passed ? "bestanden ✅" : "nicht bestanden ❌"}`
+                  : `${tr("Oxirgi", "Последний", "Son", "Latest")}: ${b.total}%`
+                : tr("Hali topshirilmagan", "Ещё не сдавали", "Henüz girilmedi", "Not taken yet")
             }
           />
         </div>
@@ -230,7 +259,12 @@ export function DashboardPage() {
       <div className="mt-4 grid gap-4 lg:grid-cols-2">
         <div className="card">
           <h2 className="section-title">
-            {tr("FSP simulation natijalari", "Результаты симуляции FSP", "FSP simülasyon sonuçları")}
+            {tr(
+              "FSP simulation natijalari",
+              "Результаты симуляции FSP",
+              "FSP simülasyon sonuçları",
+              "FSP simulation results",
+            )}
           </h2>
           {b ? (
             <>
@@ -248,8 +282,8 @@ export function DashboardPage() {
                 <p className="text-xs muted">{ready[2]}</p>
                 {ex.length > 0 && (
                   <p className="mt-1 text-xs muted">
-                    {tr("O‘tilgan", "Сдано", "Geçilen")}: {passN} / {ex.length}{" "}
-                    {tr("ta mashq imtihoni", "пробных экзаменов", "deneme sınavı")}
+                    {tr("O‘tilgan", "Сдано", "Geçilen", "Passed")}: {passN} / {ex.length}{" "}
+                    {tr("ta mashq imtihoni", "пробных экзаменов", "deneme sınavı", "practice exams")}
                   </p>
                 )}
               </div>
@@ -288,15 +322,18 @@ export function DashboardPage() {
                 "Hali Prüfung simulyatsiyasi topshirilmagan. ",
                 "Пробный экзамен ещё не сдавали. ",
                 "Henüz Prüfung simülasyonuna girilmedi. ",
+                "You haven’t taken a Prüfung simulation yet. ",
               )}
               <Link href="/pruefung" className="font-medium text-teal-600 hover:underline">
-                {tr("Boshlash →", "Начать →", "Başla →")}
+                {tr("Boshlash →", "Начать →", "Başla →", "Start →")}
               </Link>
             </div>
           )}
         </div>
         <div className="card">
-          <h2 className="section-title">{tr("Oxirgi faoliyat", "Последняя активность", "Son etkinlik")}</h2>
+          <h2 className="section-title">
+            {tr("Oxirgi faoliyat", "Последняя активность", "Son etkinlik", "Recent activity")}
+          </h2>
           {a.activity.length ? (
             <ul className="divide-y divide-slate-100 dark:divide-slate-800">
               {a.activity.slice(0, 8).map((f, p) => (
@@ -314,14 +351,14 @@ export function DashboardPage() {
             </ul>
           ) : (
             <p className="text-sm muted">
-              {tr("Faoliyat hali yo‘q.", "Активности пока нет.", "Henüz etkinlik yok.")}
+              {tr("Faoliyat hali yo‘q.", "Активности пока нет.", "Henüz etkinlik yok.", "No activity yet.")}
             </p>
           )}
         </div>
       </div>
       <div className="card mt-4">
         <h2 className="section-title">
-          {tr("Fälle bo‘yicha holat", "Статус по кейсам", "Vakalara göre durum")}
+          {tr("Fälle bo‘yicha holat", "Статус по кейсам", "Vakalara göre durum", "Status by case")}
         </h2>
         <div className="space-y-3">
           {CASE_SECTIONS.map((sec) => {

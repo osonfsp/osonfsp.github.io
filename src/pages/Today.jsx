@@ -20,15 +20,16 @@ export function TodayPage() {
       <PageHeader
         eyebrow={formatDay(new Date(), { weekday: true })}
         eyebrowLang={LANG}
-        title={tr("Bugungi mashq", "Практика на сегодня", "Bugünkü alıştırma")}
+        title={tr("Bugungi mashq", "Практика на сегодня", "Bugünkü alıştırma", "Today’s practice")}
         subtitle={tr(
           "3 ta qisqa vazifa — kuniga 20–25 daqiqa. Tartib bilan bajaring.",
           "3 коротких задания — 20–25 минут в день. Выполняйте по порядку.",
           "3 kısa görev — günde 20–25 dakika. Sırayla yapın.",
+          "3 short tasks — 20–25 minutes a day. Do them in order.",
         )}
       >
         <span className="badge bg-amber-100 text-amber-800">
-          🔥 {streak} {tr("kun ketma-ket", "дней подряд", "gün art arda")}
+          🔥 {streak} {tr("kun ketma-ket", "дней подряд", "gün art arda", "day streak")}
         </span>
       </PageHeader>
 
@@ -40,10 +41,20 @@ export function TodayPage() {
           <span className="text-2xl">🧭</span>
           <span className="flex-1">
             <b>
-              {tr("Rejani o‘zingizga moslang", "Настройте план под себя", "Planı kendinize göre ayarlayın")}
+              {tr(
+                "Rejani o‘zingizga moslang",
+                "Настройте план под себя",
+                "Planı kendinize göre ayarlayın",
+                "Tailor the plan to you",
+              )}
             </b>
             <span className="block muted">
-              {tr("3 ta savol, 30 soniya", "3 вопроса, 30 секунд", "3 soru, 30 saniye")}
+              {tr(
+                "3 ta savol, 30 soniya",
+                "3 вопроса, 30 секунд",
+                "3 soru, 30 saniye",
+                "3 questions, 30 seconds",
+              )}
             </span>
           </span>
           <span className="font-medium text-teal-700">→</span>
@@ -58,8 +69,9 @@ export function TodayPage() {
                   "🎉 Bugungi reja bajarildi!",
                   "🎉 План на сегодня выполнен!",
                   "🎉 Bugünkü plan tamamlandı!",
+                  "🎉 Today’s plan done!",
                 )
-              : tr("Bugungi progress", "Прогресс за сегодня", "Bugünkü ilerleme")}
+              : tr("Bugungi progress", "Прогресс за сегодня", "Bugünkü ilerleme", "Today’s progress")}
           </span>
           <span className="muted">
             {doneCount}/{tasks.length}
@@ -91,7 +103,8 @@ export function TodayPage() {
               </span>
               <div className="min-w-0 flex-1">
                 <p className="text-xs muted">
-                  {i + 1}-{tr("vazifa", "задание", "görev")} · ~{t.minutes} {tr("daqiqa", "мин", "dakika")}
+                  {i + 1}-{tr("vazifa", "задание", "görev", "tasks")} · ~{t.minutes}{" "}
+                  {tr("daqiqa", "мин", "dakika", "min")}
                   {t.progress && ` · ${t.progress}`}
                 </p>
                 <p className={cx("font-semibold", t.done && "line-through")}>{t.title}</p>
@@ -100,7 +113,7 @@ export function TodayPage() {
               <div className="flex shrink-0 flex-col items-end gap-1">
                 {!t.done && (
                   <Link href={t.href} className={isNext ? "btn-primary" : "btn-outline"}>
-                    {tr("Boshlash", "Начать", "Başla")}
+                    {tr("Boshlash", "Начать", "Başla", "Start")}
                   </Link>
                 )}
                 {!t.done && t.manual && (
@@ -108,7 +121,7 @@ export function TodayPage() {
                     className="text-xs muted hover:text-teal-600"
                     onClick={() => (markDone(t.id), refresh((x) => x + 1))}
                   >
-                    {tr("Bajarildi ✓", "Выполнено ✓", "Tamamlandı ✓")}
+                    {tr("Bajarildi ✓", "Выполнено ✓", "Tamamlandı ✓", "Done ✓")}
                   </button>
                 )}
               </div>
@@ -123,16 +136,18 @@ export function TodayPage() {
               "Ertaga yangi vazifalar bo‘ladi. Xohlasangiz, istalgan bo‘limda davom eting.",
               "Завтра будут новые задания. Можно продолжить в любом разделе.",
               "Yarın yeni görevler olacak. İsterseniz herhangi bir bölümde devam edin.",
+              "New tasks tomorrow. If you like, continue in any section.",
             )
           : tr(
               "Vazifa bajarilgach, bu sahifaga qayting — u avtomatik belgilanadi.",
               "После выполнения вернитесь сюда — задание отметится автоматически.",
               "Görevi bitirince bu sayfaya dönün — otomatik olarak işaretlenir.",
+              "After finishing a task, come back to this page — it is ticked off automatically.",
             )}
       </p>
       <p className="mt-2 text-center text-xs">
         <Link href="/start" className="muted hover:text-teal-600">
-          {tr("Rejani o‘zgartirish", "Изменить план", "Planı değiştir")}
+          {tr("Rejani o‘zgartirish", "Изменить план", "Planı değiştir", "Change plan")}
         </Link>
       </p>
     </div>

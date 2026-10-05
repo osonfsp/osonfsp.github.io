@@ -4,22 +4,38 @@ import { clamp } from "./utils";
 // Hörverstehen: bemor monologi va eshitib yozilgan qaydlarni tekshirish
 
 export const HOER_FIELDS = [
-  { key: "beginn", de: "Beginn", uz: "Boshlanishi", ru: "Начало", tr: "Başlangıç" },
-  { key: "lokalisation", de: "Lokalisation", uz: "Joylashuvi", ru: "Локализация", tr: "Yeri" },
+  { key: "beginn", de: "Beginn", uz: "Boshlanishi", ru: "Начало", tr: "Başlangıç", en: "Onset" },
+  {
+    key: "lokalisation",
+    de: "Lokalisation",
+    uz: "Joylashuvi",
+    ru: "Локализация",
+    tr: "Yeri",
+    en: "Location",
+  },
   {
     key: "charakter",
     de: "Charakter / Intensität",
     uz: "Xarakteri / kuchi",
     ru: "Характер / интенсивность",
     tr: "Karakteri / şiddeti",
+    en: "Character / severity",
   },
-  { key: "ausstrahlung", de: "Ausstrahlung", uz: "Tarqalishi", ru: "Иррадиация", tr: "Yayılımı" },
+  {
+    key: "ausstrahlung",
+    de: "Ausstrahlung",
+    uz: "Tarqalishi",
+    ru: "Иррадиация",
+    tr: "Yayılımı",
+    en: "Radiation",
+  },
   {
     key: "begleit",
     de: "Begleitsymptome",
     uz: "Hamroh simptomlar",
     ru: "Сопутствующие симптомы",
     tr: "Eşlik eden semptomlar",
+    en: "Accompanying symptoms",
   },
   {
     key: "vorerkrankungen",
@@ -27,10 +43,18 @@ export const HOER_FIELDS = [
     uz: "Avvalgi kasalliklar",
     ru: "Перенесённые заболевания",
     tr: "Geçirilmiş hastalıklar",
+    en: "Past illnesses",
   },
-  { key: "medikamente", de: "Medikamente", uz: "Dorilar", ru: "Лекарства", tr: "İlaçlar" },
-  { key: "allergien", de: "Allergien", uz: "Allergiyalar", ru: "Аллергии", tr: "Alerjiler" },
-  { key: "noxen", de: "Noxen", uz: "Zararli odatlar", ru: "Вредные привычки", tr: "Zararlı alışkanlıklar" },
+  { key: "medikamente", de: "Medikamente", uz: "Dorilar", ru: "Лекарства", tr: "İlaçlar", en: "Medication" },
+  { key: "allergien", de: "Allergien", uz: "Allergiyalar", ru: "Аллергии", tr: "Alerjiler", en: "Allergies" },
+  {
+    key: "noxen",
+    de: "Noxen",
+    uz: "Zararli odatlar",
+    ru: "Вредные привычки",
+    tr: "Zararlı alışkanlıklar",
+    en: "Harmful habits",
+  },
 ];
 
 // Bemor o‘zi gapirib beradigan matn (monolog), gaplarga bo‘lingan

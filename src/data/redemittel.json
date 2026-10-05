@@ -7,31 +7,36 @@
         "Guten Tag, mein Name ist Dr. … Ich bin hier Assistenzarzt / Assistenzärztin.",
         "Assalomu alaykum, mening ismim Dr. … Men shu yerda assistent shifokorman.",
         "Здравствуйте, меня зовут доктор … Я здесь работаю ассистентом.",
-        "İyi günler, benim adım Dr. … Burada asistan doktorum."
+        "İyi günler, benim adım Dr. … Burada asistan doktorum.",
+        "Hello, my name is Dr. … I am a junior doctor here."
       ],
       [
         "Ich würde Ihnen gern einige Fragen stellen. Ist das in Ordnung?",
         "Sizga bir nechta savol bermoqchiman. Mumkinmi?",
         "Я хотел(а) бы задать вам несколько вопросов. Вы не против?",
-        "Size birkaç soru sormak istiyorum. Uygun mu?"
+        "Size birkaç soru sormak istiyorum. Uygun mu?",
+        "I would like to ask you a few questions. Is that all right?"
       ],
       [
         "Wie darf ich Sie ansprechen?",
         "Sizga qanday murojaat qilsam bo‘ladi?",
         "Как мне к вам обращаться?",
-        "Size nasıl hitap edebilirim?"
+        "Size nasıl hitap edebilirim?",
+        "How would you like me to address you?"
       ],
       [
         "Was führt Sie heute zu uns?",
         "Bugun sizni bizga nima olib keldi?",
         "Что привело вас к нам сегодня?",
-        "Bugün sizi bize ne getirdi?"
+        "Bugün sizi bize ne getirdi?",
+        "What brings you to us today?"
       ],
       [
         "Erzählen Sie bitte, welche Beschwerden Sie haben.",
         "Qanday shikoyatlaringiz borligini aytib bering.",
         "Расскажите, пожалуйста, на что вы жалуетесь.",
-        "Lütfen şikâyetlerinizi anlatın."
+        "Lütfen şikâyetlerinizi anlatın.",
+        "Please tell me what your complaints are."
       ]
     ]
   },
@@ -43,49 +48,57 @@
         "Seit wann haben Sie diese Beschwerden?",
         "Bu shikoyatlar qachondan beri bor?",
         "С какого времени у вас эти жалобы?",
-        "Bu şikâyetler ne zamandan beri var?"
+        "Bu şikâyetler ne zamandan beri var?",
+        "How long have you had these complaints?"
       ],
       [
         "Wie hat es angefangen – plötzlich oder langsam?",
         "Qanday boshlandi – to‘satdanmi yoki asta-sekinmi?",
         "Как это началось — внезапно или постепенно?",
-        "Nasıl başladı – aniden mi, yavaş yavaş mı?"
+        "Nasıl başladı – aniden mi, yavaş yavaş mı?",
+        "How did it start – suddenly or gradually?"
       ],
       [
         "Wo genau haben Sie die Schmerzen? Können Sie mir die Stelle zeigen?",
         "Og‘riq aynan qayerda? Joyini ko‘rsata olasizmi?",
         "Где именно болит? Можете показать место?",
-        "Ağrı tam olarak nerede? Yerini gösterebilir misiniz?"
+        "Ağrı tam olarak nerede? Yerini gösterebilir misiniz?",
+        "Where exactly is the pain? Can you show me the spot?"
       ],
       [
         "Wie würden Sie die Schmerzen beschreiben – drückend, stechend, brennend oder ziehend?",
         "Og‘riqni qanday ta’riflaysiz – siquvchi, sanchuvchi, achishtiruvchi yoki tortuvchi?",
         "Как бы вы описали боль — давящая, колющая, жгучая или тянущая?",
-        "Ağrıyı nasıl tarif edersiniz – baskı şeklinde, batıcı, yakıcı veya çekici?"
+        "Ağrıyı nasıl tarif edersiniz – baskı şeklinde, batıcı, yakıcı veya çekici?",
+        "How would you describe the pain – pressing, stabbing, burning or pulling?"
       ],
       [
         "Wie stark sind die Schmerzen auf einer Skala von 0 bis 10?",
         "0 dan 10 gacha shkalada og‘riq qanchalik kuchli?",
         "Насколько сильна боль по шкале от 0 до 10?",
-        "0’dan 10’a kadar bir ölçekte ağrı ne kadar şiddetli?"
+        "0’dan 10’a kadar bir ölçekte ağrı ne kadar şiddetli?",
+        "On a scale from 0 to 10, how strong is the pain?"
       ],
       [
         "Strahlen die Schmerzen irgendwohin aus?",
         "Og‘riq biror joyga tarqaladimi?",
         "Отдаёт ли боль куда-нибудь?",
-        "Ağrı bir yere yayılıyor mu?"
+        "Ağrı bir yere yayılıyor mu?",
+        "Does the pain spread anywhere?"
       ],
       [
         "Gibt es etwas, das die Beschwerden verbessert oder verschlechtert?",
         "Shikoyatlarni yengillashtiradigan yoki kuchaytiradigan narsa bormi?",
         "Есть ли что-то, что облегчает или усиливает жалобы?",
-        "Şikâyetleri hafifleten veya artıran bir şey var mı?"
+        "Şikâyetleri hafifleten veya artıran bir şey var mı?",
+        "Is there anything that makes the complaints better or worse?"
       ],
       [
         "Hatten Sie solche Beschwerden schon einmal?",
         "Ilgari ham shunday shikoyatlar bo‘lganmi?",
         "Бывали ли у вас такие жалобы раньше?",
-        "Daha önce de böyle şikâyetleriniz oldu mu?"
+        "Daha önce de böyle şikâyetleriniz oldu mu?",
+        "Have you had complaints like this before?"
       ]
     ]
   },
@@ -97,33 +110,44 @@
         "Haben Sie Fieber, Schüttelfrost oder Nachtschweiß?",
         "Isitma, qaltirash yoki tungi terlash bormi?",
         "Есть ли у вас температура, озноб или ночная потливость?",
-        "Ateş, titreme veya gece terlemesi var mı?"
+        "Ateş, titreme veya gece terlemesi var mı?",
+        "Do you have a fever, chills or night sweats?"
       ],
       [
         "Ist Ihnen übel? Mussten Sie erbrechen?",
         "Ko‘nglingiz aynayaptimi? Qusdingizmi?",
         "Вас тошнит? Была ли рвота?",
-        "Mideniz bulanıyor mu? Kustunuz mu?"
+        "Mideniz bulanıyor mu? Kustunuz mu?",
+        "Do you feel sick? Have you vomited?"
       ],
       [
         "Haben Sie in letzter Zeit ungewollt abgenommen?",
         "Oxirgi paytda o‘zingiz istamagan holda vazn yo‘qotdingizmi?",
         "Вы в последнее время непреднамеренно похудели?",
-        "Son zamanlarda istemeden kilo verdiniz mi?"
+        "Son zamanlarda istemeden kilo verdiniz mi?",
+        "Have you lost weight recently without trying?"
       ],
       [
         "Wie sind Ihr Appetit und Ihr Durst?",
         "Ishtahangiz va chanqog‘ingiz qanday?",
         "Как у вас с аппетитом и жаждой?",
-        "İştahınız ve susamanız nasıl?"
+        "İştahınız ve susamanız nasıl?",
+        "How are your appetite and thirst?"
       ],
       [
         "Haben Sie Probleme beim Stuhlgang oder beim Wasserlassen?",
         "Ich kelishi yoki siyishda muammo bormi?",
         "Есть ли проблемы со стулом или мочеиспусканием?",
-        "Dışkılama veya idrar yapmada sorun var mı?"
+        "Dışkılama veya idrar yapmada sorun var mı?",
+        "Any problems with your bowels or passing urine?"
       ],
-      ["Wie schlafen Sie?", "Qanday uxlayapsiz?", "Как вы спите?", "Nasıl uyuyorsunuz?"]
+      [
+        "Wie schlafen Sie?",
+        "Qanday uxlayapsiz?",
+        "Как вы спите?",
+        "Nasıl uyuyorsunuz?",
+        "How are you sleeping?"
+      ]
     ]
   },
   {
@@ -134,37 +158,43 @@
         "Haben Sie Vorerkrankungen, zum Beispiel Bluthochdruck oder Zucker?",
         "Oldingi kasalliklaringiz bormi, masalan, yuqori qon bosimi yoki qand kasalligi?",
         "Есть ли у вас хронические заболевания, например повышенное давление или сахарный диабет?",
-        "Daha önceden hastalıklarınız var mı, örneğin yüksek tansiyon veya şeker hastalığı?"
+        "Daha önceden hastalıklarınız var mı, örneğin yüksek tansiyon veya şeker hastalığı?",
+        "Do you have any previous illnesses, for example high blood pressure or diabetes?"
       ],
       [
         "Wurden Sie schon einmal operiert?",
         "Ilgari operatsiya bo‘lganmisiz?",
         "Вас когда-нибудь оперировали?",
-        "Daha önce ameliyat oldunuz mu?"
+        "Daha önce ameliyat oldunuz mu?",
+        "Have you had any operations before?"
       ],
       [
         "Nehmen Sie regelmäßig Medikamente ein? Wenn ja, welche und in welcher Dosierung?",
         "Muntazam dori ichasizmi? Ha bo‘lsa, qaysi va qancha dozada?",
         "Принимаете ли вы регулярно лекарства? Если да, какие и в какой дозировке?",
-        "Düzenli ilaç kullanıyor musunuz? Evetse, hangilerini ve hangi dozda?"
+        "Düzenli ilaç kullanıyor musunuz? Evetse, hangilerini ve hangi dozda?",
+        "Do you take any medication regularly? If so, which and at what dose?"
       ],
       [
         "Haben Sie Allergien, zum Beispiel gegen Medikamente?",
         "Allergiyangiz bormi, masalan, dorilarga?",
         "Есть ли у вас аллергии, например на лекарства?",
-        "Alerjiniz var mı, örneğin ilaçlara?"
+        "Alerjiniz var mı, örneğin ilaçlara?",
+        "Do you have any allergies, for example to medication?"
       ],
       [
         "Wie äußert sich die Allergie?",
         "Allergiya qanday namoyon bo‘ladi?",
         "Как проявляется аллергия?",
-        "Alerji nasıl ortaya çıkıyor?"
+        "Alerji nasıl ortaya çıkıyor?",
+        "How does the allergy show itself?"
       ],
       [
         "Wann war Ihre letzte Regelblutung? Könnten Sie schwanger sein?",
         "Oxirgi hayzingiz qachon bo‘lgan? Homilador bo‘lishingiz mumkinmi?",
         "Когда была последняя менструация? Возможна ли беременность?",
-        "Son adetiniz ne zamandı? Hamile olma ihtimaliniz var mı?"
+        "Son adetiniz ne zamandı? Hamile olma ihtimaliniz var mı?",
+        "When was your last period? Could you be pregnant?"
       ]
     ]
   },
@@ -176,32 +206,43 @@
         "Gibt es in Ihrer Familie bekannte Erkrankungen?",
         "Oilangizda ma’lum kasalliklar bormi?",
         "Есть ли в вашей семье известные заболевания?",
-        "Ailenizde bilinen hastalıklar var mı?"
+        "Ailenizde bilinen hastalıklar var mı?",
+        "Are there any known illnesses in your family?"
       ],
-      ["Was sind Sie von Beruf?", "Kasbingiz nima?", "Кем вы работаете?", "Mesleğiniz nedir?"],
+      [
+        "Was sind Sie von Beruf?",
+        "Kasbingiz nima?",
+        "Кем вы работаете?",
+        "Mesleğiniz nedir?",
+        "What is your job?"
+      ],
       [
         "Wie wohnen Sie – allein oder mit Familie?",
         "Qanday yashaysiz – yolg‘izmi yoki oila bilanmi?",
         "Как вы живёте — одни или с семьёй?",
-        "Nasıl yaşıyorsunuz – yalnız mı, ailenizle mi?"
+        "Nasıl yaşıyorsunuz – yalnız mı, ailenizle mi?",
+        "How do you live – alone or with your family?"
       ],
       [
         "Rauchen Sie? Wenn ja, wie viel und seit wann?",
         "Chekasizmi? Ha bo‘lsa, qancha va qachondan beri?",
         "Вы курите? Если да, сколько и как давно?",
-        "Sigara içiyor musunuz? Evetse, ne kadar ve ne zamandan beri?"
+        "Sigara içiyor musunuz? Evetse, ne kadar ve ne zamandan beri?",
+        "Do you smoke? If so, how much and since when?"
       ],
       [
         "Trinken Sie Alkohol? Wie viel ungefähr?",
         "Spirtli ichimlik ichasizmi? Taxminan qancha?",
         "Пьёте ли вы алкоголь? Примерно сколько?",
-        "Alkol kullanıyor musunuz? Yaklaşık ne kadar?"
+        "Alkol kullanıyor musunuz? Yaklaşık ne kadar?",
+        "Do you drink alcohol? Roughly how much?"
       ],
       [
         "Nehmen Sie Drogen?",
         "Giyohvand moddalar iste’mol qilasizmi?",
         "Употребляете ли вы наркотики?",
-        "Uyuşturucu kullanıyor musunuz?"
+        "Uyuşturucu kullanıyor musunuz?",
+        "Do you use any drugs?"
       ]
     ]
   },
@@ -213,37 +254,43 @@
         "Vielen Dank für Ihre Geduld. Ich fasse kurz zusammen: …",
         "Sabringiz uchun rahmat. Qisqacha xulosa qilaman: …",
         "Спасибо за терпение. Кратко подведу итог: …",
-        "Sabrınız için teşekkürler. Kısaca özetliyorum: …"
+        "Sabrınız için teşekkürler. Kısaca özetliyorum: …",
+        "Thank you for your patience. Let me briefly summarise: …"
       ],
       [
         "Wir möchten jetzt einige Untersuchungen durchführen, zum Beispiel eine Blutabnahme und ein EKG.",
         "Endi bir nechta tekshiruv o‘tkazmoqchimiz, masalan, qon olish va EKG.",
         "Сейчас мы хотели бы провести несколько обследований, например взять кровь и сделать ЭКГ.",
-        "Şimdi birkaç tetkik yapmak istiyoruz, örneğin kan almak ve EKG çekmek."
+        "Şimdi birkaç tetkik yapmak istiyoruz, örneğin kan almak ve EKG çekmek.",
+        "We would now like to do a few tests, for example take blood and do an ECG."
       ],
       [
         "Bei der Ultraschalluntersuchung schauen wir uns Ihre Organe mit Schallwellen an. Das tut nicht weh.",
         "Ultratovush tekshiruvida a’zolaringizni tovush to‘lqinlari yordamida ko‘ramiz. Bu og‘riqsiz.",
         "При УЗИ мы осматриваем ваши органы с помощью звуковых волн. Это не больно.",
-        "Ultrasonda organlarınızı ses dalgaları yardımıyla görüyoruz. Bu ağrısızdır."
+        "Ultrasonda organlarınızı ses dalgaları yardımıyla görüyoruz. Bu ağrısızdır.",
+        "In an ultrasound scan we look at your organs using sound waves. It doesn’t hurt."
       ],
       [
         "Haben Sie noch Fragen?",
         "Yana savollaringiz bormi?",
         "У вас остались вопросы?",
-        "Başka sorunuz var mı?"
+        "Başka sorunuz var mı?",
+        "Do you have any other questions?"
       ],
       [
         "Wenn Ihre Beschwerden stärker werden, melden Sie sich bitte sofort.",
         "Agar shikoyatlaringiz kuchaysa, darhol xabar bering.",
         "Если жалобы усилятся, пожалуйста, сразу сообщите.",
-        "Şikâyetleriniz artarsa lütfen hemen haber verin."
+        "Şikâyetleriniz artarsa lütfen hemen haber verin.",
+        "If your complaints get worse, please let us know immediately."
       ],
       [
         "Ich bespreche die Befunde mit meinem Oberarzt und komme dann wieder zu Ihnen.",
         "Natijalarni katta shifokorim bilan muhokama qilib, keyin yoningizga qaytaman.",
         "Я обсужу результаты с моим старшим врачом и вернусь к вам.",
-        "Sonuçları üst hekimimle görüşüp tekrar yanınıza geleceğim."
+        "Sonuçları üst hekimimle görüşüp tekrar yanınıza geleceğim.",
+        "I will discuss the results with my senior doctor and then come back to you."
       ]
     ]
   },
@@ -255,43 +302,50 @@
         "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,",
         "Hurmatli hamkasblar,",
         "Уважаемые коллеги,",
-        "Sayın meslektaşlarım,"
+        "Sayın meslektaşlarım,",
+        "Dear colleagues,"
       ],
       [
         "wir berichten über Ihren Patienten Herrn …, geb. am …, der sich vom … bis zum … in unserer stationären Behandlung befand.",
         "… dan … gacha bizda statsionar davolangan bemoringiz janob … haqida xabar beramiz.",
         "сообщаем о вашем пациенте господине …, дата рождения …, который находился на стационарном лечении у нас с … по ….",
-        "… ile … tarihleri arasında bizde yatarak tedavi gören hastanız Bay … hakkında bilgi veriyoruz."
+        "… ile … tarihleri arasında bizde yatarak tedavi gören hastanız Bay … hakkında bilgi veriyoruz.",
+        "we are writing to report on your patient Mr …, who was treated as an inpatient with us from … to …."
       ],
       [
         "Der Patient stellte sich mit seit … bestehenden … in unserer Notaufnahme vor.",
         "Bemor … dan beri davom etayotgan … bilan shoshilinch bo‘limimizga murojaat qildi.",
         "Пациент обратился в наше приёмное отделение с … , существующими с … .",
-        "Hasta … zamandır devam eden … ile acil servisimize başvurdu."
+        "Hasta … zamandır devam eden … ile acil servisimize başvurdu.",
+        "The patient presented to our emergency department with … that had been present for …."
       ],
       [
         "Begleitend bestanden …",
         "Qo‘shimcha ravishda … kuzatildi.",
         "Сопутствующе отмечались …",
-        "Ek olarak … gözlendi."
+        "Ek olarak … gözlendi.",
+        "In addition, … was observed."
       ],
       [
         "… wurde verneint.",
         "… inkor qilindi (bemorda yo‘q).",
         "… отрицалось.",
-        "… reddedildi (hastada yok)."
+        "… reddedildi (hastada yok).",
+        "… was denied (not present in the patient)."
       ],
       [
         "An Vorerkrankungen sind … bekannt.",
         "Oldingi kasalliklardan … ma’lum.",
         "Из сопутствующих заболеваний известны …",
-        "Önceki hastalıklardan … biliniyor."
+        "Önceki hastalıklardan … biliniyor.",
+        "Known previous illnesses include …."
       ],
       [
         "Es besteht ein Nikotinabusus von ca. … pack years.",
         "Taxminan … pack years chekish anamnezi bor.",
         "Стаж курения около … пачко-лет.",
-        "Yaklaşık … paket-yıl sigara öyküsü var."
+        "Yaklaşık … paket-yıl sigara öyküsü var.",
+        "There is a smoking history of about … pack years."
       ]
     ]
   },
@@ -303,56 +357,71 @@
         "Bei der körperlichen Untersuchung zeigte sich …",
         "Fizikal ko‘rikda … aniqlandi.",
         "При физикальном обследовании выявлено …",
-        "Fizik muayenede … saptandı."
+        "Fizik muayenede … saptandı.",
+        "On physical examination, … was found."
       ],
       [
         "Laborchemisch fand sich ein erhöhtes …",
         "Laboratoriyada … ko‘tarilgani aniqlandi.",
         "Лабораторно определялся повышенный …",
-        "Laboratuvarda … yüksekliği saptandı."
+        "Laboratuvarda … yüksekliği saptandı.",
+        "Laboratory tests showed raised …."
       ],
-      ["Im EKG zeigten sich …", "EKG’da … kuzatildi.", "На ЭКГ выявлено …", "EKG’de … gözlendi."],
+      [
+        "Im EKG zeigten sich …",
+        "EKG’da … kuzatildi.",
+        "На ЭКГ выявлено …",
+        "EKG’de … gözlendi.",
+        "The ECG showed …."
+      ],
       [
         "Sonographisch stellte sich … dar.",
         "Sonografiyada … aniqlandi.",
         "При УЗИ визуализировался …",
-        "Ultrasonda … saptandı."
+        "Ultrasonda … saptandı.",
+        "Ultrasound showed …."
       ],
       [
         "Wir stellten die Diagnose …",
         "Biz … tashxisini qo‘ydik.",
         "Мы поставили диагноз …",
-        "… tanısını koyduk."
+        "… tanısını koyduk.",
+        "We made the diagnosis of …."
       ],
       [
         "Unter Therapie mit … besserten sich die Beschwerden rasch.",
         "… bilan davolashda shikoyatlar tez yaxshilandi.",
         "На фоне терапии … жалобы быстро уменьшились.",
-        "… ile tedavi altında şikâyetler hızla geriledi."
+        "… ile tedavi altında şikâyetler hızla geriledi.",
+        "Under treatment with …, the complaints improved quickly."
       ],
       [
         "Der weitere Verlauf gestaltete sich komplikationslos.",
         "Keyingi kechish asoratsiz o‘tdi.",
         "Дальнейшее течение без осложнений.",
-        "Sonraki seyir komplikasyonsuz geçti."
+        "Sonraki seyir komplikasyonsuz geçti.",
+        "The further course was uncomplicated."
       ],
       [
         "Wir entlassen den Patienten in gutem Allgemeinzustand.",
         "Bemorni yaxshi umumiy holatda javob beramiz.",
         "Выписываем пациента в хорошем общем состоянии.",
-        "Hastayı iyi genel durumda taburcu ediyoruz."
+        "Hastayı iyi genel durumda taburcu ediyoruz.",
+        "We are discharging the patient in good general condition."
       ],
       [
         "Wir empfehlen eine Kontrolle von … in … Wochen.",
         "… haftadan keyin … nazoratini tavsiya qilamiz.",
         "Рекомендуем контроль … через … недель.",
-        "… hafta sonra … kontrolünü öneriyoruz."
+        "… hafta sonra … kontrolünü öneriyoruz.",
+        "We recommend a check of … in … weeks."
       ],
       [
         "Mit freundlichen kollegialen Grüßen",
         "Hurmat bilan (hamkasblarcha salom bilan)",
         "С уважением (по-коллегиальному)",
-        "Saygılarımızla (meslektaşça selamlarla)"
+        "Saygılarımızla (meslektaşça selamlarla)",
+        "Yours sincerely (with collegial regards)"
       ]
     ]
   },
@@ -364,31 +433,36 @@
         "Ich möchte Ihnen Herrn / Frau …, … Jahre alt, vorstellen.",
         "Sizga janob / xonim … ni, … yosh, taqdim etmoqchiman.",
         "Разрешите представить вам господина / госпожу …, … лет.",
-        "Size Bay / Bayan …’yı, … yaşında, sunmak istiyorum."
+        "Size Bay / Bayan …’yı, … yaşında, sunmak istiyorum.",
+        "I would like to present Mr / Mrs …, aged …."
       ],
       [
         "Der Patient kam heute mit seit … bestehenden … zu uns.",
         "Bemor bugun … dan beri davom etayotgan … bilan keldi.",
         "Пациент поступил сегодня с … , существующими с … .",
-        "Hasta bugün … zamandır devam eden … ile geldi."
+        "Hasta bugün … zamandır devam eden … ile geldi.",
+        "The patient came in today with … that has been present for …."
       ],
       [
         "Die Schmerzen sind von drückendem Charakter und strahlen in … aus.",
         "Og‘riq siquvchi xarakterda va … ga tarqaladi.",
         "Боль давящего характера, иррадиирует в …",
-        "Ağrı baskı şeklinde ve …’ya yayılıyor."
+        "Ağrı baskı şeklinde ve …’ya yayılıyor.",
+        "The pain is pressing in character and radiates to …."
       ],
       [
         "Vorerkrankungen: … Dauermedikation: … Allergien: …",
         "Oldingi kasalliklar: … Doimiy dorilar: … Allergiyalar: …",
         "Сопутствующие заболевания: … Постоянные лекарства: … Аллергии: …",
-        "Önceki hastalıklar: … Sürekli ilaçlar: … Alerjiler: …"
+        "Önceki hastalıklar: … Sürekli ilaçlar: … Alerjiler: …",
+        "Previous illnesses: … Regular medication: … Allergies: …"
       ],
       [
         "Die Familienanamnese ist bezüglich … positiv.",
         "Oilaviy anamnez … bo‘yicha ijobiy.",
         "Семейный анамнез отягощён по …",
-        "Aile anamnezi … açısından pozitif."
+        "Aile anamnezi … açısından pozitif.",
+        "The family history is positive for …."
       ]
     ]
   },
@@ -400,49 +474,57 @@
         "Aufgrund der Anamnese gehe ich von … aus.",
         "Anamnez asosida … deb hisoblayman.",
         "На основании анамнеза я предполагаю …",
-        "Anamneze dayanarak … olduğunu düşünüyorum."
+        "Anamneze dayanarak … olduğunu düşünüyorum.",
+        "Based on the history, I suspect …."
       ],
       [
         "Meine Verdachtsdiagnose ist …, weil …",
         "Mening taxminiy tashxisim …, chunki …",
         "Мой предварительный диагноз — …, потому что …",
-        "Ön tanım … , çünkü …"
+        "Ön tanım … , çünkü …",
+        "My working diagnosis is …, because …"
       ],
       [
         "Differenzialdiagnostisch kommen … und … in Betracht.",
         "Differensial tashxis sifatida … va … ni ko‘rib chiqish kerak.",
         "В дифференциальной диагностике следует рассмотреть … и … .",
-        "Ayırıcı tanı olarak … ve … düşünülmelidir."
+        "Ayırıcı tanı olarak … ve … düşünülmelidir.",
+        "As differential diagnoses, … and … should be considered."
       ],
       [
         "… halte ich für weniger wahrscheinlich, da …",
         "… ni kamroq ehtimol deb hisoblayman, chunki …",
         "… считаю менее вероятным, так как …",
-        "…’yı daha az olası buluyorum, çünkü …"
+        "…’yı daha az olası buluyorum, çünkü …",
+        "I consider … less likely, because …"
       ],
       [
         "Zur weiteren Abklärung würde ich … veranlassen.",
         "Qo‘shimcha aniqlashtirish uchun … ni buyurardim.",
         "Для дальнейшего уточнения я бы назначил(а) …",
-        "Daha ileri açıklık için … isterdim."
+        "Daha ileri açıklık için … isterdim.",
+        "For further clarification I would order …."
       ],
       [
         "Therapeutisch würde ich mit … beginnen.",
         "Davolashni … bilan boshlardim.",
         "Лечение я бы начал(а) с …",
-        "Tedaviye … ile başlardım."
+        "Tedaviye … ile başlardım.",
+        "I would start treatment with …."
       ],
       [
         "Darf ich kurz nachfragen, ob Sie … meinen?",
         "Aniqlashtirib olsam, … ni nazarda tutyapsizmi?",
         "Позвольте уточнить: вы имеете в виду …?",
-        "Doğru anladıysam, … mı demek istiyorsunuz?"
+        "Doğru anladıysam, … mı demek istiyorsunuz?",
+        "Just to clarify, do you mean …?"
       ],
       [
         "Das müsste ich in der Leitlinie nachschlagen.",
         "Buni klinik tavsiyanomadan tekshirib ko‘rishim kerak.",
         "Это мне нужно было бы посмотреть в клинических рекомендациях.",
-        "Bunu klinik kılavuzdan kontrol etmem gerekir."
+        "Bunu klinik kılavuzdan kontrol etmem gerekir.",
+        "I would need to check that in the clinical guideline."
       ]
     ]
   }

@@ -69,7 +69,12 @@ export function AppProvider({ children: e }) {
           r((v) =>
             withActivity(
               v,
-              tr("Platformaga kirildi", "Вход на платформу", "Platforma giriş yapıldı"),
+              tr(
+                "Platformaga kirildi",
+                "Вход на платформу",
+                "Platforma giriş yapıldı",
+                "Signed in to the platform",
+              ),
               "/dashboard",
             ),
           ));
@@ -90,6 +95,7 @@ export function AppProvider({ children: e }) {
               "Progress boshqa qurilmadan ko‘chirildi",
               "Прогресс перенесён с другого устройства",
               "İlerleme başka cihazdan taşındı",
+              "Progress transferred from another device",
             ),
             "/dashboard",
           ),
@@ -108,7 +114,7 @@ export function AppProvider({ children: e }) {
           return N
             ? withActivity(
                 C,
-                `${tr("Fall yechildi", "Кейс решён", "Vaka çözüldü")}: ${getCase(m)?.title ?? m}`,
+                `${tr("Fall yechildi", "Кейс решён", "Vaka çözüldü", "Case solved")}: ${getCase(m)?.title ?? m}`,
                 `/faelle/${m}`,
               )
             : C;

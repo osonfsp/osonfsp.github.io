@@ -26,9 +26,9 @@ export function CaseDetailPage() {
     return (
       <div className="page">
         <p className="card">
-          {tr("Fall topilmadi. ", "Кейс не найден. ", "Vaka bulunamadı. ")}
+          {tr("Fall topilmadi. ", "Кейс не найден. ", "Vaka bulunamadı. ", "Case not found. ")}
           <Link href="/faelle" className="text-teal-600 hover:underline">
-            {tr("Ro‘yxatga qaytish", "Вернуться к списку", "Listeye dön")}
+            {tr("Ro‘yxatga qaytish", "Вернуться к списку", "Listeye dön", "Back to the list")}
           </Link>
         </p>
       </div>
@@ -41,7 +41,7 @@ export function CaseDetailPage() {
         href={`/faelle?bolim=${sectionOf(t.category)?.id ?? ""}`}
         className="text-sm muted hover:text-teal-600"
       >
-        ← {sectionOf(t.category)?.label ?? tr("Barcha Fälle", "Все кейсы", "Tüm vakalar")}
+        ← {sectionOf(t.category)?.label ?? tr("Barcha Fälle", "Все кейсы", "Tüm vakalar", "All cases")}
       </Link>
       <div className="mt-3 flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
         <div>
@@ -55,7 +55,7 @@ export function CaseDetailPage() {
         </div>
         <div className="flex flex-wrap gap-2">
           <Link href={`/simulation?case=${t.id}`} className="btn-primary">
-            💬 {tr("Simulyatsiya", "Симуляция", "Simülasyon")}
+            💬 {tr("Simulyatsiya", "Симуляция", "Simülasyon", "Simulation")}
           </Link>
           {c && (
             <Link href={`/arztbrief/${c.id}`} className="btn-outline">
@@ -69,8 +69,13 @@ export function CaseDetailPage() {
             onClick={() => n(t.id)}
           >
             {h
-              ? tr("✅ Yechilgan", "✅ Решено", "✅ Çözüldü")
-              : tr("Yechildi deb belgilash", "Отметить как решённый", "Çözüldü olarak işaretle")}
+              ? tr("✅ Yechilgan", "✅ Решено", "✅ Çözüldü", "✅ Solved")
+              : tr(
+                  "Yechildi deb belgilash",
+                  "Отметить как решённый",
+                  "Çözüldü olarak işaretle",
+                  "Mark as solved",
+                )}
           </button>
         </div>
       </div>
@@ -96,6 +101,7 @@ export function CaseDetailPage() {
               "Maslahat: avval simulyatsiyada anamnezni o‘zingiz yig‘ing, keyin quyidagi ma’lumot bilan solishtiring.",
               "Совет: сначала соберите анамнез сами в симуляции, затем сравните с данными ниже.",
               "İpucu: önce simülasyonda anamnezi kendiniz alın, sonra aşağıdaki bilgilerle karşılaştırın.",
+              "Tip: first take the history yourself in the simulation, then compare it with the data below.",
             )}
           </p>
         </aside>
@@ -104,7 +110,9 @@ export function CaseDetailPage() {
             <div className="flex items-center justify-between gap-2">
               <h2 className="section-title mb-0">Anamnese</h2>
               <button className="btn-ghost text-xs" onClick={() => l((b) => !b)}>
-                {i ? tr("Yashirish", "Скрыть", "Gizle") : tr("Ko‘rsatish", "Показать", "Göster")}
+                {i
+                  ? tr("Yashirish", "Скрыть", "Gizle", "Hide")
+                  : tr("Ko‘rsatish", "Показать", "Göster", "Show")}
               </button>
             </div>
             {i ? (
@@ -122,6 +130,7 @@ export function CaseDetailPage() {
                   "Anamnez yashirilgan — o‘zingizni sinab ko‘rish uchun.",
                   "Анамнез скрыт — чтобы вы могли проверить себя.",
                   "Anamnez gizlendi — kendinizi sınamanız için.",
+                  "The history is hidden — so you can test yourself.",
                 )}
               </p>
             )}
@@ -167,7 +176,7 @@ export function CaseDetailPage() {
                   <tr>
                     <th className="pb-2 font-medium">Deutsch (Fach)</th>
                     <th className="pb-2 font-medium">Patientensprache</th>
-                    <th className="pb-2 font-medium">{tr("O‘zbekcha", "Русский", "Türkçe")}</th>
+                    <th className="pb-2 font-medium">{tr("O‘zbekcha", "Русский", "Türkçe", "English")}</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-slate-100 dark:divide-slate-800">
@@ -194,12 +203,13 @@ export function CaseDetailPage() {
                   "Verdachtsdiagnose va keyingi qadamlar",
                   "Verdachtsdiagnose и дальнейшие шаги",
                   "Verdachtsdiagnose ve sonraki adımlar",
+                  "Verdachtsdiagnose and next steps",
                 )}
               </h2>
               <button className="btn-ghost text-xs" onClick={() => r((b) => !b)}>
                 {s
-                  ? tr("Yashirish", "Скрыть", "Gizle")
-                  : tr("Javobni ko‘rish", "Показать ответ", "Cevabı gör")}
+                  ? tr("Yashirish", "Скрыть", "Gizle", "Hide")
+                  : tr("Javobni ko‘rish", "Показать ответ", "Cevabı gör", "See the answer")}
               </button>
             </div>
             {s ? (
@@ -221,6 +231,7 @@ export function CaseDetailPage() {
                   "Avval o‘zingiz o‘ylab ko‘ring: qaysi diagnoz, qanday DD va tekshiruvlar?",
                   "Сначала подумайте сами: какой диагноз, какие DD и обследования?",
                   "Önce kendiniz düşünün: hangi tanı, hangi DD ve tetkikler?",
+                  "Think it through first: which diagnosis, which DD and investigations?",
                 )}
               </p>
             )}

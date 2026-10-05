@@ -21,7 +21,7 @@ export function RedemittelPage() {
         .map((b) => ({
           ...b,
           items: b.items
-            .map(([y, u, ru, tk]) => [y, tr(u, ru, tk)])
+            .map(([y, u, ru, tk, en]) => [y, tr(u, ru, tk, en)])
             .filter(([y, f]) => !h || y.toLowerCase().includes(h) || f.toLowerCase().includes(h)),
         }))
         .filter((b) => b.items.length);
@@ -31,17 +31,18 @@ export function RedemittelPage() {
     <div className="page">
       <PageHeader
         eyebrow="Redemittel"
-        title={tr("Tayyor iboralar", "Готовые фразы", "Hazır kalıplar")}
+        title={tr("Tayyor iboralar", "Готовые фразы", "Hazır kalıplar", "Ready-made phrases")}
         subtitle={tr(
           `FSP’ning 3 qismi uchun ${total} ta asosiy ibora — imtihon tartibida, o‘zbekcha tarjima va talaffuz bilan.`,
           `${total} ключевых фраз для 3 частей FSP — в порядке экзамена, с переводом и произношением.`,
           `FSP’nin 3 bölümü için ${total} temel ifade — sınav sırasına göre, Türkçe çeviri ve telaffuzla.`,
+          `${total} key phrases for the 3 parts of the FSP — in exam order, with English translation and pronunciation.`,
         )}
       >
         <button className={i ? "btn-outline" : "btn-primary"} onClick={() => (l(!i), r({}))}>
           {i
-            ? tr("🙈 Tarjimani yashirish", "🙈 Скрыть перевод", "🙈 Çeviriyi gizle")
-            : tr("👁 Tarjimani ko‘rsatish", "👁 Показать перевод", "👁 Çeviriyi göster")}
+            ? tr("🙈 Tarjimani yashirish", "🙈 Скрыть перевод", "🙈 Çeviriyi gizle", "🙈 Hide translation")
+            : tr("👁 Tarjimani ko‘rsatish", "👁 Показать перевод", "👁 Çeviriyi göster", "👁 Show translation")}
         </button>
       </PageHeader>
       <SectionIntro id="redemittel" />
@@ -53,6 +54,7 @@ export function RedemittelPage() {
             "Qidirish: nemischa yoki o‘zbekcha…",
             "Поиск: по-немецки или по-русски…",
             "Ara: Almanca veya Türkçe…",
+            "Search: in German or English…",
           )}
         />
         <FilterChips options={TEILE} value={e} onChange={t} />
@@ -62,6 +64,7 @@ export function RedemittelPage() {
               "O‘zbekchasini ko‘rish uchun iborani bosing — avval o‘zingiz tarjima qilib ko‘ring.",
               "Нажмите на фразу, чтобы увидеть перевод, — сначала попробуйте перевести сами.",
               "Türkçesini görmek için ifadeye basın — önce kendiniz çevirmeyi deneyin.",
+              "Tap a phrase to see the English — try translating it yourself first.",
             )}
           </p>
         )}
@@ -103,7 +106,7 @@ export function RedemittelPage() {
         ))}
         {!c.length && (
           <p className="card text-center muted">
-            {tr("Hech narsa topilmadi.", "Ничего не найдено.", "Hiçbir şey bulunamadı.")}
+            {tr("Hech narsa topilmadi.", "Ничего не найдено.", "Hiçbir şey bulunamadı.", "Nothing found.")}
           </p>
         )}
       </div>

@@ -34,11 +34,11 @@ function CaseCard({ c, solved }) {
       <div className="mt-auto flex items-center justify-between pt-4 text-sm">
         <span className={solved ? "text-emerald-600" : "muted"}>
           {solved
-            ? tr("✅ Yechilgan", "✅ Решено", "✅ Çözüldü")
-            : tr("○ Yechilmagan", "○ Не решено", "○ Çözülmedi")}
+            ? tr("✅ Yechilgan", "✅ Решено", "✅ Çözüldü", "✅ Solved")
+            : tr("○ Yechilmagan", "○ Не решено", "○ Çözülmedi", "○ Not solved")}
         </span>
         <span className="font-medium text-teal-600 dark:text-teal-400">
-          {tr("Ochish →", "Открыть →", "Aç →")}
+          {tr("Ochish →", "Открыть →", "Aç →", "Open →")}
         </span>
       </div>
     </Link>
@@ -82,16 +82,17 @@ export function CasesPage() {
     <div className="page">
       <PageHeader
         eyebrow="Klinische Fälle"
-        title={tr("Klinik holatlar", "Клинические случаи", "Klinik vakalar")}
+        title={tr("Klinik holatlar", "Клинические случаи", "Klinik vakalar", "Clinical cases")}
         subtitle={tr(
           "Mutaxassislikni tanlang: har bir Fall’da bemor ma’lumotlari, anamnez, Patientensprache ↔ Fachsprache va muhim terminlar.",
           "Выберите специальность: в каждом кейсе — данные пациента, анамнез, Patientensprache ↔ Fachsprache и ключевые термины.",
           "Uzmanlık alanını seçin: her vakada hasta bilgileri, anamnez, Patientensprache ↔ Fachsprache ve önemli terimler var.",
+          "Choose a specialty: each case has patient data, history, Patientensprache ↔ Fachsprache and key terms.",
         )}
       >
         <span className="badge bg-teal-50 text-teal-700 dark:bg-teal-950 dark:text-teal-300">
           {e.solvedCases.length}/{cases.length}
-          {tr(" yechildi", " решено", " çözüldü")}
+          {tr(" yechildi", " решено", " çözüldü", " solved")}
         </span>
       </PageHeader>
       <SectionIntro id="faelle" />
@@ -102,7 +103,7 @@ export function CasesPage() {
           {
             id: "all",
             icon: "📋",
-            label: tr("Barcha bo‘limlar", "Все разделы", "Tüm bölümler"),
+            label: tr("Barcha bo‘limlar", "Все разделы", "Tüm bölümler", "All sections"),
             categories: null,
           },
           ...CASE_SECTIONS,
@@ -127,7 +128,7 @@ export function CasesPage() {
               </span>
               <span className="mt-1 block text-sm font-semibold leading-tight">{s.label}</span>
               <span className={cx("mt-1 block text-xs", on ? "text-teal-100" : "muted")}>
-                {done}/{list.length} {tr("yechildi", "решено", "çözüldü")}
+                {done}/{list.length} {tr("yechildi", "решено", "çözüldü", "solved")}
               </span>
               <span
                 className={cx(
@@ -154,13 +155,14 @@ export function CasesPage() {
               "Qidirish: diagnoz, shikoyat, bemor ismi…",
               "Поиск: диагноз, жалоба, имя пациента…",
               "Ara: tanı, şikâyet, hasta adı…",
+              "Search: diagnosis, complaint, patient name…",
             )}
           />
         </div>
         <div className="flex gap-2">
           {["all", "leicht", "mittel", "schwer"].map((d) => (
             <button key={d} className={level === d ? "chip-on" : "chip-off"} onClick={() => setLevel(d)}>
-              {d === "all" ? tr("Barchasi", "Все", "Tümü") : DIFFICULTY_LABELS[d]}
+              {d === "all" ? tr("Barchasi", "Все", "Tümü", "All") : DIFFICULTY_LABELS[d]}
             </button>
           ))}
         </div>
@@ -186,7 +188,7 @@ export function CasesPage() {
       </div>
       {!shown && (section || q.trim()) && (
         <p className="card text-center muted">
-          {tr("Hech narsa topilmadi.", "Ничего не найдено.", "Hiçbir şey bulunamadı.")}
+          {tr("Hech narsa topilmadi.", "Ничего не найдено.", "Hiçbir şey bulunamadı.", "Nothing found.")}
         </p>
       )}
       {!section && !q.trim() && (
@@ -196,6 +198,7 @@ export function CasesPage() {
             "Yuqoridan mutaxassislikni tanlang — shu bo‘limdagi Fall’lar ochiladi.",
             "Выберите специальность выше — откроются кейсы этого раздела.",
             "Yukarıdan uzmanlık alanını seçin — o bölümün vakaları açılır.",
+            "Choose a specialty above — its cases will open.",
           )}
         </p>
       )}

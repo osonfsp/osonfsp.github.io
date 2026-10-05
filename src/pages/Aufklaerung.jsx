@@ -17,11 +17,17 @@ export function AufklaerungListPage() {
     <div className="page">
       <PageHeader
         eyebrow="Aufklärung · Teil 1"
-        title={tr("Bemorga tushuntirish", "Объяснение пациенту", "Hastaya açıklama")}
+        title={tr(
+          "Bemorga tushuntirish",
+          "Объяснение пациенту",
+          "Hastaya açıklama",
+          "Explaining to the patient",
+        )}
         subtitle={tr(
           "FSP’da anamnezdan keyin rejalashtirilgan tekshiruvni bemorga sodda tilda tushuntirish so‘raladi: nima uchun, qanday o‘tadi, tayyorgarlik, og‘riq, xavflar va savollar.",
           "На FSP после анамнеза нужно простым языком объяснить пациенту запланированное обследование: зачем, как проходит, подготовка, боль, риски и вопросы.",
           "FSP’de anamnezden sonra planlanan tetkiki hastaya sade bir dille açıklamanız istenir: neden yapılıyor, nasıl geçiyor, hazırlık, ağrı, riskler ve sorular.",
+          "In the FSP, after the history, you are asked to explain the planned examination to the patient in plain language: why it is done, how it works, preparation, pain, risks and questions.",
         )}
       />
       <SectionIntro id="aufklaerung" />
@@ -39,8 +45,8 @@ export function AufklaerungListPage() {
                 <div className="mb-1 flex justify-between text-xs muted">
                   <span>
                     {s
-                      ? tr("Eng yaxshi natija", "Лучший результат", "En iyi sonuç")
-                      : tr("Hali urinish yo‘q", "Попыток пока нет", "Henüz deneme yok")}
+                      ? tr("Eng yaxshi natija", "Лучший результат", "En iyi sonuç", "Best result")
+                      : tr("Hali urinish yo‘q", "Попыток пока нет", "Henüz deneme yok", "No attempts yet")}
                   </span>
                   <span>{s ? `${s}%` : ""}</span>
                 </div>
@@ -65,9 +71,14 @@ export function AufklaerungPage() {
     return (
       <div className="page">
         <p className="card">
-          {tr("Mashq topilmadi. ", "Упражнение не найдено. ", "Alıştırma bulunamadı. ")}
+          {tr(
+            "Mashq topilmadi. ",
+            "Упражнение не найдено. ",
+            "Alıştırma bulunamadı. ",
+            "Exercise not found. ",
+          )}
           <Link href="/aufklaerung" className="text-teal-600 hover:underline">
-            {tr("Ro‘yxatga qaytish", "Вернуться к списку", "Listeye dön")}
+            {tr("Ro‘yxatga qaytish", "Вернуться к списку", "Listeye dön", "Back to the list")}
           </Link>
         </p>
       </div>
@@ -81,7 +92,7 @@ export function AufklaerungPage() {
   return (
     <div className="page">
       <Link href="/aufklaerung" className="text-sm muted hover:text-teal-600">
-        ← {tr("Barcha tekshiruvlar", "Все обследования", "Tüm tetkikler")}
+        ← {tr("Barcha tekshiruvlar", "Все обследования", "Tüm tetkikler", "All examinations")}
       </Link>
       <h1 className="mt-3 text-2xl font-bold sm:text-3xl">
         {p.icon} {p.name}
@@ -92,7 +103,7 @@ export function AufklaerungPage() {
         <div className="space-y-4">
           <div className="card">
             <p className="text-xs font-semibold uppercase tracking-wider muted">
-              {tr("Bemor so‘raydi", "Пациент спрашивает", "Hasta soruyor")}
+              {tr("Bemor so‘raydi", "Пациент спрашивает", "Hasta soruyor", "The patient asks")}
             </p>
             <div className="mt-2 flex items-start gap-2">
               <span className="text-2xl" aria-hidden>
@@ -110,6 +121,7 @@ export function AufklaerungPage() {
                 "Bemorga nemis tilida, sodda qilib tushuntiring:",
                 "Объясните пациенту по-немецки, простыми словами:",
                 "Hastaya Almanca, sade bir şekilde açıklayın:",
+                "Explain to the patient in German, in simple words:",
               )}
             </label>
             <textarea
@@ -123,17 +135,22 @@ export function AufklaerungPage() {
             <div className="mt-3 flex items-center justify-between gap-3">
               <span className="text-xs muted">
                 {words}{" "}
-                {tr("so‘z · tavsiya: 80–150", "слов · рекомендуется: 80–150", "kelime · önerilen: 80–150")}
+                {tr(
+                  "so‘z · tavsiya: 80–150",
+                  "слов · рекомендуется: 80–150",
+                  "kelime · önerilen: 80–150",
+                  "words · recommended: 80–150",
+                )}
               </span>
               <button className="btn-primary" disabled={!text.trim()} onClick={check}>
-                {tr("Tekshirish", "Проверить", "Kontrol et")}
+                {tr("Tekshirish", "Проверить", "Kontrol et", "Check")}
               </button>
             </div>
           </div>
           {result && (
             <div className="card">
               <div className="flex flex-col items-center gap-6 sm:flex-row sm:items-start">
-                <ProgressRing value={result.score} label={tr("Umumiy", "Итого", "Genel")} />
+                <ProgressRing value={result.score} label={tr("Umumiy", "Итого", "Genel", "General")} />
                 <div className="w-full flex-1">
                   <ScoreBars scores={result.criteria} />
                 </div>
@@ -148,7 +165,7 @@ export function AufklaerungPage() {
               onClick={() => setShowSample((v) => !v)}
               aria-expanded={showSample}
             >
-              📄 {tr("Namuna tushuntirish", "Образец объяснения", "Örnek açıklama")}
+              📄 {tr("Namuna tushuntirish", "Образец объяснения", "Örnek açıklama", "Model explanation")}
               <span className="muted">{showSample ? "▲" : "▼"}</span>
             </button>
             {showSample ? (
@@ -164,6 +181,7 @@ export function AufklaerungPage() {
                   "Avval o‘zingiz yozing, keyin solishtiring.",
                   "Сначала напишите сами, потом сравните.",
                   "Önce kendiniz yazın, sonra karşılaştırın.",
+                  "Write it yourself first, then compare.",
                 )}
               </p>
             )}
@@ -171,7 +189,7 @@ export function AufklaerungPage() {
         </div>
         <aside className="card h-fit text-sm">
           <h2 className="section-title">
-            {tr("Nimalarni aytish kerak", "Что нужно сказать", "Neler söylenmeli")}
+            {tr("Nimalarni aytish kerak", "Что нужно сказать", "Neler söylenmeli", "What to cover")}
           </h2>
           <ul className="space-y-2">
             {p.points.map((x) => (
@@ -187,6 +205,7 @@ export function AufklaerungPage() {
               "Fachbegriff ishlatsangiz, darhol sodda so‘z bilan izohlang: „eine Gastroskopie, also eine Magenspiegelung“.",
               "Если используете Fachbegriff, сразу поясните простым словом: „eine Gastroskopie, also eine Magenspiegelung“.",
               "Fachbegriff kullanırsanız hemen sade bir kelimeyle açıklayın: „eine Gastroskopie, also eine Magenspiegelung“.",
+              "If you use a Fachbegriff, explain it straight away in a plain word: „eine Gastroskopie, also eine Magenspiegelung“.",
             )}
           </p>
           <div className="mt-4">
