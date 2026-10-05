@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react";
 import { ConfirmButton, PageHeader, ProgressBar, StatCard } from "../components/ui";
 import { CASE_CATEGORIES, WORD_CATEGORIES, arztbriefe, cases, words } from "../data/index";
+import { tr } from "../lib/i18n";
 import { cx } from "../lib/utils";
 import { useApp } from "../state/AppContext";
 
@@ -8,30 +9,30 @@ const ADMIN_FIELDS = {
     faelle: [
       {
         key: "title",
-        label: "Sarlavha (diagnoz)",
+        label: tr("Sarlavha (diagnoz)", "Заголовок (диагноз)", "Başlık (tanı)", "Title (diagnosis)"),
       },
       {
         key: "category",
-        label: "Kategoriya",
+        label: tr("Kategoriya", "Категория", "Kategori", "Category"),
         options: CASE_CATEGORIES,
       },
       {
         key: "difficulty",
-        label: "Qiyinlik",
+        label: tr("Qiyinlik", "Сложность", "Zorluk", "Difficulty"),
         options: ["leicht", "mittel", "schwer"],
       },
       {
         key: "name",
-        label: "Patient ismi",
+        label: tr("Patient ismi", "Имя пациента", "Hasta adı", "Patient name"),
       },
       {
         key: "age",
-        label: "Yosh",
+        label: tr("Yosh", "Возраст", "Yaş", "Age"),
         type: "number",
       },
       {
         key: "gender",
-        label: "Jins",
+        label: tr("Jins", "Пол", "Cinsiyet", "Sex"),
         options: ["männlich", "weiblich"],
       },
       {
@@ -51,7 +52,12 @@ const ADMIN_FIELDS = {
     woerter: [
       {
         key: "de",
-        label: "Deutsch (artikl bilan)",
+        label: tr(
+          "Deutsch (artikl bilan)",
+          "Deutsch (с артиклем)",
+          "Deutsch (artikelle)",
+          "Deutsch (with article)",
+        ),
       },
       {
         key: "patient",
@@ -59,23 +65,23 @@ const ADMIN_FIELDS = {
       },
       {
         key: "uz",
-        label: "O‘zbekcha",
+        label: tr("O‘zbekcha", "Узбекский", "Özbekçe", "Uzbek"),
       },
       {
         key: "example",
-        label: "Misol gap",
+        label: tr("Misol gap", "Пример предложения", "Örnek cümle", "Example sentence"),
         type: "textarea",
       },
       {
         key: "category",
-        label: "Kategoriya",
+        label: tr("Kategoriya", "Категория", "Kategori", "Category"),
         options: WORD_CATEGORIES,
       },
     ],
     arztbrief: [
       {
         key: "title",
-        label: "Sarlavha",
+        label: tr("Sarlavha", "Заголовок", "Başlık", "Title"),
       },
       {
         key: "caseId",
@@ -84,12 +90,17 @@ const ADMIN_FIELDS = {
       },
       {
         key: "task",
-        label: "Vazifa (o‘zbekcha)",
+        label: tr("Vazifa (o‘zbekcha)", "Задание (на узбекском)", "Görev (Özbekçe)", "Task (in Uzbek)"),
         type: "textarea",
       },
       {
         key: "facts",
-        label: "Klinik ma’lumotlar (har biri yangi qatorda)",
+        label: tr(
+          "Klinik ma’lumotlar (har biri yangi qatorda)",
+          "Клинические данные (каждое с новой строки)",
+          "Klinik bilgiler (her biri yeni satırda)",
+          "Clinical data (one per line)",
+        ),
         type: "textarea",
       },
     ],
@@ -242,7 +253,7 @@ export function AdminPage() {
       if (n === "arztbrief")
         return h.map((k, O) => ({
           i: O,
-          cols: [k.id, k.title, k.caseId, `${k.facts.length} fakt`],
+          cols: [k.id, k.title, k.caseId, `${k.facts.length} ${tr("fakt", "фактов", "bilgi", "facts")}`],
         }));
       return [];
     }, [n, l, r, h, p]).filter((z) => !p || z.cols.some((k) => k.toLowerCase().includes(p.toLowerCase())));
@@ -328,7 +339,12 @@ export function AdminPage() {
       };
       b((Ze) => (z !== null ? Ze.map((va, Zs) => (Zs === z ? te : va)) : [...Ze, te]));
     }
-    (f(null), g(z !== null ? "Saqlandi (demo)" : "Qo‘shildi (demo)"));
+    (f(null),
+      g(
+        z !== null
+          ? tr("Saqlandi (demo)", "Сохранено (демо)", "Kaydedildi (demo)", "Saved (demo)")
+          : tr("Qo‘shildi (demo)", "Добавлено (демо)", "Eklendi (demo)", "Added (demo)"),
+      ));
   }
   function C(z) {
     if ((f(null), n === "faelle")) s((k) => k.filter((O, te) => te !== z));
@@ -344,14 +360,19 @@ export function AdminPage() {
     ["faelle", "Fälle", l.length],
     ["woerter", "Wörter", r.length],
     ["arztbrief", "Arztbrief", h.length],
-    ["stats", "Statistika"],
+    ["stats", tr("Statistika", "Статистика", "İstatistik", "Statistics")],
   ];
   return (
     <div className="page">
       <PageHeader
         eyebrow="Admin panel · demo"
-        title="Kontent boshqaruvi"
-        subtitle="Backend ulanmagan: o‘zgarishlar xotirada saqlanadi. „JSON eksport“ orqali faylni yuklab, src/data/ ga qo‘yishingiz mumkin."
+        title={tr("Kontent boshqaruvi", "Управление контентом", "İçerik yönetimi", "Content management")}
+        subtitle={tr(
+          "Backend ulanmagan: o‘zgarishlar xotirada saqlanadi. „JSON eksport“ orqali faylni yuklab, src/data/ ga qo‘yishingiz mumkin.",
+          "Бэкенд не подключён: изменения хранятся в памяти. Через «JSON-экспорт» можно скачать файл и положить его в src/data/.",
+          "Backend bağlı değil: değişiklikler bellekte tutulur. “JSON dışa aktar” ile dosyayı indirip src/data/ klasörüne koyabilirsiniz.",
+          "No backend connected: changes are kept in memory. Use “JSON export” to download the file and put it in src/data/.",
+        )}
       />
       <div className="no-scrollbar mb-5 flex gap-2 overflow-x-auto">
         {E.map(([z, k, O]) => (
@@ -372,38 +393,52 @@ export function AdminPage() {
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             <StatCard
               icon="👥"
-              label="Foydalanuvchilar"
+              label={tr("Foydalanuvchilar", "Пользователи", "Kullanıcılar", "Users")}
               value={DEMO_USERS.length + (a ? 1 : 0)}
-              hint="mock + joriy qurilma"
+              hint={tr(
+                "mock + joriy qurilma",
+                "демо + это устройство",
+                "demo + bu cihaz",
+                "demo + this device",
+              )}
             />
             <StatCard
               icon="📈"
-              label="O‘rtacha progress"
+              label={tr("O‘rtacha progress", "Средний прогресс", "Ortalama ilerleme", "Average progress")}
               value={`${Math.round((DEMO_USERS.reduce((z, k) => z + k.progress, 0) + (a ? t : 0)) / (DEMO_USERS.length + (a ? 1 : 0)))}%`}
             />
             <StatCard
               icon="🎯"
-              label="Jami Prüfung"
+              label={tr("Jami Prüfung", "Всего Prüfung", "Toplam Prüfung", "Total Prüfung")}
               value={DEMO_USERS.reduce((z, k) => z + k.exams, 0) + e.exams.length}
             />
             <StatCard
               icon="✍️"
-              label="Arztbrief urinishlari"
+              label={tr(
+                "Arztbrief urinishlari",
+                "Попытки Arztbrief",
+                "Arztbrief denemeleri",
+                "Arztbrief attempts",
+              )}
               value={e.arztbrief.length}
-              hint="joriy qurilma"
+              hint={tr("joriy qurilma", "это устройство", "bu cihaz", "this device")}
             />
           </div>
           <div className="card">
-            <h2 className="section-title">Foydalanuvchilar</h2>
+            <h2 className="section-title">
+              {tr("Foydalanuvchilar", "Пользователи", "Kullanıcılar", "Users")}
+            </h2>
             <div className="-mx-5 overflow-x-auto px-5">
               <table className="w-full min-w-[560px] text-left text-sm">
                 <thead className="text-xs muted">
                   <tr>
-                    <th className="pb-2 font-medium">Ism</th>
-                    <th className="pb-2 font-medium">Shahar</th>
-                    <th className="pb-2 font-medium">Progress</th>
+                    <th className="pb-2 font-medium">{tr("Ism", "Имя", "Ad", "Name")}</th>
+                    <th className="pb-2 font-medium">{tr("Shahar", "Город", "Şehir", "City")}</th>
+                    <th className="pb-2 font-medium">{tr("Progress", "Прогресс", "İlerleme", "Progress")}</th>
                     <th className="pb-2 font-medium">Prüfung</th>
-                    <th className="pb-2 font-medium">Oxirgi faollik</th>
+                    <th className="pb-2 font-medium">
+                      {tr("Oxirgi faollik", "Последняя активность", "Son etkinlik", "Last active")}
+                    </th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-slate-100 dark:divide-slate-800">
@@ -411,11 +446,11 @@ export function AdminPage() {
                     ...(a
                       ? [
                           {
-                            name: `${a.name} (siz)`,
+                            name: `${a.name} (${tr("siz", "вы", "siz", "you")})`,
                             city: "—",
                             progress: t,
                             exams: e.exams.length,
-                            last: "bugun",
+                            last: tr("bugun", "сегодня", "bugün", "today"),
                           },
                         ]
                       : []),
@@ -445,16 +480,16 @@ export function AdminPage() {
             <div className="mb-4 flex flex-col gap-2 sm:flex-row">
               <input
                 className="input"
-                placeholder="Qidirish…"
+                placeholder={tr("Qidirish…", "Поиск…", "Ara…", "Search…")}
                 value={p}
                 onChange={(z) => A(z.target.value)}
               />
               <div className="flex gap-2">
                 <button className="btn-primary shrink-0" onClick={m}>
-                  + Qo‘shish
+                  + {tr("Qo‘shish", "Добавить", "Ekle", "Add")}
                 </button>
                 <button className="btn-outline shrink-0" onClick={x}>
-                  JSON eksport
+                  {tr("JSON eksport", "JSON-экспорт", "JSON dışa aktar", "JSON export")}
                 </button>
               </div>
             </div>
@@ -479,14 +514,14 @@ export function AdminPage() {
                       ))}
                       <td className="whitespace-nowrap py-2.5 text-right">
                         <button className="btn-ghost px-2 py-1 text-xs" onClick={() => v(z.i)}>
-                          Tahrirlash
+                          {tr("Tahrirlash", "Редактировать", "Düzenle", "Edit")}
                         </button>
                         <ConfirmButton
                           className="btn-ghost px-2 py-1 text-xs text-rose-600"
-                          confirmLabel="Tasdiqlash"
+                          confirmLabel={tr("Tasdiqlash", "Подтвердить", "Onayla", "Confirm")}
                           onConfirm={() => C(z.i)}
                         >
-                          O‘chirish
+                          {tr("O‘chirish", "Удалить", "Sil", "Delete")}
                         </ConfirmButton>
                       </td>
                     </tr>
@@ -503,7 +538,11 @@ export function AdminPage() {
                   (z.preventDefault(), N());
                 }}
               >
-                <h2 className="font-semibold">{y.index !== null ? "Tahrirlash" : "Yangi qo‘shish"}</h2>
+                <h2 className="font-semibold">
+                  {y.index !== null
+                    ? tr("Tahrirlash", "Редактировать", "Düzenle", "Edit")
+                    : tr("Yangi qo‘shish", "Добавить новое", "Yeni ekle", "Add new")}
+                </h2>
                 {ADMIN_FIELDS[n].map((z) => (
                   <div key={z.key}>
                     <label className="label" htmlFor={z.key}>
@@ -565,15 +604,22 @@ export function AdminPage() {
                 ))}
                 <div className="flex gap-2 pt-2">
                   <button type="submit" className="btn-primary flex-1">
-                    Saqlash
+                    {tr("Saqlash", "Сохранить", "Kaydet", "Save")}
                   </button>
                   <button type="button" className="btn-ghost" onClick={() => f(null)}>
-                    Bekor
+                    {tr("Bekor", "Отмена", "İptal", "Cancel")}
                   </button>
                 </div>
               </form>
             ) : (
-              <p className="text-sm muted">Element tanlang yoki „+ Qo‘shish“ tugmasini bosing.</p>
+              <p className="text-sm muted">
+                {tr(
+                  "Element tanlang yoki „+ Qo‘shish“ tugmasini bosing.",
+                  "Выберите элемент или нажмите «+ Добавить».",
+                  "Bir öğe seçin veya “+ Ekle” düğmesine basın.",
+                  "Select an item or press “+ Add”.",
+                )}
+              </p>
             )}
           </div>
         </div>
