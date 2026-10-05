@@ -781,5 +781,1118 @@
       }
     ],
     "sample": "Ihre Blase ist sehr voll, und der Urin kann nicht von allein ablaufen. Damit der Urin abfließen kann, legen wir einen dünnen, weichen Schlauch über die Harnröhre in die Blase. Vorher desinfizieren wir alles, damit es steril ist, und geben ein Gel mit Betäubung in die Harnröhre. Das ist etwas unangenehm, tut aber kaum weh. Ein kleiner Ballon hält den Schlauch in der Blase, damit er nicht herausrutscht. Das Ganze dauert nur wenige Minuten. Das Risiko ist gering; selten kann eine Infektion oder eine kleine Verletzung entstehen. Haben Sie noch Fragen? Sind Sie einverstanden?"
+  },
+  {
+    "id": "ekg",
+    "name": "EKG",
+    "uz": "EKG (yurak elektr faoliyatini yozib olish)",
+    "ru": "ЭКГ (электрокардиограмма)",
+    "tr": "EKG (kalbin elektriksel aktivitesinin kaydı)",
+    "en": "ECG (recording the heart’s electrical activity)",
+    "icon": "📈",
+    "question": "Frau Doktor, die Schwester sagt, ich bekomme jetzt ein EKG. Was ist das?",
+    "points": [
+      {
+        "uz": "Maqsad: nima uchun kerak",
+        "ru": "Цель: зачем это нужно",
+        "tr": "Amaç: neden gerekli",
+        "en": "Purpose: why it is needed",
+        "keywords": ["herzschlag", "herzrhythmus", "rhythmus", "herzstrom", "damit"]
+      },
+      {
+        "uz": "Jarayon: ko‘krak, qo‘l va oyoqlarga elektrodlar",
+        "ru": "Ход: электроды на грудь, руки и ноги",
+        "tr": "İşlem: göğse, kollara ve bacaklara elektrotlar",
+        "en": "Procedure: electrodes on the chest, arms and legs",
+        "keywords": ["elektrod", "aufkleber", "klebe", "brust", "kabel"]
+      },
+      {
+        "uz": "Og‘riqsiz, tok berilmaydi",
+        "ru": "Безболезненно, ток не подаётся",
+        "tr": "Ağrısız, akım verilmez",
+        "en": "Painless, no current is given",
+        "keywords": ["tut nicht weh", "schmerzfrei", "kein strom", "keinen strom", "spüren nichts"]
+      },
+      {
+        "uz": "Tayyorgarlik: ko‘krakni ochish, tinch yotish",
+        "ru": "Подготовка: освободить грудь, лежать спокойно",
+        "tr": "Hazırlık: göğsü açmak, sakin yatmak",
+        "en": "Preparation: uncover the chest, lie still",
+        "keywords": ["oberkörper", "frei machen", "ruhig liegen", "still liegen", "entspannt"]
+      },
+      {
+        "uz": "Davomiyligi",
+        "ru": "Длительность",
+        "tr": "Süresi",
+        "en": "Duration",
+        "keywords": ["minuten", "dauert", "stunde"]
+      },
+      {
+        "uz": "Xavf yo‘q",
+        "ru": "Рисков нет",
+        "tr": "Risk yok",
+        "en": "No risks",
+        "keywords": ["kein risiko", "keine risiken", "ungefährlich", "harmlos"]
+      },
+      {
+        "uz": "Savollar va rozilik",
+        "ru": "Вопросы и согласие",
+        "tr": "Sorular ve onam",
+        "en": "Questions and consent",
+        "keywords": ["fragen", "einverstanden", "unterschreiben", "einwilligung"]
+      }
+    ],
+    "jargon": [
+      {
+        "re": "elektrokardiogramm",
+        "fach": "Elektrokardiogramm",
+        "simple": "Herzstromkurve"
+      },
+      {
+        "re": "ableitung",
+        "fach": "Ableitungen",
+        "simple": "Kabel"
+      },
+      {
+        "re": "arrhythmie",
+        "fach": "Arrhythmie",
+        "simple": "unregelmäßiger Herzschlag"
+      },
+      {
+        "re": "ischämie",
+        "fach": "Ischämie",
+        "simple": "Durchblutungsstörung"
+      }
+    ],
+    "sample": "Mit dem EKG messen wir den Herzstrom. So sehen wir, ob Ihr Herzrhythmus regelmäßig ist und ob das Herz gut durchblutet wird. Dafür machen Sie bitte den Oberkörper frei und legen sich hin. Wir kleben kleine Aufkleber auf Ihre Brust, Arme und Beine. Daran hängen dünne Kabel. Das tut nicht weh, und es fließt kein Strom in Ihren Körper. Sie müssen nur ruhig liegen und normal atmen. Die Untersuchung dauert etwa fünf Minuten. Das EKG ist harmlos, es gibt kein Risiko. Haben Sie noch Fragen? Sind Sie einverstanden?"
+  },
+  {
+    "id": "sonographie",
+    "name": "Sonographie (Abdomen)",
+    "uz": "Qorin bo‘shlig‘i ultratovush tekshiruvi",
+    "ru": "УЗИ органов брюшной полости",
+    "tr": "Karın ultrasonu",
+    "en": "Abdominal ultrasound",
+    "icon": "🔊",
+    "question": "Herr Doktor, Sie wollen einen Ultraschall vom Bauch machen. Ist das schlimm?",
+    "points": [
+      {
+        "uz": "Maqsad: nima uchun kerak",
+        "ru": "Цель: зачем это нужно",
+        "tr": "Amaç: neden gerekli",
+        "en": "Purpose: why it is needed",
+        "keywords": ["organe", "leber", "galle", "niere", "damit", "anschauen"]
+      },
+      {
+        "uz": "Jarayon: gel va qorinda datchik",
+        "ru": "Ход: гель и датчик на животе",
+        "tr": "İşlem: jel ve karına prob",
+        "en": "Procedure: gel and a probe on the abdomen",
+        "keywords": ["gel", "schallkopf", "gerät", "bauch"]
+      },
+      {
+        "uz": "Og‘riqsiz, nurlanish yo‘q",
+        "ru": "Безболезненно, без облучения",
+        "tr": "Ağrısız, radyasyon yok",
+        "en": "Painless, no radiation",
+        "keywords": ["tut nicht weh", "keine strahlung", "keine röntgen", "schmerzfrei"]
+      },
+      {
+        "uz": "Tayyorgarlik: och qoringa",
+        "ru": "Подготовка: натощак",
+        "tr": "Hazırlık: aç karnına",
+        "en": "Preparation: fasting",
+        "keywords": ["nüchtern", "nichts essen", "nicht essen"]
+      },
+      {
+        "uz": "Nafasni ushlab turish",
+        "ru": "Задержать дыхание",
+        "tr": "Nefesi tutmak",
+        "en": "Holding the breath",
+        "keywords": ["luft anhalten", "einatmen", "atem"]
+      },
+      {
+        "uz": "Davomiyligi",
+        "ru": "Длительность",
+        "tr": "Süresi",
+        "en": "Duration",
+        "keywords": ["minuten", "dauert", "stunde"]
+      },
+      {
+        "uz": "Savollar va rozilik",
+        "ru": "Вопросы и согласие",
+        "tr": "Sorular ve onam",
+        "en": "Questions and consent",
+        "keywords": ["fragen", "einverstanden", "unterschreiben", "einwilligung"]
+      }
+    ],
+    "jargon": [
+      {
+        "re": "sonographie",
+        "fach": "Sonographie",
+        "simple": "Ultraschall"
+      },
+      {
+        "re": "abdomen",
+        "fach": "Abdomen",
+        "simple": "Bauch"
+      },
+      {
+        "re": "hepar",
+        "fach": "Hepar",
+        "simple": "Leber"
+      },
+      {
+        "re": "schallkopf",
+        "fach": "Schallkopf",
+        "simple": "kleines Gerät"
+      }
+    ],
+    "sample": "Mit dem Ultraschall schauen wir uns die Organe in Ihrem Bauch an, zum Beispiel Leber, Galle und Nieren. Damit finden wir die Ursache Ihrer Schmerzen. Sie legen sich auf den Rücken. Ich gebe ein kühles Gel auf Ihren Bauch und fahre mit einem kleinen Gerät darüber. Das tut nicht weh, und es gibt keine Strahlung. Bitte kommen Sie nüchtern, das heißt, sechs Stunden vorher nichts essen. Manchmal sage ich: tief einatmen und die Luft anhalten. Dann sehe ich die Organe besser. Die Untersuchung dauert etwa 15 Minuten. Es gibt keine Risiken. Haben Sie noch Fragen? Sind Sie einverstanden?"
+  },
+  {
+    "id": "bronchoskopie",
+    "name": "Bronchoskopie",
+    "uz": "Bronxoskopiya (nafas yo‘llarini ko‘rish)",
+    "ru": "Бронхоскопия",
+    "tr": "Bronkoskopi (hava yollarının incelenmesi)",
+    "en": "Bronchoscopy (looking into the airways)",
+    "icon": "🌬️",
+    "question": "Frau Doktor, was genau passiert bei der Lungenspiegelung?",
+    "points": [
+      {
+        "uz": "Maqsad: nima uchun kerak",
+        "ru": "Цель: зачем это нужно",
+        "tr": "Amaç: neden gerekli",
+        "en": "Purpose: why it is needed",
+        "keywords": ["ursache", "gewebeprobe", "probe", "damit", "anschauen"]
+      },
+      {
+        "uz": "Jarayon: burun yoki og‘iz orqali ingichka shlang",
+        "ru": "Ход: тонкая трубка через нос или рот",
+        "tr": "İşlem: burundan veya ağızdan ince bir hortum",
+        "en": "Procedure: a thin tube through the nose or mouth",
+        "keywords": ["schlauch", "kamera", "nase", "mund", "luftröhre"]
+      },
+      {
+        "uz": "Tayyorgarlik: och qoringa",
+        "ru": "Подготовка: натощак",
+        "tr": "Hazırlık: aç karnına",
+        "en": "Preparation: fasting",
+        "keywords": ["nüchtern", "nichts essen", "nicht essen"]
+      },
+      {
+        "uz": "Uxlatuvchi ukol va spray",
+        "ru": "Седация и спрей",
+        "tr": "Uyutan iğne ve sprey",
+        "en": "Sedative injection and spray",
+        "keywords": ["schlafspritze", "spray", "schlafen", "merken nichts"]
+      },
+      {
+        "uz": "Davomiyligi",
+        "ru": "Длительность",
+        "tr": "Süresi",
+        "en": "Duration",
+        "keywords": ["minuten", "dauert", "stunde"]
+      },
+      {
+        "uz": "Xavflar (kamdan-kam)",
+        "ru": "Риски (редко)",
+        "tr": "Riskler (nadir)",
+        "en": "Risks (rare)",
+        "keywords": ["risiko", "selten", "komplikation", "blutung", "husten", "fieber", "luft"]
+      },
+      {
+        "uz": "Keyin: 2 soat ovqat yemaslik, mashina haydamaslik",
+        "ru": "После: 2 часа не есть, не водить машину",
+        "tr": "Sonrasında: 2 saat yememek, araç kullanmamak",
+        "en": "Afterwards: no eating for 2 hours, no driving",
+        "keywords": ["zwei stunden", "2 stunden", "auto", "fahren"]
+      },
+      {
+        "uz": "Savollar va rozilik",
+        "ru": "Вопросы и согласие",
+        "tr": "Sorular ve onam",
+        "en": "Questions and consent",
+        "keywords": ["fragen", "einverstanden", "unterschreiben", "einwilligung"]
+      }
+    ],
+    "jargon": [
+      {
+        "re": "bronchoskop",
+        "fach": "Bronchoskop",
+        "simple": "dünner Schlauch mit Kamera"
+      },
+      {
+        "re": "trachea",
+        "fach": "Trachea",
+        "simple": "Luftröhre"
+      },
+      {
+        "re": "bronchien",
+        "fach": "Bronchien",
+        "simple": "Atemwege"
+      },
+      {
+        "re": "biopsie",
+        "fach": "Biopsie",
+        "simple": "kleine Gewebeprobe"
+      },
+      {
+        "re": "pneumothorax",
+        "fach": "Pneumothorax",
+        "simple": "Luft neben der Lunge"
+      },
+      {
+        "re": "sedierung",
+        "fach": "Sedierung",
+        "simple": "Schlafspritze"
+      }
+    ],
+    "sample": "Bei der Lungenspiegelung schauen wir uns Ihre Luftröhre und Ihre Atemwege von innen an. Damit wollen wir die Ursache für den Schatten auf dem Röntgenbild finden. Wenn nötig, nehmen wir eine kleine Gewebeprobe. Wir führen einen dünnen, weichen Schlauch mit einer Kamera durch die Nase oder den Mund ein. Bitte bleiben Sie vorher nüchtern und essen Sie sechs Stunden nichts. Sie bekommen ein Spray für den Hals und eine Schlafspritze, dann merken Sie nichts. Die Untersuchung dauert etwa 20 Minuten. Das Risiko ist gering. Selten kommt es zu einer kleinen Blutung, Husten oder Fieber. Sehr selten gelangt Luft neben die Lunge. Danach dürfen Sie zwei Stunden nichts essen und heute nicht Auto fahren. Haben Sie noch Fragen? Wenn Sie einverstanden sind, unterschreiben Sie bitte hier."
+  },
+  {
+    "id": "tee",
+    "name": "Transösophageale Echokardiographie (TEE)",
+    "uz": "Qizilo‘ngach orqali yurak UTT (TEE)",
+    "ru": "Чреспищеводная ЭхоКГ (ЧПЭхоКГ)",
+    "tr": "Transözofageal ekokardiyografi (TEE)",
+    "en": "Transoesophageal echocardiography (TEE)",
+    "icon": "💓",
+    "question": "Herr Doktor, warum muss ich für den Herzultraschall einen Schlauch schlucken?",
+    "points": [
+      {
+        "uz": "Maqsad: nima uchun kerak",
+        "ru": "Цель: зачем это нужно",
+        "tr": "Amaç: neden gerekli",
+        "en": "Purpose: why it is needed",
+        "keywords": ["genauer", "näher", "besser sehen", "herzklappe", "damit"]
+      },
+      {
+        "uz": "Jarayon: qizilo‘ngachga ingichka shlang",
+        "ru": "Ход: тонкий шланг в пищевод",
+        "tr": "İşlem: yemek borusuna ince bir hortum",
+        "en": "Procedure: a thin tube into the gullet",
+        "keywords": ["schlauch", "speiseröhre", "schlucken", "ultraschall"]
+      },
+      {
+        "uz": "Tayyorgarlik: och qoringa",
+        "ru": "Подготовка: натощак",
+        "tr": "Hazırlık: aç karnına",
+        "en": "Preparation: fasting",
+        "keywords": ["nüchtern", "nichts essen", "nicht essen"]
+      },
+      {
+        "uz": "Uxlatuvchi ukol va spray",
+        "ru": "Седация и спрей",
+        "tr": "Uyutan iğne ve sprey",
+        "en": "Sedative injection and spray",
+        "keywords": ["schlafspritze", "spray", "schlafen", "merken nichts"]
+      },
+      {
+        "uz": "Davomiyligi",
+        "ru": "Длительность",
+        "tr": "Süresi",
+        "en": "Duration",
+        "keywords": ["minuten", "dauert", "stunde"]
+      },
+      {
+        "uz": "Xavflar (kamdan-kam)",
+        "ru": "Риски (редко)",
+        "tr": "Riskler (nadir)",
+        "en": "Risks (rare)",
+        "keywords": ["risiko", "selten", "komplikation", "verletzung", "halsschmerzen", "zahn"]
+      },
+      {
+        "uz": "Keyin: mashina haydamaslik",
+        "ru": "После: не садиться за руль",
+        "tr": "Sonrasında: araç kullanmamak",
+        "en": "Afterwards: no driving",
+        "keywords": ["auto", "fahren", "abholen"]
+      },
+      {
+        "uz": "Savollar va rozilik",
+        "ru": "Вопросы и согласие",
+        "tr": "Sorular ve onam",
+        "en": "Questions and consent",
+        "keywords": ["fragen", "einverstanden", "unterschreiben", "einwilligung"]
+      }
+    ],
+    "jargon": [
+      {
+        "re": "ösophagus",
+        "fach": "Ösophagus",
+        "simple": "Speiseröhre"
+      },
+      {
+        "re": "transösophageal",
+        "fach": "transösophageal",
+        "simple": "durch die Speiseröhre"
+      },
+      {
+        "re": "vegetation",
+        "fach": "Vegetation",
+        "simple": "Bakterienbelag"
+      },
+      {
+        "re": "thrombus",
+        "fach": "Thrombus",
+        "simple": "Blutgerinnsel"
+      },
+      {
+        "re": "sedierung",
+        "fach": "Sedierung",
+        "simple": "Schlafspritze"
+      }
+    ],
+    "sample": "Ihr Herz liegt direkt hinter der Speiseröhre. Von dort können wir die Herzklappen viel genauer sehen als von außen durch die Brust. Damit erkennen wir zum Beispiel ein Blutgerinnsel oder eine Entzündung an der Klappe. Sie schlucken einen dünnen Schlauch mit einem kleinen Ultraschallkopf an der Spitze. Bitte bleiben Sie sechs Stunden vorher nüchtern. Sie bekommen ein Spray für den Rachen und eine Schlafspritze, dann merken Sie fast nichts. Die Untersuchung dauert etwa 15 Minuten. Das Risiko ist sehr gering. Danach haben Sie vielleicht leichte Halsschmerzen. Sehr selten kommt es zu einer Verletzung der Speiseröhre. Wegen der Schlafspritze dürfen Sie heute nicht Auto fahren. Haben Sie noch Fragen? Sind Sie einverstanden?"
+  },
+  {
+    "id": "thoraxdrainage",
+    "name": "Thoraxdrainage",
+    "uz": "Plevra drenaji (ko‘krak qafasiga naycha qo‘yish)",
+    "ru": "Плевральный дренаж",
+    "tr": "Göğüs tüpü (toraks drenajı)",
+    "en": "Chest drain",
+    "icon": "🩺",
+    "question": "Frau Doktor, Sie wollen mir einen Schlauch in die Brust legen? Warum denn?",
+    "points": [
+      {
+        "uz": "Maqsad: nima uchun kerak",
+        "ru": "Цель: зачем это нужно",
+        "tr": "Amaç: neden gerekli",
+        "en": "Purpose: why it is needed",
+        "keywords": ["luft", "flüssigkeit", "lunge", "entfalten", "damit"]
+      },
+      {
+        "uz": "Jarayon: qovurg‘alar orasidan naycha",
+        "ru": "Ход: трубка между рёбрами",
+        "tr": "İşlem: kaburgaların arasından bir tüp",
+        "en": "Procedure: a tube between the ribs",
+        "keywords": ["schlauch", "rippen", "seite", "brustkorb"]
+      },
+      {
+        "uz": "Mahalliy og‘riqsizlantirish",
+        "ru": "Местное обезболивание",
+        "tr": "Lokal anestezi",
+        "en": "Local anaesthetic",
+        "keywords": ["betäub", "örtlich", "spritze", "tut nicht weh"]
+      },
+      {
+        "uz": "Holat: yotib, qo‘l bosh ustida",
+        "ru": "Положение: лёжа, рука за головой",
+        "tr": "Pozisyon: yatarak, kol başın üstünde",
+        "en": "Position: lying down, arm above the head",
+        "keywords": ["arm", "kopf", "liegen"]
+      },
+      {
+        "uz": "Naycha bir necha kun qoladi",
+        "ru": "Трубка остаётся на несколько дней",
+        "tr": "Tüp birkaç gün kalır",
+        "en": "The tube stays for a few days",
+        "keywords": ["tage", "bleibt"]
+      },
+      {
+        "uz": "Xavflar (kamdan-kam)",
+        "ru": "Риски (редко)",
+        "tr": "Riskler (nadir)",
+        "en": "Risks (rare)",
+        "keywords": ["risiko", "selten", "komplikation", "blutung", "infektion", "verletzung"]
+      },
+      {
+        "uz": "Savollar va rozilik",
+        "ru": "Вопросы и согласие",
+        "tr": "Sorular ve onam",
+        "en": "Questions and consent",
+        "keywords": ["fragen", "einverstanden", "unterschreiben", "einwilligung"]
+      }
+    ],
+    "jargon": [
+      {
+        "re": "pneumothorax",
+        "fach": "Pneumothorax",
+        "simple": "Luft im Brustkorb"
+      },
+      {
+        "re": "pleura",
+        "fach": "Pleura",
+        "simple": "Rippenfell"
+      },
+      {
+        "re": "interkostal",
+        "fach": "interkostal",
+        "simple": "zwischen den Rippen"
+      },
+      {
+        "re": "lokalanästhesie",
+        "fach": "Lokalanästhesie",
+        "simple": "örtliche Betäubung"
+      },
+      {
+        "re": "drainage",
+        "fach": "Drainage",
+        "simple": "Schlauch"
+      }
+    ],
+    "sample": "Neben Ihrer Lunge hat sich Luft angesammelt. Deshalb kann sich die Lunge nicht richtig ausdehnen, und Sie bekommen schlecht Luft. Mit einem dünnen Schlauch leiten wir die Luft ab, damit sich die Lunge wieder entfalten kann. Sie liegen dafür auf dem Rücken und legen den Arm über den Kopf. Wir geben eine örtliche Betäubung an der Seite des Brustkorbs. Danach legen wir den Schlauch zwischen zwei Rippen ein. Sie spüren vielleicht einen Druck, aber es tut nicht weh. Der Schlauch bleibt meistens einige Tage. Selten kommt es zu einer Blutung, einer Infektion oder einer Verletzung von Organen. Haben Sie noch Fragen? Wenn Sie einverstanden sind, unterschreiben Sie bitte hier."
+  },
+  {
+    "id": "bluttransfusion",
+    "name": "Bluttransfusion",
+    "uz": "Qon quyish",
+    "ru": "Переливание крови",
+    "tr": "Kan nakli",
+    "en": "Blood transfusion",
+    "icon": "🩸",
+    "question": "Herr Doktor, ich brauche eine Blutkonserve? Ist das gefährlich?",
+    "points": [
+      {
+        "uz": "Maqsad: nima uchun kerak",
+        "ru": "Цель: зачем это нужно",
+        "tr": "Amaç: neden gerekli",
+        "en": "Purpose: why it is needed",
+        "keywords": ["blutarmut", "zu wenig blut", "blut verloren", "sauerstoff", "damit"]
+      },
+      {
+        "uz": "Jarayon: vena orqali, tomchi",
+        "ru": "Ход: через вену, капельно",
+        "tr": "İşlem: damardan, damla damla",
+        "en": "Procedure: through a vein, as a drip",
+        "keywords": ["vene", "arm", "infusion", "tropf", "zugang"]
+      },
+      {
+        "uz": "Qon guruhini tekshirish",
+        "ru": "Проверка группы крови",
+        "tr": "Kan grubunun kontrolü",
+        "en": "Checking the blood group",
+        "keywords": ["blutgruppe", "bedside", "passt", "geprüft"]
+      },
+      {
+        "uz": "Davomiyligi",
+        "ru": "Длительность",
+        "tr": "Süresi",
+        "en": "Duration",
+        "keywords": ["minuten", "dauert", "stunde"]
+      },
+      {
+        "uz": "Nazorat: harorat, bosim",
+        "ru": "Контроль: температура, давление",
+        "tr": "Kontrol: ateş, tansiyon",
+        "en": "Monitoring: temperature, blood pressure",
+        "keywords": ["blutdruck", "temperatur", "puls", "kontrollieren", "überwachen"]
+      },
+      {
+        "uz": "Xavflar (kamdan-kam)",
+        "ru": "Риски (редко)",
+        "tr": "Riskler (nadir)",
+        "en": "Risks (rare)",
+        "keywords": ["risiko", "selten", "komplikation", "allergi", "fieber", "infektion", "hiv", "hepatitis"]
+      },
+      {
+        "uz": "Shikoyat bo‘lsa darhol aytish",
+        "ru": "Сразу сообщить о жалобах",
+        "tr": "Şikâyet olursa hemen söylemek",
+        "en": "Report symptoms immediately",
+        "keywords": ["sofort", "melden", "klingel", "bescheid"]
+      },
+      {
+        "uz": "Savollar va rozilik",
+        "ru": "Вопросы и согласие",
+        "tr": "Sorular ve onam",
+        "en": "Questions and consent",
+        "keywords": ["fragen", "einverstanden", "unterschreiben", "einwilligung"]
+      }
+    ],
+    "jargon": [
+      {
+        "re": "erythrozytenkonzentrat",
+        "fach": "Erythrozytenkonzentrat",
+        "simple": "Blutkonserve"
+      },
+      {
+        "re": "anämie",
+        "fach": "Anämie",
+        "simple": "Blutarmut"
+      },
+      {
+        "re": "hämoglobin",
+        "fach": "Hämoglobin",
+        "simple": "roter Blutfarbstoff"
+      },
+      {
+        "re": "transfusionsreaktion",
+        "fach": "Transfusionsreaktion",
+        "simple": "Unverträglichkeit"
+      },
+      {
+        "re": "bedside-test",
+        "fach": "Bedside-Test",
+        "simple": "Kontrolle der Blutgruppe am Bett"
+      }
+    ],
+    "sample": "Sie haben durch die Blutung viel Blut verloren und haben jetzt eine starke Blutarmut. Deshalb transportiert Ihr Blut zu wenig Sauerstoff. Mit einer Blutkonserve geben wir Ihnen rote Blutkörperchen, damit Sie sich wieder kräftiger fühlen. Vorher prüfen wir Ihre Blutgruppe noch einmal direkt am Bett. Die Konserve läuft über einen Zugang in der Vene am Arm, wie eine Infusion. Das dauert etwa eine Stunde. In dieser Zeit kontrollieren wir regelmäßig Blutdruck, Puls und Temperatur. Die Blutkonserven sind sehr sicher. Selten kommt es zu Fieber oder einer allergischen Reaktion. Eine Infektion mit HIV oder Hepatitis ist extrem selten. Wenn Sie Schüttelfrost, Atemnot oder Juckreiz bemerken, klingeln Sie bitte sofort. Haben Sie noch Fragen? Sind Sie einverstanden?"
+  },
+  {
+    "id": "zvk",
+    "name": "Zentraler Venenkatheter (ZVK)",
+    "uz": "Markaziy vena kateteri (bo‘yin venasiga)",
+    "ru": "Центральный венозный катетер (ЦВК)",
+    "tr": "Santral venöz kateter",
+    "en": "Central venous catheter",
+    "icon": "💉",
+    "question": "Frau Doktor, warum brauche ich einen Katheter am Hals? Ich habe doch schon eine Nadel im Arm.",
+    "points": [
+      {
+        "uz": "Maqsad: nima uchun kerak",
+        "ru": "Цель: зачем это нужно",
+        "tr": "Amaç: neden gerekli",
+        "en": "Purpose: why it is needed",
+        "keywords": ["medikamente", "infusion", "blut abnehmen", "venen am arm", "damit"]
+      },
+      {
+        "uz": "Jarayon: bo‘yin venasiga ingichka naycha",
+        "ru": "Ход: тонкая трубка в вену на шее",
+        "tr": "İşlem: boyun damarına ince bir tüp",
+        "en": "Procedure: a thin tube into a vein in the neck",
+        "keywords": ["hals", "vene", "schlauch", "katheter"]
+      },
+      {
+        "uz": "UTT nazorati ostida",
+        "ru": "Под контролем УЗИ",
+        "tr": "Ultrason eşliğinde",
+        "en": "Guided by ultrasound",
+        "keywords": ["ultraschall"]
+      },
+      {
+        "uz": "Mahalliy og‘riqsizlantirish",
+        "ru": "Местное обезболивание",
+        "tr": "Lokal anestezi",
+        "en": "Local anaesthetic",
+        "keywords": ["betäub", "örtlich", "spritze", "tut nicht weh"]
+      },
+      {
+        "uz": "Yuzni yopish, sterillik",
+        "ru": "Накрыть лицо, стерильность",
+        "tr": "Yüzün örtülmesi, sterilite",
+        "en": "Covering the face, sterility",
+        "keywords": ["tuch", "steril", "abdecken", "abgedeckt"]
+      },
+      {
+        "uz": "Davomiyligi",
+        "ru": "Длительность",
+        "tr": "Süresi",
+        "en": "Duration",
+        "keywords": ["minuten", "dauert", "stunde"]
+      },
+      {
+        "uz": "Xavflar (kamdan-kam)",
+        "ru": "Риски (редко)",
+        "tr": "Riskler (nadir)",
+        "en": "Risks (rare)",
+        "keywords": ["risiko", "selten", "komplikation", "infektion", "blutung", "lunge", "luft"]
+      },
+      {
+        "uz": "Savollar va rozilik",
+        "ru": "Вопросы и согласие",
+        "tr": "Sorular ve onam",
+        "en": "Questions and consent",
+        "keywords": ["fragen", "einverstanden", "unterschreiben", "einwilligung"]
+      }
+    ],
+    "jargon": [
+      {
+        "re": "vena jugularis",
+        "fach": "Vena jugularis",
+        "simple": "große Vene am Hals"
+      },
+      {
+        "re": "katecholamin",
+        "fach": "Katecholamine",
+        "simple": "Kreislaufmedikamente"
+      },
+      {
+        "re": "pneumothorax",
+        "fach": "Pneumothorax",
+        "simple": "Luft neben der Lunge"
+      },
+      {
+        "re": "seldinger",
+        "fach": "Seldinger-Technik",
+        "simple": "Methode mit einem dünnen Draht"
+      }
+    ],
+    "sample": "Sie bekommen im Moment viele Medikamente und Infusionen. Einige davon sind für die kleinen Venen am Arm zu stark. Deshalb möchten wir einen dünnen Schlauch in eine große Vene am Hals legen. Darüber können wir Medikamente geben und auch Blut abnehmen. Sie liegen dafür flach auf dem Rücken. Wir decken Ihr Gesicht mit einem sterilen Tuch ab, damit keine Keime in die Wunde kommen. Mit dem Ultraschall suchen wir die Vene. Dann bekommen Sie eine örtliche Betäubung, danach tut es nicht weh. Das Ganze dauert etwa 20 Minuten. Das Risiko ist gering. Selten kommt es zu einer Blutung, einer Infektion oder zu Luft neben der Lunge. Haben Sie noch Fragen? Wenn Sie einverstanden sind, unterschreiben Sie bitte hier."
+  },
+  {
+    "id": "pleurapunktion",
+    "name": "Pleurapunktion",
+    "uz": "Plevra punksiyasi (o‘pka atrofidagi suyuqlikni olish)",
+    "ru": "Плевральная пункция",
+    "tr": "Plevral ponksiyon",
+    "en": "Pleural tap",
+    "icon": "💧",
+    "question": "Herr Doktor, Sie sagen, da ist Wasser in meiner Lunge. Wie bekommen Sie das raus?",
+    "points": [
+      {
+        "uz": "Maqsad: nima uchun kerak",
+        "ru": "Цель: зачем это нужно",
+        "tr": "Amaç: neden gerekli",
+        "en": "Purpose: why it is needed",
+        "keywords": ["wasser", "flüssigkeit", "atmen", "luft", "untersuchen", "damit"]
+      },
+      {
+        "uz": "Holat: o‘tirib, oldinga egilib",
+        "ru": "Положение: сидя, наклонившись вперёд",
+        "tr": "Pozisyon: oturarak, öne eğilerek",
+        "en": "Position: sitting, leaning forward",
+        "keywords": ["sitzen", "vorne", "beugen", "tisch"]
+      },
+      {
+        "uz": "UTT nazorati ostida",
+        "ru": "Под контролем УЗИ",
+        "tr": "Ultrason eşliğinde",
+        "en": "Guided by ultrasound",
+        "keywords": ["ultraschall"]
+      },
+      {
+        "uz": "Mahalliy og‘riqsizlantirish",
+        "ru": "Местное обезболивание",
+        "tr": "Lokal anestezi",
+        "en": "Local anaesthetic",
+        "keywords": ["betäub", "örtlich", "spritze", "tut nicht weh"]
+      },
+      {
+        "uz": "Jarayon: orqadan nina bilan suyuqlik olish",
+        "ru": "Ход: игла сзади, забор жидкости",
+        "tr": "İşlem: sırttan iğneyle sıvı alınması",
+        "en": "Procedure: a needle in the back, fluid is drained",
+        "keywords": ["nadel", "rücken", "ablassen", "flüssigkeit"]
+      },
+      {
+        "uz": "Davomiyligi",
+        "ru": "Длительность",
+        "tr": "Süresi",
+        "en": "Duration",
+        "keywords": ["minuten", "dauert", "stunde"]
+      },
+      {
+        "uz": "Xavflar (kamdan-kam)",
+        "ru": "Риски (редко)",
+        "tr": "Riskler (nadir)",
+        "en": "Risks (rare)",
+        "keywords": ["risiko", "selten", "komplikation", "blutung", "infektion", "lunge", "husten"]
+      },
+      {
+        "uz": "Savollar va rozilik",
+        "ru": "Вопросы и согласие",
+        "tr": "Sorular ve onam",
+        "en": "Questions and consent",
+        "keywords": ["fragen", "einverstanden", "unterschreiben", "einwilligung"]
+      }
+    ],
+    "jargon": [
+      {
+        "re": "pleuraerguss",
+        "fach": "Pleuraerguss",
+        "simple": "Wasser neben der Lunge"
+      },
+      {
+        "re": "pleura",
+        "fach": "Pleura",
+        "simple": "Rippenfell"
+      },
+      {
+        "re": "pneumothorax",
+        "fach": "Pneumothorax",
+        "simple": "Luft neben der Lunge"
+      },
+      {
+        "re": "punktat",
+        "fach": "Punktat",
+        "simple": "abgelassene Flüssigkeit"
+      }
+    ],
+    "sample": "Zwischen Ihrer Lunge und der Brustwand hat sich Wasser gesammelt. Deshalb bekommen Sie schlecht Luft. Wir möchten das Wasser ablassen, damit Sie besser atmen können. Außerdem untersuchen wir die Flüssigkeit im Labor, um die Ursache zu finden. Sie sitzen dafür und beugen sich nach vorne, die Arme liegen auf einem Tisch. Mit dem Ultraschall suchen wir die beste Stelle am Rücken. Dann bekommen Sie eine örtliche Betäubung. Danach führen wir eine dünne Nadel ein und lassen die Flüssigkeit langsam ablaufen. Das dauert etwa 20 bis 30 Minuten. Am Ende müssen Sie vielleicht husten, das ist normal. Selten kommt es zu einer Blutung, einer Infektion oder zu Luft neben der Lunge. Haben Sie noch Fragen? Sind Sie einverstanden?"
+  },
+  {
+    "id": "aszitespunktion",
+    "name": "Aszitespunktion",
+    "uz": "Qorindagi suyuqlikni olish (assit punksiyasi)",
+    "ru": "Пункция асцита (лапароцентез)",
+    "tr": "Asit ponksiyonu (parasentez)",
+    "en": "Ascitic tap (paracentesis)",
+    "icon": "🧪",
+    "question": "Frau Doktor, mein Bauch ist so dick. Können Sie das Wasser rauslassen?",
+    "points": [
+      {
+        "uz": "Maqsad: nima uchun kerak",
+        "ru": "Цель: зачем это нужно",
+        "tr": "Amaç: neden gerekli",
+        "en": "Purpose: why it is needed",
+        "keywords": ["wasser", "flüssigkeit", "druck", "atmen", "untersuchen", "damit"]
+      },
+      {
+        "uz": "Holat: chalqancha yotish",
+        "ru": "Положение: лёжа на спине",
+        "tr": "Pozisyon: sırtüstü yatmak",
+        "en": "Position: lying on the back",
+        "keywords": ["liegen", "rücken"]
+      },
+      {
+        "uz": "UTT nazorati ostida",
+        "ru": "Под контролем УЗИ",
+        "tr": "Ultrason eşliğinde",
+        "en": "Guided by ultrasound",
+        "keywords": ["ultraschall"]
+      },
+      {
+        "uz": "Mahalliy og‘riqsizlantirish",
+        "ru": "Местное обезболивание",
+        "tr": "Lokal anestezi",
+        "en": "Local anaesthetic",
+        "keywords": ["betäub", "örtlich", "spritze", "tut nicht weh"]
+      },
+      {
+        "uz": "Jarayon: qorinning chap pastki qismidan nina",
+        "ru": "Ход: игла в левой нижней части живота",
+        "tr": "İşlem: karnın sol alt kısmından iğne",
+        "en": "Procedure: a needle in the lower left abdomen",
+        "keywords": ["nadel", "unterbauch", "links", "bauch"]
+      },
+      {
+        "uz": "Davomiyligi",
+        "ru": "Длительность",
+        "tr": "Süresi",
+        "en": "Duration",
+        "keywords": ["minuten", "dauert", "stunde"]
+      },
+      {
+        "uz": "Xavflar (kamdan-kam)",
+        "ru": "Риски (редко)",
+        "tr": "Riskler (nadir)",
+        "en": "Risks (rare)",
+        "keywords": ["risiko", "selten", "komplikation", "blutung", "infektion", "kreislauf"]
+      },
+      {
+        "uz": "Savollar va rozilik",
+        "ru": "Вопросы и согласие",
+        "tr": "Sorular ve onam",
+        "en": "Questions and consent",
+        "keywords": ["fragen", "einverstanden", "unterschreiben", "einwilligung"]
+      }
+    ],
+    "jargon": [
+      {
+        "re": "aszites",
+        "fach": "Aszites",
+        "simple": "Wasser im Bauch"
+      },
+      {
+        "re": "parazentese",
+        "fach": "Parazentese",
+        "simple": "Ablassen von Bauchwasser"
+      },
+      {
+        "re": "peritonitis",
+        "fach": "Peritonitis",
+        "simple": "Bauchfellentzündung"
+      },
+      {
+        "re": "albumin",
+        "fach": "Albumin",
+        "simple": "Eiweiß"
+      }
+    ],
+    "sample": "In Ihrem Bauch hat sich viel Wasser gesammelt. Das drückt auf den Magen und macht das Atmen schwer. Wir möchten einen Teil des Wassers ablassen, damit der Druck nachlässt. Außerdem untersuchen wir das Wasser im Labor auf eine Entzündung. Sie liegen dafür bequem auf dem Rücken. Mit dem Ultraschall suchen wir eine gute Stelle im linken Unterbauch. Dann bekommen Sie eine örtliche Betäubung, danach tut es nicht weh. Wir stechen mit einer dünnen Nadel ein und lassen das Wasser langsam in einen Beutel ablaufen. Das dauert etwa eine Stunde. Selten kommt es zu einer Blutung, einer Infektion oder zu Kreislaufproblemen. Deshalb geben wir Ihnen danach etwas Eiweiß über die Vene. Haben Sie noch Fragen? Sind Sie einverstanden?"
+  },
+  {
+    "id": "kardioversion",
+    "name": "Elektrische Kardioversion",
+    "uz": "Elektr kardioversiya (yurak ritmini tiklash)",
+    "ru": "Электрическая кардиоверсия",
+    "tr": "Elektriksel kardiyoversiyon",
+    "en": "Electrical cardioversion",
+    "icon": "⚡",
+    "question": "Herr Doktor, Sie wollen meinem Herzen einen Stromstoß geben? Das klingt gefährlich.",
+    "points": [
+      {
+        "uz": "Maqsad: nima uchun kerak",
+        "ru": "Цель: зачем это нужно",
+        "tr": "Amaç: neden gerekli",
+        "en": "Purpose: why it is needed",
+        "keywords": ["rhythmus", "takt", "regelmäßig", "damit"]
+      },
+      {
+        "uz": "Jarayon: ko‘krakka plastinkalar, qisqa tok",
+        "ru": "Ход: пластины на грудь, короткий разряд",
+        "tr": "İşlem: göğse pedler, kısa bir akım",
+        "en": "Procedure: pads on the chest, a short shock",
+        "keywords": ["strom", "stromstoß", "pads", "aufkleber", "brust"]
+      },
+      {
+        "uz": "Qisqa narkoz",
+        "ru": "Кратковременный наркоз",
+        "tr": "Kısa süreli narkoz",
+        "en": "Brief anaesthesia",
+        "keywords": ["narkose", "schlafen", "merken nichts", "schlafspritze"]
+      },
+      {
+        "uz": "Tayyorgarlik: och qoringa, qon suyultirish",
+        "ru": "Подготовка: натощак, антикоагуляция",
+        "tr": "Hazırlık: aç karnına, kan sulandırıcı",
+        "en": "Preparation: fasting, blood thinner",
+        "keywords": ["nüchtern", "blutverdünn", "gerinnsel"]
+      },
+      {
+        "uz": "Davomiyligi",
+        "ru": "Длительность",
+        "tr": "Süresi",
+        "en": "Duration",
+        "keywords": ["minuten", "dauert", "stunde"]
+      },
+      {
+        "uz": "Xavflar (kamdan-kam)",
+        "ru": "Риски (редко)",
+        "tr": "Riskler (nadir)",
+        "en": "Risks (rare)",
+        "keywords": [
+          "risiko",
+          "selten",
+          "komplikation",
+          "hautrötung",
+          "rötung",
+          "gerinnsel",
+          "schlaganfall",
+          "rhythmusstörung"
+        ]
+      },
+      {
+        "uz": "Keyin: mashina haydamaslik",
+        "ru": "После: не садиться за руль",
+        "tr": "Sonrasında: araç kullanmamak",
+        "en": "Afterwards: no driving",
+        "keywords": ["auto", "fahren", "abholen"]
+      },
+      {
+        "uz": "Savollar va rozilik",
+        "ru": "Вопросы и согласие",
+        "tr": "Sorular ve onam",
+        "en": "Questions and consent",
+        "keywords": ["fragen", "einverstanden", "unterschreiben", "einwilligung"]
+      }
+    ],
+    "jargon": [
+      {
+        "re": "vorhofflimmern",
+        "fach": "Vorhofflimmern",
+        "simple": "unregelmäßiger Herzschlag"
+      },
+      {
+        "re": "sinusrhythmus",
+        "fach": "Sinusrhythmus",
+        "simple": "normaler Herzrhythmus"
+      },
+      {
+        "re": "defibrillator",
+        "fach": "Defibrillator",
+        "simple": "Gerät für den Stromstoß"
+      },
+      {
+        "re": "antikoagulation",
+        "fach": "Antikoagulation",
+        "simple": "Blutverdünnung"
+      },
+      {
+        "re": "thromboembolie",
+        "fach": "Thromboembolie",
+        "simple": "Blutgerinnsel"
+      }
+    ],
+    "sample": "Ihr Herz schlägt im Moment unregelmäßig. Mit einem kurzen Stromstoß möchten wir den normalen Herzrhythmus wiederherstellen, damit Ihr Herz wieder regelmäßig schlägt. Vorher müssen Sie nüchtern sein. Sie nehmen schon ein blutverdünnendes Medikament, damit sich kein Gerinnsel bildet. Wir kleben zwei große Aufkleber auf Ihre Brust. Dann bekommen Sie eine kurze Narkose und schlafen etwa fünf Minuten. Den Stromstoß merken Sie nicht. Danach wachen Sie schnell wieder auf. Das Risiko ist gering. Manchmal ist die Haut an der Brust etwas gerötet. Sehr selten löst sich ein Gerinnsel und verursacht einen Schlaganfall. Wegen der Narkose dürfen Sie heute nicht Auto fahren. Haben Sie noch Fragen? Sind Sie einverstanden?"
+  },
+  {
+    "id": "narkose",
+    "name": "Vollnarkose vor einer Operation",
+    "uz": "Operatsiyadan oldin umumiy narkoz",
+    "ru": "Общий наркоз перед операцией",
+    "tr": "Ameliyat öncesi genel anestezi",
+    "en": "General anaesthesia before surgery",
+    "icon": "😴",
+    "question": "Frau Doktor, ich habe Angst vor der Narkose. Was passiert da?",
+    "points": [
+      {
+        "uz": "Maqsad: nima uchun kerak",
+        "ru": "Цель: зачем это нужно",
+        "tr": "Amaç: neden gerekli",
+        "en": "Purpose: why it is needed",
+        "keywords": ["schlafen", "keine schmerzen", "nichts merken", "operation"]
+      },
+      {
+        "uz": "Tayyorgarlik: 6 soat ovqat yemaslik",
+        "ru": "Подготовка: 6 часов не есть",
+        "tr": "Hazırlık: 6 saat yememek",
+        "en": "Preparation: no food for 6 hours",
+        "keywords": ["nüchtern", "sechs stunden", "6 stunden", "nichts essen"]
+      },
+      {
+        "uz": "Jarayon: vena orqali dori, nafas naychasi",
+        "ru": "Ход: препарат в вену, дыхательная трубка",
+        "tr": "İşlem: damardan ilaç, solunum tüpü",
+        "en": "Procedure: medicine into a vein, a breathing tube",
+        "keywords": ["vene", "medikament", "schlauch", "beatmung", "atmen"]
+      },
+      {
+        "uz": "Doimiy nazorat",
+        "ru": "Постоянное наблюдение",
+        "tr": "Sürekli gözetim",
+        "en": "Constant monitoring",
+        "keywords": ["überwach", "ganze zeit", "die ganze zeit", "bei ihnen"]
+      },
+      {
+        "uz": "Dorilar, protez tishlar, allergiya haqida so‘rash",
+        "ru": "Спросить о лекарствах, протезах, аллергиях",
+        "tr": "İlaçları, protez dişleri, alerjileri sormak",
+        "en": "Ask about medication, dentures, allergies",
+        "keywords": ["allergi", "zahnprothese", "medikamente", "wackel"]
+      },
+      {
+        "uz": "Xavflar (kamdan-kam)",
+        "ru": "Риски (редко)",
+        "tr": "Riskler (nadir)",
+        "en": "Risks (rare)",
+        "keywords": ["risiko", "selten", "komplikation", "übelkeit", "halsschmerzen", "zahn"]
+      },
+      {
+        "uz": "Savollar va rozilik",
+        "ru": "Вопросы и согласие",
+        "tr": "Sorular ve onam",
+        "en": "Questions and consent",
+        "keywords": ["fragen", "einverstanden", "unterschreiben", "einwilligung"]
+      }
+    ],
+    "jargon": [
+      {
+        "re": "intubation",
+        "fach": "Intubation",
+        "simple": "Beatmungsschlauch"
+      },
+      {
+        "re": "anästhesie",
+        "fach": "Anästhesie",
+        "simple": "Narkose"
+      },
+      {
+        "re": "aspiration",
+        "fach": "Aspiration",
+        "simple": "Mageninhalt in der Lunge"
+      },
+      {
+        "re": "postoperativ",
+        "fach": "postoperativ",
+        "simple": "nach der Operation"
+      },
+      {
+        "re": "ponv",
+        "fach": "PONV",
+        "simple": "Übelkeit nach der Narkose"
+      }
+    ],
+    "sample": "Ihre Angst ist ganz normal. Bei der Narkose schlafen Sie tief, damit Sie während der Operation nichts merken und keine Schmerzen haben. Sechs Stunden vor der Operation dürfen Sie nichts essen. Klares Wasser dürfen Sie bis zwei Stunden vorher trinken. Bitte sagen Sie mir, welche Medikamente Sie nehmen und ob Sie Allergien oder eine Zahnprothese haben. Im Operationssaal bekommen Sie ein Medikament über die Vene und schlafen schnell ein. Danach legen wir einen Schlauch zum Atmen in den Hals. Ein Narkosearzt bleibt die ganze Zeit bei Ihnen und überwacht Herz, Blutdruck und Atmung. Nach dem Aufwachen haben Sie manchmal Übelkeit oder leichte Halsschmerzen. Sehr selten wird ein Zahn beschädigt. Haben Sie noch Fragen? Wenn Sie einverstanden sind, unterschreiben Sie bitte hier."
+  },
+  {
+    "id": "ercp",
+    "name": "ERCP",
+    "uz": "ERXPG (o‘t yo‘llarini endoskop bilan ko‘rish)",
+    "ru": "ЭРХПГ",
+    "tr": "ERCP (safra yollarının endoskopik incelemesi)",
+    "en": "ERCP (endoscopic examination of the bile ducts)",
+    "icon": "🟢",
+    "question": "Herr Doktor, Sie sagen, ein Stein steckt im Gallengang. Wie holen Sie den raus?",
+    "points": [
+      {
+        "uz": "Maqsad: nima uchun kerak",
+        "ru": "Цель: зачем это нужно",
+        "tr": "Amaç: neden gerekli",
+        "en": "Purpose: why it is needed",
+        "keywords": ["stein", "gallengang", "galle", "abfließen", "damit"]
+      },
+      {
+        "uz": "Jarayon: og‘iz orqali ingichka shlang",
+        "ru": "Ход: тонкий шланг через рот",
+        "tr": "İşlem: ağızdan ince bir hortum",
+        "en": "Procedure: a thin tube through the mouth",
+        "keywords": ["schlauch", "kamera", "mund", "magen", "darm"]
+      },
+      {
+        "uz": "Kontrast modda va rentgen",
+        "ru": "Контраст и рентген",
+        "tr": "Kontrast madde ve röntgen",
+        "en": "Contrast agent and X-ray",
+        "keywords": ["kontrastmittel", "röntgen"]
+      },
+      {
+        "uz": "Tayyorgarlik: och qoringa",
+        "ru": "Подготовка: натощак",
+        "tr": "Hazırlık: aç karnına",
+        "en": "Preparation: fasting",
+        "keywords": ["nüchtern", "nichts essen", "nicht essen"]
+      },
+      {
+        "uz": "Uxlatuvchi ukol",
+        "ru": "Седация",
+        "tr": "Uyutan iğne",
+        "en": "Sedative injection",
+        "keywords": ["schlafspritze", "schlafen", "merken nichts"]
+      },
+      {
+        "uz": "Davomiyligi",
+        "ru": "Длительность",
+        "tr": "Süresi",
+        "en": "Duration",
+        "keywords": ["minuten", "dauert", "stunde"]
+      },
+      {
+        "uz": "Xavflar (kamdan-kam)",
+        "ru": "Риски (редко)",
+        "tr": "Riskler (nadir)",
+        "en": "Risks (rare)",
+        "keywords": ["risiko", "selten", "komplikation", "bauchspeicheldrüse", "blutung", "verletzung"]
+      },
+      {
+        "uz": "Savollar va rozilik",
+        "ru": "Вопросы и согласие",
+        "tr": "Sorular ve onam",
+        "en": "Questions and consent",
+        "keywords": ["fragen", "einverstanden", "unterschreiben", "einwilligung"]
+      }
+    ],
+    "jargon": [
+      {
+        "re": "choledocholithiasis",
+        "fach": "Choledocholithiasis",
+        "simple": "Stein im Gallengang"
+      },
+      {
+        "re": "papille",
+        "fach": "Papille",
+        "simple": "Ausgang des Gallengangs"
+      },
+      {
+        "re": "papillotomie",
+        "fach": "Papillotomie",
+        "simple": "kleiner Schnitt am Ausgang des Gallengangs"
+      },
+      {
+        "re": "pankreatitis",
+        "fach": "Pankreatitis",
+        "simple": "Entzündung der Bauchspeicheldrüse"
+      },
+      {
+        "re": "duodenum",
+        "fach": "Duodenum",
+        "simple": "Zwölffingerdarm"
+      }
+    ],
+    "sample": "In Ihrem Gallengang steckt ein Stein. Deshalb kann die Galle nicht abfließen, und Sie haben Schmerzen und eine gelbe Haut. Mit einer Spiegelung möchten wir den Stein entfernen, damit die Galle wieder abfließt. Wir führen einen dünnen Schlauch mit einer Kamera durch den Mund in den Magen und den Darm. Über den Schlauch geben wir Kontrastmittel und machen Röntgenbilder. Dann öffnen wir den Ausgang des Gallengangs ein kleines Stück und holen den Stein heraus. Bitte bleiben Sie vorher nüchtern. Sie bekommen eine Schlafspritze und merken nichts. Die Untersuchung dauert etwa 30 bis 60 Minuten. Selten kommt es zu einer Entzündung der Bauchspeicheldrüse, einer Blutung oder einer Verletzung des Darms. Haben Sie noch Fragen? Sind Sie einverstanden?"
   }
 ]
