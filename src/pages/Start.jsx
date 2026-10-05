@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "../components/Link";
 import { EXAM_IN, LEVELS, WEAK, getProfile, recommendation, saveProfile } from "../lib/daily";
-import { tr } from "../lib/i18n";
+import { loc, tr } from "../lib/i18n";
 import { useRouter } from "../lib/router";
 import { cx } from "../lib/utils";
 
@@ -14,17 +14,25 @@ export function StartPage() {
     questions = [
       {
         key: "examIn",
-        q: tr("FSP imtihoningizgacha qancha vaqt bor?", "Сколько времени до вашего FSP?"),
+        q: tr(
+          "FSP imtihoningizgacha qancha vaqt bor?",
+          "Сколько времени до вашего FSP?",
+          "FSP sınavınıza ne kadar zaman var?",
+        ),
         opts: EXAM_IN,
       },
       {
         key: "level",
-        q: tr("Nemis tili darajangiz qanday?", "Какой у вас уровень немецкого?"),
+        q: tr("Nemis tili darajangiz qanday?", "Какой у вас уровень немецкого?", "Almanca seviyeniz nedir?"),
         opts: LEVELS,
       },
       {
         key: "weak",
-        q: tr("Qaysi qism siz uchun eng qiyin?", "Какая часть для вас самая трудная?"),
+        q: tr(
+          "Qaysi qism siz uchun eng qiyin?",
+          "Какая часть для вас самая трудная?",
+          "Sizin için en zor bölüm hangisi?",
+        ),
         opts: WEAK,
       },
     ],
@@ -64,7 +72,11 @@ export function StartPage() {
         {!done ? (
           <>
             <p className="text-xs font-semibold uppercase tracking-wider text-teal-700 dark:text-teal-400">
-              {tr(`Savol ${step + 1} / ${questions.length}`, `Вопрос ${step + 1} / ${questions.length}`)}
+              {tr(
+                `Savol ${step + 1} / ${questions.length}`,
+                `Вопрос ${step + 1} / ${questions.length}`,
+                `Soru ${step + 1} / ${questions.length}`,
+              )}
             </p>
             <h1 className="mt-2 text-2xl font-bold">{questions[step].q}</h1>
             <div className="mt-6 grid gap-2">
@@ -80,7 +92,7 @@ export function StartPage() {
                   )}
                 >
                   {o.icon && <span className="text-xl">{o.icon}</span>}
-                  {tr(o.uz, o.ru)}
+                  {loc(o)}
                 </button>
               ))}
             </div>
@@ -90,36 +102,59 @@ export function StartPage() {
                 disabled={!step}
                 onClick={() => setStep((s) => s - 1)}
               >
-                ← {tr("Orqaga", "Назад")}
+                ← {tr("Orqaga", "Назад", "Geri")}
               </button>
               <button className="muted hover:text-teal-600" onClick={skip}>
-                {tr("O‘tkazib yuborish →", "Пропустить →")}
+                {tr("O‘tkazib yuborish →", "Пропустить →", "Atla →")}
               </button>
             </div>
           </>
         ) : (
           <div className="text-center">
             <p className="text-5xl">🎯</p>
-            <h1 className="mt-3 text-2xl font-bold">{tr("Rejangiz tayyor!", "Ваш план готов!")}</h1>
+            <h1 className="mt-3 text-2xl font-bold">
+              {tr("Rejangiz tayyor!", "Ваш план готов!", "Planınız hazır!")}
+            </h1>
             <p className="mx-auto mt-3 max-w-md muted">{recommendation(getProfile())}</p>
             <div className="mx-auto mt-5 max-w-sm rounded-2xl bg-teal-50 p-4 text-left text-sm dark:bg-teal-950/40">
-              <p className="font-semibold">{tr("Har kuni sizni kutadi:", "Каждый день вас ждут:")}</p>
+              <p className="font-semibold">
+                {tr("Har kuni sizni kutadi:", "Каждый день вас ждут:", "Her gün sizi bekleyenler:")}
+              </p>
               <ul className="mt-2 space-y-1">
-                <li>📇 {tr("So‘z takrorlash — 5 daqiqa", "Повторение слов — 5 минут")}</li>
-                <li>💬 {tr("Bemor bilan suhbat — 10 daqiqa", "Беседа с пациентом — 10 минут")}</li>
+                <li>
+                  📇{" "}
+                  {tr("So‘z takrorlash — 5 daqiqa", "Повторение слов — 5 минут", "Kelime tekrarı — 5 dakika")}
+                </li>
+                <li>
+                  💬{" "}
+                  {tr(
+                    "Bemor bilan suhbat — 10 daqiqa",
+                    "Беседа с пациентом — 10 минут",
+                    "Hastayla görüşme — 10 dakika",
+                  )}
+                </li>
                 <li>
                   {WEAK.find((w) => w.id === getProfile()?.weak)?.icon ?? "⭐"}{" "}
-                  {tr("Zaif qismingizga mashq — 5–15 daqiqa", "Задание на слабую часть — 5–15 минут")}
+                  {tr(
+                    "Zaif qismingizga mashq — 5–15 daqiqa",
+                    "Задание на слабую часть — 5–15 минут",
+                    "Zayıf bölümünüz için alıştırma — 5–15 dakika",
+                  )}
                 </li>
               </ul>
             </div>
             <Link href="/bugun" className="btn-primary mt-6 px-7 py-3 text-base">
-              {tr("Bugungi mashqni boshlash →", "Начать сегодняшнюю практику →")}
+              {tr(
+                "Bugungi mashqni boshlash →",
+                "Начать сегодняшнюю практику →",
+                "Bugünkü alıştırmaya başla →",
+              )}
             </Link>
             <p className="mt-3 text-xs muted">
               {tr(
                 "Javoblarni keyin istalgan vaqt o‘zgartirish mumkin.",
                 "Ответы можно изменить в любой момент.",
+                "Cevapları daha sonra istediğiniz zaman değiştirebilirsiniz.",
               )}
             </p>
           </div>

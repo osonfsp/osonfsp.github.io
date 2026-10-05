@@ -34,7 +34,11 @@ function handleError(e) {
 }
 
 const FEEDBACK_LANG =
-  LANG === "ru" ? "auf Russisch" : "auf Usbekisch (lateinische Schrift, z. B. „Bemorga … deng“)";
+  LANG === "ru"
+    ? "auf Russisch"
+    : LANG === "tr"
+      ? "auf Türkisch"
+      : "auf Usbekisch (lateinische Schrift, z. B. „Bemorga … deng“)";
 
 const caseFacts = (c) =>
   [

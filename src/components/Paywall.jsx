@@ -14,26 +14,29 @@ export function Paywall({ kind = "materials" }) {
       </p>
       <h2 className="mt-3 h-title">
         {exam
-          ? tr("Bepul imtihon ishlatildi", "Бесплатный экзамен использован")
-          : tr("1 kunlik sinov muddati tugadi", "Пробный день закончился")}
+          ? tr("Bepul imtihon ishlatildi", "Бесплатный экзамен использован", "Ücretsiz sınav kullanıldı")
+          : tr("1 kunlik sinov muddati tugadi", "Пробный день закончился", "1 günlük deneme süresi doldu")}
       </h2>
       <p className="mt-2 text-sm muted">
         {exam
           ? tr(
               `${PRACTICE.exam} bepul rejimda ${limit("exam")} marta ochiq edi.`,
               `Пробный экзамен в бесплатном режиме доступен ${limit("exam")} раз.`,
+              `Deneme sınavı ücretsiz modda ${limit("exam")} kez açıktı.`,
             )
           : tr(
               "Materiallar bepul rejimda 1 kun davomida ochiq edi.",
               "В бесплатном режиме материалы доступны 1 день.",
+              "Materyaller ücretsiz modda 1 gün boyunca açıktı.",
             )}{" "}
         {tr(
           "Davom etish uchun tarif tanlang — 1 haftalik yoki 1 oylik.",
           "Чтобы продолжить, выберите тариф — на 1 неделю или на 1 месяц.",
+          "Devam etmek için bir paket seçin — 1 haftalık veya 1 aylık.",
         )}
       </p>
       <Link href="/pro" className="btn-primary mt-5 inline-flex">
-        {tr("Tariflarni ko‘rish", "Посмотреть тарифы")}
+        {tr("Tariflarni ko‘rish", "Посмотреть тарифы", "Paketleri gör")}
       </Link>
     </div>
   );
@@ -60,7 +63,7 @@ export function FreeLeft({ kind }) {
       href="/pro"
       className="inline-flex items-center rounded-full bg-amber-50 px-3 py-1 text-xs font-medium text-amber-800 ring-1 ring-amber-200 hover:bg-amber-100 dark:bg-amber-950/40 dark:text-amber-300 dark:ring-amber-900"
     >
-      {tr("Bepul", "Бесплатно")}: {left(kind)} / {limit(kind)} {tr("qoldi", "осталось")}
+      {tr("Bepul", "Бесплатно", "Ücretsiz")}: {left(kind)} / {limit(kind)} {tr("qoldi", "осталось", "kaldı")}
     </Link>
   );
 }
@@ -79,8 +82,13 @@ export function TrialBar() {
         ? tr(
             `🎁 Bepul sinov: materiallar yana ${h} soat ochiq · Tariflar →`,
             `🎁 Пробный доступ: материалы открыты ещё ${h} ч · Тарифы →`,
+            `🎁 Ücretsiz deneme: materyaller ${h} saat daha açık · Paketler →`,
           )
-        : tr("⏳ Bepul sinov tugadi · Tarif tanlang →", "⏳ Пробный доступ закончился · Выберите тариф →")}
+        : tr(
+            "⏳ Bepul sinov tugadi · Tarif tanlang →",
+            "⏳ Пробный доступ закончился · Выберите тариф →",
+            "⏳ Ücretsiz deneme sona erdi · Paket seçin →",
+          )}
     </Link>
   );
 }

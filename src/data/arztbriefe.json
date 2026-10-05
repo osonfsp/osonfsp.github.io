@@ -5,6 +5,7 @@
     "title": "Akuter Myokardinfarkt (STEMI)",
     "task": "Quyidagi ma’lumotlar asosida uy shifokoriga (Hausarzt) Arztbrief yozing: murojaat, anamnez, topilmalar, diagnoz, davolash va tavsiyalar.",
     "taskRu": "Напишите Arztbrief семейному врачу (Hausarzt) на основе данных ниже: обращение, анамнез, находки, диагноз, лечение и рекомендации.",
+    "taskTr": "Aşağıdaki bilgilere dayanarak aile hekimine (Hausarzt) bir Arztbrief yazın: hitap, anamnez, bulgular, tanı, tedavi ve öneriler.",
     "facts": [
       "Patient: Klaus Weber, 58 Jahre, männlich",
       "Aufnahme: 02.10.2026, Notaufnahme",
@@ -21,86 +22,62 @@
       {
         "label": "Patient ma’lumotlari (Herr Weber)",
         "labelRu": "Данные пациента (Herr Weber)",
-        "keywords": [
-          "weber"
-        ]
+        "labelTr": "Hasta bilgileri (Herr Weber)",
+        "keywords": ["weber"]
       },
       {
         "label": "Asosiy shikoyat: Thoraxschmerzen",
         "labelRu": "Основная жалоба: Thoraxschmerzen",
-        "keywords": [
-          "thoraxschmerz",
-          "brustschmerz"
-        ]
+        "labelTr": "Ana şikâyet: Thoraxschmerzen",
+        "keywords": ["thoraxschmerz", "brustschmerz"]
       },
       {
         "label": "Irradiatsiya (linker Arm)",
         "labelRu": "Иррадиация (linker Arm)",
-        "keywords": [
-          "arm"
-        ]
+        "labelTr": "Yayılım (linker Arm)",
+        "keywords": ["arm"]
       },
       {
         "label": "Vegetativ belgilar (Nausea/Kaltschweiß)",
         "labelRu": "Вегетативные признаки (Nausea/Kaltschweiß)",
-        "keywords": [
-          "kaltschwei",
-          "nausea",
-          "übelkeit",
-          "schwitz"
-        ]
+        "labelTr": "Vejetatif belirtiler (Nausea/Kaltschweiß)",
+        "keywords": ["kaltschwei", "nausea", "übelkeit", "schwitz"]
       },
       {
         "label": "Xavf omillari (Hypertonie, Nikotin)",
         "labelRu": "Факторы риска (Hypertonie, Nikotin)",
-        "keywords": [
-          "hypertonie",
-          "nikotin",
-          "raucher",
-          "cholesterin"
-        ]
+        "labelTr": "Risk faktörleri (Hypertonie, Nikotin)",
+        "keywords": ["hypertonie", "nikotin", "raucher", "cholesterin"]
       },
       {
         "label": "Allergiya (Penicillin)",
         "labelRu": "Аллергия (Penicillin)",
-        "keywords": [
-          "penicillin"
-        ]
+        "labelTr": "Alerji (Penicillin)",
+        "keywords": ["penicillin"]
       },
       {
         "label": "EKG topilmasi (ST-Hebung)",
         "labelRu": "Данные ЭКГ (ST-Hebung)",
-        "keywords": [
-          "st-hebung",
-          "st-strecken",
-          "st hebung",
-          "hebungen"
-        ]
+        "labelTr": "EKG bulgusu (ST-Hebung)",
+        "keywords": ["st-hebung", "st-strecken", "st hebung", "hebungen"]
       },
       {
         "label": "Troponin",
         "labelRu": "Troponin",
-        "keywords": [
-          "troponin"
-        ]
+        "labelTr": "Troponin",
+        "keywords": ["troponin"]
       },
       {
         "label": "Diagnoz (STEMI / Myokardinfarkt)",
         "labelRu": "Диагноз (STEMI / Myokardinfarkt)",
-        "keywords": [
-          "stemi",
-          "myokardinfarkt",
-          "hebungsinfarkt"
-        ]
+        "labelTr": "Tanı (STEMI / Myokardinfarkt)",
+        "keywords": ["stemi", "myokardinfarkt", "hebungsinfarkt"]
       },
       {
         "label": "Davolash (PCI / Stent)",
         "labelRu": "Лечение (PCI / Stent)",
-        "keywords": [
-          "pci",
-          "stent",
-          "koronarangiographie"
-        ]
+        "labelTr": "Tedavi (PCI / Stent)",
+        "keywords": ["pci", "stent", "koronarangiographie"]
       }
     ],
     "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Klaus Weber, 58 Jahre, der sich am 02.10.2026 in unserer Notaufnahme vorstellte.\n\nAnamnese:\nDer Patient stellte sich mit seit ca. zwei Stunden bestehenden, drückenden retrosternalen Thoraxschmerzen mit Ausstrahlung in den linken Arm vor. Begleitend bestanden Kaltschweißigkeit und Nausea. An Vorerkrankungen sind eine arterielle Hypertonie und eine Hypercholesterinämie bekannt. Es besteht ein Nikotinabusus von ca. 30 pack years. Allergie: Penicillin.\n\nBefunde:\nIm EKG zeigten sich ST-Streckenhebungen in den Ableitungen II, III und aVF. Laborchemisch war das Troponin T erhöht.\n\nDiagnose:\nAkuter inferiorer ST-Hebungsinfarkt (STEMI).\n\nTherapie und Verlauf:\nNach Gabe von ASS, Heparin und Morphin erfolgte eine notfallmäßige Koronarangiographie mit PCI und Stentimplantation der rechten Koronararterie (RCA). Der weitere Verlauf gestaltete sich komplikationslos.\n\nProcedere:\nWir empfehlen eine duale Thrombozytenaggregationshemmung für 12 Monate, die Fortführung der Statintherapie, eine strikte Nikotinkarenz sowie eine kardiologische Rehabilitation.\n\nMit freundlichen kollegialen Grüßen"
@@ -111,6 +88,7 @@
     "title": "Ambulant erworbene Pneumonie",
     "task": "Bemorning statsionar davolanishi haqida uy shifokoriga Arztbrief yozing.",
     "taskRu": "Напишите семейному врачу Arztbrief о стационарном лечении пациентки.",
+    "taskTr": "Hastanın yatarak tedavisi hakkında aile hekimine bir Arztbrief yazın.",
     "facts": [
       "Patientin: Anna Schmidt, 67 Jahre, weiblich",
       "Stationäre Aufnahme: 01.10.2026",
@@ -125,81 +103,62 @@
       {
         "label": "Patientin ma’lumotlari (Frau Schmidt)",
         "labelRu": "Данные пациентки (Frau Schmidt)",
-        "keywords": [
-          "schmidt"
-        ]
+        "labelTr": "Hasta bilgileri (Frau Schmidt)",
+        "keywords": ["schmidt"]
       },
       {
         "label": "Husten / Auswurf",
         "labelRu": "Husten / Auswurf",
-        "keywords": [
-          "husten",
-          "auswurf",
-          "sputum"
-        ]
+        "labelTr": "Husten / Auswurf",
+        "keywords": ["husten", "auswurf", "sputum"]
       },
       {
         "label": "Fieber",
         "labelRu": "Fieber",
-        "keywords": [
-          "fieber"
-        ]
+        "labelTr": "Fieber",
+        "keywords": ["fieber"]
       },
       {
         "label": "Dyspnoe",
         "labelRu": "Dyspnoe",
-        "keywords": [
-          "dyspnoe",
-          "atemnot"
-        ]
+        "labelTr": "Dyspnoe",
+        "keywords": ["dyspnoe", "atemnot"]
       },
       {
         "label": "Vorerkrankung COPD",
         "labelRu": "Vorerkrankung COPD",
-        "keywords": [
-          "copd"
-        ]
+        "labelTr": "Vorerkrankung COPD",
+        "keywords": ["copd"]
       },
       {
         "label": "Auskultation (Rasselgeräusche)",
         "labelRu": "Auskultation (Rasselgeräusche)",
-        "keywords": [
-          "rasselgeräusch",
-          "auskultat"
-        ]
+        "labelTr": "Auskultation (Rasselgeräusche)",
+        "keywords": ["rasselgeräusch", "auskultat"]
       },
       {
         "label": "Labor (CRP, Leukozyten)",
         "labelRu": "Labor (CRP, Leukozyten)",
-        "keywords": [
-          "crp",
-          "leukozyt"
-        ]
+        "labelTr": "Labor (CRP, Leukozyten)",
+        "keywords": ["crp", "leukozyt"]
       },
       {
         "label": "Röntgen (Infiltrat)",
         "labelRu": "Röntgen (Infiltrat)",
-        "keywords": [
-          "infiltrat",
-          "röntgen"
-        ]
+        "labelTr": "Röntgen (Infiltrat)",
+        "keywords": ["infiltrat", "röntgen"]
       },
       {
         "label": "Diagnoz (Pneumonie)",
         "labelRu": "Диагноз (Pneumonie)",
-        "keywords": [
-          "pneumonie"
-        ]
+        "labelTr": "Tanı (Pneumonie)",
+        "keywords": ["pneumonie"]
       },
       {
         "label": "Antibiotik terapiya",
         "labelRu": "Антибиотикотерапия",
-        "keywords": [
-          "ampicillin",
-          "sulbactam",
-          "antibio",
-          "clarithromycin"
-        ]
+        "labelTr": "Antibiyotik tedavisi",
+        "keywords": ["ampicillin", "sulbactam", "antibio", "clarithromycin"]
       }
     ],
     "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihre Patientin Frau Anna Schmidt, 67 Jahre, die sich vom 01.10.2026 in unserer stationären Behandlung befand.\n\nAnamnese:\nDie Patientin stellte sich mit seit drei Tagen bestehendem produktivem Husten mit gelblich-grünem Auswurf, Fieber bis 39,2 °C sowie Belastungsdyspnoe vor. Zusätzlich klagte sie über rechtsseitige atemabhängige Thoraxschmerzen. Bekannt sind eine COPD GOLD II und ein Diabetes mellitus Typ 2.\n\nBefunde:\nAuskultatorisch zeigten sich feuchte Rasselgeräusche rechts basal. Die Atemfrequenz betrug 24/min, die Sauerstoffsättigung 89 % unter Raumluft. Laborchemisch fanden sich eine Leukozytose von 16.000/µl und ein CRP von 180 mg/l. Im Röntgen-Thorax zeigte sich ein Infiltrat im rechten Unterlappen.\n\nDiagnose:\nAmbulant erworbene Pneumonie im rechten Unterlappen bei vorbekannter COPD.\n\nTherapie und Verlauf:\nWir leiteten eine kalkulierte antibiotische Therapie mit Ampicillin/Sulbactam i. v. und Clarithromycin ein. Zusätzlich erhielt die Patientin Sauerstoff (2 l/min) und eine Inhalationstherapie. Hierunter besserte sich der Allgemeinzustand.\n\nProcedere:\nWir empfehlen eine Fortführung der Antibiose für insgesamt 5–7 Tage sowie eine radiologische Verlaufskontrolle in 6 Wochen.\n\nMit freundlichen kollegialen Grüßen"
@@ -210,6 +169,7 @@
     "title": "Akute Appendizitis",
     "task": "Operatsiyadan keyingi chiqish xati (Entlassbrief) yozing.",
     "taskRu": "Напишите выписное письмо после операции (Entlassbrief).",
+    "taskTr": "Ameliyat sonrası taburcu mektubu (Entlassbrief) yazın.",
     "facts": [
       "Patient: Lukas Schulz, 22 Jahre, männlich",
       "Aufnahme: 30.09.2026",
@@ -224,83 +184,62 @@
       {
         "label": "Patient ma’lumotlari (Herr Schulz)",
         "labelRu": "Данные пациента (Herr Schulz)",
-        "keywords": [
-          "schulz"
-        ]
+        "labelTr": "Hasta bilgileri (Herr Schulz)",
+        "keywords": ["schulz"]
       },
       {
         "label": "Og‘riq migratsiyasi (periumbilikal)",
         "labelRu": "Миграция боли (periumbilikal)",
-        "keywords": [
-          "periumbilikal",
-          "bauchnabel",
-          "gewandert",
-          "wanderung"
-        ]
+        "labelTr": "Ağrının yer değiştirmesi (periumbilikal)",
+        "keywords": ["periumbilikal", "bauchnabel", "gewandert", "wanderung"]
       },
       {
         "label": "Rechter Unterbauch",
         "labelRu": "Rechter Unterbauch",
-        "keywords": [
-          "unterbauch"
-        ]
+        "labelTr": "Rechter Unterbauch",
+        "keywords": ["unterbauch"]
       },
       {
         "label": "Harorat / Fieber",
         "labelRu": "Температура / Fieber",
-        "keywords": [
-          "38,3",
-          "fieber",
-          "subfebril",
-          "temperatur"
-        ]
+        "labelTr": "Ateş / Fieber",
+        "keywords": ["38,3", "fieber", "subfebril", "temperatur"]
       },
       {
         "label": "Klinik belgilari (McBurney, Loslassschmerz)",
         "labelRu": "Клинические признаки (McBurney, Loslassschmerz)",
-        "keywords": [
-          "mcburney",
-          "loslassschmerz",
-          "psoas"
-        ]
+        "labelTr": "Klinik belirtiler (McBurney, Loslassschmerz)",
+        "keywords": ["mcburney", "loslassschmerz", "psoas"]
       },
       {
         "label": "Labor (Leukozyten, CRP)",
         "labelRu": "Labor (Leukozyten, CRP)",
-        "keywords": [
-          "leukozyt",
-          "crp"
-        ]
+        "labelTr": "Labor (Leukozyten, CRP)",
+        "keywords": ["leukozyt", "crp"]
       },
       {
         "label": "Sonographie",
         "labelRu": "Sonographie",
-        "keywords": [
-          "sonograph"
-        ]
+        "labelTr": "Sonographie",
+        "keywords": ["sonograph"]
       },
       {
         "label": "Diagnoz (Appendizitis)",
         "labelRu": "Диагноз (Appendizitis)",
-        "keywords": [
-          "appendizitis"
-        ]
+        "labelTr": "Tanı (Appendizitis)",
+        "keywords": ["appendizitis"]
       },
       {
         "label": "Operatsiya (Appendektomie)",
         "labelRu": "Операция (Appendektomie)",
-        "keywords": [
-          "appendektomie",
-          "laparoskop"
-        ]
+        "labelTr": "Ameliyat (Appendektomie)",
+        "keywords": ["appendektomie", "laparoskop"]
       },
       {
         "label": "Kechish / Entlassung",
         "labelRu": "Течение / Entlassung",
-        "keywords": [
-          "entlass",
-          "verlauf"
-        ]
+        "labelTr": "Seyir / Entlassung",
+        "keywords": ["entlass", "verlauf"]
       }
     ],
     "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Lukas Schulz, 22 Jahre, der sich vom 30.09. bis 03.10.2026 in unserer stationären Behandlung befand.\n\nAnamnese:\nDer Patient stellte sich mit seit dem Vorabend bestehenden, zunächst periumbilikalen und dann in den rechten Unterbauch gewanderten Schmerzen vor. Begleitend bestanden Nausea, einmalige Emesis sowie eine Temperatur von 38,3 °C. Vorerkrankungen und Voroperationen sind nicht bekannt.\n\nBefunde:\nKlinisch zeigten sich ein Druckschmerz am McBurney-Punkt, ein Loslassschmerz sowie ein positives Psoas-Zeichen. Laborchemisch fanden sich eine Leukozytose von 14.500/µl und ein CRP von 45 mg/l. Sonographisch zeigte sich eine nicht komprimierbare, auf 9 mm verdickte Appendix mit freier Flüssigkeit.\n\nDiagnose:\nAkute Appendizitis.\n\nTherapie und Verlauf:\nNoch am Aufnahmetag erfolgte eine laparoskopische Appendektomie. Der postoperative Verlauf gestaltete sich komplikationslos, sodass wir den Patienten am 3. postoperativen Tag in gutem Allgemeinzustand entlassen konnten.\n\nProcedere:\nWir empfehlen eine Wundkontrolle und die Entfernung des Nahtmaterials am 10. postoperativen Tag sowie körperliche Schonung für zwei Wochen.\n\nMit freundlichen kollegialen Grüßen"
@@ -311,6 +250,7 @@
     "title": "Ischämischer Schlaganfall",
     "task": "Stroke Unit’dan nevrolog/uy shifokoriga Arztbrief yozing. Vaqt oynasi (Zeitfenster) va antikoagulyatsiyaga e’tibor bering.",
     "taskRu": "Напишите Arztbrief из Stroke Unit неврологу/семейному врачу. Обратите внимание на временное окно (Zeitfenster) и антикоагуляцию.",
+    "taskTr": "Stroke Unit’ten nöroloğa/aile hekimine bir Arztbrief yazın. Zaman penceresine (Zeitfenster) ve antikoagülasyona dikkat edin.",
     "facts": [
       "Patient: Peter Hoffmann, 72 Jahre, männlich",
       "Aufnahme: 02.10.2026, 09:10 Uhr (Symptombeginn 08:15 Uhr)",
@@ -325,86 +265,62 @@
       {
         "label": "Patient ma’lumotlari (Herr Hoffmann)",
         "labelRu": "Данные пациента (Herr Hoffmann)",
-        "keywords": [
-          "hoffmann"
-        ]
+        "labelTr": "Hasta bilgileri (Herr Hoffmann)",
+        "keywords": ["hoffmann"]
       },
       {
         "label": "Simptom boshlanish vaqti",
         "labelRu": "Время начала симптомов",
-        "keywords": [
-          "08:15",
-          "symptombeginn",
-          "zeitfenster",
-          "stunde"
-        ]
+        "labelTr": "Semptomların başlama zamanı",
+        "keywords": ["08:15", "symptombeginn", "zeitfenster", "stunde"]
       },
       {
         "label": "Hemiparese",
         "labelRu": "Hemiparese",
-        "keywords": [
-          "hemiparese",
-          "parese"
-        ]
+        "labelTr": "Hemiparese",
+        "keywords": ["hemiparese", "parese"]
       },
       {
         "label": "Nutq buzilishi",
         "labelRu": "Нарушение речи",
-        "keywords": [
-          "dysarthrie",
-          "aphasie",
-          "wortfindung"
-        ]
+        "labelTr": "Konuşma bozukluğu",
+        "keywords": ["dysarthrie", "aphasie", "wortfindung"]
       },
       {
         "label": "Vorhofflimmern",
         "labelRu": "Vorhofflimmern",
-        "keywords": [
-          "vorhofflimmern"
-        ]
+        "labelTr": "Vorhofflimmern",
+        "keywords": ["vorhofflimmern"]
       },
       {
         "label": "Antikoagulyatsiya to‘xtatilgan",
         "labelRu": "Антикоагуляция прервана",
-        "keywords": [
-          "apixaban",
-          "antikoag",
-          "abgesetzt"
-        ]
+        "labelTr": "Antikoagülasyon kesilmiş",
+        "keywords": ["apixaban", "antikoag", "abgesetzt"]
       },
       {
         "label": "cCT (Blutung yo‘q)",
         "labelRu": "cCT (Blutung нет)",
-        "keywords": [
-          "blutung",
-          "cct"
-        ]
+        "labelTr": "cCT (Blutung yok)",
+        "keywords": ["blutung", "cct"]
       },
       {
         "label": "NIHSS",
         "labelRu": "NIHSS",
-        "keywords": [
-          "nihss"
-        ]
+        "labelTr": "NIHSS",
+        "keywords": ["nihss"]
       },
       {
         "label": "Diagnoz (Schlaganfall / Apoplex)",
         "labelRu": "Диагноз (Schlaganfall / Apoplex)",
-        "keywords": [
-          "schlaganfall",
-          "apoplex",
-          "insult",
-          "ischäm"
-        ]
+        "labelTr": "Tanı (Schlaganfall / Apoplex)",
+        "keywords": ["schlaganfall", "apoplex", "insult", "ischäm"]
       },
       {
         "label": "Lysetherapie / Stroke Unit",
         "labelRu": "Lysetherapie / Stroke Unit",
-        "keywords": [
-          "lyse",
-          "alteplase",
-          "stroke unit"
-        ]
+        "labelTr": "Lysetherapie / Stroke Unit",
+        "keywords": ["lyse", "alteplase", "stroke unit"]
       }
     ],
     "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Peter Hoffmann, 72 Jahre, der am 02.10.2026 um 09:10 Uhr in unserer Notaufnahme aufgenommen wurde.\n\nAnamnese:\nDer Patient stellte sich mit einer um 08:15 Uhr plötzlich aufgetretenen Hemiparese rechts sowie Dysarthrie und Wortfindungsstörungen vor. Bekannt sind ein Vorhofflimmern und eine arterielle Hypertonie. Die orale Antikoagulation mit Apixaban wurde vor zwei Wochen wegen rezidivierender Epistaxis eigenmächtig abgesetzt.\n\nBefunde:\nBei Aufnahme betrug der NIHSS 6 Punkte, der Blutdruck 175/95 mmHg und der Blutzucker 112 mg/dl. In der cCT zeigte sich kein Hinweis auf eine Blutung, die CT-Angiographie ergab keinen Verschluss großer Gefäße. Im EKG zeigte sich ein Vorhofflimmern mit einer Herzfrequenz von 92/min.\n\nDiagnose:\nAkuter ischämischer Schlaganfall im Stromgebiet der A. cerebri media links, am ehesten kardioembolisch bei Vorhofflimmern.\n\nTherapie und Verlauf:\nInnerhalb des Zeitfensters erfolgte eine systemische Lysetherapie mit Alteplase. Unter Überwachung auf der Stroke Unit bildete sich die Symptomatik auf einen NIHSS von 2 Punkten zurück.\n\nProcedere:\nWir empfehlen die Wiederaufnahme der oralen Antikoagulation nach Rücksprache mit der Neurologie, eine optimierte Blutdruckeinstellung sowie eine logopädische und physiotherapeutische Weiterbehandlung.\n\nMit freundlichen kollegialen Grüßen"
@@ -415,6 +331,7 @@
     "title": "Diabetes mellitus Typ 2 – Erstdiagnose",
     "task": "Statsionar davolanishdan so‘ng uy shifokoriga Arztbrief yozing. Terapiya va kuzatuv tavsiyalarini aniq yozing.",
     "taskRu": "Напишите семейному врачу Arztbrief после стационарного лечения. Чётко опишите терапию и рекомендации по наблюдению.",
+    "taskTr": "Yatarak tedaviden sonra aile hekimine bir Arztbrief yazın. Tedaviyi ve takip önerilerini net yazın.",
     "facts": [
       "Patient: Thomas Wagner, 52 Jahre, männlich",
       "Stationärer Aufenthalt: 28.09.–02.10.2026",
@@ -429,81 +346,62 @@
       {
         "label": "Patient ma’lumotlari (Herr Wagner)",
         "labelRu": "Данные пациента (Herr Wagner)",
-        "keywords": [
-          "wagner"
-        ]
+        "labelTr": "Hasta bilgileri (Herr Wagner)",
+        "keywords": ["wagner"]
       },
       {
         "label": "Asosiy simptomlar (Polydipsie/Polyurie)",
         "labelRu": "Основные симптомы (Polydipsie/Polyurie)",
-        "keywords": [
-          "polydipsie",
-          "polyurie"
-        ]
+        "labelTr": "Ana semptomlar (Polydipsie/Polyurie)",
+        "keywords": ["polydipsie", "polyurie"]
       },
       {
         "label": "Vazn yo‘qotish",
         "labelRu": "Потеря веса",
-        "keywords": [
-          "gewichtsverlust",
-          "gewichtsabnahme",
-          "abgenommen"
-        ]
+        "labelTr": "Kilo kaybı",
+        "keywords": ["gewichtsverlust", "gewichtsabnahme", "abgenommen"]
       },
       {
         "label": "Xavf omillari (Adipositas, Familie)",
         "labelRu": "Факторы риска (Adipositas, Familie)",
-        "keywords": [
-          "adipositas",
-          "familienanamnes",
-          "bmi"
-        ]
+        "labelTr": "Risk faktörleri (Adipositas, Familie)",
+        "keywords": ["adipositas", "familienanamnes", "bmi"]
       },
       {
         "label": "Blutzucker",
         "labelRu": "Blutzucker",
-        "keywords": [
-          "blutzucker",
-          "glukose"
-        ]
+        "labelTr": "Blutzucker",
+        "keywords": ["blutzucker", "glukose"]
       },
       {
         "label": "HbA1c",
         "labelRu": "HbA1c",
-        "keywords": [
-          "hba1c"
-        ]
+        "labelTr": "HbA1c",
+        "keywords": ["hba1c"]
       },
       {
         "label": "Diagnoz (Diabetes mellitus Typ 2)",
         "labelRu": "Диагноз (Diabetes mellitus Typ 2)",
-        "keywords": [
-          "diabetes mellitus"
-        ]
+        "labelTr": "Tanı (Diabetes mellitus Typ 2)",
+        "keywords": ["diabetes mellitus"]
       },
       {
         "label": "Metformin",
         "labelRu": "Metformin",
-        "keywords": [
-          "metformin"
-        ]
+        "labelTr": "Metformin",
+        "keywords": ["metformin"]
       },
       {
         "label": "Insulin",
         "labelRu": "Insulin",
-        "keywords": [
-          "insulin"
-        ]
+        "labelTr": "İnsülin",
+        "keywords": ["insulin"]
       },
       {
         "label": "Kuzatuv (Schulung, Augenarzt, Kontrolle)",
         "labelRu": "Наблюдение (Schulung, Augenarzt, Kontrolle)",
-        "keywords": [
-          "schulung",
-          "augenärzt",
-          "kontrolle",
-          "fuß"
-        ]
+        "labelTr": "Takip (Schulung, Augenarzt, Kontrolle)",
+        "keywords": ["schulung", "augenärzt", "kontrolle", "fuß"]
       }
     ],
     "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Thomas Wagner, 52 Jahre, der sich vom 28.09. bis 02.10.2026 in unserer stationären Behandlung befand.\n\nAnamnese:\nDer Patient berichtete über seit sechs Wochen bestehende Polydipsie, Polyurie und Nykturie sowie über Abgeschlagenheit, verschwommenes Sehen und einen ungewollten Gewichtsverlust von 5 kg. Vorbekannt sind eine Adipositas (BMI 33), eine arterielle Hypertonie und eine Steatosis hepatis. Familienanamnestisch sind Vater und Bruder an einem Diabetes mellitus Typ 2 erkrankt.\n\nBefunde:\nDer Gelegenheitsblutzucker betrug 345 mg/dl, das HbA1c 10,2 %. Ketone im Urin waren negativ, das Kreatinin lag im Normbereich.\n\nDiagnose:\nDiabetes mellitus Typ 2, Erstdiagnose, mit symptomatischer Hyperglykämie.\n\nTherapie und Verlauf:\nWir begannen eine Therapie mit Metformin 500 mg 1-0-1 (einschleichend, Zieldosis 1000 mg 1-0-1) sowie mit einem Basalinsulin (10 IE abends). Der Patient nahm an einer Diabetesschulung und einer Ernährungsberatung teil. Hierunter zeigten sich rückläufige Blutzuckerwerte.\n\nProcedere:\nWir empfehlen eine HbA1c-Kontrolle in drei Monaten, eine augenärztliche Untersuchung sowie regelmäßige Fußinspektionen. Eine Gewichtsreduktion und eine Nikotinkarenz sind anzustreben.\n\nMit freundlichen kollegialen Grüßen"
@@ -514,6 +412,7 @@
     "title": "Lungenembolie bei Beinvenenthrombose",
     "task": "Bemorning statsionar davolanishi haqida uy shifokoriga Arztbrief yozing: murojaat sababi, anamnez, topilmalar, diagnoz, davolash va keyingi tavsiyalar.",
     "taskRu": "Напишите семейному врачу Arztbrief о стационарном лечении пациентки: причина обращения, анамнез, находки, диагноз, лечение и дальнейшие рекомендации.",
+    "taskTr": "Hastanın yatarak tedavisi hakkında aile hekimine bir Arztbrief yazın: başvuru nedeni, anamnez, bulgular, tanı, tedavi ve sonraki öneriler.",
     "facts": [
       "Patientin: Sabine Hoffmann, 34 Jahre, weiblich",
       "Stationäre Aufnahme: 30.09.2026 – Entlassung: 05.10.2026",
@@ -529,83 +428,62 @@
       {
         "label": "Patientin ma’lumotlari (Frau Hoffmann)",
         "labelRu": "Данные пациентки (Frau Hoffmann)",
-        "keywords": [
-          "hoffmann"
-        ]
+        "labelTr": "Hasta bilgileri (Frau Hoffmann)",
+        "keywords": ["hoffmann"]
       },
       {
         "label": "Asosiy shikoyat: Dyspnoe",
         "labelRu": "Основная жалоба: Dyspnoe",
-        "keywords": [
-          "dyspnoe",
-          "atemnot"
-        ]
+        "labelTr": "Ana şikâyet: Dyspnoe",
+        "keywords": ["dyspnoe", "atemnot"]
       },
       {
         "label": "Thoraxschmerzen (atemabhängig)",
         "labelRu": "Thoraxschmerzen (atemabhängig)",
-        "keywords": [
-          "thoraxschmerz",
-          "atemabhängig"
-        ]
+        "labelTr": "Thoraxschmerzen (atemabhängig)",
+        "keywords": ["thoraxschmerz", "atemabhängig"]
       },
       {
         "label": "Hämoptyse",
         "labelRu": "Hämoptyse",
-        "keywords": [
-          "hämoptyse",
-          "bluthusten"
-        ]
+        "labelTr": "Hämoptyse",
+        "keywords": ["hämoptyse", "bluthusten"]
       },
       {
         "label": "Xavf omillari (Pille, Flug, Nikotin)",
         "labelRu": "Факторы риска (Pille, Flug, Nikotin)",
-        "keywords": [
-          "kontrazept",
-          "pille",
-          "flug",
-          "nikotin"
-        ]
+        "labelTr": "Risk faktörleri (Pille, Flug, Nikotin)",
+        "keywords": ["kontrazept", "pille", "flug", "nikotin"]
       },
       {
         "label": "D-Dimere",
         "labelRu": "D-Dimere",
-        "keywords": [
-          "d-dimer"
-        ]
+        "labelTr": "D-Dimere",
+        "keywords": ["d-dimer"]
       },
       {
         "label": "CT-Angiographie",
         "labelRu": "CT-Angiographie",
-        "keywords": [
-          "ct-angiographie",
-          "angio-ct",
-          "ct-angio"
-        ]
+        "labelTr": "CT-Angiographie",
+        "keywords": ["ct-angiographie", "angio-ct", "ct-angio"]
       },
       {
         "label": "TVT topilmasi (Beinvenenthrombose)",
         "labelRu": "Данные о ТГВ (Beinvenenthrombose)",
-        "keywords": [
-          "thrombose",
-          "tvt"
-        ]
+        "labelTr": "DVT bulgusu (Beinvenenthrombose)",
+        "keywords": ["thrombose", "tvt"]
       },
       {
         "label": "Diagnoz (Lungenembolie)",
         "labelRu": "Диагноз (Lungenembolie)",
-        "keywords": [
-          "lungenembolie",
-          "lungenarterienembolie"
-        ]
+        "labelTr": "Tanı (Lungenembolie)",
+        "keywords": ["lungenembolie", "lungenarterienembolie"]
       },
       {
         "label": "Davolash (Antikoagulation)",
         "labelRu": "Лечение (Antikoagulation)",
-        "keywords": [
-          "antikoagul",
-          "apixaban"
-        ]
+        "labelTr": "Tedavi (Antikoagulation)",
+        "keywords": ["antikoagul", "apixaban"]
       }
     ],
     "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihre Patientin Frau Sabine Hoffmann, 34 Jahre, die sich vom 30.09.2026 bis zum 05.10.2026 in unserer stationären Behandlung befand.\n\nAnamnese:\nDie Patientin stellte sich mit akut aufgetretener Dyspnoe und atemabhängigen, stechenden Thoraxschmerzen rechts vor. Begleitend bestanden eine Tachykardie sowie eine einmalige Hämoptyse. Seit einer Woche bestehe nach einem Langstreckenflug eine Schwellung der linken Wade. Als Risikofaktoren sind eine orale Kontrazeption und ein Nikotinabusus bekannt.\n\nBefunde:\nLaborchemisch zeigten sich deutlich erhöhte D-Dimere bei negativem Troponin. In der CT-Angiographie stellte sich eine Lungenarterienembolie der rechten Segmentarterien ohne Zeichen einer Rechtsherzbelastung dar. Die Kompressionssonographie bestätigte eine tiefe Beinvenenthrombose der linken V. poplitea.\n\nDiagnose:\nLungenarterienembolie rechts bei tiefer Beinvenenthrombose links.\n\nTherapie und Verlauf:\nWir leiteten eine Antikoagulation mit Apixaban ein. Die orale Kontrazeption wurde beendet. Unter Therapie besserte sich die Dyspnoe rasch.\n\nProcedere:\nWir empfehlen die Fortführung der Antikoagulation für mindestens drei Monate, eine Kompressionstherapie, eine nichthormonelle Verhütung sowie eine Nikotinkarenz.\n\nMit freundlichen kollegialen Grüßen"
@@ -616,6 +494,7 @@
     "title": "Akute äthyltoxische Pankreatitis",
     "task": "Bemorning statsionar davolanishi haqida uy shifokoriga Arztbrief yozing.",
     "taskRu": "Напишите семейному врачу Arztbrief о стационарном лечении пациента.",
+    "taskTr": "Hastanın yatarak tedavisi hakkında aile hekimine bir Arztbrief yazın.",
     "facts": [
       "Patient: Thomas Richter, 46 Jahre, männlich",
       "Stationäre Aufnahme: 28.09.2026 – Entlassung: 06.10.2026",
@@ -630,83 +509,62 @@
       {
         "label": "Patient ma’lumotlari (Herr Richter)",
         "labelRu": "Данные пациента (Herr Richter)",
-        "keywords": [
-          "richter"
-        ]
+        "labelTr": "Hasta bilgileri (Herr Richter)",
+        "keywords": ["richter"]
       },
       {
         "label": "Asosiy shikoyat: Oberbauchschmerzen",
         "labelRu": "Основная жалоба: Oberbauchschmerzen",
-        "keywords": [
-          "oberbauch",
-          "epigastri",
-          "bauchschmerz"
-        ]
+        "labelTr": "Ana şikâyet: Oberbauchschmerzen",
+        "keywords": ["oberbauch", "epigastri", "bauchschmerz"]
       },
       {
         "label": "Gürtelförmige Ausstrahlung",
         "labelRu": "Gürtelförmige Ausstrahlung",
-        "keywords": [
-          "gürtelförmig",
-          "rücken"
-        ]
+        "labelTr": "Gürtelförmige Ausstrahlung",
+        "keywords": ["gürtelförmig", "rücken"]
       },
       {
         "label": "Erbrechen",
         "labelRu": "Erbrechen",
-        "keywords": [
-          "erbrechen",
-          "emesis"
-        ]
+        "labelTr": "Erbrechen",
+        "keywords": ["erbrechen", "emesis"]
       },
       {
         "label": "Alkoholabusus",
         "labelRu": "Alkoholabusus",
-        "keywords": [
-          "alkohol"
-        ]
+        "labelTr": "Alkoholabusus",
+        "keywords": ["alkohol"]
       },
       {
         "label": "Lipase",
         "labelRu": "Lipase",
-        "keywords": [
-          "lipase"
-        ]
+        "labelTr": "Lipase",
+        "keywords": ["lipase"]
       },
       {
         "label": "Sonographie topilmasi",
         "labelRu": "Данные УЗИ (Sonographie)",
-        "keywords": [
-          "sonographi",
-          "ultraschall"
-        ]
+        "labelTr": "Ultrason bulgusu (Sonographie)",
+        "keywords": ["sonographi", "ultraschall"]
       },
       {
         "label": "Diagnoz (Pankreatitis)",
         "labelRu": "Диагноз (Pankreatitis)",
-        "keywords": [
-          "pankreatitis"
-        ]
+        "labelTr": "Tanı (Pankreatitis)",
+        "keywords": ["pankreatitis"]
       },
       {
         "label": "Davolash (Flüssigkeit, Analgesie)",
         "labelRu": "Лечение (Flüssigkeit, Analgesie)",
-        "keywords": [
-          "flüssigkeit",
-          "infusion",
-          "analges",
-          "volumen"
-        ]
+        "labelTr": "Tedavi (Flüssigkeit, Analgesie)",
+        "keywords": ["flüssigkeit", "infusion", "analges", "volumen"]
       },
       {
         "label": "Tavsiya: Alkoholkarenz",
         "labelRu": "Рекомендация: Alkoholkarenz",
-        "keywords": [
-          "alkoholkarenz",
-          "alkoholabstinenz",
-          "abstinenz",
-          "verzicht"
-        ]
+        "labelTr": "Öneri: Alkoholkarenz",
+        "keywords": ["alkoholkarenz", "alkoholabstinenz", "abstinenz", "verzicht"]
       }
     ],
     "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Thomas Richter, 46 Jahre, der sich vom 28.09.2026 bis zum 06.10.2026 in unserer stationären Behandlung befand.\n\nAnamnese:\nDer Patient stellte sich mit stärksten, gürtelförmig in den Rücken ausstrahlenden Oberbauchschmerzen und rezidivierendem Erbrechen vor. Es besteht ein langjähriger Alkoholabusus sowie ein Nikotinabusus von 20 pack years. Vorbekannt sind eine Fettleber, eine Hypertriglyzeridämie und eine Gicht.\n\nBefunde:\nLaborchemisch zeigten sich eine auf 1850 U/l erhöhte Lipase, ein CRP von 95 mg/l sowie eine Leukozytose. Sonographisch stellte sich ein ödematös vergrößertes Pankreas ohne Nachweis von Gallensteinen dar.\n\nDiagnose:\nAkute ödematöse Pankreatitis, am ehesten äthyltoxischer Genese.\n\nTherapie und Verlauf:\nUnter Nahrungskarenz, intravenöser Flüssigkeitstherapie und Analgesie besserten sich die Beschwerden rasch. Der enterale Kostaufbau wurde gut toleriert.\n\nProcedere:\nWir empfehlen eine strikte Alkoholkarenz, eine Nikotinkarenz, die Kontrolle der Triglyzeride sowie eine Anbindung an eine Suchtberatung.\n\nMit freundlichen kollegialen Grüßen"
@@ -717,6 +575,7 @@
     "title": "Tachykardes Vorhofflimmern",
     "task": "Bemorning statsionar davolanishi haqida uy shifokoriga Arztbrief yozing. Antikoagulyatsiya sababini ko‘rsatishni unutmang.",
     "taskRu": "Напишите семейному врачу Arztbrief о стационарном лечении пациентки. Не забудьте указать показание к антикоагуляции.",
+    "taskTr": "Hastanın yatarak tedavisi hakkında aile hekimine bir Arztbrief yazın. Antikoagülasyon endikasyonunu belirtmeyi unutmayın.",
     "facts": [
       "Patientin: Ingrid Wagner, 72 Jahre, weiblich",
       "Stationäre Aufnahme: 01.10.2026 – Entlassung: 04.10.2026",
@@ -733,83 +592,62 @@
       {
         "label": "Patientin ma’lumotlari (Frau Wagner)",
         "labelRu": "Данные пациентки (Frau Wagner)",
-        "keywords": [
-          "wagner"
-        ]
+        "labelTr": "Hasta bilgileri (Frau Wagner)",
+        "keywords": ["wagner"]
       },
       {
         "label": "Asosiy shikoyat: Palpitationen",
         "labelRu": "Основная жалоба: Palpitationen",
-        "keywords": [
-          "palpitation",
-          "herzrasen",
-          "herzstolpern"
-        ]
+        "labelTr": "Ana şikâyet: Palpitationen",
+        "keywords": ["palpitation", "herzrasen", "herzstolpern"]
       },
       {
         "label": "Schwindel / Dyspnoe",
         "labelRu": "Schwindel / Dyspnoe",
-        "keywords": [
-          "schwindel",
-          "dyspnoe"
-        ]
+        "labelTr": "Schwindel / Dyspnoe",
+        "keywords": ["schwindel", "dyspnoe"]
       },
       {
         "label": "Vorerkrankungen (Hypertonie, Diabetes)",
         "labelRu": "Vorerkrankungen (Hypertonie, Diabetes)",
-        "keywords": [
-          "hypertonie",
-          "diabetes"
-        ]
+        "labelTr": "Vorerkrankungen (Hypertonie, Diabetes)",
+        "keywords": ["hypertonie", "diabetes"]
       },
       {
         "label": "Allergiya (Kontrastmittel)",
         "labelRu": "Аллергия (Kontrastmittel)",
-        "keywords": [
-          "kontrastmittel"
-        ]
+        "labelTr": "Alerji (Kontrastmittel)",
+        "keywords": ["kontrastmittel"]
       },
       {
         "label": "EKG topilmasi",
         "labelRu": "Данные ЭКГ",
-        "keywords": [
-          "ekg"
-        ]
+        "labelTr": "EKG bulgusu",
+        "keywords": ["ekg"]
       },
       {
         "label": "CHA2DS2-VASc",
         "labelRu": "CHA2DS2-VASc",
-        "keywords": [
-          "cha2ds2",
-          "cha₂ds₂",
-          "chads"
-        ]
+        "labelTr": "CHA2DS2-VASc",
+        "keywords": ["cha2ds2", "cha₂ds₂", "chads"]
       },
       {
         "label": "Diagnoz (Vorhofflimmern)",
         "labelRu": "Диагноз (Vorhofflimmern)",
-        "keywords": [
-          "vorhofflimmern"
-        ]
+        "labelTr": "Tanı (Vorhofflimmern)",
+        "keywords": ["vorhofflimmern"]
       },
       {
         "label": "Frequenzkontrolle (Betablocker)",
         "labelRu": "Frequenzkontrolle (Betablocker)",
-        "keywords": [
-          "bisoprolol",
-          "betablocker",
-          "frequenzkontrolle"
-        ]
+        "labelTr": "Frequenzkontrolle (Betablocker)",
+        "keywords": ["bisoprolol", "betablocker", "frequenzkontrolle"]
       },
       {
         "label": "Antikoagulation",
         "labelRu": "Antikoagulation",
-        "keywords": [
-          "antikoagul",
-          "apixaban",
-          "doak",
-          "noak"
-        ]
+        "labelTr": "Antikoagulation",
+        "keywords": ["antikoagul", "apixaban", "doak", "noak"]
       }
     ],
     "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihre Patientin Frau Ingrid Wagner, 72 Jahre, die sich vom 01.10.2026 bis zum 04.10.2026 in unserer stationären Behandlung befand.\n\nAnamnese:\nDie Patientin stellte sich mit seit dem Morgen bestehenden unregelmäßigen Palpitationen, Schwindel und Belastungsdyspnoe vor. Eine Synkope wurde verneint. Vorbekannt sind eine arterielle Hypertonie, ein Diabetes mellitus Typ 2 und eine Hypothyreose. Es besteht eine Kontrastmittelallergie.\n\nBefunde:\nIm EKG zeigte sich ein tachykardes Vorhofflimmern mit einer Herzfrequenz von 138/min. TSH, Elektrolyte und Troponin lagen im Normbereich. Echokardiographisch fand sich eine normale linksventrikuläre Funktion.\n\nDiagnose:\nTachykardes Vorhofflimmern, Erstdiagnose. CHA2DS2-VASc-Score 5.\n\nTherapie und Verlauf:\nUnter Frequenzkontrolle mit Bisoprolol normalisierte sich die Herzfrequenz. Aufgrund des erhöhten Schlaganfallrisikos leiteten wir eine Antikoagulation mit Apixaban ein.\n\nProcedere:\nWir empfehlen die dauerhafte Fortführung der Antikoagulation, regelmäßige Kontrollen der Nierenfunktion sowie eine ambulante kardiologische Vorstellung zur Prüfung einer rhythmuserhaltenden Therapie.\n\nMit freundlichen kollegialen Grüßen"
@@ -820,6 +658,7 @@
     "title": "Ulkusblutung unter NSAR",
     "task": "Bemorning statsionar davolanishi haqida uy shifokoriga Arztbrief yozing. Dori-darmonlarga oid tavsiyalarga alohida e’tibor bering.",
     "taskRu": "Напишите семейному врачу Arztbrief о стационарном лечении пациента. Особое внимание уделите рекомендациям по лекарствам.",
+    "taskTr": "Hastanın yatarak tedavisi hakkında aile hekimine bir Arztbrief yazın. İlaçlarla ilgili önerilere özellikle dikkat edin.",
     "facts": [
       "Patient: Helmut Braun, 61 Jahre, männlich",
       "Stationäre Aufnahme: 27.09.2026 – Entlassung: 03.10.2026",
@@ -835,88 +674,62 @@
       {
         "label": "Patient ma’lumotlari (Herr Braun)",
         "labelRu": "Данные пациента (Herr Braun)",
-        "keywords": [
-          "braun"
-        ]
+        "labelTr": "Hasta bilgileri (Herr Braun)",
+        "keywords": ["braun"]
       },
       {
         "label": "Meläna",
         "labelRu": "Meläna",
-        "keywords": [
-          "meläna",
-          "teerstuhl"
-        ]
+        "labelTr": "Meläna",
+        "keywords": ["meläna", "teerstuhl"]
       },
       {
         "label": "Hämatemesis",
         "labelRu": "Hämatemesis",
-        "keywords": [
-          "hämatemesis",
-          "kaffeesatz"
-        ]
+        "labelTr": "Hämatemesis",
+        "keywords": ["hämatemesis", "kaffeesatz"]
       },
       {
         "label": "NSAR / Ibuprofen",
         "labelRu": "NSAR / Ibuprofen",
-        "keywords": [
-          "ibuprofen",
-          "nsar"
-        ]
+        "labelTr": "NSAR / Ibuprofen",
+        "keywords": ["ibuprofen", "nsar"]
       },
       {
         "label": "Hämoglobin",
         "labelRu": "Hämoglobin",
-        "keywords": [
-          "hämoglobin",
-          "hb "
-        ]
+        "labelTr": "Hämoglobin",
+        "keywords": ["hämoglobin", "hb "]
       },
       {
         "label": "Gastroskopie",
         "labelRu": "Gastroskopie",
-        "keywords": [
-          "gastroskopie",
-          "ögd",
-          "endoskop"
-        ]
+        "labelTr": "Gastroskopie",
+        "keywords": ["gastroskopie", "ögd", "endoskop"]
       },
       {
         "label": "Diagnoz (Ulkus)",
         "labelRu": "Диагноз (Ulkus)",
-        "keywords": [
-          "ulcus",
-          "ulkus"
-        ]
+        "labelTr": "Tanı (Ulkus)",
+        "keywords": ["ulcus", "ulkus"]
       },
       {
         "label": "Blutstillung / Transfusion",
         "labelRu": "Blutstillung / Transfusion",
-        "keywords": [
-          "blutstillung",
-          "erythrozytenkonzentrat",
-          "transfusion",
-          "clip"
-        ]
+        "labelTr": "Blutstillung / Transfusion",
+        "keywords": ["blutstillung", "erythrozytenkonzentrat", "transfusion", "clip"]
       },
       {
         "label": "PPI",
         "labelRu": "PPI",
-        "keywords": [
-          "pantoprazol",
-          "protonenpumpen",
-          "ppi"
-        ]
+        "labelTr": "PPI",
+        "keywords": ["pantoprazol", "protonenpumpen", "ppi"]
       },
       {
         "label": "Tavsiya: NSAR meiden",
         "labelRu": "Рекомендация: NSAR meiden",
-        "keywords": [
-          "meiden",
-          "verzicht",
-          "abgesetzt",
-          "absetzen",
-          "pausier"
-        ]
+        "labelTr": "Öneri: NSAR meiden",
+        "keywords": ["meiden", "verzicht", "abgesetzt", "absetzen", "pausier"]
       }
     ],
     "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Helmut Braun, 61 Jahre, der sich vom 27.09.2026 bis zum 03.10.2026 in unserer stationären Behandlung befand.\n\nAnamnese:\nDer Patient stellte sich mit seit zwei Tagen bestehender Meläna, einmaliger kaffeesatzartiger Hämatemesis und orthostatischem Schwindel vor. Wegen einer Gonarthrose nahm er seit vier Wochen bis zu dreimal täglich Ibuprofen 600 mg zusätzlich zu ASS 100 mg ein. Vorbekannt ist eine KHK mit Stentimplantation vor zwei Jahren.\n\nBefunde:\nLaborchemisch zeigten sich ein Hämoglobin von 7,9 g/dl und ein erhöhter Harnstoff. In der Gastroskopie stellte sich ein Ulcus duodeni mit sichtbarem Gefäßstumpf (Forrest IIa) dar. Der Helicobacter-pylori-Test war negativ.\n\nDiagnose:\nObere gastrointestinale Blutung bei Ulcus duodeni (Forrest IIa) unter NSAR- und ASS-Einnahme.\n\nTherapie und Verlauf:\nEs erfolgte eine endoskopische Blutstillung. Wir transfundierten zwei Erythrozytenkonzentrate und behandelten mit Pantoprazol intravenös. Ibuprofen wurde abgesetzt. Im Verlauf kam es zu keiner erneuten Blutung.\n\nProcedere:\nWir empfehlen die Fortführung von Pantoprazol 40 mg 1-0-1 für acht Wochen, die Fortführung von ASS aus kardiologischer Indikation sowie den dauerhaften Verzicht auf NSAR. Zur Analgesie kann Paracetamol eingesetzt werden. Eine Kontrolle des Blutbildes in einer Woche ist empfehlenswert.\n\nMit freundlichen kollegialen Grüßen"
@@ -927,6 +740,7 @@
     "title": "Ureterolithiasis rechts",
     "task": "Bemorning statsionar davolanishi haqida uy shifokoriga qisqa Arztbrief yozing.",
     "taskRu": "Напишите семейному врачу краткий Arztbrief о стационарном лечении пациента.",
+    "taskTr": "Hastanın yatarak tedavisi hakkında aile hekimine kısa bir Arztbrief yazın.",
     "facts": [
       "Patient: Stefan Koch, 39 Jahre, männlich",
       "Stationäre Aufnahme: 02.10.2026 – Entlassung: 04.10.2026",
@@ -942,83 +756,62 @@
       {
         "label": "Patient ma’lumotlari (Herr Koch)",
         "labelRu": "Данные пациента (Herr Koch)",
-        "keywords": [
-          "koch"
-        ]
+        "labelTr": "Hasta bilgileri (Herr Koch)",
+        "keywords": ["koch"]
       },
       {
         "label": "Asosiy shikoyat: Flankenschmerzen",
         "labelRu": "Основная жалоба: Flankenschmerzen",
-        "keywords": [
-          "flanke"
-        ]
+        "labelTr": "Ana şikâyet: Flankenschmerzen",
+        "keywords": ["flanke"]
       },
       {
         "label": "Kolik xarakteri",
         "labelRu": "Коликообразный характер",
-        "keywords": [
-          "kolik"
-        ]
+        "labelTr": "Kolik karakteri",
+        "keywords": ["kolik"]
       },
       {
         "label": "Hämaturie",
         "labelRu": "Hämaturie",
-        "keywords": [
-          "hämaturie"
-        ]
+        "labelTr": "Hämaturie",
+        "keywords": ["hämaturie"]
       },
       {
         "label": "Allergiya (Metamizol)",
         "labelRu": "Аллергия (Metamizol)",
-        "keywords": [
-          "metamizol",
-          "novalgin"
-        ]
+        "labelTr": "Alerji (Metamizol)",
+        "keywords": ["metamizol", "novalgin"]
       },
       {
         "label": "Sonographie (Harnstau)",
         "labelRu": "Sonographie (Harnstau)",
-        "keywords": [
-          "harnstau",
-          "sonographi"
-        ]
+        "labelTr": "Sonographie (Harnstau)",
+        "keywords": ["harnstau", "sonographi"]
       },
       {
         "label": "CT topilmasi (Konkrement)",
         "labelRu": "Данные КТ (Konkrement)",
-        "keywords": [
-          "konkrement",
-          "low-dose",
-          "computertomograph"
-        ]
+        "labelTr": "BT bulgusu (Konkrement)",
+        "keywords": ["konkrement", "low-dose", "computertomograph"]
       },
       {
         "label": "Diagnoz (Urolithiasis)",
         "labelRu": "Диагноз (Urolithiasis)",
-        "keywords": [
-          "urolithiasis",
-          "ureterolithiasis",
-          "harnleiterstein",
-          "nierenkolik"
-        ]
+        "labelTr": "Tanı (Urolithiasis)",
+        "keywords": ["urolithiasis", "ureterolithiasis", "harnleiterstein", "nierenkolik"]
       },
       {
         "label": "Davolash (Analgesie, Tamsulosin)",
         "labelRu": "Лечение (Analgesie, Tamsulosin)",
-        "keywords": [
-          "tamsulosin",
-          "diclofenac",
-          "analges"
-        ]
+        "labelTr": "Tedavi (Analgesie, Tamsulosin)",
+        "keywords": ["tamsulosin", "diclofenac", "analges"]
       },
       {
         "label": "Tavsiya: Trinkmenge",
         "labelRu": "Рекомендация: Trinkmenge",
-        "keywords": [
-          "trinkmenge",
-          "flüssigkeitszufuhr",
-          "trinken"
-        ]
+        "labelTr": "Öneri: Trinkmenge",
+        "keywords": ["trinkmenge", "flüssigkeitszufuhr", "trinken"]
       }
     ],
     "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Stefan Koch, 39 Jahre, der sich vom 02.10.2026 bis zum 04.10.2026 in unserer stationären Behandlung befand.\n\nAnamnese:\nDer Patient stellte sich mit kolikartigen Flankenschmerzen rechts mit Ausstrahlung in die Leiste, Übelkeit und Makrohämaturie vor. Anamnestisch ist ein Nierenstein links bekannt. Die tägliche Trinkmenge ist gering. Es besteht eine Allergie gegen Metamizol.\n\nBefunde:\nIm Urinstatus zeigte sich eine Mikrohämaturie ohne Leukozyturie. Sonographisch fand sich ein Harnstau Grad I rechts. Im Low-Dose-CT stellte sich ein 5 mm großes Konkrement im distalen rechten Ureter dar.\n\nDiagnose:\nNierenkolik bei distaler Ureterolithiasis rechts.\n\nTherapie und Verlauf:\nUnter Analgesie mit Diclofenac und Paracetamol sowie medikamentöser Austreibungstherapie mit Tamsulosin kam es zum spontanen Steinabgang. Der Harnstau war sonographisch rückläufig.\n\nProcedere:\nWir empfehlen eine Trinkmenge von mindestens 2,5 Litern täglich, eine Steinanalyse sowie eine urologische Kontrolle in vier Wochen.\n\nMit freundlichen kollegialen Grüßen"
@@ -1029,6 +822,7 @@
     "title": "Spontanpneumothorax links",
     "task": "Bemorning statsionar davolanishi haqida uy shifokoriga Arztbrief yozing.",
     "taskRu": "Напишите семейному врачу Arztbrief о стационарном лечении пациента.",
+    "taskTr": "Hastanın yatarak tedavisi hakkında aile hekimine bir Arztbrief yazın.",
     "facts": [
       "Patient: Tim Bauer, 21 Jahre, männlich",
       "Stationäre Aufnahme: 29.09.2026 – Entlassung: 03.10.2026",
@@ -1042,81 +836,62 @@
       {
         "label": "Patient ma’lumotlari (Herr Bauer)",
         "labelRu": "Данные пациента (Herr Bauer)",
-        "keywords": [
-          "bauer"
-        ]
+        "labelTr": "Hasta bilgileri (Herr Bauer)",
+        "keywords": ["bauer"]
       },
       {
         "label": "Asosiy shikoyat: Thoraxschmerzen",
         "labelRu": "Основная жалоба: Thoraxschmerzen",
-        "keywords": [
-          "thoraxschmerz",
-          "brustschmerz"
-        ]
+        "labelTr": "Ana şikâyet: Thoraxschmerzen",
+        "keywords": ["thoraxschmerz", "brustschmerz"]
       },
       {
         "label": "Dyspnoe",
         "labelRu": "Dyspnoe",
-        "keywords": [
-          "dyspnoe",
-          "atemnot"
-        ]
+        "labelTr": "Dyspnoe",
+        "keywords": ["dyspnoe", "atemnot"]
       },
       {
         "label": "Travma yo‘qligi",
         "labelRu": "Отсутствие травмы",
-        "keywords": [
-          "trauma"
-        ]
+        "labelTr": "Travma olmaması",
+        "keywords": ["trauma"]
       },
       {
         "label": "Nikotinabusus",
         "labelRu": "Nikotinabusus",
-        "keywords": [
-          "nikotin",
-          "raucher",
-          "rauchen"
-        ]
+        "labelTr": "Nikotinabusus",
+        "keywords": ["nikotin", "raucher", "rauchen"]
       },
       {
         "label": "Auskultation / Perkussion",
         "labelRu": "Аускультация / перкуссия",
-        "keywords": [
-          "atemgeräusch",
-          "klopfschall",
-          "auskultat"
-        ]
+        "labelTr": "Auskultation / Perkussion",
+        "keywords": ["atemgeräusch", "klopfschall", "auskultat"]
       },
       {
         "label": "Röntgen-Thorax",
         "labelRu": "Röntgen-Thorax",
-        "keywords": [
-          "röntgen"
-        ]
+        "labelTr": "Röntgen-Thorax",
+        "keywords": ["röntgen"]
       },
       {
         "label": "Diagnoz (Pneumothorax)",
         "labelRu": "Диагноз (Pneumothorax)",
-        "keywords": [
-          "pneumothorax"
-        ]
+        "labelTr": "Tanı (Pneumothorax)",
+        "keywords": ["pneumothorax"]
       },
       {
         "label": "Davolash (Thoraxdrainage)",
         "labelRu": "Лечение (Thoraxdrainage)",
-        "keywords": [
-          "drainage"
-        ]
+        "labelTr": "Tedavi (Thoraxdrainage)",
+        "keywords": ["drainage"]
       },
       {
         "label": "Tavsiya: Nikotinkarenz / Flugverbot",
         "labelRu": "Рекомендация: отказ от курения / полётов",
-        "keywords": [
-          "nikotinkarenz",
-          "rauchstopp",
-          "flug",
-          "tauchen"
-        ]
+        "labelTr": "Öneri: Nikotinkarenz / Flugverbot",
+        "keywords": ["nikotinkarenz", "rauchstopp", "flug", "tauchen"]
       }
     ],
     "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Tim Bauer, 21 Jahre, der sich vom 29.09.2026 bis zum 03.10.2026 in unserer stationären Behandlung befand.\n\nAnamnese:\nDer Patient stellte sich mit plötzlich in Ruhe aufgetretenen, atemabhängigen Thoraxschmerzen links und zunehmender Dyspnoe vor. Ein Trauma wurde verneint. Es besteht ein Nikotinabusus von ca. 5 pack years.\n\nBefunde:\nAuskultatorisch zeigte sich ein abgeschwächtes Atemgeräusch links bei hypersonorem Klopfschall. Die Sauerstoffsättigung betrug 93 %. Im Röntgen-Thorax stellte sich ein Pneumothorax links mit einem Mantelsaum von 3 cm dar.\n\nDiagnose:\nPrimärer Spontanpneumothorax links.\n\nTherapie und Verlauf:\nWir legten eine Thoraxdrainage an. Darunter kam es zur vollständigen Reexpansion der Lunge. Die Drainage konnte am dritten Tag entfernt werden.\n\nProcedere:\nWir empfehlen eine strikte Nikotinkarenz, den Verzicht auf Flugreisen für zwei Wochen sowie auf Tauchen. Eine Röntgenkontrolle in einer Woche ist empfehlenswert.\n\nMit freundlichen kollegialen Grüßen"
@@ -1127,6 +902,7 @@
     "title": "Dekompensierte Leberzirrhose",
     "task": "Bemorning statsionar davolanishi haqida uy shifokoriga Arztbrief yozing. Alkoholdan voz kechish tavsiyasini unutmang.",
     "taskRu": "Напишите семейному врачу Arztbrief о стационарном лечении пациента. Не забудьте рекомендацию отказаться от алкоголя.",
+    "taskTr": "Hastanın yatarak tedavisi hakkında aile hekimine bir Arztbrief yazın. Alkolü bırakma önerisini unutmayın.",
     "facts": [
       "Patient: Horst Lange, 59 Jahre, männlich",
       "Stationäre Aufnahme: 24.09.2026 – Entlassung: 04.10.2026",
@@ -1140,82 +916,62 @@
       {
         "label": "Patient ma’lumotlari (Herr Lange)",
         "labelRu": "Данные пациента (Herr Lange)",
-        "keywords": [
-          "lange"
-        ]
+        "labelTr": "Hasta bilgileri (Herr Lange)",
+        "keywords": ["lange"]
       },
       {
         "label": "Aszites",
         "labelRu": "Aszites",
-        "keywords": [
-          "aszites"
-        ]
+        "labelTr": "Aszites",
+        "keywords": ["aszites"]
       },
       {
         "label": "Ikterus",
         "labelRu": "Ikterus",
-        "keywords": [
-          "ikterus",
-          "gelb"
-        ]
+        "labelTr": "Ikterus",
+        "keywords": ["ikterus", "gelb"]
       },
       {
         "label": "Hepatische Enzephalopathie",
         "labelRu": "Печёночная энцефалопатия",
-        "keywords": [
-          "enzephalopathie",
-          "verwirrt"
-        ]
+        "labelTr": "Hepatische Enzephalopathie",
+        "keywords": ["enzephalopathie", "verwirrt"]
       },
       {
         "label": "Alkoholabusus",
         "labelRu": "Alkoholabusus",
-        "keywords": [
-          "alkohol"
-        ]
+        "labelTr": "Alkoholabusus",
+        "keywords": ["alkohol"]
       },
       {
         "label": "Sonographie",
         "labelRu": "УЗИ (Sonographie)",
-        "keywords": [
-          "sonograph"
-        ]
+        "labelTr": "Sonographie",
+        "keywords": ["sonograph"]
       },
       {
         "label": "Laborwerte (Bilirubin, Albumin, INR)",
         "labelRu": "Лабораторные данные (Bilirubin, Albumin, INR)",
-        "keywords": [
-          "bilirubin",
-          "albumin",
-          "inr"
-        ]
+        "labelTr": "Laborwerte (Bilirubin, Albumin, INR)",
+        "keywords": ["bilirubin", "albumin", "inr"]
       },
       {
         "label": "Diagnoz (Leberzirrhose)",
         "labelRu": "Диагноз (Leberzirrhose)",
-        "keywords": [
-          "leberzirrhose",
-          "zirrhose"
-        ]
+        "labelTr": "Tanı (Leberzirrhose)",
+        "keywords": ["leberzirrhose", "zirrhose"]
       },
       {
         "label": "Davolash (Punktion, Diuretika, Lactulose)",
         "labelRu": "Лечение (пункция, диуретики, лактулоза)",
-        "keywords": [
-          "punktion",
-          "spironolacton",
-          "furosemid",
-          "lactulose"
-        ]
+        "labelTr": "Tedavi (Punktion, Diuretika, Lactulose)",
+        "keywords": ["punktion", "spironolacton", "furosemid", "lactulose"]
       },
       {
         "label": "Tavsiya: Alkoholkarenz",
         "labelRu": "Рекомендация: отказ от алкоголя",
-        "keywords": [
-          "alkoholkarenz",
-          "abstinenz",
-          "verzicht"
-        ]
+        "labelTr": "Öneri: Alkoholkarenz",
+        "keywords": ["alkoholkarenz", "abstinenz", "verzicht"]
       }
     ],
     "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Horst Lange, 59 Jahre, der sich vom 24.09.2026 bis zum 04.10.2026 in unserer stationären Behandlung befand.\n\nAnamnese:\nDer Patient stellte sich mit seit drei Wochen zunehmendem Bauchumfang, Ikterus, Beinödemen und fremdanamnestisch beschriebener Verwirrtheit vor. Es besteht ein Alkoholabusus seit 20 Jahren.\n\nBefunde:\nSonographisch zeigten sich eine Leberzirrhose mit ausgeprägtem Aszites und eine Splenomegalie. Laborchemisch fanden sich ein Bilirubin von 4,8 mg/dl, ein Albumin von 2,6 g/dl und ein INR von 1,7. Das Aszites-Punktat ergab keinen Hinweis auf eine spontan bakterielle Peritonitis.\n\nDiagnose:\nDekompensierte äthyltoxische Leberzirrhose mit Aszites und hepatischer Enzephalopathie.\n\nTherapie und Verlauf:\nEs erfolgte eine Aszitespunktion von 5 Litern mit Albuminsubstitution. Wir leiteten eine diuretische Therapie mit Spironolacton und Furosemid sowie eine Therapie mit Lactulose ein. Darunter besserte sich die Vigilanz deutlich.\n\nProcedere:\nWir empfehlen eine strikte Alkoholkarenz, tägliche Gewichtskontrollen, eine natriumarme Kost, Kontrollen der Elektrolyte und Nierenwerte in einer Woche sowie eine Vorstellung in der hepatologischen Ambulanz.\n\nMit freundlichen kollegialen Grüßen"
@@ -1226,6 +982,7 @@
     "title": "Akute Sigmadivertikulitis",
     "task": "Bemorning statsionar davolanishi haqida uy shifokoriga Arztbrief yozing. Penitsillin allergiyasini hisobga oling.",
     "taskRu": "Напишите семейному врачу Arztbrief о стационарном лечении пациентки. Учтите аллергию на пенициллин.",
+    "taskTr": "Hastanın yatarak tedavisi hakkında aile hekimine bir Arztbrief yazın. Penisilin alerjisini dikkate alın.",
     "facts": [
       "Patientin: Monika Krause, 64 Jahre, weiblich",
       "Stationäre Aufnahme: 28.09.2026 – Entlassung: 04.10.2026",
@@ -1239,78 +996,62 @@
       {
         "label": "Patientin ma’lumotlari (Frau Krause)",
         "labelRu": "Данные пациентки (Frau Krause)",
-        "keywords": [
-          "krause"
-        ]
+        "labelTr": "Hasta bilgileri (Frau Krause)",
+        "keywords": ["krause"]
       },
       {
         "label": "Asosiy shikoyat: linker Unterbauch",
         "labelRu": "Основная жалоба: левая подвздошная область",
-        "keywords": [
-          "unterbauch"
-        ]
+        "labelTr": "Ana şikâyet: linker Unterbauch",
+        "keywords": ["unterbauch"]
       },
       {
         "label": "Fieber",
         "labelRu": "Fieber",
-        "keywords": [
-          "fieber"
-        ]
+        "labelTr": "Fieber",
+        "keywords": ["fieber"]
       },
       {
         "label": "Allergiya (Penicillin)",
         "labelRu": "Аллергия (Penicillin)",
-        "keywords": [
-          "penicillin"
-        ]
+        "labelTr": "Alerji (Penicillin)",
+        "keywords": ["penicillin"]
       },
       {
         "label": "Labor (Leukozyten, CRP)",
         "labelRu": "Лабораторные данные (Leukozyten, CRP)",
-        "keywords": [
-          "leukozyt",
-          "crp"
-        ]
+        "labelTr": "Labor (Leukozyten, CRP)",
+        "keywords": ["leukozyt", "crp"]
       },
       {
         "label": "CT topilmasi",
         "labelRu": "Данные КТ",
-        "keywords": [
-          "ct des abdomens",
-          "ct-abdomen",
-          "computertomograph"
-        ]
+        "labelTr": "BT bulgusu",
+        "keywords": ["ct des abdomens", "ct-abdomen", "computertomograph"]
       },
       {
         "label": "Asoratlar yo‘qligi (Abszess/Perforation)",
         "labelRu": "Нет осложнений (абсцесс/перфорация)",
-        "keywords": [
-          "abszess",
-          "perforation"
-        ]
+        "labelTr": "Komplikasyon olmaması (Abszess/Perforation)",
+        "keywords": ["abszess", "perforation"]
       },
       {
         "label": "Diagnoz (Divertikulitis)",
         "labelRu": "Диагноз (Divertikulitis)",
-        "keywords": [
-          "divertikulitis"
-        ]
+        "labelTr": "Tanı (Divertikulitis)",
+        "keywords": ["divertikulitis"]
       },
       {
         "label": "Davolash (Antibiose)",
         "labelRu": "Лечение (антибиотики)",
-        "keywords": [
-          "antibio",
-          "ciprofloxacin",
-          "metronidazol"
-        ]
+        "labelTr": "Tedavi (Antibiose)",
+        "keywords": ["antibio", "ciprofloxacin", "metronidazol"]
       },
       {
         "label": "Tavsiya: Koloskopie",
         "labelRu": "Рекомендация: колоноскопия",
-        "keywords": [
-          "koloskopie"
-        ]
+        "labelTr": "Öneri: Koloskopie",
+        "keywords": ["koloskopie"]
       }
     ],
     "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihre Patientin Frau Monika Krause, 64 Jahre, die sich vom 28.09.2026 bis zum 04.10.2026 in unserer stationären Behandlung befand.\n\nAnamnese:\nDie Patientin stellte sich mit seit zwei Tagen bestehenden Schmerzen im linken Unterbauch, Fieber bis 38,6 °C und Inappetenz vor. Eine Divertikulose ist bekannt. Es besteht eine Allergie gegen Penicillin.\n\nBefunde:\nLaborchemisch zeigten sich eine Leukozytose von 15.800/µl und ein CRP von 140 mg/l. In der CT des Abdomens stellte sich eine Sigmadivertikulitis ohne Abszess und ohne Perforation dar.\n\nDiagnose:\nAkute unkomplizierte Sigmadivertikulitis.\n\nTherapie und Verlauf:\nWir behandelten mit einer Antibiose aus Ciprofloxacin und Metronidazol unter initialer Nahrungskarenz. Der anschließende Kostaufbau wurde gut toleriert, die Entzündungswerte waren rückläufig.\n\nProcedere:\nWir empfehlen eine Koloskopie in sechs bis acht Wochen, eine ballaststoffreiche Ernährung und ausreichende Flüssigkeitszufuhr.\n\nMit freundlichen kollegialen Grüßen"
@@ -1321,6 +1062,7 @@
     "title": "Schenkelhalsfraktur nach Sturz",
     "task": "Operatsiyadan keyingi chiqish xati (Entlassbrief) yozing. Antikoagulyatsiya va reabilitatsiyaga e’tibor bering.",
     "taskRu": "Напишите выписное письмо после операции (Entlassbrief). Учтите антикоагуляцию и реабилитацию.",
+    "taskTr": "Ameliyat sonrası taburcu mektubu (Entlassbrief) yazın. Antikoagülasyon ve rehabilitasyona dikkat edin.",
     "facts": [
       "Patientin: Gertrud Schulze, 82 Jahre, weiblich",
       "Stationäre Aufnahme: 22.09.2026 – Entlassung: 06.10.2026",
@@ -1334,79 +1076,62 @@
       {
         "label": "Patientin ma’lumotlari (Frau Schulze)",
         "labelRu": "Данные пациентки (Frau Schulze)",
-        "keywords": [
-          "schulze"
-        ]
+        "labelTr": "Hasta bilgileri (Frau Schulze)",
+        "keywords": ["schulze"]
       },
       {
         "label": "Sturz",
         "labelRu": "Падение",
-        "keywords": [
-          "sturz",
-          "gestürzt"
-        ]
+        "labelTr": "Sturz",
+        "keywords": ["sturz", "gestürzt"]
       },
       {
         "label": "Klinik: verkürzt, außenrotiert",
         "labelRu": "Клиника: укорочение, наружная ротация",
-        "keywords": [
-          "verkürzt",
-          "außenrotiert"
-        ]
+        "labelTr": "Klinik: verkürzt, außenrotiert",
+        "keywords": ["verkürzt", "außenrotiert"]
       },
       {
         "label": "Antikoagulation (Apixaban)",
         "labelRu": "Антикоагуляция (Apixaban)",
-        "keywords": [
-          "apixaban",
-          "antikoagul"
-        ]
+        "labelTr": "Antikoagulation (Apixaban)",
+        "keywords": ["apixaban", "antikoagul"]
       },
       {
         "label": "Röntgen",
         "labelRu": "Röntgen",
-        "keywords": [
-          "röntgen"
-        ]
+        "labelTr": "Röntgen",
+        "keywords": ["röntgen"]
       },
       {
         "label": "Diagnoz (Schenkelhalsfraktur)",
         "labelRu": "Диагноз (Schenkelhalsfraktur)",
-        "keywords": [
-          "schenkelhalsfraktur"
-        ]
+        "labelTr": "Tanı (Schenkelhalsfraktur)",
+        "keywords": ["schenkelhalsfraktur"]
       },
       {
         "label": "Operatsiya (Endoprothese)",
         "labelRu": "Операция (эндопротез)",
-        "keywords": [
-          "endoprothese",
-          "totalendoprothese",
-          "prothese"
-        ]
+        "labelTr": "Ameliyat (Endoprothese)",
+        "keywords": ["endoprothese", "totalendoprothese", "prothese"]
       },
       {
         "label": "Mobilisation / Vollbelastung",
         "labelRu": "Мобилизация / полная нагрузка",
-        "keywords": [
-          "mobilis",
-          "vollbelastung"
-        ]
+        "labelTr": "Mobilisation / Vollbelastung",
+        "keywords": ["mobilis", "vollbelastung"]
       },
       {
         "label": "Osteoporose-Therapie",
         "labelRu": "Лечение остеопороза",
-        "keywords": [
-          "osteoporose"
-        ]
+        "labelTr": "Osteoporose-Therapie",
+        "keywords": ["osteoporose"]
       },
       {
         "label": "Tavsiya: Reha / Physiotherapie",
         "labelRu": "Рекомендация: реабилитация / физиотерапия",
-        "keywords": [
-          "reha",
-          "physiotherapie"
-        ]
+        "labelTr": "Öneri: Reha / Physiotherapie",
+        "keywords": ["reha", "physiotherapie"]
       }
     ],
     "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihre Patientin Frau Gertrud Schulze, 82 Jahre, die sich vom 22.09.2026 bis zum 06.10.2026 in unserer stationären Behandlung befand.\n\nAnamnese:\nDie Patientin stellte sich nach einem häuslichen Sturz mit Schmerzen in der linken Leiste vor. Klinisch zeigte sich ein verkürztes und außenrotiertes linkes Bein. Vorbekannt sind ein Vorhofflimmern unter Antikoagulation mit Apixaban, eine Herzinsuffizienz und eine Osteoporose.\n\nBefunde:\nIm Röntgen zeigte sich eine mediale Schenkelhalsfraktur links (Garden IV).\n\nDiagnose:\nMediale Schenkelhalsfraktur links nach Sturz.\n\nTherapie und Verlauf:\nNach Pausieren von Apixaban erfolgte am Folgetag die Implantation einer zementierten Hüft-Totalendoprothese links. Die Mobilisation mit dem Rollator unter Vollbelastung gelang gut, die Wunde ist reizlos.\n\nProcedere:\nWir empfehlen die Fortführung der Antikoagulation mit Apixaban, eine Anschlussheilbehandlung (Reha) mit Physiotherapie, die Optimierung der Osteoporose-Therapie sowie die Entfernung des Nahtmaterials am 12. postoperativen Tag.\n\nMit freundlichen kollegialen Grüßen"
@@ -1417,6 +1142,7 @@
     "title": "Erysipel des Unterschenkels",
     "task": "Bemorning statsionar davolanishi haqida uy shifokoriga Arztbrief yozing.",
     "taskRu": "Напишите семейному врачу Arztbrief о стационарном лечении пациента.",
+    "taskTr": "Hastanın yatarak tedavisi hakkında aile hekimine bir Arztbrief yazın.",
     "facts": [
       "Patient: Rolf Peters, 56 Jahre, männlich",
       "Stationäre Aufnahme: 30.09.2026 – Entlassung: 05.10.2026",
@@ -1430,80 +1156,62 @@
       {
         "label": "Patient ma’lumotlari (Herr Peters)",
         "labelRu": "Данные пациента (Herr Peters)",
-        "keywords": [
-          "peters"
-        ]
+        "labelTr": "Hasta bilgileri (Herr Peters)",
+        "keywords": ["peters"]
       },
       {
         "label": "Rötung / Überwärmung",
         "labelRu": "Покраснение / гипертермия",
-        "keywords": [
-          "rötung",
-          "überwärm"
-        ]
+        "labelTr": "Rötung / Überwärmung",
+        "keywords": ["rötung", "überwärm"]
       },
       {
         "label": "Fieber / Schüttelfrost",
         "labelRu": "Fieber / Schüttelfrost",
-        "keywords": [
-          "fieber",
-          "schüttelfrost"
-        ]
+        "labelTr": "Fieber / Schüttelfrost",
+        "keywords": ["fieber", "schüttelfrost"]
       },
       {
         "label": "Eintrittspforte (Mykose)",
         "labelRu": "Входные ворота (микоз)",
-        "keywords": [
-          "mykose",
-          "eintrittspforte"
-        ]
+        "labelTr": "Eintrittspforte (Mykose)",
+        "keywords": ["mykose", "eintrittspforte"]
       },
       {
         "label": "Diabetes mellitus",
         "labelRu": "Diabetes mellitus",
-        "keywords": [
-          "diabetes"
-        ]
+        "labelTr": "Diabetes mellitus",
+        "keywords": ["diabetes"]
       },
       {
         "label": "Labor (Leukozyten, CRP)",
         "labelRu": "Лабораторные данные (Leukozyten, CRP)",
-        "keywords": [
-          "leukozyt",
-          "crp"
-        ]
+        "labelTr": "Labor (Leukozyten, CRP)",
+        "keywords": ["leukozyt", "crp"]
       },
       {
         "label": "TVT istisno qilingan",
         "labelRu": "ТГВ исключён",
-        "keywords": [
-          "thrombose",
-          "kompressionssonographie"
-        ]
+        "labelTr": "DVT dışlanmış",
+        "keywords": ["thrombose", "kompressionssonographie"]
       },
       {
         "label": "Diagnoz (Erysipel)",
         "labelRu": "Диагноз (Erysipel)",
-        "keywords": [
-          "erysipel"
-        ]
+        "labelTr": "Tanı (Erysipel)",
+        "keywords": ["erysipel"]
       },
       {
         "label": "Davolash (Penicillin)",
         "labelRu": "Лечение (Penicillin)",
-        "keywords": [
-          "penicillin",
-          "antibio"
-        ]
+        "labelTr": "Tedavi (Penicillin)",
+        "keywords": ["penicillin", "antibio"]
       },
       {
         "label": "Tavsiya: Mykosebehandlung / Hochlagerung",
         "labelRu": "Рекомендация: лечение микоза / возвышенное положение",
-        "keywords": [
-          "antimykot",
-          "hochlager",
-          "fußpflege"
-        ]
+        "labelTr": "Öneri: Mykosebehandlung / Hochlagerung",
+        "keywords": ["antimykot", "hochlager", "fußpflege"]
       }
     ],
     "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Rolf Peters, 56 Jahre, der sich vom 30.09.2026 bis zum 05.10.2026 in unserer stationären Behandlung befand.\n\nAnamnese:\nDer Patient stellte sich mit einer scharf begrenzten, überwärmten Rötung am rechten Unterschenkel, Fieber bis 39,2 °C und Schüttelfrost vor. Als Eintrittspforte fand sich eine Interdigitalmykose rechts. Vorbekannt sind ein Diabetes mellitus Typ 2 und eine chronisch venöse Insuffizienz.\n\nBefunde:\nLaborchemisch zeigten sich eine Leukozytose von 14.200/µl und ein CRP von 98 mg/l. Die Kompressionssonographie ergab keinen Hinweis auf eine Thrombose.\n\nDiagnose:\nErysipel des rechten Unterschenkels bei Interdigitalmykose.\n\nTherapie und Verlauf:\nUnter intravenöser Therapie mit Penicillin G, Hochlagerung und antimykotischer Lokaltherapie bildeten sich Rötung und Fieber rasch zurück.\n\nProcedere:\nWir empfehlen die orale Fortführung der Antibiose für insgesamt zehn Tage, die konsequente antimykotische Behandlung, eine sorgfältige Fußpflege sowie eine Optimierung der Blutzuckereinstellung.\n\nMit freundlichen kollegialen Grüßen"
@@ -1514,6 +1222,7 @@
     "title": "Bakterielle Meningitis",
     "task": "Bemorning statsionar davolanishi haqida uy shifokoriga Arztbrief yozing. Kontakt shaxslar profilaktikasiga e’tibor bering.",
     "taskRu": "Напишите семейному врачу Arztbrief о стационарном лечении пациента. Учтите профилактику у контактных лиц.",
+    "taskTr": "Hastanın yatarak tedavisi hakkında aile hekimine bir Arztbrief yazın. Temaslı kişilerin profilaksisine dikkat edin.",
     "facts": [
       "Patient: Felix Weiß, 19 Jahre, männlich",
       "Stationäre Aufnahme: 21.09.2026 – Entlassung: 05.10.2026",
@@ -1527,80 +1236,62 @@
       {
         "label": "Patient ma’lumotlari (Herr Weiß)",
         "labelRu": "Данные пациента (Herr Weiß)",
-        "keywords": [
-          "weiß",
-          "weiss"
-        ]
+        "labelTr": "Hasta bilgileri (Herr Weiß)",
+        "keywords": ["weiß", "weiss"]
       },
       {
         "label": "Kopfschmerzen / Fieber",
         "labelRu": "Головная боль / лихорадка",
-        "keywords": [
-          "kopfschmerz",
-          "fieber"
-        ]
+        "labelTr": "Kopfschmerzen / Fieber",
+        "keywords": ["kopfschmerz", "fieber"]
       },
       {
         "label": "Meningismus",
         "labelRu": "Менингизм",
-        "keywords": [
-          "meningismus",
-          "nackensteif"
-        ]
+        "labelTr": "Meningismus",
+        "keywords": ["meningismus", "nackensteif"]
       },
       {
         "label": "Petechien",
         "labelRu": "Петехии",
-        "keywords": [
-          "petechien"
-        ]
+        "labelTr": "Petechien",
+        "keywords": ["petechien"]
       },
       {
         "label": "Lumbalpunktion",
         "labelRu": "Люмбальная пункция",
-        "keywords": [
-          "lumbalpunktion",
-          "liquor"
-        ]
+        "labelTr": "Lumbalpunktion",
+        "keywords": ["lumbalpunktion", "liquor"]
       },
       {
         "label": "Erreger (Meningokokken)",
         "labelRu": "Возбудитель (менингококк)",
-        "keywords": [
-          "neisseria",
-          "meningokokken"
-        ]
+        "labelTr": "Erreger (Meningokokken)",
+        "keywords": ["neisseria", "meningokokken"]
       },
       {
         "label": "Diagnoz (Meningitis)",
         "labelRu": "Диагноз (Meningitis)",
-        "keywords": [
-          "meningitis"
-        ]
+        "labelTr": "Tanı (Meningitis)",
+        "keywords": ["meningitis"]
       },
       {
         "label": "Davolash (Ceftriaxon, Dexamethason)",
         "labelRu": "Лечение (Ceftriaxon, Dexamethason)",
-        "keywords": [
-          "ceftriaxon",
-          "dexamethason"
-        ]
+        "labelTr": "Tedavi (Ceftriaxon, Dexamethason)",
+        "keywords": ["ceftriaxon", "dexamethason"]
       },
       {
         "label": "Meldung Gesundheitsamt",
         "labelRu": "Уведомление Gesundheitsamt",
-        "keywords": [
-          "gesundheitsamt",
-          "meldung"
-        ]
+        "labelTr": "Meldung Gesundheitsamt",
+        "keywords": ["gesundheitsamt", "meldung"]
       },
       {
         "label": "Chemoprophylaxe der Kontaktpersonen",
         "labelRu": "Химиопрофилактика контактных лиц",
-        "keywords": [
-          "prophylaxe",
-          "kontaktperson"
-        ]
+        "labelTr": "Chemoprophylaxe der Kontaktpersonen",
+        "keywords": ["prophylaxe", "kontaktperson"]
       }
     ],
     "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Felix Weiß, 19 Jahre, der sich vom 21.09.2026 bis zum 05.10.2026 in unserer stationären Behandlung befand.\n\nAnamnese:\nDer Patient stellte sich mit stärksten Kopfschmerzen, Fieber bis 39,8 °C, Meningismus und Photophobie vor. An den Beinen zeigten sich Petechien.\n\nBefunde:\nLaborchemisch fanden sich eine Leukozytose von 22.000/µl und ein CRP von 280 mg/l. Die Lumbalpunktion ergab einen trüben Liquor mit granulozytärer Pleozytose; es wurde Neisseria meningitidis nachgewiesen.\n\nDiagnose:\nAkute bakterielle Meningitis durch Meningokokken.\n\nTherapie und Verlauf:\nUnmittelbar nach Abnahme der Blutkulturen erfolgte eine Therapie mit Dexamethason und Ceftriaxon intravenös. Darunter besserte sich der Zustand rasch, neurologische Defizite bestehen nicht.\n\nProcedere:\nDie Erkrankung wurde dem Gesundheitsamt gemeldet. Die engen Kontaktpersonen erhielten eine Chemoprophylaxe. Wir empfehlen eine Hörprüfung in vier Wochen und die Überprüfung des Impfstatus.\n\nMit freundlichen kollegialen Grüßen"

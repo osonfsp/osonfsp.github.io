@@ -57,7 +57,11 @@ export function speakSequence(sentences, { rate = 1, onProgress, onEnd } = {}) {
 export const voiceName = () => germanVoice()?.name ?? "";
 
 // Kichik 🔊 tugma. <button> ichida ham ishlatish mumkin bo'lishi uchun <span role="button">.
-export function Speak({ text, className, label = tr("Nemischa tinglash", "Послушать по-немецки") }) {
+export function Speak({
+  text,
+  className,
+  label = tr("Nemischa tinglash", "Послушать по-немецки", "Almanca dinle"),
+}) {
   const [playing, setPlaying] = useState(false);
   useEffect(() => () => playing && stopSpeaking(), [playing]);
   if (!canSpeak()) return null;

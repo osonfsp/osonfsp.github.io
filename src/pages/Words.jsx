@@ -26,7 +26,10 @@ export function WordsPage() {
         (y) =>
           (i === "all" || y.category === i) &&
           (!s || !e.learnedWords.includes(y.id)) &&
-          (!b || [y.de, y.patient, y.uz, y.ru ?? "", y.example].some((f) => f.toLowerCase().includes(b))),
+          (!b ||
+            [y.de, y.patient, y.uz, y.ru ?? "", y.tr ?? "", y.example].some((f) =>
+              f.toLowerCase().includes(b),
+            )),
       );
     }, [a, i, s, e.learnedWords]),
     h = e.learnedWords.length,
@@ -35,15 +38,16 @@ export function WordsPage() {
     <div className="page">
       <PageHeader
         eyebrow="Medizinische Wörter"
-        title={tr("Tibbiy lug‘at", "Медицинский словарь")}
+        title={tr("Tibbiy lug‘at", "Медицинский словарь", "Tıbbi sözlük")}
         subtitle={tr(
           "Har bir termin: Fachsprache, Patientensprache, o‘zbekcha ma’nosi va misol gap.",
           "Каждый термин: Fachsprache, Patientensprache, перевод на русский и пример.",
+          "Her terim: Fachsprache, Patientensprache, Türkçe anlamı ve örnek cümle.",
         )}
       >
         {!T && (
           <button className="btn-primary" onClick={() => (setT(true), window.scrollTo({ top: 0 }))}>
-            📇 {tr("Kartochka mashqi", "Тренировка карточками")}
+            📇 {tr("Kartochka mashqi", "Тренировка карточками", "Kart alıştırması")}
             {due > 0 && <span className="ml-1.5 rounded-full bg-white/25 px-2 text-xs">{due}</span>}
           </button>
         )}
@@ -62,7 +66,7 @@ export function WordsPage() {
           <div className="card mb-5">
             <div className="mb-2 flex justify-between text-sm">
               <span>
-                {tr("O‘rganildi: ", "Выучено: ")}
+                {tr("O‘rganildi: ", "Выучено: ", "Öğrenildi: ")}
                 <b>{h}</b>
                 {" / "}
                 {words.length}
@@ -78,6 +82,7 @@ export function WordsPage() {
               placeholder={tr(
                 "Qidirish: nemischa, o‘zbekcha yoki Patientensprache…",
                 "Поиск: по-немецки, по-русски или Patientensprache…",
+                "Ara: Almanca, Türkçe veya Patientensprache…",
               )}
             />
             <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
@@ -89,12 +94,12 @@ export function WordsPage() {
                   checked={s}
                   onChange={(b) => r(b.target.checked)}
                 />
-                {tr("Faqat o‘rganilmaganlar", "Только невыученные")}
+                {tr("Faqat o‘rganilmaganlar", "Только невыученные", "Yalnızca öğrenilmemişler")}
               </label>
             </div>
             <p className="text-xs muted">
               {c.length}
-              {tr(" ta termin", " терминов")}
+              {tr(" ta termin", " терминов", " terim")}
             </p>
           </div>
           <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
@@ -122,17 +127,22 @@ export function WordsPage() {
                   </div>
                   <dl className="mt-3 space-y-2 text-sm">
                     <div className="wf-uz">
-                      <dt className="wf-label">📗 {tr("O‘zbekcha", "Перевод")}</dt>
+                      <dt className="wf-label">📗 {tr("O‘zbekcha", "Перевод", "Türkçe")}</dt>
                       <dd className="font-semibold">{loc(b)}</dd>
                     </div>
                     <div className="wf-pat">
                       <dt className="wf-label">
-                        🧑 {tr("Bemor tilida (Patientensprache)", "Языком пациента")}
+                        🧑{" "}
+                        {tr(
+                          "Bemor tilida (Patientensprache)",
+                          "Языком пациента",
+                          "Hasta dilinde (Patientensprache)",
+                        )}
                       </dt>
                       <dd>„{b.patient}“</dd>
                     </div>
                     <div className="wf-ex">
-                      <dt className="wf-label">💬 {tr("Misol", "Пример")}</dt>
+                      <dt className="wf-label">💬 {tr("Misol", "Пример", "Örnek")}</dt>
                       <dd className="flex items-start gap-1 italic">
                         <span className="flex-1">{b.example}</span>
                         <Speak text={b.example} className="-mt-1 not-italic" />
@@ -143,7 +153,9 @@ export function WordsPage() {
                     className={cx("mt-4 self-start", y ? "chip-on" : "chip-off")}
                     onClick={() => t(b.id)}
                   >
-                    {y ? tr("✓ O‘rganildi", "✓ Выучено") : tr("O‘rgandim", "Выучил(а)")}
+                    {y
+                      ? tr("✓ O‘rganildi", "✓ Выучено", "✓ Öğrenildi")
+                      : tr("O‘rgandim", "Выучил(а)", "Öğrendim")}
                   </button>
                 </article>
               );
@@ -152,12 +164,18 @@ export function WordsPage() {
           {c.length > limit && (
             <div className="mt-5 text-center">
               <button className="btn-outline" onClick={() => setLimit(limit + PAGE * 2)}>
-                {tr(`Yana ko‘rsatish (${c.length - limit} ta qoldi)`, `Показать ещё (осталось ${c.length - limit})`)}
+                {tr(
+                  `Yana ko‘rsatish (${c.length - limit} ta qoldi)`,
+                  `Показать ещё (осталось ${c.length - limit})`,
+                  `Daha fazla göster (${c.length - limit} kaldı)`,
+                )}
               </button>
             </div>
           )}
           {!c.length && (
-            <p className="card text-center muted">{tr("Hech narsa topilmadi.", "Ничего не найдено.")}</p>
+            <p className="card text-center muted">
+              {tr("Hech narsa topilmadi.", "Ничего не найдено.", "Hiçbir şey bulunamadı.")}
+            </p>
           )}
         </>
       )}

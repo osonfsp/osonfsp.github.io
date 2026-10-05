@@ -66,7 +66,13 @@ export function AppProvider({ children: e }) {
       (m) => {
         (storage.set(USER_KEY, m),
           i(m),
-          r((v) => withActivity(v, tr("Platformaga kirildi", "Вход на платформу"), "/dashboard")));
+          r((v) =>
+            withActivity(
+              v,
+              tr("Platformaga kirildi", "Вход на платформу", "Platforma giriş yapıldı"),
+              "/dashboard",
+            ),
+          ));
       },
       [r],
     ),
@@ -80,7 +86,11 @@ export function AppProvider({ children: e }) {
         r(() =>
           withActivity(
             { ...EMPTY_PROGRESS, ...m },
-            tr("Progress boshqa qurilmadan ko‘chirildi", "Прогресс перенесён с другого устройства"),
+            tr(
+              "Progress boshqa qurilmadan ko‘chirildi",
+              "Прогресс перенесён с другого устройства",
+              "İlerleme başka cihazdan taşındı",
+            ),
             "/dashboard",
           ),
         );
@@ -98,7 +108,7 @@ export function AppProvider({ children: e }) {
           return N
             ? withActivity(
                 C,
-                `${tr("Fall yechildi", "Кейс решён")}: ${getCase(m)?.title ?? m}`,
+                `${tr("Fall yechildi", "Кейс решён", "Vaka çözüldü")}: ${getCase(m)?.title ?? m}`,
                 `/faelle/${m}`,
               )
             : C;

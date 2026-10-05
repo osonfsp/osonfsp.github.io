@@ -29,7 +29,7 @@ export function DashboardPage() {
   )
     return (
       <div className="page">
-        <Spinner label={tr("Yuklanmoqda…", "Загрузка…")} />
+        <Spinner label={tr("Yuklanmoqda…", "Загрузка…", "Yükleniyor…")} />
       </div>
     );
   let r = new Set(a.arztbrief.map((f) => f.id)).size,
@@ -45,36 +45,40 @@ export function DashboardPage() {
       last3.length === 3 && last3.every((f) => f.passed)
         ? [
             "🟢",
-            tr("Imtihonga tayyorsiz", "Вы готовы к экзамену"),
+            tr("Imtihonga tayyorsiz", "Вы готовы к экзамену", "Sınava hazırsınız"),
             tr(
               "Oxirgi 3 ta mashq imtihonining hammasi „bestanden“.",
               "Последние 3 пробных экзамена — все „bestanden“.",
+              "Son 3 deneme sınavının hepsi „bestanden“.",
             ),
           ]
         : passN
           ? [
               "🟡",
-              tr("Tayyorlanish davom etmoqda", "Подготовка продолжается"),
+              tr("Tayyorlanish davom etmoqda", "Подготовка продолжается", "Hazırlık devam ediyor"),
               tr(
                 "Ketma-ket 3 marta „bestanden“ oling — shunda tayyor deb hisoblanasiz.",
                 "Получите „bestanden“ 3 раза подряд — тогда вы готовы.",
+                "Art arda 3 kez „bestanden“ alın — o zaman hazır sayılırsınız.",
               ),
             ]
           : ex.length
             ? [
                 "🔴",
-                tr("Hali tayyor emas", "Пока не готовы"),
+                tr("Hali tayyor emas", "Пока не готовы", "Henüz hazır değil"),
                 tr(
                   "„Nicht bestanden“ bo‘lgan qismlarni alohida mashq qiling va qayta topshiring.",
                   "Потренируйте части с „nicht bestanden“ отдельно и сдайте снова.",
+                  "„Nicht bestanden“ olan bölümleri ayrıca çalışın ve tekrar girin.",
                 ),
               ]
             : [
                 "⚪",
-                tr("Hali baholanmagan", "Пока без оценки"),
+                tr("Hali baholanmagan", "Пока без оценки", "Henüz değerlendirilmedi"),
                 tr(
                   "Mashq imtihonini topshiring va natijangizni ko‘ring.",
                   "Сдайте пробный экзамен и посмотрите результат.",
+                  "Deneme sınavına girin ve sonucunuzu görün.",
                 ),
               ],
     Q = dueCount(words, a.wordReview);
@@ -82,11 +86,15 @@ export function DashboardPage() {
     <div className="page">
       <PageHeader
         eyebrow="Dashboard"
-        title={`${tr("Salom", "Здравствуйте")}, ${t.name}!`}
-        subtitle={tr("O‘quv jarayoningiz va natijalaringiz.", "Ваш учебный процесс и результаты.")}
+        title={`${tr("Salom", "Здравствуйте", "Merhaba")}, ${t.name}!`}
+        subtitle={tr(
+          "O‘quv jarayoningiz va natijalaringiz.",
+          "Ваш учебный процесс и результаты.",
+          "Öğrenme süreciniz ve sonuçlarınız.",
+        )}
       >
         <ConfirmButton className="btn-outline" onConfirm={l}>
-          {tr("Progressni tozalash", "Сбросить прогресс")}
+          {tr("Progressni tozalash", "Сбросить прогресс", "İlerlemeyi sıfırla")}
         </ConfirmButton>
         <button
           className="btn-ghost"
@@ -94,7 +102,7 @@ export function DashboardPage() {
             (i(), s.push("/"));
           }}
         >
-          {tr("Chiqish", "Выйти")}
+          {tr("Chiqish", "Выйти", "Çıkış")}
         </button>
       </PageHeader>
       {(() => {
@@ -110,43 +118,57 @@ export function DashboardPage() {
             </span>
             <span className="min-w-0 flex-1">
               <span className="block font-semibold">
-                {tr("Bugungi mashq", "Практика на сегодня")} · {plan.doneCount}/{plan.tasks.length}
+                {tr("Bugungi mashq", "Практика на сегодня", "Bugünkü alıştırma")} · {plan.doneCount}/
+                {plan.tasks.length}
               </span>
               <span className="block truncate text-sm muted">
                 {next
-                  ? `${tr("Keyingisi", "Следующее")}: ${next.title} — ${next.desc}`
-                  : tr("Bugungi reja bajarildi 🎉", "План на сегодня выполнен 🎉")}
+                  ? `${tr("Keyingisi", "Следующее", "Sıradaki")}: ${next.title} — ${next.desc}`
+                  : tr(
+                      "Bugungi reja bajarildi 🎉",
+                      "План на сегодня выполнен 🎉",
+                      "Bugünkü plan tamamlandı 🎉",
+                    )}
               </span>
             </span>
-            <span className="btn-primary shrink-0">{next ? tr("Davom etish", "Продолжить") : "✓"}</span>
+            <span className="btn-primary shrink-0">
+              {next ? tr("Davom etish", "Продолжить", "Devam et") : "✓"}
+            </span>
           </Link>
         );
       })()}
       <div className="grid gap-4 lg:grid-cols-[320px_1fr]">
         <div className="card flex flex-col items-center text-center">
-          <ProgressRing value={n} size={140} label={tr("Umumiy progress", "Общий прогресс")} />
+          <ProgressRing
+            value={n}
+            size={140}
+            label={tr("Umumiy progress", "Общий прогресс", "Genel ilerleme")}
+          />
           <div className="mt-4 grid w-full grid-cols-2 gap-2 text-sm">
             <div className="rounded-xl bg-amber-50 p-2.5 dark:bg-amber-950/40">
               <div className="text-xl font-bold">🔥 {K}</div>
-              <div className="text-xs muted">{tr("ketma-ket kun", "дней подряд")}</div>
+              <div className="text-xs muted">{tr("ketma-ket kun", "дней подряд", "gün art arda")}</div>
             </div>
             <Link
               href="/woerter"
               className="rounded-xl bg-teal-50 p-2.5 transition hover:bg-teal-100 dark:bg-teal-950/40"
             >
               <div className="text-xl font-bold">📇 {Q}</div>
-              <div className="text-xs muted">{tr("bugun takrorlash", "повторить сегодня")}</div>
+              <div className="text-xs muted">
+                {tr("bugun takrorlash", "повторить сегодня", "bugün tekrar")}
+              </div>
             </Link>
           </div>
           <p className="mt-4 text-sm muted">
             {tr(
               "Fälle, so‘zlar, kartochkalar, Arztbrief va Prüfung bo‘yicha o‘rtacha.",
               "Среднее по кейсам, словам, карточкам, Arztbrief и экзамену.",
+              "Vakalar, kelimeler, kartlar, Arztbrief ve Prüfung ortalaması.",
             )}
           </p>
           {y && (
             <Link href={`/faelle/${y.id}`} className="btn-primary mt-4 w-full">
-              {tr("Keyingi Fall: ", "Следующий кейс: ")}
+              {tr("Keyingi Fall: ", "Следующий кейс: ", "Sıradaki vaka: ")}
               {y.title}
             </Link>
           )}
@@ -154,24 +176,24 @@ export function DashboardPage() {
         <div className="grid gap-4 sm:grid-cols-2">
           <StatCard
             icon="🩺"
-            label={tr("Yechilgan Fälle", "Решённые кейсы")}
+            label={tr("Yechilgan Fälle", "Решённые кейсы", "Çözülen vakalar")}
             value={`${a.solvedCases.length} / ${cases.length}`}
             progress={(a.solvedCases.length / cases.length) * 100}
           />
           <StatCard
             icon="📚"
-            label={tr("O‘rganilgan so‘zlar", "Выученные слова")}
+            label={tr("O‘rganilgan so‘zlar", "Выученные слова", "Öğrenilen kelimeler")}
             value={`${a.learnedWords.length} / ${words.length}`}
             progress={(a.learnedWords.length / words.length) * 100}
           />
           <StatCard
             icon="✍️"
-            label={tr("Arztbrief mashqlari", "Упражнения Arztbrief")}
+            label={tr("Arztbrief mashqlari", "Упражнения Arztbrief", "Arztbrief alıştırmaları")}
             value={`${r} / ${arztbriefe.length}`}
             hint={
               a.arztbrief.length
-                ? `${tr("O‘rtacha ball", "Средний балл")}: ${c}%`
-                : tr("Hali urinish yo‘q", "Попыток пока нет")
+                ? `${tr("O‘rtacha ball", "Средний балл", "Ortalama puan")}: ${c}%`
+                : tr("Hali urinish yo‘q", "Попыток пока нет", "Henüz deneme yok")
             }
             progress={(r / arztbriefe.length) * 100}
           />
@@ -181,13 +203,13 @@ export function DashboardPage() {
             value={a.simulations.length}
             hint={
               a.simulations.length
-                ? `${tr("O‘rtacha ball", "Средний балл")}: ${h}%`
-                : tr("Hali urinish yo‘q", "Попыток пока нет")
+                ? `${tr("O‘rtacha ball", "Средний балл", "Ortalama puan")}: ${h}%`
+                : tr("Hali urinish yo‘q", "Попыток пока нет", "Henüz deneme yok")
             }
           />
           <StatCard
             icon="🔁"
-            label={tr("Fach ↔ Patient kartochkalar", "Карточки Fach ↔ Patient")}
+            label={tr("Fach ↔ Patient kartochkalar", "Карточки Fach ↔ Patient", "Fach ↔ Patient kartları")}
             value={`${a.knownPairs.length} / ${pairs.length}`}
             progress={(a.knownPairs.length / pairs.length) * 100}
           />
@@ -198,16 +220,18 @@ export function DashboardPage() {
             hint={
               b
                 ? typeof b.passed == "boolean"
-                  ? `${tr("Oxirgi", "Последний")}: ${b.passed ? "bestanden ✅" : "nicht bestanden ❌"}`
-                  : `${tr("Oxirgi", "Последний")}: ${b.total}%`
-                : tr("Hali topshirilmagan", "Ещё не сдавали")
+                  ? `${tr("Oxirgi", "Последний", "Son")}: ${b.passed ? "bestanden ✅" : "nicht bestanden ❌"}`
+                  : `${tr("Oxirgi", "Последний", "Son")}: ${b.total}%`
+                : tr("Hali topshirilmagan", "Ещё не сдавали", "Henüz girilmedi")
             }
           />
         </div>
       </div>
       <div className="mt-4 grid gap-4 lg:grid-cols-2">
         <div className="card">
-          <h2 className="section-title">{tr("FSP simulation natijalari", "Результаты симуляции FSP")}</h2>
+          <h2 className="section-title">
+            {tr("FSP simulation natijalari", "Результаты симуляции FSP", "FSP simülasyon sonuçları")}
+          </h2>
           {b ? (
             <>
               {typeof b.passed == "boolean" && (
@@ -224,8 +248,8 @@ export function DashboardPage() {
                 <p className="text-xs muted">{ready[2]}</p>
                 {ex.length > 0 && (
                   <p className="mt-1 text-xs muted">
-                    {tr("O‘tilgan", "Сдано")}: {passN} / {ex.length}{" "}
-                    {tr("ta mashq imtihoni", "пробных экзаменов")}
+                    {tr("O‘tilgan", "Сдано", "Geçilen")}: {passN} / {ex.length}{" "}
+                    {tr("ta mashq imtihoni", "пробных экзаменов", "deneme sınavı")}
                   </p>
                 )}
               </div>
@@ -260,15 +284,19 @@ export function DashboardPage() {
             </>
           ) : (
             <div className="text-sm muted">
-              {tr("Hali Prüfung simulyatsiyasi topshirilmagan. ", "Пробный экзамен ещё не сдавали. ")}
+              {tr(
+                "Hali Prüfung simulyatsiyasi topshirilmagan. ",
+                "Пробный экзамен ещё не сдавали. ",
+                "Henüz Prüfung simülasyonuna girilmedi. ",
+              )}
               <Link href="/pruefung" className="font-medium text-teal-600 hover:underline">
-                {tr("Boshlash →", "Начать →")}
+                {tr("Boshlash →", "Начать →", "Başla →")}
               </Link>
             </div>
           )}
         </div>
         <div className="card">
-          <h2 className="section-title">{tr("Oxirgi faoliyat", "Последняя активность")}</h2>
+          <h2 className="section-title">{tr("Oxirgi faoliyat", "Последняя активность", "Son etkinlik")}</h2>
           {a.activity.length ? (
             <ul className="divide-y divide-slate-100 dark:divide-slate-800">
               {a.activity.slice(0, 8).map((f, p) => (
@@ -285,12 +313,16 @@ export function DashboardPage() {
               ))}
             </ul>
           ) : (
-            <p className="text-sm muted">{tr("Faoliyat hali yo‘q.", "Активности пока нет.")}</p>
+            <p className="text-sm muted">
+              {tr("Faoliyat hali yo‘q.", "Активности пока нет.", "Henüz etkinlik yok.")}
+            </p>
           )}
         </div>
       </div>
       <div className="card mt-4">
-        <h2 className="section-title">{tr("Fälle bo‘yicha holat", "Статус по кейсам")}</h2>
+        <h2 className="section-title">
+          {tr("Fälle bo‘yicha holat", "Статус по кейсам", "Vakalara göre durum")}
+        </h2>
         <div className="space-y-3">
           {CASE_SECTIONS.map((sec) => {
             let list = cases.filter((f) => sec.categories.includes(f.category)),

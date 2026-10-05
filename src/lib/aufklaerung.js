@@ -1,4 +1,4 @@
-import { tr } from "./i18n";
+import { loc, tr } from "./i18n";
 import { clamp } from "./utils";
 
 // Bemorga tekshiruvni tushuntirish (Aufklärung) — qoidaga asoslangan baholash:
@@ -12,12 +12,16 @@ export function evaluateAufklaerung(proc, text) {
       score: 0,
       criteria: {},
       feedback: [
-        { status: "error", category: tr("Umumiy", "Общее"), message: tr("Matn bo‘sh.", "Текст пуст.") },
+        {
+          status: "error",
+          category: tr("Umumiy", "Общее", "Genel"),
+          message: tr("Matn bo‘sh.", "Текст пуст.", "Metin boş."),
+        },
       ],
     };
 
   // 1. Mazmun
-  let catContent = tr("Mazmun", "Содержание"),
+  let catContent = tr("Mazmun", "Содержание", "İçerik"),
     hits = 0;
   for (let p of proc.points) {
     let ok = p.keywords.some((k) => low.includes(k));
@@ -25,13 +29,13 @@ export function evaluateAufklaerung(proc, text) {
     feedback.push({
       status: ok ? "ok" : "warn",
       category: catContent,
-      message: ok ? tr(p.uz, p.ru) : `${tr("Yetishmaydi", "Не хватает")}: ${tr(p.uz, p.ru)}`,
+      message: ok ? loc(p) : `${tr("Yetishmaydi", "Не хватает", "Eksik")}: ${loc(p)}`,
     });
   }
   let content = clamp((hits / proc.points.length) * 100);
 
   // 2. Sodda til: Fachbegriff ishlatilgan bo‘lsa, sodda ma’nosi ham aytilishi kerak
-  let catPlain = tr("Sodda til", "Простой язык"),
+  let catPlain = tr("Sodda til", "Простой язык", "Sade dil"),
     keyWord = (s) =>
       s
         .toLowerCase()
@@ -51,13 +55,18 @@ export function evaluateAufklaerung(proc, text) {
       message: tr(
         `Bemorga „${j.fach}“ tushunarsiz. Sodda qilib ayting: „${j.simple}“.`,
         `Пациенту непонятно „${j.fach}“. Скажите проще: „${j.simple}“.`,
+        `Hasta „${j.fach}“ ifadesini anlamaz. Daha sade söyleyin: „${j.simple}“.`,
       ),
     });
   if (!jargon.length)
     feedback.push({
       status: "ok",
       category: catPlain,
-      message: tr("Izohsiz Fachbegriff ishlatilmagan.", "Fachbegriffe без объяснения не использованы."),
+      message: tr(
+        "Izohsiz Fachbegriff ishlatilmagan.",
+        "Fachbegriffe без объяснения не использованы.",
+        "Açıklamasız Fachbegriff kullanılmamış.",
+      ),
     });
   if (avgLen > 20)
     feedback.push({
@@ -66,6 +75,7 @@ export function evaluateAufklaerung(proc, text) {
       message: tr(
         `Gaplar juda uzun (o‘rtacha ${Math.round(avgLen)} so‘z). Bemor uchun qisqa gaplar yozing.`,
         `Предложения слишком длинные (в среднем ${Math.round(avgLen)} слов). Пишите для пациента короче.`,
+        `Cümleler çok uzun (ortalama ${Math.round(avgLen)} kelime). Hasta için kısa cümleler yazın.`,
       ),
     });
   if (words.length < 50)
@@ -75,12 +85,13 @@ export function evaluateAufklaerung(proc, text) {
       message: tr(
         `Tushuntirish juda qisqa (${words.length} so‘z). Odatda 80–150 so‘z.`,
         `Объяснение слишком короткое (${words.length} слов). Обычно 80–150 слов.`,
+        `Açıklama çok kısa (${words.length} kelime). Genellikle 80–150 kelime olur.`,
       ),
     });
   let plain = clamp(100 - jargon.length * 25 - (avgLen > 20 ? 15 : 0) - (words.length < 50 ? 20 : 0));
 
   // 3. Hurmat shakli
-  let catForm = tr("Hurmat shakli (Sie)", "Вежливая форма (Sie)"),
+  let catForm = tr("Hurmat shakli (Sie)", "Вежливая форма (Sie)", "Nezaket hitabı (Sie)"),
     du = /\b(du|dir|dich|dein|deine)\b/i.test(t),
     sie = /\b(Sie|Ihnen|Ihr|Ihre)\b/.test(t),
     form = du ? 0 : sie ? 100 : 60;
@@ -92,13 +103,18 @@ export function evaluateAufklaerung(proc, text) {
           message: tr(
             "Bemorga „du“ bilan murojaat qilindi — doim „Sie“.",
             "К пациенту обращались на „du“ — всегда используйте „Sie“.",
+            "Hastaya „du“ ile hitap edildi — her zaman „Sie“ kullanın.",
           ),
         }
       : sie
         ? {
             status: "ok",
             category: catForm,
-            message: tr("Bemorga „Sie“ bilan murojaat qilindi.", "К пациенту обращались на „Sie“."),
+            message: tr(
+              "Bemorga „Sie“ bilan murojaat qilindi.",
+              "К пациенту обращались на „Sie“.",
+              "Hastaya „Sie“ ile hitap edildi.",
+            ),
           }
         : {
             status: "warn",
@@ -106,6 +122,7 @@ export function evaluateAufklaerung(proc, text) {
             message: tr(
               "Bemorga to‘g‘ridan-to‘g‘ri „Sie“ bilan murojaat qiling.",
               "Обращайтесь к пациенту напрямую на „Sie“.",
+              "Hastaya doğrudan „Sie“ ile hitap edin.",
             ),
           },
   );

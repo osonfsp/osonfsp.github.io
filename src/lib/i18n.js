@@ -1,9 +1,10 @@
-// Interfeys tili: o‘zbekcha (asosiy) yoki ruscha. Nemischa o‘quv kontenti tarjima qilinmaydi.
+// Interfeys tili: o‘zbekcha (asosiy), ruscha yoki turkcha. Nemischa o‘quv kontenti tarjima qilinmaydi.
 // Til almashtirilganda sahifa qayta yuklanadi — shuning uchun modul darajasidagi matnlar ham to‘g‘ri tilda bo‘ladi.
 const KEY = "fsp.lang";
 export const LANGS = [
   { id: "uz", label: "O‘zbekcha", short: "UZ" },
   { id: "ru", label: "Русский", short: "RU" },
+  { id: "tr", label: "Türkçe", short: "TR" },
 ];
 
 function detect() {
@@ -13,12 +14,15 @@ function detect() {
     let s = localStorage.getItem(KEY);
     if (s && LANGS.some((l) => l.id === s)) return s;
     // O‘zbekistonda telefonlar ko‘pincha ruscha sozlangan — u yerda doim o‘zbekchadan boshlaymiz.
-    // Boshqa davlatlarda rus tilidagi brauzerlar uchun birinchi kirishda ruscha.
+    // Boshqa davlatlarda birinchi kirishda brauzer tiliga qaraymiz: turkcha → turkcha, rus tili hududi → ruscha.
     let tz = Intl.DateTimeFormat().resolvedOptions().timeZone ?? "";
     if (/^Asia\/(Tashkent|Samarkand)$/.test(tz)) return "uz";
-    return (navigator.languages ?? [navigator.language]).some((l) => /^(ru|be|kk|ky|tg|uk)\b/i.test(l))
-      ? "ru"
-      : "uz";
+    if (tz === "Europe/Istanbul") return "tr";
+    for (let l of navigator.languages ?? [navigator.language]) {
+      if (/^tr\b/i.test(l)) return "tr";
+      if (/^(ru|be|kk|ky|tg|uk)\b/i.test(l)) return "ru";
+    }
+    return "uz";
   } catch {
     return "uz";
   }
@@ -29,14 +33,16 @@ export const LANG = typeof window === "undefined" ? "uz" : detect();
 if (typeof document !== "undefined") {
   document.documentElement.lang = LANG;
   if (LANG === "ru") document.title = "OsonFSP — подготовка к Fachsprachprüfung (FSP) для врачей";
+  if (LANG === "tr") document.title = "OsonFSP — doktorlar için Fachsprachprüfung (FSP) hazırlığı";
 }
 
-// tr("o‘zbekcha matn", "русский текст")
-export const tr = (uz, ru) => (LANG === "ru" && ru != null ? ru : uz);
+// tr("o‘zbekcha matn", "русский текст", "türkçe metin")
+export const tr = (uz, ru, tk) => (LANG === "ru" ? (ru ?? uz) : LANG === "tr" ? (tk ?? uz) : uz);
 
-// Ma’lumotlardagi tarjima maydoni: { uz: "...", ru: "..." } yoki obj.uz / obj.ru
+// Ma’lumotlardagi tarjima maydoni: { uz, ru, tr } yoki task / taskRu / taskTr
+const SUFFIX = { ru: "Ru", tr: "Tr" };
 export const loc = (obj, field = "uz") =>
-  LANG === "ru" ? (obj?.[field === "uz" ? "ru" : `${field}Ru`] ?? obj?.[field]) : obj?.[field];
+  LANG === "uz" ? obj?.[field] : (obj?.[field === "uz" ? LANG : field + SUFFIX[LANG]] ?? obj?.[field]);
 
 export function setLang(id) {
   try {
@@ -53,7 +59,7 @@ export function setLang(id) {
 }
 
 // Sana formatlari uchun
-export const LOCALE = LANG === "ru" ? "ru-RU" : "uz-UZ";
+export const LOCALE = { ru: "ru-RU", tr: "tr-TR" }[LANG] ?? "uz-UZ";
 
 // Brauzerlar o‘zbekcha sanani to‘liq bilmaydi ("M10 3, SAT") — o‘zimiz formatlaymiz
 const UZ_MONTHS = [
@@ -73,8 +79,8 @@ const UZ_MONTHS = [
 const UZ_DAYS = ["yakshanba", "dushanba", "seshanba", "chorshanba", "payshanba", "juma", "shanba"];
 export function formatDay(d, { weekday = false, year = false } = {}) {
   d = new Date(d);
-  if (LANG === "ru")
-    return d.toLocaleDateString("ru-RU", {
+  if (LANG !== "uz")
+    return d.toLocaleDateString(LOCALE, {
       day: "numeric",
       month: "long",
       ...(weekday && { weekday: "long" }),

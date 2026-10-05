@@ -23,8 +23,12 @@ function ThemeToggle() {
         } catch {}
       }}
       className="grid h-8 w-8 place-items-center rounded-lg text-white/70 hover:bg-white/10 hover:text-white"
-      aria-label={tr("Kun/tun rejimini almashtirish", "Переключить светлую/тёмную тему")}
-      title={tr("Kun/tun rejimi", "Светлая/тёмная тема")}
+      aria-label={tr(
+        "Kun/tun rejimini almashtirish",
+        "Переключить светлую/тёмную тему",
+        "Açık/koyu temayı değiştir",
+      )}
+      title={tr("Kun/tun rejimi", "Светлая/тёмная тема", "Açık/koyu tema")}
     >
       <span aria-hidden>{e ? "☀️" : "🌙"}</span>
     </button>
@@ -36,7 +40,7 @@ function LangSwitch() {
     <div
       className="flex rounded-lg border border-white/15 p-0.5 text-xs font-semibold"
       role="group"
-      aria-label="Til / Язык"
+      aria-label="Til / Язык / Dil"
     >
       {LANGS.map((l) => (
         <button
@@ -61,31 +65,31 @@ function LangSwitch() {
 // qo‘shimcha mashqlar esa yig‘ilgan holda turadi.
 const NAV_GROUPS = [
   {
-    title: tr("Asosiy", "Основное"),
+    title: tr("Asosiy", "Основное", "Temel"),
     items: [
-      { href: "/", icon: "🏠", label: tr("Bosh sahifa", "Главная") },
-      { href: "/faelle", icon: "🩺", label: tr("Fälle", "Кейсы") },
-      { href: "/simulation", icon: "💬", label: tr("Simulation", "Симуляция"), tag: "Teil 1" },
+      { href: "/", icon: "🏠", label: tr("Bosh sahifa", "Главная", "Ana sayfa") },
+      { href: "/faelle", icon: "🩺", label: tr("Fälle", "Кейсы", "Vakalar") },
+      { href: "/simulation", icon: "💬", label: tr("Simulation", "Симуляция", "Simülasyon"), tag: "Teil 1" },
       { href: "/arztbrief", icon: "✍️", label: "Arztbrief", tag: "Teil 2" },
-      { href: "/pruefung", icon: "🎯", label: tr("Prüfung", "Экзамен"), tag: "1–3" },
+      { href: "/pruefung", icon: "🎯", label: tr("Prüfung", "Экзамен", "Sınav"), tag: "1–3" },
     ],
   },
   {
-    title: tr("Qo‘shimcha mashqlar", "Дополнительно"),
+    title: tr("Qo‘shimcha mashqlar", "Дополнительно", "Ek alıştırmalar"),
     more: true,
     items: [
-      { href: "/woerter", icon: "📚", label: tr("Wörter", "Слова") },
+      { href: "/woerter", icon: "📚", label: tr("Wörter", "Слова", "Kelimeler") },
       { href: "/redemittel", icon: "🗣️", label: "Redemittel" },
       { href: "/fachsprache", icon: "🔁", label: "Fach ↔ Patient" },
-      { href: "/aufklaerung", icon: "🗨️", label: tr("Aufklärung", "Aufklärung") },
-      { href: "/hoeren", icon: "🎧", label: tr("Hörverstehen", "Аудирование") },
+      { href: "/aufklaerung", icon: "🗨️", label: tr("Aufklärung", "Aufklärung", "Aufklärung") },
+      { href: "/hoeren", icon: "🎧", label: tr("Hörverstehen", "Аудирование", "Dinleme") },
     ],
   },
   {
-    title: tr("Boshqa", "Прочее"),
+    title: tr("Boshqa", "Прочее", "Diğer"),
     items: [
-      { href: "/pro", icon: "💳", label: tr("Tariflar", "Тарифы") },
-      { href: "/fsp", icon: "🏛️", label: tr("FSP haqida", "Об FSP") },
+      { href: "/pro", icon: "💳", label: tr("Tariflar", "Тарифы", "Paketler") },
+      { href: "/fsp", icon: "🏛️", label: tr("FSP haqida", "Об FSP", "FSP hakkında") },
     ],
   },
 ];
@@ -124,7 +128,9 @@ function Logo() {
       </span>
       <span className="leading-tight">
         <span className="block text-sm font-semibold text-white">OsonFSP</span>
-        <span className="block text-xs text-white/50">{tr("Uzbek Doctors", "FSP для врачей")}</span>
+        <span className="block text-xs text-white/50">
+          {tr("Uzbek Doctors", "FSP для врачей", "Doktorlar için FSP")}
+        </span>
       </span>
     </Link>
   );
@@ -173,13 +179,16 @@ function Sidebar({ onClose }) {
         <button
           onClick={onClose}
           className="grid h-8 w-8 place-items-center rounded-lg text-white/60 hover:bg-white/10 hover:text-white"
-          aria-label={tr("Menyuni yopish", "Закрыть меню")}
-          title={tr("Menyuni yopish", "Закрыть меню")}
+          aria-label={tr("Menyuni yopish", "Закрыть меню", "Menüyü kapat")}
+          title={tr("Menyuni yopish", "Закрыть меню", "Menüyü kapat")}
         >
           <SidebarIcon />
         </button>
       </div>
-      <nav className="flex-1 overflow-y-auto px-3 pb-4" aria-label={tr("Asosiy menyu", "Главное меню")}>
+      <nav
+        className="flex-1 overflow-y-auto px-3 pb-4"
+        aria-label={tr("Asosiy menyu", "Главное меню", "Ana menü")}
+      >
         {/* Eng muhim kirish nuqtasi: bugungi 3 vazifa */}
         <Link
           href="/bugun"
@@ -192,7 +201,7 @@ function Sidebar({ onClose }) {
           <span className="w-5 text-center" aria-hidden>
             📅
           </span>
-          {tr("Bugungi mashq", "Практика на сегодня")}
+          {tr("Bugungi mashq", "Практика на сегодня", "Bugünkü alıştırma")}
           <span className="ml-auto rounded-full bg-white/15 px-2 py-0.5 text-xs">
             {plan.doneCount}/{plan.tasks.length}
           </span>
@@ -209,9 +218,7 @@ function Sidebar({ onClose }) {
                   aria-expanded={open}
                 >
                   {g.title}
-                  <span className="normal-case tracking-normal">
-                    {open ? "▾" : `▸ ${g.items.length}`}
-                  </span>
+                  <span className="normal-case tracking-normal">{open ? "▾" : `▸ ${g.items.length}`}</span>
                 </button>
               ) : (
                 <p className="px-3 pb-1 text-[11px] font-semibold uppercase tracking-wider text-white/40">
@@ -235,9 +242,9 @@ function Sidebar({ onClose }) {
               ✉️
             </span>
             <span className="flex-1">
-              {tr("Taklif va shikoyatlar", "Предложения и жалобы")}
+              {tr("Taklif va shikoyatlar", "Предложения и жалобы", "Öneri ve şikâyetler")}
               <span className="block text-[11px] font-normal text-sky-200/70">
-                {tr("Telegram orqali yozing", "Напишите в Telegram")}
+                {tr("Telegram orqali yozing", "Напишите в Telegram", "Telegram’dan yazın")}
               </span>
             </span>
             <span aria-hidden>↗</span>
@@ -257,7 +264,7 @@ function Sidebar({ onClose }) {
           <span className="grid h-7 w-7 shrink-0 place-items-center rounded-full bg-teal-500/20 text-xs font-bold text-teal-200">
             {user ? (user.name.trim()[0] ?? "?").toUpperCase() : "→"}
           </span>
-          <span className="truncate">{user ? user.name : tr("Kirish", "Войти")}</span>
+          <span className="truncate">{user ? user.name : tr("Kirish", "Войти", "Giriş")}</span>
           {user && <span className="ml-auto text-xs text-white/40">Dashboard</span>}
         </Link>
         <div className="flex items-center justify-between px-1">
@@ -315,7 +322,7 @@ export function AppShell({ children }) {
           <button
             className="absolute inset-0 bg-black/50"
             onClick={() => setMobileOpen(false)}
-            aria-label={tr("Menyuni yopish", "Закрыть меню")}
+            aria-label={tr("Menyuni yopish", "Закрыть меню", "Menüyü kapat")}
           />
           <div className="absolute inset-y-0 left-0 w-72 max-w-[85vw] shadow-2xl">
             <Sidebar onClose={() => setMobileOpen(false)} />
@@ -335,8 +342,8 @@ export function AppShell({ children }) {
               "grid h-9 w-9 place-items-center rounded-lg text-slate-600 hover:bg-slate-900/5 dark:text-slate-300 dark:hover:bg-white/10",
               desktopOpen && "lg:hidden",
             )}
-            aria-label={tr("Menyuni ochish", "Открыть меню")}
-            title={tr("Menyuni ochish", "Открыть меню")}
+            aria-label={tr("Menyuni ochish", "Открыть меню", "Menüyü aç")}
+            title={tr("Menyuni ochish", "Открыть меню", "Menüyü aç")}
           >
             <SidebarIcon />
           </button>
@@ -348,7 +355,7 @@ export function AppShell({ children }) {
           </Link>
           <div className="ml-auto">
             <Link href={user ? "/dashboard" : "/login"} className="btn-primary px-3 py-1.5">
-              {user ? "Dashboard" : tr("Kirish", "Войти")}
+              {user ? "Dashboard" : tr("Kirish", "Войти", "Giriş")}
             </Link>
           </div>
         </header>
@@ -365,17 +372,20 @@ export function Footer() {
     <footer className="mt-12 bg-[#0b1f26] text-white/60">
       <div className="container-app flex flex-col gap-4 py-8 text-sm sm:flex-row sm:items-start sm:justify-between">
         <div className="max-w-md">
-          <p className="font-semibold text-white">OsonFSP – {tr("Uzbek Doctors", "FSP для врачей")}</p>
+          <p className="font-semibold text-white">
+            OsonFSP – {tr("Uzbek Doctors", "FSP для врачей", "Doktorlar için FSP")}
+          </p>
           <p className="mt-1">
             {tr(
               "O‘quv platformasi. Natijalar faqat mashq uchun — rasmiy FSP natijasini bashorat qilmaydi. Klinik holatlar o‘quv maqsadida soddalashtirilgan.",
               "Учебная платформа. Результаты носят тренировочный характер и не предсказывают официальный результат FSP. Клинические случаи упрощены в учебных целях.",
+              "Eğitim platformu. Sonuçlar yalnızca alıştırma amaçlıdır — resmî FSP sonucunu öngörmez. Klinik vakalar eğitim amacıyla sadeleştirilmiştir.",
             )}
           </p>
         </div>
         <nav className="flex flex-wrap gap-x-5 gap-y-2">
           <Link href="/fsp" className="hover:text-teal-300">
-            {tr("FSP haqida", "Об FSP")}
+            {tr("FSP haqida", "Об FSP", "FSP hakkında")}
           </Link>
           <Link href="/dashboard" className="hover:text-teal-300">
             Dashboard

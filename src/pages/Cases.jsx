@@ -33,9 +33,13 @@ function CaseCard({ c, solved }) {
       </p>
       <div className="mt-auto flex items-center justify-between pt-4 text-sm">
         <span className={solved ? "text-emerald-600" : "muted"}>
-          {solved ? tr("✅ Yechilgan", "✅ Решено") : tr("○ Yechilmagan", "○ Не решено")}
+          {solved
+            ? tr("✅ Yechilgan", "✅ Решено", "✅ Çözüldü")
+            : tr("○ Yechilmagan", "○ Не решено", "○ Çözülmedi")}
         </span>
-        <span className="font-medium text-teal-600 dark:text-teal-400">{tr("Ochish →", "Открыть →")}</span>
+        <span className="font-medium text-teal-600 dark:text-teal-400">
+          {tr("Ochish →", "Открыть →", "Aç →")}
+        </span>
       </div>
     </Link>
   );
@@ -78,15 +82,16 @@ export function CasesPage() {
     <div className="page">
       <PageHeader
         eyebrow="Klinische Fälle"
-        title={tr("Klinik holatlar", "Клинические случаи")}
+        title={tr("Klinik holatlar", "Клинические случаи", "Klinik vakalar")}
         subtitle={tr(
           "Mutaxassislikni tanlang: har bir Fall’da bemor ma’lumotlari, anamnez, Patientensprache ↔ Fachsprache va muhim terminlar.",
           "Выберите специальность: в каждом кейсе — данные пациента, анамнез, Patientensprache ↔ Fachsprache и ключевые термины.",
+          "Uzmanlık alanını seçin: her vakada hasta bilgileri, anamnez, Patientensprache ↔ Fachsprache ve önemli terimler var.",
         )}
       >
         <span className="badge bg-teal-50 text-teal-700 dark:bg-teal-950 dark:text-teal-300">
           {e.solvedCases.length}/{cases.length}
-          {tr(" yechildi", " решено")}
+          {tr(" yechildi", " решено", " çözüldü")}
         </span>
       </PageHeader>
       <SectionIntro id="faelle" />
@@ -94,7 +99,12 @@ export function CasesPage() {
       {/* Bo‘limlar */}
       <div className="mb-5 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
         {[
-          { id: "all", icon: "📋", label: tr("Barcha bo‘limlar", "Все разделы"), categories: null },
+          {
+            id: "all",
+            icon: "📋",
+            label: tr("Barcha bo‘limlar", "Все разделы", "Tüm bölümler"),
+            categories: null,
+          },
           ...CASE_SECTIONS,
         ].map((s) => {
           let list = s.categories ? cases.filter((c) => s.categories.includes(c.category)) : cases,
@@ -117,7 +127,7 @@ export function CasesPage() {
               </span>
               <span className="mt-1 block text-sm font-semibold leading-tight">{s.label}</span>
               <span className={cx("mt-1 block text-xs", on ? "text-teal-100" : "muted")}>
-                {done}/{list.length} {tr("yechildi", "решено")}
+                {done}/{list.length} {tr("yechildi", "решено", "çözüldü")}
               </span>
               <span
                 className={cx(
@@ -143,13 +153,14 @@ export function CasesPage() {
             placeholder={tr(
               "Qidirish: diagnoz, shikoyat, bemor ismi…",
               "Поиск: диагноз, жалоба, имя пациента…",
+              "Ara: tanı, şikâyet, hasta adı…",
             )}
           />
         </div>
         <div className="flex gap-2">
           {["all", "leicht", "mittel", "schwer"].map((d) => (
             <button key={d} className={level === d ? "chip-on" : "chip-off"} onClick={() => setLevel(d)}>
-              {d === "all" ? tr("Barchasi", "Все") : DIFFICULTY_LABELS[d]}
+              {d === "all" ? tr("Barchasi", "Все", "Tümü") : DIFFICULTY_LABELS[d]}
             </button>
           ))}
         </div>
@@ -174,7 +185,9 @@ export function CasesPage() {
         ))}
       </div>
       {!shown && (section || q.trim()) && (
-        <p className="card text-center muted">{tr("Hech narsa topilmadi.", "Ничего не найдено.")}</p>
+        <p className="card text-center muted">
+          {tr("Hech narsa topilmadi.", "Ничего не найдено.", "Hiçbir şey bulunamadı.")}
+        </p>
       )}
       {!section && !q.trim() && (
         <p className="card text-center text-sm muted">
@@ -182,6 +195,7 @@ export function CasesPage() {
           {tr(
             "Yuqoridan mutaxassislikni tanlang — shu bo‘limdagi Fall’lar ochiladi.",
             "Выберите специальность выше — откроются кейсы этого раздела.",
+            "Yukarıdan uzmanlık alanını seçin — o bölümün vakaları açılır.",
           )}
         </p>
       )}

@@ -1,23 +1,36 @@
-import { tr } from "./i18n";
+import { loc, tr } from "./i18n";
 import { clamp } from "./utils";
 
 // Hörverstehen: bemor monologi va eshitib yozilgan qaydlarni tekshirish
 
 export const HOER_FIELDS = [
-  { key: "beginn", de: "Beginn", uz: "Boshlanishi", ru: "Начало" },
-  { key: "lokalisation", de: "Lokalisation", uz: "Joylashuvi", ru: "Локализация" },
-  { key: "charakter", de: "Charakter / Intensität", uz: "Xarakteri / kuchi", ru: "Характер / интенсивность" },
-  { key: "ausstrahlung", de: "Ausstrahlung", uz: "Tarqalishi", ru: "Иррадиация" },
-  { key: "begleit", de: "Begleitsymptome", uz: "Hamroh simptomlar", ru: "Сопутствующие симптомы" },
+  { key: "beginn", de: "Beginn", uz: "Boshlanishi", ru: "Начало", tr: "Başlangıç" },
+  { key: "lokalisation", de: "Lokalisation", uz: "Joylashuvi", ru: "Локализация", tr: "Yeri" },
+  {
+    key: "charakter",
+    de: "Charakter / Intensität",
+    uz: "Xarakteri / kuchi",
+    ru: "Характер / интенсивность",
+    tr: "Karakteri / şiddeti",
+  },
+  { key: "ausstrahlung", de: "Ausstrahlung", uz: "Tarqalishi", ru: "Иррадиация", tr: "Yayılımı" },
+  {
+    key: "begleit",
+    de: "Begleitsymptome",
+    uz: "Hamroh simptomlar",
+    ru: "Сопутствующие симптомы",
+    tr: "Eşlik eden semptomlar",
+  },
   {
     key: "vorerkrankungen",
     de: "Vorerkrankungen",
     uz: "Avvalgi kasalliklar",
     ru: "Перенесённые заболевания",
+    tr: "Geçirilmiş hastalıklar",
   },
-  { key: "medikamente", de: "Medikamente", uz: "Dorilar", ru: "Лекарства" },
-  { key: "allergien", de: "Allergien", uz: "Allergiyalar", ru: "Аллергии" },
-  { key: "noxen", de: "Noxen", uz: "Zararli odatlar", ru: "Вредные привычки" },
+  { key: "medikamente", de: "Medikamente", uz: "Dorilar", ru: "Лекарства", tr: "İlaçlar" },
+  { key: "allergien", de: "Allergien", uz: "Allergiyalar", ru: "Аллергии", tr: "Alerjiler" },
+  { key: "noxen", de: "Noxen", uz: "Zararli odatlar", ru: "Вредные привычки", tr: "Zararlı alışkanlıklar" },
 ];
 
 // Bemor o‘zi gapirib beradigan matn (monolog), gaplarga bo‘lingan
@@ -98,4 +111,4 @@ export function checkHoeren(c, notes) {
   return { total, rows };
 }
 
-export const fieldLabel = (f) => `${f.de} · ${tr(f.uz, f.ru)}`;
+export const fieldLabel = (f) => `${f.de} · ${loc(f)}`;

@@ -4,22 +4,26 @@
     "name": "Gastroskopie",
     "uz": "Gastroskopiya (oshqozonni endoskopik ko‘rish)",
     "ru": "Гастроскопия",
+    "tr": "Gastroskopi (midenin endoskopik incelemesi)",
     "icon": "🔦",
     "question": "Herr Doktor, Sie haben gesagt, ich bekomme eine Magenspiegelung. Was passiert da genau?",
     "points": [
       {
         "uz": "Maqsad: nima uchun kerak",
         "ru": "Цель: зачем это нужно",
+        "tr": "Amaç: neden gerekli",
         "keywords": ["damit", "um zu", "um die ursache", "wir möchten", "schauen", "ursache", "nachsehen"]
       },
       {
         "uz": "Jarayon: ingichka shlang og‘iz orqali",
         "ru": "Ход: тонкий шланг через рот",
+        "tr": "İşlem: ince bir hortum ağızdan",
         "keywords": ["schlauch", "kamera", "mund", "speiseröhre", "magen"]
       },
       {
         "uz": "Tayyorgarlik: och qoringa (nüchtern)",
         "ru": "Подготовка: натощак",
+        "tr": "Hazırlık: aç karnına (nüchtern)",
         "keywords": [
           "nüchtern",
           "nichts essen",
@@ -32,6 +36,7 @@
       {
         "uz": "Og‘riqsizlantirish / uxlatuvchi ukol",
         "ru": "Обезболивание / седация",
+        "tr": "Ağrı kesici / uyutan iğne",
         "keywords": [
           "schlafspritze",
           "betäub",
@@ -42,30 +47,62 @@
           "spüren nichts"
         ]
       },
-      { "uz": "Davomiyligi", "ru": "Длительность", "keywords": ["minuten", "dauert"] },
+      {
+        "uz": "Davomiyligi",
+        "ru": "Длительность",
+        "tr": "Süresi",
+        "keywords": ["minuten", "dauert"]
+      },
       {
         "uz": "Xavflar (kamdan-kam)",
         "ru": "Риски (редко)",
+        "tr": "Riskler (nadir)",
         "keywords": ["risiko", "selten", "blutung", "verletzung", "komplikation"]
       },
       {
         "uz": "Keyin: mashina haydamaslik",
         "ru": "После: не садиться за руль",
+        "tr": "Sonrasında: araç kullanmamak",
         "keywords": ["auto", "fahren", "abholen", "begleit"]
       },
       {
         "uz": "Savollar va rozilik",
         "ru": "Вопросы и согласие",
+        "tr": "Sorular ve onam",
         "keywords": ["fragen", "einverstanden", "unterschreiben", "einwilligung"]
       }
     ],
     "jargon": [
-      { "re": "ösophagus", "fach": "Ösophagus", "simple": "Speiseröhre" },
-      { "re": "duodenum", "fach": "Duodenum", "simple": "Zwölffingerdarm" },
-      { "re": "sedierung", "fach": "Sedierung", "simple": "Schlafspritze" },
-      { "re": "biopsie", "fach": "Biopsie", "simple": "kleine Gewebeprobe" },
-      { "re": "perforation", "fach": "Perforation", "simple": "Verletzung der Magenwand" },
-      { "re": "endoskop", "fach": "Endoskop", "simple": "dünner Schlauch mit Kamera" }
+      {
+        "re": "ösophagus",
+        "fach": "Ösophagus",
+        "simple": "Speiseröhre"
+      },
+      {
+        "re": "duodenum",
+        "fach": "Duodenum",
+        "simple": "Zwölffingerdarm"
+      },
+      {
+        "re": "sedierung",
+        "fach": "Sedierung",
+        "simple": "Schlafspritze"
+      },
+      {
+        "re": "biopsie",
+        "fach": "Biopsie",
+        "simple": "kleine Gewebeprobe"
+      },
+      {
+        "re": "perforation",
+        "fach": "Perforation",
+        "simple": "Verletzung der Magenwand"
+      },
+      {
+        "re": "endoskop",
+        "fach": "Endoskop",
+        "simple": "dünner Schlauch mit Kamera"
+      }
     ],
     "sample": "Bei der Magenspiegelung schauen wir uns Ihre Speiseröhre, Ihren Magen und den Anfang vom Darm von innen an, damit wir die Ursache Ihrer Beschwerden finden. Dafür schieben wir einen dünnen, weichen Schlauch mit einer kleinen Kamera durch den Mund. Sie müssen vorher nüchtern sein, das heißt, sechs Stunden nichts essen. Sie bekommen eine Schlafspritze, dann schlafen Sie und merken nichts. Die Untersuchung dauert etwa zehn Minuten. Wenn nötig, nehmen wir eine kleine Gewebeprobe, das tut nicht weh. Das Risiko ist sehr gering; selten kann es zu einer Blutung oder einer Verletzung kommen. Nach der Schlafspritze dürfen Sie heute nicht Auto fahren, bitte lassen Sie sich abholen. Haben Sie noch Fragen? Wenn Sie einverstanden sind, unterschreiben Sie bitte hier."
   },
@@ -74,53 +111,90 @@
     "name": "Koloskopie",
     "uz": "Kolonoskopiya (yo‘g‘on ichakni ko‘rish)",
     "ru": "Колоноскопия",
+    "tr": "Kolonoskopi (kalın bağırsağın incelenmesi)",
     "icon": "🔍",
     "question": "Ich soll eine Darmspiegelung machen lassen. Davor habe ich ehrlich gesagt Angst. Was passiert da?",
     "points": [
       {
         "uz": "Maqsad: nima uchun kerak",
         "ru": "Цель: зачем это нужно",
+        "tr": "Amaç: neden gerekli",
         "keywords": ["damit", "um zu", "wir möchten", "schauen", "ursache", "vorsorge", "polyp", "wucherung"]
       },
       {
         "uz": "Jarayon: shlang orqa chiqaruv teshigi orqali",
         "ru": "Ход: шланг через задний проход",
+        "tr": "İşlem: hortum makattan",
         "keywords": ["schlauch", "kamera", "after", "darm"]
       },
       {
         "uz": "Tayyorgarlik: ichakni tozalash",
         "ru": "Подготовка: очищение кишечника",
+        "tr": "Hazırlık: bağırsak temizliği",
         "keywords": ["abführ", "trinklösung", "flüssigkeit", "leer", "reinig", "sauber"]
       },
       {
         "uz": "Og‘riqsizlantirish / uxlatuvchi ukol",
         "ru": "Обезболивание / седация",
+        "tr": "Ağrı kesici / uyutan iğne",
         "keywords": ["schlafspritze", "betäub", "schlafen", "merken nichts", "tut nicht weh"]
       },
-      { "uz": "Davomiyligi", "ru": "Длительность", "keywords": ["minuten", "dauert"] },
+      {
+        "uz": "Davomiyligi",
+        "ru": "Длительность",
+        "tr": "Süresi",
+        "keywords": ["minuten", "dauert"]
+      },
       {
         "uz": "Xavflar (kamdan-kam)",
         "ru": "Риски (редко)",
+        "tr": "Riskler (nadir)",
         "keywords": ["risiko", "selten", "blutung", "verletzung", "komplikation"]
       },
       {
         "uz": "Keyin: mashina haydamaslik",
         "ru": "После: не садиться за руль",
+        "tr": "Sonrasında: araç kullanmamak",
         "keywords": ["auto", "fahren", "abholen", "begleit"]
       },
       {
         "uz": "Savollar va rozilik",
         "ru": "Вопросы и согласие",
+        "tr": "Sorular ve onam",
         "keywords": ["fragen", "einverstanden", "unterschreiben", "einwilligung"]
       }
     ],
     "jargon": [
-      { "re": "kolon\\b|colon", "fach": "Kolon", "simple": "Dickdarm" },
-      { "re": "rektum", "fach": "Rektum", "simple": "Enddarm" },
-      { "re": "sedierung", "fach": "Sedierung", "simple": "Schlafspritze" },
-      { "re": "polypektomie", "fach": "Polypektomie", "simple": "Entfernen einer Wucherung" },
-      { "re": "perforation", "fach": "Perforation", "simple": "Verletzung der Darmwand" },
-      { "re": "laxans|laxanzien", "fach": "Laxans", "simple": "Abführmittel" }
+      {
+        "re": "kolon\\b|colon",
+        "fach": "Kolon",
+        "simple": "Dickdarm"
+      },
+      {
+        "re": "rektum",
+        "fach": "Rektum",
+        "simple": "Enddarm"
+      },
+      {
+        "re": "sedierung",
+        "fach": "Sedierung",
+        "simple": "Schlafspritze"
+      },
+      {
+        "re": "polypektomie",
+        "fach": "Polypektomie",
+        "simple": "Entfernen einer Wucherung"
+      },
+      {
+        "re": "perforation",
+        "fach": "Perforation",
+        "simple": "Verletzung der Darmwand"
+      },
+      {
+        "re": "laxans|laxanzien",
+        "fach": "Laxans",
+        "simple": "Abführmittel"
+      }
     ],
     "sample": "Ich verstehe, dass Sie Angst haben. Bei der Darmspiegelung schauen wir uns Ihren Dickdarm von innen an, damit wir die Ursache für das Blut im Stuhl finden. Am Tag vorher trinken Sie eine Abführlösung, damit der Darm ganz leer und sauber ist. Bei der Untersuchung führen wir einen dünnen Schlauch mit einer kleinen Kamera über den After in den Darm ein. Sie bekommen eine Schlafspritze, Sie schlafen und merken nichts. Das dauert ungefähr 20 bis 30 Minuten. Wenn wir eine kleine Wucherung finden, können wir sie gleich entfernen. Das Risiko ist gering, selten kann eine Blutung oder eine Verletzung der Darmwand auftreten. Danach dürfen Sie nicht Auto fahren, bitte lassen Sie sich abholen. Haben Sie noch Fragen? Wenn Sie einverstanden sind, unterschreiben Sie bitte hier."
   },
@@ -129,43 +203,56 @@
     "name": "CT mit Kontrastmittel",
     "uz": "Kontrast moddali kompyuter tomografiya",
     "ru": "КТ с контрастом",
+    "tr": "Kontrast maddeli bilgisayarlı tomografi",
     "icon": "🌀",
     "question": "Ich soll in so eine Röhre und bekomme ein Kontrastmittel? Ist das gefährlich?",
     "points": [
       {
         "uz": "Maqsad: nima uchun kerak",
         "ru": "Цель: зачем это нужно",
+        "tr": "Amaç: neden gerekli",
         "keywords": ["damit", "um zu", "wir möchten", "genau", "bilder", "ursache"]
       },
       {
         "uz": "Jarayon: rentgen nurlari bilan suratlar, halqa",
         "ru": "Ход: рентгеновские снимки, кольцо",
+        "tr": "İşlem: röntgen ışınlarıyla çekim, halka",
         "keywords": ["röntgen", "bilder", "ring", "liege", "röhre"]
       },
       {
         "uz": "Kontrast modda vena orqali",
         "ru": "Контраст через вену",
+        "tr": "Kontrast madde damardan",
         "keywords": ["kontrastmittel", "vene", "zugang", "spritze"]
       },
       {
         "uz": "Issiqlik hissi — normal",
         "ru": "Чувство тепла — это нормально",
+        "tr": "Sıcaklık hissi — normaldir",
         "keywords": ["warm", "wärme", "hitze"]
       },
-      { "uz": "Davomiyligi", "ru": "Длительность", "keywords": ["minuten", "dauert"] },
+      {
+        "uz": "Davomiyligi",
+        "ru": "Длительность",
+        "tr": "Süresi",
+        "keywords": ["minuten", "dauert"]
+      },
       {
         "uz": "Allergiya, buyrak, qalqonsimon bez haqida so‘rash",
         "ru": "Спросить об аллергии, почках, щитовидной железе",
+        "tr": "Alerji, böbrek ve tiroid bezini sormak",
         "keywords": ["allergi", "niere", "schilddrüse"]
       },
       {
         "uz": "Xavflar (kamdan-kam)",
         "ru": "Риски (редко)",
+        "tr": "Riskler (nadir)",
         "keywords": ["risiko", "selten", "strahlen", "allergische reaktion"]
       },
       {
         "uz": "Savollar va rozilik",
         "ru": "Вопросы и согласие",
+        "tr": "Sorular ve onam",
         "keywords": ["fragen", "einverstanden", "unterschreiben", "einwilligung"]
       }
     ],
@@ -175,10 +262,26 @@
         "fach": "Computertomographie",
         "simple": "Röntgen-Schichtaufnahme in der Röhre"
       },
-      { "re": "intravenös|i\\. ?v\\.", "fach": "intravenös", "simple": "über die Vene" },
-      { "re": "anaphyla", "fach": "Anaphylaxie", "simple": "starke allergische Reaktion" },
-      { "re": "hyperthyreose", "fach": "Hyperthyreose", "simple": "Schilddrüsenüberfunktion" },
-      { "re": "niereninsuffizienz", "fach": "Niereninsuffizienz", "simple": "Nierenschwäche" }
+      {
+        "re": "intravenös|i\\. ?v\\.",
+        "fach": "intravenös",
+        "simple": "über die Vene"
+      },
+      {
+        "re": "anaphyla",
+        "fach": "Anaphylaxie",
+        "simple": "starke allergische Reaktion"
+      },
+      {
+        "re": "hyperthyreose",
+        "fach": "Hyperthyreose",
+        "simple": "Schilddrüsenüberfunktion"
+      },
+      {
+        "re": "niereninsuffizienz",
+        "fach": "Niereninsuffizienz",
+        "simple": "Nierenschwäche"
+      }
     ],
     "sample": "Keine Sorge, ich erkläre es Ihnen. Bei der CT machen wir mit Röntgenstrahlen sehr genaue Bilder von Ihrem Bauch, damit wir die Ursache Ihrer Schmerzen sehen. Sie liegen auf einer Liege, die durch einen großen Ring fährt; es ist keine enge Röhre. Damit man die Organe besser sieht, bekommen Sie über einen Zugang in der Vene ein Kontrastmittel. Dabei kann Ihnen kurz warm werden, das ist normal. Die Untersuchung dauert etwa zehn Minuten. Vorher muss ich Sie fragen: Haben Sie Allergien, Probleme mit den Nieren oder mit der Schilddrüse? Das Risiko ist gering, selten gibt es eine allergische Reaktion; die Strahlenbelastung ist niedrig. Haben Sie noch Fragen? Wenn Sie einverstanden sind, unterschreiben Sie bitte hier."
   },
@@ -187,43 +290,56 @@
     "name": "MRT",
     "uz": "Magnit-rezonans tomografiya (MRT)",
     "ru": "МРТ",
+    "tr": "Manyetik rezonans görüntüleme (MR)",
     "icon": "🧲",
     "question": "Mein Hausarzt sagt, ich brauche ein MRT vom Kopf. Was muss ich da beachten?",
     "points": [
       {
         "uz": "Maqsad: nima uchun kerak",
         "ru": "Цель: зачем это нужно",
+        "tr": "Amaç: neden gerekli",
         "keywords": ["damit", "um zu", "wir möchten", "genau", "bilder", "ursache"]
       },
       {
         "uz": "Jarayon: magnit maydon, rentgen nurlari yo‘q",
         "ru": "Ход: магнитное поле, без рентгена",
+        "tr": "İşlem: manyetik alan, röntgen ışını yok",
         "keywords": ["magnet", "keine röntgen", "ohne röntgen", "keine strahl"]
       },
       {
         "uz": "Shovqin, quloqchin",
         "ru": "Шум, наушники",
+        "tr": "Gürültü, kulaklık",
         "keywords": ["laut", "klopf", "kopfhörer", "ohrstöpsel", "geräusch"]
       },
       {
         "uz": "Qimirlamay yotish, tor joy",
         "ru": "Лежать неподвижно, тесное пространство",
+        "tr": "Hareketsiz yatmak, dar alan",
         "keywords": ["still", "ruhig liegen", "eng", "röhre"]
       },
-      { "uz": "Davomiyligi", "ru": "Длительность", "keywords": ["minuten", "dauert"] },
+      {
+        "uz": "Davomiyligi",
+        "ru": "Длительность",
+        "tr": "Süresi",
+        "keywords": ["minuten", "dauert"]
+      },
       {
         "uz": "Metall, kardiostimulyator haqida so‘rash",
         "ru": "Спросить о металле, кардиостимуляторе",
+        "tr": "Metal ve kalp pilini sormak",
         "keywords": ["metall", "herzschrittmacher", "implantat", "schmuck"]
       },
       {
         "uz": "Qo‘ng‘iroq tugmasi / aloqa",
         "ru": "Кнопка вызова / связь",
+        "tr": "Çağrı düğmesi / iletişim",
         "keywords": ["klingel", "knopf", "sprechen", "melden"]
       },
       {
         "uz": "Savollar va rozilik",
         "ru": "Вопросы и согласие",
+        "tr": "Sorular ve onam",
         "keywords": ["fragen", "einverstanden", "unterschreiben", "einwilligung"]
       }
     ],
@@ -233,9 +349,21 @@
         "fach": "Magnetresonanztomographie",
         "simple": "Kernspin / MRT-Röhre"
       },
-      { "re": "klaustrophob", "fach": "Klaustrophobie", "simple": "Angst vor engen Räumen" },
-      { "re": "gadolinium", "fach": "Gadolinium", "simple": "Kontrastmittel" },
-      { "re": "ferromagnet", "fach": "ferromagnetisch", "simple": "aus Metall" }
+      {
+        "re": "klaustrophob",
+        "fach": "Klaustrophobie",
+        "simple": "Angst vor engen Räumen"
+      },
+      {
+        "re": "gadolinium",
+        "fach": "Gadolinium",
+        "simple": "Kontrastmittel"
+      },
+      {
+        "re": "ferromagnet",
+        "fach": "ferromagnetisch",
+        "simple": "aus Metall"
+      }
     ],
     "sample": "Beim MRT machen wir mit einem starken Magneten sehr genaue Bilder von Ihrem Kopf, damit wir die Ursache Ihrer Kopfschmerzen finden. Es gibt dabei keine Röntgenstrahlen. Sie liegen in einer Röhre, die etwas eng ist; bitte liegen Sie ganz still. Das Gerät ist laut und klopft, deshalb bekommen Sie Kopfhörer. Die Untersuchung dauert etwa 20 Minuten. Sie bekommen eine Klingel in die Hand und können jederzeit mit uns sprechen. Vorher muss ich wissen: Haben Sie Metall im Körper, zum Beispiel einen Herzschrittmacher oder ein Implantat? Schmuck legen Sie bitte vorher ab. Haben Sie noch Fragen? Wenn Sie einverstanden sind, unterschreiben Sie bitte hier."
   },
@@ -244,56 +372,85 @@
     "name": "Lumbalpunktion",
     "uz": "Lyumbal punksiya (orqa miya suyuqligini olish)",
     "ru": "Люмбальная пункция",
+    "tr": "Lomber ponksiyon (beyin omurilik sıvısı alınması)",
     "icon": "💉",
     "question": "Sie wollen mir Wasser aus dem Rücken nehmen? Kann ich danach gelähmt sein?",
     "points": [
       {
         "uz": "Maqsad: nima uchun kerak",
         "ru": "Цель: зачем это нужно",
+        "tr": "Amaç: neden gerekli",
         "keywords": ["damit", "um zu", "wir möchten", "untersuchen", "entzündung", "ursache"]
       },
       {
         "uz": "Jarayon: bel sohasida nina bilan suyuqlik olish",
         "ru": "Ход: прокол иглой в пояснице",
+        "tr": "İşlem: bel bölgesinden iğneyle sıvı alınması",
         "keywords": ["nadel", "rücken", "nervenwasser", "einstich"]
       },
       {
         "uz": "Orqa miya shikastlanmasligi",
         "ru": "Спинной мозг не повреждается",
+        "tr": "Omurilik zarar görmez",
         "keywords": ["rückenmark", "unterhalb", "nicht verletzt", "keine lähmung", "nicht gelähmt"]
       },
       {
         "uz": "Holat: o‘tirib, oldinga egilish",
         "ru": "Положение: сидя, наклонившись вперёд",
+        "tr": "Pozisyon: oturarak, öne eğilmek",
         "keywords": ["sitzen", "vorbeugen", "rund", "katzenbuckel", "liegen"]
       },
       {
         "uz": "Mahalliy og‘riqsizlantirish",
         "ru": "Местное обезболивание",
+        "tr": "Lokal anestezi",
         "keywords": ["betäub", "spritze", "tut kaum weh", "pieks"]
       },
-      { "uz": "Davomiyligi", "ru": "Длительность", "keywords": ["minuten", "dauert"] },
+      {
+        "uz": "Davomiyligi",
+        "ru": "Длительность",
+        "tr": "Süresi",
+        "keywords": ["minuten", "dauert"]
+      },
       {
         "uz": "Xavflar: bosh og‘rig‘i, infeksiya, qon ketish",
         "ru": "Риски: головная боль, инфекция, кровотечение",
+        "tr": "Riskler: baş ağrısı, enfeksiyon, kanama",
         "keywords": ["kopfschmerz", "infektion", "blutung", "selten", "risiko"]
       },
       {
         "uz": "Savollar va rozilik",
         "ru": "Вопросы и согласие",
+        "tr": "Sorular ve onam",
         "keywords": ["fragen", "einverstanden", "unterschreiben", "einwilligung"]
       }
     ],
     "jargon": [
-      { "re": "liquor", "fach": "Liquor", "simple": "Nervenwasser" },
-      { "re": "spinalkanal", "fach": "Spinalkanal", "simple": "Wirbelkanal" },
-      { "re": "lokalanästhesie", "fach": "Lokalanästhesie", "simple": "örtliche Betäubung" },
+      {
+        "re": "liquor",
+        "fach": "Liquor",
+        "simple": "Nervenwasser"
+      },
+      {
+        "re": "spinalkanal",
+        "fach": "Spinalkanal",
+        "simple": "Wirbelkanal"
+      },
+      {
+        "re": "lokalanästhesie",
+        "fach": "Lokalanästhesie",
+        "simple": "örtliche Betäubung"
+      },
       {
         "re": "postpunktionell",
         "fach": "postpunktioneller Kopfschmerz",
         "simple": "Kopfschmerzen nach der Untersuchung"
       },
-      { "re": "meningitis", "fach": "Meningitis", "simple": "Hirnhautentzündung" }
+      {
+        "re": "meningitis",
+        "fach": "Meningitis",
+        "simple": "Hirnhautentzündung"
+      }
     ],
     "sample": "Ich verstehe Ihre Sorge. Wir möchten eine kleine Menge Nervenwasser untersuchen, damit wir sehen, ob eine Entzündung der Hirnhäute vorliegt. Sie sitzen dabei und beugen sich nach vorne, wie ein Katzenbuckel. Zuerst bekommen Sie eine Spritze zur örtlichen Betäubung, das ist nur ein kleiner Pieks. Dann stechen wir mit einer dünnen Nadel unten im Rücken ein. Das Rückenmark endet weiter oben, es wird nicht verletzt, eine Lähmung ist praktisch ausgeschlossen. Das Ganze dauert etwa 15 Minuten. Danach können Kopfschmerzen auftreten; selten gibt es eine Infektion oder eine Blutung. Haben Sie noch Fragen? Wenn Sie einverstanden sind, unterschreiben Sie bitte hier."
   },
@@ -302,57 +459,90 @@
     "name": "Herzkatheteruntersuchung",
     "uz": "Koronar angiografiya (yurak kateteri)",
     "ru": "Коронарография (катетеризация сердца)",
+    "tr": "Koroner anjiyografi (kalp kateteri)",
     "icon": "❤️",
     "question": "Ein Herzkatheter? Da schieben Sie mir etwas bis ins Herz? Das klingt gefährlich.",
     "points": [
       {
         "uz": "Maqsad: tomirlar torayganini ko‘rish",
         "ru": "Цель: увидеть сужение сосудов",
+        "tr": "Amaç: damarlardaki daralmayı görmek",
         "keywords": ["herzkranzgefäße", "verengung", "verengt", "damit", "um zu"]
       },
       {
         "uz": "Jarayon: bilak yoki chov orqali ingichka shlang",
         "ru": "Ход: тонкая трубка через запястье или пах",
+        "tr": "İşlem: bilekten veya kasıktan ince bir tüp",
         "keywords": ["handgelenk", "leiste", "schlauch", "katheter", "blutgefäß", "ader"]
       },
       {
         "uz": "Kontrast modda va rentgen",
         "ru": "Контраст и рентген",
+        "tr": "Kontrast madde ve röntgen",
         "keywords": ["kontrastmittel", "röntgen"]
       },
       {
         "uz": "Mahalliy og‘riqsizlantirish, bemor hushida",
         "ru": "Местная анестезия, пациент в сознании",
+        "tr": "Lokal anestezi, hasta uyanık",
         "keywords": ["betäub", "wach", "örtlich"]
       },
       {
         "uz": "Darhol davolash imkoniyati (stent)",
         "ru": "Возможность сразу лечить (стент)",
+        "tr": "Hemen tedavi imkânı (stent)",
         "keywords": ["stent", "aufdehnen", "ballon", "gleich behandeln"]
       },
       {
         "uz": "Xavflar (kamdan-kam)",
         "ru": "Риски (редко)",
+        "tr": "Riskler (nadir)",
         "keywords": ["risiko", "selten", "bluterguss", "blutung", "rhythmus", "allergi"]
       },
       {
         "uz": "Keyin: bosuvchi bog‘lam, yotib turish",
         "ru": "После: давящая повязка, постельный режим",
+        "tr": "Sonrasında: baskılı bandaj, yatak istirahati",
         "keywords": ["druckverband", "liegen", "danach", "schonen"]
       },
       {
         "uz": "Savollar va rozilik",
         "ru": "Вопросы и согласие",
+        "tr": "Sorular ve onam",
         "keywords": ["fragen", "einverstanden", "unterschreiben", "einwilligung"]
       }
     ],
     "jargon": [
-      { "re": "koronar", "fach": "Koronararterien", "simple": "Herzkranzgefäße" },
-      { "re": "stenose", "fach": "Stenose", "simple": "Verengung" },
-      { "re": "arteria radialis|radialis", "fach": "Arteria radialis", "simple": "Schlagader am Handgelenk" },
-      { "re": "femoral", "fach": "femoral", "simple": "in der Leiste" },
-      { "re": "pci\\b|perkutan", "fach": "PCI", "simple": "Aufdehnen der Engstelle mit einem Ballon" },
-      { "re": "hämatom", "fach": "Hämatom", "simple": "Bluterguss" }
+      {
+        "re": "koronar",
+        "fach": "Koronararterien",
+        "simple": "Herzkranzgefäße"
+      },
+      {
+        "re": "stenose",
+        "fach": "Stenose",
+        "simple": "Verengung"
+      },
+      {
+        "re": "arteria radialis|radialis",
+        "fach": "Arteria radialis",
+        "simple": "Schlagader am Handgelenk"
+      },
+      {
+        "re": "femoral",
+        "fach": "femoral",
+        "simple": "in der Leiste"
+      },
+      {
+        "re": "pci\\b|perkutan",
+        "fach": "PCI",
+        "simple": "Aufdehnen der Engstelle mit einem Ballon"
+      },
+      {
+        "re": "hämatom",
+        "fach": "Hämatom",
+        "simple": "Bluterguss"
+      }
     ],
     "sample": "Ich erkläre es Ihnen gern. Bei der Herzkatheteruntersuchung schauen wir uns Ihre Herzkranzgefäße an, damit wir sehen, ob sie verengt sind. Wir schieben einen dünnen Schlauch über ein Blutgefäß am Handgelenk oder in der Leiste bis zum Herzen. Sie bekommen dort eine örtliche Betäubung und bleiben wach. Dann spritzen wir ein Kontrastmittel und machen Röntgenbilder. Wenn wir eine Verengung finden, können wir sie gleich mit einem Ballon aufdehnen und einen Stent einsetzen. Das Risiko ist gering; selten gibt es einen Bluterguss, eine Blutung, Herzrhythmusstörungen oder eine allergische Reaktion. Danach bekommen Sie einen Druckverband und sollten einige Stunden liegen. Haben Sie noch Fragen? Wenn Sie einverstanden sind, unterschreiben Sie bitte hier."
   },
@@ -361,51 +551,80 @@
     "name": "Belastungs-EKG (Ergometrie)",
     "uz": "Veloergometriya (yuklama bilan EKG)",
     "ru": "Нагрузочная ЭКГ (велоэргометрия)",
+    "tr": "Bisiklet ergometrisi (efor EKG’si)",
     "icon": "🚴",
     "question": "Ich soll auf ein Fahrrad und dabei wird mein Herz gemessen? Wozu ist das gut?",
     "points": [
       {
         "uz": "Maqsad: zo‘riqishda yurak qon bilan ta’minlanishini tekshirish",
         "ru": "Цель: проверить кровоснабжение сердца при нагрузке",
+        "tr": "Amaç: efor sırasında kalbin kanlanmasını kontrol etmek",
         "keywords": ["belastung", "durchblutung", "anstrengung", "damit", "um zu"]
       },
       {
         "uz": "Jarayon: velosiped, kuchlanish asta oshadi",
         "ru": "Ход: велосипед, нагрузка постепенно растёт",
+        "tr": "İşlem: bisiklet, yük yavaş yavaş artar",
         "keywords": ["fahrrad", "treten", "schwerer", "stufe", "steigern"]
       },
       {
         "uz": "EKG elektrodlari va qon bosimi",
         "ru": "Электроды ЭКГ и давление",
+        "tr": "EKG elektrotları ve tansiyon",
         "keywords": ["elektrod", "kleber", "blutdruck", "ekg"]
       },
       {
         "uz": "Shikoyat bo‘lsa darhol aytish",
         "ru": "Сразу сообщить о жалобах",
+        "tr": "Şikâyet olursa hemen söylemek",
         "keywords": ["sofort", "sagen", "melden", "beschwerden", "schmerzen", "abbrechen"]
       },
       {
         "uz": "Shifokor doim yonida",
         "ru": "Врач всё время рядом",
+        "tr": "Doktor her zaman yanında",
         "keywords": ["arzt", "dabei", "neben", "überwach"]
       },
-      { "uz": "Davomiyligi", "ru": "Длительность", "keywords": ["minuten", "dauert"] },
+      {
+        "uz": "Davomiyligi",
+        "ru": "Длительность",
+        "tr": "Süresi",
+        "keywords": ["minuten", "dauert"]
+      },
       {
         "uz": "Tayyorgarlik: qulay kiyim, poyabzal",
         "ru": "Подготовка: удобная одежда и обувь",
+        "tr": "Hazırlık: rahat kıyafet ve ayakkabı",
         "keywords": ["schuhe", "kleidung", "sportkleidung", "bequem"]
       },
       {
         "uz": "Savollar va rozilik",
         "ru": "Вопросы и согласие",
+        "tr": "Sorular ve onam",
         "keywords": ["fragen", "einverstanden", "unterschreiben", "einwilligung"]
       }
     ],
     "jargon": [
-      { "re": "ischämie", "fach": "Ischämie", "simple": "Durchblutungsstörung" },
-      { "re": "st-strecke|st-senkung", "fach": "ST-Strecke", "simple": "bestimmte Linie im EKG" },
-      { "re": "angina pectoris", "fach": "Angina pectoris", "simple": "Engegefühl in der Brust" },
-      { "re": "watt", "fach": "Watt", "simple": "Stufe / Widerstand" }
+      {
+        "re": "ischämie",
+        "fach": "Ischämie",
+        "simple": "Durchblutungsstörung"
+      },
+      {
+        "re": "st-strecke|st-senkung",
+        "fach": "ST-Strecke",
+        "simple": "bestimmte Linie im EKG"
+      },
+      {
+        "re": "angina pectoris",
+        "fach": "Angina pectoris",
+        "simple": "Engegefühl in der Brust"
+      },
+      {
+        "re": "watt",
+        "fach": "Watt",
+        "simple": "Stufe / Widerstand"
+      }
     ],
     "sample": "Beim Belastungs-EKG prüfen wir, ob Ihr Herz bei Anstrengung genug Durchblutung bekommt. Sie treten auf einem Fahrrad, und alle zwei Minuten wird es etwas schwerer. Dabei kleben wir Elektroden auf Ihre Brust für das EKG und messen regelmäßig den Blutdruck. Ein Arzt ist die ganze Zeit dabei. Wenn Sie Schmerzen in der Brust, Atemnot oder Schwindel bekommen, sagen Sie es bitte sofort, dann brechen wir ab. Die Untersuchung dauert etwa 15 bis 20 Minuten. Bitte bringen Sie bequeme Kleidung und Turnschuhe mit. Haben Sie noch Fragen? Wenn Sie einverstanden sind, unterschreiben Sie bitte hier."
   },
@@ -414,47 +633,80 @@
     "name": "Blasenkatheter",
     "uz": "Siydik qopiga kateter qo‘yish",
     "ru": "Установка мочевого катетера",
+    "tr": "Mesaneye sonda takılması",
     "icon": "🚿",
     "question": "Die Schwester sagt, ich bekomme einen Katheter in die Blase. Tut das weh?",
     "points": [
       {
         "uz": "Maqsad: siydikni chiqarish",
         "ru": "Цель: вывести мочу",
+        "tr": "Amaç: idrarı boşaltmak",
         "keywords": ["urin", "blase", "entleeren", "ablaufen", "damit", "um zu"]
       },
       {
         "uz": "Jarayon: ingichka shlang siydik yo‘li orqali",
         "ru": "Ход: тонкая трубка через мочеиспускательный канал",
+        "tr": "İşlem: idrar yolundan ince bir tüp",
         "keywords": ["schlauch", "harnröhre"]
       },
       {
         "uz": "Gel bilan og‘riqsizlantirish",
         "ru": "Обезболивающий гель",
+        "tr": "Jel ile uyuşturma",
         "keywords": ["gel", "betäub", "unangenehm", "tut kaum weh"]
       },
       {
         "uz": "Gigiyena / sterillik",
         "ru": "Гигиена / стерильность",
+        "tr": "Hijyen / sterilite",
         "keywords": ["steril", "desinfiz", "sauber", "hygien"]
       },
       {
         "uz": "Ballon bilan mahkamlanadi",
         "ru": "Фиксация баллоном",
+        "tr": "Balonla sabitlenir",
         "keywords": ["ballon", "halten", "rutscht nicht"]
       },
-      { "uz": "Davomiyligi", "ru": "Длительность", "keywords": ["minuten", "dauert", "kurz"] },
+      {
+        "uz": "Davomiyligi",
+        "ru": "Длительность",
+        "tr": "Süresi",
+        "keywords": ["minuten", "dauert", "kurz"]
+      },
       {
         "uz": "Xavflar: infeksiya, shikastlanish",
         "ru": "Риски: инфекция, травма",
+        "tr": "Riskler: enfeksiyon, yaralanma",
         "keywords": ["infektion", "verletzung", "selten", "risiko"]
       },
-      { "uz": "Savollar va rozilik", "ru": "Вопросы и согласие", "keywords": ["fragen", "einverstanden"] }
+      {
+        "uz": "Savollar va rozilik",
+        "ru": "Вопросы и согласие",
+        "tr": "Sorular ve onam",
+        "keywords": ["fragen", "einverstanden"]
+      }
     ],
     "jargon": [
-      { "re": "urethra", "fach": "Urethra", "simple": "Harnröhre" },
-      { "re": "harnverhalt", "fach": "Harnverhalt", "simple": "Sie können nicht Wasser lassen" },
-      { "re": "harnwegsinfekt", "fach": "Harnwegsinfekt", "simple": "Blasenentzündung" },
-      { "re": "lokalanästhe", "fach": "Lokalanästhetikum", "simple": "Betäubungsgel" }
+      {
+        "re": "urethra",
+        "fach": "Urethra",
+        "simple": "Harnröhre"
+      },
+      {
+        "re": "harnverhalt",
+        "fach": "Harnverhalt",
+        "simple": "Sie können nicht Wasser lassen"
+      },
+      {
+        "re": "harnwegsinfekt",
+        "fach": "Harnwegsinfekt",
+        "simple": "Blasenentzündung"
+      },
+      {
+        "re": "lokalanästhe",
+        "fach": "Lokalanästhetikum",
+        "simple": "Betäubungsgel"
+      }
     ],
     "sample": "Ihre Blase ist sehr voll, und der Urin kann nicht von allein ablaufen. Damit der Urin abfließen kann, legen wir einen dünnen, weichen Schlauch über die Harnröhre in die Blase. Vorher desinfizieren wir alles, damit es steril ist, und geben ein Gel mit Betäubung in die Harnröhre. Das ist etwas unangenehm, tut aber kaum weh. Ein kleiner Ballon hält den Schlauch in der Blase, damit er nicht herausrutscht. Das Ganze dauert nur wenige Minuten. Das Risiko ist gering; selten kann eine Infektion oder eine kleine Verletzung entstehen. Haben Sie noch Fragen? Sind Sie einverstanden?"
   }

@@ -18,9 +18,12 @@ function FlipCard({ p: e, known: t, onToggle: a }) {
             t && "border-emerald-300 dark:border-emerald-900",
           )}
           onClick={() => i(true)}
-          aria-label={`${e.fach} — ${tr("aylantirish", "перевернуть")}`}
+          aria-label={`${e.fach} — ${tr("aylantirish", "перевернуть", "çevir")}`}
         >
-          <span className="text-[11px] font-semibold uppercase tracking-wider text-teal-600 dark:text-teal-400">
+          <span
+            lang="de"
+            className="text-[11px] font-semibold uppercase tracking-wider text-teal-600 dark:text-teal-400"
+          >
             Fachsprache
           </span>
           <span className="mt-2 flex items-center gap-1 text-2xl font-bold text-slate-900 dark:text-white">
@@ -28,11 +31,14 @@ function FlipCard({ p: e, known: t, onToggle: a }) {
             <Speak text={e.fach} />
           </span>
           <span className="mt-2 text-xs muted">{e.fachSatz}</span>
-          <span className="mt-4 text-xs muted">{tr("Bosing", "Нажмите")} → Patientensprache</span>
+          <span className="mt-4 text-xs muted">{tr("Bosing", "Нажмите", "Basın")} → Patientensprache</span>
         </button>
         <div className="flip-face flip-back card absolute inset-0 flex flex-col justify-between bg-teal-50 dark:bg-teal-950/40">
           <div>
-            <span className="text-[11px] font-semibold uppercase tracking-wider text-teal-700 dark:text-teal-300">
+            <span
+              lang="de"
+              className="text-[11px] font-semibold uppercase tracking-wider text-teal-700 dark:text-teal-300"
+            >
               Patientensprache
             </span>
             <p className="mt-1 flex items-center gap-1 text-lg font-semibold">
@@ -50,10 +56,10 @@ function FlipCard({ p: e, known: t, onToggle: a }) {
           </div>
           <div className="flex gap-2">
             <button className="btn-ghost flex-1 text-xs" onClick={() => i(false)}>
-              ↺ {tr("Orqaga", "Назад")}
+              ↺ {tr("Orqaga", "Назад", "Geri")}
             </button>
             <button className={cx("flex-1", t ? "chip-on" : "chip-off")} onClick={a}>
-              {t ? tr("✓ Bilaman", "✓ Знаю") : tr("Bilaman", "Знаю")}
+              {t ? tr("✓ Bilaman", "✓ Знаю", "✓ Biliyorum") : tr("Bilaman", "Знаю", "Biliyorum")}
             </button>
           </div>
         </div>
@@ -89,7 +95,11 @@ function PairQuiz() {
     <div className="card mx-auto max-w-xl">
       <div className="flex items-center justify-between text-sm">
         <span className="muted">
-          {tr("Fachbegriff’ni bemor tiliga o‘giring", "Переведите Fachbegriff на язык пациента")}
+          {tr(
+            "Fachbegriff’ni bemor tiliga o‘giring",
+            "Переведите Fachbegriff на язык пациента",
+            "Fachbegriff’i hasta diline çevirin",
+          )}
         </span>
         <span className="font-semibold tabular-nums">
           {l.right}/{l.total}
@@ -123,8 +133,8 @@ function PairQuiz() {
         <div className="mt-5 flex items-center justify-between gap-3">
           <p className="text-sm">
             {n === t.correct.id
-              ? tr("✅ To‘g‘ri!", "✅ Верно!")
-              : `❌ ${tr("To‘g‘ri javob", "Правильный ответ")}: ${t.correct.patient}`}{" "}
+              ? tr("✅ To‘g‘ri!", "✅ Верно!", "✅ Doğru!")
+              : `❌ ${tr("To‘g‘ri javob", "Правильный ответ", "Doğru cevap")}: ${t.correct.patient}`}{" "}
             <span className="muted">
               {"· "}
               {loc(t.correct)}
@@ -136,7 +146,7 @@ function PairQuiz() {
               (a(e()), i(null));
             }}
           >
-            {tr("Keyingi →", "Дальше →")}
+            {tr("Keyingi →", "Дальше →", "Sonraki →")}
           </button>
         </div>
       )}
@@ -152,14 +162,19 @@ export function FachsprachePage() {
     <div className="page">
       <PageHeader
         eyebrow="Fachsprache → Patientensprache"
-        title={tr("Ikki tilda gapirishni o‘rganing", "Учитесь говорить на двух регистрах")}
+        title={tr(
+          "Ikki tilda gapirishni o‘rganing",
+          "Учитесь говорить на двух регистрах",
+          "İki dil düzeyinde konuşmayı öğrenin",
+        )}
         subtitle={tr(
           "FSP’da bemor bilan sodda tilda, hamkasb bilan Fachsprache’da gaplashish kerak. Kartochkani bosib aylantiring.",
           "На FSP с пациентом нужно говорить простым языком, а с коллегой — на Fachsprache. Нажмите на карточку, чтобы перевернуть её.",
+          "FSP’de hastayla sade bir dille, meslektaşla Fachsprache ile konuşmanız gerekir. Kartı çevirmek için üzerine basın.",
         )}
       >
         <button className={a === "cards" ? "chip-on" : "chip-off"} onClick={() => n("cards")}>
-          🗂 {tr("Kartochkalar", "Карточки")}
+          🗂 {tr("Kartochkalar", "Карточки", "Kartlar")}
         </button>
         <button className={a === "quiz" ? "chip-on" : "chip-off"} onClick={() => n("quiz")}>
           🎯 Test
@@ -171,7 +186,7 @@ export function FachsprachePage() {
           <div className="card mb-5">
             <div className="mb-2 flex justify-between text-sm">
               <span>
-                {tr("Bilaman: ", "Знаю: ")}
+                {tr("Bilaman: ", "Знаю: ", "Biliyorum: ")}
                 <b>{i}</b>
                 {" / "}
                 {pairs.length}

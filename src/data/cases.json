@@ -41,31 +41,36 @@
         "de": "Thoraxschmerzen",
         "patient": "Brustschmerzen",
         "uz": "ko‘krak qafasidagi og‘riq",
-        "ru": "боль в грудной клетке"
+        "ru": "боль в грудной клетке",
+        "tr": "göğüs ağrısı"
       },
       {
         "de": "retrosternal",
         "patient": "hinter dem Brustbein",
         "uz": "to‘sh suyagi orqasida",
-        "ru": "за грудиной"
+        "ru": "за грудиной",
+        "tr": "göğüs kemiğinin arkasında"
       },
       {
         "de": "Nausea",
         "patient": "Übelkeit",
         "uz": "ko‘ngil aynishi",
-        "ru": "тошнота"
+        "ru": "тошнота",
+        "tr": "bulantı"
       },
       {
         "de": "Diaphorese",
         "patient": "starkes Schwitzen",
         "uz": "kuchli terlash",
-        "ru": "обильное потоотделение"
+        "ru": "обильное потоотделение",
+        "tr": "aşırı terleme"
       },
       {
         "de": "Myokardinfarkt",
         "patient": "Herzinfarkt",
         "uz": "miokard infarkti",
-        "ru": "инфаркт миокарда"
+        "ru": "инфаркт миокарда",
+        "tr": "miyokard enfarktüsü"
       }
     ],
     "simulation": {
@@ -86,27 +91,9 @@
       }
     },
     "verdachtsdiagnose": "Akutes Koronarsyndrom (V. a. Myokardinfarkt)",
-    "diagnoseKeywords": [
-      "koronarsyndrom",
-      "myokardinfarkt",
-      "herzinfarkt",
-      "stemi",
-      "acs",
-      "infarkt"
-    ],
-    "differenzialdiagnosen": [
-      "Lungenembolie",
-      "Aortendissektion",
-      "Perikarditis",
-      "Pneumothorax"
-    ],
-    "untersuchungen": [
-      "EKG",
-      "Troponin",
-      "Echo (Echokardiographie)",
-      "Koronarangiographie",
-      "Blutbild"
-    ]
+    "diagnoseKeywords": ["koronarsyndrom", "myokardinfarkt", "herzinfarkt", "stemi", "acs", "infarkt"],
+    "differenzialdiagnosen": ["Lungenembolie", "Aortendissektion", "Perikarditis", "Pneumothorax"],
+    "untersuchungen": ["EKG", "Troponin", "Echo (Echokardiographie)", "Koronarangiographie", "Blutbild"]
   },
   {
     "id": "c2",
@@ -146,31 +133,36 @@
         "de": "Pneumonie",
         "patient": "Lungenentzündung",
         "uz": "zotiljam (pnevmoniya)",
-        "ru": "пневмония"
+        "ru": "пневмония",
+        "tr": "zatürre (pnömoni)"
       },
       {
         "de": "Auswurf (Sputum)",
         "patient": "Schleim abhusten",
         "uz": "balg‘am",
-        "ru": "мокрота"
+        "ru": "мокрота",
+        "tr": "balgam"
       },
       {
         "de": "Belastungsdyspnoe",
         "patient": "Atemnot bei Anstrengung",
         "uz": "jismoniy zo‘riqishda nafas qisishi",
-        "ru": "одышка при нагрузке"
+        "ru": "одышка при нагрузке",
+        "tr": "eforla nefes darlığı"
       },
       {
         "de": "Schüttelfrost",
         "patient": "Zittern vor Kälte bei Fieber",
         "uz": "et uvishib qaltirash",
-        "ru": "озноб"
+        "ru": "озноб",
+        "tr": "titreme (üşüme ile)"
       },
       {
         "de": "Hämoptysen",
         "patient": "Blut abhusten",
         "uz": "qon tupurish",
-        "ru": "кровохарканье"
+        "ru": "кровохарканье",
+        "tr": "kan tükürme"
       }
     ],
     "simulation": {
@@ -191,23 +183,9 @@
       }
     },
     "verdachtsdiagnose": "Ambulant erworbene Pneumonie (rechts)",
-    "diagnoseKeywords": [
-      "pneumonie",
-      "lungenentzündung"
-    ],
-    "differenzialdiagnosen": [
-      "COPD-Exazerbation",
-      "Lungenembolie",
-      "Bronchialkarzinom",
-      "Herzinsuffizienz"
-    ],
-    "untersuchungen": [
-      "Röntgen-Thorax",
-      "CRP",
-      "Blutbild",
-      "BGA (Blutgasanalyse)",
-      "Blutkultur"
-    ]
+    "diagnoseKeywords": ["pneumonie", "lungenentzündung"],
+    "differenzialdiagnosen": ["COPD-Exazerbation", "Lungenembolie", "Bronchialkarzinom", "Herzinsuffizienz"],
+    "untersuchungen": ["Röntgen-Thorax", "CRP", "Blutbild", "BGA (Blutgasanalyse)", "Blutkultur"]
   },
   {
     "id": "c3",
@@ -247,31 +225,36 @@
         "de": "Cholezystitis",
         "patient": "Gallenblasenentzündung",
         "uz": "xoletsistit (o‘t pufagi yallig‘lanishi)",
-        "ru": "холецистит (воспаление желчного пузыря)"
+        "ru": "холецистит (воспаление желчного пузыря)",
+        "tr": "kolesistit (safra kesesi iltihabı)"
       },
       {
         "de": "Cholezystolithiasis",
         "patient": "Gallensteine",
         "uz": "o‘t pufagida tosh",
-        "ru": "камни в желчном пузыре"
+        "ru": "камни в желчном пузыре",
+        "tr": "safra kesesi taşı"
       },
       {
         "de": "kolikartig",
         "patient": "krampfartig, in Wellen",
         "uz": "sanchiqsimon, to‘lqinsimon",
-        "ru": "коликообразный, волнообразный"
+        "ru": "коликообразный, волнообразный",
+        "tr": "kolik tarzında, dalga dalga"
       },
       {
         "de": "Emesis",
         "patient": "Erbrechen",
         "uz": "qusish",
-        "ru": "рвота"
+        "ru": "рвота",
+        "tr": "kusma"
       },
       {
         "de": "Ikterus",
         "patient": "Gelbsucht",
         "uz": "sariqlik",
-        "ru": "желтуха"
+        "ru": "желтуха",
+        "tr": "sarılık"
       }
     ],
     "simulation": {
@@ -292,23 +275,9 @@
       }
     },
     "verdachtsdiagnose": "Akute Cholezystitis bei Cholezystolithiasis",
-    "diagnoseKeywords": [
-      "cholezystitis",
-      "gallenblasenentzündung"
-    ],
-    "differenzialdiagnosen": [
-      "Choledocholithiasis",
-      "Pankreatitis",
-      "Ulkus (Ulcus duodeni)",
-      "Hepatitis"
-    ],
-    "untersuchungen": [
-      "Sonographie",
-      "Lipase",
-      "Transaminasen",
-      "Bilirubin",
-      "CRP"
-    ]
+    "diagnoseKeywords": ["cholezystitis", "gallenblasenentzündung"],
+    "differenzialdiagnosen": ["Choledocholithiasis", "Pankreatitis", "Ulkus (Ulcus duodeni)", "Hepatitis"],
+    "untersuchungen": ["Sonographie", "Lipase", "Transaminasen", "Bilirubin", "CRP"]
   },
   {
     "id": "c4",
@@ -348,31 +317,36 @@
         "de": "Hemiparese",
         "patient": "Halbseitenlähmung, Schwäche auf einer Seite",
         "uz": "bir tomonlama falajlik (gemiparez)",
-        "ru": "односторонний парез (гемипарез)"
+        "ru": "односторонний парез (гемипарез)",
+        "tr": "tek taraflı felç (hemiparezi)"
       },
       {
         "de": "Dysarthrie",
         "patient": "verwaschene Sprache",
         "uz": "nutqning noaniqligi (dizartriya)",
-        "ru": "нечёткая речь (дизартрия)"
+        "ru": "нечёткая речь (дизартрия)",
+        "tr": "konuşmanın netleşmemesi (dizartri)"
       },
       {
         "de": "Apoplex",
         "patient": "Schlaganfall",
         "uz": "insult",
-        "ru": "инсульт"
+        "ru": "инсульт",
+        "tr": "inme"
       },
       {
         "de": "Vorhofflimmern",
         "patient": "unregelmäßiger Herzschlag",
         "uz": "bo‘lmachalar fibrillyatsiyasi",
-        "ru": "фибрилляция предсердий"
+        "ru": "фибрилляция предсердий",
+        "tr": "atriyal fibrilasyon"
       },
       {
         "de": "Antikoagulation",
         "patient": "Blutverdünnung",
         "uz": "qonni suyultirish (antikoagulyatsiya)",
-        "ru": "антикоагуляция (разжижение крови)"
+        "ru": "антикоагуляция (разжижение крови)",
+        "tr": "kan sulandırma (antikoagülasyon)"
       }
     ],
     "simulation": {
@@ -393,26 +367,9 @@
       }
     },
     "verdachtsdiagnose": "Akuter ischämischer Schlaganfall (Apoplex) links, kardioembolisch bei Vorhofflimmern",
-    "diagnoseKeywords": [
-      "schlaganfall",
-      "apoplex",
-      "insult",
-      "ischäm",
-      "hirninfarkt"
-    ],
-    "differenzialdiagnosen": [
-      "Hirnblutung (intrazerebrale Blutung)",
-      "TIA",
-      "Hypoglykämie",
-      "Todd-Parese"
-    ],
-    "untersuchungen": [
-      "CT (cCT, CT-Angiographie)",
-      "Blutzucker",
-      "Gerinnung",
-      "EKG",
-      "MRT"
-    ]
+    "diagnoseKeywords": ["schlaganfall", "apoplex", "insult", "ischäm", "hirninfarkt"],
+    "differenzialdiagnosen": ["Hirnblutung (intrazerebrale Blutung)", "TIA", "Hypoglykämie", "Todd-Parese"],
+    "untersuchungen": ["CT (cCT, CT-Angiographie)", "Blutzucker", "Gerinnung", "EKG", "MRT"]
   },
   {
     "id": "c5",
@@ -452,31 +409,36 @@
         "de": "Pyelonephritis",
         "patient": "Nierenbeckenentzündung",
         "uz": "pielonefrit",
-        "ru": "пиелонефрит"
+        "ru": "пиелонефрит",
+        "tr": "piyelonefrit"
       },
       {
         "de": "Dysurie",
         "patient": "Brennen beim Wasserlassen",
         "uz": "siyishda achishish",
-        "ru": "жжение при мочеиспускании"
+        "ru": "жжение при мочеиспускании",
+        "tr": "idrar yaparken yanma"
       },
       {
         "de": "Pollakisurie",
         "patient": "häufiges Wasserlassen kleiner Mengen",
         "uz": "tez-tez oz-ozdan siyish",
-        "ru": "учащённое мочеиспускание малыми порциями"
+        "ru": "учащённое мочеиспускание малыми порциями",
+        "tr": "sık sık az miktarda idrar yapma"
       },
       {
         "de": "Flankenschmerz",
         "patient": "Schmerzen an der Seite",
         "uz": "biqindagi og‘riq",
-        "ru": "боль в боку"
+        "ru": "боль в боку",
+        "tr": "böğür ağrısı"
       },
       {
         "de": "Nierenlagerklopfschmerz",
         "patient": "Schmerz beim Abklopfen der Niere",
         "uz": "buyrak sohasini urganda og‘riq",
-        "ru": "боль при поколачивании в области почек"
+        "ru": "боль при поколачивании в области почек",
+        "tr": "böbrek bölgesine vurmakla ağrı"
       }
     ],
     "simulation": {
@@ -497,23 +459,9 @@
       }
     },
     "verdachtsdiagnose": "Akute Pyelonephritis links",
-    "diagnoseKeywords": [
-      "pyelonephritis",
-      "nierenbeckenentzündung"
-    ],
-    "differenzialdiagnosen": [
-      "Nephrolithiasis",
-      "Zystitis",
-      "Adnexitis",
-      "Appendizitis"
-    ],
-    "untersuchungen": [
-      "Urinstatus",
-      "Urinkultur",
-      "Sonographie",
-      "Kreatinin",
-      "CRP"
-    ]
+    "diagnoseKeywords": ["pyelonephritis", "nierenbeckenentzündung"],
+    "differenzialdiagnosen": ["Nephrolithiasis", "Zystitis", "Adnexitis", "Appendizitis"],
+    "untersuchungen": ["Urinstatus", "Urinkultur", "Sonographie", "Kreatinin", "CRP"]
   },
   {
     "id": "c6",
@@ -553,31 +501,36 @@
         "de": "Polydipsie",
         "patient": "großer Durst",
         "uz": "kuchli chanqoq",
-        "ru": "сильная жажда"
+        "ru": "сильная жажда",
+        "tr": "aşırı susama"
       },
       {
         "de": "Polyurie",
         "patient": "viel Wasserlassen",
         "uz": "ko‘p siyish",
-        "ru": "обильное мочеиспускание"
+        "ru": "обильное мочеиспускание",
+        "tr": "çok idrar yapma"
       },
       {
         "de": "Nykturie",
         "patient": "nachts Wasser lassen müssen",
         "uz": "tunda siyish",
-        "ru": "ночное мочеиспускание"
+        "ru": "ночное мочеиспускание",
+        "tr": "gece idrara çıkma"
       },
       {
         "de": "Parästhesien",
         "patient": "Kribbeln, Ameisenlaufen",
         "uz": "uvishish",
-        "ru": "онемение, покалывание"
+        "ru": "онемение, покалывание",
+        "tr": "uyuşma, karıncalanma"
       },
       {
         "de": "Hyperglykämie",
         "patient": "zu hoher Zucker",
         "uz": "giperglikemiya (qand miqdori yuqori)",
-        "ru": "гипергликемия (высокий сахар)"
+        "ru": "гипергликемия (высокий сахар)",
+        "tr": "hiperglisemi (yüksek kan şekeri)"
       }
     ],
     "simulation": {
@@ -598,24 +551,14 @@
       }
     },
     "verdachtsdiagnose": "Diabetes mellitus Typ 2 (Erstdiagnose) mit symptomatischer Hyperglykämie",
-    "diagnoseKeywords": [
-      "diabetes",
-      "hyperglyk",
-      "zuckerkrankheit"
-    ],
+    "diagnoseKeywords": ["diabetes", "hyperglyk", "zuckerkrankheit"],
     "differenzialdiagnosen": [
       "LADA (Typ-1-Diabetes)",
       "Insipidus (Diabetes insipidus)",
       "Hyperkalzämie",
       "Hyperthyreose"
     ],
-    "untersuchungen": [
-      "HbA1c",
-      "Blutzucker",
-      "Urinstatus",
-      "Kreatinin",
-      "Lipidprofil"
-    ]
+    "untersuchungen": ["HbA1c", "Blutzucker", "Urinstatus", "Kreatinin", "Lipidprofil"]
   },
   {
     "id": "c7",
@@ -655,31 +598,36 @@
         "de": "Appendizitis",
         "patient": "Blinddarmentzündung",
         "uz": "appenditsit",
-        "ru": "аппендицит"
+        "ru": "аппендицит",
+        "tr": "apandisit"
       },
       {
         "de": "periumbilikal",
         "patient": "um den Bauchnabel herum",
         "uz": "kindik atrofida",
-        "ru": "в области пупка"
+        "ru": "в области пупка",
+        "tr": "göbek çevresinde"
       },
       {
         "de": "Inappetenz",
         "patient": "keinen Appetit",
         "uz": "ishtahasizlik",
-        "ru": "отсутствие аппетита"
+        "ru": "отсутствие аппетита",
+        "tr": "iştahsızlık"
       },
       {
         "de": "Loslassschmerz",
         "patient": "Schmerz, wenn man loslässt",
         "uz": "qo‘lni tez olganda og‘riq (Blumberg)",
-        "ru": "боль при резком отпускании (Щёткин–Блюмберг)"
+        "ru": "боль при резком отпускании (Щёткин–Блюмберг)",
+        "tr": "elin aniden çekilmesiyle ağrı (Blumberg)"
       },
       {
         "de": "Appendektomie",
         "patient": "Blinddarm-OP",
         "uz": "appendektomiya",
-        "ru": "аппендэктомия"
+        "ru": "аппендэктомия",
+        "tr": "apendektomi"
       }
     ],
     "simulation": {
@@ -700,23 +648,14 @@
       }
     },
     "verdachtsdiagnose": "Akute Appendizitis",
-    "diagnoseKeywords": [
-      "appendizitis",
-      "blinddarm"
-    ],
+    "diagnoseKeywords": ["appendizitis", "blinddarm"],
     "differenzialdiagnosen": [
       "Gastroenteritis",
       "Ileitis (Morbus Crohn)",
       "Nephrolithiasis",
       "Meckel-Divertikulitis"
     ],
-    "untersuchungen": [
-      "Sonographie",
-      "Blutbild",
-      "CRP",
-      "Urinstatus",
-      "Palpation"
-    ]
+    "untersuchungen": ["Sonographie", "Blutbild", "CRP", "Urinstatus", "Palpation"]
   },
   {
     "id": "c8",
@@ -756,31 +695,36 @@
         "de": "Cephalgie",
         "patient": "Kopfschmerzen",
         "uz": "bosh og‘rig‘i",
-        "ru": "головная боль"
+        "ru": "головная боль",
+        "tr": "baş ağrısı"
       },
       {
         "de": "okzipital",
         "patient": "am Hinterkopf",
         "uz": "ensa sohasida",
-        "ru": "в затылочной области"
+        "ru": "в затылочной области",
+        "tr": "ense bölgesinde"
       },
       {
         "de": "Schwankschwindel",
         "patient": "Schwindel wie auf einem Schiff",
         "uz": "chayqaluvchi bosh aylanishi",
-        "ru": "шаткое головокружение"
+        "ru": "шаткое головокружение",
+        "tr": "sallantılı baş dönmesi"
       },
       {
         "de": "Tinnitus",
         "patient": "Ohrensausen",
         "uz": "quloq shang‘illashi",
-        "ru": "шум в ушах"
+        "ru": "шум в ушах",
+        "tr": "kulak çınlaması"
       },
       {
         "de": "arterielle Hypertonie",
         "patient": "Bluthochdruck",
         "uz": "arterial gipertenziya",
-        "ru": "артериальная гипертензия"
+        "ru": "артериальная гипертензия",
+        "tr": "arteriyel hipertansiyon"
       }
     ],
     "simulation": {
@@ -801,24 +745,14 @@
       }
     },
     "verdachtsdiagnose": "Arterielle Hypertonie (Erstdiagnose), symptomatisch mit Cephalgien und Schwindel",
-    "diagnoseKeywords": [
-      "hypertonie",
-      "bluthochdruck",
-      "hypertensiv"
-    ],
+    "diagnoseKeywords": ["hypertonie", "bluthochdruck", "hypertensiv"],
     "differenzialdiagnosen": [
       "Sekundäre Hypertonie",
       "Spannungskopfschmerz",
       "Migräne",
       "Raumforderung (intrakraniell)"
     ],
-    "untersuchungen": [
-      "Langzeit-Blutdruckmessung",
-      "EKG",
-      "Kreatinin",
-      "Urinstatus",
-      "Fundoskopie"
-    ]
+    "untersuchungen": ["Langzeit-Blutdruckmessung", "EKG", "Kreatinin", "Urinstatus", "Fundoskopie"]
   },
   {
     "id": "c9",
@@ -858,31 +792,36 @@
         "de": "Thrombose",
         "patient": "Blutgerinnsel",
         "uz": "tromboz (qon laxtasi)",
-        "ru": "тромбоз (сгусток крови)"
+        "ru": "тромбоз (сгусток крови)",
+        "tr": "tromboz (kan pıhtısı)"
       },
       {
         "de": "Ödem",
         "patient": "Schwellung, Wassereinlagerung",
         "uz": "shish",
-        "ru": "отёк"
+        "ru": "отёк",
+        "tr": "ödem (şişlik)"
       },
       {
         "de": "Varikosis",
         "patient": "Krampfadern",
         "uz": "varikoz (venalarning kengayishi)",
-        "ru": "варикоз (расширение вен)"
+        "ru": "варикоз (расширение вен)",
+        "tr": "varis (toplardamarların genişlemesi)"
       },
       {
         "de": "Lungenembolie",
         "patient": "Blutgerinnsel in der Lunge",
         "uz": "o‘pka emboliyasi",
-        "ru": "тромбоэмболия лёгочной артерии"
+        "ru": "тромбоэмболия лёгочной артерии",
+        "tr": "pulmoner emboli"
       },
       {
         "de": "Antikoagulation",
         "patient": "Blutverdünnung",
         "uz": "antikoagulyatsiya",
-        "ru": "антикоагуляция"
+        "ru": "антикоагуляция",
+        "tr": "antikoagülasyon"
       }
     ],
     "simulation": {
@@ -903,25 +842,9 @@
       }
     },
     "verdachtsdiagnose": "Tiefe Beinvenenthrombose links",
-    "diagnoseKeywords": [
-      "thrombose",
-      "tvt",
-      "venenthrombose",
-      "phlebothrombose"
-    ],
-    "differenzialdiagnosen": [
-      "Erysipel",
-      "Baker-Zyste",
-      "Muskelfaserriss",
-      "Lymphödem"
-    ],
-    "untersuchungen": [
-      "Kompressionssonographie",
-      "D-Dimere",
-      "Wells-Score",
-      "Blutbild",
-      "Gerinnung"
-    ]
+    "diagnoseKeywords": ["thrombose", "tvt", "venenthrombose", "phlebothrombose"],
+    "differenzialdiagnosen": ["Erysipel", "Baker-Zyste", "Muskelfaserriss", "Lymphödem"],
+    "untersuchungen": ["Kompressionssonographie", "D-Dimere", "Wells-Score", "Blutbild", "Gerinnung"]
   },
   {
     "id": "c10",
@@ -961,31 +884,36 @@
         "de": "Herzinsuffizienz",
         "patient": "Herzschwäche",
         "uz": "yurak yetishmovchiligi",
-        "ru": "сердечная недостаточность"
+        "ru": "сердечная недостаточность",
+        "tr": "kalp yetmezliği"
       },
       {
         "de": "Orthopnoe",
         "patient": "Atemnot im Liegen",
         "uz": "yotganda nafas qisishi (ortopnoe)",
-        "ru": "одышка в положении лёжа (ортопноэ)"
+        "ru": "одышка в положении лёжа (ортопноэ)",
+        "tr": "yatınca nefes darlığı (ortopne)"
       },
       {
         "de": "Unterschenkelödeme",
         "patient": "geschwollene Beine",
         "uz": "boldir shishlari",
-        "ru": "отёки голеней"
+        "ru": "отёки голеней",
+        "tr": "bacaklarda ödem"
       },
       {
         "de": "Diuretikum",
         "patient": "Wassertablette",
         "uz": "siydik haydovchi dori",
-        "ru": "мочегонное"
+        "ru": "мочегонное",
+        "tr": "idrar söktürücü ilaç"
       },
       {
         "de": "Nykturie",
         "patient": "nachts Wasser lassen müssen",
         "uz": "tunda siyish",
-        "ru": "ночное мочеиспускание"
+        "ru": "ночное мочеиспускание",
+        "tr": "gece idrara çıkma"
       }
     ],
     "simulation": {
@@ -1006,24 +934,14 @@
       }
     },
     "verdachtsdiagnose": "Akut dekompensierte Herzinsuffizienz (bei Pausieren des Diuretikums)",
-    "diagnoseKeywords": [
-      "herzinsuffizienz",
-      "herzschwäche",
-      "dekompens"
-    ],
+    "diagnoseKeywords": ["herzinsuffizienz", "herzschwäche", "dekompens"],
     "differenzialdiagnosen": [
       "Pneumonie",
       "Lungenembolie",
       "ACS (akutes Koronarsyndrom)",
       "Niereninsuffizienz"
     ],
-    "untersuchungen": [
-      "NT-proBNP",
-      "Echo (Echokardiographie)",
-      "Röntgen-Thorax",
-      "EKG",
-      "Kreatinin"
-    ]
+    "untersuchungen": ["NT-proBNP", "Echo (Echokardiographie)", "Röntgen-Thorax", "EKG", "Kreatinin"]
   },
   {
     "id": "c11",
@@ -1067,31 +985,36 @@
         "de": "Lungenembolie",
         "patient": "Blutgerinnsel in der Lunge",
         "uz": "o‘pka arteriyasi emboliyasi",
-        "ru": "тромбоэмболия лёгочной артерии"
+        "ru": "тромбоэмболия лёгочной артерии",
+        "tr": "pulmoner arter embolisi"
       },
       {
         "de": "Hämoptyse",
         "patient": "Bluthusten",
         "uz": "qon tupurish",
-        "ru": "кровохарканье"
+        "ru": "кровохарканье",
+        "tr": "kan tükürme"
       },
       {
         "de": "Tachykardie",
         "patient": "Herzrasen",
         "uz": "yurak urishining tezlashishi",
-        "ru": "тахикардия"
+        "ru": "тахикардия",
+        "tr": "kalp atışının hızlanması"
       },
       {
         "de": "atemabhängig",
         "patient": "beim Atmen stärker",
         "uz": "nafas bilan bog‘liq",
-        "ru": "связанный с дыханием"
+        "ru": "связанный с дыханием",
+        "tr": "solunumla ilişkili"
       },
       {
         "de": "Antikoagulation",
         "patient": "Blutverdünnung",
         "uz": "qon ivishiga qarshi davo",
-        "ru": "антикоагулянтная терапия"
+        "ru": "антикоагулянтная терапия",
+        "tr": "pıhtılaşmayı önleyici tedavi"
       }
     ],
     "simulation": {
@@ -1112,25 +1035,9 @@
       }
     },
     "verdachtsdiagnose": "Lungenembolie bei V. a. tiefe Beinvenenthrombose links",
-    "diagnoseKeywords": [
-      "lungenembolie",
-      "lungenarterienembolie",
-      "embolie",
-      "lae"
-    ],
-    "differenzialdiagnosen": [
-      "Pneumothorax",
-      "Pneumonie",
-      "Akutes Koronarsyndrom",
-      "Pleuritis"
-    ],
-    "untersuchungen": [
-      "D-Dimere",
-      "CT-Angiographie",
-      "EKG",
-      "Blutgasanalyse",
-      "Kompressionssonographie"
-    ]
+    "diagnoseKeywords": ["lungenembolie", "lungenarterienembolie", "embolie", "lae"],
+    "differenzialdiagnosen": ["Pneumothorax", "Pneumonie", "Akutes Koronarsyndrom", "Pleuritis"],
+    "untersuchungen": ["D-Dimere", "CT-Angiographie", "EKG", "Blutgasanalyse", "Kompressionssonographie"]
   },
   {
     "id": "c12",
@@ -1170,31 +1077,36 @@
         "de": "Exazerbation",
         "patient": "Verschlechterung",
         "uz": "kasallikning kuchayishi",
-        "ru": "обострение"
+        "ru": "обострение",
+        "tr": "hastalığın alevlenmesi"
       },
       {
         "de": "Sputum",
         "patient": "Auswurf / Schleim",
         "uz": "balg‘am",
-        "ru": "мокрота"
+        "ru": "мокрота",
+        "tr": "balgam"
       },
       {
         "de": "Giemen",
         "patient": "Pfeifen beim Atmen",
         "uz": "xirillash (hushtaksimon)",
-        "ru": "свистящие хрипы"
+        "ru": "свистящие хрипы",
+        "tr": "hışıltı (ıslık sesi gibi)"
       },
       {
         "de": "Ruhedyspnoe",
         "patient": "Atemnot auch in Ruhe",
         "uz": "tinch holatdagi hansirash",
-        "ru": "одышка в покое"
+        "ru": "одышка в покое",
+        "tr": "istirahatte nefes darlığı"
       },
       {
         "de": "subfebril",
         "patient": "leicht erhöhte Temperatur",
         "uz": "subfebril (biroz ko‘tarilgan) harorat",
-        "ru": "субфебрильная температура"
+        "ru": "субфебрильная температура",
+        "tr": "subfebril (hafif yükselmiş) ateş"
       }
     ],
     "simulation": {
@@ -1215,25 +1127,9 @@
       }
     },
     "verdachtsdiagnose": "Infektexazerbierte COPD (AECOPD)",
-    "diagnoseKeywords": [
-      "copd",
-      "exazerbation",
-      "aecopd",
-      "bronchitis"
-    ],
-    "differenzialdiagnosen": [
-      "Pneumonie",
-      "Herzinsuffizienz",
-      "Lungenembolie",
-      "Asthma bronchiale"
-    ],
-    "untersuchungen": [
-      "Blutgasanalyse",
-      "Röntgen-Thorax",
-      "CRP",
-      "Blutbild",
-      "Sputumkultur"
-    ]
+    "diagnoseKeywords": ["copd", "exazerbation", "aecopd", "bronchitis"],
+    "differenzialdiagnosen": ["Pneumonie", "Herzinsuffizienz", "Lungenembolie", "Asthma bronchiale"],
+    "untersuchungen": ["Blutgasanalyse", "Röntgen-Thorax", "CRP", "Blutbild", "Sputumkultur"]
   },
   {
     "id": "c13",
@@ -1273,31 +1169,36 @@
         "de": "Vorhofflimmern",
         "patient": "unregelmäßiger Herzschlag",
         "uz": "bo‘lmachalar fibrillyatsiyasi",
-        "ru": "фибрилляция предсердий"
+        "ru": "фибрилляция предсердий",
+        "tr": "atriyal fibrilasyon"
       },
       {
         "de": "Palpitationen",
         "patient": "Herzklopfen / Herzstolpern",
         "uz": "yurak o‘ynashi",
-        "ru": "сердцебиение, перебои"
+        "ru": "сердцебиение, перебои",
+        "tr": "çarpıntı"
       },
       {
         "de": "Synkope",
         "patient": "Ohnmacht",
         "uz": "hushdan ketish",
-        "ru": "обморок"
+        "ru": "обморок",
+        "tr": "bayılma"
       },
       {
         "de": "Arrhythmie",
         "patient": "Herzrhythmusstörung",
         "uz": "yurak ritmining buzilishi",
-        "ru": "нарушение сердечного ритма"
+        "ru": "нарушение сердечного ритма",
+        "tr": "kalp ritim bozukluğu"
       },
       {
         "de": "Antikoagulation",
         "patient": "Blutverdünnung",
         "uz": "qon ivishiga qarshi davo",
-        "ru": "антикоагулянтная терапия"
+        "ru": "антикоагулянтная терапия",
+        "tr": "pıhtılaşmayı önleyici tedavi"
       }
     ],
     "simulation": {
@@ -1318,25 +1219,14 @@
       }
     },
     "verdachtsdiagnose": "Tachykardes Vorhofflimmern (Erstdiagnose)",
-    "diagnoseKeywords": [
-      "vorhofflimmern",
-      "absolute arrhythmie",
-      "tachyarrhythmie",
-      "vhf"
-    ],
+    "diagnoseKeywords": ["vorhofflimmern", "absolute arrhythmie", "tachyarrhythmie", "vhf"],
     "differenzialdiagnosen": [
       "Vorhofflattern",
       "Hyperthyreose",
       "Supraventrikuläre Tachykardie",
       "Akutes Koronarsyndrom"
     ],
-    "untersuchungen": [
-      "EKG",
-      "TSH",
-      "Elektrolyte",
-      "Echo (Echokardiographie)",
-      "Langzeit-EKG"
-    ]
+    "untersuchungen": ["EKG", "TSH", "Elektrolyte", "Echo (Echokardiographie)", "Langzeit-EKG"]
   },
   {
     "id": "c14",
@@ -1376,31 +1266,36 @@
         "de": "Pankreatitis",
         "patient": "Entzündung der Bauchspeicheldrüse",
         "uz": "pankreatit (oshqozon osti bezi yallig‘lanishi)",
-        "ru": "панкреатит (воспаление поджелудочной железы)"
+        "ru": "панкреатит (воспаление поджелудочной железы)",
+        "tr": "pankreatit (pankreas iltihabı)"
       },
       {
         "de": "Epigastrium",
         "patient": "Oberbauch / Magengegend",
         "uz": "epigastriy (qorin yuqori qismi)",
-        "ru": "эпигастрий (верхняя часть живота)"
+        "ru": "эпигастрий (верхняя часть живота)",
+        "tr": "epigastrium (karnın üst kısmı)"
       },
       {
         "de": "Emesis",
         "patient": "Erbrechen",
         "uz": "qusish",
-        "ru": "рвота"
+        "ru": "рвота",
+        "tr": "kusma"
       },
       {
         "de": "Lipase",
         "patient": "Wert für die Bauchspeicheldrüse",
         "uz": "lipaza",
-        "ru": "липаза"
+        "ru": "липаза",
+        "tr": "lipaz"
       },
       {
         "de": "Alkoholabusus",
         "patient": "zu viel Alkohol trinken",
         "uz": "alkoholni suiiste’mol qilish",
-        "ru": "злоупотребление алкоголем"
+        "ru": "злоупотребление алкоголем",
+        "tr": "alkol kötüye kullanımı"
       }
     ],
     "simulation": {
@@ -1421,23 +1316,14 @@
       }
     },
     "verdachtsdiagnose": "Akute Pankreatitis (äthyltoxisch)",
-    "diagnoseKeywords": [
-      "pankreatitis",
-      "bauchspeicheldrüse"
-    ],
+    "diagnoseKeywords": ["pankreatitis", "bauchspeicheldrüse"],
     "differenzialdiagnosen": [
       "Ulkusperforation",
       "Cholezystitis",
       "Hinterwandinfarkt",
       "Mesenterialischämie"
     ],
-    "untersuchungen": [
-      "Lipase",
-      "Sonographie (Abdomen)",
-      "CRP",
-      "Blutbild",
-      "Leberwerte"
-    ]
+    "untersuchungen": ["Lipase", "Sonographie (Abdomen)", "CRP", "Blutbild", "Leberwerte"]
   },
   {
     "id": "c15",
@@ -1477,31 +1363,36 @@
         "de": "Meläna",
         "patient": "Teerstuhl / schwarzer Stuhl",
         "uz": "melena (qora, smolasimon najas)",
-        "ru": "мелена (чёрный дёгтеобразный стул)"
+        "ru": "мелена (чёрный дёгтеобразный стул)",
+        "tr": "melena (siyah, katran gibi dışkı)"
       },
       {
         "de": "Hämatemesis",
         "patient": "Bluterbrechen",
         "uz": "qon qusish",
-        "ru": "рвота кровью"
+        "ru": "рвота кровью",
+        "tr": "kan kusma"
       },
       {
         "de": "Ulcus ventriculi",
         "patient": "Magengeschwür",
         "uz": "oshqozon yarasi",
-        "ru": "язва желудка"
+        "ru": "язва желудка",
+        "tr": "mide ülseri"
       },
       {
         "de": "NSAR",
         "patient": "Schmerzmittel wie Ibuprofen",
         "uz": "nosteroid yallig‘lanishga qarshi dorilar",
-        "ru": "НПВС (нестероидные противовоспалительные)"
+        "ru": "НПВС (нестероидные противовоспалительные)",
+        "tr": "nonsteroid antiinflamatuvar ilaçlar"
       },
       {
         "de": "Gastroskopie",
         "patient": "Magenspiegelung",
         "uz": "gastroskopiya",
-        "ru": "гастроскопия"
+        "ru": "гастроскопия",
+        "tr": "gastroskopi"
       }
     ],
     "simulation": {
@@ -1536,13 +1427,7 @@
       "Magenkarzinom",
       "Erosive Gastritis"
     ],
-    "untersuchungen": [
-      "Gastroskopie",
-      "Blutbild",
-      "Gerinnung",
-      "Blutgruppe und Kreuzprobe",
-      "Harnstoff"
-    ]
+    "untersuchungen": ["Gastroskopie", "Blutbild", "Gerinnung", "Blutgruppe und Kreuzprobe", "Harnstoff"]
   },
   {
     "id": "c16",
@@ -1582,31 +1467,36 @@
         "de": "Cephalgie",
         "patient": "Kopfschmerzen",
         "uz": "bosh og‘rig‘i",
-        "ru": "головная боль"
+        "ru": "головная боль",
+        "tr": "baş ağrısı"
       },
       {
         "de": "Photophobie",
         "patient": "Lichtempfindlichkeit",
         "uz": "yorug‘likdan bezovtalanish",
-        "ru": "светобоязнь"
+        "ru": "светобоязнь",
+        "tr": "ışıktan rahatsız olma"
       },
       {
         "de": "Phonophobie",
         "patient": "Lärmempfindlichkeit",
         "uz": "shovqindan bezovtalanish",
-        "ru": "звукобоязнь"
+        "ru": "звукобоязнь",
+        "tr": "sesten rahatsız olma"
       },
       {
         "de": "Aura",
         "patient": "Sehstörung vor dem Kopfschmerz",
         "uz": "aura (og‘riqdan oldingi ko‘rish buzilishi)",
-        "ru": "аура (нарушение зрения перед болью)"
+        "ru": "аура (нарушение зрения перед болью)",
+        "tr": "aura (ağrıdan önce görme bozukluğu)"
       },
       {
         "de": "hemikraniell",
         "patient": "auf einer Kopfseite",
         "uz": "boshning bir tomonida",
-        "ru": "с одной стороны головы"
+        "ru": "с одной стороны головы",
+        "tr": "başın bir tarafında"
       }
     ],
     "simulation": {
@@ -1627,10 +1517,7 @@
       }
     },
     "verdachtsdiagnose": "Migräne mit Aura",
-    "diagnoseKeywords": [
-      "migräne",
-      "migraene"
-    ],
+    "diagnoseKeywords": ["migräne", "migraene"],
     "differenzialdiagnosen": [
       "Spannungskopfschmerz",
       "Subarachnoidalblutung",
@@ -1682,31 +1569,36 @@
         "de": "Urolithiasis",
         "patient": "Nierensteine / Harnsteine",
         "uz": "siydik-tosh kasalligi",
-        "ru": "мочекаменная болезнь"
+        "ru": "мочекаменная болезнь",
+        "tr": "idrar yolu taş hastalığı"
       },
       {
         "de": "Kolik",
         "patient": "Schmerzen, die in Wellen kommen",
         "uz": "sanchiq (to‘lqinsimon og‘riq)",
-        "ru": "колика (волнообразная боль)"
+        "ru": "колика (волнообразная боль)",
+        "tr": "kolik (dalga dalga gelen ağrı)"
       },
       {
         "de": "Makrohämaturie",
         "patient": "Blut im Urin (sichtbar)",
         "uz": "siydikda ko‘zga ko‘rinadigan qon",
-        "ru": "видимая кровь в моче"
+        "ru": "видимая кровь в моче",
+        "tr": "idrarda gözle görülen kan"
       },
       {
         "de": "Flanke",
         "patient": "Seite / Nierengegend",
         "uz": "biqin (bel yon tomoni)",
-        "ru": "бок (боковая поясничная область)"
+        "ru": "бок (боковая поясничная область)",
+        "tr": "böğür (belin yan tarafı)"
       },
       {
         "de": "Harnstau",
         "patient": "Urin staut sich",
         "uz": "siydik dimlanishi",
-        "ru": "застой мочи"
+        "ru": "застой мочи",
+        "tr": "idrar birikmesi (staz)"
       }
     ],
     "simulation": {
@@ -1735,19 +1627,8 @@
       "harnleiterstein",
       "nephrolithiasis"
     ],
-    "differenzialdiagnosen": [
-      "Appendizitis",
-      "Pyelonephritis",
-      "Hodentorsion",
-      "Gallenkolik"
-    ],
-    "untersuchungen": [
-      "Urinstatus",
-      "Sonographie (Nieren)",
-      "Low-Dose-CT",
-      "Kreatinin",
-      "CRP"
-    ]
+    "differenzialdiagnosen": ["Appendizitis", "Pyelonephritis", "Hodentorsion", "Gallenkolik"],
+    "untersuchungen": ["Urinstatus", "Sonographie (Nieren)", "Low-Dose-CT", "Kreatinin", "CRP"]
   },
   {
     "id": "c18",
@@ -1787,31 +1668,36 @@
         "de": "Hyperthyreose",
         "patient": "Schilddrüsenüberfunktion",
         "uz": "gipertireoz (qalqonsimon bez giperfunksiyasi)",
-        "ru": "гипертиреоз (повышенная функция щитовидной железы)"
+        "ru": "гипертиреоз (повышенная функция щитовидной железы)",
+        "tr": "hipertiroidi (tiroid bezinin aşırı çalışması)"
       },
       {
         "de": "Tremor",
         "patient": "Zittern",
         "uz": "titroq",
-        "ru": "тремор (дрожь)"
+        "ru": "тремор (дрожь)",
+        "tr": "titreme (tremor)"
       },
       {
         "de": "Hyperhidrose",
         "patient": "starkes Schwitzen",
         "uz": "ko‘p terlash",
-        "ru": "повышенная потливость"
+        "ru": "повышенная потливость",
+        "tr": "aşırı terleme"
       },
       {
         "de": "Exophthalmus",
         "patient": "hervortretende Augen",
         "uz": "ko‘zning bo‘rtib chiqishi",
-        "ru": "экзофтальм (пучеглазие)"
+        "ru": "экзофтальм (пучеглазие)",
+        "tr": "gözlerin dışarı fırlaması"
       },
       {
         "de": "Struma",
         "patient": "vergrößerte Schilddrüse / Kropf",
         "uz": "buqoq",
-        "ru": "зоб"
+        "ru": "зоб",
+        "tr": "guatr"
       }
     ],
     "simulation": {
@@ -1832,26 +1718,9 @@
       }
     },
     "verdachtsdiagnose": "Hyperthyreose, V. a. Morbus Basedow mit endokriner Orbitopathie",
-    "diagnoseKeywords": [
-      "hyperthyreose",
-      "basedow",
-      "graves",
-      "schilddrüsenüberfunktion",
-      "thyreotoxikose"
-    ],
-    "differenzialdiagnosen": [
-      "Schilddrüsenautonomie",
-      "Thyreoiditis",
-      "Angststörung",
-      "Phäochromozytom"
-    ],
-    "untersuchungen": [
-      "TSH",
-      "fT3 und fT4",
-      "TRAK",
-      "Sonographie (Schilddrüse)",
-      "EKG"
-    ]
+    "diagnoseKeywords": ["hyperthyreose", "basedow", "graves", "schilddrüsenüberfunktion", "thyreotoxikose"],
+    "differenzialdiagnosen": ["Schilddrüsenautonomie", "Thyreoiditis", "Angststörung", "Phäochromozytom"],
+    "untersuchungen": ["TSH", "fT3 und fT4", "TRAK", "Sonographie (Schilddrüse)", "EKG"]
   },
   {
     "id": "c19",
@@ -1891,31 +1760,36 @@
         "de": "Ileus",
         "patient": "Darmverschluss",
         "uz": "ichak tutilishi",
-        "ru": "кишечная непроходимость"
+        "ru": "кишечная непроходимость",
+        "tr": "bağırsak tıkanması"
       },
       {
         "de": "Meteorismus",
         "patient": "Blähungen / dicker Bauch",
         "uz": "qorin dam bo‘lishi",
-        "ru": "вздутие живота"
+        "ru": "вздутие живота",
+        "tr": "karında şişkinlik"
       },
       {
         "de": "Miserere",
         "patient": "Koterbrechen",
         "uz": "najas qusish",
-        "ru": "каловая рвота"
+        "ru": "каловая рвота",
+        "tr": "dışkı kusma"
       },
       {
         "de": "Adhäsionen",
         "patient": "Verwachsungen",
         "uz": "bitishmalar",
-        "ru": "спайки"
+        "ru": "спайки",
+        "tr": "yapışıklıklar"
       },
       {
         "de": "Laparotomie",
         "patient": "Bauchoperation mit Schnitt",
         "uz": "laparotomiya (qorinni ochish operatsiyasi)",
-        "ru": "лапаротомия (полостная операция)"
+        "ru": "лапаротомия (полостная операция)",
+        "tr": "laparotomi (karnı açma ameliyatı)"
       }
     ],
     "simulation": {
@@ -1936,25 +1810,14 @@
       }
     },
     "verdachtsdiagnose": "Mechanischer Dünndarmileus, V. a. Bridenileus",
-    "diagnoseKeywords": [
-      "ileus",
-      "darmverschluss",
-      "bridenileus",
-      "obstruktion"
-    ],
+    "diagnoseKeywords": ["ileus", "darmverschluss", "bridenileus", "obstruktion"],
     "differenzialdiagnosen": [
       "Paralytischer Ileus",
       "Kolonkarzinom",
       "Inkarzerierte Hernie",
       "Mesenterialischämie"
     ],
-    "untersuchungen": [
-      "Röntgen-Abdomen",
-      "CT-Abdomen",
-      "Sonographie (Abdomen)",
-      "Blutbild",
-      "Laktat"
-    ]
+    "untersuchungen": ["Röntgen-Abdomen", "CT-Abdomen", "Sonographie (Abdomen)", "Blutbild", "Laktat"]
   },
   {
     "id": "c20",
@@ -1994,31 +1857,36 @@
         "de": "Anämie",
         "patient": "Blutarmut",
         "uz": "kamqonlik",
-        "ru": "анемия (малокровие)"
+        "ru": "анемия (малокровие)",
+        "tr": "kansızlık"
       },
       {
         "de": "Hypermenorrhö",
         "patient": "sehr starke Periode",
         "uz": "kuchli hayz qon ketishi",
-        "ru": "обильные менструации"
+        "ru": "обильные менструации",
+        "tr": "aşırı adet kanaması"
       },
       {
         "de": "Ferritin",
         "patient": "Eisenspeicher-Wert",
         "uz": "ferritin (temir zaxirasi)",
-        "ru": "ферритин (запасы железа)"
+        "ru": "ферритин (запасы железа)",
+        "tr": "ferritin (demir deposu)"
       },
       {
         "de": "Abgeschlagenheit",
         "patient": "Müdigkeit / Schlappheit",
         "uz": "holsizlik",
-        "ru": "слабость, разбитость"
+        "ru": "слабость, разбитость",
+        "tr": "halsizlik"
       },
       {
         "de": "Blässe",
         "patient": "blasse Haut",
         "uz": "rangparlik",
-        "ru": "бледность"
+        "ru": "бледность",
+        "tr": "solukluk"
       }
     ],
     "simulation": {
@@ -2039,12 +1907,7 @@
       }
     },
     "verdachtsdiagnose": "Eisenmangelanämie bei Hypermenorrhö (Uterus myomatosus)",
-    "diagnoseKeywords": [
-      "eisenmangel",
-      "anämie",
-      "anaemie",
-      "blutarmut"
-    ],
+    "diagnoseKeywords": ["eisenmangel", "anämie", "anaemie", "blutarmut"],
     "differenzialdiagnosen": [
       "Hypothyreose",
       "Vitamin-B12-Mangel",
@@ -2097,31 +1960,36 @@
         "de": "Angina pectoris",
         "patient": "Brustenge",
         "uz": "stenokardiya (ko‘krakdagi siqilish)",
-        "ru": "стенокардия"
+        "ru": "стенокардия",
+        "tr": "anjina pektoris (göğüste sıkışma)"
       },
       {
         "de": "belastungsabhängig",
         "patient": "bei Anstrengung",
         "uz": "jismoniy zo‘riqishga bog‘liq",
-        "ru": "связанный с нагрузкой"
+        "ru": "связанный с нагрузкой",
+        "tr": "eforla ilişkili"
       },
       {
         "de": "Ergometrie",
         "patient": "Belastungs-EKG (Fahrrad)",
         "uz": "veloergometriya",
-        "ru": "велоэргометрия (нагрузочная ЭКГ)"
+        "ru": "велоэргометрия (нагрузочная ЭКГ)",
+        "tr": "bisiklet ergometrisi"
       },
       {
         "de": "koronare Herzkrankheit (KHK)",
         "patient": "Verengung der Herzkranzgefäße",
         "uz": "yurak ishemik kasalligi",
-        "ru": "ишемическая болезнь сердца"
+        "ru": "ишемическая болезнь сердца",
+        "tr": "koroner arter hastalığı"
       },
       {
         "de": "Nitrospray",
         "patient": "Spray unter die Zunge",
         "uz": "nitroglitserin spreyi",
-        "ru": "нитроспрей"
+        "ru": "нитроспрей",
+        "tr": "nitrogliserin spreyi"
       }
     ],
     "simulation": {
@@ -2142,25 +2010,14 @@
       }
     },
     "verdachtsdiagnose": "Stabile Angina pectoris bei V. a. koronare Herzkrankheit",
-    "diagnoseKeywords": [
-      "angina pectoris",
-      "khk",
-      "koronare herzkrankheit",
-      "angina"
-    ],
+    "diagnoseKeywords": ["angina pectoris", "khk", "koronare herzkrankheit", "angina"],
     "differenzialdiagnosen": [
       "Akutes Koronarsyndrom",
       "Refluxkrankheit",
       "Aortenklappenstenose",
       "Muskuloskelettale Thoraxschmerzen"
     ],
-    "untersuchungen": [
-      "EKG",
-      "Ergometrie",
-      "Echo (Echokardiographie)",
-      "Troponin",
-      "Koronarangiographie"
-    ]
+    "untersuchungen": ["EKG", "Ergometrie", "Echo (Echokardiographie)", "Troponin", "Koronarangiographie"]
   },
   {
     "id": "c22",
@@ -2200,31 +2057,36 @@
         "de": "hypertensive Entgleisung",
         "patient": "sehr hoher Blutdruck",
         "uz": "gipertonik kriz",
-        "ru": "гипертонический криз"
+        "ru": "гипертонический криз",
+        "tr": "hipertansif kriz"
       },
       {
         "de": "Endorganschaden",
         "patient": "Schaden an Herz, Gehirn, Niere oder Augen",
         "uz": "nishon a’zolar shikastlanishi",
-        "ru": "поражение органов-мишеней"
+        "ru": "поражение органов-мишеней",
+        "tr": "hedef organ hasarı"
       },
       {
         "de": "Antihypertensivum",
         "patient": "Blutdrucktablette",
         "uz": "qon bosimini tushiruvchi dori",
-        "ru": "антигипертензивное средство"
+        "ru": "антигипертензивное средство",
+        "tr": "tansiyon düşürücü ilaç"
       },
       {
         "de": "Non-Adhärenz",
         "patient": "Tabletten nicht regelmäßig einnehmen",
         "uz": "dorini muntazam ichmaslik",
-        "ru": "несоблюдение режима лечения"
+        "ru": "несоблюдение режима лечения",
+        "tr": "ilacı düzenli almama"
       },
       {
         "de": "Fundoskopie",
         "patient": "Augenspiegelung",
         "uz": "ko‘z tubini ko‘rish",
-        "ru": "осмотр глазного дна"
+        "ru": "осмотр глазного дна",
+        "tr": "göz dibi muayenesi"
       }
     ],
     "simulation": {
@@ -2251,19 +2113,8 @@
       "hypertensiver notfall",
       "hypertonie"
     ],
-    "differenzialdiagnosen": [
-      "Hypertensiver Notfall",
-      "Schlaganfall",
-      "Hirnblutung",
-      "Sekundäre Hypertonie"
-    ],
-    "untersuchungen": [
-      "Blutdruckmessung",
-      "EKG",
-      "Kreatinin",
-      "Urinstatus",
-      "Fundoskopie"
-    ]
+    "differenzialdiagnosen": ["Hypertensiver Notfall", "Schlaganfall", "Hirnblutung", "Sekundäre Hypertonie"],
+    "untersuchungen": ["Blutdruckmessung", "EKG", "Kreatinin", "Urinstatus", "Fundoskopie"]
   },
   {
     "id": "c23",
@@ -2303,31 +2154,36 @@
         "de": "Perikarditis",
         "patient": "Herzbeutelentzündung",
         "uz": "perikardit (yurak xaltasi yallig‘lanishi)",
-        "ru": "перикардит"
+        "ru": "перикардит",
+        "tr": "perikardit (kalp zarı iltihabı)"
       },
       {
         "de": "lageabhängig",
         "patient": "hängt von der Körperhaltung ab",
         "uz": "tana holatiga bog‘liq",
-        "ru": "зависящий от положения тела"
+        "ru": "зависящий от положения тела",
+        "tr": "vücut pozisyonuna bağlı"
       },
       {
         "de": "Perikardreiben",
         "patient": "Reibegeräusch am Herzen",
         "uz": "perikard ishqalanish shovqini",
-        "ru": "шум трения перикарда"
+        "ru": "шум трения перикарда",
+        "tr": "perikardiyal sürtünme sesi"
       },
       {
         "de": "Perikarderguss",
         "patient": "Flüssigkeit im Herzbeutel",
         "uz": "perikardda suyuqlik yig‘ilishi",
-        "ru": "перикардиальный выпот"
+        "ru": "перикардиальный выпот",
+        "tr": "perikardiyal sıvı birikmesi"
       },
       {
         "de": "ST-Hebung",
         "patient": "Veränderung im EKG",
         "uz": "ST segmenti ko‘tarilishi",
-        "ru": "подъём сегмента ST"
+        "ru": "подъём сегмента ST",
+        "tr": "ST segment yükselmesi"
       }
     ],
     "simulation": {
@@ -2348,24 +2204,9 @@
       }
     },
     "verdachtsdiagnose": "Akute (postvirale) Perikarditis",
-    "diagnoseKeywords": [
-      "perikarditis",
-      "herzbeutelentzündung",
-      "myoperikarditis"
-    ],
-    "differenzialdiagnosen": [
-      "Akutes Koronarsyndrom",
-      "Myokarditis",
-      "Lungenembolie",
-      "Pneumothorax"
-    ],
-    "untersuchungen": [
-      "EKG",
-      "Echo (Echokardiographie)",
-      "Troponin",
-      "CRP",
-      "Auskultation"
-    ]
+    "diagnoseKeywords": ["perikarditis", "herzbeutelentzündung", "myoperikarditis"],
+    "differenzialdiagnosen": ["Akutes Koronarsyndrom", "Myokarditis", "Lungenembolie", "Pneumothorax"],
+    "untersuchungen": ["EKG", "Echo (Echokardiographie)", "Troponin", "CRP", "Auskultation"]
   },
   {
     "id": "c24",
@@ -2405,31 +2246,36 @@
         "de": "Asthma bronchiale",
         "patient": "Asthma",
         "uz": "bronxial astma",
-        "ru": "бронхиальная астма"
+        "ru": "бронхиальная астма",
+        "tr": "bronşiyal astım"
       },
       {
         "de": "Exazerbation",
         "patient": "Verschlechterung",
         "uz": "kasallikning kuchayishi",
-        "ru": "обострение"
+        "ru": "обострение",
+        "tr": "hastalığın alevlenmesi"
       },
       {
         "de": "Peak-Flow",
         "patient": "Messung, wie stark man ausatmen kann",
         "uz": "nafas chiqarish cho‘qqi tezligi",
-        "ru": "пиковая скорость выдоха"
+        "ru": "пиковая скорость выдоха",
+        "tr": "tepe ekspiratuvar akım hızı"
       },
       {
         "de": "Inhalationstechnik",
         "patient": "wie man das Spray benutzt",
         "uz": "ingalyatorni to‘g‘ri ishlatish",
-        "ru": "техника ингаляции"
+        "ru": "техника ингаляции",
+        "tr": "inhaler’ı doğru kullanma"
       },
       {
         "de": "Bronchospasmus",
         "patient": "Verkrampfung der Atemwege",
         "uz": "bronxospazm",
-        "ru": "бронхоспазм"
+        "ru": "бронхоспазм",
+        "tr": "bronkospazm"
       }
     ],
     "simulation": {
@@ -2450,24 +2296,9 @@
       }
     },
     "verdachtsdiagnose": "Exazerbation eines allergischen Asthma bronchiale",
-    "diagnoseKeywords": [
-      "asthma",
-      "exazerbation",
-      "asthmaanfall"
-    ],
-    "differenzialdiagnosen": [
-      "Pneumonie",
-      "Pneumothorax",
-      "Anaphylaxie",
-      "Vocal-Cord-Dysfunktion"
-    ],
-    "untersuchungen": [
-      "Peak-Flow",
-      "Blutgasanalyse",
-      "Pulsoxymetrie",
-      "Lungenfunktion",
-      "Röntgen-Thorax"
-    ]
+    "diagnoseKeywords": ["asthma", "exazerbation", "asthmaanfall"],
+    "differenzialdiagnosen": ["Pneumonie", "Pneumothorax", "Anaphylaxie", "Vocal-Cord-Dysfunktion"],
+    "untersuchungen": ["Peak-Flow", "Blutgasanalyse", "Pulsoxymetrie", "Lungenfunktion", "Röntgen-Thorax"]
   },
   {
     "id": "c25",
@@ -2507,31 +2338,36 @@
         "de": "Pneumothorax",
         "patient": "Luft zwischen Lunge und Brustwand, Lunge fällt zusammen",
         "uz": "pnevmotoraks",
-        "ru": "пневмоторакс"
+        "ru": "пневмоторакс",
+        "tr": "pnömotoraks"
       },
       {
         "de": "abgeschwächtes Atemgeräusch",
         "patient": "man hört die Atmung leiser",
         "uz": "susaygan nafas shovqini",
-        "ru": "ослабленное дыхание"
+        "ru": "ослабленное дыхание",
+        "tr": "azalmış solunum sesleri"
       },
       {
         "de": "hypersonorer Klopfschall",
         "patient": "lauter Ton beim Abklopfen",
         "uz": "qutisimon perkutor tovush",
-        "ru": "коробочный перкуторный звук"
+        "ru": "коробочный перкуторный звук",
+        "tr": "hipersonor perküsyon sesi"
       },
       {
         "de": "Thoraxdrainage",
         "patient": "Schlauch in den Brustkorb",
         "uz": "plevra drenaji",
-        "ru": "плевральный дренаж"
+        "ru": "плевральный дренаж",
+        "tr": "göğüs tüpü drenajı"
       },
       {
         "de": "Spannungspneumothorax",
         "patient": "lebensgefährlicher Druck im Brustkorb",
         "uz": "zo‘riqqan pnevmotoraks",
-        "ru": "напряжённый пневмоторакс"
+        "ru": "напряжённый пневмоторакс",
+        "tr": "tansiyon pnömotoraks"
       }
     ],
     "simulation": {
@@ -2552,15 +2388,8 @@
       }
     },
     "verdachtsdiagnose": "Primärer Spontanpneumothorax links",
-    "diagnoseKeywords": [
-      "pneumothorax"
-    ],
-    "differenzialdiagnosen": [
-      "Lungenembolie",
-      "Akutes Koronarsyndrom",
-      "Pleuritis",
-      "Rippenprellung"
-    ],
+    "diagnoseKeywords": ["pneumothorax"],
+    "differenzialdiagnosen": ["Lungenembolie", "Akutes Koronarsyndrom", "Pleuritis", "Rippenprellung"],
     "untersuchungen": [
       "Röntgen-Thorax",
       "Auskultation",
@@ -2607,31 +2436,36 @@
         "de": "Leberzirrhose",
         "patient": "Schrumpfleber",
         "uz": "jigar sirrozi",
-        "ru": "цирроз печени"
+        "ru": "цирроз печени",
+        "tr": "karaciğer sirozu"
       },
       {
         "de": "Aszites",
         "patient": "Bauchwasser",
         "uz": "assit (qorin bo‘shlig‘ida suyuqlik)",
-        "ru": "асцит"
+        "ru": "асцит",
+        "tr": "asit (karın boşluğunda sıvı)"
       },
       {
         "de": "Ikterus",
         "patient": "Gelbsucht",
         "uz": "sariqlik",
-        "ru": "желтуха"
+        "ru": "желтуха",
+        "tr": "sarılık"
       },
       {
         "de": "hepatische Enzephalopathie",
         "patient": "Verwirrtheit durch die Leber",
         "uz": "jigar ensefalopatiyasi",
-        "ru": "печёночная энцефалопатия"
+        "ru": "печёночная энцефалопатия",
+        "tr": "hepatik ensefalopati"
       },
       {
         "de": "Aszitespunktion",
         "patient": "Bauchwasser abpunktieren",
         "uz": "laparotsentez (assit punksiyasi)",
-        "ru": "лапароцентез"
+        "ru": "лапароцентез",
+        "tr": "parasentez (asit ponksiyonu)"
       }
     ],
     "simulation": {
@@ -2652,24 +2486,14 @@
       }
     },
     "verdachtsdiagnose": "Dekompensierte äthyltoxische Leberzirrhose mit Aszites und V. a. hepatische Enzephalopathie",
-    "diagnoseKeywords": [
-      "leberzirrhose",
-      "zirrhose",
-      "dekompensiert"
-    ],
+    "diagnoseKeywords": ["leberzirrhose", "zirrhose", "dekompensiert"],
     "differenzialdiagnosen": [
       "Hepatozelluläres Karzinom",
       "Herzinsuffizienz",
       "Pfortaderthrombose",
       "Spontan bakterielle Peritonitis"
     ],
-    "untersuchungen": [
-      "Sonographie (Abdomen)",
-      "Leberwerte",
-      "Gerinnung",
-      "Albumin",
-      "Aszitespunktion"
-    ]
+    "untersuchungen": ["Sonographie (Abdomen)", "Leberwerte", "Gerinnung", "Albumin", "Aszitespunktion"]
   },
   {
     "id": "c27",
@@ -2709,31 +2533,36 @@
         "de": "Refluxkrankheit",
         "patient": "Magensäure fließt in die Speiseröhre zurück",
         "uz": "gastroezofageal reflyuks kasalligi",
-        "ru": "гастроэзофагеальная рефлюксная болезнь"
+        "ru": "гастроэзофагеальная рефлюксная болезнь",
+        "tr": "gastroözofageal reflü hastalığı"
       },
       {
         "de": "Pyrosis",
         "patient": "Sodbrennen",
         "uz": "jig‘ildon qaynashi",
-        "ru": "изжога"
+        "ru": "изжога",
+        "tr": "mide yanması"
       },
       {
         "de": "Dysphagie",
         "patient": "Schluckbeschwerden",
         "uz": "yutish qiyinlashuvi",
-        "ru": "дисфагия"
+        "ru": "дисфагия",
+        "tr": "yutma güçlüğü"
       },
       {
         "de": "Alarmsymptome",
         "patient": "Warnzeichen",
         "uz": "xavfli belgilar",
-        "ru": "тревожные симптомы"
+        "ru": "тревожные симптомы",
+        "tr": "alarm belirtileri"
       },
       {
         "de": "Protonenpumpenhemmer",
         "patient": "Magenschutz-Tablette",
         "uz": "proton pompa ingibitori",
-        "ru": "ингибитор протонной помпы"
+        "ru": "ингибитор протонной помпы",
+        "tr": "proton pompası inhibitörü"
       }
     ],
     "simulation": {
@@ -2754,25 +2583,9 @@
       }
     },
     "verdachtsdiagnose": "Gastroösophageale Refluxkrankheit (GERD) ohne Alarmsymptome",
-    "diagnoseKeywords": [
-      "reflux",
-      "gerd",
-      "refluxkrankheit",
-      "refluxösophagitis"
-    ],
-    "differenzialdiagnosen": [
-      "Akutes Koronarsyndrom",
-      "Gastritis",
-      "Ulcus ventriculi",
-      "Ösophaguskarzinom"
-    ],
-    "untersuchungen": [
-      "Gastroskopie",
-      "EKG",
-      "PPI-Test",
-      "Blutbild",
-      "24-h-pH-Metrie"
-    ]
+    "diagnoseKeywords": ["reflux", "gerd", "refluxkrankheit", "refluxösophagitis"],
+    "differenzialdiagnosen": ["Akutes Koronarsyndrom", "Gastritis", "Ulcus ventriculi", "Ösophaguskarzinom"],
+    "untersuchungen": ["Gastroskopie", "EKG", "PPI-Test", "Blutbild", "24-h-pH-Metrie"]
   },
   {
     "id": "c28",
@@ -2812,31 +2625,36 @@
         "de": "Leistenhernie",
         "patient": "Leistenbruch",
         "uz": "chov churrasi",
-        "ru": "паховая грыжа"
+        "ru": "паховая грыжа",
+        "tr": "kasık fıtığı"
       },
       {
         "de": "Inkarzeration",
         "patient": "eingeklemmter Bruch",
         "uz": "churraning qisilishi",
-        "ru": "ущемление"
+        "ru": "ущемление",
+        "tr": "fıtığın boğulması"
       },
       {
         "de": "reponibel",
         "patient": "lässt sich zurückdrücken",
         "uz": "joyiga solinadigan",
-        "ru": "вправимый"
+        "ru": "вправимый",
+        "tr": "yerine itilebilen"
       },
       {
         "de": "Bruchpforte",
         "patient": "Lücke in der Bauchwand",
         "uz": "churra darvozasi",
-        "ru": "грыжевые ворота"
+        "ru": "грыжевые ворота",
+        "tr": "fıtık kapısı"
       },
       {
         "de": "Herniotomie",
         "patient": "Bruchoperation",
         "uz": "churra operatsiyasi",
-        "ru": "грыжесечение"
+        "ru": "грыжесечение",
+        "tr": "fıtık ameliyatı"
       }
     ],
     "simulation": {
@@ -2857,25 +2675,9 @@
       }
     },
     "verdachtsdiagnose": "Inkarzerierte Leistenhernie rechts",
-    "diagnoseKeywords": [
-      "inkarzeriert",
-      "leistenhernie",
-      "leistenbruch",
-      "hernie"
-    ],
-    "differenzialdiagnosen": [
-      "Femoralhernie",
-      "Lymphadenitis",
-      "Hodentorsion",
-      "Leistenabszess"
-    ],
-    "untersuchungen": [
-      "Sonographie (Leiste)",
-      "Blutbild",
-      "Laktat",
-      "Röntgen-Abdomen",
-      "Gerinnung"
-    ]
+    "diagnoseKeywords": ["inkarzeriert", "leistenhernie", "leistenbruch", "hernie"],
+    "differenzialdiagnosen": ["Femoralhernie", "Lymphadenitis", "Hodentorsion", "Leistenabszess"],
+    "untersuchungen": ["Sonographie (Leiste)", "Blutbild", "Laktat", "Röntgen-Abdomen", "Gerinnung"]
   },
   {
     "id": "c29",
@@ -2915,31 +2717,36 @@
         "de": "Divertikulitis",
         "patient": "Entzündung von Darmausstülpungen",
         "uz": "divertikulit",
-        "ru": "дивертикулит"
+        "ru": "дивертикулит",
+        "tr": "divertikülit"
       },
       {
         "de": "linker Unterbauch",
         "patient": "unten links im Bauch",
         "uz": "qorinning chap pastki qismi",
-        "ru": "левая подвздошная область"
+        "ru": "левая подвздошная область",
+        "tr": "karnın sol alt kısmı"
       },
       {
         "de": "Abwehrspannung",
         "patient": "der Bauch wird beim Tasten hart",
         "uz": "qorin mushaklarining himoya taranglashuvi",
-        "ru": "защитное напряжение мышц"
+        "ru": "защитное напряжение мышц",
+        "tr": "karın kaslarında defans"
       },
       {
         "de": "Perforation",
         "patient": "Durchbruch des Darms",
         "uz": "perforatsiya (teshilish)",
-        "ru": "перфорация"
+        "ru": "перфорация",
+        "tr": "perforasyon (delinme)"
       },
       {
         "de": "Sigmaresektion",
         "patient": "Entfernung eines Darmstücks",
         "uz": "sigmasimon ichak rezeksiyasi",
-        "ru": "резекция сигмовидной кишки"
+        "ru": "резекция сигмовидной кишки",
+        "tr": "sigmoid kolon rezeksiyonu"
       }
     ],
     "simulation": {
@@ -2960,23 +2767,14 @@
       }
     },
     "verdachtsdiagnose": "Akute Sigmadivertikulitis (Rezidiv)",
-    "diagnoseKeywords": [
-      "divertikulitis",
-      "sigmadivertikulitis"
-    ],
+    "diagnoseKeywords": ["divertikulitis", "sigmadivertikulitis"],
     "differenzialdiagnosen": [
       "Kolonkarzinom",
       "Ovarialtorsion",
       "Harnleiterstein",
       "Chronisch-entzündliche Darmerkrankung"
     ],
-    "untersuchungen": [
-      "CT-Abdomen",
-      "Blutbild",
-      "CRP",
-      "Sonographie (Abdomen)",
-      "Urinstatus"
-    ]
+    "untersuchungen": ["CT-Abdomen", "Blutbild", "CRP", "Sonographie (Abdomen)", "Urinstatus"]
   },
   {
     "id": "c30",
@@ -3016,31 +2814,36 @@
         "de": "distale Radiusfraktur",
         "patient": "Handgelenksbruch",
         "uz": "bilak suyagining distal sinishi",
-        "ru": "перелом лучевой кости в типичном месте"
+        "ru": "перелом лучевой кости в типичном месте",
+        "tr": "distal radius kırığı"
       },
       {
         "de": "Fehlstellung",
         "patient": "schief stehender Knochen",
         "uz": "noto‘g‘ri holat (deformatsiya)",
-        "ru": "смещение, деформация"
+        "ru": "смещение, деформация",
+        "tr": "yanlış pozisyon (deformite)"
       },
       {
         "de": "DMS",
         "patient": "Durchblutung, Bewegung, Gefühl",
         "uz": "qon aylanishi, harakat, sezgi",
-        "ru": "кровоснабжение, моторика, чувствительность"
+        "ru": "кровоснабжение, моторика, чувствительность",
+        "tr": "dolaşım, motor fonksiyon, duyu"
       },
       {
         "de": "Reposition",
         "patient": "Knochen wieder einrichten",
         "uz": "repozitsiya (suyakni joyiga solish)",
-        "ru": "репозиция"
+        "ru": "репозиция",
+        "tr": "redüksiyon (kemiğin yerine oturtulması)"
       },
       {
         "de": "Gipsschiene",
         "patient": "Gips",
         "uz": "gips longeta",
-        "ru": "гипсовая лонгета"
+        "ru": "гипсовая лонгета",
+        "tr": "alçı atel"
       }
     ],
     "simulation": {
@@ -3061,18 +2864,8 @@
       }
     },
     "verdachtsdiagnose": "Distale Radiusfraktur rechts (Typ Colles) bei Osteoporose",
-    "diagnoseKeywords": [
-      "radiusfraktur",
-      "colles",
-      "handgelenksfraktur",
-      "radius"
-    ],
-    "differenzialdiagnosen": [
-      "Skaphoidfraktur",
-      "Handgelenksdistorsion",
-      "Ulnafraktur",
-      "Luxation"
-    ],
+    "diagnoseKeywords": ["radiusfraktur", "colles", "handgelenksfraktur", "radius"],
+    "differenzialdiagnosen": ["Skaphoidfraktur", "Handgelenksdistorsion", "Ulnafraktur", "Luxation"],
     "untersuchungen": [
       "Röntgen (Handgelenk in 2 Ebenen)",
       "DMS-Kontrolle",
@@ -3118,31 +2911,36 @@
         "de": "Schenkelhalsfraktur",
         "patient": "Oberschenkelhalsbruch",
         "uz": "son suyagi bo‘ynining sinishi",
-        "ru": "перелом шейки бедра"
+        "ru": "перелом шейки бедра",
+        "tr": "femur boynu kırığı"
       },
       {
         "de": "außenrotiert",
         "patient": "nach außen gedreht",
         "uz": "tashqariga burilgan",
-        "ru": "ротированный кнаружи"
+        "ru": "ротированный кнаружи",
+        "tr": "dışa dönük"
       },
       {
         "de": "Belastungsunfähigkeit",
         "patient": "kann nicht auftreten",
         "uz": "oyoqqa tayana olmaslik",
-        "ru": "невозможность опоры"
+        "ru": "невозможность опоры",
+        "tr": "bacağa basamama"
       },
       {
         "de": "Hüftendoprothese",
         "patient": "künstliches Hüftgelenk",
         "uz": "son bo‘g‘imi endoprotezi",
-        "ru": "эндопротез тазобедренного сустава"
+        "ru": "эндопротез тазобедренного сустава",
+        "tr": "kalça protezi"
       },
       {
         "de": "Antikoagulation",
         "patient": "Blutverdünnung",
         "uz": "qon ivishiga qarshi davo",
-        "ru": "антикоагуляция"
+        "ru": "антикоагуляция",
+        "tr": "pıhtılaşmayı önleyici tedavi"
       }
     ],
     "simulation": {
@@ -3170,19 +2968,8 @@
       "femurfraktur",
       "schenkelhals"
     ],
-    "differenzialdiagnosen": [
-      "Pertrochantäre Femurfraktur",
-      "Beckenfraktur",
-      "Hüftprellung",
-      "Hüftluxation"
-    ],
-    "untersuchungen": [
-      "Röntgen (Becken und Hüfte)",
-      "Blutbild",
-      "Gerinnung",
-      "EKG",
-      "CT (Becken)"
-    ]
+    "differenzialdiagnosen": ["Pertrochantäre Femurfraktur", "Beckenfraktur", "Hüftprellung", "Hüftluxation"],
+    "untersuchungen": ["Röntgen (Becken und Hüfte)", "Blutbild", "Gerinnung", "EKG", "CT (Becken)"]
   },
   {
     "id": "c32",
@@ -3222,31 +3009,36 @@
         "de": "Harnverhalt",
         "patient": "kann nicht Wasser lassen",
         "uz": "siydik tutilishi",
-        "ru": "острая задержка мочи"
+        "ru": "острая задержка мочи",
+        "tr": "idrar retansiyonu"
       },
       {
         "de": "benigne Prostatahyperplasie",
         "patient": "gutartig vergrößerte Prostata",
         "uz": "prostata bezining xavfsiz kattalashishi",
-        "ru": "доброкачественная гиперплазия предстательной железы"
+        "ru": "доброкачественная гиперплазия предстательной железы",
+        "tr": "benign prostat hiperplazisi"
       },
       {
         "de": "Nykturie",
         "patient": "nachts Wasser lassen müssen",
         "uz": "tunda siyish",
-        "ru": "никтурия"
+        "ru": "никтурия",
+        "tr": "gece idrara çıkma"
       },
       {
         "de": "Blasenkatheter",
         "patient": "Schlauch in die Blase",
         "uz": "siydik qopi kateteri",
-        "ru": "мочевой катетер"
+        "ru": "мочевой катетер",
+        "tr": "idrar sondası"
       },
       {
         "de": "Restharn",
         "patient": "Urin, der in der Blase bleibt",
         "uz": "qoldiq siydik",
-        "ru": "остаточная моча"
+        "ru": "остаточная моча",
+        "tr": "rezidüel idrar"
       }
     ],
     "simulation": {
@@ -3267,25 +3059,14 @@
       }
     },
     "verdachtsdiagnose": "Akuter Harnverhalt bei benigner Prostatahyperplasie (ausgelöst durch anticholinerg wirkendes Erkältungsmittel)",
-    "diagnoseKeywords": [
-      "harnverhalt",
-      "harnretention",
-      "prostatahyperplasie",
-      "bph"
-    ],
+    "diagnoseKeywords": ["harnverhalt", "harnretention", "prostatahyperplasie", "bph"],
     "differenzialdiagnosen": [
       "Prostatakarzinom",
       "Harnröhrenstriktur",
       "Neurogene Blasenentleerungsstörung",
       "Blasenstein"
     ],
-    "untersuchungen": [
-      "Sonographie (Harnblase)",
-      "Blasenkatheter",
-      "Urinstatus",
-      "Kreatinin",
-      "PSA"
-    ]
+    "untersuchungen": ["Sonographie (Harnblase)", "Blasenkatheter", "Urinstatus", "Kreatinin", "PSA"]
   },
   {
     "id": "c33",
@@ -3325,31 +3106,36 @@
         "de": "Hypothyreose",
         "patient": "Schilddrüsenunterfunktion",
         "uz": "gipotireoz (qalqonsimon bez faoliyati pasayishi)",
-        "ru": "гипотиреоз"
+        "ru": "гипотиреоз",
+        "tr": "hipotiroidi (tiroid bezinin az çalışması)"
       },
       {
         "de": "Kälteintoleranz",
         "patient": "friert ständig",
         "uz": "sovuqni ko‘tara olmaslik",
-        "ru": "непереносимость холода"
+        "ru": "непереносимость холода",
+        "tr": "soğuğa dayanamama"
       },
       {
         "de": "Antriebslosigkeit",
         "patient": "keine Energie",
         "uz": "g‘ayratsizlik",
-        "ru": "апатия, отсутствие сил"
+        "ru": "апатия, отсутствие сил",
+        "tr": "isteksizlik, enerji eksikliği"
       },
       {
         "de": "Hashimoto-Thyreoiditis",
         "patient": "Entzündung der Schilddrüse durch das Immunsystem",
         "uz": "Xashimoto autoimmun tireoiditi",
-        "ru": "аутоиммунный тиреоидит Хашимото"
+        "ru": "аутоиммунный тиреоидит Хашимото",
+        "tr": "Haşimoto otoimmün tiroiditi"
       },
       {
         "de": "L-Thyroxin",
         "patient": "Schilddrüsenhormon-Tablette",
         "uz": "L-tiroksin",
-        "ru": "L-тироксин"
+        "ru": "L-тироксин",
+        "tr": "L-tiroksin"
       }
     ],
     "simulation": {
@@ -3370,24 +3156,14 @@
       }
     },
     "verdachtsdiagnose": "Primäre Hypothyreose, am ehesten bei Hashimoto-Thyreoiditis",
-    "diagnoseKeywords": [
-      "hypothyreose",
-      "hashimoto",
-      "schilddrüsenunterfunktion"
-    ],
+    "diagnoseKeywords": ["hypothyreose", "hashimoto", "schilddrüsenunterfunktion"],
     "differenzialdiagnosen": [
       "Depression",
       "Eisenmangelanämie",
       "Chronisches Erschöpfungssyndrom",
       "Hyperkortisolismus"
     ],
-    "untersuchungen": [
-      "TSH",
-      "fT4",
-      "TPO-Antikörper",
-      "Sonographie (Schilddrüse)",
-      "Blutbild"
-    ]
+    "untersuchungen": ["TSH", "fT4", "TPO-Antikörper", "Sonographie (Schilddrüse)", "Blutbild"]
   },
   {
     "id": "c34",
@@ -3427,31 +3203,36 @@
         "de": "Erysipel",
         "patient": "Wundrose",
         "uz": "saramas (erizipela)",
-        "ru": "рожа (рожистое воспаление)"
+        "ru": "рожа (рожистое воспаление)",
+        "tr": "erizipel (yılancık)"
       },
       {
         "de": "Überwärmung",
         "patient": "die Haut ist heiß",
         "uz": "terining qizishi",
-        "ru": "местное повышение температуры"
+        "ru": "местное повышение температуры",
+        "tr": "ciltte ısı artışı"
       },
       {
         "de": "Eintrittspforte",
         "patient": "Stelle, wo die Bakterien hineinkamen",
         "uz": "infeksiya kirish joyi",
-        "ru": "входные ворота инфекции"
+        "ru": "входные ворота инфекции",
+        "tr": "enfeksiyonun giriş yeri"
       },
       {
         "de": "Interdigitalmykose",
         "patient": "Fußpilz zwischen den Zehen",
         "uz": "barmoqlararo zamburug‘",
-        "ru": "межпальцевой микоз"
+        "ru": "межпальцевой микоз",
+        "tr": "parmak arası mantar"
       },
       {
         "de": "Hochlagerung",
         "patient": "Bein hochlegen",
         "uz": "oyoqni baland qo‘yish",
-        "ru": "возвышенное положение конечности"
+        "ru": "возвышенное положение конечности",
+        "tr": "bacağı yukarı kaldırma"
       }
     ],
     "simulation": {
@@ -3472,24 +3253,14 @@
       }
     },
     "verdachtsdiagnose": "Erysipel des rechten Unterschenkels bei Interdigitalmykose als Eintrittspforte",
-    "diagnoseKeywords": [
-      "erysipel",
-      "wundrose",
-      "phlegmone"
-    ],
+    "diagnoseKeywords": ["erysipel", "wundrose", "phlegmone"],
     "differenzialdiagnosen": [
       "Tiefe Beinvenenthrombose",
       "Phlegmone",
       "Kontaktdermatitis",
       "Nekrotisierende Fasziitis"
     ],
-    "untersuchungen": [
-      "Blutbild",
-      "CRP",
-      "Blutkulturen",
-      "Kompressionssonographie",
-      "Blutzucker"
-    ]
+    "untersuchungen": ["Blutbild", "CRP", "Blutkulturen", "Kompressionssonographie", "Blutzucker"]
   },
   {
     "id": "c35",
@@ -3529,31 +3300,36 @@
         "de": "Meningitis",
         "patient": "Hirnhautentzündung",
         "uz": "meningit (miya pardasi yallig‘lanishi)",
-        "ru": "менингит"
+        "ru": "менингит",
+        "tr": "menenjit (beyin zarı iltihabı)"
       },
       {
         "de": "Meningismus",
         "patient": "steifer Nacken",
         "uz": "meningeal belgilar (ensa mushaklari rigidligi)",
-        "ru": "менингизм (ригидность затылочных мышц)"
+        "ru": "менингизм (ригидность затылочных мышц)",
+        "tr": "meningeal belirtiler (ense sertliği)"
       },
       {
         "de": "Petechien",
         "patient": "kleine rote Punkte auf der Haut",
         "uz": "petexiyalar (nuqtali qon quyilishlar)",
-        "ru": "петехии"
+        "ru": "петехии",
+        "tr": "peteşi (nokta şeklinde kanamalar)"
       },
       {
         "de": "Lumbalpunktion",
         "patient": "Nervenwasser aus dem Rücken entnehmen",
         "uz": "lyumbal punksiya",
-        "ru": "люмбальная пункция"
+        "ru": "люмбальная пункция",
+        "tr": "lomber ponksiyon"
       },
       {
         "de": "Bewusstseinsstörung",
         "patient": "ist sehr schläfrig oder verwirrt",
         "uz": "es-hush buzilishi",
-        "ru": "нарушение сознания"
+        "ru": "нарушение сознания",
+        "tr": "bilinç bozukluğu"
       }
     ],
     "simulation": {
@@ -3574,24 +3350,9 @@
       }
     },
     "verdachtsdiagnose": "Akute bakterielle Meningitis, V. a. Meningokokken-Infektion mit Petechien",
-    "diagnoseKeywords": [
-      "meningitis",
-      "meningokokken",
-      "hirnhautentzündung"
-    ],
-    "differenzialdiagnosen": [
-      "Subarachnoidalblutung",
-      "Virale Enzephalitis",
-      "Sepsis",
-      "Migräne"
-    ],
-    "untersuchungen": [
-      "Blutkulturen",
-      "Lumbalpunktion",
-      "CRP",
-      "Blutbild",
-      "cCT"
-    ]
+    "diagnoseKeywords": ["meningitis", "meningokokken", "hirnhautentzündung"],
+    "differenzialdiagnosen": ["Subarachnoidalblutung", "Virale Enzephalitis", "Sepsis", "Migräne"],
+    "untersuchungen": ["Blutkulturen", "Lumbalpunktion", "CRP", "Blutbild", "cCT"]
   },
   {
     "id": "c36",
@@ -3631,31 +3392,36 @@
         "de": "Bandscheibenvorfall",
         "patient": "Bandscheibe ist herausgerutscht",
         "uz": "umurtqalararo disk churrasi",
-        "ru": "грыжа межпозвоночного диска"
+        "ru": "грыжа межпозвоночного диска",
+        "tr": "bel fıtığı (disk hernisi)"
       },
       {
         "de": "radikulär",
         "patient": "von der Nervenwurzel ausgehend",
         "uz": "radikulyar (nerv ildizi bo‘yicha)",
-        "ru": "корешковый"
+        "ru": "корешковый",
+        "tr": "radiküler (sinir kökü boyunca)"
       },
       {
         "de": "Dermatom",
         "patient": "Hautbereich eines Nervs",
         "uz": "dermatom",
-        "ru": "дерматом"
+        "ru": "дерматом",
+        "tr": "dermatom"
       },
       {
         "de": "Kaudasyndrom",
         "patient": "Notfall mit Blasenstörung und Taubheit im Genitalbereich",
         "uz": "ot dumi sindromi",
-        "ru": "синдром конского хвоста"
+        "ru": "синдром конского хвоста",
+        "tr": "kauda ekina sendromu"
       },
       {
         "de": "Lasègue-Zeichen",
         "patient": "Schmerz beim Anheben des gestreckten Beins",
         "uz": "Lasseg belgisi",
-        "ru": "симптом Ласега"
+        "ru": "симптом Ласега",
+        "tr": "Lasègue belirtisi"
       }
     ],
     "simulation": {
@@ -3689,12 +3455,7 @@
       "Wirbelkörperfraktur",
       "Kaudasyndrom"
     ],
-    "untersuchungen": [
-      "Neurologische Untersuchung",
-      "Lasègue-Test",
-      "MRT (LWS)",
-      "Röntgen (LWS)"
-    ]
+    "untersuchungen": ["Neurologische Untersuchung", "Lasègue-Test", "MRT (LWS)", "Röntgen (LWS)"]
   },
   {
     "id": "c37",
@@ -3734,31 +3495,36 @@
         "de": "Krampfanfall",
         "patient": "epileptischer Anfall",
         "uz": "tutqanoq xuruji",
-        "ru": "судорожный припадок"
+        "ru": "судорожный припадок",
+        "tr": "nöbet (konvülziyon)"
       },
       {
         "de": "tonisch-klonisch",
         "patient": "erst verkrampft, dann zuckend",
         "uz": "tonik-klonik",
-        "ru": "тонико-клонический"
+        "ru": "тонико-клонический",
+        "tr": "tonik-klonik"
       },
       {
         "de": "postiktal",
         "patient": "nach dem Anfall",
         "uz": "xurujdan keyingi",
-        "ru": "постиктальный"
+        "ru": "постиктальный",
+        "tr": "postiktal (nöbet sonrası)"
       },
       {
         "de": "Fremdanamnese",
         "patient": "Bericht von einer anderen Person",
         "uz": "boshqa shaxsdan olingan anamnez",
-        "ru": "анамнез со слов окружающих"
+        "ru": "анамнез со слов окружающих",
+        "tr": "başkasından alınan anamnez (heteroanamnez)"
       },
       {
         "de": "EEG",
         "patient": "Messung der Hirnströme",
         "uz": "EEG (elektroensefalografiya)",
-        "ru": "ЭЭГ"
+        "ru": "ЭЭГ",
+        "tr": "EEG (elektroensefalografi)"
       }
     ],
     "simulation": {
@@ -3792,13 +3558,7 @@
       "Hypoglykämie",
       "Intrazerebrale Blutung"
     ],
-    "untersuchungen": [
-      "EEG",
-      "MRT (Schädel)",
-      "Blutzucker",
-      "Elektrolyte",
-      "Drogenscreening"
-    ]
+    "untersuchungen": ["EEG", "MRT (Schädel)", "Blutzucker", "Elektrolyte", "Drogenscreening"]
   },
   {
     "id": "c38",
@@ -3838,31 +3598,36 @@
         "de": "Gastroenteritis",
         "patient": "Magen-Darm-Grippe",
         "uz": "gastroenterit",
-        "ru": "гастроэнтерит"
+        "ru": "гастроэнтерит",
+        "tr": "gastroenterit"
       },
       {
         "de": "Exsikkose",
         "patient": "Austrocknung",
         "uz": "organizmning suvsizlanishi",
-        "ru": "эксикоз (обезвоживание)"
+        "ru": "эксикоз (обезвоживание)",
+        "tr": "vücudun susuz kalması (dehidratasyon)"
       },
       {
         "de": "wässrige Diarrhö",
         "patient": "flüssiger Durchfall",
         "uz": "suvsimon ich ketish",
-        "ru": "водянистая диарея"
+        "ru": "водянистая диарея",
+        "tr": "sulu ishal"
       },
       {
         "de": "Infektionsschutzgesetz",
         "patient": "Gesetz zu ansteckenden Krankheiten, Meldepflicht",
         "uz": "infeksiyadan himoya qonuni",
-        "ru": "закон о защите от инфекций"
+        "ru": "закон о защите от инфекций",
+        "tr": "enfeksiyondan korunma yasası"
       },
       {
         "de": "orale Rehydratation",
         "patient": "viel trinken mit Salz und Zucker",
         "uz": "og‘iz orqali suyuqlik tiklash",
-        "ru": "оральная регидратация"
+        "ru": "оральная регидратация",
+        "tr": "ağızdan sıvı yerine koyma"
       }
     ],
     "simulation": {
@@ -3883,25 +3648,14 @@
       }
     },
     "verdachtsdiagnose": "Akute infektiöse Gastroenteritis (V. a. Lebensmittelinfektion) mit Exsikkose",
-    "diagnoseKeywords": [
-      "gastroenteritis",
-      "lebensmittelinfektion",
-      "enteritis",
-      "lebensmittelvergiftung"
-    ],
+    "diagnoseKeywords": ["gastroenteritis", "lebensmittelinfektion", "enteritis", "lebensmittelvergiftung"],
     "differenzialdiagnosen": [
       "Appendizitis",
       "Chronisch-entzündliche Darmerkrankung",
       "Clostridioides-difficile-Infektion",
       "Extrauteringravidität"
     ],
-    "untersuchungen": [
-      "Elektrolyte",
-      "Kreatinin",
-      "Blutbild",
-      "Stuhlkultur",
-      "Schwangerschaftstest"
-    ]
+    "untersuchungen": ["Elektrolyte", "Kreatinin", "Blutbild", "Stuhlkultur", "Schwangerschaftstest"]
   },
   {
     "id": "c39",
@@ -3941,31 +3695,36 @@
         "de": "Synkope",
         "patient": "kurze Ohnmacht",
         "uz": "hushdan ketish",
-        "ru": "обморок"
+        "ru": "обморок",
+        "tr": "bayılma"
       },
       {
         "de": "Prodromi",
         "patient": "Warnzeichen vorher",
         "uz": "oldindan keladigan belgilar",
-        "ru": "предвестники"
+        "ru": "предвестники",
+        "tr": "öncü belirtiler"
       },
       {
         "de": "Bradykardie",
         "patient": "langsamer Herzschlag",
         "uz": "bradikardiya (sekin yurak urishi)",
-        "ru": "брадикардия"
+        "ru": "брадикардия",
+        "tr": "bradikardi (yavaş kalp atışı)"
       },
       {
         "de": "AV-Block",
         "patient": "Störung der Reizleitung im Herzen",
         "uz": "AV-blokada",
-        "ru": "АВ-блокада"
+        "ru": "АВ-блокада",
+        "tr": "AV blok"
       },
       {
         "de": "Herzschrittmacher",
         "patient": "kleines Gerät, das den Herzschlag steuert",
         "uz": "yurak stimulyatori",
-        "ru": "кардиостимулятор"
+        "ru": "кардиостимулятор",
+        "tr": "kalp pili"
       }
     ],
     "simulation": {
@@ -3986,26 +3745,14 @@
       }
     },
     "verdachtsdiagnose": "Rezidivierende Synkopen bei V. a. bradykarde Herzrhythmusstörung (z. B. höhergradiger AV-Block) unter Bisoprolol und Verapamil",
-    "diagnoseKeywords": [
-      "synkope",
-      "bradykard",
-      "av-block",
-      "bradykardie",
-      "rhythmusstörung"
-    ],
+    "diagnoseKeywords": ["synkope", "bradykard", "av-block", "bradykardie", "rhythmusstörung"],
     "differenzialdiagnosen": [
       "Orthostatische Synkope",
       "Epileptischer Anfall",
       "Aortenklappenstenose",
       "Ventrikuläre Tachykardie"
     ],
-    "untersuchungen": [
-      "EKG",
-      "Langzeit-EKG",
-      "Elektrolyte",
-      "Echo (Echokardiographie)",
-      "Schellong-Test"
-    ]
+    "untersuchungen": ["EKG", "Langzeit-EKG", "Elektrolyte", "Echo (Echokardiographie)", "Schellong-Test"]
   },
   {
     "id": "c40",
@@ -4045,31 +3792,36 @@
         "de": "Sepsis",
         "patient": "Blutvergiftung",
         "uz": "sepsis (qon zaharlanishi)",
-        "ru": "сепсис"
+        "ru": "сепсис",
+        "tr": "sepsis (kan zehirlenmesi)"
       },
       {
         "de": "Schüttelfrost",
         "patient": "starkes Zittern mit Kälte",
         "uz": "titroq bilan et uvishishi",
-        "ru": "озноб"
+        "ru": "озноб",
+        "tr": "titreme ile üşüme"
       },
       {
         "de": "Hypotonie",
         "patient": "niedriger Blutdruck",
         "uz": "past qon bosimi",
-        "ru": "гипотония"
+        "ru": "гипотония",
+        "tr": "düşük tansiyon"
       },
       {
         "de": "Blutkulturen",
         "patient": "Blutproben, um Bakterien zu finden",
         "uz": "qon ekmasi",
-        "ru": "посев крови"
+        "ru": "посев крови",
+        "tr": "kan kültürü"
       },
       {
         "de": "qSOFA",
         "patient": "kurzer Test auf schwere Infektion",
         "uz": "qSOFA shkalasi",
-        "ru": "шкала qSOFA"
+        "ru": "шкала qSOFA",
+        "tr": "qSOFA skoru"
       }
     ],
     "simulation": {
@@ -4090,24 +3842,9 @@
       }
     },
     "verdachtsdiagnose": "Urosepsis bei Pyelonephritis rechts",
-    "diagnoseKeywords": [
-      "urosepsis",
-      "sepsis",
-      "pyelonephritis"
-    ],
-    "differenzialdiagnosen": [
-      "Pneumonie",
-      "Cholangitis",
-      "Harnstauungsniere",
-      "Endokarditis"
-    ],
-    "untersuchungen": [
-      "Blutkulturen",
-      "Laktat",
-      "Urinkultur",
-      "Blutbild",
-      "Sonographie (Nieren)"
-    ]
+    "diagnoseKeywords": ["urosepsis", "sepsis", "pyelonephritis"],
+    "differenzialdiagnosen": ["Pneumonie", "Cholangitis", "Harnstauungsniere", "Endokarditis"],
+    "untersuchungen": ["Blutkulturen", "Laktat", "Urinkultur", "Blutbild", "Sonographie (Nieren)"]
   },
   {
     "id": "c41",
@@ -4147,31 +3884,36 @@
         "de": "Cholezystolithiasis",
         "patient": "Gallensteine",
         "uz": "o‘t pufagida tosh",
-        "ru": "желчнокаменная болезнь"
+        "ru": "желчнокаменная болезнь",
+        "tr": "safra kesesi taşı"
       },
       {
         "de": "Gallenkolik",
         "patient": "krampfartige Schmerzen durch Gallensteine",
         "uz": "o‘t sanchig‘i",
-        "ru": "желчная колика"
+        "ru": "желчная колика",
+        "tr": "safra koliği"
       },
       {
         "de": "rechter Oberbauch",
         "patient": "rechts oben im Bauch",
         "uz": "qorinning o‘ng yuqori qismi",
-        "ru": "правое подреберье"
+        "ru": "правое подреберье",
+        "tr": "karnın sağ üst kısmı"
       },
       {
         "de": "Murphy-Zeichen",
         "patient": "Schmerz beim Einatmen bei Druck unter dem Rippenbogen",
         "uz": "Merfi belgisi",
-        "ru": "симптом Мерфи"
+        "ru": "симптом Мерфи",
+        "tr": "Murphy belirtisi"
       },
       {
         "de": "laparoskopische Cholezystektomie",
         "patient": "Entfernung der Gallenblase per Schlüsselloch-OP",
         "uz": "laparoskopik xoletsistektomiya",
-        "ru": "лапароскопическая холецистэктомия"
+        "ru": "лапароскопическая холецистэктомия",
+        "tr": "laparoskopik kolesistektomi"
       }
     ],
     "simulation": {
@@ -4192,25 +3934,14 @@
       }
     },
     "verdachtsdiagnose": "Symptomatische Cholezystolithiasis mit Gallenkolik",
-    "diagnoseKeywords": [
-      "gallenkolik",
-      "cholezystolithiasis",
-      "gallensteine",
-      "cholelithiasis"
-    ],
+    "diagnoseKeywords": ["gallenkolik", "cholezystolithiasis", "gallensteine", "cholelithiasis"],
     "differenzialdiagnosen": [
       "Akute Cholezystitis",
       "Choledocholithiasis",
       "Ulcus duodeni",
       "Akute Pankreatitis"
     ],
-    "untersuchungen": [
-      "Sonographie (Abdomen)",
-      "Leberwerte",
-      "Lipase",
-      "Blutbild",
-      "CRP"
-    ]
+    "untersuchungen": ["Sonographie (Abdomen)", "Leberwerte", "Lipase", "Blutbild", "CRP"]
   },
   {
     "id": "c42",
@@ -4250,31 +3981,36 @@
         "de": "Gicht (Arthritis urica)",
         "patient": "Gelenkentzündung durch Harnsäure",
         "uz": "podagra",
-        "ru": "подагра"
+        "ru": "подагра",
+        "tr": "gut"
       },
       {
         "de": "Großzehengrundgelenk",
         "patient": "Gelenk am großen Zeh",
         "uz": "bosh barmoq asosidagi bo‘g‘im",
-        "ru": "плюснефаланговый сустав большого пальца"
+        "ru": "плюснефаланговый сустав большого пальца",
+        "tr": "başparmak tabanındaki eklem"
       },
       {
         "de": "Harnsäure",
         "patient": "Abbauprodukt im Blut",
         "uz": "siydik kislotasi",
-        "ru": "мочевая кислота"
+        "ru": "мочевая кислота",
+        "tr": "ürik asit"
       },
       {
         "de": "Podagra",
         "patient": "Gichtanfall am großen Zeh",
         "uz": "bosh barmoq podagrasi",
-        "ru": "подагрический артрит большого пальца"
+        "ru": "подагрический артрит большого пальца",
+        "tr": "başparmak gutu (podagra)"
       },
       {
         "de": "Gelenkpunktion",
         "patient": "Flüssigkeit aus dem Gelenk entnehmen",
         "uz": "bo‘g‘im punksiyasi",
-        "ru": "пункция сустава"
+        "ru": "пункция сустава",
+        "tr": "eklem ponksiyonu"
       }
     ],
     "simulation": {
@@ -4295,25 +4031,14 @@
       }
     },
     "verdachtsdiagnose": "Akuter Gichtanfall (Podagra) rechts",
-    "diagnoseKeywords": [
-      "gicht",
-      "podagra",
-      "arthritis urica",
-      "gichtanfall"
-    ],
+    "diagnoseKeywords": ["gicht", "podagra", "arthritis urica", "gichtanfall"],
     "differenzialdiagnosen": [
       "Septische Arthritis",
       "Pseudogicht (Chondrokalzinose)",
       "Erysipel",
       "Aktivierte Arthrose"
     ],
-    "untersuchungen": [
-      "Harnsäure",
-      "CRP",
-      "Blutbild",
-      "Gelenkpunktion",
-      "Röntgen (Fuß)"
-    ]
+    "untersuchungen": ["Harnsäure", "CRP", "Blutbild", "Gelenkpunktion", "Röntgen (Fuß)"]
   },
   {
     "id": "c43",
@@ -4353,31 +4078,36 @@
         "de": "Zystitis",
         "patient": "Blasenentzündung",
         "uz": "sistit (siydik pufagi yallig‘lanishi)",
-        "ru": "цистит"
+        "ru": "цистит",
+        "tr": "sistit (mesane iltihabı)"
       },
       {
         "de": "Dysurie",
         "patient": "Brennen beim Wasserlassen",
         "uz": "siyishda achishish",
-        "ru": "дизурия"
+        "ru": "дизурия",
+        "tr": "idrar yaparken yanma"
       },
       {
         "de": "Pollakisurie",
         "patient": "häufiges Wasserlassen in kleinen Mengen",
         "uz": "tez-tez oz-ozdan siyish",
-        "ru": "поллакиурия"
+        "ru": "поллакиурия",
+        "tr": "sık sık az miktarda idrar yapma"
       },
       {
         "de": "suprapubisch",
         "patient": "über dem Schambein",
         "uz": "qov suyagi ustida",
-        "ru": "надлобковый"
+        "ru": "надлобковый",
+        "tr": "kasık kemiğinin üstünde (suprapubik)"
       },
       {
         "de": "Urinstix",
         "patient": "Teststreifen für den Urin",
         "uz": "siydik test-chizig‘i",
-        "ru": "тест-полоска мочи"
+        "ru": "тест-полоска мочи",
+        "tr": "idrar test çubuğu"
       }
     ],
     "simulation": {
@@ -4398,24 +4128,14 @@
       }
     },
     "verdachtsdiagnose": "Akute unkomplizierte Zystitis",
-    "diagnoseKeywords": [
-      "zystitis",
-      "harnwegsinfekt",
-      "blasenentzündung",
-      "hwi"
-    ],
+    "diagnoseKeywords": ["zystitis", "harnwegsinfekt", "blasenentzündung", "hwi"],
     "differenzialdiagnosen": [
       "Pyelonephritis",
       "Urethritis (sexuell übertragbare Infektion)",
       "Vaginitis",
       "Schwangerschaft"
     ],
-    "untersuchungen": [
-      "Urinstatus",
-      "Urinkultur",
-      "Schwangerschaftstest",
-      "Sonographie (Nieren)"
-    ]
+    "untersuchungen": ["Urinstatus", "Urinkultur", "Schwangerschaftstest", "Sonographie (Nieren)"]
   },
   {
     "id": "c44",
@@ -4455,31 +4175,36 @@
         "de": "akutes Nierenversagen",
         "patient": "die Nieren arbeiten plötzlich nicht mehr richtig",
         "uz": "o‘tkir buyrak yetishmovchiligi",
-        "ru": "острая почечная недостаточность"
+        "ru": "острая почечная недостаточность",
+        "tr": "akut böbrek yetmezliği"
       },
       {
         "de": "Oligurie",
         "patient": "sehr wenig Urin",
         "uz": "oliguriya (siydikning kamayishi)",
-        "ru": "олигурия"
+        "ru": "олигурия",
+        "tr": "oligüri (idrarın azalması)"
       },
       {
         "de": "prärenal",
         "patient": "durch zu wenig Flüssigkeit",
         "uz": "prerenal (buyrakdan oldingi sabab)",
-        "ru": "преренальный"
+        "ru": "преренальный",
+        "tr": "prerenal (böbrek öncesi neden)"
       },
       {
         "de": "Hyperkaliämie",
         "patient": "zu viel Kalium im Blut",
         "uz": "giperkaliyemiya",
-        "ru": "гиперкалиемия"
+        "ru": "гиперкалиемия",
+        "tr": "hiperkalemi"
       },
       {
         "de": "nephrotoxisch",
         "patient": "schädlich für die Niere",
         "uz": "buyrakka zararli",
-        "ru": "нефротоксичный"
+        "ru": "нефротоксичный",
+        "tr": "böbreğe zararlı (nefrotoksik)"
       }
     ],
     "simulation": {
@@ -4500,26 +4225,14 @@
       }
     },
     "verdachtsdiagnose": "Akutes prärenales Nierenversagen bei Exsikkose unter ACE-Hemmer, Diuretika und NSAR",
-    "diagnoseKeywords": [
-      "nierenversagen",
-      "nierenschädigung",
-      "akute niereninsuffizienz",
-      "anv",
-      "aki"
-    ],
+    "diagnoseKeywords": ["nierenversagen", "nierenschädigung", "akute niereninsuffizienz", "anv", "aki"],
     "differenzialdiagnosen": [
       "Postrenales Nierenversagen (Harnstau)",
       "Akute interstitielle Nephritis",
       "Kardiorenales Syndrom",
       "Rhabdomyolyse"
     ],
-    "untersuchungen": [
-      "Kreatinin",
-      "Kalium",
-      "Blutgasanalyse",
-      "Urinstatus",
-      "Sonographie (Nieren)"
-    ]
+    "untersuchungen": ["Kreatinin", "Kalium", "Blutgasanalyse", "Urinstatus", "Sonographie (Nieren)"]
   },
   {
     "id": "c45",
@@ -4559,31 +4272,36 @@
         "de": "Hypoglykämie",
         "patient": "Unterzucker",
         "uz": "gipoglikemiya (qand pasayishi)",
-        "ru": "гипогликемия"
+        "ru": "гипогликемия",
+        "tr": "hipoglisemi (kan şekeri düşüklüğü)"
       },
       {
         "de": "Sulfonylharnstoff",
         "patient": "Tablette, die Insulin freisetzt",
         "uz": "sulfonilmochevina guruhi dorisi",
-        "ru": "препарат сульфонилмочевины"
+        "ru": "препарат сульфонилмочевины",
+        "tr": "sülfonilüre grubu ilaç"
       },
       {
         "de": "Heißhunger",
         "patient": "sehr starker Hunger",
         "uz": "kuchli ochlik hissi",
-        "ru": "сильный голод"
+        "ru": "сильный голод",
+        "tr": "aşırı açlık hissi"
       },
       {
         "de": "Glukose",
         "patient": "Zucker",
         "uz": "glyukoza",
-        "ru": "глюкоза"
+        "ru": "глюкоза",
+        "tr": "glukoz"
       },
       {
         "de": "Niereninsuffizienz",
         "patient": "Nierenschwäche",
         "uz": "buyrak yetishmovchiligi",
-        "ru": "почечная недостаточность"
+        "ru": "почечная недостаточность",
+        "tr": "böbrek yetmezliği"
       }
     ],
     "simulation": {
@@ -4604,24 +4322,14 @@
       }
     },
     "verdachtsdiagnose": "Hypoglykämie unter Sulfonylharnstoff (Glibenclamid) bei Niereninsuffizienz und ausgelassener Mahlzeit",
-    "diagnoseKeywords": [
-      "hypoglykämie",
-      "unterzucker",
-      "hypoglykaemie"
-    ],
+    "diagnoseKeywords": ["hypoglykämie", "unterzucker", "hypoglykaemie"],
     "differenzialdiagnosen": [
       "Transitorische ischämische Attacke",
       "Herzrhythmusstörung",
       "Hyperthyreose",
       "Epileptischer Anfall"
     ],
-    "untersuchungen": [
-      "Blutzucker",
-      "HbA1c",
-      "Kreatinin",
-      "EKG",
-      "Elektrolyte"
-    ]
+    "untersuchungen": ["Blutzucker", "HbA1c", "Kreatinin", "EKG", "Elektrolyte"]
   },
   {
     "id": "c46",
@@ -4661,31 +4369,36 @@
         "de": "Herpes zoster",
         "patient": "Gürtelrose",
         "uz": "o‘rab oluvchi temiratki (herpes zoster)",
-        "ru": "опоясывающий лишай"
+        "ru": "опоясывающий лишай",
+        "tr": "zona (herpes zoster)"
       },
       {
         "de": "Vesikel",
         "patient": "Bläschen",
         "uz": "pufakchalar",
-        "ru": "пузырьки (везикулы)"
+        "ru": "пузырьки (везикулы)",
+        "tr": "kabarcıklar (veziküller)"
       },
       {
         "de": "Dermatom",
         "patient": "Hautbereich eines Nervs",
         "uz": "dermatom",
-        "ru": "дерматом"
+        "ru": "дерматом",
+        "tr": "dermatom"
       },
       {
         "de": "Immunsuppression",
         "patient": "geschwächtes Abwehrsystem durch Medikamente",
         "uz": "immunitetning dori bilan susaytirilishi",
-        "ru": "иммуносупрессия"
+        "ru": "иммуносупрессия",
+        "tr": "bağışıklığın ilaçla baskılanması"
       },
       {
         "de": "Post-Zoster-Neuralgie",
         "patient": "Nervenschmerzen nach der Gürtelrose",
         "uz": "zosterdan keyingi nevralgiya",
-        "ru": "постгерпетическая невралгия"
+        "ru": "постгерпетическая невралгия",
+        "tr": "postherpetik nevralji"
       }
     ],
     "simulation": {
@@ -4706,11 +4419,7 @@
       }
     },
     "verdachtsdiagnose": "Herpes zoster (thorakales Dermatom links) bei Immunsuppression",
-    "diagnoseKeywords": [
-      "herpes zoster",
-      "zoster",
-      "gürtelrose"
-    ],
+    "diagnoseKeywords": ["herpes zoster", "zoster", "gürtelrose"],
     "differenzialdiagnosen": [
       "Akutes Koronarsyndrom",
       "Herpes simplex",
@@ -4763,31 +4472,36 @@
         "de": "TIA",
         "patient": "Durchblutungsstörung im Gehirn, die von selbst vorbeigeht",
         "uz": "tranzitor ishemik ataka",
-        "ru": "транзиторная ишемическая атака"
+        "ru": "транзиторная ишемическая атака",
+        "tr": "geçici iskemik atak"
       },
       {
         "de": "Wortfindungsstörung",
         "patient": "die Wörter nicht finden",
         "uz": "so‘z topishda qiynalish",
-        "ru": "нарушение подбора слов"
+        "ru": "нарушение подбора слов",
+        "tr": "kelime bulmada zorlanma"
       },
       {
         "de": "Karotisstenose",
         "patient": "Verengung der Halsschlagader",
         "uz": "uyqu arteriyasi torayishi",
-        "ru": "стеноз сонной артерии"
+        "ru": "стеноз сонной артерии",
+        "tr": "şah damarı daralması"
       },
       {
         "de": "Duplexsonographie",
         "patient": "Ultraschall der Blutgefäße",
         "uz": "dupleks sonografiya",
-        "ru": "дуплексное сканирование"
+        "ru": "дуплексное сканирование",
+        "tr": "dupleks ultrasonografi"
       },
       {
         "de": "Sekundärprophylaxe",
         "patient": "Vorbeugung, damit es nicht wieder passiert",
         "uz": "ikkilamchi profilaktika",
-        "ru": "вторичная профилактика"
+        "ru": "вторичная профилактика",
+        "tr": "ikincil korunma"
       }
     ],
     "simulation": {
@@ -4808,24 +4522,14 @@
       }
     },
     "verdachtsdiagnose": "Transitorische ischämische Attacke (TIA) im Stromgebiet der linken A. cerebri media",
-    "diagnoseKeywords": [
-      "tia",
-      "transitorische ischämische attacke",
-      "transitorisch"
-    ],
+    "diagnoseKeywords": ["tia", "transitorische ischämische attacke", "transitorisch"],
     "differenzialdiagnosen": [
       "Ischämischer Schlaganfall",
       "Hypoglykämie",
       "Migräne mit Aura",
       "Fokaler epileptischer Anfall"
     ],
-    "untersuchungen": [
-      "MRT (Schädel)",
-      "Duplexsonographie (Halsgefäße)",
-      "EKG",
-      "Langzeit-EKG",
-      "Blutzucker"
-    ]
+    "untersuchungen": ["MRT (Schädel)", "Duplexsonographie (Halsgefäße)", "EKG", "Langzeit-EKG", "Blutzucker"]
   },
   {
     "id": "c48",
@@ -4865,31 +4569,36 @@
         "de": "Kolonkarzinom",
         "patient": "Darmkrebs",
         "uz": "yo‘g‘on ichak saratoni",
-        "ru": "рак толстой кишки"
+        "ru": "рак толстой кишки",
+        "tr": "kalın bağırsak kanseri"
       },
       {
         "de": "Hämatochezie",
         "patient": "Blut im Stuhl",
         "uz": "najasda qizil qon",
-        "ru": "кровь в кале (гематохезия)"
+        "ru": "кровь в кале (гематохезия)",
+        "tr": "dışkıda kırmızı kan"
       },
       {
         "de": "B-Symptomatik",
         "patient": "Gewichtsverlust, Fieber, Nachtschweiß",
         "uz": "B-simptomlar (vazn yo‘qotish, isitma, tungi terlash)",
-        "ru": "B-симптомы"
+        "ru": "B-симптомы",
+        "tr": "B semptomları (kilo kaybı, ateş, gece terlemesi)"
       },
       {
         "de": "Tumormarker CEA",
         "patient": "Blutwert bei Darmkrebs",
         "uz": "CEA o‘sma markeri",
-        "ru": "онкомаркер РЭА"
+        "ru": "онкомаркер РЭА",
+        "tr": "CEA tümör belirteci"
       },
       {
         "de": "Staging",
         "patient": "Untersuchungen, wie weit der Krebs ist",
         "uz": "kasallik bosqichini aniqlash",
-        "ru": "стадирование"
+        "ru": "стадирование",
+        "tr": "hastalığın evrelendirilmesi"
       }
     ],
     "simulation": {
@@ -4910,25 +4619,14 @@
       }
     },
     "verdachtsdiagnose": "V. a. Kolonkarzinom (linksseitig) mit B-Symptomatik",
-    "diagnoseKeywords": [
-      "kolonkarzinom",
-      "darmkrebs",
-      "kolorektales karzinom",
-      "karzinom"
-    ],
+    "diagnoseKeywords": ["kolonkarzinom", "darmkrebs", "kolorektales karzinom", "karzinom"],
     "differenzialdiagnosen": [
       "Hämorrhoidalblutung",
       "Divertikelblutung",
       "Chronisch-entzündliche Darmerkrankung",
       "Angiodysplasie"
     ],
-    "untersuchungen": [
-      "Koloskopie mit Biopsie",
-      "Blutbild",
-      "CEA",
-      "CT (Thorax und Abdomen)",
-      "Leberwerte"
-    ]
+    "untersuchungen": ["Koloskopie mit Biopsie", "Blutbild", "CEA", "CT (Thorax und Abdomen)", "Leberwerte"]
   },
   {
     "id": "c49",
@@ -4968,31 +4666,36 @@
         "de": "Supinationstrauma",
         "patient": "Umknicken nach außen",
         "uz": "oyoq panjasining tashqariga qayrilishi",
-        "ru": "супинационная травма (подворот стопы)"
+        "ru": "супинационная травма (подворот стопы)",
+        "tr": "ayağın dışa doğru burkulması"
       },
       {
         "de": "oberes Sprunggelenk (OSG)",
         "patient": "Knöchelgelenk",
         "uz": "yuqori to‘piq bo‘g‘imi",
-        "ru": "голеностопный сустав"
+        "ru": "голеностопный сустав",
+        "tr": "üst ayak bileği eklemi"
       },
       {
         "de": "Außenbandruptur",
         "patient": "Riss der Bänder außen am Knöchel",
         "uz": "tashqi boylamlar uzilishi",
-        "ru": "разрыв наружных связок"
+        "ru": "разрыв наружных связок",
+        "tr": "dış bağların yırtılması"
       },
       {
         "de": "Ottawa-Regeln",
         "patient": "Regeln, wann man röntgen muss",
         "uz": "Ottava qoidalari (rentgen ko‘rsatmasi)",
-        "ru": "оттавские правила"
+        "ru": "оттавские правила",
+        "tr": "Ottawa kuralları (röntgen endikasyonu)"
       },
       {
         "de": "PECH-Regel",
         "patient": "Pause, Eis, Kompression, Hochlagern",
         "uz": "PECH qoidasi: dam, muz, bog‘lam, baland qo‘yish",
-        "ru": "правило PECH: покой, лёд, компрессия, возвышение"
+        "ru": "правило PECH: покой, лёд, компрессия, возвышение",
+        "tr": "PECH kuralı: dinlenme, buz, bandaj, yukarı kaldırma"
       }
     ],
     "simulation": {
@@ -5013,13 +4716,7 @@
       }
     },
     "verdachtsdiagnose": "Supinationstrauma des rechten OSG, V. a. Außenbandläsion, Ausschluss einer Außenknöchelfraktur",
-    "diagnoseKeywords": [
-      "supinationstrauma",
-      "sprunggelenk",
-      "osg",
-      "außenband",
-      "distorsion"
-    ],
+    "diagnoseKeywords": ["supinationstrauma", "sprunggelenk", "osg", "außenband", "distorsion"],
     "differenzialdiagnosen": [
       "Außenknöchelfraktur (Weber)",
       "Fraktur der Basis des 5. Mittelfußknochens",
@@ -5071,31 +4768,36 @@
         "de": "Anaphylaxie",
         "patient": "schwere allergische Reaktion",
         "uz": "anafilaksiya",
-        "ru": "анафилаксия"
+        "ru": "анафилаксия",
+        "tr": "anafilaksi"
       },
       {
         "de": "Urtikaria",
         "patient": "Nesselsucht, Quaddeln",
         "uz": "eshakemi (urtikariya)",
-        "ru": "крапивница"
+        "ru": "крапивница",
+        "tr": "kurdeşen (ürtiker)"
       },
       {
         "de": "Angioödem",
         "patient": "Schwellung von Lippen und Gesicht",
         "uz": "angionevrotik shish",
-        "ru": "ангионевротический отёк"
+        "ru": "ангионевротический отёк",
+        "tr": "anjiyoödem"
       },
       {
         "de": "Adrenalin-Autoinjektor",
         "patient": "Notfall-Spritze gegen Allergie",
         "uz": "adrenalin avtoinyektori",
-        "ru": "автоинъектор адреналина"
+        "ru": "автоинъектор адреналина",
+        "tr": "adrenalin oto-enjektörü"
       },
       {
         "de": "Hyposensibilisierung",
         "patient": "Behandlung, die die Allergie abschwächt",
         "uz": "giposensibilizatsiya (allergen-spetsifik terapiya)",
-        "ru": "аллерген-специфическая иммунотерапия"
+        "ru": "аллерген-специфическая иммунотерапия",
+        "tr": "hiposensitizasyon (alerjene özgü immünoterapi)"
       }
     ],
     "simulation": {
@@ -5116,25 +4818,9 @@
       }
     },
     "verdachtsdiagnose": "Anaphylaktische Reaktion (Grad II–III) nach Wespenstich",
-    "diagnoseKeywords": [
-      "anaphylax",
-      "anaphylaktisch",
-      "allergische reaktion",
-      "insektengiftallergie"
-    ],
-    "differenzialdiagnosen": [
-      "Hereditäres Angioödem",
-      "Asthmaanfall",
-      "Vasovagale Reaktion",
-      "Panikattacke"
-    ],
-    "untersuchungen": [
-      "Vitalparameter",
-      "Pulsoxymetrie",
-      "Tryptase",
-      "EKG",
-      "Allergietestung (später)"
-    ]
+    "diagnoseKeywords": ["anaphylax", "anaphylaktisch", "allergische reaktion", "insektengiftallergie"],
+    "differenzialdiagnosen": ["Hereditäres Angioödem", "Asthmaanfall", "Vasovagale Reaktion", "Panikattacke"],
+    "untersuchungen": ["Vitalparameter", "Pulsoxymetrie", "Tryptase", "EKG", "Allergietestung (später)"]
   },
   {
     "id": "c51",
@@ -5174,31 +4860,36 @@
         "de": "Aortendissektion",
         "patient": "Einriss in der Wand der Hauptschlagader",
         "uz": "aorta devorining qatlanib yorilishi (aorta disseksiyasi)",
-        "ru": "расслоение аорты"
+        "ru": "расслоение аорты",
+        "tr": "aort duvarının katmanlarına ayrılması (aort diseksiyonu)"
       },
       {
         "de": "Blutdruckdifferenz",
         "patient": "unterschiedlicher Blutdruck an beiden Armen",
         "uz": "ikki qo‘ldagi qon bosimi farqi",
-        "ru": "разница давления на руках"
+        "ru": "разница давления на руках",
+        "tr": "iki koldaki tansiyon farkı"
       },
       {
         "de": "Aneurysma",
         "patient": "Aussackung eines Blutgefäßes",
         "uz": "anevrizma (qon tomir bo‘rtishi)",
-        "ru": "аневризма"
+        "ru": "аневризма",
+        "tr": "anevrizma (damar balonlaşması)"
       },
       {
         "de": "CT-Angiographie",
         "patient": "Computertomographie der Blutgefäße mit Kontrastmittel",
         "uz": "KT-angiografiya",
-        "ru": "КТ-ангиография"
+        "ru": "КТ-ангиография",
+        "tr": "BT anjiyografi"
       },
       {
         "de": "interskapulär",
         "patient": "zwischen den Schulterblättern",
         "uz": "kurak suyaklari orasida",
-        "ru": "межлопаточно"
+        "ru": "межлопаточно",
+        "tr": "kürek kemiklerinin arasında"
       }
     ],
     "simulation": {
@@ -5219,10 +4910,7 @@
       }
     },
     "verdachtsdiagnose": "V. a. akute Aortendissektion (Typ A nach Stanford)",
-    "diagnoseKeywords": [
-      "aortendissektion",
-      "dissektion"
-    ],
+    "diagnoseKeywords": ["aortendissektion", "dissektion"],
     "differenzialdiagnosen": [
       "Akutes Koronarsyndrom",
       "Lungenembolie",
@@ -5275,31 +4963,36 @@
         "de": "Bronchialkarzinom",
         "patient": "Lungenkrebs",
         "uz": "o‘pka saratoni (bronx karsinomasi)",
-        "ru": "рак лёгкого"
+        "ru": "рак лёгкого",
+        "tr": "akciğer kanseri (bronş karsinomu)"
       },
       {
         "de": "Hämoptysen",
         "patient": "Blut im Auswurf",
         "uz": "qon aralash balg‘am (gemoptiz)",
-        "ru": "кровохарканье"
+        "ru": "кровохарканье",
+        "tr": "kanlı balgam (hemoptizi)"
       },
       {
         "de": "Nachtschweiß",
         "patient": "nachts stark schwitzen",
         "uz": "tungi terlash",
-        "ru": "ночная потливость"
+        "ru": "ночная потливость",
+        "tr": "gece terlemesi"
       },
       {
         "de": "Bronchoskopie",
         "patient": "Lungenspiegelung",
         "uz": "bronxoskopiya",
-        "ru": "бронхоскопия"
+        "ru": "бронхоскопия",
+        "tr": "bronkoskopi"
       },
       {
         "de": "Rekurrensparese",
         "patient": "Lähmung des Stimmbandnervs",
         "uz": "qaytuvchi nerv falaji (ovoz bo‘g‘ilishi)",
-        "ru": "парез возвратного нерва"
+        "ru": "парез возвратного нерва",
+        "tr": "rekürren sinir felci (ses kısıklığı)"
       }
     ],
     "simulation": {
@@ -5320,18 +5013,8 @@
       }
     },
     "verdachtsdiagnose": "V. a. Bronchialkarzinom mit B-Symptomatik und Heiserkeit (DD Rekurrensparese)",
-    "diagnoseKeywords": [
-      "bronchialkarzinom",
-      "lungenkarzinom",
-      "lungenkrebs",
-      "karzinom"
-    ],
-    "differenzialdiagnosen": [
-      "Lungentuberkulose",
-      "Pneumonie",
-      "Bronchiektasen",
-      "Mesotheliom"
-    ],
+    "diagnoseKeywords": ["bronchialkarzinom", "lungenkarzinom", "lungenkrebs", "karzinom"],
+    "differenzialdiagnosen": ["Lungentuberkulose", "Pneumonie", "Bronchiektasen", "Mesotheliom"],
     "untersuchungen": [
       "Röntgen-Thorax",
       "CT-Thorax",
@@ -5378,31 +5061,36 @@
         "de": "Morbus Crohn",
         "patient": "chronische Darmentzündung",
         "uz": "Kron kasalligi",
-        "ru": "болезнь Крона"
+        "ru": "болезнь Крона",
+        "tr": "Crohn hastalığı"
       },
       {
         "de": "Diarrhö",
         "patient": "Durchfall",
         "uz": "ich ketishi (diareya)",
-        "ru": "диарея"
+        "ru": "диарея",
+        "tr": "ishal (diyare)"
       },
       {
         "de": "Aphthen",
         "patient": "wunde Stellen im Mund",
         "uz": "og‘izdagi yarachalar (aftalar)",
-        "ru": "афты"
+        "ru": "афты",
+        "tr": "ağızda yaralar (aft)"
       },
       {
         "de": "Calprotectin",
         "patient": "Entzündungswert im Stuhl",
         "uz": "najasdagi kalprotektin",
-        "ru": "фекальный кальпротектин"
+        "ru": "фекальный кальпротектин",
+        "tr": "dışkıda kalprotektin"
       },
       {
         "de": "Fistel",
         "patient": "krankhafter Gang zwischen Organen",
         "uz": "oqma (fistula)",
-        "ru": "свищ"
+        "ru": "свищ",
+        "tr": "fistül"
       }
     ],
     "simulation": {
@@ -5423,12 +5111,7 @@
       }
     },
     "verdachtsdiagnose": "V. a. Morbus Crohn (Erstmanifestation / akuter Schub) mit Ileitis terminalis",
-    "diagnoseKeywords": [
-      "morbus crohn",
-      "crohn",
-      "chronisch-entzündliche darmerkrankung",
-      "ced"
-    ],
+    "diagnoseKeywords": ["morbus crohn", "crohn", "chronisch-entzündliche darmerkrankung", "ced"],
     "differenzialdiagnosen": [
       "Colitis ulcerosa",
       "Infektiöse Enteritis (z. B. Yersinien)",
@@ -5481,31 +5164,36 @@
         "de": "Ketoazidose",
         "patient": "gefährliche Übersäuerung des Blutes bei Zuckerkrankheit",
         "uz": "diabetik ketoatsidoz",
-        "ru": "диабетический кетоацидоз"
+        "ru": "диабетический кетоацидоз",
+        "tr": "diyabetik ketoasidoz"
       },
       {
         "de": "Polydipsie",
         "patient": "starker Durst",
         "uz": "kuchli chanqoq (polidipsiya)",
-        "ru": "полидипсия"
+        "ru": "полидипсия",
+        "tr": "aşırı susama (polidipsi)"
       },
       {
         "de": "Polyurie",
         "patient": "viel Wasserlassen",
         "uz": "ko‘p siyish (poliuriya)",
-        "ru": "полиурия"
+        "ru": "полиурия",
+        "tr": "çok idrar yapma (poliüri)"
       },
       {
         "de": "Kußmaul-Atmung",
         "patient": "tiefe, schnelle Atmung",
         "uz": "Kussmaul nafasi (chuqur, tez nafas)",
-        "ru": "дыхание Куссмауля"
+        "ru": "дыхание Куссмауля",
+        "tr": "Kussmaul solunumu (derin, hızlı solunum)"
       },
       {
         "de": "Blutgasanalyse",
         "patient": "Untersuchung von Säure und Gasen im Blut",
         "uz": "qon gazlari tahlili",
-        "ru": "анализ газов крови"
+        "ru": "анализ газов крови",
+        "tr": "kan gazı analizi"
       }
     ],
     "simulation": {
@@ -5526,12 +5214,7 @@
       }
     },
     "verdachtsdiagnose": "Diabetische Ketoazidose bei V. a. Erstmanifestation eines Diabetes mellitus Typ 1",
-    "diagnoseKeywords": [
-      "ketoazidose",
-      "ketoacidose",
-      "dka",
-      "diabetes mellitus typ 1"
-    ],
+    "diagnoseKeywords": ["ketoazidose", "ketoacidose", "dka", "diabetes mellitus typ 1"],
     "differenzialdiagnosen": [
       "Akute Gastroenteritis",
       "Akute Pankreatitis",
@@ -5584,31 +5267,36 @@
         "de": "Subarachnoidalblutung",
         "patient": "Blutung zwischen den Hirnhäuten",
         "uz": "subaraxnoidal qon quyilishi",
-        "ru": "субарахноидальное кровоизлияние"
+        "ru": "субарахноидальное кровоизлияние",
+        "tr": "subaraknoid kanama"
       },
       {
         "de": "Vernichtungskopfschmerz",
         "patient": "schlimmster Kopfschmerz des Lebens",
         "uz": "hayotdagi eng kuchli bosh og‘rig‘i (\"momaqaldiroq\" og‘rig‘i)",
-        "ru": "громоподобная головная боль"
+        "ru": "громоподобная головная боль",
+        "tr": "hayatın en şiddetli baş ağrısı (“gök gürültüsü” baş ağrısı)"
       },
       {
         "de": "Meningismus",
         "patient": "steifer Nacken",
         "uz": "meningizm (ensa mushaklari qotishi)",
-        "ru": "менингизм"
+        "ru": "менингизм",
+        "tr": "meningismus (ense sertliği)"
       },
       {
         "de": "Lumbalpunktion",
         "patient": "Untersuchung des Nervenwassers aus dem Rücken",
         "uz": "lyumbal punksiya",
-        "ru": "люмбальная пункция"
+        "ru": "люмбальная пункция",
+        "tr": "lomber ponksiyon"
       },
       {
         "de": "Aneurysma",
         "patient": "Aussackung eines Blutgefäßes",
         "uz": "anevrizma",
-        "ru": "аневризма"
+        "ru": "аневризма",
+        "tr": "anevrizma"
       }
     ],
     "simulation": {
@@ -5629,12 +5317,7 @@
       }
     },
     "verdachtsdiagnose": "V. a. aneurysmatische Subarachnoidalblutung",
-    "diagnoseKeywords": [
-      "subarachnoidalblutung",
-      "sab",
-      "hirnblutung",
-      "subarachnoidal"
-    ],
+    "diagnoseKeywords": ["subarachnoidalblutung", "sab", "hirnblutung", "subarachnoidal"],
     "differenzialdiagnosen": [
       "Intrazerebrale Blutung",
       "Meningitis",
@@ -5687,31 +5370,36 @@
         "de": "pAVK",
         "patient": "Durchblutungsstörung der Beine („Schaufensterkrankheit“)",
         "uz": "periferik arteriyalar okkluziv kasalligi",
-        "ru": "облитерирующий атеросклероз артерий ног"
+        "ru": "облитерирующий атеросклероз артерий ног",
+        "tr": "periferik arter tıkayıcı hastalığı"
       },
       {
         "de": "Claudicatio intermittens",
         "patient": "Wadenschmerzen beim Gehen",
         "uz": "vaqti-vaqti bilan oqsoqlanish (klaudikatsiya)",
-        "ru": "перемежающаяся хромота"
+        "ru": "перемежающаяся хромота",
+        "tr": "aralıklı topallama (kladikasyon)"
       },
       {
         "de": "Gehstrecke",
         "patient": "wie weit man ohne Schmerzen gehen kann",
         "uz": "og‘riqsiz yurish masofasi",
-        "ru": "дистанция ходьбы"
+        "ru": "дистанция ходьбы",
+        "tr": "ağrısız yürüme mesafesi"
       },
       {
         "de": "Knöchel-Arm-Index",
         "patient": "Vergleich des Blutdrucks am Knöchel und am Arm",
         "uz": "to‘piq-yelka indeksi",
-        "ru": "лодыжечно-плечевой индекс"
+        "ru": "лодыжечно-плечевой индекс",
+        "tr": "ayak bileği-kol indeksi"
       },
       {
         "de": "Gehtraining",
         "patient": "regelmäßiges Gehen als Therapie",
         "uz": "yurish mashqlari",
-        "ru": "тренировочная ходьба"
+        "ru": "тренировочная ходьба",
+        "tr": "yürüme egzersizleri"
       }
     ],
     "simulation": {
@@ -5732,12 +5420,7 @@
       }
     },
     "verdachtsdiagnose": "Periphere arterielle Verschlusskrankheit (pAVK) links, Stadium IIb nach Fontaine",
-    "diagnoseKeywords": [
-      "pavk",
-      "arterielle verschlusskrankheit",
-      "claudicatio",
-      "schaufensterkrankheit"
-    ],
+    "diagnoseKeywords": ["pavk", "arterielle verschlusskrankheit", "claudicatio", "schaufensterkrankheit"],
     "differenzialdiagnosen": [
       "Spinalkanalstenose (Claudicatio spinalis)",
       "Tiefe Beinvenenthrombose",
@@ -5790,31 +5473,36 @@
         "de": "Hodentorsion",
         "patient": "verdrehter Hoden",
         "uz": "moyak buralishi",
-        "ru": "перекрут яичка"
+        "ru": "перекрут яичка",
+        "tr": "testis torsiyonu"
       },
       {
         "de": "Skrotum",
         "patient": "Hodensack",
         "uz": "yorg‘oq",
-        "ru": "мошонка"
+        "ru": "мошонка",
+        "tr": "skrotum (testis torbası)"
       },
       {
         "de": "Prehn-Zeichen",
         "patient": "Test: Anheben des Hodens",
         "uz": "Pren belgisi",
-        "ru": "симптом Прена"
+        "ru": "симптом Прена",
+        "tr": "Prehn belirtisi"
       },
       {
         "de": "Epididymitis",
         "patient": "Nebenhodenentzündung",
         "uz": "moyak ortig‘i yallig‘lanishi (epididimit)",
-        "ru": "эпидидимит"
+        "ru": "эпидидимит",
+        "tr": "epididimit (epididim iltihabı)"
       },
       {
         "de": "Freilegung",
         "patient": "operative Untersuchung des Hodens",
         "uz": "moyakni jarrohlik yo‘li bilan ochib ko‘rish",
-        "ru": "оперативная ревизия яичка"
+        "ru": "оперативная ревизия яичка",
+        "tr": "testisin cerrahi eksplorasyonu"
       }
     ],
     "simulation": {
@@ -5835,10 +5523,7 @@
       }
     },
     "verdachtsdiagnose": "V. a. Hodentorsion links (urologischer Notfall)",
-    "diagnoseKeywords": [
-      "hodentorsion",
-      "torsion"
-    ],
+    "diagnoseKeywords": ["hodentorsion", "torsion"],
     "differenzialdiagnosen": [
       "Epididymitis",
       "Hydatidentorsion",
@@ -5890,31 +5575,36 @@
         "de": "Ikterus",
         "patient": "Gelbsucht",
         "uz": "sariqlik",
-        "ru": "желтуха"
+        "ru": "желтуха",
+        "tr": "sarılık"
       },
       {
         "de": "Pankreaskarzinom",
         "patient": "Bauchspeicheldrüsenkrebs",
         "uz": "me’da osti bezi saratoni",
-        "ru": "рак поджелудочной железы"
+        "ru": "рак поджелудочной железы",
+        "tr": "pankreas kanseri"
       },
       {
         "de": "Courvoisier-Zeichen",
         "patient": "tastbare, schmerzlose Gallenblase",
         "uz": "Kurvuazye belgisi",
-        "ru": "симптом Курвуазье"
+        "ru": "симптом Курвуазье",
+        "tr": "Courvoisier belirtisi"
       },
       {
         "de": "Pruritus",
         "patient": "Juckreiz",
         "uz": "qichishish",
-        "ru": "кожный зуд"
+        "ru": "кожный зуд",
+        "tr": "kaşıntı"
       },
       {
         "de": "ERCP",
         "patient": "Spiegelung der Gallenwege",
         "uz": "endoskopik retrograd xolangiopankreatografiya",
-        "ru": "ЭРХПГ"
+        "ru": "ЭРХПГ",
+        "tr": "endoskopik retrograd kolanjiyopankreatografi (ERCP)"
       }
     ],
     "simulation": {
@@ -5935,12 +5625,7 @@
       }
     },
     "verdachtsdiagnose": "V. a. Pankreaskopfkarzinom mit schmerzlosem Verschlussikterus",
-    "diagnoseKeywords": [
-      "pankreaskarzinom",
-      "pankreaskopfkarzinom",
-      "bauchspeicheldrüsenkrebs",
-      "pankreas"
-    ],
+    "diagnoseKeywords": ["pankreaskarzinom", "pankreaskopfkarzinom", "bauchspeicheldrüsenkrebs", "pankreas"],
     "differenzialdiagnosen": [
       "Choledocholithiasis",
       "Cholangiozellulares Karzinom",
@@ -5993,31 +5678,36 @@
         "de": "Ruhetremor",
         "patient": "Zittern in Ruhe",
         "uz": "tinch holatdagi titroq",
-        "ru": "тремор покоя"
+        "ru": "тремор покоя",
+        "tr": "istirahat tremoru"
       },
       {
         "de": "Rigor",
         "patient": "Steifheit der Muskeln",
         "uz": "mushaklar rigidligi (qotishi)",
-        "ru": "ригидность"
+        "ru": "ригидность",
+        "tr": "kas rijiditesi (sertliği)"
       },
       {
         "de": "Bradykinese",
         "patient": "verlangsamte Bewegungen",
         "uz": "harakatlarning sekinlashishi",
-        "ru": "брадикинезия"
+        "ru": "брадикинезия",
+        "tr": "hareketlerin yavaşlaması"
       },
       {
         "de": "Mikrographie",
         "patient": "immer kleinere Schrift",
         "uz": "yozuvning maydalashishi",
-        "ru": "микрография"
+        "ru": "микрография",
+        "tr": "yazının küçülmesi (mikrografi)"
       },
       {
         "de": "Hyposmie",
         "patient": "schlechter Geruchssinn",
         "uz": "hid bilishning pasayishi",
-        "ru": "гипосмия"
+        "ru": "гипосмия",
+        "tr": "koku alma azalması"
       }
     ],
     "simulation": {
@@ -6038,24 +5728,14 @@
       }
     },
     "verdachtsdiagnose": "V. a. idiopathisches Parkinson-Syndrom (Morbus Parkinson)",
-    "diagnoseKeywords": [
-      "parkinson",
-      "morbus parkinson",
-      "parkinson-syndrom"
-    ],
+    "diagnoseKeywords": ["parkinson", "morbus parkinson", "parkinson-syndrom"],
     "differenzialdiagnosen": [
       "Essentieller Tremor",
       "Medikamentös induziertes Parkinsonoid",
       "Normaldruckhydrozephalus",
       "Multisystematrophie"
     ],
-    "untersuchungen": [
-      "Neurologische Untersuchung",
-      "L-Dopa-Test",
-      "MRT des Schädels",
-      "DaTSCAN",
-      "TSH"
-    ]
+    "untersuchungen": ["Neurologische Untersuchung", "L-Dopa-Test", "MRT des Schädels", "DaTSCAN", "TSH"]
   },
   {
     "id": "c60",
@@ -6095,31 +5775,36 @@
         "de": "Rheumatoide Arthritis",
         "patient": "Gelenkrheuma",
         "uz": "revmatoid artrit",
-        "ru": "ревматоидный артрит"
+        "ru": "ревматоидный артрит",
+        "tr": "romatoid artrit"
       },
       {
         "de": "Morgensteifigkeit",
         "patient": "steife Gelenke am Morgen",
         "uz": "ertalabki qotishlik",
-        "ru": "утренняя скованность"
+        "ru": "утренняя скованность",
+        "tr": "sabah tutukluğu"
       },
       {
         "de": "Synovitis",
         "patient": "Entzündung der Gelenkinnenhaut",
         "uz": "sinovit (bo‘g‘im pardasi yallig‘lanishi)",
-        "ru": "синовит"
+        "ru": "синовит",
+        "tr": "sinovit (eklem zarı iltihabı)"
       },
       {
         "de": "Rheumafaktor",
         "patient": "Blutwert bei Rheuma",
         "uz": "revmatoid omil",
-        "ru": "ревматоидный фактор"
+        "ru": "ревматоидный фактор",
+        "tr": "romatoid faktör"
       },
       {
         "de": "Anti-CCP-Antikörper",
         "patient": "spezieller Rheuma-Blutwert",
         "uz": "anti-CCP antitanachalari",
-        "ru": "антитела к ЦЦП"
+        "ru": "антитела к ЦЦП",
+        "tr": "anti-CCP antikorları"
       }
     ],
     "simulation": {
@@ -6140,11 +5825,7 @@
       }
     },
     "verdachtsdiagnose": "V. a. rheumatoide Arthritis (symmetrische Polyarthritis der Hände)",
-    "diagnoseKeywords": [
-      "rheumatoide arthritis",
-      "polyarthritis",
-      "rheuma"
-    ],
+    "diagnoseKeywords": ["rheumatoide arthritis", "polyarthritis", "rheuma"],
     "differenzialdiagnosen": [
       "Psoriasisarthritis",
       "Systemischer Lupus erythematodes",
@@ -6197,31 +5878,36 @@
         "de": "Endokarditis",
         "patient": "Entzündung der Herzinnenhaut / Herzklappe",
         "uz": "endokardit",
-        "ru": "эндокардит"
+        "ru": "эндокардит",
+        "tr": "endokardit"
       },
       {
         "de": "Herzklappenprothese",
         "patient": "künstliche Herzklappe",
         "uz": "yurak klapani protezi",
-        "ru": "протез клапана сердца"
+        "ru": "протез клапана сердца",
+        "tr": "kalp kapağı protezi"
       },
       {
         "de": "Blutkulturen",
         "patient": "Blutproben zur Suche nach Bakterien",
         "uz": "qon ekmasi",
-        "ru": "посев крови"
+        "ru": "посев крови",
+        "tr": "kan kültürü"
       },
       {
         "de": "transösophageale Echokardiographie",
         "patient": "Herzultraschall durch die Speiseröhre",
         "uz": "qizilo‘ngach orqali exokardiografiya",
-        "ru": "чреспищеводная ЭхоКГ"
+        "ru": "чреспищеводная ЭхоКГ",
+        "tr": "transözofageal ekokardiyografi"
       },
       {
         "de": "Osler-Knötchen",
         "patient": "schmerzhafte Knötchen an den Fingern",
         "uz": "Osler tugunchalari",
-        "ru": "узелки Ослера"
+        "ru": "узелки Ослера",
+        "tr": "Osler nodülleri"
       }
     ],
     "simulation": {
@@ -6242,10 +5928,7 @@
       }
     },
     "verdachtsdiagnose": "V. a. Prothesenendokarditis der Aortenklappe nach Zahnextraktion",
-    "diagnoseKeywords": [
-      "endokarditis",
-      "prothesenendokarditis"
-    ],
+    "diagnoseKeywords": ["endokarditis", "prothesenendokarditis"],
     "differenzialdiagnosen": [
       "Sepsis anderer Ursache",
       "Malignes Lymphom",
@@ -6298,31 +5981,36 @@
         "de": "Commotio cerebri",
         "patient": "Gehirnerschütterung",
         "uz": "miya chayqalishi",
-        "ru": "сотрясение головного мозга"
+        "ru": "сотрясение головного мозга",
+        "tr": "beyin sarsıntısı"
       },
       {
         "de": "Amnesie",
         "patient": "Gedächtnislücke",
         "uz": "xotira yo‘qolishi (amneziya)",
-        "ru": "амнезия"
+        "ru": "амнезия",
+        "tr": "hafıza kaybı (amnezi)"
       },
       {
         "de": "Glasgow Coma Scale",
         "patient": "Punkteskala für das Bewusstsein",
         "uz": "Glazgo koma shkalasi",
-        "ru": "шкала комы Глазго"
+        "ru": "шкала комы Глазго",
+        "tr": "Glasgow koma skalası"
       },
       {
         "de": "Platzwunde",
         "patient": "aufgeplatzte Wunde",
         "uz": "yorilgan yara",
-        "ru": "рваная рана"
+        "ru": "рваная рана",
+        "tr": "yırtık yara"
       },
       {
         "de": "Epiduralhämatom",
         "patient": "Blutung zwischen Schädel und harter Hirnhaut",
         "uz": "epidural gematoma",
-        "ru": "эпидуральная гематома"
+        "ru": "эпидуральная гематома",
+        "tr": "epidural hematom"
       }
     ],
     "simulation": {
@@ -6343,18 +6031,8 @@
       }
     },
     "verdachtsdiagnose": "Commotio cerebri (leichtes Schädel-Hirn-Trauma) mit Platzwunde frontal",
-    "diagnoseKeywords": [
-      "commotio",
-      "gehirnerschütterung",
-      "schädel-hirn-trauma",
-      "sht"
-    ],
-    "differenzialdiagnosen": [
-      "Epiduralhämatom",
-      "Subdurales Hämatom",
-      "Kontusionsblutung",
-      "HWS-Distorsion"
-    ],
+    "diagnoseKeywords": ["commotio", "gehirnerschütterung", "schädel-hirn-trauma", "sht"],
+    "differenzialdiagnosen": ["Epiduralhämatom", "Subdurales Hämatom", "Kontusionsblutung", "HWS-Distorsion"],
     "untersuchungen": [
       "Neurologische Untersuchung, GCS",
       "CT des Schädels (Bewusstlosigkeit, Erbrechen)",

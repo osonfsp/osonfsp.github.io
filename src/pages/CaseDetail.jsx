@@ -26,9 +26,9 @@ export function CaseDetailPage() {
     return (
       <div className="page">
         <p className="card">
-          {tr("Fall topilmadi. ", "Кейс не найден. ")}
+          {tr("Fall topilmadi. ", "Кейс не найден. ", "Vaka bulunamadı. ")}
           <Link href="/faelle" className="text-teal-600 hover:underline">
-            {tr("Ro‘yxatga qaytish", "Вернуться к списку")}
+            {tr("Ro‘yxatga qaytish", "Вернуться к списку", "Listeye dön")}
           </Link>
         </p>
       </div>
@@ -41,7 +41,7 @@ export function CaseDetailPage() {
         href={`/faelle?bolim=${sectionOf(t.category)?.id ?? ""}`}
         className="text-sm muted hover:text-teal-600"
       >
-        ← {sectionOf(t.category)?.label ?? tr("Barcha Fälle", "Все кейсы")}
+        ← {sectionOf(t.category)?.label ?? tr("Barcha Fälle", "Все кейсы", "Tüm vakalar")}
       </Link>
       <div className="mt-3 flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
         <div>
@@ -55,7 +55,7 @@ export function CaseDetailPage() {
         </div>
         <div className="flex flex-wrap gap-2">
           <Link href={`/simulation?case=${t.id}`} className="btn-primary">
-            💬 {tr("Simulyatsiya", "Симуляция")}
+            💬 {tr("Simulyatsiya", "Симуляция", "Simülasyon")}
           </Link>
           {c && (
             <Link href={`/arztbrief/${c.id}`} className="btn-outline">
@@ -68,7 +68,9 @@ export function CaseDetailPage() {
             }
             onClick={() => n(t.id)}
           >
-            {h ? tr("✅ Yechilgan", "✅ Решено") : tr("Yechildi deb belgilash", "Отметить как решённый")}
+            {h
+              ? tr("✅ Yechilgan", "✅ Решено", "✅ Çözüldü")
+              : tr("Yechildi deb belgilash", "Отметить как решённый", "Çözüldü olarak işaretle")}
           </button>
         </div>
       </div>
@@ -93,6 +95,7 @@ export function CaseDetailPage() {
             {tr(
               "Maslahat: avval simulyatsiyada anamnezni o‘zingiz yig‘ing, keyin quyidagi ma’lumot bilan solishtiring.",
               "Совет: сначала соберите анамнез сами в симуляции, затем сравните с данными ниже.",
+              "İpucu: önce simülasyonda anamnezi kendiniz alın, sonra aşağıdaki bilgilerle karşılaştırın.",
             )}
           </p>
         </aside>
@@ -101,7 +104,7 @@ export function CaseDetailPage() {
             <div className="flex items-center justify-between gap-2">
               <h2 className="section-title mb-0">Anamnese</h2>
               <button className="btn-ghost text-xs" onClick={() => l((b) => !b)}>
-                {i ? tr("Yashirish", "Скрыть") : tr("Ko‘rsatish", "Показать")}
+                {i ? tr("Yashirish", "Скрыть", "Gizle") : tr("Ko‘rsatish", "Показать", "Göster")}
               </button>
             </div>
             {i ? (
@@ -118,6 +121,7 @@ export function CaseDetailPage() {
                 {tr(
                   "Anamnez yashirilgan — o‘zingizni sinab ko‘rish uchun.",
                   "Анамнез скрыт — чтобы вы могли проверить себя.",
+                  "Anamnez gizlendi — kendinizi sınamanız için.",
                 )}
               </p>
             )}
@@ -128,7 +132,10 @@ export function CaseDetailPage() {
               {t.sprache.map((b, y) => (
                 <div key={y} className="grid gap-2 sm:grid-cols-2">
                   <p className="rounded-xl bg-slate-50 p-3 text-sm dark:bg-slate-800/60">
-                    <span className="mb-1 block text-[11px] font-semibold uppercase tracking-wider muted">
+                    <span
+                      lang="de"
+                      className="mb-1 block text-[11px] font-semibold uppercase tracking-wider muted"
+                    >
                       Patient
                     </span>
                     <span className="flex items-start gap-1">
@@ -137,7 +144,10 @@ export function CaseDetailPage() {
                     </span>
                   </p>
                   <p className="rounded-xl bg-teal-50 p-3 text-sm dark:bg-teal-950/40">
-                    <span className="mb-1 block text-[11px] font-semibold uppercase tracking-wider text-teal-700 dark:text-teal-300">
+                    <span
+                      lang="de"
+                      className="mb-1 block text-[11px] font-semibold uppercase tracking-wider text-teal-700 dark:text-teal-300"
+                    >
                       Fachsprache
                     </span>
                     <span className="flex items-start gap-1">
@@ -157,7 +167,7 @@ export function CaseDetailPage() {
                   <tr>
                     <th className="pb-2 font-medium">Deutsch (Fach)</th>
                     <th className="pb-2 font-medium">Patientensprache</th>
-                    <th className="pb-2 font-medium">{tr("O‘zbekcha", "Русский")}</th>
+                    <th className="pb-2 font-medium">{tr("O‘zbekcha", "Русский", "Türkçe")}</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-slate-100 dark:divide-slate-800">
@@ -180,10 +190,16 @@ export function CaseDetailPage() {
           <section className="card">
             <div className="flex items-center justify-between gap-2">
               <h2 className="section-title mb-0">
-                {tr("Verdachtsdiagnose va keyingi qadamlar", "Verdachtsdiagnose и дальнейшие шаги")}
+                {tr(
+                  "Verdachtsdiagnose va keyingi qadamlar",
+                  "Verdachtsdiagnose и дальнейшие шаги",
+                  "Verdachtsdiagnose ve sonraki adımlar",
+                )}
               </h2>
               <button className="btn-ghost text-xs" onClick={() => r((b) => !b)}>
-                {s ? tr("Yashirish", "Скрыть") : tr("Javobni ko‘rish", "Показать ответ")}
+                {s
+                  ? tr("Yashirish", "Скрыть", "Gizle")
+                  : tr("Javobni ko‘rish", "Показать ответ", "Cevabı gör")}
               </button>
             </div>
             {s ? (
@@ -204,6 +220,7 @@ export function CaseDetailPage() {
                 {tr(
                   "Avval o‘zingiz o‘ylab ko‘ring: qaysi diagnoz, qanday DD va tekshiruvlar?",
                   "Сначала подумайте сами: какой диагноз, какие DD и обследования?",
+                  "Önce kendiniz düşünün: hangi tanı, hangi DD ve tetkikler?",
                 )}
               </p>
             )}

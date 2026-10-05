@@ -34,6 +34,7 @@ export function ProgressTransfer() {
           text: tr(
             "Kod nusxalandi. Endi uni boshqa qurilmada joylang.",
             "Код скопирован. Теперь вставьте его на другом устройстве.",
+            "Kod kopyalandı. Şimdi diğer cihaza yapıştırın.",
           ),
         });
       } catch {
@@ -42,6 +43,7 @@ export function ProgressTransfer() {
           text: tr(
             "Avtomatik nusxalab bo‘lmadi — kodni qo‘lda belgilab nusxalang.",
             "Не удалось скопировать автоматически — выделите и скопируйте код вручную.",
+            "Otomatik kopyalanamadı — kodu elle seçip kopyalayın.",
           ),
         });
       }
@@ -51,13 +53,21 @@ export function ProgressTransfer() {
         let m = decode(n);
         (a(m.progress, m.user),
           i(""),
-          s({ ok: true, text: tr("Progress muvaffaqiyatli yuklandi ✅", "Прогресс успешно загружен ✅") }));
+          s({
+            ok: true,
+            text: tr(
+              "Progress muvaffaqiyatli yuklandi ✅",
+              "Прогресс успешно загружен ✅",
+              "İlerleme başarıyla yüklendi ✅",
+            ),
+          }));
       } catch {
         s({
           ok: false,
           text: tr(
             "Kod noto‘g‘ri yoki to‘liq emas. Qaytadan nusxalab ko‘ring.",
             "Код неверный или неполный. Скопируйте его ещё раз.",
+            "Kod hatalı veya eksik. Yeniden kopyalayıp deneyin.",
           ),
         });
       }
@@ -65,17 +75,24 @@ export function ProgressTransfer() {
   return (
     <div className="card mt-4">
       <h2 className="section-title">
-        {tr("Progressni boshqa qurilmaga ko‘chirish", "Перенос прогресса на другое устройство")}
+        {tr(
+          "Progressni boshqa qurilmaga ko‘chirish",
+          "Перенос прогресса на другое устройство",
+          "İlerlemeyi başka cihaza taşı",
+        )}
       </h2>
       <p className="mb-4 text-sm muted">
         {tr(
           "Telefon va kompyuter progressi alohida saqlanadi. Bir qurilmada kodni nusxalang, ikkinchisida joylang — progress to‘liq ko‘chadi (u yerdagi eski progress almashtiriladi).",
           "Прогресс на телефоне и компьютере хранится отдельно. Скопируйте код на одном устройстве и вставьте на другом — прогресс перенесётся полностью (старый прогресс там будет заменён).",
+          "Telefon ve bilgisayardaki ilerleme ayrı saklanır. Bir cihazda kodu kopyalayın, diğerine yapıştırın — ilerleme tamamen taşınır (oradaki eski ilerlemenin yerini alır).",
         )}
       </p>
       <div className="grid gap-4 lg:grid-cols-2">
         <div>
-          <p className="mb-2 text-sm font-medium">1. {tr("Shu qurilmadagi kod", "Код этого устройства")}</p>
+          <p className="mb-2 text-sm font-medium">
+            1. {tr("Shu qurilmadagi kod", "Код этого устройства", "Bu cihazın kodu")}
+          </p>
           <textarea
             readOnly
             value={r}
@@ -83,12 +100,12 @@ export function ProgressTransfer() {
             className="input h-24 w-full resize-none font-mono text-xs"
           />
           <button type="button" className="btn-primary mt-2" onClick={c}>
-            {tr("Kodni nusxalash", "Скопировать код")}
+            {tr("Kodni nusxalash", "Скопировать код", "Kodu kopyala")}
           </button>
         </div>
         <div>
           <p className="mb-2 text-sm font-medium">
-            2. {tr("Boshqa qurilmadan olingan kod", "Код с другого устройства")}
+            2. {tr("Boshqa qurilmadan olingan kod", "Код с другого устройства", "Başka cihazdan alınan kod")}
           </p>
           <textarea
             value={n}
@@ -97,7 +114,7 @@ export function ProgressTransfer() {
             className="input h-24 w-full resize-none font-mono text-xs"
           />
           <button type="button" className="btn-outline mt-2" disabled={!n.trim()} onClick={h}>
-            {tr("Progressni yuklash", "Загрузить прогресс")}
+            {tr("Progressni yuklash", "Загрузить прогресс", "İlerlemeyi yükle")}
           </button>
         </div>
       </div>

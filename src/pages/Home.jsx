@@ -25,7 +25,7 @@ function CountUp({ to, suffix = "" }) {
       io.disconnect();
       const start = performance.now();
       const step = (now) => {
-        const k = Math.min(1, (now - start) / 1400);
+        const k = Math.min(1, Math.max(0, (now - start) / 1400));
         setN(Math.round(to * (1 - Math.pow(1 - k, 3))));
         if (k < 1) raf = requestAnimationFrame(step);
       };
@@ -87,8 +87,8 @@ export function HomePage() {
     returning = !!getProfile(),
     startHref = returning ? "/bugun" : "/start",
     startLabel = returning
-      ? tr("📅 Bugungi mashq", "📅 Практика на сегодня")
-      : tr("Bepul boshlash", "Начать бесплатно");
+      ? tr("📅 Bugungi mashq", "📅 Практика на сегодня", "📅 Bugünkü alıştırma")
+      : tr("Bepul boshlash", "Начать бесплатно", "Ücretsiz başla");
   const teile = [
     {
       n: "1",
@@ -97,10 +97,12 @@ export function HomePage() {
       front: tr(
         "Bemordan anamnez olish va tekshiruvni tushuntirish",
         "Анамнез у пациента и объяснение обследования",
+        "Hastadan anamnez alma ve tetkiki açıklama",
       ),
       back: tr(
         "Virtual bemor faqat so‘ralgan narsaga javob beradi. Oxirida 12 mavzu bo‘yicha baho, Patientensprache va savollar sifati.",
         "Виртуальный пациент отвечает только на заданные вопросы. В конце — оценка по 12 темам, Patientensprache и качеству вопросов.",
+        "Sanal hasta yalnızca sorulan şeye cevap verir. Sonunda 12 konu, Patientensprache ve soru kalitesi üzerinden değerlendirme.",
       ),
       href: "/simulation",
       grad: "from-teal-400 to-cyan-500",
@@ -109,10 +111,11 @@ export function HomePage() {
       n: "2",
       icon: "✍️",
       title: "Dokumentation",
-      front: tr("Arztbrief yozish", "Написание Arztbrief"),
+      front: tr("Arztbrief yozish", "Написание Arztbrief", "Arztbrief yazma"),
       back: tr(
         `${arztbriefe.length} ta mashq: struktura, Fachsprache, grammatika va muhim ma’lumotlar avtomatik tekshiriladi.`,
         `${arztbriefe.length} упражнений: структура, Fachsprache, грамматика и ключевые сведения проверяются автоматически.`,
+        `${arztbriefe.length} alıştırma: yapı, Fachsprache, dilbilgisi ve önemli bilgiler otomatik kontrol edilir.`,
       ),
       href: "/arztbrief",
       grad: "from-violet-400 to-fuchsia-500",
@@ -121,10 +124,15 @@ export function HomePage() {
       n: "3",
       icon: "👨‍⚕️",
       title: "Arzt-Arzt-Gespräch",
-      front: tr("Oberarzt’ga bemorni taqdim etish", "Представление пациента Oberarzt"),
+      front: tr(
+        "Oberarzt’ga bemorni taqdim etish",
+        "Представление пациента Oberarzt",
+        "Hastayı Oberarzt’a sunma",
+      ),
       back: tr(
         "Taqdimot, Verdachtsdiagnose, DD, tekshiruvlar va Fachbegriff’ni tushuntirish — taymer bilan, „bestanden / nicht bestanden“.",
         "Представление, Verdachtsdiagnose, DD, обследования и объяснение Fachbegriff — с таймером, „bestanden / nicht bestanden“.",
+        "Sunum, Verdachtsdiagnose, DD, tetkikler ve Fachbegriff açıklaması — zamanlayıcılı, „bestanden / nicht bestanden“.",
       ),
       href: "/pruefung",
       grad: "from-amber-400 to-rose-500",
@@ -152,15 +160,16 @@ export function HomePage() {
             Fachsprachprüfung · C1 Medizin
           </span>
           <h1 className="mt-5 text-4xl font-black leading-[1.05] tracking-tight sm:text-6xl">
-            {tr("Tibbiy nemis tili", "Медицинский немецкий")}
+            {tr("Tibbiy nemis tili", "Медицинский немецкий", "Tıbbi Almanca")}
             <span className="block bg-gradient-to-r from-teal-600 via-cyan-600 to-violet-600 bg-clip-text pb-1 text-transparent dark:from-teal-300 dark:via-cyan-300 dark:to-violet-300">
-              {tr("endi oson.", "теперь просто.")}
+              {tr("endi oson.", "теперь просто.", "artık kolay.")}
             </span>
           </h1>
           <p className="mt-5 max-w-xl text-lg text-slate-600 dark:text-slate-300">
             {tr(
               "FSP’ga o‘zbek tilida tayyorlaning: virtual bemor bilan suhbat, Arztbrief, Oberarzt’ga taqdimot va haqiqiy formatdagi imtihon.",
               "Готовьтесь к FSP на родном языке: беседа с виртуальным пациентом, Arztbrief, представление Oberarzt и экзамен в реальном формате.",
+              "FSP’ye Türkçe hazırlanın: sanal hastayla görüşme, Arztbrief, Oberarzt’a sunum ve gerçek formatta sınav.",
             )}
           </p>
           <div className="mt-7 flex flex-col gap-3 sm:flex-row">
@@ -174,19 +183,20 @@ export function HomePage() {
               href="/pruefung"
               className="btn border border-slate-300 bg-white/70 px-7 py-3.5 text-base text-slate-800 backdrop-blur hover:bg-white dark:border-slate-700 dark:bg-slate-900/60 dark:text-slate-100"
             >
-              🎯 {tr("Mashq imtihoni", "Пробный экзамен")}
+              🎯 {tr("Mashq imtihoni", "Пробный экзамен", "Deneme sınavı")}
             </Link>
           </div>
           <p className="mt-3 text-xs muted">
             {tr(
               `${TRIAL_HOURS} soat bepul · karta talab qilinmaydi`,
               `${TRIAL_HOURS} ч бесплатно · без карты`,
+              `${TRIAL_HOURS} saat ücretsiz · kart gerekmez`,
             )}
           </p>
           <dl className="mt-8 grid max-w-lg grid-cols-3 gap-3">
             {[
-              [cases.length, tr("klinik Fall", "клинических кейсов")],
-              [words.length, tr("tibbiy termin", "терминов")],
+              [cases.length, tr("klinik Fall", "клинических кейсов", "klinik vaka")],
+              [words.length, tr("tibbiy termin", "терминов", "tıbbi terim")],
               [PHRASES, "Redemittel"],
             ].map(([v, l]) => (
               <div key={l} className={cx(GLASS, "rounded-2xl p-3")}>
@@ -204,7 +214,10 @@ export function HomePage() {
           <div className="absolute inset-[8%] rounded-full bg-gradient-to-br from-teal-200/60 via-white/30 to-violet-200/60 blur-2xl dark:from-teal-900/40 dark:to-violet-900/40" />
           <Helix3D className="absolute inset-0 h-full w-full" />
           <div className={cx(GLASS, "float-y absolute left-0 top-[12%] rounded-2xl px-3.5 py-2.5 text-sm")}>
-            <p className="text-[11px] font-semibold uppercase tracking-wider text-teal-700 dark:text-teal-300">
+            <p
+              lang="de"
+              className="text-[11px] font-semibold uppercase tracking-wider text-teal-700 dark:text-teal-300"
+            >
               Anamnese
             </p>
             <p className="font-semibold">12/12 ✓</p>
@@ -215,7 +228,10 @@ export function HomePage() {
               "float-y absolute bottom-[14%] left-[4%] rounded-2xl px-3.5 py-2.5 text-sm [animation-delay:-2s]",
             )}
           >
-            <p className="text-[11px] font-semibold uppercase tracking-wider text-violet-700 dark:text-violet-300">
+            <p
+              lang="de"
+              className="text-[11px] font-semibold uppercase tracking-wider text-violet-700 dark:text-violet-300"
+            >
               Arztbrief
             </p>
             <p className="font-semibold">92%</p>
@@ -235,7 +251,7 @@ export function HomePage() {
       {/* Tibbiy so‘zlar oqimi */}
       <section
         className="marquee relative border-y border-teal-900/10 bg-white/40 py-4 backdrop-blur dark:border-white/5 dark:bg-slate-900/40"
-        aria-label={tr("Tibbiy terminlar", "Медицинские термины")}
+        aria-label={tr("Tibbiy terminlar", "Медицинские термины", "Tıbbi terimler")}
       >
         <div className="marquee-track gap-3">
           {[...marquee, ...marquee].map((w, i) => (
@@ -254,9 +270,9 @@ export function HomePage() {
       {/* Bento */}
       <section className="container-app relative py-14">
         <h2 className="text-3xl font-black tracking-tight sm:text-4xl">
-          {tr("Bitta joyda —", "Всё в одном месте —")}{" "}
+          {tr("Bitta joyda —", "Всё в одном месте —", "Tek bir yerde —")}{" "}
           <span className="bg-gradient-to-r from-teal-600 to-violet-600 bg-clip-text text-transparent dark:from-teal-300 dark:to-violet-300">
-            {tr("butun FSP", "весь FSP")}
+            {tr("butun FSP", "весь FSP", "FSP’nin tamamı")}
           </span>
         </h2>
         <div className="mt-8 grid auto-rows-[minmax(150px,auto)] gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -264,10 +280,18 @@ export function HomePage() {
             <div className="flex h-full flex-col p-6">
               <span className="text-4xl">🩺</span>
               <h3 className="mt-3 text-2xl font-bold">
-                {tr(`${cases.length} ta klinik Fall`, `${cases.length} клинических кейсов`)}
+                {tr(
+                  `${cases.length} ta klinik Fall`,
+                  `${cases.length} клинических кейсов`,
+                  `${cases.length} klinik vaka`,
+                )}
               </h3>
               <p className="mt-2 muted">
-                {tr("Mutaxassislik bo‘yicha bo‘limlarga ajratilgan:", "Разделены по специальностям:")}
+                {tr(
+                  "Mutaxassislik bo‘yicha bo‘limlarga ajratilgan:",
+                  "Разделены по специальностям:",
+                  "Uzmanlık alanlarına göre bölümlere ayrılmış:",
+                )}
               </p>
               <div className="mt-4 flex flex-wrap gap-2">
                 {CASE_SECTIONS.map((s) => (
@@ -280,7 +304,7 @@ export function HomePage() {
                 ))}
               </div>
               <span className="mt-auto pt-6 text-sm font-semibold text-teal-700 dark:text-teal-300">
-                {tr("Fall tanlash →", "Выбрать кейс →")}
+                {tr("Fall tanlash →", "Выбрать кейс →", "Vaka seç →")}
               </span>
             </div>
           </Tilt>
@@ -295,6 +319,7 @@ export function HomePage() {
                 {tr(
                   `${aufklaerung.length} ta tekshiruvni bemorga tushuntirish`,
                   `Объяснение ${aufklaerung.length} обследований пациенту`,
+                  `${aufklaerung.length} tetkiki hastaya açıklama`,
                 )}
               </p>
             </div>
@@ -302,9 +327,13 @@ export function HomePage() {
           <Tilt href="/woerter" className={cx(GLASS, "bg-gradient-to-br from-amber-400/15 to-transparent")}>
             <div className="p-5">
               <span className="text-3xl">📇</span>
-              <h3 className="mt-2 font-bold">{tr("Kartochkalar", "Карточки")}</h3>
+              <h3 className="mt-2 font-bold">{tr("Kartochkalar", "Карточки", "Kartlar")}</h3>
               <p className="mt-1 text-sm muted">
-                {tr("Aqlli takrorlash: 1-3-7-14-30 kun", "Умное повторение: 1-3-7-14-30 дней")}
+                {tr(
+                  "Aqlli takrorlash: 1-3-7-14-30 kun",
+                  "Умное повторение: 1-3-7-14-30 дней",
+                  "Akıllı tekrar: 1-3-7-14-30 gün",
+                )}
               </p>
             </div>
           </Tilt>
@@ -313,7 +342,11 @@ export function HomePage() {
               <span className="text-3xl">🗣️</span>
               <h3 className="mt-2 font-bold">Redemittel</h3>
               <p className="mt-1 text-sm muted">
-                {tr(`${PHRASES} ta ibora, talaffuz bilan`, `${PHRASES} фраз с произношением`)}
+                {tr(
+                  `${PHRASES} ta ibora, talaffuz bilan`,
+                  `${PHRASES} фраз с произношением`,
+                  `Telaffuzlu ${PHRASES} kalıp ifade`,
+                )}
               </p>
             </div>
           </Tilt>
@@ -333,13 +366,17 @@ export function HomePage() {
       {/* 3 qism — aylanuvchi 3D kartochkalar */}
       <section className="container-app relative pb-14">
         <p className="text-xs font-bold uppercase tracking-[0.2em] text-teal-700 dark:text-teal-400">
-          {tr("Imtihon tuzilishi", "Структура экзамена")}
+          {tr("Imtihon tuzilishi", "Структура экзамена", "Sınavın yapısı")}
         </p>
         <h2 className="mt-2 text-3xl font-black tracking-tight sm:text-4xl">
-          {tr("3 qism × 20 daqiqa", "3 части × 20 минут")}
+          {tr("3 qism × 20 daqiqa", "3 части × 20 минут", "3 bölüm × 20 dakika")}
         </h2>
         <p className="mt-2 muted">
-          {tr("Kartochka ustiga boring yoki bosing.", "Наведите на карточку или нажмите.")}
+          {tr(
+            "Kartochka ustiga boring yoki bosing.",
+            "Наведите на карточку или нажмите.",
+            "Kartın üzerine gelin veya basın.",
+          )}
         </p>
         <div className="mt-8 grid gap-5 md:grid-cols-3">
           {teile.map((t) => (
@@ -368,7 +405,7 @@ export function HomePage() {
                   </h3>
                   <p className="mt-3 flex-1 text-sm text-slate-600 dark:text-slate-300">{t.back}</p>
                   <Link href={t.href} className="btn-primary self-start" onClick={(e) => e.stopPropagation()}>
-                    {tr("Mashq qilish →", "Тренироваться →")}
+                    {tr("Mashq qilish →", "Тренироваться →", "Alıştırma yap →")}
                   </Link>
                 </div>
               </div>
@@ -384,12 +421,17 @@ export function HomePage() {
           <div className="relative grid items-center gap-8 lg:grid-cols-[1.2fr_1fr]">
             <div>
               <h2 className="text-3xl font-black text-white sm:text-4xl">
-                {tr("Bugun boshlang — birinchi kun bepul", "Начните сегодня — первый день бесплатно")}
+                {tr(
+                  "Bugun boshlang — birinchi kun bepul",
+                  "Начните сегодня — первый день бесплатно",
+                  "Bugün başlayın — ilk gün ücretsiz",
+                )}
               </h2>
               <p className="mt-3 max-w-md text-white/80">
                 {tr(
                   `${TRIAL_HOURS} soat barcha materiallar va ${FREE_LIMITS.exam} ta to‘liq imtihon. Keyin — haftasiga yoki oyiga.`,
                   `${TRIAL_HOURS} ч все материалы и ${FREE_LIMITS.exam} полный экзамен. Дальше — на неделю или месяц.`,
+                  `${TRIAL_HOURS} saat tüm materyaller ve ${FREE_LIMITS.exam} tam sınav. Sonrası — haftalık veya aylık.`,
                 )}
               </p>
               <Link
@@ -401,9 +443,9 @@ export function HomePage() {
             </div>
             <div className="grid grid-cols-3 gap-3">
               {[
-                [tr("Sinov", "Пробный"), "$0", `${TRIAL_HOURS}h`],
-                [tr("Hafta", "Неделя"), "$9", "7d"],
-                [tr("Oy", "Месяц"), "$15", "30d"],
+                [tr("Sinov", "Пробный", "Deneme"), "$0", `${TRIAL_HOURS}h`],
+                [tr("Hafta", "Неделя", "Hafta"), "$9", "7d"],
+                [tr("Oy", "Месяц", "Ay"), "$15", "30d"],
               ].map(([n, p, d], i) => (
                 <Link
                   key={n}

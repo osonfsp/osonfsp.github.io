@@ -5,13 +5,13 @@ import { aiPatientReply, aiReviewAnamnese, aiReviewArztArzt, aiReviewArztbrief, 
 export const ANAMNESE_TOPICS = [
   {
     key: "beginn",
-    label: tr("Boshlanish vaqti (Beginn)", "Начало (Beginn)"),
+    label: tr("Boshlanish vaqti (Beginn)", "Начало (Beginn)", "Başlangıç zamanı (Beginn)"),
     pattern: /seit wann|wann (hat|haben|hatten|fing|begann|ist|sind)|angefangen|begonnen|wie lange/,
     example: "Seit wann haben Sie die Beschwerden?",
   },
   {
     key: "lokalisation",
-    label: tr("Joylashuv (Lokalisation)", "Локализация (Lokalisation)"),
+    label: tr("Joylashuv (Lokalisation)", "Локализация (Lokalisation)", "Yer (Lokalisation)"),
     pattern:
       /\bwo (genau |)(tut|haben|sind|spüren|ist|liegt|befinde|merken)|welche stelle|zeigen sie|lokalis/,
     example: "Wo genau haben Sie die Schmerzen?",
@@ -21,6 +21,7 @@ export const ANAMNESE_TOPICS = [
     label: tr(
       "Xarakter va kuchi (Charakter / Intensität)",
       "Характер и интенсивность (Charakter / Intensität)",
+      "Karakter ve şiddet (Charakter / Intensität)",
     ),
     pattern:
       /wie (fühlt|fühlen|würden sie|ist der schmerz|sind die schmerzen|stark|schlimm)|art (der|des)|beschreib|skala|stechend|drückend|brennend|dumpf|stärke|von 1|von eins|intensit/,
@@ -28,13 +29,17 @@ export const ANAMNESE_TOPICS = [
   },
   {
     key: "ausstrahlung",
-    label: tr("Tarqalishi (Ausstrahlung)", "Иррадиация (Ausstrahlung)"),
+    label: tr("Tarqalishi (Ausstrahlung)", "Иррадиация (Ausstrahlung)", "Yayılım (Ausstrahlung)"),
     pattern: /ausstrahl|strahlt|strahlen|zieht|ziehen|wandert|gewandert/,
     example: "Strahlen die Schmerzen irgendwohin aus?",
   },
   {
     key: "begleit",
-    label: tr("Hamroh simptomlar (Begleitsymptome)", "Сопутствующие симптомы (Begleitsymptome)"),
+    label: tr(
+      "Hamroh simptomlar (Begleitsymptome)",
+      "Сопутствующие симптомы (Begleitsymptome)",
+      "Eşlik eden semptomlar (Begleitsymptome)",
+    ),
     pattern:
       /andere beschwerden|weitere beschwerden|begleit|sonst noch|noch (andere|weitere)|übelkeit|erbrech|fieber|schwitz|husten|schwindel|atemnot|luft/,
     example: "Haben Sie noch weitere Beschwerden, z. B. Fieber, Übelkeit oder Atemnot?",
@@ -44,6 +49,7 @@ export const ANAMNESE_TOPICS = [
     label: tr(
       "Vegetativ anamnez (Appetit, Schlaf, Stuhlgang …)",
       "Вегетативный анамнез (Appetit, Schlaf, Stuhlgang …)",
+      "Vejetatif anamnez (Appetit, Schlaf, Stuhlgang …)",
     ),
     pattern:
       /appetit|schlaf|stuhlgang|wasserlassen|urin|gewicht|durst|nachtschweiß|periode|schwanger|regelblutung/,
@@ -51,37 +57,49 @@ export const ANAMNESE_TOPICS = [
   },
   {
     key: "vorerkrankungen",
-    label: tr("Avvalgi kasalliklar / operatsiyalar", "Перенесённые заболевания / операции"),
+    label: tr(
+      "Avvalgi kasalliklar / operatsiyalar",
+      "Перенесённые заболевания / операции",
+      "Geçirilmiş hastalıklar / ameliyatlar",
+    ),
     pattern: /vorerkrank|krankheiten|erkrankungen|operiert|operation|chronisch|krankenhaus/,
     example: "Haben Sie Vorerkrankungen? Wurden Sie schon einmal operiert?",
   },
   {
     key: "medikamente",
-    label: tr("Dorilar (Medikamente)", "Лекарства (Medikamente)"),
+    label: tr("Dorilar (Medikamente)", "Лекарства (Medikamente)", "İlaçlar (Medikamente)"),
     pattern: /medikament|tabletten|arznei|präparat|nehmen sie (regelmäßig|etwas)|spritze/,
     example: "Nehmen Sie regelmäßig Medikamente ein?",
   },
   {
     key: "allergien",
-    label: tr("Allergiyalar", "Аллергии"),
+    label: tr("Allergiyalar", "Аллергии", "Alerjiler"),
     pattern: /allergi|unverträglich|vertragen/,
     example: "Haben Sie Allergien oder Unverträglichkeiten?",
   },
   {
     key: "familie",
-    label: tr("Oilaviy anamnez", "Семейный анамнез"),
+    label: tr("Oilaviy anamnez", "Семейный анамнез", "Aile anamnezi"),
     pattern: /famil|eltern|mutter|vater|geschwister|verwandt|erblich/,
     example: "Gibt es Krankheiten in Ihrer Familie?",
   },
   {
     key: "sozial",
-    label: tr("Ijtimoiy anamnez (Beruf, Wohnsituation)", "Социальный анамнез (Beruf, Wohnsituation)"),
+    label: tr(
+      "Ijtimoiy anamnez (Beruf, Wohnsituation)",
+      "Социальный анамнез (Beruf, Wohnsituation)",
+      "Sosyal anamnez (Beruf, Wohnsituation)",
+    ),
     pattern: /beruf|arbeit|was machen sie|wohnen|verheiratet|leben sie|kinder|partner/,
     example: "Was sind Sie von Beruf? Wie wohnen Sie?",
   },
   {
     key: "noxen",
-    label: tr("Zararli odatlar (Rauchen, Alkohol, Drogen)", "Вредные привычки (Rauchen, Alkohol, Drogen)"),
+    label: tr(
+      "Zararli odatlar (Rauchen, Alkohol, Drogen)",
+      "Вредные привычки (Rauchen, Alkohol, Drogen)",
+      "Zararlı alışkanlıklar (Rauchen, Alkohol, Drogen)",
+    ),
     pattern: /rauch|zigarett|alkohol|trinken sie|drogen|nikotin/,
     example: "Rauchen Sie? Trinken Sie Alkohol?",
   },
@@ -328,8 +346,8 @@ const FACH_TO_SIMPLE = [
     },
     {
       re: /\bdoll\b|\bmega\b|\bsuper\b/,
-      word: tr("og‘zaki so‘z", "разговорное слово"),
-      better: tr("neytral tibbiy ifoda", "нейтральное медицинское выражение"),
+      word: tr("og‘zaki so‘z", "разговорное слово", "günlük konuşma kelimesi"),
+      better: tr("neytral tibbiy ifoda", "нейтральное медицинское выражение", "nötr tıbbi ifade"),
     },
   ],
   WRONG_TERMS = [
@@ -415,6 +433,7 @@ const FACH_TO_SIMPLE = [
       message: tr(
         "„klagt über“ ishlatiladi (… klagt über Schmerzen).",
         "Правильно: „klagt über“ (… klagt über Schmerzen).",
+        "Doğrusu: „klagt über“ (… klagt über Schmerzen).",
       ),
     },
     {
@@ -430,6 +449,7 @@ const FACH_TO_SIMPLE = [
       message: tr(
         "Yo‘nalish (Akkusativ): „ins Krankenhaus gekommen / eingeliefert“.",
         "Направление (Akkusativ): „ins Krankenhaus gekommen / eingeliefert“.",
+        "Yön (Akkusativ): „ins Krankenhaus gekommen / eingeliefert“.",
       ),
     },
     {
@@ -437,17 +457,23 @@ const FACH_TO_SIMPLE = [
       message: tr(
         "Artikl kerak: „Der Patient … / Die Patientin …“.",
         "Нужен артикль: „Der Patient … / Die Patientin …“.",
+        "Artikel gerekli: „Der Patient … / Die Patientin …“.",
       ),
     },
     {
       re: /\bein (stunde|woche)\b/i,
-      message: tr("Artikl: „eine Stunde / eine Woche“.", "Артикль: „eine Stunde / eine Woche“."),
+      message: tr(
+        "Artikl: „eine Stunde / eine Woche“.",
+        "Артикль: „eine Stunde / eine Woche“.",
+        "Artikel: „eine Stunde / eine Woche“.",
+      ),
     },
     {
       re: /\bfür (?:[2-9]|\d{2,}) (tagen|wochen|jahren)\b/i,
       message: tr(
         "„für“ + Akkusativ: „für 2 Tage“ (davomiylik uchun ko‘pincha „seit 2 Tagen“).",
         "„für“ + Akkusativ: „für 2 Tage“ (для длительности чаще „seit 2 Tagen“).",
+        "„für“ + Akkusativ: „für 2 Tage“ (süre için genellikle „seit 2 Tagen“).",
       ),
     },
     {
@@ -459,6 +485,7 @@ const FACH_TO_SIMPLE = [
       message: tr(
         "„Der Patient“ (maskulin) yoki „Die Patientin“ (feminin).",
         "„Der Patient“ (maskulin) или „Die Patientin“ (feminin).",
+        "„Der Patient“ (maskulin) veya „Die Patientin“ (feminin).",
       ),
     },
   ];
@@ -484,6 +511,7 @@ function scoreSummary(e, t, a) {
         message: tr(
           `Xulosada og‘zaki so‘z: „${r.word}“ → Fachsprache: „${r.better}“.`,
           `Разговорное слово в резюме: „${r.word}“ → Fachsprache: „${r.better}“.`,
+          `Özette günlük konuşma kelimesi: „${r.word}“ → Fachsprache: „${r.better}“.`,
         ),
       }),
     ),
@@ -498,7 +526,7 @@ function scoreSummary(e, t, a) {
     a.push({
       status: "warn",
       category: "Fachsprache",
-      message: `${tr("Fachbegriffe ishlating, masalan", "Используйте Fachbegriffe, например")}: ${e.terms
+      message: `${tr("Fachbegriffe ishlating, masalan", "Используйте Fachbegriffe, например", "Fachbegriffe kullanın, örneğin")}: ${e.terms
         .slice(0, 3)
         .map((r) => r.de)
         .join(", ")}.`,
@@ -510,6 +538,7 @@ function scoreSummary(e, t, a) {
       message: tr(
         "Tipik iboralarni qo‘llang: „Der Patient berichtet über …“, „… klagt über …“, „seit … bestehende …“.",
         "Используйте типичные обороты: „Der Patient berichtet über …“, „… klagt über …“, „seit … bestehende …“.",
+        "Tipik kalıpları kullanın: „Der Patient berichtet über …“, „… klagt über …“, „seit … bestehende …“.",
       ),
     });
   return clamp(30 + (i.length / Math.max(1, e.terms.length)) * 50 + (l ? 20 : 0) - s.length * 15);
@@ -530,8 +559,12 @@ function evaluateAnamneseLocal(e, t, a = "") {
       feedback: [
         {
           status: "error",
-          category: tr("Umumiy", "Общее"),
-          message: tr("Hech qanday savol berilmadi.", "Не было задано ни одного вопроса."),
+          category: tr("Umumiy", "Общее", "Genel"),
+          message: tr(
+            "Hech qanday savol berilmadi.",
+            "Не было задано ни одного вопроса.",
+            "Hiç soru sorulmadı.",
+          ),
         },
       ],
     };
@@ -539,19 +572,21 @@ function evaluateAnamneseLocal(e, t, a = "") {
     s = clamp((l.size / ANAMNESE_TOPICS.length) * 100);
   (i.push({
     status: s >= 75 ? "ok" : "warn",
-    category: tr("Anamnese to‘liqligi", "Полнота анамнеза"),
+    category: tr("Anamnese to‘liqligi", "Полнота анамнеза", "Anamnezin eksiksizliği"),
     message: tr(
       `${l.size}/${ANAMNESE_TOPICS.length} ta muhim mavzu so‘raldi.`,
       `Затронуто важных тем: ${l.size}/${ANAMNESE_TOPICS.length}.`,
+      `Önemli konulardan ${l.size}/${ANAMNESE_TOPICS.length} tanesi soruldu.`,
     ),
   }),
     ANAMNESE_TOPICS.filter((m) => !l.has(m.key)).forEach((m) =>
       i.push({
         status: "error",
-        category: tr("O‘tkazib yuborilgan ma’lumot", "Пропущенная информация"),
+        category: tr("O‘tkazib yuborilgan ma’lumot", "Пропущенная информация", "Atlanan bilgi"),
         message: tr(
           `So‘ralmadi: ${m.label}. Masalan: „${m.example}“`,
           `Не спрошено: ${m.label}. Например: „${m.example}“`,
+          `Sorulmadı: ${m.label}. Örneğin: „${m.example}“`,
         ),
       }),
     ));
@@ -562,10 +597,11 @@ function evaluateAnamneseLocal(e, t, a = "") {
     ((r += h.length),
       i.push({
         status: "error",
-        category: tr("Grammatik", "Грамматика"),
+        category: tr("Grammatik", "Грамматика", "Dilbilgisi"),
         message: tr(
           `Bemorga „du“ bilan murojaat qilindi (${h.length} marta). Doim „Sie“ ishlating: „Haben Sie …?“`,
           `К пациенту обращались на „du“ (${h.length} раз). Всегда используйте „Sie“: „Haben Sie …?“`,
+          `Hastaya „du“ ile hitap edildi (${h.length} kez). Her zaman „Sie“ kullanın: „Haben Sie …?“`,
         ),
       }));
   let b = n.filter((m) => /(^|\s)sie(\s|\?|,|$)/.test(m));
@@ -573,10 +609,11 @@ function evaluateAnamneseLocal(e, t, a = "") {
     ((c += b.length),
       i.push({
         status: "warn",
-        category: tr("Grammatik", "Грамматика"),
+        category: tr("Grammatik", "Грамматика", "Dilbilgisi"),
         message: tr(
           `Hurmat shakli „Sie“ bosh harf bilan yoziladi (${b.length} ta savolda „sie“).`,
           `Вежливое „Sie“ пишется с заглавной буквы (в ${b.length} вопросах написано „sie“).`,
+          `Nezaket hitabı „Sie“ büyük harfle yazılır (${b.length} soruda „sie“ yazılmış).`,
         ),
       }));
   let y = n.filter(
@@ -588,14 +625,22 @@ function evaluateAnamneseLocal(e, t, a = "") {
     ((c += y.length),
       i.push({
         status: "warn",
-        category: tr("Grammatik", "Грамматика"),
-        message: tr(`${y.length} ta savol „?“ belgisisiz yozilgan.`, `Вопросов без знака „?“: ${y.length}.`),
+        category: tr("Grammatik", "Грамматика", "Dilbilgisi"),
+        message: tr(
+          `${y.length} ta savol „?“ belgisisiz yozilgan.`,
+          `Вопросов без знака „?“: ${y.length}.`,
+          `${y.length} soru „?“ işareti olmadan yazılmış.`,
+        ),
       }));
   if (!r && !c)
     i.push({
       status: "ok",
-      category: tr("Grammatik", "Грамматика"),
-      message: tr("Hurmat shakli va savol tuzilishi to‘g‘ri.", "Вежливая форма и построение вопросов верны."),
+      category: tr("Grammatik", "Грамматика", "Dilbilgisi"),
+      message: tr(
+        "Hurmat shakli va savol tuzilishi to‘g‘ri.",
+        "Вежливая форма и построение вопросов верны.",
+        "Nezaket hitabı ve soru yapısı doğru.",
+      ),
     });
   let f = clamp(100 - r * 15 - c * 5),
     p = FACH_TO_SIMPLE.filter((m) => n.some((v) => m.re.test(v.toLowerCase())));
@@ -607,6 +652,7 @@ function evaluateAnamneseLocal(e, t, a = "") {
         message: tr(
           `Bemor bilan Fachsprache ishlatildi: „${m.fach}“ o‘rniga „${m.simple}“ deng.`,
           `С пациентом использован Fachsprache: вместо „${m.fach}“ скажите „${m.simple}“.`,
+          `Hastayla Fachsprache kullanıldı: „${m.fach}“ yerine „${m.simple}“ deyin.`,
         ),
       }),
     ),
@@ -618,6 +664,7 @@ function evaluateAnamneseLocal(e, t, a = "") {
       message: tr(
         "Bemor bilan tushunarli, sodda tilda gaplashildi.",
         "С пациентом говорили понятным, простым языком.",
+        "Hastayla anlaşılır, sade bir dille konuşuldu.",
       ),
     });
   let A = clamp(100 - p.length * 20),
@@ -626,28 +673,31 @@ function evaluateAnamneseLocal(e, t, a = "") {
   if (n.length < 8)
     i.push({
       status: "warn",
-      category: tr("Savollar sifati", "Качество вопросов"),
+      category: tr("Savollar sifati", "Качество вопросов", "Soruların kalitesi"),
       message: tr(
         `Atigi ${n.length} ta savol berildi. To‘liq anamnez uchun ko‘proq savol kerak.`,
         `Задано всего ${n.length} вопросов. Для полного анамнеза нужно больше.`,
+        `Yalnızca ${n.length} soru soruldu. Eksiksiz anamnez için daha fazla soru gerekir.`,
       ),
     });
   if (D < 0.4)
     i.push({
       status: "warn",
-      category: tr("Savollar sifati", "Качество вопросов"),
+      category: tr("Savollar sifati", "Качество вопросов", "Soruların kalitesi"),
       message: tr(
         "Ko‘proq ochiq savollar bering: „Wie …?“, „Wo …?“, „Seit wann …?“",
         "Задавайте больше открытых вопросов: „Wie …?“, „Wo …?“, „Seit wann …?“",
+        "Daha çok açık uçlu soru sorun: „Wie …?“, „Wo …?“, „Seit wann …?“",
       ),
     });
   else
     i.push({
       status: "ok",
-      category: tr("Savollar sifati", "Качество вопросов"),
+      category: tr("Savollar sifati", "Качество вопросов", "Soruların kalitesi"),
       message: tr(
         `Ochiq savollar ulushi yaxshi (${Math.round(D * 100)}%).`,
         `Хорошая доля открытых вопросов (${Math.round(D * 100)}%).`,
+        `Açık uçlu soruların oranı iyi (%${Math.round(D * 100)}).`,
       ),
     });
   let d = {
@@ -672,7 +722,7 @@ export async function evaluateAnamnese(e, t, a = "") {
 
 const BRIEF_SECTIONS = [
   {
-    label: tr("Murojaat („Sehr geehrte …“)", "Обращение („Sehr geehrte …“)"),
+    label: tr("Murojaat („Sehr geehrte …“)", "Обращение („Sehr geehrte …“)", "Hitap („Sehr geehrte …“)"),
     re: /sehr geehrte/,
   },
   {
@@ -692,7 +742,11 @@ const BRIEF_SECTIONS = [
     re: /therapie|behandl|procedere|empfehl/,
   },
   {
-    label: tr("Yakun („Mit freundlichen … Grüßen“)", "Заключение („Mit freundlichen … Grüßen“)"),
+    label: tr(
+      "Yakun („Mit freundlichen … Grüßen“)",
+      "Заключение („Mit freundlichen … Grüßen“)",
+      "Kapanış („Mit freundlichen … Grüßen“)",
+    ),
     re: /mit freundlichen|grüßen/,
   },
 ];
@@ -714,8 +768,12 @@ function correctArztbriefLocal(e, t) {
       feedback: [
         {
           status: "error",
-          category: tr("Umumiy", "Общее"),
-          message: tr("Matn bo‘sh. Avval Arztbrief yozing.", "Текст пуст. Сначала напишите Arztbrief."),
+          category: tr("Umumiy", "Общее", "Genel"),
+          message: tr(
+            "Matn bo‘sh. Avval Arztbrief yozing.",
+            "Текст пуст. Сначала напишите Arztbrief.",
+            "Metin boş. Önce Arztbrief yazın.",
+          ),
         },
       ],
     };
@@ -726,12 +784,16 @@ function correctArztbriefLocal(e, t) {
         ? {
             status: "ok",
             category: "Struktur",
-            message: tr(`${x.label} bo‘limi bor.`, `Раздел «${x.label}» есть.`),
+            message: tr(`${x.label} bo‘limi bor.`, `Раздел «${x.label}» есть.`, `“${x.label}” bölümü var.`),
           }
         : {
             status: "warn",
             category: "Struktur",
-            message: tr(`${x.label} bo‘limi topilmadi.`, `Раздел «${x.label}» не найден.`),
+            message: tr(
+              `${x.label} bo‘limi topilmadi.`,
+              `Раздел «${x.label}» не найден.`,
+              `“${x.label}” bölümü bulunamadı.`,
+            ),
           },
     ),
   );
@@ -742,13 +804,13 @@ function correctArztbriefLocal(e, t) {
       r.includes(x)
         ? {
             status: "ok",
-            category: tr("Muhim ma’lumotlar", "Ключевые сведения"),
+            category: tr("Muhim ma’lumotlar", "Ключевые сведения", "Önemli bilgiler"),
             message: loc(x, "label"),
           }
         : {
             status: "error",
-            category: tr("Muhim ma’lumotlar", "Ключевые сведения"),
-            message: `${tr("Yetishmaydi", "Отсутствует")}: ${loc(x, "label")}`,
+            category: tr("Muhim ma’lumotlar", "Ключевые сведения", "Önemli bilgiler"),
+            message: `${tr("Yetishmaydi", "Отсутствует", "Eksik")}: ${loc(x, "label")}`,
           },
     ),
   );
@@ -761,6 +823,7 @@ function correctArztbriefLocal(e, t) {
       message: tr(
         `„${x.word}“ o‘rniga Fachsprache: „${x.better}“.`,
         `Вместо „${x.word}“ на Fachsprache: „${x.better}“.`,
+        `„${x.word}“ yerine Fachsprache: „${x.better}“.`,
       ),
     }),
   );
@@ -768,10 +831,11 @@ function correctArztbriefLocal(e, t) {
   b.forEach((x) =>
     i.push({
       status: "error",
-      category: tr("Noto‘g‘ri tibbiy termin", "Неверный медицинский термин"),
+      category: tr("Noto‘g‘ri tibbiy termin", "Неверный медицинский термин", "Yanlış tıbbi terim"),
       message: tr(
         `„${x.wrong}“ → to‘g‘ri nemischa: „${x.correct}“.`,
         `„${x.wrong}“ → правильно по-немецки: „${x.correct}“.`,
+        `„${x.wrong}“ → doğru Almancası: „${x.correct}“.`,
       ),
     }),
   );
@@ -787,6 +851,7 @@ function correctArztbriefLocal(e, t) {
       message: tr(
         `Fachsprache iboralari yaxshi ishlatilgan (${y} ta).`,
         `Обороты Fachsprache использованы хорошо (${y}).`,
+        `Fachsprache kalıpları iyi kullanılmış (${y} adet).`,
       ),
     });
   else
@@ -796,13 +861,18 @@ function correctArztbriefLocal(e, t) {
       message: tr(
         "Ko‘proq tipik iboralar: „Der Patient stellte sich mit … vor“, „Es zeigte sich …“, „Laborchemisch …“.",
         "Больше типичных оборотов: „Der Patient stellte sich mit … vor“, „Es zeigte sich …“, „Laborchemisch …“.",
+        "Daha çok tipik kalıp: „Der Patient stellte sich mit … vor“, „Es zeigte sich …“, „Laborchemisch …“.",
       ),
     });
   if (!b.length)
     i.push({
       status: "ok",
-      category: tr("Noto‘g‘ri tibbiy termin", "Неверный медицинский термин"),
-      message: tr("Noto‘g‘ri yozilgan termin topilmadi.", "Неверно написанных терминов не найдено."),
+      category: tr("Noto‘g‘ri tibbiy termin", "Неверный медицинский термин", "Yanlış tıbbi terim"),
+      message: tr(
+        "Noto‘g‘ri yozilgan termin topilmadi.",
+        "Неверно написанных терминов не найдено.",
+        "Yanlış yazılmış terim bulunamadı.",
+      ),
     });
   let f = clamp(60 + Math.min(y, 5) * 8 - h.length * 10 - b.length * 15),
     p = a.replace(/,\s*\n+\s*/g, ", "),
@@ -824,7 +894,7 @@ function correctArztbriefLocal(e, t) {
         (D++,
           i.push({
             status: "error",
-            category: tr("Grammatik", "Грамматика"),
+            category: tr("Grammatik", "Грамматика", "Dilbilgisi"),
             message: x.message,
           }));
     }),
@@ -832,17 +902,22 @@ function correctArztbriefLocal(e, t) {
   )
     i.push({
       status: "warn",
-      category: tr("Grammatik", "Грамматика"),
+      category: tr("Grammatik", "Грамматика", "Dilbilgisi"),
       message: tr(
         `${w.length} ta gap kichik harf bilan boshlangan. Masalan: „${w[0].slice(0, 40)}…“`,
         `Предложений со строчной буквы: ${w.length}. Например: „${w[0].slice(0, 40)}…“`,
+        `${w.length} cümle küçük harfle başlıyor. Örneğin: „${w[0].slice(0, 40)}…“`,
       ),
     });
   if (!D && !w.length)
     i.push({
       status: "ok",
-      category: tr("Grammatik", "Грамматика"),
-      message: tr("Tipik grammatik xatolar topilmadi.", "Типичных грамматических ошибок не найдено."),
+      category: tr("Grammatik", "Грамматика", "Dilbilgisi"),
+      message: tr(
+        "Tipik grammatik xatolar topilmadi.",
+        "Типичных грамматических ошибок не найдено.",
+        "Tipik dilbilgisi hatası bulunamadı.",
+      ),
     });
   let g = clamp(100 - D * 12 - w.length * 4),
     d = A.filter((x) => x.split(/\s+/).length > 35),
@@ -854,6 +929,7 @@ function correctArztbriefLocal(e, t) {
       message: tr(
         `${d.length} ta gap juda uzun (35+ so‘z). Qisqa va aniq gaplar yozing.`,
         `Слишком длинных предложений (35+ слов): ${d.length}. Пишите короче и чётче.`,
+        `${d.length} cümle çok uzun (35+ kelime). Kısa ve net cümleler yazın.`,
       ),
     });
   if (m < 80)
@@ -863,6 +939,7 @@ function correctArztbriefLocal(e, t) {
       message: tr(
         `Matn juda qisqa (${m} so‘z). To‘liq Arztbrief odatda 150–300 so‘z.`,
         `Текст слишком короткий (${m} слов). Полный Arztbrief обычно 150–300 слов.`,
+        `Metin çok kısa (${m} kelime). Tam bir Arztbrief genellikle 150–300 kelimedir.`,
       ),
     });
   if (!d.length && m >= 80)
@@ -872,6 +949,7 @@ function correctArztbriefLocal(e, t) {
       message: tr(
         `Gaplar uzunligi me’yorida, hajm: ${m} so‘z.`,
         `Длина предложений в норме, объём: ${m} слов.`,
+        `Cümle uzunlukları normal, uzunluk: ${m} kelime.`,
       ),
     });
   let v = clamp(100 - d.length * 15 - (m < 80 ? 30 : 0)),
@@ -930,16 +1008,18 @@ function evaluateArztArztLocal(e, t) {
     c = clamp((r.filter(Boolean).length / 3) * 100);
   n.push({
     status: c >= 67 ? "ok" : "warn",
-    category: tr("Patient taqdimoti", "Представление пациента"),
+    category: tr("Patient taqdimoti", "Представление пациента", "Hasta sunumu"),
     message:
       c >= 67
         ? tr(
             "Bemor taqdimoti asosiy ma’lumotlarni o‘z ichiga oladi.",
             "Представление пациента содержит основные данные.",
+            "Hasta sunumu temel bilgileri içeriyor.",
           )
         : tr(
             "Taqdimotda ism, yosh va asosiy shikoyatni ayting.",
             "В представлении назовите имя, возраст и основную жалобу.",
+            "Sunumda adı, yaşı ve ana şikâyeti söyleyin.",
           ),
   });
   let h = normalize(a(1)),
@@ -952,7 +1032,7 @@ function evaluateArztArztLocal(e, t) {
         ? {
             status: "ok",
             category: "Verdachtsdiagnose",
-            message: tr("Diagnoz to‘g‘ri yo‘nalishda.", "Диагноз в верном направлении."),
+            message: tr("Diagnoz to‘g‘ri yo‘nalishda.", "Диагноз в верном направлении.", "Tanı doğru yönde."),
           }
         : {
             status: "error",
@@ -968,6 +1048,7 @@ function evaluateArztArztLocal(e, t) {
       message: tr(
         "Diagnozni asoslang: „… spricht für …“, „aufgrund der …“.",
         "Обоснуйте диагноз: „… spricht für …“, „aufgrund der …“.",
+        "Tanıyı gerekçelendirin: „… spricht für …“, „aufgrund der …“.",
       ),
     });
   let p = normalize(a(2)),
@@ -979,6 +1060,7 @@ function evaluateArztArztLocal(e, t) {
     message: tr(
       `${A.length} ta mos DD. Mumkin bo‘lganlar: ${e.differenzialdiagnosen.join(", ")}.`,
       `Подходящих DD: ${A.length}. Возможные: ${e.differenzialdiagnosen.join(", ")}.`,
+      `${A.length} uygun DD. Olası olanlar: ${e.differenzialdiagnosen.join(", ")}.`,
     ),
   });
   let D = normalize(a(3)),
@@ -986,10 +1068,11 @@ function evaluateArztArztLocal(e, t) {
     d = clamp((g.length / 3) * 100);
   n.push({
     status: g.length >= 3 ? "ok" : "warn",
-    category: tr("Diagnostika", "Диагностика"),
+    category: tr("Diagnostika", "Диагностика", "Tanısal işlemler"),
     message: tr(
       `${g.length} ta mos tekshiruv. Tavsiya etiladi: ${e.untersuchungen.join(", ")}.`,
       `Подходящих обследований: ${g.length}. Рекомендуется: ${e.untersuchungen.join(", ")}.`,
+      `${g.length} uygun tetkik. Önerilenler: ${e.untersuchungen.join(", ")}.`,
     ),
   });
   let m = a(4),
@@ -1003,26 +1086,30 @@ function evaluateArztArztLocal(e, t) {
   if (N.length)
     n.push({
       status: "warn",
-      category: tr("Bemorga tushuntirish", "Объяснение пациенту"),
-      message: `${tr("Bemorga Fachbegriffsiz tushuntiring", "Объясните пациенту без Fachbegriffe")}: ${N.map((E) => `${E.fach} → ${E.simple}`).join("; ")}.`,
+      category: tr("Bemorga tushuntirish", "Объяснение пациенту", "Hastaya açıklama"),
+      message: `${tr("Bemorga Fachbegriffsiz tushuntiring", "Объясните пациенту без Fachbegriffe", "Hastaya Fachbegriff kullanmadan açıklayın")}: ${N.map((E) => `${E.fach} → ${E.simple}`).join("; ")}.`,
     });
   else
     n.push({
       status: v >= 12 ? "ok" : "warn",
-      category: tr("Bemorga tushuntirish", "Объяснение пациенту"),
+      category: tr("Bemorga tushuntirish", "Объяснение пациенту", "Hastaya açıklama"),
       message:
         v >= 12
-          ? tr("Tushuntirish sodda tilda.", "Объяснение простым языком.")
-          : tr("Tushuntirish juda qisqa.", "Объяснение слишком короткое."),
+          ? tr("Tushuntirish sodda tilda.", "Объяснение простым языком.", "Açıklama sade bir dille.")
+          : tr("Tushuntirish juda qisqa.", "Объяснение слишком короткое.", "Açıklama çok kısa."),
     });
   let T = t[5]?.term ? scoreTermAnswer(t[5].term, a(5)) : null;
   if (T)
     n.push({
       status: T.hit && T.score >= 70 ? "ok" : "warn",
-      category: tr("Fachbegriff tushuntirish", "Объяснение термина"),
+      category: tr("Fachbegriff tushuntirish", "Объяснение термина", "Fachbegriff açıklaması"),
       message: T.hit
-        ? tr(`„${t[5].term.de}“ to‘g‘ri tushuntirildi.`, `„${t[5].term.de}“ объяснён верно.`)
-        : `„${t[5].term.de}“ = „${t[5].term.patient}“ (${loc(t[5].term)}). ${tr("Masalan", "Например")}: „Das bedeutet ${t[5].term.patient}.“`,
+        ? tr(
+            `„${t[5].term.de}“ to‘g‘ri tushuntirildi.`,
+            `„${t[5].term.de}“ объяснён верно.`,
+            `„${t[5].term.de}“ doğru açıklandı.`,
+          )
+        : `„${t[5].term.de}“ = „${t[5].term.patient}“ (${loc(t[5].term)}). ${tr("Masalan", "Например", "Örneğin")}: „Das bedeutet ${t[5].term.patient}.“`,
     });
   let x = {
     Kommunikation: clamp(avg([c, C])),

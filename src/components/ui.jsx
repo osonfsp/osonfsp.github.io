@@ -57,6 +57,11 @@ const CRITERIA_RU = {
   "Savollar sifati": "Качество вопросов",
   "Muhim ma’lumotlar": "Ключевые сведения",
 };
+const CRITERIA_TR = {
+  "Anamnese to‘liqligi": "Anamnezin eksiksizliği",
+  "Savollar sifati": "Soruların kalitesi",
+  "Muhim ma’lumotlar": "Önemli bilgiler",
+};
 
 export function ScoreBars({ scores: e }) {
   return (
@@ -64,7 +69,7 @@ export function ScoreBars({ scores: e }) {
       {Object.entries(e).map(([t, a]) => (
         <div key={t}>
           <div className="mb-1 flex justify-between gap-2 text-sm">
-            <span>{tr(t, CRITERIA_RU[t])}</span>
+            <span>{tr(t, CRITERIA_RU[t], CRITERIA_TR[t])}</span>
             <span className="font-semibold tabular-nums">{a}%</span>
           </div>
           <ProgressBar value={a} auto />
@@ -90,7 +95,7 @@ export function StatCard({ icon: e, label: t, value: a, hint: n, progress: i }) 
   );
 }
 
-export function PageHeader({ eyebrow: e, title: t, subtitle: a, children: n }) {
+export function PageHeader({ eyebrow: e, eyebrowLang = "de", title: t, subtitle: a, children: n }) {
   return (
     <div className="relative mb-6 overflow-hidden rounded-2xl bg-[#0b1f26] px-5 py-6 text-white shadow-lg shadow-teal-950/10 sm:px-7 sm:py-8">
       <div
@@ -103,7 +108,11 @@ export function PageHeader({ eyebrow: e, title: t, subtitle: a, children: n }) {
       />
       <div className="relative flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
         <div className="min-w-0 sm:flex-1">
-          {e && <p className="text-xs font-bold uppercase tracking-[0.18em] text-teal-300">{e}</p>}
+          {e && (
+            <p lang={eyebrowLang} className="text-xs font-bold uppercase tracking-[0.18em] text-teal-300">
+              {e}
+            </p>
+          )}
           <h1 className="mt-1 bg-gradient-to-r from-white via-teal-100 to-cyan-300 bg-clip-text pb-1 text-3xl font-extrabold tracking-tight text-transparent sm:text-4xl">
             {t}
           </h1>
@@ -119,7 +128,12 @@ export function PageHeader({ eyebrow: e, title: t, subtitle: a, children: n }) {
   );
 }
 
-export function FilterChips({ options: e, value: t, onChange: a, allLabel: n = tr("Barchasi", "Все") }) {
+export function FilterChips({
+  options: e,
+  value: t,
+  onChange: a,
+  allLabel: n = tr("Barchasi", "Все", "Tümü"),
+}) {
   return (
     <div className="no-scrollbar -mx-4 flex gap-2 overflow-x-auto px-4 pb-1 sm:mx-0 sm:flex-wrap sm:px-0">
       <button className={t === "all" ? "chip-on" : "chip-off"} onClick={() => a("all")}>
@@ -161,9 +175,9 @@ const STATUS_ICONS = {
     error: "❌",
   },
   STATUS_LABELS = {
-    ok: tr("To‘g‘ri", "Верно"),
-    warn: tr("Yaxshilash kerak", "Можно улучшить"),
-    error: tr("Xato", "Ошибка"),
+    ok: tr("To‘g‘ri", "Верно", "Doğru"),
+    warn: tr("Yaxshilash kerak", "Можно улучшить", "Geliştirilmeli"),
+    error: tr("Xato", "Ошибка", "Hata"),
   },
   STATUS_STYLES = {
     ok: "border-emerald-200 bg-emerald-50 dark:border-emerald-900/60 dark:bg-emerald-950/30",
@@ -194,7 +208,7 @@ export function FeedbackList({ items: e }) {
     <div>
       <div className="mb-4 flex flex-wrap gap-2">
         <button className={t === "all" ? "chip-on" : "chip-off"} onClick={() => a("all")}>
-          {tr("Barchasi", "Все")} ({e.length})
+          {tr("Barchasi", "Все", "Tümü")} ({e.length})
         </button>
         {["ok", "warn", "error"].map((l) => (
           <button key={l} className={t === l ? "chip-on" : "chip-off"} onClick={() => a(l)}>
@@ -223,7 +237,11 @@ export function FeedbackList({ items: e }) {
         ))}
         {!i.length && (
           <p className="text-sm muted">
-            {tr("Bu filtr bo‘yicha natija yo‘q.", "По этому фильтру ничего нет.")}
+            {tr(
+              "Bu filtr bo‘yicha natija yo‘q.",
+              "По этому фильтру ничего нет.",
+              "Bu filtreye uygun sonuç yok.",
+            )}
           </p>
         )}
       </div>
@@ -238,6 +256,7 @@ export function Disclaimer() {
       {tr(
         "Bu faqat mashq natijasi. U rasmiy FSP imtihonidan o‘tish yoki o‘tmaslikni kafolatlamaydi va bashorat qilmaydi.",
         "Это только тренировочный результат. Он не гарантирует и не предсказывает сдачу официального экзамена FSP.",
+        "Bu yalnızca bir alıştırma sonucudur. Resmî FSP sınavını geçip geçmeyeceğinizi garanti etmez ve öngörmez.",
       )}
     </p>
   );
@@ -247,7 +266,11 @@ export function ConfirmButton({
   children: e,
   onConfirm: t,
   className: a,
-  confirmLabel: n = tr("Tasdiqlaysizmi? Yana bosing", "Уверены? Нажмите ещё раз"),
+  confirmLabel: n = tr(
+    "Tasdiqlaysizmi? Yana bosing",
+    "Уверены? Нажмите ещё раз",
+    "Emin misiniz? Tekrar basın",
+  ),
 }) {
   let [i, l] = useState(false);
   return (
@@ -264,7 +287,7 @@ export function ConfirmButton({
   );
 }
 
-export function Spinner({ label: e = tr("Tahlil qilinmoqda…", "Идёт анализ…") }) {
+export function Spinner({ label: e = tr("Tahlil qilinmoqda…", "Идёт анализ…", "Analiz ediliyor…") }) {
   return (
     <span className="inline-flex items-center gap-2 text-sm muted">
       <span className="h-4 w-4 animate-spin rounded-full border-2 border-teal-600 border-t-transparent" />
@@ -277,30 +300,78 @@ export function Spinner({ label: e = tr("Tahlil qilinmoqda…", "Идёт ана
 function KidneyIcon() {
   return (
     <svg viewBox="0 0 24 24" className="inline-block h-[1.15em] w-[1.15em] align-[-0.2em]" aria-hidden>
-      <path d="M8.4 12.2C6 13.2 4.6 15.8 4.2 21.5" fill="none" stroke="#f59e0b" strokeWidth="1.8" strokeLinecap="round" />
+      <path
+        d="M8.4 12.2C6 13.2 4.6 15.8 4.2 21.5"
+        fill="none"
+        stroke="#f59e0b"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+      />
       <path
         d="M12.5 2.5c4 0 6.5 4 6.5 9.5s-2.5 9.5-6.5 9.5c-3.4 0-6-2.3-6-5.1 0-2.2 2.5-2.6 2.5-4.4S6.5 9.8 6.5 7.6c0-2.8 2.6-5.1 6-5.1z"
         fill="#be123c"
       />
-      <path d="M14.6 5.6c1.6.9 2.5 3.3 2.5 6.4" fill="none" stroke="#fda4af" strokeWidth="1.3" strokeLinecap="round" />
+      <path
+        d="M14.6 5.6c1.6.9 2.5 3.3 2.5 6.4"
+        fill="none"
+        stroke="#fda4af"
+        strokeWidth="1.3"
+        strokeLinecap="round"
+      />
     </svg>
   );
 }
 
 // Fan (mutaxassislik) belgisi: har bir fan o‘z belgisi va rangida — ro‘yxatlarda tez ajratish uchun
 export const CATEGORY_STYLE = {
-  Kardiologie: ["❤️", "bg-rose-100 text-rose-800 ring-rose-200 dark:bg-rose-500/15 dark:text-rose-200 dark:ring-rose-500/30"],
-  "Innere Medizin": ["🩺", "bg-slate-100 text-slate-800 ring-slate-300 dark:bg-slate-500/20 dark:text-slate-200 dark:ring-slate-500/40"],
-  Pneumologie: ["🌬️", "bg-cyan-100 text-cyan-800 ring-cyan-200 dark:bg-cyan-500/15 dark:text-cyan-200 dark:ring-cyan-500/30"],
-  Gastroenterologie: ["🍽️", "bg-orange-100 text-orange-800 ring-orange-200 dark:bg-orange-500/15 dark:text-orange-200 dark:ring-orange-500/30"],
-  Nephrologie: ["💧", "bg-blue-100 text-blue-800 ring-blue-200 dark:bg-blue-500/15 dark:text-blue-200 dark:ring-blue-500/30"],
-  Endokrinologie: ["🧪", "bg-fuchsia-100 text-fuchsia-800 ring-fuchsia-200 dark:bg-fuchsia-500/15 dark:text-fuchsia-200 dark:ring-fuchsia-500/30"],
-  Infektiologie: ["🦠", "bg-lime-100 text-lime-800 ring-lime-200 dark:bg-lime-500/15 dark:text-lime-200 dark:ring-lime-500/30"],
-  Chirurgie: ["🔪", "bg-amber-100 text-amber-900 ring-amber-200 dark:bg-amber-500/15 dark:text-amber-200 dark:ring-amber-500/30"],
-  Unfallchirurgie: ["🦴", "bg-stone-200 text-stone-800 ring-stone-300 dark:bg-stone-500/20 dark:text-stone-200 dark:ring-stone-500/40"],
-  Urologie: [<KidneyIcon key="k" />, "bg-yellow-100 text-yellow-900 ring-yellow-300 dark:bg-yellow-500/15 dark:text-yellow-200 dark:ring-yellow-500/30"],
-  Neurologie: ["🧠", "bg-violet-100 text-violet-800 ring-violet-200 dark:bg-violet-500/15 dark:text-violet-200 dark:ring-violet-500/30"],
-  Allgemeinmedizin: ["🏥", "bg-emerald-100 text-emerald-800 ring-emerald-200 dark:bg-emerald-500/15 dark:text-emerald-200 dark:ring-emerald-500/30"],
+  Kardiologie: [
+    "❤️",
+    "bg-rose-100 text-rose-800 ring-rose-200 dark:bg-rose-500/15 dark:text-rose-200 dark:ring-rose-500/30",
+  ],
+  "Innere Medizin": [
+    "🩺",
+    "bg-slate-100 text-slate-800 ring-slate-300 dark:bg-slate-500/20 dark:text-slate-200 dark:ring-slate-500/40",
+  ],
+  Pneumologie: [
+    "🌬️",
+    "bg-cyan-100 text-cyan-800 ring-cyan-200 dark:bg-cyan-500/15 dark:text-cyan-200 dark:ring-cyan-500/30",
+  ],
+  Gastroenterologie: [
+    "🍽️",
+    "bg-orange-100 text-orange-800 ring-orange-200 dark:bg-orange-500/15 dark:text-orange-200 dark:ring-orange-500/30",
+  ],
+  Nephrologie: [
+    "💧",
+    "bg-blue-100 text-blue-800 ring-blue-200 dark:bg-blue-500/15 dark:text-blue-200 dark:ring-blue-500/30",
+  ],
+  Endokrinologie: [
+    "🧪",
+    "bg-fuchsia-100 text-fuchsia-800 ring-fuchsia-200 dark:bg-fuchsia-500/15 dark:text-fuchsia-200 dark:ring-fuchsia-500/30",
+  ],
+  Infektiologie: [
+    "🦠",
+    "bg-lime-100 text-lime-800 ring-lime-200 dark:bg-lime-500/15 dark:text-lime-200 dark:ring-lime-500/30",
+  ],
+  Chirurgie: [
+    "🔪",
+    "bg-amber-100 text-amber-900 ring-amber-200 dark:bg-amber-500/15 dark:text-amber-200 dark:ring-amber-500/30",
+  ],
+  Unfallchirurgie: [
+    "🦴",
+    "bg-stone-200 text-stone-800 ring-stone-300 dark:bg-stone-500/20 dark:text-stone-200 dark:ring-stone-500/40",
+  ],
+  Urologie: [
+    <KidneyIcon key="k" />,
+    "bg-yellow-100 text-yellow-900 ring-yellow-300 dark:bg-yellow-500/15 dark:text-yellow-200 dark:ring-yellow-500/30",
+  ],
+  Neurologie: [
+    "🧠",
+    "bg-violet-100 text-violet-800 ring-violet-200 dark:bg-violet-500/15 dark:text-violet-200 dark:ring-violet-500/30",
+  ],
+  Allgemeinmedizin: [
+    "🏥",
+    "bg-emerald-100 text-emerald-800 ring-emerald-200 dark:bg-emerald-500/15 dark:text-emerald-200 dark:ring-emerald-500/30",
+  ],
 };
 export const categoryIcon = (c) => CATEGORY_STYLE[c]?.[0] ?? "🩺";
 

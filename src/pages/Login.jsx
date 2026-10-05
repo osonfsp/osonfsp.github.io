@@ -14,11 +14,12 @@ export function LoginPage() {
     (
       <div className="page flex justify-center">
         <div className="card w-full max-w-md">
-          <h1 className="text-2xl font-bold">{tr("Boshlash", "Начать")}</h1>
+          <h1 className="text-2xl font-bold">{tr("Boshlash", "Начать", "Başla")}</h1>
           <p className="mt-1 text-sm muted">
             {tr(
               "Faqat ismingizni yozing — parol va email kerak emas. Progress shu qurilmada saqlanadi.",
               "Укажите только имя — пароль и email не нужны. Прогресс хранится на этом устройстве.",
+              "Yalnızca adınızı yazın — şifre ve e-posta gerekmez. İlerleme bu cihazda saklanır.",
             )}
           </p>
           <form
@@ -30,7 +31,7 @@ export function LoginPage() {
           >
             <div>
               <label className="label" htmlFor="name">
-                {tr("Ismingiz", "Ваше имя")}
+                {tr("Ismingiz", "Ваше имя", "Adınız")}
               </label>
               <input
                 id="name"
@@ -44,7 +45,7 @@ export function LoginPage() {
               />
             </div>
             <button className="btn-primary w-full" type="submit">
-              {tr("Boshlash →", "Начать →")}
+              {tr("Boshlash →", "Начать →", "Başla →")}
             </button>
           </form>
         </div>

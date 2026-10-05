@@ -15,6 +15,7 @@ const SpeechRecognition =
 const OPEN_SITE = tr(
   " Ovozli savolni osonfsp.github.io saytida Chrome, Edge yoki Safari orqali ishlating.",
   " Используйте голосовой ввод на сайте osonfsp.github.io в Chrome, Edge или Safari.",
+  " Sesli soruyu osonfsp.github.io sitesinde Chrome, Edge veya Safari ile kullanın.",
 );
 const inFrame = (() => {
   try {
@@ -28,27 +29,34 @@ function dictationError(code) {
     return tr(
       "Ovoz eshitilmadi — mikrofonga yaqinroq gapiring.",
       "Голос не услышан — говорите ближе к микрофону.",
+      "Ses duyulmadı — mikrofona daha yakın konuşun.",
     );
-  if (code === "audio-capture") return tr("Mikrofon topilmadi.", "Микрофон не найден.");
+  if (code === "audio-capture")
+    return tr("Mikrofon topilmadi.", "Микрофон не найден.", "Mikrofon bulunamadı.");
   if (code === "aborted") return "";
   if (inFrame)
     return (
       tr(
         "Bu oynada mikrofon yoki nutqni tanish xizmati yopiq.",
         "В этом окне микрофон или распознавание речи недоступны.",
+        "Bu pencerede mikrofon veya konuşma tanıma kullanılamıyor.",
       ) + OPEN_SITE
     );
   if (code === "not-allowed" || code === "service-not-allowed")
     return tr(
       "Mikrofonga ruxsat berilmagan. Brauzer manzil satridagi 🔒 belgisidan mikrofonga ruxsat bering.",
       "Нет доступа к микрофону. Разрешите его через значок 🔒 в адресной строке браузера.",
+      "Mikrofon izni verilmedi. Tarayıcının adres çubuğundaki 🔒 simgesinden mikrofona izin verin.",
     );
   if (code === "network")
     return tr(
       "Nutqni tanish xizmatiga ulanib bo‘lmadi — internetni tekshiring.",
       "Нет связи с сервисом распознавания речи — проверьте интернет.",
+      "Konuşma tanıma hizmetine bağlanılamadı — internetinizi kontrol edin.",
     );
-  return tr("Ovozli kiritish ishlamadi.", "Голосовой ввод не сработал.") + OPEN_SITE;
+  return (
+    tr("Ovozli kiritish ishlamadi.", "Голосовой ввод не сработал.", "Sesli giriş çalışmadı.") + OPEN_SITE
+  );
 }
 
 function useDictation(onText) {
@@ -158,10 +166,14 @@ export function PatientChat({ caseData, messages, onMessages, showHints = true, 
               type="button"
               className={cx(voice ? "chip-on" : "chip-off", "px-2.5")}
               onClick={toggleVoice}
-              title={tr("Bemor javoblarini ovoz chiqarib o‘qish", "Озвучивать ответы пациента")}
+              title={tr(
+                "Bemor javoblarini ovoz chiqarib o‘qish",
+                "Озвучивать ответы пациента",
+                "Hasta yanıtlarını sesli oku",
+              )}
               aria-pressed={voice}
             >
-              {voice ? "🔊" : "🔇"} {tr("Ovoz", "Звук")}
+              {voice ? "🔊" : "🔇"} {tr("Ovoz", "Звук", "Ses")}
             </button>
           )}
           <span className="text-xs muted tabular-nums">
@@ -178,12 +190,14 @@ export function PatientChat({ caseData, messages, onMessages, showHints = true, 
             {tr(
               "Siz — shifokorsiz. O‘zingizni tanishtiring va nemis tilida savol bering. Masalan: ",
               "Вы — врач. Представьтесь и задавайте вопросы на немецком. Например: ",
+              "Siz doktorsunuz. Kendinizi tanıtın ve Almanca soru sorun. Örneğin: ",
             )}
             <em>„Guten Tag, ich bin Dr. … Was führt Sie zu uns?“</em>
             <br />
             {tr(
               "Bemor faqat siz so‘ragan narsaga javob beradi.",
               "Пациент отвечает только на то, что вы спросили.",
+              "Hasta yalnızca sorduğunuz şeye cevap verir.",
             )}
             {dictation.supported && (
               <>
@@ -191,6 +205,7 @@ export function PatientChat({ caseData, messages, onMessages, showHints = true, 
                 {tr(
                   "🎤 tugmasi bilan savolni ovozda ham berishingiz mumkin.",
                   "Кнопкой 🎤 можно задавать вопросы голосом.",
+                  "🎤 düğmesiyle soruyu sesli de sorabilirsiniz.",
                 )}
               </>
             )}
@@ -246,8 +261,8 @@ export function PatientChat({ caseData, messages, onMessages, showHints = true, 
           >
             💡{" "}
             {hintsOpen
-              ? tr("Namunalarni yashirish", "Скрыть подсказки")
-              : tr("Savol namunalari", "Примеры вопросов")}
+              ? tr("Namunalarni yashirish", "Скрыть подсказки", "Örnekleri gizle")
+              : tr("Savol namunalari", "Примеры вопросов", "Örnek sorular")}
           </button>
         </div>
       )}
@@ -268,7 +283,11 @@ export function PatientChat({ caseData, messages, onMessages, showHints = true, 
           ))}
           {asked.size === ANAMNESE_TOPICS.length && (
             <span className="text-xs text-emerald-600">
-              {tr("✅ Barcha asosiy mavzular so‘raldi", "✅ Все основные темы затронуты")}
+              {tr(
+                "✅ Barcha asosiy mavzular so‘raldi",
+                "✅ Все основные темы затронуты",
+                "✅ Tüm temel konular soruldu",
+              )}
             </span>
           )}
         </div>
@@ -287,8 +306,8 @@ export function PatientChat({ caseData, messages, onMessages, showHints = true, 
           className="input max-h-32 min-h-[44px] resize-none"
           placeholder={
             dictation.listening
-              ? tr("Gapiring… (nemischa)", "Говорите… (по-немецки)")
-              : tr("Savolingizni nemischa yozing…", "Напишите вопрос по-немецки…")
+              ? tr("Gapiring… (nemischa)", "Говорите… (по-немецки)", "Konuşun… (Almanca)")
+              : tr("Savolingizni nemischa yozing…", "Напишите вопрос по-немецки…", "Sorunuzu Almanca yazın…")
           }
           value={draft}
           disabled={disabled}
@@ -313,13 +332,17 @@ export function PatientChat({ caseData, messages, onMessages, showHints = true, 
             disabled={disabled}
             title={
               dictation.listening
-                ? tr("To‘xtatish", "Остановить")
-                : tr("Ovozda savol berish (nemischa)", "Задать вопрос голосом (по-немецки)")
+                ? tr("To‘xtatish", "Остановить", "Durdur")
+                : tr(
+                    "Ovozda savol berish (nemischa)",
+                    "Задать вопрос голосом (по-немецки)",
+                    "Soruyu sesli sor (Almanca)",
+                  )
             }
             aria-label={
               dictation.listening
-                ? tr("To‘xtatish", "Остановить")
-                : tr("Ovozda savol berish", "Задать вопрос голосом")
+                ? tr("To‘xtatish", "Остановить", "Durdur")
+                : tr("Ovozda savol berish", "Задать вопрос голосом", "Soruyu sesli sor")
             }
           >
             {dictation.listening ? "⏹" : "🎤"}
@@ -330,7 +353,7 @@ export function PatientChat({ caseData, messages, onMessages, showHints = true, 
           className="btn-primary h-[44px] shrink-0"
           disabled={waiting || !draft.trim() || disabled}
         >
-          {tr("Yuborish", "Отправить")}
+          {tr("Yuborish", "Отправить", "Gönder")}
         </button>
       </form>
       {dictation.error && (
