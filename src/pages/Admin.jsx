@@ -475,11 +475,11 @@ export function AdminPage() {
           </div>
         </div>
       ) : (
-        <div className="grid gap-4 lg:grid-cols-[1fr_380px]">
+        <div className="grid gap-4 lg:grid-cols-[minmax(0,1fr)_320px]">
           <div className="card">
             <div className="mb-4 flex flex-col gap-2 sm:flex-row">
               <input
-                className="input"
+                className="input min-w-0 sm:flex-1"
                 placeholder={tr("Qidirish…", "Поиск…", "Ara…", "Search…")}
                 value={p}
                 onChange={(z) => A(z.target.value)}
