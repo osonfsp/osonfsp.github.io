@@ -3,7 +3,7 @@
 //
 // Sozlamalar (Cloudflare):
 //   GEMINI_API_KEY  — secret: `npx wrangler secret put GEMINI_API_KEY`
-//   GEMINI_MODEL    — wrangler.toml [vars], masalan "gemini-flash-latest"
+//   GEMINI_MODELS   — wrangler.toml [vars], vergul bilan: birinchisi asosiy, qolganlari zaxira
 //   ALLOWED_ORIGINS — vergul bilan ajratilgan saytlar ro'yxati
 //   LIMITER         — rate limit binding (bir IP uchun daqiqasiga N so'rov)
 
@@ -51,27 +51,37 @@ export default {
       parts: [{ text: String(m.content ?? "").slice(0, 15_000) }],
     }));
 
-    let model = env.GEMINI_MODEL || "gemini-flash-latest",
-      res = await fetch(
-        `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`,
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json", "x-goog-api-key": env.GEMINI_API_KEY },
-          body: JSON.stringify({
-            contents,
-            generationConfig: {
-              temperature: body.json ? 0.3 : 0.8,
-              ...(body.json ? { responseMimeType: "application/json" } : {}),
-            },
-          }),
+    let models = (env.GEMINI_MODELS || "gemini-flash-lite-latest").split(",").map((m) => m.trim()),
+      payload = JSON.stringify({
+        contents,
+        generationConfig: {
+          temperature: body.json ? 0.3 : 0.8,
+          ...(body.json ? { responseMimeType: "application/json" } : {}),
         },
-      );
+      }),
+      res = null;
 
-    if (!res.ok) {
-      let detail = (await res.text()).slice(0, 300);
-      console.log("gemini", res.status, detail);
-      return reply(res.status === 429 ? 429 : 502, { error: "upstream", status: res.status });
+    // Bepul tarifda Google ba'zan band (503) yoki sekin: har urinishga 12 s, keyin keyingi model
+    for (let i = 0; i < models.length * 2 && !res?.ok; i++) {
+      let model = models[i % models.length];
+      try {
+        res = await fetch(
+          `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`,
+          {
+            method: "POST",
+            headers: { "Content-Type": "application/json", "x-goog-api-key": env.GEMINI_API_KEY },
+            body: payload,
+            signal: AbortSignal.timeout(12_000),
+          },
+        );
+        if (!res.ok) console.log("gemini", model, res.status, (await res.clone().text()).slice(0, 200));
+      } catch (e) {
+        console.log("gemini", model, e.name);
+        res = null;
+      }
     }
+    if (!res?.ok)
+      return reply(res?.status === 429 ? 429 : 502, { error: "upstream", status: res?.status ?? 0 });
     let data = await res.json(),
       text = (data.candidates?.[0]?.content?.parts || [])
         .filter((p) => !p.thought)

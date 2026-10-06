@@ -23,7 +23,7 @@ function getSample() {
 
 async function callWorker(messages, json) {
   let ctrl = new AbortController(),
-    timer = setTimeout(() => ctrl.abort(), 30e3);
+    timer = setTimeout(() => ctrl.abort(), 50e3);
   try {
     let res = await fetch(AI_URL, {
       method: "POST",
