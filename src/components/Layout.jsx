@@ -249,18 +249,13 @@ function Sidebar({ onClose }) {
             </span>
             <span className="flex-1">
               {tr(
-                "Taklif va shikoyatlar",
-                "Предложения и жалобы",
-                "Öneri ve şikâyetler",
-                "Suggestions and complaints",
+                "Admin bilan bog‘lanish",
+                "Связаться с админом",
+                "Yöneticiyle iletişim",
+                "Contact the admin",
               )}
               <span className="block text-[11px] font-normal text-sky-200/70">
-                {tr(
-                  "Telegram orqali yozing",
-                  "Напишите в Telegram",
-                  "Telegram’dan yazın",
-                  "Write to us on Telegram",
-                )}
+                Telegram · @de_behzod
               </span>
             </span>
             <span aria-hidden>↗</span>
