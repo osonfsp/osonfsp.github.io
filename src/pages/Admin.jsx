@@ -236,6 +236,11 @@ export function AdminPage() {
     return (
       <div className="page py-24 text-center">
         <p className="text-5xl font-bold text-teal-600">404</p>
+        <p className="mt-3 text-sm muted">
+          {account
+            ? `${account.user.name} · ${account.user.username ? `@${account.user.username}` : "username yo‘q"} · ID ${account.user.id}`
+            : tr("Kirilmagan", "Вход не выполнен", "Giriş yapılmadı", "Not signed in")}
+        </p>
       </div>
     );
   return (
