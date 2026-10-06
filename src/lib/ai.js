@@ -1,9 +1,12 @@
 import { LANG } from "./i18n";
 import { clamp } from "./utils";
 
-// AI faqat claude.ai Artifact ichida ishlaydi: "sample" imkoniyati orqali, KO‘RUVCHINING o‘z
-// Claude obunasi hisobidan (API kaliti va to‘lov kerak emas). Boshqa joyda (github.io, localhost)
-// claude.use yo‘q — hammasi qoidaga asoslangan rejimda qoladi.
+// AI ikki yo‘l bilan ishlaydi:
+// - claude.ai Artifact ichida: "sample" imkoniyati orqali, KO‘RUVCHINING o‘z Claude obunasi hisobidan.
+// - Saytda (github.io, localhost): VITE_AI_URL dagi Worker orqali Gemini (worker/ papkasi).
+// Ikkalasi ham bo‘lmasa yoki xato bersa — hammasi qoidaga asoslangan rejimda qoladi.
+const AI_URL = import.meta.env.VITE_AI_URL || "";
+
 let samplePromise = null,
   disabled = false;
 
@@ -13,10 +16,37 @@ function getSample() {
     let use = typeof window !== "undefined" && window.claude?.use;
     samplePromise = use
       ? Promise.resolve(window.claude.use("sample")).catch(() => null)
-      : Promise.resolve(null);
+      : Promise.resolve(AI_URL && import.meta.env.MODE !== "artifact" ? workerSample : null);
   }
   return samplePromise;
 }
+
+async function callWorker(messages, json) {
+  let ctrl = new AbortController(),
+    timer = setTimeout(() => ctrl.abort(), 30e3);
+  try {
+    let res = await fetch(AI_URL, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ messages, json }),
+      signal: ctrl.signal,
+    });
+    if (!res.ok) throw { code: res.status === 403 ? "not_granted" : `http_${res.status}` };
+    let { text } = await res.json();
+    return String(text ?? "");
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
+// claude.use("sample") bilan bir xil ko‘rinish: sample(turns) → {text}, sample.json(prompt) → obyekt
+async function workerSample(turns) {
+  return { text: await callWorker(turns, false) };
+}
+workerSample.json = async (prompt) => {
+  let text = await callWorker([{ role: "user", content: prompt }], true);
+  return JSON.parse(text.replace(/^```(?:json)?\s*|\s*```$/g, ""));
+};
 
 // Ruxsat berilmagan / o‘chirilgan bo‘lsa — shu sahifa ochiq turguncha qayta so‘ramaymiz
 const FATAL = new Set([
