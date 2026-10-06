@@ -19,7 +19,7 @@ function germanVoice() {
 export const canSpeak = () => Boolean(synth && typeof SpeechSynthesisUtterance !== "undefined");
 
 export function speak(text, { rate = 0.9, onEnd } = {}) {
-  if (!canSpeak() || !text) return;
+  if (!canSpeak() || !text) return onEnd?.();
   synth.cancel();
   // „…“ va Fachsprache belgilarini o'qimaslik uchun tozalaymiz
   const u = new SpeechSynthesisUtterance(text.replace(/[„“"]/g, ""));

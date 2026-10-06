@@ -75,24 +75,28 @@ function useDictation(onText) {
   const rec = useRef(null);
   useEffect(() => () => rec.current?.abort(), []);
   if (!SpeechRecognition) return { supported: false };
-  const toggle = (baseText) => {
-    if (listening) {
-      rec.current?.stop();
-      return;
-    }
+  // onDone(text, errorCode) — tinglash tugaganda (suhbat rejimi uchun). "no-speech" bu rejimda xato emas.
+  const start = (baseText, onDone) => {
     const r = new SpeechRecognition();
     r.lang = "de-DE";
     r.interimResults = true;
     r.continuous = false;
     const prefix = baseText.trim() ? `${baseText.trim()} ` : "";
+    let heard = "",
+      errorCode = "";
     r.onresult = (ev) => {
       const text = [...ev.results].map((res) => res[0].transcript).join("");
-      onText(prefix + text);
+      heard = prefix + text;
+      onText(heard);
     };
-    r.onend = () => setListening(false);
-    r.onerror = (ev) => {
+    r.onend = () => {
       setListening(false);
-      setError(dictationError(ev.error));
+      onDone?.(heard.trim(), errorCode);
+    };
+    r.onerror = (ev) => {
+      errorCode = ev.error;
+      setListening(false);
+      if (!(onDone && ev.error === "no-speech")) setError(dictationError(ev.error));
     };
     rec.current = r;
     stopSpeaking();
@@ -103,9 +107,12 @@ function useDictation(onText) {
     } catch (e) {
       setListening(false);
       setError(dictationError(e?.name));
+      onDone?.("", e?.name || "error");
     }
   };
-  return { supported: true, listening, toggle, error };
+  const toggle = (baseText) => (listening ? rec.current?.stop() : start(baseText));
+  const stop = () => rec.current?.abort();
+  return { supported: true, listening, toggle, start, stop, error };
 }
 
 export function PatientChat({ caseData, messages, onMessages, showHints = true, disabled }) {
@@ -117,11 +124,68 @@ export function PatientChat({ caseData, messages, onMessages, showHints = true, 
   const inputRef = useRef(null);
   const dictation = useDictation(setDraft);
 
+  // Suhbat rejimi: tinglash → savol avtomatik yuboriladi → bemor ovozda javob beradi → yana tinglash.
+  // Hammasi brauzerning o‘z ovoz imkoniyatlari bilan — AI so‘rovlari soni o‘zgarmaydi.
+  const [talk, setTalk] = useState(false);
+  const [talkNote, setTalkNote] = useState("");
+  const talkRef = useRef(false),
+    silence = useRef(0),
+    sendRef = useRef(null),
+    listenRef = useRef(null);
+  const canTalk = dictation.supported && canSpeak();
+
+  const stopTalk = (note = "") => {
+    talkRef.current = false;
+    setTalk(false);
+    setTalkNote(note);
+    dictation.stop?.();
+    stopSpeaking();
+  };
+  // Har renderda eng yangi holat bilan (eski closure'dagi messages bilan yubormaslik uchun)
+  listenRef.current = () => {
+    if (!talkRef.current) return;
+    dictation.start("", (text, err) => {
+      if (!talkRef.current) return;
+      if (text) {
+        silence.current = 0;
+        sendRef.current(text);
+      } else if (err === "no-speech" && ++silence.current < 3) {
+        listenRef.current();
+      } else if (err === "no-speech" || !err) {
+        stopTalk(
+          tr(
+            "Suhbat to‘xtatildi — ovoz eshitilmadi. Davom etish uchun 🗣 tugmasini bosing.",
+            "Разговор приостановлен — голос не слышен. Нажмите 🗣, чтобы продолжить.",
+            "Sohbet duraklatıldı — ses duyulmadı. Devam etmek için 🗣 düğmesine basın.",
+            "Conversation paused — no voice heard. Press 🗣 to continue.",
+          ),
+        );
+      } else stopTalk();
+    });
+  };
+  const toggleTalk = () => {
+    if (talk) return stopTalk();
+    talkRef.current = true;
+    silence.current = 0;
+    setTalk(true);
+    setTalkNote("");
+    listenRef.current();
+  };
+
   useEffect(() => {
     const el = scrollRef.current;
     if (el) el.scrollTop = el.scrollHeight;
   }, [messages, waiting]);
-  useEffect(() => () => stopSpeaking(), []);
+  useEffect(
+    () => () => {
+      talkRef.current = false;
+      stopSpeaking();
+    },
+    [],
+  );
+  useEffect(() => {
+    if (disabled && talkRef.current) stopTalk();
+  }, [disabled]);
 
   const asked = useMemo(
     () => askedTopics(messages.filter((m) => m.role === "arzt").map((m) => m.text)),
@@ -145,9 +209,13 @@ export function PatientChat({ caseData, messages, onMessages, showHints = true, 
     const { reply, ai } = await askPatient(caseData, withQuestion, question);
     onMessages([...withQuestion, { role: "patient", text: reply, ai }]);
     setWaiting(false);
-    if (voice) speak(reply);
-    inputRef.current?.focus();
+    if (talkRef.current) speak(reply, { onEnd: () => listenRef.current() });
+    else {
+      if (voice) speak(reply);
+      inputRef.current?.focus();
+    }
   }
+  sendRef.current = send;
 
   const { patient } = caseData;
   return (
@@ -171,7 +239,25 @@ export function PatientChat({ caseData, messages, onMessages, showHints = true, 
           </p>
         </div>
         <div className="ml-auto flex items-center gap-2">
-          {canSpeak() && (
+          {canTalk && (
+            <button
+              type="button"
+              className={cx(talk ? "chip-on animate-pulse" : "chip-off", "px-2.5")}
+              onClick={toggleTalk}
+              disabled={disabled}
+              title={tr(
+                "Ovozli suhbat: gapiring — bemor ovozda javob beradi, keyin yana tinglaydi",
+                "Голосовой разговор: говорите — пациент отвечает голосом и снова слушает",
+                "Sesli sohbet: konuşun — hasta sesli cevap verir, sonra tekrar dinler",
+                "Voice conversation: speak — the patient answers aloud, then listens again",
+              )}
+              aria-pressed={talk}
+            >
+              🗣{" "}
+              {talk ? tr("To‘xtatish", "Стоп", "Durdur", "Stop") : tr("Suhbat", "Разговор", "Sohbet", "Talk")}
+            </button>
+          )}
+          {canSpeak() && !talk && (
             <button
               type="button"
               className={cx(voice ? "chip-on" : "chip-off", "px-2.5")}
@@ -220,6 +306,17 @@ export function PatientChat({ caseData, messages, onMessages, showHints = true, 
                   "Кнопкой 🎤 можно задавать вопросы голосом.",
                   "🎤 düğmesiyle soruyu sesli de sorabilirsiniz.",
                   "You can also ask your question by voice with the 🎤 button.",
+                )}
+              </>
+            )}
+            {canTalk && (
+              <>
+                <br />
+                {tr(
+                  "🗣 Suhbat — imtihondagidek uzluksiz ovozli suhbat: gapirasiz, bemor ovozda javob beradi.",
+                  "🗣 Разговор — непрерывный голосовой диалог, как на экзамене: вы говорите, пациент отвечает голосом.",
+                  "🗣 Sohbet — sınavdaki gibi kesintisiz sesli konuşma: siz konuşursunuz, hasta sesli cevap verir.",
+                  "🗣 Talk — a continuous voice conversation like in the exam: you speak, the patient answers aloud.",
                 )}
               </>
             )}
@@ -382,6 +479,35 @@ export function PatientChat({ caseData, messages, onMessages, showHints = true, 
           {tr("Yuborish", "Отправить", "Gönder", "Send")}
         </button>
       </form>
+      {(talk || talkNote) && (
+        <p
+          className="border-t border-slate-200 px-4 py-2 text-xs text-teal-700 dark:border-slate-800 dark:text-teal-400"
+          aria-live="polite"
+        >
+          {talk
+            ? dictation.listening
+              ? tr(
+                  "🎙 Tinglayapman… nemischa gapiring",
+                  "🎙 Слушаю… говорите по-немецки",
+                  "🎙 Dinliyorum… Almanca konuşun",
+                  "🎙 Listening… speak German",
+                )
+              : waiting
+                ? tr(
+                    "💭 Bemor o‘ylayapti…",
+                    "💭 Пациент думает…",
+                    "💭 Hasta düşünüyor…",
+                    "💭 The patient is thinking…",
+                  )
+                : tr(
+                    "🔊 Bemor gapiryapti…",
+                    "🔊 Пациент говорит…",
+                    "🔊 Hasta konuşuyor…",
+                    "🔊 The patient is speaking…",
+                  )
+            : talkNote}
+        </p>
+      )}
       {dictation.error && (
         <p
           className="border-t border-slate-200 px-4 py-2 text-xs text-rose-600 dark:border-slate-800"
