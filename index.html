@@ -40,7 +40,8 @@
     </script>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app"><div style="min-height:100vh;display:grid;place-items:center"><div style="width:36px;height:36px;border:3px solid #99f6e4;border-top-color:#0d9488;border-radius:50%;animation:boot-spin .8s linear infinite"></div></div></div>
+    <style>@keyframes boot-spin{to{transform:rotate(360deg)}}</style>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

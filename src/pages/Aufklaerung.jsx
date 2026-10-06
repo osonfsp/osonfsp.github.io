@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "../components/Link";
 import { Speak } from "../components/Speak";
 import { Disclaimer, FeedbackList, PageHeader, ProgressBar, ProgressRing, ScoreBars } from "../components/ui";
-import procedures from "../data/aufklaerung.json";
+import { aufklaerung as procedures } from "../data/index";
 import { evaluateAufklaerung } from "../lib/aufklaerung";
 import { loc, tr } from "../lib/i18n";
 import { useParams } from "../lib/router";

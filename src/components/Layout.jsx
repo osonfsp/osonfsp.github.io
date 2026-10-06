@@ -254,9 +254,7 @@ function Sidebar({ onClose }) {
                 "Yöneticiyle iletişim",
                 "Contact the admin",
               )}
-              <span className="block text-[11px] font-normal text-sky-200/70">
-                Telegram · @de_behzod
-              </span>
+              <span className="block text-[11px] font-normal text-sky-200/70">Telegram · @de_behzod</span>
             </span>
             <span aria-hidden>↗</span>
           </a>

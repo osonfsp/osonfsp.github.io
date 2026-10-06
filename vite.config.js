@@ -1,6 +1,27 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import { viteSingleFile } from "vite-plugin-singlefile";
+import { readFileSync } from "node:fs";
+
+// Materiallarning o‘zi sayt kodiga kirmaydi (serverdan keladi) — bosh sahifa uchun faqat sonlar va
+// lug‘atdan 40 ta namuna so‘z (yugurib o‘tuvchi qator) qo‘shiladi.
+function contentStats() {
+  const read = (n) => JSON.parse(readFileSync(new URL(`./src/data/${n}.json`, import.meta.url), "utf8"));
+  const cases = read("cases"),
+    words = read("words");
+  const byCategory = {};
+  for (const c of cases) byCategory[c.category] = (byCategory[c.category] ?? 0) + 1;
+  return {
+    cases: cases.length,
+    words: words.length,
+    pairs: read("pairs").length,
+    arztbriefe: read("arztbriefe").length,
+    aufklaerung: read("aufklaerung").length,
+    phrases: read("redemittel").reduce((n, g) => n + g.items.length, 0),
+    byCategory,
+    marquee: words.slice(0, 40),
+  };
+}
 
 // Writes dist/sw.js: precaches every built file so the installed app works offline.
 // The cache name changes with the file list, so a new deploy replaces the old cache.
@@ -61,5 +82,6 @@ self.addEventListener("fetch", (e) => {
 export default defineConfig(({ mode }) => ({
   plugins: mode === "artifact" ? [react(), viteSingleFile()] : [react(), serviceWorker()],
   base: "./",
+  define: { __CONTENT_STATS__: JSON.stringify(contentStats()) },
   build: mode === "artifact" ? { outDir: "dist-artifact" } : {},
 }));

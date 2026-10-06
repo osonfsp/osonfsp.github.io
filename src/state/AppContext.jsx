@@ -1,6 +1,7 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
-import { arztbriefe, cases, getCase, pairs, words } from "../data/index";
+import { STATS, getCase } from "../data/index";
 import { storage } from "../lib/storage";
+import { logout as accountLogout, saveProgress, useAccount } from "../lib/account";
 import { tr } from "../lib/i18n";
 
 const EMPTY_PROGRESS = {
@@ -16,7 +17,6 @@ const EMPTY_PROGRESS = {
     wordReview: {},
     days: [],
   },
-  USER_KEY = "fsp.user",
   PROGRESS_KEY = "fsp.progress",
   // Leitner qutilari: n-qutidagi so‘z REVIEW_DAYS[n] kundan keyin qaytadi
   REVIEW_DAYS = [0, 1, 3, 7, 14, 30],
@@ -45,49 +45,31 @@ const EMPTY_PROGRESS = {
   AppContext = createContext(null);
 
 export function AppProvider({ children: e }) {
-  let [t, a] = useState(false),
-    [n, i] = useState(null),
-    [l, s] = useState(EMPTY_PROGRESS);
+  // Foydalanuvchi — Telegram akkaunti (serverdan, src/lib/account.js)
+  let { status, account, serverProgress } = useAccount(),
+    t = status !== "loading",
+    n = status === "ready" ? account.user : null,
+    [l, s] = useState(() => ({ ...EMPTY_PROGRESS, ...storage.get(PROGRESS_KEY, {}) }));
+  // Progress: qaysi qurilmada keyinroq o‘zgargan bo‘lsa — o‘sha. Server yangiroq bo‘lsa olamiz, aks holda yuboramiz.
   useEffect(() => {
-    (i(storage.get(USER_KEY, null)),
-      s({
-        ...EMPTY_PROGRESS,
-        ...storage.get(PROGRESS_KEY, {}),
-      }),
-      a(true));
-  }, []);
+    if (!n) return;
+    let local = storage.get(PROGRESS_KEY, null);
+    if (serverProgress && (serverProgress.updatedAt ?? 0) > (local?.updatedAt ?? 0)) {
+      let next = { ...EMPTY_PROGRESS, ...serverProgress };
+      storage.set(PROGRESS_KEY, next);
+      s(next);
+    } else if (local && (local.updatedAt ?? 0) > (serverProgress?.updatedAt ?? -1)) saveProgress(local);
+  }, [n?.id, serverProgress]);
   let r = useCallback((m) => {
       s((v) => {
-        let N = m(v);
-        return (storage.set(PROGRESS_KEY, N), N);
+        let N = { ...m(v), updatedAt: Date.now() };
+        return (storage.set(PROGRESS_KEY, N), saveProgress(N), N);
       });
     }, []),
-    c = useCallback(
-      (m) => {
-        (storage.set(USER_KEY, m),
-          i(m),
-          r((v) =>
-            withActivity(
-              v,
-              tr(
-                "Platformaga kirildi",
-                "Вход на платформу",
-                "Platforma giriş yapıldı",
-                "Signed in to the platform",
-              ),
-              "/dashboard",
-            ),
-          ));
-      },
-      [r],
-    ),
-    h = useCallback(() => {
-      (storage.remove(USER_KEY), i(null));
-    }, []),
+    h = useCallback(() => accountLogout(), []),
     b = useCallback(() => r(() => EMPTY_PROGRESS), [r]),
     x = useCallback(
       (m, v) => {
-        if (v) (storage.set(USER_KEY, v), i(v));
         r(() =>
           withActivity(
             { ...EMPTY_PROGRESS, ...m },
@@ -221,10 +203,10 @@ export function AppProvider({ children: e }) {
     g = useMemo(() => {
       let m = new Set(l.arztbrief.map((N) => N.id)).size,
         v = [
-          l.solvedCases.length / cases.length,
-          l.learnedWords.length / words.length,
-          l.knownPairs.length / pairs.length,
-          m / arztbriefe.length,
+          l.solvedCases.length / STATS.cases,
+          l.learnedWords.length / STATS.words,
+          l.knownPairs.length / STATS.pairs,
+          m / STATS.arztbriefe,
           Math.min(l.exams.length, 3) / 3,
         ];
       return Math.round((v.reduce((N, C) => N + Math.min(1, C), 0) / v.length) * 100);
@@ -235,7 +217,6 @@ export function AppProvider({ children: e }) {
         user: n,
         progress: l,
         overall: g,
-        login: c,
         logout: h,
         resetProgress: b,
         importProgress: x,
@@ -249,7 +230,7 @@ export function AppProvider({ children: e }) {
         addSimulation: w,
         addExam: D,
       }),
-      [t, n, l, g, c, h, b, x, y, f, R, p, A, AK, HO, w, D],
+      [t, n, l, g, h, b, x, y, f, R, p, A, AK, HO, w, D],
     );
   return <AppContext.Provider value={d}>{e}</AppContext.Provider>;
 }

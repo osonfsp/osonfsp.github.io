@@ -10,7 +10,7 @@ import {
   Spinner,
   StatCard,
 } from "../components/ui";
-import { CASE_SECTIONS, arztbriefe, cases, getCase, pairs, words } from "../data/index";
+import { CASE_SECTIONS, STATS, cases, getCase, words } from "../data/index";
 import { useRouter } from "../lib/router";
 import { avg, formatDate } from "../lib/utils";
 import { streakOf, useApp } from "../state/AppContext";
@@ -196,14 +196,14 @@ export function DashboardPage() {
           <StatCard
             icon="🩺"
             label={tr("Yechilgan Fälle", "Решённые кейсы", "Çözülen vakalar", "Solved cases")}
-            value={`${a.solvedCases.length} / ${cases.length}`}
-            progress={(a.solvedCases.length / cases.length) * 100}
+            value={`${a.solvedCases.length} / ${STATS.cases}`}
+            progress={(a.solvedCases.length / STATS.cases) * 100}
           />
           <StatCard
             icon="📚"
             label={tr("O‘rganilgan so‘zlar", "Выученные слова", "Öğrenilen kelimeler", "Words learned")}
-            value={`${a.learnedWords.length} / ${words.length}`}
-            progress={(a.learnedWords.length / words.length) * 100}
+            value={`${a.learnedWords.length} / ${STATS.words}`}
+            progress={(a.learnedWords.length / STATS.words) * 100}
           />
           <StatCard
             icon="✍️"
@@ -213,13 +213,13 @@ export function DashboardPage() {
               "Arztbrief alıştırmaları",
               "Arztbrief exercises",
             )}
-            value={`${r} / ${arztbriefe.length}`}
+            value={`${r} / ${STATS.arztbriefe}`}
             hint={
               a.arztbrief.length
                 ? `${tr("O‘rtacha ball", "Средний балл", "Ortalama puan", "Average score")}: ${c}%`
                 : tr("Hali urinish yo‘q", "Попыток пока нет", "Henüz deneme yok", "No attempts yet")
             }
-            progress={(r / arztbriefe.length) * 100}
+            progress={(r / STATS.arztbriefe) * 100}
           />
           <StatCard
             icon="💬"
@@ -239,8 +239,8 @@ export function DashboardPage() {
               "Fach ↔ Patient kartları",
               "Fach ↔ Patient flashcards",
             )}
-            value={`${a.knownPairs.length} / ${pairs.length}`}
-            progress={(a.knownPairs.length / pairs.length) * 100}
+            value={`${a.knownPairs.length} / ${STATS.pairs}`}
+            progress={(a.knownPairs.length / STATS.pairs) * 100}
           />
           <StatCard
             icon="🎯"

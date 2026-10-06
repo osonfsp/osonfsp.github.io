@@ -1,5 +1,4 @@
-import { CASE_SECTIONS, arztbriefe, cases, getCase, words } from "../data/index";
-import aufklaerung from "../data/aufklaerung.json";
+import { CASE_SECTIONS, arztbriefe, aufklaerung, cases, getCase, words } from "../data/index";
 import { today } from "../state/AppContext";
 import { tr } from "./i18n";
 import { storage } from "./storage";
@@ -112,6 +111,8 @@ export function buildPlan(progress) {
     wordGoal = 10, // kartochka mashqining bitta sessiyasi
     due = Object.values(progress.wordReview ?? {}).filter((r) => r.due <= today()).length,
     tasks = [];
+  // Materiallar yo‘q (kirilmagan yoki sinov tugagan) — reja ham yo‘q
+  if (!cases.length || !arztbriefe.length) return { tasks, profile: p, day, doneCount: 0 };
 
   // 1. So‘zlar — har kuni
   tasks.push({
@@ -273,5 +274,4 @@ export function recommendation(p) {
   return pace[p.examIn] + level;
 }
 
-export const wordsCount = words.length;
 export { getCase };

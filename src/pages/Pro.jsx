@@ -5,6 +5,8 @@ import { trackEvent } from "../lib/analytics";
 import { FREE_LIMITS, TRIAL_HOURS, usePlan } from "../lib/plan";
 import { cx } from "../lib/utils";
 import { formatDay, LANG, tr } from "../lib/i18n";
+import { refreshAccount, useAccount } from "../lib/account";
+import { FEEDBACK_TELEGRAM } from "../lib/config";
 
 const OFFERS = [
   {
@@ -89,7 +91,8 @@ const OFFERS = [
 ];
 
 export function ProPage() {
-  let { plan, left, limit, trialActive, trialEnd } = usePlan(),
+  let { plan, left, limit, trialActive, trialEnd, loggedIn } = usePlan(),
+    { account } = useAccount(),
     hours = Math.max(0, Math.ceil((trialEnd - new Date()) / 36e5)),
     [asked, setAsked] = useState(null);
   return (
@@ -109,7 +112,7 @@ export function ProPage() {
         <p className="card mb-4 border-emerald-300 bg-emerald-50 text-sm dark:border-emerald-900 dark:bg-emerald-950/30">
           ✅ {tr("Faol tarif", "Активный тариф", "Aktif paket", "Active plan")}:{" "}
           <b>
-            {plan.id === "owner"
+            {plan.id === "owner" || plan.id === "admin"
               ? tr(
                   "Egasi (test rejimi)",
                   "Владелец (тестовый режим)",
@@ -118,7 +121,9 @@ export function ProPage() {
                 )
               : plan.id === "week"
                 ? tr("1 haftalik", "1 неделя", "1 haftalık", "1 week")
-                : tr("1 oylik", "1 месяц", "1 aylık", "1 month")}
+                : plan.id === "month"
+                  ? tr("1 oylik", "1 месяц", "1 aylık", "1 month")
+                  : tr("Maxsus", "Особый", "Özel", "Custom")}
           </b>{" "}
           — {tr("", "до ", "", "until ")}
           {formatDay(plan.until, { year: true })}
@@ -183,7 +188,7 @@ export function ProPage() {
               ))}
             </ul>
             {o.id === "free" ? (
-              <Link href="/faelle" className="btn-outline mt-5 w-full">
+              <Link href={loggedIn ? "/faelle" : "/login"} className="btn-outline mt-5 w-full">
                 {tr("Sinov", "Попробовать", "Deneme", "Trial")}
               </Link>
             ) : (
@@ -208,14 +213,71 @@ export function ProPage() {
           <b>
             {asked.name} — {asked.price}
           </b>
-          <p className="mt-1">
-            {tr(
-              "Onlayn to‘lov tez orada ulanadi. So‘rovingiz qayd etildi — to‘lov ishga tushishi bilan shu sahifada sotib olishingiz mumkin bo‘ladi.",
-              "Онлайн-оплата скоро будет подключена. Ваш запрос учтён — как только оплата заработает, купить можно будет на этой странице.",
-              "Online ödeme yakında eklenecek. Talebiniz kaydedildi — ödeme açılır açılmaz bu sayfadan satın alabileceksiniz.",
-              "Online payment is coming soon. Your request has been noted — as soon as payment is live, you will be able to buy on this page.",
-            )}
-          </p>
+          {!loggedIn ? (
+            <>
+              <p className="mt-1">
+                {tr(
+                  "Tarif akkauntingizga yoqiladi — avval Telegram orqali kiring.",
+                  "Тариф подключается к аккаунту — сначала войдите через Telegram.",
+                  "Paket hesabınıza tanımlanır — önce Telegram ile giriş yapın.",
+                  "The plan is added to your account — sign in with Telegram first.",
+                )}
+              </p>
+              <Link href="/login" className="btn-primary mt-3 inline-flex">
+                {tr(
+                  "Telegram orqali kirish",
+                  "Войти через Telegram",
+                  "Telegram ile giriş",
+                  "Sign in with Telegram",
+                )}
+              </Link>
+            </>
+          ) : (
+            <>
+              <ol className="mt-2 list-decimal space-y-1 pl-5">
+                <li>
+                  {tr(
+                    "Adminga Telegram’da yozing va tarifni ayting.",
+                    "Напишите админу в Telegram и укажите тариф.",
+                    "Yöneticiye Telegram’dan yazın ve paketi belirtin.",
+                    "Write to the admin on Telegram and name the plan.",
+                  )}
+                </li>
+                <li>
+                  {tr(
+                    "Xabarga ID raqamingizni qo‘shing:",
+                    "Добавьте в сообщение ваш ID:",
+                    "Mesaja ID’nizi ekleyin:",
+                    "Add your ID to the message:",
+                  )}{" "}
+                  <b className="select-all font-mono">{account?.user.id}</b>
+                </li>
+                <li>
+                  {tr(
+                    "To‘lovdan so‘ng admin tarifni akkauntingizga yoqadi — shu sahifani yangilang.",
+                    "После оплаты админ подключит тариф к аккаунту — обновите эту страницу.",
+                    "Ödemeden sonra yönetici paketi hesabınıza tanımlar — bu sayfayı yenileyin.",
+                    "After payment the admin adds the plan to your account — refresh this page.",
+                  )}
+                </li>
+              </ol>
+              <div className="mt-3 flex flex-wrap gap-2">
+                {FEEDBACK_TELEGRAM && (
+                  <a
+                    href={FEEDBACK_TELEGRAM}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-primary"
+                  >
+                    ✈️ {tr("Adminga yozish", "Написать админу", "Yöneticiye yaz", "Message the admin")}
+                  </a>
+                )}
+                <button type="button" className="btn-outline" onClick={() => refreshAccount()}>
+                  🔄 {tr("Tarifni tekshirish", "Проверить тариф", "Paketi kontrol et", "Check my plan")}
+                </button>
+              </div>
+            </>
+          )}
         </div>
       )}
     </div>

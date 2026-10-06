@@ -1,10 +1,7 @@
-import cases from "./cases.json";
-import words from "./words.json";
-import pairs from "./pairs.json";
-import arztbriefe from "./arztbriefe.json";
+import { arztbriefe, cases } from "./content";
 import { tr } from "../lib/i18n";
 
-export { cases, words, pairs, arztbriefe };
+export { cases, words, pairs, arztbriefe, aufklaerung, redemittel, STATS } from "./content";
 
 export const CASE_CATEGORIES = [
     "Innere Medizin",

@@ -59,12 +59,13 @@ const ROUTES = [
   [/^\/admin$/, AdminPage],
 ];
 
-const MATERIALS = /^\/(faelle|simulation|arztbrief|aufklaerung|hoeren|woerter|fachsprache|redemittel)(\/|$)/;
+const MATERIALS =
+  /^\/(faelle|simulation|arztbrief|aufklaerung|hoeren|woerter|fachsprache|redemittel|bugun|pruefung)(\/|$)/;
 
 export function Router() {
   const pathname = usePathname();
   const Page = ROUTES.find(([re]) => re.test(pathname))?.[1] ?? NotFoundPage;
-  // O‘quv materiallari: 1 kunlik bepul sinov yoki faol tarif kerak
+  // O‘quv materiallari: akkaunt + 1 kunlik bepul sinov yoki faol tarif (materiallar serverdan keladi)
   if (MATERIALS.test(pathname))
     return (
       <MaterialsGate>

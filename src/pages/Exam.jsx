@@ -21,7 +21,8 @@ import {
 import { avg, clamp, cx } from "../lib/utils";
 import { useApp } from "../state/AppContext";
 import { FreeLeft, Paywall } from "../components/Paywall";
-import { consume, usePlan } from "../lib/plan";
+import { usePlan } from "../lib/plan";
+import { startExam } from "../lib/account";
 import { tr } from "../lib/i18n";
 import { SectionIntro } from "../components/SectionIntro";
 
@@ -106,7 +107,9 @@ export function ExamPage() {
     [term, setTerm] = useState(null),
     { canUse: CU } = usePlan(),
     QS = term ? [...ARZT_ARZT_QUESTIONS, termQuestion(term)] : ARZT_ARZT_QUESTIONS;
-  function N(z) {
+  // Imtihon boshlanishini server hisoblaydi (bepul — 1 marta); rad etsa, Paywall ko‘rinadi
+  async function N(z) {
+    if (!(await startExam())) return;
     let k = z ?? Math.floor(Math.random() * EXAM_CASES.length),
       tr = EXAM_CASES[k].c.terms;
     setTerm(tr[Math.floor(Math.random() * tr.length)]);
@@ -163,7 +166,6 @@ export function ExamPage() {
         passed,
       }),
       D(false),
-      consume("exam"),
       a("result"));
   }
   function expire() {

@@ -1,15 +1,13 @@
 import { useEffect, useRef, useState } from "react";
 import { Helix3D } from "../components/Helix3D";
 import { Link } from "../components/Link";
-import { CASE_SECTIONS, arztbriefe, cases, words } from "../data/index";
-import aufklaerung from "../data/aufklaerung.json";
-import redemittel from "../data/redemittel.json";
+import { CASE_SECTIONS, STATS } from "../data/index";
 import { loc, tr } from "../lib/i18n";
 import { FREE_LIMITS, TRIAL_HOURS } from "../lib/plan";
 import { cx } from "../lib/utils";
 import { getProfile } from "../lib/daily";
 
-const PHRASES = redemittel.reduce((n, g) => n + g.items.length, 0);
+const PHRASES = STATS.phrases;
 
 // 0 dan boshlab sanab chiqadigan raqam (ko‘ringanda boshlanadi)
 function CountUp({ to, suffix = "" }) {
@@ -82,7 +80,7 @@ const GLASS =
   "rounded-3xl border border-white/60 bg-white/55 shadow-xl shadow-teal-900/5 backdrop-blur-xl dark:border-white/10 dark:bg-slate-900/50";
 
 export function HomePage() {
-  const marquee = words.slice(0, 40),
+  const marquee = STATS.marquee,
     // yangi odam → 3 ta savol; qaytgan foydalanuvchi → bugungi vazifalar
     returning = !!getProfile(),
     startHref = returning ? "/bugun" : "/start",
@@ -115,10 +113,10 @@ export function HomePage() {
       title: "Dokumentation",
       front: tr("Arztbrief yozish", "Написание Arztbrief", "Arztbrief yazma", "Writing the Arztbrief"),
       back: tr(
-        `${arztbriefe.length} ta mashq: struktura, Fachsprache, grammatika va muhim ma’lumotlar avtomatik tekshiriladi.`,
-        `${arztbriefe.length} упражнений: структура, Fachsprache, грамматика и ключевые сведения проверяются автоматически.`,
-        `${arztbriefe.length} alıştırma: yapı, Fachsprache, dilbilgisi ve önemli bilgiler otomatik kontrol edilir.`,
-        `${arztbriefe.length} exercises: structure, Fachsprache, grammar and key information are checked automatically.`,
+        `${STATS.arztbriefe} ta mashq: struktura, Fachsprache, grammatika va muhim ma’lumotlar avtomatik tekshiriladi.`,
+        `${STATS.arztbriefe} упражнений: структура, Fachsprache, грамматика и ключевые сведения проверяются автоматически.`,
+        `${STATS.arztbriefe} alıştırma: yapı, Fachsprache, dilbilgisi ve önemli bilgiler otomatik kontrol edilir.`,
+        `${STATS.arztbriefe} exercises: structure, Fachsprache, grammar and key information are checked automatically.`,
       ),
       href: "/arztbrief",
       grad: "from-violet-400 to-fuchsia-500",
@@ -202,8 +200,8 @@ export function HomePage() {
           </p>
           <dl className="mt-8 grid max-w-lg grid-cols-3 gap-3">
             {[
-              [cases.length, tr("klinik Fall", "клинических кейсов", "klinik vaka", "clinical cases")],
-              [words.length, tr("tibbiy termin", "терминов", "tıbbi terim", "medical terms")],
+              [STATS.cases, tr("klinik Fall", "клинических кейсов", "klinik vaka", "clinical cases")],
+              [STATS.words, tr("tibbiy termin", "терминов", "tıbbi terim", "medical terms")],
               [PHRASES, "Redemittel"],
             ].map(([v, l]) => (
               <div key={l} className={cx(GLASS, "rounded-2xl p-3")}>
@@ -288,10 +286,10 @@ export function HomePage() {
               <span className="text-4xl">🩺</span>
               <h3 className="mt-3 text-2xl font-bold">
                 {tr(
-                  `${cases.length} ta klinik Fall`,
-                  `${cases.length} клинических кейсов`,
-                  `${cases.length} klinik vaka`,
-                  `${cases.length} clinical cases`,
+                  `${STATS.cases} ta klinik Fall`,
+                  `${STATS.cases} клинических кейсов`,
+                  `${STATS.cases} klinik vaka`,
+                  `${STATS.cases} clinical cases`,
                 )}
               </h3>
               <p className="mt-2 muted">
@@ -308,7 +306,7 @@ export function HomePage() {
                     key={s.id}
                     className="rounded-full bg-teal-600/10 px-3 py-1 text-sm font-medium text-teal-800 dark:bg-teal-400/10 dark:text-teal-200"
                   >
-                    {s.icon} {s.label} · {cases.filter((c) => s.categories.includes(c.category)).length}
+                    {s.icon} {s.label} · {s.categories.reduce((n, c) => n + (STATS.byCategory[c] ?? 0), 0)}
                   </span>
                 ))}
               </div>
@@ -326,10 +324,10 @@ export function HomePage() {
               <h3 className="mt-2 font-bold">Aufklärung</h3>
               <p className="mt-1 text-sm muted">
                 {tr(
-                  `${aufklaerung.length} ta tekshiruvni bemorga tushuntirish`,
-                  `Объяснение ${aufklaerung.length} обследований пациенту`,
-                  `${aufklaerung.length} tetkiki hastaya açıklama`,
-                  `Explaining ${aufklaerung.length} examinations to the patient`,
+                  `${STATS.aufklaerung} ta tekshiruvni bemorga tushuntirish`,
+                  `Объяснение ${STATS.aufklaerung} обследований пациенту`,
+                  `${STATS.aufklaerung} tetkiki hastaya açıklama`,
+                  `Explaining ${STATS.aufklaerung} examinations to the patient`,
                 )}
               </p>
             </div>

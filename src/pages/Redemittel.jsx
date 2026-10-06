@@ -1,7 +1,7 @@
 import { useMemo, useState } from "react";
 import { Speak } from "../components/Speak";
 import { FilterChips, PageHeader, SearchInput } from "../components/ui";
-import redemittel from "../data/redemittel.json";
+import { redemittel } from "../data/index";
 import { cx } from "../lib/utils";
 import { tr } from "../lib/i18n";
 import { SectionIntro } from "../components/SectionIntro";

@@ -5,6 +5,7 @@ import { tr } from "../lib/i18n";
 // Bepul imkoniyat tugaganda sahifa o‘rniga ko‘rsatiladi.
 // kind: "materials" — 1 kunlik sinov tugadi; "exam" — bepul imtihon ishlatildi.
 export function Paywall({ kind = "materials" }) {
+  if (kind === "login") return <LoginWall />;
   let { limit } = usePlan(),
     exam = kind === "exam";
   return (
@@ -57,12 +58,37 @@ export function Paywall({ kind = "materials" }) {
 
 // Material sahifalarini o‘raydi: sinov yoki tarif bo‘lmasa — Paywall
 export function MaterialsGate({ children }) {
-  let { hasMaterials } = usePlan();
+  let { hasMaterials, loggedIn } = usePlan();
   return hasMaterials ? (
     children
   ) : (
     <div className="page">
-      <Paywall kind="materials" />
+      <Paywall kind={loggedIn ? "materials" : "login"} />
+    </div>
+  );
+}
+
+// Kirmagan foydalanuvchi uchun: materiallar faqat akkaunt bilan
+function LoginWall() {
+  return (
+    <div className="card mx-auto max-w-xl text-center">
+      <p className="text-4xl" aria-hidden>
+        ✈️
+      </p>
+      <h2 className="mt-3 h-title">
+        {tr("Avval kiring", "Сначала войдите", "Önce giriş yapın", "Sign in first")}
+      </h2>
+      <p className="mt-2 text-sm muted">
+        {tr(
+          "Materiallar akkaunt bilan ochiladi. Telegram orqali kiring — birinchi 24 soat bepul: barcha materiallar va 1 ta imtihon.",
+          "Материалы открываются с аккаунтом. Войдите через Telegram — первые 24 часа бесплатно: все материалы и 1 экзамен.",
+          "Materyaller hesapla açılır. Telegram ile giriş yapın — ilk 24 saat ücretsiz: tüm materyaller ve 1 sınav.",
+          "Materials open with an account. Sign in with Telegram — the first 24 hours are free: all materials and 1 exam.",
+        )}
+      </p>
+      <Link href="/login" className="btn-primary mt-5 inline-flex">
+        {tr("Telegram orqali kirish", "Войти через Telegram", "Telegram ile giriş", "Sign in with Telegram")}
+      </Link>
     </div>
   );
 }
@@ -84,8 +110,22 @@ export function FreeLeft({ kind }) {
 
 // Sarlavha ostidagi ingichka chiziq: "Bepul sinov: 23 soat qoldi"
 export function TrialBar() {
-  let { plan, trialActive, trialEnd } = usePlan();
+  let { plan, trialActive, trialEnd, loggedIn } = usePlan();
   if (plan) return null;
+  if (!loggedIn)
+    return (
+      <Link
+        href="/login"
+        className="block bg-teal-50 py-1.5 text-center text-xs font-medium text-teal-900 hover:bg-teal-100 dark:bg-teal-950/40 dark:text-teal-200"
+      >
+        {tr(
+          "🎁 Telegram orqali kiring — 24 soat bepul →",
+          "🎁 Войдите через Telegram — 24 часа бесплатно →",
+          "🎁 Telegram ile giriş yapın — 24 saat ücretsiz →",
+          "🎁 Sign in with Telegram — 24 hours free →",
+        )}
+      </Link>
+    );
   let h = Math.max(0, Math.ceil((trialEnd - new Date()) / 36e5));
   return (
     <Link

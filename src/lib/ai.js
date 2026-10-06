@@ -1,12 +1,12 @@
 import { LANG } from "./i18n";
 import { clamp } from "./utils";
+import { API_URL, sessionToken } from "./account";
 
 // AI ikki yo‘l bilan ishlaydi:
 // - claude.ai Artifact ichida: "sample" imkoniyati orqali, KO‘RUVCHINING o‘z Claude obunasi hisobidan.
-// - Saytda (github.io, localhost): VITE_AI_URL dagi Worker orqali Gemini (worker/ papkasi).
+// - Saytda (github.io, localhost): o‘z serverimiz (worker/) orqali Gemini — faqat kirgan foydalanuvchiga,
+//   kunlik limit bilan (server hisoblaydi).
 // Ikkalasi ham bo‘lmasa yoki xato bersa — hammasi qoidaga asoslangan rejimda qoladi.
-const AI_URL = import.meta.env.VITE_AI_URL || "";
-
 let samplePromise = null,
   disabled = false;
 
@@ -16,7 +16,9 @@ function getSample() {
     let use = typeof window !== "undefined" && window.claude?.use;
     samplePromise = use
       ? Promise.resolve(window.claude.use("sample")).catch(() => null)
-      : Promise.resolve(AI_URL && import.meta.env.MODE !== "artifact" ? workerSample : null);
+      : Promise.resolve(
+          API_URL && sessionToken() && import.meta.env.MODE !== "artifact" ? workerSample : null,
+        );
   }
   return samplePromise;
 }
@@ -25,13 +27,15 @@ async function callWorker(messages, json) {
   let ctrl = new AbortController(),
     timer = setTimeout(() => ctrl.abort(), 50e3);
   try {
-    let res = await fetch(AI_URL, {
+    let res = await fetch(`${API_URL}/ai`, {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: { "Content-Type": "application/json", Authorization: `Bearer ${sessionToken()}` },
       body: JSON.stringify({ messages, json }),
       signal: ctrl.signal,
     });
-    if (!res.ok) throw { code: res.status === 403 ? "not_granted" : `http_${res.status}` };
+    // 401/402/403 — akkaunt yoki ruxsat yo‘q; 429 — kunlik limit tugadi: shu sahifada qayta so‘ramaymiz
+    if (!res.ok)
+      throw { code: [401, 402, 403, 429].includes(res.status) ? "not_granted" : `http_${res.status}` };
     let { text } = await res.json();
     return String(text ?? "");
   } finally {

@@ -4,6 +4,8 @@ import { CASE_CATEGORIES, WORD_CATEGORIES, arztbriefe, cases, words } from "../d
 import { tr } from "../lib/i18n";
 import { cx } from "../lib/utils";
 import { useApp } from "../state/AppContext";
+import { ARTIFACT, useAccount } from "../lib/account";
+import { AdminUsers } from "../components/AdminUsers";
 
 const ADMIN_FIELDS = {
     faelle: [
@@ -226,7 +228,44 @@ function downloadJson(e, t) {
   ((n.href = a), (n.download = e), n.click(), URL.revokeObjectURL(a));
 }
 
+// Admin sahifasi: faqat admin akkaunt uchun (serverda ham tekshiriladi)
 export function AdminPage() {
+  let { account } = useAccount(),
+    [tab, setTab] = useState(ARTIFACT ? "content" : "users");
+  if (!account?.isAdmin)
+    return (
+      <div className="page py-24 text-center">
+        <p className="text-5xl font-bold text-teal-600">404</p>
+      </div>
+    );
+  return (
+    <div>
+      {!ARTIFACT && (
+        <div className="page !pb-0">
+          <div className="flex gap-2">
+            {[
+              ["users", tr("👥 Foydalanuvchilar", "👥 Пользователи", "👥 Kullanıcılar", "👥 Users")],
+              ["content", tr("📝 Kontent", "📝 Контент", "📝 İçerik", "📝 Content")],
+            ].map(([id, label]) => (
+              <button key={id} className={tab === id ? "chip-on" : "chip-off"} onClick={() => setTab(id)}>
+                {label}
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
+      {tab === "users" ? (
+        <div className="page">
+          <AdminUsers />
+        </div>
+      ) : (
+        <ContentAdmin />
+      )}
+    </div>
+  );
+}
+
+function ContentAdmin() {
   let { progress: e, overall: t, user: a } = useApp(),
     [n, i] = useState("faelle"),
     [l, s] = useState(cases),
