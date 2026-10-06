@@ -204,6 +204,13 @@ export default {
       }
     }
 
+    // ---- Ochiq: Telegram Login Widget uchun bot username (token'ning o'zi chiqmaydi) ----
+    if (path === "/bot" && req.method === "GET") {
+      let r = await fetch(`https://api.telegram.org/bot${env.TELEGRAM_BOT_TOKEN}/getMe`).catch(() => null),
+        d = r && (await r.json().catch(() => null));
+      return d?.ok ? reply(200, { username: d.result.username }) : reply(503, { error: "bot" });
+    }
+
     // ---- Kirish ----
     if (path === "/auth/telegram" && req.method === "POST") {
       let tg = await verifyTelegram(body, env.TELEGRAM_BOT_TOKEN);
