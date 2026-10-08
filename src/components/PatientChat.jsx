@@ -4,6 +4,7 @@ import { storage } from "../lib/storage";
 import { cx } from "../lib/utils";
 import { Speak, canSpeak, speak, stopSpeaking } from "./Speak";
 import { tr } from "../lib/i18n";
+import { TG, openInBrowser } from "../lib/telegram";
 
 const VOICE_KEY = "fsp.voice";
 
@@ -307,6 +308,24 @@ export function PatientChat({ caseData, messages, onMessages, showHints = true, 
                   "🎤 düğmesiyle soruyu sesli de sorabilirsiniz.",
                   "You can also ask your question by voice with the 🎤 button.",
                 )}
+              </>
+            )}
+            {!dictation.supported && TG && (
+              <>
+                <br />
+                {/* Telegram ichida (ayniqsa Android) mikrofondan nutqni tanish ishlamaydi */}
+                <button
+                  type="button"
+                  className="mt-1 font-medium text-teal-700 underline dark:text-teal-300"
+                  onClick={openInBrowser}
+                >
+                  {tr(
+                    "🎤 Ovozda gaplashish uchun brauzerda oching",
+                    "🎤 Чтобы говорить голосом, откройте в браузере",
+                    "🎤 Sesli konuşmak için tarayıcıda açın",
+                    "🎤 Open in the browser to talk by voice",
+                  )}
+                </button>
               </>
             )}
             {canTalk && (

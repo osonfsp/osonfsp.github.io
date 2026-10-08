@@ -49,6 +49,14 @@ export class Store extends DurableObject {
     return v;
   }
 
+  getMeta(k) {
+    return this.one("SELECT v FROM meta WHERE k = ?", k)?.v ?? null;
+  }
+
+  setMeta(k, v) {
+    this.sql.exec("INSERT INTO meta (k, v) VALUES (?, ?) ON CONFLICT(k) DO UPDATE SET v = excluded.v", k, v);
+  }
+
   // Telegram orqali kirish: yangi foydalanuvchi bo'lsa — sinov muddati shu paytdan boshlanadi
   upsertUser({ id, username, name, photo }, trialMs) {
     let now = Date.now();

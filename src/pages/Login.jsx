@@ -2,7 +2,8 @@ import { useEffect, useRef, useState } from "react";
 import { useRouter } from "../lib/router";
 import { useApp } from "../state/AppContext";
 import { LANG, tr } from "../lib/i18n";
-import { TG_BOT, loginWithTelegram } from "../lib/account";
+import { TG_BOT, loginWithTelegram, loginWithTelegramApp } from "../lib/account";
+import { TG } from "../lib/telegram";
 
 // Telegram Login Widget: https://core.telegram.org/widgets/login
 // Telegram foydalanuvchi ma’lumotini imzolab beradi, imzoni server tekshiradi (worker/index.js).
@@ -43,7 +44,7 @@ export function LoginPage() {
     setBusy(true);
     setError("");
     try {
-      await loginWithTelegram(tgUser);
+      await (TG ? loginWithTelegramApp() : loginWithTelegram(tgUser));
       window.location.hash = "#/dashboard";
       window.location.reload();
     } catch {
@@ -79,6 +80,16 @@ export function LoginPage() {
         <div className="mt-6">
           {busy ? (
             <p className="text-sm muted">{tr("Kirilmoqda…", "Входим…", "Giriş yapılıyor…", "Signing in…")}</p>
+          ) : TG ? (
+            // Bot ichida avtomatik kirish o‘xshamagan bo‘lsa (masalan, internet uzilgan) — qayta urinish
+            <button className="btn-primary" onClick={() => onAuth()}>
+              {tr(
+                "Telegram orqali kirish",
+                "Войти через Telegram",
+                "Telegram ile giriş",
+                "Sign in with Telegram",
+              )}
+            </button>
           ) : TG_BOT ? (
             <TelegramButton onAuth={onAuth} />
           ) : (

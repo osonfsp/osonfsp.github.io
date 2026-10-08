@@ -2,6 +2,7 @@ import { createRoot } from "react-dom/client";
 import { bootAccount } from "./lib/account";
 import { trackPage } from "./lib/analytics";
 import { subscribe } from "./lib/router";
+import { initTelegram } from "./lib/telegram";
 import "./index.css";
 
 const root = document.documentElement;
@@ -25,21 +26,25 @@ new MutationObserver(applyTheme).observe(root, {
 
 window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", applyTheme);
 
-// Avval akkaunt va materiallar (serverdan), keyin ilova: sahifalar materiallarni yuklanishida o‘qiydi
-bootAccount().finally(async () => {
-  let [{ Router }, { AppShell }, { AppProvider }] = await Promise.all([
-    import("./App"),
-    import("./components/Layout"),
-    import("./state/AppContext"),
-  ]);
-  createRoot(document.getElementById("app")).render(
-    <AppProvider>
-      <AppShell>
-        <Router />
-      </AppShell>
-    </AppProvider>,
-  );
-});
+// Avval akkaunt va materiallar (serverdan), keyin ilova: sahifalar materiallarni yuklanishida o‘qiydi.
+// Telegram ichida ochilgan bo‘lsa — avval Telegram orqali avtomatik kirish (src/lib/telegram.js).
+initTelegram()
+  .catch(() => {})
+  .then(bootAccount)
+  .finally(async () => {
+    let [{ Router }, { AppShell }, { AppProvider }] = await Promise.all([
+      import("./App"),
+      import("./components/Layout"),
+      import("./state/AppContext"),
+    ]);
+    createRoot(document.getElementById("app")).render(
+      <AppProvider>
+        <AppShell>
+          <Router />
+        </AppShell>
+      </AppProvider>,
+    );
+  });
 
 // Offline ishlash va telefonga o‘rnatish (PWA). Artifact versiyasida sw.js yo‘q.
 if (import.meta.env.PROD && import.meta.env.MODE !== "artifact" && "serviceWorker" in navigator) {

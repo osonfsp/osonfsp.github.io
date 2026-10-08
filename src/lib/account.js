@@ -1,8 +1,9 @@
 import { useSyncExternalStore } from "react";
 import { loadBundledContent, setContent } from "../data/content";
 import { storage } from "./storage";
+import { TG } from "./telegram";
 
-// Akkaunt: Telegram orqali kirish, sinov/tarif va materiallar — hammasi serverda (worker/index.js).
+// Akkaunt: Telegram orqali kirish (sayt yoki bot ichidagi Mini App), sinov/tarif va materiallar — hammasi serverda (worker/index.js).
 // Brauzerda faqat sessiya tokeni va tezroq ochilishi uchun keshlangan nusxa turadi; huquqlarni
 // har safar server tekshiradi, shuning uchun localStorage'ni o‘zgartirish hech narsa bermaydi.
 export const API_URL = import.meta.env.VITE_API_URL || "";
@@ -78,6 +79,13 @@ export async function bootAccount() {
     await loadBundledContent();
     return update({ status: "ready", account: OWNER });
   }
+  // Bot ichida (Mini App): Telegram foydalanuvchini o‘zi tanitadi — sessiya yo‘q yoki boshqa odamniki bo‘lsa, kiramiz
+  if (
+    TG &&
+    (!storage.get(TOKEN_KEY, null) ||
+      storage.get(ACCOUNT_KEY, null)?.user?.id !== TG.initDataUnsafe?.user?.id)
+  )
+    await loginWithTelegramApp().catch(() => {});
   if (!storage.get(TOKEN_KEY, null)) return update({ status: "guest" });
 
   let cached = storage.get(ACCOUNT_KEY, null),
@@ -144,13 +152,18 @@ export async function refreshAccount() {
   } catch {}
 }
 
-// Telegram Login Widget bergan ma’lumot → server imzoni tekshiradi → sessiya tokeni
-export async function loginWithTelegram(tgUser) {
-  let { token, account } = await api("/auth/telegram", { method: "POST", body: tgUser });
+async function signIn(path, body) {
+  let { token, account } = await api(path, { method: "POST", body });
   storage.set(TOKEN_KEY, token);
   storage.set(ACCOUNT_KEY, account);
   storage.remove(CONTENT_KEY);
 }
+
+// Telegram Login Widget bergan ma’lumot → server imzoni tekshiradi → sessiya tokeni
+export const loginWithTelegram = (tgUser) => signIn("/auth/telegram", tgUser);
+
+// Bot ichidagi Mini App: Telegram imzolagan initData → server tekshiradi → sessiya tokeni
+export const loginWithTelegramApp = () => signIn("/auth/webapp", { initData: TG?.initData ?? "" });
 
 export function logout() {
   clearLocal();

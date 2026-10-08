@@ -3,7 +3,8 @@
 //
 // Sozlamalar (Cloudflare):
 //   GEMINI_API_KEY     — secret (dashboard: Settings → Variables and Secrets)
-//   TELEGRAM_BOT_TOKEN — secret, @BotFather bergan token (Telegram kirish imzosini tekshirish uchun)
+//   TELEGRAM_BOT_TOKEN — secret, @BotFather bergan token (Telegram kirish imzosini tekshirish uchun;
+//                        bot: /start ga "Ochish" tugmasi va menyu tugmasi — Mini App, setupBot)
 //   GEMINI_MODELS      — [vars], vergul bilan: birinchisi asosiy, qolganlari zaxira
 //   ALLOWED_ORIGINS    — [vars], vergul bilan ajratilgan saytlar ro'yxati
 //   ADMIN_USERNAMES    — [vars], admin Telegram username'lari (vergul bilan, @ siz)
@@ -65,6 +66,88 @@ async function verifyTelegram(data, botToken) {
     name: [data.first_name, data.last_name].filter(Boolean).join(" ").slice(0, 80) || "Doctor",
     photo: data.photo_url ? String(data.photo_url) : null,
   };
+}
+
+// Bot ichidagi Mini App: https://core.telegram.org/bots/webapps#validating-data-received-via-the-mini-app
+async function verifyWebApp(initData, botToken) {
+  if (!botToken || typeof initData !== "string" || !initData || initData.length > 8192) return null;
+  let p = new URLSearchParams(initData),
+    hash = p.get("hash");
+  if (!hash) return null;
+  p.delete("hash");
+  let check = [...p.entries()]
+      .sort(([a], [b]) => (a < b ? -1 : a > b ? 1 : 0))
+      .map(([k, v]) => `${k}=${v}`)
+      .join("\n"),
+    secret = await hmac(enc.encode("WebAppData"), botToken),
+    sig = hex(await hmac(secret, check));
+  if (!safeEqual(sig, hash)) return null;
+  if (Date.now() / 1000 - Number(p.get("auth_date")) > 86400) return null;
+  let u = null;
+  try {
+    u = JSON.parse(p.get("user"));
+  } catch {}
+  if (!u?.id) return null;
+  return {
+    id: Number(u.id),
+    username: u.username ? String(u.username) : null,
+    name: [u.first_name, u.last_name].filter(Boolean).join(" ").slice(0, 80) || "Doctor",
+    photo: u.photo_url ? String(u.photo_url) : null,
+  };
+}
+
+// ---- Telegram bot ----
+const SITE_URL = "https://osonfsp.github.io/",
+  BOT_SETUP_VERSION = "1";
+
+const tgApi = (env, method, body) =>
+  fetch(`https://api.telegram.org/bot${env.TELEGRAM_BOT_TOKEN}/${method}`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(body),
+  })
+    .then((r) => r.json())
+    .catch(() => null);
+
+// Telegram webhook so'rovlari shu maxfiy kalit bilan keladi (sessiya kalitidan hosil qilinadi)
+const webhookSecret = async (keyB64) =>
+  hex(await hmac(Uint8Array.from(atob(keyB64), (c) => c.charCodeAt(0)), "telegram-webhook")).slice(0, 48);
+
+const BOT_TEXT = {
+  uz: [
+    "Assalomu alaykum! 👋\n\nOsonFSP — shifokorlar uchun Fachsprachprüfung (FSP) ga tayyorgarlik: Fälle, Arztbrief, bemor bilan suhbat simulyatsiyasi, Aufklärung va tibbiy nemis tili.\n\nPastdagi tugmani bosing — sayt shu yerning o‘zida, Telegram ichida ochiladi. Birinchi 24 soat bepul.",
+    "📚 OsonFSP’ni ochish",
+  ],
+  ru: [
+    "Здравствуйте! 👋\n\nOsonFSP — подготовка к Fachsprachprüfung (FSP) для врачей: клинические случаи (Fälle), Arztbrief, симуляция разговора с пациентом, Aufklärung и медицинский немецкий.\n\nНажмите кнопку ниже — сайт откроется прямо здесь, в Telegram. Первые 24 часа бесплатно.",
+    "📚 Открыть OsonFSP",
+  ],
+  tr: [
+    "Merhaba! 👋\n\nOsonFSP — doktorlar için Fachsprachprüfung (FSP) hazırlığı: vakalar (Fälle), Arztbrief, hasta görüşmesi simülasyonu, Aufklärung ve tıbbi Almanca.\n\nAşağıdaki düğmeye basın — site burada, Telegram içinde açılır. İlk 24 saat ücretsiz.",
+    "📚 OsonFSP’yi aç",
+  ],
+  en: [
+    "Hello! 👋\n\nOsonFSP — Fachsprachprüfung (FSP) preparation for doctors: clinical cases (Fälle), Arztbrief, patient conversation simulation, Aufklärung and medical German.\n\nPress the button below — the site opens right here in Telegram. The first 24 hours are free.",
+    "📚 Open OsonFSP",
+  ],
+};
+const botLang = (code = "") =>
+  /^uz/.test(code) ? "uz" : /^(ru|be|kk|ky|tg|uk)/.test(code) ? "ru" : /^tr/.test(code) ? "tr" : /^en/.test(code) ? "en" : "uz";
+
+// Bir marta (yoki BOT_SETUP_VERSION o'zgarganda): webhook, menyu tugmasi (Mini App) va /start buyrug'i
+async function setupBot(env, store, keyB64, workerOrigin) {
+  if (!env.TELEGRAM_BOT_TOKEN || (await store.getMeta("bot_setup")) === BOT_SETUP_VERSION) return;
+  let results = await Promise.all([
+    tgApi(env, "setWebhook", {
+      url: `${workerOrigin}/tg/webhook`,
+      secret_token: await webhookSecret(keyB64),
+      allowed_updates: ["message"],
+    }),
+    tgApi(env, "setChatMenuButton", { menu_button: { type: "web_app", text: "OsonFSP", web_app: { url: SITE_URL } } }),
+    tgApi(env, "setMyCommands", { commands: [{ command: "start", description: "OsonFSP" }] }),
+  ]);
+  if (results.every((r) => r?.ok)) await store.setMeta("bot_setup", BOT_SETUP_VERSION);
+  else console.log("bot setup", JSON.stringify(results));
 }
 
 async function signSession(uid, keyB64) {
@@ -164,7 +247,7 @@ async function gemini(env, body) {
 }
 
 export default {
-  async fetch(req, env) {
+  async fetch(req, env, ctx) {
     let url = new URL(req.url),
       path = url.pathname.replace(/\/+$/, "") || "/",
       origin = req.headers.get("Origin") || "",
@@ -183,6 +266,25 @@ export default {
         });
 
     if (req.method === "OPTIONS") return new Response(null, { headers: cors });
+
+    // ---- Telegram bot webhook (Telegram serveridan: Origin bo'lmaydi, maxfiy kalit bilan tekshiriladi) ----
+    if (path === "/tg/webhook" && req.method === "POST") {
+      let store = env.STORE.get(env.STORE.idFromName("main")),
+        secret = await webhookSecret(await store.sessionKey());
+      if (!safeEqual(req.headers.get("X-Telegram-Bot-Api-Secret-Token") || "", secret))
+        return new Response("forbidden", { status: 403 });
+      let msg = (await req.json().catch(() => null))?.message;
+      if (msg?.chat?.type === "private") {
+        let [text, button] = BOT_TEXT[botLang(msg.from?.language_code)];
+        await tgApi(env, "sendMessage", {
+          chat_id: msg.chat.id,
+          text,
+          reply_markup: { inline_keyboard: [[{ text: button, web_app: { url: SITE_URL } }]] },
+        });
+      }
+      return new Response("ok");
+    }
+
     if (!allowed.includes(origin)) return reply(403, { error: "origin" });
 
     if (env.LIMITER) {
@@ -194,6 +296,7 @@ export default {
     let store = env.STORE.get(env.STORE.idFromName("main")),
       keyB64 = await store.sessionKey(),
       body = null;
+    ctx.waitUntil(setupBot(env, store, keyB64, url.origin).catch(() => {}));
     if (req.method === "POST" || req.method === "PUT") {
       let raw = await req.text();
       if (raw.length > MAX_BODY) return reply(413, { error: "too_large" });
@@ -214,6 +317,14 @@ export default {
     // ---- Kirish ----
     if (path === "/auth/telegram" && req.method === "POST") {
       let tg = await verifyTelegram(body, env.TELEGRAM_BOT_TOKEN);
+      if (!tg || !Number.isSafeInteger(tg.id)) return reply(401, { error: "bad_signature" });
+      let u = await store.upsertUser(tg, TRIAL_HOURS * 36e5);
+      return reply(200, { token: await signSession(u.id, keyB64), account: account(u, env) });
+    }
+
+    // Bot ichidagi Mini App orqali kirish
+    if (path === "/auth/webapp" && req.method === "POST") {
+      let tg = await verifyWebApp(body?.initData, env.TELEGRAM_BOT_TOKEN);
       if (!tg || !Number.isSafeInteger(tg.id)) return reply(401, { error: "bad_signature" });
       let u = await store.upsertUser(tg, TRIAL_HOURS * 36e5);
       return reply(200, { token: await signSession(u.id, keyB64), account: account(u, env) });

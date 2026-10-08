@@ -12,6 +12,7 @@ import {
 } from "../components/ui";
 import { CASE_SECTIONS, STATS, cases, getCase, words } from "../data/index";
 import { useRouter } from "../lib/router";
+import { TG } from "../lib/telegram";
 import { avg, formatDate } from "../lib/utils";
 import { streakOf, useApp } from "../state/AppContext";
 import { dueCount } from "../components/WordTrainer";
@@ -111,14 +112,17 @@ export function DashboardPage() {
         <ConfirmButton className="btn-outline" onConfirm={l}>
           {tr("Progressni tozalash", "Сбросить прогресс", "İlerlemeyi sıfırla", "Reset progress")}
         </ConfirmButton>
-        <button
-          className="btn-ghost"
-          onClick={() => {
-            (i(), s.push("/"));
-          }}
-        >
-          {tr("Chiqish", "Выйти", "Çıkış", "Sign out")}
-        </button>
+        {/* Bot ichida chiqishning ma’nosi yo‘q: Telegram baribir qayta kiritadi */}
+        {!TG && (
+          <button
+            className="btn-ghost"
+            onClick={() => {
+              (i(), s.push("/"));
+            }}
+          >
+            {tr("Chiqish", "Выйти", "Çıkış", "Sign out")}
+          </button>
+        )}
       </PageHeader>
       {(() => {
         let plan = buildPlan(a),
