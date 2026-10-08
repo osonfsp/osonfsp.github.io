@@ -218,7 +218,17 @@ function formToCase(e, t, a) {
   };
 }
 
-function downloadJson(e, t) {
+// claude.ai Artifact ichida oddiy havola ishlamaydi — "downloads" imkoniyati orqali (foydalanuvchi tasdiqlaydi)
+async function downloadJson(e, t) {
+  let downloads = window.claude?.use ? await window.claude.use("downloads").catch(() => null) : null;
+  if (downloads) {
+    try {
+      await downloads.save({ filename: e, data: JSON.stringify(t, null, 2) });
+    } catch (err) {
+      if (err?.code !== "declined") alert(`Saqlab bo‘lmadi: ${err?.message || err?.code}`);
+    }
+    return;
+  }
   let a = URL.createObjectURL(
       new Blob([JSON.stringify(t, null, 2)], {
         type: "application/json",
