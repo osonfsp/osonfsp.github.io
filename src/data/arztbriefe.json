@@ -11658,5 +11658,850 @@
       }
     ],
     "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Florian Busch, 41 Jahre, der vom 01.10.2026 bis zum 05.10.2026 in unserer Klinik für Urologie behandelt wurde.\n\nAnamnese:\nDer Patient stellte sich mit seit zwei Tagen bestehendem Fieber bis 39,4 °C mit Schüttelfrost, Dysurie, Pollakisurie und perinealen Schmerzen vor. Es besteht eine Penicillinallergie.\n\nBefunde:\nIn der vorsichtigen digital-rektalen Untersuchung zeigte sich eine druckschmerzhafte, überwärmte Prostata. Das CRP lag bei 168 mg/l, die Leukozyten bei 17/nl. Der Restharn betrug 120 ml. In Urin- und Blutkultur wuchs E. coli, sensibel auf Ciprofloxacin. Im transrektalen Ultraschall fand sich kein Abszess.\n\nDiagnose:\nAkute bakterielle Prostatitis durch E. coli mit Bakteriämie.\n\nTherapie und Verlauf:\nWir begannen eine Therapie mit Ciprofloxacin i.v. und stellten nach Entfieberung innerhalb von 48 Stunden auf die orale Gabe um. Der Restharn wurde einmalig mittels Einmalkatheter entlastet und war danach rückläufig.\n\nProcedere:\nWir empfehlen die Fortführung von Ciprofloxacin 500 mg zweimal täglich für insgesamt vier Wochen, um einen Übergang in eine chronische Prostatitis zu vermeiden. Der Patient wurde über mögliche Sehnenbeschwerden unter Ciprofloxacin aufgeklärt. Eine Urinkontrolle ist nach Therapieende vorgesehen. Bei erneutem Fieber oder Harnverhalt bitten wir um sofortige Vorstellung.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab135",
+    "caseId": "c157",
+    "title": "Hodentumor",
+    "task": "Urologiya bo‘limidan uy shifokoriga Arztbrief yozing. Tekshiruvlar, orxiektomiya, spermani muzlatish va keyingi davolashga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из урологии семейному врачу. Обратите внимание на обследование, орхиэктомию, криоконсервацию спермы и дальнейшее лечение.",
+    "taskTr": "Üroloji servisinden aile hekimine bir Arztbrief yazın. Tetkiklere, orşiektomiye, sperm dondurmaya ve sonraki tedaviye dikkat edin.",
+    "taskEn": "Write an Arztbrief from urology to the GP. Pay attention to the work-up, orchidectomy, sperm banking and further treatment.",
+    "facts": [
+      "Patient: Niklas Bauer, 28 Jahre, männlich",
+      "Aufenthalt: 29.09.2026–02.10.2026, Urologie",
+      "Seit 6 Wochen schmerzlose Induration des rechten Hodens, Gynäkomastie; Z. n. Orchidopexie rechts; Bruder mit Hodentumor",
+      "Sonographie: 2,4 cm große echoarme Raumforderung im rechten Hoden",
+      "Tumormarker: AFP normal, β-HCG 18 U/l, LDH leicht erhöht; CT Thorax/Abdomen: keine Metastasen",
+      "Kryokonservierung von Sperma vor der Operation; inguinale Orchiektomie rechts am 30.09.2026",
+      "Histologie: reines Seminom pT1 R0; Stadium I"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patient ma’lumotlari (Herr Bauer)",
+        "labelRu": "Данные пациента (Herr Bauer)",
+        "labelTr": "Hasta bilgileri (Herr Bauer)",
+        "labelEn": "Patient data (Herr Bauer)",
+        "keywords": ["bauer"]
+      },
+      {
+        "label": "Asosiy shikoyat: moyakda og‘riqsiz qattiqlik (Induration)",
+        "labelRu": "Основная жалоба: безболезненное уплотнение яичка (Induration)",
+        "labelTr": "Ana şikâyet: testiste ağrısız sertlik (Induration)",
+        "labelEn": "Main complaint: painless testicular lump (Induration)",
+        "keywords": ["induration", "schmerzlos"]
+      },
+      {
+        "label": "Xavf omillari: kriptorxizm, aka (Orchidopexie, Bruder)",
+        "labelRu": "Факторы риска: крипторхизм, брат (Orchidopexie, Bruder)",
+        "labelTr": "Risk faktörleri: inmemiş testis, kardeş (Orchidopexie, Bruder)",
+        "labelEn": "Risk factors: undescended testis, brother (Orchidopexie, Bruder)",
+        "keywords": ["orchidopexie", "bruder"]
+      },
+      {
+        "label": "UTT natijasi (2,4 cm)",
+        "labelRu": "Результат УЗИ (2,4 cm)",
+        "labelTr": "USG sonucu (2,4 cm)",
+        "labelEn": "Ultrasound finding (2,4 cm)",
+        "keywords": ["sonographie", "2,4 cm"]
+      },
+      {
+        "label": "O‘sma markerlari va staging (β-HCG, keine Metastasen)",
+        "labelRu": "Онкомаркеры и стадирование (β-HCG, keine Metastasen)",
+        "labelTr": "Tümör belirteçleri ve evreleme (β-HCG, keine Metastasen)",
+        "labelEn": "Tumour markers and staging (β-HCG, keine Metastasen)",
+        "keywords": ["β-hcg", "keine metastasen"]
+      },
+      {
+        "label": "Spermani muzlatish (Kryokonservierung)",
+        "labelRu": "Криоконсервация спермы (Kryokonservierung)",
+        "labelTr": "Sperm dondurma (Kryokonservierung)",
+        "labelEn": "Sperm banking (Kryokonservierung)",
+        "keywords": ["kryokonservierung"]
+      },
+      {
+        "label": "Davolash: ingvinal orxiektomiya (Orchiektomie)",
+        "labelRu": "Лечение: паховая орхиэктомия (Orchiektomie)",
+        "labelTr": "Tedavi: inguinal orşiektomi (Orchiektomie)",
+        "labelEn": "Treatment: inguinal orchidectomy (Orchiektomie)",
+        "keywords": ["orchiektomie"]
+      },
+      {
+        "label": "Diagnoz: seminoma I bosqich (Seminom)",
+        "labelRu": "Диагноз: семинома I стадии (Seminom)",
+        "labelTr": "Tanı: evre I seminom (Seminom)",
+        "labelEn": "Diagnosis: stage I seminoma (Seminom)",
+        "keywords": ["seminom"]
+      },
+      {
+        "label": "Tavsiya: kuzatuv yoki karboplatin, chap moyakni tekshirish (Surveillance)",
+        "labelRu": "Рекомендация: наблюдение или карбоплатин, самообследование левого яичка (Surveillance)",
+        "labelTr": "Öneri: takip veya karboplatin, sol testisin kendi muayenesi (Surveillance)",
+        "labelEn": "Recommendation: surveillance or carboplatin, self-examination of the left testis (Surveillance)",
+        "keywords": ["surveillance", "carboplatin", "selbstuntersuchung"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Niklas Bauer, 28 Jahre, der vom 29.09.2026 bis zum 02.10.2026 in unserer Klinik für Urologie behandelt wurde.\n\nAnamnese:\nDer Patient stellte sich mit einer seit sechs Wochen bestehenden schmerzlosen Induration des rechten Hodens und einer leichten Gynäkomastie vor. Im Kindesalter erfolgte eine Orchidopexie rechts; sein Bruder erkrankte mit 31 Jahren an einem Hodentumor.\n\nBefunde:\nIn der Sonographie zeigte sich eine 2,4 cm große echoarme Raumforderung im rechten Hoden. Das AFP war normal, das β-HCG mit 18 U/l und die LDH leicht erhöht. Im CT von Thorax und Abdomen fanden sich keine Metastasen.\n\nDiagnose:\nReines Seminom des rechten Hodens, pT1 R0, Stadium I.\n\nTherapie und Verlauf:\nVor der Operation erfolgte auf Wunsch des Patienten eine Kryokonservierung von Sperma. Am 30.09.2026 führten wir eine inguinale Orchiektomie rechts durch. Der Verlauf war komplikationslos.\n\nProcedere:\nIm interdisziplinären Tumorboard wurden die aktive Überwachung (Surveillance) und eine einmalige adjuvante Chemotherapie mit Carboplatin als Optionen besprochen; der Patient bevorzugt die Surveillance mit regelmäßigen Tumormarker- und Bildgebungskontrollen. Wir bitten um Kontrolle der Tumormarker in vier Wochen. Der Patient wurde zur monatlichen Selbstuntersuchung des linken Hodens angeleitet.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab136",
+    "caseId": "c158",
+    "title": "Belastungsinkontinenz",
+    "task": "Urogynekologiya ambulatoriyasidan uy shifokoriga Arztbrief yozing. Inkontinensiya turi, xavf omillari va bosqichma-bosqich davolashga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из урогинекологической амбулатории семейному врачу. Обратите внимание на тип недержания, факторы риска и поэтапное лечение.",
+    "taskTr": "Ürojinekoloji polikliniğinden aile hekimine bir Arztbrief yazın. İnkontinans tipine, risk faktörlerine ve aşamalı tedaviye dikkat edin.",
+    "taskEn": "Write an Arztbrief from the urogynaecology clinic to the GP. Pay attention to the type of incontinence, risk factors and stepwise treatment.",
+    "facts": [
+      "Patientin: Birgit Herrmann, 56 Jahre, weiblich",
+      "Vorstellung: 06.10.2026, urogynäkologische Ambulanz",
+      "Urinverlust bei Husten, Niesen und Sport, 3–4 Vorlagen pro Tag; kein Drang, keine Nykturie",
+      "Risikofaktoren: drei vaginale Geburten, Postmenopause, chronischer Husten bei Asthma, Übergewicht",
+      "Urinstatus unauffällig, Restharn 15 ml; Hustentest positiv; kein relevanter Deszensus; vaginale Atrophie",
+      "Miktionstagebuch: normale Trinkmenge und Miktionsfrequenz"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patientin ma’lumotlari (Frau Herrmann)",
+        "labelRu": "Данные пациентки (Frau Herrmann)",
+        "labelTr": "Hasta bilgileri (Frau Herrmann)",
+        "labelEn": "Patient data (Frau Herrmann)",
+        "keywords": ["herrmann"]
+      },
+      {
+        "label": "Asosiy shikoyat: yo‘tal va aksirishda siydik chiqib ketishi (Urinverlust bei Husten)",
+        "labelRu": "Основная жалоба: потеря мочи при кашле и чихании (Urinverlust bei Husten)",
+        "labelTr": "Ana şikâyet: öksürme ve hapşırmada idrar kaçırma (Urinverlust bei Husten)",
+        "labelEn": "Main complaint: leakage on coughing and sneezing (Urinverlust bei Husten)",
+        "keywords": ["urinverlust", "husten"]
+      },
+      {
+        "label": "Xavf omillari (vaginale Geburten, Postmenopause)",
+        "labelRu": "Факторы риска (vaginale Geburten, Postmenopause)",
+        "labelTr": "Risk faktörleri (vaginale Geburten, Postmenopause)",
+        "labelEn": "Risk factors (vaginale Geburten, Postmenopause)",
+        "keywords": ["geburten", "postmenopause"]
+      },
+      {
+        "label": "Infeksiya va qoldiq siydik yo‘q (Restharn 15 ml)",
+        "labelRu": "Нет инфекции и остаточной мочи (Restharn 15 ml)",
+        "labelTr": "Enfeksiyon ve rezidü yok (Restharn 15 ml)",
+        "labelEn": "No infection or residual urine (Restharn 15 ml)",
+        "keywords": ["urinstatus", "restharn"]
+      },
+      {
+        "label": "Yo‘tal testi musbat (Hustentest positiv)",
+        "labelRu": "Кашлевая проба положительна (Hustentest positiv)",
+        "labelTr": "Öksürük testi pozitif (Hustentest positiv)",
+        "labelEn": "Cough test positive (Hustentest positiv)",
+        "keywords": ["hustentest"]
+      },
+      {
+        "label": "Diagnoz: zo‘riqishdagi inkontinensiya (Belastungsinkontinenz)",
+        "labelRu": "Диагноз: стрессовое недержание (Belastungsinkontinenz)",
+        "labelTr": "Tanı: stres inkontinansı (Belastungsinkontinenz)",
+        "labelEn": "Diagnosis: stress incontinence (Belastungsinkontinenz)",
+        "keywords": ["belastungsinkontinenz"]
+      },
+      {
+        "label": "Davolash: chanoq tubi mashqlari (Beckenbodentraining)",
+        "labelRu": "Лечение: тренировка мышц тазового дна (Beckenbodentraining)",
+        "labelTr": "Tedavi: pelvik taban egzersizleri (Beckenbodentraining)",
+        "labelEn": "Treatment: pelvic floor training (Beckenbodentraining)",
+        "keywords": ["beckenbodentraining"]
+      },
+      {
+        "label": "Davolash: mahalliy estrogen (lokale Östrogentherapie)",
+        "labelRu": "Лечение: местный эстроген (lokale Östrogentherapie)",
+        "labelTr": "Tedavi: lokal östrojen (lokale Östrogentherapie)",
+        "labelEn": "Treatment: local oestrogen (lokale Östrogentherapie)",
+        "keywords": ["östrogen"]
+      },
+      {
+        "label": "Tavsiya: vazn kamaytirish, astma nazorati, kerak bo‘lsa TVT (Vaginalband)",
+        "labelRu": "Рекомендация: снижение веса, контроль астмы, при необходимости TVT (Vaginalband)",
+        "labelTr": "Öneri: kilo verme, astım kontrolü, gerekirse TVT (Vaginalband)",
+        "labelEn": "Recommendation: weight loss, asthma control, sling if needed (Vaginalband)",
+        "keywords": ["gewichtsreduktion", "vaginalband"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihre Patientin Frau Birgit Herrmann, 56 Jahre, die vom 06.10.2026 bis zum 06.10.2026 in unserer urogynäkologischen Ambulanz behandelt wurde.\n\nAnamnese:\nDie Patientin berichtete über einen seit zwei Jahren zunehmenden Urinverlust bei Husten, Niesen, Lachen und Sport mit einem Vorlagenverbrauch von drei bis vier pro Tag. Ein Harndrang vor dem Urinverlust oder eine Nykturie bestehen nicht. Risikofaktoren sind drei vaginale Geburten, die Postmenopause, ein chronischer Husten bei Asthma und Übergewicht.\n\nBefunde:\nDer Urinstatus war unauffällig, der Restharn betrug 15 ml. Der Hustentest war positiv. Es zeigte sich kein relevanter Deszensus, jedoch eine vaginale Atrophie. Das Miktionstagebuch ergab eine normale Trinkmenge und Miktionsfrequenz.\n\nDiagnose:\nBelastungsinkontinenz Grad II.\n\nTherapie:\nWir empfehlen ein angeleitetes Beckenbodentraining über mindestens drei Monate sowie eine lokale Östrogentherapie mit Estriol-Creme.\n\nProcedere:\nZusätzlich raten wir zu einer Gewichtsreduktion und einer optimalen Asthmakontrolle, um den Husten zu verringern. Eine Wiedervorstellung ist in drei Monaten geplant. Bei unzureichendem Erfolg kann nach urodynamischer Untersuchung die Einlage eines spannungsfreien Vaginalbands besprochen werden.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab137",
+    "caseId": "c159",
+    "title": "Paraphimose",
+    "task": "Urologiya shoshilinch bo‘limidan pansionat shifokoriga Arztbrief yozing. Repozitsiya, sabab va kateter parvarishiga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из урологического приёмного отделения врачу дома престарелых. Обратите внимание на вправление, причину и уход за катетером.",
+    "taskTr": "Üroloji acilinden huzurevi hekimine bir Arztbrief yazın. Redüksiyona, nedene ve kateter bakımına dikkat edin.",
+    "taskEn": "Write an Arztbrief from the urology emergency service to the nursing home doctor. Pay attention to the reduction, the cause and catheter care.",
+    "facts": [
+      "Patient: Paul Ziegler, 74 Jahre, männlich",
+      "Vorstellung: 07.10.2026, urologische Notaufnahme",
+      "Seit dem Katheterwechsel geschwollene, schmerzhafte Glans; Vorhaut nicht reponierbar",
+      "Morbus Alzheimer, BPH mit Dauerkatheter, Diabetes mellitus Typ 2",
+      "Befund: ödematöses Präputium mit Schnürring, Glans gut durchblutet; Katheter korrekt",
+      "Manuelle Reposition nach Kompression und Peniswurzelblock erfolgreich"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patient ma’lumotlari (Herr Ziegler)",
+        "labelRu": "Данные пациента (Herr Ziegler)",
+        "labelTr": "Hasta bilgileri (Herr Ziegler)",
+        "labelEn": "Patient data (Herr Ziegler)",
+        "keywords": ["ziegler"]
+      },
+      {
+        "label": "Asosiy shikoyat: kateter almashtirilgandan keyin shish (nach dem Katheterwechsel)",
+        "labelRu": "Основная жалоба: отёк после смены катетера (nach dem Katheterwechsel)",
+        "labelTr": "Ana şikâyet: kateter değişimi sonrası şişlik (nach dem Katheterwechsel)",
+        "labelEn": "Main complaint: swelling after catheter change (nach dem Katheterwechsel)",
+        "keywords": ["katheterwechsel"]
+      },
+      {
+        "label": "Kertmak terisi joyiga qaytmaydi (Schnürring)",
+        "labelRu": "Крайняя плоть не вправляется (Schnürring)",
+        "labelTr": "Sünnet derisi geri gitmiyor (Schnürring)",
+        "labelEn": "Foreskin cannot be reduced (Schnürring)",
+        "keywords": ["schnürring", "präputium"]
+      },
+      {
+        "label": "Qon aylanishi saqlangan (gut durchblutet)",
+        "labelRu": "Кровоснабжение сохранено (gut durchblutet)",
+        "labelTr": "Dolaşım korunmuş (gut durchblutet)",
+        "labelEn": "Perfusion preserved (gut durchblutet)",
+        "keywords": ["durchblutet"]
+      },
+      {
+        "label": "Diagnoz: parafimoz (Paraphimose)",
+        "labelRu": "Диагноз: парафимоз (Paraphimose)",
+        "labelTr": "Tanı: parafimozis (Paraphimose)",
+        "labelEn": "Diagnosis: paraphimosis (Paraphimose)",
+        "keywords": ["paraphimose"]
+      },
+      {
+        "label": "Davolash: blokada ostida qo‘l bilan joyiga solish (Reposition)",
+        "labelRu": "Лечение: ручное вправление под блокадой (Reposition)",
+        "labelTr": "Tedavi: blok altında manuel redüksiyon (Reposition)",
+        "labelEn": "Treatment: manual reduction under nerve block (Reposition)",
+        "keywords": ["reposition", "peniswurzelblock"]
+      },
+      {
+        "label": "Tavsiya: har kateter parvarishidan keyin kertmak terisini qaytarish (Vorhaut zurückschieben)",
+        "labelRu": "Рекомендация: возвращать крайнюю плоть после каждого ухода (Vorhaut zurückschieben)",
+        "labelTr": "Öneri: her bakımdan sonra sünnet derisini geri getirme (Vorhaut zurückschieben)",
+        "labelEn": "Recommendation: replace the foreskin after each catheter care (Vorhaut zurückschieben)",
+        "keywords": ["zurückzuschieben", "pflegepersonal"]
+      },
+      {
+        "label": "Tavsiya: sunnat yoki suprapubik kateter (Zirkumzision)",
+        "labelRu": "Рекомендация: циркумцизия или надлобковый катетер (Zirkumzision)",
+        "labelTr": "Öneri: sünnet veya suprapubik kateter (Zirkumzision)",
+        "labelEn": "Recommendation: circumcision or suprapubic catheter (Zirkumzision)",
+        "keywords": ["zirkumzision", "suprapubisch"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Paul Ziegler, 74 Jahre, der vom 07.10.2026 bis zum 07.10.2026 in unserer urologischen Notaufnahme behandelt wurde.\n\nAnamnese:\nDer Patient wurde aus dem Pflegeheim vorgestellt, da seit dem Katheterwechsel am Vortag eine zunehmende schmerzhafte Schwellung der Glans bestand und sich die Vorhaut nicht mehr vorschieben ließ. Es bestehen ein Morbus Alzheimer, eine benigne Prostatahyperplasie mit Dauerkatheter und ein Diabetes mellitus Typ 2.\n\nBefunde:\nKlinisch zeigte sich ein ödematöses Präputium mit Schnürring hinter der Glans. Die Glans war gut durchblutet. Der Katheter lag korrekt und förderte klaren Urin.\n\nDiagnose:\nParaphimose nach Katheterwechsel.\n\nTherapie:\nNach manueller Kompression des Ödems und einem Peniswurzelblock gelang die manuelle Reposition der Vorhaut problemlos.\n\nProcedere:\nWir bitten das Pflegepersonal, die Vorhaut nach jeder Katheterpflege und jedem Katheterwechsel wieder über die Eichel zurückzuschieben. Wegen des Risikos eines Rezidivs empfehlen wir, mit dem Betreuer entweder eine Zirkumzision oder die Umstellung auf einen suprapubischen Katheter zu besprechen. Eine Kontrolle in unserer Ambulanz ist in einer Woche vorgesehen.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab138",
+    "caseId": "c160",
+    "title": "HIV-Erstdiagnose mit PCP",
+    "task": "Infektsion kasalliklar bo‘limidan HIV ambulatoriyasiga Arztbrief yozing. Tashxis, PCP davolash, ART boshlanishi va profilaktikaga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из инфекционного отделения в ВИЧ-амбулаторию. Обратите внимание на диагноз, лечение ПЦП, начало АРТ и профилактику.",
+    "taskTr": "Enfeksiyon hastalıkları servisinden HIV polikliniğine bir Arztbrief yazın. Tanıya, PCP tedavisine, ART başlanmasına ve profilaksiye dikkat edin.",
+    "taskEn": "Write an Arztbrief from the infectious diseases ward to the HIV clinic. Pay attention to the diagnosis, PCP treatment, starting ART and prophylaxis.",
+    "facts": [
+      "Patient: Daniel Kowalski, 38 Jahre, männlich",
+      "Aufenthalt: 15.09.2026–08.10.2026, Infektiologie",
+      "Progrediente Belastungsdyspnoe, trockener Husten, Fieber, 8 kg Gewichtsverlust, Mundsoor; Z. n. Herpes zoster",
+      "pO₂ 58 mmHg, LDH 480 U/l; CT Thorax: beidseitige milchglasartige Infiltrate; BAL: Pneumocystis-jirovecii-PCR positiv; Tuberkulose ausgeschlossen",
+      "HIV-Test positiv (bestätigt), CD4 42/µl, Viruslast 380.000 Kopien/ml",
+      "Therapie: Cotrimoxazol hochdosiert 21 Tage, Prednisolon, Sauerstoff, Fluconazol; ART (Bictegravir/Emtricitabin/Tenofoviralafenamid) ab 25.09.2026",
+      "Verlauf: kein IRIS; bei Entlassung SpO₂ 96 % ohne Sauerstoff"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patient ma’lumotlari (Herr Kowalski)",
+        "labelRu": "Данные пациента (Herr Kowalski)",
+        "labelTr": "Hasta bilgileri (Herr Kowalski)",
+        "labelEn": "Patient data (Herr Kowalski)",
+        "keywords": ["kowalski"]
+      },
+      {
+        "label": "Asosiy shikoyat: hansirash va quruq yo‘tal (Belastungsdyspnoe)",
+        "labelRu": "Основная жалоба: одышка и сухой кашель (Belastungsdyspnoe)",
+        "labelTr": "Ana şikâyet: nefes darlığı ve kuru öksürük (Belastungsdyspnoe)",
+        "labelEn": "Main complaint: breathlessness and dry cough (Belastungsdyspnoe)",
+        "keywords": ["belastungsdyspnoe", "husten"]
+      },
+      {
+        "label": "Immun tanqislik belgilari (Mundsoor, Herpes zoster)",
+        "labelRu": "Признаки иммунодефицита (Mundsoor, Herpes zoster)",
+        "labelTr": "Bağışıklık yetmezliği bulguları (Mundsoor, Herpes zoster)",
+        "labelEn": "Signs of immunodeficiency (Mundsoor, Herpes zoster)",
+        "keywords": ["mundsoor", "zoster"]
+      },
+      {
+        "label": "BAL: Pneumocystis (BAL)",
+        "labelRu": "БАЛ: Pneumocystis (BAL)",
+        "labelTr": "BAL: Pneumocystis (BAL)",
+        "labelEn": "BAL: Pneumocystis (BAL)",
+        "keywords": ["bal", "pneumocystis"]
+      },
+      {
+        "label": "CD4 va virus yuklamasi (CD4 42/µl)",
+        "labelRu": "CD4 и вирусная нагрузка (CD4 42/µl)",
+        "labelTr": "CD4 ve viral yük (CD4 42/µl)",
+        "labelEn": "CD4 count and viral load (CD4 42/µl)",
+        "keywords": ["cd4", "viruslast"]
+      },
+      {
+        "label": "Diagnoz: PCP va OIV (AIDS bosqichi) (HIV-Infektion, AIDS)",
+        "labelRu": "Диагноз: ПЦП и ВИЧ (стадия СПИД) (HIV-Infektion, AIDS)",
+        "labelTr": "Tanı: PCP ve HIV (AIDS evresi) (HIV-Infektion, AIDS)",
+        "labelEn": "Diagnosis: PCP and HIV (AIDS stage) (HIV-Infektion, AIDS)",
+        "keywords": ["hiv", "aids"]
+      },
+      {
+        "label": "Davolash: kotrimoksazol va prednizolon (Cotrimoxazol)",
+        "labelRu": "Лечение: котримоксазол и преднизолон (Cotrimoxazol)",
+        "labelTr": "Tedavi: kotrimoksazol ve prednizolon (Cotrimoxazol)",
+        "labelEn": "Treatment: co-trimoxazole and prednisolone (Cotrimoxazol)",
+        "keywords": ["cotrimoxazol", "prednisolon"]
+      },
+      {
+        "label": "Davolash: antiretrovirus terapiya (ART)",
+        "labelRu": "Лечение: антиретровирусная терапия (ART)",
+        "labelTr": "Tedavi: antiretroviral tedavi (ART)",
+        "labelEn": "Treatment: antiretroviral therapy (ART)",
+        "keywords": ["art", "bictegravir"]
+      },
+      {
+        "label": "Tavsiya: profilaktika, hamkorlarni xabardor qilish va boshqa infeksiyalar skriningi (Prophylaxe, Partner)",
+        "labelRu": "Рекомендация: профилактика, информирование партнёров и скрининг других инфекций (Prophylaxe, Partner)",
+        "labelTr": "Öneri: profilaksi, partnerlerin bilgilendirilmesi ve diğer enfeksiyon taraması (Prophylaxe, Partner)",
+        "labelEn": "Recommendation: prophylaxis, partner notification and screening for other infections (Prophylaxe, Partner)",
+        "keywords": ["prophylaxe", "partner"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Daniel Kowalski, 38 Jahre, der vom 15.09.2026 bis zum 08.10.2026 in unserer Klinik für Infektiologie behandelt wurde.\n\nAnamnese:\nDer Patient stellte sich mit einer seit drei Wochen progredienten Belastungsdyspnoe, trockenem Husten, Fieber und einem Gewichtsverlust von 8 kg vor. Es bestanden ein Mundsoor und vor einem Jahr ein Herpes zoster. Ein HIV-Test war bisher nicht erfolgt.\n\nBefunde:\nDer pO₂ lag bei 58 mmHg, die LDH bei 480 U/l. Im CT Thorax zeigten sich beidseitige milchglasartige Infiltrate. In der BAL war die Pneumocystis-jirovecii-PCR positiv; eine Tuberkulose wurde ausgeschlossen. Der HIV-Test war positiv und wurde bestätigt. Die CD4-Zellzahl betrug 42/µl, die Viruslast 380.000 Kopien/ml.\n\nDiagnosen:\nPneumocystis-jirovecii-Pneumonie bei Erstdiagnose einer HIV-Infektion im Stadium AIDS. Oropharyngealer Soor.\n\nTherapie und Verlauf:\nWir behandelten mit hochdosiertem Cotrimoxazol über 21 Tage, Prednisolon, Sauerstoff und Fluconazol. Am 25.09.2026 begannen wir eine ART mit Bictegravir/Emtricitabin/Tenofoviralafenamid, die gut vertragen wird. Ein Immunrekonstitutionssyndrom trat nicht auf. Bei Entlassung lag die Sauerstoffsättigung bei 96 % ohne Sauerstoff.\n\nProcedere:\nWir bitten um Fortführung der ART und der Prophylaxe mit Cotrimoxazol 960 mg dreimal wöchentlich, bis die CD4-Zellen über 200/µl liegen. Kontrollen von Viruslast und CD4-Zellen sind in vier Wochen vorgesehen. Wir haben dem Patienten geraten, seine Partner zu informieren, und empfehlen ein Screening auf Syphilis, Hepatitis B und C sowie die entsprechenden Impfungen.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab139",
+    "caseId": "c161",
+    "title": "Infektiöse Mononukleose",
+    "task": "Pediatriya/o‘smirlar ambulatoriyasidan uy shifokoriga Arztbrief yozing. Toshma sababi, taloq kattalashishi va sport cheklovlariga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из подростковой амбулатории семейному врачу. Обратите внимание на причину сыпи, спленомегалию и ограничение спорта.",
+    "taskTr": "Ergen polikliniğinden aile hekimine bir Arztbrief yazın. Döküntünün nedenine, dalak büyümesine ve spor kısıtlamasına dikkat edin.",
+    "taskEn": "Write an Arztbrief from the adolescent clinic to the GP. Pay attention to the cause of the rash, the enlarged spleen and sports restrictions.",
+    "facts": [
+      "Patientin: Lea Brandner, 17 Jahre, weiblich",
+      "Vorstellung: 06.10.2026, internistische Notaufnahme",
+      "Seit 6 Tagen Halsschmerzen, Fieber bis 39 °C, zervikale Lymphknotenschwellung, Abgeschlagenheit",
+      "Unter Amoxicillin seit 2 Tagen generalisiertes makulopapulöses Exanthem",
+      "Befund: Tonsillen vergrößert mit grauweißen Belägen; Lymphozytose mit atypischen Lymphozyten; GPT 112 U/l; EBV-VCA-IgM positiv",
+      "Sonographie: Splenomegalie 15 cm",
+      "Amoxicillin abgesetzt; symptomatische Therapie mit Paracetamol und Ibuprofen"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patientin ma’lumotlari (Frau Brandner)",
+        "labelRu": "Данные пациентки (Frau Brandner)",
+        "labelTr": "Hasta bilgileri (Frau Brandner)",
+        "labelEn": "Patient data (Frau Brandner)",
+        "keywords": ["brandner"]
+      },
+      {
+        "label": "Asosiy shikoyat: tomoq og‘rig‘i, isitma va charchoq (Halsschmerzen, Fieber)",
+        "labelRu": "Основная жалоба: боль в горле, лихорадка и слабость (Halsschmerzen, Fieber)",
+        "labelTr": "Ana şikâyet: boğaz ağrısı, ateş ve halsizlik (Halsschmerzen, Fieber)",
+        "labelEn": "Main complaint: sore throat, fever and fatigue (Halsschmerzen, Fieber)",
+        "keywords": ["halsschmerzen", "fieber"]
+      },
+      {
+        "label": "Amoksitsillindan keyin toshma (Exanthem)",
+        "labelRu": "Сыпь после амоксициллина (Exanthem)",
+        "labelTr": "Amoksisilin sonrası döküntü (Exanthem)",
+        "labelEn": "Rash after amoxicillin (Exanthem)",
+        "keywords": ["exanthem", "amoxicillin"]
+      },
+      {
+        "label": "Atipik limfotsitlar va EBV IgM (EBV-VCA-IgM)",
+        "labelRu": "Атипичные лимфоциты и EBV IgM (EBV-VCA-IgM)",
+        "labelTr": "Atipik lenfositler ve EBV IgM (EBV-VCA-IgM)",
+        "labelEn": "Atypical lymphocytes and EBV IgM (EBV-VCA-IgM)",
+        "keywords": ["atypische", "ebv"]
+      },
+      {
+        "label": "Jigar fermentlari oshgan (GPT 112 U/l)",
+        "labelRu": "Повышение печёночных ферментов (GPT 112 U/l)",
+        "labelTr": "Karaciğer enzimleri yüksek (GPT 112 U/l)",
+        "labelEn": "Raised liver enzymes (GPT 112 U/l)",
+        "keywords": ["gpt"]
+      },
+      {
+        "label": "Taloq kattalashgan (Splenomegalie)",
+        "labelRu": "Спленомегалия (Splenomegalie)",
+        "labelTr": "Splenomegali (Splenomegalie)",
+        "labelEn": "Splenomegaly (Splenomegalie)",
+        "keywords": ["splenomegalie"]
+      },
+      {
+        "label": "Diagnoz: infeksion mononukleoz (Mononukleose)",
+        "labelRu": "Диагноз: инфекционный мононуклеоз (Mononukleose)",
+        "labelTr": "Tanı: enfeksiyöz mononükleoz (Mononukleose)",
+        "labelEn": "Diagnosis: infectious mononucleosis (Mononukleose)",
+        "keywords": ["mononukleose"]
+      },
+      {
+        "label": "Haqiqiy penitsillin allergiyasi emas (keine echte Allergie)",
+        "labelRu": "Не истинная аллергия на пенициллин (keine echte Allergie)",
+        "labelTr": "Gerçek penisilin alerjisi değil (keine echte Allergie)",
+        "labelEn": "Not a true penicillin allergy (keine echte Allergie)",
+        "keywords": ["keine echte"]
+      },
+      {
+        "label": "Tavsiya: 4–6 hafta kontakt sportsiz (Sportverbot)",
+        "labelRu": "Рекомендация: без контактного спорта 4–6 недель (Sportverbot)",
+        "labelTr": "Öneri: 4–6 hafta temas sporu yok (Sportverbot)",
+        "labelEn": "Recommendation: no contact sports for 4–6 weeks (Sportverbot)",
+        "keywords": ["sportverbot", "milzruptur"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihre Patientin Frau Lea Brandner, 17 Jahre, die vom 06.10.2026 bis zum 06.10.2026 in unserer internistischen Notaufnahme behandelt wurde.\n\nAnamnese:\nDie Patientin stellte sich mit seit sechs Tagen bestehenden Halsschmerzen, Fieber bis 39 °C, Lymphknotenschwellungen am Hals und ausgeprägter Abgeschlagenheit vor. Unter einer vor zwei Tagen begonnenen Therapie mit Amoxicillin trat ein generalisiertes juckendes Exanthem auf.\n\nBefunde:\nDie Tonsillen waren vergrößert mit grauweißen Belägen. Es zeigte sich ein makulopapulöses Exanthem am ganzen Körper. Im Blutbild fand sich eine Lymphozytose mit atypischen Lymphozyten, die GPT lag bei 112 U/l. Die EBV-VCA-IgM-Antikörper waren positiv. Sonographisch bestand eine Splenomegalie von 15 cm.\n\nDiagnose:\nInfektiöse Mononukleose (EBV) mit Amoxicillin-assoziiertem Exanthem und Splenomegalie.\n\nTherapie:\nWir haben Amoxicillin abgesetzt und eine symptomatische Therapie mit Paracetamol und Ibuprofen sowie ausreichend Flüssigkeit empfohlen.\n\nProcedere:\nDas Exanthem ist typisch für eine EBV-Infektion unter Amoxicillin und keine echte Allergie; ein Allergiepass ist daher nicht erforderlich. Wegen der Gefahr einer Milzruptur besteht ein Sportverbot für Kontakt- und Kraftsport für mindestens vier bis sechs Wochen bis zur sonographischen Normalisierung der Milz. Bei plötzlichen Bauchschmerzen links oder Schwindel bitten wir um sofortige Vorstellung. Eine Kontrolle der Leberwerte ist in zwei Wochen vorgesehen.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab140",
+    "caseId": "c162",
+    "title": "Spondylodiszitis",
+    "task": "Infektsiya va umurtqa xirurgiyasi bo‘limidan uy shifokoriga Arztbrief yozing. Qo‘zg‘atuvchi, endokarditni istisno qilish, operatsiya va uzoq antibiotik terapiyasiga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из отделения инфекций и хирургии позвоночника семейному врачу. Обратите внимание на возбудителя, исключение эндокардита, операцию и длительную антибиотикотерапию.",
+    "taskTr": "Enfeksiyon ve omurga cerrahisi servisinden aile hekimine bir Arztbrief yazın. Etkene, endokarditin dışlanmasına, ameliyata ve uzun antibiyotik tedavisine dikkat edin.",
+    "taskEn": "Write an Arztbrief from infectious diseases and spinal surgery to the GP. Pay attention to the pathogen, excluding endocarditis, surgery and long antibiotic therapy.",
+    "facts": [
+      "Patient: Reinhard Voigt, 68 Jahre, männlich",
+      "Aufenthalt: 14.09.2026–08.10.2026, Infektiologie und Wirbelsäulenchirurgie",
+      "Seit 4 Wochen nächtliche LWS-Schmerzen, Fieber, Gewichtsverlust; neu Parästhesien und Fußheberschwäche links (KG 4/5)",
+      "Diabetes mellitus, Niereninsuffizienz, biologische Aortenklappe; Zahnabszess vor 6 Wochen",
+      "CRP 186 mg/l; Blutkulturen: Streptococcus mitis/oralis, penicillinsensibel; MRT: Spondylodiszitis LWK 4/5 mit epiduralem Abszess",
+      "TEE: keine Endokarditis",
+      "Dekompression und dorsale Stabilisierung L4/5 am 16.09.2026; Penicillin G i.v. 4 Wochen, danach Amoxicillin oral"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patient ma’lumotlari (Herr Voigt)",
+        "labelRu": "Данные пациента (Herr Voigt)",
+        "labelTr": "Hasta bilgileri (Herr Voigt)",
+        "labelEn": "Patient data (Herr Voigt)",
+        "keywords": ["voigt"]
+      },
+      {
+        "label": "Asosiy shikoyat: tungi bel og‘rig‘i va isitma (Rückenschmerzen, Fieber)",
+        "labelRu": "Основная жалоба: ночная боль в пояснице и лихорадка (Rückenschmerzen, Fieber)",
+        "labelTr": "Ana şikâyet: gece bel ağrısı ve ateş (Rückenschmerzen, Fieber)",
+        "labelEn": "Main complaint: night-time back pain and fever (Rückenschmerzen, Fieber)",
+        "keywords": ["fieber", "nächtliche"]
+      },
+      {
+        "label": "Nevrologik defitsit (Fußheberschwäche)",
+        "labelRu": "Неврологический дефицит (Fußheberschwäche)",
+        "labelTr": "Nörolojik defisit (Fußheberschwäche)",
+        "labelEn": "Neurological deficit (Fußheberschwäche)",
+        "keywords": ["fußheberschwäche", "parästhesien"]
+      },
+      {
+        "label": "Xavf omillari va manba: tish (Zahnabszess)",
+        "labelRu": "Факторы риска и источник: зуб (Zahnabszess)",
+        "labelTr": "Risk faktörleri ve kaynak: diş (Zahnabszess)",
+        "labelEn": "Risk factors and source: tooth (Zahnabszess)",
+        "keywords": ["zahnabszess", "diabetes"]
+      },
+      {
+        "label": "Qon ekmasi: streptokokk (Streptococcus)",
+        "labelRu": "Посев крови: стрептококк (Streptococcus)",
+        "labelTr": "Kan kültürü: streptokok (Streptococcus)",
+        "labelEn": "Blood culture: streptococcus (Streptococcus)",
+        "keywords": ["streptococcus", "blutkultur"]
+      },
+      {
+        "label": "MRT: epidural abssess (epiduraler Abszess)",
+        "labelRu": "МРТ: эпидуральный абсцесс (epiduraler Abszess)",
+        "labelTr": "MR: epidural apse (epiduraler Abszess)",
+        "labelEn": "MRI: epidural abscess (epiduraler Abszess)",
+        "keywords": ["epidural"]
+      },
+      {
+        "label": "TEE: endokardit yo‘q (keine Endokarditis)",
+        "labelRu": "ЧПЭхоКГ: эндокардита нет (keine Endokarditis)",
+        "labelTr": "TEE: endokardit yok (keine Endokarditis)",
+        "labelEn": "TEE: no endocarditis (keine Endokarditis)",
+        "keywords": ["keine endokarditis"]
+      },
+      {
+        "label": "Davolash: dekompressiya va stabilizatsiya (Dekompression)",
+        "labelRu": "Лечение: декомпрессия и стабилизация (Dekompression)",
+        "labelTr": "Tedavi: dekompresyon ve stabilizasyon (Dekompression)",
+        "labelEn": "Treatment: decompression and stabilisation (Dekompression)",
+        "keywords": ["dekompression", "stabilisierung"]
+      },
+      {
+        "label": "Davolash: jami 6–12 hafta antibiotik (Penicillin G, Amoxicillin)",
+        "labelRu": "Лечение: антибиотики всего 6–12 недель (Penicillin G, Amoxicillin)",
+        "labelTr": "Tedavi: toplam 6–12 hafta antibiyotik (Penicillin G, Amoxicillin)",
+        "labelEn": "Treatment: antibiotics for 6–12 weeks in total (Penicillin G, Amoxicillin)",
+        "keywords": ["penicillin g", "amoxicillin"]
+      },
+      {
+        "label": "Tavsiya: CRP nazorati va tish sanatsiyasi (CRP-Kontrolle)",
+        "labelRu": "Рекомендация: контроль СРБ и санация зубов (CRP-Kontrolle)",
+        "labelTr": "Öneri: CRP takibi ve diş tedavisi (CRP-Kontrolle)",
+        "labelEn": "Recommendation: CRP monitoring and dental treatment (CRP-Kontrolle)",
+        "keywords": ["crp-kontrolle", "zahnärztliche"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Reinhard Voigt, 68 Jahre, der vom 14.09.2026 bis zum 08.10.2026 in unserer Klinik für Infektiologie behandelt wurde.\n\nAnamnese:\nDer Patient stellte sich mit seit vier Wochen zunehmenden, auch nächtlichen Schmerzen der LWS, Fieber und einem Gewichtsverlust von 4 kg vor. Neu aufgetreten waren Parästhesien im linken Bein. Es bestehen ein Diabetes mellitus, eine chronische Niereninsuffizienz und ein biologischer Aortenklappenersatz. Vor sechs Wochen erfolgte die Extraktion eines Zahns mit Zahnabszess.\n\nBefunde:\nNeurologisch zeigte sich eine Fußheberschwäche links mit Kraftgrad 4/5. Das CRP lag bei 186 mg/l. In der Blutkultur wuchs Streptococcus mitis/oralis, penicillinsensibel. Das MRT zeigte eine Spondylodiszitis LWK 4/5 mit epiduralem Abszess. In der transösophagealen Echokardiographie fand sich keine Endokarditis.\n\nDiagnose:\nSpondylodiszitis LWK 4/5 durch Streptococcus mitis/oralis mit epiduralem Abszess und Fußheberschwäche links.\n\nTherapie und Verlauf:\nAm 16.09.2026 erfolgten die Dekompression und dorsale Stabilisierung L4/5. Wir behandelten mit Penicillin G i.v. über vier Wochen und stellten dann auf Amoxicillin oral um. Die Fußheberschwäche bildete sich vollständig zurück, das CRP sank auf 18 mg/l.\n\nProcedere:\nWir empfehlen die Fortführung von Amoxicillin 1000 mg dreimal täglich bis zu einer Gesamtdauer von mindestens acht Wochen, angepasst an die Nierenfunktion. Eine CRP-Kontrolle sollte wöchentlich erfolgen. Eine zahnärztliche Sanierung ist erforderlich. Eine Endokarditisprophylaxe bei künftigen Zahneingriffen ist wegen der Klappenprothese indiziert.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab141",
+    "caseId": "c163",
+    "title": "Septische Arthritis",
+    "task": "Ortopediya bo‘limidan uy shifokoriga va revmatologga Arztbrief yozing. Punksiya natijasi, operatsiya va metotreksatni vaqtincha to‘xtatishga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из ортопедии семейному врачу и ревматологу. Обратите внимание на результат пункции, операцию и временную отмену метотрексата.",
+    "taskTr": "Ortopedi servisinden aile hekimine ve romatoloğa bir Arztbrief yazın. Ponksiyon sonucuna, ameliyata ve metotreksatın geçici kesilmesine dikkat edin.",
+    "taskEn": "Write an Arztbrief from orthopaedics to the GP and rheumatologist. Pay attention to the aspiration result, surgery and pausing methotrexate.",
+    "facts": [
+      "Patientin: Gerda Wolff, 73 Jahre, weiblich",
+      "Aufenthalt: 24.09.2026–08.10.2026, Orthopädie",
+      "Seit 2 Tagen heißes, geschwollenes rechtes Knie, Fieber 38,9 °C; Kortisoninjektion vor 10 Tagen",
+      "Immunsuppression: Methotrexat, Prednisolon; Diabetes mellitus",
+      "Punktion: trübe Flüssigkeit, 78.000 Leukozyten/µl, grampositive Haufenkokken, keine Kristalle; Kultur: Staphylococcus aureus (MSSA); Blutkulturen negativ",
+      "Arthroskopische Spülung und Synovektomie am 24. und 26.09.2026; Cefazolin i.v. 2 Wochen, danach Clindamycin oral",
+      "Methotrexat pausiert; CRP von 210 auf 12 mg/l"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patientin ma’lumotlari (Frau Wolff)",
+        "labelRu": "Данные пациентки (Frau Wolff)",
+        "labelTr": "Hasta bilgileri (Frau Wolff)",
+        "labelEn": "Patient data (Frau Wolff)",
+        "keywords": ["wolff"]
+      },
+      {
+        "label": "Asosiy shikoyat: issiq, shishgan tizza va isitma (geschwollenes Knie)",
+        "labelRu": "Основная жалоба: горячее отёчное колено и лихорадка (geschwollenes Knie)",
+        "labelTr": "Ana şikâyet: sıcak, şiş diz ve ateş (geschwollenes Knie)",
+        "labelEn": "Main complaint: hot swollen knee and fever (geschwollenes Knie)",
+        "keywords": ["knie", "fieber"]
+      },
+      {
+        "label": "Bo‘g‘imga ukol (Kortisoninjektion)",
+        "labelRu": "Внутрисуставная инъекция (Kortisoninjektion)",
+        "labelTr": "Eklem içi enjeksiyon (Kortisoninjektion)",
+        "labelEn": "Intra-articular injection (Kortisoninjektion)",
+        "keywords": ["kortisoninjektion"]
+      },
+      {
+        "label": "Immunosupressiya (Methotrexat, Prednisolon)",
+        "labelRu": "Иммуносупрессия (Methotrexat, Prednisolon)",
+        "labelTr": "İmmünsüpresyon (Methotrexat, Prednisolon)",
+        "labelEn": "Immunosuppression (Methotrexat, Prednisolon)",
+        "keywords": ["immunsuppression", "methotrexat"]
+      },
+      {
+        "label": "Punksiya natijasi (78.000 Leukozyten/µl)",
+        "labelRu": "Результат пункции (78.000 Leukozyten/µl)",
+        "labelTr": "Ponksiyon sonucu (78.000 Leukozyten/µl)",
+        "labelEn": "Aspiration result (78.000 Leukozyten/µl)",
+        "keywords": ["78.000", "punktion"]
+      },
+      {
+        "label": "Qo‘zg‘atuvchi: S. aureus (Staphylococcus aureus)",
+        "labelRu": "Возбудитель: S. aureus (Staphylococcus aureus)",
+        "labelTr": "Etken: S. aureus (Staphylococcus aureus)",
+        "labelEn": "Pathogen: S. aureus (Staphylococcus aureus)",
+        "keywords": ["staphylococcus aureus"]
+      },
+      {
+        "label": "Diagnoz: septik artrit (septische Arthritis)",
+        "labelRu": "Диагноз: септический артрит (septische Arthritis)",
+        "labelTr": "Tanı: septik artrit (septische Arthritis)",
+        "labelEn": "Diagnosis: septic arthritis (septische Arthritis)",
+        "keywords": ["septische arthritis"]
+      },
+      {
+        "label": "Davolash: artroskopik yuvish va antibiotik (Arthroskopische Spülung)",
+        "labelRu": "Лечение: артроскопический лаваж и антибиотик (Arthroskopische Spülung)",
+        "labelTr": "Tedavi: artroskopik yıkama ve antibiyotik (Arthroskopische Spülung)",
+        "labelEn": "Treatment: arthroscopic washout and antibiotics (Arthroskopische Spülung)",
+        "keywords": ["spülung", "cefazolin"]
+      },
+      {
+        "label": "Tavsiya: metotreksatni revmatolog bilan qayta boshlash (Rheumatologe)",
+        "labelRu": "Рекомендация: возобновление метотрексата с ревматологом (Rheumatologe)",
+        "labelTr": "Öneri: metotreksatın romatologla yeniden başlanması (Rheumatologe)",
+        "labelEn": "Recommendation: restart methotrexate with rheumatologist (Rheumatologe)",
+        "keywords": ["rheumatolog", "pausiert"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihre Patientin Frau Gerda Wolff, 73 Jahre, die vom 24.09.2026 bis zum 08.10.2026 in unserer Klinik für Orthopädie behandelt wurde.\n\nAnamnese:\nDie Patientin stellte sich mit einem seit zwei Tagen geschwollenen, geröteten und überwärmten rechten Knie und Fieber bis 38,9 °C vor. Zehn Tage zuvor war eine Kortisoninjektion in das Knie erfolgt. Bei rheumatoider Arthritis besteht eine Immunsuppression mit Methotrexat und Prednisolon; zudem ein Diabetes mellitus.\n\nBefunde:\nDie Punktion des Kniegelenks ergab eine trübe Flüssigkeit mit 78.000 Leukozyten/µl und grampositiven Haufenkokken, Kristalle fanden sich nicht. In der Kultur wuchs Staphylococcus aureus (MSSA). Die Blutkulturen blieben negativ.\n\nDiagnose:\nSeptische Arthritis des rechten Kniegelenks durch Staphylococcus aureus nach intraartikulärer Injektion.\n\nTherapie und Verlauf:\nAm 24. und 26.09.2026 erfolgten eine arthroskopische Spülung und Synovektomie. Wir behandelten mit Cefazolin i.v. über zwei Wochen und stellten dann auf Clindamycin oral um. Methotrexat wurde pausiert. Das CRP fiel von 210 auf 12 mg/l, die Patientin ist an Gehstützen mobil.\n\nProcedere:\nWir empfehlen die Fortführung von Clindamycin 600 mg dreimal täglich für weitere vier Wochen und eine wöchentliche CRP-Kontrolle. Methotrexat sollte erst nach Abschluss der Antibiose in Absprache mit dem behandelnden Rheumatologen wieder begonnen werden. Weitere intraartikuläre Injektionen in dieses Gelenk sollten vermieden werden. Physiotherapie ist verordnet.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab142",
+    "caseId": "c164",
+    "title": "Dengue-Fieber",
+    "task": "Tropik tibbiyot bo‘limidan uy shifokoriga Arztbrief yozing. Bezgakni istisno qilish, xavf belgilari va nima uchun ibuprofen to‘xtatilganiga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из отделения тропической медицины семейному врачу. Обратите внимание на исключение малярии, тревожные признаки и отмену ибупрофена.",
+    "taskTr": "Tropikal tıp servisinden aile hekimine bir Arztbrief yazın. Sıtmanın dışlanmasına, uyarı işaretlerine ve ibuprofenin neden kesildiğine dikkat edin.",
+    "taskEn": "Write an Arztbrief from tropical medicine to the GP. Pay attention to excluding malaria, the warning signs and why ibuprofen was stopped.",
+    "facts": [
+      "Patientin: Sarah Klein, 31 Jahre, weiblich",
+      "Aufenthalt: 01.10.2026–06.10.2026, Tropenmedizin",
+      "Nach Thailandreise hohes Fieber, retroorbitale Kopfschmerzen, Myalgien, Exanthem, Gingivablutung; Ibuprofen eingenommen",
+      "Malaria-Schnelltest und dicker Tropfen negativ (dreimal); Dengue-NS1-Antigen positiv",
+      "Thrombozyten Tiefstwert 28/nl am 3. Tag, Hämatokritanstieg auf 46 %, GOT 210 U/l; sonographisch kleiner Pleuraerguss rechts",
+      "Therapie: Ibuprofen abgesetzt, Paracetamol, intravenöse Flüssigkeit; keine Thrombozytentransfusion nötig",
+      "Bei Entlassung fieberfrei, Thrombozyten 96/nl"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patientin ma’lumotlari (Frau Klein)",
+        "labelRu": "Данные пациентки (Frau Klein)",
+        "labelTr": "Hasta bilgileri (Frau Klein)",
+        "labelEn": "Patient data (Frau Klein)",
+        "keywords": ["klein"]
+      },
+      {
+        "label": "Asosiy shikoyat: Tailanddan keyin yuqori isitma (Fieber nach Thailandreise)",
+        "labelRu": "Основная жалоба: высокая лихорадка после Таиланда (Fieber nach Thailandreise)",
+        "labelTr": "Ana şikâyet: Tayland sonrası yüksek ateş (Fieber nach Thailandreise)",
+        "labelEn": "Main complaint: high fever after Thailand (Fieber nach Thailandreise)",
+        "keywords": ["thailand", "fieber"]
+      },
+      {
+        "label": "Bezgak istisno qilindi (dicker Tropfen negativ)",
+        "labelRu": "Малярия исключена (dicker Tropfen negativ)",
+        "labelTr": "Sıtma dışlandı (dicker Tropfen negativ)",
+        "labelEn": "Malaria excluded (dicker Tropfen negativ)",
+        "keywords": ["malaria", "dicker tropfen"]
+      },
+      {
+        "label": "NS1 musbat (NS1-Antigen)",
+        "labelRu": "NS1 положительный (NS1-Antigen)",
+        "labelTr": "NS1 pozitif (NS1-Antigen)",
+        "labelEn": "NS1 positive (NS1-Antigen)",
+        "keywords": ["ns1"]
+      },
+      {
+        "label": "Trombotsitlar va gematokrit (28/nl, Hämatokrit 46 %)",
+        "labelRu": "Тромбоциты и гематокрит (28/nl, Hämatokrit 46 %)",
+        "labelTr": "Trombositler ve hematokrit (28/nl, Hämatokrit 46 %)",
+        "labelEn": "Platelets and haematocrit (28/nl, Hämatokrit 46 %)",
+        "keywords": ["28/nl", "hämatokrit"]
+      },
+      {
+        "label": "Xavf belgilari: qon ketish, plevra suyuqligi (Warnzeichen)",
+        "labelRu": "Тревожные признаки: кровоточивость, плевральный выпот (Warnzeichen)",
+        "labelTr": "Uyarı işaretleri: kanama, plevral efüzyon (Warnzeichen)",
+        "labelEn": "Warning signs: bleeding, pleural effusion (Warnzeichen)",
+        "keywords": ["warnzeichen", "pleuraerguss"]
+      },
+      {
+        "label": "Diagnoz: denge isitmasi (Dengue-Fieber)",
+        "labelRu": "Диагноз: лихорадка денге (Dengue-Fieber)",
+        "labelTr": "Tanı: dang humması (Dengue-Fieber)",
+        "labelEn": "Diagnosis: dengue fever (Dengue-Fieber)",
+        "keywords": ["dengue"]
+      },
+      {
+        "label": "Davolash: suyuqlik va paratsetamol, ibuprofen to‘xtatildi (Ibuprofen abgesetzt)",
+        "labelRu": "Лечение: инфузии и парацетамол, ибупрофен отменён (Ibuprofen abgesetzt)",
+        "labelTr": "Tedavi: sıvı ve parasetamol, ibuprofen kesildi (Ibuprofen abgesetzt)",
+        "labelEn": "Treatment: fluids and paracetamol, ibuprofen stopped (Ibuprofen abgesetzt)",
+        "keywords": ["abgesetzt", "paracetamol"]
+      },
+      {
+        "label": "Tavsiya: NSAID va ASKdan saqlanish, trombotsit nazorati (keine NSAR)",
+        "labelRu": "Рекомендация: избегать НПВС и АСК, контроль тромбоцитов (keine NSAR)",
+        "labelTr": "Öneri: NSAİİ ve ASA’dan kaçınma, trombosit takibi (keine NSAR)",
+        "labelEn": "Recommendation: avoid NSAIDs and aspirin, monitor platelets (keine NSAR)",
+        "keywords": ["nsar", "thrombozytenkontrolle"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihre Patientin Frau Sarah Klein, 31 Jahre, die vom 01.10.2026 bis zum 06.10.2026 in unserer Abteilung für Tropenmedizin behandelt wurde.\n\nAnamnese:\nDie Patientin stellte sich vier Tage nach Rückkehr von einer dreiwöchigen Thailandreise mit hohem Fieber, retroorbitalen Kopfschmerzen, Myalgien und Arthralgien vor. Seit dem Aufnahmetag bestanden ein Exanthem und eine Gingivablutung. Sie hatte Ibuprofen eingenommen.\n\nBefunde:\nMalaria-Schnelltest und dicker Tropfen waren dreimal negativ. Das Dengue-NS1-Antigen war positiv. Die Thrombozyten fielen am dritten Tag auf einen Tiefstwert von 28/nl, der Hämatokrit stieg auf 46 %, die GOT lag bei 210 U/l. Sonographisch zeigte sich ein kleiner Pleuraerguss rechts.\n\nDiagnose:\nDengue-Fieber mit Warnzeichen (Schleimhautblutung, Plasmaleckage mit Pleuraerguss, Thrombozytopenie).\n\nTherapie und Verlauf:\nIbuprofen wurde wegen des Blutungsrisikos abgesetzt; zur Fiebersenkung erhielt die Patientin Paracetamol. Unter intravenöser Flüssigkeitsgabe und engmaschiger Kontrolle von Hämatokrit und Thrombozyten stabilisierte sich der Zustand. Eine Thrombozytentransfusion war nicht erforderlich. Bei Entlassung war die Patientin fieberfrei, die Thrombozyten lagen bei 96/nl.\n\nProcedere:\nWir empfehlen für zwei Wochen keine NSAR und kein ASS sowie eine Thrombozytenkontrolle in drei Tagen. Die Patientin wurde informiert, dass eine erneute Infektion mit einem anderen Dengue-Serotyp schwerer verlaufen kann; vor künftigen Reisen empfehlen wir eine reisemedizinische Beratung und konsequenten Mückenschutz.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab143",
+    "caseId": "c165",
+    "title": "Nekrotisierende Fasziitis",
+    "task": "Xirurgik intensiv bo‘limidan reabilitatsiya klinikasiga Arztbrief yozing. Shoshilinch operatsiyalar, qo‘zg‘atuvchi, antibiotiklar va yara yopilishiga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из хирургической реанимации в реабилитационную клинику. Обратите внимание на экстренные операции, возбудителя, антибиотики и закрытие раны.",
+    "taskTr": "Cerrahi yoğun bakımdan rehabilitasyon kliniğine bir Arztbrief yazın. Acil ameliyatlara, etkene, antibiyotiklere ve yara kapatmaya dikkat edin.",
+    "taskEn": "Write an Arztbrief from surgical intensive care to the rehabilitation clinic. Pay attention to the emergency operations, pathogen, antibiotics and wound closure.",
+    "facts": [
+      "Patient: Manfred Kuhn, 59 Jahre, männlich",
+      "Aufenthalt: 08.09.2026–08.10.2026, Chirurgie und Intensivstation",
+      "Nach Schürfwunde rasch progrediente Rötung, unverhältnismäßige Schmerzen, livide Haut mit Blasen, Fieber, Verwirrtheit; RR 82/48 mmHg, Laktat 5,2 mmol/l",
+      "Diabetes mellitus (Blutzucker 412 mg/dl), Alkoholabusus",
+      "Sofortiges radikales Débridement am Aufnahmetag, 3 Second-Look-Operationen; Histologie bestätigt nekrotisierende Fasziitis",
+      "Erreger: Streptococcus pyogenes (Gruppe A); Piperacillin/Tazobactam plus Clindamycin, dann Penicillin G plus Clindamycin",
+      "Vakuumtherapie, Spalthauttransplantation am 01.10.2026; Bein erhalten; 9 Tage Intensivstation mit Noradrenalin"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patient ma’lumotlari (Herr Kuhn)",
+        "labelRu": "Данные пациента (Herr Kuhn)",
+        "labelTr": "Hasta bilgileri (Herr Kuhn)",
+        "labelEn": "Patient data (Herr Kuhn)",
+        "keywords": ["kuhn"]
+      },
+      {
+        "label": "Asosiy shikoyat: tez tarqalayotgan infeksiya va nomutanosib og‘riq (unverhältnismäßige Schmerzen)",
+        "labelRu": "Основная жалоба: быстро распространяющаяся инфекция и несоразмерная боль (unverhältnismäßige Schmerzen)",
+        "labelTr": "Ana şikâyet: hızla yayılan enfeksiyon ve orantısız ağrı (unverhältnismäßige Schmerzen)",
+        "labelEn": "Main complaint: rapidly spreading infection and disproportionate pain (unverhältnismäßige Schmerzen)",
+        "keywords": ["unverhältnismäßig"]
+      },
+      {
+        "label": "Septik shok (RR 82/48, Laktat 5,2)",
+        "labelRu": "Септический шок (RR 82/48, Laktat 5,2)",
+        "labelTr": "Septik şok (RR 82/48, Laktat 5,2)",
+        "labelEn": "Septic shock (RR 82/48, Laktat 5,2)",
+        "keywords": ["laktat", "schock"]
+      },
+      {
+        "label": "Xavf omillari: diabet, alkogol (Diabetes, Alkohol)",
+        "labelRu": "Факторы риска: диабет, алкоголь (Diabetes, Alkohol)",
+        "labelTr": "Risk faktörleri: diyabet, alkol (Diabetes, Alkohol)",
+        "labelEn": "Risk factors: diabetes, alcohol (Diabetes, Alkohol)",
+        "keywords": ["diabetes", "alkohol"]
+      },
+      {
+        "label": "Diagnoz: nekrozlovchi fassiit (Nekrotisierende Fasziitis)",
+        "labelRu": "Диагноз: некротизирующий фасциит (Nekrotisierende Fasziitis)",
+        "labelTr": "Tanı: nekrotizan fasiit (Nekrotisierende Fasziitis)",
+        "labelEn": "Diagnosis: necrotising fasciitis (Nekrotisierende Fasziitis)",
+        "keywords": ["nekrotisierende fasziitis"]
+      },
+      {
+        "label": "Davolash: shoshilinch debridment va takroriy operatsiyalar (Débridement)",
+        "labelRu": "Лечение: экстренная обработка и повторные ревизии (Débridement)",
+        "labelTr": "Tedavi: acil debridman ve tekrar ameliyatlar (Débridement)",
+        "labelEn": "Treatment: emergency debridement and second-look operations (Débridement)",
+        "keywords": ["débridement", "second-look"]
+      },
+      {
+        "label": "Qo‘zg‘atuvchi: A guruh streptokokk (Streptococcus pyogenes)",
+        "labelRu": "Возбудитель: стрептококк группы А (Streptococcus pyogenes)",
+        "labelTr": "Etken: A grubu streptokok (Streptococcus pyogenes)",
+        "labelEn": "Pathogen: group A streptococcus (Streptococcus pyogenes)",
+        "keywords": ["streptococcus pyogenes"]
+      },
+      {
+        "label": "Davolash: antibiotiklar klindamitsin bilan (Clindamycin)",
+        "labelRu": "Лечение: антибиотики с клиндамицином (Clindamycin)",
+        "labelTr": "Tedavi: klindamisinli antibiyotikler (Clindamycin)",
+        "labelEn": "Treatment: antibiotics with clindamycin (Clindamycin)",
+        "keywords": ["clindamycin"]
+      },
+      {
+        "label": "Davolash: vakuum terapiya va teri transplantatsiyasi (Spalthauttransplantation)",
+        "labelRu": "Лечение: вакуумная терапия и пересадка кожи (Spalthauttransplantation)",
+        "labelTr": "Tedavi: vakum tedavisi ve deri grefti (Spalthauttransplantation)",
+        "labelEn": "Treatment: vacuum therapy and skin grafting (Spalthauttransplantation)",
+        "keywords": ["vakuumtherapie", "spalthaut"]
+      },
+      {
+        "label": "Tavsiya: qand nazorati, alkogoldan voz kechish, kontaktlar (Blutzucker, Alkoholkarenz)",
+        "labelRu": "Рекомендация: контроль сахара, отказ от алкоголя, контактные лица (Blutzucker, Alkoholkarenz)",
+        "labelTr": "Öneri: şeker kontrolü, alkolü bırakma, temaslılar (Blutzucker, Alkoholkarenz)",
+        "labelEn": "Recommendation: glucose control, alcohol abstinence, contacts (Blutzucker, Alkoholkarenz)",
+        "keywords": ["blutzucker", "alkoholkarenz"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Manfred Kuhn, 59 Jahre, der vom 08.09.2026 bis zum 08.10.2026 in unserer Klinik für Allgemein- und Unfallchirurgie behandelt wurde.\n\nAnamnese:\nDer Patient wurde mit einer zwei Tage nach einer Schürfwunde am linken Unterschenkel rasch progredienten Rötung, unverhältnismäßig starken Schmerzen, livider Hautverfärbung mit Blasen, Fieber und Verwirrtheit eingeliefert. Es bestehen ein schlecht eingestellter Diabetes mellitus und ein Alkoholabusus.\n\nBefunde:\nBei Aufnahme bestand ein septischer Schock mit einem Blutdruck von 82/48 mmHg und einem Laktat von 5,2 mmol/l. Der Blutzucker lag bei 412 mg/dl.\n\nDiagnose:\nNekrotisierende Fasziitis des linken Unterschenkels durch Streptococcus pyogenes (Gruppe A) mit septischem Schock.\n\nTherapie und Verlauf:\nNoch am Aufnahmetag erfolgte ein radikales Débridement, gefolgt von drei Second-Look-Operationen. Die Histologie bestätigte die Diagnose. Wir behandelten zunächst mit Piperacillin/Tazobactam plus Clindamycin und nach Erregernachweis mit Penicillin G plus Clindamycin. Der Patient benötigte neun Tage Intensivtherapie mit Noradrenalin. Nach Vakuumtherapie erfolgte am 01.10.2026 eine Spalthauttransplantation, die gut eingeheilt ist. Das Bein konnte erhalten werden.\n\nProcedere:\nWir bitten um Fortführung der Wundpflege, Mobilisation und Physiotherapie. Eine gute Einstellung des Blutzuckers mit Insulin ist erforderlich. Wir empfehlen dringend Alkoholkarenz und Rauchstopp. Enge Kontaktpersonen wurden über Warnzeichen einer Streptokokkeninfektion informiert.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab144",
+    "caseId": "c166",
+    "title": "Legionellose",
+    "task": "Ichki kasalliklar bo‘limidan uy shifokoriga Arztbrief yozing. Tashxis usuli, antibiotik, giponatriyemiya va sog‘liqni saqlash idorasiga xabar berishga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из терапии семейному врачу. Обратите внимание на метод диагностики, антибиотик, гипонатриемию и уведомление санэпидслужбы.",
+    "taskTr": "Dahiliye servisinden aile hekimine bir Arztbrief yazın. Tanı yöntemine, antibiyotiğe, hiponatremiye ve sağlık müdürlüğüne bildirime dikkat edin.",
+    "taskEn": "Write an Arztbrief from internal medicine to the GP. Pay attention to the diagnostic method, antibiotic, hyponatraemia and notification of the health authority.",
+    "facts": [
+      "Patient: Ulrich Becker, 64 Jahre, männlich",
+      "Aufenthalt: 30.09.2026–08.10.2026, Innere Medizin",
+      "Hohes Fieber, trockener Husten, Dyspnoe, Diarrhö, Verwirrtheit; Hotelaufenthalte mit Whirlpool-Nutzung",
+      "COPD, Diabetes mellitus, Nikotinabusus",
+      "Röntgen: Infiltrat rechter Unterlappen; Legionellen-Antigen im Urin positiv; Natrium 126 mmol/l; GPT 98 U/l; CK erhöht",
+      "Therapie: Levofloxacin i.v., dann oral, insgesamt 10 Tage; Sauerstoff; Natriumausgleich",
+      "Meldung an das Gesundheitsamt erfolgt"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patient ma’lumotlari (Herr Becker)",
+        "labelRu": "Данные пациента (Herr Becker)",
+        "labelTr": "Hasta bilgileri (Herr Becker)",
+        "labelEn": "Patient data (Herr Becker)",
+        "keywords": ["becker"]
+      },
+      {
+        "label": "Asosiy shikoyat: isitma, quruq yo‘tal va ich ketishi (Fieber, Husten, Diarrhö)",
+        "labelRu": "Основная жалоба: лихорадка, сухой кашель и диарея (Fieber, Husten, Diarrhö)",
+        "labelTr": "Ana şikâyet: ateş, kuru öksürük ve ishal (Fieber, Husten, Diarrhö)",
+        "labelEn": "Main complaint: fever, dry cough and diarrhoea (Fieber, Husten, Diarrhö)",
+        "keywords": ["husten", "diarrhö"]
+      },
+      {
+        "label": "Mehmonxona va jakuzi (Whirlpool)",
+        "labelRu": "Отель и джакузи (Whirlpool)",
+        "labelTr": "Otel ve jakuzi (Whirlpool)",
+        "labelEn": "Hotel and whirlpool (Whirlpool)",
+        "keywords": ["whirlpool", "hotel"]
+      },
+      {
+        "label": "Rentgen: infiltrat (Infiltrat)",
+        "labelRu": "Рентген: инфильтрат (Infiltrat)",
+        "labelTr": "Röntgen: infiltrat (Infiltrat)",
+        "labelEn": "X-ray: infiltrate (Infiltrat)",
+        "keywords": ["infiltrat"]
+      },
+      {
+        "label": "Siydikda legionella antigeni (Antigen im Urin)",
+        "labelRu": "Антиген легионелл в моче (Antigen im Urin)",
+        "labelTr": "İdrarda lejyonella antijeni (Antigen im Urin)",
+        "labelEn": "Legionella urinary antigen (Antigen im Urin)",
+        "keywords": ["antigen"]
+      },
+      {
+        "label": "Giponatriyemiya (Natrium 126 mmol/l)",
+        "labelRu": "Гипонатриемия (Natrium 126 mmol/l)",
+        "labelTr": "Hiponatremi (Natrium 126 mmol/l)",
+        "labelEn": "Hyponatraemia (Natrium 126 mmol/l)",
+        "keywords": ["natrium", "126"]
+      },
+      {
+        "label": "Diagnoz: legionella pnevmoniyasi (Legionellenpneumonie)",
+        "labelRu": "Диагноз: легионеллёзная пневмония (Legionellenpneumonie)",
+        "labelTr": "Tanı: lejyonella pnömonisi (Legionellenpneumonie)",
+        "labelEn": "Diagnosis: Legionella pneumonia (Legionellenpneumonie)",
+        "keywords": ["legionellenpneumonie"]
+      },
+      {
+        "label": "Davolash: levofloksatsin (Levofloxacin)",
+        "labelRu": "Лечение: левофлоксацин (Levofloxacin)",
+        "labelTr": "Tedavi: levofloksasin (Levofloxacin)",
+        "labelEn": "Treatment: levofloxacin (Levofloxacin)",
+        "keywords": ["levofloxacin"]
+      },
+      {
+        "label": "Tavsiya: sog‘liqni saqlash idorasiga xabar va nazorat (Gesundheitsamt)",
+        "labelRu": "Рекомендация: уведомление санэпидслужбы и контроль (Gesundheitsamt)",
+        "labelTr": "Öneri: sağlık müdürlüğüne bildirim ve kontrol (Gesundheitsamt)",
+        "labelEn": "Recommendation: notification of health authority and follow-up (Gesundheitsamt)",
+        "keywords": ["gesundheitsamt", "röntgenkontrolle"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Ulrich Becker, 64 Jahre, der vom 30.09.2026 bis zum 08.10.2026 in unserer Klinik für Innere Medizin behandelt wurde.\n\nAnamnese:\nDer Patient stellte sich mit seit vier Tagen bestehendem hohem Fieber, trockenem Husten, Dyspnoe, wässriger Diarrhö und leichter Verwirrtheit vor. Vor acht Tagen war er von einer Busreise mit mehreren Hotelaufenthalten zurückgekehrt, bei der er einen Whirlpool genutzt hatte. Es bestehen eine COPD und ein Diabetes mellitus.\n\nBefunde:\nIm Röntgen-Thorax zeigte sich ein Infiltrat im rechten Unterlappen. Das Legionellen-Antigen im Urin war positiv. Das Natrium lag bei 126 mmol/l, die GPT bei 98 U/l, die CK war erhöht.\n\nDiagnose:\nLegionellenpneumonie (Legionärskrankheit) mit Hyponatriämie.\n\nTherapie und Verlauf:\nWir behandelten mit Levofloxacin zunächst intravenös, dann oral über insgesamt zehn Tage, sowie mit Sauerstoff und einem vorsichtigen Natriumausgleich. Fieber, Verwirrtheit und Durchfall bildeten sich rasch zurück; das Natrium normalisierte sich.\n\nProcedere:\nDie Meldung an das Gesundheitsamt ist erfolgt, damit die Hotels überprüft werden können. Wir empfehlen eine Röntgenkontrolle des Thorax in sechs Wochen, auch zum Ausschluss eines Tumors bei langjährigem Nikotinkonsum, sowie einen Rauchstopp. Eine Pneumokokken- und Influenzaimpfung sollte aufgefrischt werden.\n\nMit freundlichen kollegialen Grüßen"
   }
 ]

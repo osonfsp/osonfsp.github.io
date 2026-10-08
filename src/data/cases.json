@@ -17229,5 +17229,1131 @@
       "Blutbild, CRP, Kreatinin",
       "Sonographie mit Restharn, ggf. transrektal bei Abszessverdacht"
     ]
+  },
+  {
+    "id": "c157",
+    "title": "Hodentumor",
+    "category": "Urologie",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Niklas Bauer",
+      "age": 28,
+      "gender": "männlich",
+      "hauptbeschwerde": "Schmerzlose Verhärtung im rechten Hoden"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 6 Wochen tastbare, schmerzlose Verhärtung am rechten Hoden, Schweregefühl im Hodensack. Seit kurzem leichtes Spannungsgefühl der Brust. Kein Fieber, kein Brennen beim Wasserlassen, kein Trauma.",
+      "vorerkrankungen": "Hodenhochstand rechts, operiert im Alter von 3 Jahren.",
+      "medikamente": "Keine.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Bruder: Hodenkrebs mit 31 Jahren.",
+      "sozialanamnese": "In Partnerschaft, Kinderwunsch. Softwareentwickler. Nichtraucher."
+    },
+    "sprache": [
+      {
+        "patient": "Mein rechter Hoden ist an einer Stelle hart geworden, aber es tut nicht weh.",
+        "fach": "Es besteht eine schmerzlose derbe Induration des rechten Hodens."
+      },
+      {
+        "patient": "Der Hodensack fühlt sich schwer an.",
+        "fach": "Es besteht ein skrotales Schweregefühl."
+      },
+      {
+        "patient": "Als Kind wurde mein Hoden operiert, weil er nicht unten war.",
+        "fach": "Im Kindesalter erfolgte eine Orchidopexie bei Maldescensus testis rechts."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Hodentumor",
+        "patient": "Krebs des Hodens",
+        "uz": "moyak o‘smasi",
+        "ru": "опухоль яичка",
+        "tr": "testis tümörü",
+        "en": "testicular tumour"
+      },
+      {
+        "de": "Seminom",
+        "patient": "häufigste Form des Hodenkrebses",
+        "uz": "seminoma",
+        "ru": "семинома",
+        "tr": "seminom",
+        "en": "seminoma"
+      },
+      {
+        "de": "Orchiektomie",
+        "patient": "Entfernung des Hodens",
+        "uz": "orxiektomiya",
+        "ru": "орхиэктомия",
+        "tr": "orşiektomi",
+        "en": "orchidectomy"
+      },
+      {
+        "de": "Tumormarker",
+        "patient": "Blutwerte, die auf einen Tumor hinweisen (AFP, β-HCG, LDH)",
+        "uz": "o‘sma markerlari",
+        "ru": "онкомаркеры",
+        "tr": "tümör belirteçleri",
+        "en": "tumour markers"
+      },
+      {
+        "de": "Kryokonservierung",
+        "patient": "Einfrieren von Samenzellen",
+        "uz": "spermani muzlatib saqlash",
+        "ru": "криоконсервация спермы",
+        "tr": "sperm dondurma",
+        "en": "sperm banking"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe seit ein paar Wochen eine harte Stelle am rechten Hoden. Es tut nicht weh, aber ich mache mir Sorgen.",
+      "answers": {
+        "beginn": "Ich habe es vor etwa sechs Wochen beim Duschen bemerkt.",
+        "lokalisation": "Rechter Hoden, unten.",
+        "charakter": "Hart, wie ein kleiner Knoten. Keine Schmerzen, nur ein Schweregefühl.",
+        "ausstrahlung": "Manchmal zieht es etwas in die Leiste.",
+        "begleit": "Die Brust spannt seit kurzem etwas. Fieber oder Brennen beim Wasserlassen habe ich nicht. Rückenschmerzen nicht.",
+        "vegetativ": "Gewicht ist stabil.",
+        "vorerkrankungen": "Als Kind wurde der rechte Hoden operiert, weil er nicht im Hodensack war.",
+        "medikamente": "Keine.",
+        "allergien": "Nein.",
+        "familie": "Mein Bruder hatte mit 31 Hodenkrebs.",
+        "sozial": "Ich lebe mit meiner Freundin zusammen, wir möchten Kinder. Ich bin Softwareentwickler.",
+        "noxen": "Ich rauche nicht, Alkohol am Wochenende."
+      }
+    },
+    "verdachtsdiagnose": "Verdacht auf Hodentumor rechts (Keimzelltumor)",
+    "diagnoseKeywords": ["hodentumor", "keimzelltumor", "seminom", "hodenkarzinom"],
+    "differenzialdiagnosen": ["Epididymitis", "Hydrozele", "Spermatozele", "Varikozele", "Hodentorsion"],
+    "untersuchungen": [
+      "Palpation beider Hoden",
+      "Hodensonographie",
+      "Tumormarker (AFP, β-HCG, LDH)",
+      "CT Thorax und Abdomen (Staging)",
+      "Hormonstatus (Testosteron, LH, FSH)"
+    ]
+  },
+  {
+    "id": "c158",
+    "title": "Belastungsinkontinenz",
+    "category": "Urologie",
+    "difficulty": "leicht",
+    "patient": {
+      "name": "Birgit Herrmann",
+      "age": 56,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Urinverlust beim Husten, Niesen und Sport"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 2 Jahren zunehmender Urinverlust beim Husten, Niesen, Lachen und Joggen, inzwischen 3–4 Vorlagen pro Tag. Kein Drang vor dem Urinverlust, kein Brennen, nachts kein Wasserlassen. Hat deswegen das Joggen aufgegeben.",
+      "vorerkrankungen": "Postmenopause seit 4 Jahren, chronischer Husten bei Asthma.",
+      "medikamente": "Salbutamol-Spray bei Bedarf, Budesonid-Spray.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Verheiratet, drei vaginale Geburten (ein Kind mit 4,2 kg). Physiotherapeutin. BMI 29. Nichtraucherin."
+    },
+    "sprache": [
+      {
+        "patient": "Wenn ich huste oder niese, verliere ich Urin.",
+        "fach": "Es besteht ein Urinverlust bei intraabdomineller Druckerhöhung."
+      },
+      {
+        "patient": "Ich brauche drei bis vier Einlagen am Tag.",
+        "fach": "Der Vorlagenverbrauch beträgt drei bis vier pro Tag."
+      },
+      {
+        "patient": "Ich habe drei Kinder normal entbunden.",
+        "fach": "Die Patientin hatte drei vaginale Entbindungen."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Belastungsinkontinenz",
+        "patient": "Urinverlust bei Druck auf den Bauch, z. B. Husten",
+        "uz": "zo‘riqishdagi siydik tuta olmaslik",
+        "ru": "стрессовое недержание мочи",
+        "tr": "stres inkontinansı",
+        "en": "stress urinary incontinence"
+      },
+      {
+        "de": "Beckenboden",
+        "patient": "Muskelschicht unten im Becken",
+        "uz": "chanoq tubi",
+        "ru": "тазовое дно",
+        "tr": "pelvik taban",
+        "en": "pelvic floor"
+      },
+      {
+        "de": "Miktionstagebuch",
+        "patient": "Aufzeichnung von Trinkmenge und Wasserlassen",
+        "uz": "siydik chiqarish kundaligi",
+        "ru": "дневник мочеиспускания",
+        "tr": "işeme günlüğü",
+        "en": "bladder diary"
+      },
+      {
+        "de": "Hustentest",
+        "patient": "Prüfung des Urinverlusts beim Husten",
+        "uz": "yo‘tal testi",
+        "ru": "кашлевая проба",
+        "tr": "öksürük testi",
+        "en": "cough stress test"
+      },
+      {
+        "de": "Spannungsfreies Vaginalband",
+        "patient": "Band unter der Harnröhre zur Behandlung der Inkontinenz",
+        "uz": "siydik yo‘li ostiga lenta (TVT)",
+        "ru": "среднеуретральная петля (TVT)",
+        "tr": "orta üretral askı (TVT)",
+        "en": "mid-urethral sling"
+      }
+    ],
+    "simulation": {
+      "opening": "Es ist mir etwas peinlich … Wenn ich huste oder niese, verliere ich Urin.",
+      "answers": {
+        "beginn": "Seit etwa zwei Jahren, langsam immer schlimmer.",
+        "lokalisation": "—",
+        "charakter": "Ein paar Tropfen bis ein Schwall, immer bei Husten, Niesen, Lachen oder beim Joggen. Vorher habe ich keinen Drang.",
+        "ausstrahlung": "—",
+        "begleit": "Kein Brennen, kein Blut im Urin. Ein Fremdkörpergefühl in der Scheide habe ich nicht.",
+        "vegetativ": "Nachts muss ich nicht raus. Stuhlgang ist normal.",
+        "vorerkrankungen": "Asthma, deshalb huste ich oft. Seit vier Jahren bin ich in den Wechseljahren.",
+        "medikamente": "Ein Asthmaspray, Budesonid, und Salbutamol bei Bedarf.",
+        "allergien": "Nein.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich bin verheiratet, habe drei Kinder normal entbunden, eins war über vier Kilo. Ich bin selbst Physiotherapeutin. Joggen habe ich deswegen aufgegeben.",
+        "noxen": "Ich rauche nicht. Kaffee drei Tassen am Tag."
+      }
+    },
+    "verdachtsdiagnose": "Belastungsinkontinenz Grad II",
+    "diagnoseKeywords": ["belastungsinkontinenz", "stressinkontinenz"],
+    "differenzialdiagnosen": [
+      "Dranginkontinenz (überaktive Blase)",
+      "Mischinkontinenz",
+      "Harnwegsinfekt",
+      "Überlaufinkontinenz",
+      "Genitaldeszensus"
+    ],
+    "untersuchungen": [
+      "Miktionstagebuch",
+      "Urinstatus",
+      "Gynäkologische Untersuchung mit Hustentest",
+      "Sonographie mit Restharn",
+      "Ggf. Urodynamik vor Operation"
+    ]
+  },
+  {
+    "id": "c159",
+    "title": "Paraphimose",
+    "category": "Urologie",
+    "difficulty": "leicht",
+    "patient": {
+      "name": "Paul Ziegler",
+      "age": 74,
+      "gender": "männlich",
+      "hauptbeschwerde": "Geschwollene, schmerzhafte Eichel nach Katheterwechsel"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Fremdanamnestisch (Pflegeheim): Seit dem Wechsel des Blasenkatheters gestern Vormittag zunehmend geschwollene, schmerzhafte Eichel, die Vorhaut lässt sich nicht mehr vorschieben. Patient unruhig, zieht am Katheter.",
+      "vorerkrankungen": "Morbus Alzheimer, benigne Prostatahyperplasie mit Dauerkatheter, Diabetes mellitus Typ 2.",
+      "medikamente": "Donepezil 10 mg, Tamsulosin 0,4 mg, Insulin glargin 14 IE.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Nicht erhebbar.",
+      "sozialanamnese": "Verwitwet, lebt im Pflegeheim. Gesetzlicher Betreuer: Sohn."
+    },
+    "sprache": [
+      {
+        "patient": "Die Vorhaut geht nicht mehr nach vorne.",
+        "fach": "Die retrahierte Vorhaut lässt sich nicht reponieren."
+      },
+      {
+        "patient": "Die Spitze vom Penis ist dick und blau.",
+        "fach": "Es besteht ein ödematös geschwollenes, livide verfärbtes Präputium und eine Glansschwellung."
+      },
+      {
+        "patient": "Das ist nach dem Katheterwechsel passiert.",
+        "fach": "Die Beschwerden traten nach dem Wechsel des Dauerkatheters auf."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Paraphimose",
+        "patient": "eingeklemmte, zurückgezogene Vorhaut",
+        "uz": "parafimoz",
+        "ru": "парафимоз",
+        "tr": "parafimozis",
+        "en": "paraphimosis"
+      },
+      {
+        "de": "Vorhaut",
+        "patient": "Haut über der Eichel",
+        "uz": "kertmak terisi (preputsiy)",
+        "ru": "крайняя плоть",
+        "tr": "sünnet derisi",
+        "en": "foreskin"
+      },
+      {
+        "de": "Manuelle Reposition",
+        "patient": "Zurückschieben mit der Hand",
+        "uz": "qo‘l bilan joyiga solish",
+        "ru": "ручное вправление",
+        "tr": "manuel redüksiyon",
+        "en": "manual reduction"
+      },
+      {
+        "de": "Dorsale Inzision",
+        "patient": "kleiner Schnitt am Schnürring",
+        "uz": "dorsal kesik",
+        "ru": "дорсальное рассечение",
+        "tr": "dorsal insizyon",
+        "en": "dorsal slit"
+      },
+      {
+        "de": "Zirkumzision",
+        "patient": "Beschneidung",
+        "uz": "sunnat (sirkumsiziya)",
+        "ru": "циркумцизия (обрезание)",
+        "tr": "sünnet",
+        "en": "circumcision"
+      }
+    ],
+    "simulation": {
+      "opening": "(Pflegekraft) Herr Ziegler hat seit gestern eine ganz geschwollene Eichel, die Vorhaut geht nicht mehr vor.",
+      "answers": {
+        "beginn": "(Pflegekraft) Seit dem Katheterwechsel gestern Vormittag. Heute Morgen ist es viel schlimmer.",
+        "lokalisation": "(Pflegekraft) Am Penis, an der Eichel.",
+        "charakter": "(Pflegekraft) Er stöhnt, wenn man ihn dort berührt. Die Vorhaut ist ganz dick hinter der Eichel.",
+        "ausstrahlung": "(Pflegekraft) —",
+        "begleit": "(Pflegekraft) Die Eichel ist dunkelrot bis bläulich. Der Katheter läuft noch. Fieber hat er nicht.",
+        "vegetativ": "(Pflegekraft) Er ist unruhiger als sonst und zieht am Katheter.",
+        "vorerkrankungen": "(Pflegekraft) Alzheimer, eine große Prostata mit Dauerkatheter und Zucker.",
+        "medikamente": "(Pflegekraft) Donepezil, Tamsulosin und Insulin.",
+        "allergien": "(Pflegekraft) Keine.",
+        "familie": "(Pflegekraft) Nicht bekannt.",
+        "sozial": "(Pflegekraft) Er lebt seit zwei Jahren bei uns. Sein Sohn ist der Betreuer.",
+        "noxen": "(Pflegekraft) Kein Alkohol, kein Rauchen."
+      }
+    },
+    "verdachtsdiagnose": "Paraphimose nach Katheterwechsel",
+    "diagnoseKeywords": ["paraphimose"],
+    "differenzialdiagnosen": ["Balanitis", "Angioödem", "Penisfraktur", "Insektenstich", "Peniskarzinom"],
+    "untersuchungen": [
+      "Inspektion (Schnürring, Durchblutung der Glans)",
+      "Prüfung der Katheterlage",
+      "Blutzucker",
+      "Urinstatus"
+    ]
+  },
+  {
+    "id": "c160",
+    "title": "HIV-Erstdiagnose mit PCP",
+    "category": "Infektiologie",
+    "difficulty": "schwer",
+    "patient": {
+      "name": "Daniel Kowalski",
+      "age": 38,
+      "gender": "männlich",
+      "hauptbeschwerde": "Zunehmende Atemnot und trockener Husten seit Wochen"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 3 Wochen langsam zunehmende Atemnot bei Belastung, inzwischen schon beim Treppensteigen eines Stockwerks, trockener Reizhusten, Fieber bis 38,5 °C. Seit Monaten Gewichtsverlust von 8 kg, Nachtschweiß, weißlicher Belag im Mund, Durchfälle.",
+      "vorerkrankungen": "Gürtelrose vor 1 Jahr. Sonst keine.",
+      "medikamente": "Keine.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Ledig, Barkeeper. Wechselnde Sexualpartner, Kondome nicht immer. Kein HIV-Test bisher. Raucher (10 Zigaretten/Tag), kein intravenöser Drogenkonsum."
+    },
+    "sprache": [
+      {
+        "patient": "Ich bekomme beim Treppensteigen kaum noch Luft.",
+        "fach": "Es besteht eine progrediente Belastungsdyspnoe."
+      },
+      {
+        "patient": "Im Mund habe ich einen weißen Belag.",
+        "fach": "Es besteht ein Mundsoor."
+      },
+      {
+        "patient": "Ich habe nicht immer Kondome benutzt.",
+        "fach": "Es besteht ein ungeschützter Geschlechtsverkehr mit wechselnden Partnern."
+      }
+    ],
+    "terms": [
+      {
+        "de": "HIV",
+        "patient": "Virus, das das Immunsystem schwächt",
+        "uz": "OIV (VICh)",
+        "ru": "ВИЧ",
+        "tr": "HIV",
+        "en": "HIV"
+      },
+      {
+        "de": "Pneumocystis-Pneumonie",
+        "patient": "Lungenentzündung durch einen Pilz bei Immunschwäche",
+        "uz": "pnevmotsistli pnevmoniya",
+        "ru": "пневмоцистная пневмония",
+        "tr": "Pneumocystis pnömonisi",
+        "en": "Pneumocystis pneumonia"
+      },
+      {
+        "de": "CD4-Zellen",
+        "patient": "Abwehrzellen, die HIV zerstört",
+        "uz": "CD4 hujayralari",
+        "ru": "CD4-клетки",
+        "tr": "CD4 hücreleri",
+        "en": "CD4 cells"
+      },
+      {
+        "de": "Antiretrovirale Therapie",
+        "patient": "Medikamente gegen HIV",
+        "uz": "antiretrovirus terapiya",
+        "ru": "антиретровирусная терапия",
+        "tr": "antiretroviral tedavi",
+        "en": "antiretroviral therapy"
+      },
+      {
+        "de": "Mundsoor",
+        "patient": "Pilzbefall der Mundschleimhaut",
+        "uz": "og‘iz kandidozi",
+        "ru": "кандидоз полости рта",
+        "tr": "ağız pamukçuğu",
+        "en": "oral thrush"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich bekomme seit Wochen immer schlechter Luft und habe einen trockenen Husten, der nicht weggeht.",
+      "answers": {
+        "beginn": "Seit etwa drei Wochen, langsam schlimmer. Abgenommen habe ich schon seit Monaten.",
+        "lokalisation": "In der Brust, wenn ich tief einatme, ein Engegefühl.",
+        "charakter": "Trockener Husten, kein Auswurf. Die Luftnot ist bei Belastung schlimm, schon nach einem Stockwerk.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Fieber bis 38,5, nachts schwitze ich stark. Im Mund habe ich einen weißen Belag und schlucken tut weh.",
+        "vegetativ": "Acht Kilo abgenommen in einem halben Jahr. Öfter Durchfall.",
+        "vorerkrankungen": "Letztes Jahr hatte ich eine Gürtelrose.",
+        "medikamente": "Keine.",
+        "allergien": "Nein.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich bin Barkeeper und Single. Ich habe wechselnde Partner und nicht immer Kondome benutzt. Einen HIV-Test habe ich nie gemacht.",
+        "noxen": "Ich rauche zehn Zigaretten am Tag. Drogen spritze ich nicht."
+      }
+    },
+    "verdachtsdiagnose": "Pneumocystis-jirovecii-Pneumonie bei Erstdiagnose einer HIV-Infektion (Stadium AIDS)",
+    "diagnoseKeywords": ["pneumocystis", "pcp", "hiv", "aids"],
+    "differenzialdiagnosen": [
+      "Bakterielle Pneumonie",
+      "Lungentuberkulose",
+      "COVID-19",
+      "Kaposi-Sarkom der Lunge",
+      "CMV-Pneumonie"
+    ],
+    "untersuchungen": [
+      "HIV-Suchtest mit Bestätigungstest",
+      "CD4-Zellzahl und HI-Viruslast",
+      "Blutgasanalyse und LDH",
+      "CT Thorax (milchglasartige Infiltrate)",
+      "Bronchoskopie mit BAL (Pneumocystis-PCR)",
+      "Tuberkulose-Diagnostik"
+    ],
+    "oberarzt": {
+      "therapie": [
+        "Hochdosiertes Cotrimoxazol",
+        "Prednisolon bei pO₂ unter 70 mmHg",
+        "Sauerstofftherapie",
+        "Beginn der antiretroviralen Therapie innerhalb von 2 Wochen",
+        "Behandlung des Soors mit Fluconazol"
+      ],
+      "komplikationen": [
+        "Respiratorische Insuffizienz mit Beatmungspflicht",
+        "Pneumothorax",
+        "Immunrekonstitutionssyndrom (IRIS)",
+        "Cotrimoxazol-Unverträglichkeit (Exanthem, Zytopenie)"
+      ]
+    }
+  },
+  {
+    "id": "c161",
+    "title": "Infektiöse Mononukleose",
+    "category": "Infektiologie",
+    "difficulty": "leicht",
+    "patient": {
+      "name": "Lea Brandner",
+      "age": 17,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Starke Halsschmerzen, Fieber und extreme Müdigkeit"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 6 Tagen starke Halsschmerzen, Fieber bis 39 °C, geschwollene Lymphknoten am Hals, extreme Müdigkeit. Vom Hausarzt vor 2 Tagen Amoxicillin bekommen, seit heute juckender Ausschlag am ganzen Körper. Leichter Druck im linken Oberbauch.",
+      "vorerkrankungen": "Keine.",
+      "medikamente": "Amoxicillin 1000 mg 1-1-1 seit 2 Tagen, Ibuprofen.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Schülerin (Abiturjahr), lebt bei den Eltern, spielt Volleyball. Fester Freund, der vor 3 Wochen ähnliche Beschwerden hatte."
+    },
+    "sprache": [
+      {
+        "patient": "Mein Hals tut so weh, dass ich kaum schlucken kann.",
+        "fach": "Es besteht eine ausgeprägte Odynophagie."
+      },
+      {
+        "patient": "Seit ich das Antibiotikum nehme, habe ich überall Ausschlag.",
+        "fach": "Unter Amoxicillin trat ein generalisiertes makulopapulöses Exanthem auf."
+      },
+      {
+        "patient": "Ich bin ständig müde.",
+        "fach": "Es besteht eine ausgeprägte Abgeschlagenheit."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Pfeiffersches Drüsenfieber",
+        "patient": "Infektion mit dem Epstein-Barr-Virus",
+        "uz": "infeksion mononukleoz",
+        "ru": "инфекционный мононуклеоз",
+        "tr": "enfeksiyöz mononükleoz",
+        "en": "glandular fever"
+      },
+      {
+        "de": "Epstein-Barr-Virus",
+        "patient": "Virus, das das Drüsenfieber auslöst",
+        "uz": "Epshteyn-Barr virusi",
+        "ru": "вирус Эпштейна — Барр",
+        "tr": "Epstein-Barr virüsü",
+        "en": "Epstein–Barr virus"
+      },
+      {
+        "de": "Splenomegalie",
+        "patient": "vergrößerte Milz",
+        "uz": "taloq kattalashishi",
+        "ru": "спленомегалия",
+        "tr": "splenomegali",
+        "en": "enlarged spleen"
+      },
+      {
+        "de": "Lymphadenopathie",
+        "patient": "geschwollene Lymphknoten",
+        "uz": "limfa tugunlari kattalashishi",
+        "ru": "лимфаденопатия",
+        "tr": "lenfadenopati",
+        "en": "lymphadenopathy"
+      },
+      {
+        "de": "Arzneimittelexanthem",
+        "patient": "Hautausschlag durch ein Medikament",
+        "uz": "dori toshmasi",
+        "ru": "лекарственная сыпь",
+        "tr": "ilaç döküntüsü",
+        "en": "drug rash"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe seit fast einer Woche ganz schlimme Halsschmerzen und Fieber, und jetzt habe ich auch noch überall Ausschlag.",
+      "answers": {
+        "beginn": "Seit sechs Tagen. Der Ausschlag ist seit heute Morgen da.",
+        "lokalisation": "Im Hals, und die Drüsen am Hals sind dick. Links oben im Bauch drückt es etwas.",
+        "charakter": "Brennende Halsschmerzen, acht von zehn, beim Schlucken am schlimmsten.",
+        "ausstrahlung": "In die Ohren.",
+        "begleit": "Fieber bis 39. Der Ausschlag juckt und ist überall. Ich bin unglaublich müde.",
+        "vegetativ": "Ich esse kaum etwas, weil das Schlucken so wehtut.",
+        "vorerkrankungen": "Ich bin gesund.",
+        "medikamente": "Seit zwei Tagen Amoxicillin dreimal am Tag und Ibuprofen.",
+        "allergien": "Bisher keine bekannt.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich bin im Abiturjahr und spiele Volleyball. Mein Freund war vor drei Wochen auch so krank.",
+        "noxen": "Ich rauche nicht und trinke keinen Alkohol."
+      }
+    },
+    "verdachtsdiagnose": "Infektiöse Mononukleose (EBV) mit Amoxicillin-assoziiertem Exanthem",
+    "diagnoseKeywords": ["mononukleose", "pfeiffer", "ebv", "epstein-barr"],
+    "differenzialdiagnosen": [
+      "Streptokokken-Angina",
+      "Akute HIV-Infektion",
+      "CMV-Infektion",
+      "Echte Penicillinallergie",
+      "Diphtherie"
+    ],
+    "untersuchungen": [
+      "Blutbild mit Differenzialblutbild (Lymphozytose, atypische Lymphozyten)",
+      "EBV-Serologie oder Schnelltest",
+      "Leberwerte",
+      "Abdomensonographie (Milzgröße)",
+      "Rachenabstrich auf Streptokokken"
+    ]
+  },
+  {
+    "id": "c162",
+    "title": "Spondylodiszitis",
+    "category": "Infektiologie",
+    "difficulty": "schwer",
+    "patient": {
+      "name": "Reinhard Voigt",
+      "age": 68,
+      "gender": "männlich",
+      "hauptbeschwerde": "Zunehmende Rückenschmerzen mit Fieber seit Wochen"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 4 Wochen zunehmende, auch nächtliche Schmerzen in der unteren Lendenwirbelsäule, die in Ruhe nicht besser werden. Seit 1 Woche Fieberschübe bis 38,8 °C, Nachtschweiß, Gewichtsverlust 4 kg. Seit gestern Kribbeln im linken Bein. Vor 6 Wochen Zahnextraktion mit Abszess.",
+      "vorerkrankungen": "Diabetes mellitus Typ 2 (HbA1c 8,9 %), chronische Niereninsuffizienz Stadium 3, Z. n. Aortenklappenersatz (biologisch) vor 3 Jahren.",
+      "medikamente": "Insulin, Metformin 500 mg, Ramipril 5 mg, ASS 100 mg.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Verheiratet, Rentner (früher Landwirt). Ehemaliger Raucher."
+    },
+    "sprache": [
+      {
+        "patient": "Der Rücken tut auch nachts und in Ruhe weh.",
+        "fach": "Es bestehen nächtliche Ruheschmerzen der LWS."
+      },
+      {
+        "patient": "Ich habe immer wieder Fieber und schwitze nachts.",
+        "fach": "Es bestehen intermittierendes Fieber und Nachtschweiß."
+      },
+      {
+        "patient": "Im linken Bein kribbelt es seit gestern.",
+        "fach": "Seit dem Vortag bestehen Parästhesien im linken Bein."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Spondylodiszitis",
+        "patient": "Entzündung von Bandscheibe und Wirbelkörpern",
+        "uz": "spondilodissit",
+        "ru": "спондилодисцит",
+        "tr": "spondilodiskit",
+        "en": "spondylodiscitis"
+      },
+      {
+        "de": "Epiduraler Abszess",
+        "patient": "Eiteransammlung im Wirbelkanal",
+        "uz": "epidural abssess",
+        "ru": "эпидуральный абсцесс",
+        "tr": "epidural apse",
+        "en": "epidural abscess"
+      },
+      {
+        "de": "Blutkultur",
+        "patient": "Untersuchung des Blutes auf Bakterien",
+        "uz": "qon ekmasi",
+        "ru": "посев крови",
+        "tr": "kan kültürü",
+        "en": "blood culture"
+      },
+      {
+        "de": "Endokarditis",
+        "patient": "Entzündung der Herzinnenhaut, oft an Klappen",
+        "uz": "endokardit",
+        "ru": "эндокардит",
+        "tr": "endokardit",
+        "en": "endocarditis"
+      },
+      {
+        "de": "CT-gesteuerte Biopsie",
+        "patient": "Gewebeprobe unter CT-Kontrolle",
+        "uz": "KT nazoratida biopsiya",
+        "ru": "биопсия под контролем КТ",
+        "tr": "BT eşliğinde biyopsi",
+        "en": "CT-guided biopsy"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe seit Wochen immer schlimmere Rückenschmerzen, und jetzt kommt auch noch Fieber dazu.",
+      "answers": {
+        "beginn": "Seit etwa vier Wochen, langsam schlimmer. Das Fieber seit einer Woche.",
+        "lokalisation": "Unten an der Lendenwirbelsäule, in der Mitte.",
+        "charakter": "Bohrend, sieben von zehn, auch nachts und im Liegen. Jede Erschütterung tut weh.",
+        "ausstrahlung": "Seit gestern ins linke Bein mit Kribbeln.",
+        "begleit": "Fieber bis 38,8, Nachtschweiß, vier Kilo abgenommen. Wasserlassen und Stuhlgang sind normal.",
+        "vegetativ": "Appetit schlecht.",
+        "vorerkrankungen": "Zucker, schwache Nieren und vor drei Jahren eine neue Herzklappe. Vor sechs Wochen wurde mir ein vereiterter Zahn gezogen.",
+        "medikamente": "Insulin, Metformin 500, Ramipril und ASS.",
+        "allergien": "Keine.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich bin verheiratet und Rentner, früher war ich Landwirt.",
+        "noxen": "Ich habe vor 15 Jahren aufgehört zu rauchen. Alkohol wenig."
+      }
+    },
+    "verdachtsdiagnose": "Spondylodiszitis LWK 4/5 mit Verdacht auf epiduralen Abszess, Verdacht auf Endokarditis",
+    "diagnoseKeywords": ["spondylodiszitis", "spondylodiscitis"],
+    "differenzialdiagnosen": [
+      "Wirbelkörpermetastasen",
+      "Osteoporotische Fraktur",
+      "Bandscheibenvorfall",
+      "Tuberkulöse Spondylitis",
+      "Multiples Myelom"
+    ],
+    "untersuchungen": [
+      "Mindestens zwei Blutkulturpaare vor Antibiose",
+      "MRT der Wirbelsäule mit Kontrastmittel",
+      "CT-gesteuerte Biopsie bei negativen Blutkulturen",
+      "Transösophageale Echokardiographie",
+      "Neurologische Untersuchung",
+      "CRP, BSG, Blutbild, Kreatinin"
+    ],
+    "oberarzt": {
+      "therapie": [
+        "Gezielte intravenöse Antibiose nach Erregernachweis über 6 Wochen",
+        "Operative Dekompression bei neurologischem Defizit oder epiduralem Abszess",
+        "Ruhigstellung und Orthese",
+        "Sanierung des Fokus (Zahn, Endokarditis)",
+        "Blutzuckereinstellung"
+      ],
+      "komplikationen": [
+        "Querschnittslähmung",
+        "Epiduraler Abszess",
+        "Sepsis",
+        "Instabilität der Wirbelsäule",
+        "Endokarditis der Klappenprothese"
+      ]
+    }
+  },
+  {
+    "id": "c163",
+    "title": "Septische Arthritis",
+    "category": "Infektiologie",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Gerda Wolff",
+      "age": 73,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Heißes, geschwollenes Knie mit Fieber"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 2 Tagen stark schmerzendes, geschwollenes, gerötetes und überwärmtes rechtes Knie, kann nicht mehr gehen, Fieber bis 38,9 °C. Vor 10 Tagen Kortisonspritze ins rechte Knie beim Orthopäden wegen Arthrose.",
+      "vorerkrankungen": "Rheumatoide Arthritis, Gonarthrose beidseits, Diabetes mellitus Typ 2.",
+      "medikamente": "Methotrexat 15 mg 1×/Woche, Folsäure, Prednisolon 5 mg, Metformin 1000 mg.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Verwitwet, lebt allein, Rentnerin. Nichtraucherin."
+    },
+    "sprache": [
+      {
+        "patient": "Mein Knie ist dick, rot und heiß.",
+        "fach": "Es besteht ein geschwollenes, gerötetes und überwärmtes Kniegelenk."
+      },
+      {
+        "patient": "Ich kann das Knie kaum bewegen.",
+        "fach": "Es besteht eine schmerzhafte Bewegungseinschränkung."
+      },
+      {
+        "patient": "Vor zehn Tagen hat mir der Orthopäde eine Spritze ins Knie gegeben.",
+        "fach": "Vor zehn Tagen erfolgte eine intraartikuläre Kortikoidinjektion."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Septische Arthritis",
+        "patient": "bakterielle Gelenkentzündung",
+        "uz": "septik artrit",
+        "ru": "септический артрит",
+        "tr": "septik artrit",
+        "en": "septic arthritis"
+      },
+      {
+        "de": "Gelenkpunktion",
+        "patient": "Entnahme von Flüssigkeit aus dem Gelenk",
+        "uz": "bo‘g‘im punksiyasi",
+        "ru": "пункция сустава",
+        "tr": "eklem ponksiyonu",
+        "en": "joint aspiration"
+      },
+      {
+        "de": "Synovialflüssigkeit",
+        "patient": "Gelenkflüssigkeit",
+        "uz": "sinovial suyuqlik",
+        "ru": "синовиальная жидкость",
+        "tr": "sinovyal sıvı",
+        "en": "synovial fluid"
+      },
+      {
+        "de": "Arthroskopische Spülung",
+        "patient": "Gelenkspülung über eine Kamera",
+        "uz": "artroskopik yuvish",
+        "ru": "артроскопический лаваж",
+        "tr": "artroskopik yıkama",
+        "en": "arthroscopic washout"
+      },
+      {
+        "de": "Immunsuppression",
+        "patient": "Schwächung der Abwehr durch Medikamente",
+        "uz": "immunosupressiya",
+        "ru": "иммуносупрессия",
+        "tr": "immünsüpresyon",
+        "en": "immunosuppression"
+      }
+    ],
+    "simulation": {
+      "opening": "Mein rechtes Knie ist seit zwei Tagen dick und heiß, und ich habe Fieber.",
+      "answers": {
+        "beginn": "Vor zwei Tagen, sehr schnell schlimmer.",
+        "lokalisation": "Rechtes Knie.",
+        "charakter": "Pochend, neun von zehn, auch in Ruhe. Ich kann es kaum bewegen.",
+        "ausstrahlung": "In den Unterschenkel.",
+        "begleit": "Fieber bis 38,9 und Schüttelfrost. Andere Gelenke sind nicht schlimmer als sonst.",
+        "vegetativ": "Ich fühle mich schlapp.",
+        "vorerkrankungen": "Rheuma, Arthrose in beiden Knien und Zucker.",
+        "medikamente": "Methotrexat 15 einmal pro Woche, Folsäure, Prednisolon 5 und Metformin.",
+        "allergien": "Keine.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich bin Witwe und lebe allein. Vor zehn Tagen hat mir der Orthopäde Kortison ins Knie gespritzt.",
+        "noxen": "Ich rauche nicht und trinke keinen Alkohol."
+      }
+    },
+    "verdachtsdiagnose": "Septische Arthritis des rechten Kniegelenks nach intraartikulärer Injektion",
+    "diagnoseKeywords": ["septische arthritis", "gelenkempyem", "bakterielle arthritis"],
+    "differenzialdiagnosen": [
+      "Akuter Schub der rheumatoiden Arthritis",
+      "Gicht",
+      "Pseudogicht (Chondrokalzinose)",
+      "Aktivierte Arthrose",
+      "Bursitis"
+    ],
+    "untersuchungen": [
+      "Gelenkpunktion vor Antibiose (Zellzahl, Gram-Färbung, Kultur, Kristalle)",
+      "Blutkulturen",
+      "CRP, Blutbild, Kreatinin",
+      "Röntgen Knie"
+    ]
+  },
+  {
+    "id": "c164",
+    "title": "Dengue-Fieber",
+    "category": "Infektiologie",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Sarah Klein",
+      "age": 31,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Hohes Fieber, Kopf- und Gliederschmerzen nach Thailandreise"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Vor 4 Tagen aus Thailand zurückgekehrt (3 Wochen Rucksackreise). Seit 3 Tagen plötzlich hohes Fieber bis 40 °C, starke Kopfschmerzen hinter den Augen, heftige Muskel- und Gelenkschmerzen. Seit heute Hautausschlag, Zahnfleischbluten beim Zähneputzen. Viele Mückenstiche.",
+      "vorerkrankungen": "Keine.",
+      "medikamente": "Ibuprofen 600 mg seit 2 Tagen.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Ledig, Grafikdesignerin. Keine Malariaprophylaxe, Reiseimpfungen gegen Hepatitis A und Typhus. Nichtraucherin."
+    },
+    "sprache": [
+      {
+        "patient": "Ich habe Kopfschmerzen hinter den Augen.",
+        "fach": "Es bestehen retroorbitale Kopfschmerzen."
+      },
+      {
+        "patient": "Alle Knochen und Muskeln tun mir weh.",
+        "fach": "Es bestehen ausgeprägte Myalgien und Arthralgien."
+      },
+      {
+        "patient": "Mein Zahnfleisch blutet beim Zähneputzen.",
+        "fach": "Es besteht eine Gingivablutung."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Dengue-Fieber",
+        "patient": "durch Mücken übertragene Viruserkrankung in den Tropen",
+        "uz": "denge isitmasi",
+        "ru": "лихорадка денге",
+        "tr": "dang humması",
+        "en": "dengue fever"
+      },
+      {
+        "de": "Thrombozytopenie",
+        "patient": "zu wenige Blutplättchen",
+        "uz": "trombotsitopeniya",
+        "ru": "тромбоцитопения",
+        "tr": "trombositopeni",
+        "en": "low platelets"
+      },
+      {
+        "de": "Warnzeichen",
+        "patient": "Hinweise auf einen schweren Verlauf",
+        "uz": "xavf belgilari",
+        "ru": "тревожные признаки",
+        "tr": "uyarı işaretleri",
+        "en": "warning signs"
+      },
+      {
+        "de": "Hämatokrit",
+        "patient": "Anteil der roten Blutkörperchen am Blut",
+        "uz": "gematokrit",
+        "ru": "гематокрит",
+        "tr": "hematokrit",
+        "en": "haematocrit"
+      },
+      {
+        "de": "NS1-Antigen",
+        "patient": "Bluttest für frühe Dengue-Infektion",
+        "uz": "NS1 antigeni",
+        "ru": "антиген NS1",
+        "tr": "NS1 antijeni",
+        "en": "NS1 antigen"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich bin vor vier Tagen aus Thailand zurückgekommen und habe seit drei Tagen sehr hohes Fieber.",
+      "answers": {
+        "beginn": "Vor drei Tagen ganz plötzlich, mit Schüttelfrost.",
+        "lokalisation": "Kopfschmerzen hinter den Augen, und alle Muskeln und Gelenke tun weh.",
+        "charakter": "Die Kopfschmerzen sind stark, sieben von zehn. Die Gliederschmerzen sind, als wären die Knochen gebrochen.",
+        "ausstrahlung": "—",
+        "begleit": "Seit heute habe ich einen Ausschlag, und mein Zahnfleisch blutet beim Zähneputzen. Bauchschmerzen habe ich leicht.",
+        "vegetativ": "Mir ist übel, einmal erbrochen. Ich trinke wenig.",
+        "vorerkrankungen": "Ich bin gesund.",
+        "medikamente": "Ibuprofen 600 seit zwei Tagen.",
+        "allergien": "Nein.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich war drei Wochen mit dem Rucksack in Thailand, auch auf dem Land. Ich wurde oft von Mücken gestochen. Malariatabletten habe ich nicht genommen.",
+        "noxen": "Ich rauche nicht. Im Urlaub habe ich etwas Alkohol getrunken."
+      }
+    },
+    "verdachtsdiagnose": "Dengue-Fieber mit Warnzeichen nach Thailandaufenthalt",
+    "diagnoseKeywords": ["dengue"],
+    "differenzialdiagnosen": [
+      "Malaria",
+      "Chikungunya",
+      "Zika-Virus-Infektion",
+      "Leptospirose",
+      "Typhus",
+      "Akute HIV-Infektion"
+    ],
+    "untersuchungen": [
+      "Malaria-Schnelltest und dicker Tropfen",
+      "Dengue-NS1-Antigen und Serologie",
+      "Blutbild mit Thrombozyten und Hämatokrit",
+      "Leberwerte, Gerinnung",
+      "Sonographie (Pleuraerguss, Aszites)"
+    ]
+  },
+  {
+    "id": "c165",
+    "title": "Nekrotisierende Fasziitis",
+    "category": "Infektiologie",
+    "difficulty": "schwer",
+    "patient": {
+      "name": "Manfred Kuhn",
+      "age": 59,
+      "gender": "männlich",
+      "hauptbeschwerde": "Extrem schmerzhafter, schnell zunehmender Infekt am Unterschenkel"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Vor 2 Tagen bei der Gartenarbeit kleine Schürfwunde am linken Unterschenkel. Seit gestern zunehmende Rötung und Schwellung, Schmerzen viel stärker, als die Haut aussieht. Heute bläuliche Verfärbung, Blasen, hohes Fieber, Verwirrtheit laut Ehefrau.",
+      "vorerkrankungen": "Diabetes mellitus Typ 2 (schlecht eingestellt), Adipositas, Alkoholabusus.",
+      "medikamente": "Metformin 1000 mg 1-0-1, Sitagliptin 100 mg.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Verheiratet, Hausmeister. Alkohol 4–6 Bier täglich. Raucher (20 Zigaretten/Tag)."
+    },
+    "sprache": [
+      {
+        "patient": "Das Bein tut viel mehr weh, als es aussieht.",
+        "fach": "Die Schmerzen sind im Verhältnis zum Lokalbefund unverhältnismäßig stark."
+      },
+      {
+        "patient": "Die Haut ist blau geworden und hat Blasen.",
+        "fach": "Es zeigen sich livide Hautverfärbungen und hämorrhagische Blasen."
+      },
+      {
+        "patient": "Er ist seit heute ganz durcheinander.",
+        "fach": "Seit heute besteht eine akute Verwirrtheit."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Nekrotisierende Fasziitis",
+        "patient": "schnell fortschreitende Infektion der Muskelhaut mit Gewebeuntergang",
+        "uz": "nekrozlovchi fassiit",
+        "ru": "некротизирующий фасциит",
+        "tr": "nekrotizan fasiit",
+        "en": "necrotising fasciitis"
+      },
+      {
+        "de": "Débridement",
+        "patient": "chirurgische Entfernung abgestorbenen Gewebes",
+        "uz": "debridment (o‘lik to‘qimani olib tashlash)",
+        "ru": "хирургическая обработка (некрэктомия)",
+        "tr": "debridman",
+        "en": "debridement"
+      },
+      {
+        "de": "Krepitation",
+        "patient": "Knistern unter der Haut durch Gas",
+        "uz": "krepitatsiya",
+        "ru": "крепитация",
+        "tr": "krepitasyon",
+        "en": "crepitus"
+      },
+      {
+        "de": "Clindamycin",
+        "patient": "Antibiotikum, das die Toxinbildung hemmt",
+        "uz": "klindamitsin",
+        "ru": "клиндамицин",
+        "tr": "klindamisin",
+        "en": "clindamycin"
+      },
+      {
+        "de": "Septischer Schock",
+        "patient": "lebensbedrohlicher Kreislaufzusammenbruch durch Infektion",
+        "uz": "septik shok",
+        "ru": "септический шок",
+        "tr": "septik şok",
+        "en": "septic shock"
+      }
+    ],
+    "simulation": {
+      "opening": "(Ehefrau) Mein Mann hat sich vor zwei Tagen am Bein verletzt, jetzt ist das Bein blau und er ist ganz verwirrt.",
+      "answers": {
+        "beginn": "(Ehefrau) Vor zwei Tagen beim Rasenmähen eine kleine Schürfwunde. Seit gestern rot und dick, heute furchtbar.",
+        "lokalisation": "(Patient) Linker Unterschenkel … bis zum Knie hoch.",
+        "charakter": "(Patient) Es tut unerträglich weh … zehn von zehn … viel mehr, als man sieht.",
+        "ausstrahlung": "(Ehefrau) Die Rötung wandert stündlich weiter nach oben.",
+        "begleit": "(Ehefrau) Hohes Fieber, Schüttelfrost. Die Haut ist blau und hat Blasen. Er ist seit heute verwirrt.",
+        "vegetativ": "(Ehefrau) Er hat heute kaum Wasser gelassen.",
+        "vorerkrankungen": "(Ehefrau) Zucker, schlecht eingestellt, und Übergewicht.",
+        "medikamente": "(Ehefrau) Metformin und Sitagliptin.",
+        "allergien": "(Ehefrau) Keine.",
+        "familie": "(Ehefrau) Nichts Besonderes.",
+        "sozial": "(Ehefrau) Wir sind verheiratet, er ist Hausmeister.",
+        "noxen": "(Ehefrau) Er trinkt jeden Tag vier bis sechs Bier und raucht eine Schachtel."
+      }
+    },
+    "verdachtsdiagnose": "Nekrotisierende Fasziitis des linken Unterschenkels mit septischem Schock",
+    "diagnoseKeywords": ["nekrotisierende fasziitis", "fasziitis"],
+    "differenzialdiagnosen": [
+      "Erysipel",
+      "Phlegmone",
+      "Gasbrand",
+      "Tiefe Beinvenenthrombose",
+      "Kompartmentsyndrom"
+    ],
+    "untersuchungen": [
+      "Klinische Diagnose, sofortige chirurgische Exploration",
+      "Blutkulturen",
+      "Laktat, CRP, Blutbild, Kreatinin, CK, Natrium, Blutzucker (LRINEC-Score)",
+      "Gewebeproben für Histologie und Mikrobiologie",
+      "Bildgebung nur, wenn die OP nicht verzögert wird"
+    ],
+    "oberarzt": {
+      "therapie": [
+        "Notfallmäßiges radikales Débridement",
+        "Second-Look-Operationen alle 24–48 Stunden",
+        "Piperacillin/Tazobactam plus Clindamycin",
+        "Intensivmedizinische Schocktherapie",
+        "Amputation bei unkontrollierbarer Infektion"
+      ],
+      "komplikationen": [
+        "Septischer Schock",
+        "Multiorganversagen",
+        "Toxisches Schocksyndrom",
+        "Amputation",
+        "Hohe Letalität"
+      ]
+    }
+  },
+  {
+    "id": "c166",
+    "title": "Legionellose",
+    "category": "Infektiologie",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Ulrich Becker",
+      "age": 64,
+      "gender": "männlich",
+      "hauptbeschwerde": "Hohes Fieber, Husten und Durchfall nach Hotelaufenthalt"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 4 Tagen hohes Fieber bis 39,8 °C, trockener Husten, Atemnot, Kopfschmerzen, wässrige Durchfälle, seit gestern leichte Verwirrtheit. Vor 8 Tagen von einer Busreise zurück, mehrere Hotelübernachtungen, Whirlpool im Hotel genutzt.",
+      "vorerkrankungen": "COPD, Diabetes mellitus Typ 2.",
+      "medikamente": "Tiotropium-Spray, Metformin 1000 mg.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Verheiratet, Rentner. Raucher (45 Packungsjahre). Alkohol 2 Bier täglich."
+    },
+    "sprache": [
+      {
+        "patient": "Ich habe hohes Fieber und einen trockenen Husten.",
+        "fach": "Es bestehen hohes Fieber und unproduktiver Husten."
+      },
+      {
+        "patient": "Ich habe seit Tagen Durchfall.",
+        "fach": "Es bestehen wässrige Diarrhöen."
+      },
+      {
+        "patient": "Im Hotel war ich mehrmals im Whirlpool.",
+        "fach": "Es besteht eine Exposition gegenüber Aerosolen aus einem Whirlpool."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Legionellose",
+        "patient": "Lungenentzündung durch Legionellen aus Wasserleitungen",
+        "uz": "legionellyoz",
+        "ru": "легионеллёз",
+        "tr": "lejyoner hastalığı",
+        "en": "Legionnaires’ disease"
+      },
+      {
+        "de": "Atypische Pneumonie",
+        "patient": "Lungenentzündung durch untypische Erreger",
+        "uz": "atipik pnevmoniya",
+        "ru": "атипичная пневмония",
+        "tr": "atipik pnömoni",
+        "en": "atypical pneumonia"
+      },
+      {
+        "de": "Urin-Antigentest",
+        "patient": "Schnelltest im Urin auf Legionellen",
+        "uz": "siydikda antigen testi",
+        "ru": "тест на антиген в моче",
+        "tr": "idrar antijen testi",
+        "en": "urinary antigen test"
+      },
+      {
+        "de": "Hyponatriämie",
+        "patient": "zu wenig Natrium im Blut",
+        "uz": "giponatriyemiya",
+        "ru": "гипонатриемия",
+        "tr": "hiponatremi",
+        "en": "hyponatraemia"
+      },
+      {
+        "de": "Meldepflicht",
+        "patient": "Pflicht, eine Krankheit dem Gesundheitsamt zu melden",
+        "uz": "xabar berish majburiyati",
+        "ru": "обязательное уведомление",
+        "tr": "bildirim zorunluluğu",
+        "en": "notifiable disease"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe seit vier Tagen hohes Fieber, Husten und Durchfall. Mir geht es richtig schlecht.",
+      "answers": {
+        "beginn": "Vor vier Tagen fing es an, mit Kopfschmerzen und Fieber. Vor acht Tagen kam ich von einer Busreise zurück.",
+        "lokalisation": "Die Brust tut beim Husten weh.",
+        "charakter": "Trockener Husten, kaum Auswurf. Ich bekomme schlecht Luft.",
+        "ausstrahlung": "—",
+        "begleit": "Fieber bis fast 40, Kopfschmerzen, wässriger Durchfall. Meine Frau sagt, ich bin seit gestern etwas durcheinander.",
+        "vegetativ": "Appetit null, ich habe mich zweimal übergeben.",
+        "vorerkrankungen": "COPD und Zucker.",
+        "medikamente": "Spiriva und Metformin.",
+        "allergien": "Keine.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich bin verheiratet und Rentner. Auf der Reise waren wir in mehreren Hotels, und ich war oft im Whirlpool.",
+        "noxen": "Ich rauche seit 45 Jahren und trinke zwei Bier am Tag."
+      }
+    },
+    "verdachtsdiagnose": "Legionellenpneumonie (Legionärskrankheit)",
+    "diagnoseKeywords": ["legionell", "legionärskrankheit"],
+    "differenzialdiagnosen": [
+      "Pneumokokkenpneumonie",
+      "Mykoplasmenpneumonie",
+      "COVID-19",
+      "Influenza",
+      "Akute Gastroenteritis"
+    ],
+    "untersuchungen": [
+      "Röntgen-Thorax",
+      "Legionellen-Antigen im Urin",
+      "Sputum- oder BAL-PCR auf Legionellen",
+      "Natrium, Leberwerte, CK, Kreatinin",
+      "Blutgasanalyse, CRB-65-Score"
+    ]
   }
 ]
