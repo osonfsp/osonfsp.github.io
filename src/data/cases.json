@@ -18355,5 +18355,1797 @@
       "Natrium, Leberwerte, CK, Kreatinin",
       "Blutgasanalyse, CRB-65-Score"
     ]
+  },
+  {
+    "id": "c167",
+    "title": "Akute Lumbago",
+    "category": "Allgemeinmedizin",
+    "difficulty": "leicht",
+    "patient": {
+      "name": "Stefan Graf",
+      "age": 42,
+      "gender": "männlich",
+      "hauptbeschwerde": "Plötzliche Kreuzschmerzen beim Heben"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Gestern beim Heben einer Getränkekiste plötzlich einschießende Schmerzen im unteren Rücken, kann sich kaum aufrichten. Keine Ausstrahlung ins Bein, kein Taubheitsgefühl, Wasserlassen und Stuhlgang normal. Kein Fieber, kein Trauma.",
+      "vorerkrankungen": "Ähnliche Episode vor 3 Jahren.",
+      "medikamente": "Keine.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Verheiratet, Bürokaufmann, sitzt viel, kaum Sport. BMI 28. Nichtraucher."
+    },
+    "sprache": [
+      {
+        "patient": "Es ist mir beim Heben in den Rücken geschossen.",
+        "fach": "Die Kreuzschmerzen traten akut beim Heben auf."
+      },
+      {
+        "patient": "Ich kann mich kaum aufrichten.",
+        "fach": "Es besteht eine schmerzbedingte Fehlhaltung mit eingeschränkter Beweglichkeit."
+      },
+      {
+        "patient": "Ins Bein strahlt nichts aus.",
+        "fach": "Eine radikuläre Ausstrahlung besteht nicht."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Lumbago",
+        "patient": "Hexenschuss, akute Kreuzschmerzen",
+        "uz": "lyumbago (bel og‘rig‘i)",
+        "ru": "люмбаго (прострел)",
+        "tr": "lumbago (bel tutulması)",
+        "en": "acute low back pain"
+      },
+      {
+        "de": "Red Flags",
+        "patient": "Warnzeichen für eine gefährliche Ursache",
+        "uz": "“qizil bayroq” belgilari",
+        "ru": "«красные флаги»",
+        "tr": "kırmızı bayraklar",
+        "en": "red flags"
+      },
+      {
+        "de": "Lasègue-Zeichen",
+        "patient": "Test auf Nervenwurzelreizung",
+        "uz": "Lasègue belgisi",
+        "ru": "симптом Ласега",
+        "tr": "Lasègue belirtisi",
+        "en": "straight leg raise test"
+      },
+      {
+        "de": "Muskelhartspann",
+        "patient": "verhärtete, verspannte Muskulatur",
+        "uz": "mushak tarangligi",
+        "ru": "мышечный спазм",
+        "tr": "kas spazmı",
+        "en": "muscle spasm"
+      },
+      {
+        "de": "Bettruhe",
+        "patient": "Liegen im Bett ohne Aktivität",
+        "uz": "yotoq rejimi",
+        "ru": "постельный режим",
+        "tr": "yatak istirahati",
+        "en": "bed rest"
+      }
+    ],
+    "simulation": {
+      "opening": "Mir ist gestern beim Heben einer Kiste der Rücken eingeschossen, ich kann mich kaum bewegen.",
+      "answers": {
+        "beginn": "Gestern Nachmittag, ganz plötzlich beim Heben.",
+        "lokalisation": "Unten im Kreuz, eher rechts.",
+        "charakter": "Stechend bei Bewegung, sieben von zehn. Im Liegen auf der Seite geht es.",
+        "ausstrahlung": "Nein, ins Bein strahlt nichts aus.",
+        "begleit": "Kein Taubheitsgefühl, keine Schwäche in den Beinen. Wasserlassen und Stuhlgang sind normal.",
+        "vegetativ": "Kein Fieber, kein Gewichtsverlust.",
+        "vorerkrankungen": "Vor drei Jahren hatte ich so etwas schon einmal, das war nach einer Woche weg.",
+        "medikamente": "Keine.",
+        "allergien": "Nein.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich bin Bürokaufmann und sitze den ganzen Tag. Sport mache ich kaum.",
+        "noxen": "Ich rauche nicht, Alkohol am Wochenende."
+      }
+    },
+    "verdachtsdiagnose": "Akuter unspezifischer Kreuzschmerz (Lumbago) ohne Warnzeichen",
+    "diagnoseKeywords": ["lumbago", "kreuzschmerz", "lumbalgie", "rückenschmerz"],
+    "differenzialdiagnosen": [
+      "Bandscheibenvorfall mit Radikulopathie",
+      "Wirbelkörperfraktur",
+      "Spondylodiszitis",
+      "Nierenkolik",
+      "Wirbelsäulenmetastasen"
+    ],
+    "untersuchungen": [
+      "Abfrage von Warnzeichen (Red Flags)",
+      "Neurologische Untersuchung der Beine (Kraft, Reflexe, Sensibilität, Lasègue)",
+      "Keine Bildgebung ohne Warnzeichen",
+      "Urinstatus bei Verdacht auf Nierenursache"
+    ]
+  },
+  {
+    "id": "c168",
+    "title": "Spannungskopfschmerz",
+    "category": "Allgemeinmedizin",
+    "difficulty": "leicht",
+    "patient": {
+      "name": "Julia Wagner",
+      "age": 34,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Fast tägliche drückende Kopfschmerzen"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 4 Monaten an etwa 20 Tagen im Monat beidseitige, drückende Kopfschmerzen wie ein zu enges Band um den Kopf, nachmittags schlimmer. Keine Übelkeit, kein Erbrechen, keine Licht- oder Lärmempfindlichkeit, keine neurologischen Ausfälle. Nimmt fast täglich Schmerzmittel.",
+      "vorerkrankungen": "Keine.",
+      "medikamente": "Ibuprofen 400 mg oder Paracetamol 500 mg an etwa 18 Tagen pro Monat.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Mutter: Kopfschmerzen.",
+      "sozialanamnese": "Alleinerziehend, zwei Kinder, Teamleiterin im Callcenter, 9 Stunden am Bildschirm, viel Stress, wenig Schlaf (5–6 Stunden). 5 Tassen Kaffee täglich. Nichtraucherin."
+    },
+    "sprache": [
+      {
+        "patient": "Es fühlt sich an wie ein zu enger Helm.",
+        "fach": "Die Kopfschmerzen sind von drückendem, bandförmigem Charakter."
+      },
+      {
+        "patient": "Ich nehme fast jeden Tag eine Schmerztablette.",
+        "fach": "Es besteht eine Einnahme von Analgetika an etwa 18 Tagen pro Monat."
+      },
+      {
+        "patient": "Ich schlafe nur fünf Stunden und habe viel Stress.",
+        "fach": "Es bestehen Schlafmangel und psychosoziale Belastung."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Spannungskopfschmerz",
+        "patient": "häufigster Kopfschmerz, drückend und beidseitig",
+        "uz": "taranglik bosh og‘rig‘i",
+        "ru": "головная боль напряжения",
+        "tr": "gerilim tipi baş ağrısı",
+        "en": "tension-type headache"
+      },
+      {
+        "de": "Medikamentenübergebrauchskopfschmerz",
+        "patient": "Kopfschmerz durch zu häufige Schmerzmittel",
+        "uz": "dori ortiqcha qabul qilishdan bosh og‘rig‘i",
+        "ru": "абузусная головная боль",
+        "tr": "ilaç aşırı kullanım baş ağrısı",
+        "en": "medication-overuse headache"
+      },
+      {
+        "de": "Kopfschmerztagebuch",
+        "patient": "Aufzeichnung von Kopfschmerzen und Medikamenten",
+        "uz": "bosh og‘rig‘i kundaligi",
+        "ru": "дневник головной боли",
+        "tr": "baş ağrısı günlüğü",
+        "en": "headache diary"
+      },
+      {
+        "de": "Amitriptylin",
+        "patient": "Medikament zur Vorbeugung chronischer Kopfschmerzen",
+        "uz": "amitriptilin",
+        "ru": "амитриптилин",
+        "tr": "amitriptilin",
+        "en": "amitriptyline"
+      },
+      {
+        "de": "Progressive Muskelentspannung",
+        "patient": "Entspannungsmethode nach Jacobson",
+        "uz": "progressiv mushak bo‘shashtirish",
+        "ru": "прогрессивная мышечная релаксация",
+        "tr": "progresif kas gevşemesi",
+        "en": "progressive muscle relaxation"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe fast jeden Tag Kopfschmerzen, das macht mich fertig.",
+      "answers": {
+        "beginn": "Seit etwa vier Monaten, an ungefähr zwanzig Tagen im Monat.",
+        "lokalisation": "Beidseits, an der Stirn und im Nacken, wie ein Band um den Kopf.",
+        "charakter": "Drückend, nicht pochend, vier bis fünf von zehn. Nachmittags schlimmer.",
+        "ausstrahlung": "In den Nacken.",
+        "begleit": "Keine Übelkeit, kein Flimmern vor den Augen, Licht stört mich nicht. Keine Lähmungen.",
+        "vegetativ": "Ich schlafe schlecht, nur fünf, sechs Stunden.",
+        "vorerkrankungen": "Ich bin gesund.",
+        "medikamente": "Fast täglich Ibuprofen 400 oder Paracetamol, ungefähr 18 Tage im Monat.",
+        "allergien": "Nein.",
+        "familie": "Meine Mutter hat auch oft Kopfschmerzen.",
+        "sozial": "Ich bin alleinerziehend mit zwei Kindern und Teamleiterin im Callcenter. Neun Stunden am Bildschirm, viel Stress.",
+        "noxen": "Ich trinke fünf Tassen Kaffee am Tag. Ich rauche nicht."
+      }
+    },
+    "verdachtsdiagnose": "Chronischer Spannungskopfschmerz mit Medikamentenübergebrauch",
+    "diagnoseKeywords": ["spannungskopfschmerz", "spannungstyp"],
+    "differenzialdiagnosen": [
+      "Migräne",
+      "Medikamentenübergebrauchskopfschmerz",
+      "Zervikogener Kopfschmerz",
+      "Arterielle Hypertonie",
+      "Intrakranielle Raumforderung"
+    ],
+    "untersuchungen": [
+      "Neurologische Untersuchung",
+      "Blutdruckmessung",
+      "Kopfschmerztagebuch",
+      "Bildgebung nur bei Warnzeichen",
+      "Augenärztliche Untersuchung (Sehschärfe)"
+    ]
+  },
+  {
+    "id": "c169",
+    "title": "Akute Bronchitis",
+    "category": "Allgemeinmedizin",
+    "difficulty": "leicht",
+    "patient": {
+      "name": "Martina Schreiber",
+      "age": 39,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Husten seit zehn Tagen nach Erkältung"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Vor 10 Tagen Schnupfen und Halsschmerzen, seitdem Husten, anfangs trocken, jetzt mit gelblichem Auswurf, Brennen hinter dem Brustbein beim Husten. Am Anfang leichtes Fieber bis 38 °C, jetzt fieberfrei. Keine Atemnot. Wünscht ein Antibiotikum.",
+      "vorerkrankungen": "Keine.",
+      "medikamente": "Hustensaft (Ambroxol).",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Verheiratet, zwei Kinder im Kindergartenalter (beide erkältet), Lehrerin. Nichtraucherin."
+    },
+    "sprache": [
+      {
+        "patient": "Ich huste jetzt gelben Schleim ab.",
+        "fach": "Es besteht ein produktiver Husten mit gelblichem Sputum."
+      },
+      {
+        "patient": "Beim Husten brennt es hinter dem Brustbein.",
+        "fach": "Es bestehen retrosternale Schmerzen beim Husten."
+      },
+      {
+        "patient": "Kann ich bitte ein Antibiotikum bekommen?",
+        "fach": "Die Patientin äußert den Wunsch nach einer Antibiotikatherapie."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Akute Bronchitis",
+        "patient": "Entzündung der Bronchien, meist durch Viren",
+        "uz": "o‘tkir bronxit",
+        "ru": "острый бронхит",
+        "tr": "akut bronşit",
+        "en": "acute bronchitis"
+      },
+      {
+        "de": "Auswurf",
+        "patient": "Schleim, der abgehustet wird",
+        "uz": "balg‘am",
+        "ru": "мокрота",
+        "tr": "balgam",
+        "en": "sputum"
+      },
+      {
+        "de": "Auskultation",
+        "patient": "Abhören der Lunge mit dem Stethoskop",
+        "uz": "auskultatsiya (eshitish)",
+        "ru": "аускультация",
+        "tr": "oskültasyon",
+        "en": "auscultation"
+      },
+      {
+        "de": "Virale Infektion",
+        "patient": "Infektion durch Viren, Antibiotika wirken nicht",
+        "uz": "virusli infeksiya",
+        "ru": "вирусная инфекция",
+        "tr": "viral enfeksiyon",
+        "en": "viral infection"
+      },
+      {
+        "de": "Antibiotikaresistenz",
+        "patient": "Bakterien werden unempfindlich gegen Antibiotika",
+        "uz": "antibiotiklarga chidamlilik",
+        "ru": "антибиотикорезистентность",
+        "tr": "antibiyotik direnci",
+        "en": "antibiotic resistance"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich huste seit zehn Tagen, jetzt kommt gelber Schleim. Ich glaube, ich brauche ein Antibiotikum.",
+      "answers": {
+        "beginn": "Vor zehn Tagen mit Schnupfen und Halsschmerzen, dann kam der Husten.",
+        "lokalisation": "Hinter dem Brustbein brennt es beim Husten.",
+        "charakter": "Erst trocken, jetzt mit gelbem Schleim. Nachts huste ich am meisten.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Am Anfang leichtes Fieber, 38. Jetzt kein Fieber mehr. Atemnot habe ich nicht.",
+        "vegetativ": "Ich bin etwas müde, sonst geht es.",
+        "vorerkrankungen": "Ich bin gesund, kein Asthma.",
+        "medikamente": "Einen Hustensaft mit Ambroxol.",
+        "allergien": "Keine.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich bin Lehrerin und habe zwei kleine Kinder im Kindergarten, die sind auch erkältet.",
+        "noxen": "Ich rauche nicht."
+      }
+    },
+    "verdachtsdiagnose": "Akute (virale) Bronchitis",
+    "diagnoseKeywords": ["bronchitis"],
+    "differenzialdiagnosen": [
+      "Ambulant erworbene Pneumonie",
+      "Pertussis",
+      "Asthma bronchiale",
+      "Sinusitis mit postnasalem Drip",
+      "COVID-19"
+    ],
+    "untersuchungen": [
+      "Auskultation der Lunge",
+      "Vitalzeichen (Temperatur, Atemfrequenz, Sauerstoffsättigung)",
+      "Röntgen-Thorax nur bei Verdacht auf Pneumonie",
+      "CRP-Schnelltest bei Unklarheit"
+    ]
+  },
+  {
+    "id": "c170",
+    "title": "Hitzschlag",
+    "category": "Allgemeinmedizin",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Erwin Haas",
+      "age": 81,
+      "gender": "männlich",
+      "hauptbeschwerde": "Verwirrtheit und hohe Körpertemperatur während einer Hitzewelle"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Fremdanamnestisch (Tochter): Seit 3 Tagen Hitzewelle mit 36 °C, Wohnung unter dem Dach sehr heiß. Heute verwirrt, schläfrig, heiße, trockene Haut, kaum getrunken, seit dem Morgen kein Wasserlassen. Körpertemperatur 40,6 °C.",
+      "vorerkrankungen": "Herzinsuffizienz, Morbus Parkinson, leichte Demenz.",
+      "medikamente": "Furosemid 40 mg, Ramipril 5 mg, Levodopa/Benserazid, Biperiden 2 mg.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Nicht relevant.",
+      "sozialanamnese": "Verwitwet, lebt allein in einer Dachwohnung, Tochter kommt jeden zweiten Tag. Kein Alkohol."
+    },
+    "sprache": [
+      {
+        "patient": "Er ist ganz durcheinander und glüht.",
+        "fach": "Es bestehen eine akute Bewusstseinsstörung und Hyperthermie."
+      },
+      {
+        "patient": "Er hat kaum etwas getrunken.",
+        "fach": "Es bestand eine unzureichende Flüssigkeitsaufnahme."
+      },
+      {
+        "patient": "Seine Wohnung unter dem Dach ist wie ein Backofen.",
+        "fach": "Es bestand eine ausgeprägte Hitzeexposition in einer Dachwohnung."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Hitzschlag",
+        "patient": "lebensgefährliche Überhitzung des Körpers",
+        "uz": "issiq urishi",
+        "ru": "тепловой удар",
+        "tr": "sıcak çarpması",
+        "en": "heatstroke"
+      },
+      {
+        "de": "Hyperthermie",
+        "patient": "zu hohe Körpertemperatur",
+        "uz": "gipertermiya",
+        "ru": "гипертермия",
+        "tr": "hipertermi",
+        "en": "hyperthermia"
+      },
+      {
+        "de": "Exsikkose",
+        "patient": "Austrocknung",
+        "uz": "suvsizlanish",
+        "ru": "эксикоз (обезвоживание)",
+        "tr": "dehidratasyon",
+        "en": "dehydration"
+      },
+      {
+        "de": "Rhabdomyolyse",
+        "patient": "Zerfall von Muskelgewebe",
+        "uz": "rabdomioliz",
+        "ru": "рабдомиолиз",
+        "tr": "rabdomiyoliz",
+        "en": "rhabdomyolysis"
+      },
+      {
+        "de": "Externe Kühlung",
+        "patient": "Kühlen von außen, z. B. mit Eispacks",
+        "uz": "tashqaridan sovutish",
+        "ru": "наружное охлаждение",
+        "tr": "dış soğutma",
+        "en": "external cooling"
+      }
+    ],
+    "simulation": {
+      "opening": "(Tochter) Mein Vater ist heute ganz verwirrt und glüht. Es ist seit Tagen so heiß in seiner Wohnung.",
+      "answers": {
+        "beginn": "(Tochter) Heute Morgen habe ich ihn so gefunden. Vorgestern war er noch normal.",
+        "lokalisation": "(Tochter) —",
+        "charakter": "(Tochter) Er ist schläfrig, antwortet nicht richtig. Die Haut ist heiß und trocken.",
+        "ausstrahlung": "(Tochter) —",
+        "begleit": "(Tochter) Er hat nicht gekrampft. Er schwitzt gar nicht. Seit heute früh hat er kein Wasser gelassen.",
+        "vegetativ": "(Tochter) Er hat kaum getrunken, die Flaschen waren voll.",
+        "vorerkrankungen": "(Tochter) Herzschwäche, Parkinson und eine leichte Demenz.",
+        "medikamente": "(Tochter) Furosemid 40, Ramipril, Madopar und Biperiden.",
+        "allergien": "(Tochter) Keine.",
+        "familie": "(Tochter) —",
+        "sozial": "(Tochter) Er ist Witwer und lebt allein unter dem Dach. Ich komme jeden zweiten Tag.",
+        "noxen": "(Tochter) Er trinkt keinen Alkohol und raucht nicht."
+      }
+    },
+    "verdachtsdiagnose": "Klassischer Hitzschlag mit Exsikkose bei einem älteren Patienten",
+    "diagnoseKeywords": ["hitzschlag", "hyperthermie"],
+    "differenzialdiagnosen": [
+      "Sepsis",
+      "Meningitis/Enzephalitis",
+      "Malignes neuroleptisches Syndrom",
+      "Anticholinerges Syndrom",
+      "Schlaganfall"
+    ],
+    "untersuchungen": [
+      "Rektale Temperaturmessung",
+      "Elektrolyte, Kreatinin, CK, Leberwerte, Gerinnung",
+      "Blutzucker, Blutgasanalyse",
+      "Blutkulturen und Urinstatus zum Infektausschluss",
+      "EKG"
+    ]
+  },
+  {
+    "id": "c171",
+    "title": "Vitamin-B12-Mangel",
+    "category": "Allgemeinmedizin",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Hildegard Lorenz",
+      "age": 72,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Müdigkeit, Kribbeln in den Füßen und Gangunsicherheit"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 6 Monaten zunehmende Müdigkeit, Kurzatmigkeit bei Belastung, Kribbeln und Taubheitsgefühl in beiden Füßen, seit einigen Wochen unsicherer Gang besonders im Dunkeln. Zungenbrennen. Familie bemerkt Vergesslichkeit.",
+      "vorerkrankungen": "Diabetes mellitus Typ 2 seit 12 Jahren, Refluxkrankheit, Hashimoto-Thyreoiditis.",
+      "medikamente": "Metformin 1000 mg 1-0-1 seit 12 Jahren, Pantoprazol 40 mg seit 8 Jahren, L-Thyroxin 75 µg.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Schwester: perniziöse Anämie.",
+      "sozialanamnese": "Verwitwet, lebt allein, isst wenig Fleisch. Nichtraucherin, kein Alkohol."
+    },
+    "sprache": [
+      {
+        "patient": "Meine Füße kribbeln und sind taub.",
+        "fach": "Es bestehen distal symmetrische Parästhesien und Hypästhesien der Füße."
+      },
+      {
+        "patient": "Im Dunkeln laufe ich ganz unsicher.",
+        "fach": "Es besteht eine Gangunsicherheit, die sich bei fehlender visueller Kontrolle verstärkt."
+      },
+      {
+        "patient": "Meine Zunge brennt.",
+        "fach": "Es besteht ein Zungenbrennen (Glossitis)."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Vitamin-B12-Mangel",
+        "patient": "zu wenig Vitamin B12 im Körper",
+        "uz": "B12 vitamini tanqisligi",
+        "ru": "дефицит витамина B12",
+        "tr": "B12 vitamini eksikliği",
+        "en": "vitamin B12 deficiency"
+      },
+      {
+        "de": "Makrozytäre Anämie",
+        "patient": "Blutarmut mit zu großen roten Blutkörperchen",
+        "uz": "makrotsitar anemiya",
+        "ru": "макроцитарная анемия",
+        "tr": "makrositer anemi",
+        "en": "macrocytic anaemia"
+      },
+      {
+        "de": "Funikuläre Myelose",
+        "patient": "Rückenmarksschädigung durch B12-Mangel",
+        "uz": "funikulyar mieloz",
+        "ru": "фуникулярный миелоз",
+        "tr": "subakut kombine dejenerasyon",
+        "en": "subacute combined degeneration"
+      },
+      {
+        "de": "Holotranscobalamin",
+        "patient": "aktiver Anteil von Vitamin B12 im Blut",
+        "uz": "golotranskobalamin",
+        "ru": "голотранскобаламин",
+        "tr": "holotranskobalamin",
+        "en": "holotranscobalamin"
+      },
+      {
+        "de": "Intrinsischer Faktor",
+        "patient": "Eiweiß aus dem Magen, nötig für die B12-Aufnahme",
+        "uz": "ichki omil (Kastl omili)",
+        "ru": "внутренний фактор Касла",
+        "tr": "intrinsik faktör",
+        "en": "intrinsic factor"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich bin seit Monaten so müde, und meine Füße kribbeln und sind taub.",
+      "answers": {
+        "beginn": "Seit etwa einem halben Jahr, langsam schlimmer. Das Laufen ist seit ein paar Wochen unsicher.",
+        "lokalisation": "Beide Füße, bis zu den Knöcheln.",
+        "charakter": "Kribbeln wie Ameisen und taub, als würde ich auf Watte laufen.",
+        "ausstrahlung": "Es steigt langsam die Unterschenkel hoch.",
+        "begleit": "Im Dunkeln laufe ich ganz unsicher. Meine Zunge brennt. Beim Treppensteigen bin ich schnell außer Atem. Meine Tochter sagt, ich bin vergesslich geworden.",
+        "vegetativ": "Appetit ist mäßig. Gewicht stabil.",
+        "vorerkrankungen": "Zucker seit zwölf Jahren, Sodbrennen und Hashimoto.",
+        "medikamente": "Metformin seit zwölf Jahren, Pantoprazol 40 seit acht Jahren und L-Thyroxin.",
+        "allergien": "Keine.",
+        "familie": "Meine Schwester hat eine perniziöse Anämie, sie bekommt Spritzen.",
+        "sozial": "Ich bin Witwe und lebe allein. Fleisch esse ich wenig.",
+        "noxen": "Ich rauche nicht und trinke keinen Alkohol."
+      }
+    },
+    "verdachtsdiagnose": "Vitamin-B12-Mangel mit makrozytärer Anämie und funikulärer Myelose",
+    "diagnoseKeywords": ["b12", "cobalamin", "perniziöse", "funikuläre"],
+    "differenzialdiagnosen": [
+      "Diabetische Polyneuropathie",
+      "Folsäuremangel",
+      "Hypothyreose",
+      "Myelodysplastisches Syndrom",
+      "Alkoholtoxische Polyneuropathie"
+    ],
+    "untersuchungen": [
+      "Blutbild mit MCV",
+      "Vitamin B12, Holotranscobalamin, Methylmalonsäure",
+      "Folsäure, TSH",
+      "Antikörper gegen Parietalzellen und Intrinsic Factor",
+      "Neurologische Untersuchung (Vibrationsempfinden, Romberg)",
+      "Gastroskopie bei autoimmuner Gastritis"
+    ]
+  },
+  {
+    "id": "c172",
+    "title": "Kohlenmonoxidvergiftung",
+    "category": "Allgemeinmedizin",
+    "difficulty": "schwer",
+    "patient": {
+      "name": "Ayşe Yilmaz",
+      "age": 37,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Kopfschmerzen, Übelkeit und Schwindel bei der ganzen Familie"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit dem Morgen starke Kopfschmerzen, Übelkeit, Schwindel und Benommenheit; der Ehemann und die zwei Kinder haben dieselben Beschwerden. Beschwerden besser, wenn sie draußen ist. Gasthermen-Wartung seit Jahren nicht erfolgt; die Katze ist heute sehr schläfrig. Kurz bewusstlos im Bad.",
+      "vorerkrankungen": "Keine. Schwangerschaft in der 14. Woche.",
+      "medikamente": "Folsäure.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Verheiratet, zwei Kinder (6 und 9 Jahre), Altbauwohnung mit Gastherme im Bad. Verkäuferin. Nichtraucherin."
+    },
+    "sprache": [
+      {
+        "patient": "Die ganze Familie hat Kopfschmerzen und Übelkeit.",
+        "fach": "Es bestehen gleichartige Symptome bei mehreren Haushaltsmitgliedern."
+      },
+      {
+        "patient": "Draußen geht es mir besser.",
+        "fach": "Die Beschwerden bessern sich außerhalb der Wohnung."
+      },
+      {
+        "patient": "Im Bad bin ich kurz ohnmächtig geworden.",
+        "fach": "Es kam zu einer kurzen Synkope."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Kohlenmonoxid",
+        "patient": "giftiges, geruchloses Gas aus unvollständiger Verbrennung",
+        "uz": "is gazi (uglerod monoksid)",
+        "ru": "угарный газ (монооксид углерода)",
+        "tr": "karbonmonoksit",
+        "en": "carbon monoxide"
+      },
+      {
+        "de": "CO-Hämoglobin",
+        "patient": "Hämoglobin, an das Kohlenmonoxid gebunden ist",
+        "uz": "karboksigemoglobin",
+        "ru": "карбоксигемоглобин",
+        "tr": "karboksihemoglobin",
+        "en": "carboxyhaemoglobin"
+      },
+      {
+        "de": "Pulsoxymetrie",
+        "patient": "Messung der Sauerstoffsättigung am Finger (bei CO falsch normal)",
+        "uz": "pulsoksimetriya",
+        "ru": "пульсоксиметрия",
+        "tr": "pulse oksimetri",
+        "en": "pulse oximetry"
+      },
+      {
+        "de": "Hyperbare Sauerstofftherapie",
+        "patient": "Sauerstoff unter Überdruck in einer Druckkammer",
+        "uz": "giperbarik kislorod terapiyasi",
+        "ru": "гипербарическая оксигенация",
+        "tr": "hiperbarik oksijen tedavisi",
+        "en": "hyperbaric oxygen therapy"
+      },
+      {
+        "de": "Gastherme",
+        "patient": "Gasheizung für Warmwasser und Heizung",
+        "uz": "gaz kolonkasi",
+        "ru": "газовая колонка",
+        "tr": "kombi",
+        "en": "gas boiler"
+      }
+    ],
+    "simulation": {
+      "opening": "Wir haben alle seit heute Morgen schlimme Kopfschmerzen und uns ist übel – ich, mein Mann und die Kinder.",
+      "answers": {
+        "beginn": "Seit dem Aufstehen heute Morgen. Gestern Abend war es schon etwas.",
+        "lokalisation": "Kopfschmerzen im ganzen Kopf, pochend.",
+        "charakter": "Stark, sieben von zehn. Mir ist schwindelig und ich bin wie benommen.",
+        "ausstrahlung": "—",
+        "begleit": "Übelkeit, einmal erbrochen. Im Bad bin ich kurz ohnmächtig geworden. Draußen wird es besser. Unsere Katze schläft den ganzen Tag.",
+        "vegetativ": "Fieber hat keiner von uns. Das Herz klopft schnell.",
+        "vorerkrankungen": "Ich bin gesund. Ich bin in der 14. Woche schwanger.",
+        "medikamente": "Nur Folsäure.",
+        "allergien": "Keine.",
+        "familie": "Mein Mann und meine Kinder haben genau dasselbe.",
+        "sozial": "Wir wohnen in einem Altbau, die Gastherme hängt im Bad. Gewartet wurde sie seit Jahren nicht.",
+        "noxen": "Ich rauche nicht und trinke keinen Alkohol."
+      }
+    },
+    "verdachtsdiagnose": "Kohlenmonoxidvergiftung (mehrere Haushaltsmitglieder) in der Schwangerschaft",
+    "diagnoseKeywords": ["kohlenmonoxid", "co-vergiftung", "co-intoxikation"],
+    "differenzialdiagnosen": [
+      "Virale Gastroenteritis",
+      "Lebensmittelvergiftung",
+      "Migräne",
+      "Influenza",
+      "Andere Rauchgasvergiftung"
+    ],
+    "untersuchungen": [
+      "CO-Hb-Messung in der venösen oder arteriellen Blutgasanalyse (CO-Oxymetrie)",
+      "Laktat, Troponin, EKG",
+      "Neurologische Untersuchung",
+      "Gynäkologische Untersuchung mit fetaler Herzaktion",
+      "Untersuchung aller Familienmitglieder"
+    ],
+    "oberarzt": {
+      "therapie": [
+        "Sofort 100 % Sauerstoff über Maske mit Reservoir",
+        "Hyperbare Sauerstofftherapie bei Bewusstlosigkeit, neurologischen Symptomen oder Schwangerschaft",
+        "Untersuchung und Behandlung aller Betroffenen",
+        "Information von Feuerwehr bzw. Schornsteinfeger",
+        "Kardiales Monitoring"
+      ],
+      "komplikationen": [
+        "Verzögerte neuropsychiatrische Folgeschäden",
+        "Myokardschädigung",
+        "Fetale Schädigung",
+        "Koma und Tod"
+      ]
+    }
+  },
+  {
+    "id": "c173",
+    "title": "Hundebiss",
+    "category": "Allgemeinmedizin",
+    "difficulty": "leicht",
+    "patient": {
+      "name": "Tobias Werner",
+      "age": 45,
+      "gender": "männlich",
+      "hauptbeschwerde": "Bisswunde an der Hand durch einen Hund"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Vor 3 Stunden beim Trennen zweier raufender Hunde vom fremden Hund in den rechten Handrücken gebissen. Zwei tiefe Stichwunden und ein Riss, Blutung gestillt. Finger frei beweglich, kein Taubheitsgefühl. Der Hund gehört einem Nachbarn und ist geimpft.",
+      "vorerkrankungen": "Keine.",
+      "medikamente": "Keine.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Verheiratet, Elektriker, Rechtshänder. Letzte Tetanusimpfung vor ca. 15 Jahren. Nichtraucher."
+    },
+    "sprache": [
+      {
+        "patient": "Ein Hund hat mir in die Hand gebissen.",
+        "fach": "Es besteht eine Hundebissverletzung am rechten Handrücken."
+      },
+      {
+        "patient": "Die Löcher sind ziemlich tief.",
+        "fach": "Es zeigen sich zwei tiefe Punktionswunden und eine Risswunde."
+      },
+      {
+        "patient": "Meine letzte Tetanusspritze ist ewig her.",
+        "fach": "Die letzte Tetanusimpfung liegt etwa 15 Jahre zurück."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Bissverletzung",
+        "patient": "Wunde durch den Biss eines Tieres",
+        "uz": "tishlash jarohati",
+        "ru": "укушенная рана",
+        "tr": "ısırık yarası",
+        "en": "bite wound"
+      },
+      {
+        "de": "Tetanusimpfung",
+        "patient": "Impfung gegen Wundstarrkrampf",
+        "uz": "qoqshol emlashi",
+        "ru": "прививка от столбняка",
+        "tr": "tetanoz aşısı",
+        "en": "tetanus vaccination"
+      },
+      {
+        "de": "Tollwut",
+        "patient": "tödliche Virusinfektion durch Tierbiss",
+        "uz": "quturish",
+        "ru": "бешенство",
+        "tr": "kuduz",
+        "en": "rabies"
+      },
+      {
+        "de": "Wundspülung",
+        "patient": "Ausspülen der Wunde",
+        "uz": "yarani yuvish",
+        "ru": "промывание раны",
+        "tr": "yara yıkama",
+        "en": "wound irrigation"
+      },
+      {
+        "de": "Amoxicillin/Clavulansäure",
+        "patient": "Antibiotikum bei Bissverletzungen",
+        "uz": "amoksitsillin/klavulan kislota",
+        "ru": "амоксициллин/клавуланат",
+        "tr": "amoksisilin/klavulanat",
+        "en": "co-amoxiclav"
+      }
+    ],
+    "simulation": {
+      "opening": "Mich hat vorhin ein Hund in die Hand gebissen, als ich zwei Hunde trennen wollte.",
+      "answers": {
+        "beginn": "Vor drei Stunden.",
+        "lokalisation": "Rechter Handrücken, über den Knöcheln.",
+        "charakter": "Brennend und pochend, vier von zehn.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Es hat geblutet, das hat aufgehört. Die Finger kann ich bewegen und spüren.",
+        "vegetativ": "Sonst geht es mir gut.",
+        "vorerkrankungen": "Ich bin gesund, kein Diabetes.",
+        "medikamente": "Keine.",
+        "allergien": "Keine, auch nicht gegen Penicillin.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich bin Elektriker und Rechtshänder. Der Hund gehört meinem Nachbarn und ist geimpft.",
+        "noxen": "Ich rauche nicht."
+      }
+    },
+    "verdachtsdiagnose": "Hundebissverletzung am rechten Handrücken",
+    "diagnoseKeywords": ["hundebiss", "bissverletzung", "bisswunde"],
+    "differenzialdiagnosen": [
+      "Sehnenverletzung",
+      "Gelenkeröffnung",
+      "Fraktur der Mittelhand",
+      "Beginnende Wundinfektion"
+    ],
+    "untersuchungen": [
+      "Prüfung von Durchblutung, Motorik, Sensibilität und Sehnenfunktion",
+      "Inspektion der Wundtiefe",
+      "Röntgen der Hand bei tiefer Verletzung",
+      "Impfstatus Tetanus und Tollwutrisiko klären"
+    ]
+  },
+  {
+    "id": "c174",
+    "title": "Akute Rhinosinusitis",
+    "category": "Allgemeinmedizin",
+    "difficulty": "leicht",
+    "patient": {
+      "name": "Nadine Kraus",
+      "age": 33,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Verstopfte Nase und Druck im Gesicht"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 6 Tagen nach Erkältung verstopfte Nase, gelblich-grünes Nasensekret, Druckgefühl über Stirn und Wangen, stärker beim Bücken, eingeschränktes Riechen. Leichte Temperatur bis 37,8 °C. Keine Sehstörung, keine Schwellung um die Augen.",
+      "vorerkrankungen": "Allergische Rhinitis (Gräserpollen).",
+      "medikamente": "Xylometazolin-Nasenspray seit 6 Tagen, Cetirizin bei Bedarf.",
+      "allergien": "Gräserpollen",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Ledig, Bankangestellte. Nichtraucherin."
+    },
+    "sprache": [
+      {
+        "patient": "Wenn ich mich bücke, drückt es in der Stirn und in den Wangen.",
+        "fach": "Es besteht ein Gesichtsschmerz über Stirn- und Kieferhöhlen, verstärkt beim Bücken."
+      },
+      {
+        "patient": "Ich rieche kaum etwas.",
+        "fach": "Es besteht eine Hyposmie."
+      },
+      {
+        "patient": "Aus der Nase kommt gelb-grüner Schleim.",
+        "fach": "Es besteht eine eitrige Rhinorrhö."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Rhinosinusitis",
+        "patient": "Entzündung der Nase und Nasennebenhöhlen",
+        "uz": "rinosinusit",
+        "ru": "риносинусит",
+        "tr": "rinosinüzit",
+        "en": "rhinosinusitis"
+      },
+      {
+        "de": "Nasennebenhöhlen",
+        "patient": "luftgefüllte Räume im Gesichtsschädel",
+        "uz": "burun yondosh bo‘shliqlari",
+        "ru": "придаточные пазухи носа",
+        "tr": "paranazal sinüsler",
+        "en": "paranasal sinuses"
+      },
+      {
+        "de": "Abschwellendes Nasenspray",
+        "patient": "Spray, das die Schleimhaut abschwellen lässt",
+        "uz": "tomir toraytiruvchi burun spreyi",
+        "ru": "сосудосуживающий спрей",
+        "tr": "dekonjestan burun spreyi",
+        "en": "decongestant nasal spray"
+      },
+      {
+        "de": "Nasenspülung",
+        "patient": "Spülen der Nase mit Salzlösung",
+        "uz": "burunni tuzli suv bilan yuvish",
+        "ru": "промывание носа",
+        "tr": "burun yıkama",
+        "en": "nasal irrigation"
+      },
+      {
+        "de": "Orbitale Komplikation",
+        "patient": "Ausbreitung der Entzündung auf die Augenhöhle",
+        "uz": "ko‘z kosasi asorati",
+        "ru": "орбитальное осложнение",
+        "tr": "orbital komplikasyon",
+        "en": "orbital complication"
+      }
+    ],
+    "simulation": {
+      "opening": "Meine Nase ist seit Tagen zu, und ich habe so einen Druck im Gesicht.",
+      "answers": {
+        "beginn": "Vor einer Woche hatte ich eine Erkältung, seit sechs Tagen ist es so.",
+        "lokalisation": "Über den Augenbrauen und in beiden Wangen.",
+        "charakter": "Ein dumpfer Druck, fünf von zehn, beim Bücken schlimmer.",
+        "ausstrahlung": "Manchmal in die Oberkieferzähne.",
+        "begleit": "Gelb-grüner Schleim, ich rieche kaum etwas. Leichte Temperatur, 37,8. Die Augen sind nicht geschwollen, ich sehe normal.",
+        "vegetativ": "Ich schlafe schlecht, weil ich nicht durch die Nase atmen kann.",
+        "vorerkrankungen": "Heuschnupfen im Frühjahr.",
+        "medikamente": "Seit sechs Tagen ein abschwellendes Nasenspray, und Cetirizin bei Bedarf.",
+        "allergien": "Gräserpollen.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich arbeite in einer Bank.",
+        "noxen": "Ich rauche nicht."
+      }
+    },
+    "verdachtsdiagnose": "Akute (virale) Rhinosinusitis",
+    "diagnoseKeywords": ["rhinosinusitis", "sinusitis"],
+    "differenzialdiagnosen": [
+      "Bakterielle Rhinosinusitis",
+      "Allergische Rhinitis",
+      "Dentogene Sinusitis",
+      "Migräne",
+      "Rhinitis medicamentosa"
+    ],
+    "untersuchungen": [
+      "Inspektion und Rhinoskopie",
+      "Klopfschmerz über den Nebenhöhlen",
+      "Prüfung der Augenbeweglichkeit und Lidschwellung",
+      "Bildgebung nur bei Komplikationsverdacht",
+      "Zahnärztliche Abklärung bei einseitigem Befund"
+    ]
+  },
+  {
+    "id": "c175",
+    "title": "Akute myeloische Leukämie",
+    "category": "Innere Medizin",
+    "difficulty": "schwer",
+    "patient": {
+      "name": "Petra Schuster",
+      "age": 58,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Müdigkeit, blaue Flecken und Fieber seit Wochen"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 3 Wochen zunehmende Schwäche und Atemnot bei Belastung, blaue Flecken ohne Verletzung, Zahnfleischbluten, kleine rote Punkte an den Beinen. Seit 5 Tagen Fieber bis 39 °C und Halsschmerzen trotz Antibiotikum vom Hausarzt.",
+      "vorerkrankungen": "Mammakarzinom vor 4 Jahren (Chemotherapie und Bestrahlung), seitdem tumorfrei.",
+      "medikamente": "Letrozol 2,5 mg, Amoxicillin seit 4 Tagen.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Verheiratet, zwei erwachsene Kinder, Bibliothekarin. Nichtraucherin."
+    },
+    "sprache": [
+      {
+        "patient": "Ich habe überall blaue Flecken, ohne mich gestoßen zu haben.",
+        "fach": "Es bestehen spontane Hämatome."
+      },
+      {
+        "patient": "An den Beinen sind kleine rote Punkte.",
+        "fach": "Es zeigen sich Petechien an den unteren Extremitäten."
+      },
+      {
+        "patient": "Das Fieber geht trotz Antibiotikum nicht weg.",
+        "fach": "Es besteht Fieber trotz antibiotischer Therapie."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Akute myeloische Leukämie",
+        "patient": "schnell verlaufender Blutkrebs der Knochenmarkzellen",
+        "uz": "o‘tkir mieloid leykoz",
+        "ru": "острый миелоидный лейкоз",
+        "tr": "akut miyeloid lösemi",
+        "en": "acute myeloid leukaemia"
+      },
+      {
+        "de": "Blasten",
+        "patient": "unreife Blutzellen",
+        "uz": "blastlar",
+        "ru": "бласты",
+        "tr": "blastlar",
+        "en": "blasts"
+      },
+      {
+        "de": "Knochenmarkpunktion",
+        "patient": "Entnahme von Knochenmark zur Untersuchung",
+        "uz": "suyak iligi punksiyasi",
+        "ru": "пункция костного мозга",
+        "tr": "kemik iliği aspirasyonu",
+        "en": "bone marrow aspiration"
+      },
+      {
+        "de": "Panzytopenie",
+        "patient": "Verminderung aller Blutzellreihen",
+        "uz": "pansitopeniya",
+        "ru": "панцитопения",
+        "tr": "pansitopeni",
+        "en": "pancytopenia"
+      },
+      {
+        "de": "Induktionschemotherapie",
+        "patient": "erste intensive Chemotherapie zur Remission",
+        "uz": "induksion kimyoterapiya",
+        "ru": "индукционная химиотерапия",
+        "tr": "indüksiyon kemoterapisi",
+        "en": "induction chemotherapy"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich bin seit Wochen total schlapp, habe überall blaue Flecken, und jetzt habe ich auch noch Fieber.",
+      "answers": {
+        "beginn": "Die Schwäche seit drei Wochen, das Fieber seit fünf Tagen.",
+        "lokalisation": "Die blauen Flecken an Armen und Beinen. Halsschmerzen.",
+        "charakter": "Ich bin so schwach, dass ich nach einem Stockwerk Pause machen muss.",
+        "ausstrahlung": "—",
+        "begleit": "Zahnfleischbluten beim Zähneputzen, rote Punkte an den Beinen. Fieber bis 39 trotz Antibiotikum.",
+        "vegetativ": "Nachtschweiß, zwei Kilo abgenommen.",
+        "vorerkrankungen": "Vor vier Jahren hatte ich Brustkrebs mit Chemotherapie und Bestrahlung, seitdem bin ich tumorfrei.",
+        "medikamente": "Letrozol und seit vier Tagen Amoxicillin vom Hausarzt.",
+        "allergien": "Keine.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich bin verheiratet, habe zwei erwachsene Kinder und arbeite als Bibliothekarin.",
+        "noxen": "Ich rauche nicht und trinke kaum Alkohol."
+      }
+    },
+    "verdachtsdiagnose": "Akute myeloische Leukämie (therapieassoziiert) mit Panzytopenie und febriler Neutropenie",
+    "diagnoseKeywords": ["leukämie", "aml"],
+    "differenzialdiagnosen": [
+      "Akute lymphatische Leukämie",
+      "Myelodysplastisches Syndrom",
+      "Aplastische Anämie",
+      "Immunthrombozytopenie",
+      "Knochenmarkmetastasen des Mammakarzinoms"
+    ],
+    "untersuchungen": [
+      "Blutbild mit Differenzialblutbild und Blutausstrich",
+      "Knochenmarkpunktion (Zytologie, Immunphänotypisierung, Zytogenetik, Molekulargenetik)",
+      "Gerinnung inklusive Fibrinogen und D-Dimere (DIC)",
+      "LDH, Harnsäure, Kalium, Kreatinin",
+      "Blutkulturen bei Fieber",
+      "HLA-Typisierung"
+    ],
+    "oberarzt": {
+      "therapie": [
+        "Sofortige Breitbandantibiose bei febriler Neutropenie",
+        "Thrombozyten- und Erythrozytentransfusionen",
+        "Induktionschemotherapie (z. B. 7+3)",
+        "Tumorlyseprophylaxe mit Flüssigkeit und Allopurinol",
+        "Allogene Stammzelltransplantation bei Hochrisiko"
+      ],
+      "komplikationen": [
+        "Neutropene Sepsis",
+        "Blutungen (z. B. Hirnblutung)",
+        "Disseminierte intravasale Gerinnung",
+        "Tumorlysesyndrom",
+        "Invasive Pilzinfektion"
+      ]
+    }
+  },
+  {
+    "id": "c176",
+    "title": "Hodgkin-Lymphom",
+    "category": "Innere Medizin",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Felix Hartmann",
+      "age": 26,
+      "gender": "männlich",
+      "hauptbeschwerde": "Schmerzlose Lymphknotenschwellung am Hals"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 2 Monaten schmerzlose, langsam größer werdende Schwellung links am Hals. Seit einigen Wochen Nachtschweiß (Wäsche wechseln), Gewichtsverlust 7 kg in 3 Monaten, Juckreiz am ganzen Körper. Gelegentlich Fieber am Abend. Nach Alkohol Schmerzen in den Lymphknoten.",
+      "vorerkrankungen": "Pfeiffersches Drüsenfieber mit 17 Jahren.",
+      "medikamente": "Keine.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Ledig, Doktorand der Chemie. Nichtraucher. Alkohol gelegentlich."
+    },
+    "sprache": [
+      {
+        "patient": "Am Hals ist ein Knoten, der nicht wehtut und größer wird.",
+        "fach": "Es besteht eine schmerzlose, progrediente zervikale Lymphknotenschwellung."
+      },
+      {
+        "patient": "Nachts muss ich die Wäsche wechseln, so nass bin ich.",
+        "fach": "Es besteht ausgeprägter Nachtschweiß."
+      },
+      {
+        "patient": "Mir juckt der ganze Körper.",
+        "fach": "Es besteht ein generalisierter Pruritus."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Hodgkin-Lymphom",
+        "patient": "bösartige Erkrankung des Lymphsystems mit Reed-Sternberg-Zellen",
+        "uz": "Xojkin limfomasi",
+        "ru": "лимфома Ходжкина",
+        "tr": "Hodgkin lenfoma",
+        "en": "Hodgkin lymphoma"
+      },
+      {
+        "de": "Lymphknotenexstirpation",
+        "patient": "operative Entfernung eines ganzen Lymphknotens",
+        "uz": "limfa tugunini olib tashlash",
+        "ru": "удаление лимфоузла",
+        "tr": "lenf nodu eksizyonu",
+        "en": "lymph node excision"
+      },
+      {
+        "de": "PET-CT",
+        "patient": "Bildgebung, die aktive Tumorzellen zeigt",
+        "uz": "PET-KT",
+        "ru": "ПЭТ-КТ",
+        "tr": "PET-BT",
+        "en": "PET-CT"
+      },
+      {
+        "de": "Ann-Arbor-Klassifikation",
+        "patient": "Stadieneinteilung von Lymphomen",
+        "uz": "Ann-Arbor tasnifi",
+        "ru": "классификация Энн-Арбор",
+        "tr": "Ann Arbor sınıflaması",
+        "en": "Ann Arbor staging"
+      },
+      {
+        "de": "Fertilitätserhalt",
+        "patient": "Maßnahmen zum Schutz der Fruchtbarkeit",
+        "uz": "nasl qoldirish qobiliyatini saqlash",
+        "ru": "сохранение фертильности",
+        "tr": "doğurganlığın korunması",
+        "en": "fertility preservation"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe seit zwei Monaten einen Knoten links am Hals, der immer größer wird.",
+      "answers": {
+        "beginn": "Vor etwa zwei Monaten bemerkt. Der Nachtschweiß kam vor ein paar Wochen dazu.",
+        "lokalisation": "Links am Hals, oberhalb des Schlüsselbeins.",
+        "charakter": "Gummiartig, etwa so groß wie eine Walnuss, tut nicht weh. Nur wenn ich Alkohol trinke, schmerzt er komisch.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Nachtschweiß, ich muss die Wäsche wechseln. Sieben Kilo abgenommen. Abends manchmal Fieber. Der ganze Körper juckt.",
+        "vegetativ": "Appetit ist schlechter. Husten habe ich nicht.",
+        "vorerkrankungen": "Mit 17 hatte ich Pfeiffersches Drüsenfieber.",
+        "medikamente": "Keine.",
+        "allergien": "Nein.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich bin Doktorand in Chemie, ledig. Irgendwann möchte ich Kinder.",
+        "noxen": "Ich rauche nicht. Alkohol selten, weil dann der Knoten wehtut."
+      }
+    },
+    "verdachtsdiagnose": "Verdacht auf Hodgkin-Lymphom mit B-Symptomatik",
+    "diagnoseKeywords": ["hodgkin", "lymphom"],
+    "differenzialdiagnosen": [
+      "Non-Hodgkin-Lymphom",
+      "Lymphknotentuberkulose",
+      "Reaktive Lymphadenitis",
+      "Metastase eines Karzinoms",
+      "Sarkoidose",
+      "Toxoplasmose"
+    ],
+    "untersuchungen": [
+      "Lymphknotenexstirpation mit Histologie",
+      "Blutbild, BSG, LDH, Leber- und Nierenwerte",
+      "PET-CT zum Staging",
+      "HIV-, Hepatitis-B- und -C-Serologie",
+      "Lungenfunktion und Echokardiographie vor Chemotherapie"
+    ]
+  },
+  {
+    "id": "c177",
+    "title": "Heparininduzierte Thrombozytopenie",
+    "category": "Innere Medizin",
+    "difficulty": "schwer",
+    "patient": {
+      "name": "Gisela Brand",
+      "age": 69,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Geschwollenes, schmerzhaftes Bein nach Hüftoperation"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Am 7. Tag nach Hüft-TEP rechts (stationär) neu geschwollenes, schmerzhaftes linkes Bein. Seit 5 Tagen erhält sie Heparin s.c. zur Thromboseprophylaxe. Thrombozyten von 245/nl präoperativ auf 82/nl gefallen. An der Injektionsstelle am Bauch gerötete, schmerzhafte Hautstellen.",
+      "vorerkrankungen": "Coxarthrose rechts, arterielle Hypertonie. Vor 2 Monaten Herzkatheter mit Heparin.",
+      "medikamente": "Unfraktioniertes Heparin 7.500 IE s.c. 2×/Tag, Metamizol, Amlodipin 5 mg.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Verheiratet, Rentnerin. Nichtraucherin."
+    },
+    "sprache": [
+      {
+        "patient": "Mein linkes Bein ist dick geworden und tut weh.",
+        "fach": "Es besteht eine schmerzhafte Schwellung des linken Beins."
+      },
+      {
+        "patient": "An den Einstichstellen am Bauch ist die Haut rot und tut weh.",
+        "fach": "An den Heparin-Injektionsstellen zeigen sich schmerzhafte erythematöse Hautläsionen."
+      },
+      {
+        "patient": "Vor zwei Monaten hatte ich eine Herzkatheteruntersuchung.",
+        "fach": "Vor zwei Monaten erfolgte eine Koronarangiographie mit Heparingabe."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Heparininduzierte Thrombozytopenie",
+        "patient": "Abfall der Blutplättchen durch Antikörper gegen Heparin, mit Thrombosen",
+        "uz": "geparin chaqirgan trombotsitopeniya",
+        "ru": "гепарин-индуцированная тромбоцитопения",
+        "tr": "heparin kaynaklı trombositopeni",
+        "en": "heparin-induced thrombocytopenia"
+      },
+      {
+        "de": "4T-Score",
+        "patient": "Punktwert zur Wahrscheinlichkeit einer HIT",
+        "uz": "4T shkalasi",
+        "ru": "шкала 4T",
+        "tr": "4T skoru",
+        "en": "4Ts score"
+      },
+      {
+        "de": "PF4-Heparin-Antikörper",
+        "patient": "Antikörper gegen Plättchenfaktor 4 und Heparin",
+        "uz": "PF4-geparin antitanalari",
+        "ru": "антитела к PF4-гепарину",
+        "tr": "PF4-heparin antikorları",
+        "en": "PF4-heparin antibodies"
+      },
+      {
+        "de": "Argatroban",
+        "patient": "Gerinnungshemmer ohne Heparin",
+        "uz": "argatroban",
+        "ru": "аргатробан",
+        "tr": "argatroban",
+        "en": "argatroban"
+      },
+      {
+        "de": "Paradoxe Thrombose",
+        "patient": "Blutgerinnsel trotz niedriger Plättchen",
+        "uz": "paradoksal tromboz",
+        "ru": "парадоксальный тромбоз",
+        "tr": "paradoks tromboz",
+        "en": "paradoxical thrombosis"
+      }
+    ],
+    "simulation": {
+      "opening": "Seit heute ist mein linkes Bein dick und tut weh. Ich wurde doch am rechten Hüftgelenk operiert.",
+      "answers": {
+        "beginn": "Heute Morgen, am siebten Tag nach der Operation.",
+        "lokalisation": "Linke Wade und Oberschenkel. Und am Bauch, wo die Spritzen sind.",
+        "charakter": "Ziehend und spannend, fünf von zehn.",
+        "ausstrahlung": "In die Kniekehle.",
+        "begleit": "Das Bein ist warm und dick. Atemnot habe ich nicht. Blutungen habe ich nicht bemerkt.",
+        "vegetativ": "Sonst geht es mir gut.",
+        "vorerkrankungen": "Arthrose in der Hüfte und Bluthochdruck. Vor zwei Monaten hatte ich einen Herzkatheter, der war unauffällig.",
+        "medikamente": "Heparin-Spritzen zweimal täglich, Metamizol und Amlodipin.",
+        "allergien": "Keine.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich bin verheiratet und Rentnerin.",
+        "noxen": "Ich rauche nicht."
+      }
+    },
+    "verdachtsdiagnose": "Heparininduzierte Thrombozytopenie Typ II mit tiefer Beinvenenthrombose links",
+    "diagnoseKeywords": ["heparininduzierte", "hit"],
+    "differenzialdiagnosen": [
+      "Postoperative Verdünnungsthrombozytopenie",
+      "Medikamentös induzierte Thrombozytopenie (Metamizol)",
+      "Sepsis mit Verbrauchskoagulopathie",
+      "Pseudothrombozytopenie",
+      "Immunthrombozytopenie"
+    ],
+    "untersuchungen": [
+      "4T-Score",
+      "PF4-Heparin-Antikörper (Suchtest)",
+      "Funktioneller Test (HIPA)",
+      "Duplexsonographie beider Beine",
+      "Blutausstrich, Gerinnung"
+    ],
+    "oberarzt": {
+      "therapie": [
+        "Sofortiges Absetzen jeglichen Heparins (auch Spülungen)",
+        "Alternative Antikoagulation mit Argatroban",
+        "Keine Thrombozytentransfusion",
+        "Überlappende Umstellung auf orale Antikoagulation erst nach Thrombozytenerholung",
+        "Dokumentation der HIT als Allergie (Notfallausweis)"
+      ],
+      "komplikationen": [
+        "Lungenembolie",
+        "Arterielle Thrombosen (Ischämie, Schlaganfall)",
+        "Venöse Gangrän unter Vitamin-K-Antagonisten",
+        "Hautnekrosen"
+      ]
+    }
+  },
+  {
+    "id": "c178",
+    "title": "Systemischer Lupus erythematodes",
+    "category": "Innere Medizin",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Aylin Demir",
+      "age": 27,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Gelenkschmerzen, Ausschlag im Gesicht und Müdigkeit"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 3 Monaten Schmerzen und Schwellung in Finger- und Handgelenken beidseits, Morgensteifigkeit 30 Minuten. Nach dem Sommerurlaub rötlicher Ausschlag auf Wangen und Nasenrücken, der die Nasolabialfalten ausspart. Müdigkeit, subfebrile Temperaturen, Haarausfall, schmerzlose Wunden am Gaumen. Seit einer Woche stechende Brustschmerzen beim Einatmen.",
+      "vorerkrankungen": "Keine. Eine Fehlgeburt vor einem Jahr.",
+      "medikamente": "Ibuprofen 400 mg bei Bedarf, Pille.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Tante: Hashimoto-Thyreoiditis.",
+      "sozialanamnese": "Verheiratet, Erzieherin, Kinderwunsch. Nichtraucherin."
+    },
+    "sprache": [
+      {
+        "patient": "Nach der Sonne habe ich einen roten Ausschlag auf Wangen und Nase bekommen.",
+        "fach": "Es besteht ein lichtempfindliches Schmetterlingserythem."
+      },
+      {
+        "patient": "Meine Finger und Handgelenke sind morgens steif und geschwollen.",
+        "fach": "Es besteht eine symmetrische Polyarthritis der kleinen Gelenke mit Morgensteifigkeit."
+      },
+      {
+        "patient": "Beim Einatmen sticht es in der Brust.",
+        "fach": "Es bestehen atemabhängige Thoraxschmerzen."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Systemischer Lupus erythematodes",
+        "patient": "Autoimmunerkrankung, die viele Organe betrifft",
+        "uz": "tizimli qizil yugurik",
+        "ru": "системная красная волчанка",
+        "tr": "sistemik lupus eritematozus",
+        "en": "systemic lupus erythematosus"
+      },
+      {
+        "de": "Schmetterlingserythem",
+        "patient": "Ausschlag auf Wangen und Nasenrücken",
+        "uz": "“kapalak” toshmasi",
+        "ru": "эритема в форме бабочки",
+        "tr": "kelebek döküntüsü",
+        "en": "butterfly rash"
+      },
+      {
+        "de": "Antinukleäre Antikörper",
+        "patient": "Antikörper gegen Zellkernbestandteile",
+        "uz": "antinuklear antitanalar",
+        "ru": "антинуклеарные антитела",
+        "tr": "antinükleer antikorlar",
+        "en": "antinuclear antibodies"
+      },
+      {
+        "de": "Hydroxychloroquin",
+        "patient": "Basismedikament bei Lupus",
+        "uz": "gidroksixloroxin",
+        "ru": "гидроксихлорохин",
+        "tr": "hidroksiklorokin",
+        "en": "hydroxychloroquine"
+      },
+      {
+        "de": "Lupusnephritis",
+        "patient": "Nierenbeteiligung beim Lupus",
+        "uz": "lyupus nefrit",
+        "ru": "волчаночный нефрит",
+        "tr": "lupus nefriti",
+        "en": "lupus nephritis"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe seit Monaten Gelenkschmerzen, und nach dem Urlaub habe ich einen Ausschlag im Gesicht bekommen.",
+      "answers": {
+        "beginn": "Die Gelenke seit etwa drei Monaten, der Ausschlag seit dem Urlaub vor sechs Wochen.",
+        "lokalisation": "Finger und Handgelenke beidseits. Der Ausschlag auf den Wangen und der Nase.",
+        "charakter": "Die Gelenke sind morgens steif, etwa eine halbe Stunde, und geschwollen. Schmerz vier von zehn.",
+        "ausstrahlung": "—",
+        "begleit": "Ich bin ständig müde, habe leichte Temperatur und verliere Haare. Am Gaumen habe ich Wunden, die nicht wehtun. Seit einer Woche sticht es beim Einatmen in der Brust.",
+        "vegetativ": "Der Urin schäumt in letzter Zeit etwas. Gewicht stabil.",
+        "vorerkrankungen": "Vor einem Jahr hatte ich eine Fehlgeburt, sonst nichts.",
+        "medikamente": "Ibuprofen bei Bedarf und die Pille.",
+        "allergien": "Nein.",
+        "familie": "Meine Tante hat Hashimoto.",
+        "sozial": "Ich bin verheiratet und Erzieherin. Wir möchten gerne Kinder.",
+        "noxen": "Ich rauche nicht, Alkohol selten."
+      }
+    },
+    "verdachtsdiagnose": "Systemischer Lupus erythematodes mit Arthritis, Hautbeteiligung und Serositis",
+    "diagnoseKeywords": ["lupus", "sle"],
+    "differenzialdiagnosen": [
+      "Rheumatoide Arthritis",
+      "Virale Arthritis (Parvovirus B19)",
+      "Rosazea",
+      "Medikamenteninduzierter Lupus",
+      "Antiphospholipid-Syndrom"
+    ],
+    "untersuchungen": [
+      "ANA, Anti-dsDNA, Anti-Sm-Antikörper",
+      "Komplement C3 und C4",
+      "Blutbild (Leuko-, Thrombozytopenie)",
+      "Urinstatus, Protein-Kreatinin-Quotient, Kreatinin",
+      "Antiphospholipid-Antikörper",
+      "Echokardiographie (Perikarderguss)"
+    ]
+  },
+  {
+    "id": "c179",
+    "title": "Hypokaliämie unter Diuretika",
+    "category": "Innere Medizin",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Waltraud Möller",
+      "age": 78,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Muskelschwäche, Herzstolpern und Verstopfung"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 1 Woche zunehmende Schwäche in den Beinen, kann kaum aus dem Sessel aufstehen, Muskelkrämpfe in den Waden, Herzstolpern, seit 4 Tagen kein Stuhlgang. Vor 3 Wochen wurde Hydrochlorothiazid zusätzlich angesetzt. Seit einer Woche Durchfall-Episode, inzwischen vorbei; wenig gegessen.",
+      "vorerkrankungen": "Arterielle Hypertonie, Herzinsuffizienz, Vorhofflimmern.",
+      "medikamente": "Torasemid 20 mg, Hydrochlorothiazid 25 mg (neu), Digitoxin 0,07 mg, Bisoprolol 2,5 mg, Apixaban 2,5 mg 1-0-1. Abführmittel (Bisacodyl) regelmäßig.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Nicht relevant.",
+      "sozialanamnese": "Verwitwet, lebt im betreuten Wohnen. Nichtraucherin."
+    },
+    "sprache": [
+      {
+        "patient": "Meine Beine sind so schwach, ich komme kaum aus dem Sessel.",
+        "fach": "Es besteht eine proximal betonte Muskelschwäche der Beine."
+      },
+      {
+        "patient": "Mein Herz stolpert.",
+        "fach": "Die Patientin berichtet über Palpitationen."
+      },
+      {
+        "patient": "Ich nehme regelmäßig Abführmittel.",
+        "fach": "Es besteht ein regelmäßiger Laxanziengebrauch."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Hypokaliämie",
+        "patient": "zu wenig Kalium im Blut",
+        "uz": "gipokaliyemiya",
+        "ru": "гипокалиемия",
+        "tr": "hipokalemi",
+        "en": "hypokalaemia"
+      },
+      {
+        "de": "Diuretikum",
+        "patient": "harntreibendes Medikament",
+        "uz": "siydik haydovchi dori",
+        "ru": "диуретик",
+        "tr": "diüretik",
+        "en": "diuretic"
+      },
+      {
+        "de": "U-Welle",
+        "patient": "zusätzliche Welle im EKG bei Kaliummangel",
+        "uz": "U to‘lqini",
+        "ru": "зубец U",
+        "tr": "U dalgası",
+        "en": "U wave"
+      },
+      {
+        "de": "Digitalisintoxikation",
+        "patient": "Vergiftung mit Herzglykosiden",
+        "uz": "digitalis bilan zaharlanish",
+        "ru": "дигиталисная интоксикация",
+        "tr": "dijital zehirlenmesi",
+        "en": "digitalis toxicity"
+      },
+      {
+        "de": "Kaliumsubstitution",
+        "patient": "Ersatz von Kalium",
+        "uz": "kaliy o‘rnini to‘ldirish",
+        "ru": "восполнение калия",
+        "tr": "potasyum replasmanı",
+        "en": "potassium replacement"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich bin seit einer Woche so schwach in den Beinen, und mein Herz stolpert dauernd.",
+      "answers": {
+        "beginn": "Seit etwa einer Woche, jeden Tag schlimmer.",
+        "lokalisation": "Vor allem die Oberschenkel. Krämpfe in den Waden.",
+        "charakter": "Die Beine sind wie Pudding, ich komme kaum aus dem Sessel.",
+        "ausstrahlung": "—",
+        "begleit": "Herzstolpern, vor allem abends. Seit vier Tagen kein Stuhlgang. Übelkeit ein bisschen, gelb sehe ich nichts.",
+        "vegetativ": "Letzte Woche hatte ich ein paar Tage Durchfall, das ist vorbei. Ich esse wenig.",
+        "vorerkrankungen": "Bluthochdruck, Herzschwäche und Vorhofflimmern.",
+        "medikamente": "Torasemid, seit drei Wochen zusätzlich eine neue Wassertablette, Digitoxin, Bisoprolol, Eliquis. Und regelmäßig Dulcolax.",
+        "allergien": "Keine.",
+        "familie": "—",
+        "sozial": "Ich bin Witwe und wohne im betreuten Wohnen.",
+        "noxen": "Ich rauche nicht und trinke keinen Alkohol."
+      }
+    },
+    "verdachtsdiagnose": "Schwere Hypokaliämie unter kombinierter Diuretikatherapie und Laxanzien bei Digitoxin-Therapie",
+    "diagnoseKeywords": ["hypokaliämie", "kaliummangel"],
+    "differenzialdiagnosen": [
+      "Digitalisintoxikation",
+      "Hypomagnesiämie",
+      "Hyperkalzämie",
+      "Myopathie (z. B. Statin)",
+      "Hypothyreose"
+    ],
+    "untersuchungen": [
+      "Kalium, Natrium, Magnesium, Kalzium, Kreatinin",
+      "EKG (U-Welle, ST-Senkung, Rhythmusstörungen)",
+      "Digitoxinspiegel",
+      "Blutgasanalyse (metabolische Alkalose)",
+      "Monitorüberwachung"
+    ]
+  },
+  {
+    "id": "c180",
+    "title": "Immunthrombozytopenie",
+    "category": "Innere Medizin",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Emma Schulze",
+      "age": 24,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Rote Punkte an den Beinen und Nasenbluten"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 4 Tagen viele kleine rote Punkte an den Unterschenkeln, blaue Flecken ohne Anlass, gestern 30 Minuten Nasenbluten, Zahnfleischbluten. Vor 3 Wochen grippaler Infekt. Kein Fieber, kein Gewichtsverlust, sonst fit. Regel aktuell stärker als sonst.",
+      "vorerkrankungen": "Keine.",
+      "medikamente": "Pille. Keine neuen Medikamente.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Keine Blutungsneigung.",
+      "sozialanamnese": "Ledig, Studentin der Pharmazie. Nichtraucherin, Alkohol gelegentlich."
+    },
+    "sprache": [
+      {
+        "patient": "An den Beinen habe ich viele kleine rote Pünktchen.",
+        "fach": "Es bestehen Petechien an beiden Unterschenkeln."
+      },
+      {
+        "patient": "Gestern hatte ich eine halbe Stunde Nasenbluten.",
+        "fach": "Am Vortag bestand eine 30-minütige Epistaxis."
+      },
+      {
+        "patient": "Vor drei Wochen hatte ich eine Grippe.",
+        "fach": "Vor drei Wochen bestand ein grippaler Infekt."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Immunthrombozytopenie",
+        "patient": "Abbau der Blutplättchen durch eigene Antikörper",
+        "uz": "immun trombotsitopeniya",
+        "ru": "иммунная тромбоцитопения",
+        "tr": "immün trombositopeni",
+        "en": "immune thrombocytopenia"
+      },
+      {
+        "de": "Petechien",
+        "patient": "punktförmige Hautblutungen",
+        "uz": "petexiyalar",
+        "ru": "петехии",
+        "tr": "peteşi",
+        "en": "petechiae"
+      },
+      {
+        "de": "Blutausstrich",
+        "patient": "Untersuchung der Blutzellen unter dem Mikroskop",
+        "uz": "qon surtmasi",
+        "ru": "мазок крови",
+        "tr": "periferik yayma",
+        "en": "blood smear"
+      },
+      {
+        "de": "Pseudothrombozytopenie",
+        "patient": "falsch niedrige Plättchen durch Verklumpen im Röhrchen",
+        "uz": "soxta trombotsitopeniya",
+        "ru": "псевдотромбоцитопения",
+        "tr": "psödotrombositopeni",
+        "en": "pseudothrombocytopenia"
+      },
+      {
+        "de": "Immunglobuline",
+        "patient": "Antikörperinfusion",
+        "uz": "immunoglobulinlar",
+        "ru": "иммуноглобулины",
+        "tr": "immünglobulinler",
+        "en": "immunoglobulins"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe überall an den Beinen kleine rote Punkte, und gestern hatte ich lange Nasenbluten.",
+      "answers": {
+        "beginn": "Die Punkte seit vier Tagen, das Nasenbluten gestern.",
+        "lokalisation": "Vor allem an den Unterschenkeln. Blaue Flecken an den Armen.",
+        "charakter": "Die Punkte tun nicht weh und gehen nicht weg, wenn ich drücke.",
+        "ausstrahlung": "—",
+        "begleit": "Zahnfleischbluten beim Zähneputzen, die Regel ist stärker als sonst. Blut im Urin oder Stuhl habe ich nicht gesehen. Kopfschmerzen habe ich nicht.",
+        "vegetativ": "Kein Fieber, kein Nachtschweiß, kein Gewichtsverlust.",
+        "vorerkrankungen": "Ich bin gesund. Vor drei Wochen hatte ich eine Grippe.",
+        "medikamente": "Nur die Pille, nichts Neues. Auch kein Aspirin.",
+        "allergien": "Nein.",
+        "familie": "In meiner Familie blutet niemand auffällig.",
+        "sozial": "Ich studiere Pharmazie.",
+        "noxen": "Ich rauche nicht, Alkohol selten."
+      }
+    },
+    "verdachtsdiagnose": "Primäre Immunthrombozytopenie (ITP) mit Schleimhautblutung",
+    "diagnoseKeywords": ["immunthrombozytopenie", "itp"],
+    "differenzialdiagnosen": [
+      "Pseudothrombozytopenie",
+      "Akute Leukämie",
+      "Medikamentöse Thrombozytopenie",
+      "Systemischer Lupus erythematodes",
+      "HIV- oder Hepatitis-C-Infektion",
+      "Thrombotisch-thrombozytopenische Purpura"
+    ],
+    "untersuchungen": [
+      "Blutbild mit Blutausstrich (Citratblut)",
+      "Gerinnung",
+      "HIV-, Hepatitis-B- und -C-Serologie, Helicobacter pylori",
+      "ANA, TSH",
+      "Knochenmarkpunktion nur bei atypischem Befund"
+    ]
+  },
+  {
+    "id": "c181",
+    "title": "Hämochromatose",
+    "category": "Innere Medizin",
+    "difficulty": "leicht",
+    "patient": {
+      "name": "Dieter Braun",
+      "age": 52,
+      "gender": "männlich",
+      "hauptbeschwerde": "Müdigkeit, Gelenkschmerzen und erhöhte Leberwerte"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 1–2 Jahren Müdigkeit und Schmerzen in den Fingergrundgelenken 2 und 3 beidseits. Libidoverlust. Beim Hausarzt erhöhte Leberwerte. Die Haut sei dunkler geworden, obwohl er nicht in der Sonne war.",
+      "vorerkrankungen": "Diabetes mellitus Typ 2 seit 2 Jahren.",
+      "medikamente": "Metformin 1000 mg 1-0-1.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Vater mit 60 an Leberzirrhose verstorben (trank keinen Alkohol).",
+      "sozialanamnese": "Verheiratet, zwei Kinder (25 und 22), Polizeibeamter. Alkohol 1–2 Bier am Wochenende. Nichtraucher."
+    },
+    "sprache": [
+      {
+        "patient": "Die Fingergelenke tun mir weh, vor allem am Zeige- und Mittelfinger.",
+        "fach": "Es bestehen Arthralgien der MCP-Gelenke II und III beidseits."
+      },
+      {
+        "patient": "Meine Haut ist dunkler geworden.",
+        "fach": "Es besteht eine Hyperpigmentierung der Haut."
+      },
+      {
+        "patient": "Mein Vater ist an einer Leberzirrhose gestorben, obwohl er keinen Alkohol trank.",
+        "fach": "Der Vater verstarb an einer nicht-alkoholischen Leberzirrhose."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Hämochromatose",
+        "patient": "erbliche Eisenüberladung des Körpers",
+        "uz": "gemoxromatoz",
+        "ru": "гемохроматоз",
+        "tr": "hemokromatozis",
+        "en": "haemochromatosis"
+      },
+      {
+        "de": "Ferritin",
+        "patient": "Eisenspeicherwert im Blut",
+        "uz": "ferritin",
+        "ru": "ферритин",
+        "tr": "ferritin",
+        "en": "ferritin"
+      },
+      {
+        "de": "Transferrinsättigung",
+        "patient": "Anteil des mit Eisen beladenen Transportproteins",
+        "uz": "transferrin to‘yinganligi",
+        "ru": "насыщение трансферрина",
+        "tr": "transferrin satürasyonu",
+        "en": "transferrin saturation"
+      },
+      {
+        "de": "Aderlass",
+        "patient": "Blutentnahme als Therapie",
+        "uz": "qon chiqarish (flebotomiya)",
+        "ru": "кровопускание",
+        "tr": "flebotomi",
+        "en": "venesection"
+      },
+      {
+        "de": "HFE-Gen",
+        "patient": "Gen, das bei Hämochromatose verändert ist",
+        "uz": "HFE geni",
+        "ru": "ген HFE",
+        "tr": "HFE geni",
+        "en": "HFE gene"
+      }
+    ],
+    "simulation": {
+      "opening": "Mein Hausarzt hat erhöhte Leberwerte gefunden, und ich bin seit langem müde.",
+      "answers": {
+        "beginn": "Die Müdigkeit seit ein, zwei Jahren. Die Leberwerte wurden vor einem Monat gefunden.",
+        "lokalisation": "Die Gelenke an Zeige- und Mittelfinger beider Hände.",
+        "charakter": "Dumpf, drei bis vier von zehn, beim Zugreifen schlimmer.",
+        "ausstrahlung": "—",
+        "begleit": "Meine Haut ist dunkler geworden, obwohl ich nicht in der Sonne war. Lust auf Sex habe ich kaum noch.",
+        "vegetativ": "Gewicht stabil. Bauchschmerzen habe ich nicht.",
+        "vorerkrankungen": "Seit zwei Jahren Zucker.",
+        "medikamente": "Metformin 1000 morgens und abends.",
+        "allergien": "Keine.",
+        "familie": "Mein Vater ist mit 60 an einer Leberzirrhose gestorben, er hat nie Alkohol getrunken.",
+        "sozial": "Ich bin verheiratet, habe zwei erwachsene Kinder und bin Polizeibeamter.",
+        "noxen": "Am Wochenende ein, zwei Bier. Ich rauche nicht."
+      }
+    },
+    "verdachtsdiagnose": "Hereditäre Hämochromatose mit Leber-, Gelenk- und Pankreasbeteiligung",
+    "diagnoseKeywords": ["hämochromatose", "eisenüberladung"],
+    "differenzialdiagnosen": [
+      "Nicht-alkoholische Fettlebererkrankung",
+      "Alkoholische Lebererkrankung",
+      "Sekundäre Eisenüberladung",
+      "Rheumatoide Arthritis",
+      "Morbus Wilson"
+    ],
+    "untersuchungen": [
+      "Ferritin und Transferrinsättigung",
+      "HFE-Gentest (C282Y)",
+      "Leberwerte, Sonographie, Fibroscan",
+      "MRT Leber (Eisengehalt), ggf. Leberbiopsie",
+      "HbA1c, Testosteron",
+      "Familienscreening"
+    ]
+  },
+  {
+    "id": "c182",
+    "title": "Polycythaemia vera",
+    "category": "Innere Medizin",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Karl-Heinz Wolf",
+      "age": 63,
+      "gender": "männlich",
+      "hauptbeschwerde": "Juckreiz nach dem Duschen, Kopfschmerzen und rotes Gesicht"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit Monaten starker Juckreiz nach warmem Duschen, Kopfschmerzen, Schwindel, Ohrensausen, Sehstörungen mit Flimmern. Rötliches Gesicht. Brennende, gerötete Finger und Zehen. Vor 2 Monaten kurzzeitige Schwäche im rechten Arm, die nach 20 Minuten vollständig verschwand.",
+      "vorerkrankungen": "Arterielle Hypertonie, Gicht.",
+      "medikamente": "Ramipril 5 mg, Allopurinol 100 mg.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Verheiratet, Rentner (früher Busfahrer). Nichtraucher seit 20 Jahren. Kein Schlafapnoe-Verdacht laut Ehefrau."
+    },
+    "sprache": [
+      {
+        "patient": "Nach dem Duschen juckt mein ganzer Körper.",
+        "fach": "Es besteht ein aquagener Pruritus."
+      },
+      {
+        "patient": "Mein rechter Arm war vor zwei Monaten kurz schwach.",
+        "fach": "Vor zwei Monaten bestand eine transitorische ischämische Attacke mit Armparese rechts."
+      },
+      {
+        "patient": "Meine Finger brennen und sind rot.",
+        "fach": "Es besteht eine Erythromelalgie."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Polycythaemia vera",
+        "patient": "Bluterkrankung mit zu vielen roten Blutkörperchen",
+        "uz": "haqiqiy polisitemiya",
+        "ru": "истинная полицитемия",
+        "tr": "polisitemia vera",
+        "en": "polycythaemia vera"
+      },
+      {
+        "de": "JAK2-Mutation",
+        "patient": "Genveränderung, typisch für Polycythaemia vera",
+        "uz": "JAK2 mutatsiyasi",
+        "ru": "мутация JAK2",
+        "tr": "JAK2 mutasyonu",
+        "en": "JAK2 mutation"
+      },
+      {
+        "de": "Aquagener Pruritus",
+        "patient": "Juckreiz nach Wasserkontakt",
+        "uz": "suvdan keyingi qichishish",
+        "ru": "аквагенный зуд",
+        "tr": "akuajenik kaşıntı",
+        "en": "aquagenic pruritus"
+      },
+      {
+        "de": "Aderlass",
+        "patient": "Blutentnahme zur Senkung des Hämatokrits",
+        "uz": "qon chiqarish",
+        "ru": "кровопускание",
+        "tr": "flebotomi",
+        "en": "venesection"
+      },
+      {
+        "de": "Hydroxyurea",
+        "patient": "Medikament zur Senkung der Blutzellproduktion",
+        "uz": "gidroksimochevina",
+        "ru": "гидроксимочевина",
+        "tr": "hidroksiüre",
+        "en": "hydroxyurea"
+      }
+    ],
+    "simulation": {
+      "opening": "Nach dem Duschen juckt es mich am ganzen Körper ganz schrecklich, und ich habe oft Kopfschmerzen.",
+      "answers": {
+        "beginn": "Seit einigen Monaten, langsam schlimmer.",
+        "lokalisation": "Der Juckreiz am ganzen Körper. Kopfschmerzen eher an der Stirn.",
+        "charakter": "Ein stechender Juckreiz nach warmem Wasser, eine halbe Stunde lang. Kopfschmerzen dumpf, vier von zehn.",
+        "ausstrahlung": "—",
+        "begleit": "Schwindel, Ohrensausen, Flimmern vor den Augen. Finger und Zehen brennen und sind rot. Vor zwei Monaten war mein rechter Arm zwanzig Minuten schwach, dann war alles wieder gut.",
+        "vegetativ": "Nachtschweiß manchmal. Gewicht stabil.",
+        "vorerkrankungen": "Bluthochdruck und Gicht.",
+        "medikamente": "Ramipril 5 und Allopurinol 100.",
+        "allergien": "Keine.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich bin verheiratet und Rentner, früher Busfahrer.",
+        "noxen": "Ich habe vor 20 Jahren aufgehört zu rauchen. Alkohol wenig."
+      }
+    },
+    "verdachtsdiagnose": "Polycythaemia vera mit Z. n. TIA",
+    "diagnoseKeywords": ["polycythaemia", "polyzythämie"],
+    "differenzialdiagnosen": [
+      "Sekundäre Polyglobulie (Schlafapnoe, COPD, Rauchen)",
+      "EPO-produzierender Tumor (Nierenzellkarzinom)",
+      "Relative Polyglobulie durch Exsikkose",
+      "Essenzielle Thrombozythämie"
+    ],
+    "untersuchungen": [
+      "Blutbild (Hb, Hämatokrit, Leukozyten, Thrombozyten)",
+      "JAK2-V617F-Mutation",
+      "Erythropoetin im Serum",
+      "Abdomensonographie (Milz, Nieren)",
+      "Knochenmarkpunktion",
+      "Bildgebung des Gehirns und der Halsgefäße nach TIA"
+    ]
   }
 ]
