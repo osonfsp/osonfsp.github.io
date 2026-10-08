@@ -4417,5 +4417,1801 @@
       }
     ],
     "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihre Patientin Frau Renate Becker, 74 Jahre, die vom 07.10.2026 bis zum 12.10.2026 in unserer rheumatologischen Abteilung behandelt wurde.\n\nAnamnese:\nDie Patientin stellte sich mit seit drei Wochen bestehenden, neu aufgetretenen bitemporalen Kopfschmerzen, Kopfhautempfindlichkeit und Claudicatio masticatoria vor. Am Aufnahmetag war für etwa fünf Minuten eine Amaurosis fugax rechts aufgetreten. Zusätzlich berichtete sie über eine morgendliche Steifigkeit im Schulter- und Nackenbereich, subfebrile Temperaturen und einen Gewichtsverlust von 3 kg.\n\nBefunde:\nKlinisch war die A. temporalis rechts verdickt und druckdolent bei abgeschwächtem Puls. Laborchemisch zeigten sich eine BSG von 92 mm/h und ein CRP von 68 mg/l. In der Duplexsonographie fand sich beidseits ein Halo-Zeichen. Die Fundoskopie ergab keinen Hinweis auf eine Optikusischämie.\n\nDiagnose:\nRiesenzellarteriitis (Arteriitis temporalis) mit Amaurosis fugax rechts und begleitender Polymyalgia rheumatica.\n\nTherapie und Verlauf:\nNoch vor der Biopsie begannen wir wegen der drohenden Erblindung sofort eine Therapie mit Prednisolon 60 mg täglich. Die Temporalisbiopsie bestätigte die Diagnose. Darunter waren die Kopfschmerzen rasch rückläufig, eine erneute Sehstörung trat nicht auf.\n\nProcedere:\nWir empfehlen ein langsames Ausschleichen des Prednisolons nach Schema unter Kontrolle von BSG und CRP. Zur Prophylaxe der Steroidnebenwirkungen erhält die Patientin einen PPI sowie Calcium und Vitamin D; wir bitten um regelmäßige Kontrollen von Blutzucker und Blutdruck sowie eine Knochendichtemessung. Bei erneuter Sehstörung ist eine sofortige Wiedervorstellung erforderlich.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab49",
+    "caseId": "c71",
+    "title": "Akute Myokarditis nach Virusinfekt",
+    "task": "Kardiologiya bo‘limidan uy shifokoriga Arztbrief yozing. Infeksiyadan keyingi jismoniy yuklama va sportdan voz kechish muddatiga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из кардиологии семейному врачу. Обратите внимание на нагрузку после инфекции и срок запрета на спорт.",
+    "taskTr": "Kardiyoloji servisinden aile hekimine bir Arztbrief yazın. Enfeksiyon sonrası fiziksel yüke ve spor yasağının süresine dikkat edin.",
+    "taskEn": "Write an Arztbrief from cardiology to the GP. Pay attention to the exercise after the infection and the duration of the sports ban.",
+    "facts": [
+      "Patient: Lukas Brandt, 27 Jahre, männlich",
+      "Aufnahme: 04.10.2026, Notaufnahme",
+      "Seit 2 Tagen stechende retrosternale Schmerzen, Palpitationen, Belastungsdyspnoe; vor 10 Tagen fieberhafter Atemwegsinfekt, trotzdem Fußballtraining",
+      "EKG: konkave ST-Hebungen in mehreren Ableitungen, ventrikuläre Extrasystolen",
+      "Troponin T 210 ng/l, CRP 48 mg/l",
+      "Echokardiographie: LVEF 50 %, kein Perikarderguss; Koronarangiographie nicht indiziert (Kardio-MRT eindeutig)",
+      "Kardio-MRT: Late Enhancement subepikardial lateral, myokardiales Ödem",
+      "Therapie: körperliche Schonung, Monitorüberwachung, Ramipril und Bisoprolol; Ibuprofen abgesetzt; Troponin rückläufig"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patient ma’lumotlari (Herr Brandt)",
+        "labelRu": "Данные пациента (Herr Brandt)",
+        "labelTr": "Hasta bilgileri (Herr Brandt)",
+        "labelEn": "Patient data (Herr Brandt)",
+        "keywords": ["brandt"]
+      },
+      {
+        "label": "Asosiy shikoyat: ko‘krak og‘rig‘i va yurak urib ketishi (Thoraxschmerzen, Palpitationen)",
+        "labelRu": "Основная жалоба: боль в груди и сердцебиение (Thoraxschmerzen, Palpitationen)",
+        "labelTr": "Ana şikâyet: göğüs ağrısı ve çarpıntı (Thoraxschmerzen, Palpitationen)",
+        "labelEn": "Main complaint: chest pain and palpitations (Thoraxschmerzen, Palpitationen)",
+        "keywords": ["palpitation", "thoraxschmerz", "retrosternal"]
+      },
+      {
+        "label": "Oldin o‘tkazilgan virusli infeksiya (Atemwegsinfekt)",
+        "labelRu": "Предшествующая вирусная инфекция (Atemwegsinfekt)",
+        "labelTr": "Geçirilmiş viral enfeksiyon (Atemwegsinfekt)",
+        "labelEn": "Preceding viral infection (Atemwegsinfekt)",
+        "keywords": ["infekt"]
+      },
+      {
+        "label": "Infeksiyadan keyin sport (sportliche Belastung)",
+        "labelRu": "Спорт после инфекции (sportliche Belastung)",
+        "labelTr": "Enfeksiyon sonrası spor (sportliche Belastung)",
+        "labelEn": "Exercise after the infection (sportliche Belastung)",
+        "keywords": ["training", "sport", "fußball"]
+      },
+      {
+        "label": "EKG va troponin (ST-Hebungen, Troponin)",
+        "labelRu": "ЭКГ и тропонин (ST-Hebungen, Troponin)",
+        "labelTr": "EKG ve troponin (ST-Hebungen, Troponin)",
+        "labelEn": "ECG and troponin (ST-Hebungen, Troponin)",
+        "keywords": ["troponin", "st-hebung"]
+      },
+      {
+        "label": "Yurak MRT topilmasi (Late Enhancement)",
+        "labelRu": "Данные МРТ сердца (Late Enhancement)",
+        "labelTr": "Kardiyak MR bulgusu (Late Enhancement)",
+        "labelEn": "Cardiac MRI finding (Late Enhancement)",
+        "keywords": ["kardio-mrt", "late enhancement", "ödem"]
+      },
+      {
+        "label": "Diagnoz: miokardit (Myokarditis)",
+        "labelRu": "Диагноз: миокардит (Myokarditis)",
+        "labelTr": "Tanı: miyokardit (Myokarditis)",
+        "labelEn": "Diagnosis: myocarditis (Myokarditis)",
+        "keywords": ["myokarditis"]
+      },
+      {
+        "label": "Davolash: jismoniy tinchlik, ACE ingibitori va beta-blokator (Schonung, Ramipril, Bisoprolol)",
+        "labelRu": "Лечение: покой, иАПФ и бета-блокатор (Schonung, Ramipril, Bisoprolol)",
+        "labelTr": "Tedavi: istirahat, ACE inhibitörü ve beta bloker (Schonung, Ramipril, Bisoprolol)",
+        "labelEn": "Treatment: rest, ACE inhibitor and beta blocker (Schonung, Ramipril, Bisoprolol)",
+        "keywords": ["schonung", "ramipril", "bisoprolol"]
+      },
+      {
+        "label": "Tavsiya: 3–6 oy sport qilmaslik (Sportkarenz)",
+        "labelRu": "Рекомендация: отказ от спорта на 3–6 месяцев (Sportkarenz)",
+        "labelTr": "Öneri: 3–6 ay spor yapmama (Sportkarenz)",
+        "labelEn": "Recommendation: no sport for 3–6 months (Sportkarenz)",
+        "keywords": ["sportkarenz", "monate"]
+      },
+      {
+        "label": "Tavsiya: nazorat: EKG, Xolter va ExoKG (Verlaufskontrolle)",
+        "labelRu": "Рекомендация: контроль: ЭКГ, Холтер и ЭхоКГ (Verlaufskontrolle)",
+        "labelTr": "Öneri: kontrol: EKG, Holter ve EKO (Verlaufskontrolle)",
+        "labelEn": "Recommendation: follow-up: ECG, Holter and echo (Verlaufskontrolle)",
+        "keywords": ["kontrolle", "langzeit-ekg", "echokardiographie"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Lukas Brandt, 27 Jahre, der vom 04.10.2026 bis zum 09.10.2026 in unserer kardiologischen Abteilung behandelt wurde.\n\nAnamnese:\nDer Patient stellte sich mit seit zwei Tagen bestehenden stechenden retrosternalen Thoraxschmerzen, Palpitationen und Belastungsdyspnoe vor. Vor etwa zehn Tagen hatte er einen fieberhaften Atemwegsinfekt, trotz dessen er drei Tage später am Fußballtraining teilnahm. Vorerkrankungen bestehen nicht.\n\nBefunde:\nIm EKG zeigten sich konkave ST-Hebungen in mehreren Ableitungen sowie ventrikuläre Extrasystolen. Das Troponin T lag bei 210 ng/l, das CRP bei 48 mg/l. Echokardiographisch fand sich eine LVEF von 50 % ohne Perikarderguss. Im Kardio-MRT zeigten sich ein subepikardiales Late Enhancement lateral und ein myokardiales Ödem.\n\nDiagnose:\nAkute Myokarditis nach viralem Atemwegsinfekt.\n\nTherapie und Verlauf:\nUnter körperlicher Schonung und Monitorüberwachung traten keine relevanten Herzrhythmusstörungen auf. Wir begannen eine Therapie mit Ramipril und Bisoprolol. Ibuprofen wurde abgesetzt. Das Troponin war im Verlauf rückläufig, der Patient beschwerdefrei.\n\nProcedere:\nWir empfehlen eine strikte Sportkarenz für drei bis sechs Monate. Vor Wiederaufnahme des Trainings sind eine Kontrolle mit Langzeit-EKG, Echokardiographie und gegebenenfalls Kardio-MRT erforderlich. Bei erneuten Thoraxschmerzen, Synkopen oder Herzrasen bitten wir um sofortige Wiedervorstellung.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab50",
+    "caseId": "c72",
+    "title": "Hochgradige Aortenklappenstenose",
+    "task": "Kardiologiya bo‘limidan uy shifokoriga Arztbrief yozing. Sinkope, ExoKG natijasi va TAVI qaroriga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из кардиологии семейному врачу. Обратите внимание на синкопе, результаты ЭхоКГ и решение о TAVI.",
+    "taskTr": "Kardiyoloji servisinden aile hekimine bir Arztbrief yazın. Senkopa, EKO sonucuna ve TAVI kararına dikkat edin.",
+    "taskEn": "Write an Arztbrief from cardiology to the GP. Pay attention to the syncope, the echo result and the TAVI decision.",
+    "facts": [
+      "Patientin: Helga Zimmermann, 81 Jahre, weiblich",
+      "Aufnahme: 30.09.2026, Notaufnahme",
+      "Belastungssynkope beim Treppensteigen mit Sturz ohne Verletzung; seit Monaten Belastungsdyspnoe NYHA III und Angina pectoris bei Belastung",
+      "Auskultation: raues Systolikum über Erb und 2. ICR rechts mit Fortleitung in die Karotiden",
+      "Echokardiographie: hochgradige Aortenklappenstenose, Klappenöffnungsfläche 0,7 cm², mittlerer Gradient 52 mmHg, LVEF 55 %",
+      "Koronarangiographie: keine relevanten Stenosen; Langzeit-EKG ohne höhergradige Rhythmusstörungen",
+      "Heart-Team: TAVI transfemoral am 06.10.2026 komplikationslos; Ibuprofen abgesetzt"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patientin ma’lumotlari (Frau Zimmermann)",
+        "labelRu": "Данные пациентки (Frau Zimmermann)",
+        "labelTr": "Hasta bilgileri (Frau Zimmermann)",
+        "labelEn": "Patient data (Frau Zimmermann)",
+        "keywords": ["zimmermann"]
+      },
+      {
+        "label": "Jismoniy yuklamada hushdan ketish (Belastungssynkope)",
+        "labelRu": "Синкопе при нагрузке (Belastungssynkope)",
+        "labelTr": "Eforla gelen senkop (Belastungssynkope)",
+        "labelEn": "Exertional syncope (Belastungssynkope)",
+        "keywords": ["synkope"]
+      },
+      {
+        "label": "Hansirash NYHA III (Belastungsdyspnoe)",
+        "labelRu": "Одышка NYHA III (Belastungsdyspnoe)",
+        "labelTr": "Nefes darlığı NYHA III (Belastungsdyspnoe)",
+        "labelEn": "Breathlessness NYHA III (Belastungsdyspnoe)",
+        "keywords": ["nyha", "dyspnoe"]
+      },
+      {
+        "label": "Sistolik shovqin (Systolikum)",
+        "labelRu": "Систолический шум (Systolikum)",
+        "labelTr": "Sistolik üfürüm (Systolikum)",
+        "labelEn": "Systolic murmur (Systolikum)",
+        "keywords": ["systolikum", "herzgeräusch"]
+      },
+      {
+        "label": "ExoKG: qopqoq maydoni va gradient (Klappenöffnungsfläche)",
+        "labelRu": "ЭхоКГ: площадь клапана и градиент (Klappenöffnungsfläche)",
+        "labelTr": "EKO: kapak alanı ve gradyan (Klappenöffnungsfläche)",
+        "labelEn": "Echo: valve area and gradient (Klappenöffnungsfläche)",
+        "keywords": ["0,7 cm", "gradient", "klappenöffnungsfläche"]
+      },
+      {
+        "label": "Koronar arteriyalarda torayish yo‘q (Koronarangiographie)",
+        "labelRu": "Коронарные артерии без стенозов (Koronarangiographie)",
+        "labelTr": "Koroner arterlerde darlık yok (Koronarangiographie)",
+        "labelEn": "No coronary stenoses (Koronarangiographie)",
+        "keywords": ["koronarangiographie"]
+      },
+      {
+        "label": "Diagnoz: og‘ir aorta stenozi (hochgradige Aortenklappenstenose)",
+        "labelRu": "Диагноз: тяжёлый аортальный стеноз (hochgradige Aortenklappenstenose)",
+        "labelTr": "Tanı: ağır aort darlığı (hochgradige Aortenklappenstenose)",
+        "labelEn": "Diagnosis: severe aortic stenosis (hochgradige Aortenklappenstenose)",
+        "keywords": ["aortenklappenstenose"]
+      },
+      {
+        "label": "Davolash: kateter orqali qopqoq almashtirish (TAVI)",
+        "labelRu": "Лечение: транскатетерная замена клапана (TAVI)",
+        "labelTr": "Tedavi: kateterle kapak değişimi (TAVI)",
+        "labelEn": "Treatment: transcatheter valve replacement (TAVI)",
+        "keywords": ["tavi"]
+      },
+      {
+        "label": "Tavsiya: antiagregant, NYQPdan saqlanish va ExoKG nazorati (ASS, Echokontrolle)",
+        "labelRu": "Рекомендация: антиагрегант, избегать НПВП и контроль ЭхоКГ (ASS, Echokontrolle)",
+        "labelTr": "Öneri: antiagregan, NSAİİ’lerden kaçınma ve EKO kontrolü (ASS, Echokontrolle)",
+        "labelEn": "Recommendation: antiplatelet therapy, avoid NSAIDs and echo follow-up (ASS, Echokontrolle)",
+        "keywords": ["ass", "ibuprofen", "nsar", "kontrolle"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihre Patientin Frau Helga Zimmermann, 81 Jahre, die vom 30.09.2026 bis zum 10.10.2026 in unserer kardiologischen Abteilung behandelt wurde.\n\nAnamnese:\nDie Patientin wurde nach einer Belastungssynkope beim Treppensteigen mit Sturz ohne Verletzung aufgenommen. Seit Monaten bestehen eine zunehmende Belastungsdyspnoe NYHA III sowie Angina pectoris bei Belastung. Ein Herzgeräusch war seit Jahren bekannt.\n\nBefunde:\nAuskultatorisch fand sich ein raues Systolikum über Erb und dem 2. ICR rechts mit Fortleitung in die Karotiden. Echokardiographisch zeigte sich eine hochgradige Aortenklappenstenose mit einer Klappenöffnungsfläche von 0,7 cm² und einem mittleren Gradienten von 52 mmHg bei erhaltener LVEF von 55 %. Die Koronarangiographie ergab keine relevanten Stenosen, im Langzeit-EKG fanden sich keine höhergradigen Rhythmusstörungen.\n\nDiagnose:\nSymptomatische hochgradige Aortenklappenstenose mit Belastungssynkope.\n\nTherapie und Verlauf:\nNach Beschluss des Heart-Teams erfolgte am 06.10.2026 eine transfemorale TAVI, die komplikationslos verlief. Ibuprofen wurde abgesetzt. Die Patientin wurde beschwerdefrei mobilisiert.\n\nProcedere:\nWir empfehlen ASS 100 mg dauerhaft und den Verzicht auf NSAR. Eine Kontrolle mit Echokardiographie ist in drei Monaten vorgesehen. Bei neuer Luftnot oder Synkopen bitten wir um sofortige Wiedervorstellung.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab51",
+    "caseId": "c73",
+    "title": "Aspirationspneumonie bei Schluckstörung",
+    "task": "Ichki kasalliklar bo‘limidan pansionat shifokoriga Arztbrief yozing. Yutish buzilishi va ovqatlantirish bo‘yicha tavsiyalarni yoritib bering.",
+    "taskRu": "Напишите Arztbrief из терапевтического отделения врачу дома престарелых. Отразите нарушение глотания и рекомендации по питанию.",
+    "taskTr": "Dahiliye servisinden huzurevi hekimine bir Arztbrief yazın. Yutma bozukluğunu ve beslenme önerilerini belirtin.",
+    "taskEn": "Write an Arztbrief from internal medicine to the nursing home doctor. Cover the swallowing disorder and the feeding recommendations.",
+    "facts": [
+      "Patient: Walter Hahn, 86 Jahre, männlich",
+      "Aufnahme: 02.10.2026, aus dem Pflegeheim (Fremdanamnese durch die Pflegekraft)",
+      "Seit 2 Tagen Fieber bis 38,9 °C, produktiver Husten, Tachypnoe, zunehmende Verwirrtheit; seit Wochen häufiges Verschlucken",
+      "Vorerkrankungen: Z. n. Schlaganfall mit Dysphagie und Hemiparese rechts, vaskuläre Demenz, Vorhofflimmern",
+      "SpO2 88 % unter Raumluft, AF 28/min; CRP 186 mg/l, Leukozyten 16.400/µl, Procalcitonin 1,8 ng/ml",
+      "Röntgen-Thorax: Infiltrat rechts basal",
+      "Therapie: Ampicillin/Sulbactam i. v., Sauerstoff, Infusion; logopädische Schluckdiagnostik (FEES): Aspiration dünner Flüssigkeiten; Kostanpassung, Andickungsmittel"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patient ma’lumotlari (Herr Hahn)",
+        "labelRu": "Данные пациента (Herr Hahn)",
+        "labelTr": "Hasta bilgileri (Herr Hahn)",
+        "labelEn": "Patient data (Herr Hahn)",
+        "keywords": ["hahn"]
+      },
+      {
+        "label": "Yaqinlaridan olingan anamnez (Fremdanamnese)",
+        "labelRu": "Анамнез со слов окружающих (Fremdanamnese)",
+        "labelTr": "Heteroanamnez (Fremdanamnese)",
+        "labelEn": "Collateral history (Fremdanamnese)",
+        "keywords": ["fremdanamnes", "pflege"]
+      },
+      {
+        "label": "Asosiy shikoyat: isitma, yo‘tal va ong chalkashligi (Fieber, Husten, Verwirrtheit)",
+        "labelRu": "Основная жалоба: лихорадка, кашель и спутанность (Fieber, Husten, Verwirrtheit)",
+        "labelTr": "Ana şikâyet: ateş, öksürük ve bilinç bulanıklığı (Fieber, Husten, Verwirrtheit)",
+        "labelEn": "Main complaint: fever, cough and confusion (Fieber, Husten, Verwirrtheit)",
+        "keywords": ["fieber", "husten", "verwirr"]
+      },
+      {
+        "label": "Yutish buzilishi va tez-tez qalqib ketish (Dysphagie)",
+        "labelRu": "Нарушение глотания и частые поперхивания (Dysphagie)",
+        "labelTr": "Yutma bozukluğu ve sık boğulma (Dysphagie)",
+        "labelEn": "Swallowing disorder and frequent choking (Dysphagie)",
+        "keywords": ["dysphagie", "verschluck"]
+      },
+      {
+        "label": "Insultdan keyingi holat (Z. n. Schlaganfall)",
+        "labelRu": "Состояние после инсульта (Z. n. Schlaganfall)",
+        "labelTr": "İnme sonrası durum (Z. n. Schlaganfall)",
+        "labelEn": "Status after stroke (Z. n. Schlaganfall)",
+        "keywords": ["schlaganfall"]
+      },
+      {
+        "label": "Laboratoriya va rentgen (CRP, Infiltrat rechts basal)",
+        "labelRu": "Анализы и рентген (CRP, Infiltrat rechts basal)",
+        "labelTr": "Laboratuvar ve röntgen (CRP, Infiltrat rechts basal)",
+        "labelEn": "Labs and X-ray (CRP, Infiltrat rechts basal)",
+        "keywords": ["crp", "infiltrat"]
+      },
+      {
+        "label": "Diagnoz: aspiratsion pnevmoniya (Aspirationspneumonie)",
+        "labelRu": "Диагноз: аспирационная пневмония (Aspirationspneumonie)",
+        "labelTr": "Tanı: aspirasyon pnömonisi (Aspirationspneumonie)",
+        "labelEn": "Diagnosis: aspiration pneumonia (Aspirationspneumonie)",
+        "keywords": ["aspirationspneumonie"]
+      },
+      {
+        "label": "Davolash: antibiotik v/i va kislorod (Ampicillin/Sulbactam)",
+        "labelRu": "Лечение: антибиотик в/в и кислород (Ampicillin/Sulbactam)",
+        "labelTr": "Tedavi: IV antibiyotik ve oksijen (Ampicillin/Sulbactam)",
+        "labelEn": "Treatment: IV antibiotics and oxygen (Ampicillin/Sulbactam)",
+        "keywords": ["ampicillin", "antibio"]
+      },
+      {
+        "label": "Tavsiya: quyuqlashtirilgan ichimliklar va logoped (Andickungsmittel, Logopädie)",
+        "labelRu": "Рекомендация: загущённые напитки и логопед (Andickungsmittel, Logopädie)",
+        "labelTr": "Öneri: kıvamlı içecekler ve dil-konuşma terapisti (Andickungsmittel, Logopädie)",
+        "labelEn": "Recommendation: thickened drinks and speech therapy (Andickungsmittel, Logopädie)",
+        "keywords": ["andickung", "logopäd", "kostanpassung"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Walter Hahn, 86 Jahre, der vom 02.10.2026 bis zum 11.10.2026 in unserer internistischen Abteilung behandelt wurde.\n\nAnamnese:\nFremdanamnestisch berichtete die Pflegekraft über seit zwei Tagen bestehendes Fieber bis 38,9 °C, produktiven Husten, Tachypnoe und eine zunehmende Verwirrtheit. Seit Wochen verschluckt sich der Patient häufig beim Essen und Trinken. Vorbekannt sind ein Z. n. Schlaganfall mit Dysphagie und Hemiparese rechts, eine vaskuläre Demenz und ein Vorhofflimmern.\n\nBefunde:\nBei Aufnahme lag die Sauerstoffsättigung unter Raumluft bei 88 % bei einer Atemfrequenz von 28/min. Laborchemisch zeigten sich ein CRP von 186 mg/l, eine Leukozytose von 16.400/µl und ein Procalcitonin von 1,8 ng/ml. Im Röntgen-Thorax fand sich ein Infiltrat rechts basal.\n\nDiagnose:\nAspirationspneumonie rechts basal bei Dysphagie nach Schlaganfall.\n\nTherapie und Verlauf:\nWir behandelten mit Ampicillin/Sulbactam i. v., Sauerstoff und Infusionen. Darunter entfieberte der Patient, die Entzündungswerte waren rückläufig. Die logopädische Schluckdiagnostik (FEES) zeigte eine Aspiration dünner Flüssigkeiten.\n\nProcedere:\nWir empfehlen eine Kostanpassung mit passierter Kost und das Andicken aller Getränke mit Andickungsmittel. Die Mahlzeiten sollten in aufrechter Sitzposition unter Aufsicht eingenommen werden. Eine weitere Logopädie im Pflegeheim ist angeraten.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab52",
+    "caseId": "c74",
+    "title": "Obstruktives Schlafapnoesyndrom",
+    "task": "Uyqu laboratoriyasidan uy shifokoriga Arztbrief yozing. Haydovchilik qobiliyati va CPAP terapiyasiga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из сомнологической лаборатории семейному врачу. Обратите внимание на пригодность к вождению и CPAP-терапию.",
+    "taskTr": "Uyku laboratuvarından aile hekimine bir Arztbrief yazın. Araç kullanma yeterliliğine ve CPAP tedavisine dikkat edin.",
+    "taskEn": "Write an Arztbrief from the sleep lab to the GP. Pay attention to fitness to drive and CPAP therapy.",
+    "facts": [
+      "Patient: Thomas Keller, 52 Jahre, männlich",
+      "Vorstellung: 01.10.2026–03.10.2026, Schlaflabor (Überweisung durch Hausarzt)",
+      "Seit 1 Jahr Tagesmüdigkeit, Sekundenschlaf am Steuer (Lkw-Fahrer), morgendliche Kopfschmerzen; fremdanamnestisch Schnarchen mit Atemaussetzern",
+      "Adipositas (BMI 36), therapieresistente arterielle Hypertonie, Diabetes mellitus Typ 2; Nikotin 25 py, Alkohol abends",
+      "Epworth-Schläfrigkeitsskala 17 Punkte; TSH normal",
+      "Polysomnographie: Apnoe-Hypopnoe-Index 42/h, minimale Sättigung 76 %",
+      "Einleitung einer CPAP-Therapie (9 cmH2O), darunter AHI 4/h"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patient ma’lumotlari (Herr Keller)",
+        "labelRu": "Данные пациента (Herr Keller)",
+        "labelTr": "Hasta bilgileri (Herr Keller)",
+        "labelEn": "Patient data (Herr Keller)",
+        "keywords": ["keller"]
+      },
+      {
+        "label": "Asosiy shikoyat: kunduzgi uyquchanlik va mashinada uxlab qolish (Tagesmüdigkeit, Sekundenschlaf)",
+        "labelRu": "Основная жалоба: дневная сонливость и засыпание за рулём (Tagesmüdigkeit, Sekundenschlaf)",
+        "labelTr": "Ana şikâyet: gündüz uykululuğu ve direksiyonda uyuklama (Tagesmüdigkeit, Sekundenschlaf)",
+        "labelEn": "Main complaint: daytime sleepiness and dozing off at the wheel (Tagesmüdigkeit, Sekundenschlaf)",
+        "keywords": ["tagesmüdigkeit", "sekundenschlaf"]
+      },
+      {
+        "label": "Xurrak va nafas to‘xtashi (Atemaussetzer)",
+        "labelRu": "Храп и остановки дыхания (Atemaussetzer)",
+        "labelTr": "Horlama ve solunum durması (Atemaussetzer)",
+        "labelEn": "Snoring and breathing pauses (Atemaussetzer)",
+        "keywords": ["atemaussetzer", "schnarch"]
+      },
+      {
+        "label": "Xavf omillari: semizlik va gipertoniya (Adipositas, Hypertonie)",
+        "labelRu": "Факторы риска: ожирение и гипертония (Adipositas, Hypertonie)",
+        "labelTr": "Risk faktörleri: obezite ve hipertansiyon (Adipositas, Hypertonie)",
+        "labelEn": "Risk factors: obesity and hypertension (Adipositas, Hypertonie)",
+        "keywords": ["adipositas", "hypertonie"]
+      },
+      {
+        "label": "Polisomnografiya: AHI (Apnoe-Hypopnoe-Index)",
+        "labelRu": "Полисомнография: AHI (Apnoe-Hypopnoe-Index)",
+        "labelTr": "Polisomnografi: AHI (Apnoe-Hypopnoe-Index)",
+        "labelEn": "Polysomnography: AHI (Apnoe-Hypopnoe-Index)",
+        "keywords": ["ahi", "apnoe-hypopnoe", "polysomnographie"]
+      },
+      {
+        "label": "Diagnoz: obstruktiv uyqu apnoesi (obstruktives Schlafapnoesyndrom)",
+        "labelRu": "Диагноз: обструктивное апноэ сна (obstruktives Schlafapnoesyndrom)",
+        "labelTr": "Tanı: obstrüktif uyku apnesi (obstruktives Schlafapnoesyndrom)",
+        "labelEn": "Diagnosis: obstructive sleep apnoea (obstruktives Schlafapnoesyndrom)",
+        "keywords": ["schlafapnoe"]
+      },
+      {
+        "label": "Davolash: CPAP terapiya (CPAP)",
+        "labelRu": "Лечение: CPAP-терапия (CPAP)",
+        "labelTr": "Tedavi: CPAP tedavisi (CPAP)",
+        "labelEn": "Treatment: CPAP therapy (CPAP)",
+        "keywords": ["cpap"]
+      },
+      {
+        "label": "Tavsiya: haydovchilik qobiliyati (Fahrtauglichkeit)",
+        "labelRu": "Рекомендация: пригодность к вождению (Fahrtauglichkeit)",
+        "labelTr": "Öneri: araç kullanma yeterliliği (Fahrtauglichkeit)",
+        "labelEn": "Recommendation: fitness to drive (Fahrtauglichkeit)",
+        "keywords": ["fahrtauglich", "fahreignung", "kein kraftfahrzeug", "nicht fahren"]
+      },
+      {
+        "label": "Tavsiya: vazn kamaytirish, chekish va alkogolni tashlash (Gewichtsreduktion, Nikotinkarenz)",
+        "labelRu": "Рекомендация: снижение веса, отказ от курения и алкоголя (Gewichtsreduktion, Nikotinkarenz)",
+        "labelTr": "Öneri: kilo verme, sigara ve alkolü bırakma (Gewichtsreduktion, Nikotinkarenz)",
+        "labelEn": "Recommendation: weight loss, stop smoking and alcohol (Gewichtsreduktion, Nikotinkarenz)",
+        "keywords": ["gewichtsreduktion", "nikotin", "alkohol"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Thomas Keller, 52 Jahre, der vom 01.10.2026 bis zum 03.10.2026 in unserer Schlafmedizin (Schlaflabor) behandelt wurde.\n\nAnamnese:\nDer Patient stellte sich mit seit einem Jahr zunehmender Tagesmüdigkeit, Sekundenschlaf am Steuer und morgendlichen Kopfschmerzen vor. Die Ehefrau beobachtet lautes Schnarchen mit Atemaussetzern. Er ist als Lkw-Fahrer im Fernverkehr tätig. Es bestehen eine Adipositas (BMI 36), eine therapieresistente arterielle Hypertonie und ein Diabetes mellitus Typ 2. Er raucht (25 py) und trinkt abends Alkohol.\n\nBefunde:\nAuf der Epworth-Schläfrigkeitsskala erreichte der Patient 17 Punkte. Das TSH war normal. In der Polysomnographie zeigte sich ein Apnoe-Hypopnoe-Index (AHI) von 42/h bei einer minimalen Sauerstoffsättigung von 76 %.\n\nDiagnose:\nSchweres obstruktives Schlafapnoesyndrom bei Adipositas.\n\nTherapie und Verlauf:\nWir leiteten eine CPAP-Therapie mit 9 cmH2O ein, die der Patient gut tolerierte. Darunter sank der AHI auf 4/h.\n\nProcedere:\nBis zum Nachweis einer wirksamen Therapie ist die Fahrtauglichkeit nicht gegeben; der Patient wurde darüber aufgeklärt, kein Kraftfahrzeug zu führen. Wir empfehlen eine Gewichtsreduktion, Nikotinkarenz und den Verzicht auf abendlichen Alkohol. Eine Kontrolle im Schlaflabor ist in drei Monaten vorgesehen; danach sollte die Blutdruckmedikation überprüft werden.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab53",
+    "caseId": "c75",
+    "title": "Akute Hepatitis A nach Reise",
+    "task": "Gastroenterologiya bo‘limidan uy shifokoriga Arztbrief yozing. Safar anamnezi, xabar berish majburiyati va yaqinlarini emlashga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из гастроэнтерологии семейному врачу. Обратите внимание на анамнез поездки, обязанность сообщения и вакцинацию контактных.",
+    "taskTr": "Gastroenteroloji servisinden aile hekimine bir Arztbrief yazın. Seyahat öyküsüne, bildirim yükümlülüğüne ve temaslıların aşılanmasına dikkat edin.",
+    "taskEn": "Write an Arztbrief from gastroenterology to the GP. Pay attention to the travel history, the duty to notify and vaccinating contacts.",
+    "facts": [
+      "Patientin: Sophie Wagner, 29 Jahre, weiblich",
+      "Aufnahme: 03.10.2026, Notaufnahme",
+      "Seit 5 Tagen Abgeschlagenheit, Nausea, Appetitlosigkeit, Oberbauchdruck rechts; seit 2 Tagen Ikterus, bierbrauner Urin, acholischer Stuhl",
+      "Reise: 3 Wochen Marokko vor 4 Wochen (Straßenessen), keine Hepatitis-A-Impfung",
+      "GPT 2.450 U/l, GOT 1.890 U/l, Bilirubin 6,2 mg/dl, INR 1,1",
+      "Anti-HAV-IgM positiv; HBsAg, Anti-HCV und Anti-HEV negativ",
+      "Sonographie: Hepatomegalie, keine Cholestase, Gallenwege nicht erweitert",
+      "Therapie: symptomatisch, Paracetamol abgesetzt; Meldung an das Gesundheitsamt erfolgt"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patientin ma’lumotlari (Frau Wagner)",
+        "labelRu": "Данные пациентки (Frau Wagner)",
+        "labelTr": "Hasta bilgileri (Frau Wagner)",
+        "labelEn": "Patient data (Frau Wagner)",
+        "keywords": ["wagner"]
+      },
+      {
+        "label": "Asosiy shikoyat: sariqlik, to‘q rangli siydik va ko‘ngil aynishi (Ikterus)",
+        "labelRu": "Основная жалоба: желтуха, тёмная моча и тошнота (Ikterus)",
+        "labelTr": "Ana şikâyet: sarılık, koyu idrar ve bulantı (Ikterus)",
+        "labelEn": "Main complaint: jaundice, dark urine and nausea (Ikterus)",
+        "keywords": ["ikterus", "nausea", "urin"]
+      },
+      {
+        "label": "Safar anamnezi: Marokash (Reiseanamnese)",
+        "labelRu": "Анамнез поездки: Марокко (Reiseanamnese)",
+        "labelTr": "Seyahat öyküsü: Fas (Reiseanamnese)",
+        "labelEn": "Travel history: Morocco (Reiseanamnese)",
+        "keywords": ["marokko", "reise"]
+      },
+      {
+        "label": "Emlanmagan (keine Impfung)",
+        "labelRu": "Не привита (keine Impfung)",
+        "labelTr": "Aşısız (keine Impfung)",
+        "labelEn": "Not vaccinated (keine Impfung)",
+        "keywords": ["impfung"]
+      },
+      {
+        "label": "Jigar ko‘rsatkichlari va bilirubin (Transaminasen)",
+        "labelRu": "Печёночные пробы и билирубин (Transaminasen)",
+        "labelTr": "Karaciğer enzimleri ve bilirubin (Transaminasen)",
+        "labelEn": "Liver enzymes and bilirubin (Transaminasen)",
+        "keywords": ["gpt", "transaminasen", "bilirubin"]
+      },
+      {
+        "label": "Serologiya (Anti-HAV-IgM)",
+        "labelRu": "Серология (Anti-HAV-IgM)",
+        "labelTr": "Seroloji (Anti-HAV-IgM)",
+        "labelEn": "Serology (Anti-HAV-IgM)",
+        "keywords": ["anti-hav", "igm"]
+      },
+      {
+        "label": "Diagnoz: o‘tkir gepatit A (Hepatitis A)",
+        "labelRu": "Диагноз: острый гепатит A (Hepatitis A)",
+        "labelTr": "Tanı: akut hepatit A (Hepatitis A)",
+        "labelEn": "Diagnosis: acute hepatitis A (Hepatitis A)",
+        "keywords": ["hepatitis a"]
+      },
+      {
+        "label": "Sanitariya xizmatiga xabar berish (Meldung an das Gesundheitsamt)",
+        "labelRu": "Уведомление органов здравоохранения (Meldung an das Gesundheitsamt)",
+        "labelTr": "Sağlık müdürlüğüne bildirim (Meldung an das Gesundheitsamt)",
+        "labelEn": "Notification of the health office (Meldung an das Gesundheitsamt)",
+        "keywords": ["meldung", "gesundheitsamt"]
+      },
+      {
+        "label": "Tavsiya: gigiyena, alkogoldan saqlanish va yaqinlarini emlash (Kontaktpersonen impfen)",
+        "labelRu": "Рекомендация: гигиена, отказ от алкоголя и вакцинация контактных (Kontaktpersonen impfen)",
+        "labelTr": "Öneri: hijyen, alkolden uzak durma ve temaslıların aşılanması (Kontaktpersonen impfen)",
+        "labelEn": "Recommendation: hygiene, avoid alcohol and vaccinate contacts (Kontaktpersonen impfen)",
+        "keywords": ["kontaktpersonen", "hygiene", "alkohol"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihre Patientin Frau Sophie Wagner, 29 Jahre, die vom 03.10.2026 bis zum 08.10.2026 in unserer gastroenterologischen Abteilung behandelt wurde.\n\nAnamnese:\nDie Patientin stellte sich mit seit fünf Tagen bestehender Abgeschlagenheit, Nausea, Appetitlosigkeit und rechtsseitigem Oberbauchdruck vor. Seit zwei Tagen bestehen ein Ikterus, bierbrauner Urin und acholischer Stuhl. Vor vier Wochen kehrte sie von einer dreiwöchigen Reise nach Marokko zurück, wo sie Straßenessen verzehrt hatte. Eine Impfung gegen Hepatitis A bestand nicht.\n\nBefunde:\nLaborchemisch zeigten sich eine GPT von 2.450 U/l, eine GOT von 1.890 U/l und ein Bilirubin von 6,2 mg/dl bei normaler INR von 1,1. Das Anti-HAV-IgM war positiv, HBsAg, Anti-HCV und Anti-HEV waren negativ. Sonographisch fanden sich eine Hepatomegalie ohne Cholestase und nicht erweiterte Gallenwege.\n\nDiagnose:\nAkute Hepatitis A nach Reise nach Marokko.\n\nTherapie und Verlauf:\nDie Behandlung erfolgte symptomatisch. Paracetamol wurde abgesetzt. Die Transaminasen und das Bilirubin waren im Verlauf rückläufig, die Gerinnung blieb stabil. Die Meldung an das Gesundheitsamt ist erfolgt.\n\nProcedere:\nWir empfehlen strikte Händehygiene, Alkoholkarenz bis zur Normalisierung der Leberwerte sowie Kontrollen der Leberwerte in einer und vier Wochen. Den Kontaktpersonen im Haushalt sollte eine Impfung gegen Hepatitis A angeboten werden.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab54",
+    "caseId": "c76",
+    "title": "Akute Cholangitis bei Choledocholithiasis",
+    "task": "Gastroenterologiya bo‘limidan uy shifokoriga Arztbrief yozing. Sharko triadasi, ERXPG va keyingi xoletsistektomiya rejasiga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из гастроэнтерологии семейному врачу. Обратите внимание на триаду Шарко, ЭРХПГ и план холецистэктомии.",
+    "taskTr": "Gastroenteroloji servisinden aile hekimine bir Arztbrief yazın. Charcot triadına, ERCP’ye ve sonraki kolesistektomi planına dikkat edin.",
+    "taskEn": "Write an Arztbrief from gastroenterology to the GP. Pay attention to Charcot’s triad, the ERCP and the plan for cholecystectomy.",
+    "facts": [
+      "Patientin: Gisela Hartmann, 77 Jahre, weiblich",
+      "Aufnahme: 05.10.2026, Notaufnahme",
+      "Seit 1 Tag kolikartige Schmerzen im rechten Oberbauch, Fieber bis 39,6 °C mit Schüttelfrost, Ikterus, Vigilanzminderung",
+      "Bekannte Cholezystolithiasis, elektive Cholezystektomie vor 1 Jahr abgelehnt; Diabetes mellitus Typ 2 (Metformin), Niereninsuffizienz Stadium 3a",
+      "RR 95/55 mmHg, HF 112/min; Bilirubin 5,8 mg/dl, AP 420 U/l, γ-GT 610 U/l, CRP 245 mg/l, Laktat 3,1 mmol/l, Kreatinin 1,9 mg/dl",
+      "Sonographie: DHC 11 mm erweitert, Konkrement präpapillär, Cholezystolithiasis",
+      "Blutkulturen: E. coli",
+      "Therapie: Piperacillin/Tazobactam, Volumentherapie, Metformin pausiert; ERCP mit Papillotomie und Steinextraktion am Aufnahmetag"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patientin ma’lumotlari (Frau Hartmann)",
+        "labelRu": "Данные пациентки (Frau Hartmann)",
+        "labelTr": "Hasta bilgileri (Frau Hartmann)",
+        "labelEn": "Patient data (Frau Hartmann)",
+        "keywords": ["hartmann"]
+      },
+      {
+        "label": "Isitma, qorin og‘rig‘i va sariqlik (Sharko triadasi) (Charcot-Trias)",
+        "labelRu": "Лихорадка, боль в животе и желтуха (триада Шарко) (Charcot-Trias)",
+        "labelTr": "Ateş, karın ağrısı ve sarılık (Charcot triadı) (Charcot-Trias)",
+        "labelEn": "Fever, abdominal pain and jaundice (Charcot’s triad) (Charcot-Trias)",
+        "keywords": ["charcot", "ikterus", "schüttelfrost"]
+      },
+      {
+        "label": "Gipotoniya va taxikardiya (RR 95/55 mmHg)",
+        "labelRu": "Гипотония и тахикардия (RR 95/55 mmHg)",
+        "labelTr": "Hipotansiyon ve taşikardi (RR 95/55 mmHg)",
+        "labelEn": "Hypotension and tachycardia (RR 95/55 mmHg)",
+        "keywords": ["95/55", "hypoton", "tachykard"]
+      },
+      {
+        "label": "Laboratoriya: bilirubin, xolestaz, laktat (Bilirubin, Laktat)",
+        "labelRu": "Анализы: билирубин, холестаз, лактат (Bilirubin, Laktat)",
+        "labelTr": "Laboratuvar: bilirubin, kolestaz, laktat (Bilirubin, Laktat)",
+        "labelEn": "Labs: bilirubin, cholestasis, lactate (Bilirubin, Laktat)",
+        "keywords": ["bilirubin", "laktat"]
+      },
+      {
+        "label": "UTT: kengaygan o‘t yo‘li va tosh (DHC erweitert)",
+        "labelRu": "УЗИ: расширенный холедох и камень (DHC erweitert)",
+        "labelTr": "USG: genişlemiş koledok ve taş (DHC erweitert)",
+        "labelEn": "Ultrasound: dilated bile duct and stone (DHC erweitert)",
+        "keywords": ["dhc", "konkrement"]
+      },
+      {
+        "label": "Diagnoz: o‘tkir xolangit (Cholangitis bei Choledocholithiasis)",
+        "labelRu": "Диагноз: острый холангит (Cholangitis bei Choledocholithiasis)",
+        "labelTr": "Tanı: akut kolanjit (Cholangitis bei Choledocholithiasis)",
+        "labelEn": "Diagnosis: acute cholangitis (Cholangitis bei Choledocholithiasis)",
+        "keywords": ["cholangitis"]
+      },
+      {
+        "label": "Davolash: antibiotik va ERXPG (Piperacillin/Tazobactam, ERCP)",
+        "labelRu": "Лечение: антибиотик и ЭРХПГ (Piperacillin/Tazobactam, ERCP)",
+        "labelTr": "Tedavi: antibiyotik ve ERCP (Piperacillin/Tazobactam, ERCP)",
+        "labelEn": "Treatment: antibiotics and ERCP (Piperacillin/Tazobactam, ERCP)",
+        "keywords": ["ercp", "piperacillin", "steinextraktion"]
+      },
+      {
+        "label": "Metformin to‘xtatilgan (Metformin pausiert)",
+        "labelRu": "Metformin отменён (Metformin pausiert)",
+        "labelTr": "Metformin kesildi (Metformin pausiert)",
+        "labelEn": "Metformin paused (Metformin pausiert)",
+        "keywords": ["metformin"]
+      },
+      {
+        "label": "Tavsiya: 6 hafta ichida xoletsistektomiya (Cholezystektomie im Intervall)",
+        "labelRu": "Рекомендация: холецистэктомия в течение 6 недель (Cholezystektomie im Intervall)",
+        "labelTr": "Öneri: 6 hafta içinde kolesistektomi (Cholezystektomie im Intervall)",
+        "labelEn": "Recommendation: cholecystectomy within 6 weeks (Cholezystektomie im Intervall)",
+        "keywords": ["cholezystektomie"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihre Patientin Frau Gisela Hartmann, 77 Jahre, die vom 05.10.2026 bis zum 14.10.2026 in unserer gastroenterologischen Abteilung behandelt wurde.\n\nAnamnese:\nDie Patientin stellte sich mit seit einem Tag bestehenden kolikartigen Schmerzen im rechten Oberbauch, Fieber bis 39,6 °C mit Schüttelfrost, Ikterus und Vigilanzminderung vor (Charcot-Trias). Bekannt ist eine Cholezystolithiasis; eine elektive Cholezystektomie hatte sie vor einem Jahr abgelehnt. Zudem bestehen ein Diabetes mellitus Typ 2 unter Metformin und eine Niereninsuffizienz Stadium 3a.\n\nBefunde:\nBei Aufnahme war die Patientin hypoton (RR 95/55 mmHg) und tachykard (HF 112/min). Laborchemisch zeigten sich ein Bilirubin von 5,8 mg/dl, eine AP von 420 U/l, eine γ-GT von 610 U/l, ein CRP von 245 mg/l, ein Laktat von 3,1 mmol/l und ein Kreatinin von 1,9 mg/dl. Sonographisch fanden sich ein auf 11 mm erweiterter DHC mit präpapillärem Konkrement sowie eine Cholezystolithiasis. In den Blutkulturen wuchs E. coli.\n\nDiagnose:\nAkute schwere Cholangitis bei Choledocholithiasis mit Sepsis.\n\nTherapie und Verlauf:\nNach Abnahme der Blutkulturen begannen wir sofort eine Antibiose mit Piperacillin/Tazobactam und eine Volumentherapie. Metformin wurde pausiert. Noch am Aufnahmetag erfolgte eine ERCP mit Papillotomie und Steinextraktion. Darunter stabilisierte sich die Patientin rasch, Bilirubin und Kreatinin normalisierten sich.\n\nProcedere:\nWir empfehlen dringend eine laparoskopische Cholezystektomie innerhalb von sechs Wochen, um ein Rezidiv zu vermeiden. Metformin kann nach Kontrolle der Nierenfunktion wieder angesetzt werden.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab55",
+    "caseId": "c77",
+    "title": "Nephrotisches Syndrom",
+    "task": "Nefrologiya bo‘limidan uy shifokoriga Arztbrief yozing. Nefrotik sindrom mezonlari, biopsiya natijasi va tromboz profilaktikasiga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из нефрологии семейному врачу. Обратите внимание на критерии нефротического синдрома, результат биопсии и профилактику тромбоза.",
+    "taskTr": "Nefroloji servisinden aile hekimine bir Arztbrief yazın. Nefrotik sendrom kriterlerine, biyopsi sonucuna ve tromboz profilaksisine dikkat edin.",
+    "taskEn": "Write an Arztbrief from nephrology to the GP. Pay attention to the criteria of nephrotic syndrome, the biopsy result and thrombosis prophylaxis.",
+    "facts": [
+      "Patient: Markus Schmitt, 45 Jahre, männlich",
+      "Aufnahme: 29.09.2026, nephrologische Station",
+      "Seit 3 Wochen Unterschenkel- und Lidödeme, Gewichtszunahme 8 kg, schäumender Urin",
+      "Proteinurie 8,4 g/Tag, Albumin 1,9 g/dl, Gesamtcholesterin 380 mg/dl, Kreatinin 1,0 mg/dl, RR 145/90 mmHg",
+      "Anti-PLA2R-Antikörper positiv; Nierenbiopsie: membranöse Glomerulonephritis",
+      "Sonographie: Nieren normal groß, kein Hinweis auf Nierenvenenthrombose",
+      "Therapie: Furosemid, Ramipril, Atorvastatin, Enoxaparin prophylaktisch, salzarme Kost; Gewichtsabnahme 5 kg"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patient ma’lumotlari (Herr Schmitt)",
+        "labelRu": "Данные пациента (Herr Schmitt)",
+        "labelTr": "Hasta bilgileri (Herr Schmitt)",
+        "labelEn": "Patient data (Herr Schmitt)",
+        "keywords": ["schmitt"]
+      },
+      {
+        "label": "Asosiy shikoyat: oyoq va qovoq shishlari (Ödeme)",
+        "labelRu": "Основная жалоба: отёки ног и век (Ödeme)",
+        "labelTr": "Ana şikâyet: bacak ve göz kapağı ödemi (Ödeme)",
+        "labelEn": "Main complaint: leg and eyelid swelling (Ödeme)",
+        "keywords": ["ödem"]
+      },
+      {
+        "label": "Ko‘pikli siydik va vazn ortishi (Gewichtszunahme)",
+        "labelRu": "Пенистая моча и прибавка веса (Gewichtszunahme)",
+        "labelTr": "Köpüklü idrar ve kilo artışı (Gewichtszunahme)",
+        "labelEn": "Foamy urine and weight gain (Gewichtszunahme)",
+        "keywords": ["schäum", "gewichtszunahme", "8 kg"]
+      },
+      {
+        "label": "Proteinuriya va gipoalbuminemiya (Proteinurie 8,4 g/Tag)",
+        "labelRu": "Протеинурия и гипоальбуминемия (Proteinurie 8,4 g/Tag)",
+        "labelTr": "Proteinüri ve hipoalbüminemi (Proteinurie 8,4 g/Tag)",
+        "labelEn": "Proteinuria and hypoalbuminaemia (Proteinurie 8,4 g/Tag)",
+        "keywords": ["proteinurie", "albumin"]
+      },
+      {
+        "label": "Giperlipidemiya (Cholesterin)",
+        "labelRu": "Гиперлипидемия (Cholesterin)",
+        "labelTr": "Hiperlipidemi (Cholesterin)",
+        "labelEn": "Hyperlipidaemia (Cholesterin)",
+        "keywords": ["cholesterin", "hyperlipid"]
+      },
+      {
+        "label": "Antitanachalar va biopsiya (Anti-PLA2R, Nierenbiopsie)",
+        "labelRu": "Антитела и биопсия (Anti-PLA2R, Nierenbiopsie)",
+        "labelTr": "Antikorlar ve biyopsi (Anti-PLA2R, Nierenbiopsie)",
+        "labelEn": "Antibodies and biopsy (Anti-PLA2R, Nierenbiopsie)",
+        "keywords": ["pla2r", "biopsie"]
+      },
+      {
+        "label": "Diagnoz: membranoz glomerulonefrit tufayli nefrotik sindrom (nephrotisches Syndrom)",
+        "labelRu": "Диагноз: нефротический синдром при мембранозном гломерулонефрите (nephrotisches Syndrom)",
+        "labelTr": "Tanı: membranöz glomerülonefrite bağlı nefrotik sendrom (nephrotisches Syndrom)",
+        "labelEn": "Diagnosis: nephrotic syndrome due to membranous glomerulonephritis (nephrotisches Syndrom)",
+        "keywords": ["nephrotisches syndrom", "membranös"]
+      },
+      {
+        "label": "Davolash: diuretik, ACE ingibitori va statin (Furosemid, Ramipril, Atorvastatin)",
+        "labelRu": "Лечение: диуретик, иАПФ и статин (Furosemid, Ramipril, Atorvastatin)",
+        "labelTr": "Tedavi: diüretik, ACE inhibitörü ve statin (Furosemid, Ramipril, Atorvastatin)",
+        "labelEn": "Treatment: diuretic, ACE inhibitor and statin (Furosemid, Ramipril, Atorvastatin)",
+        "keywords": ["furosemid", "ramipril", "atorvastatin"]
+      },
+      {
+        "label": "Tavsiya: tromboz profilaktikasi va oqsil nazorati (Thromboseprophylaxe)",
+        "labelRu": "Рекомендация: профилактика тромбоза и контроль белка (Thromboseprophylaxe)",
+        "labelTr": "Öneri: tromboz profilaksisi ve protein takibi (Thromboseprophylaxe)",
+        "labelEn": "Recommendation: thrombosis prophylaxis and protein monitoring (Thromboseprophylaxe)",
+        "keywords": ["thromboseprophylaxe", "enoxaparin"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Markus Schmitt, 45 Jahre, der vom 29.09.2026 bis zum 09.10.2026 in unserer nephrologischen Abteilung behandelt wurde.\n\nAnamnese:\nDer Patient stellte sich mit seit drei Wochen zunehmenden Unterschenkel- und Lidödemen, einer Gewichtszunahme von 8 kg und schäumendem Urin vor. Vorerkrankungen und Medikamenteneinnahme bestanden nicht.\n\nBefunde:\nEs zeigten sich eine Proteinurie von 8,4 g/Tag, ein Albumin von 1,9 g/dl und ein Gesamtcholesterin von 380 mg/dl bei normaler Nierenfunktion (Kreatinin 1,0 mg/dl). Der Blutdruck lag bei 145/90 mmHg. Die Anti-PLA2R-Antikörper waren positiv, die Nierenbiopsie ergab eine membranöse Glomerulonephritis. Sonographisch waren die Nieren normal groß, ohne Hinweis auf eine Nierenvenenthrombose.\n\nDiagnose:\nNephrotisches Syndrom bei primärer membranöser Glomerulonephritis.\n\nTherapie und Verlauf:\nWir behandelten mit Furosemid, Ramipril und Atorvastatin sowie salzarmer Kost. Wegen des erhöhten Thromboserisikos erhielt der Patient eine Thromboseprophylaxe mit Enoxaparin. Darunter nahm er 5 kg ab, die Ödeme waren rückläufig.\n\nProcedere:\nWir empfehlen die Fortführung der Thromboseprophylaxe, solange das Albumin unter 2,5 g/dl liegt. Wir bitten um monatliche Kontrollen von Proteinurie, Albumin, Kreatinin und Kalium. Bei fehlender Remission nach sechs Monaten ist eine immunsuppressive Therapie vorgesehen.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab56",
+    "caseId": "c78",
+    "title": "Lebensbedrohliche Hyperkaliämie bei Dialysepatient",
+    "task": "Nefrologiya bo‘limidan dializ markaziga Arztbrief yozing. EKG o‘zgarishlari, shoshilinch davolash va bemorni o‘qitishga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из нефрологии в диализный центр. Обратите внимание на изменения ЭКГ, экстренное лечение и обучение пациента.",
+    "taskTr": "Nefroloji servisinden diyaliz merkezine bir Arztbrief yazın. EKG değişikliklerine, acil tedaviye ve hasta eğitimine dikkat edin.",
+    "taskEn": "Write an Arztbrief from nephrology to the dialysis centre. Pay attention to the ECG changes, emergency treatment and patient education.",
+    "facts": [
+      "Patient: Ahmet Yılmaz, 63 Jahre, männlich",
+      "Aufnahme: 06.10.2026, Notaufnahme",
+      "Seit dem Morgen Schwäche beider Beine, Parästhesien der Hände, Palpitationen",
+      "Terminale Niereninsuffizienz, Hämodialyse Mo/Mi/Fr über Shunt links; letzte Dialyse vor 4 Tagen ausgelassen, kaliumreiche Kost",
+      "Kalium 7,9 mmol/l, pH 7,22, Bikarbonat 14 mmol/l",
+      "EKG: Bradykardie 42/min, hohe zeltförmige T-Wellen, verbreiterte QRS-Komplexe",
+      "Therapie: Calciumgluconat i. v., Insulin-Glukose-Infusion, Salbutamol, Natriumbicarbonat; Notfalldialyse; Kalium danach 4,6 mmol/l, EKG normalisiert"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patient ma’lumotlari (Herr Yılmaz)",
+        "labelRu": "Данные пациента (Herr Yılmaz)",
+        "labelTr": "Hasta bilgileri (Herr Yılmaz)",
+        "labelEn": "Patient data (Herr Yılmaz)",
+        "keywords": ["yılmaz"]
+      },
+      {
+        "label": "Asosiy shikoyat: oyoqlarda kuchsizlik va yurak urishining buzilishi (Schwäche, Palpitationen)",
+        "labelRu": "Основная жалоба: слабость в ногах и перебои в сердце (Schwäche, Palpitationen)",
+        "labelTr": "Ana şikâyet: bacaklarda güçsüzlük ve çarpıntı (Schwäche, Palpitationen)",
+        "labelEn": "Main complaint: leg weakness and palpitations (Schwäche, Palpitationen)",
+        "keywords": ["schwäche", "palpitation"]
+      },
+      {
+        "label": "Dializ o‘tkazib yuborilgan (ausgelassene Dialyse)",
+        "labelRu": "Пропущенный диализ (ausgelassene Dialyse)",
+        "labelTr": "Atlanmış diyaliz (ausgelassene Dialyse)",
+        "labelEn": "Missed dialysis (ausgelassene Dialyse)",
+        "keywords": ["ausgelassen", "versäumt"]
+      },
+      {
+        "label": "Kaliyga boy ovqat (kaliumreiche Kost)",
+        "labelRu": "Пища, богатая калием (kaliumreiche Kost)",
+        "labelTr": "Potasyumdan zengin beslenme (kaliumreiche Kost)",
+        "labelEn": "Potassium-rich food (kaliumreiche Kost)",
+        "keywords": ["kaliumreich", "obst"]
+      },
+      {
+        "label": "Kaliy va atsidoz (Kalium 7,9 mmol/l)",
+        "labelRu": "Калий и ацидоз (Kalium 7,9 mmol/l)",
+        "labelTr": "Potasyum ve asidoz (Kalium 7,9 mmol/l)",
+        "labelEn": "Potassium and acidosis (Kalium 7,9 mmol/l)",
+        "keywords": ["7,9", "azidose", "ph 7,22"]
+      },
+      {
+        "label": "EKG o‘zgarishlari (zeltförmige T-Wellen)",
+        "labelRu": "Изменения ЭКГ (zeltförmige T-Wellen)",
+        "labelTr": "EKG değişiklikleri (zeltförmige T-Wellen)",
+        "labelEn": "ECG changes (zeltförmige T-Wellen)",
+        "keywords": ["t-welle", "qrs", "bradykardie"]
+      },
+      {
+        "label": "Diagnoz: hayot uchun xavfli giperkaliyemiya (Hyperkaliämie)",
+        "labelRu": "Диагноз: жизнеугрожающая гиперкалиемия (Hyperkaliämie)",
+        "labelTr": "Tanı: hayatı tehdit eden hiperkalemi (Hyperkaliämie)",
+        "labelEn": "Diagnosis: life-threatening hyperkalaemia (Hyperkaliämie)",
+        "keywords": ["hyperkaliämie"]
+      },
+      {
+        "label": "Davolash: kalsiy glyukonat, insulin-glyukoza va shoshilinch dializ (Calciumgluconat, Notfalldialyse)",
+        "labelRu": "Лечение: глюконат кальция, инсулин-глюкоза и экстренный диализ (Calciumgluconat, Notfalldialyse)",
+        "labelTr": "Tedavi: kalsiyum glukonat, insülin-glukoz ve acil diyaliz (Calciumgluconat, Notfalldialyse)",
+        "labelEn": "Treatment: calcium gluconate, insulin-glucose and emergency dialysis (Calciumgluconat, Notfalldialyse)",
+        "keywords": ["calciumgluconat", "insulin", "notfalldialyse"]
+      },
+      {
+        "label": "Tavsiya: dializni o‘tkazib yubormaslik va kaliysiz parhez (kaliumarme Diät)",
+        "labelRu": "Рекомендация: не пропускать диализ и бескалиевая диета (kaliumarme Diät)",
+        "labelTr": "Öneri: diyalizi atlamamak ve düşük potasyumlu diyet (kaliumarme Diät)",
+        "labelEn": "Recommendation: never miss dialysis and low-potassium diet (kaliumarme Diät)",
+        "keywords": ["kaliumarm", "ernährungsberatung", "dialysetermine"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Ahmet Yılmaz, 63 Jahre, der vom 06.10.2026 bis zum 08.10.2026 in unserer nephrologischen Abteilung behandelt wurde.\n\nAnamnese:\nDer Patient stellte sich mit seit dem Morgen bestehender Schwäche beider Beine, Parästhesien der Hände und Palpitationen vor. Bei terminaler Niereninsuffizienz wird er dreimal wöchentlich über einen Shunt am linken Unterarm dialysiert. Die letzte Dialyse hatte er vor vier Tagen ausgelassen und am Wochenende kaliumreiche Kost (Obst, Tomaten, Nüsse) zu sich genommen.\n\nBefunde:\nLaborchemisch zeigten sich ein Kalium von 7,9 mmol/l und eine metabolische Azidose mit pH 7,22 und Bikarbonat 14 mmol/l. Im EKG fanden sich eine Bradykardie von 42/min, hohe zeltförmige T-Wellen und verbreiterte QRS-Komplexe.\n\nDiagnose:\nLebensbedrohliche Hyperkaliämie nach ausgelassener Hämodialyse und kaliumreicher Kost.\n\nTherapie und Verlauf:\nUnter Monitorüberwachung erhielt der Patient sofort Calciumgluconat i. v., eine Insulin-Glukose-Infusion, Salbutamol-Inhalationen und Natriumbicarbonat. Anschließend erfolgte eine Notfalldialyse. Danach lag das Kalium bei 4,6 mmol/l, das EKG hatte sich normalisiert, die Schwäche war vollständig rückläufig.\n\nProcedere:\nWir haben den Patienten eindringlich über die Gefahr ausgelassener Dialysetermine aufgeklärt. Wir empfehlen eine erneute Ernährungsberatung zur kaliumarmen Diät und die Fortsetzung der Dialyse nach dem gewohnten Schema.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab57",
+    "caseId": "c79",
+    "title": "Schmerzlose Makrohämaturie bei Harnblasenkarzinom",
+    "task": "Urologiya bo‘limidan uy shifokoriga Arztbrief yozing. Xavf omillari (chekish, kasbiy ta’sir), TUR-B natijasi va keyingi nazoratga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из урологии семейному врачу. Обратите внимание на факторы риска (курение, профессиональная вредность), результат ТУР и дальнейшее наблюдение.",
+    "taskTr": "Üroloji servisinden aile hekimine bir Arztbrief yazın. Risk faktörlerine (sigara, mesleki maruziyet), TUR-M sonucuna ve sonraki takibe dikkat edin.",
+    "taskEn": "Write an Arztbrief from urology to the GP. Pay attention to the risk factors (smoking, occupational exposure), the TURBT result and follow-up.",
+    "facts": [
+      "Patient: Rolf Schneider, 69 Jahre, männlich",
+      "Aufnahme: 01.10.2026, urologische Station",
+      "Seit 1 Woche rezidivierende schmerzlose Makrohämaturie mit Koageln; vor 3 Monaten einmalige Episode",
+      "Risikofaktoren: Nikotinabusus 50 py, 30 Jahre Maler und Lackierer (aromatische Amine)",
+      "Urinzytologie: atypische Urothelzellen; Sonographie: Raumforderung an der Blasenhinterwand",
+      "Zystoskopie: papillärer Tumor 3 cm; CT-Urographie: oberer Harntrakt unauffällig, keine Lymphknotenvergrößerung",
+      "TUR-B: nicht-muskelinvasives Urothelkarzinom pTa high grade; Frühinstillation mit Mitomycin"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patient ma’lumotlari (Herr Schneider)",
+        "labelRu": "Данные пациента (Herr Schneider)",
+        "labelTr": "Hasta bilgileri (Herr Schneider)",
+        "labelEn": "Patient data (Herr Schneider)",
+        "keywords": ["schneider"]
+      },
+      {
+        "label": "Asosiy shikoyat: og‘riqsiz makrogematuriya (schmerzlose Makrohämaturie)",
+        "labelRu": "Основная жалоба: безболевая макрогематурия (schmerzlose Makrohämaturie)",
+        "labelTr": "Ana şikâyet: ağrısız makroskopik hematüri (schmerzlose Makrohämaturie)",
+        "labelEn": "Main complaint: painless visible haematuria (schmerzlose Makrohämaturie)",
+        "keywords": ["makrohämaturie", "schmerzlos"]
+      },
+      {
+        "label": "Chekish (Nikotinabusus 50 py)",
+        "labelRu": "Курение (Nikotinabusus 50 py)",
+        "labelTr": "Sigara (Nikotinabusus 50 py)",
+        "labelEn": "Smoking (Nikotinabusus 50 py)",
+        "keywords": ["nikotin", "50 py", "raucher"]
+      },
+      {
+        "label": "Kasbiy ta’sir: bo‘yoqlar (Maler, aromatische Amine)",
+        "labelRu": "Профессиональная вредность: краски (Maler, aromatische Amine)",
+        "labelTr": "Mesleki maruziyet: boyalar (Maler, aromatische Amine)",
+        "labelEn": "Occupational exposure: paints (Maler, aromatische Amine)",
+        "keywords": ["maler", "aromatische amine", "lackierer"]
+      },
+      {
+        "label": "Sistoskopiya va KT-urografiya (Zystoskopie, CT-Urographie)",
+        "labelRu": "Цистоскопия и КТ-урография (Zystoskopie, CT-Urographie)",
+        "labelTr": "Sistoskopi ve BT ürografi (Zystoskopie, CT-Urographie)",
+        "labelEn": "Cystoscopy and CT urography (Zystoskopie, CT-Urographie)",
+        "keywords": ["zystoskopie", "ct-urographie"]
+      },
+      {
+        "label": "Davolash: TUR-B va mitomitsin instillyatsiyasi (TUR-B, Mitomycin)",
+        "labelRu": "Лечение: ТУР и инстилляция митомицина (TUR-B, Mitomycin)",
+        "labelTr": "Tedavi: TUR-M ve mitomisin instilasyonu (TUR-B, Mitomycin)",
+        "labelEn": "Treatment: TURBT and mitomycin instillation (TUR-B, Mitomycin)",
+        "keywords": ["tur-b", "mitomycin"]
+      },
+      {
+        "label": "Diagnoz: mushak qavatiga o‘smagan urotelial karsinoma (pTa high grade)",
+        "labelRu": "Диагноз: немышечно-инвазивная уротелиальная карцинома (pTa high grade)",
+        "labelTr": "Tanı: kas invaziv olmayan ürotelyal karsinom (pTa high grade)",
+        "labelEn": "Diagnosis: non-muscle-invasive urothelial carcinoma (pTa high grade)",
+        "keywords": ["urothelkarzinom", "pta"]
+      },
+      {
+        "label": "Tavsiya: BCG instillyatsiyasi va sistoskopiya nazorati (BCG, Re-TUR)",
+        "labelRu": "Рекомендация: инстилляции БЦЖ и контрольная цистоскопия (BCG, Re-TUR)",
+        "labelTr": "Öneri: BCG instilasyonu ve kontrol sistoskopi (BCG, Re-TUR)",
+        "labelEn": "Recommendation: BCG instillations and follow-up cystoscopy (BCG, Re-TUR)",
+        "keywords": ["bcg", "re-tur", "kontrollzystoskopie"]
+      },
+      {
+        "label": "Tavsiya: chekishni tashlash va kasb kasalligi haqida xabar (Berufskrankheit, Nikotinkarenz)",
+        "labelRu": "Рекомендация: отказ от курения и сообщение о профзаболевании (Berufskrankheit, Nikotinkarenz)",
+        "labelTr": "Öneri: sigarayı bırakma ve meslek hastalığı bildirimi (Berufskrankheit, Nikotinkarenz)",
+        "labelEn": "Recommendation: stop smoking and report occupational disease (Berufskrankheit, Nikotinkarenz)",
+        "keywords": ["berufskrankheit", "nikotinkarenz"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Rolf Schneider, 69 Jahre, der vom 01.10.2026 bis zum 06.10.2026 in unserer urologischen Abteilung behandelt wurde.\n\nAnamnese:\nDer Patient stellte sich mit seit einer Woche rezidivierender schmerzloser Makrohämaturie mit Koageln vor; vor drei Monaten war bereits eine einmalige Episode aufgetreten. Es besteht ein Nikotinabusus von 50 py. Zudem war er 30 Jahre als Maler und Lackierer tätig und dabei aromatischen Aminen ausgesetzt.\n\nBefunde:\nIn der Urinzytologie fanden sich atypische Urothelzellen, sonographisch eine Raumforderung an der Blasenhinterwand. In der Zystoskopie zeigte sich ein 3 cm großer papillärer Tumor. Die CT-Urographie ergab einen unauffälligen oberen Harntrakt ohne Lymphknotenvergrößerung.\n\nDiagnose:\nNicht-muskelinvasives Urothelkarzinom der Harnblase, pTa high grade.\n\nTherapie und Verlauf:\nEs erfolgte eine TUR-B mit vollständiger Resektion des Tumors und eine Frühinstillation mit Mitomycin. Der postoperative Verlauf war komplikationslos, der Urin klarte auf.\n\nProcedere:\nWir empfehlen eine Re-TUR in sechs Wochen und anschließend eine Instillationstherapie mit BCG sowie regelmäßige Kontrollzystoskopien. Dem Patienten wurde eine Nikotinkarenz dringend empfohlen. Aufgrund der beruflichen Exposition sollte eine Meldung als Verdacht auf Berufskrankheit erfolgen.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab58",
+    "caseId": "c80",
+    "title": "Akute Epididymitis",
+    "task": "Urologiya ambulatoriyasidan uy shifokoriga Arztbrief yozing. Moyak buralishini istisno qilish va sherigini davolashga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из урологической амбулатории семейному врачу. Обратите внимание на исключение перекрута яичка и лечение партнёрши.",
+    "taskTr": "Üroloji polikliniğinden aile hekimine bir Arztbrief yazın. Testis torsiyonunun dışlanmasına ve partnerin tedavisine dikkat edin.",
+    "taskEn": "Write an Arztbrief from the urology clinic to the GP. Pay attention to ruling out torsion and treating the partner.",
+    "facts": [
+      "Patient: Kevin Hoffmeister, 24 Jahre, männlich",
+      "Vorstellung: 07.10.2026, urologische Notaufnahme (ambulant)",
+      "Seit 3 Tagen langsam zunehmende Schmerzen und Schwellung des rechten Hodens, Fieber bis 38,4 °C, Dysurie, leichter Ausfluss",
+      "Neue Sexualpartnerin seit 1 Monat, ungeschützter Geschlechtsverkehr",
+      "Nebenhoden rechts verdickt, druckdolent; Prehn-Zeichen positiv; Kremasterreflex erhalten",
+      "Dopplersonographie: Hyperperfusion des Nebenhodens, Hodenperfusion erhalten (keine Torsion)",
+      "CRP 52 mg/l; PCR Erststrahlurin: Chlamydia trachomatis positiv, Gonokokken negativ",
+      "Therapie: Ceftriaxon 1 g i. m. einmalig und Doxycyclin 100 mg 1-0-1 für 10 Tage, Hochlagerung, Kühlung, Ibuprofen"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patient ma’lumotlari (Herr Hoffmeister)",
+        "labelRu": "Данные пациента (Herr Hoffmeister)",
+        "labelTr": "Hasta bilgileri (Herr Hoffmeister)",
+        "labelEn": "Patient data (Herr Hoffmeister)",
+        "keywords": ["hoffmeister"]
+      },
+      {
+        "label": "Asosiy shikoyat: o‘ng moyakda og‘riq va shish (Hodenschwellung)",
+        "labelRu": "Основная жалоба: боль и отёк правого яичка (Hodenschwellung)",
+        "labelTr": "Ana şikâyet: sağ testiste ağrı ve şişlik (Hodenschwellung)",
+        "labelEn": "Main complaint: pain and swelling of the right testicle (Hodenschwellung)",
+        "keywords": ["hoden", "schwellung"]
+      },
+      {
+        "label": "Asta-sekin boshlanish va isitma (langsam zunehmend, Fieber)",
+        "labelRu": "Постепенное начало и лихорадка (langsam zunehmend, Fieber)",
+        "labelTr": "Yavaş başlangıç ve ateş (langsam zunehmend, Fieber)",
+        "labelEn": "Gradual onset and fever (langsam zunehmend, Fieber)",
+        "keywords": ["langsam", "fieber"]
+      },
+      {
+        "label": "Himoyasiz jinsiy aloqa (Sexualanamnese)",
+        "labelRu": "Незащищённый половой контакт (Sexualanamnese)",
+        "labelTr": "Korunmasız cinsel ilişki (Sexualanamnese)",
+        "labelEn": "Unprotected intercourse (Sexualanamnese)",
+        "keywords": ["sexualpartner", "ungeschützt"]
+      },
+      {
+        "label": "Doppler: buralish yo‘q (keine Torsion)",
+        "labelRu": "Допплер: перекрута нет (keine Torsion)",
+        "labelTr": "Doppler: torsiyon yok (keine Torsion)",
+        "labelEn": "Doppler: no torsion (keine Torsion)",
+        "keywords": ["torsion", "doppler"]
+      },
+      {
+        "label": "Xlamidiya PCR (Chlamydia trachomatis)",
+        "labelRu": "ПЦР на хламидии (Chlamydia trachomatis)",
+        "labelTr": "Klamidya PCR (Chlamydia trachomatis)",
+        "labelEn": "Chlamydia PCR (Chlamydia trachomatis)",
+        "keywords": ["chlamydia", "pcr"]
+      },
+      {
+        "label": "Diagnoz: o‘tkir epididimit (Epididymitis)",
+        "labelRu": "Диагноз: острый эпидидимит (Epididymitis)",
+        "labelTr": "Tanı: akut epididimit (Epididymitis)",
+        "labelEn": "Diagnosis: acute epididymitis (Epididymitis)",
+        "keywords": ["epididymitis"]
+      },
+      {
+        "label": "Davolash: seftriakson va doksitsiklin (Ceftriaxon, Doxycyclin)",
+        "labelRu": "Лечение: цефтриаксон и доксициклин (Ceftriaxon, Doxycyclin)",
+        "labelTr": "Tedavi: seftriakson ve doksisiklin (Ceftriaxon, Doxycyclin)",
+        "labelEn": "Treatment: ceftriaxone and doxycycline (Ceftriaxon, Doxycyclin)",
+        "keywords": ["doxycyclin", "ceftriaxon"]
+      },
+      {
+        "label": "Tavsiya: sherigini davolash va himoyalanish (Partnerbehandlung)",
+        "labelRu": "Рекомендация: лечение партнёрши и защищённый секс (Partnerbehandlung)",
+        "labelTr": "Öneri: partnerin tedavisi ve korunma (Partnerbehandlung)",
+        "labelEn": "Recommendation: treat the partner and use protection (Partnerbehandlung)",
+        "keywords": ["partnerin", "partnerbehandlung", "kondom"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Kevin Hoffmeister, 24 Jahre, der vom 07.10.2026 bis zum 07.10.2026 in unserer urologischen Notaufnahme (ambulant) behandelt wurde.\n\nAnamnese:\nDer Patient stellte sich mit seit drei Tagen langsam zunehmenden Schmerzen und einer Schwellung des rechten Hodens vor. Zudem bestanden Fieber bis 38,4 °C, eine Dysurie und leichter Ausfluss. Seit einem Monat hat er eine neue Sexualpartnerin, der Geschlechtsverkehr war ungeschützt. Ein Trauma wurde verneint.\n\nBefunde:\nDer rechte Nebenhoden war verdickt und druckdolent, das Prehn-Zeichen positiv, der Kremasterreflex erhalten. Die Dopplersonographie zeigte eine Hyperperfusion des Nebenhodens bei erhaltener Hodenperfusion, eine Torsion konnte somit ausgeschlossen werden. Das CRP lag bei 52 mg/l. Die PCR aus dem Erststrahlurin war positiv für Chlamydia trachomatis und negativ für Gonokokken.\n\nDiagnose:\nAkute Epididymitis rechts durch Chlamydia trachomatis.\n\nTherapie und Verlauf:\nDer Patient erhielt einmalig Ceftriaxon 1 g i. m. und begann eine Therapie mit Doxycyclin 100 mg 1-0-1 für zehn Tage. Zusätzlich empfahlen wir Hochlagerung, Kühlung und Ibuprofen.\n\nProcedere:\nDie Partnerin sollte ebenfalls untersucht und behandelt werden (Partnerbehandlung); bis zum Abschluss der Therapie ist auf Geschlechtsverkehr zu verzichten, danach sollten Kondome verwendet werden. Eine HIV- und Syphilis-Serologie wurde abgenommen. Bei Befundverschlechterung bitten wir um Wiedervorstellung, eine Kontrolle ist in einer Woche vorgesehen.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab59",
+    "caseId": "c81",
+    "title": "Achillessehnenruptur",
+    "task": "Travmatologiya bo‘limidan uy shifokoriga Arztbrief yozing. Ftorxinolon qabul qilinganini va konservativ davolash rejasini yoritib bering.",
+    "taskRu": "Напишите Arztbrief из травматологии семейному врачу. Отразите приём фторхинолона и план консервативного лечения.",
+    "taskTr": "Travmatoloji servisinden aile hekimine bir Arztbrief yazın. Florokinolon kullanımını ve konservatif tedavi planını belirtin.",
+    "taskEn": "Write an Arztbrief from trauma surgery to the GP. Cover the fluoroquinolone use and the conservative treatment plan.",
+    "facts": [
+      "Patient: Stefan Fischer, 44 Jahre, männlich",
+      "Vorstellung: 05.10.2026, unfallchirurgische Notaufnahme",
+      "Beim Tennis plötzlicher peitschenschlagartiger Schmerz in der rechten Wade mit hörbarem Knall; kein Zehenspitzenstand",
+      "Vor 4 Wochen Ciprofloxacin wegen Harnwegsinfekt",
+      "Tastbare Delle 4 cm oberhalb des Kalkaneus, Thompson-Test positiv",
+      "Sonographie: komplette Ruptur, Sehnenenden in Spitzfußstellung adaptierbar; Röntgen: kein knöcherner Ausriss",
+      "Therapie: konservativ-funktionell im Spezialschuh (Spitzfußstellung), Thromboseprophylaxe mit Enoxaparin"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patient ma’lumotlari (Herr Fischer)",
+        "labelRu": "Данные пациента (Herr Fischer)",
+        "labelTr": "Hasta bilgileri (Herr Fischer)",
+        "labelEn": "Patient data (Herr Fischer)",
+        "keywords": ["fischer"]
+      },
+      {
+        "label": "Sport paytida jarohat mexanizmi (Unfallhergang)",
+        "labelRu": "Механизм травмы при спорте (Unfallhergang)",
+        "labelTr": "Spor sırasında yaralanma mekanizması (Unfallhergang)",
+        "labelEn": "Injury mechanism during sport (Unfallhergang)",
+        "keywords": ["tennis", "knall"]
+      },
+      {
+        "label": "Oyoq uchida tura olmaydi (Zehenspitzenstand nicht möglich)",
+        "labelRu": "Не может встать на носок (Zehenspitzenstand nicht möglich)",
+        "labelTr": "Parmak ucunda duramıyor (Zehenspitzenstand nicht möglich)",
+        "labelEn": "Cannot stand on tiptoe (Zehenspitzenstand nicht möglich)",
+        "keywords": ["zehenspitzenstand"]
+      },
+      {
+        "label": "Ftorxinolon qabul qilingan (Ciprofloxacin)",
+        "labelRu": "Приём фторхинолона (Ciprofloxacin)",
+        "labelTr": "Florokinolon kullanımı (Ciprofloxacin)",
+        "labelEn": "Fluoroquinolone use (Ciprofloxacin)",
+        "keywords": ["ciprofloxacin", "fluorchinolon"]
+      },
+      {
+        "label": "Tompson testi musbat (Thompson-Test)",
+        "labelRu": "Положительный тест Томпсона (Thompson-Test)",
+        "labelTr": "Thompson testi pozitif (Thompson-Test)",
+        "labelEn": "Positive Thompson test (Thompson-Test)",
+        "keywords": ["thompson"]
+      },
+      {
+        "label": "UTT topilmasi (Sonographie)",
+        "labelRu": "Данные УЗИ (Sonographie)",
+        "labelTr": "USG bulgusu (Sonographie)",
+        "labelEn": "Ultrasound finding (Sonographie)",
+        "keywords": ["sonographie", "komplette ruptur"]
+      },
+      {
+        "label": "Diagnoz: Axill payining to‘liq uzilishi (Achillessehnenruptur)",
+        "labelRu": "Диагноз: полный разрыв ахиллова сухожилия (Achillessehnenruptur)",
+        "labelTr": "Tanı: Aşil tendonunun tam yırtığı (Achillessehnenruptur)",
+        "labelEn": "Diagnosis: complete Achilles tendon rupture (Achillessehnenruptur)",
+        "keywords": ["achillessehnenruptur"]
+      },
+      {
+        "label": "Davolash: maxsus poyabzalda konservativ davolash (Spezialschuh)",
+        "labelRu": "Лечение: консервативное лечение в специальной обуви (Spezialschuh)",
+        "labelTr": "Tedavi: özel ayakkabıda konservatif tedavi (Spezialschuh)",
+        "labelEn": "Treatment: conservative treatment in a special boot (Spezialschuh)",
+        "keywords": ["spezialschuh", "konservativ"]
+      },
+      {
+        "label": "Tavsiya: tromboz profilaktikasi va ftorxinolonlardan saqlanish (Thromboseprophylaxe)",
+        "labelRu": "Рекомендация: профилактика тромбоза и избегать фторхинолонов (Thromboseprophylaxe)",
+        "labelTr": "Öneri: tromboz profilaksisi ve florokinolonlardan kaçınma (Thromboseprophylaxe)",
+        "labelEn": "Recommendation: thrombosis prophylaxis and avoid fluoroquinolones (Thromboseprophylaxe)",
+        "keywords": ["thromboseprophylaxe", "enoxaparin"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Stefan Fischer, 44 Jahre, der vom 05.10.2026 bis zum 05.10.2026 in unserer unfallchirurgischen Notaufnahme (ambulant) behandelt wurde.\n\nAnamnese:\nDer Patient verspürte beim Tennis einen plötzlichen peitschenschlagartigen Schmerz in der rechten Wade mit hörbarem Knall. Seitdem ist ein Zehenspitzenstand rechts nicht möglich. Vor vier Wochen hatte er wegen eines Harnwegsinfekts Ciprofloxacin eingenommen.\n\nBefunde:\nEtwa 4 cm oberhalb des Kalkaneus war eine Delle tastbar, der Thompson-Test war positiv. Die Sonographie zeigte eine komplette Ruptur der Achillessehne, deren Enden sich in Spitzfußstellung adaptieren ließen. Im Röntgen fand sich kein knöcherner Ausriss.\n\nDiagnose:\nKomplette Achillessehnenruptur rechts, begünstigt durch die vorangegangene Fluorchinolon-Einnahme.\n\nTherapie und Verlauf:\nNach Aufklärung über operative und konservative Möglichkeiten entschied sich der Patient für eine konservativ-funktionelle Behandlung im Spezialschuh in Spitzfußstellung. Er erhält eine Thromboseprophylaxe mit Enoxaparin.\n\nProcedere:\nDer Spezialschuh sollte für insgesamt acht Wochen Tag und Nacht getragen werden, mit schrittweiser Reduktion der Absatzerhöhung. Die Thromboseprophylaxe ist bis zur Vollbelastung fortzuführen. Wir empfehlen, künftig auf Fluorchinolone zu verzichten. Sonographische Kontrollen sind nach zwei, vier und acht Wochen vorgesehen, danach Physiotherapie.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab60",
+    "caseId": "c82",
+    "title": "Osteoporotische Wirbelkörperfraktur",
+    "task": "Travmatologiya bo‘limidan uy shifokoriga Arztbrief yozing. Steroid sababli osteoporoz va uzoq muddatli davolashga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из травматологии семейному врачу. Обратите внимание на стероидный остеопороз и долгосрочное лечение.",
+    "taskTr": "Travmatoloji servisinden aile hekimine bir Arztbrief yazın. Steroide bağlı osteoporoza ve uzun süreli tedaviye dikkat edin.",
+    "taskEn": "Write an Arztbrief from trauma surgery to the GP. Pay attention to the steroid-induced osteoporosis and long-term treatment.",
+    "facts": [
+      "Patientin: Ursula Krüger, 78 Jahre, weiblich",
+      "Aufnahme: 02.10.2026, Notaufnahme",
+      "Akute Rückenschmerzen BWS (NRS 8/10) nach Anheben einer Wasserkiste, gürtelförmig ausstrahlend; keine neurologischen Ausfälle",
+      "Risikofaktoren: Prednisolon seit 10 Jahren, Z. n. Radiusfraktur, Größenverlust 4 cm, Mutter mit Schenkelhalsfraktur",
+      "Röntgen/CT: Kompressionsfraktur BWK 12 (Höhenminderung 30 %), Hinterkante intakt; MRT: frische Fraktur",
+      "DXA: T-Score LWS −3,4; Calcium und Elektrophorese unauffällig, Vitamin D 14 ng/ml",
+      "Therapie: Analgesie (Metamizol, Tapentadol), Mobilisation mit Physiotherapie; Beginn Alendronat, Vitamin D und Calcium"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patientin ma’lumotlari (Frau Krüger)",
+        "labelRu": "Данные пациентки (Frau Krüger)",
+        "labelTr": "Hasta bilgileri (Frau Krüger)",
+        "labelEn": "Patient data (Frau Krüger)",
+        "keywords": ["krüger"]
+      },
+      {
+        "label": "Asosiy shikoyat: yuk ko‘targandan keyin kuchli bel og‘rig‘i (Bagatelltrauma)",
+        "labelRu": "Основная жалоба: сильная боль в спине после подъёма тяжести (Bagatelltrauma)",
+        "labelTr": "Ana şikâyet: ağır kaldırma sonrası şiddetli sırt ağrısı (Bagatelltrauma)",
+        "labelEn": "Main complaint: severe back pain after lifting (Bagatelltrauma)",
+        "keywords": ["rückenschmerz", "wasserkiste", "bagatell"]
+      },
+      {
+        "label": "Nevrologik buzilish yo‘q (keine neurologischen Ausfälle)",
+        "labelRu": "Без неврологического дефицита (keine neurologischen Ausfälle)",
+        "labelTr": "Nörolojik defisit yok (keine neurologischen Ausfälle)",
+        "labelEn": "No neurological deficit (keine neurologischen Ausfälle)",
+        "keywords": ["neurologisch"]
+      },
+      {
+        "label": "Uzoq muddatli steroid (Prednisolon)",
+        "labelRu": "Длительный приём стероидов (Prednisolon)",
+        "labelTr": "Uzun süreli steroid (Prednisolon)",
+        "labelEn": "Long-term steroids (Prednisolon)",
+        "keywords": ["prednisolon", "glukokortikoid", "kortison"]
+      },
+      {
+        "label": "Avvalgi sinish va bo‘y qisqarishi (Radiusfraktur, Größenverlust)",
+        "labelRu": "Предыдущий перелом и потеря роста (Radiusfraktur, Größenverlust)",
+        "labelTr": "Önceki kırık ve boy kaybı (Radiusfraktur, Größenverlust)",
+        "labelEn": "Previous fracture and height loss (Radiusfraktur, Größenverlust)",
+        "keywords": ["radiusfraktur", "größe"]
+      },
+      {
+        "label": "Rentgen/KT/MRT topilmasi (BWK 12, Hinterkante intakt)",
+        "labelRu": "Данные рентгена/КТ/МРТ (BWK 12, Hinterkante intakt)",
+        "labelTr": "Röntgen/BT/MR bulgusu (BWK 12, Hinterkante intakt)",
+        "labelEn": "X-ray/CT/MRI finding (BWK 12, Hinterkante intakt)",
+        "keywords": ["bwk 12", "hinterkante"]
+      },
+      {
+        "label": "Suyak zichligi (T-Score)",
+        "labelRu": "Минеральная плотность кости (T-Score)",
+        "labelTr": "Kemik yoğunluğu (T-Score)",
+        "labelEn": "Bone density (T-Score)",
+        "keywords": ["t-score", "dxa"]
+      },
+      {
+        "label": "Diagnoz: osteoporotik umurtqa sinishi (Wirbelkörperfraktur)",
+        "labelRu": "Диагноз: остеопоротический перелом позвонка (Wirbelkörperfraktur)",
+        "labelTr": "Tanı: osteoporotik vertebra kırığı (Wirbelkörperfraktur)",
+        "labelEn": "Diagnosis: osteoporotic vertebral fracture (Wirbelkörperfraktur)",
+        "keywords": ["wirbelkörper", "osteoporose"]
+      },
+      {
+        "label": "Tavsiya: bisfosfonat, D vitamini va yiqilishning oldini olish (Alendronat, Sturzprophylaxe)",
+        "labelRu": "Рекомендация: бисфосфонат, витамин D и профилактика падений (Alendronat, Sturzprophylaxe)",
+        "labelTr": "Öneri: bifosfonat, D vitamini ve düşme önleme (Alendronat, Sturzprophylaxe)",
+        "labelEn": "Recommendation: bisphosphonate, vitamin D and fall prevention (Alendronat, Sturzprophylaxe)",
+        "keywords": ["alendronat", "vitamin d", "sturzprophylaxe"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihre Patientin Frau Ursula Krüger, 78 Jahre, die vom 02.10.2026 bis zum 10.10.2026 in unserer unfallchirurgischen Abteilung behandelt wurde.\n\nAnamnese:\nDie Patientin stellte sich mit akuten Rückenschmerzen im Bereich der BWS (NRS 8/10) vor, die nach dem Anheben einer Wasserkiste als Bagatelltrauma aufgetreten waren und gürtelförmig ausstrahlten. Neurologische Ausfälle bestanden nicht. Seit zehn Jahren erhält sie wegen einer rheumatoiden Arthritis Prednisolon. Vor zwei Jahren erlitt sie eine distale Radiusfraktur, ihre Körpergröße hat um 4 cm abgenommen. Die Mutter hatte eine Schenkelhalsfraktur.\n\nBefunde:\nIn Röntgen und CT zeigte sich eine Kompressionsfraktur von BWK 12 mit einer Höhenminderung von 30 % bei intakter Hinterkante. Das MRT bestätigte eine frische Fraktur. In der DXA lag der T-Score an der LWS bei −3,4. Calcium und Elektrophorese waren unauffällig, das Vitamin D mit 14 ng/ml erniedrigt.\n\nDiagnose:\nOsteoporotische Wirbelkörperkompressionsfraktur BWK 12 bei glukokortikoidinduzierter Osteoporose.\n\nTherapie und Verlauf:\nUnter Analgesie mit Metamizol und Tapentadol konnte die Patientin mit Physiotherapie zügig mobilisiert werden. Eine Kyphoplastie war nicht erforderlich. Wir begannen eine spezifische Osteoporosetherapie mit Alendronat sowie Vitamin D und Calcium.\n\nProcedere:\nWir empfehlen die Fortführung von Alendronat 70 mg einmal wöchentlich, Vitamin D 1000 IE und Calcium. Die Prednisolondosis sollte so niedrig wie möglich gehalten werden. Zur Sturzprophylaxe sind Physiotherapie und Hilfsmittel angeraten; eine Kontroll-DXA ist in zwei Jahren vorgesehen.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab61",
+    "caseId": "c83",
+    "title": "Perforiertes Ulcus duodeni",
+    "task": "Xirurgiya bo‘limidan uy shifokoriga Arztbrief yozing. NYQP, Helicobacter eradikatsiyasi va qayta yara bo‘lishining oldini olishga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из хирургии семейному врачу. Обратите внимание на НПВП, эрадикацию Helicobacter и профилактику рецидива язвы.",
+    "taskTr": "Cerrahi servisinden aile hekimine bir Arztbrief yazın. NSAİİ’lere, Helicobacter eradikasyonuna ve ülser nüksünün önlenmesine dikkat edin.",
+    "taskEn": "Write an Arztbrief from surgery to the GP. Pay attention to NSAIDs, Helicobacter eradication and preventing ulcer recurrence.",
+    "facts": [
+      "Patient: Dieter Vogel, 58 Jahre, männlich",
+      "Aufnahme: 04.10.2026, Notaufnahme",
+      "Vor 4 Stunden plötzlicher messerstichartiger Oberbauchschmerz, jetzt diffus; Schonhaltung; seit Wochen Nüchtern- und Nachtschmerz",
+      "Diclofenac 75 mg 1-0-1 seit 2 Monaten ohne Magenschutz; Nikotin 35 py, 4–5 Bier/Tag",
+      "Brettharter Bauch, Abwehrspannung; CRP 98 mg/l, Leukozyten 17.800/µl, Lipase normal",
+      "CT Abdomen: freie Luft subphrenisch, Flüssigkeit perihepatisch",
+      "Therapie: laparoskopische Übernähung eines perforierten Ulcus duodeni an der Vorderwand, Lavage; Ceftriaxon/Metronidazol, Pantoprazol i. v.; Histologie und Urease-Test: Helicobacter pylori positiv"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patient ma’lumotlari (Herr Vogel)",
+        "labelRu": "Данные пациента (Herr Vogel)",
+        "labelTr": "Hasta bilgileri (Herr Vogel)",
+        "labelEn": "Patient data (Herr Vogel)",
+        "keywords": ["vogel"]
+      },
+      {
+        "label": "Asosiy shikoyat: to‘satdan pichoq sanchgandek qorin og‘rig‘i (messerstichartiger Schmerz)",
+        "labelRu": "Основная жалоба: внезапная кинжальная боль в животе (messerstichartiger Schmerz)",
+        "labelTr": "Ana şikâyet: ani bıçak saplanır gibi karın ağrısı (messerstichartiger Schmerz)",
+        "labelEn": "Main complaint: sudden stabbing abdominal pain (messerstichartiger Schmerz)",
+        "keywords": ["messerstich"]
+      },
+      {
+        "label": "Avvalgi och qoringa og‘riqlar (Nüchternschmerz)",
+        "labelRu": "Предшествующие голодные боли (Nüchternschmerz)",
+        "labelTr": "Önceki açlık ağrıları (Nüchternschmerz)",
+        "labelEn": "Previous hunger pains (Nüchternschmerz)",
+        "keywords": ["nüchtern", "nachtschmerz"]
+      },
+      {
+        "label": "NYQP himoyasiz qabul qilingan (Diclofenac)",
+        "labelRu": "Приём НПВП без защиты желудка (Diclofenac)",
+        "labelTr": "Mide koruyucu olmadan NSAİİ (Diclofenac)",
+        "labelEn": "NSAIDs without gastric protection (Diclofenac)",
+        "keywords": ["diclofenac", "nsar"]
+      },
+      {
+        "label": "Taxtadek qattiq qorin (brettharter Bauch)",
+        "labelRu": "Доскообразный живот (brettharter Bauch)",
+        "labelTr": "Tahta gibi karın (brettharter Bauch)",
+        "labelEn": "Board-like abdomen (brettharter Bauch)",
+        "keywords": ["brettharter", "abwehrspannung"]
+      },
+      {
+        "label": "KT: erkin havo (freie Luft)",
+        "labelRu": "КТ: свободный газ (freie Luft)",
+        "labelTr": "BT: serbest hava (freie Luft)",
+        "labelEn": "CT: free air (freie Luft)",
+        "keywords": ["freie luft"]
+      },
+      {
+        "label": "Diagnoz: o‘n ikki barmoqli ichak yarasining teshilishi (perforiertes Ulcus duodeni)",
+        "labelRu": "Диагноз: перфоративная язва двенадцатиперстной кишки (perforiertes Ulcus duodeni)",
+        "labelTr": "Tanı: perfore duodenal ülser (perforiertes Ulcus duodeni)",
+        "labelEn": "Diagnosis: perforated duodenal ulcer (perforiertes Ulcus duodeni)",
+        "keywords": ["perforiert", "ulcus duodeni"]
+      },
+      {
+        "label": "Davolash: laparoskopik tikish va antibiotik (Übernähung)",
+        "labelRu": "Лечение: лапароскопическое ушивание и антибиотики (Übernähung)",
+        "labelTr": "Tedavi: laparoskopik dikiş ve antibiyotik (Übernähung)",
+        "labelEn": "Treatment: laparoscopic suture and antibiotics (Übernähung)",
+        "keywords": ["übernähung", "ceftriaxon"]
+      },
+      {
+        "label": "Tavsiya: Helicobacter eradikatsiyasi, NYQPni to‘xtatish, chekishni tashlash (Eradikation)",
+        "labelRu": "Рекомендация: эрадикация Helicobacter, отмена НПВП, отказ от курения (Eradikation)",
+        "labelTr": "Öneri: Helicobacter eradikasyonu, NSAİİ’nin kesilmesi, sigarayı bırakma (Eradikation)",
+        "labelEn": "Recommendation: Helicobacter eradication, stop NSAIDs, stop smoking (Eradikation)",
+        "keywords": ["eradikation", "nikotinkarenz", "nsar"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Dieter Vogel, 58 Jahre, der vom 04.10.2026 bis zum 12.10.2026 in unserer chirurgischen Abteilung behandelt wurde.\n\nAnamnese:\nDer Patient stellte sich mit vor vier Stunden plötzlich aufgetretenem messerstichartigem Oberbauchschmerz vor, der sich inzwischen über das gesamte Abdomen ausgebreitet hatte. Seit Wochen bestanden Nüchtern- und Nachtschmerzen. Seit zwei Monaten nimmt er Diclofenac 75 mg zweimal täglich ohne Magenschutz ein. Zudem besteht ein Nikotinabusus von 35 py und ein Konsum von 4–5 Bier täglich.\n\nBefunde:\nKlinisch zeigte sich ein brettharter Bauch mit Abwehrspannung. Laborchemisch fanden sich ein CRP von 98 mg/l und eine Leukozytose von 17.800/µl bei normaler Lipase. Im CT Abdomen zeigten sich freie Luft subphrenisch und Flüssigkeit perihepatisch.\n\nDiagnose:\nPerforiertes Ulcus duodeni der Vorderwand mit Peritonitis bei NSAR-Einnahme und Helicobacter-pylori-Infektion.\n\nTherapie und Verlauf:\nNotfallmäßig erfolgten eine laparoskopische Übernähung des Ulkus und eine Lavage. Postoperativ behandelten wir mit Ceftriaxon und Metronidazol sowie Pantoprazol i. v. Histologie und Urease-Test waren positiv für Helicobacter pylori. Der Verlauf war komplikationslos, der Kostaufbau gelang problemlos.\n\nProcedere:\nWir empfehlen eine Eradikationstherapie nach Bismut-Quadrupel-Schema für zehn Tage und anschließend eine Kontrolle mittels Atemtest. NSAR sollten dauerhaft vermieden werden; zur Analgesie eignet sich Paracetamol. Eine Nikotinkarenz und Alkoholreduktion sind dringend angeraten. Eine Kontrollgastroskopie ist in acht Wochen vorgesehen.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab62",
+    "caseId": "c84",
+    "title": "Akuter embolischer Verschluss der A. femoralis",
+    "task": "Qon tomir xirurgiyasidan uy shifokoriga Arztbrief yozing. Prattning 6 P belgisi, antikoagulyatsiya to‘xtatilgani va uni qayta boshlashga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из сосудистой хирургии семейному врачу. Обратите внимание на 6 «P», отмену антикоагуляции и её возобновление.",
+    "taskTr": "Damar cerrahisinden aile hekimine bir Arztbrief yazın. 6 P’ye, antikoagülasyonun kesilmesine ve yeniden başlanmasına dikkat edin.",
+    "taskEn": "Write an Arztbrief from vascular surgery to the GP. Pay attention to the 6 Ps, the paused anticoagulation and restarting it.",
+    "facts": [
+      "Patient: Erich Lange, 74 Jahre, männlich",
+      "Aufnahme: 03.10.2026, Notaufnahme",
+      "Seit 3 h plötzlich starke Schmerzen im linken Bein, Blässe, Kälte, Hypästhesie, beginnende Fußheberschwäche",
+      "Vorhofflimmern; Phenprocoumon vor 2 Wochen wegen Zahnextraktion pausiert und nicht wieder begonnen",
+      "Pulse links ab der Leiste nicht tastbar; Doppler: kein Signal an A. dorsalis pedis und A. tibialis posterior",
+      "CT-Angiographie: embolischer Verschluss der A. femoralis communis links; EKG: absolute Arrhythmie",
+      "Therapie: Heparin-Bolus, notfallmäßige Embolektomie mit Fogarty-Katheter; postoperativ Pulse tastbar, CK-Anstieg auf 2.400 U/l, Kreatinin stabil, kein Kompartmentsyndrom"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patient ma’lumotlari (Herr Lange)",
+        "labelRu": "Данные пациента (Herr Lange)",
+        "labelTr": "Hasta bilgileri (Herr Lange)",
+        "labelEn": "Patient data (Herr Lange)",
+        "keywords": ["lange"]
+      },
+      {
+        "label": "Asosiy shikoyat: to‘satdan sovuq, oqargan va og‘riqli oyoq (6 P nach Pratt)",
+        "labelRu": "Основная жалоба: внезапно холодная, бледная и болезненная нога (6 P nach Pratt)",
+        "labelTr": "Ana şikâyet: ani soğuk, solgun ve ağrılı bacak (6 P nach Pratt)",
+        "labelEn": "Main complaint: sudden cold, pale and painful leg (6 P nach Pratt)",
+        "keywords": ["blässe", "kälte", "schmerz"]
+      },
+      {
+        "label": "Sezgi va harakat buzilishi (Hypästhesie, Parese)",
+        "labelRu": "Нарушение чувствительности и движения (Hypästhesie, Parese)",
+        "labelTr": "Duyu ve hareket bozukluğu (Hypästhesie, Parese)",
+        "labelEn": "Sensory and motor deficit (Hypästhesie, Parese)",
+        "keywords": ["hypästhesie", "fußheber", "parese"]
+      },
+      {
+        "label": "Antikoagulyatsiya to‘xtatilgan (Phenprocoumon pausiert)",
+        "labelRu": "Антикоагуляция отменена (Phenprocoumon pausiert)",
+        "labelTr": "Antikoagülasyon kesilmiş (Phenprocoumon pausiert)",
+        "labelEn": "Anticoagulation paused (Phenprocoumon pausiert)",
+        "keywords": ["phenprocoumon", "pausiert"]
+      },
+      {
+        "label": "Puls yo‘q (Pulslosigkeit)",
+        "labelRu": "Отсутствие пульса (Pulslosigkeit)",
+        "labelTr": "Nabız yok (Pulslosigkeit)",
+        "labelEn": "Absent pulses (Pulslosigkeit)",
+        "keywords": ["puls"]
+      },
+      {
+        "label": "KT-angiografiya topilmasi (A. femoralis communis)",
+        "labelRu": "Данные КТ-ангиографии (A. femoralis communis)",
+        "labelTr": "BT anjiyografi bulgusu (A. femoralis communis)",
+        "labelEn": "CT angiography finding (A. femoralis communis)",
+        "keywords": ["femoralis", "ct-angiographie"]
+      },
+      {
+        "label": "Diagnoz: o‘tkir embolik ishemiya (akute Extremitätenischämie)",
+        "labelRu": "Диагноз: острая эмболическая ишемия (akute Extremitätenischämie)",
+        "labelTr": "Tanı: akut embolik iskemi (akute Extremitätenischämie)",
+        "labelEn": "Diagnosis: acute embolic ischaemia (akute Extremitätenischämie)",
+        "keywords": ["extremitätenischämie", "embolisch"]
+      },
+      {
+        "label": "Davolash: geparin va shoshilinch embolektomiya (Embolektomie)",
+        "labelRu": "Лечение: гепарин и экстренная эмболэктомия (Embolektomie)",
+        "labelTr": "Tedavi: heparin ve acil embolektomi (Embolektomie)",
+        "labelEn": "Treatment: heparin and emergency embolectomy (Embolektomie)",
+        "keywords": ["embolektomie", "heparin"]
+      },
+      {
+        "label": "Operatsiyadan keyin: kompartment sindromi yo‘q (Kompartmentsyndrom)",
+        "labelRu": "После операции: компартмент-синдрома нет (Kompartmentsyndrom)",
+        "labelTr": "Ameliyat sonrası: kompartman sendromu yok (Kompartmentsyndrom)",
+        "labelEn": "Postoperatively: no compartment syndrome (Kompartmentsyndrom)",
+        "keywords": ["kompartment", "ck"]
+      },
+      {
+        "label": "Tavsiya: doimiy antikoagulyatsiya (DOAK) (DOAK)",
+        "labelRu": "Рекомендация: постоянная антикоагуляция (ПОАК) (DOAK)",
+        "labelTr": "Öneri: kalıcı antikoagülasyon (DOAK) (DOAK)",
+        "labelEn": "Recommendation: lifelong anticoagulation (DOAC) (DOAK)",
+        "keywords": ["doak", "apixaban", "antikoagulation"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Erich Lange, 74 Jahre, der vom 03.10.2026 bis zum 11.10.2026 in unserer gefäßchirurgischen Abteilung behandelt wurde.\n\nAnamnese:\nDer Patient stellte sich mit seit drei Stunden bestehenden, plötzlich aufgetretenen starken Schmerzen im linken Bein vor. Das Bein war blass und kalt, es bestanden eine Hypästhesie und eine beginnende Fußheberparese (6 P nach Pratt). Bei bekanntem Vorhofflimmern war Phenprocoumon vor zwei Wochen wegen einer Zahnextraktion pausiert und nicht wieder begonnen worden.\n\nBefunde:\nLinks waren ab der Leiste keine Pulse tastbar, dopplersonographisch fand sich kein Signal an der A. dorsalis pedis und der A. tibialis posterior. Die CT-Angiographie zeigte einen embolischen Verschluss der A. femoralis communis links. Im EKG bestand eine absolute Arrhythmie bei Vorhofflimmern.\n\nDiagnose:\nAkute embolische Extremitätenischämie links bei Vorhofflimmern ohne Antikoagulation.\n\nTherapie und Verlauf:\nNach einem Heparin-Bolus erfolgte notfallmäßig eine Embolektomie mit dem Fogarty-Katheter. Postoperativ waren alle Pulse wieder tastbar, Sensibilität und Motorik normalisierten sich. Die CK stieg auf 2.400 U/l an, das Kreatinin blieb stabil. Ein Kompartmentsyndrom trat nicht auf.\n\nProcedere:\nWir haben die Antikoagulation auf Apixaban 5 mg 1-0-1 (DOAK) umgestellt und empfehlen diese dauerhaft. Bei künftigen Eingriffen sollte die Pausierung nur kurz und nach Rücksprache erfolgen. Eine duplexsonographische Kontrolle ist in drei Monaten vorgesehen.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab63",
+    "caseId": "c85",
+    "title": "Akute bakterielle Tonsillitis",
+    "task": "Uy shifokori sifatida LOR shifokoriga yo‘llanma xati (Überweisungsbrief) yozing. Sentor mezonlari, davolash va tez-tez qaytalanishga e’tibor bering.",
+    "taskRu": "Как семейный врач напишите направление (Überweisungsbrief) к ЛОР-врачу. Обратите внимание на критерии Центора, лечение и частые рецидивы.",
+    "taskTr": "Aile hekimi olarak KBB uzmanına bir sevk mektubu (Überweisungsbrief) yazın. Centor kriterlerine, tedaviye ve sık tekrarlamaya dikkat edin.",
+    "taskEn": "As the GP, write a referral letter (Überweisungsbrief) to the ENT specialist. Pay attention to the Centor criteria, treatment and frequent recurrences.",
+    "facts": [
+      "Patientin: Laura Becker, 19 Jahre, weiblich",
+      "Vorstellung: 06.10.2026, Hausarztpraxis",
+      "Seit 2 Tagen Halsschmerzen, Odynophagie, Fieber bis 39,2 °C, geschwollene zervikale Lymphknoten; kein Husten",
+      "Tonsillen beidseits gerötet und geschwollen mit Stippchen; keine Kieferklemme, Uvula mittelständig",
+      "Centor-Score 4; Streptokokken-Schnelltest positiv",
+      "Vorerkrankungen: leichtes Asthma; 3 Tonsillitiden in den letzten 12 Monaten (inkl. aktueller)",
+      "Therapie: Penicillin V 1,5 Mio. IE 1-1-1 für 7 Tage, Ibuprofen"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patientin ma’lumotlari (Frau Becker)",
+        "labelRu": "Данные пациентки (Frau Becker)",
+        "labelTr": "Hasta bilgileri (Frau Becker)",
+        "labelEn": "Patient data (Frau Becker)",
+        "keywords": ["becker"]
+      },
+      {
+        "label": "Asosiy shikoyat: tomoq og‘rig‘i va isitma (Halsschmerzen, Fieber)",
+        "labelRu": "Основная жалоба: боль в горле и лихорадка (Halsschmerzen, Fieber)",
+        "labelTr": "Ana şikâyet: boğaz ağrısı ve ateş (Halsschmerzen, Fieber)",
+        "labelEn": "Main complaint: sore throat and fever (Halsschmerzen, Fieber)",
+        "keywords": ["halsschmerz", "fieber"]
+      },
+      {
+        "label": "Yo‘tal yo‘q (kein Husten)",
+        "labelRu": "Кашля нет (kein Husten)",
+        "labelTr": "Öksürük yok (kein Husten)",
+        "labelEn": "No cough (kein Husten)",
+        "keywords": ["kein husten", "husten"]
+      },
+      {
+        "label": "Bodomsimon bezlarda yiringli nuqtalar (Stippchen)",
+        "labelRu": "Гнойные точки на миндалинах (Stippchen)",
+        "labelTr": "Bademciklerde irinli noktalar (Stippchen)",
+        "labelEn": "Exudate on the tonsils (Stippchen)",
+        "keywords": ["stippchen", "tonsillen"]
+      },
+      {
+        "label": "Sentor mezoni va tezkor test (Centor-Score 4)",
+        "labelRu": "Критерии Центора и экспресс-тест (Centor-Score 4)",
+        "labelTr": "Centor skoru ve hızlı test (Centor-Score 4)",
+        "labelEn": "Centor score and rapid test (Centor-Score 4)",
+        "keywords": ["centor", "schnelltest"]
+      },
+      {
+        "label": "Abssess belgilari yo‘q (keine Kieferklemme)",
+        "labelRu": "Нет признаков абсцесса (keine Kieferklemme)",
+        "labelTr": "Apse bulgusu yok (keine Kieferklemme)",
+        "labelEn": "No signs of abscess (keine Kieferklemme)",
+        "keywords": ["kieferklemme", "uvula"]
+      },
+      {
+        "label": "Diagnoz: bakterial tonzillit (Streptokokken-Tonsillitis)",
+        "labelRu": "Диагноз: бактериальный тонзиллит (Streptokokken-Tonsillitis)",
+        "labelTr": "Tanı: bakteriyel tonsillit (Streptokokken-Tonsillitis)",
+        "labelEn": "Diagnosis: bacterial tonsillitis (Streptokokken-Tonsillitis)",
+        "keywords": ["tonsillitis"]
+      },
+      {
+        "label": "Davolash: penitsillin V va ibuprofen (Penicillin V)",
+        "labelRu": "Лечение: пенициллин V и ибупрофен (Penicillin V)",
+        "labelTr": "Tedavi: penisilin V ve ibuprofen (Penicillin V)",
+        "labelEn": "Treatment: penicillin V and ibuprofen (Penicillin V)",
+        "keywords": ["penicillin"]
+      },
+      {
+        "label": "Tavsiya: tez-tez qaytalangani uchun tonzillektomiya masalasi (Tonsillektomie)",
+        "labelRu": "Рекомендация: вопрос о тонзиллэктомии из-за частых рецидивов (Tonsillektomie)",
+        "labelTr": "Öneri: sık tekrar nedeniyle tonsillektomi değerlendirmesi (Tonsillektomie)",
+        "labelEn": "Recommendation: consider tonsillectomy due to recurrences (Tonsillektomie)",
+        "keywords": ["tonsillektomie", "rezidiv"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir überweisen Ihnen unsere Patientin Frau Laura Becker, 19 Jahre, mit der Bitte um Mitbeurteilung bei rezidivierender Tonsillitis.\n\nAnamnese:\nDie Patientin stellte sich am 06.10.2026 mit seit zwei Tagen bestehenden Halsschmerzen, Odynophagie, Fieber bis 39,2 °C und geschwollenen zervikalen Lymphknoten vor. Ein Husten bestand nicht. Es handelt sich um die dritte Tonsillitis innerhalb von zwölf Monaten. Zudem besteht ein leichtes Asthma bronchiale.\n\nBefunde:\nDie Tonsillen waren beidseits gerötet und geschwollen mit Stippchen. Eine Kieferklemme bestand nicht, die Uvula war mittelständig. Der Centor-Score lag bei 4 Punkten, der Streptokokken-Schnelltest war positiv.\n\nDiagnose:\nAkute Streptokokken-Tonsillitis, rezidivierend.\n\nTherapie:\nWir haben eine Therapie mit Penicillin V 1,5 Mio. IE dreimal täglich für sieben Tage sowie Ibuprofen bei Bedarf eingeleitet.\n\nFragestellung:\nWir bitten um Prüfung der Indikation zur Tonsillektomie bei rezidivierender Tonsillitis nach Abklingen der akuten Entzündung.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab64",
+    "caseId": "c86",
+    "title": "Schwere depressive Episode",
+    "task": "Uy shifokori sifatida psixiatrga yo‘llanma xati yozing. Suitsid xavfini baholash, xavf omillari va boshlangan davolashga e’tibor bering.",
+    "taskRu": "Как семейный врач напишите направление к психиатру. Обратите внимание на оценку суицидального риска, факторы риска и начатое лечение.",
+    "taskTr": "Aile hekimi olarak psikiyatriste bir sevk mektubu yazın. İntihar riskinin değerlendirilmesine, risk faktörlerine ve başlanan tedaviye dikkat edin.",
+    "taskEn": "As the GP, write a referral letter to the psychiatrist. Pay attention to the suicide risk assessment, risk factors and the treatment started.",
+    "facts": [
+      "Patientin: Sabine Roth, 48 Jahre, weiblich",
+      "Vorstellung: 07.10.2026, Hausarztpraxis",
+      "Seit 3 Monaten gedrückte Stimmung, Anhedonie, Antriebslosigkeit, Früherwachen, Gewichtsverlust 5 kg, Konzentrationsstörungen, Schuldgefühle",
+      "Passive Todeswünsche, keine konkreten Suizidpläne, Distanzierung glaubhaft (Tochter als Schutzfaktor)",
+      "Auslöser: Trennung, Arbeitsplatzverlust; seit 2 Wochen täglich 1–2 Gläser Wein",
+      "Depressive Episode vor 10 Jahren; Mutter mit Depression, Onkel Suizid",
+      "PHQ-9: 21 Punkte; TSH, Blutbild, Elektrolyte, Leberwerte unauffällig",
+      "Therapie: Sertralin 50 mg 1-0-0 begonnen, Krisenplan besprochen, Wiedervorstellung in 1 Woche"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patientin ma’lumotlari (Frau Roth)",
+        "labelRu": "Данные пациентки (Frau Roth)",
+        "labelTr": "Hasta bilgileri (Frau Roth)",
+        "labelEn": "Patient data (Frau Roth)",
+        "keywords": ["roth"]
+      },
+      {
+        "label": "Asosiy shikoyat: tushkun kayfiyat, quvona olmaslik va holsizlik (gedrückte Stimmung, Anhedonie)",
+        "labelRu": "Основная жалоба: сниженное настроение, ангедония и упадок сил (gedrückte Stimmung, Anhedonie)",
+        "labelTr": "Ana şikâyet: çökkün duygudurum, anhedoni ve enerji kaybı (gedrückte Stimmung, Anhedonie)",
+        "labelEn": "Main complaint: low mood, anhedonia and lack of drive (gedrückte Stimmung, Anhedonie)",
+        "keywords": ["gedrückte stimmung", "anhedonie", "antrieb"]
+      },
+      {
+        "label": "Uyqu buzilishi va vazn yo‘qotish (Früherwachen, Gewichtsverlust)",
+        "labelRu": "Нарушение сна и потеря веса (Früherwachen, Gewichtsverlust)",
+        "labelTr": "Uyku bozukluğu ve kilo kaybı (Früherwachen, Gewichtsverlust)",
+        "labelEn": "Sleep disturbance and weight loss (Früherwachen, Gewichtsverlust)",
+        "keywords": ["früherwachen", "gewichtsverlust"]
+      },
+      {
+        "label": "Suitsid xavfini baholash (Suizidalität)",
+        "labelRu": "Оценка суицидального риска (Suizidalität)",
+        "labelTr": "İntihar riskinin değerlendirilmesi (Suizidalität)",
+        "labelEn": "Suicide risk assessment (Suizidalität)",
+        "keywords": ["suizid", "todeswünsch"]
+      },
+      {
+        "label": "Qo‘zg‘atuvchi omillar (Trennung, Arbeitsplatzverlust)",
+        "labelRu": "Пусковые факторы (Trennung, Arbeitsplatzverlust)",
+        "labelTr": "Tetikleyici faktörler (Trennung, Arbeitsplatzverlust)",
+        "labelEn": "Triggers (Trennung, Arbeitsplatzverlust)",
+        "keywords": ["trennung", "arbeitsplatz"]
+      },
+      {
+        "label": "Alkogol iste’moli (Wein)",
+        "labelRu": "Употребление алкоголя (Wein)",
+        "labelTr": "Alkol kullanımı (Wein)",
+        "labelEn": "Alcohol use (Wein)",
+        "keywords": ["wein", "alkohol"]
+      },
+      {
+        "label": "Oilaviy anamnez va avvalgi epizod (Familienanamnese)",
+        "labelRu": "Семейный анамнез и прежний эпизод (Familienanamnese)",
+        "labelTr": "Aile öyküsü ve önceki atak (Familienanamnese)",
+        "labelEn": "Family history and previous episode (Familienanamnese)",
+        "keywords": ["mutter", "onkel", "vor 10 jahren"]
+      },
+      {
+        "label": "Diagnoz: og‘ir depressiv epizod (schwere depressive Episode)",
+        "labelRu": "Диагноз: тяжёлый депрессивный эпизод (schwere depressive Episode)",
+        "labelTr": "Tanı: ağır depresif epizot (schwere depressive Episode)",
+        "labelEn": "Diagnosis: severe depressive episode (schwere depressive Episode)",
+        "keywords": ["depressive episode", "depressive störung"]
+      },
+      {
+        "label": "Davolash: sertralin va inqiroz rejasi (Sertralin, Krisenplan)",
+        "labelRu": "Лечение: сертралин и кризисный план (Sertralin, Krisenplan)",
+        "labelTr": "Tedavi: sertralin ve kriz planı (Sertralin, Krisenplan)",
+        "labelEn": "Treatment: sertraline and crisis plan (Sertralin, Krisenplan)",
+        "keywords": ["sertralin", "krisenplan"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir überweisen Ihnen unsere Patientin Frau Sabine Roth, 48 Jahre, mit der Bitte um psychiatrische Mitbehandlung.\n\nAnamnese:\nDie Patientin stellte sich am 07.10.2026 mit seit drei Monaten bestehender gedrückter Stimmung, Anhedonie, Antriebsminderung, Früherwachen, Konzentrationsstörungen und Schuldgefühlen vor. Sie hat 5 kg Gewicht verloren. Auslöser waren die Trennung vom Ehemann und der Arbeitsplatzverlust. Seit zwei Wochen trinkt sie abends ein bis zwei Gläser Wein zum Einschlafen. Vor 10 Jahren bestand bereits eine depressive Episode. Die Mutter leidet an Depressionen, ein Onkel hat sich suizidiert.\n\nBefunde:\nIm Gespräch äußerte die Patientin passive Todeswünsche ohne konkrete Suizidpläne oder Vorbereitungen. Eine Distanzierung von Suizidalität war glaubhaft, als Schutzfaktor nannte sie ihre Tochter. Im PHQ-9 erreichte sie 21 Punkte. TSH, Blutbild, Elektrolyte und Leberwerte waren unauffällig.\n\nDiagnose:\nRezidivierende depressive Störung, gegenwärtig schwere depressive Episode ohne psychotische Symptome.\n\nTherapie:\nWir haben eine Therapie mit Sertralin 50 mg morgens begonnen und mit der Patientin einen Krisenplan mit Notfallnummern besprochen. Über die Wechselwirkung mit Alkohol wurde sie aufgeklärt. Eine Wiedervorstellung bei uns ist in einer Woche vereinbart.\n\nFragestellung:\nWir bitten um zeitnahe psychiatrische Mitbeurteilung, Überprüfung der Medikation und Einleitung einer Psychotherapie.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab65",
+    "caseId": "c87",
+    "title": "Offene Lungentuberkulose",
+    "task": "Pulmonologiya bo‘limidan uy shifokoriga Arztbrief yozing. Izolyatsiya, xabar berish, kontaktlarni tekshirish va uzoq davolashga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из пульмонологии семейному врачу. Обратите внимание на изоляцию, сообщение, обследование контактов и длительное лечение.",
+    "taskTr": "Göğüs hastalıkları servisinden aile hekimine bir Arztbrief yazın. İzolasyona, bildirime, temaslı taramasına ve uzun tedaviye dikkat edin.",
+    "taskEn": "Write an Arztbrief from pulmonology to the GP. Pay attention to isolation, notification, contact tracing and the long treatment.",
+    "facts": [
+      "Patient: Nodir Rahimov, 36 Jahre, männlich",
+      "Aufnahme: 26.09.2026, pneumologische Station (Isolierzimmer)",
+      "Seit 2 Monaten produktiver Husten, seit 1 Woche Hämoptyse, Nachtschweiß, subfebrile Temperaturen, Gewichtsverlust 7 kg; keine Besserung unter Amoxicillin",
+      "Seit 8 Monaten in Deutschland, Gemeinschaftsunterkunft mit 5 Kollegen; Cousin mit Tuberkulose",
+      "Röntgen/CT-Thorax: kavernöse Infiltrate im rechten Oberlappen",
+      "Sputum: säurefeste Stäbchen mikroskopisch positiv, PCR M. tuberculosis positiv, keine Rifampicin-Resistenz; HIV negativ",
+      "Therapie: Isoniazid, Rifampicin, Pyrazinamid, Ethambutol (+ Vitamin B6); Meldung an das Gesundheitsamt; nach 3 Wochen Sputum mikroskopisch negativ"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patient ma’lumotlari (Herr Rahimov)",
+        "labelRu": "Данные пациента (Herr Rahimov)",
+        "labelTr": "Hasta bilgileri (Herr Rahimov)",
+        "labelEn": "Patient data (Herr Rahimov)",
+        "keywords": ["rahimov"]
+      },
+      {
+        "label": "Asosiy shikoyat: uzoq davom etgan yo‘tal va qon tupurish (Husten, Hämoptyse)",
+        "labelRu": "Основная жалоба: длительный кашель и кровохарканье (Husten, Hämoptyse)",
+        "labelTr": "Ana şikâyet: uzun süreli öksürük ve hemoptizi (Husten, Hämoptyse)",
+        "labelEn": "Main complaint: prolonged cough and haemoptysis (Husten, Hämoptyse)",
+        "keywords": ["husten", "hämoptyse"]
+      },
+      {
+        "label": "B-simptomlar (Nachtschweiß, Gewichtsverlust)",
+        "labelRu": "B-симптомы (Nachtschweiß, Gewichtsverlust)",
+        "labelTr": "B semptomları (Nachtschweiß, Gewichtsverlust)",
+        "labelEn": "B symptoms (Nachtschweiß, Gewichtsverlust)",
+        "keywords": ["nachtschweiß", "gewichtsverlust"]
+      },
+      {
+        "label": "Yashash sharoiti va kontakt (Gemeinschaftsunterkunft)",
+        "labelRu": "Условия проживания и контакт (Gemeinschaftsunterkunft)",
+        "labelTr": "Yaşam koşulları ve temas (Gemeinschaftsunterkunft)",
+        "labelEn": "Living conditions and contact (Gemeinschaftsunterkunft)",
+        "keywords": ["gemeinschaftsunterkunft", "cousin"]
+      },
+      {
+        "label": "Rentgen/KT: kavernalar (kavernöse Infiltrate)",
+        "labelRu": "Рентген/КТ: каверны (kavernöse Infiltrate)",
+        "labelTr": "Röntgen/BT: kaviteler (kavernöse Infiltrate)",
+        "labelEn": "X-ray/CT: cavities (kavernöse Infiltrate)",
+        "keywords": ["kavern", "oberlappen"]
+      },
+      {
+        "label": "Balg‘am: kislotaga chidamli tayoqchalar, PCR (säurefeste Stäbchen)",
+        "labelRu": "Мокрота: КУБ, ПЦР (säurefeste Stäbchen)",
+        "labelTr": "Balgam: ARB, PCR (säurefeste Stäbchen)",
+        "labelEn": "Sputum: acid-fast bacilli, PCR (säurefeste Stäbchen)",
+        "keywords": ["säurefest", "pcr"]
+      },
+      {
+        "label": "Diagnoz: ochiq o‘pka tuberkulyozi (offene Lungentuberkulose)",
+        "labelRu": "Диагноз: открытый туберкулёз лёгких (offene Lungentuberkulose)",
+        "labelTr": "Tanı: açık akciğer tüberkülozu (offene Lungentuberkulose)",
+        "labelEn": "Diagnosis: open pulmonary tuberculosis (offene Lungentuberkulose)",
+        "keywords": ["lungentuberkulose", "tuberkulose"]
+      },
+      {
+        "label": "Davolash: to‘rt komponentli terapiya (Isoniazid, Rifampicin, Pyrazinamid, Ethambutol)",
+        "labelRu": "Лечение: четырёхкомпонентная терапия (Isoniazid, Rifampicin, Pyrazinamid, Ethambutol)",
+        "labelTr": "Tedavi: dörtlü tedavi (Isoniazid, Rifampicin, Pyrazinamid, Ethambutol)",
+        "labelEn": "Treatment: four-drug therapy (Isoniazid, Rifampicin, Pyrazinamid, Ethambutol)",
+        "keywords": ["isoniazid", "rifampicin"]
+      },
+      {
+        "label": "Izolyatsiya va xabar berish (Meldung, Umgebungsuntersuchung)",
+        "labelRu": "Изоляция и сообщение (Meldung, Umgebungsuntersuchung)",
+        "labelTr": "İzolasyon ve bildirim (Meldung, Umgebungsuntersuchung)",
+        "labelEn": "Isolation and notification (Meldung, Umgebungsuntersuchung)",
+        "keywords": ["meldung", "gesundheitsamt", "umgebungsuntersuchung"]
+      },
+      {
+        "label": "Tavsiya: 6 oy davolash va jigar nazorati (Leberwerte)",
+        "labelRu": "Рекомендация: лечение 6 месяцев и контроль печени (Leberwerte)",
+        "labelTr": "Öneri: 6 ay tedavi ve karaciğer takibi (Leberwerte)",
+        "labelEn": "Recommendation: 6 months of treatment and liver monitoring (Leberwerte)",
+        "keywords": ["sechs monate", "6 monate", "leberwerte"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Nodir Rahimov, 36 Jahre, der vom 26.09.2026 bis zum 17.10.2026 in unserer pneumologischen Abteilung behandelt wurde.\n\nAnamnese:\nDer Patient stellte sich mit seit zwei Monaten bestehendem produktivem Husten, seit einer Woche Hämoptyse, Nachtschweiß, subfebrilen Temperaturen und einem Gewichtsverlust von 7 kg vor. Eine Therapie mit Amoxicillin hatte keine Besserung gebracht. Er lebt seit acht Monaten in Deutschland in einer Gemeinschaftsunterkunft mit fünf Kollegen. Ein Cousin wurde im Heimatland wegen Tuberkulose behandelt.\n\nBefunde:\nIn Röntgen und CT-Thorax zeigten sich kavernöse Infiltrate im rechten Oberlappen. Im Sputum fanden sich mikroskopisch säurefeste Stäbchen, die PCR auf M. tuberculosis war positiv, ohne Hinweis auf eine Rifampicin-Resistenz. Der HIV-Test war negativ.\n\nDiagnose:\nOffene Lungentuberkulose des rechten Oberlappens.\n\nTherapie und Verlauf:\nDer Patient wurde im Isolierzimmer behandelt. Wir begannen eine Vierfachtherapie mit Isoniazid, Rifampicin, Pyrazinamid und Ethambutol sowie Vitamin B6. Die Meldung an das Gesundheitsamt ist erfolgt, die Umgebungsuntersuchung der Kontaktpersonen wurde eingeleitet. Nach drei Wochen war das Sputum mikroskopisch negativ, die Isolierung konnte aufgehoben werden.\n\nProcedere:\nDie Therapie ist insgesamt sechs Monate fortzuführen (zwei Monate Vierfach-, dann vier Monate Zweifachtherapie mit Isoniazid und Rifampicin). Wir bitten um zweiwöchentliche Kontrollen der Leberwerte und um eine augenärztliche Kontrolle unter Ethambutol. Eine regelmäßige Einnahme ist entscheidend; die Weiterbetreuung erfolgt in Zusammenarbeit mit dem Gesundheitsamt.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab66",
+    "caseId": "c88",
+    "title": "Neuroborreliose mit Fazialisparese",
+    "task": "Nevrologiya bo‘limidan uy shifokoriga Arztbrief yozing. Kana chaqishi, eritema migrans va likvor tahliliga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из неврологии семейному врачу. Обратите внимание на укус клеща, мигрирующую эритему и анализ ликвора.",
+    "taskTr": "Nöroloji servisinden aile hekimine bir Arztbrief yazın. Kene ısırığına, eritema migransa ve BOS analizine dikkat edin.",
+    "taskEn": "Write an Arztbrief from neurology to the GP. Pay attention to the tick bite, erythema migrans and the CSF analysis.",
+    "facts": [
+      "Patientin: Anna Schulte, 38 Jahre, weiblich",
+      "Aufnahme: 05.10.2026, neurologische Station",
+      "Seit 1 Tag periphere Fazialisparese rechts (Stirnrunzeln nicht möglich), inkompletter Lidschluss; seit 2 Wochen brennende nächtliche Rücken- und Nackenschmerzen",
+      "Vor 6 Wochen Zeckenstich (Försterin), danach Erythema migrans am Oberschenkel",
+      "Lumbalpunktion: lymphozytäre Pleozytose 180 Zellen/µl, Eiweiß erhöht; positiver Borrelien-spezifischer Liquor/Serum-Antikörperindex",
+      "cMRT unauffällig",
+      "Therapie: Ceftriaxon 2 g i. v. für 14 Tage; Augensalbe und Uhrglasverband nachts; Besserung der Schmerzen"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patientin ma’lumotlari (Frau Schulte)",
+        "labelRu": "Данные пациентки (Frau Schulte)",
+        "labelTr": "Hasta bilgileri (Frau Schulte)",
+        "labelEn": "Patient data (Frau Schulte)",
+        "keywords": ["schulte"]
+      },
+      {
+        "label": "Asosiy shikoyat: o‘ng tomonlama yuz nervi falaji (periphere Fazialisparese)",
+        "labelRu": "Основная жалоба: правосторонний парез лицевого нерва (periphere Fazialisparese)",
+        "labelTr": "Ana şikâyet: sağ fasiyal paralizi (periphere Fazialisparese)",
+        "labelEn": "Main complaint: right facial palsy (periphere Fazialisparese)",
+        "keywords": ["fazialisparese"]
+      },
+      {
+        "label": "Qovoq yopilmasligi (inkompletter Lidschluss)",
+        "labelRu": "Неполное смыкание век (inkompletter Lidschluss)",
+        "labelTr": "Göz kapağının tam kapanmaması (inkompletter Lidschluss)",
+        "labelEn": "Incomplete eyelid closure (inkompletter Lidschluss)",
+        "keywords": ["lidschluss"]
+      },
+      {
+        "label": "Kechasi kuchayadigan radikulyar og‘riq (Radikulitis)",
+        "labelRu": "Ночные корешковые боли (Radikulitis)",
+        "labelTr": "Gece artan radiküler ağrı (Radikulitis)",
+        "labelEn": "Night-time radicular pain (Radikulitis)",
+        "keywords": ["rückenschmerz", "nacken", "radikul"]
+      },
+      {
+        "label": "Kana chaqishi va eritema migrans (Zeckenstich, Erythema migrans)",
+        "labelRu": "Укус клеща и мигрирующая эритема (Zeckenstich, Erythema migrans)",
+        "labelTr": "Kene ısırığı ve eritema migrans (Zeckenstich, Erythema migrans)",
+        "labelEn": "Tick bite and erythema migrans (Zeckenstich, Erythema migrans)",
+        "keywords": ["zecke", "erythema migrans"]
+      },
+      {
+        "label": "Likvor: limfotsitar pleotsitoz va antitana indeksi (Liquor)",
+        "labelRu": "Ликвор: лимфоцитарный плеоцитоз и индекс антител (Liquor)",
+        "labelTr": "BOS: lenfositik pleositoz ve antikor indeksi (Liquor)",
+        "labelEn": "CSF: lymphocytic pleocytosis and antibody index (Liquor)",
+        "keywords": ["pleozytose", "antikörperindex", "liquor"]
+      },
+      {
+        "label": "Diagnoz: neyroborrelioz (Neuroborreliose)",
+        "labelRu": "Диагноз: нейроборрелиоз (Neuroborreliose)",
+        "labelTr": "Tanı: nöroborelyoz (Neuroborreliose)",
+        "labelEn": "Diagnosis: neuroborreliosis (Neuroborreliose)",
+        "keywords": ["neuroborreliose"]
+      },
+      {
+        "label": "Davolash: seftriakson v/i (Ceftriaxon)",
+        "labelRu": "Лечение: цефтриаксон в/в (Ceftriaxon)",
+        "labelTr": "Tedavi: IV seftriakson (Ceftriaxon)",
+        "labelEn": "Treatment: IV ceftriaxone (Ceftriaxon)",
+        "keywords": ["ceftriaxon"]
+      },
+      {
+        "label": "Tavsiya: ko‘zni himoya qilish va nazorat (Augensalbe, Uhrglasverband)",
+        "labelRu": "Рекомендация: защита глаза и контроль (Augensalbe, Uhrglasverband)",
+        "labelTr": "Öneri: göz koruması ve kontrol (Augensalbe, Uhrglasverband)",
+        "labelEn": "Recommendation: eye protection and follow-up (Augensalbe, Uhrglasverband)",
+        "keywords": ["augensalbe", "uhrglasverband", "kontrolle"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihre Patientin Frau Anna Schulte, 38 Jahre, die vom 05.10.2026 bis zum 19.10.2026 in unserer neurologischen Abteilung behandelt wurde.\n\nAnamnese:\nDie Patientin stellte sich mit einer seit einem Tag bestehenden peripheren Fazialisparese rechts mit inkomplettem Lidschluss vor. Seit zwei Wochen bestanden zudem brennende, nachts betonte Rücken- und Nackenschmerzen. Vor sechs Wochen hatte sie als Försterin einen Zeckenstich erlitten, danach war ein Erythema migrans am Oberschenkel aufgetreten.\n\nBefunde:\nNeurologisch zeigte sich eine periphere Fazialisparese rechts mit nicht möglichem Stirnrunzeln. In der Lumbalpunktion fanden sich eine lymphozytäre Pleozytose von 180 Zellen/µl und ein erhöhtes Eiweiß bei positivem Borrelien-spezifischem Liquor/Serum-Antikörperindex. Das cMRT war unauffällig.\n\nDiagnose:\nFrühe Neuroborreliose (Bannwarth-Syndrom) mit peripherer Fazialisparese rechts und Radikulitis.\n\nTherapie und Verlauf:\nWir behandelten mit Ceftriaxon 2 g i. v. für 14 Tage. Zum Schutz der Hornhaut erhielt die Patientin Augensalbe und nachts einen Uhrglasverband. Die radikulären Schmerzen bildeten sich rasch zurück, die Fazialisparese besserte sich langsam.\n\nProcedere:\nWir empfehlen die Fortsetzung des Augenschutzes bis zum vollständigen Lidschluss sowie eine neurologische Kontrolle in vier Wochen; die Rückbildung der Parese kann Wochen bis Monate dauern. Eine Kontrolle der Borrelien-Serologie ist nicht erforderlich. Wir raten zu konsequentem Zeckenschutz.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab67",
+    "caseId": "c89",
+    "title": "Hyperosmolares hyperglykämisches Syndrom",
+    "task": "Ichki kasalliklar bo‘limidan uy shifokoriga Arztbrief yozing. Steroid qabul qilingani, suyuqlikni asta-sekin to‘ldirish va yangi insulin rejasiga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из терапевтического отделения семейному врачу. Обратите внимание на приём стероида, медленное восполнение жидкости и новую схему инсулина.",
+    "taskTr": "Dahiliye servisinden aile hekimine bir Arztbrief yazın. Steroid kullanımına, sıvının yavaş yerine konmasına ve yeni insülin planına dikkat edin.",
+    "taskEn": "Write an Arztbrief from internal medicine to the GP. Pay attention to the steroid use, slow fluid replacement and the new insulin plan.",
+    "facts": [
+      "Patientin: Edith Braun, 84 Jahre, weiblich",
+      "Aufnahme: 01.10.2026, Notaufnahme (Fremdanamnese durch die Tochter)",
+      "Seit 1 Woche zunehmende Somnolenz und Verwirrtheit, Polyurie, dann kaum Trinkmenge; seit 5 Tagen Husten",
+      "Diabetes mellitus Typ 2 (Metformin, Sitagliptin), Herzinsuffizienz; seit 1 Woche Prednisolon 40 mg wegen Bronchitis",
+      "Blutzucker 1.040 mg/dl, Serumosmolalität 362 mosmol/kg, Natrium (korrigiert) 151 mmol/l, pH 7,34, Ketone negativ, Kreatinin 2,6 mg/dl",
+      "Röntgen-Thorax: Infiltrat links basal",
+      "Therapie: NaCl 0,9 % langsam unter Bilanzierung, Insulinperfusor niedrig dosiert, Kaliumsubstitution, Ceftriaxon; Prednisolon und Metformin abgesetzt; Umstellung auf Basalinsulin"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patientin ma’lumotlari (Frau Braun)",
+        "labelRu": "Данные пациентки (Frau Braun)",
+        "labelTr": "Hasta bilgileri (Frau Braun)",
+        "labelEn": "Patient data (Frau Braun)",
+        "keywords": ["braun"]
+      },
+      {
+        "label": "Yaqinlaridan olingan anamnez (Fremdanamnese)",
+        "labelRu": "Анамнез со слов родственников (Fremdanamnese)",
+        "labelTr": "Heteroanamnez (Fremdanamnese)",
+        "labelEn": "Collateral history (Fremdanamnese)",
+        "keywords": ["fremdanamnes", "tochter"]
+      },
+      {
+        "label": "Asosiy shikoyat: uyquchanlik va ong chalkashligi (Somnolenz)",
+        "labelRu": "Основная жалоба: сонливость и спутанность (Somnolenz)",
+        "labelTr": "Ana şikâyet: uykululuk ve bilinç bulanıklığı (Somnolenz)",
+        "labelEn": "Main complaint: drowsiness and confusion (Somnolenz)",
+        "keywords": ["somnolen", "verwirr"]
+      },
+      {
+        "label": "Ko‘p siyish va suvsizlanish (Exsikkose)",
+        "labelRu": "Полиурия и обезвоживание (Exsikkose)",
+        "labelTr": "Poliüri ve dehidratasyon (Exsikkose)",
+        "labelEn": "Polyuria and dehydration (Exsikkose)",
+        "keywords": ["polyurie", "exsikkose"]
+      },
+      {
+        "label": "Steroid — qo‘zg‘atuvchi omil (Prednisolon)",
+        "labelRu": "Стероид как пусковой фактор (Prednisolon)",
+        "labelTr": "Tetikleyici olarak steroid (Prednisolon)",
+        "labelEn": "Steroid as trigger (Prednisolon)",
+        "keywords": ["prednisolon", "glukokortikoid"]
+      },
+      {
+        "label": "Qand, osmolyallik, ketonlar yo‘q (Osmolalität)",
+        "labelRu": "Глюкоза, осмоляльность, кетонов нет (Osmolalität)",
+        "labelTr": "Şeker, osmolalite, keton yok (Osmolalität)",
+        "labelEn": "Glucose, osmolality, no ketones (Osmolalität)",
+        "keywords": ["1.040", "osmolalität", "ketone"]
+      },
+      {
+        "label": "Diagnoz: giperosmolyar giperglikemik sindrom (hyperosmolares Syndrom)",
+        "labelRu": "Диагноз: гиперосмолярное гипергликемическое состояние (hyperosmolares Syndrom)",
+        "labelTr": "Tanı: hiperosmolar hiperglisemik sendrom (hyperosmolares Syndrom)",
+        "labelEn": "Diagnosis: hyperosmolar hyperglycaemic state (hyperosmolares Syndrom)",
+        "keywords": ["hyperosmolar"]
+      },
+      {
+        "label": "Davolash: sekin suyuqlik, insulin perfuzori, kaliy (Insulinperfusor)",
+        "labelRu": "Лечение: медленная инфузия, перфузор инсулина, калий (Insulinperfusor)",
+        "labelTr": "Tedavi: yavaş sıvı, insülin perfüzörü, potasyum (Insulinperfusor)",
+        "labelEn": "Treatment: slow fluids, insulin infusion, potassium (Insulinperfusor)",
+        "keywords": ["insulinperfusor", "nacl", "kalium"]
+      },
+      {
+        "label": "Tavsiya: bazal insulin, Metforminsiz, glyukoza nazorati (Basalinsulin)",
+        "labelRu": "Рекомендация: базальный инсулин, без Metformin, контроль глюкозы (Basalinsulin)",
+        "labelTr": "Öneri: bazal insülin, Metforminsiz, şeker takibi (Basalinsulin)",
+        "labelEn": "Recommendation: basal insulin, no metformin, glucose monitoring (Basalinsulin)",
+        "keywords": ["basalinsulin", "metformin", "blutzucker"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihre Patientin Frau Edith Braun, 84 Jahre, die vom 01.10.2026 bis zum 12.10.2026 in unserer internistischen Abteilung behandelt wurde.\n\nAnamnese:\nFremdanamnestisch berichtete die Tochter über eine seit einer Woche zunehmende Somnolenz und Verwirrtheit. Zunächst bestand eine Polyurie, zuletzt trank die Patientin kaum noch. Seit fünf Tagen bestand Husten. Bei bekanntem Diabetes mellitus Typ 2 unter Metformin und Sitagliptin war vor einer Woche wegen einer Bronchitis Prednisolon 40 mg begonnen worden. Zudem besteht eine Herzinsuffizienz.\n\nBefunde:\nKlinisch zeigte sich eine ausgeprägte Exsikkose. Laborchemisch fanden sich ein Blutzucker von 1.040 mg/dl, eine Serumosmolalität von 362 mosmol/kg, ein korrigiertes Natrium von 151 mmol/l und ein Kreatinin von 2,6 mg/dl bei pH 7,34 ohne Nachweis von Ketonen. Im Röntgen-Thorax zeigte sich ein Infiltrat links basal.\n\nDiagnose:\nHyperosmolares hyperglykämisches Syndrom bei Diabetes mellitus Typ 2, ausgelöst durch Glukokortikoide und eine Pneumonie links basal.\n\nTherapie und Verlauf:\nWir behandelten mit vorsichtiger Volumengabe mit NaCl 0,9 % unter Bilanzierung, einem niedrig dosierten Insulinperfusor und Kaliumsubstitution sowie Ceftriaxon. Prednisolon und Metformin wurden abgesetzt. Die Osmolalität sank langsam, die Patientin wurde wieder wach und orientiert, die Nierenfunktion normalisierte sich.\n\nProcedere:\nWir haben die Therapie auf ein Basalinsulin umgestellt; Metformin sollte nicht wieder angesetzt werden. Wir bitten um tägliche Blutzucker-Kontrollen durch den Pflegedienst und auf ausreichende Trinkmenge zu achten. Künftige Glukokortikoidgaben sollten nur unter engmaschiger Blutzuckerkontrolle erfolgen.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab68",
+    "caseId": "c90",
+    "title": "Alkoholentzugsdelir",
+    "task": "Ichki kasalliklar bo‘limidan uy shifokoriga Arztbrief yozing. Alkogol iste’moli, delirni davolash (tiamin, benzodiazepinlar) va keyingi narkologik yordamga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из терапевтического отделения семейному врачу. Обратите внимание на употребление алкоголя, лечение делирия (тиамин, бензодиазепины) и дальнейшую наркологическую помощь.",
+    "taskTr": "Dahiliye servisinden aile hekimine bir Arztbrief yazın. Alkol kullanımına, deliryum tedavisine (tiamin, benzodiazepinler) ve sonraki bağımlılık tedavisine dikkat edin.",
+    "taskEn": "Write an Arztbrief from internal medicine to the GP. Pay attention to the alcohol use, delirium treatment (thiamine, benzodiazepines) and addiction follow-up.",
+    "facts": [
+      "Patient: Jürgen Weber, 54 Jahre, männlich",
+      "Aufnahme: 28.09.2026 unfallchirurgisch (Unterschenkelfraktur nach Sturz von der Leiter), Verlegung auf die Intensivstation am 01.10.2026",
+      "Am 3. Tag nach Alkoholkarenz: Unruhe, Desorientiertheit, optische Halluzinationen, Hyperhidrose, grobschlägiger Tremor, Tachykardie 128/min, RR 175/100 mmHg",
+      "Alkohol: täglich ca. 0,7 l Wodka; Z. n. Entzugskrampfanfall 2023; Leberzirrhose Child A",
+      "Magnesium 0,55 mmol/l, Kalium 3,1 mmol/l, Blutzucker 92 mg/dl; cCT: keine Blutung",
+      "Therapie: Thiamin 100 mg i. v. 3× täglich, Diazepam symptomorientiert nach CIWA-Ar, Haloperidol, Elektrolytausgleich; Delir nach 4 Tagen abgeklungen; Osteosynthese der Fraktur am 06.10.2026"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patient ma’lumotlari (Herr Weber)",
+        "labelRu": "Данные пациента (Herr Weber)",
+        "labelTr": "Hasta bilgileri (Herr Weber)",
+        "labelEn": "Patient data (Herr Weber)",
+        "keywords": ["weber"]
+      },
+      {
+        "label": "Delir belgilari: gallyutsinatsiyalar, titroq, terlash (Halluzinationen, Tremor)",
+        "labelRu": "Признаки делирия: галлюцинации, тремор, потливость (Halluzinationen, Tremor)",
+        "labelTr": "Deliryum bulguları: halüsinasyon, tremor, terleme (Halluzinationen, Tremor)",
+        "labelEn": "Signs of delirium: hallucinations, tremor, sweating (Halluzinationen, Tremor)",
+        "keywords": ["halluzination", "tremor", "hyperhidrose"]
+      },
+      {
+        "label": "Vegetativ belgilar (Tachykardie, Hypertonie)",
+        "labelRu": "Вегетативные признаки (Tachykardie, Hypertonie)",
+        "labelTr": "Otonom bulgular (Tachykardie, Hypertonie)",
+        "labelEn": "Autonomic signs (Tachykardie, Hypertonie)",
+        "keywords": ["tachykard", "175/100"]
+      },
+      {
+        "label": "Alkogol miqdori va oxirgi qabul (Alkoholanamnese)",
+        "labelRu": "Количество алкоголя и последний приём (Alkoholanamnese)",
+        "labelTr": "Alkol miktarı ve son kullanım (Alkoholanamnese)",
+        "labelEn": "Alcohol amount and last drink (Alkoholanamnese)",
+        "keywords": ["wodka", "alkoholkarenz"]
+      },
+      {
+        "label": "Avvalgi abstinent tutqanoq (Entzugskrampfanfall)",
+        "labelRu": "Прежний судорожный припадок при отмене (Entzugskrampfanfall)",
+        "labelTr": "Önceki yoksunluk nöbeti (Entzugskrampfanfall)",
+        "labelEn": "Previous withdrawal seizure (Entzugskrampfanfall)",
+        "keywords": ["krampfanfall"]
+      },
+      {
+        "label": "Magniy va kaliy (Elektrolyte)",
+        "labelRu": "Магний и калий (Elektrolyte)",
+        "labelTr": "Magnezyum ve potasyum (Elektrolyte)",
+        "labelEn": "Magnesium and potassium (Elektrolyte)",
+        "keywords": ["magnesium", "kalium"]
+      },
+      {
+        "label": "Diagnoz: alkogol abstinent deliriysi (Alkoholentzugsdelir)",
+        "labelRu": "Диагноз: алкогольный абстинентный делирий (Alkoholentzugsdelir)",
+        "labelTr": "Tanı: alkol yoksunluk deliryumu (Alkoholentzugsdelir)",
+        "labelEn": "Diagnosis: alcohol withdrawal delirium (Alkoholentzugsdelir)",
+        "keywords": ["entzugsdelir", "delirium tremens"]
+      },
+      {
+        "label": "Davolash: tiamin, diazepam, galoperidol (Thiamin, Diazepam)",
+        "labelRu": "Лечение: тиамин, диазепам, галоперидол (Thiamin, Diazepam)",
+        "labelTr": "Tedavi: tiamin, diazepam, haloperidol (Thiamin, Diazepam)",
+        "labelEn": "Treatment: thiamine, diazepam, haloperidol (Thiamin, Diazepam)",
+        "keywords": ["thiamin", "diazepam"]
+      },
+      {
+        "label": "Tavsiya: alkogoldan to‘liq voz kechish va narkolog (qualifizierter Entzug, Suchtberatung)",
+        "labelRu": "Рекомендация: полный отказ от алкоголя и нарколог (qualifizierter Entzug, Suchtberatung)",
+        "labelTr": "Öneri: alkolü tamamen bırakma ve bağımlılık uzmanı (qualifizierter Entzug, Suchtberatung)",
+        "labelEn": "Recommendation: complete abstinence and addiction service (qualifizierter Entzug, Suchtberatung)",
+        "keywords": ["suchtberatung", "qualifizierte", "abstinenz"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Jürgen Weber, 54 Jahre, der vom 28.09.2026 bis zum 14.10.2026 in unserer internistischen Intensivstation und unfallchirurgischen Abteilung behandelt wurde.\n\nAnamnese:\nDer Patient wurde am 28.09.2026 nach einem Sturz von der Leiter mit einer Unterschenkelfraktur aufgenommen. Es besteht ein täglicher Alkoholkonsum von etwa 0,7 l Wodka, der letzte Konsum erfolgte vor dem Unfall. 2023 kam es bei einem Entzug bereits zu einem Entzugskrampfanfall. Zudem besteht eine Leberzirrhose Child A.\n\nBefunde:\nAm dritten Tag der Alkoholkarenz entwickelte der Patient Unruhe, Desorientiertheit, optische Halluzinationen, Hyperhidrose und einen grobschlägigen Tremor. Es bestanden eine Tachykardie von 128/min und ein Blutdruck von 175/100 mmHg. Laborchemisch zeigten sich ein Magnesium von 0,55 mmol/l und ein Kalium von 3,1 mmol/l bei normalem Blutzucker. Das cCT ergab keine Blutung.\n\nDiagnose:\nAlkoholentzugsdelir (Delirium tremens) bei Alkoholabhängigkeit.\n\nTherapie und Verlauf:\nAuf der Intensivstation erhielt der Patient Thiamin 100 mg i. v. dreimal täglich, Diazepam symptomorientiert nach CIWA-Ar sowie Haloperidol bei Halluzinationen. Magnesium und Kalium wurden ausgeglichen. Ein Krampfanfall trat nicht auf, das Delir klang nach vier Tagen ab. Am 06.10.2026 erfolgte die Osteosynthese der Fraktur.\n\nProcedere:\nWir empfehlen dringend eine vollständige Abstinenz und haben dem Patienten eine qualifizierte Entzugsbehandlung angeboten; ein Kontakt zur Suchtberatung wurde hergestellt. Thiamin sollte oral weitergegeben werden. Wir bitten um Kontrollen der Leberwerte und Elektrolyte.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab69",
+    "caseId": "c91",
+    "title": "Guillain-Barré-Syndrom",
+    "task": "Nevrologiya bo‘limidan reabilitatsiya klinikasiga Arztbrief yozing. Oldingi infeksiya, likvor topilmasi va nafas funksiyasini kuzatishga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из неврологии в реабилитационную клинику. Обратите внимание на предшествующую инфекцию, данные ликвора и контроль дыхательной функции.",
+    "taskTr": "Nöroloji servisinden rehabilitasyon kliniğine bir Arztbrief yazın. Önceki enfeksiyona, BOS bulgusuna ve solunum fonksiyonunun izlenmesine dikkat edin.",
+    "taskEn": "Write an Arztbrief from neurology to the rehabilitation clinic. Pay attention to the preceding infection, the CSF finding and monitoring respiratory function.",
+    "facts": [
+      "Patient: Felix Richter, 33 Jahre, männlich",
+      "Aufnahme: 30.09.2026, Notaufnahme, danach Intensivstation",
+      "Seit 4 Tagen distale Parästhesien, seit 2 Tagen aufsteigende symmetrische Paraparese der Beine, Rückenschmerzen; Treppensteigen nicht möglich",
+      "Vor 2 Wochen Enteritis (Campylobacter-Serologie positiv)",
+      "Areflexie an Armen und Beinen, keine Sensibilitätsstörung im Rumpf, Blasenfunktion intakt",
+      "Lumbalpunktion: Eiweiß 1,9 g/l bei 3 Zellen/µl (zytoalbuminäre Dissoziation); Neurographie: demyelinisierende Polyneuropathie; MRT-Wirbelsäule unauffällig",
+      "Therapie: Immunglobuline i. v. 0,4 g/kg über 5 Tage; Vitalkapazität 2-stündlich, Minimum 2,4 l, keine Beatmung; Thromboseprophylaxe, Physiotherapie; ab Tag 10 Besserung"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patient ma’lumotlari (Herr Richter)",
+        "labelRu": "Данные пациента (Herr Richter)",
+        "labelTr": "Hasta bilgileri (Herr Richter)",
+        "labelEn": "Patient data (Herr Richter)",
+        "keywords": ["richter"]
+      },
+      {
+        "label": "Asosiy shikoyat: ko‘tariluvchi simmetrik oyoq kuchsizligi (aufsteigende Paraparese)",
+        "labelRu": "Основная жалоба: восходящая симметричная слабость ног (aufsteigende Paraparese)",
+        "labelTr": "Ana şikâyet: yükselen simetrik bacak güçsüzlüğü (aufsteigende Paraparese)",
+        "labelEn": "Main complaint: ascending symmetrical leg weakness (aufsteigende Paraparese)",
+        "keywords": ["aufsteigend", "paraparese"]
+      },
+      {
+        "label": "Paresteziyalar (Parästhesien)",
+        "labelRu": "Парестезии (Parästhesien)",
+        "labelTr": "Parestezi (Parästhesien)",
+        "labelEn": "Paraesthesia (Parästhesien)",
+        "keywords": ["parästhesie"]
+      },
+      {
+        "label": "Oldingi ichak infeksiyasi (Campylobacter-Enteritis)",
+        "labelRu": "Предшествующая кишечная инфекция (Campylobacter-Enteritis)",
+        "labelTr": "Önceki bağırsak enfeksiyonu (Campylobacter-Enteritis)",
+        "labelEn": "Preceding gut infection (Campylobacter-Enteritis)",
+        "keywords": ["campylobacter", "enteritis"]
+      },
+      {
+        "label": "Arefleksiya (Areflexie)",
+        "labelRu": "Арефлексия (Areflexie)",
+        "labelTr": "Arefleksi (Areflexie)",
+        "labelEn": "Areflexia (Areflexie)",
+        "keywords": ["areflexie"]
+      },
+      {
+        "label": "Likvor: sitoalbuminli dissotsiatsiya (zytoalbuminäre Dissoziation)",
+        "labelRu": "Ликвор: белково-клеточная диссоциация (zytoalbuminäre Dissoziation)",
+        "labelTr": "BOS: sitoalbüminolojik disosiyasyon (zytoalbuminäre Dissoziation)",
+        "labelEn": "CSF: albuminocytological dissociation (zytoalbuminäre Dissoziation)",
+        "keywords": ["zytoalbuminär", "eiweiß"]
+      },
+      {
+        "label": "Diagnoz: Guillain-Barré sindromi (Guillain-Barré-Syndrom)",
+        "labelRu": "Диагноз: синдром Гийена — Барре (Guillain-Barré-Syndrom)",
+        "labelTr": "Tanı: Guillain-Barré sendromu (Guillain-Barré-Syndrom)",
+        "labelEn": "Diagnosis: Guillain-Barré syndrome (Guillain-Barré-Syndrom)",
+        "keywords": ["guillain-barré"]
+      },
+      {
+        "label": "Davolash: immunoglobulinlar v/i (Immunglobuline)",
+        "labelRu": "Лечение: иммуноглобулины в/в (Immunglobuline)",
+        "labelTr": "Tedavi: IV immünoglobulin (Immunglobuline)",
+        "labelEn": "Treatment: IV immunoglobulins (Immunglobuline)",
+        "keywords": ["immunglobulin"]
+      },
+      {
+        "label": "Nafas funksiyasini kuzatish (Vitalkapazität)",
+        "labelRu": "Контроль дыхательной функции (Vitalkapazität)",
+        "labelTr": "Solunum fonksiyonu takibi (Vitalkapazität)",
+        "labelEn": "Monitoring of respiratory function (Vitalkapazität)",
+        "keywords": ["vitalkapazität"]
+      },
+      {
+        "label": "Tavsiya: reabilitatsiya, fizioterapiya, tromboz profilaktikasi (Rehabilitation)",
+        "labelRu": "Рекомендация: реабилитация, физиотерапия, профилактика тромбоза (Rehabilitation)",
+        "labelTr": "Öneri: rehabilitasyon, fizyoterapi, tromboz profilaksisi (Rehabilitation)",
+        "labelEn": "Recommendation: rehabilitation, physiotherapy, thrombosis prophylaxis (Rehabilitation)",
+        "keywords": ["rehabilitation", "physiotherapie", "thromboseprophylaxe"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Felix Richter, 33 Jahre, der vom 30.09.2026 bis zum 16.10.2026 in unserer neurologischen Abteilung behandelt wurde.\n\nAnamnese:\nDer Patient stellte sich mit seit vier Tagen bestehenden distalen Parästhesien und seit zwei Tagen aufsteigender symmetrischer Paraparese der Beine vor; Treppensteigen war nicht mehr möglich. Zudem bestanden Rückenschmerzen. Vor zwei Wochen hatte er eine Enteritis, die Campylobacter-Serologie war positiv.\n\nBefunde:\nNeurologisch zeigte sich eine Areflexie an Armen und Beinen ohne sensibles Niveau, die Blasenfunktion war intakt. In der Lumbalpunktion fand sich ein Eiweiß von 1,9 g/l bei 3 Zellen/µl im Sinne einer zytoalbuminären Dissoziation. Die Neurographie ergab eine demyelinisierende Polyneuropathie. Das MRT der Wirbelsäule war unauffällig.\n\nDiagnose:\nGuillain-Barré-Syndrom (AIDP) nach Campylobacter-Enteritis.\n\nTherapie und Verlauf:\nWir behandelten mit Immunglobulinen i. v. 0,4 g/kg über fünf Tage. Auf der Intensivstation wurde die Vitalkapazität zweistündlich gemessen; sie fiel minimal auf 2,4 l, eine Beatmung war nicht erforderlich. Der Patient erhielt eine Thromboseprophylaxe und Physiotherapie. Ab dem zehnten Tag besserte sich die Kraft langsam.\n\nProcedere:\nWir verlegen den Patienten zur neurologischen Rehabilitation. Wir empfehlen intensive Physio- und Ergotherapie sowie die Fortführung der Thromboseprophylaxe bis zur vollständigen Mobilisation. Bei erneuter Verschlechterung, Schluck- oder Atemproblemen ist eine sofortige Rückverlegung erforderlich.\n\nMit freundlichen kollegialen Grüßen"
   }
 ]

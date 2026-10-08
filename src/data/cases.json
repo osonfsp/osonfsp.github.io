@@ -7556,5 +7556,2392 @@
         "Rezidiv"
       ]
     }
+  },
+  {
+    "id": "c71",
+    "title": "Akute Myokarditis nach Virusinfekt",
+    "category": "Kardiologie",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Lukas Brandt",
+      "age": 27,
+      "gender": "männlich",
+      "hauptbeschwerde": "Brustschmerzen und Herzstolpern nach einer Erkältung"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 2 Tagen stechende retrosternale Schmerzen (NRS 5/10), Palpitationen, Leistungsknick und Belastungsdyspnoe. Vor ca. 10 Tagen fieberhafter Infekt der oberen Atemwege. Trotzdem 3 Tage später Fußballtraining.",
+      "vorerkrankungen": "Keine.",
+      "medikamente": "Ibuprofen 400 mg bei Bedarf.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig, kein plötzlicher Herztod in der Familie.",
+      "sozialanamnese": "Ledig, Student (Sportwissenschaften), spielt Fußball im Verein. Nichtraucher, Alkohol am Wochenende."
+    },
+    "sprache": [
+      {
+        "patient": "Mein Herz stolpert manchmal, als würde es kurz aussetzen.",
+        "fach": "Der Patient berichtet über Palpitationen mit Extrasystolie."
+      },
+      {
+        "patient": "Seit der Erkältung bin ich total schlapp, beim Treppensteigen bekomme ich keine Luft.",
+        "fach": "Seit dem Infekt besteht ein Leistungsknick mit Belastungsdyspnoe."
+      },
+      {
+        "patient": "Trotz Fieber war ich beim Training.",
+        "fach": "Trotz des febrilen Infekts erfolgte eine sportliche Belastung."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Myokarditis",
+        "patient": "Entzündung des Herzmuskels",
+        "uz": "miokardit (yurak mushagi yallig‘lanishi)",
+        "ru": "миокардит",
+        "tr": "miyokardit",
+        "en": "myocarditis"
+      },
+      {
+        "de": "Palpitationen",
+        "patient": "Herzstolpern, Herzklopfen",
+        "uz": "yurak urib ketishi",
+        "ru": "сердцебиение, перебои",
+        "tr": "çarpıntı",
+        "en": "palpitations"
+      },
+      {
+        "de": "Extrasystolen",
+        "patient": "zusätzliche Herzschläge, Herzstolpern",
+        "uz": "ekstrasistolalar",
+        "ru": "экстрасистолы",
+        "tr": "ekstrasistoller",
+        "en": "extrasystoles"
+      },
+      {
+        "de": "Kardio-MRT",
+        "patient": "Kernspin des Herzens",
+        "uz": "yurak MRT",
+        "ru": "МРТ сердца",
+        "tr": "kardiyak MR",
+        "en": "cardiac MRI"
+      },
+      {
+        "de": "Sportkarenz",
+        "patient": "Sportverbot",
+        "uz": "sportdan vaqtincha voz kechish",
+        "ru": "запрет на спорт",
+        "tr": "spor yasağı",
+        "en": "abstaining from sport"
+      }
+    ],
+    "simulation": {
+      "opening": "Seit zwei Tagen habe ich so ein Stechen in der Brust, und mein Herz stolpert. Vor zehn Tagen hatte ich eine Erkältung.",
+      "answers": {
+        "beginn": "Vorgestern Abend fing es an. Die Erkältung mit Fieber war vor etwa zehn Tagen.",
+        "lokalisation": "Hinter dem Brustbein, in der Mitte.",
+        "charakter": "Eher stechend, so fünf von zehn. Beim tiefen Einatmen und im Liegen wird es etwas schlimmer.",
+        "ausstrahlung": "Nein, es strahlt nicht in den Arm oder den Kiefer aus.",
+        "begleit": "Mein Herz stolpert immer wieder. Ich bin total schlapp, beim Treppensteigen bekomme ich keine Luft. Fieber habe ich jetzt nicht mehr.",
+        "vegetativ": "Ich schlafe schlecht wegen des Herzstolperns. Appetit, Stuhlgang und Wasserlassen sind normal.",
+        "vorerkrankungen": "Ich war bisher immer gesund.",
+        "medikamente": "Gegen die Schmerzen habe ich ab und zu Ibuprofen 400 genommen.",
+        "allergien": "Nein, keine Allergien.",
+        "familie": "In der Familie hat niemand etwas mit dem Herzen. Niemand ist plötzlich gestorben.",
+        "sozial": "Ich studiere Sport und spiele im Verein Fußball. Ich war drei Tage nach der Erkältung trotz Fieber beim Training.",
+        "noxen": "Ich rauche nicht. Am Wochenende trinke ich ein paar Bier. Drogen nehme ich keine."
+      }
+    },
+    "verdachtsdiagnose": "Akute Myokarditis (Perimyokarditis) nach viralem Atemwegsinfekt",
+    "diagnoseKeywords": ["myokarditis", "perimyokarditis", "herzmuskelentzündung"],
+    "differenzialdiagnosen": ["Akutes Koronarsyndrom", "Perikarditis", "Lungenembolie", "Pneumothorax"],
+    "untersuchungen": [
+      "EKG",
+      "Troponin",
+      "Echokardiographie",
+      "Kardio-MRT",
+      "Labor (CRP, CK, Blutbild)",
+      "Langzeit-EKG"
+    ]
+  },
+  {
+    "id": "c72",
+    "title": "Hochgradige Aortenklappenstenose",
+    "category": "Kardiologie",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Helga Zimmermann",
+      "age": 81,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Schwindel und kurze Bewusstlosigkeit beim Treppensteigen"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Heute beim Treppensteigen kurze Synkope (ca. 30 Sekunden) mit Sturz ohne Kopfverletzung. Seit Monaten zunehmende Belastungsdyspnoe (NYHA III), Engegefühl in der Brust bei Belastung und Schwindel.",
+      "vorerkrankungen": "Arterielle Hypertonie, Hypercholesterinämie, Arthrose beider Kniegelenke. Ein Herzgeräusch ist seit Jahren bekannt.",
+      "medikamente": "Ramipril 5 mg 1-0-0, Simvastatin 20 mg 0-0-1, Ibuprofen 400 mg bei Bedarf.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Verwitwet, lebt allein im 3. Stock ohne Aufzug. Nie geraucht, kein Alkohol."
+    },
+    "sprache": [
+      {
+        "patient": "Mir ist auf der Treppe schwarz vor Augen geworden, und ich bin umgefallen.",
+        "fach": "Es kam zu einer Belastungssynkope mit Sturzereignis."
+      },
+      {
+        "patient": "Schon nach einem Stockwerk muss ich stehen bleiben.",
+        "fach": "Es besteht eine Belastungsdyspnoe NYHA III."
+      },
+      {
+        "patient": "Der Hausarzt hat gesagt, mein Herz macht ein Geräusch.",
+        "fach": "Ein Herzgeräusch ist seit Jahren bekannt."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Aortenklappenstenose",
+        "patient": "Verengung der Herzklappe zur Hauptschlagader",
+        "uz": "aorta qopqog‘i stenozi (torayishi)",
+        "ru": "стеноз аортального клапана",
+        "tr": "aort kapak darlığı",
+        "en": "aortic valve stenosis"
+      },
+      {
+        "de": "Synkope",
+        "patient": "kurze Bewusstlosigkeit, Ohnmacht",
+        "uz": "hushdan ketish (sinkope)",
+        "ru": "обморок (синкопе)",
+        "tr": "senkop (bayılma)",
+        "en": "syncope (fainting)"
+      },
+      {
+        "de": "TAVI",
+        "patient": "Herzklappenersatz über die Leiste mit einem Katheter",
+        "uz": "TAVI (kateter orqali aorta qopqog‘ini almashtirish)",
+        "ru": "TAVI (транскатетерная имплантация клапана)",
+        "tr": "TAVI (kateterle aort kapak değişimi)",
+        "en": "TAVI (transcatheter aortic valve implantation)"
+      },
+      {
+        "de": "Systolikum",
+        "patient": "Herzgeräusch",
+        "uz": "sistolik shovqin",
+        "ru": "систолический шум",
+        "tr": "sistolik üfürüm",
+        "en": "systolic murmur"
+      },
+      {
+        "de": "NYHA-Klassifikation",
+        "patient": "Einteilung, wie stark die Luftnot bei Belastung ist",
+        "uz": "NYHA tasnifi",
+        "ru": "классификация NYHA",
+        "tr": "NYHA sınıflaması",
+        "en": "NYHA classification"
+      }
+    ],
+    "simulation": {
+      "opening": "Mir ist heute auf der Treppe plötzlich schwarz vor Augen geworden, und ich bin umgefallen.",
+      "answers": {
+        "beginn": "Heute Vormittag, als ich mit den Einkäufen die Treppe hochgegangen bin. Die Luftnot habe ich schon seit ein paar Monaten, es wird immer schlimmer.",
+        "lokalisation": "Wenn ich mich anstrenge, drückt es hier in der Brust.",
+        "charakter": "Ein Engegefühl, vier von zehn. Es geht weg, wenn ich mich ausruhe.",
+        "ausstrahlung": "Nein, das strahlt nicht aus.",
+        "begleit": "Ich war nur kurz weg, vielleicht eine halbe Minute. Ich habe mir nicht wehgetan. Schon nach einem Stockwerk muss ich stehen bleiben und verschnaufen. Schwindelig ist mir oft.",
+        "vegetativ": "Nachts brauche ich zwei Kissen. Die Füße sind abends etwas dick. Sonst ist alles normal.",
+        "vorerkrankungen": "Ich habe Bluthochdruck, hohes Cholesterin und Arthrose in den Knien. Der Hausarzt hat gesagt, mein Herz macht ein Geräusch, schon seit Jahren.",
+        "medikamente": "Ramipril 5 morgens, Simvastatin 20 abends. Wegen der Knie manchmal Ibuprofen.",
+        "allergien": "Nein, keine.",
+        "familie": "Da ist nichts Besonderes.",
+        "sozial": "Ich bin Witwe und wohne allein im dritten Stock, ohne Aufzug.",
+        "noxen": "Ich habe nie geraucht und trinke keinen Alkohol."
+      }
+    },
+    "verdachtsdiagnose": "Symptomatische hochgradige Aortenklappenstenose mit Belastungssynkope",
+    "diagnoseKeywords": ["aortenklappenstenose", "aortenstenose", "klappenstenose"],
+    "differenzialdiagnosen": [
+      "Bradykarde Herzrhythmusstörung",
+      "Orthostatische Synkope",
+      "Hypertrophe obstruktive Kardiomyopathie",
+      "Koronare Herzkrankheit"
+    ],
+    "untersuchungen": [
+      "Echokardiographie",
+      "EKG",
+      "Langzeit-EKG",
+      "Koronarangiographie",
+      "CT der Aorta (TAVI-Planung)",
+      "NT-proBNP"
+    ]
+  },
+  {
+    "id": "c73",
+    "title": "Aspirationspneumonie bei Schluckstörung",
+    "category": "Pneumologie",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Walter Hahn",
+      "age": 86,
+      "gender": "männlich",
+      "hauptbeschwerde": "Fieber, Husten und zunehmende Verwirrtheit"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Fremdanamnestisch (Pflegekraft) seit 2 Tagen Fieber bis 38,9 °C, produktiver Husten, Tachypnoe und zunehmende Verwirrtheit. Seit Wochen häufiges Verschlucken beim Essen und Trinken.",
+      "vorerkrankungen": "Z. n. Schlaganfall links vor 1 Jahr mit Dysphagie und Hemiparese rechts, Demenz vom vaskulären Typ, Vorhofflimmern.",
+      "medikamente": "Apixaban 2,5 mg 1-0-1, Bisoprolol 2,5 mg 1-0-0, Memantin 10 mg 1-0-0, Pantoprazol 20 mg 1-0-0.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Nicht erhebbar.",
+      "sozialanamnese": "Verwitwet, lebt seit 1 Jahr im Pflegeheim (Pflegegrad 4). Ex-Raucher."
+    },
+    "sprache": [
+      {
+        "patient": "Er verschluckt sich ständig beim Essen und hustet dann.",
+        "fach": "Es besteht eine Dysphagie mit häufigen Aspirationsereignissen."
+      },
+      {
+        "patient": "Seit zwei Tagen ist er ganz durcheinander.",
+        "fach": "Seit zwei Tagen besteht eine zunehmende Desorientiertheit."
+      },
+      {
+        "patient": "Er atmet so schnell.",
+        "fach": "Der Patient ist tachypnoeisch."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Aspiration",
+        "patient": "Verschlucken – Nahrung oder Flüssigkeit gelangt in die Lunge",
+        "uz": "aspiratsiya (ovqatning nafas yo‘liga tushishi)",
+        "ru": "аспирация",
+        "tr": "aspirasyon",
+        "en": "aspiration"
+      },
+      {
+        "de": "Dysphagie",
+        "patient": "Schluckstörung",
+        "uz": "disfagiya (yutishning buzilishi)",
+        "ru": "дисфагия (нарушение глотания)",
+        "tr": "disfaji (yutma güçlüğü)",
+        "en": "dysphagia"
+      },
+      {
+        "de": "Tachypnoe",
+        "patient": "schnelle Atmung",
+        "uz": "taxipnoe (tez nafas olish)",
+        "ru": "тахипноэ",
+        "tr": "takipne",
+        "en": "tachypnoea"
+      },
+      {
+        "de": "Logopädie",
+        "patient": "Sprach- und Schlucktherapie",
+        "uz": "logopediya",
+        "ru": "логопедия",
+        "tr": "dil ve konuşma terapisi",
+        "en": "speech and swallowing therapy"
+      },
+      {
+        "de": "Andickungsmittel",
+        "patient": "Pulver, das Getränke dicker macht",
+        "uz": "ichimliklarni quyuqlashtiruvchi vosita",
+        "ru": "загуститель",
+        "tr": "kıvam artırıcı",
+        "en": "thickening agent"
+      }
+    ],
+    "simulation": {
+      "opening": "(Pflegekraft) Herr Hahn hat seit zwei Tagen Fieber, hustet viel und ist ganz durcheinander. (Patient) Wo bin ich hier?",
+      "answers": {
+        "beginn": "(Pflegekraft) Seit vorgestern hat er Fieber, gestern Abend fast 39 Grad. Verschlucken tut er sich schon seit Wochen immer öfter.",
+        "lokalisation": "(Patient) Die Brust tut weh beim Husten … rechts.",
+        "charakter": "(Pflegekraft) Er hustet viel, mit gelblichem Schleim. Beim Husten verzieht er das Gesicht.",
+        "ausstrahlung": "(Pflegekraft) Darüber hat er nichts gesagt.",
+        "begleit": "(Pflegekraft) Er atmet so schnell und ist viel verwirrter als sonst. Gestern hat er beim Mittagessen stark gehustet, als er sich verschluckt hat.",
+        "vegetativ": "(Pflegekraft) Er trinkt kaum noch, vielleicht einen halben Liter am Tag. Wasserlassen wenig, Stuhlgang normal.",
+        "vorerkrankungen": "(Pflegekraft) Er hatte letztes Jahr einen Schlaganfall, seitdem ist die rechte Seite schwach und er schluckt schlecht. Außerdem Demenz und Vorhofflimmern.",
+        "medikamente": "(Pflegekraft) Eliquis 2,5 zweimal, Bisoprolol 2,5, Memantin 10 und Pantoprazol 20, alles morgens, Eliquis auch abends.",
+        "allergien": "(Pflegekraft) Allergien sind keine bekannt.",
+        "familie": "(Pflegekraft) Dazu wissen wir nichts.",
+        "sozial": "(Pflegekraft) Er lebt seit einem Jahr bei uns im Heim, Pflegegrad 4. Seine Tochter besucht ihn jede Woche.",
+        "noxen": "(Pflegekraft) Früher hat er geraucht, jetzt nicht mehr. Alkohol trinkt er keinen."
+      }
+    },
+    "verdachtsdiagnose": "Aspirationspneumonie rechts basal bei Dysphagie nach Schlaganfall",
+    "diagnoseKeywords": ["aspirationspneumonie", "aspiration", "pneumonie"],
+    "differenzialdiagnosen": [
+      "Ambulant erworbene Pneumonie",
+      "Harnwegsinfekt mit Delir",
+      "Lungenembolie",
+      "Dekompensierte Herzinsuffizienz"
+    ],
+    "untersuchungen": [
+      "Röntgen-Thorax",
+      "Labor (CRP, Leukozyten, Procalcitonin, Elektrolyte)",
+      "Blutgasanalyse",
+      "Blutkulturen",
+      "Schluckdiagnostik (FEES)"
+    ]
+  },
+  {
+    "id": "c74",
+    "title": "Obstruktives Schlafapnoesyndrom",
+    "category": "Pneumologie",
+    "difficulty": "leicht",
+    "patient": {
+      "name": "Thomas Keller",
+      "age": 52,
+      "gender": "männlich",
+      "hauptbeschwerde": "Starke Tagesmüdigkeit und lautes Schnarchen"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit ca. 1 Jahr zunehmende Tagesmüdigkeit, Einschlafen am Steuer (Sekundenschlaf), morgendliche Kopfschmerzen und Konzentrationsstörungen. Die Ehefrau beobachtet lautes Schnarchen mit Atemaussetzern.",
+      "vorerkrankungen": "Adipositas (BMI 36), arterielle Hypertonie (schwer einstellbar), Diabetes mellitus Typ 2.",
+      "medikamente": "Amlodipin 10 mg 1-0-0, Candesartan 16 mg 1-0-0, Hydrochlorothiazid 12,5 mg 1-0-0, Metformin 1000 mg 1-0-1.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Vater: Herzinfarkt mit 60 Jahren.",
+      "sozialanamnese": "Verheiratet, Lkw-Fahrer im Fernverkehr. Raucher (25 py), abends 2–3 Bier."
+    },
+    "sprache": [
+      {
+        "patient": "Meine Frau sagt, ich höre nachts manchmal auf zu atmen.",
+        "fach": "Fremdanamnestisch werden nächtliche Atemaussetzer beobachtet."
+      },
+      {
+        "patient": "Am Steuer sind mir schon die Augen zugefallen.",
+        "fach": "Der Patient berichtet über Sekundenschlaf beim Autofahren."
+      },
+      {
+        "patient": "Morgens wache ich mit Kopfschmerzen auf, als hätte ich gar nicht geschlafen.",
+        "fach": "Es bestehen morgendliche Kopfschmerzen und ein nicht erholsamer Schlaf."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Schlafapnoe",
+        "patient": "Atemaussetzer im Schlaf",
+        "uz": "uyqudagi apnoe (nafas to‘xtashi)",
+        "ru": "апноэ во сне",
+        "tr": "uyku apnesi",
+        "en": "sleep apnoea"
+      },
+      {
+        "de": "Polysomnographie",
+        "patient": "Untersuchung im Schlaflabor",
+        "uz": "polisomnografiya (uyqu laboratoriyasida tekshiruv)",
+        "ru": "полисомнография",
+        "tr": "polisomnografi (uyku testi)",
+        "en": "polysomnography (sleep study)"
+      },
+      {
+        "de": "CPAP-Therapie",
+        "patient": "Atemmaske für die Nacht mit leichtem Überdruck",
+        "uz": "CPAP terapiya (tungi nafas niqobi)",
+        "ru": "CPAP-терапия",
+        "tr": "CPAP tedavisi",
+        "en": "CPAP therapy"
+      },
+      {
+        "de": "Hypersomnie",
+        "patient": "krankhafte Tagesmüdigkeit",
+        "uz": "giposomniya (kunduzgi kuchli uyquchanlik)",
+        "ru": "гиперсомния (дневная сонливость)",
+        "tr": "hipersomni (aşırı gündüz uykululuğu)",
+        "en": "hypersomnia (excessive daytime sleepiness)"
+      },
+      {
+        "de": "Adipositas",
+        "patient": "starkes Übergewicht",
+        "uz": "semizlik (adipozitas)",
+        "ru": "ожирение",
+        "tr": "obezite",
+        "en": "obesity"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich bin ständig so müde, Herr Doktor. Neulich sind mir sogar am Steuer die Augen zugefallen.",
+      "answers": {
+        "beginn": "Seit etwa einem Jahr, es wird immer schlimmer.",
+        "lokalisation": "Morgens habe ich Kopfschmerzen, im ganzen Kopf. Sonst tut nichts weh.",
+        "charakter": "Ich bin tagsüber so müde, dass ich überall einschlafen könnte – beim Fernsehen, bei Besprechungen, sogar im Lkw an der Ampel.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Meine Frau sagt, ich schnarche furchtbar laut und höre manchmal auf zu atmen, dann schnappe ich nach Luft. Ich kann mich schlecht konzentrieren. Nachts muss ich oft zur Toilette.",
+        "vegetativ": "Ich habe in den letzten Jahren 15 Kilo zugenommen. Appetit habe ich gut, zu gut.",
+        "vorerkrankungen": "Ich bin zu dick, habe Bluthochdruck, der trotz drei Tabletten nicht gut ist, und Zucker.",
+        "medikamente": "Amlodipin 10, Candesartan 16, eine kleine Wassertablette, alles morgens, und Metformin 1000 morgens und abends.",
+        "allergien": "Keine Allergien.",
+        "familie": "Mein Vater hatte mit 60 einen Herzinfarkt.",
+        "sozial": "Ich bin verheiratet und fahre Lkw im Fernverkehr, oft die ganze Woche unterwegs.",
+        "noxen": "Ich rauche eine Schachtel am Tag, seit 25 Jahren. Abends trinke ich zwei, drei Bier zum Entspannen."
+      }
+    },
+    "verdachtsdiagnose": "Obstruktives Schlafapnoesyndrom bei Adipositas mit Tagesmüdigkeit und therapieresistenter Hypertonie",
+    "diagnoseKeywords": ["schlafapnoe", "osas", "apnoe"],
+    "differenzialdiagnosen": ["Hypothyreose", "Narkolepsie", "Depression", "Restless-Legs-Syndrom"],
+    "untersuchungen": [
+      "Polygraphie (ambulantes Schlafscreening)",
+      "Polysomnographie im Schlaflabor",
+      "Epworth-Schläfrigkeitsskala",
+      "TSH",
+      "Langzeit-Blutdruckmessung"
+    ]
+  },
+  {
+    "id": "c75",
+    "title": "Akute Hepatitis A nach Reise",
+    "category": "Gastroenterologie",
+    "difficulty": "leicht",
+    "patient": {
+      "name": "Sophie Wagner",
+      "age": 29,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Gelbe Augen, dunkler Urin und Übelkeit"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 5 Tagen Abgeschlagenheit, Übelkeit, Appetitlosigkeit und Druckgefühl im rechten Oberbauch; seit 2 Tagen Gelbfärbung der Skleren, bierbrauner Urin und heller Stuhl. Anfangs Fieber bis 38,5 °C. Vor 4 Wochen Rucksackreise durch Marokko (Straßenessen, Salate), keine Hepatitis-A-Impfung.",
+      "vorerkrankungen": "Keine.",
+      "medikamente": "Orale Kontrazeption; Paracetamol 500 mg 1–2 × täglich in den letzten Tagen.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Ledig, Grafikdesignerin. Nichtraucherin, Alkohol gelegentlich. Keine Drogen, keine Tätowierungen in letzter Zeit."
+    },
+    "sprache": [
+      {
+        "patient": "Das Weiße in meinen Augen ist ganz gelb.",
+        "fach": "Es besteht ein Sklerenikterus."
+      },
+      {
+        "patient": "Mein Urin sieht aus wie dunkles Bier, und der Stuhl ist ganz hell.",
+        "fach": "Die Patientin berichtet über bierbraunen Urin und acholischen Stuhl."
+      },
+      {
+        "patient": "Ich war vor einem Monat in Marokko und habe viel auf der Straße gegessen.",
+        "fach": "Vor vier Wochen erfolgte eine Reise nach Marokko mit Verzehr von Straßenessen."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Hepatitis",
+        "patient": "Leberentzündung",
+        "uz": "gepatit (jigar yallig‘lanishi)",
+        "ru": "гепатит",
+        "tr": "hepatit",
+        "en": "hepatitis"
+      },
+      {
+        "de": "Ikterus",
+        "patient": "Gelbsucht",
+        "uz": "sariqlik",
+        "ru": "желтуха",
+        "tr": "sarılık",
+        "en": "jaundice"
+      },
+      {
+        "de": "Acholischer Stuhl",
+        "patient": "heller, lehmfarbener Stuhl",
+        "uz": "rangsiz (oqargan) najas",
+        "ru": "ахоличный (обесцвеченный) стул",
+        "tr": "akolik (açık renkli) dışkı",
+        "en": "pale stool"
+      },
+      {
+        "de": "Transaminasen",
+        "patient": "Leberwerte",
+        "uz": "transaminazalar (jigar ko‘rsatkichlari)",
+        "ru": "трансаминазы (печёночные пробы)",
+        "tr": "transaminazlar (karaciğer enzimleri)",
+        "en": "transaminases (liver enzymes)"
+      },
+      {
+        "de": "fäkal-oral",
+        "patient": "über verschmutzte Hände, Essen oder Wasser übertragen",
+        "uz": "najas-og‘iz yo‘li bilan",
+        "ru": "фекально-оральный путь",
+        "tr": "fekal-oral yol",
+        "en": "faecal-oral"
+      }
+    ],
+    "simulation": {
+      "opening": "Meine Augen sind ganz gelb geworden, und mir ist seit Tagen übel.",
+      "answers": {
+        "beginn": "Die Übelkeit und die Schlappheit seit fünf Tagen. Die gelben Augen seit vorgestern.",
+        "lokalisation": "Rechts oben im Bauch drückt es ein bisschen.",
+        "charakter": "Ein dumpfer Druck, drei von zehn. Vor allem bin ich total kaputt.",
+        "ausstrahlung": "Nein, es strahlt nicht aus.",
+        "begleit": "Am Anfang hatte ich Fieber, bis 38,5. Mein Urin ist dunkel wie Bier, und der Stuhl ist ganz hell. Jucken tut die Haut ein bisschen.",
+        "vegetativ": "Ich habe gar keinen Appetit, mir ekelt vor Essen, besonders vor Fettigem. Ich habe zwei Kilo abgenommen.",
+        "vorerkrankungen": "Ich bin eigentlich gesund. (auf Nachfrage) Vor vier Wochen war ich drei Wochen mit dem Rucksack in Marokko. Ich habe viel auf der Straße gegessen, auch Salate.",
+        "medikamente": "Die Pille. Und in den letzten Tagen ein- bis zweimal Paracetamol 500 gegen die Kopfschmerzen.",
+        "allergien": "Nein.",
+        "familie": "In der Familie ist nichts Besonderes.",
+        "sozial": "Ich bin ledig und Grafikdesignerin. Gegen Hepatitis bin ich, glaube ich, nicht geimpft.",
+        "noxen": "Ich rauche nicht. Alkohol nur selten, seit ich krank bin gar nicht. Drogen nein, neue Tattoos oder Piercings auch nicht."
+      }
+    },
+    "verdachtsdiagnose": "Akute Hepatitis A nach Reise nach Marokko",
+    "diagnoseKeywords": ["hepatitis a", "hepatitis", "hav"],
+    "differenzialdiagnosen": [
+      "Hepatitis B oder E",
+      "Medikamentös-toxische Hepatitis (Paracetamol)",
+      "Choledocholithiasis",
+      "EBV-Hepatitis"
+    ],
+    "untersuchungen": [
+      "Leberwerte (GOT, GPT, Bilirubin, γ-GT, AP)",
+      "Hepatitis-Serologie (Anti-HAV-IgM, HBsAg, Anti-HEV)",
+      "Gerinnung (INR)",
+      "Sonographie Abdomen",
+      "Blutbild"
+    ]
+  },
+  {
+    "id": "c76",
+    "title": "Akute Cholangitis bei Choledocholithiasis",
+    "category": "Gastroenterologie",
+    "difficulty": "schwer",
+    "patient": {
+      "name": "Gisela Hartmann",
+      "age": 77,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Fieber mit Schüttelfrost, Oberbauchschmerzen und Gelbsucht"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit gestern kolikartige Schmerzen im rechten Oberbauch (NRS 7/10), seit heute Fieber bis 39,6 °C mit Schüttelfrost, Ikterus, dunkler Urin. Heute zunehmend schläfrig. Bekannte Gallensteine, eine geplante Cholezystektomie wurde vor 1 Jahr abgesagt.",
+      "vorerkrankungen": "Cholezystolithiasis, Diabetes mellitus Typ 2, arterielle Hypertonie, chronische Niereninsuffizienz Stadium 3a.",
+      "medikamente": "Metformin 500 mg 1-0-1, Ramipril 5 mg 1-0-0, ASS 100 mg 1-0-0.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Mutter: Gallensteine.",
+      "sozialanamnese": "Verheiratet, Rentnerin. Nie geraucht, kein Alkohol."
+    },
+    "sprache": [
+      {
+        "patient": "Ich habe so gezittert und war ganz heiß.",
+        "fach": "Die Patientin berichtet über Fieber mit Schüttelfrost."
+      },
+      {
+        "patient": "Rechts oben im Bauch zieht es in Wellen, ganz schlimm.",
+        "fach": "Es bestehen kolikartige Schmerzen im rechten Oberbauch."
+      },
+      {
+        "patient": "Die Operation an der Galle habe ich letztes Jahr abgesagt, ich hatte Angst.",
+        "fach": "Eine elektive Cholezystektomie wurde vor einem Jahr von der Patientin abgelehnt."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Cholangitis",
+        "patient": "Entzündung der Gallenwege",
+        "uz": "xolangit (o‘t yo‘llari yallig‘lanishi)",
+        "ru": "холангит",
+        "tr": "kolanjit",
+        "en": "cholangitis"
+      },
+      {
+        "de": "Choledocholithiasis",
+        "patient": "Gallenstein im Hauptgallengang",
+        "uz": "xoledoxolitiaz (umumiy o‘t yo‘lidagi tosh)",
+        "ru": "холедохолитиаз",
+        "tr": "koledokolitiazis",
+        "en": "choledocholithiasis"
+      },
+      {
+        "de": "Charcot-Trias",
+        "patient": "Fieber, Oberbauchschmerz und Gelbsucht zusammen",
+        "uz": "Sharko triadasi",
+        "ru": "триада Шарко",
+        "tr": "Charcot triadı",
+        "en": "Charcot’s triad"
+      },
+      {
+        "de": "ERCP",
+        "patient": "Spiegelung der Gallenwege über den Mund",
+        "uz": "ERXPG (o‘t yo‘llarini endoskopik tekshirish)",
+        "ru": "ЭРХПГ",
+        "tr": "ERCP",
+        "en": "ERCP"
+      },
+      {
+        "de": "Papillotomie",
+        "patient": "Erweiterung der Gallengangsmündung",
+        "uz": "papillotomiya",
+        "ru": "папиллотомия",
+        "tr": "papillotomi",
+        "en": "papillotomy (sphincterotomy)"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe seit gestern so starke Bauchschmerzen rechts oben, und heute hatte ich Schüttelfrost …",
+      "answers": {
+        "beginn": "Die Schmerzen seit gestern Abend, nach dem Abendessen. Das Fieber mit Schüttelfrost seit heute Morgen.",
+        "lokalisation": "Rechts oben unter dem Rippenbogen.",
+        "charakter": "Es kommt in Wellen, krampfartig, sieben von zehn.",
+        "ausstrahlung": "Es zieht in den Rücken, zur rechten Schulter hin.",
+        "begleit": "Ich habe gezittert und war ganz heiß. Mein Mann sagt, meine Augen sind gelb. Ich habe einmal erbrochen. Ich bin heute so müde.",
+        "vegetativ": "Der Urin ist ganz dunkel, der Stuhl heller als sonst. Gegessen habe ich nichts.",
+        "vorerkrankungen": "Ich habe Gallensteine, Zucker, hohen Blutdruck und die Nieren sind etwas schwach. Die Operation an der Galle habe ich letztes Jahr abgesagt, ich hatte Angst.",
+        "medikamente": "Metformin morgens und abends, Ramipril morgens und ASS 100.",
+        "allergien": "Nein.",
+        "familie": "Meine Mutter hatte auch Gallensteine.",
+        "sozial": "Ich bin verheiratet und Rentnerin.",
+        "noxen": "Ich habe nie geraucht und trinke keinen Alkohol."
+      }
+    },
+    "verdachtsdiagnose": "Akute (schwere) Cholangitis bei Choledocholithiasis mit beginnender Sepsis",
+    "diagnoseKeywords": ["cholangitis", "choledocholithiasis", "gallengang"],
+    "differenzialdiagnosen": [
+      "Akute Cholezystitis",
+      "Akute Pankreatitis (biliär)",
+      "Leberabszess",
+      "Pyelonephritis rechts"
+    ],
+    "untersuchungen": [
+      "Labor (Bilirubin, γ-GT, AP, Lipase, CRP, Kreatinin, Laktat)",
+      "Blutkulturen",
+      "Sonographie Abdomen",
+      "ERCP mit Steinextraktion",
+      "MRCP (bei Unklarheit)"
+    ],
+    "oberarzt": {
+      "therapie": [
+        "Antibiotika (Piperacillin/Tazobactam) sofort",
+        "ERCP mit Papillotomie und Steinextraktion",
+        "Volumentherapie",
+        "Metformin pausieren",
+        "Cholezystektomie im Intervall"
+      ],
+      "komplikationen": [
+        "Septischer Schock",
+        "Leberabszess",
+        "Biliäre Pankreatitis",
+        "Akutes Nierenversagen",
+        "Post-ERCP-Pankreatitis",
+        "Blutung nach Papillotomie"
+      ]
+    }
+  },
+  {
+    "id": "c77",
+    "title": "Nephrotisches Syndrom",
+    "category": "Nephrologie",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Markus Schmitt",
+      "age": 45,
+      "gender": "männlich",
+      "hauptbeschwerde": "Starke Schwellungen an Beinen und Augenlidern"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 3 Wochen zunehmende Ödeme an beiden Unterschenkeln und morgens an den Augenlidern, Gewichtszunahme um 8 kg, schäumender Urin. Leichte Belastungsdyspnoe. Keine Schmerzen.",
+      "vorerkrankungen": "Keine bekannten Vorerkrankungen.",
+      "medikamente": "Keine.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Vater: Diabetes mellitus Typ 2.",
+      "sozialanamnese": "Verheiratet, zwei Kinder, Bankkaufmann. Nichtraucher, kein Alkohol."
+    },
+    "sprache": [
+      {
+        "patient": "Meine Beine sind so dick, dass die Schuhe nicht mehr passen.",
+        "fach": "Es bestehen ausgeprägte Unterschenkelödeme beidseits."
+      },
+      {
+        "patient": "Der Urin schäumt wie Bier.",
+        "fach": "Der Patient berichtet über schäumenden Urin als Hinweis auf eine Proteinurie."
+      },
+      {
+        "patient": "Morgens sind meine Augen ganz verquollen.",
+        "fach": "Morgens bestehen Lidödeme."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Nephrotisches Syndrom",
+        "patient": "Nierenkrankheit, bei der viel Eiweiß über den Urin verloren geht",
+        "uz": "nefrotik sindrom",
+        "ru": "нефротический синдром",
+        "tr": "nefrotik sendrom",
+        "en": "nephrotic syndrome"
+      },
+      {
+        "de": "Proteinurie",
+        "patient": "Eiweiß im Urin",
+        "uz": "proteinuriya (siydikda oqsil)",
+        "ru": "протеинурия",
+        "tr": "proteinüri",
+        "en": "proteinuria"
+      },
+      {
+        "de": "Hypalbuminämie",
+        "patient": "zu wenig Eiweiß (Albumin) im Blut",
+        "uz": "gipoalbuminemiya",
+        "ru": "гипоальбуминемия",
+        "tr": "hipoalbüminemi",
+        "en": "hypoalbuminaemia"
+      },
+      {
+        "de": "Nierenbiopsie",
+        "patient": "Gewebeprobe aus der Niere",
+        "uz": "buyrak biopsiyasi",
+        "ru": "биопсия почки",
+        "tr": "böbrek biyopsisi",
+        "en": "kidney biopsy"
+      },
+      {
+        "de": "Ödeme",
+        "patient": "Wassereinlagerungen, Schwellungen",
+        "uz": "shishlar",
+        "ru": "отёки",
+        "tr": "ödemler",
+        "en": "oedema"
+      }
+    ],
+    "simulation": {
+      "opening": "Meine Beine sind seit ein paar Wochen so dick, und morgens sind meine Augen ganz verquollen.",
+      "answers": {
+        "beginn": "Vor etwa drei Wochen hat es angefangen, es wird immer mehr.",
+        "lokalisation": "Beide Unterschenkel und Füße, und morgens die Augenlider.",
+        "charakter": "Es tut nicht weh, es spannt nur. Wenn ich drücke, bleibt eine Delle.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Ich habe acht Kilo zugenommen, obwohl ich nicht mehr esse. Der Urin schäumt wie Bier. Beim Treppensteigen bin ich etwas kurzatmig.",
+        "vegetativ": "Ich muss nicht öfter auf die Toilette. Fieber habe ich nicht. Appetit ist normal.",
+        "vorerkrankungen": "Ich war immer gesund. Vor kurzem hatte ich keinen Infekt.",
+        "medikamente": "Ich nehme keine Medikamente, auch keine Schmerzmittel.",
+        "allergien": "Nein.",
+        "familie": "Mein Vater hat Zucker.",
+        "sozial": "Ich bin verheiratet, habe zwei Kinder und arbeite in einer Bank.",
+        "noxen": "Ich rauche nicht und trinke keinen Alkohol."
+      }
+    },
+    "verdachtsdiagnose": "Nephrotisches Syndrom, am ehesten bei membranöser Glomerulonephritis",
+    "diagnoseKeywords": ["nephrotisch", "glomerulonephritis", "proteinurie"],
+    "differenzialdiagnosen": [
+      "Dekompensierte Herzinsuffizienz",
+      "Leberzirrhose",
+      "Diabetische Nephropathie",
+      "Hypothyreose"
+    ],
+    "untersuchungen": [
+      "Urin (Eiweiß/Kreatinin-Quotient, 24-h-Sammelurin)",
+      "Albumin, Gesamteiweiß, Lipide",
+      "Kreatinin und eGFR",
+      "Anti-PLA2R-Antikörper",
+      "Nierenbiopsie",
+      "Sonographie der Nieren"
+    ]
+  },
+  {
+    "id": "c78",
+    "title": "Lebensbedrohliche Hyperkaliämie bei Dialysepatient",
+    "category": "Nephrologie",
+    "difficulty": "schwer",
+    "patient": {
+      "name": "Ahmet Yılmaz",
+      "age": 63,
+      "gender": "männlich",
+      "hauptbeschwerde": "Schwäche in den Beinen und Herzstolpern"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit heute Morgen zunehmende Schwäche beider Beine, Kribbeln in den Händen und Herzstolpern. Die letzte Dialyse wurde vor 4 Tagen wegen einer Familienfeier ausgelassen; am Wochenende viel Obst, Tomaten und Nüsse gegessen.",
+      "vorerkrankungen": "Terminale Niereninsuffizienz bei diabetischer Nephropathie, Hämodialyse 3× wöchentlich (Mo/Mi/Fr) über Shunt am linken Unterarm; Diabetes mellitus Typ 2, KHK.",
+      "medikamente": "Insulin, Ramipril 2,5 mg 1-0-0, Bisoprolol 5 mg 1-0-0, ASS 100 mg 1-0-0, Calciumacetat zu den Mahlzeiten.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Bruder: Diabetes und Dialyse.",
+      "sozialanamnese": "Verheiratet, Rentner (früher Schweißer). Ex-Raucher, kein Alkohol."
+    },
+    "sprache": [
+      {
+        "patient": "Die Dialyse am Freitag habe ich ausfallen lassen, wir hatten eine Hochzeit.",
+        "fach": "Die letzte Hämodialyse wurde vor vier Tagen ausgelassen."
+      },
+      {
+        "patient": "Meine Beine sind wie Gummi, ich kann kaum stehen.",
+        "fach": "Es besteht eine ausgeprägte Schwäche der unteren Extremitäten."
+      },
+      {
+        "patient": "Mein Herz stolpert und schlägt so langsam.",
+        "fach": "Der Patient berichtet über Palpitationen und Bradykardie."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Hyperkaliämie",
+        "patient": "zu viel Kalium im Blut",
+        "uz": "giperkaliyemiya",
+        "ru": "гиперкалиемия",
+        "tr": "hiperkalemi",
+        "en": "hyperkalaemia"
+      },
+      {
+        "de": "Hämodialyse",
+        "patient": "Blutwäsche",
+        "uz": "gemodializ (qonni tozalash)",
+        "ru": "гемодиализ",
+        "tr": "hemodiyaliz",
+        "en": "haemodialysis"
+      },
+      {
+        "de": "Shunt",
+        "patient": "Gefäßverbindung am Arm für die Dialyse",
+        "uz": "shunt (dializ uchun tomir ulanishi)",
+        "ru": "шунт (сосудистый доступ)",
+        "tr": "fistül (diyaliz için damar bağlantısı)",
+        "en": "AV fistula"
+      },
+      {
+        "de": "Bradykardie",
+        "patient": "zu langsamer Herzschlag",
+        "uz": "bradikardiya (yurakning sekin urishi)",
+        "ru": "брадикардия",
+        "tr": "bradikardi",
+        "en": "bradycardia"
+      },
+      {
+        "de": "Insulin-Glukose-Infusion",
+        "patient": "Infusion, die Kalium in die Zellen verschiebt",
+        "uz": "insulin-glyukoza infuziyasi",
+        "ru": "инфузия инсулина с глюкозой",
+        "tr": "insülin-glukoz infüzyonu",
+        "en": "insulin-glucose infusion"
+      }
+    ],
+    "simulation": {
+      "opening": "Meine Beine sind so schwach, ich kann kaum stehen, und mein Herz stolpert.",
+      "answers": {
+        "beginn": "Heute Morgen beim Aufstehen fing es an, seitdem wird es schlimmer.",
+        "lokalisation": "Beide Beine sind schwach. In den Händen kribbelt es.",
+        "charakter": "Wie Gummi, ich kann kaum stehen. Schmerzen habe ich keine.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Mein Herz stolpert und schlägt so langsam. Mir ist etwas übel. Luftnot habe ich ein bisschen.",
+        "vegetativ": "Ich lasse kaum noch Wasser, das ist seit der Dialyse so. Stuhlgang normal.",
+        "vorerkrankungen": "Ich bin seit drei Jahren an der Dialyse, montags, mittwochs und freitags, wegen dem Zucker an den Nieren. Am Herzen habe ich zwei Stents.",
+        "medikamente": "Insulin, Ramipril, Bisoprolol, ASS und die Phosphatbinder zum Essen.",
+        "allergien": "Nein.",
+        "familie": "Mein Bruder ist auch an der Dialyse.",
+        "sozial": "Ich bin verheiratet und Rentner, ich war Schweißer. (auf Nachfrage) Die Dialyse am Freitag habe ich ausfallen lassen, wir hatten eine Hochzeit in der Familie. Da habe ich viel Obst, Tomaten und Nüsse gegessen.",
+        "noxen": "Früher habe ich geraucht, jetzt nicht mehr. Alkohol trinke ich nicht."
+      }
+    },
+    "verdachtsdiagnose": "Lebensbedrohliche Hyperkaliämie nach ausgelassener Hämodialyse und kaliumreicher Kost",
+    "diagnoseKeywords": ["hyperkali", "kalium"],
+    "differenzialdiagnosen": [
+      "Guillain-Barré-Syndrom",
+      "Schlaganfall",
+      "AV-Block anderer Ursache",
+      "Hypoglykämie"
+    ],
+    "untersuchungen": [
+      "Kalium (BGA, sofort)",
+      "EKG (Monitor)",
+      "Kreatinin, Harnstoff",
+      "Blutgasanalyse (Azidose)",
+      "Blutzucker"
+    ],
+    "oberarzt": {
+      "therapie": [
+        "Calciumgluconat i. v. (Membranstabilisierung)",
+        "Insulin-Glukose-Infusion",
+        "Salbutamol-Inhalation",
+        "Notfalldialyse",
+        "Natriumbicarbonat bei Azidose",
+        "Kaliumarme Diät"
+      ],
+      "komplikationen": [
+        "Kammerflimmern (Asystolie)",
+        "Bradykardie (AV-Block)",
+        "Hypoglykämie (nach Insulin)",
+        "Überwässerung (Lungenödem)",
+        "Shuntthrombose"
+      ]
+    }
+  },
+  {
+    "id": "c79",
+    "title": "Schmerzlose Makrohämaturie bei Harnblasenkarzinom",
+    "category": "Urologie",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Rolf Schneider",
+      "age": 69,
+      "gender": "männlich",
+      "hauptbeschwerde": "Blut im Urin ohne Schmerzen"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 1 Woche dreimal rot gefärbter Urin mit kleinen Koageln, keine Schmerzen, kein Brennen beim Wasserlassen, kein Fieber. Vor 3 Monaten einmalig ähnliche Episode, die spontan sistierte.",
+      "vorerkrankungen": "COPD GOLD 2, benigne Prostatahyperplasie, arterielle Hypertonie.",
+      "medikamente": "Tiotropium 1-0-0, Tamsulosin 0,4 mg 0-0-1, Amlodipin 5 mg 1-0-0.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Verheiratet, Rentner (früher 30 Jahre Maler und Lackierer – Kontakt mit Farben und Lösungsmitteln). Raucher, 50 py. Alkohol gelegentlich."
+    },
+    "sprache": [
+      {
+        "patient": "Mein Urin war rot wie Kirschsaft, aber es tut gar nicht weh.",
+        "fach": "Der Patient berichtet über eine schmerzlose Makrohämaturie."
+      },
+      {
+        "patient": "Da waren kleine Klumpen drin.",
+        "fach": "Es fanden sich Koagel im Urin."
+      },
+      {
+        "patient": "Ich war dreißig Jahre Maler, mit Farben und Lösungsmitteln.",
+        "fach": "Es besteht eine berufliche Exposition gegenüber aromatischen Aminen."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Makrohämaturie",
+        "patient": "sichtbares Blut im Urin",
+        "uz": "makrogematuriya (ko‘rinadigan qon)",
+        "ru": "макрогематурия",
+        "tr": "makroskopik hematüri",
+        "en": "visible haematuria"
+      },
+      {
+        "de": "Zystoskopie",
+        "patient": "Blasenspiegelung",
+        "uz": "sistoskopiya",
+        "ru": "цистоскопия",
+        "tr": "sistoskopi",
+        "en": "cystoscopy"
+      },
+      {
+        "de": "TUR-B",
+        "patient": "Entfernung des Blasentumors durch die Harnröhre",
+        "uz": "TUR-B (siydik chiqarish kanali orqali o‘smani olib tashlash)",
+        "ru": "ТУР мочевого пузыря",
+        "tr": "TUR-M (transüretral mesane rezeksiyonu)",
+        "en": "TURBT (transurethral resection of bladder tumour)"
+      },
+      {
+        "de": "Urothelkarzinom",
+        "patient": "Krebs der Blasenschleimhaut",
+        "uz": "urotelial karsinoma",
+        "ru": "уротелиальная карцинома",
+        "tr": "ürotelyal karsinom",
+        "en": "urothelial carcinoma"
+      },
+      {
+        "de": "Koagel",
+        "patient": "Blutgerinnsel",
+        "uz": "qon laxtasi",
+        "ru": "сгустки крови",
+        "tr": "pıhtı",
+        "en": "blood clots"
+      }
+    ],
+    "simulation": {
+      "opening": "Mein Urin war in den letzten Tagen ein paar Mal ganz rot, aber es tut gar nicht weh.",
+      "answers": {
+        "beginn": "Vor einer Woche zum ersten Mal, seitdem dreimal. Vor drei Monaten war es schon einmal so, dann ging es von selbst weg.",
+        "lokalisation": "Es tut nirgends weh, weder im Bauch noch im Rücken.",
+        "charakter": "Der Urin ist rot wie Kirschsaft, manchmal mit kleinen Klumpen.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Kein Brennen beim Wasserlassen, kein Fieber. Ich habe in letzter Zeit etwas abgenommen, zwei, drei Kilo.",
+        "vegetativ": "Nachts muss ich zweimal raus, das ist wegen der Prostata schon länger so. Stuhlgang normal.",
+        "vorerkrankungen": "Ich habe COPD, eine vergrößerte Prostata und hohen Blutdruck.",
+        "medikamente": "Spiriva morgens, Tamsulosin abends und Amlodipin morgens. Blutverdünner nehme ich keine.",
+        "allergien": "Nein.",
+        "familie": "Da ist nichts bekannt.",
+        "sozial": "Ich bin verheiratet und Rentner. Ich war dreißig Jahre Maler und Lackierer, viel mit Farben und Lösungsmitteln.",
+        "noxen": "Ich rauche seit fünfzig Jahren, eine Schachtel am Tag. Alkohol nur selten."
+      }
+    },
+    "verdachtsdiagnose": "Verdacht auf Harnblasenkarzinom (Urothelkarzinom) bei schmerzloser Makrohämaturie, Raucher mit beruflicher Exposition",
+    "diagnoseKeywords": ["blasenkarzinom", "harnblasenkarzinom", "urothelkarzinom", "blasentumor"],
+    "differenzialdiagnosen": [
+      "Nierenzellkarzinom",
+      "Prostatahyperplasie mit Varizenblutung",
+      "Urolithiasis",
+      "Hämorrhagische Zystitis"
+    ],
+    "untersuchungen": [
+      "Urinstatus und Urinzytologie",
+      "Sonographie (Nieren, Blase)",
+      "Zystoskopie",
+      "CT-Urographie",
+      "TUR-B mit Histologie",
+      "Labor (Blutbild, Kreatinin, Gerinnung)"
+    ]
+  },
+  {
+    "id": "c80",
+    "title": "Akute Epididymitis",
+    "category": "Urologie",
+    "difficulty": "leicht",
+    "patient": {
+      "name": "Kevin Hoffmeister",
+      "age": 24,
+      "gender": "männlich",
+      "hauptbeschwerde": "Schmerzhafte Schwellung des rechten Hodens"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 3 Tagen langsam zunehmende Schmerzen und Schwellung des rechten Hodens, Fieber bis 38,4 °C, Brennen beim Wasserlassen. Kein Trauma. Neue Sexualpartnerin seit 1 Monat, ungeschützter Geschlechtsverkehr.",
+      "vorerkrankungen": "Keine.",
+      "medikamente": "Ibuprofen 400 mg bei Bedarf.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Ledig, Elektriker. Raucher (5 Zigaretten/Tag), Alkohol am Wochenende."
+    },
+    "sprache": [
+      {
+        "patient": "Mein rechter Hoden ist geschwollen und tut weh.",
+        "fach": "Es besteht eine schmerzhafte Schwellung des rechten Hodens."
+      },
+      {
+        "patient": "Wenn ich den Hoden hochhebe, wird es besser.",
+        "fach": "Das Prehn-Zeichen ist positiv."
+      },
+      {
+        "patient": "Beim Pinkeln brennt es.",
+        "fach": "Der Patient berichtet über eine Dysurie."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Epididymitis",
+        "patient": "Nebenhodenentzündung",
+        "uz": "epididimit (moyak ortig‘i yallig‘lanishi)",
+        "ru": "эпидидимит",
+        "tr": "epididimit",
+        "en": "epididymitis"
+      },
+      {
+        "de": "Hodentorsion",
+        "patient": "Verdrehung des Hodens – Notfall",
+        "uz": "moyak buralishi",
+        "ru": "перекрут яичка",
+        "tr": "testis torsiyonu",
+        "en": "testicular torsion"
+      },
+      {
+        "de": "Prehn-Zeichen",
+        "patient": "Schmerzlinderung beim Anheben des Hodens",
+        "uz": "Pren belgisi",
+        "ru": "симптом Прена",
+        "tr": "Prehn işareti",
+        "en": "Prehn’s sign"
+      },
+      {
+        "de": "Chlamydien",
+        "patient": "sexuell übertragbare Bakterien",
+        "uz": "xlamidiyalar",
+        "ru": "хламидии",
+        "tr": "klamidya",
+        "en": "chlamydia"
+      },
+      {
+        "de": "Dysurie",
+        "patient": "Brennen beim Wasserlassen",
+        "uz": "og‘riqli siyish",
+        "ru": "дизурия",
+        "tr": "dizüri",
+        "en": "dysuria"
+      }
+    ],
+    "simulation": {
+      "opening": "Mein rechter Hoden ist seit ein paar Tagen geschwollen und tut richtig weh.",
+      "answers": {
+        "beginn": "Vor drei Tagen fing es langsam an und wurde jeden Tag schlimmer. Nicht plötzlich.",
+        "lokalisation": "Rechts, eher hinten am Hoden. Es zieht in die Leiste.",
+        "charakter": "Ein dumpfer, ziehender Schmerz, sechs von zehn. Wenn ich den Hoden hochhebe, wird es etwas besser.",
+        "ausstrahlung": "In die rechte Leiste.",
+        "begleit": "Ich habe Fieber, gestern 38,4. Beim Pinkeln brennt es. Ausfluss habe ich ein bisschen bemerkt. Übelkeit habe ich nicht.",
+        "vegetativ": "Sonst ist alles normal.",
+        "vorerkrankungen": "Ich bin gesund. Verletzt habe ich mich nicht.",
+        "medikamente": "Ibuprofen 400, wenn es zu stark wird.",
+        "allergien": "Nein.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich bin Elektriker. (auf Nachfrage) Ich habe seit einem Monat eine neue Freundin, wir haben nicht verhütet.",
+        "noxen": "Ich rauche fünf Zigaretten am Tag. Am Wochenende trinke ich Bier."
+      }
+    },
+    "verdachtsdiagnose": "Akute Epididymitis rechts, am ehesten durch Chlamydia trachomatis (sexuell übertragen)",
+    "diagnoseKeywords": ["epididymitis", "nebenhoden", "orchitis"],
+    "differenzialdiagnosen": [
+      "Hodentorsion",
+      "Hodentumor",
+      "Inkarzerierte Leistenhernie",
+      "Orchitis (z. B. Mumps)"
+    ],
+    "untersuchungen": [
+      "Dopplersonographie des Hodens",
+      "Urinstatus und Urinkultur",
+      "PCR auf Chlamydien und Gonokokken (Erststrahlurin)",
+      "Labor (CRP, Leukozyten)",
+      "HIV- und Syphilis-Serologie"
+    ]
+  },
+  {
+    "id": "c81",
+    "title": "Achillessehnenruptur",
+    "category": "Unfallchirurgie",
+    "difficulty": "leicht",
+    "patient": {
+      "name": "Stefan Fischer",
+      "age": 44,
+      "gender": "männlich",
+      "hauptbeschwerde": "Plötzlicher Schmerz in der rechten Wade beim Tennisspielen"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Vor 3 Stunden beim Tennis (Antritt zum Netz) plötzlicher peitschenschlagartiger Schmerz in der rechten Ferse/Wade mit hörbarem Knall. Seitdem Gehen nur hinkend möglich, kein Zehenspitzenstand rechts.",
+      "vorerkrankungen": "Keine. Vor 4 Wochen wegen Harnwegsinfekt Ciprofloxacin für 7 Tage.",
+      "medikamente": "Keine regelmäßigen.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Verheiratet, Projektleiter (Bürotätigkeit). Spielt am Wochenende Tennis. Nichtraucher, Alkohol gelegentlich."
+    },
+    "sprache": [
+      {
+        "patient": "Es hat geknallt, als hätte mir jemand von hinten gegen die Wade getreten.",
+        "fach": "Der Patient berichtet über einen peitschenschlagartigen Schmerz mit hörbarem Knall."
+      },
+      {
+        "patient": "Ich kann mich rechts nicht mehr auf die Zehenspitzen stellen.",
+        "fach": "Der Zehenspitzenstand rechts ist nicht möglich."
+      },
+      {
+        "patient": "Vor einem Monat hatte ich ein Antibiotikum gegen eine Blasenentzündung.",
+        "fach": "Vor vier Wochen erfolgte eine Therapie mit einem Fluorchinolon."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Achillessehnenruptur",
+        "patient": "Riss der Achillessehne",
+        "uz": "Axill payining uzilishi",
+        "ru": "разрыв ахиллова сухожилия",
+        "tr": "Aşil tendonu yırtığı",
+        "en": "Achilles tendon rupture"
+      },
+      {
+        "de": "Thompson-Test",
+        "patient": "Test: beim Drücken der Wade bewegt sich der Fuß nicht",
+        "uz": "Tompson testi",
+        "ru": "тест Томпсона",
+        "tr": "Thompson testi",
+        "en": "Thompson test"
+      },
+      {
+        "de": "Fluorchinolone",
+        "patient": "bestimmte Antibiotika, die Sehnen schädigen können",
+        "uz": "ftorxinolonlar",
+        "ru": "фторхинолоны",
+        "tr": "florokinolonlar",
+        "en": "fluoroquinolones"
+      },
+      {
+        "de": "Spitzfußstellung",
+        "patient": "Fuß in nach unten gestreckter Position (im Spezialschuh)",
+        "uz": "oyoq panjasining pastga cho‘zilgan holati",
+        "ru": "эквинусное положение стопы",
+        "tr": "ekin pozisyonu",
+        "en": "equinus position"
+      },
+      {
+        "de": "Sonographie",
+        "patient": "Ultraschall",
+        "uz": "UTT (ultratovush)",
+        "ru": "УЗИ",
+        "tr": "ultrasonografi",
+        "en": "ultrasound"
+      }
+    ],
+    "simulation": {
+      "opening": "Beim Tennis hat es plötzlich in der rechten Wade geknallt, als hätte mir jemand von hinten getreten.",
+      "answers": {
+        "beginn": "Vor drei Stunden, als ich zum Netz gesprintet bin.",
+        "lokalisation": "Hinten, oberhalb der Ferse, an der Sehne.",
+        "charakter": "Im ersten Moment ein heftiger Schlag, jetzt eher dumpf, vier von zehn. Ich kann nur hinken.",
+        "ausstrahlung": "Nein, das bleibt hinten an der Ferse.",
+        "begleit": "Ich kann mich rechts nicht auf die Zehenspitzen stellen. Es ist etwas geschwollen. Gefühlsstörungen habe ich nicht.",
+        "vegetativ": "Sonst ist alles normal.",
+        "vorerkrankungen": "Ich bin gesund. (auf Nachfrage) Vor einem Monat hatte ich eine Blasenentzündung und habe eine Woche Ciprofloxacin genommen.",
+        "medikamente": "Regelmäßig nehme ich nichts.",
+        "allergien": "Nein.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich bin verheiratet und arbeite im Büro als Projektleiter. Tennis spiele ich nur am Wochenende.",
+        "noxen": "Ich rauche nicht, Alkohol gelegentlich."
+      }
+    },
+    "verdachtsdiagnose": "Komplette Achillessehnenruptur rechts, begünstigt durch Fluorchinolon-Einnahme",
+    "diagnoseKeywords": ["achillessehnenruptur", "achillessehne", "sehnenruptur"],
+    "differenzialdiagnosen": [
+      "Muskelfaserriss der Wade (Tennis leg)",
+      "Plantarissehnenruptur",
+      "Tiefe Beinvenenthrombose",
+      "Kalkaneusfraktur"
+    ],
+    "untersuchungen": [
+      "Thompson-Test",
+      "Sonographie der Achillessehne",
+      "Röntgen (Ausschluss knöcherner Ausriss)",
+      "MRT (bei Unklarheit)"
+    ]
+  },
+  {
+    "id": "c82",
+    "title": "Osteoporotische Wirbelkörperfraktur",
+    "category": "Unfallchirurgie",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Ursula Krüger",
+      "age": 78,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Plötzliche starke Rückenschmerzen nach dem Anheben einer Wasserkiste"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit gestern nach dem Anheben einer Wasserkiste akute Schmerzen in der unteren Brustwirbelsäule (NRS 8/10), gürtelförmig ausstrahlend, bewegungsabhängig. Keine Lähmungen, keine Blasen- oder Mastdarmstörungen. Körpergröße in den letzten Jahren um 4 cm abgenommen.",
+      "vorerkrankungen": "Rheumatoide Arthritis (seit 10 Jahren Prednisolon), Hypothyreose, Z. n. distaler Radiusfraktur links vor 2 Jahren.",
+      "medikamente": "Prednisolon 7,5 mg 1-0-0, Methotrexat 15 mg 1×/Woche, Folsäure, L-Thyroxin 75 µg 1-0-0.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Mutter: Oberschenkelhalsbruch mit 75 Jahren.",
+      "sozialanamnese": "Verwitwet, lebt allein. Ex-Raucherin, kein Alkohol. Wenig Bewegung im Freien."
+    },
+    "sprache": [
+      {
+        "patient": "Beim Hochheben der Wasserkiste hat es im Rücken gekracht.",
+        "fach": "Die Beschwerden traten nach einem Bagatelltrauma beim Heben auf."
+      },
+      {
+        "patient": "Ich bin in den letzten Jahren kleiner geworden.",
+        "fach": "Es besteht eine Größenabnahme von 4 cm."
+      },
+      {
+        "patient": "Das Kortison nehme ich seit zehn Jahren.",
+        "fach": "Es besteht eine langjährige Glukokortikoidtherapie."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Osteoporose",
+        "patient": "Knochenschwund",
+        "uz": "osteoporoz (suyak mo‘rtligi)",
+        "ru": "остеопороз",
+        "tr": "osteoporoz",
+        "en": "osteoporosis"
+      },
+      {
+        "de": "Wirbelkörperfraktur",
+        "patient": "Bruch eines Wirbels",
+        "uz": "umurtqa tanasi sinishi",
+        "ru": "перелом тела позвонка",
+        "tr": "vertebra korpus kırığı",
+        "en": "vertebral body fracture"
+      },
+      {
+        "de": "Knochendichtemessung",
+        "patient": "Messung der Knochenfestigkeit (DXA)",
+        "uz": "suyak zichligini o‘lchash (DXA)",
+        "ru": "денситометрия (DXA)",
+        "tr": "kemik yoğunluğu ölçümü (DXA)",
+        "en": "bone density scan (DXA)"
+      },
+      {
+        "de": "Bisphosphonate",
+        "patient": "Medikamente, die den Knochen stärken",
+        "uz": "bisfosfonatlar",
+        "ru": "бисфосфонаты",
+        "tr": "bifosfonatlar",
+        "en": "bisphosphonates"
+      },
+      {
+        "de": "Kyphoplastie",
+        "patient": "Wirbel wird mit Zement aufgerichtet und stabilisiert",
+        "uz": "kifoplastika",
+        "ru": "кифопластика",
+        "tr": "kifoplasti",
+        "en": "kyphoplasty"
+      }
+    ],
+    "simulation": {
+      "opening": "Seit gestern habe ich furchtbare Rückenschmerzen. Beim Hochheben einer Wasserkiste hat es gekracht.",
+      "answers": {
+        "beginn": "Gestern Nachmittag, als ich die Wasserkiste aus dem Auto geholt habe.",
+        "lokalisation": "In der Mitte vom Rücken, etwas unterhalb der Schulterblätter.",
+        "charakter": "Sehr stark, acht von zehn. Bei jeder Bewegung wird es schlimmer, im Liegen geht es etwas.",
+        "ausstrahlung": "Es zieht wie ein Gürtel nach vorne um den Bauch herum.",
+        "begleit": "Die Beine sind nicht taub und nicht schwach. Wasserlassen und Stuhlgang funktionieren normal.",
+        "vegetativ": "Ich bin in den letzten Jahren vier Zentimeter kleiner geworden. Sonst normal.",
+        "vorerkrankungen": "Ich habe seit zehn Jahren Rheuma und nehme dafür Kortison. Die Schilddrüse ist zu langsam. Vor zwei Jahren habe ich mir beim Sturz das linke Handgelenk gebrochen.",
+        "medikamente": "Prednisolon 7,5 jeden Morgen, Methotrexat einmal in der Woche mit Folsäure, und L-Thyroxin 75.",
+        "allergien": "Nein.",
+        "familie": "Meine Mutter hat sich mit 75 den Oberschenkelhals gebrochen.",
+        "sozial": "Ich bin Witwe und wohne allein. Ich gehe nicht viel raus.",
+        "noxen": "Früher habe ich geraucht, seit fünfzehn Jahren nicht mehr. Alkohol trinke ich nicht."
+      }
+    },
+    "verdachtsdiagnose": "Osteoporotische Wirbelkörperkompressionsfraktur BWK 12 bei steroidinduzierter Osteoporose",
+    "diagnoseKeywords": ["wirbelkörperfraktur", "osteoporose", "kompressionsfraktur", "wirbelfraktur"],
+    "differenzialdiagnosen": [
+      "Pathologische Fraktur bei Knochenmetastasen",
+      "Multiples Myelom",
+      "Bandscheibenvorfall",
+      "Aortendissektion"
+    ],
+    "untersuchungen": [
+      "Röntgen der BWS/LWS in 2 Ebenen",
+      "CT der Wirbelsäule (Hinterkante)",
+      "MRT (Frische der Fraktur)",
+      "Knochendichtemessung (DXA)",
+      "Labor (Calcium, Vitamin D, AP, Elektrophorese)"
+    ]
+  },
+  {
+    "id": "c83",
+    "title": "Perforiertes Ulcus duodeni",
+    "category": "Chirurgie",
+    "difficulty": "schwer",
+    "patient": {
+      "name": "Dieter Vogel",
+      "age": 58,
+      "gender": "männlich",
+      "hauptbeschwerde": "Plötzlicher messerstichartiger Schmerz im Oberbauch"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Vor 4 Stunden plötzlich einsetzender, messerstichartiger Oberbauchschmerz (NRS 10/10), inzwischen im ganzen Bauch. Patient liegt still, jede Bewegung schmerzt. Seit Wochen nüchtern und nachts Oberbauchschmerzen, die nach dem Essen besser wurden.",
+      "vorerkrankungen": "Arthrose beider Kniegelenke, arterielle Hypertonie.",
+      "medikamente": "Diclofenac 75 mg 1-0-1 seit 2 Monaten (vom Orthopäden), Ramipril 5 mg 1-0-0. Kein Magenschutz.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Geschieden, Taxifahrer (Schichtdienst). Raucher (35 py), 4–5 Bier täglich."
+    },
+    "sprache": [
+      {
+        "patient": "Es war wie ein Messerstich in den Bauch.",
+        "fach": "Der Patient berichtet über einen plötzlich einsetzenden, messerstichartigen Schmerz."
+      },
+      {
+        "patient": "Ich traue mich nicht, mich zu bewegen.",
+        "fach": "Der Patient liegt in Schonhaltung und vermeidet jede Bewegung."
+      },
+      {
+        "patient": "Nachts und wenn ich nüchtern bin, brennt es im Magen; nach dem Essen wird es besser.",
+        "fach": "Es bestehen Nüchtern- und Nachtschmerzen mit Besserung nach Nahrungsaufnahme."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Ulkusperforation",
+        "patient": "Durchbruch eines Magen- oder Darmgeschwürs",
+        "uz": "yaraning teshilishi",
+        "ru": "перфорация язвы",
+        "tr": "ülser perforasyonu",
+        "en": "perforated ulcer"
+      },
+      {
+        "de": "Peritonitis",
+        "patient": "Bauchfellentzündung",
+        "uz": "peritonit (qorin pardasi yallig‘lanishi)",
+        "ru": "перитонит",
+        "tr": "peritonit",
+        "en": "peritonitis"
+      },
+      {
+        "de": "Brettharter Bauch",
+        "patient": "Bauch so hart wie ein Brett",
+        "uz": "taxtadek qattiq qorin",
+        "ru": "доскообразный живот",
+        "tr": "tahta gibi sert karın",
+        "en": "board-like rigid abdomen"
+      },
+      {
+        "de": "Freie Luft",
+        "patient": "Luft im Bauchraum außerhalb des Darms",
+        "uz": "qorin bo‘shlig‘idagi erkin havo",
+        "ru": "свободный газ в брюшной полости",
+        "tr": "serbest hava",
+        "en": "free air (pneumoperitoneum)"
+      },
+      {
+        "de": "Helicobacter pylori",
+        "patient": "Magenbakterium, das Geschwüre verursacht",
+        "uz": "Helicobacter pylori (oshqozon bakteriyasi)",
+        "ru": "Helicobacter pylori",
+        "tr": "Helicobacter pylori",
+        "en": "Helicobacter pylori"
+      }
+    ],
+    "simulation": {
+      "opening": "Ah … es war wie ein Messerstich in den Bauch! Ich traue mich nicht, mich zu bewegen.",
+      "answers": {
+        "beginn": "Vor vier Stunden, ganz plötzlich, beim Aussteigen aus dem Taxi.",
+        "lokalisation": "Erst oben in der Mitte, jetzt tut der ganze Bauch weh.",
+        "charakter": "Zehn von zehn, ein Dauerschmerz. Jede Bewegung, sogar das Atmen, macht es schlimmer.",
+        "ausstrahlung": "Jetzt auch in die rechte Schulter.",
+        "begleit": "Mir ist übel, erbrochen habe ich nicht. Der Bauch ist ganz hart. Schwarzen Stuhl habe ich nicht bemerkt.",
+        "vegetativ": "Seit Wochen habe ich nachts und wenn ich nüchtern bin so ein Brennen im Magen, nach dem Essen wird es besser.",
+        "vorerkrankungen": "Ich habe Arthrose in den Knien und Bluthochdruck.",
+        "medikamente": "Seit zwei Monaten nehme ich morgens und abends Diclofenac 75 für die Knie, das hat der Orthopäde verschrieben. Und Ramipril. Magenschutz nehme ich keinen.",
+        "allergien": "Nein.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich bin geschieden und fahre Taxi, viel Nachtschicht.",
+        "noxen": "Ich rauche eine Schachtel am Tag, seit 35 Jahren. Abends trinke ich vier, fünf Bier."
+      }
+    },
+    "verdachtsdiagnose": "Perforiertes Ulcus duodeni mit Peritonitis (NSAR-Einnahme, Nikotin)",
+    "diagnoseKeywords": ["perforation", "perforiert", "ulkusperforation", "ulcus"],
+    "differenzialdiagnosen": [
+      "Akute Pankreatitis",
+      "Mesenterialischämie",
+      "Aortendissektion / rupturiertes Aortenaneurysma",
+      "Myokardinfarkt (Hinterwand)"
+    ],
+    "untersuchungen": [
+      "CT Abdomen (freie Luft)",
+      "Röntgen-Thorax im Stehen / Abdomen in Linksseitenlage",
+      "Labor (Blutbild, CRP, Lipase, Laktat, Gerinnung)",
+      "EKG",
+      "Blutgasanalyse"
+    ],
+    "oberarzt": {
+      "therapie": [
+        "Notfalloperation (Laparoskopie, Übernähung)",
+        "Antibiotika (Ceftriaxon, Metronidazol)",
+        "Protonenpumpenhemmer i. v.",
+        "Nahrungskarenz und Magensonde",
+        "Helicobacter-Eradikation",
+        "NSAR absetzen"
+      ],
+      "komplikationen": [
+        "Peritonitis (Sepsis)",
+        "Septischer Schock",
+        "Abszess (subphrenisch)",
+        "Nahtinsuffizienz",
+        "Rezidivulkus"
+      ]
+    }
+  },
+  {
+    "id": "c84",
+    "title": "Akuter embolischer Verschluss der A. femoralis",
+    "category": "Chirurgie",
+    "difficulty": "schwer",
+    "patient": {
+      "name": "Erich Lange",
+      "age": 74,
+      "gender": "männlich",
+      "hauptbeschwerde": "Plötzlich kaltes, weißes und schmerzendes linkes Bein"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 3 Stunden plötzlich einsetzende starke Schmerzen im linken Bein, das Bein ist kalt, blass, taub; zunehmende Schwäche beim Bewegen der Zehen. Kein Trauma.",
+      "vorerkrankungen": "Vorhofflimmern (Phenprocoumon vor 2 Wochen wegen Zahnextraktion pausiert, nicht wieder begonnen), KHK, arterielle Hypertonie.",
+      "medikamente": "Bisoprolol 5 mg 1-0-0, Ramipril 5 mg 1-0-0, Atorvastatin 40 mg 0-0-1. Phenprocoumon pausiert.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Verheiratet, Rentner (früher Landwirt). Ex-Raucher (40 py)."
+    },
+    "sprache": [
+      {
+        "patient": "Das linke Bein ist plötzlich ganz kalt und weiß geworden.",
+        "fach": "Es bestehen eine Blässe und Kälte des linken Beins."
+      },
+      {
+        "patient": "Ich spüre meine Zehen kaum noch und kann sie schlecht bewegen.",
+        "fach": "Es bestehen eine Hypästhesie und eine beginnende Parese des Fußes."
+      },
+      {
+        "patient": "Den Blutverdünner habe ich vor der Zahn-OP weggelassen und dann vergessen.",
+        "fach": "Die orale Antikoagulation wurde perioperativ pausiert und nicht wieder aufgenommen."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Akute Extremitätenischämie",
+        "patient": "plötzliche Durchblutungsstörung eines Beins",
+        "uz": "oyoqning o‘tkir ishemiyasi",
+        "ru": "острая ишемия конечности",
+        "tr": "akut ekstremite iskemisi",
+        "en": "acute limb ischaemia"
+      },
+      {
+        "de": "Embolektomie",
+        "patient": "Entfernung des Blutgerinnsels aus dem Gefäß",
+        "uz": "embolektomiya",
+        "ru": "эмболэктомия",
+        "tr": "embolektomi",
+        "en": "embolectomy"
+      },
+      {
+        "de": "6 P nach Pratt",
+        "patient": "Zeichen: Schmerz, Blässe, Pulslosigkeit, Gefühlsstörung, Lähmung, Schock",
+        "uz": "Prattning 6 P belgisi",
+        "ru": "6 «P» по Пратту",
+        "tr": "Pratt’ın 6 P’si",
+        "en": "Pratt’s 6 Ps"
+      },
+      {
+        "de": "Kompartmentsyndrom",
+        "patient": "gefährlich hoher Druck in der Muskulatur",
+        "uz": "kompartment sindromi",
+        "ru": "компартмент-синдром",
+        "tr": "kompartman sendromu",
+        "en": "compartment syndrome"
+      },
+      {
+        "de": "Phenprocoumon",
+        "patient": "Blutverdünner (Marcumar)",
+        "uz": "fenprokumon (qon suyultiruvchi)",
+        "ru": "фенпрокумон (антикоагулянт)",
+        "tr": "fenprokumon (kan sulandırıcı)",
+        "en": "phenprocoumon (blood thinner)"
+      }
+    ],
+    "simulation": {
+      "opening": "Mein linkes Bein ist plötzlich ganz kalt und weiß geworden, und es tut furchtbar weh!",
+      "answers": {
+        "beginn": "Vor drei Stunden, ganz plötzlich, als ich im Sessel saß.",
+        "lokalisation": "Das ganze linke Bein ab dem Oberschenkel, am schlimmsten im Unterschenkel und Fuß.",
+        "charakter": "Ein furchtbarer Schmerz, neun von zehn. Das Bein fühlt sich an wie Eis.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Ich spüre meine Zehen kaum noch und kann sie schlecht bewegen. Das Bein ist ganz blass.",
+        "vegetativ": "Sonst ist alles normal.",
+        "vorerkrankungen": "Ich habe Vorhofflimmern, die Herzkranzgefäße sind verengt, und Bluthochdruck. Vorher hatte ich nie Probleme beim Gehen.",
+        "medikamente": "Bisoprolol, Ramipril und abends ein Cholesterinmittel. (auf Nachfrage) Das Marcumar habe ich vor zwei Wochen wegen einer Zahn-OP weggelassen und dann vergessen, wieder anzufangen.",
+        "allergien": "Nein.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich bin verheiratet und Rentner, ich war Landwirt.",
+        "noxen": "Ich habe 40 Jahre geraucht, seit fünf Jahren nicht mehr. Alkohol nur ein Glas Wein am Sonntag."
+      }
+    },
+    "verdachtsdiagnose": "Akute embolische Extremitätenischämie links (Verschluss der A. femoralis communis) bei Vorhofflimmern ohne Antikoagulation",
+    "diagnoseKeywords": [
+      "ischämie",
+      "embolie",
+      "arterieller verschluss",
+      "gefäßverschluss",
+      "extremitätenischämie"
+    ],
+    "differenzialdiagnosen": [
+      "Arterielle Thrombose bei pAVK",
+      "Phlegmasia coerulea dolens",
+      "Aortendissektion mit Beinischämie",
+      "Bandscheibenvorfall mit Parese"
+    ],
+    "untersuchungen": [
+      "Pulsstatus und Dopplerdruckmessung",
+      "Farbkodierte Duplexsonographie",
+      "CT-Angiographie",
+      "EKG",
+      "Labor (CK, Kreatinin, Kalium, Laktat, Gerinnung)"
+    ],
+    "oberarzt": {
+      "therapie": [
+        "Heparin i. v. sofort (Bolus)",
+        "Embolektomie mit Fogarty-Katheter",
+        "Analgesie",
+        "Bein tief lagern und polstern",
+        "Antikoagulation dauerhaft (DOAK)"
+      ],
+      "komplikationen": [
+        "Kompartmentsyndrom",
+        "Reperfusionssyndrom (Hyperkaliämie, Myoglobinurie)",
+        "Akutes Nierenversagen",
+        "Amputation",
+        "Rezidivembolie"
+      ]
+    }
+  },
+  {
+    "id": "c85",
+    "title": "Akute bakterielle Tonsillitis",
+    "category": "Allgemeinmedizin",
+    "difficulty": "leicht",
+    "patient": {
+      "name": "Laura Becker",
+      "age": 19,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Starke Halsschmerzen und Fieber"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 2 Tagen starke Halsschmerzen mit Schluckbeschwerden, Fieber bis 39,2 °C, geschwollene Halslymphknoten. Kein Husten, kein Schnupfen. Mundöffnung nicht eingeschränkt, keine kloßige Sprache.",
+      "vorerkrankungen": "Asthma bronchiale (leicht), 2 Tonsillitiden im letzten Jahr.",
+      "medikamente": "Salbutamol-Spray bei Bedarf, Pille.",
+      "allergien": "Keine bekannt (Penicillin früher gut vertragen)",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Ledig, Studentin, lebt in einer WG. Nichtraucherin."
+    },
+    "sprache": [
+      {
+        "patient": "Ich kann kaum schlucken, es tut so weh.",
+        "fach": "Die Patientin klagt über eine ausgeprägte Odynophagie."
+      },
+      {
+        "patient": "Am Hals sind dicke Knoten.",
+        "fach": "Es bestehen geschwollene zervikale Lymphknoten."
+      },
+      {
+        "patient": "Husten oder Schnupfen habe ich nicht.",
+        "fach": "Husten und Rhinitis werden verneint."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Tonsillitis",
+        "patient": "Mandelentzündung",
+        "uz": "tonzillit (angina)",
+        "ru": "тонзиллит (ангина)",
+        "tr": "tonsillit",
+        "en": "tonsillitis"
+      },
+      {
+        "de": "Odynophagie",
+        "patient": "Schmerzen beim Schlucken",
+        "uz": "yutinganda og‘riq",
+        "ru": "одинофагия (боль при глотании)",
+        "tr": "yutkunma ağrısı",
+        "en": "painful swallowing"
+      },
+      {
+        "de": "Centor-Kriterien",
+        "patient": "Punkte, die eine bakterielle Mandelentzündung wahrscheinlich machen",
+        "uz": "Sentor mezonlari",
+        "ru": "критерии Центора",
+        "tr": "Centor kriterleri",
+        "en": "Centor criteria"
+      },
+      {
+        "de": "Peritonsillarabszess",
+        "patient": "Eiteransammlung neben der Mandel",
+        "uz": "peritonzillyar abssess",
+        "ru": "паратонзиллярный абсцесс",
+        "tr": "peritonsiller apse",
+        "en": "peritonsillar abscess"
+      },
+      {
+        "de": "Streptokokken-Schnelltest",
+        "patient": "Abstrich, der schnell Bakterien im Hals nachweist",
+        "uz": "streptokokk tezkor testi",
+        "ru": "экспресс-тест на стрептококк",
+        "tr": "streptokok hızlı testi",
+        "en": "rapid strep test"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe seit zwei Tagen so starke Halsschmerzen, ich kann kaum schlucken, und ich habe Fieber.",
+      "answers": {
+        "beginn": "Vorgestern Abend fing es an, seitdem wird es schlimmer.",
+        "lokalisation": "Im Hals, beidseits, rechts etwas mehr.",
+        "charakter": "Ein brennender Schmerz, beim Schlucken acht von zehn.",
+        "ausstrahlung": "Beim Schlucken zieht es in die Ohren.",
+        "begleit": "Fieber bis 39,2. Am Hals sind dicke Knoten. Husten oder Schnupfen habe ich nicht. Den Mund kann ich normal öffnen.",
+        "vegetativ": "Ich esse kaum, trinke aber genug. Sonst normal.",
+        "vorerkrankungen": "Ich habe leichtes Asthma. Letztes Jahr hatte ich zweimal eine Mandelentzündung.",
+        "medikamente": "Salbutamol-Spray bei Bedarf und die Pille.",
+        "allergien": "Nein. Penicillin habe ich schon mal gut vertragen.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich studiere und wohne in einer WG.",
+        "noxen": "Ich rauche nicht, Alkohol selten."
+      }
+    },
+    "verdachtsdiagnose": "Akute bakterielle Tonsillitis (Streptokokken-Angina), Centor-Score 4",
+    "diagnoseKeywords": ["tonsillitis", "angina", "streptokokk", "mandelentzündung"],
+    "differenzialdiagnosen": [
+      "Virale Pharyngitis",
+      "Infektiöse Mononukleose (EBV)",
+      "Peritonsillarabszess",
+      "Diphtherie"
+    ],
+    "untersuchungen": [
+      "Inspektion des Rachens",
+      "Centor-/McIsaac-Score",
+      "Streptokokken-Schnelltest",
+      "Blutbild und CRP (bei Unklarheit)",
+      "EBV-Serologie (bei Verdacht auf Mononukleose)"
+    ]
+  },
+  {
+    "id": "c86",
+    "title": "Schwere depressive Episode",
+    "category": "Allgemeinmedizin",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Sabine Roth",
+      "age": 48,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Antriebslosigkeit, Schlafstörungen und gedrückte Stimmung seit Monaten"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit ca. 3 Monaten gedrückte Stimmung, Interessenverlust, Antriebslosigkeit, Früherwachen gegen 4 Uhr, Appetitverlust (5 kg Gewichtsabnahme), Konzentrationsstörungen und Schuldgefühle. Gelegentlich Gedanken, dass das Leben keinen Sinn mehr hat; keine konkreten Suizidpläne, keine Vorbereitungen. Auslöser: Trennung vom Ehemann, Arbeitsplatzverlust.",
+      "vorerkrankungen": "Depressive Episode vor 10 Jahren (ambulant behandelt), Hypothyreose.",
+      "medikamente": "L-Thyroxin 100 µg 1-0-0. Seit 2 Wochen abends Rotwein zum Einschlafen.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Mutter: Depression. Onkel: Suizid.",
+      "sozialanamnese": "Getrennt lebend seit 4 Monaten, eine Tochter (17 J.) lebt bei ihr. Bis vor 2 Monaten Bürokauffrau, jetzt arbeitslos. Nichtraucherin. Seit 2 Wochen täglich 1–2 Gläser Wein."
+    },
+    "sprache": [
+      {
+        "patient": "Mich freut gar nichts mehr, nicht mal meine Tochter.",
+        "fach": "Es bestehen eine Anhedonie und ein Interessenverlust."
+      },
+      {
+        "patient": "Ich wache jeden Morgen um vier auf und grüble.",
+        "fach": "Die Patientin berichtet über Früherwachen und Grübelneigung."
+      },
+      {
+        "patient": "Manchmal denke ich, es wäre besser, nicht mehr da zu sein.",
+        "fach": "Es bestehen passive Todeswünsche ohne konkrete Suizidpläne."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Depression",
+        "patient": "seelische Erkrankung mit Niedergeschlagenheit",
+        "uz": "depressiya",
+        "ru": "депрессия",
+        "tr": "depresyon",
+        "en": "depression"
+      },
+      {
+        "de": "Anhedonie",
+        "patient": "keine Freude mehr empfinden können",
+        "uz": "angedoniya (quvona olmaslik)",
+        "ru": "ангедония",
+        "tr": "anhedoni",
+        "en": "anhedonia"
+      },
+      {
+        "de": "Suizidalität",
+        "patient": "Gedanken, sich das Leben zu nehmen",
+        "uz": "suitsidal fikrlar",
+        "ru": "суицидальность",
+        "tr": "intihar düşüncesi",
+        "en": "suicidality"
+      },
+      {
+        "de": "Antidepressivum",
+        "patient": "Medikament gegen Depression",
+        "uz": "antidepressant",
+        "ru": "антидепрессант",
+        "tr": "antidepresan",
+        "en": "antidepressant"
+      },
+      {
+        "de": "Psychotherapie",
+        "patient": "Behandlung durch Gespräche",
+        "uz": "psixoterapiya",
+        "ru": "психотерапия",
+        "tr": "psikoterapi",
+        "en": "psychotherapy"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich weiß gar nicht, wo ich anfangen soll … Ich schaffe einfach nichts mehr. Seit Monaten.",
+      "answers": {
+        "beginn": "Seit etwa drei Monaten, nachdem mein Mann ausgezogen ist. Dann habe ich auch noch meine Arbeit verloren.",
+        "lokalisation": "Körperlich tut mir nichts richtig weh. Manchmal drückt es auf der Brust, wie ein Stein.",
+        "charakter": "Alles ist grau. Mich freut gar nichts mehr, nicht mal meine Tochter. Ich komme morgens kaum aus dem Bett.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Ich wache jeden Morgen um vier auf und grüble. Ich kann mich nicht konzentrieren, nicht mal ein Buch lesen. Ich fühle mich schuldig, dass ich alles falsch mache. (auf Nachfrage) Manchmal denke ich, es wäre besser, nicht mehr da zu sein. Aber ich würde mir nichts antun, wegen meiner Tochter. Konkrete Pläne habe ich nicht.",
+        "vegetativ": "Ich habe keinen Appetit und fünf Kilo abgenommen. Der Schlaf ist schlecht.",
+        "vorerkrankungen": "Vor zehn Jahren hatte ich schon mal so eine Phase, damals hat mir eine Therapie geholfen. Und die Schilddrüse ist zu langsam.",
+        "medikamente": "L-Thyroxin 100 morgens. Seit zwei Wochen trinke ich abends ein, zwei Gläser Wein, damit ich einschlafen kann.",
+        "allergien": "Nein.",
+        "familie": "Meine Mutter hatte auch Depressionen. Mein Onkel hat sich das Leben genommen.",
+        "sozial": "Ich lebe seit vier Monaten getrennt, meine Tochter ist 17 und wohnt bei mir. Ich war Bürokauffrau, seit zwei Monaten bin ich arbeitslos.",
+        "noxen": "Ich rauche nicht. Der Wein, wie gesagt, seit zwei Wochen jeden Abend."
+      }
+    },
+    "verdachtsdiagnose": "Rezidivierende depressive Störung, gegenwärtig schwere Episode ohne psychotische Symptome, mit passiven Todeswünschen",
+    "diagnoseKeywords": ["depressi"],
+    "differenzialdiagnosen": [
+      "Hypothyreose (unzureichend substituiert)",
+      "Anpassungsstörung",
+      "Bipolare Störung",
+      "Alkoholbedingte depressive Symptomatik"
+    ],
+    "untersuchungen": [
+      "Exploration der Suizidalität",
+      "PHQ-9-Fragebogen",
+      "TSH, Blutbild, Elektrolyte, Leberwerte",
+      "Körperliche und neurologische Untersuchung",
+      "Psychiatrische Mitbeurteilung"
+    ]
+  },
+  {
+    "id": "c87",
+    "title": "Offene Lungentuberkulose",
+    "category": "Infektiologie",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Nodir Rahimov",
+      "age": 36,
+      "gender": "männlich",
+      "hauptbeschwerde": "Husten seit zwei Monaten, Nachtschweiß und Gewichtsverlust"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit ca. 2 Monaten produktiver Husten, seit 1 Woche blutig tingiertes Sputum, Nachtschweiß (Wäsche wechseln), subfebrile Temperaturen abends und Gewichtsverlust von 7 kg. Eine Antibiotikatherapie mit Amoxicillin beim Hausarzt brachte keine Besserung.",
+      "vorerkrankungen": "Keine bekannt.",
+      "medikamente": "Amoxicillin (beendet vor 3 Wochen).",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Ein Cousin wurde im Heimatland wegen Tuberkulose behandelt.",
+      "sozialanamnese": "Seit 8 Monaten in Deutschland, arbeitet auf dem Bau, wohnt mit 5 Kollegen in einer Gemeinschaftsunterkunft. Raucher (10 py), Alkohol gelegentlich."
+    },
+    "sprache": [
+      {
+        "patient": "Nachts schwitze ich so stark, dass ich das T-Shirt wechseln muss.",
+        "fach": "Der Patient berichtet über ausgeprägten Nachtschweiß."
+      },
+      {
+        "patient": "Seit einer Woche ist Blut im Auswurf.",
+        "fach": "Seit einer Woche besteht eine Hämoptyse."
+      },
+      {
+        "patient": "Ich wohne mit fünf Kollegen in einem Zimmer.",
+        "fach": "Der Patient lebt in einer Gemeinschaftsunterkunft mit engem Kontakt zu fünf Personen."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Tuberkulose",
+        "patient": "ansteckende Lungenkrankheit durch Bakterien",
+        "uz": "sil (tuberkulyoz)",
+        "ru": "туберкулёз",
+        "tr": "tüberküloz (verem)",
+        "en": "tuberculosis"
+      },
+      {
+        "de": "B-Symptomatik",
+        "patient": "Fieber, Nachtschweiß und Gewichtsverlust zusammen",
+        "uz": "B-simptomlar (isitma, tungi terlash, vazn yo‘qotish)",
+        "ru": "B-симптомы",
+        "tr": "B semptomları",
+        "en": "B symptoms"
+      },
+      {
+        "de": "Sputum",
+        "patient": "Auswurf",
+        "uz": "balg‘am",
+        "ru": "мокрота",
+        "tr": "balgam",
+        "en": "sputum"
+      },
+      {
+        "de": "Isolierung",
+        "patient": "Patient muss allein im Zimmer bleiben, um niemanden anzustecken",
+        "uz": "izolyatsiya",
+        "ru": "изоляция",
+        "tr": "izolasyon",
+        "en": "isolation"
+      },
+      {
+        "de": "Umgebungsuntersuchung",
+        "patient": "Untersuchung aller Kontaktpersonen",
+        "uz": "atrofdagilarni tekshirish",
+        "ru": "обследование контактных лиц",
+        "tr": "temaslı taraması",
+        "en": "contact tracing"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich huste seit zwei Monaten, und seit einer Woche ist Blut im Auswurf. Nachts schwitze ich sehr.",
+      "answers": {
+        "beginn": "Vor ungefähr zwei Monaten. Das Blut seit einer Woche.",
+        "lokalisation": "Rechts oben in der Brust sticht es manchmal beim Husten.",
+        "charakter": "Ich huste den ganzen Tag, mit gelbem Schleim, jetzt mit kleinen Blutfäden.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Nachts schwitze ich so stark, dass ich das T-Shirt wechseln muss. Abends habe ich oft leichtes Fieber. Ich bin immer müde.",
+        "vegetativ": "Ich habe sieben Kilo abgenommen, ich habe keinen Appetit.",
+        "vorerkrankungen": "Ich war immer gesund. Der Hausarzt hat mir ein Antibiotikum gegeben, Amoxicillin, das hat nicht geholfen.",
+        "medikamente": "Jetzt nehme ich nichts.",
+        "allergien": "Nein.",
+        "familie": "Mein Cousin hatte in der Heimat Tuberkulose und wurde lange behandelt.",
+        "sozial": "Ich bin seit acht Monaten in Deutschland und arbeite auf dem Bau. Ich wohne mit fünf Kollegen in einer Unterkunft, wir schlafen zu dritt in einem Zimmer.",
+        "noxen": "Ich rauche zehn Zigaretten am Tag. Alkohol selten."
+      }
+    },
+    "verdachtsdiagnose": "Offene Lungentuberkulose des rechten Oberlappens",
+    "diagnoseKeywords": ["tuberkulose", "tbc", "tb"],
+    "differenzialdiagnosen": [
+      "Bronchialkarzinom",
+      "Abszedierende Pneumonie",
+      "Sarkoidose",
+      "Pilzinfektion (Aspergillose)"
+    ],
+    "untersuchungen": [
+      "Röntgen-Thorax",
+      "Sputum (3 ×): Mikroskopie, PCR, Kultur mit Resistenztestung",
+      "CT-Thorax",
+      "Interferon-Gamma-Test",
+      "HIV-Test",
+      "Leberwerte vor Therapie"
+    ]
+  },
+  {
+    "id": "c88",
+    "title": "Neuroborreliose mit Fazialisparese",
+    "category": "Infektiologie",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Anna Schulte",
+      "age": 38,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Hängender Mundwinkel und Lidschlussschwäche rechts"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit gestern hängender Mundwinkel rechts, Auge rechts schließt nicht vollständig, Getränke laufen aus dem Mund. Seit 2 Wochen brennende, nachts betonte Schmerzen im Rücken und Nacken. Vor ca. 6 Wochen Zeckenstich beim Wandern, danach ringförmige Rötung am Oberschenkel, die von selbst verschwand.",
+      "vorerkrankungen": "Keine.",
+      "medikamente": "Ibuprofen 400 mg bei Bedarf.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Verheiratet, Försterin. Nichtraucherin, Alkohol gelegentlich."
+    },
+    "sprache": [
+      {
+        "patient": "Mein Mundwinkel hängt, und beim Trinken läuft es heraus.",
+        "fach": "Es besteht eine periphere Fazialisparese rechts."
+      },
+      {
+        "patient": "Das rechte Auge geht nicht richtig zu.",
+        "fach": "Es besteht ein inkompletter Lidschluss rechts."
+      },
+      {
+        "patient": "Nach dem Zeckenstich hatte ich einen roten Ring am Bein, der immer größer wurde.",
+        "fach": "Nach dem Zeckenstich trat ein Erythema migrans auf."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Borreliose",
+        "patient": "durch Zecken übertragene Infektion",
+        "uz": "borrelioz (Layme kasalligi)",
+        "ru": "боррелиоз (болезнь Лайма)",
+        "tr": "Lyme hastalığı (borelyoz)",
+        "en": "Lyme disease (borreliosis)"
+      },
+      {
+        "de": "Erythema migrans",
+        "patient": "ringförmige, wandernde Rötung nach Zeckenstich",
+        "uz": "ko‘chib yuruvchi eritema",
+        "ru": "мигрирующая эритема",
+        "tr": "eritema migrans",
+        "en": "erythema migrans"
+      },
+      {
+        "de": "Fazialisparese",
+        "patient": "Lähmung des Gesichtsnervs",
+        "uz": "yuz nervi falaji",
+        "ru": "парез лицевого нерва",
+        "tr": "fasiyal paralizi",
+        "en": "facial nerve palsy"
+      },
+      {
+        "de": "Lumbalpunktion",
+        "patient": "Entnahme von Nervenwasser aus dem Rücken",
+        "uz": "lyumbal punksiya",
+        "ru": "люмбальная пункция",
+        "tr": "lomber ponksiyon",
+        "en": "lumbar puncture"
+      },
+      {
+        "de": "Radikulitis",
+        "patient": "Entzündung der Nervenwurzeln",
+        "uz": "radikulit (nerv ildizlari yallig‘lanishi)",
+        "ru": "радикулит",
+        "tr": "radikülit",
+        "en": "radiculitis"
+      }
+    ],
+    "simulation": {
+      "opening": "Seit gestern hängt mein rechter Mundwinkel, und das rechte Auge geht nicht richtig zu.",
+      "answers": {
+        "beginn": "Gestern Morgen beim Zähneputzen habe ich es bemerkt. Die Rückenschmerzen habe ich seit etwa zwei Wochen.",
+        "lokalisation": "Die rechte Gesichtshälfte, auch die Stirn. Die Schmerzen sind im Rücken und im Nacken.",
+        "charakter": "Das Gesicht tut nicht weh. Die Rückenschmerzen sind brennend, sechs von zehn, besonders nachts.",
+        "ausstrahlung": "Die Schmerzen ziehen manchmal in die Schultern und Arme.",
+        "begleit": "Beim Trinken läuft es aus dem Mund. Das rechte Auge ist trocken. Fieber habe ich nicht. Ich bin etwas müde.",
+        "vegetativ": "Ich schlafe wegen der Schmerzen schlecht. Sonst normal.",
+        "vorerkrankungen": "Ich bin gesund. (auf Nachfrage) Vor etwa sechs Wochen hatte ich beim Wandern eine Zecke. Danach hatte ich einen roten Ring am Oberschenkel, der immer größer wurde und dann von selbst verschwand.",
+        "medikamente": "Ibuprofen gegen die Rückenschmerzen, hilft kaum.",
+        "allergien": "Nein.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich bin verheiratet und Försterin, ich bin viel im Wald.",
+        "noxen": "Ich rauche nicht, Alkohol gelegentlich."
+      }
+    },
+    "verdachtsdiagnose": "Frühe Neuroborreliose (Bannwarth-Syndrom) mit peripherer Fazialisparese rechts und Radikulitis",
+    "diagnoseKeywords": ["borreliose", "neuroborreliose", "bannwarth", "lyme"],
+    "differenzialdiagnosen": [
+      "Idiopathische Fazialisparese (Bell-Parese)",
+      "Zoster oticus (Ramsay-Hunt)",
+      "Schlaganfall",
+      "Guillain-Barré-Syndrom"
+    ],
+    "untersuchungen": [
+      "Neurologische Untersuchung (Stirnrunzeln)",
+      "Lumbalpunktion (Zellzahl, Liquor/Serum-Antikörperindex)",
+      "Borrelien-Serologie (ELISA, Immunoblot)",
+      "cMRT (bei atypischem Befund)",
+      "Augenärztliche Untersuchung (Hornhaut)"
+    ]
+  },
+  {
+    "id": "c89",
+    "title": "Hyperosmolares hyperglykämisches Syndrom",
+    "category": "Endokrinologie",
+    "difficulty": "schwer",
+    "patient": {
+      "name": "Edith Braun",
+      "age": 84,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Zunehmende Verwirrtheit und Schläfrigkeit"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Fremdanamnestisch (Tochter) seit ca. 1 Woche zunehmend schläfrig und verwirrt, trinkt kaum noch, sehr häufiges Wasserlassen in den Tagen davor. Seit 5 Tagen Husten. Heute kaum noch ansprechbar.",
+      "vorerkrankungen": "Diabetes mellitus Typ 2 (bisher nicht insulinpflichtig), Demenz leichtgradig, arterielle Hypertonie, Herzinsuffizienz.",
+      "medikamente": "Metformin 1000 mg 1-0-1, Sitagliptin 100 mg 1-0-0, Torasemid 10 mg 1-0-0, Ramipril 5 mg 1-0-0. Vor 1 Woche wegen Bronchitis Prednisolon 40 mg vom Hausarzt.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Nicht erhebbar.",
+      "sozialanamnese": "Verwitwet, lebt allein, ambulanter Pflegedienst 1× täglich. Tochter wohnt im Nachbarort. Kein Nikotin, kein Alkohol."
+    },
+    "sprache": [
+      {
+        "patient": "Mutter trinkt kaum noch, ist aber ständig auf der Toilette gewesen.",
+        "fach": "Fremdanamnestisch bestehen Polyurie und eine verminderte Trinkmenge."
+      },
+      {
+        "patient": "Heute war sie kaum noch wach zu kriegen.",
+        "fach": "Die Patientin ist heute somnolent."
+      },
+      {
+        "patient": "Der Hausarzt hat ihr wegen dem Husten Kortison gegeben.",
+        "fach": "Wegen einer Bronchitis wurde eine Glukokortikoidtherapie begonnen."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Hyperosmolares Syndrom",
+        "patient": "lebensgefährliche Entgleisung mit sehr hohem Zucker und Austrocknung",
+        "uz": "giperosmolyar sindrom",
+        "ru": "гиперосмолярное состояние",
+        "tr": "hiperosmolar sendrom",
+        "en": "hyperosmolar hyperglycaemic state"
+      },
+      {
+        "de": "Exsikkose",
+        "patient": "starke Austrocknung",
+        "uz": "suvsizlanish (eksikkoz)",
+        "ru": "эксикоз (обезвоживание)",
+        "tr": "dehidratasyon (eksikoz)",
+        "en": "dehydration"
+      },
+      {
+        "de": "Somnolenz",
+        "patient": "krankhafte Schläfrigkeit",
+        "uz": "somnolentsiya (kasallik uyquchanligi)",
+        "ru": "сомноленция",
+        "tr": "somnolans",
+        "en": "somnolence"
+      },
+      {
+        "de": "Osmolalität",
+        "patient": "Konzentration gelöster Teilchen im Blut",
+        "uz": "osmolyallik",
+        "ru": "осмоляльность",
+        "tr": "osmolalite",
+        "en": "osmolality"
+      },
+      {
+        "de": "Insulinperfusor",
+        "patient": "Pumpe, die Insulin gleichmäßig in die Vene gibt",
+        "uz": "insulin perfuzori",
+        "ru": "инсулиновый перфузор",
+        "tr": "insülin perfüzörü",
+        "en": "insulin infusion pump"
+      }
+    ],
+    "simulation": {
+      "opening": "(Tochter) Meine Mutter ist seit einer Woche immer verwirrter, und heute war sie kaum noch wach zu kriegen.",
+      "answers": {
+        "beginn": "(Tochter) Seit etwa einer Woche, seit sie das Kortison nimmt. Heute ist es am schlimmsten.",
+        "lokalisation": "(Tochter) Schmerzen äußert sie keine.",
+        "charakter": "(Tochter) Sie schläft fast den ganzen Tag, und wenn sie wach ist, weiß sie nicht, wo sie ist.",
+        "ausstrahlung": "(Tochter) —",
+        "begleit": "(Tochter) Sie hustet seit fünf Tagen, Fieber hatte sie leicht. Erbrochen hat sie nicht. Ihre Lippen sind ganz trocken.",
+        "vegetativ": "(Tochter) Die ersten Tage war sie ständig auf der Toilette, jetzt trinkt sie kaum noch, vielleicht eine Tasse am Tag. Gegessen hat sie wenig.",
+        "vorerkrankungen": "(Tochter) Sie hat Zucker, aber ohne Insulin, leichte Demenz, Bluthochdruck und ein schwaches Herz.",
+        "medikamente": "(Tochter) Metformin 1000 morgens und abends, Sitagliptin, Torasemid und Ramipril morgens. Und seit einer Woche Prednisolon 40 vom Hausarzt wegen der Bronchitis.",
+        "allergien": "(Tochter) Keine.",
+        "familie": "(Tochter) Weiß ich nicht genau.",
+        "sozial": "(Tochter) Sie lebt allein, der Pflegedienst kommt einmal am Tag. Ich wohne im Nachbarort.",
+        "noxen": "(Tochter) Sie raucht nicht und trinkt keinen Alkohol."
+      }
+    },
+    "verdachtsdiagnose": "Hyperosmolares hyperglykämisches Syndrom bei Diabetes mellitus Typ 2, ausgelöst durch Glukokortikoide und Infekt, mit schwerer Exsikkose",
+    "diagnoseKeywords": ["hyperosmolar", "hhs", "hyperglykäm", "coma diabeticum"],
+    "differenzialdiagnosen": ["Diabetische Ketoazidose", "Schlaganfall", "Sepsis mit Delir", "Hyponatriämie"],
+    "untersuchungen": [
+      "Blutzucker",
+      "Serumosmolalität, Natrium, Kalium",
+      "Blutgasanalyse und Ketone",
+      "Kreatinin, Harnstoff",
+      "Röntgen-Thorax und Urinstatus (Infektfokus)",
+      "cCT (bei fokalen Zeichen)"
+    ],
+    "oberarzt": {
+      "therapie": [
+        "Volumensubstitution (NaCl 0,9 %, langsam)",
+        "Insulinperfusor (niedrig dosiert, nach Volumengabe)",
+        "Kaliumsubstitution",
+        "Antibiotika (Infektfokus)",
+        "Metformin absetzen",
+        "Thromboseprophylaxe"
+      ],
+      "komplikationen": [
+        "Hirnödem (zu schnelle Senkung)",
+        "Thromboembolie",
+        "Hypokaliämie",
+        "Akutes Nierenversagen",
+        "Lungenödem (Herzinsuffizienz)",
+        "Laktatazidose"
+      ]
+    }
+  },
+  {
+    "id": "c90",
+    "title": "Alkoholentzugsdelir",
+    "category": "Innere Medizin",
+    "difficulty": "schwer",
+    "patient": {
+      "name": "Jürgen Weber",
+      "age": 54,
+      "gender": "männlich",
+      "hauptbeschwerde": "Zittern, Unruhe und optische Halluzinationen"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Stationär seit 3 Tagen wegen Unterschenkelfraktur (geplante OP). Seit heute Nacht zunehmend unruhig, desorientiert, stark schwitzend, grobschlägiger Tremor, sieht „kleine Tiere an der Wand“. Ehefrau berichtet über täglichen Konsum von 1 Flasche Wodka; letzter Alkohol vor 3 Tagen. Bei einem früheren Entzug Krampfanfall.",
+      "vorerkrankungen": "Alkoholabhängigkeit, Leberzirrhose Child A, arterielle Hypertonie. Z. n. Entzugskrampfanfall 2023.",
+      "medikamente": "Amlodipin 5 mg 1-0-0. Kein Thiamin.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Vater: Alkoholabhängigkeit.",
+      "sozialanamnese": "Verheiratet, Lagerarbeiter. Raucher (30 py). Alkohol: täglich ca. 1 Flasche Wodka seit Jahren."
+    },
+    "sprache": [
+      {
+        "patient": "Da krabbeln überall kleine Tiere an der Wand!",
+        "fach": "Der Patient zeigt optische Halluzinationen."
+      },
+      {
+        "patient": "Meine Hände zittern so stark, ich kann das Glas nicht halten.",
+        "fach": "Es besteht ein grobschlägiger Tremor."
+      },
+      {
+        "patient": "Er trinkt jeden Tag eine Flasche Wodka.",
+        "fach": "Fremdanamnestisch besteht ein täglicher Alkoholkonsum von etwa 0,7 l Wodka."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Delirium tremens",
+        "patient": "lebensgefährlicher Verwirrtheitszustand beim Alkoholentzug",
+        "uz": "alkogol deliriysi (oq alahsirash)",
+        "ru": "алкогольный делирий (белая горячка)",
+        "tr": "deliryum tremens",
+        "en": "delirium tremens"
+      },
+      {
+        "de": "Halluzinationen",
+        "patient": "Dinge sehen oder hören, die nicht da sind",
+        "uz": "gallyutsinatsiyalar",
+        "ru": "галлюцинации",
+        "tr": "halüsinasyonlar",
+        "en": "hallucinations"
+      },
+      {
+        "de": "Wernicke-Enzephalopathie",
+        "patient": "Hirnschaden durch Vitamin-B1-Mangel",
+        "uz": "Vernike ensefalopatiyasi",
+        "ru": "энцефалопатия Вернике",
+        "tr": "Wernicke ensefalopatisi",
+        "en": "Wernicke’s encephalopathy"
+      },
+      {
+        "de": "Thiamin",
+        "patient": "Vitamin B1",
+        "uz": "tiamin (B1 vitamini)",
+        "ru": "тиамин (витамин B1)",
+        "tr": "tiamin (B1 vitamini)",
+        "en": "thiamine (vitamin B1)"
+      },
+      {
+        "de": "Benzodiazepine",
+        "patient": "Beruhigungsmittel (z. B. Diazepam)",
+        "uz": "benzodiazepinlar (tinchlantiruvchi dorilar)",
+        "ru": "бензодиазепины",
+        "tr": "benzodiazepinler",
+        "en": "benzodiazepines"
+      }
+    ],
+    "simulation": {
+      "opening": "(unruhig, schwitzend) Da! Da krabbeln überall kleine Tiere an der Wand! Ich muss hier raus!",
+      "answers": {
+        "beginn": "(Ehefrau) Seit heute Nacht ist er so. Gestern Abend hat er schon gezittert.",
+        "lokalisation": "(Patient) Das Bein tut weh … wo bin ich hier überhaupt?",
+        "charakter": "(Ehefrau) Er erkennt mich manchmal nicht, redet wirr und will ständig aufstehen.",
+        "ausstrahlung": "(Patient) —",
+        "begleit": "(Ehefrau) Er schwitzt wie verrückt, seine Hände zittern, er hat Herzrasen. Krampfanfall hatte er heute nicht.",
+        "vegetativ": "(Ehefrau) Er hat seit Tagen kaum gegessen und nicht geschlafen.",
+        "vorerkrankungen": "(Ehefrau) Er hat eine kranke Leber vom Alkohol und hohen Blutdruck. Vor drei Jahren hatte er beim Entzug einen Krampfanfall.",
+        "medikamente": "(Ehefrau) Nur eine Blutdrucktablette, Amlodipin. Vitamine nimmt er keine.",
+        "allergien": "(Ehefrau) Nein.",
+        "familie": "(Ehefrau) Sein Vater hat auch getrunken.",
+        "sozial": "(Ehefrau) Wir sind verheiratet, er arbeitet im Lager. Er ist vor drei Tagen von der Leiter gefallen, deshalb ist er hier.",
+        "noxen": "(Ehefrau) Er trinkt jeden Tag eine Flasche Wodka, seit Jahren. Das letzte Mal vor drei Tagen, vor dem Unfall. Er raucht eine Schachtel am Tag."
+      }
+    },
+    "verdachtsdiagnose": "Alkoholentzugsdelir (Delirium tremens) am 3. Tag nach Alkoholkarenz",
+    "diagnoseKeywords": ["delir", "entzugsdelir", "delirium tremens", "alkoholentzug"],
+    "differenzialdiagnosen": [
+      "Wernicke-Enzephalopathie",
+      "Hypoglykämie",
+      "Hepatische Enzephalopathie",
+      "Subdurales Hämatom nach Sturz",
+      "Sepsis"
+    ],
+    "untersuchungen": [
+      "Vitalparameter und Monitoring",
+      "Blutzucker",
+      "Elektrolyte (Natrium, Kalium, Magnesium, Phosphat)",
+      "Ammoniak, Leberwerte, Gerinnung",
+      "cCT (nach Sturz)",
+      "CIWA-Ar-Score"
+    ],
+    "oberarzt": {
+      "therapie": [
+        "Benzodiazepine (Diazepam, Lorazepam) symptomorientiert",
+        "Thiamin i. v. vor Glukose",
+        "Intensivüberwachung",
+        "Elektrolytausgleich (Magnesium, Kalium)",
+        "Flüssigkeit",
+        "Haloperidol bei Halluzinationen"
+      ],
+      "komplikationen": [
+        "Entzugskrampfanfall",
+        "Wernicke-Enzephalopathie",
+        "Herzrhythmusstörungen",
+        "Aspirationspneumonie",
+        "Atemdepression (Benzodiazepine)",
+        "Rhabdomyolyse"
+      ]
+    }
+  },
+  {
+    "id": "c91",
+    "title": "Guillain-Barré-Syndrom",
+    "category": "Neurologie",
+    "difficulty": "schwer",
+    "patient": {
+      "name": "Felix Richter",
+      "age": 33,
+      "gender": "männlich",
+      "hauptbeschwerde": "Aufsteigende Schwäche in beiden Beinen"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 4 Tagen Kribbeln in Füßen und Händen, seit 2 Tagen zunehmende symmetrische Schwäche der Beine, heute Treppensteigen nicht mehr möglich, Rückenschmerzen. Vor 2 Wochen Durchfallerkrankung nach Grillfest (3 Tage). Keine Blasenstörung.",
+      "vorerkrankungen": "Keine.",
+      "medikamente": "Keine.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Ledig, Koch. Nichtraucher, Alkohol am Wochenende."
+    },
+    "sprache": [
+      {
+        "patient": "Die Schwäche hat in den Füßen angefangen und wandert nach oben.",
+        "fach": "Es besteht eine aufsteigende, symmetrische Paraparese."
+      },
+      {
+        "patient": "Vor zwei Wochen hatte ich drei Tage Durchfall.",
+        "fach": "Vor zwei Wochen bestand eine gastrointestinale Infektion."
+      },
+      {
+        "patient": "In den Füßen und Händen kribbelt es wie Ameisen.",
+        "fach": "Es bestehen distal betonte Parästhesien."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Guillain-Barré-Syndrom",
+        "patient": "Entzündung der Nerven nach einer Infektion, die zu Lähmungen führt",
+        "uz": "Guillain-Barré sindromi",
+        "ru": "синдром Гийена — Барре",
+        "tr": "Guillain-Barré sendromu",
+        "en": "Guillain-Barré syndrome"
+      },
+      {
+        "de": "Areflexie",
+        "patient": "fehlende Reflexe",
+        "uz": "arefleksiya (reflekslarning yo‘qligi)",
+        "ru": "арефлексия",
+        "tr": "arefleksi",
+        "en": "areflexia"
+      },
+      {
+        "de": "Vitalkapazität",
+        "patient": "Menge Luft, die man maximal ausatmen kann",
+        "uz": "o‘pkaning tiriklik sig‘imi",
+        "ru": "жизненная ёмкость лёгких",
+        "tr": "vital kapasite",
+        "en": "vital capacity"
+      },
+      {
+        "de": "Immunglobuline",
+        "patient": "Abwehrstoffe als Infusion",
+        "uz": "immunoglobulinlar",
+        "ru": "иммуноглобулины",
+        "tr": "immünoglobulinler",
+        "en": "immunoglobulins"
+      },
+      {
+        "de": "Zytoalbuminäre Dissoziation",
+        "patient": "viel Eiweiß, aber wenige Zellen im Nervenwasser",
+        "uz": "sitoalbuminli dissotsiatsiya",
+        "ru": "белково-клеточная диссоциация",
+        "tr": "sitoalbüminolojik disosiyasyon",
+        "en": "albuminocytological dissociation"
+      }
+    ],
+    "simulation": {
+      "opening": "Meine Beine werden seit zwei Tagen immer schwächer, heute komme ich die Treppe nicht mehr hoch.",
+      "answers": {
+        "beginn": "Das Kribbeln seit vier Tagen, die Schwäche seit zwei Tagen. Es wird jeden Tag schlimmer.",
+        "lokalisation": "Beide Beine gleich, jetzt auch die Hände etwas. Es hat in den Füßen angefangen und wandert nach oben.",
+        "charakter": "Die Beine sind wie Pudding. In Füßen und Händen kribbelt es wie Ameisen. Der Rücken tut weh, fünf von zehn.",
+        "ausstrahlung": "Die Rückenschmerzen ziehen in die Oberschenkel.",
+        "begleit": "Luftnot habe ich nicht, aber ich bin schnell erschöpft. Schlucken geht normal. Wasserlassen und Stuhlgang sind normal. Doppelbilder habe ich nicht.",
+        "vegetativ": "Mein Herz rast manchmal. Sonst normal.",
+        "vorerkrankungen": "Ich bin gesund. (auf Nachfrage) Vor zwei Wochen hatte ich nach einem Grillfest drei Tage Durchfall.",
+        "medikamente": "Keine.",
+        "allergien": "Nein.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich bin Koch, ledig.",
+        "noxen": "Ich rauche nicht, Alkohol am Wochenende."
+      }
+    },
+    "verdachtsdiagnose": "Guillain-Barré-Syndrom (akute inflammatorische demyelinisierende Polyneuropathie) nach Campylobacter-Enteritis",
+    "diagnoseKeywords": ["guillain", "gbs", "polyradikulitis", "polyneuropathie"],
+    "differenzialdiagnosen": [
+      "Querschnittsmyelitis / spinale Kompression",
+      "Hypokaliämie",
+      "Myasthenia gravis",
+      "Botulismus",
+      "Borreliose"
+    ],
+    "untersuchungen": [
+      "Neurologische Untersuchung (Reflexe)",
+      "Lumbalpunktion (Eiweiß, Zellzahl)",
+      "Elektroneurographie",
+      "Vitalkapazität (wiederholt)",
+      "MRT der Wirbelsäule (Ausschluss Kompression)",
+      "Elektrolyte, Campylobacter-Serologie"
+    ],
+    "oberarzt": {
+      "therapie": [
+        "Immunglobuline i. v. (oder Plasmapherese)",
+        "Intensivüberwachung (Vitalkapazität)",
+        "Thromboseprophylaxe",
+        "Physiotherapie",
+        "Schmerztherapie"
+      ],
+      "komplikationen": [
+        "Ateminsuffizienz (Beatmung)",
+        "Autonome Dysregulation (Herzrhythmusstörungen)",
+        "Thrombose (Lungenembolie)",
+        "Aspiration (Schluckstörung)",
+        "Dekubitus"
+      ]
+    }
   }
 ]
