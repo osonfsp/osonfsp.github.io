@@ -8313,5 +8313,851 @@
       }
     ],
     "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Siegfried Bauer, 68 Jahre, der vom 01.10.2026 bis zum 08.10.2026 in unserer gastroenterologischen Abteilung behandelt wurde.\n\nAnamnese:\nDer Patient stellte sich mit seit drei Monaten bestehendem Oberbauchdruck, frühem Sättigungsgefühl, Fleischaversion, einem Gewichtsverlust von 9 kg, Müdigkeit und intermittierend dunklem Stuhl vor. Als Risikofaktoren bestehen eine nie behandelte Helicobacter-Infektion, ein Nikotinabusus von 40 py und ein Magenkarzinom beim Bruder.\n\nBefunde:\nLaborchemisch fand sich eine Eisenmangelanämie mit einem Hb von 8,9 g/dl und einem Ferritin von 5 µg/l. In der Gastroskopie zeigte sich ein ulzerierter Tumor im Antrum; histologisch handelt es sich um ein Adenokarzinom vom intestinalen Typ, Helicobacter war positiv. Endosonographie und CT ergaben ein Stadium uT3 N1 ohne Fernmetastasen.\n\nDiagnose:\nAdenokarzinom des Magens im Antrum, uT3 N1 M0, mit Tumoranämie.\n\nProcedere:\nDie Tumorkonferenz empfiehlt eine perioperative Chemotherapie nach dem FLOT-Schema mit anschließender Gastrektomie. Wir haben eine intravenöse Eisensubstitution begonnen und eine Ernährungsberatung veranlasst. Wegen der familiären Häufung empfehlen wir den erstgradigen Angehörigen eine Gastroskopie mit Helicobacter-Testung.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab95",
+    "caseId": "c117",
+    "title": "Divertikelblutung",
+    "task": "Gastroenterologiya bo‘limidan uy shifokoriga Arztbrief yozing. Ikki xil qon suyultiruvchi terapiya, endoskopik davolash va dorilarni qayta boshlash rejasiga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из гастроэнтерологии семейному врачу. Обратите внимание на двойную антитромботическую терапию, эндоскопическое лечение и план возобновления препаратов.",
+    "taskTr": "Gastroenteroloji servisinden aile hekimine bir Arztbrief yazın. İkili antitrombotik tedaviye, endoskopik tedaviye ve ilaçların yeniden başlanması planına dikkat edin.",
+    "taskEn": "Write an Arztbrief from gastroenterology to the GP. Pay attention to the dual antithrombotic therapy, endoscopic treatment and the plan to restart medication.",
+    "facts": [
+      "Patient: Hans-Peter Ludwig, 77 Jahre, männlich",
+      "Aufnahme: 03.10.2026, Notaufnahme",
+      "Dreimal schmerzlose Hämatochezie mit Koageln, Schwindel; keine Bauchschmerzen",
+      "Divertikulose; Vorhofflimmern; KHK mit Stent vor 6 Monaten; Apixaban und Clopidogrel",
+      "RR 100/60 mmHg, HF 104/min; Hb 8,1 g/dl (Vorwert 13,5)",
+      "Gastroskopie unauffällig; Koloskopie: Divertikel im Colon ascendens mit sichtbarem Gefäßstumpf → Clip-Versorgung",
+      "Therapie: Apixaban und Clopidogrel pausiert, 2 Erythrozytenkonzentrate; nach Rücksprache mit Kardiologie Clopidogrel ab Tag 3, Apixaban ab Tag 5 wieder begonnen"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patient ma’lumotlari (Herr Ludwig)",
+        "labelRu": "Данные пациента (Herr Ludwig)",
+        "labelTr": "Hasta bilgileri (Herr Ludwig)",
+        "labelEn": "Patient data (Herr Ludwig)",
+        "keywords": ["ludwig"]
+      },
+      {
+        "label": "Asosiy shikoyat: og‘riqsiz qon ketishi (gematoxeziya) (schmerzlose Hämatochezie)",
+        "labelRu": "Основная жалоба: безболевая гематохезия (schmerzlose Hämatochezie)",
+        "labelTr": "Ana şikâyet: ağrısız hematokezya (schmerzlose Hämatochezie)",
+        "labelEn": "Main complaint: painless rectal bleeding (schmerzlose Hämatochezie)",
+        "keywords": ["hämatochezie", "schmerzlos"]
+      },
+      {
+        "label": "Ikki xil qon suyultiruvchi dori (Apixaban, Clopidogrel)",
+        "labelRu": "Два антитромботических препарата (Apixaban, Clopidogrel)",
+        "labelTr": "İki antitrombotik ilaç (Apixaban, Clopidogrel)",
+        "labelEn": "Two antithrombotic drugs (Apixaban, Clopidogrel)",
+        "keywords": ["apixaban", "clopidogrel"]
+      },
+      {
+        "label": "Gemoglobin pasayishi (Hb 8,1 g/dl)",
+        "labelRu": "Падение гемоглобина (Hb 8,1 g/dl)",
+        "labelTr": "Hemoglobin düşüşü (Hb 8,1 g/dl)",
+        "labelEn": "Drop in haemoglobin (Hb 8,1 g/dl)",
+        "keywords": ["8,1 g/dl", "abgefallen"]
+      },
+      {
+        "label": "Yuqori qon ketish istisno qilingan (Gastroskopie unauffällig)",
+        "labelRu": "Верхнее кровотечение исключено (Gastroskopie unauffällig)",
+        "labelTr": "Üst GİS kanaması dışlandı (Gastroskopie unauffällig)",
+        "labelEn": "Upper GI bleeding excluded (Gastroskopie unauffällig)",
+        "keywords": ["gastroskopie"]
+      },
+      {
+        "label": "Kolonoskopiya: divertikul va klips (Clip-Versorgung)",
+        "labelRu": "Колоноскопия: дивертикул и клипса (Clip-Versorgung)",
+        "labelTr": "Kolonoskopi: divertikül ve klips (Clip-Versorgung)",
+        "labelEn": "Colonoscopy: diverticulum and clip (Clip-Versorgung)",
+        "keywords": ["koloskopie", "clip"]
+      },
+      {
+        "label": "Diagnoz: divertikuldan qon ketish (Divertikelblutung)",
+        "labelRu": "Диагноз: дивертикулярное кровотечение (Divertikelblutung)",
+        "labelTr": "Tanı: divertikül kanaması (Divertikelblutung)",
+        "labelEn": "Diagnosis: diverticular bleeding (Divertikelblutung)",
+        "keywords": ["divertikelblutung"]
+      },
+      {
+        "label": "Davolash: qon quyish va dorilarni vaqtincha to‘xtatish (Erythrozytenkonzentrate)",
+        "labelRu": "Лечение: трансфузия и временная отмена препаратов (Erythrozytenkonzentrate)",
+        "labelTr": "Tedavi: transfüzyon ve ilaçların geçici kesilmesi (Erythrozytenkonzentrate)",
+        "labelEn": "Treatment: transfusion and pausing medication (Erythrozytenkonzentrate)",
+        "keywords": ["erythrozytenkonzentrat", "pausiert"]
+      },
+      {
+        "label": "Tavsiya: antitrombotik terapiya davomiyligini qayta ko‘rish (Rücksprache Kardiologie)",
+        "labelRu": "Рекомендация: пересмотр длительности антитромботической терапии (Rücksprache Kardiologie)",
+        "labelTr": "Öneri: antitrombotik tedavi süresinin gözden geçirilmesi (Rücksprache Kardiologie)",
+        "labelEn": "Recommendation: review the duration of antithrombotic therapy (Rücksprache Kardiologie)",
+        "keywords": ["kardiologie", "blutbildkontrolle"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Hans-Peter Ludwig, 77 Jahre, der vom 03.10.2026 bis zum 09.10.2026 in unserer gastroenterologischen Abteilung behandelt wurde.\n\nAnamnese:\nDer Patient stellte sich nach dreimaliger schmerzloser Hämatochezie mit Koageln und Schwindel vor. Bekannt sind eine Divertikulose, ein Vorhofflimmern und eine KHK mit Stentimplantation vor sechs Monaten. Er erhält Apixaban und Clopidogrel.\n\nBefunde:\nBei Aufnahme lag der Blutdruck bei 100/60 mmHg, die Herzfrequenz bei 104/min. Das Hb war von 13,5 auf 8,1 g/dl abgefallen. Die Gastroskopie war unauffällig. In der Koloskopie zeigte sich ein Divertikel im Colon ascendens mit sichtbarem Gefäßstumpf, der mittels Clip versorgt wurde.\n\nDiagnose:\nDivertikelblutung im Colon ascendens unter Antikoagulation und Thrombozytenaggregationshemmung.\n\nTherapie und Verlauf:\nApixaban und Clopidogrel wurden pausiert, der Patient erhielt zwei Erythrozytenkonzentrate. Eine erneute Blutung trat nicht auf. Nach Rücksprache mit der Kardiologie wurde Clopidogrel ab dem dritten und Apixaban ab dem fünften Tag wieder begonnen.\n\nProcedere:\nWir bitten um eine Blutbildkontrolle in einer Woche. Die Dauer der kombinierten Therapie sollte in Rücksprache mit der Kardiologie überprüft werden; nach zwölf Monaten seit der Stentimplantation ist ein Absetzen von Clopidogrel zu erwägen. Bei erneuter Blutung bitten wir um sofortige Vorstellung.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab96",
+    "caseId": "c118",
+    "title": "Multiple Sklerose – Erstmanifestation mit Optikusneuritis",
+    "task": "Nevrologiya bo‘limidan uy shifokoriga Arztbrief yozing. Avvalgi epizod, MRT va likvor natijasi hamda kasallikni modifikatsiyalovchi terapiyaga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из неврологии семейному врачу. Обратите внимание на прежний эпизод, результаты МРТ и ликвора и иммуномодулирующую терапию.",
+    "taskTr": "Nöroloji servisinden aile hekimine bir Arztbrief yazın. Önceki ataka, MR ve BOS sonuçlarına ve hastalık modifiye edici tedaviye dikkat edin.",
+    "taskEn": "Write an Arztbrief from neurology to the GP. Pay attention to the earlier episode, the MRI and CSF results and disease-modifying therapy.",
+    "facts": [
+      "Patientin: Katharina Weiß, 26 Jahre, weiblich",
+      "Aufnahme: 02.10.2026, neurologische Station",
+      "Seit 4 Tagen Visusminderung rechts (0,3), Farbentsättigung, Bulbusbewegungsschmerz; vor 1 Jahr passagere Sensibilitätsstörung des linken Beins",
+      "Tante mit Multipler Sklerose; Nikotin 5 Zigaretten/Tag",
+      "Relatives afferentes Pupillendefizit rechts; VEP: Latenzverzögerung rechts",
+      "cMRT: periventrikuläre und juxtakortikale Läsionen, eine kontrastmittelaufnehmende Läsion; spinales MRT: Läsion in Höhe HWK 4",
+      "Liquor: oligoklonale Banden positiv; Aquaporin-4-Antikörper und Borrelien negativ",
+      "Therapie: Methylprednisolon 1 g i. v. über 5 Tage, Visus bei Entlassung 0,7"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patientin ma’lumotlari (Frau Weiß)",
+        "labelRu": "Данные пациентки (Frau Weiß)",
+        "labelTr": "Hasta bilgileri (Frau Weiß)",
+        "labelEn": "Patient data (Frau Weiß)",
+        "keywords": ["weiß"]
+      },
+      {
+        "label": "Asosiy shikoyat: o‘ng ko‘zda ko‘rishning pasayishi (Visusminderung)",
+        "labelRu": "Основная жалоба: снижение зрения справа (Visusminderung)",
+        "labelTr": "Ana şikâyet: sağ gözde görme azalması (Visusminderung)",
+        "labelEn": "Main complaint: reduced vision in the right eye (Visusminderung)",
+        "keywords": ["visus", "sehen"]
+      },
+      {
+        "label": "Ko‘z harakatida og‘riq (Bulbusbewegungsschmerz)",
+        "labelRu": "Боль при движении глаза (Bulbusbewegungsschmerz)",
+        "labelTr": "Göz hareketinde ağrı (Bulbusbewegungsschmerz)",
+        "labelEn": "Pain on eye movement (Bulbusbewegungsschmerz)",
+        "keywords": ["bulbusbewegungsschmerz", "augenbewegung"]
+      },
+      {
+        "label": "Avvalgi sezgi buzilishi epizodi (vor 1 Jahr)",
+        "labelRu": "Прежний эпизод нарушения чувствительности (vor 1 Jahr)",
+        "labelTr": "Önceki duyu bozukluğu atağı (vor 1 Jahr)",
+        "labelEn": "Previous sensory episode (vor 1 Jahr)",
+        "keywords": ["vor einem jahr", "sensibilitätsstörung"]
+      },
+      {
+        "label": "MRT o‘choqlari (periventrikuläre Läsionen)",
+        "labelRu": "Очаги на МРТ (periventrikuläre Läsionen)",
+        "labelTr": "MR lezyonları (periventrikuläre Läsionen)",
+        "labelEn": "MRI lesions (periventrikuläre Läsionen)",
+        "keywords": ["läsion", "mrt"]
+      },
+      {
+        "label": "Likvor: oligoklonal chiziqlar (oligoklonale Banden)",
+        "labelRu": "Ликвор: олигоклональные полосы (oligoklonale Banden)",
+        "labelTr": "BOS: oligoklonal bantlar (oligoklonale Banden)",
+        "labelEn": "CSF: oligoclonal bands (oligoklonale Banden)",
+        "keywords": ["oligoklonal"]
+      },
+      {
+        "label": "Diagnoz: tarqoq skleroz, optik nevrit (Multiple Sklerose)",
+        "labelRu": "Диагноз: рассеянный склероз, неврит зрительного нерва (Multiple Sklerose)",
+        "labelTr": "Tanı: multipl skleroz, optik nörit (Multiple Sklerose)",
+        "labelEn": "Diagnosis: multiple sclerosis, optic neuritis (Multiple Sklerose)",
+        "keywords": ["multiple sklerose", "optikusneuritis"]
+      },
+      {
+        "label": "Davolash: metilprednizolon pulsi (Methylprednisolon)",
+        "labelRu": "Лечение: пульс-терапия метилпреднизолоном (Methylprednisolon)",
+        "labelTr": "Tedavi: metilprednizolon pulsu (Methylprednisolon)",
+        "labelEn": "Treatment: methylprednisolone pulse (Methylprednisolon)",
+        "keywords": ["methylprednisolon", "kortison"]
+      },
+      {
+        "label": "Tavsiya: immunomodulyatsiya, chekishni tashlash, D vitamini (Immuntherapie)",
+        "labelRu": "Рекомендация: иммуномодуляция, отказ от курения, витамин D (Immuntherapie)",
+        "labelTr": "Öneri: immünomodülasyon, sigarayı bırakma, D vitamini (Immuntherapie)",
+        "labelEn": "Recommendation: disease-modifying therapy, stop smoking, vitamin D (Immuntherapie)",
+        "keywords": ["immuntherapie", "nikotinkarenz", "vitamin d"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihre Patientin Frau Katharina Weiß, 26 Jahre, die vom 02.10.2026 bis zum 08.10.2026 in unserer neurologischen Abteilung behandelt wurde.\n\nAnamnese:\nDie Patientin stellte sich mit seit vier Tagen bestehender Visusminderung rechts, Farbentsättigung und Bulbusbewegungsschmerz vor. Vor einem Jahr war bereits eine passagere Sensibilitätsstörung des linken Beins aufgetreten. Eine Tante leidet an Multipler Sklerose. Die Patientin raucht fünf Zigaretten täglich.\n\nBefunde:\nDer Visus rechts lag bei 0,3, es bestand ein relatives afferentes Pupillendefizit rechts. Die VEP zeigten eine Latenzverzögerung rechts. Im cMRT fanden sich periventrikuläre und juxtakortikale Läsionen, davon eine kontrastmittelaufnehmende Läsion, im spinalen MRT eine Läsion in Höhe HWK 4. Im Liquor waren oligoklonale Banden nachweisbar. Aquaporin-4-Antikörper und Borrelien-Serologie waren negativ.\n\nDiagnose:\nSchubförmig remittierende Multiple Sklerose, aktueller Schub mit Optikusneuritis rechts.\n\nTherapie und Verlauf:\nWir behandelten mit Methylprednisolon 1 g i. v. über fünf Tage. Bei Entlassung hatte sich der Visus auf 0,7 gebessert.\n\nProcedere:\nWir empfehlen den zeitnahen Beginn einer verlaufsmodifizierenden Immuntherapie in unserer MS-Ambulanz. Eine Nikotinkarenz und die Substitution von Vitamin D sind angeraten. Ein Kontroll-MRT ist in sechs Monaten vorgesehen.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab97",
+    "caseId": "c119",
+    "title": "Myasthene Krise",
+    "task": "Nevrologiya bo‘limidan uy shifokoriga Arztbrief yozing. Qo‘zg‘atuvchi dori, plazmaferez va miasteniyada xavfli dorilar ro‘yxatiga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из неврологии семейному врачу. Обратите внимание на провоцирующий препарат, плазмаферез и список опасных при миастении препаратов.",
+    "taskTr": "Nöroloji servisinden aile hekimine bir Arztbrief yazın. Tetikleyici ilaca, plazmafereze ve miyasteni için tehlikeli ilaçlara dikkat edin.",
+    "taskEn": "Write an Arztbrief from neurology to the GP. Pay attention to the triggering drug, plasma exchange and drugs to avoid in myasthenia.",
+    "facts": [
+      "Patientin: Ingeborg Hahn, 64 Jahre, weiblich",
+      "Aufnahme: 01.10.2026, Notaufnahme, danach Intensivstation",
+      "Seit 3 Tagen generalisierte Schwäche, Dysarthrie, Dysphagie mit nasaler Regurgitation, Diplopie, Ptosis; Dyspnoe mit schwachem Hustenstoß",
+      "Bekannte Myasthenia gravis (AChR-AK positiv), Z. n. Thymektomie; Pyridostigmin, Azathioprin; seit 6 Tagen Ciprofloxacin wegen Harnwegsinfekt",
+      "Vitalkapazität 1,1 l (sinkend), pCO2 52 mmHg",
+      "Therapie: Intubation und Beatmung für 5 Tage, Plasmapherese (5 Zyklen), Ciprofloxacin durch Fosfomycin ersetzt, Prednisolon; Extubation am Tag 6, Schlucken normalisiert"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patientin ma’lumotlari (Frau Hahn)",
+        "labelRu": "Данные пациентки (Frau Hahn)",
+        "labelTr": "Hasta bilgileri (Frau Hahn)",
+        "labelEn": "Patient data (Frau Hahn)",
+        "keywords": ["hahn"]
+      },
+      {
+        "label": "Asosiy shikoyat: yutish va nafas olishda kuchsizlik (Dysphagie, Dyspnoe)",
+        "labelRu": "Основная жалоба: слабость глотания и дыхания (Dysphagie, Dyspnoe)",
+        "labelTr": "Ana şikâyet: yutma ve solunum güçsüzlüğü (Dysphagie, Dyspnoe)",
+        "labelEn": "Main complaint: weakness of swallowing and breathing (Dysphagie, Dyspnoe)",
+        "keywords": ["dysphagie", "dyspnoe"]
+      },
+      {
+        "label": "Ptoz va diplopiya (Ptosis, Diplopie)",
+        "labelRu": "Птоз и диплопия (Ptosis, Diplopie)",
+        "labelTr": "Pitoz ve diplopi (Ptosis, Diplopie)",
+        "labelEn": "Ptosis and diplopia (Ptosis, Diplopie)",
+        "keywords": ["ptosis", "diplopie"]
+      },
+      {
+        "label": "Ma’lum miasteniya (Myasthenia gravis)",
+        "labelRu": "Известная миастения (Myasthenia gravis)",
+        "labelTr": "Bilinen myasthenia gravis (Myasthenia gravis)",
+        "labelEn": "Known myasthenia gravis (Myasthenia gravis)",
+        "keywords": ["myasthenia gravis"]
+      },
+      {
+        "label": "Qo‘zg‘atuvchi: infeksiya va siprofloksatsin (Ciprofloxacin)",
+        "labelRu": "Провокатор: инфекция и ципрофлоксацин (Ciprofloxacin)",
+        "labelTr": "Tetikleyici: enfeksiyon ve siprofloksasin (Ciprofloxacin)",
+        "labelEn": "Trigger: infection and ciprofloxacin (Ciprofloxacin)",
+        "keywords": ["ciprofloxacin", "harnwegsinfekt"]
+      },
+      {
+        "label": "Tiriklik sig‘imining pasayishi (Vitalkapazität 1,1 l)",
+        "labelRu": "Снижение ЖЁЛ (Vitalkapazität 1,1 l)",
+        "labelTr": "Vital kapasitede düşme (Vitalkapazität 1,1 l)",
+        "labelEn": "Falling vital capacity (Vitalkapazität 1,1 l)",
+        "keywords": ["vitalkapazität"]
+      },
+      {
+        "label": "Diagnoz: miastenik kriz (myasthene Krise)",
+        "labelRu": "Диагноз: миастенический криз (myasthene Krise)",
+        "labelTr": "Tanı: miyastenik kriz (myasthene Krise)",
+        "labelEn": "Diagnosis: myasthenic crisis (myasthene Krise)",
+        "keywords": ["myasthene krise"]
+      },
+      {
+        "label": "Davolash: sun’iy nafas va plazmaferez (Plasmapherese)",
+        "labelRu": "Лечение: ИВЛ и плазмаферез (Plasmapherese)",
+        "labelTr": "Tedavi: mekanik ventilasyon ve plazmaferez (Plasmapherese)",
+        "labelEn": "Treatment: ventilation and plasma exchange (Plasmapherese)",
+        "keywords": ["plasmapherese", "intubation"]
+      },
+      {
+        "label": "Tavsiya: miasteniyada xavfli dorilardan saqlanish (Fluorchinolone meiden)",
+        "labelRu": "Рекомендация: избегать препаратов, опасных при миастении (Fluorchinolone meiden)",
+        "labelTr": "Öneri: miyastenide tehlikeli ilaçlardan kaçınma (Fluorchinolone meiden)",
+        "labelEn": "Recommendation: avoid drugs that worsen myasthenia (Fluorchinolone meiden)",
+        "keywords": ["fluorchinolon", "notfallausweis"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihre Patientin Frau Ingeborg Hahn, 64 Jahre, die vom 01.10.2026 bis zum 14.10.2026 in unserer neurologischen Abteilung behandelt wurde.\n\nAnamnese:\nDie Patientin stellte sich mit seit drei Tagen zunehmender generalisierter Schwäche, Dysarthrie, Dysphagie mit nasaler Regurgitation, Diplopie und Ptosis vor, zuletzt mit Dyspnoe und schwachem Hustenstoß. Bekannt ist eine Myasthenia gravis mit positiven AChR-Antikörpern, Z. n. Thymektomie. Seit sechs Tagen erhielt sie wegen eines Harnwegsinfekts Ciprofloxacin.\n\nBefunde:\nDie Vitalkapazität lag bei 1,1 l mit fallender Tendenz, in der Blutgasanalyse zeigte sich ein pCO2 von 52 mmHg.\n\nDiagnose:\nMyasthene Krise, ausgelöst durch Harnwegsinfekt und Ciprofloxacin.\n\nTherapie und Verlauf:\nWegen drohender Ateminsuffizienz erfolgten die Intubation und Beatmung für fünf Tage. Wir führten fünf Zyklen Plasmapherese durch und begannen Prednisolon. Ciprofloxacin wurde durch Fosfomycin ersetzt. Am sechsten Tag konnte die Patientin extubiert werden, das Schlucken normalisierte sich.\n\nProcedere:\nWir empfehlen die Fortführung von Pyridostigmin, Azathioprin und Prednisolon mit langsamer Dosisreduktion. Fluorchinolone, Aminoglykoside, Makrolide und Magnesium i. v. sollten künftig gemieden werden; ein entsprechender Notfallausweis wurde ausgestellt. Bei erneuter Schluck- oder Atemschwäche ist eine sofortige Vorstellung erforderlich.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab98",
+    "caseId": "c120",
+    "title": "Clusterkopfschmerz",
+    "task": "Nevrologiya ambulatoriyasidan uy shifokoriga Arztbrief yozing. Tipik belgilar, xurujni to‘xtatish va profilaktikaga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из неврологической амбулатории семейному врачу. Обратите внимание на типичные признаки, купирование приступа и профилактику.",
+    "taskTr": "Nöroloji polikliniğinden aile hekimine bir Arztbrief yazın. Tipik bulgulara, atağın durdurulmasına ve profilaksiye dikkat edin.",
+    "taskEn": "Write an Arztbrief from the neurology clinic to the GP. Pay attention to the typical features, acute treatment and prophylaxis.",
+    "facts": [
+      "Patient: Marco Schulze, 35 Jahre, männlich",
+      "Vorstellung: 06.10.2026, neurologische Ambulanz",
+      "Seit 2 Wochen täglich 1–2 nächtliche Attacken streng einseitiger retroorbitaler Schmerzen rechts (NRS 10/10), Dauer 45–90 Minuten; motorische Unruhe",
+      "Ipsilateral Tränenfluss, Rötung des Auges, Rhinorrhö, Ptosis; ähnliche Episode vor 1 Jahr im Herbst",
+      "Nikotin 20 Zigaretten/Tag; Alkohol als Auslöser",
+      "Neurologischer Befund im Intervall unauffällig; cMRT unauffällig; EKG: normale PQ-Zeit",
+      "Therapie: Sauerstoff 12 l/min über Maske für die Attacke, Sumatriptan 6 mg s. c.; Prophylaxe mit Verapamil, überbrückend Prednisolon"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patient ma’lumotlari (Herr Schulze)",
+        "labelRu": "Данные пациента (Herr Schulze)",
+        "labelTr": "Hasta bilgileri (Herr Schulze)",
+        "labelEn": "Patient data (Herr Schulze)",
+        "keywords": ["schulze"]
+      },
+      {
+        "label": "Asosiy shikoyat: bir tomonlama juda kuchli ko‘z orqasidagi og‘riq (retroorbitale Schmerzen)",
+        "labelRu": "Основная жалоба: односторонняя сильнейшая ретроорбитальная боль (retroorbitale Schmerzen)",
+        "labelTr": "Ana şikâyet: tek taraflı çok şiddetli göz arkası ağrısı (retroorbitale Schmerzen)",
+        "labelEn": "Main complaint: unilateral severe pain behind the eye (retroorbitale Schmerzen)",
+        "keywords": ["retroorbital", "einseitig"]
+      },
+      {
+        "label": "Xurujlar davomiyligi va vaqti (nächtliche Attacken)",
+        "labelRu": "Длительность и время приступов (nächtliche Attacken)",
+        "labelTr": "Atakların süresi ve zamanı (nächtliche Attacken)",
+        "labelEn": "Duration and timing of attacks (nächtliche Attacken)",
+        "keywords": ["nächtlich", "minuten"]
+      },
+      {
+        "label": "Avtonom belgilar (Tränenfluss, Rhinorrhö, Ptosis)",
+        "labelRu": "Вегетативные симптомы (Tränenfluss, Rhinorrhö, Ptosis)",
+        "labelTr": "Otonom belirtiler (Tränenfluss, Rhinorrhö, Ptosis)",
+        "labelEn": "Autonomic symptoms (Tränenfluss, Rhinorrhö, Ptosis)",
+        "keywords": ["tränen", "rhinorrhö", "ptosis"]
+      },
+      {
+        "label": "Harakat bezovtaligi (motorische Unruhe)",
+        "labelRu": "Двигательное беспокойство (motorische Unruhe)",
+        "labelTr": "Motor huzursuzluk (motorische Unruhe)",
+        "labelEn": "Restlessness (motorische Unruhe)",
+        "keywords": ["unruhe"]
+      },
+      {
+        "label": "MRT normal (cMRT unauffällig)",
+        "labelRu": "МРТ без патологии (cMRT unauffällig)",
+        "labelTr": "MR normal (cMRT unauffällig)",
+        "labelEn": "Normal MRI (cMRT unauffällig)",
+        "keywords": ["cmrt"]
+      },
+      {
+        "label": "Diagnoz: klaster bosh og‘rig‘i (Clusterkopfschmerz)",
+        "labelRu": "Диагноз: кластерная головная боль (Clusterkopfschmerz)",
+        "labelTr": "Tanı: küme baş ağrısı (Clusterkopfschmerz)",
+        "labelEn": "Diagnosis: cluster headache (Clusterkopfschmerz)",
+        "keywords": ["clusterkopfschmerz"]
+      },
+      {
+        "label": "Davolash: kislorod va sumatriptan (Sauerstoff, Sumatriptan)",
+        "labelRu": "Лечение: кислород и суматриптан (Sauerstoff, Sumatriptan)",
+        "labelTr": "Tedavi: oksijen ve sumatriptan (Sauerstoff, Sumatriptan)",
+        "labelEn": "Treatment: oxygen and sumatriptan (Sauerstoff, Sumatriptan)",
+        "keywords": ["sauerstoff", "sumatriptan"]
+      },
+      {
+        "label": "Tavsiya: verapamil profilaktikasi, EKG nazorati, alkogol va chekishdan voz kechish (Verapamil)",
+        "labelRu": "Рекомендация: профилактика верапамилом, контроль ЭКГ, отказ от алкоголя и курения (Verapamil)",
+        "labelTr": "Öneri: verapamil profilaksisi, EKG takibi, alkol ve sigaradan kaçınma (Verapamil)",
+        "labelEn": "Recommendation: verapamil prophylaxis, ECG monitoring, avoid alcohol and smoking (Verapamil)",
+        "keywords": ["verapamil", "ekg-kontrolle", "alkohol"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Marco Schulze, 35 Jahre, der vom 06.10.2026 bis zum 06.10.2026 in unserer neurologischen Ambulanz behandelt wurde.\n\nAnamnese:\nDer Patient berichtete über seit zwei Wochen täglich ein bis zwei nächtliche Attacken streng einseitiger retroorbitaler Schmerzen rechts von stärkster Intensität (NRS 10/10) mit einer Dauer von 45 bis 90 Minuten. Während der Attacken bestehen eine motorische Unruhe sowie ipsilateral Tränenfluss, Rötung des Auges, Rhinorrhö und Ptosis. Eine ähnliche Episode trat vor einem Jahr im Herbst auf. Er raucht 20 Zigaretten täglich, Alkohol löst Attacken aus.\n\nBefunde:\nDer neurologische Befund war im Intervall unauffällig, ebenso das cMRT. Im EKG war die PQ-Zeit normal.\n\nDiagnose:\nEpisodischer Clusterkopfschmerz rechts, aktive Phase.\n\nTherapie:\nZur Attackenbehandlung verordneten wir Sauerstoff mit 12 l/min über eine Gesichtsmaske sowie Sumatriptan 6 mg s. c. Zur Prophylaxe begannen wir Verapamil, überbrückend für zwei Wochen Prednisolon.\n\nProcedere:\nUnter Verapamil sind regelmäßige EKG-Kontrollen (PQ-Zeit) bei jeder Dosissteigerung erforderlich. Während der aktiven Phase sollte Alkohol strikt gemieden werden; eine Nikotinkarenz ist angeraten. Eine Wiedervorstellung ist in vier Wochen vorgesehen.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab99",
+    "caseId": "c121",
+    "title": "Status epilepticus",
+    "task": "Nevrologiya bo‘limidan uy shifokoriga Arztbrief yozing. Dori ichilmay qolgani, status bosqichma-bosqich davolanishi va haydash taqiqiga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из неврологии семейному врачу. Обратите внимание на пропуск лекарства, ступенчатое лечение статуса и запрет вождения.",
+    "taskTr": "Nöroloji servisinden aile hekimine bir Arztbrief yazın. İlacın alınmamasına, statusun basamaklı tedavisine ve araç kullanma yasağına dikkat edin.",
+    "taskEn": "Write an Arztbrief from neurology to the GP. Pay attention to the missed medication, stepwise treatment of status and the driving ban.",
+    "facts": [
+      "Patient: Robert Krause, 45 Jahre, männlich",
+      "Aufnahme: 04.10.2026, Notaufnahme durch Notarzt",
+      "Generalisierter tonisch-klonischer Anfall über 10 Minuten nach zwei Anfällen ohne Wiedererlangen des Bewusstseins; Zungenbiss, Einnässen",
+      "Strukturelle Epilepsie nach SHT 2015; Levetiracetam seit 1 Woche nicht eingenommen (Lieferengpass); Alkohol am Vorabend, Schlafmangel",
+      "Blutzucker 112 mg/dl; Laktat 9 mmol/l, CK 2.400 U/l; Alkohol 0,4 ‰; cCT: alte Kontusionsdefekte frontal rechts, keine Blutung",
+      "Therapie: Lorazepam 4 mg i. v., danach Levetiracetam 60 mg/kg i. v. → Anfallsende; EEG: kein nonkonvulsiver Status; Aspirationspneumonie mit Ampicillin/Sulbactam behandelt"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patient ma’lumotlari (Herr Krause)",
+        "labelRu": "Данные пациента (Herr Krause)",
+        "labelTr": "Hasta bilgileri (Herr Krause)",
+        "labelEn": "Patient data (Herr Krause)",
+        "keywords": ["krause"]
+      },
+      {
+        "label": "Asosiy shikoyat: to‘xtamaydigan tutqanoq (Status)",
+        "labelRu": "Основная жалоба: непрекращающийся судорожный приступ (Status)",
+        "labelTr": "Ana şikâyet: durmayan nöbet (Status)",
+        "labelEn": "Main complaint: seizure that does not stop (Status)",
+        "keywords": ["anfall", "tonisch-klonisch"]
+      },
+      {
+        "label": "Ma’lum epilepsiya (strukturelle Epilepsie)",
+        "labelRu": "Известная эпилепсия (strukturelle Epilepsie)",
+        "labelTr": "Bilinen epilepsi (strukturelle Epilepsie)",
+        "labelEn": "Known epilepsy (strukturelle Epilepsie)",
+        "keywords": ["epilepsie"]
+      },
+      {
+        "label": "Dori ichilmagan (Levetiracetam nicht eingenommen)",
+        "labelRu": "Пропуск препарата (Levetiracetam nicht eingenommen)",
+        "labelTr": "İlaç alınmamış (Levetiracetam nicht eingenommen)",
+        "labelEn": "Missed medication (Levetiracetam nicht eingenommen)",
+        "keywords": ["levetiracetam", "nicht eingenommen"]
+      },
+      {
+        "label": "Qo‘shimcha omillar: alkogol, uyqusizlik (Alkohol, Schlafmangel)",
+        "labelRu": "Доп. факторы: алкоголь, недосып (Alkohol, Schlafmangel)",
+        "labelTr": "Ek faktörler: alkol, uykusuzluk (Alkohol, Schlafmangel)",
+        "labelEn": "Additional triggers: alcohol, sleep loss (Alkohol, Schlafmangel)",
+        "keywords": ["alkohol", "schlafmangel"]
+      },
+      {
+        "label": "KT: qon quyilish yo‘q (keine Blutung)",
+        "labelRu": "КТ: кровоизлияния нет (keine Blutung)",
+        "labelTr": "BT: kanama yok (keine Blutung)",
+        "labelEn": "CT: no bleeding (keine Blutung)",
+        "keywords": ["cct", "keine blutung"]
+      },
+      {
+        "label": "Diagnoz: epileptik status (Status epilepticus)",
+        "labelRu": "Диагноз: эпилептический статус (Status epilepticus)",
+        "labelTr": "Tanı: status epileptikus (Status epilepticus)",
+        "labelEn": "Diagnosis: status epilepticus (Status epilepticus)",
+        "keywords": ["status epilepticus"]
+      },
+      {
+        "label": "Davolash: lorazepam va levetiratsetam v/i (Lorazepam)",
+        "labelRu": "Лечение: лоразепам и леветирацетам в/в (Lorazepam)",
+        "labelTr": "Tedavi: IV lorazepam ve levetirasetam (Lorazepam)",
+        "labelEn": "Treatment: IV lorazepam and levetiracetam (Lorazepam)",
+        "keywords": ["lorazepam"]
+      },
+      {
+        "label": "Asorat: aspiratsion pnevmoniya (Aspirationspneumonie)",
+        "labelRu": "Осложнение: аспирационная пневмония (Aspirationspneumonie)",
+        "labelTr": "Komplikasyon: aspirasyon pnömonisi (Aspirationspneumonie)",
+        "labelEn": "Complication: aspiration pneumonia (Aspirationspneumonie)",
+        "keywords": ["aspirationspneumonie"]
+      },
+      {
+        "label": "Tavsiya: dorini doimiy ichish, haydash taqiqi, alkogoldan saqlanish (Fahrverbot)",
+        "labelRu": "Рекомендация: постоянный приём, запрет вождения, избегать алкоголя (Fahrverbot)",
+        "labelTr": "Öneri: düzenli ilaç, araç kullanma yasağı, alkolden kaçınma (Fahrverbot)",
+        "labelEn": "Recommendation: regular medication, driving ban, avoid alcohol (Fahrverbot)",
+        "keywords": ["fahrverbot", "regelmäßig"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Robert Krause, 45 Jahre, der vom 04.10.2026 bis zum 11.10.2026 in unserer neurologischen Abteilung behandelt wurde.\n\nAnamnese:\nDer Patient wurde vom Notarzt mit einem generalisierten tonisch-klonischen Anfall über zehn Minuten eingeliefert; zuvor waren zwei Anfälle ohne Wiedererlangen des Bewusstseins aufgetreten. Es fanden sich ein Zungenbiss und Einnässen. Bekannt ist eine strukturelle Epilepsie nach Schädel-Hirn-Trauma 2015. Levetiracetam war seit einer Woche wegen eines Lieferengpasses nicht eingenommen worden. Zudem bestanden Alkoholkonsum am Vorabend und Schlafmangel.\n\nBefunde:\nDer Blutzucker lag bei 112 mg/dl, das Laktat bei 9 mmol/l, die CK bei 2.400 U/l, der Alkoholspiegel bei 0,4 ‰. Im cCT zeigten sich alte Kontusionsdefekte frontal rechts ohne Hinweis auf eine Blutung.\n\nDiagnose:\nGeneralisierter konvulsiver Status epilepticus bei struktureller Epilepsie nach Absetzen von Levetiracetam.\n\nTherapie und Verlauf:\nNach Gabe von Lorazepam 4 mg i. v. und Levetiracetam 60 mg/kg i. v. sistierte der Anfall. Das EEG ergab keinen Hinweis auf einen nonkonvulsiven Status. Eine Aspirationspneumonie wurde mit Ampicillin/Sulbactam behandelt. Laktat und CK normalisierten sich.\n\nProcedere:\nLevetiracetam 1000 mg 1-0-1 muss regelmäßig eingenommen werden; bei Lieferengpässen bitten wir um rechtzeitige Rücksprache. Wir empfehlen Alkoholverzicht und ausreichenden Schlaf. Es besteht ein Fahrverbot für mindestens sechs Monate Anfallsfreiheit.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab100",
+    "caseId": "c122",
+    "title": "Idiopathische Fazialisparese (Bell-Parese)",
+    "task": "Nevrologiya ambulatoriyasidan uy shifokoriga Arztbrief yozing. Markaziy falajni istisno qilish, steroid va ko‘zni himoya qilishga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из неврологической амбулатории семейному врачу. Обратите внимание на исключение центрального пареза, стероиды и защиту глаза.",
+    "taskTr": "Nöroloji polikliniğinden aile hekimine bir Arztbrief yazın. Santral paralizinin dışlanmasına, steroide ve göz korumasına dikkat edin.",
+    "taskEn": "Write an Arztbrief from the neurology clinic to the GP. Pay attention to excluding central palsy, steroids and eye protection.",
+    "facts": [
+      "Patient: Thomas Becker, 42 Jahre, männlich",
+      "Vorstellung: 07.10.2026, neurologische Notaufnahme (ambulant)",
+      "Seit dem Morgen periphere Fazialisparese links mit Beteiligung des Stirnastes, inkompletter Lidschluss, Geschmacksstörung, Hyperakusis; retroaurikuläre Schmerzen am Vortag",
+      "Keine weiteren neurologischen Ausfälle; Otoskopie ohne Bläschen",
+      "Borrelien-Serologie negativ, Blutzucker normal",
+      "Therapie: Prednisolon 60 mg für 5 Tage, dann ausschleichend; Augentropfen, Augensalbe und Uhrglasverband nachts"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patient ma’lumotlari (Herr Becker)",
+        "labelRu": "Данные пациента (Herr Becker)",
+        "labelTr": "Hasta bilgileri (Herr Becker)",
+        "labelEn": "Patient data (Herr Becker)",
+        "keywords": ["becker"]
+      },
+      {
+        "label": "Asosiy shikoyat: chap tomonda yuz falaji (periphere Fazialisparese)",
+        "labelRu": "Основная жалоба: левосторонний парез лица (periphere Fazialisparese)",
+        "labelTr": "Ana şikâyet: sol fasiyal paralizi (periphere Fazialisparese)",
+        "labelEn": "Main complaint: left facial palsy (periphere Fazialisparese)",
+        "keywords": ["fazialisparese"]
+      },
+      {
+        "label": "Peshona ham zararlangan (periferik) (Stirnast)",
+        "labelRu": "Лоб тоже поражён (периферический) (Stirnast)",
+        "labelTr": "Alın da etkilenmiş (periferik) (Stirnast)",
+        "labelEn": "Forehead involved (peripheral) (Stirnast)",
+        "keywords": ["stirn"]
+      },
+      {
+        "label": "Boshqa nevrologik buzilish yo‘q (keine weiteren Ausfälle)",
+        "labelRu": "Другого неврологического дефицита нет (keine weiteren Ausfälle)",
+        "labelTr": "Başka nörolojik defisit yok (keine weiteren Ausfälle)",
+        "labelEn": "No other neurological deficit (keine weiteren Ausfälle)",
+        "keywords": ["keine weiteren"]
+      },
+      {
+        "label": "Quloq ko‘rigi va borrelioz testi (Otoskopie, Borrelien)",
+        "labelRu": "Отоскопия и тест на боррелиоз (Otoskopie, Borrelien)",
+        "labelTr": "Otoskopi ve Borrelia testi (Otoskopie, Borrelien)",
+        "labelEn": "Otoscopy and Lyme test (Otoskopie, Borrelien)",
+        "keywords": ["otoskopie", "borrelien"]
+      },
+      {
+        "label": "Diagnoz: idiopatik yuz nervi falaji (Bell-Parese)",
+        "labelRu": "Диагноз: идиопатический парез лицевого нерва (Bell-Parese)",
+        "labelTr": "Tanı: idiyopatik fasiyal paralizi (Bell-Parese)",
+        "labelEn": "Diagnosis: idiopathic facial palsy (Bell-Parese)",
+        "keywords": ["bell", "idiopathisch"]
+      },
+      {
+        "label": "Davolash: prednizolon (Prednisolon)",
+        "labelRu": "Лечение: преднизолон (Prednisolon)",
+        "labelTr": "Tedavi: prednizolon (Prednisolon)",
+        "labelEn": "Treatment: prednisolone (Prednisolon)",
+        "keywords": ["prednisolon"]
+      },
+      {
+        "label": "Tavsiya: ko‘zni himoya qilish (Uhrglasverband, Augensalbe)",
+        "labelRu": "Рекомендация: защита глаза (Uhrglasverband, Augensalbe)",
+        "labelTr": "Öneri: göz koruması (Uhrglasverband, Augensalbe)",
+        "labelEn": "Recommendation: eye protection (Uhrglasverband, Augensalbe)",
+        "keywords": ["uhrglasverband", "augensalbe"]
+      },
+      {
+        "label": "Tavsiya: yaxshi prognoz va nazorat (Prognose)",
+        "labelRu": "Рекомендация: хороший прогноз и контроль (Prognose)",
+        "labelTr": "Öneri: iyi prognoz ve kontrol (Prognose)",
+        "labelEn": "Recommendation: good prognosis and follow-up (Prognose)",
+        "keywords": ["prognose", "kontrolle"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Thomas Becker, 42 Jahre, der vom 07.10.2026 bis zum 07.10.2026 in unserer neurologischen Notaufnahme (ambulant) behandelt wurde.\n\nAnamnese:\nDer Patient bemerkte seit dem Morgen eine Schwäche der linken Gesichtshälfte mit inkomplettem Lidschluss, Geschmacksstörung und Hyperakusis links. Am Vortag bestanden retroaurikuläre Schmerzen links.\n\nBefunde:\nEs zeigte sich eine periphere Fazialisparese links unter Beteiligung des Stirnastes. Es bestanden keine weiteren neurologischen Ausfälle. In der Otoskopie fanden sich keine Bläschen. Die Borrelien-Serologie war negativ, der Blutzucker normal.\n\nDiagnose:\nIdiopathische periphere Fazialisparese links (Bell-Parese).\n\nTherapie:\nWir begannen eine Therapie mit Prednisolon 60 mg für fünf Tage mit anschließendem Ausschleichen. Zum Schutz der Hornhaut verordneten wir Augentropfen tagsüber sowie Augensalbe und einen Uhrglasverband nachts.\n\nProcedere:\nDie Prognose ist gut, bei über 80 % der Patienten bildet sich die Parese innerhalb von Wochen bis Monaten vollständig zurück. Wir empfehlen eine neurologische Kontrolle in vier Wochen. Bei zusätzlichen Ausfällen, Bläschen am Ohr oder fehlender Besserung nach drei Monaten bitten wir um erneute Vorstellung.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab101",
+    "caseId": "c123",
+    "title": "Normaldruckhydrozephalus",
+    "task": "Nevrologiya bo‘limidan uy shifokoriga Arztbrief yozing. Xakim triadasi, likvor chiqarish sinovi va shunt operatsiyasiga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из неврологии семейному врачу. Обратите внимание на триаду Хакима, разгрузочную пункцию и шунтирование.",
+    "taskTr": "Nöroloji servisinden aile hekimine bir Arztbrief yazın. Hakim triadına, BOS boşaltma testine ve şant ameliyatına dikkat edin.",
+    "taskEn": "Write an Arztbrief from neurology to the GP. Pay attention to Hakim’s triad, the CSF tap test and the shunt operation.",
+    "facts": [
+      "Patient: Alfred Neumann, 76 Jahre, männlich",
+      "Aufnahme: 29.09.2026, neurologische Station (Fremdanamnese durch die Tochter)",
+      "Seit 1 Jahr kleinschrittige, breitbasige, „magnetische“ Gangstörung mit Stürzen, kognitive Verlangsamung, seit 3 Monaten Dranginkontinenz",
+      "cMRT: Erweiterung der Seitenventrikel (Evans-Index 0,38), enge hochparietale Sulci, keine relevante Atrophie",
+      "Liquorablassversuch (40 ml): deutliche Besserung von Gehgeschwindigkeit und Schrittlänge am Folgetag; Liquor unauffällig",
+      "Neuropsychologie: leichte frontal-exekutive Störung",
+      "Neurochirurgie: Anlage eines ventrikuloperitonealen Shunts am 06.10.2026"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patient ma’lumotlari (Herr Neumann)",
+        "labelRu": "Данные пациента (Herr Neumann)",
+        "labelTr": "Hasta bilgileri (Herr Neumann)",
+        "labelEn": "Patient data (Herr Neumann)",
+        "keywords": ["neumann"]
+      },
+      {
+        "label": "Yurish buzilishi va yiqilishlar (magnetische Gangstörung)",
+        "labelRu": "Нарушение ходьбы и падения (magnetische Gangstörung)",
+        "labelTr": "Yürüme bozukluğu ve düşmeler (magnetische Gangstörung)",
+        "labelEn": "Gait disorder and falls (magnetische Gangstörung)",
+        "keywords": ["gangstörung", "stürze"]
+      },
+      {
+        "label": "Kognitiv sustlik (kognitive Verlangsamung)",
+        "labelRu": "Когнитивное замедление (kognitive Verlangsamung)",
+        "labelTr": "Bilişsel yavaşlama (kognitive Verlangsamung)",
+        "labelEn": "Cognitive slowing (kognitive Verlangsamung)",
+        "keywords": ["kognitiv", "verlangsamung"]
+      },
+      {
+        "label": "Siydikni tutolmaslik (Dranginkontinenz)",
+        "labelRu": "Недержание мочи (Dranginkontinenz)",
+        "labelTr": "İdrar kaçırma (Dranginkontinenz)",
+        "labelEn": "Urinary incontinence (Dranginkontinenz)",
+        "keywords": ["inkontinenz"]
+      },
+      {
+        "label": "MRT: qorinchalar kengaygan (Evans-Index)",
+        "labelRu": "МРТ: расширение желудочков (Evans-Index)",
+        "labelTr": "MR: ventrikül genişlemesi (Evans-Index)",
+        "labelEn": "MRI: enlarged ventricles (Evans-Index)",
+        "keywords": ["ventrikel", "evans"]
+      },
+      {
+        "label": "Likvor chiqarish sinovida yaxshilanish (Liquorablassversuch)",
+        "labelRu": "Улучшение после разгрузочной пункции (Liquorablassversuch)",
+        "labelTr": "BOS boşaltma testinde düzelme (Liquorablassversuch)",
+        "labelEn": "Improvement after tap test (Liquorablassversuch)",
+        "keywords": ["liquorablassversuch", "besserung"]
+      },
+      {
+        "label": "Diagnoz: normotenziv gidrotsefaliya (Normaldruckhydrozephalus)",
+        "labelRu": "Диагноз: нормотензивная гидроцефалия (Normaldruckhydrozephalus)",
+        "labelTr": "Tanı: normal basınçlı hidrosefali (Normaldruckhydrozephalus)",
+        "labelEn": "Diagnosis: normal pressure hydrocephalus (Normaldruckhydrozephalus)",
+        "keywords": ["normaldruckhydrozephalus"]
+      },
+      {
+        "label": "Davolash: ventrikuloperitoneal shunt (VP-Shunt)",
+        "labelRu": "Лечение: вентрикулоперитонеальный шунт (VP-Shunt)",
+        "labelTr": "Tedavi: ventriküloperitoneal şant (VP-Shunt)",
+        "labelEn": "Treatment: ventriculoperitoneal shunt (VP-Shunt)",
+        "keywords": ["shunt"]
+      },
+      {
+        "label": "Tavsiya: shunt asoratlari belgilarini kuzatish va fizioterapiya (Physiotherapie)",
+        "labelRu": "Рекомендация: наблюдение за признаками осложнений шунта и физиотерапия (Physiotherapie)",
+        "labelTr": "Öneri: şant komplikasyonlarının izlenmesi ve fizyoterapi (Physiotherapie)",
+        "labelEn": "Recommendation: watch for shunt complications and physiotherapy (Physiotherapie)",
+        "keywords": ["physiotherapie", "kopfschmerzen", "fieber"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Alfred Neumann, 76 Jahre, der vom 29.09.2026 bis zum 12.10.2026 in unserer neurologischen Abteilung behandelt wurde.\n\nAnamnese:\nFremdanamnestisch berichtete die Tochter über eine seit einem Jahr zunehmende kleinschrittige, breitbasige, „magnetische“ Gangstörung mit mehreren Stürzen sowie eine kognitive Verlangsamung. Seit drei Monaten besteht eine Dranginkontinenz.\n\nBefunde:\nIm cMRT zeigte sich eine Erweiterung der Seitenventrikel mit einem Evans-Index von 0,38 bei engen hochparietalen Sulci ohne relevante Atrophie. Nach einem Liquorablassversuch von 40 ml besserten sich Gehgeschwindigkeit und Schrittlänge am Folgetag deutlich; der Liquor war unauffällig. Neuropsychologisch fand sich eine leichte frontal-exekutive Störung.\n\nDiagnose:\nNormaldruckhydrozephalus (Hakim-Trias).\n\nTherapie und Verlauf:\nAm 06.10.2026 erfolgte in der Neurochirurgie die Anlage eines ventrikuloperitonealen Shunts. Der Verlauf war komplikationslos, das Gangbild besserte sich bereits deutlich.\n\nProcedere:\nWir empfehlen eine intensive Physiotherapie und eine Shuntkontrolle in der Neurochirurgie in drei Monaten. Bei Kopfschmerzen, Übelkeit, Fieber, Verschlechterung des Gangbildes oder Bewusstseinsstörungen bitten wir um sofortige Vorstellung, da dies auf eine Shuntfehlfunktion oder -infektion hinweisen kann.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab102",
+    "caseId": "c124",
+    "title": "Sinusvenenthrombose",
+    "task": "Nevrologiya bo‘limidan uy shifokoriga Arztbrief yozing. Xavf omillari, qon quyilishiga qaramay antikoagulyatsiya va kontratseptivni bekor qilishga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из неврологии семейному врачу. Обратите внимание на факторы риска, антикоагуляцию несмотря на кровоизлияние и отмену контрацептива.",
+    "taskTr": "Nöroloji servisinden aile hekimine bir Arztbrief yazın. Risk faktörlerine, kanamaya rağmen antikoagülasyona ve kontraseptifin kesilmesine dikkat edin.",
+    "taskEn": "Write an Arztbrief from neurology to the GP. Pay attention to risk factors, anticoagulation despite the haemorrhage and stopping the contraceptive pill.",
+    "facts": [
+      "Patientin: Sophie Lang, 29 Jahre, weiblich",
+      "Aufnahme: 04.10.2026, Notaufnahme",
+      "Seit 5 Tagen progrediente, lageabhängige Kopfschmerzen, Übelkeit, Verschwommensehen; heute generalisierter Krampfanfall; seit gestern Armparese rechts",
+      "Risikofaktoren: kombinierte orale Kontrazeption, Nikotin, Exsikkose nach Gastroenteritis, Mutter mit Thrombose",
+      "Fundoskopie: Stauungspapillen beidseits",
+      "MR-Venographie: Thrombose des Sinus sagittalis superior; cMRT: Stauungsblutung frontoparietal links",
+      "Therapie: Heparin i. v. (PTT-gesteuert), Levetiracetam, Pille abgesetzt; Umstellung auf Dabigatran; Parese rückläufig"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patientin ma’lumotlari (Frau Lang)",
+        "labelRu": "Данные пациентки (Frau Lang)",
+        "labelTr": "Hasta bilgileri (Frau Lang)",
+        "labelEn": "Patient data (Frau Lang)",
+        "keywords": ["lang"]
+      },
+      {
+        "label": "Asosiy shikoyat: kuchayib boruvchi bosh og‘rig‘i va tutqanoq (Kopfschmerzen, Krampfanfall)",
+        "labelRu": "Основная жалоба: нарастающая головная боль и припадок (Kopfschmerzen, Krampfanfall)",
+        "labelTr": "Ana şikâyet: artan baş ağrısı ve nöbet (Kopfschmerzen, Krampfanfall)",
+        "labelEn": "Main complaint: worsening headache and seizure (Kopfschmerzen, Krampfanfall)",
+        "keywords": ["kopfschmerz", "krampfanfall"]
+      },
+      {
+        "label": "O‘ng qo‘l falaji (Armparese rechts)",
+        "labelRu": "Парез правой руки (Armparese rechts)",
+        "labelTr": "Sağ kolda parezi (Armparese rechts)",
+        "labelEn": "Right arm weakness (Armparese rechts)",
+        "keywords": ["armparese", "parese"]
+      },
+      {
+        "label": "Xavf omillari (Kontrazeption, Nikotin)",
+        "labelRu": "Факторы риска (Kontrazeption, Nikotin)",
+        "labelTr": "Risk faktörleri (Kontrazeption, Nikotin)",
+        "labelEn": "Risk factors (Kontrazeption, Nikotin)",
+        "keywords": ["kontrazeption", "pille", "nikotin"]
+      },
+      {
+        "label": "Ko‘ruv nervi diski shishi (Stauungspapillen)",
+        "labelRu": "Застойные диски (Stauungspapillen)",
+        "labelTr": "Papil ödemi (Stauungspapillen)",
+        "labelEn": "Papilloedema (Stauungspapillen)",
+        "keywords": ["stauungspapille"]
+      },
+      {
+        "label": "MR-venografiya va qon quyilish (Stauungsblutung)",
+        "labelRu": "МР-венография и кровоизлияние (Stauungsblutung)",
+        "labelTr": "MR venografi ve kanama (Stauungsblutung)",
+        "labelEn": "MR venography and haemorrhage (Stauungsblutung)",
+        "keywords": ["venographie", "stauungsblutung"]
+      },
+      {
+        "label": "Diagnoz: sinus-venoz tromboz (Sinusvenenthrombose)",
+        "labelRu": "Диагноз: тромбоз венозного синуса (Sinusvenenthrombose)",
+        "labelTr": "Tanı: venöz sinüs trombozu (Sinusvenenthrombose)",
+        "labelEn": "Diagnosis: venous sinus thrombosis (Sinusvenenthrombose)",
+        "keywords": ["sinusvenenthrombose"]
+      },
+      {
+        "label": "Davolash: qon quyilishiga qaramay geparin (Heparin)",
+        "labelRu": "Лечение: гепарин несмотря на кровоизлияние (Heparin)",
+        "labelTr": "Tedavi: kanamaya rağmen heparin (Heparin)",
+        "labelEn": "Treatment: heparin despite the haemorrhage (Heparin)",
+        "keywords": ["heparin", "trotz"]
+      },
+      {
+        "label": "Tavsiya: dabigatran 3–12 oy, gormonal kontratseptivsiz (keine östrogenhaltige Kontrazeption)",
+        "labelRu": "Рекомендация: дабигатран 3–12 мес., без гормональной контрацепции (keine östrogenhaltige Kontrazeption)",
+        "labelTr": "Öneri: dabigatran 3–12 ay, hormonal kontraseptif yok (keine östrogenhaltige Kontrazeption)",
+        "labelEn": "Recommendation: dabigatran 3–12 months, no hormonal contraception (keine östrogenhaltige Kontrazeption)",
+        "keywords": ["dabigatran", "östrogen", "thrombophilie"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihre Patientin Frau Sophie Lang, 29 Jahre, die vom 04.10.2026 bis zum 16.10.2026 in unserer neurologischen Abteilung behandelt wurde.\n\nAnamnese:\nDie Patientin stellte sich mit seit fünf Tagen progredienten, lageabhängigen Kopfschmerzen, Übelkeit und Verschwommensehen vor. Am Aufnahmetag trat ein generalisierter Krampfanfall auf, seit dem Vortag bestand eine Armparese rechts. Als Risikofaktoren bestehen eine kombinierte orale Kontrazeption, ein Nikotinabusus und eine Exsikkose nach Gastroenteritis; die Mutter hatte mit 35 Jahren eine Beinvenenthrombose.\n\nBefunde:\nIn der Fundoskopie zeigten sich Stauungspapillen beidseits. Die MR-Venographie ergab eine Thrombose des Sinus sagittalis superior, im cMRT fand sich eine Stauungsblutung frontoparietal links.\n\nDiagnose:\nSinusvenenthrombose des Sinus sagittalis superior mit Stauungsblutung links, symptomatischem Krampfanfall und Armparese rechts.\n\nTherapie und Verlauf:\nWir begannen trotz der Stauungsblutung eine PTT-gesteuerte Heparintherapie, da sie die Thrombose und damit die Blutung behandelt. Zusätzlich erhielt die Patientin Levetiracetam, die Pille wurde abgesetzt. Die Kopfschmerzen und die Parese bildeten sich zurück. Vor Entlassung erfolgte die Umstellung auf Dabigatran.\n\nProcedere:\nDie Antikoagulation mit Dabigatran sollte drei bis zwölf Monate fortgeführt werden. Eine östrogenhaltige Kontrazeption ist künftig kontraindiziert, wir empfehlen eine nicht hormonelle Verhütung. Eine Thrombophilie-Diagnostik ist nach Abschluss der Antikoagulation geplant, ebenso ein Kontroll-MRT in drei Monaten. Eine Nikotinkarenz ist dringend angeraten.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab103",
+    "caseId": "c125",
+    "title": "Karpaltunnelsyndrom",
+    "task": "Nevrologiya ambulatoriyasidan uy shifokoriga Arztbrief yozing. Elektroneyrografiya, xavf omillari va operatsiya ko‘rsatmasiga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из неврологической амбулатории семейному врачу. Обратите внимание на ЭНГ, факторы риска и показания к операции.",
+    "taskTr": "Nöroloji polikliniğinden aile hekimine bir Arztbrief yazın. Elektronörografiye, risk faktörlerine ve ameliyat endikasyonuna dikkat edin.",
+    "taskEn": "Write an Arztbrief from the neurology clinic to the GP. Pay attention to the nerve conduction study, risk factors and the indication for surgery.",
+    "facts": [
+      "Patientin: Petra Schuster, 52 Jahre, weiblich",
+      "Vorstellung: 05.10.2026, neurologische Ambulanz",
+      "Seit 6 Monaten nächtliche Parästhesien in D1–D3 rechts, Besserung durch Ausschütteln; beginnende Feinmotorikstörung",
+      "Risikofaktoren: Hypothyreose, Diabetes mellitus Typ 2, Adipositas, repetitive Handbelastung (Kassiererin)",
+      "Hoffmann-Tinel- und Phalen-Test positiv; diskrete Thenaratrophie rechts",
+      "Elektroneurographie: deutlich verlängerte distale motorische Latenz des N. medianus rechts, sensible Neurographie pathologisch",
+      "TSH normal, HbA1c 7,4 %"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patientin ma’lumotlari (Frau Schuster)",
+        "labelRu": "Данные пациентки (Frau Schuster)",
+        "labelTr": "Hasta bilgileri (Frau Schuster)",
+        "labelEn": "Patient data (Frau Schuster)",
+        "keywords": ["schuster"]
+      },
+      {
+        "label": "Asosiy shikoyat: tunda qo‘lning uvishishi (nächtliche Parästhesien)",
+        "labelRu": "Основная жалоба: ночное онемение руки (nächtliche Parästhesien)",
+        "labelTr": "Ana şikâyet: gece elde uyuşma (nächtliche Parästhesien)",
+        "labelEn": "Main complaint: night-time numbness of the hand (nächtliche Parästhesien)",
+        "keywords": ["parästhesie", "nächtlich"]
+      },
+      {
+        "label": "Barmoqlar 1–3, o‘rta nerv sohasi (N. medianus)",
+        "labelRu": "Пальцы 1–3, зона срединного нерва (N. medianus)",
+        "labelTr": "1–3. parmaklar, median sinir alanı (N. medianus)",
+        "labelEn": "Fingers 1–3, median nerve area (N. medianus)",
+        "keywords": ["medianus", "d1"]
+      },
+      {
+        "label": "Klinik testlar va atrofiya (Tinel, Phalen, Thenaratrophie)",
+        "labelRu": "Клинические тесты и атрофия (Tinel, Phalen, Thenaratrophie)",
+        "labelTr": "Klinik testler ve atrofi (Tinel, Phalen, Thenaratrophie)",
+        "labelEn": "Clinical tests and wasting (Tinel, Phalen, Thenaratrophie)",
+        "keywords": ["tinel", "phalen", "thenaratrophie"]
+      },
+      {
+        "label": "Elektroneyrografiya (distale motorische Latenz)",
+        "labelRu": "Электронейрография (distale motorische Latenz)",
+        "labelTr": "Elektronörografi (distale motorische Latenz)",
+        "labelEn": "Nerve conduction study (distale motorische Latenz)",
+        "keywords": ["elektroneurographie", "latenz"]
+      },
+      {
+        "label": "Xavf omillari (Hypothyreose, Diabetes)",
+        "labelRu": "Факторы риска (Hypothyreose, Diabetes)",
+        "labelTr": "Risk faktörleri (Hypothyreose, Diabetes)",
+        "labelEn": "Risk factors (Hypothyreose, Diabetes)",
+        "keywords": ["hypothyreose", "diabetes"]
+      },
+      {
+        "label": "Diagnoz: karpal kanal sindromi (Karpaltunnelsyndrom)",
+        "labelRu": "Диагноз: синдром запястного канала (Karpaltunnelsyndrom)",
+        "labelTr": "Tanı: karpal tünel sendromu (Karpaltunnelsyndrom)",
+        "labelEn": "Diagnosis: carpal tunnel syndrome (Karpaltunnelsyndrom)",
+        "keywords": ["karpaltunnelsyndrom"]
+      },
+      {
+        "label": "Tavsiya: atrofiya tufayli operatsiya (operative Dekompression)",
+        "labelRu": "Рекомендация: операция из-за атрофии (operative Dekompression)",
+        "labelTr": "Öneri: atrofi nedeniyle ameliyat (operative Dekompression)",
+        "labelEn": "Recommendation: surgery due to wasting (operative Dekompression)",
+        "keywords": ["operativ", "dekompression"]
+      },
+      {
+        "label": "Tavsiya: operatsiyagacha tungi shina va qand nazorati (Nachtschiene)",
+        "labelRu": "Рекомендация: ночная шина до операции и контроль сахара (Nachtschiene)",
+        "labelTr": "Öneri: ameliyata kadar gece ateli ve şeker kontrolü (Nachtschiene)",
+        "labelEn": "Recommendation: night splint until surgery and glucose control (Nachtschiene)",
+        "keywords": ["nachtschiene", "blutzucker"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihre Patientin Frau Petra Schuster, 52 Jahre, die vom 05.10.2026 bis zum 05.10.2026 in unserer neurologischen Ambulanz behandelt wurde.\n\nAnamnese:\nDie Patientin berichtete über seit sechs Monaten bestehende nächtliche Parästhesien in D1–D3 rechts mit Besserung durch Ausschütteln sowie eine beginnende Feinmotorikstörung. Als Risikofaktoren bestehen eine Hypothyreose, ein Diabetes mellitus Typ 2, eine Adipositas und eine repetitive Handbelastung als Kassiererin.\n\nBefunde:\nDer Hoffmann-Tinel- und der Phalen-Test waren rechts positiv, es zeigte sich eine diskrete Thenaratrophie. In der Elektroneurographie fand sich eine deutlich verlängerte distale motorische Latenz des N. medianus rechts bei pathologischer sensibler Neurographie. Das TSH war normal, der HbA1c lag bei 7,4 %.\n\nDiagnose:\nFortgeschrittenes Karpaltunnelsyndrom rechts.\n\nProcedere:\nAufgrund der beginnenden Thenaratrophie empfehlen wir eine zeitnahe operative Dekompression des Karpaltunnels; eine Vorstellung in der Handchirurgie wurde veranlasst. Bis zur Operation sollte nachts eine Nachtschiene in Neutralstellung getragen werden. Zudem empfehlen wir eine bessere Blutzuckereinstellung.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab104",
+    "caseId": "c126",
+    "title": "Trigeminusneuralgie",
+    "task": "Nevrologiya ambulatoriyasidan uy shifokoriga Arztbrief yozing. Tipik og‘riq, MRT natijasi va karbamazepin nazoratiga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из неврологической амбулатории семейному врачу. Обратите внимание на типичную боль, результат МРТ и контроль карбамазепина.",
+    "taskTr": "Nöroloji polikliniğinden aile hekimine bir Arztbrief yazın. Tipik ağrıya, MR sonucuna ve karbamazepin takibine dikkat edin.",
+    "taskEn": "Write an Arztbrief from the neurology clinic to the GP. Pay attention to the typical pain, the MRI result and carbamazepine monitoring.",
+    "facts": [
+      "Patientin: Gertrud Klein, 67 Jahre, weiblich",
+      "Vorstellung: 06.10.2026, neurologische Ambulanz",
+      "Seit 2 Monaten blitzartige, elektrisierende Schmerzattacken rechts im Versorgungsgebiet V2/V3, wenige Sekunden, bis 30-mal täglich; Trigger: Kauen, Zähneputzen, kalter Wind",
+      "Zahnextraktion ohne Besserung; Gewichtsverlust 2 kg",
+      "Neurologisch keine Sensibilitätsstörung im Gesicht",
+      "cMRT: Gefäß-Nerv-Kontakt der A. cerebelli superior mit dem N. trigeminus rechts, keine MS-Läsionen",
+      "Natrium, Leberwerte und Blutbild normal",
+      "Therapie: Carbamazepin retard, langsam aufdosiert auf 200 mg 1-0-1"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patientin ma’lumotlari (Frau Klein)",
+        "labelRu": "Данные пациентки (Frau Klein)",
+        "labelTr": "Hasta bilgileri (Frau Klein)",
+        "labelEn": "Patient data (Frau Klein)",
+        "keywords": ["klein"]
+      },
+      {
+        "label": "Asosiy shikoyat: yuzda tok urgandek og‘riq xurujlari (elektrisierende Schmerzattacken)",
+        "labelRu": "Основная жалоба: приступы боли в лице, как удар током (elektrisierende Schmerzattacken)",
+        "labelTr": "Ana şikâyet: yüzde elektrik çarpması gibi ağrı atakları (elektrisierende Schmerzattacken)",
+        "labelEn": "Main complaint: electric-shock-like facial pain (elektrisierende Schmerzattacken)",
+        "keywords": ["elektrisierend", "schmerzattacke"]
+      },
+      {
+        "label": "Qo‘zg‘atuvchilar (Kauen, Zähneputzen)",
+        "labelRu": "Провоцирующие факторы (Kauen, Zähneputzen)",
+        "labelTr": "Tetikleyiciler (Kauen, Zähneputzen)",
+        "labelEn": "Triggers (Kauen, Zähneputzen)",
+        "keywords": ["kauen", "zähneputzen"]
+      },
+      {
+        "label": "Tish olish yordam bermagan (Zahnextraktion)",
+        "labelRu": "Удаление зуба не помогло (Zahnextraktion)",
+        "labelTr": "Diş çekimi fayda etmedi (Zahnextraktion)",
+        "labelEn": "Tooth extraction did not help (Zahnextraktion)",
+        "keywords": ["zahnextraktion"]
+      },
+      {
+        "label": "Sezgi buzilishi yo‘q (keine Sensibilitätsstörung)",
+        "labelRu": "Без нарушения чувствительности (keine Sensibilitätsstörung)",
+        "labelTr": "Duyu kaybı yok (keine Sensibilitätsstörung)",
+        "labelEn": "No sensory loss (keine Sensibilitätsstörung)",
+        "keywords": ["sensibilität"]
+      },
+      {
+        "label": "MRT: tomir-nerv kontakti (Gefäß-Nerv-Kontakt)",
+        "labelRu": "МРТ: нейроваскулярный конфликт (Gefäß-Nerv-Kontakt)",
+        "labelTr": "MR: damar-sinir teması (Gefäß-Nerv-Kontakt)",
+        "labelEn": "MRI: neurovascular contact (Gefäß-Nerv-Kontakt)",
+        "keywords": ["gefäß-nerv-kontakt", "mrt"]
+      },
+      {
+        "label": "Diagnoz: klassik uch shoxli nerv nevralgiyasi (Trigeminusneuralgie)",
+        "labelRu": "Диагноз: классическая невралгия тройничного нерва (Trigeminusneuralgie)",
+        "labelTr": "Tanı: klasik trigeminal nevralji (Trigeminusneuralgie)",
+        "labelEn": "Diagnosis: classical trigeminal neuralgia (Trigeminusneuralgie)",
+        "keywords": ["trigeminusneuralgie"]
+      },
+      {
+        "label": "Davolash: karbamazepin (Carbamazepin)",
+        "labelRu": "Лечение: карбамазепин (Carbamazepin)",
+        "labelTr": "Tedavi: karbamazepin (Carbamazepin)",
+        "labelEn": "Treatment: carbamazepine (Carbamazepin)",
+        "keywords": ["carbamazepin"]
+      },
+      {
+        "label": "Tavsiya: natriy va qon tahlili nazorati, kerak bo‘lsa operatsiya (Natriumkontrolle, mikrovaskuläre Dekompression)",
+        "labelRu": "Рекомендация: контроль натрия и крови, при необходимости операция (Natriumkontrolle, mikrovaskuläre Dekompression)",
+        "labelTr": "Öneri: sodyum ve kan takibi, gerekirse ameliyat (Natriumkontrolle, mikrovaskuläre Dekompression)",
+        "labelEn": "Recommendation: monitor sodium and blood count, surgery if needed (Natriumkontrolle, mikrovaskuläre Dekompression)",
+        "keywords": ["natrium", "dekompression"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihre Patientin Frau Gertrud Klein, 67 Jahre, die vom 06.10.2026 bis zum 06.10.2026 in unserer neurologischen Ambulanz behandelt wurde.\n\nAnamnese:\nDie Patientin berichtete über seit zwei Monaten bestehende blitzartige, elektrisierende Schmerzattacken rechts im Versorgungsgebiet von V2 und V3, die wenige Sekunden dauern und bis zu 30-mal täglich auftreten. Ausgelöst werden sie durch Kauen, Sprechen, Zähneputzen und kalten Wind. Eine Zahnextraktion brachte keine Besserung. Aus Angst vor dem Kauen hat sie 2 kg abgenommen.\n\nBefunde:\nNeurologisch fand sich keine Sensibilitätsstörung im Gesicht. Im cMRT zeigte sich ein Gefäß-Nerv-Kontakt der A. cerebelli superior mit dem N. trigeminus rechts ohne Hinweis auf MS-Läsionen. Natrium, Leberwerte und Blutbild waren normal.\n\nDiagnose:\nKlassische Trigeminusneuralgie rechts (V2/V3).\n\nTherapie:\nWir begannen eine Therapie mit Carbamazepin retard und dosierten langsam auf 200 mg zweimal täglich auf.\n\nProcedere:\nUnter Carbamazepin sind Kontrollen von Natrium, Leberwerten und Blutbild nach zwei Wochen und dann vierteljährlich erforderlich; wir haben auf mögliche Wechselwirkungen hingewiesen. Bei unzureichender Wirkung oder Unverträglichkeit ist eine neurochirurgische mikrovaskuläre Dekompression eine gute Option.\n\nMit freundlichen kollegialen Grüßen"
   }
 ]

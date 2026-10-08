@@ -12721,5 +12721,1140 @@
       "Blutbild, Ferritin",
       "Diagnostische Laparoskopie"
     ]
+  },
+  {
+    "id": "c117",
+    "title": "Divertikelblutung",
+    "category": "Gastroenterologie",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Hans-Peter Ludwig",
+      "age": 77,
+      "gender": "männlich",
+      "hauptbeschwerde": "Plötzlich viel hellrotes Blut aus dem Darm"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit heute Morgen dreimal schmerzloser Abgang von reichlich hellrotem und dunkelrotem Blut mit Koageln aus dem After, danach Schwindel und Schwäche. Keine Bauchschmerzen, kein Erbrechen.",
+      "vorerkrankungen": "Divertikulose (Koloskopie vor 3 Jahren), Vorhofflimmern, KHK mit Stent vor 6 Monaten.",
+      "medikamente": "Apixaban 5 mg 1-0-1, Clopidogrel 75 mg 1-0-0, Bisoprolol 5 mg 1-0-0, Atorvastatin 40 mg 0-0-1.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Verheiratet, Rentner. Ex-Raucher. Alkohol gelegentlich."
+    },
+    "sprache": [
+      {
+        "patient": "Es kam ganz viel hellrotes Blut, ohne Schmerzen.",
+        "fach": "Es besteht eine schmerzlose Hämatochezie."
+      },
+      {
+        "patient": "Ich nehme zwei Blutverdünner.",
+        "fach": "Der Patient erhält eine Kombination aus Antikoagulans und Thrombozytenaggregationshemmer."
+      },
+      {
+        "patient": "Bei der letzten Darmspiegelung hatte ich viele Ausstülpungen.",
+        "fach": "Bekannt ist eine ausgeprägte Divertikulose."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Divertikelblutung",
+        "patient": "Blutung aus einer Darmausstülpung",
+        "uz": "divertikuldan qon ketish",
+        "ru": "дивертикулярное кровотечение",
+        "tr": "divertikül kanaması",
+        "en": "diverticular bleeding"
+      },
+      {
+        "de": "Hämatochezie",
+        "patient": "frisches Blut im Stuhl",
+        "uz": "najasda yangi qon",
+        "ru": "гематохезия",
+        "tr": "hematokezya",
+        "en": "fresh blood per rectum"
+      },
+      {
+        "de": "Untere GI-Blutung",
+        "patient": "Blutung aus dem Dickdarm",
+        "uz": "pastki oshqozon-ichak qon ketishi",
+        "ru": "нижнее ЖКТ-кровотечение",
+        "tr": "alt GİS kanaması",
+        "en": "lower GI bleeding"
+      },
+      {
+        "de": "Duale Therapie",
+        "patient": "zwei blutverdünnende Medikamente zugleich",
+        "uz": "ikki xil qon suyultiruvchi terapiya",
+        "ru": "двойная антитромботическая терапия",
+        "tr": "ikili antitrombotik tedavi",
+        "en": "dual antithrombotic therapy"
+      },
+      {
+        "de": "Koloskopie",
+        "patient": "Darmspiegelung",
+        "uz": "kolonoskopiya",
+        "ru": "колоноскопия",
+        "tr": "kolonoskopi",
+        "en": "colonoscopy"
+      }
+    ],
+    "simulation": {
+      "opening": "Heute Morgen kam dreimal ganz viel Blut aus dem Darm, und jetzt ist mir schwindelig.",
+      "answers": {
+        "beginn": "Heute Morgen um sechs zum ersten Mal, dann noch zweimal.",
+        "lokalisation": "Schmerzen habe ich keine, der Bauch tut nicht weh.",
+        "charakter": "Hellrotes und dunkleres Blut mit Klumpen, bestimmt eine Tasse jedes Mal.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Mir ist schwindelig und ich bin schwach. Erbrochen habe ich nicht. Durchfall hatte ich vorher nicht.",
+        "vegetativ": "Sonst ist alles normal.",
+        "vorerkrankungen": "Bei der Darmspiegelung vor drei Jahren hatte ich viele Ausstülpungen. Ich habe Vorhofflimmern und vor einem halben Jahr einen Stent am Herzen bekommen.",
+        "medikamente": "Eliquis zweimal, Clopidogrel, Bisoprolol und Atorvastatin.",
+        "allergien": "Nein.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich bin verheiratet und Rentner.",
+        "noxen": "Ich habe früher geraucht. Alkohol nur selten."
+      }
+    },
+    "verdachtsdiagnose": "Untere gastrointestinale Blutung, am ehesten Divertikelblutung unter Antikoagulation und Thrombozytenaggregationshemmung",
+    "diagnoseKeywords": ["divertikelblutung", "untere gi-blutung", "divertikel"],
+    "differenzialdiagnosen": [
+      "Angiodysplasie",
+      "Kolonkarzinom",
+      "Ischämische Kolitis",
+      "Obere GI-Blutung mit schneller Passage",
+      "Hämorrhoidalblutung"
+    ],
+    "untersuchungen": [
+      "Vitalparameter und Schockindex",
+      "Blutbild, Gerinnung, Kreuzblut",
+      "Gastroskopie (Ausschluss obere Blutung)",
+      "Koloskopie nach Darmvorbereitung",
+      "CT-Angiographie bei massiver Blutung"
+    ]
+  },
+  {
+    "id": "c118",
+    "title": "Multiple Sklerose – Erstmanifestation mit Optikusneuritis",
+    "category": "Neurologie",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Katharina Weiß",
+      "age": 26,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Verschwommenes Sehen und Schmerzen am rechten Auge"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 4 Tagen zunehmend verschwommenes Sehen rechts, Farben wirken blass, Schmerzen bei Augenbewegungen. Vor 1 Jahr für 2 Wochen Kribbeln im linken Bein, das von selbst verschwand.",
+      "vorerkrankungen": "Keine.",
+      "medikamente": "Pille.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Tante: Multiple Sklerose.",
+      "sozialanamnese": "Ledig, Lehrerin. Raucherin (5 Zigaretten/Tag)."
+    },
+    "sprache": [
+      {
+        "patient": "Rechts sehe ich wie durch Milchglas, und Rot sieht blass aus.",
+        "fach": "Es besteht eine Visusminderung rechts mit Farbentsättigung."
+      },
+      {
+        "patient": "Wenn ich das Auge bewege, tut es weh.",
+        "fach": "Es bestehen Bulbusbewegungsschmerzen."
+      },
+      {
+        "patient": "Letztes Jahr hat mein linkes Bein zwei Wochen gekribbelt.",
+        "fach": "Vor einem Jahr bestanden passagere Sensibilitätsstörungen am linken Bein."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Multiple Sklerose",
+        "patient": "chronische Entzündung von Gehirn und Rückenmark",
+        "uz": "tarqoq skleroz",
+        "ru": "рассеянный склероз",
+        "tr": "multipl skleroz",
+        "en": "multiple sclerosis"
+      },
+      {
+        "de": "Optikusneuritis",
+        "patient": "Entzündung des Sehnervs",
+        "uz": "ko‘ruv nervi yallig‘lanishi",
+        "ru": "неврит зрительного нерва",
+        "tr": "optik nörit",
+        "en": "optic neuritis"
+      },
+      {
+        "de": "Schub",
+        "patient": "neue Beschwerden für mindestens 24 Stunden",
+        "uz": "xuruj (qo‘zish)",
+        "ru": "обострение (атака)",
+        "tr": "atak",
+        "en": "relapse"
+      },
+      {
+        "de": "Oligoklonale Banden",
+        "patient": "Entzündungszeichen im Nervenwasser",
+        "uz": "oligoklonal chiziqlar",
+        "ru": "олигоклональные полосы",
+        "tr": "oligoklonal bantlar",
+        "en": "oligoclonal bands"
+      },
+      {
+        "de": "Visuell evozierte Potenziale",
+        "patient": "Messung der Leitfähigkeit der Sehbahn",
+        "uz": "ko‘ruv chaqiruv potensiallari",
+        "ru": "зрительные вызванные потенциалы",
+        "tr": "görsel uyarılmış potansiyeller",
+        "en": "visual evoked potentials"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich sehe seit ein paar Tagen auf dem rechten Auge ganz verschwommen.",
+      "answers": {
+        "beginn": "Vor vier Tagen fing es an, es wird langsam schlimmer.",
+        "lokalisation": "Nur das rechte Auge.",
+        "charakter": "Wie durch Milchglas. Rot sieht ganz blass aus. Wenn ich das Auge bewege, tut es weh, drei von zehn.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Doppelbilder habe ich nicht. Kopfschmerzen auch nicht.",
+        "vegetativ": "Ich bin schneller müde als früher. Wasserlassen ist manchmal dringend.",
+        "vorerkrankungen": "Vor einem Jahr hat mein linkes Bein zwei Wochen gekribbelt und war etwas taub, dann ging es von selbst weg. Ich war damals nicht beim Arzt.",
+        "medikamente": "Nur die Pille.",
+        "allergien": "Nein.",
+        "familie": "Meine Tante hat MS.",
+        "sozial": "Ich bin Lehrerin.",
+        "noxen": "Ich rauche fünf Zigaretten am Tag. Alkohol selten."
+      }
+    },
+    "verdachtsdiagnose": "Optikusneuritis rechts als Schub einer schubförmig remittierenden Multiplen Sklerose",
+    "diagnoseKeywords": ["multiple sklerose", "ms", "optikusneuritis", "encephalomyelitis disseminata"],
+    "differenzialdiagnosen": [
+      "NMOSD (Neuromyelitis-optica-Spektrum)",
+      "Ischämische Optikusneuropathie",
+      "Neuroborreliose",
+      "Vitamin-B12-Mangel"
+    ],
+    "untersuchungen": [
+      "Augenärztliche Untersuchung (Visus, Fundus)",
+      "cMRT und spinales MRT mit Kontrastmittel",
+      "Lumbalpunktion (oligoklonale Banden)",
+      "Visuell evozierte Potenziale",
+      "Labor (Aquaporin-4-AK, Borrelien, B12)"
+    ]
+  },
+  {
+    "id": "c119",
+    "title": "Myasthene Krise",
+    "category": "Neurologie",
+    "difficulty": "schwer",
+    "patient": {
+      "name": "Ingeborg Hahn",
+      "age": 64,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Zunehmende Schluck- und Atemschwäche"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 3 Tagen zunehmende Schwäche, verwaschene Sprache, Schluckstörung (Flüssigkeit kommt aus der Nase), Doppelbilder, hängende Augenlider, seit heute Luftnot und schwacher Hustenstoß. Vor 1 Woche Harnwegsinfekt, mit Ciprofloxacin behandelt.",
+      "vorerkrankungen": "Myasthenia gravis seit 3 Jahren (Acetylcholinrezeptor-Antikörper positiv), Thymektomie 2024.",
+      "medikamente": "Pyridostigmin 60 mg 1-1-1-1, Azathioprin 100 mg 1-0-0. Ciprofloxacin seit 6 Tagen.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Verheiratet, Rentnerin. Nichtraucherin."
+    },
+    "sprache": [
+      {
+        "patient": "Beim Trinken kommt das Wasser aus der Nase.",
+        "fach": "Es besteht eine ausgeprägte Dysphagie mit nasaler Regurgitation."
+      },
+      {
+        "patient": "Ich bekomme schlecht Luft und kann kaum husten.",
+        "fach": "Es bestehen Dyspnoe und ein abgeschwächter Hustenstoß."
+      },
+      {
+        "patient": "Gegen die Blasenentzündung habe ich ein Antibiotikum bekommen.",
+        "fach": "Vor einer Woche wurde ein Fluorchinolon verordnet."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Myasthenia gravis",
+        "patient": "Autoimmunkrankheit mit belastungsabhängiger Muskelschwäche",
+        "uz": "miasteniya",
+        "ru": "миастения",
+        "tr": "myasthenia gravis",
+        "en": "myasthenia gravis"
+      },
+      {
+        "de": "Myasthene Krise",
+        "patient": "lebensbedrohliche Verschlechterung mit Atemschwäche",
+        "uz": "miastenik kriz",
+        "ru": "миастенический криз",
+        "tr": "miyastenik kriz",
+        "en": "myasthenic crisis"
+      },
+      {
+        "de": "Ptosis",
+        "patient": "hängendes Augenlid",
+        "uz": "qovoq tushishi (ptoz)",
+        "ru": "птоз",
+        "tr": "pitoz",
+        "en": "drooping eyelid"
+      },
+      {
+        "de": "Plasmapherese",
+        "patient": "Blutwäsche, die Antikörper entfernt",
+        "uz": "plazmaferez",
+        "ru": "плазмаферез",
+        "tr": "plazmaferez",
+        "en": "plasma exchange"
+      },
+      {
+        "de": "Vitalkapazität",
+        "patient": "maximal ausatembare Luftmenge",
+        "uz": "o‘pkaning tiriklik sig‘imi",
+        "ru": "жизненная ёмкость лёгких",
+        "tr": "vital kapasite",
+        "en": "vital capacity"
+      }
+    ],
+    "simulation": {
+      "opening": "(leise, verwaschen) Ich kann kaum schlucken … und bekomme schlecht Luft.",
+      "answers": {
+        "beginn": "Vor drei Tagen fing es an, heute ist die Luftnot dazugekommen.",
+        "lokalisation": "Die Schwäche ist überall, am schlimmsten beim Schlucken und Atmen.",
+        "charakter": "Ich bin so schwach, abends noch schlimmer. Beim Trinken kommt das Wasser aus der Nase.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Ich sehe doppelt, die Augenlider hängen. Husten kann ich kaum. Fieber habe ich nicht mehr.",
+        "vegetativ": "Ich esse kaum, weil das Schlucken so schwer ist.",
+        "vorerkrankungen": "Ich habe seit drei Jahren Myasthenie. Die Thymusdrüse wurde mir entfernt.",
+        "medikamente": "Mestinon 60 viermal am Tag und Azathioprin 100. Vor einer Woche hat der Hausarzt wegen einer Blasenentzündung Ciprofloxacin verschrieben.",
+        "allergien": "Nein.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich bin verheiratet und Rentnerin.",
+        "noxen": "Ich rauche nicht und trinke keinen Alkohol."
+      }
+    },
+    "verdachtsdiagnose": "Myasthene Krise, ausgelöst durch Harnwegsinfekt und Fluorchinolon (Ciprofloxacin)",
+    "diagnoseKeywords": ["myasthen", "krise"],
+    "differenzialdiagnosen": [
+      "Cholinerge Krise (Überdosierung)",
+      "Hirnstamminfarkt",
+      "Guillain-Barré-Syndrom",
+      "Botulismus"
+    ],
+    "untersuchungen": [
+      "Vitalkapazität (wiederholt)",
+      "Blutgasanalyse",
+      "Schluckdiagnostik",
+      "Infektparameter, Urinstatus",
+      "Röntgen-Thorax (Aspiration)"
+    ],
+    "oberarzt": {
+      "therapie": [
+        "Intensivüberwachung (Vitalkapazität)",
+        "Intubation bei Ateminsuffizienz",
+        "Plasmapherese oder Immunglobuline",
+        "Ciprofloxacin absetzen (Alternativantibiotikum)",
+        "Pyridostigmin anpassen",
+        "Kortison"
+      ],
+      "komplikationen": [
+        "Ateminsuffizienz (Beatmung)",
+        "Aspirationspneumonie",
+        "Cholinerge Krise",
+        "Thrombose",
+        "Infektionen unter Immunsuppression"
+      ]
+    }
+  },
+  {
+    "id": "c120",
+    "title": "Clusterkopfschmerz",
+    "category": "Neurologie",
+    "difficulty": "leicht",
+    "patient": {
+      "name": "Marco Schulze",
+      "age": 35,
+      "gender": "männlich",
+      "hauptbeschwerde": "Nächtliche, extrem starke Kopfschmerzen hinter dem rechten Auge"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 2 Wochen täglich 1–2 Attacken extrem starker, bohrender Schmerzen hinter dem rechten Auge (NRS 10/10), meist nachts um 2 Uhr, Dauer 45–90 Minuten. Dabei rechts tränendes, gerötetes Auge, laufende Nase, hängendes Lid. Unruhe, läuft umher. Ähnliche Phase vor 1 Jahr im Herbst.",
+      "vorerkrankungen": "Keine.",
+      "medikamente": "Ibuprofen ohne Wirkung.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Verheiratet, Koch. Raucher (20 Zigaretten/Tag), Alkohol löst Attacken aus."
+    },
+    "sprache": [
+      {
+        "patient": "Es ist, als würde mir jemand ein glühendes Messer ins Auge stechen.",
+        "fach": "Es bestehen streng einseitige, retroorbitale Schmerzen von stärkster Intensität."
+      },
+      {
+        "patient": "Das Auge tränt, die Nase läuft und das Lid hängt.",
+        "fach": "Es bestehen ipsilaterale autonome Begleitsymptome."
+      },
+      {
+        "patient": "Ich kann nicht liegen, ich laufe im Zimmer herum.",
+        "fach": "Während der Attacken besteht eine motorische Unruhe."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Clusterkopfschmerz",
+        "patient": "anfallsartige, einseitige Kopfschmerzen in Episoden",
+        "uz": "klaster bosh og‘rig‘i",
+        "ru": "кластерная головная боль",
+        "tr": "küme baş ağrısı",
+        "en": "cluster headache"
+      },
+      {
+        "de": "Retroorbital",
+        "patient": "hinter dem Auge",
+        "uz": "ko‘z orqasida",
+        "ru": "ретроорбитальный",
+        "tr": "göz arkasında",
+        "en": "behind the eye"
+      },
+      {
+        "de": "Sauerstoffinhalation",
+        "patient": "Einatmen von reinem Sauerstoff gegen die Attacke",
+        "uz": "kislorod ingalyatsiyasi",
+        "ru": "ингаляция кислорода",
+        "tr": "oksijen inhalasyonu",
+        "en": "oxygen inhalation"
+      },
+      {
+        "de": "Triptan",
+        "patient": "Medikament gegen Migräne- und Clusterattacken",
+        "uz": "triptan",
+        "ru": "триптан",
+        "tr": "triptan",
+        "en": "triptan"
+      },
+      {
+        "de": "Verapamil",
+        "patient": "Medikament zur Vorbeugung von Clusterattacken",
+        "uz": "verapamil",
+        "ru": "верапамил",
+        "tr": "verapamil",
+        "en": "verapamil"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe seit zwei Wochen jede Nacht so furchtbare Kopfschmerzen, dass ich durchdrehe.",
+      "answers": {
+        "beginn": "Seit zwei Wochen jede Nacht, meistens um zwei Uhr. Letztes Jahr im Herbst hatte ich so eine Phase schon einmal.",
+        "lokalisation": "Immer rechts, hinter dem Auge und an der Schläfe.",
+        "charakter": "Als würde jemand ein glühendes Messer ins Auge stechen, zehn von zehn. Es dauert eine Dreiviertelstunde bis anderthalb Stunden.",
+        "ausstrahlung": "In die rechte Schläfe und den Oberkiefer.",
+        "begleit": "Das rechte Auge tränt und ist rot, die Nase läuft, das Lid hängt. Ich kann nicht liegen, ich laufe im Zimmer herum. Übelkeit habe ich kaum.",
+        "vegetativ": "Ich schlafe kaum noch.",
+        "vorerkrankungen": "Keine.",
+        "medikamente": "Ibuprofen hilft gar nicht.",
+        "allergien": "Nein.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich bin verheiratet und Koch.",
+        "noxen": "Ich rauche eine Schachtel am Tag. Wenn ich Alkohol trinke, kommt sofort eine Attacke."
+      }
+    },
+    "verdachtsdiagnose": "Episodischer Clusterkopfschmerz rechts (aktive Phase)",
+    "diagnoseKeywords": ["cluster"],
+    "differenzialdiagnosen": [
+      "Migräne",
+      "Trigeminusneuralgie",
+      "Akutes Winkelblockglaukom",
+      "Sinusitis",
+      "Paroxysmale Hemikranie"
+    ],
+    "untersuchungen": [
+      "Neurologische Untersuchung",
+      "cMRT (einmalig zum Ausschluss sekundärer Ursachen)",
+      "Kopfschmerztagebuch",
+      "EKG vor Verapamil"
+    ]
+  },
+  {
+    "id": "c121",
+    "title": "Status epilepticus",
+    "category": "Neurologie",
+    "difficulty": "schwer",
+    "patient": {
+      "name": "Robert Krause",
+      "age": 45,
+      "gender": "männlich",
+      "hauptbeschwerde": "Krampfanfall, der nicht aufhört"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Fremdanamnestisch (Ehefrau): seit ca. 10 Minuten generalisierter tonisch-klonischer Anfall, davor zwei Anfälle ohne Wiedererlangen des Bewusstseins. Zungenbiss, Einnässen. Bekannte Epilepsie, seit 1 Woche Medikament wegen Lieferengpass nicht genommen.",
+      "vorerkrankungen": "Strukturelle Epilepsie nach Schädel-Hirn-Trauma 2015.",
+      "medikamente": "Levetiracetam 1000 mg 1-0-1 (seit 1 Woche nicht eingenommen).",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Verheiratet, Lagerist. Alkohol am Wochenende reichlich. Nichtraucher."
+    },
+    "sprache": [
+      {
+        "patient": "Er krampft schon seit zehn Minuten und wacht nicht auf.",
+        "fach": "Es besteht ein generalisierter tonisch-klonischer Anfall seit über fünf Minuten."
+      },
+      {
+        "patient": "Er hat seine Tabletten eine Woche nicht genommen, die Apotheke hatte keine.",
+        "fach": "Die antikonvulsive Medikation wurde seit einer Woche nicht eingenommen."
+      },
+      {
+        "patient": "Er hat sich auf die Zunge gebissen und eingenässt.",
+        "fach": "Es bestehen ein lateraler Zungenbiss und Urinabgang."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Status epilepticus",
+        "patient": "Anfall länger als 5 Minuten oder Anfälle ohne Erholung dazwischen",
+        "uz": "epileptik status",
+        "ru": "эпилептический статус",
+        "tr": "status epileptikus",
+        "en": "status epilepticus"
+      },
+      {
+        "de": "Benzodiazepin",
+        "patient": "Beruhigungsmittel, das den Anfall stoppt",
+        "uz": "benzodiazepin",
+        "ru": "бензодиазепин",
+        "tr": "benzodiazepin",
+        "en": "benzodiazepine"
+      },
+      {
+        "de": "Postiktal",
+        "patient": "nach dem Anfall",
+        "uz": "xurujdan keyingi",
+        "ru": "постиктальный",
+        "tr": "postiktal",
+        "en": "after the seizure"
+      },
+      {
+        "de": "Antikonvulsivum",
+        "patient": "Medikament gegen Krampfanfälle",
+        "uz": "tutqanoqqa qarshi dori",
+        "ru": "противосудорожный препарат",
+        "tr": "antikonvülzan",
+        "en": "anticonvulsant"
+      },
+      {
+        "de": "Aspiration",
+        "patient": "Mageninhalt gelangt in die Lunge",
+        "uz": "aspiratsiya",
+        "ru": "аспирация",
+        "tr": "aspirasyon",
+        "en": "aspiration"
+      }
+    ],
+    "simulation": {
+      "opening": "(Ehefrau) Mein Mann krampft seit zehn Minuten und wacht nicht auf!",
+      "answers": {
+        "beginn": "(Ehefrau) Vor etwa zwanzig Minuten der erste Anfall, dann noch einer, und jetzt hört es nicht mehr auf.",
+        "lokalisation": "(Ehefrau) Der ganze Körper zuckt, Arme und Beine.",
+        "charakter": "(Ehefrau) Erst ganz steif, dann rhythmische Zuckungen. Dazwischen ist er nicht wach geworden.",
+        "ausstrahlung": "(Ehefrau) —",
+        "begleit": "(Ehefrau) Er hat sich auf die Zunge gebissen und eingenässt. Er ist ganz blau um die Lippen.",
+        "vegetativ": "(Ehefrau) Er hat in den letzten Tagen schlecht geschlafen.",
+        "vorerkrankungen": "(Ehefrau) Er hat Epilepsie seit einem Unfall 2015 mit Kopfverletzung.",
+        "medikamente": "(Ehefrau) Levetiracetam 1000 morgens und abends. Seit einer Woche hat er es nicht genommen, die Apotheke hatte es nicht da.",
+        "allergien": "(Ehefrau) Keine.",
+        "familie": "(Ehefrau) Nichts Besonderes.",
+        "sozial": "(Ehefrau) Wir sind verheiratet, er arbeitet im Lager.",
+        "noxen": "(Ehefrau) Am Wochenende trinkt er viel, gestern auch. Er raucht nicht."
+      }
+    },
+    "verdachtsdiagnose": "Generalisierter konvulsiver Status epilepticus bei struktureller Epilepsie nach Absetzen von Levetiracetam (zusätzlich Alkohol, Schlafmangel)",
+    "diagnoseKeywords": ["status epilepticus", "status"],
+    "differenzialdiagnosen": [
+      "Hypoglykämie",
+      "Alkoholentzugsanfall",
+      "Intrakranielle Blutung",
+      "Psychogener nicht-epileptischer Anfall",
+      "Meningoenzephalitis"
+    ],
+    "untersuchungen": [
+      "Blutzucker (sofort)",
+      "Vitalparameter, Sauerstoffsättigung",
+      "Labor (Elektrolyte, Levetiracetamspiegel, CK, Alkohol)",
+      "cCT",
+      "EEG (nonkonvulsiver Status?)"
+    ],
+    "oberarzt": {
+      "therapie": [
+        "Benzodiazepin sofort (Lorazepam i. v. oder Midazolam i. m.)",
+        "Levetiracetam oder Valproat i. v.",
+        "Atemwegssicherung und Sauerstoff",
+        "Blutzucker und Thiamin",
+        "Intubationsnarkose bei refraktärem Status",
+        "EEG-Monitoring"
+      ],
+      "komplikationen": [
+        "Aspirationspneumonie",
+        "Hypoxischer Hirnschaden",
+        "Rhabdomyolyse",
+        "Laktatazidose",
+        "Atemdepression durch Benzodiazepine",
+        "Verletzungen (Schulterluxation)"
+      ]
+    }
+  },
+  {
+    "id": "c122",
+    "title": "Idiopathische Fazialisparese (Bell-Parese)",
+    "category": "Neurologie",
+    "difficulty": "leicht",
+    "patient": {
+      "name": "Thomas Becker",
+      "age": 42,
+      "gender": "männlich",
+      "hauptbeschwerde": "Hängender Mundwinkel links seit heute Morgen"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit dem Aufwachen hängender Mundwinkel links, Auge links schließt nicht vollständig, Geschmack verändert, Geräusche links lauter. Gestern leichte Schmerzen hinter dem linken Ohr. Keine Arm- oder Beinschwäche, keine Sprachstörung.",
+      "vorerkrankungen": "Keine.",
+      "medikamente": "Keine.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Verheiratet, Bankkaufmann. Keine Zeckenstiche erinnerlich, kein Hautausschlag. Nichtraucher."
+    },
+    "sprache": [
+      {
+        "patient": "Mein linker Mundwinkel hängt und ich kann die Stirn links nicht runzeln.",
+        "fach": "Es besteht eine periphere Fazialisparese links mit Beteiligung der Stirn."
+      },
+      {
+        "patient": "Alles klingt links lauter.",
+        "fach": "Es besteht eine Hyperakusis links."
+      },
+      {
+        "patient": "Arme und Beine sind ganz normal.",
+        "fach": "Weitere neurologische Ausfälle bestehen nicht."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Periphere Fazialisparese",
+        "patient": "Lähmung des Gesichtsnervs mit Beteiligung der Stirn",
+        "uz": "periferik yuz nervi falaji",
+        "ru": "периферический парез лицевого нерва",
+        "tr": "periferik fasiyal paralizi",
+        "en": "peripheral facial palsy"
+      },
+      {
+        "de": "Lagophthalmus",
+        "patient": "Auge schließt nicht vollständig",
+        "uz": "ko‘zning to‘liq yumilmasligi (lagoftalm)",
+        "ru": "лагофтальм",
+        "tr": "lagoftalmi",
+        "en": "incomplete eye closure"
+      },
+      {
+        "de": "Hyperakusis",
+        "patient": "Geräusche werden zu laut wahrgenommen",
+        "uz": "giperakuziya (tovushlarni o‘ta baland eshitish)",
+        "ru": "гиперакузия",
+        "tr": "hiperakuzi",
+        "en": "sound sensitivity"
+      },
+      {
+        "de": "Uhrglasverband",
+        "patient": "Schutzverband für das Auge in der Nacht",
+        "uz": "ko‘zni himoya qiluvchi soat oynasi bog‘lami",
+        "ru": "часовое стекло (повязка для глаза)",
+        "tr": "saat camı bandajı",
+        "en": "eye shield"
+      },
+      {
+        "de": "Glukokortikoid",
+        "patient": "Kortisonpräparat",
+        "uz": "glyukokortikoid",
+        "ru": "глюкокортикоид",
+        "tr": "glukokortikoid",
+        "en": "corticosteroid"
+      }
+    ],
+    "simulation": {
+      "opening": "Als ich heute Morgen in den Spiegel geschaut habe, hing mein linker Mundwinkel. Habe ich einen Schlaganfall?",
+      "answers": {
+        "beginn": "Heute Morgen beim Aufwachen habe ich es bemerkt.",
+        "lokalisation": "Die ganze linke Gesichtshälfte, auch die Stirn. Gestern tat es hinter dem linken Ohr etwas weh.",
+        "charakter": "Die linke Seite ist wie gelähmt. Ich kann die Stirn links nicht runzeln und das Auge nicht ganz zumachen.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Beim Trinken läuft es links aus dem Mund. Das Essen schmeckt anders. Alles klingt links lauter. Arme und Beine sind ganz normal, ich kann normal sprechen.",
+        "vegetativ": "Das linke Auge ist trocken. Sonst normal.",
+        "vorerkrankungen": "Ich bin gesund. Vor zwei Wochen hatte ich eine Erkältung.",
+        "medikamente": "Keine.",
+        "allergien": "Nein.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich bin verheiratet und Bankkaufmann. An einen Zeckenstich erinnere ich mich nicht, Bläschen am Ohr habe ich nicht.",
+        "noxen": "Ich rauche nicht, Alkohol gelegentlich."
+      }
+    },
+    "verdachtsdiagnose": "Idiopathische periphere Fazialisparese links (Bell-Parese)",
+    "diagnoseKeywords": ["fazialisparese", "bell"],
+    "differenzialdiagnosen": [
+      "Schlaganfall (zentrale Parese)",
+      "Neuroborreliose",
+      "Zoster oticus (Ramsay-Hunt)",
+      "Parotistumor",
+      "Guillain-Barré-Syndrom"
+    ],
+    "untersuchungen": [
+      "Neurologische Untersuchung (Stirnast)",
+      "Otoskopie (Bläschen?)",
+      "Borrelien-Serologie",
+      "Blutzucker",
+      "Bildgebung nur bei atypischem Verlauf"
+    ]
+  },
+  {
+    "id": "c123",
+    "title": "Normaldruckhydrozephalus",
+    "category": "Neurologie",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Alfred Neumann",
+      "age": 76,
+      "gender": "männlich",
+      "hauptbeschwerde": "Gangunsicherheit, Vergesslichkeit und Harninkontinenz"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Fremdanamnestisch (Tochter) seit ca. 1 Jahr zunehmend kleinschrittiger, breitbeiniger Gang („wie am Boden festgeklebt“), mehrere Stürze, Vergesslichkeit und Verlangsamung, seit 3 Monaten Harninkontinenz mit Drang.",
+      "vorerkrankungen": "Arterielle Hypertonie, benigne Prostatahyperplasie.",
+      "medikamente": "Ramipril 5 mg 1-0-0, Tamsulosin 0,4 mg 0-0-1.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Verwitwet, lebt allein, Tochter hilft. Früher Ingenieur. Ex-Raucher."
+    },
+    "sprache": [
+      {
+        "patient": "Er läuft, als wären die Füße am Boden festgeklebt.",
+        "fach": "Es besteht eine magnetische, kleinschrittige Gangstörung."
+      },
+      {
+        "patient": "Er vergisst viel und ist langsamer geworden.",
+        "fach": "Es bestehen kognitive Defizite mit Verlangsamung."
+      },
+      {
+        "patient": "Er schafft es nicht mehr rechtzeitig zur Toilette.",
+        "fach": "Es besteht eine Dranginkontinenz."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Normaldruckhydrozephalus",
+        "patient": "zu viel Nervenwasser in den Hirnkammern bei normalem Druck",
+        "uz": "normotenziv gidrotsefaliya",
+        "ru": "нормотензивная гидроцефалия",
+        "tr": "normal basınçlı hidrosefali",
+        "en": "normal pressure hydrocephalus"
+      },
+      {
+        "de": "Hakim-Trias",
+        "patient": "Gangstörung, Gedächtnisstörung und Inkontinenz zusammen",
+        "uz": "Xakim triadasi",
+        "ru": "триада Хакима",
+        "tr": "Hakim triadı",
+        "en": "Hakim’s triad"
+      },
+      {
+        "de": "Liquorablassversuch",
+        "patient": "Probe-Entnahme von Nervenwasser, um Besserung zu prüfen",
+        "uz": "sinov uchun likvor chiqarish",
+        "ru": "разгрузочная люмбальная пункция",
+        "tr": "BOS boşaltma testi",
+        "en": "CSF tap test"
+      },
+      {
+        "de": "Ventrikuloperitonealer Shunt",
+        "patient": "Schlauch, der Nervenwasser in den Bauch ableitet",
+        "uz": "ventrikuloperitoneal shunt",
+        "ru": "вентрикулоперитонеальный шунт",
+        "tr": "ventriküloperitoneal şant",
+        "en": "ventriculoperitoneal shunt"
+      },
+      {
+        "de": "Ventrikelerweiterung",
+        "patient": "vergrößerte Hirnkammern",
+        "uz": "miya qorinchalarining kengayishi",
+        "ru": "расширение желудочков",
+        "tr": "ventrikül genişlemesi",
+        "en": "ventricular enlargement"
+      }
+    ],
+    "simulation": {
+      "opening": "(Tochter) Mein Vater läuft seit einem Jahr immer schlechter, vergisst viel und schafft es nicht mehr zur Toilette.",
+      "answers": {
+        "beginn": "(Tochter) Seit etwa einem Jahr langsam schlimmer, die Inkontinenz seit drei Monaten.",
+        "lokalisation": "(Patient) Schmerzen habe ich keine.",
+        "charakter": "(Tochter) Er macht ganz kleine Schritte, breitbeinig, als wären die Füße am Boden festgeklebt. Das Losgehen fällt ihm schwer.",
+        "ausstrahlung": "(Tochter) —",
+        "begleit": "(Tochter) Er ist dreimal gestürzt. Er vergisst Termine, ist langsamer im Denken. Zittern hat er nicht.",
+        "vegetativ": "(Patient) Ich muss plötzlich ganz dringend und schaffe es nicht mehr rechtzeitig.",
+        "vorerkrankungen": "(Tochter) Bluthochdruck und eine vergrößerte Prostata.",
+        "medikamente": "(Tochter) Ramipril 5 morgens und Tamsulosin abends.",
+        "allergien": "(Tochter) Keine.",
+        "familie": "(Tochter) Nichts Besonderes.",
+        "sozial": "(Tochter) Er ist Witwer, lebt allein, ich helfe ihm. Er war Ingenieur.",
+        "noxen": "(Patient) Früher habe ich geraucht. Alkohol trinke ich kaum."
+      }
+    },
+    "verdachtsdiagnose": "Normaldruckhydrozephalus (Hakim-Trias)",
+    "diagnoseKeywords": ["normaldruckhydrozephalus", "hydrozephalus", "nph"],
+    "differenzialdiagnosen": [
+      "Morbus Parkinson",
+      "Vaskuläre Enzephalopathie",
+      "Alzheimer-Demenz",
+      "Zervikale Myelopathie"
+    ],
+    "untersuchungen": [
+      "cMRT (Ventrikelerweiterung)",
+      "Liquorablassversuch (Spinal-Tap-Test) mit Ganganalyse",
+      "Neuropsychologische Testung",
+      "Urologische Abklärung"
+    ]
+  },
+  {
+    "id": "c124",
+    "title": "Sinusvenenthrombose",
+    "category": "Neurologie",
+    "difficulty": "schwer",
+    "patient": {
+      "name": "Sophie Lang",
+      "age": 29,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Zunehmende Kopfschmerzen seit 5 Tagen und ein Krampfanfall"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 5 Tagen zunehmende holozephale Kopfschmerzen, stärker im Liegen und morgens, Übelkeit, verschwommenes Sehen. Heute Morgen erstmals generalisierter Krampfanfall. Seit gestern Schwäche im rechten Arm.",
+      "vorerkrankungen": "Migräne ohne Aura.",
+      "medikamente": "Kombinierte orale Kontrazeption (seit 6 Monaten neues Präparat).",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Mutter: tiefe Beinvenenthrombose mit 35.",
+      "sozialanamnese": "Ledig, Krankenschwester. Raucherin (10 Zigaretten/Tag). Kürzlich Magen-Darm-Infekt mit wenig Trinken."
+    },
+    "sprache": [
+      {
+        "patient": "Diese Kopfschmerzen sind anders als meine Migräne, sie werden jeden Tag schlimmer.",
+        "fach": "Es bestehen progrediente, neuartige Kopfschmerzen."
+      },
+      {
+        "patient": "Im Liegen und morgens ist es am schlimmsten.",
+        "fach": "Die Kopfschmerzen sind lageabhängig und morgens betont."
+      },
+      {
+        "patient": "Ich nehme die Pille und rauche.",
+        "fach": "Als Risikofaktoren bestehen eine orale Kontrazeption und ein Nikotinabusus."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Sinusvenenthrombose",
+        "patient": "Blutgerinnsel in den großen Hirnvenen",
+        "uz": "miya venoz sinuslari trombozi",
+        "ru": "тромбоз венозных синусов",
+        "tr": "serebral venöz sinüs trombozu",
+        "en": "cerebral venous sinus thrombosis"
+      },
+      {
+        "de": "Stauungspapille",
+        "patient": "Schwellung des Sehnervenkopfs bei Hirndruck",
+        "uz": "ko‘ruv nervi diskining shishi",
+        "ru": "застойный диск зрительного нерва",
+        "tr": "papil ödemi",
+        "en": "papilloedema"
+      },
+      {
+        "de": "Thrombophilie",
+        "patient": "angeborene Neigung zu Blutgerinnseln",
+        "uz": "trombofiliya",
+        "ru": "тромбофилия",
+        "tr": "trombofili",
+        "en": "thrombophilia"
+      },
+      {
+        "de": "Hirndruck",
+        "patient": "erhöhter Druck im Schädel",
+        "uz": "kalla ichi bosimi oshishi",
+        "ru": "внутричерепное давление",
+        "tr": "kafa içi basıncı",
+        "en": "intracranial pressure"
+      },
+      {
+        "de": "Stauungsblutung",
+        "patient": "Blutung durch gestautes Blut im Gehirn",
+        "uz": "dimlanish tufayli qon quyilish",
+        "ru": "венозное геморрагическое пропитывание",
+        "tr": "venöz konjesyon kanaması",
+        "en": "venous haemorrhagic infarction"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe seit fünf Tagen furchtbare Kopfschmerzen, und heute Morgen hatte ich einen Krampfanfall, sagt meine Mitbewohnerin.",
+      "answers": {
+        "beginn": "Vor fünf Tagen fing es an, jeden Tag schlimmer.",
+        "lokalisation": "Im ganzen Kopf.",
+        "charakter": "Drückend, sieben bis acht von zehn. Anders als meine Migräne. Im Liegen und morgens ist es am schlimmsten.",
+        "ausstrahlung": "In den Nacken.",
+        "begleit": "Mir ist übel, ich sehe verschwommen. Seit gestern ist der rechte Arm schwach. Heute Morgen war ich bewusstlos und habe gekrampft. Fieber habe ich nicht.",
+        "vegetativ": "Letzte Woche hatte ich Magen-Darm und habe kaum getrunken.",
+        "vorerkrankungen": "Ich habe Migräne, aber ohne Aura.",
+        "medikamente": "Die Pille, seit einem halben Jahr ein neues Präparat.",
+        "allergien": "Nein.",
+        "familie": "Meine Mutter hatte mit 35 eine Thrombose im Bein.",
+        "sozial": "Ich bin ledig und Krankenschwester.",
+        "noxen": "Ich rauche zehn Zigaretten am Tag. Alkohol selten."
+      }
+    },
+    "verdachtsdiagnose": "Sinusvenenthrombose (Sinus sagittalis superior) mit Stauungsblutung links, symptomatischem Krampfanfall und Armparese rechts",
+    "diagnoseKeywords": ["sinusvenenthrombose", "sinusthrombose", "venenthrombose", "sinus"],
+    "differenzialdiagnosen": [
+      "Subarachnoidalblutung",
+      "Meningitis/Enzephalitis",
+      "Idiopathische intrakranielle Hypertension",
+      "Migräne mit Aura",
+      "Hirntumor"
+    ],
+    "untersuchungen": [
+      "cMRT mit MR-Venographie oder CT-Venographie",
+      "Fundoskopie (Stauungspapille)",
+      "D-Dimere (nur ergänzend)",
+      "Thrombophiliediagnostik (später)",
+      "Schwangerschaftstest"
+    ],
+    "oberarzt": {
+      "therapie": [
+        "Antikoagulation mit Heparin (auch bei Stauungsblutung)",
+        "Antiepileptische Therapie (Levetiracetam)",
+        "Pille absetzen",
+        "Hirndrucktherapie",
+        "Orale Antikoagulation für 3–12 Monate",
+        "Nikotinkarenz"
+      ],
+      "komplikationen": [
+        "Einklemmung (Hirndruck)",
+        "Zunahme der Blutung",
+        "Epilepsie",
+        "Lungenembolie",
+        "Visusverlust",
+        "Rezidivthrombose"
+      ]
+    }
+  },
+  {
+    "id": "c125",
+    "title": "Karpaltunnelsyndrom",
+    "category": "Neurologie",
+    "difficulty": "leicht",
+    "patient": {
+      "name": "Petra Schuster",
+      "age": 52,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Nächtliches Einschlafen und Kribbeln der rechten Hand"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 6 Monaten nächtliches Kribbeln und Taubheit in Daumen, Zeige- und Mittelfinger rechts, Erwachen mit „eingeschlafener Hand“, Besserung durch Schütteln. Seit kurzem fallen ihr Gegenstände aus der Hand.",
+      "vorerkrankungen": "Hypothyreose, Adipositas, Diabetes mellitus Typ 2.",
+      "medikamente": "L-Thyroxin 75 µg 1-0-0, Metformin 1000 mg 1-0-1.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Verheiratet, Kassiererin im Supermarkt. Nichtraucherin."
+    },
+    "sprache": [
+      {
+        "patient": "Nachts wache ich auf, weil die Hand eingeschlafen ist, dann schüttle ich sie.",
+        "fach": "Es bestehen nächtliche Parästhesien mit Besserung durch Ausschütteln (Flick-Zeichen)."
+      },
+      {
+        "patient": "Daumen, Zeige- und Mittelfinger kribbeln.",
+        "fach": "Die Parästhesien betreffen das Versorgungsgebiet des N. medianus."
+      },
+      {
+        "patient": "Mir fallen in letzter Zeit Sachen aus der Hand.",
+        "fach": "Es besteht eine beginnende Feinmotorikstörung."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Karpaltunnelsyndrom",
+        "patient": "eingeklemmter Nerv im Handgelenk",
+        "uz": "karpal kanal sindromi",
+        "ru": "синдром запястного канала",
+        "tr": "karpal tünel sendromu",
+        "en": "carpal tunnel syndrome"
+      },
+      {
+        "de": "Nervus medianus",
+        "patient": "Nerv, der Daumen, Zeige- und Mittelfinger versorgt",
+        "uz": "o‘rta nerv (n. medianus)",
+        "ru": "срединный нерв",
+        "tr": "median sinir",
+        "en": "median nerve"
+      },
+      {
+        "de": "Thenaratrophie",
+        "patient": "Muskelschwund am Daumenballen",
+        "uz": "bosh barmoq tepaligi mushaklari atrofiyasi",
+        "ru": "атрофия тенара",
+        "tr": "tenar atrofisi",
+        "en": "thenar wasting"
+      },
+      {
+        "de": "Elektroneurographie",
+        "patient": "Messung der Nervenleitung",
+        "uz": "elektroneyrografiya",
+        "ru": "электронейрография",
+        "tr": "elektronörografi",
+        "en": "nerve conduction study"
+      },
+      {
+        "de": "Nachtschiene",
+        "patient": "Schiene für die Nacht am Handgelenk",
+        "uz": "tungi shina",
+        "ru": "ночная шина",
+        "tr": "gece ateli",
+        "en": "night splint"
+      }
+    ],
+    "simulation": {
+      "opening": "Meine rechte Hand schläft nachts ständig ein, ich wache davon auf.",
+      "answers": {
+        "beginn": "Seit etwa einem halben Jahr, in letzter Zeit fast jede Nacht.",
+        "lokalisation": "Daumen, Zeige- und Mittelfinger der rechten Hand. Der kleine Finger ist nicht betroffen.",
+        "charakter": "Kribbeln und Taubheit, manchmal brennend. Wenn ich die Hand schüttle, wird es besser.",
+        "ausstrahlung": "Manchmal zieht es bis in den Unterarm.",
+        "begleit": "Mir fallen in letzter Zeit Sachen aus der Hand, Knöpfe zumachen ist schwer. Nackenschmerzen habe ich nicht.",
+        "vegetativ": "Ich schlafe schlecht wegen der Hand.",
+        "vorerkrankungen": "Schilddrüsenunterfunktion, Übergewicht und Zucker.",
+        "medikamente": "L-Thyroxin 75 und Metformin.",
+        "allergien": "Nein.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich bin verheiratet und Kassiererin im Supermarkt, ich scanne den ganzen Tag Waren.",
+        "noxen": "Ich rauche nicht."
+      }
+    },
+    "verdachtsdiagnose": "Karpaltunnelsyndrom rechts",
+    "diagnoseKeywords": ["karpaltunnel", "medianus"],
+    "differenzialdiagnosen": [
+      "Zervikale Radikulopathie C6/C7",
+      "Polyneuropathie",
+      "Sulcus-ulnaris-Syndrom",
+      "Rhizarthrose"
+    ],
+    "untersuchungen": [
+      "Klinische Tests (Hoffmann-Tinel, Phalen)",
+      "Elektroneurographie des N. medianus",
+      "Sonographie des Karpaltunnels",
+      "TSH und HbA1c"
+    ]
+  },
+  {
+    "id": "c126",
+    "title": "Trigeminusneuralgie",
+    "category": "Neurologie",
+    "difficulty": "leicht",
+    "patient": {
+      "name": "Gertrud Klein",
+      "age": 67,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Blitzartige Gesichtsschmerzen rechts beim Kauen und Zähneputzen"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 2 Monaten blitzartige, elektrisierende Schmerzattacken in der rechten Wange und am Unterkiefer, Dauer wenige Sekunden, bis zu 30-mal täglich. Auslöser: Kauen, Sprechen, Zähneputzen, kalter Wind. Zwischen den Attacken schmerzfrei. Zahnarzt fand keine Ursache, ein Zahn wurde bereits gezogen.",
+      "vorerkrankungen": "Arterielle Hypertonie.",
+      "medikamente": "Candesartan 8 mg 1-0-0, Ibuprofen ohne Wirkung.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Verwitwet, Rentnerin. Nichtraucherin."
+    },
+    "sprache": [
+      {
+        "patient": "Es ist wie ein Stromschlag in der Wange, nur ein paar Sekunden.",
+        "fach": "Es bestehen blitzartige, elektrisierende Schmerzattacken von wenigen Sekunden Dauer."
+      },
+      {
+        "patient": "Beim Zähneputzen und Kauen kommt es sofort.",
+        "fach": "Die Attacken werden durch Trigger wie Kauen und Zähneputzen ausgelöst."
+      },
+      {
+        "patient": "Der Zahnarzt hat schon einen Zahn gezogen, aber es hat nichts gebracht.",
+        "fach": "Eine Zahnextraktion brachte keine Besserung."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Trigeminusneuralgie",
+        "patient": "blitzartige Gesichtsschmerzen durch Reizung des Gesichtsnervs",
+        "uz": "uch shoxli nerv nevralgiyasi",
+        "ru": "невралгия тройничного нерва",
+        "tr": "trigeminal nevralji",
+        "en": "trigeminal neuralgia"
+      },
+      {
+        "de": "Triggerzone",
+        "patient": "Hautstelle, deren Berührung den Schmerz auslöst",
+        "uz": "qo‘zg‘atuvchi zona",
+        "ru": "триггерная зона",
+        "tr": "tetik bölge",
+        "en": "trigger zone"
+      },
+      {
+        "de": "Carbamazepin",
+        "patient": "Medikament gegen Nervenschmerzen und Anfälle",
+        "uz": "karbamazepin",
+        "ru": "карбамазепин",
+        "tr": "karbamazepin",
+        "en": "carbamazepine"
+      },
+      {
+        "de": "Neurovaskulärer Kontakt",
+        "patient": "ein Gefäß drückt auf den Nerv",
+        "uz": "tomirning nervga tegib turishi",
+        "ru": "нейроваскулярный конфликт",
+        "tr": "nörovasküler temas",
+        "en": "neurovascular compression"
+      },
+      {
+        "de": "Mikrovaskuläre Dekompression",
+        "patient": "Operation, bei der das Gefäß vom Nerv getrennt wird",
+        "uz": "mikrovaskulyar dekompressiya",
+        "ru": "микроваскулярная декомпрессия",
+        "tr": "mikrovasküler dekompresyon",
+        "en": "microvascular decompression"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe so furchtbare Schmerzattacken im Gesicht, wie Stromschläge.",
+      "answers": {
+        "beginn": "Seit etwa zwei Monaten.",
+        "lokalisation": "Rechte Wange und Unterkiefer, immer rechts.",
+        "charakter": "Wie ein Stromschlag, nur ein paar Sekunden, aber zehn von zehn. Bis zu dreißigmal am Tag. Dazwischen ist alles gut.",
+        "ausstrahlung": "Von der Wange bis zum Kinn.",
+        "begleit": "Beim Zähneputzen, Kauen, Sprechen oder bei kaltem Wind kommt es sofort. Ich esse kaum noch. Taubheitsgefühl im Gesicht habe ich nicht.",
+        "vegetativ": "Ich habe zwei Kilo abgenommen, weil ich Angst vor dem Kauen habe.",
+        "vorerkrankungen": "Bluthochdruck. Der Zahnarzt hat schon einen Zahn gezogen, das hat nichts gebracht.",
+        "medikamente": "Candesartan 8. Ibuprofen hilft nicht.",
+        "allergien": "Nein.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich bin Witwe und Rentnerin.",
+        "noxen": "Ich rauche nicht."
+      }
+    },
+    "verdachtsdiagnose": "Klassische Trigeminusneuralgie rechts (V2/V3)",
+    "diagnoseKeywords": ["trigeminusneuralgie", "trigeminus"],
+    "differenzialdiagnosen": [
+      "Zahnerkrankung",
+      "Multiple Sklerose (symptomatische Form)",
+      "Clusterkopfschmerz",
+      "Kiefergelenksarthropathie",
+      "Postzosterneuralgie"
+    ],
+    "untersuchungen": [
+      "Neurologische Untersuchung (Sensibilität im Gesicht)",
+      "Zahnärztliche und HNO-Untersuchung",
+      "cMRT mit Darstellung des Hirnstamms (Gefäß-Nerv-Kontakt, MS)",
+      "Laborkontrollen vor Carbamazepin (Natrium, Leberwerte, Blutbild)"
+    ]
   }
 ]
