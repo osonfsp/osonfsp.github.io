@@ -3,8 +3,8 @@
 //
 // Sozlamalar (Cloudflare):
 //   GEMINI_API_KEY     — secret (dashboard: Settings → Variables and Secrets)
-//   TELEGRAM_BOT_TOKEN — secret, @BotFather bergan token (Telegram kirish imzosini tekshirish uchun;
-//                        bot: /start ga "Ochish" tugmasi va menyu tugmasi — Mini App, setupBot)
+//   TELEGRAM_BOT_TOKEN — secret, @BotFather bergan token (kirish imzosini tekshirish va bot — bot.js)
+//   CRON_BUDGET        — [vars], ixtiyoriy: cron bir ishga tushishda yuboradigan xabarlar soni (standart 36)
 //   GEMINI_MODELS      — [vars], vergul bilan: birinchisi asosiy, qolganlari zaxira
 //   ALLOWED_ORIGINS    — [vars], vergul bilan ajratilgan saytlar ro'yxati
 //   ADMIN_USERNAMES    — [vars], admin Telegram username'lari (vergul bilan, @ siz)
@@ -17,22 +17,32 @@ import arztbriefe from "../src/data/arztbriefe.json";
 import aufklaerung from "../src/data/aufklaerung.json";
 import redemittel from "../src/data/redemittel.json";
 
+import {
+  botLang as botLangOf,
+  handleUpdate,
+  notifyGranted,
+  onLogin,
+  requestPlan,
+  runCron,
+  setupBot,
+  webhookSecret,
+} from "./bot.js";
+import { callGemini } from "./gemini.js";
+import { AI_DAILY_CAP, FREE_EXAMS, PLANS, SESSION_DAYS, TRIAL_HOURS, rights } from "./rules.js";
+
 export { Store } from "./store.js";
 
 const CONTENT = JSON.stringify({ cases, words, pairs, arztbriefe, aufklaerung, redemittel });
-
-// Sayt bilan bir xil bo'lishi kerak (src/lib/plan.js)
-const TRIAL_HOURS = 24,
-  FREE_EXAMS = 1,
-  AI_DAILY_CAP = 150,
-  SESSION_DAYS = 60,
-  PLANS = { week: 7, month: 30 };
 
 const MAX_BODY = 300_000,
   MAX_AI_BODY = 60_000;
 
 const enc = new TextEncoder(),
-  b64url = (bytes) => btoa(String.fromCharCode(...new Uint8Array(bytes))).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, ""),
+  b64url = (bytes) =>
+    btoa(String.fromCharCode(...new Uint8Array(bytes)))
+      .replace(/\+/g, "-")
+      .replace(/\//g, "_")
+      .replace(/=+$/, ""),
   hex = (bytes) => [...new Uint8Array(bytes)].map((b) => b.toString(16).padStart(2, "0")).join(""),
   today = () => new Date().toISOString().slice(0, 10);
 
@@ -44,7 +54,9 @@ function safeEqual(a, b) {
 }
 
 async function hmac(keyBytes, data) {
-  let key = await crypto.subtle.importKey("raw", keyBytes, { name: "HMAC", hash: "SHA-256" }, false, ["sign"]);
+  let key = await crypto.subtle.importKey("raw", keyBytes, { name: "HMAC", hash: "SHA-256" }, false, [
+    "sign",
+  ]);
   return crypto.subtle.sign("HMAC", key, enc.encode(data));
 }
 
@@ -93,61 +105,8 @@ async function verifyWebApp(initData, botToken) {
     username: u.username ? String(u.username) : null,
     name: [u.first_name, u.last_name].filter(Boolean).join(" ").slice(0, 80) || "Doctor",
     photo: u.photo_url ? String(u.photo_url) : null,
+    lang: u.language_code ? String(u.language_code) : null,
   };
-}
-
-// ---- Telegram bot ----
-const SITE_URL = "https://osonfsp.github.io/",
-  BOT_SETUP_VERSION = "1";
-
-const tgApi = (env, method, body) =>
-  fetch(`https://api.telegram.org/bot${env.TELEGRAM_BOT_TOKEN}/${method}`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(body),
-  })
-    .then((r) => r.json())
-    .catch(() => null);
-
-// Telegram webhook so'rovlari shu maxfiy kalit bilan keladi (sessiya kalitidan hosil qilinadi)
-const webhookSecret = async (keyB64) =>
-  hex(await hmac(Uint8Array.from(atob(keyB64), (c) => c.charCodeAt(0)), "telegram-webhook")).slice(0, 48);
-
-const BOT_TEXT = {
-  uz: [
-    "Assalomu alaykum! 👋\n\nOsonFSP — shifokorlar uchun Fachsprachprüfung (FSP) ga tayyorgarlik: Fälle, Arztbrief, bemor bilan suhbat simulyatsiyasi, Aufklärung va tibbiy nemis tili.\n\nPastdagi tugmani bosing — sayt shu yerning o‘zida, Telegram ichida ochiladi. Birinchi 24 soat bepul.",
-    "📚 OsonFSP’ni ochish",
-  ],
-  ru: [
-    "Здравствуйте! 👋\n\nOsonFSP — подготовка к Fachsprachprüfung (FSP) для врачей: клинические случаи (Fälle), Arztbrief, симуляция разговора с пациентом, Aufklärung и медицинский немецкий.\n\nНажмите кнопку ниже — сайт откроется прямо здесь, в Telegram. Первые 24 часа бесплатно.",
-    "📚 Открыть OsonFSP",
-  ],
-  tr: [
-    "Merhaba! 👋\n\nOsonFSP — doktorlar için Fachsprachprüfung (FSP) hazırlığı: vakalar (Fälle), Arztbrief, hasta görüşmesi simülasyonu, Aufklärung ve tıbbi Almanca.\n\nAşağıdaki düğmeye basın — site burada, Telegram içinde açılır. İlk 24 saat ücretsiz.",
-    "📚 OsonFSP’yi aç",
-  ],
-  en: [
-    "Hello! 👋\n\nOsonFSP — Fachsprachprüfung (FSP) preparation for doctors: clinical cases (Fälle), Arztbrief, patient conversation simulation, Aufklärung and medical German.\n\nPress the button below — the site opens right here in Telegram. The first 24 hours are free.",
-    "📚 Open OsonFSP",
-  ],
-};
-const botLang = (code = "") =>
-  /^uz/.test(code) ? "uz" : /^(ru|be|kk|ky|tg|uk)/.test(code) ? "ru" : /^tr/.test(code) ? "tr" : /^en/.test(code) ? "en" : "uz";
-
-// Bir marta (yoki BOT_SETUP_VERSION o'zgarganda): webhook, menyu tugmasi (Mini App) va /start buyrug'i
-async function setupBot(env, store, keyB64, workerOrigin) {
-  if (!env.TELEGRAM_BOT_TOKEN || (await store.getMeta("bot_setup")) === BOT_SETUP_VERSION) return;
-  let results = await Promise.all([
-    tgApi(env, "setWebhook", {
-      url: `${workerOrigin}/tg/webhook`,
-      secret_token: await webhookSecret(keyB64),
-      allowed_updates: ["message"],
-    }),
-    tgApi(env, "setChatMenuButton", { menu_button: { type: "web_app", text: "OsonFSP", web_app: { url: SITE_URL } } }),
-    tgApi(env, "setMyCommands", { commands: [{ command: "start", description: "OsonFSP" }] }),
-  ]);
-  if (results.every((r) => r?.ok)) await store.setMeta("bot_setup", BOT_SETUP_VERSION);
-  else console.log("bot setup", JSON.stringify(results));
 }
 
 async function signSession(uid, keyB64) {
@@ -169,24 +128,6 @@ async function readSession(req, keyB64) {
   }
 }
 
-// Foydalanuvchining huquqlari — hammasi server vaqti va bazadagi yozuv bo'yicha
-function rights(u, env) {
-  let now = Date.now(),
-    admins = (env.ADMIN_USERNAMES || "").toLowerCase().split(",").map((s) => s.trim()).filter(Boolean),
-    isAdmin = !!u.username && admins.includes(u.username.toLowerCase()),
-    planActive = isAdmin || (u.plan_until ?? 0) > now,
-    trialActive = u.trial_end > now,
-    materials = planActive || trialActive;
-  return {
-    isAdmin,
-    planActive,
-    trialActive,
-    materials,
-    // Bepul imtihon faqat sinov muddati ichida (aks holda materiallarsiz imtihon bo'lmaydi)
-    examAllowed: planActive || (trialActive && u.exams_used < FREE_EXAMS),
-  };
-}
-
 function account(u, env) {
   let r = rights(u, env);
   return {
@@ -194,7 +135,10 @@ function account(u, env) {
     isAdmin: r.isAdmin,
     trialEnd: new Date(u.trial_end).toISOString(),
     plan: r.planActive
-      ? { id: r.isAdmin ? "admin" : u.plan_id, until: new Date(r.isAdmin ? 32503680000000 : u.plan_until).toISOString() }
+      ? {
+          id: r.isAdmin ? "admin" : u.plan_id,
+          until: new Date(r.isAdmin ? 32503680000000 : u.plan_until).toISOString(),
+        }
       : null,
     examsUsed: u.exams_used,
     freeExams: FREE_EXAMS,
@@ -203,47 +147,14 @@ function account(u, env) {
   };
 }
 
-async function gemini(env, body) {
+function gemini(env, body) {
   let messages = Array.isArray(body.messages) ? body.messages : [];
   if (!messages.length) return { status: 400, data: { error: "no_messages" } };
   let contents = messages.slice(-30).map((m) => ({
-      role: m.role === "assistant" ? "model" : "user",
-      parts: [{ text: String(m.content ?? "").slice(0, 15_000) }],
-    })),
-    models = (env.GEMINI_MODELS || "gemini-flash-lite-latest").split(",").map((m) => m.trim()),
-    payload = JSON.stringify({
-      contents,
-      generationConfig: {
-        temperature: body.json ? 0.3 : 0.8,
-        ...(body.json ? { responseMimeType: "application/json" } : {}),
-      },
-    }),
-    res = null;
-
-  // Bepul tarifda Google ba'zan band (503) yoki sekin: har urinishga 12 s, keyin keyingi model
-  for (let i = 0; i < models.length * 2 && !res?.ok; i++) {
-    let model = models[i % models.length];
-    try {
-      res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json", "x-goog-api-key": env.GEMINI_API_KEY },
-        body: payload,
-        signal: AbortSignal.timeout(12_000),
-      });
-      if (!res.ok) console.log("gemini", model, res.status, (await res.clone().text()).slice(0, 200));
-    } catch (e) {
-      console.log("gemini", model, e.name);
-      res = null;
-    }
-  }
-  if (!res?.ok) return { status: res?.status === 429 ? 429 : 502, data: { error: "upstream", status: res?.status ?? 0 } };
-  let data = await res.json(),
-    text = (data.candidates?.[0]?.content?.parts || [])
-      .filter((p) => !p.thought)
-      .map((p) => p.text || "")
-      .join("")
-      .trim();
-  return text ? { status: 200, data: { text } } : { status: 502, data: { error: "empty" } };
+    role: m.role === "assistant" ? "model" : "user",
+    parts: [{ text: String(m.content ?? "").slice(0, 15_000) }],
+  }));
+  return callGemini(env, contents, { json: !!body.json });
 }
 
 export default {
@@ -273,15 +184,8 @@ export default {
         secret = await webhookSecret(await store.sessionKey());
       if (!safeEqual(req.headers.get("X-Telegram-Bot-Api-Secret-Token") || "", secret))
         return new Response("forbidden", { status: 403 });
-      let msg = (await req.json().catch(() => null))?.message;
-      if (msg?.chat?.type === "private") {
-        let [text, button] = BOT_TEXT[botLang(msg.from?.language_code)];
-        await tgApi(env, "sendMessage", {
-          chat_id: msg.chat.id,
-          text,
-          reply_markup: { inline_keyboard: [[{ text: button, web_app: { url: SITE_URL } }]] },
-        });
-      }
+      let upd = await req.json().catch(() => null);
+      if (upd) ctx.waitUntil(handleUpdate(env, store, upd).catch((e) => console.log("bot", e?.stack || e)));
       return new Response("ok");
     }
 
@@ -318,16 +222,18 @@ export default {
     if (path === "/auth/telegram" && req.method === "POST") {
       let tg = await verifyTelegram(body, env.TELEGRAM_BOT_TOKEN);
       if (!tg || !Number.isSafeInteger(tg.id)) return reply(401, { error: "bad_signature" });
-      let u = await store.upsertUser(tg, TRIAL_HOURS * 36e5);
-      return reply(200, { token: await signSession(u.id, keyB64), account: account(u, env) });
+      let res = await store.login(tg, TRIAL_HOURS * 36e5, null);
+      ctx.waitUntil(onLogin(env, store, res).catch(() => {}));
+      return reply(200, { token: await signSession(res.user.id, keyB64), account: account(res.user, env) });
     }
 
     // Bot ichidagi Mini App orqali kirish
     if (path === "/auth/webapp" && req.method === "POST") {
       let tg = await verifyWebApp(body?.initData, env.TELEGRAM_BOT_TOKEN);
       if (!tg || !Number.isSafeInteger(tg.id)) return reply(401, { error: "bad_signature" });
-      let u = await store.upsertUser(tg, TRIAL_HOURS * 36e5);
-      return reply(200, { token: await signSession(u.id, keyB64), account: account(u, env) });
+      let res = await store.login(tg, TRIAL_HOURS * 36e5, tg.lang && botLangOf(tg.lang));
+      ctx.waitUntil(onLogin(env, store, res).catch(() => {}));
+      return reply(200, { token: await signSession(res.user.id, keyB64), account: account(res.user, env) });
     }
 
     // Qolgan hamma narsa — faqat kirgan foydalanuvchi uchun
@@ -350,7 +256,8 @@ export default {
     }
 
     if (path === "/progress" && req.method === "PUT") {
-      if (!body || typeof body !== "object" || Array.isArray(body)) return reply(400, { error: "bad_progress" });
+      if (!body || typeof body !== "object" || Array.isArray(body))
+        return reply(400, { error: "bad_progress" });
       await store.saveProgress(u.id, JSON.stringify(body));
       return reply(200, { ok: true });
     }
@@ -360,6 +267,13 @@ export default {
       let res = await store.startExam(u.id, FREE_EXAMS, r.planActive);
       if (!res.ok) return reply(402, { error: "exam_limit" });
       return reply(200, { account: account({ ...u, exams_used: res.used }, env) });
+    }
+
+    // Tarif so'rovi: adminga bot orqali tugmali xabar, foydalanuvchiga botda tasdiq
+    if (path === "/plan/request" && req.method === "POST") {
+      if (!PLANS[body?.planId]) return reply(400, { error: "bad_plan" });
+      let ok = await requestPlan(env, store, u, body.planId);
+      return reply(ok ? 200 : 502, { ok });
     }
 
     if (path === "/ai" && req.method === "POST") {
@@ -375,14 +289,20 @@ export default {
     if (path.startsWith("/admin/")) {
       if (!r.isAdmin) return reply(403, { error: "admin_only" });
       if (path === "/admin/users" && req.method === "GET") {
-        let users = (await store.listUsers(today())).map((x) => ({ ...x, ...account(x, env), ai_today: x.ai_today }));
+        let users = (await store.listUsers(today())).map((x) => ({
+          ...x,
+          ...account(x, env),
+          ai_today: x.ai_today,
+        }));
         return reply(200, { users });
       }
       if (path === "/admin/grant" && req.method === "POST") {
         let id = Number(body?.userId),
           days = body?.planId ? PLANS[body.planId] : Number(body?.days ?? 0);
-        if (!Number.isSafeInteger(id) || !(days >= 0 && days <= 3650)) return reply(400, { error: "bad_request" });
+        if (!Number.isSafeInteger(id) || !(days >= 0 && days <= 3650))
+          return reply(400, { error: "bad_request" });
         let x = await store.grantPlan(id, body?.planId || (days ? "custom" : null), days);
+        if (x && days) ctx.waitUntil(notifyGranted(env, store, x).catch(() => {}));
         return x ? reply(200, { user: { ...x, ...account(x, env) } }) : reply(404, { error: "not_found" });
       }
       if (path === "/admin/reset-exams" && req.method === "POST") {
@@ -392,5 +312,14 @@ export default {
     }
 
     return reply(404, { error: "not_found" });
+  },
+
+  // Cloudflare cron (wrangler.toml [triggers]): eslatmalar, kun savoli, ommaviy xabar — bot.js
+  async scheduled(event, env, ctx) {
+    ctx.waitUntil(
+      runCron(env, env.STORE.get(env.STORE.idFromName("main"))).catch((e) =>
+        console.log("cron", e?.stack || e),
+      ),
+    );
   },
 };

@@ -21,3 +21,7 @@ new_sqlite_classes = ["Store"]
 name = "LIMITER"
 namespace_id = "1001"
 simple = { limit = 60, period = 60 }
+
+# Bot: har 5 daqiqada — kunlik eslatma va kun savoli, sinov/tarif eslatmasi, ommaviy xabar (bot.js runCron)
+[triggers]
+crons = ["*/5 * * * *"]

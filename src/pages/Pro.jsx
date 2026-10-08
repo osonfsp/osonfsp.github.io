@@ -5,7 +5,7 @@ import { trackEvent } from "../lib/analytics";
 import { FREE_LIMITS, TRIAL_HOURS, usePlan } from "../lib/plan";
 import { cx } from "../lib/utils";
 import { formatDay, LANG, tr } from "../lib/i18n";
-import { refreshAccount, useAccount } from "../lib/account";
+import { api, refreshAccount, useAccount } from "../lib/account";
 import { FEEDBACK_TELEGRAM } from "../lib/config";
 
 const OFFERS = [
@@ -94,7 +94,18 @@ export function ProPage() {
   let { plan, left, limit, trialActive, trialEnd, loggedIn } = usePlan(),
     { account } = useAccount(),
     hours = Math.max(0, Math.ceil((trialEnd - new Date()) / 36e5)),
-    [asked, setAsked] = useState(null);
+    [asked, setAsked] = useState(null),
+    // Bot orqali adminga so'rov: "idle" | "sending" | "sent" | "error"
+    [req, setReq] = useState("idle"),
+    sendRequest = async () => {
+      setReq("sending");
+      try {
+        await api("/plan/request", { method: "POST", body: { planId: asked.id } });
+        setReq("sent");
+      } catch {
+        setReq("error");
+      }
+    };
   return (
     <div className="page max-w-5xl">
       <PageHeader
@@ -197,6 +208,7 @@ export function ProPage() {
                 onClick={() => {
                   trackEvent(`buy-click/${o.id}`, { once: true });
                   setAsked(o);
+                  setReq("idle");
                 }}
               >
                 {tr("Sotib olish", "Купить", "Satın al", "Buy")}
@@ -262,12 +274,26 @@ export function ProPage() {
                 </li>
               </ol>
               <div className="mt-3 flex flex-wrap gap-2">
+                <button
+                  type="button"
+                  className="btn-primary"
+                  disabled={req === "sending" || req === "sent"}
+                  onClick={sendRequest}
+                >
+                  📨{" "}
+                  {tr(
+                    "Adminga so‘rov yuborish",
+                    "Отправить запрос админу",
+                    "Yöneticiye talep gönder",
+                    "Send a request to the admin",
+                  )}
+                </button>
                 {FEEDBACK_TELEGRAM && (
                   <a
                     href={FEEDBACK_TELEGRAM}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn-primary"
+                    className="btn-outline"
                   >
                     ✈️ {tr("Adminga yozish", "Написать админу", "Yöneticiye yaz", "Message the admin")}
                   </a>
@@ -276,6 +302,27 @@ export function ProPage() {
                   🔄 {tr("Tarifni tekshirish", "Проверить тариф", "Paketi kontrol et", "Check my plan")}
                 </button>
               </div>
+              {req === "sent" && (
+                <p className="mt-2 font-medium text-teal-700 dark:text-teal-300">
+                  ✅{" "}
+                  {tr(
+                    "So‘rov yuborildi. Admin Telegram’da siz bilan bog‘lanadi; tarif yoqilganda bot xabar beradi.",
+                    "Запрос отправлен. Админ свяжется с вами в Telegram; когда тариф подключится, бот сообщит.",
+                    "Talep gönderildi. Yönetici sizinle Telegram’dan iletişime geçecek; paket tanımlanınca bot haber verir.",
+                    "Request sent. The admin will contact you on Telegram; the bot will let you know when the plan is active.",
+                  )}
+                </p>
+              )}
+              {req === "error" && (
+                <p className="mt-2 text-rose-600">
+                  {tr(
+                    "Yuborib bo‘lmadi — adminga to‘g‘ridan-to‘g‘ri yozing.",
+                    "Не удалось отправить — напишите админу напрямую.",
+                    "Gönderilemedi — yöneticiye doğrudan yazın.",
+                    "Could not send — please message the admin directly.",
+                  )}
+                </p>
+              )}
             </>
           )}
         </div>

@@ -48,7 +48,11 @@ export async function initTelegram() {
   wa.expand();
 
   // "#tgWebAppData=..." ni manzildan olib tashlaymiz (skript uni allaqachon o‘qib bo‘lgan)
-  if (!window.location.hash.startsWith("#/")) history.replaceState(null, "", "#/");
+  // Bot tugmalari kerakli sahifani ?open=... bilan ochadi (masalan, ?open=bugun → #/bugun)
+  let open = new URLSearchParams(window.location.search).get("open");
+  if (open || !window.location.hash.startsWith("#/"))
+    history.replaceState(null, "", `${window.location.pathname}#/`);
+  if (open && /^[a-z]+$/.test(open)) navigate(`/${open}`, { replace: true });
 
   // Mavzu: foydalanuvchi saytda o‘zi tanlamagan bo‘lsa — Telegram'niki
   let followTheme = () => {
