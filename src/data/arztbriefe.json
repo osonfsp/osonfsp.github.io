@@ -28,10 +28,10 @@
         "keywords": ["weber"]
       },
       {
-        "label": "Asosiy shikoyat: Thoraxschmerzen",
-        "labelRu": "Основная жалоба: Thoraxschmerzen",
-        "labelTr": "Ana şikâyet: Thoraxschmerzen",
-        "labelEn": "Main complaint: Thoraxschmerzen",
+        "label": "Asosiy shikoyat: ko‘krak qafasidagi og‘riq (Thoraxschmerzen)",
+        "labelRu": "Основная жалоба: боль в груди (Thoraxschmerzen)",
+        "labelTr": "Ana şikâyet: göğüs ağrısı (Thoraxschmerzen)",
+        "labelEn": "Main complaint: chest pain (Thoraxschmerzen)",
         "keywords": ["thoraxschmerz", "brustschmerz"]
       },
       {
@@ -71,7 +71,7 @@
       },
       {
         "label": "Troponin",
-        "labelRu": "Troponin",
+        "labelRu": "Тропонин (Troponin)",
         "labelTr": "Troponin",
         "labelEn": "Troponin",
         "keywords": ["troponin"]
@@ -120,52 +120,52 @@
         "keywords": ["schmidt"]
       },
       {
-        "label": "Husten / Auswurf",
-        "labelRu": "Husten / Auswurf",
-        "labelTr": "Husten / Auswurf",
-        "labelEn": "Husten / Auswurf",
+        "label": "Yo‘tal / balg‘am (Husten / Auswurf)",
+        "labelRu": "Кашель / мокрота (Husten / Auswurf)",
+        "labelTr": "Öksürük / balgam (Husten / Auswurf)",
+        "labelEn": "Cough / sputum (Husten / Auswurf)",
         "keywords": ["husten", "auswurf", "sputum"]
       },
       {
-        "label": "Fieber",
-        "labelRu": "Fieber",
-        "labelTr": "Fieber",
-        "labelEn": "Fieber",
+        "label": "Isitma (Fieber)",
+        "labelRu": "Лихорадка (Fieber)",
+        "labelTr": "Ateş (Fieber)",
+        "labelEn": "Fever (Fieber)",
         "keywords": ["fieber"]
       },
       {
-        "label": "Dyspnoe",
-        "labelRu": "Dyspnoe",
-        "labelTr": "Dyspnoe",
-        "labelEn": "Dyspnoe",
+        "label": "Hansirash (Dyspnoe)",
+        "labelRu": "Одышка (Dyspnoe)",
+        "labelTr": "Nefes darlığı (Dyspnoe)",
+        "labelEn": "Shortness of breath (Dyspnoe)",
         "keywords": ["dyspnoe", "atemnot"]
       },
       {
-        "label": "Vorerkrankung COPD",
-        "labelRu": "Vorerkrankung COPD",
-        "labelTr": "Vorerkrankung COPD",
-        "labelEn": "Vorerkrankung COPD",
+        "label": "Avvalgi kasallik: XOBK (Vorerkrankung COPD)",
+        "labelRu": "В анамнезе: ХОБЛ (Vorerkrankung COPD)",
+        "labelTr": "Bilinen KOAH (Vorerkrankung COPD)",
+        "labelEn": "Known COPD (Vorerkrankung COPD)",
         "keywords": ["copd"]
       },
       {
-        "label": "Auskultation (Rasselgeräusche)",
-        "labelRu": "Auskultation (Rasselgeräusche)",
-        "labelTr": "Auskultation (Rasselgeräusche)",
-        "labelEn": "Auskultation (Rasselgeräusche)",
+        "label": "Auskultatsiya: xirillashlar (Auskultation: Rasselgeräusche)",
+        "labelRu": "Аускультация: хрипы (Auskultation: Rasselgeräusche)",
+        "labelTr": "Oskültasyon: raller (Auskultation: Rasselgeräusche)",
+        "labelEn": "Auscultation: crackles (Auskultation: Rasselgeräusche)",
         "keywords": ["rasselgeräusch", "auskultat"]
       },
       {
-        "label": "Labor (CRP, Leukozyten)",
-        "labelRu": "Labor (CRP, Leukozyten)",
-        "labelTr": "Labor (CRP, Leukozyten)",
-        "labelEn": "Labor (CRP, Leukozyten)",
+        "label": "Laboratoriya: CRP, leykotsitlar (Labor: CRP, Leukozyten)",
+        "labelRu": "Анализы: СРБ, лейкоциты (Labor: CRP, Leukozyten)",
+        "labelTr": "Laboratuvar: CRP, lökositler (Labor: CRP, Leukozyten)",
+        "labelEn": "Lab: CRP, leukocytes (Labor: CRP, Leukozyten)",
         "keywords": ["crp", "leukozyt"]
       },
       {
-        "label": "Röntgen (Infiltrat)",
-        "labelRu": "Röntgen (Infiltrat)",
-        "labelTr": "Röntgen (Infiltrat)",
-        "labelEn": "Röntgen (Infiltrat)",
+        "label": "Rentgen: infiltrat (Röntgen: Infiltrat)",
+        "labelRu": "Рентген: инфильтрат (Röntgen: Infiltrat)",
+        "labelTr": "Röntgen: infiltrat",
+        "labelEn": "X-ray: infiltrate (Röntgen: Infiltrat)",
         "keywords": ["infiltrat", "röntgen"]
       },
       {
@@ -219,17 +219,17 @@
         "keywords": ["periumbilikal", "bauchnabel", "gewandert", "wanderung"]
       },
       {
-        "label": "Rechter Unterbauch",
-        "labelRu": "Rechter Unterbauch",
-        "labelTr": "Rechter Unterbauch",
-        "labelEn": "Rechter Unterbauch",
+        "label": "Qorinning o‘ng pastki qismi (Rechter Unterbauch)",
+        "labelRu": "Правая подвздошная область (Rechter Unterbauch)",
+        "labelTr": "Sağ alt kadran (Rechter Unterbauch)",
+        "labelEn": "Right lower quadrant (Rechter Unterbauch)",
         "keywords": ["unterbauch"]
       },
       {
-        "label": "Harorat / Fieber",
-        "labelRu": "Температура / Fieber",
-        "labelTr": "Ateş / Fieber",
-        "labelEn": "Temperature / Fieber",
+        "label": "Harorat / isitma (Fieber)",
+        "labelRu": "Температура / лихорадка (Fieber)",
+        "labelTr": "Ateş (Fieber)",
+        "labelEn": "Temperature / fever (Fieber)",
         "keywords": ["38,3", "fieber", "subfebril", "temperatur"]
       },
       {
@@ -240,17 +240,17 @@
         "keywords": ["mcburney", "loslassschmerz", "psoas"]
       },
       {
-        "label": "Labor (Leukozyten, CRP)",
-        "labelRu": "Labor (Leukozyten, CRP)",
-        "labelTr": "Labor (Leukozyten, CRP)",
-        "labelEn": "Labor (Leukozyten, CRP)",
+        "label": "Laboratoriya: leykotsitlar, CRP (Labor: Leukozyten, CRP)",
+        "labelRu": "Анализы: лейкоциты, СРБ (Labor: Leukozyten, CRP)",
+        "labelTr": "Laboratuvar: lökositler, CRP (Labor: Leukozyten, CRP)",
+        "labelEn": "Lab: leukocytes, CRP (Labor: Leukozyten, CRP)",
         "keywords": ["leukozyt", "crp"]
       },
       {
-        "label": "Sonographie",
-        "labelRu": "Sonographie",
-        "labelTr": "Sonographie",
-        "labelEn": "Sonographie",
+        "label": "UTT (Sonographie)",
+        "labelRu": "УЗИ (Sonographie)",
+        "labelTr": "Ultrasonografi (Sonographie)",
+        "labelEn": "Ultrasound (Sonographie)",
         "keywords": ["sonograph"]
       },
       {
@@ -268,10 +268,10 @@
         "keywords": ["appendektomie", "laparoskop"]
       },
       {
-        "label": "Kechish / Entlassung",
-        "labelRu": "Течение / Entlassung",
-        "labelTr": "Seyir / Entlassung",
-        "labelEn": "Course / Entlassung",
+        "label": "Kechish / kasalxonadan chiqarish (Verlauf / Entlassung)",
+        "labelRu": "Течение / выписка (Verlauf / Entlassung)",
+        "labelTr": "Seyir / taburculuk (Verlauf / Entlassung)",
+        "labelEn": "Course / discharge (Verlauf / Entlassung)",
         "keywords": ["entlass", "verlauf"]
       }
     ],
@@ -311,10 +311,10 @@
         "keywords": ["08:15", "symptombeginn", "zeitfenster", "stunde"]
       },
       {
-        "label": "Hemiparese",
-        "labelRu": "Hemiparese",
-        "labelTr": "Hemiparese",
-        "labelEn": "Hemiparese",
+        "label": "Gemiparez (Hemiparese)",
+        "labelRu": "Гемипарез (Hemiparese)",
+        "labelTr": "Hemiparezi (Hemiparese)",
+        "labelEn": "Hemiparesis (Hemiparese)",
         "keywords": ["hemiparese", "parese"]
       },
       {
@@ -325,10 +325,10 @@
         "keywords": ["dysarthrie", "aphasie", "wortfindung"]
       },
       {
-        "label": "Vorhofflimmern",
-        "labelRu": "Vorhofflimmern",
-        "labelTr": "Vorhofflimmern",
-        "labelEn": "Vorhofflimmern",
+        "label": "Bo‘lmachalar fibrillyatsiyasi (Vorhofflimmern)",
+        "labelRu": "Фибрилляция предсердий (Vorhofflimmern)",
+        "labelTr": "Atriyal fibrilasyon (Vorhofflimmern)",
+        "labelEn": "Atrial fibrillation (Vorhofflimmern)",
         "keywords": ["vorhofflimmern"]
       },
       {
@@ -346,10 +346,10 @@
         "keywords": ["blutung", "cct"]
       },
       {
-        "label": "NIHSS",
-        "labelRu": "NIHSS",
-        "labelTr": "NIHSS",
-        "labelEn": "NIHSS",
+        "label": "NIHSS shkalasi",
+        "labelRu": "Шкала NIHSS",
+        "labelTr": "NIHSS skoru",
+        "labelEn": "NIHSS score",
         "keywords": ["nihss"]
       },
       {
@@ -360,10 +360,10 @@
         "keywords": ["schlaganfall", "apoplex", "insult", "ischäm"]
       },
       {
-        "label": "Lysetherapie / Stroke Unit",
-        "labelRu": "Lysetherapie / Stroke Unit",
-        "labelTr": "Lysetherapie / Stroke Unit",
-        "labelEn": "Lysetherapie / Stroke Unit",
+        "label": "Tromboliz / insult bo‘limi (Lysetherapie / Stroke Unit)",
+        "labelRu": "Тромболизис / инсультное отделение (Lysetherapie / Stroke Unit)",
+        "labelTr": "Tromboliz / inme ünitesi (Lysetherapie / Stroke Unit)",
+        "labelEn": "Thrombolysis / stroke unit (Lysetherapie / Stroke Unit)",
         "keywords": ["lyse", "alteplase", "stroke unit"]
       }
     ],
@@ -417,10 +417,10 @@
         "keywords": ["adipositas", "familienanamnes", "bmi"]
       },
       {
-        "label": "Blutzucker",
-        "labelRu": "Blutzucker",
-        "labelTr": "Blutzucker",
-        "labelEn": "Blutzucker",
+        "label": "Qondagi qand (Blutzucker)",
+        "labelRu": "Глюкоза крови (Blutzucker)",
+        "labelTr": "Kan şekeri (Blutzucker)",
+        "labelEn": "Blood glucose (Blutzucker)",
         "keywords": ["blutzucker", "glukose"]
       },
       {
@@ -439,15 +439,15 @@
       },
       {
         "label": "Metformin",
-        "labelRu": "Metformin",
+        "labelRu": "Метформин (Metformin)",
         "labelTr": "Metformin",
         "labelEn": "Metformin",
         "keywords": ["metformin"]
       },
       {
         "label": "Insulin",
-        "labelRu": "Insulin",
-        "labelTr": "İnsülin",
+        "labelRu": "Инсулин (Insulin)",
+        "labelTr": "İnsülin (Insulin)",
         "labelEn": "Insulin",
         "keywords": ["insulin"]
       },
@@ -489,24 +489,24 @@
         "keywords": ["hoffmann"]
       },
       {
-        "label": "Asosiy shikoyat: Dyspnoe",
-        "labelRu": "Основная жалоба: Dyspnoe",
-        "labelTr": "Ana şikâyet: Dyspnoe",
-        "labelEn": "Main complaint: Dyspnoe",
+        "label": "Asosiy shikoyat: hansirash (Dyspnoe)",
+        "labelRu": "Основная жалоба: одышка (Dyspnoe)",
+        "labelTr": "Ana şikâyet: nefes darlığı (Dyspnoe)",
+        "labelEn": "Main complaint: shortness of breath (Dyspnoe)",
         "keywords": ["dyspnoe", "atemnot"]
       },
       {
-        "label": "Thoraxschmerzen (atemabhängig)",
-        "labelRu": "Thoraxschmerzen (atemabhängig)",
-        "labelTr": "Thoraxschmerzen (atemabhängig)",
-        "labelEn": "Thoraxschmerzen (atemabhängig)",
+        "label": "Nafas olganda kuchayadigan ko‘krak og‘rig‘i (Thoraxschmerzen, atemabhängig)",
+        "labelRu": "Боль в груди, усиливающаяся при дыхании (Thoraxschmerzen, atemabhängig)",
+        "labelTr": "Solunumla artan göğüs ağrısı (Thoraxschmerzen, atemabhängig)",
+        "labelEn": "Chest pain worse on breathing (Thoraxschmerzen, atemabhängig)",
         "keywords": ["thoraxschmerz", "atemabhängig"]
       },
       {
-        "label": "Hämoptyse",
-        "labelRu": "Hämoptyse",
-        "labelTr": "Hämoptyse",
-        "labelEn": "Hämoptyse",
+        "label": "Qon tupurish (Hämoptyse)",
+        "labelRu": "Кровохарканье (Hämoptyse)",
+        "labelTr": "Hemoptizi (Hämoptyse)",
+        "labelEn": "Haemoptysis (Hämoptyse)",
         "keywords": ["hämoptyse", "bluthusten"]
       },
       {
@@ -517,17 +517,17 @@
         "keywords": ["kontrazept", "pille", "flug", "nikotin"]
       },
       {
-        "label": "D-Dimere",
-        "labelRu": "D-Dimere",
-        "labelTr": "D-Dimere",
-        "labelEn": "D-Dimere",
+        "label": "D-dimer (D-Dimere)",
+        "labelRu": "D-димер (D-Dimere)",
+        "labelTr": "D-dimer (D-Dimere)",
+        "labelEn": "D-dimer (D-Dimere)",
         "keywords": ["d-dimer"]
       },
       {
-        "label": "CT-Angiographie",
-        "labelRu": "CT-Angiographie",
-        "labelTr": "CT-Angiographie",
-        "labelEn": "CT-Angiographie",
+        "label": "KT-angiografiya (CT-Angiographie)",
+        "labelRu": "КТ-ангиография (CT-Angiographie)",
+        "labelTr": "BT anjiyografi (CT-Angiographie)",
+        "labelEn": "CT angiography (CT-Angiographie)",
         "keywords": ["ct-angiographie", "angio-ct", "ct-angio"]
       },
       {
@@ -581,37 +581,37 @@
         "keywords": ["richter"]
       },
       {
-        "label": "Asosiy shikoyat: Oberbauchschmerzen",
-        "labelRu": "Основная жалоба: Oberbauchschmerzen",
-        "labelTr": "Ana şikâyet: Oberbauchschmerzen",
-        "labelEn": "Main complaint: Oberbauchschmerzen",
+        "label": "Asosiy shikoyat: qorinning yuqori qismidagi og‘riq (Oberbauchschmerzen)",
+        "labelRu": "Основная жалоба: боль в верхней части живота (Oberbauchschmerzen)",
+        "labelTr": "Ana şikâyet: üst karın ağrısı (Oberbauchschmerzen)",
+        "labelEn": "Main complaint: upper abdominal pain (Oberbauchschmerzen)",
         "keywords": ["oberbauch", "epigastri", "bauchschmerz"]
       },
       {
-        "label": "Gürtelförmige Ausstrahlung",
-        "labelRu": "Gürtelförmige Ausstrahlung",
-        "labelTr": "Gürtelförmige Ausstrahlung",
-        "labelEn": "Gürtelförmige Ausstrahlung",
+        "label": "Belbog‘simon tarqalish (Gürtelförmige Ausstrahlung)",
+        "labelRu": "Опоясывающая иррадиация (Gürtelförmige Ausstrahlung)",
+        "labelTr": "Kuşak tarzı yayılım (Gürtelförmige Ausstrahlung)",
+        "labelEn": "Band-like radiation (Gürtelförmige Ausstrahlung)",
         "keywords": ["gürtelförmig", "rücken"]
       },
       {
-        "label": "Erbrechen",
-        "labelRu": "Erbrechen",
-        "labelTr": "Erbrechen",
-        "labelEn": "Erbrechen",
+        "label": "Qusish (Erbrechen)",
+        "labelRu": "Рвота (Erbrechen)",
+        "labelTr": "Kusma (Erbrechen)",
+        "labelEn": "Vomiting (Erbrechen)",
         "keywords": ["erbrechen", "emesis"]
       },
       {
-        "label": "Alkoholabusus",
-        "labelRu": "Alkoholabusus",
-        "labelTr": "Alkoholabusus",
-        "labelEn": "Alkoholabusus",
+        "label": "Alkogolni suiiste’mol qilish (Alkoholabusus)",
+        "labelRu": "Злоупотребление алкоголем (Alkoholabusus)",
+        "labelTr": "Alkol kötüye kullanımı (Alkoholabusus)",
+        "labelEn": "Alcohol abuse (Alkoholabusus)",
         "keywords": ["alkohol"]
       },
       {
-        "label": "Lipase",
-        "labelRu": "Lipase",
-        "labelTr": "Lipase",
+        "label": "Lipaza (Lipase)",
+        "labelRu": "Липаза (Lipase)",
+        "labelTr": "Lipaz (Lipase)",
         "labelEn": "Lipase",
         "keywords": ["lipase"]
       },
@@ -637,10 +637,10 @@
         "keywords": ["flüssigkeit", "infusion", "analges", "volumen"]
       },
       {
-        "label": "Tavsiya: Alkoholkarenz",
-        "labelRu": "Рекомендация: Alkoholkarenz",
-        "labelTr": "Öneri: Alkoholkarenz",
-        "labelEn": "Recommendation: Alkoholkarenz",
+        "label": "Tavsiya: alkogoldan butunlay voz kechish (Alkoholkarenz)",
+        "labelRu": "Рекомендация: полный отказ от алкоголя (Alkoholkarenz)",
+        "labelTr": "Öneri: alkolü tamamen bırakma (Alkoholkarenz)",
+        "labelEn": "Recommendation: complete abstinence from alcohol (Alkoholkarenz)",
         "keywords": ["alkoholkarenz", "alkoholabstinenz", "abstinenz", "verzicht"]
       }
     ],
@@ -675,24 +675,24 @@
         "keywords": ["wagner"]
       },
       {
-        "label": "Asosiy shikoyat: Palpitationen",
-        "labelRu": "Основная жалоба: Palpitationen",
-        "labelTr": "Ana şikâyet: Palpitationen",
-        "labelEn": "Main complaint: Palpitationen",
+        "label": "Asosiy shikoyat: yurak tez urib ketishi (Palpitationen)",
+        "labelRu": "Основная жалоба: сердцебиение (Palpitationen)",
+        "labelTr": "Ana şikâyet: çarpıntı (Palpitationen)",
+        "labelEn": "Main complaint: palpitations (Palpitationen)",
         "keywords": ["palpitation", "herzrasen", "herzstolpern"]
       },
       {
-        "label": "Schwindel / Dyspnoe",
-        "labelRu": "Schwindel / Dyspnoe",
-        "labelTr": "Schwindel / Dyspnoe",
-        "labelEn": "Schwindel / Dyspnoe",
+        "label": "Bosh aylanishi / hansirash (Schwindel / Dyspnoe)",
+        "labelRu": "Головокружение / одышка (Schwindel / Dyspnoe)",
+        "labelTr": "Baş dönmesi / nefes darlığı (Schwindel / Dyspnoe)",
+        "labelEn": "Dizziness / shortness of breath (Schwindel / Dyspnoe)",
         "keywords": ["schwindel", "dyspnoe"]
       },
       {
-        "label": "Vorerkrankungen (Hypertonie, Diabetes)",
-        "labelRu": "Vorerkrankungen (Hypertonie, Diabetes)",
-        "labelTr": "Vorerkrankungen (Hypertonie, Diabetes)",
-        "labelEn": "Vorerkrankungen (Hypertonie, Diabetes)",
+        "label": "Avvalgi kasalliklar: gipertoniya, diabet (Vorerkrankungen: Hypertonie, Diabetes)",
+        "labelRu": "В анамнезе: гипертония, диабет (Vorerkrankungen: Hypertonie, Diabetes)",
+        "labelTr": "Eşlik eden hastalıklar: hipertansiyon, diyabet (Vorerkrankungen: Hypertonie, Diabetes)",
+        "labelEn": "Previous illnesses: hypertension, diabetes (Vorerkrankungen: Hypertonie, Diabetes)",
         "keywords": ["hypertonie", "diabetes"]
       },
       {
@@ -710,10 +710,10 @@
         "keywords": ["ekg"]
       },
       {
-        "label": "CHA2DS2-VASc",
-        "labelRu": "CHA2DS2-VASc",
-        "labelTr": "CHA2DS2-VASc",
-        "labelEn": "CHA2DS2-VASc",
+        "label": "CHA2DS2-VASc shkalasi",
+        "labelRu": "Шкала CHA2DS2-VASc",
+        "labelTr": "CHA2DS2-VASc skoru",
+        "labelEn": "CHA2DS2-VASc score",
         "keywords": ["cha2ds2", "cha₂ds₂", "chads"]
       },
       {
@@ -724,17 +724,17 @@
         "keywords": ["vorhofflimmern"]
       },
       {
-        "label": "Frequenzkontrolle (Betablocker)",
-        "labelRu": "Frequenzkontrolle (Betablocker)",
-        "labelTr": "Frequenzkontrolle (Betablocker)",
-        "labelEn": "Frequenzkontrolle (Betablocker)",
+        "label": "Yurak urish tezligini nazorat qilish: beta-blokator (Frequenzkontrolle: Betablocker)",
+        "labelRu": "Контроль ЧСС: бета-блокатор (Frequenzkontrolle: Betablocker)",
+        "labelTr": "Hız kontrolü: beta bloker (Frequenzkontrolle: Betablocker)",
+        "labelEn": "Rate control: beta blocker (Frequenzkontrolle: Betablocker)",
         "keywords": ["bisoprolol", "betablocker", "frequenzkontrolle"]
       },
       {
-        "label": "Antikoagulation",
-        "labelRu": "Antikoagulation",
-        "labelTr": "Antikoagulation",
-        "labelEn": "Antikoagulation",
+        "label": "Antikoagulyatsiya (Antikoagulation)",
+        "labelRu": "Антикоагуляция (Antikoagulation)",
+        "labelTr": "Antikoagülasyon (Antikoagulation)",
+        "labelEn": "Anticoagulation (Antikoagulation)",
         "keywords": ["antikoagul", "apixaban", "doak", "noak"]
       }
     ],
@@ -768,38 +768,38 @@
         "keywords": ["braun"]
       },
       {
-        "label": "Meläna",
-        "labelRu": "Meläna",
-        "labelTr": "Meläna",
-        "labelEn": "Meläna",
+        "label": "Qora, smolasimon najas, melena (Meläna)",
+        "labelRu": "Чёрный дёгтеобразный стул, мелена (Meläna)",
+        "labelTr": "Siyah, katran gibi dışkı, melena (Meläna)",
+        "labelEn": "Black, tarry stool, melaena (Meläna)",
         "keywords": ["meläna", "teerstuhl"]
       },
       {
-        "label": "Hämatemesis",
-        "labelRu": "Hämatemesis",
-        "labelTr": "Hämatemesis",
-        "labelEn": "Hämatemesis",
+        "label": "Qon qusish (Hämatemesis)",
+        "labelRu": "Рвота кровью (Hämatemesis)",
+        "labelTr": "Kan kusma, hematemez (Hämatemesis)",
+        "labelEn": "Vomiting blood, haematemesis (Hämatemesis)",
         "keywords": ["hämatemesis", "kaffeesatz"]
       },
       {
-        "label": "NSAR / Ibuprofen",
-        "labelRu": "NSAR / Ibuprofen",
-        "labelTr": "NSAR / Ibuprofen",
-        "labelEn": "NSAR / Ibuprofen",
+        "label": "NYQP / ibuprofen (NSAR / Ibuprofen)",
+        "labelRu": "НПВП / ибупрофен (NSAR / Ibuprofen)",
+        "labelTr": "NSAİİ / ibuprofen (NSAR / Ibuprofen)",
+        "labelEn": "NSAIDs / ibuprofen (NSAR / Ibuprofen)",
         "keywords": ["ibuprofen", "nsar"]
       },
       {
-        "label": "Hämoglobin",
-        "labelRu": "Hämoglobin",
-        "labelTr": "Hämoglobin",
-        "labelEn": "Hämoglobin",
+        "label": "Gemoglobin (Hämoglobin)",
+        "labelRu": "Гемоглобин (Hämoglobin)",
+        "labelTr": "Hemoglobin (Hämoglobin)",
+        "labelEn": "Haemoglobin (Hämoglobin)",
         "keywords": ["hämoglobin", "hb "]
       },
       {
-        "label": "Gastroskopie",
-        "labelRu": "Gastroskopie",
-        "labelTr": "Gastroskopie",
-        "labelEn": "Gastroskopie",
+        "label": "Gastroskopiya (Gastroskopie)",
+        "labelRu": "Гастроскопия (Gastroskopie)",
+        "labelTr": "Gastroskopi (Gastroskopie)",
+        "labelEn": "Gastroscopy (Gastroskopie)",
         "keywords": ["gastroskopie", "ögd", "endoskop"]
       },
       {
@@ -810,10 +810,10 @@
         "keywords": ["ulcus", "ulkus"]
       },
       {
-        "label": "Blutstillung / Transfusion",
-        "labelRu": "Blutstillung / Transfusion",
-        "labelTr": "Blutstillung / Transfusion",
-        "labelEn": "Blutstillung / Transfusion",
+        "label": "Qonni to‘xtatish / qon quyish (Blutstillung / Transfusion)",
+        "labelRu": "Остановка кровотечения / переливание крови (Blutstillung / Transfusion)",
+        "labelTr": "Kanama kontrolü / transfüzyon (Blutstillung / Transfusion)",
+        "labelEn": "Haemostasis / transfusion (Blutstillung / Transfusion)",
         "keywords": ["blutstillung", "erythrozytenkonzentrat", "transfusion", "clip"]
       },
       {
@@ -824,10 +824,10 @@
         "keywords": ["pantoprazol", "protonenpumpen", "ppi"]
       },
       {
-        "label": "Tavsiya: NSAR meiden",
-        "labelRu": "Рекомендация: NSAR meiden",
-        "labelTr": "Öneri: NSAR meiden",
-        "labelEn": "Recommendation: NSAR meiden",
+        "label": "Tavsiya: NYQP ichmaslik (NSAR meiden)",
+        "labelRu": "Рекомендация: избегать НПВП (NSAR meiden)",
+        "labelTr": "Öneri: NSAİİ’lerden kaçınma (NSAR meiden)",
+        "labelEn": "Recommendation: avoid NSAIDs (NSAR meiden)",
         "keywords": ["meiden", "verzicht", "abgesetzt", "absetzen", "pausier"]
       }
     ],
@@ -861,10 +861,10 @@
         "keywords": ["koch"]
       },
       {
-        "label": "Asosiy shikoyat: Flankenschmerzen",
-        "labelRu": "Основная жалоба: Flankenschmerzen",
-        "labelTr": "Ana şikâyet: Flankenschmerzen",
-        "labelEn": "Main complaint: Flankenschmerzen",
+        "label": "Asosiy shikoyat: biqin (yon) sohasidagi og‘riq (Flankenschmerzen)",
+        "labelRu": "Основная жалоба: боль в боку (Flankenschmerzen)",
+        "labelTr": "Ana şikâyet: yan ağrısı (Flankenschmerzen)",
+        "labelEn": "Main complaint: flank pain (Flankenschmerzen)",
         "keywords": ["flanke"]
       },
       {
@@ -875,10 +875,10 @@
         "keywords": ["kolik"]
       },
       {
-        "label": "Hämaturie",
-        "labelRu": "Hämaturie",
-        "labelTr": "Hämaturie",
-        "labelEn": "Hämaturie",
+        "label": "Siydikda qon, gematuriya (Hämaturie)",
+        "labelRu": "Кровь в моче, гематурия (Hämaturie)",
+        "labelTr": "İdrarda kan, hematüri (Hämaturie)",
+        "labelEn": "Blood in urine, haematuria (Hämaturie)",
         "keywords": ["hämaturie"]
       },
       {
@@ -889,10 +889,10 @@
         "keywords": ["metamizol", "novalgin"]
       },
       {
-        "label": "Sonographie (Harnstau)",
-        "labelRu": "Sonographie (Harnstau)",
-        "labelTr": "Sonographie (Harnstau)",
-        "labelEn": "Sonographie (Harnstau)",
+        "label": "UTT: siydik dimlanishi (Sonographie: Harnstau)",
+        "labelRu": "УЗИ: застой мочи (Sonographie: Harnstau)",
+        "labelTr": "Ultrasonografi: idrar yolu tıkanıklığı (Sonographie: Harnstau)",
+        "labelEn": "Ultrasound: urinary obstruction (Sonographie: Harnstau)",
         "keywords": ["harnstau", "sonographi"]
       },
       {
@@ -917,10 +917,10 @@
         "keywords": ["tamsulosin", "diclofenac", "analges"]
       },
       {
-        "label": "Tavsiya: Trinkmenge",
-        "labelRu": "Рекомендация: Trinkmenge",
-        "labelTr": "Öneri: Trinkmenge",
-        "labelEn": "Recommendation: Trinkmenge",
+        "label": "Tavsiya: ko‘p suyuqlik ichish (Trinkmenge)",
+        "labelRu": "Рекомендация: достаточное питьё (Trinkmenge)",
+        "labelTr": "Öneri: bol sıvı alımı (Trinkmenge)",
+        "labelEn": "Recommendation: adequate fluid intake (Trinkmenge)",
         "keywords": ["trinkmenge", "flüssigkeitszufuhr", "trinken"]
       }
     ],
@@ -952,17 +952,17 @@
         "keywords": ["bauer"]
       },
       {
-        "label": "Asosiy shikoyat: Thoraxschmerzen",
-        "labelRu": "Основная жалоба: Thoraxschmerzen",
-        "labelTr": "Ana şikâyet: Thoraxschmerzen",
-        "labelEn": "Main complaint: Thoraxschmerzen",
+        "label": "Asosiy shikoyat: ko‘krak qafasidagi og‘riq (Thoraxschmerzen)",
+        "labelRu": "Основная жалоба: боль в груди (Thoraxschmerzen)",
+        "labelTr": "Ana şikâyet: göğüs ağrısı (Thoraxschmerzen)",
+        "labelEn": "Main complaint: chest pain (Thoraxschmerzen)",
         "keywords": ["thoraxschmerz", "brustschmerz"]
       },
       {
-        "label": "Dyspnoe",
-        "labelRu": "Dyspnoe",
-        "labelTr": "Dyspnoe",
-        "labelEn": "Dyspnoe",
+        "label": "Hansirash (Dyspnoe)",
+        "labelRu": "Одышка (Dyspnoe)",
+        "labelTr": "Nefes darlığı (Dyspnoe)",
+        "labelEn": "Shortness of breath (Dyspnoe)",
         "keywords": ["dyspnoe", "atemnot"]
       },
       {
@@ -973,10 +973,10 @@
         "keywords": ["trauma"]
       },
       {
-        "label": "Nikotinabusus",
-        "labelRu": "Nikotinabusus",
-        "labelTr": "Nikotinabusus",
-        "labelEn": "Nikotinabusus",
+        "label": "Chekish (Nikotinabusus)",
+        "labelRu": "Курение (Nikotinabusus)",
+        "labelTr": "Sigara kullanımı (Nikotinabusus)",
+        "labelEn": "Smoking (Nikotinabusus)",
         "keywords": ["nikotin", "raucher", "rauchen"]
       },
       {
@@ -987,10 +987,10 @@
         "keywords": ["atemgeräusch", "klopfschall", "auskultat"]
       },
       {
-        "label": "Röntgen-Thorax",
-        "labelRu": "Röntgen-Thorax",
-        "labelTr": "Röntgen-Thorax",
-        "labelEn": "Röntgen-Thorax",
+        "label": "Ko‘krak qafasi rentgeni (Röntgen-Thorax)",
+        "labelRu": "Рентген грудной клетки (Röntgen-Thorax)",
+        "labelTr": "Akciğer grafisi (Röntgen-Thorax)",
+        "labelEn": "Chest X-ray (Röntgen-Thorax)",
         "keywords": ["röntgen"]
       },
       {
@@ -1043,17 +1043,17 @@
         "keywords": ["lange"]
       },
       {
-        "label": "Aszites",
-        "labelRu": "Aszites",
-        "labelTr": "Aszites",
-        "labelEn": "Aszites",
+        "label": "Assit (Aszites)",
+        "labelRu": "Асцит (Aszites)",
+        "labelTr": "Asit (Aszites)",
+        "labelEn": "Ascites (Aszites)",
         "keywords": ["aszites"]
       },
       {
-        "label": "Ikterus",
-        "labelRu": "Ikterus",
-        "labelTr": "Ikterus",
-        "labelEn": "Ikterus",
+        "label": "Sariqlik (Ikterus)",
+        "labelRu": "Желтуха (Ikterus)",
+        "labelTr": "Sarılık (Ikterus)",
+        "labelEn": "Jaundice (Ikterus)",
         "keywords": ["ikterus", "gelb"]
       },
       {
@@ -1064,10 +1064,10 @@
         "keywords": ["enzephalopathie", "verwirrt"]
       },
       {
-        "label": "Alkoholabusus",
-        "labelRu": "Alkoholabusus",
-        "labelTr": "Alkoholabusus",
-        "labelEn": "Alkoholabusus",
+        "label": "Alkogolni suiiste’mol qilish (Alkoholabusus)",
+        "labelRu": "Злоупотребление алкоголем (Alkoholabusus)",
+        "labelTr": "Alkol kötüye kullanımı (Alkoholabusus)",
+        "labelEn": "Alcohol abuse (Alkoholabusus)",
         "keywords": ["alkohol"]
       },
       {
@@ -1141,10 +1141,10 @@
         "keywords": ["unterbauch"]
       },
       {
-        "label": "Fieber",
-        "labelRu": "Fieber",
-        "labelTr": "Fieber",
-        "labelEn": "Fieber",
+        "label": "Isitma (Fieber)",
+        "labelRu": "Лихорадка (Fieber)",
+        "labelTr": "Ateş (Fieber)",
+        "labelEn": "Fever (Fieber)",
         "keywords": ["fieber"]
       },
       {
@@ -1246,10 +1246,10 @@
         "keywords": ["apixaban", "antikoagul"]
       },
       {
-        "label": "Röntgen",
-        "labelRu": "Röntgen",
+        "label": "Rentgen (Röntgen)",
+        "labelRu": "Рентген (Röntgen)",
         "labelTr": "Röntgen",
-        "labelEn": "Röntgen",
+        "labelEn": "X-ray (Röntgen)",
         "keywords": ["röntgen"]
       },
       {
@@ -1323,10 +1323,10 @@
         "keywords": ["rötung", "überwärm"]
       },
       {
-        "label": "Fieber / Schüttelfrost",
-        "labelRu": "Fieber / Schüttelfrost",
-        "labelTr": "Fieber / Schüttelfrost",
-        "labelEn": "Fieber / Schüttelfrost",
+        "label": "Isitma / qaltirash (Fieber / Schüttelfrost)",
+        "labelRu": "Лихорадка / озноб (Fieber / Schüttelfrost)",
+        "labelTr": "Ateş / titreme (Fieber / Schüttelfrost)",
+        "labelEn": "Fever / chills (Fieber / Schüttelfrost)",
         "keywords": ["fieber", "schüttelfrost"]
       },
       {
@@ -1337,8 +1337,8 @@
         "keywords": ["mykose", "eintrittspforte"]
       },
       {
-        "label": "Diabetes mellitus",
-        "labelRu": "Diabetes mellitus",
+        "label": "Qandli diabet (Diabetes mellitus)",
+        "labelRu": "Сахарный диабет (Diabetes mellitus)",
         "labelTr": "Diabetes mellitus",
         "labelEn": "Diabetes mellitus",
         "keywords": ["diabetes"]
@@ -1456,10 +1456,10 @@
         "keywords": ["ceftriaxon", "dexamethason"]
       },
       {
-        "label": "Meldung Gesundheitsamt",
-        "labelRu": "Уведомление Gesundheitsamt",
-        "labelTr": "Meldung Gesundheitsamt",
-        "labelEn": "Meldung Gesundheitsamt",
+        "label": "Sanitariya-epidemiologiya xizmatiga xabar berish (Meldung an das Gesundheitsamt)",
+        "labelRu": "Уведомление санитарно-эпидемиологической службы (Meldung an das Gesundheitsamt)",
+        "labelTr": "Halk sağlığı müdürlüğüne bildirim (Meldung an das Gesundheitsamt)",
+        "labelEn": "Notification of the public health office (Meldung an das Gesundheitsamt)",
         "keywords": ["gesundheitsamt", "meldung"]
       },
       {
@@ -1499,45 +1499,45 @@
         "keywords": ["fischer"]
       },
       {
-        "label": "Asosiy shikoyat: rechter Oberbauch",
-        "labelRu": "Основная жалоба: rechter Oberbauch",
-        "labelTr": "Ana şikâyet: rechter Oberbauch",
-        "labelEn": "Main complaint: rechter Oberbauch",
+        "label": "Asosiy shikoyat: o‘ng qovurg‘a ostidagi og‘riq (rechter Oberbauch)",
+        "labelRu": "Основная жалоба: боль в правом подреберье (rechter Oberbauch)",
+        "labelTr": "Ana şikâyet: sağ üst kadran ağrısı (rechter Oberbauch)",
+        "labelEn": "Main complaint: right upper quadrant pain (rechter Oberbauch)",
         "keywords": ["oberbauch"]
       },
       {
-        "label": "Ausstrahlung (rechte Schulter)",
-        "labelRu": "Ausstrahlung (rechte Schulter)",
-        "labelTr": "Ausstrahlung (rechte Schulter)",
-        "labelEn": "Ausstrahlung (rechte Schulter)",
+        "label": "O‘ng yelkaga tarqalish (Ausstrahlung in die rechte Schulter)",
+        "labelRu": "Иррадиация в правое плечо (Ausstrahlung in die rechte Schulter)",
+        "labelTr": "Sağ omuza yayılım (Ausstrahlung in die rechte Schulter)",
+        "labelEn": "Radiation to the right shoulder (Ausstrahlung in die rechte Schulter)",
         "keywords": ["schulter"]
       },
       {
-        "label": "Fieber / Emesis",
-        "labelRu": "Fieber / Emesis",
-        "labelTr": "Fieber / Emesis",
-        "labelEn": "Fieber / Emesis",
+        "label": "Isitma / qusish (Fieber / Emesis)",
+        "labelRu": "Лихорадка / рвота (Fieber / Emesis)",
+        "labelTr": "Ateş / kusma (Fieber / Emesis)",
+        "labelEn": "Fever / vomiting (Fieber / Emesis)",
         "keywords": ["fieber", "38,1", "emesis", "erbrechen"]
       },
       {
-        "label": "Murphy-Zeichen",
-        "labelRu": "Murphy-Zeichen",
-        "labelTr": "Murphy-Zeichen",
-        "labelEn": "Murphy-Zeichen",
+        "label": "Merfi simptomi (Murphy-Zeichen)",
+        "labelRu": "Симптом Мерфи (Murphy-Zeichen)",
+        "labelTr": "Murphy bulgusu (Murphy-Zeichen)",
+        "labelEn": "Murphy’s sign (Murphy-Zeichen)",
         "keywords": ["murphy"]
       },
       {
-        "label": "Labor (Leukozyten, CRP)",
-        "labelRu": "Labor (Leukozyten, CRP)",
-        "labelTr": "Labor (Leukozyten, CRP)",
-        "labelEn": "Labor (Leukozyten, CRP)",
+        "label": "Laboratoriya: leykotsitlar, CRP (Labor: Leukozyten, CRP)",
+        "labelRu": "Анализы: лейкоциты, СРБ (Labor: Leukozyten, CRP)",
+        "labelTr": "Laboratuvar: lökositler, CRP (Labor: Leukozyten, CRP)",
+        "labelEn": "Lab: leukocytes, CRP (Labor: Leukozyten, CRP)",
         "keywords": ["leukozyt", "crp"]
       },
       {
-        "label": "Sonographie topilmasi",
-        "labelRu": "Данные: Sonographie",
-        "labelTr": "Sonographie bulgusu",
-        "labelEn": "Sonographie finding",
+        "label": "UTT topilmasi (Sonographie)",
+        "labelRu": "Данные УЗИ (Sonographie)",
+        "labelTr": "Ultrasonografi bulgusu (Sonographie)",
+        "labelEn": "Ultrasound finding (Sonographie)",
         "keywords": ["sonograph", "gallenblasenwand", "konkrement"]
       },
       {
@@ -1591,45 +1591,45 @@
         "keywords": ["becker"]
       },
       {
-        "label": "Dysurie / Pollakisurie",
-        "labelRu": "Dysurie / Pollakisurie",
-        "labelTr": "Dysurie / Pollakisurie",
-        "labelEn": "Dysurie / Pollakisurie",
+        "label": "Og‘riqli siyish / tez-tez siyish (Dysurie / Pollakisurie)",
+        "labelRu": "Дизурия / учащённое мочеиспускание (Dysurie / Pollakisurie)",
+        "labelTr": "Dizüri / sık idrara çıkma (Dysurie / Pollakisurie)",
+        "labelEn": "Dysuria / frequent urination (Dysurie / Pollakisurie)",
         "keywords": ["dysurie", "pollakisurie"]
       },
       {
-        "label": "Fieber / Schüttelfrost",
-        "labelRu": "Fieber / Schüttelfrost",
-        "labelTr": "Fieber / Schüttelfrost",
-        "labelEn": "Fieber / Schüttelfrost",
+        "label": "Isitma / qaltirash (Fieber / Schüttelfrost)",
+        "labelRu": "Лихорадка / озноб (Fieber / Schüttelfrost)",
+        "labelTr": "Ateş / titreme (Fieber / Schüttelfrost)",
+        "labelEn": "Fever / chills (Fieber / Schüttelfrost)",
         "keywords": ["fieber", "schüttelfrost"]
       },
       {
-        "label": "Asosiy shikoyat: Flankenschmerzen links",
-        "labelRu": "Основная жалоба: Flankenschmerzen links",
-        "labelTr": "Ana şikâyet: Flankenschmerzen links",
-        "labelEn": "Main complaint: Flankenschmerzen links",
+        "label": "Asosiy shikoyat: chap biqin sohasidagi og‘riq (Flankenschmerzen links)",
+        "labelRu": "Основная жалоба: боль в левом боку (Flankenschmerzen links)",
+        "labelTr": "Ana şikâyet: sol yan ağrısı (Flankenschmerzen links)",
+        "labelEn": "Main complaint: left flank pain (Flankenschmerzen links)",
         "keywords": ["flanke"]
       },
       {
-        "label": "Nierenlagerklopfschmerz",
-        "labelRu": "Nierenlagerklopfschmerz",
-        "labelTr": "Nierenlagerklopfschmerz",
-        "labelEn": "Nierenlagerklopfschmerz",
+        "label": "Buyrak sohasiga urganda og‘riq (Nierenlagerklopfschmerz)",
+        "labelRu": "Положительный симптом поколачивания (Nierenlagerklopfschmerz)",
+        "labelTr": "Kostovertebral açı hassasiyeti (Nierenlagerklopfschmerz)",
+        "labelEn": "Renal angle tenderness (Nierenlagerklopfschmerz)",
         "keywords": ["nierenlager", "klopfschmerz"]
       },
       {
-        "label": "Urinstatus / Urinkultur",
-        "labelRu": "Urinstatus / Urinkultur",
-        "labelTr": "Urinstatus / Urinkultur",
-        "labelEn": "Urinstatus / Urinkultur",
+        "label": "Siydik tahlili / siydik ekmasi (Urinstatus / Urinkultur)",
+        "labelRu": "Анализ мочи / посев мочи (Urinstatus / Urinkultur)",
+        "labelTr": "İdrar tahlili / idrar kültürü (Urinstatus / Urinkultur)",
+        "labelEn": "Urinalysis / urine culture (Urinstatus / Urinkultur)",
         "keywords": ["urin", "nitrit", "e. coli", "kultur"]
       },
       {
-        "label": "Sonographie topilmasi",
-        "labelRu": "Данные: Sonographie",
-        "labelTr": "Sonographie bulgusu",
-        "labelEn": "Sonographie finding",
+        "label": "UTT topilmasi (Sonographie)",
+        "labelRu": "Данные УЗИ (Sonographie)",
+        "labelTr": "Ultrasonografi bulgusu (Sonographie)",
+        "labelEn": "Ultrasound finding (Sonographie)",
         "keywords": ["harnstau", "sonograph"]
       },
       {
@@ -1683,10 +1683,10 @@
         "keywords": ["richter"]
       },
       {
-        "label": "Asosiy shikoyat: Beinschwellung links",
-        "labelRu": "Основная жалоба: Beinschwellung links",
-        "labelTr": "Ana şikâyet: Beinschwellung links",
-        "labelEn": "Main complaint: Beinschwellung links",
+        "label": "Asosiy shikoyat: chap oyoq shishi (Beinschwellung links)",
+        "labelRu": "Основная жалоба: отёк левой ноги (Beinschwellung links)",
+        "labelTr": "Ana şikâyet: sol bacakta şişlik (Beinschwellung links)",
+        "labelEn": "Main complaint: swelling of the left leg (Beinschwellung links)",
         "keywords": ["schwellung", "unterschenkel"]
       },
       {
@@ -1697,24 +1697,24 @@
         "keywords": ["flug", "tamoxifen", "mammakarzinom"]
       },
       {
-        "label": "Wadendruckschmerz / Umfangsdifferenz",
-        "labelRu": "Wadendruckschmerz / Umfangsdifferenz",
-        "labelTr": "Wadendruckschmerz / Umfangsdifferenz",
-        "labelEn": "Wadendruckschmerz / Umfangsdifferenz",
+        "label": "Boldirni bosganda og‘riq / aylana farqi (Wadendruckschmerz / Umfangsdifferenz)",
+        "labelRu": "Болезненность икры / разница в окружности (Wadendruckschmerz / Umfangsdifferenz)",
+        "labelTr": "Baldır hassasiyeti / çevre farkı (Wadendruckschmerz / Umfangsdifferenz)",
+        "labelEn": "Calf tenderness / difference in circumference (Wadendruckschmerz / Umfangsdifferenz)",
         "keywords": ["wadendruck", "umfangsdifferenz"]
       },
       {
-        "label": "D-Dimere",
-        "labelRu": "D-Dimere",
-        "labelTr": "D-Dimere",
-        "labelEn": "D-Dimere",
+        "label": "D-dimer (D-Dimere)",
+        "labelRu": "D-димер (D-Dimere)",
+        "labelTr": "D-dimer (D-Dimere)",
+        "labelEn": "D-dimer (D-Dimere)",
         "keywords": ["d-dimer"]
       },
       {
-        "label": "Kompressionssonographie topilmasi",
-        "labelRu": "Данные: Kompressionssonographie",
-        "labelTr": "Kompressionssonographie bulgusu",
-        "labelEn": "Kompressionssonographie finding",
+        "label": "Kompression UTT topilmasi (Kompressionssonographie)",
+        "labelRu": "Данные компрессионного УЗИ (Kompressionssonographie)",
+        "labelTr": "Kompresyon ultrasonografi bulgusu (Kompressionssonographie)",
+        "labelEn": "Compression ultrasound finding (Kompressionssonographie)",
         "keywords": ["kompressionssonograph", "poplitea", "femoralis"]
       },
       {
@@ -1732,17 +1732,17 @@
         "keywords": ["apixaban", "antikoagul"]
       },
       {
-        "label": "Kompressionstherapie",
-        "labelRu": "Kompressionstherapie",
-        "labelTr": "Kompressionstherapie",
-        "labelEn": "Kompressionstherapie",
+        "label": "Kompression terapiya (Kompressionstherapie)",
+        "labelRu": "Компрессионная терапия (Kompressionstherapie)",
+        "labelTr": "Kompresyon tedavisi (Kompressionstherapie)",
+        "labelEn": "Compression therapy (Kompressionstherapie)",
         "keywords": ["kompression"]
       },
       {
-        "label": "Tavsiya: Dauer der Antikoagulation",
-        "labelRu": "Рекомендация: Dauer der Antikoagulation",
-        "labelTr": "Öneri: Dauer der Antikoagulation",
-        "labelEn": "Recommendation: Dauer der Antikoagulation",
+        "label": "Tavsiya: antikoagulyatsiya davomiyligi (Dauer der Antikoagulation)",
+        "labelRu": "Рекомендация: длительность антикоагуляции (Dauer der Antikoagulation)",
+        "labelTr": "Öneri: antikoagülasyon süresi (Dauer der Antikoagulation)",
+        "labelEn": "Recommendation: duration of anticoagulation (Dauer der Antikoagulation)",
         "keywords": ["monate", "dauer"]
       }
     ],
@@ -1775,31 +1775,31 @@
         "keywords": ["klein"]
       },
       {
-        "label": "Asosiy shikoyat: Dyspnoe",
-        "labelRu": "Основная жалоба: Dyspnoe",
-        "labelTr": "Ana şikâyet: Dyspnoe",
-        "labelEn": "Main complaint: Dyspnoe",
+        "label": "Asosiy shikoyat: hansirash (Dyspnoe)",
+        "labelRu": "Основная жалоба: одышка (Dyspnoe)",
+        "labelTr": "Ana şikâyet: nefes darlığı (Dyspnoe)",
+        "labelEn": "Main complaint: shortness of breath (Dyspnoe)",
         "keywords": ["dyspnoe", "atemnot"]
       },
       {
-        "label": "Orthopnoe",
-        "labelRu": "Orthopnoe",
-        "labelTr": "Orthopnoe",
-        "labelEn": "Orthopnoe",
+        "label": "Yotganda hansirash, ortopnoe (Orthopnoe)",
+        "labelRu": "Одышка лёжа, ортопноэ (Orthopnoe)",
+        "labelTr": "Yatınca nefes darlığı, ortopne (Orthopnoe)",
+        "labelEn": "Breathlessness lying flat, orthopnoea (Orthopnoe)",
         "keywords": ["orthopnoe"]
       },
       {
-        "label": "Unterschenkelödeme",
-        "labelRu": "Unterschenkelödeme",
-        "labelTr": "Unterschenkelödeme",
-        "labelEn": "Unterschenkelödeme",
+        "label": "Boldir shishlari (Unterschenkelödeme)",
+        "labelRu": "Отёки голеней (Unterschenkelödeme)",
+        "labelTr": "Bacaklarda ödem (Unterschenkelödeme)",
+        "labelEn": "Lower leg oedema (Unterschenkelödeme)",
         "keywords": ["ödem"]
       },
       {
-        "label": "Diuretikum pausiert",
-        "labelRu": "Diuretikum pausiert",
-        "labelTr": "Diuretikum pausiert",
-        "labelEn": "Diuretikum pausiert",
+        "label": "Diuretik to‘xtatib qo‘yilgan (Diuretikum pausiert)",
+        "labelRu": "Диуретик был отменён (Diuretikum pausiert)",
+        "labelTr": "Diüretik bırakılmış (Diuretikum pausiert)",
+        "labelEn": "Diuretic stopped (Diuretikum pausiert)",
         "keywords": ["pausiert", "eigenmächtig", "abgesetzt"]
       },
       {
@@ -1810,10 +1810,10 @@
         "keywords": ["bnp"]
       },
       {
-        "label": "Röntgen / Echo topilmasi",
-        "labelRu": "Данные: Röntgen / Echo",
-        "labelTr": "Röntgen / Echo bulgusu",
-        "labelEn": "Röntgen / Echo finding",
+        "label": "Rentgen / ExoKG topilmasi (Röntgen / Echo)",
+        "labelRu": "Данные рентгена / ЭхоКГ (Röntgen / Echo)",
+        "labelTr": "Röntgen / EKO bulgusu (Röntgen / Echo)",
+        "labelEn": "X-ray / echo finding (Röntgen / Echo)",
         "keywords": ["stauung", "pleuraerguss", "lvef", "echo"]
       },
       {
@@ -1831,10 +1831,10 @@
         "keywords": ["furosemid", "diure", "torasemid"]
       },
       {
-        "label": "Tavsiya: tägliche Gewichtskontrolle",
-        "labelRu": "Рекомендация: tägliche Gewichtskontrolle",
-        "labelTr": "Öneri: tägliche Gewichtskontrolle",
-        "labelEn": "Recommendation: tägliche Gewichtskontrolle",
+        "label": "Tavsiya: har kuni vaznni tortib turish (tägliche Gewichtskontrolle)",
+        "labelRu": "Рекомендация: ежедневный контроль веса (tägliche Gewichtskontrolle)",
+        "labelTr": "Öneri: günlük kilo takibi (tägliche Gewichtskontrolle)",
+        "labelEn": "Recommendation: daily weight check (tägliche Gewichtskontrolle)",
         "keywords": ["gewicht"]
       }
     ],
@@ -1867,45 +1867,45 @@
         "keywords": ["schulz"]
       },
       {
-        "label": "Asosiy shikoyat: Dyspnoe",
-        "labelRu": "Основная жалоба: Dyspnoe",
-        "labelTr": "Ana şikâyet: Dyspnoe",
-        "labelEn": "Main complaint: Dyspnoe",
+        "label": "Asosiy shikoyat: hansirash (Dyspnoe)",
+        "labelRu": "Основная жалоба: одышка (Dyspnoe)",
+        "labelTr": "Ana şikâyet: nefes darlığı (Dyspnoe)",
+        "labelEn": "Main complaint: shortness of breath (Dyspnoe)",
         "keywords": ["dyspnoe", "atemnot"]
       },
       {
-        "label": "Husten / Sputum",
-        "labelRu": "Husten / Sputum",
-        "labelTr": "Husten / Sputum",
-        "labelEn": "Husten / Sputum",
+        "label": "Yo‘tal / balg‘am (Husten / Sputum)",
+        "labelRu": "Кашель / мокрота (Husten / Sputum)",
+        "labelTr": "Öksürük / balgam (Husten / Sputum)",
+        "labelEn": "Cough / sputum (Husten / Sputum)",
         "keywords": ["husten", "sputum", "auswurf"]
       },
       {
-        "label": "Vorerkrankung COPD",
-        "labelRu": "Vorerkrankung COPD",
-        "labelTr": "Vorerkrankung COPD",
-        "labelEn": "Vorerkrankung COPD",
+        "label": "Avvalgi kasallik: XOBK (Vorerkrankung COPD)",
+        "labelRu": "В анамнезе: ХОБЛ (Vorerkrankung COPD)",
+        "labelTr": "Bilinen KOAH (Vorerkrankung COPD)",
+        "labelEn": "Known COPD (Vorerkrankung COPD)",
         "keywords": ["copd"]
       },
       {
-        "label": "Nikotinabusus",
-        "labelRu": "Nikotinabusus",
-        "labelTr": "Nikotinabusus",
-        "labelEn": "Nikotinabusus",
+        "label": "Chekish (Nikotinabusus)",
+        "labelRu": "Курение (Nikotinabusus)",
+        "labelTr": "Sigara kullanımı (Nikotinabusus)",
+        "labelEn": "Smoking (Nikotinabusus)",
         "keywords": ["nikotin", "pack years", "raucht"]
       },
       {
-        "label": "Giemen",
-        "labelRu": "Giemen",
-        "labelTr": "Giemen",
-        "labelEn": "Giemen",
+        "label": "Hushtaksimon xirillash (Giemen)",
+        "labelRu": "Свистящие хрипы (Giemen)",
+        "labelTr": "Hışıltı (Giemen)",
+        "labelEn": "Wheezing (Giemen)",
         "keywords": ["giemen"]
       },
       {
-        "label": "Blutgasanalyse",
-        "labelRu": "Blutgasanalyse",
-        "labelTr": "Blutgasanalyse",
-        "labelEn": "Blutgasanalyse",
+        "label": "Qon gazlari tahlili (Blutgasanalyse)",
+        "labelRu": "Анализ газов крови (Blutgasanalyse)",
+        "labelTr": "Kan gazı analizi (Blutgasanalyse)",
+        "labelEn": "Blood gas analysis (Blutgasanalyse)",
         "keywords": ["bga", "blutgas", "po2", "pco2", "po₂"]
       },
       {
@@ -1923,10 +1923,10 @@
         "keywords": ["prednisolon", "amoxicillin", "inhalation", "antibio"]
       },
       {
-        "label": "Tavsiya: Nikotinkarenz",
-        "labelRu": "Рекомендация: Nikotinkarenz",
-        "labelTr": "Öneri: Nikotinkarenz",
-        "labelEn": "Recommendation: Nikotinkarenz",
+        "label": "Tavsiya: chekishni tashlash (Nikotinkarenz)",
+        "labelRu": "Рекомендация: отказ от курения (Nikotinkarenz)",
+        "labelTr": "Öneri: sigarayı bırakma (Nikotinkarenz)",
+        "labelEn": "Recommendation: stop smoking (Nikotinkarenz)",
         "keywords": ["nikotinkarenz", "rauchstopp", "rauchentwöhnung"]
       }
     ],
@@ -1959,31 +1959,31 @@
         "keywords": ["schmitt"]
       },
       {
-        "label": "Gewichtsverlust",
-        "labelRu": "Gewichtsverlust",
-        "labelTr": "Gewichtsverlust",
-        "labelEn": "Gewichtsverlust",
+        "label": "Vazn yo‘qotish (Gewichtsverlust)",
+        "labelRu": "Потеря веса (Gewichtsverlust)",
+        "labelTr": "Kilo kaybı (Gewichtsverlust)",
+        "labelEn": "Weight loss (Gewichtsverlust)",
         "keywords": ["gewichtsverlust", "gewichtsabnahme"]
       },
       {
-        "label": "Palpitationen / Tachykardie",
-        "labelRu": "Palpitationen / Tachykardie",
-        "labelTr": "Palpitationen / Tachykardie",
-        "labelEn": "Palpitationen / Tachykardie",
+        "label": "Yurak tez urib ketishi / taxikardiya (Palpitationen / Tachykardie)",
+        "labelRu": "Сердцебиение / тахикардия (Palpitationen / Tachykardie)",
+        "labelTr": "Çarpıntı / taşikardi (Palpitationen / Tachykardie)",
+        "labelEn": "Palpitations / tachycardia (Palpitationen / Tachykardie)",
         "keywords": ["palpitation", "tachykard"]
       },
       {
-        "label": "Tremor",
-        "labelRu": "Tremor",
+        "label": "Titroq (Tremor)",
+        "labelRu": "Тремор (Tremor)",
         "labelTr": "Tremor",
         "labelEn": "Tremor",
         "keywords": ["tremor"]
       },
       {
-        "label": "Exophthalmus / Orbitopathie",
-        "labelRu": "Exophthalmus / Orbitopathie",
-        "labelTr": "Exophthalmus / Orbitopathie",
-        "labelEn": "Exophthalmus / Orbitopathie",
+        "label": "Ekzoftalm / orbitopatiya (Exophthalmus / Orbitopathie)",
+        "labelRu": "Экзофтальм / орбитопатия (Exophthalmus / Orbitopathie)",
+        "labelTr": "Ekzoftalmi / orbitopati (Exophthalmus / Orbitopathie)",
+        "labelEn": "Exophthalmos / orbitopathy (Exophthalmus / Orbitopathie)",
         "keywords": ["exophthalm", "orbitopathie"]
       },
       {
@@ -1994,10 +1994,10 @@
         "keywords": ["tsh", "ft4", "ft3"]
       },
       {
-        "label": "TRAK",
-        "labelRu": "TRAK",
-        "labelTr": "TRAK",
-        "labelEn": "TRAK",
+        "label": "TSH retseptoriga antitanachalar (TRAK)",
+        "labelRu": "Антитела к рецептору ТТГ (TRAK)",
+        "labelTr": "TSH reseptör antikorları (TRAK)",
+        "labelEn": "TSH receptor antibodies (TRAK)",
         "keywords": ["trak"]
       },
       {
@@ -2051,38 +2051,38 @@
         "keywords": ["krüger"]
       },
       {
-        "label": "Asosiy shikoyat: Bauchschmerzen",
-        "labelRu": "Основная жалоба: Bauchschmerzen",
-        "labelTr": "Ana şikâyet: Bauchschmerzen",
-        "labelEn": "Main complaint: Bauchschmerzen",
+        "label": "Asosiy shikoyat: qorin og‘rig‘i (Bauchschmerzen)",
+        "labelRu": "Основная жалоба: боль в животе (Bauchschmerzen)",
+        "labelTr": "Ana şikâyet: karın ağrısı (Bauchschmerzen)",
+        "labelEn": "Main complaint: abdominal pain (Bauchschmerzen)",
         "keywords": ["bauchschmerz"]
       },
       {
-        "label": "Stuhl- und Windverhalt",
-        "labelRu": "Stuhl- und Windverhalt",
-        "labelTr": "Stuhl- und Windverhalt",
-        "labelEn": "Stuhl- und Windverhalt",
+        "label": "Najas va gaz chiqmasligi (Stuhl- und Windverhalt)",
+        "labelRu": "Задержка стула и газов (Stuhl- und Windverhalt)",
+        "labelTr": "Gaita ve gaz çıkaramama (Stuhl- und Windverhalt)",
+        "labelEn": "No passage of stool or wind (Stuhl- und Windverhalt)",
         "keywords": ["stuhl", "windverhalt"]
       },
       {
-        "label": "Erbrechen",
-        "labelRu": "Erbrechen",
-        "labelTr": "Erbrechen",
-        "labelEn": "Erbrechen",
+        "label": "Qusish (Erbrechen)",
+        "labelRu": "Рвота (Erbrechen)",
+        "labelTr": "Kusma (Erbrechen)",
+        "labelEn": "Vomiting (Erbrechen)",
         "keywords": ["erbrechen", "emesis"]
       },
       {
-        "label": "Voroperationen",
-        "labelRu": "Voroperationen",
-        "labelTr": "Voroperationen",
-        "labelEn": "Voroperationen",
+        "label": "Avval o‘tkazilgan operatsiyalar (Voroperationen)",
+        "labelRu": "Перенесённые операции (Voroperationen)",
+        "labelTr": "Geçirilmiş ameliyatlar (Voroperationen)",
+        "labelEn": "Previous operations (Voroperationen)",
         "keywords": ["hysterektomie", "cholezystektomie", "voroperation"]
       },
       {
-        "label": "Darmgeräusche",
-        "labelRu": "Darmgeräusche",
-        "labelTr": "Darmgeräusche",
-        "labelEn": "Darmgeräusche",
+        "label": "Ichak shovqinlari (Darmgeräusche)",
+        "labelRu": "Кишечные шумы (Darmgeräusche)",
+        "labelTr": "Bağırsak sesleri (Darmgeräusche)",
+        "labelEn": "Bowel sounds (Darmgeräusche)",
         "keywords": ["darmgeräusch"]
       },
       {
@@ -2143,45 +2143,45 @@
         "keywords": ["lehmann"]
       },
       {
-        "label": "Asosiy shikoyat: Müdigkeit",
-        "labelRu": "Основная жалоба: Müdigkeit",
-        "labelTr": "Ana şikâyet: Müdigkeit",
-        "labelEn": "Main complaint: Müdigkeit",
+        "label": "Asosiy shikoyat: holsizlik (Müdigkeit)",
+        "labelRu": "Основная жалоба: слабость, быстрая утомляемость (Müdigkeit)",
+        "labelTr": "Ana şikâyet: yorgunluk (Müdigkeit)",
+        "labelEn": "Main complaint: fatigue (Müdigkeit)",
         "keywords": ["müdigkeit", "abgeschlagen", "leistungsknick"]
       },
       {
-        "label": "Hypermenorrhö",
-        "labelRu": "Hypermenorrhö",
-        "labelTr": "Hypermenorrhö",
-        "labelEn": "Hypermenorrhö",
+        "label": "Hayzda ko‘p qon ketishi (Hypermenorrhö)",
+        "labelRu": "Обильные менструации (Hypermenorrhö)",
+        "labelTr": "Aşırı adet kanaması (Hypermenorrhö)",
+        "labelEn": "Heavy menstrual bleeding (Hypermenorrhö)",
         "keywords": ["hypermenorrh"]
       },
       {
-        "label": "Blässe",
-        "labelRu": "Blässe",
-        "labelTr": "Blässe",
-        "labelEn": "Blässe",
+        "label": "Rangparlik (Blässe)",
+        "labelRu": "Бледность (Blässe)",
+        "labelTr": "Solukluk (Blässe)",
+        "labelEn": "Pallor (Blässe)",
         "keywords": ["blass", "blässe"]
       },
       {
-        "label": "Hämoglobin / MCV",
-        "labelRu": "Hämoglobin / MCV",
-        "labelTr": "Hämoglobin / MCV",
-        "labelEn": "Hämoglobin / MCV",
+        "label": "Gemoglobin / MCV (Hämoglobin / MCV)",
+        "labelRu": "Гемоглобин / MCV (Hämoglobin / MCV)",
+        "labelTr": "Hemoglobin / MCV (Hämoglobin / MCV)",
+        "labelEn": "Haemoglobin / MCV (Hämoglobin / MCV)",
         "keywords": ["hämoglobin", "hb ", "mcv"]
       },
       {
         "label": "Ferritin",
-        "labelRu": "Ferritin",
+        "labelRu": "Ферритин (Ferritin)",
         "labelTr": "Ferritin",
         "labelEn": "Ferritin",
         "keywords": ["ferritin"]
       },
       {
-        "label": "Stuhltest / okkultes Blut",
-        "labelRu": "Stuhltest / okkultes Blut",
-        "labelTr": "Stuhltest / okkultes Blut",
-        "labelEn": "Stuhltest / okkultes Blut",
+        "label": "Najasda yashirin qon testi (Stuhltest / okkultes Blut)",
+        "labelRu": "Анализ кала на скрытую кровь (Stuhltest / okkultes Blut)",
+        "labelTr": "Gaitada gizli kan testi (Stuhltest / okkultes Blut)",
+        "labelEn": "Faecal occult blood test (Stuhltest / okkultes Blut)",
         "keywords": ["okkult", "stuhltest"]
       },
       {
@@ -2199,10 +2199,10 @@
         "keywords": ["eisencarboxymaltose", "eisensubstitution", "eisen i. v."]
       },
       {
-        "label": "Tavsiya: gynäkologische Weiterbehandlung",
-        "labelRu": "Рекомендация: gynäkologische Weiterbehandlung",
-        "labelTr": "Öneri: gynäkologische Weiterbehandlung",
-        "labelEn": "Recommendation: gynäkologische Weiterbehandlung",
+        "label": "Tavsiya: ginekologda davolanishni davom ettirish (gynäkologische Weiterbehandlung)",
+        "labelRu": "Рекомендация: дальнейшее лечение у гинеколога (gynäkologische Weiterbehandlung)",
+        "labelTr": "Öneri: jinekolojide tedaviye devam (gynäkologische Weiterbehandlung)",
+        "labelEn": "Recommendation: further treatment by a gynaecologist (gynäkologische Weiterbehandlung)",
         "keywords": ["gynäkolog"]
       }
     ],
@@ -2235,10 +2235,10 @@
         "keywords": ["möller"]
       },
       {
-        "label": "Asosiy shikoyat: belastungsabhängige Brustschmerzen",
-        "labelRu": "Основная жалоба: belastungsabhängige Brustschmerzen",
-        "labelTr": "Ana şikâyet: belastungsabhängige Brustschmerzen",
-        "labelEn": "Main complaint: belastungsabhängige Brustschmerzen",
+        "label": "Asosiy shikoyat: jismoniy zo‘riqishda ko‘krak og‘rig‘i (belastungsabhängige Brustschmerzen)",
+        "labelRu": "Основная жалоба: боль в груди при нагрузке (belastungsabhängige Brustschmerzen)",
+        "labelTr": "Ana şikâyet: eforla gelen göğüs ağrısı (belastungsabhängige Brustschmerzen)",
+        "labelEn": "Main complaint: chest pain on exertion (belastungsabhängige Brustschmerzen)",
         "keywords": ["belastungsabhängig", "treppensteigen"]
       },
       {
@@ -2249,24 +2249,24 @@
         "keywords": ["hypertonie", "diabetes", "pack years"]
       },
       {
-        "label": "Troponin negativ",
-        "labelRu": "Troponin negativ",
-        "labelTr": "Troponin negativ",
-        "labelEn": "Troponin negativ",
+        "label": "Troponin manfiy (Troponin negativ)",
+        "labelRu": "Тропонин отрицательный (Troponin negativ)",
+        "labelTr": "Troponin negatif (Troponin negativ)",
+        "labelEn": "Troponin negative (Troponin negativ)",
         "keywords": ["troponin"]
       },
       {
-        "label": "Ergometrie topilmasi",
-        "labelRu": "Данные: Ergometrie",
-        "labelTr": "Ergometrie bulgusu",
-        "labelEn": "Ergometrie finding",
+        "label": "Veloergometriya topilmasi (Ergometrie)",
+        "labelRu": "Данные велоэргометрии (Ergometrie)",
+        "labelTr": "Efor testi bulgusu (Ergometrie)",
+        "labelEn": "Exercise ECG finding (Ergometrie)",
         "keywords": ["ergometrie", "st-senkung"]
       },
       {
-        "label": "Koronarangiographie",
-        "labelRu": "Koronarangiographie",
-        "labelTr": "Koronarangiographie",
-        "labelEn": "Koronarangiographie",
+        "label": "Koronarografiya (Koronarangiographie)",
+        "labelRu": "Коронарография (Koronarangiographie)",
+        "labelTr": "Koroner anjiyografi (Koronarangiographie)",
+        "labelEn": "Coronary angiography (Koronarangiographie)",
         "keywords": ["koronarangiograph", "herzkatheter"]
       },
       {
@@ -2291,10 +2291,10 @@
         "keywords": ["clopidogrel", "ass 100", "acetylsalicyl", "plättchen"]
       },
       {
-        "label": "Tavsiya: Statin / Risikofaktoren",
-        "labelRu": "Рекомендация: Statin / Risikofaktoren",
-        "labelTr": "Öneri: Statin / Risikofaktoren",
-        "labelEn": "Recommendation: Statin / Risikofaktoren",
+        "label": "Tavsiya: statin / xavf omillarini nazorat qilish (Statin / Risikofaktoren)",
+        "labelRu": "Рекомендация: статин / контроль факторов риска (Statin / Risikofaktoren)",
+        "labelTr": "Öneri: statin / risk faktörlerinin kontrolü (Statin / Risikofaktoren)",
+        "labelEn": "Recommendation: statin / control of risk factors (Statin / Risikofaktoren)",
         "keywords": ["atorvastatin", "statin", "ldl"]
       }
     ],
@@ -2327,24 +2327,24 @@
         "keywords": ["fuchs"]
       },
       {
-        "label": "Asosiy shikoyat: Kopfschmerzen / Schwindel",
-        "labelRu": "Основная жалоба: Kopfschmerzen / Schwindel",
-        "labelTr": "Ana şikâyet: Kopfschmerzen / Schwindel",
-        "labelEn": "Main complaint: Kopfschmerzen / Schwindel",
+        "label": "Asosiy shikoyat: bosh og‘rig‘i / bosh aylanishi (Kopfschmerzen / Schwindel)",
+        "labelRu": "Основная жалоба: головная боль / головокружение (Kopfschmerzen / Schwindel)",
+        "labelTr": "Ana şikâyet: baş ağrısı / baş dönmesi (Kopfschmerzen / Schwindel)",
+        "labelEn": "Main complaint: headache / dizziness (Kopfschmerzen / Schwindel)",
         "keywords": ["kopfschmerz", "schwindel"]
       },
       {
-        "label": "Blutdruck 220/115 mmHg",
-        "labelRu": "Blutdruck 220/115 mmHg",
-        "labelTr": "Blutdruck 220/115 mmHg",
-        "labelEn": "Blutdruck 220/115 mmHg",
+        "label": "Arterial bosim 220/115 mmHg (Blutdruck 220/115 mmHg)",
+        "labelRu": "АД 220/115 мм рт. ст. (Blutdruck 220/115 mmHg)",
+        "labelTr": "Tansiyon 220/115 mmHg (Blutdruck 220/115 mmHg)",
+        "labelEn": "Blood pressure 220/115 mmHg (Blutdruck 220/115 mmHg)",
         "keywords": ["220", "blutdruck", "rr "]
       },
       {
-        "label": "Non-Adhärenz",
-        "labelRu": "Non-Adhärenz",
-        "labelTr": "Non-Adhärenz",
-        "labelEn": "Non-Adhärenz",
+        "label": "Dorilarni muntazam ichmaslik (Non-Adhärenz)",
+        "labelRu": "Несоблюдение режима приёма лекарств (Non-Adhärenz)",
+        "labelTr": "İlaç uyumsuzluğu (Non-Adhärenz)",
+        "labelEn": "Non-adherence to medication (Non-Adhärenz)",
         "keywords": ["nicht eingenommen", "adhärenz", "pausiert"]
       },
       {
@@ -2362,10 +2362,10 @@
         "keywords": ["ekg"]
       },
       {
-        "label": "Fundoskopie",
-        "labelRu": "Fundoskopie",
-        "labelTr": "Fundoskopie",
-        "labelEn": "Fundoskopie",
+        "label": "Ko‘z tubini tekshirish (Fundoskopie)",
+        "labelRu": "Осмотр глазного дна (Fundoskopie)",
+        "labelTr": "Fundoskopi (Fundoskopie)",
+        "labelEn": "Fundoscopy (Fundoskopie)",
         "keywords": ["fundoskop", "augenhintergrund"]
       },
       {
@@ -2376,10 +2376,10 @@
         "keywords": ["hypertensive entgleisung"]
       },
       {
-        "label": "kein Endorganschaden",
-        "labelRu": "kein Endorganschaden",
-        "labelTr": "kein Endorganschaden",
-        "labelEn": "kein Endorganschaden",
+        "label": "Nishon a’zolar zararlanmagan (kein Endorganschaden)",
+        "labelRu": "Нет поражения органов-мишеней (kein Endorganschaden)",
+        "labelTr": "Hedef organ hasarı yok (kein Endorganschaden)",
+        "labelEn": "No end-organ damage (kein Endorganschaden)",
         "keywords": ["endorganschaden", "endorgan"]
       },
       {
@@ -2419,31 +2419,31 @@
         "keywords": ["wolf"]
       },
       {
-        "label": "Asosiy shikoyat: Thoraxschmerzen",
-        "labelRu": "Основная жалоба: Thoraxschmerzen",
-        "labelTr": "Ana şikâyet: Thoraxschmerzen",
-        "labelEn": "Main complaint: Thoraxschmerzen",
+        "label": "Asosiy shikoyat: ko‘krak qafasidagi og‘riq (Thoraxschmerzen)",
+        "labelRu": "Основная жалоба: боль в груди (Thoraxschmerzen)",
+        "labelTr": "Ana şikâyet: göğüs ağrısı (Thoraxschmerzen)",
+        "labelEn": "Main complaint: chest pain (Thoraxschmerzen)",
         "keywords": ["thoraxschmerz", "brustschmerz"]
       },
       {
-        "label": "lageabhängig / atemabhängig",
-        "labelRu": "lageabhängig / atemabhängig",
-        "labelTr": "lageabhängig / atemabhängig",
-        "labelEn": "lageabhängig / atemabhängig",
+        "label": "Tana holati va nafasga bog‘liq (lageabhängig / atemabhängig)",
+        "labelRu": "Зависит от положения тела и дыхания (lageabhängig / atemabhängig)",
+        "labelTr": "Pozisyon ve solunumla değişen (lageabhängig / atemabhängig)",
+        "labelEn": "Depends on position and breathing (lageabhängig / atemabhängig)",
         "keywords": ["lageabhängig", "atemabhängig", "liegen", "inspiration"]
       },
       {
-        "label": "vorangegangener Infekt",
-        "labelRu": "vorangegangener Infekt",
-        "labelTr": "vorangegangener Infekt",
-        "labelEn": "vorangegangener Infekt",
+        "label": "Yaqinda o‘tkazilgan infeksiya (vorangegangener Infekt)",
+        "labelRu": "Недавно перенесённая инфекция (vorangegangener Infekt)",
+        "labelTr": "Yakın zamanda geçirilmiş enfeksiyon (vorangegangener Infekt)",
+        "labelEn": "Recent infection (vorangegangener Infekt)",
         "keywords": ["infekt"]
       },
       {
-        "label": "Perikardreiben",
-        "labelRu": "Perikardreiben",
-        "labelTr": "Perikardreiben",
-        "labelEn": "Perikardreiben",
+        "label": "Perikard ishqalanish shovqini (Perikardreiben)",
+        "labelRu": "Шум трения перикарда (Perikardreiben)",
+        "labelTr": "Perikardiyal frotman (Perikardreiben)",
+        "labelEn": "Pericardial rub (Perikardreiben)",
         "keywords": ["perikardreiben"]
       },
       {
@@ -2454,9 +2454,9 @@
         "keywords": ["st-hebung", "pq-senkung"]
       },
       {
-        "label": "Echo topilmasi",
-        "labelRu": "Данные: Echo",
-        "labelTr": "Echo bulgusu",
+        "label": "ExoKG topilmasi (Echo)",
+        "labelRu": "Данные ЭхоКГ (Echo)",
+        "labelTr": "EKO bulgusu (Echo)",
         "labelEn": "Echo finding",
         "keywords": ["perikarderguss", "echo"]
       },
@@ -2475,10 +2475,10 @@
         "keywords": ["ibuprofen", "colchicin"]
       },
       {
-        "label": "Tavsiya: Sportkarenz",
-        "labelRu": "Рекомендация: Sportkarenz",
-        "labelTr": "Öneri: Sportkarenz",
-        "labelEn": "Recommendation: Sportkarenz",
+        "label": "Tavsiya: vaqtincha sport bilan shug‘ullanmaslik (Sportkarenz)",
+        "labelRu": "Рекомендация: временный отказ от спорта (Sportkarenz)",
+        "labelTr": "Öneri: bir süre spor yapmama (Sportkarenz)",
+        "labelEn": "Recommendation: no sport for the time being (Sportkarenz)",
         "keywords": ["sport"]
       }
     ],
@@ -2511,24 +2511,24 @@
         "keywords": ["schröder"]
       },
       {
-        "label": "Asosiy shikoyat: Dyspnoe / Giemen",
-        "labelRu": "Основная жалоба: Dyspnoe / Giemen",
-        "labelTr": "Ana şikâyet: Dyspnoe / Giemen",
-        "labelEn": "Main complaint: Dyspnoe / Giemen",
+        "label": "Asosiy shikoyat: hansirash / hushtaksimon xirillash (Dyspnoe / Giemen)",
+        "labelRu": "Основная жалоба: одышка / свистящие хрипы (Dyspnoe / Giemen)",
+        "labelTr": "Ana şikâyet: nefes darlığı / hışıltı (Dyspnoe / Giemen)",
+        "labelEn": "Main complaint: shortness of breath / wheezing (Dyspnoe / Giemen)",
         "keywords": ["dyspnoe", "giemen"]
       },
       {
-        "label": "Auslöser (Staub, Katze)",
-        "labelRu": "Auslöser (Staub, Katze)",
-        "labelTr": "Auslöser (Staub, Katze)",
-        "labelEn": "Auslöser (Staub, Katze)",
+        "label": "Qo‘zg‘atuvchilar: chang, mushuk (Auslöser: Staub, Katze)",
+        "labelRu": "Триггеры: пыль, кошка (Auslöser: Staub, Katze)",
+        "labelTr": "Tetikleyiciler: toz, kedi (Auslöser: Staub, Katze)",
+        "labelEn": "Triggers: dust, cat (Auslöser: Staub, Katze)",
         "keywords": ["staub", "katze"]
       },
       {
-        "label": "Vorerkrankung Asthma",
-        "labelRu": "Vorerkrankung Asthma",
-        "labelTr": "Vorerkrankung Asthma",
-        "labelEn": "Vorerkrankung Asthma",
+        "label": "Avvalgi kasallik: astma (Vorerkrankung Asthma)",
+        "labelRu": "В анамнезе: астма (Vorerkrankung Asthma)",
+        "labelTr": "Bilinen astım (Vorerkrankung Asthma)",
+        "labelEn": "Known asthma (Vorerkrankung Asthma)",
         "keywords": ["asthma"]
       },
       {
@@ -2539,17 +2539,17 @@
         "keywords": ["milben", "katzenhaar", "pollen"]
       },
       {
-        "label": "unregelmäßige Einnahme",
-        "labelRu": "unregelmäßige Einnahme",
-        "labelTr": "unregelmäßige Einnahme",
-        "labelEn": "unregelmäßige Einnahme",
+        "label": "Dorilarni muntazam qabul qilmaslik (unregelmäßige Einnahme)",
+        "labelRu": "Нерегулярный приём препаратов (unregelmäßige Einnahme)",
+        "labelTr": "Düzensiz ilaç kullanımı (unregelmäßige Einnahme)",
+        "labelEn": "Irregular use of medication (unregelmäßige Einnahme)",
         "keywords": ["unregelmäßig"]
       },
       {
-        "label": "Peak-Flow",
-        "labelRu": "Peak-Flow",
-        "labelTr": "Peak-Flow",
-        "labelEn": "Peak-Flow",
+        "label": "Pikfloumetriya (Peak-Flow)",
+        "labelRu": "Пикфлоуметрия (Peak-Flow)",
+        "labelTr": "PEF ölçümü (Peak-Flow)",
+        "labelEn": "Peak flow (Peak-Flow)",
         "keywords": ["peak-flow", "peak flow"]
       },
       {
@@ -2567,10 +2567,10 @@
         "keywords": ["salbutamol", "prednisolon"]
       },
       {
-        "label": "Tavsiya: Inhalationstechnik / Allergenkarenz",
-        "labelRu": "Рекомендация: Inhalationstechnik / Allergenkarenz",
-        "labelTr": "Öneri: Inhalationstechnik / Allergenkarenz",
-        "labelEn": "Recommendation: Inhalationstechnik / Allergenkarenz",
+        "label": "Tavsiya: ingalyatsiya texnikasi / allergendan saqlanish (Inhalationstechnik / Allergenkarenz)",
+        "labelRu": "Рекомендация: техника ингаляции / избегание аллергенов (Inhalationstechnik / Allergenkarenz)",
+        "labelTr": "Öneri: inhaler tekniği / alerjenden kaçınma (Inhalationstechnik / Allergenkarenz)",
+        "labelEn": "Recommendation: inhaler technique / allergen avoidance (Inhalationstechnik / Allergenkarenz)",
         "keywords": ["inhalationstechnik", "schulung", "allergenkarenz"]
       }
     ],
@@ -2603,38 +2603,38 @@
         "keywords": ["schwarz"]
       },
       {
-        "label": "Asosiy shikoyat: Leistenschmerzen rechts",
-        "labelRu": "Основная жалоба: Leistenschmerzen rechts",
-        "labelTr": "Ana şikâyet: Leistenschmerzen rechts",
-        "labelEn": "Main complaint: Leistenschmerzen rechts",
+        "label": "Asosiy shikoyat: o‘ng chov sohasidagi og‘riq (Leistenschmerzen rechts)",
+        "labelRu": "Основная жалоба: боль в правой паховой области (Leistenschmerzen rechts)",
+        "labelTr": "Ana şikâyet: sağ kasık ağrısı (Leistenschmerzen rechts)",
+        "labelEn": "Main complaint: right groin pain (Leistenschmerzen rechts)",
         "keywords": ["leiste", "inguinal"]
       },
       {
-        "label": "nicht reponierbar",
-        "labelRu": "nicht reponierbar",
-        "labelTr": "nicht reponierbar",
-        "labelEn": "nicht reponierbar",
+        "label": "Joyiga solib bo‘lmaydi (nicht reponierbar)",
+        "labelRu": "Не вправляется (nicht reponierbar)",
+        "labelTr": "Redükte edilemiyor (nicht reponierbar)",
+        "labelEn": "Not reducible (nicht reponierbar)",
         "keywords": ["nicht reponierbar", "irreponibel"]
       },
       {
-        "label": "Übelkeit / Erbrechen",
-        "labelRu": "Übelkeit / Erbrechen",
-        "labelTr": "Übelkeit / Erbrechen",
-        "labelEn": "Übelkeit / Erbrechen",
+        "label": "Ko‘ngil aynishi / qusish (Übelkeit / Erbrechen)",
+        "labelRu": "Тошнота / рвота (Übelkeit / Erbrechen)",
+        "labelTr": "Bulantı / kusma (Übelkeit / Erbrechen)",
+        "labelEn": "Nausea / vomiting (Übelkeit / Erbrechen)",
         "keywords": ["übelkeit", "erbrechen", "nausea", "emesis"]
       },
       {
-        "label": "Vorerkrankungen (COPD, Obstipation)",
-        "labelRu": "Vorerkrankungen (COPD, Obstipation)",
-        "labelTr": "Vorerkrankungen (COPD, Obstipation)",
-        "labelEn": "Vorerkrankungen (COPD, Obstipation)",
+        "label": "Avvalgi kasalliklar: XOBK, qabziyat (Vorerkrankungen: COPD, Obstipation)",
+        "labelRu": "В анамнезе: ХОБЛ, запоры (Vorerkrankungen: COPD, Obstipation)",
+        "labelTr": "Eşlik eden hastalıklar: KOAH, kabızlık (Vorerkrankungen: COPD, Obstipation)",
+        "labelEn": "Previous illnesses: COPD, constipation (Vorerkrankungen: COPD, Obstipation)",
         "keywords": ["copd", "obstipation"]
       },
       {
-        "label": "Sonographie topilmasi",
-        "labelRu": "Данные: Sonographie",
-        "labelTr": "Sonographie bulgusu",
-        "labelEn": "Sonographie finding",
+        "label": "UTT topilmasi (Sonographie)",
+        "labelRu": "Данные УЗИ (Sonographie)",
+        "labelTr": "Ultrasonografi bulgusu (Sonographie)",
+        "labelEn": "Ultrasound finding (Sonographie)",
         "keywords": ["sonograph", "bruchsack"]
       },
       {
@@ -2652,17 +2652,17 @@
         "keywords": ["lichtenstein", "netz"]
       },
       {
-        "label": "Darm vital",
-        "labelRu": "Darm vital",
-        "labelTr": "Darm vital",
-        "labelEn": "Darm vital",
+        "label": "Ichak hayotchan (Darm vital)",
+        "labelRu": "Кишка жизнеспособна (Darm vital)",
+        "labelTr": "Bağırsak canlı (Darm vital)",
+        "labelEn": "Bowel viable (Darm vital)",
         "keywords": ["vital"]
       },
       {
-        "label": "Tavsiya: keine schweren Lasten",
-        "labelRu": "Рекомендация: keine schweren Lasten",
-        "labelTr": "Öneri: keine schweren Lasten",
-        "labelEn": "Recommendation: keine schweren Lasten",
+        "label": "Tavsiya: og‘ir narsa ko‘tarmaslik (keine schweren Lasten)",
+        "labelRu": "Рекомендация: не поднимать тяжести (keine schweren Lasten)",
+        "labelTr": "Öneri: ağır kaldırmama (keine schweren Lasten)",
+        "labelEn": "Recommendation: no heavy lifting (keine schweren Lasten)",
         "keywords": ["heben", "lasten"]
       }
     ],
@@ -2695,45 +2695,45 @@
         "keywords": ["klein"]
       },
       {
-        "label": "Asosiy shikoyat: Harnverhalt",
-        "labelRu": "Основная жалоба: Harnverhalt",
-        "labelTr": "Ana şikâyet: Harnverhalt",
-        "labelEn": "Main complaint: Harnverhalt",
+        "label": "Asosiy shikoyat: siydik tutilishi (Harnverhalt)",
+        "labelRu": "Основная жалоба: задержка мочи (Harnverhalt)",
+        "labelTr": "Ana şikâyet: idrar retansiyonu (Harnverhalt)",
+        "labelEn": "Main complaint: urinary retention (Harnverhalt)",
         "keywords": ["harnverhalt", "kein wasserlassen"]
       },
       {
-        "label": "Miktionsbeschwerden",
-        "labelRu": "Miktionsbeschwerden",
-        "labelTr": "Miktionsbeschwerden",
-        "labelEn": "Miktionsbeschwerden",
+        "label": "Siyishdagi muammolar (Miktionsbeschwerden)",
+        "labelRu": "Нарушения мочеиспускания (Miktionsbeschwerden)",
+        "labelTr": "İşeme şikâyetleri (Miktionsbeschwerden)",
+        "labelEn": "Problems passing urine (Miktionsbeschwerden)",
         "keywords": ["harnstrahl", "nachträufeln", "nykturie"]
       },
       {
-        "label": "Erkältungsmittel",
-        "labelRu": "Erkältungsmittel",
-        "labelTr": "Erkältungsmittel",
-        "labelEn": "Erkältungsmittel",
+        "label": "Shamollashga qarshi dori (Erkältungsmittel)",
+        "labelRu": "Средство от простуды (Erkältungsmittel)",
+        "labelTr": "Soğuk algınlığı ilacı (Erkältungsmittel)",
+        "labelEn": "Cold medicine (Erkältungsmittel)",
         "keywords": ["erkältungsmittel", "grippostad", "anticholinerg"]
       },
       {
-        "label": "Vorerkrankung BPH",
-        "labelRu": "Vorerkrankung BPH",
-        "labelTr": "Vorerkrankung BPH",
-        "labelEn": "Vorerkrankung BPH",
+        "label": "Avvalgi kasallik: prostata giperplaziyasi (Vorerkrankung BPH)",
+        "labelRu": "В анамнезе: ДГПЖ (Vorerkrankung BPH)",
+        "labelTr": "Bilinen BPH (Vorerkrankung BPH)",
+        "labelEn": "Known BPH (Vorerkrankung BPH)",
         "keywords": ["prostatahyperplasie", "bph"]
       },
       {
-        "label": "Sonographie topilmasi",
-        "labelRu": "Данные: Sonographie",
-        "labelTr": "Sonographie bulgusu",
-        "labelEn": "Sonographie finding",
+        "label": "UTT topilmasi (Sonographie)",
+        "labelRu": "Данные УЗИ (Sonographie)",
+        "labelTr": "Ultrasonografi bulgusu (Sonographie)",
+        "labelEn": "Ultrasound finding (Sonographie)",
         "keywords": ["1.100", "blasenfüllung", "sonograph"]
       },
       {
         "label": "Kreatinin / PSA",
-        "labelRu": "Kreatinin / PSA",
+        "labelRu": "Креатинин / ПСА (Kreatinin / PSA)",
         "labelTr": "Kreatinin / PSA",
-        "labelEn": "Kreatinin / PSA",
+        "labelEn": "Creatinine / PSA (Kreatinin / PSA)",
         "keywords": ["kreatinin", "psa"]
       },
       {
@@ -2751,10 +2751,10 @@
         "keywords": ["katheter", "tamsulosin"]
       },
       {
-        "label": "Tavsiya: urologische Kontrolle",
-        "labelRu": "Рекомендация: urologische Kontrolle",
-        "labelTr": "Öneri: urologische Kontrolle",
-        "labelEn": "Recommendation: urologische Kontrolle",
+        "label": "Tavsiya: urolog ko‘rigi (urologische Kontrolle)",
+        "labelRu": "Рекомендация: контроль у уролога (urologische Kontrolle)",
+        "labelTr": "Öneri: üroloji kontrolü (urologische Kontrolle)",
+        "labelEn": "Recommendation: urology follow-up (urologische Kontrolle)",
         "keywords": ["urolog"]
       }
     ],
@@ -2787,31 +2787,31 @@
         "keywords": ["jung"]
       },
       {
-        "label": "Asosiy shikoyat: Bewusstseinsverlust mit Zuckungen",
-        "labelRu": "Основная жалоба: Bewusstseinsverlust mit Zuckungen",
-        "labelTr": "Ana şikâyet: Bewusstseinsverlust mit Zuckungen",
-        "labelEn": "Main complaint: Bewusstseinsverlust mit Zuckungen",
+        "label": "Asosiy shikoyat: tortishish bilan hushdan ketish (Bewusstseinsverlust mit Zuckungen)",
+        "labelRu": "Основная жалоба: потеря сознания с судорогами (Bewusstseinsverlust mit Zuckungen)",
+        "labelTr": "Ana şikâyet: kasılmalarla bilinç kaybı (Bewusstseinsverlust mit Zuckungen)",
+        "labelEn": "Main complaint: loss of consciousness with jerking (Bewusstseinsverlust mit Zuckungen)",
         "keywords": ["bewusstseinsverlust", "zuckungen", "anfall"]
       },
       {
-        "label": "Fremdanamnese",
-        "labelRu": "Fremdanamnese",
-        "labelTr": "Fremdanamnese",
-        "labelEn": "Fremdanamnese",
+        "label": "Yaqinlari aytgan anamnez (Fremdanamnese)",
+        "labelRu": "Анамнез со слов окружающих (Fremdanamnese)",
+        "labelTr": "Heteroanamnez (Fremdanamnese)",
+        "labelEn": "Collateral history (Fremdanamnese)",
         "keywords": ["fremdanamnes"]
       },
       {
-        "label": "Zungenbiss / Einnässen",
-        "labelRu": "Zungenbiss / Einnässen",
-        "labelTr": "Zungenbiss / Einnässen",
-        "labelEn": "Zungenbiss / Einnässen",
+        "label": "Tilni tishlab olish / siydikni tutolmaslik (Zungenbiss / Einnässen)",
+        "labelRu": "Прикус языка / непроизвольное мочеиспускание (Zungenbiss / Einnässen)",
+        "labelTr": "Dil ısırma / idrar kaçırma (Zungenbiss / Einnässen)",
+        "labelEn": "Tongue bite / urinary incontinence (Zungenbiss / Einnässen)",
         "keywords": ["zungenbiss", "einnässen"]
       },
       {
-        "label": "Schlafentzug / Alkohol",
-        "labelRu": "Schlafentzug / Alkohol",
-        "labelTr": "Schlafentzug / Alkohol",
-        "labelEn": "Schlafentzug / Alkohol",
+        "label": "Uyqusizlik / alkogol (Schlafentzug / Alkohol)",
+        "labelRu": "Недосыпание / алкоголь (Schlafentzug / Alkohol)",
+        "labelTr": "Uykusuzluk / alkol (Schlafentzug / Alkohol)",
+        "labelEn": "Sleep deprivation / alcohol (Schlafentzug / Alkohol)",
         "keywords": ["schlafentzug", "alkohol"]
       },
       {
@@ -2836,17 +2836,17 @@
         "keywords": ["anfall", "grand mal", "tonisch-klonisch"]
       },
       {
-        "label": "Tavsiya: Fahrverbot",
-        "labelRu": "Рекомендация: Fahrverbot",
-        "labelTr": "Öneri: Fahrverbot",
-        "labelEn": "Recommendation: Fahrverbot",
+        "label": "Tavsiya: avtomobil haydamaslik (Fahrverbot)",
+        "labelRu": "Рекомендация: запрет на вождение (Fahrverbot)",
+        "labelTr": "Öneri: araç kullanma yasağı (Fahrverbot)",
+        "labelEn": "Recommendation: no driving (Fahrverbot)",
         "keywords": ["fahrverbot", "fahreignung", "auto fahren"]
       },
       {
-        "label": "Tavsiya: Schlafhygiene / Alkoholkarenz",
-        "labelRu": "Рекомендация: Schlafhygiene / Alkoholkarenz",
-        "labelTr": "Öneri: Schlafhygiene / Alkoholkarenz",
-        "labelEn": "Recommendation: Schlafhygiene / Alkoholkarenz",
+        "label": "Tavsiya: uyqu gigiyenasi / alkogoldan voz kechish (Schlafhygiene / Alkoholkarenz)",
+        "labelRu": "Рекомендация: гигиена сна / отказ от алкоголя (Schlafhygiene / Alkoholkarenz)",
+        "labelTr": "Öneri: uyku hijyeni / alkolü bırakma (Schlafhygiene / Alkoholkarenz)",
+        "labelEn": "Recommendation: sleep hygiene / alcohol abstinence (Schlafhygiene / Alkoholkarenz)",
         "keywords": ["schlaf", "alkoholkarenz"]
       }
     ],
@@ -2879,24 +2879,24 @@
         "keywords": ["vogel"]
       },
       {
-        "label": "Asosiy shikoyat: Synkopen",
-        "labelRu": "Основная жалоба: Synkopen",
-        "labelTr": "Ana şikâyet: Synkopen",
-        "labelEn": "Main complaint: Synkopen",
+        "label": "Asosiy shikoyat: hushdan ketishlar (Synkopen)",
+        "labelRu": "Основная жалоба: обмороки, синкопе (Synkopen)",
+        "labelTr": "Ana şikâyet: senkoplar (Synkopen)",
+        "labelEn": "Main complaint: syncope (Synkopen)",
         "keywords": ["synkope", "bewusstlos"]
       },
       {
-        "label": "ohne Prodromi",
-        "labelRu": "ohne Prodromi",
-        "labelTr": "ohne Prodromi",
-        "labelEn": "ohne Prodromi",
+        "label": "Oldindan belgilarsiz (ohne Prodromi)",
+        "labelRu": "Без предвестников (ohne Prodromi)",
+        "labelTr": "Prodrom olmadan (ohne Prodromi)",
+        "labelEn": "Without warning signs (ohne Prodromi)",
         "keywords": ["prodrom", "ohne vorwarnung"]
       },
       {
-        "label": "Verapamil + Bisoprolol",
-        "labelRu": "Verapamil + Bisoprolol",
-        "labelTr": "Verapamil + Bisoprolol",
-        "labelEn": "Verapamil + Bisoprolol",
+        "label": "Verapamil + bisoprolol",
+        "labelRu": "Верапамил + бисопролол (Verapamil + Bisoprolol)",
+        "labelTr": "Verapamil + bisoprolol",
+        "labelEn": "Verapamil + bisoprolol",
         "keywords": ["verapamil", "bisoprolol"]
       },
       {
@@ -2907,10 +2907,10 @@
         "keywords": ["av-block", "ekg"]
       },
       {
-        "label": "Echo",
-        "labelRu": "Echo",
-        "labelTr": "Echo",
-        "labelEn": "Echo",
+        "label": "ExoKG (Echo)",
+        "labelRu": "ЭхоКГ (Echo)",
+        "labelTr": "EKO (Echo)",
+        "labelEn": "Echocardiography (Echo)",
         "keywords": ["echo", "lvef"]
       },
       {
@@ -2935,10 +2935,10 @@
         "keywords": ["schrittmacher", "pacemaker"]
       },
       {
-        "label": "Tavsiya: Schrittmacherkontrolle",
-        "labelRu": "Рекомендация: Schrittmacherkontrolle",
-        "labelTr": "Öneri: Schrittmacherkontrolle",
-        "labelEn": "Recommendation: Schrittmacherkontrolle",
+        "label": "Tavsiya: kardiostimulyatorni tekshirtirish (Schrittmacherkontrolle)",
+        "labelRu": "Рекомендация: контроль кардиостимулятора (Schrittmacherkontrolle)",
+        "labelTr": "Öneri: pacemaker kontrolü (Schrittmacherkontrolle)",
+        "labelEn": "Recommendation: pacemaker check (Schrittmacherkontrolle)",
         "keywords": ["schrittmacherkontrolle", "kontrolle"]
       }
     ],
@@ -2971,45 +2971,45 @@
         "keywords": ["roth"]
       },
       {
-        "label": "Asosiy shikoyat: Fieber / Flankenschmerzen",
-        "labelRu": "Основная жалоба: Fieber / Flankenschmerzen",
-        "labelTr": "Ana şikâyet: Fieber / Flankenschmerzen",
-        "labelEn": "Main complaint: Fieber / Flankenschmerzen",
+        "label": "Asosiy shikoyat: isitma / biqin sohasidagi og‘riq (Fieber / Flankenschmerzen)",
+        "labelRu": "Основная жалоба: лихорадка / боль в боку (Fieber / Flankenschmerzen)",
+        "labelTr": "Ana şikâyet: ateş / yan ağrısı (Fieber / Flankenschmerzen)",
+        "labelEn": "Main complaint: fever / flank pain (Fieber / Flankenschmerzen)",
         "keywords": ["fieber", "flanke"]
       },
       {
-        "label": "Verwirrtheit",
-        "labelRu": "Verwirrtheit",
-        "labelTr": "Verwirrtheit",
-        "labelEn": "Verwirrtheit",
+        "label": "Ong chalkashligi (Verwirrtheit)",
+        "labelRu": "Спутанность сознания (Verwirrtheit)",
+        "labelTr": "Konfüzyon (Verwirrtheit)",
+        "labelEn": "Confusion (Verwirrtheit)",
         "keywords": ["verwirrt", "vigilanz"]
       },
       {
-        "label": "Hypotonie / Tachykardie",
-        "labelRu": "Hypotonie / Tachykardie",
-        "labelTr": "Hypotonie / Tachykardie",
-        "labelEn": "Hypotonie / Tachykardie",
+        "label": "Gipotoniya / taxikardiya (Hypotonie / Tachykardie)",
+        "labelRu": "Гипотония / тахикардия (Hypotonie / Tachykardie)",
+        "labelTr": "Hipotansiyon / taşikardi (Hypotonie / Tachykardie)",
+        "labelEn": "Hypotension / tachycardia (Hypotonie / Tachykardie)",
         "keywords": ["hypoton", "88/50", "tachykard"]
       },
       {
-        "label": "qSOFA",
-        "labelRu": "qSOFA",
-        "labelTr": "qSOFA",
-        "labelEn": "qSOFA",
+        "label": "qSOFA shkalasi",
+        "labelRu": "Шкала qSOFA",
+        "labelTr": "qSOFA skoru",
+        "labelEn": "qSOFA score",
         "keywords": ["qsofa"]
       },
       {
-        "label": "Laktat / Procalcitonin",
-        "labelRu": "Laktat / Procalcitonin",
-        "labelTr": "Laktat / Procalcitonin",
-        "labelEn": "Laktat / Procalcitonin",
+        "label": "Laktat / prokalsitonin (Laktat / Procalcitonin)",
+        "labelRu": "Лактат / прокальцитонин (Laktat / Procalcitonin)",
+        "labelTr": "Laktat / prokalsitonin (Laktat / Procalcitonin)",
+        "labelEn": "Lactate / procalcitonin (Laktat / Procalcitonin)",
         "keywords": ["laktat", "procalcitonin"]
       },
       {
-        "label": "Blutkulturen",
-        "labelRu": "Blutkulturen",
-        "labelTr": "Blutkulturen",
-        "labelEn": "Blutkulturen",
+        "label": "Qon ekmasi (Blutkulturen)",
+        "labelRu": "Посев крови (Blutkulturen)",
+        "labelTr": "Kan kültürleri (Blutkulturen)",
+        "labelEn": "Blood cultures (Blutkulturen)",
         "keywords": ["blutkultur"]
       },
       {
@@ -3063,45 +3063,45 @@
         "keywords": ["schuster"]
       },
       {
-        "label": "Asosiy shikoyat: Diarrhö / Oligurie",
-        "labelRu": "Основная жалоба: Diarrhö / Oligurie",
-        "labelTr": "Ana şikâyet: Diarrhö / Oligurie",
-        "labelEn": "Main complaint: Diarrhö / Oligurie",
+        "label": "Asosiy shikoyat: ich ketishi / kam siyish (Diarrhö / Oligurie)",
+        "labelRu": "Основная жалоба: диарея / олигурия (Diarrhö / Oligurie)",
+        "labelTr": "Ana şikâyet: ishal / oligüri (Diarrhö / Oligurie)",
+        "labelEn": "Main complaint: diarrhoea / oliguria (Diarrhö / Oligurie)",
         "keywords": ["diarrh", "oligurie", "durchfall"]
       },
       {
-        "label": "Exsikkose",
-        "labelRu": "Exsikkose",
-        "labelTr": "Exsikkose",
-        "labelEn": "Exsikkose",
+        "label": "Suvsizlanish (Exsikkose)",
+        "labelRu": "Обезвоживание, эксикоз (Exsikkose)",
+        "labelTr": "Dehidratasyon (Exsikkose)",
+        "labelEn": "Dehydration (Exsikkose)",
         "keywords": ["exsikkose", "schleimhäute", "hautfalten"]
       },
       {
-        "label": "NSAR / Ibuprofen",
-        "labelRu": "NSAR / Ibuprofen",
-        "labelTr": "NSAR / Ibuprofen",
-        "labelEn": "NSAR / Ibuprofen",
+        "label": "NYQP / ibuprofen (NSAR / Ibuprofen)",
+        "labelRu": "НПВП / ибупрофен (NSAR / Ibuprofen)",
+        "labelTr": "NSAİİ / ibuprofen (NSAR / Ibuprofen)",
+        "labelEn": "NSAIDs / ibuprofen (NSAR / Ibuprofen)",
         "keywords": ["ibuprofen", "nsar"]
       },
       {
-        "label": "ACE-Hemmer / Diuretika",
-        "labelRu": "ACE-Hemmer / Diuretika",
-        "labelTr": "ACE-Hemmer / Diuretika",
-        "labelEn": "ACE-Hemmer / Diuretika",
+        "label": "AAF ingibitori / diuretiklar (ACE-Hemmer / Diuretika)",
+        "labelRu": "Ингибитор АПФ / диуретики (ACE-Hemmer / Diuretika)",
+        "labelTr": "ACE inhibitörü / diüretikler (ACE-Hemmer / Diuretika)",
+        "labelEn": "ACE inhibitor / diuretics (ACE-Hemmer / Diuretika)",
         "keywords": ["ramipril", "torasemid", "spironolacton", "diuretik"]
       },
       {
         "label": "Kreatinin",
-        "labelRu": "Kreatinin",
+        "labelRu": "Креатинин (Kreatinin)",
         "labelTr": "Kreatinin",
-        "labelEn": "Kreatinin",
+        "labelEn": "Creatinine (Kreatinin)",
         "keywords": ["kreatinin"]
       },
       {
-        "label": "Hyperkaliämie",
-        "labelRu": "Hyperkaliämie",
-        "labelTr": "Hyperkaliämie",
-        "labelEn": "Hyperkaliämie",
+        "label": "Giperkaliyemiya (Hyperkaliämie)",
+        "labelRu": "Гиперкалиемия (Hyperkaliämie)",
+        "labelTr": "Hiperkalemi (Hyperkaliämie)",
+        "labelEn": "Hyperkalaemia (Hyperkaliämie)",
         "keywords": ["kalium", "hyperkali"]
       },
       {
@@ -3119,10 +3119,10 @@
         "keywords": ["volumen", "infusion"]
       },
       {
-        "label": "Tavsiya: Wiederansetzen / NSAR meiden",
-        "labelRu": "Рекомендация: Wiederansetzen / NSAR meiden",
-        "labelTr": "Öneri: Wiederansetzen / NSAR meiden",
-        "labelEn": "Recommendation: Wiederansetzen / NSAR meiden",
+        "label": "Tavsiya: dorilarni qayta boshlash / NYQP ichmaslik (Wiederansetzen / NSAR meiden)",
+        "labelRu": "Рекомендация: возобновление препаратов / избегать НПВП (Wiederansetzen / NSAR meiden)",
+        "labelTr": "Öneri: ilaçlara yeniden başlama / NSAİİ’lerden kaçınma (Wiederansetzen / NSAR meiden)",
+        "labelEn": "Recommendation: restarting medication / avoid NSAIDs (Wiederansetzen / NSAR meiden)",
         "keywords": ["nsar meiden", "wieder angesetzt", "wiederansetzen", "kein ibuprofen", "vermeiden"]
       }
     ],
@@ -3155,38 +3155,38 @@
         "keywords": ["schreiber"]
       },
       {
-        "label": "Asosiy shikoyat: Hypoglykämie-Symptome",
-        "labelRu": "Основная жалоба: Hypoglykämie-Symptome",
-        "labelTr": "Ana şikâyet: Hypoglykämie-Symptome",
-        "labelEn": "Main complaint: Hypoglykämie-Symptome",
+        "label": "Asosiy shikoyat: gipoglikemiya belgilari (Hypoglykämie-Symptome)",
+        "labelRu": "Основная жалоба: симптомы гипогликемии (Hypoglykämie-Symptome)",
+        "labelTr": "Ana şikâyet: hipoglisemi belirtileri (Hypoglykämie-Symptome)",
+        "labelEn": "Main complaint: symptoms of hypoglycaemia (Hypoglykämie-Symptome)",
         "keywords": ["schwitzen", "zittern", "tremor", "verwirrt"]
       },
       {
-        "label": "Blutzucker 42 mg/dl",
-        "labelRu": "Blutzucker 42 mg/dl",
-        "labelTr": "Blutzucker 42 mg/dl",
-        "labelEn": "Blutzucker 42 mg/dl",
+        "label": "Qondagi qand 42 mg/dl (Blutzucker 42 mg/dl)",
+        "labelRu": "Глюкоза крови 42 мг/дл (Blutzucker 42 mg/dl)",
+        "labelTr": "Kan şekeri 42 mg/dl (Blutzucker 42 mg/dl)",
+        "labelEn": "Blood glucose 42 mg/dl (Blutzucker 42 mg/dl)",
         "keywords": ["42", "blutzucker"]
       },
       {
-        "label": "ausgelassene Mahlzeit",
-        "labelRu": "ausgelassene Mahlzeit",
-        "labelTr": "ausgelassene Mahlzeit",
-        "labelEn": "ausgelassene Mahlzeit",
+        "label": "Ovqat o‘tkazib yuborilgan (ausgelassene Mahlzeit)",
+        "labelRu": "Пропущенный приём пищи (ausgelassene Mahlzeit)",
+        "labelTr": "Atlanmış öğün (ausgelassene Mahlzeit)",
+        "labelEn": "Missed meal (ausgelassene Mahlzeit)",
         "keywords": ["mahlzeit", "mittagessen"]
       },
       {
-        "label": "Glibenclamid",
-        "labelRu": "Glibenclamid",
-        "labelTr": "Glibenclamid",
-        "labelEn": "Glibenclamid",
+        "label": "Glibenklamid (Glibenclamid)",
+        "labelRu": "Глибенкламид (Glibenclamid)",
+        "labelTr": "Glibenklamid (Glibenclamid)",
+        "labelEn": "Glibenclamide (Glibenclamid)",
         "keywords": ["glibenclamid", "sulfonylharnstoff"]
       },
       {
-        "label": "Niereninsuffizienz",
-        "labelRu": "Niereninsuffizienz",
-        "labelTr": "Niereninsuffizienz",
-        "labelEn": "Niereninsuffizienz",
+        "label": "Buyrak yetishmovchiligi (Niereninsuffizienz)",
+        "labelRu": "Почечная недостаточность (Niereninsuffizienz)",
+        "labelTr": "Böbrek yetmezliği (Niereninsuffizienz)",
+        "labelEn": "Renal impairment (Niereninsuffizienz)",
         "keywords": ["niereninsuffizienz", "egfr"]
       },
       {
@@ -3211,10 +3211,10 @@
         "keywords": ["glukose", "abgesetzt", "absetzen"]
       },
       {
-        "label": "Tavsiya: Sitagliptin / BZ-Kontrolle",
-        "labelRu": "Рекомендация: Sitagliptin / BZ-Kontrolle",
-        "labelTr": "Öneri: Sitagliptin / BZ-Kontrolle",
-        "labelEn": "Recommendation: Sitagliptin / BZ-Kontrolle",
+        "label": "Tavsiya: sitagliptin / qand nazorati (Sitagliptin / BZ-Kontrolle)",
+        "labelRu": "Рекомендация: ситаглиптин / контроль глюкозы (Sitagliptin / BZ-Kontrolle)",
+        "labelTr": "Öneri: sitagliptin / kan şekeri takibi (Sitagliptin / BZ-Kontrolle)",
+        "labelEn": "Recommendation: sitagliptin / glucose monitoring (Sitagliptin / BZ-Kontrolle)",
         "keywords": ["sitagliptin", "blutzuckerkontrolle", "bz-kontrolle", "blutzuckerselbstmessung"]
       }
     ],
@@ -3247,17 +3247,17 @@
         "keywords": ["zimmer"]
       },
       {
-        "label": "Asosiy shikoyat: Handschwäche / Wortfindungsstörung",
-        "labelRu": "Основная жалоба: Handschwäche / Wortfindungsstörung",
-        "labelTr": "Ana şikâyet: Handschwäche / Wortfindungsstörung",
-        "labelEn": "Main complaint: Handschwäche / Wortfindungsstörung",
+        "label": "Asosiy shikoyat: qo‘l kuchsizligi / so‘z topishda qiynalish (Handschwäche / Wortfindungsstörung)",
+        "labelRu": "Основная жалоба: слабость в руке / трудности подбора слов (Handschwäche / Wortfindungsstörung)",
+        "labelTr": "Ana şikâyet: elde güçsüzlük / kelime bulma güçlüğü (Handschwäche / Wortfindungsstörung)",
+        "labelEn": "Main complaint: hand weakness / word-finding difficulty (Handschwäche / Wortfindungsstörung)",
         "keywords": ["hand", "wortfindung"]
       },
       {
-        "label": "vollständige Rückbildung",
-        "labelRu": "vollständige Rückbildung",
-        "labelTr": "vollständige Rückbildung",
-        "labelEn": "vollständige Rückbildung",
+        "label": "Belgilar to‘liq o‘tib ketgan (vollständige Rückbildung)",
+        "labelRu": "Полный регресс симптомов (vollständige Rückbildung)",
+        "labelTr": "Belirtilerin tamamen düzelmesi (vollständige Rückbildung)",
+        "labelEn": "Complete resolution of symptoms (vollständige Rückbildung)",
         "keywords": ["rückbildung", "vollständig zurück", "rückgebildet"]
       },
       {
@@ -3275,17 +3275,17 @@
         "keywords": ["mrt"]
       },
       {
-        "label": "Duplexsonographie topilmasi",
-        "labelRu": "Данные: Duplexsonographie",
-        "labelTr": "Duplexsonographie bulgusu",
-        "labelEn": "Duplexsonographie finding",
+        "label": "Dupleks UTT topilmasi (Duplexsonographie)",
+        "labelRu": "Данные дуплексного УЗИ (Duplexsonographie)",
+        "labelTr": "Dupleks ultrasonografi bulgusu (Duplexsonographie)",
+        "labelEn": "Duplex ultrasound finding (Duplexsonographie)",
         "keywords": ["duplex", "karotis", "carotis", "stenose"]
       },
       {
-        "label": "Langzeit-EKG",
-        "labelRu": "Langzeit-EKG",
-        "labelTr": "Langzeit-EKG",
-        "labelEn": "Langzeit-EKG",
+        "label": "Xolter EKG (Langzeit-EKG)",
+        "labelRu": "Холтер ЭКГ (Langzeit-EKG)",
+        "labelTr": "Holter EKG (Langzeit-EKG)",
+        "labelEn": "Holter ECG (Langzeit-EKG)",
         "keywords": ["langzeit-ekg", "vorhofflimmern"]
       },
       {
@@ -3303,10 +3303,10 @@
         "keywords": ["ass 100", "acetylsalicyl", "atorvastatin", "statin"]
       },
       {
-        "label": "Tavsiya: Thrombendarteriektomie / Nikotinkarenz",
-        "labelRu": "Рекомендация: Thrombendarteriektomie / Nikotinkarenz",
-        "labelTr": "Öneri: Thrombendarteriektomie / Nikotinkarenz",
-        "labelEn": "Recommendation: Thrombendarteriektomie / Nikotinkarenz",
+        "label": "Tavsiya: trombendarterektomiya / chekishni tashlash (Thrombendarteriektomie / Nikotinkarenz)",
+        "labelRu": "Рекомендация: тромбэндартерэктомия / отказ от курения (Thrombendarteriektomie / Nikotinkarenz)",
+        "labelTr": "Öneri: trombendarterektomi / sigarayı bırakma (Thrombendarteriektomie / Nikotinkarenz)",
+        "labelEn": "Recommendation: thromboendarterectomy / stop smoking (Thrombendarteriektomie / Nikotinkarenz)",
         "keywords": ["thrombendarteriektomie", "tea", "nikotinkarenz", "rauchstopp"]
       }
     ],
@@ -3339,24 +3339,24 @@
         "keywords": ["lang,", "herrn lang", "werner lang"]
       },
       {
-        "label": "Asosiy shikoyat: reißende Thoraxschmerzen",
-        "labelRu": "Основная жалоба: reißende Thoraxschmerzen",
-        "labelTr": "Ana şikâyet: reißende Thoraxschmerzen",
-        "labelEn": "Main complaint: reißende Thoraxschmerzen",
+        "label": "Asosiy shikoyat: yirtuvchi ko‘krak og‘rig‘i (reißende Thoraxschmerzen)",
+        "labelRu": "Основная жалоба: раздирающая боль в груди (reißende Thoraxschmerzen)",
+        "labelTr": "Ana şikâyet: yırtılır tarzda göğüs ağrısı (reißende Thoraxschmerzen)",
+        "labelEn": "Main complaint: tearing chest pain (reißende Thoraxschmerzen)",
         "keywords": ["reißend", "thoraxschmerz"]
       },
       {
-        "label": "Ausstrahlung zwischen die Schulterblätter",
-        "labelRu": "Ausstrahlung zwischen die Schulterblätter",
-        "labelTr": "Ausstrahlung zwischen die Schulterblätter",
-        "labelEn": "Ausstrahlung zwischen die Schulterblätter",
+        "label": "Kuraklar orasiga tarqalish (Ausstrahlung zwischen die Schulterblätter)",
+        "labelRu": "Иррадиация между лопатками (Ausstrahlung zwischen die Schulterblätter)",
+        "labelTr": "Kürek kemikleri arasına yayılım (Ausstrahlung zwischen die Schulterblätter)",
+        "labelEn": "Radiation between the shoulder blades (Ausstrahlung zwischen die Schulterblätter)",
         "keywords": ["schulterblätter", "interskapulär"]
       },
       {
-        "label": "Blutdruckdifferenz",
-        "labelRu": "Blutdruckdifferenz",
-        "labelTr": "Blutdruckdifferenz",
-        "labelEn": "Blutdruckdifferenz",
+        "label": "Ikki qo‘ldagi bosim farqi (Blutdruckdifferenz)",
+        "labelRu": "Разница АД на руках (Blutdruckdifferenz)",
+        "labelTr": "Kollar arası tansiyon farkı (Blutdruckdifferenz)",
+        "labelEn": "Blood pressure difference between arms (Blutdruckdifferenz)",
         "keywords": ["blutdruckdifferenz", "seitendifferenz", "175/95"]
       },
       {
@@ -3367,10 +3367,10 @@
         "keywords": ["hypertonie", "ektasie", "4,6"]
       },
       {
-        "label": "CT-Angiographie topilmasi",
-        "labelRu": "Данные: CT-Angiographie",
-        "labelTr": "CT-Angiographie bulgusu",
-        "labelEn": "CT-Angiographie finding",
+        "label": "KT-angiografiya topilmasi (CT-Angiographie)",
+        "labelRu": "Данные КТ-ангиографии (CT-Angiographie)",
+        "labelTr": "BT anjiyografi bulgusu (CT-Angiographie)",
+        "labelEn": "CT angiography finding (CT-Angiographie)",
         "keywords": ["ct-angiograph"]
       },
       {
@@ -3388,17 +3388,17 @@
         "keywords": ["rohrprothese", "ascendens-ersatz", "ersatz der aorta"]
       },
       {
-        "label": "Tavsiya: strenge Blutdruckeinstellung",
-        "labelRu": "Рекомендация: strenge Blutdruckeinstellung",
-        "labelTr": "Öneri: strenge Blutdruckeinstellung",
-        "labelEn": "Recommendation: strenge Blutdruckeinstellung",
+        "label": "Tavsiya: bosimni qat’iy nazorat qilish (strenge Blutdruckeinstellung)",
+        "labelRu": "Рекомендация: строгий контроль АД (strenge Blutdruckeinstellung)",
+        "labelTr": "Öneri: sıkı tansiyon kontrolü (strenge Blutdruckeinstellung)",
+        "labelEn": "Recommendation: strict blood pressure control (strenge Blutdruckeinstellung)",
         "keywords": ["blutdruck", "120"]
       },
       {
-        "label": "Tavsiya: Anschlussheilbehandlung",
-        "labelRu": "Рекомендация: Anschlussheilbehandlung",
-        "labelTr": "Öneri: Anschlussheilbehandlung",
-        "labelEn": "Recommendation: Anschlussheilbehandlung",
+        "label": "Tavsiya: kasalxonadan keyin reabilitatsiya (Anschlussheilbehandlung)",
+        "labelRu": "Рекомендация: реабилитация после стационара (Anschlussheilbehandlung)",
+        "labelTr": "Öneri: taburculuk sonrası rehabilitasyon (Anschlussheilbehandlung)",
+        "labelEn": "Recommendation: rehabilitation after discharge (Anschlussheilbehandlung)",
         "keywords": ["anschlussheilbehandlung", "reha", "ahb"]
       }
     ],
@@ -3431,45 +3431,45 @@
         "keywords": ["weber"]
       },
       {
-        "label": "Asosiy shikoyat: Polydipsie / Polyurie",
-        "labelRu": "Основная жалоба: Polydipsie / Polyurie",
-        "labelTr": "Ana şikâyet: Polydipsie / Polyurie",
-        "labelEn": "Main complaint: Polydipsie / Polyurie",
+        "label": "Asosiy shikoyat: kuchli chanqoq / ko‘p siyish (Polydipsie / Polyurie)",
+        "labelRu": "Основная жалоба: сильная жажда / обильное мочеиспускание (Polydipsie / Polyurie)",
+        "labelTr": "Ana şikâyet: aşırı susama / çok idrara çıkma (Polydipsie / Polyurie)",
+        "labelEn": "Main complaint: excessive thirst / frequent urination (Polydipsie / Polyurie)",
         "keywords": ["polydipsie", "polyurie", "durst"]
       },
       {
-        "label": "Gewichtsverlust",
-        "labelRu": "Gewichtsverlust",
-        "labelTr": "Gewichtsverlust",
-        "labelEn": "Gewichtsverlust",
+        "label": "Vazn yo‘qotish (Gewichtsverlust)",
+        "labelRu": "Потеря веса (Gewichtsverlust)",
+        "labelTr": "Kilo kaybı (Gewichtsverlust)",
+        "labelEn": "Weight loss (Gewichtsverlust)",
         "keywords": ["gewichtsverlust"]
       },
       {
-        "label": "Kussmaul-Atmung",
-        "labelRu": "Kussmaul-Atmung",
-        "labelTr": "Kussmaul-Atmung",
-        "labelEn": "Kussmaul-Atmung",
+        "label": "Kussmaul nafasi (Kussmaul-Atmung)",
+        "labelRu": "Дыхание Куссмауля (Kussmaul-Atmung)",
+        "labelTr": "Kussmaul solunumu (Kussmaul-Atmung)",
+        "labelEn": "Kussmaul breathing (Kussmaul-Atmung)",
         "keywords": ["kussmaul"]
       },
       {
-        "label": "Blutzucker / pH",
-        "labelRu": "Blutzucker / pH",
-        "labelTr": "Blutzucker / pH",
-        "labelEn": "Blutzucker / pH",
+        "label": "Qondagi qand / pH (Blutzucker / pH)",
+        "labelRu": "Глюкоза крови / pH (Blutzucker / pH)",
+        "labelTr": "Kan şekeri / pH (Blutzucker / pH)",
+        "labelEn": "Blood glucose / pH (Blutzucker / pH)",
         "keywords": ["blutzucker", "ph 7,08", "ph von 7,08", "azidose"]
       },
       {
-        "label": "Ketone",
-        "labelRu": "Ketone",
-        "labelTr": "Ketone",
-        "labelEn": "Ketone",
+        "label": "Ketonlar (Ketone)",
+        "labelRu": "Кетоны (Ketone)",
+        "labelTr": "Ketonlar (Ketone)",
+        "labelEn": "Ketones (Ketone)",
         "keywords": ["keton"]
       },
       {
-        "label": "Kalium",
-        "labelRu": "Kalium",
-        "labelTr": "Kalium",
-        "labelEn": "Kalium",
+        "label": "Kaliy (Kalium)",
+        "labelRu": "Калий (Kalium)",
+        "labelTr": "Potasyum (Kalium)",
+        "labelEn": "Potassium (Kalium)",
         "keywords": ["kalium"]
       },
       {
@@ -3487,10 +3487,10 @@
         "keywords": ["insulin", "volumen"]
       },
       {
-        "label": "Tavsiya: Basis-Bolus / Schulung",
-        "labelRu": "Рекомендация: Basis-Bolus / Schulung",
-        "labelTr": "Öneri: Basis-Bolus / Schulung",
-        "labelEn": "Recommendation: Basis-Bolus / Schulung",
+        "label": "Tavsiya: bazis-bolyus insulin / diabet bo‘yicha o‘qitish (Basis-Bolus / Schulung)",
+        "labelRu": "Рекомендация: базис-болюсная схема / обучение (Basis-Bolus / Schulung)",
+        "labelTr": "Öneri: bazal-bolus tedavi / diyabet eğitimi (Basis-Bolus / Schulung)",
+        "labelEn": "Recommendation: basal-bolus regimen / diabetes education (Basis-Bolus / Schulung)",
         "keywords": ["basis-bolus", "schulung"]
       }
     ],
@@ -3523,24 +3523,24 @@
         "keywords": ["kaiser"]
       },
       {
-        "label": "Asosiy shikoyat: Vernichtungskopfschmerz",
-        "labelRu": "Основная жалоба: Vernichtungskopfschmerz",
-        "labelTr": "Ana şikâyet: Vernichtungskopfschmerz",
-        "labelEn": "Main complaint: Vernichtungskopfschmerz",
+        "label": "Asosiy shikoyat: hayotidagi eng kuchli, keskin bosh og‘rig‘i (Vernichtungskopfschmerz)",
+        "labelRu": "Основная жалоба: внезапная сильнейшая («громоподобная») головная боль (Vernichtungskopfschmerz)",
+        "labelTr": "Ana şikâyet: hayatının en şiddetli ani baş ağrısı (Vernichtungskopfschmerz)",
+        "labelEn": "Main complaint: sudden, worst-ever (thunderclap) headache (Vernichtungskopfschmerz)",
         "keywords": ["kopfschmerz"]
       },
       {
-        "label": "Meningismus / Erbrechen",
-        "labelRu": "Meningismus / Erbrechen",
-        "labelTr": "Meningismus / Erbrechen",
-        "labelEn": "Meningismus / Erbrechen",
+        "label": "Meningeal belgilar / qusish (Meningismus / Erbrechen)",
+        "labelRu": "Менингеальные знаки / рвота (Meningismus / Erbrechen)",
+        "labelTr": "Meningeal irritasyon / kusma (Meningismus / Erbrechen)",
+        "labelEn": "Meningism / vomiting (Meningismus / Erbrechen)",
         "keywords": ["meningismus", "erbrechen"]
       },
       {
-        "label": "Bewusstlosigkeit",
-        "labelRu": "Bewusstlosigkeit",
-        "labelTr": "Bewusstlosigkeit",
-        "labelEn": "Bewusstlosigkeit",
+        "label": "Hushsizlik (Bewusstlosigkeit)",
+        "labelRu": "Потеря сознания (Bewusstlosigkeit)",
+        "labelTr": "Bilinç kaybı (Bewusstlosigkeit)",
+        "labelEn": "Loss of consciousness (Bewusstlosigkeit)",
         "keywords": ["bewusstlos", "bewusstsein"]
       },
       {
@@ -3551,10 +3551,10 @@
         "keywords": ["cct", "ct des schädels", "subarachnoidal"]
       },
       {
-        "label": "Aneurysma",
-        "labelRu": "Aneurysma",
-        "labelTr": "Aneurysma",
-        "labelEn": "Aneurysma",
+        "label": "Anevrizma (Aneurysma)",
+        "labelRu": "Аневризма (Aneurysma)",
+        "labelTr": "Anevrizma (Aneurysma)",
+        "labelEn": "Aneurysm (Aneurysma)",
         "keywords": ["aneurysma"]
       },
       {
@@ -3615,38 +3615,38 @@
         "keywords": ["hoffmann"]
       },
       {
-        "label": "Asosiy shikoyat: Fieber / Nachtschweiß",
-        "labelRu": "Основная жалоба: Fieber / Nachtschweiß",
-        "labelTr": "Ana şikâyet: Fieber / Nachtschweiß",
-        "labelEn": "Main complaint: Fieber / Nachtschweiß",
+        "label": "Asosiy shikoyat: isitma / tungi terlash (Fieber / Nachtschweiß)",
+        "labelRu": "Основная жалоба: лихорадка / ночная потливость (Fieber / Nachtschweiß)",
+        "labelTr": "Ana şikâyet: ateş / gece terlemesi (Fieber / Nachtschweiß)",
+        "labelEn": "Main complaint: fever / night sweats (Fieber / Nachtschweiß)",
         "keywords": ["fieber", "nachtschweiß"]
       },
       {
-        "label": "Zahnextraktion",
-        "labelRu": "Zahnextraktion",
-        "labelTr": "Zahnextraktion",
-        "labelEn": "Zahnextraktion",
+        "label": "Tish sug‘urilgan (Zahnextraktion)",
+        "labelRu": "Удаление зуба (Zahnextraktion)",
+        "labelTr": "Diş çekimi (Zahnextraktion)",
+        "labelEn": "Tooth extraction (Zahnextraktion)",
         "keywords": ["zahnextraktion"]
       },
       {
-        "label": "Aortenklappenersatz",
-        "labelRu": "Aortenklappenersatz",
-        "labelTr": "Aortenklappenersatz",
-        "labelEn": "Aortenklappenersatz",
+        "label": "Aorta qopqog‘i almashtirilgan (Aortenklappenersatz)",
+        "labelRu": "Протез аортального клапана (Aortenklappenersatz)",
+        "labelTr": "Aort kapak replasmanı (Aortenklappenersatz)",
+        "labelEn": "Aortic valve replacement (Aortenklappenersatz)",
         "keywords": ["klappenersatz", "klappenprothese", "prothese"]
       },
       {
-        "label": "Osler-Knötchen / Herzgeräusch",
-        "labelRu": "Osler-Knötchen / Herzgeräusch",
-        "labelTr": "Osler-Knötchen / Herzgeräusch",
-        "labelEn": "Osler-Knötchen / Herzgeräusch",
+        "label": "Osler tugunchalari / yurak shovqini (Osler-Knötchen / Herzgeräusch)",
+        "labelRu": "Узелки Ослера / шум в сердце (Osler-Knötchen / Herzgeräusch)",
+        "labelTr": "Osler nodülleri / kalp üfürümü (Osler-Knötchen / Herzgeräusch)",
+        "labelEn": "Osler nodes / heart murmur (Osler-Knötchen / Herzgeräusch)",
         "keywords": ["osler", "herzgeräusch", "diastolikum"]
       },
       {
-        "label": "Blutkulturen",
-        "labelRu": "Blutkulturen",
-        "labelTr": "Blutkulturen",
-        "labelEn": "Blutkulturen",
+        "label": "Qon ekmasi (Blutkulturen)",
+        "labelRu": "Посев крови (Blutkulturen)",
+        "labelTr": "Kan kültürleri (Blutkulturen)",
+        "labelEn": "Blood cultures (Blutkulturen)",
         "keywords": ["blutkultur", "streptococcus"]
       },
       {
@@ -3671,10 +3671,10 @@
         "keywords": ["ceftriaxon", "gentamicin", "antibio"]
       },
       {
-        "label": "Tavsiya: Endokarditisprophylaxe",
-        "labelRu": "Рекомендация: Endokarditisprophylaxe",
-        "labelTr": "Öneri: Endokarditisprophylaxe",
-        "labelEn": "Recommendation: Endokarditisprophylaxe",
+        "label": "Tavsiya: endokardit profilaktikasi (Endokarditisprophylaxe)",
+        "labelRu": "Рекомендация: профилактика эндокардита (Endokarditisprophylaxe)",
+        "labelTr": "Öneri: endokardit profilaksisi (Endokarditisprophylaxe)",
+        "labelEn": "Recommendation: endocarditis prophylaxis (Endokarditisprophylaxe)",
         "keywords": ["prophylaxe"]
       }
     ],

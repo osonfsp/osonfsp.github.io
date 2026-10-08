@@ -453,7 +453,7 @@ function ContentAdmin() {
             />
             <StatCard
               icon="🎯"
-              label={tr("Jami Prüfung", "Всего Prüfung", "Toplam Prüfung", "Total Prüfung")}
+              label={tr("Jami Prüfung", "Всего экзаменов", "Toplam sınav", "Total exams")}
               value={DEMO_USERS.reduce((z, k) => z + k.exams, 0) + e.exams.length}
             />
             <StatCard
