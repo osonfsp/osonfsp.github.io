@@ -206,6 +206,35 @@ export class Store extends DurableObject {
     return this.one(`SELECT ${USER_COLS} FROM users WHERE lower(username) = lower(?)`, q);
   }
 
+  // Admin paneli: ro'yxatlar (yangi, tarifdagi, sinovi tugagan) va qidiruv
+  listUsersBy(kind, limit = 10) {
+    let now = Date.now(),
+      q = {
+        recent: ["1 = 1", "created_at DESC"],
+        plans: ["plan_until > ?", "plan_until ASC"],
+        expired: ["trial_end <= ? AND (plan_until IS NULL OR plan_until <= ?)", "trial_end DESC"],
+      }[kind];
+    if (!q) return [];
+    let args = kind === "plans" ? [now] : kind === "expired" ? [now, now] : [];
+    return this.sql
+      .exec(`SELECT ${USER_COLS} FROM users WHERE ${q[0]} ORDER BY ${q[1]} LIMIT ?`, ...args, limit)
+      .toArray();
+  }
+
+  searchUsers(q, limit = 10) {
+    let exact = this.findUser(q);
+    if (exact) return [exact];
+    let like = `%${String(q).trim().replace(/^@/, "").toLowerCase()}%`;
+    return this.sql
+      .exec(
+        `SELECT ${USER_COLS} FROM users WHERE lower(name) LIKE ? OR lower(username) LIKE ? ORDER BY last_seen DESC LIMIT ?`,
+        like,
+        like,
+        limit,
+      )
+      .toArray();
+  }
+
   adminIds(usernames) {
     if (!usernames.length) return [];
     return this.sql

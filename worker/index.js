@@ -277,7 +277,7 @@ export default {
       if (!["uz", "ru", "tr", "en"].includes(lang) || at < 0 || at > Date.now() + 864e5)
         return reply(400, { error: "bad_lang" });
       let res = await store.syncLang(u.id, lang, at);
-      if (res.changed) ctx.waitUntil(sendLangChanged(env, store, u.id, res.lang).catch(() => {}));
+      if (res.changed) ctx.waitUntil(sendLangChanged(env, store, u.id, res.lang, r.isAdmin).catch(() => {}));
       return reply(200, { lang: res.lang, at: res.at });
     }
 

@@ -263,11 +263,14 @@ const kb = (...rows) => ({ reply_markup: { inline_keyboard: rows } });
 const li = (lang) => Math.max(0, LANGS.indexOf(lang));
 
 // Pastki tugmalar paneli (doim ko'rinib turadi)
-const menuKb = (lang) => {
+const ADMIN_BTN = "🛠 Admin panel",
+  ADMIN_KB_VERSION = "1";
+const menuKb = (lang, admin = false) => {
   let m = (k) => ({ text: T.menu[k][li(lang)] });
   return {
     reply_markup: {
       keyboard: [
+        ...(admin ? [[{ text: ADMIN_BTN }]] : []),
         [m("open")],
         [m("quiz"), m("ai")],
         [m("remind"), m("invite")],
@@ -295,8 +298,12 @@ const langKb = () =>
   );
 
 // Til o'zgardi (botda yoki saytda) — tasdiq va yangi tildagi tugmalar paneli
-export async function sendLangChanged(env, store, chatId, lang) {
-  let r = await tgApi(env, "sendMessage", { chat_id: chatId, text: L("langSet", lang), ...menuKb(lang) });
+export async function sendLangChanged(env, store, chatId, lang, admin = false) {
+  let r = await tgApi(env, "sendMessage", {
+    chat_id: chatId,
+    text: L("langSet", lang),
+    ...menuKb(lang, admin),
+  });
   if (r?.ok) await store.markKb([chatId], KB_VERSION);
 }
 
@@ -485,13 +492,115 @@ async function practice(env, store, msg, lang, { voice, text }) {
   });
 }
 
-// ---- Admin buyruqlari ----
+// ---- Admin paneli (tugmalar bilan) ----
+const ago = (ms) => {
+  let h = Math.round((Date.now() - ms) / 36e5);
+  return h < 1 ? "hozirgina" : h < 48 ? `${h} soat oldin` : `${Math.round(h / 24)} kun oldin`;
+};
+function statusOf(env, u) {
+  let now = Date.now();
+  if (isAdminName(env, u.username)) return "👑 admin";
+  if ((u.plan_until ?? 0) > now) return `💳 ${planLabel(u.plan_id, "uz")} — ${fmtDate(u.plan_until)} gacha`;
+  if (u.trial_end > now) return `🎁 sinov — ${Math.ceil((u.trial_end - now) / 36e5)} soat qoldi`;
+  return `⛔ tugagan (${fmtDate(Math.max(u.trial_end, u.plan_until ?? 0))})`;
+}
+
+const ADMIN_MENU = kb(
+  [
+    { text: "📊 Statistika", callback_data: "ad:stat" },
+    { text: "🆕 Yangi foydalanuvchilar", callback_data: "ad:recent" },
+  ],
+  [
+    { text: "💳 Tarifdagilar", callback_data: "ad:plans" },
+    { text: "⛔ Muddati tugaganlar", callback_data: "ad:expired" },
+  ],
+  [
+    { text: "🔎 Foydalanuvchi topish", callback_data: "ad:find" },
+    { text: "📢 Hammaga xabar", callback_data: "ad:bc" },
+  ],
+);
+
+async function adminStatsText(store) {
+  let dayStart = Date.parse(`${tashkent(Date.now()).day}T00:00:00+05:00`),
+    s = await store.stats(dayStart),
+    bc = JSON.parse((await store.getMeta("broadcast")) || "null");
+  return (
+    `📊 Statistika\n\n👥 Foydalanuvchilar: ${s.users}\n🆕 Bugun qo‘shilgan: ${s.newToday}\n🔥 Bugun faol: ${s.activeToday}\n💳 Faol tarif: ${s.plans}\n🎁 Sinovda: ${s.trials}\n⛔ Muddati tugagan: ${Math.max(0, s.users - s.plans - s.trials)}\n🤖 Bot obunachilari: ${s.chats} (bloklagan: ${s.blocked})` +
+    (bc ? `\n\n📢 Xabar yuborilmoqda: ${bc.sent}/${bc.total}` : "")
+  );
+}
+
+const adminPanel = async (env, store, chatId) =>
+  tgApi(env, "sendMessage", {
+    chat_id: chatId,
+    text: `🛠 Admin panel\n\n${await adminStatsText(store)}\n\nKerakli bo‘limni tanlang 👇`,
+    ...ADMIN_MENU,
+  });
+
+const LIST_TITLE = {
+  recent: "🆕 Oxirgi qo‘shilganlar",
+  plans: "💳 Tarifdagilar (tugashi yaqinlari birinchi)",
+  expired: "⛔ Muddati tugaganlar — tarif taklif qilish mumkin",
+  search: "🔎 Topilganlar",
+};
+function sendUserList(env, chatId, kind, users) {
+  if (!users.length)
+    return tgApi(env, "sendMessage", {
+      chat_id: chatId,
+      text: `${LIST_TITLE[kind]}\n\nHech kim yo‘q.`,
+      ...ADMIN_MENU,
+    });
+  let lines = users.map(
+    (u, i) =>
+      `${i + 1}. ${u.name}${u.username ? ` @${u.username}` : ""}\n    ${statusOf(env, u)} · qo‘shilgan ${ago(u.created_at)}`,
+  );
+  return tgApi(env, "sendMessage", {
+    chat_id: chatId,
+    text: `${LIST_TITLE[kind]}\n\n${lines.join("\n")}\n\nTarif berish uchun odamni tanlang 👇`,
+    ...kb(
+      ...users.map((u, i) => [{ text: `${i + 1}. 👤 ${u.name}`.slice(0, 40), callback_data: `u:${u.id}` }]),
+    ),
+  });
+}
+
+async function userCard(env, store, u) {
+  let refs = await store.referralCount(u.id),
+    text = [
+      `👤 ${u.name}${u.username ? ` @${u.username}` : ""}`,
+      `ID: ${u.id}`,
+      `Holat: ${statusOf(env, u)}`,
+      `Qo‘shilgan: ${fmtDate(u.created_at)}`,
+      `Oxirgi kirish: ${u.last_seen ? ago(u.last_seen) : "—"}`,
+      `Imtihon: ${u.exams_used} marta`,
+      `Taklif qilgan: ${refs} kishi`,
+    ].join("\n"),
+    markup = kb(
+      [
+        { text: `✅ 1 hafta (${PLAN_PRICES.week})`, callback_data: `ug:${u.id}:week` },
+        { text: `✅ 1 oy (${PLAN_PRICES.month})`, callback_data: `ug:${u.id}:month` },
+      ],
+      [
+        { text: "➕ 1 kun", callback_data: `ug:${u.id}:day` },
+        { text: "🔄 Imtihonni qayta berish", callback_data: `ur:${u.id}` },
+      ],
+      [{ text: "❌ Tarifni bekor qilish", callback_data: `ug:${u.id}:off` }],
+      ...(u.username ? [[{ text: "✈️ Yozish", url: `https://t.me/${u.username}` }]] : []),
+    );
+  return { text, ...markup };
+}
+
+const ADMIN_PROMPT = {
+  find: "🔎 Foydalanuvchining @username'i, ID raqami yoki ismini yuboring:",
+  bc: "📢 Hammaga yuboriladigan xabar matnini yuboring (keyin ko‘rib chiqib tasdiqlaysiz):",
+};
+
+// ---- Admin buyruqlari (eski, yozib ishlatiladigan) ----
 const ADMIN_HELP =
   "🛠 Admin buyruqlari:\n/stat — statistika\n/grant @username week|month|<kun> — tarif yoqish (0 — bekor qilish)\n/reset @username — bepul imtihonni qayta berish\n/xabar <matn> — hammaga xabar (avval ko‘rib chiqasiz)";
 
 async function adminCommand(env, store, cmd, args, chatId) {
   let send = (text, extra = {}) => tgApi(env, "sendMessage", { chat_id: chatId, text, ...extra });
-  if (cmd === "admin") return send(ADMIN_HELP);
+  if (cmd === "admin") return adminPanel(env, store, chatId);
   if (cmd === "stat") {
     let dayStart = Date.parse(`${tashkent(Date.now()).day}T00:00:00+05:00`),
       s = await store.stats(dayStart),
@@ -545,12 +654,19 @@ export async function handleUpdate(env, store, upd) {
     id = msg.chat.id,
     send = (t, extra = {}) => tgApi(env, "sendMessage", { chat_id: id, text: t, ...extra });
 
-  if (
-    cmd &&
-    isAdminName(env, msg.from.username) &&
-    ["admin", "stat", "grant", "reset", "xabar"].includes(cmd)
-  )
-    return adminCommand(env, store, cmd, args, id);
+  let admin = isAdminName(env, msg.from.username);
+  if (admin) {
+    if (text === ADMIN_BTN) return adminPanel(env, store, id);
+    if (cmd && ["admin", "stat", "grant", "reset", "xabar"].includes(cmd))
+      return adminCommand(env, store, cmd, args, id);
+    // Panel so'ragan javob: qidiruv so'zi yoki xabar matni
+    let wait = await store.getMeta(`astate:${id}`);
+    if (wait && text && !cmd && !MENU_ACTION[text]) {
+      await store.setMeta(`astate:${id}`, "");
+      if (wait === "find") return sendUserList(env, id, "search", await store.searchUsers(text));
+      if (wait === "bc") return adminCommand(env, store, "xabar", text, id);
+    }
+  }
 
   // Eski buyruqlar ham ishlayveradi (/savol, /eslatma, ...), lekin asosiysi — pastki tugmalar
   let action =
@@ -569,8 +685,9 @@ export async function handleUpdate(env, store, upd) {
   switch (action) {
     case "start": {
       await send(L("welcome", lang), kb([appBtn(L("open", lang))]));
-      let r = await send(L("menuIntro", lang), menuKb(lang));
+      let r = await send(L("menuIntro", lang), menuKb(lang, admin));
       if (r?.ok) await store.markKb([id], KB_VERSION);
+      if (admin) await store.setMeta(`admin_kb:${id}`, ADMIN_KB_VERSION);
       if (args === "tarif") return showPlans(env, id, lang);
       return;
     }
@@ -610,11 +727,11 @@ export async function handleUpdate(env, store, upd) {
     case "lang":
       return send(L("langMenu", lang), langKb());
     case "help":
-      return send(L("help", lang), menuKb(lang));
+      return send(L("help", lang), menuKb(lang, admin));
   }
   if (msg.voice || msg.audio) return practice(env, store, msg, lang, { voice: msg.voice || msg.audio });
   if (text && !cmd) return practice(env, store, msg, lang, { text });
-  return send(L("help", lang), menuKb(lang));
+  return send(L("help", lang), menuKb(lang, admin));
 }
 
 async function botUsername(env, store) {
@@ -671,7 +788,7 @@ async function onCallback(env, store, q) {
   if (kind === "lang" && LANGS.includes(a)) {
     await store.setChat(from.id, { lang: a, langAt: Date.now() });
     await answer();
-    return sendLangChanged(env, store, from.id, a);
+    return sendLangChanged(env, store, from.id, a, isAdminName(env, from.username));
   }
   if (kind === "plan") {
     await answer();
@@ -686,6 +803,51 @@ async function onCallback(env, store, q) {
 
   // Admin tugmalari
   if (!isAdminName(env, from.username)) return answer();
+  if (kind === "ad") {
+    await answer();
+    if (a === "stat") return send(await adminStatsText(store), ADMIN_MENU);
+    if (["recent", "plans", "expired"].includes(a))
+      return sendUserList(env, from.id, a, await store.listUsersBy(a, 10));
+    if (a === "find" || a === "bc") {
+      await store.setMeta(`astate:${from.id}`, a);
+      return send(ADMIN_PROMPT[a], kb([{ text: "❌ Bekor", callback_data: "ad:cancel" }]));
+    }
+    if (a === "cancel") {
+      await store.setMeta(`astate:${from.id}`, "");
+      return send("Bekor qilindi.", ADMIN_MENU);
+    }
+    return;
+  }
+  if (kind === "u") {
+    let u = await store.findUser(a);
+    await answer(u ? "" : "Topilmadi");
+    return u && send("", await userCard(env, store, u)).then(() => {});
+  }
+  // Kartadagi tugmalar: tarif / +1 kun / bekor / imtihon — karta joyida yangilanadi
+  if (kind === "ug" || kind === "ur") {
+    let id = Number(a),
+      u = await store.findUser(a);
+    if (!u) return answer("Topilmadi");
+    let x, note;
+    if (kind === "ur") ((x = await store.resetExams(id)), (note = "🔄 Bepul imtihon qayta berildi"));
+    else if (b === "off") ((x = await store.grantPlan(id, null, 0)), (note = "❌ Tarif bekor qilindi"));
+    else {
+      let planId = b === "day" ? ((u.plan_until ?? 0) > Date.now() && u.plan_id) || "custom" : b,
+        days = b === "day" ? 1 : PLANS[b];
+      if (!days) return answer();
+      x = await store.grantPlan(id, planId, days);
+      note = `✅ ${b === "day" ? "+1 kun" : planLabel(b, "uz")} — ${fmtDate(x.plan_until)} gacha. Foydalanuvchiga xabar yuborildi.`;
+      await notifyGranted(env, store, x);
+    }
+    await answer("✅");
+    let card = await userCard(env, store, x);
+    return tgApi(env, "editMessageText", {
+      chat_id: q.message.chat.id,
+      message_id: q.message.message_id,
+      ...card,
+      text: `${card.text}\n\n${note}`,
+    });
+  }
   if (kind === "g" && PLANS[b]) {
     let x = await store.grantPlan(Number(a), b, PLANS[b]);
     if (!x) return answer("Topilmadi");
@@ -763,6 +925,19 @@ export async function runCron(env, store) {
       await send(c.id, "sendMessage", { text: L("menuIntro", c.lang || "uz"), ...menuKb(c.lang || "uz") });
     }
     if (done.length) await store.markKb(done, KB_VERSION);
+  }
+
+  // 1c) Adminlarga admin tugmasi bor panel (bir marta, versiya o'zgarsa qayta)
+  for (let aid of await store.adminIds(adminNames(env))) {
+    if (budget <= 0 || (await store.getMeta(`admin_kb:${aid}`)) === ADMIN_KB_VERSION) continue;
+    let lang = (await store.getChat(aid))?.lang || "uz";
+    if (
+      await send(aid, "sendMessage", {
+        text: "🛠 Admin panel tugmasi qo‘shildi — pastdagi «🛠 Admin panel» ni bosing.",
+        ...menuKb(lang, true),
+      })
+    )
+      await store.setMeta(`admin_kb:${aid}`, ADMIN_KB_VERSION);
   }
 
   // 2) Ommaviy xabar (admin /xabar bilan boshlagan)
