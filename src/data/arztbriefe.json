@@ -7467,5 +7467,851 @@
       }
     ],
     "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über unsere Patientin Frau Sarah Lindner, 34 Jahre, die sich am 07.10.2026 in unserer Hausarztpraxis vorstellte.\n\nAnamnese:\nSeit dem Vortag bestehen schlagartig aufgetretenes Fieber bis 39,8 °C, ausgeprägte Myalgien, Kopfschmerzen, trockener Husten und Halsschmerzen. In der Kita des Sohnes gibt es aktuell zahlreiche Grippefälle (Exposition). Die Patientin ist nicht gegen Grippe geimpft und hat ein leichtes Asthma bronchiale.\n\nBefunde:\nDie Auskultation war unauffällig, die Sauerstoffsättigung lag bei 97 %. Der Influenza-A-Schnelltest war positiv, der SARS-CoV-2-Test negativ.\n\nDiagnose:\nInfluenza A ohne Komplikationen.\n\nTherapie:\nWegen des Asthmas als Risikofaktor und des Beginns innerhalb von 48 Stunden verordneten wir Oseltamivir 75 mg zweimal täglich für fünf Tage, dazu Paracetamol und reichlich Flüssigkeit. Die Patientin ist für eine Woche arbeitsunfähig.\n\nProcedere:\nWir haben sie über Warnzeichen aufgeklärt: Bei Luftnot, erneutem Fieberanstieg nach Besserung oder Brustschmerzen ist eine sofortige Wiedervorstellung erforderlich. Wir empfehlen künftig eine jährliche Grippeimpfung für die Patientin und ihre Familie.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab85",
+    "caseId": "c107",
+    "title": "Infektexazerbation von Bronchiektasen",
+    "task": "Pulmonologiya bo‘limidan uy shifokoriga Arztbrief yozing. Penitsillin allergiyasi, balg‘am ekmasi va doimiy fizioterapiyaga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из пульмонологии семейному врачу. Обратите внимание на аллергию на пенициллин, посев мокроты и постоянную физиотерапию.",
+    "taskTr": "Göğüs hastalıkları servisinden aile hekimine bir Arztbrief yazın. Penisilin alerjisine, balgam kültürüne ve düzenli fizyoterapiye dikkat edin.",
+    "taskEn": "Write an Arztbrief from pulmonology to the GP. Pay attention to the penicillin allergy, sputum culture and regular physiotherapy.",
+    "facts": [
+      "Patientin: Brigitte Seidel, 59 Jahre, weiblich",
+      "Aufnahme: 02.10.2026, pneumologische Station",
+      "Seit 5 Tagen vermehrter purulenter Auswurf, Hämoptysen, Fieber bis 38,6 °C, Belastungsdyspnoe; 3 Exazerbationen im letzten Jahr",
+      "Bekannte Bronchiektasen nach Pertussis-Pneumonie im Kindesalter; Penicillinallergie (Urtikaria)",
+      "HRCT: zylindrische Bronchiektasen beidseits basal; CRP 86 mg/l",
+      "Sputumkultur: Pseudomonas aeruginosa, sensibel auf Ciprofloxacin",
+      "Therapie: Ciprofloxacin 750 mg 1-0-1 für 14 Tage, Atemphysiotherapie, inhalative hypertone Kochsalzlösung; Immunglobuline und Schweißtest unauffällig"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patientin ma’lumotlari (Frau Seidel)",
+        "labelRu": "Данные пациентки (Frau Seidel)",
+        "labelTr": "Hasta bilgileri (Frau Seidel)",
+        "labelEn": "Patient data (Frau Seidel)",
+        "keywords": ["seidel"]
+      },
+      {
+        "label": "Asosiy shikoyat: yiringli balg‘am va isitma (purulenter Auswurf)",
+        "labelRu": "Основная жалоба: гнойная мокрота и лихорадка (purulenter Auswurf)",
+        "labelTr": "Ana şikâyet: pürülan balgam ve ateş (purulenter Auswurf)",
+        "labelEn": "Main complaint: purulent sputum and fever (purulenter Auswurf)",
+        "keywords": ["auswurf", "fieber"]
+      },
+      {
+        "label": "Ma’lum bronxoektazlar va sababi (Pertussis)",
+        "labelRu": "Известные бронхоэктазы и причина (Pertussis)",
+        "labelTr": "Bilinen bronşektazi ve nedeni (Pertussis)",
+        "labelEn": "Known bronchiectasis and cause (Pertussis)",
+        "keywords": ["bronchiektasen", "pertussis"]
+      },
+      {
+        "label": "Penitsillin allergiyasi (Penicillinallergie)",
+        "labelRu": "Аллергия на пенициллин (Penicillinallergie)",
+        "labelTr": "Penisilin alerjisi (Penicillinallergie)",
+        "labelEn": "Penicillin allergy (Penicillinallergie)",
+        "keywords": ["penicillin"]
+      },
+      {
+        "label": "Balg‘am ekmasi: psevdomonas (Pseudomonas aeruginosa)",
+        "labelRu": "Посев мокроты: синегнойная палочка (Pseudomonas aeruginosa)",
+        "labelTr": "Balgam kültürü: Pseudomonas (Pseudomonas aeruginosa)",
+        "labelEn": "Sputum culture: Pseudomonas (Pseudomonas aeruginosa)",
+        "keywords": ["pseudomonas"]
+      },
+      {
+        "label": "Diagnoz: bronxoektazlarning infektsion qo‘zishi (Infektexazerbation)",
+        "labelRu": "Диагноз: инфекционное обострение бронхоэктазов (Infektexazerbation)",
+        "labelTr": "Tanı: bronşektazinin enfeksiyöz alevlenmesi (Infektexazerbation)",
+        "labelEn": "Diagnosis: infective exacerbation of bronchiectasis (Infektexazerbation)",
+        "keywords": ["exazerbation"]
+      },
+      {
+        "label": "Davolash: siprofloksatsin va fizioterapiya (Ciprofloxacin)",
+        "labelRu": "Лечение: ципрофлоксацин и физиотерапия (Ciprofloxacin)",
+        "labelTr": "Tedavi: siprofloksasin ve fizyoterapi (Ciprofloxacin)",
+        "labelEn": "Treatment: ciprofloxacin and physiotherapy (Ciprofloxacin)",
+        "keywords": ["ciprofloxacin", "atemphysiotherapie"]
+      },
+      {
+        "label": "Tavsiya: kundalik nafas mashqlari va emlash (Impfungen)",
+        "labelRu": "Рекомендация: ежедневная дыхательная гимнастика и вакцинация (Impfungen)",
+        "labelTr": "Öneri: günlük solunum egzersizleri ve aşılama (Impfungen)",
+        "labelEn": "Recommendation: daily airway clearance and vaccinations (Impfungen)",
+        "keywords": ["täglich", "impfung"]
+      },
+      {
+        "label": "Tavsiya: tez-tez qo‘zishda uzoq muddatli makrolid (Azithromycin-Dauertherapie)",
+        "labelRu": "Рекомендация: длительный макролид при частых обострениях (Azithromycin-Dauertherapie)",
+        "labelTr": "Öneri: sık alevlenmede uzun süreli makrolid (Azithromycin-Dauertherapie)",
+        "labelEn": "Recommendation: long-term macrolide for frequent exacerbations (Azithromycin-Dauertherapie)",
+        "keywords": ["azithromycin", "dauertherapie"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihre Patientin Frau Brigitte Seidel, 59 Jahre, die vom 02.10.2026 bis zum 16.10.2026 in unserer pneumologischen Abteilung behandelt wurde.\n\nAnamnese:\nDie Patientin stellte sich mit seit fünf Tagen vermehrtem purulentem Auswurf, Hämoptysen, Fieber bis 38,6 °C und Belastungsdyspnoe vor. Bekannt sind Bronchiektasen nach einer Pneumonie infolge Pertussis im Kindesalter; im letzten Jahr traten drei Exazerbationen auf. Es besteht eine Penicillinallergie (Urtikaria).\n\nBefunde:\nIm HRCT zeigten sich zylindrische Bronchiektasen beidseits basal, das CRP lag bei 86 mg/l. In der Sputumkultur wuchs Pseudomonas aeruginosa, sensibel auf Ciprofloxacin. Immunglobuline und Schweißtest waren unauffällig.\n\nDiagnose:\nInfektexazerbation von Bronchiektasen mit Pseudomonas aeruginosa.\n\nTherapie und Verlauf:\nWir behandelten mit Ciprofloxacin 750 mg zweimal täglich für 14 Tage sowie Atemphysiotherapie und Inhalationen mit hypertoner Kochsalzlösung. Darunter entfieberte die Patientin, der Auswurf nahm deutlich ab.\n\nProcedere:\nWir empfehlen eine tägliche Atemphysiotherapie zur Sekretmobilisation sowie Impfungen gegen Influenza und Pneumokokken. Bei weiterhin mindestens drei Exazerbationen pro Jahr sollte eine Azithromycin-Dauertherapie erwogen werden. Eine Kontrolle der Sputumkultur ist in drei Monaten vorgesehen.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab86",
+    "caseId": "c108",
+    "title": "Hyperventilationssyndrom bei Panikattacke",
+    "task": "Shoshilinch bo‘limdan uy shifokoriga qisqa Arztbrief yozing. Xavfli sabablar (ayniqsa o‘pka emboliyasi) istisno qilinganini va keyingi yordamni yoritib bering.",
+    "taskRu": "Напишите короткий Arztbrief из приёмного отделения семейному врачу. Отразите исключение опасных причин (особенно ТЭЛА) и дальнейшую помощь.",
+    "taskTr": "Acil servisten aile hekimine kısa bir Arztbrief yazın. Tehlikeli nedenlerin (özellikle pulmoner emboli) dışlandığını ve sonraki desteği belirtin.",
+    "taskEn": "Write a short Arztbrief from the emergency department to the GP. Show that dangerous causes (especially PE) were ruled out and the further support.",
+    "facts": [
+      "Patientin: Julia Brenner, 23 Jahre, weiblich",
+      "Vorstellung: 07.10.2026, Notaufnahme (ambulant)",
+      "Akute Dyspnoe mit Tachypnoe, Parästhesien perioral und an den Händen, Pfötchenstellung, Palpitationen, Todesangst vor einer Prüfung",
+      "Ähnliche Episoden in Prüfungssituationen; orale Kontrazeption; hoher Koffeinkonsum",
+      "BGA: pH 7,52, pCO2 26 mmHg (respiratorische Alkalose), pO2 105 mmHg; SpO2 99 %",
+      "EKG: Sinustachykardie 112/min, sonst unauffällig; D-Dimere negativ (Wells-Score niedrig); TSH, Calcium normal",
+      "Therapie: Beruhigung, angeleitete langsame Bauchatmung → Beschwerden nach 20 Minuten abgeklungen"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patientin ma’lumotlari (Frau Brenner)",
+        "labelRu": "Данные пациентки (Frau Brenner)",
+        "labelTr": "Hasta bilgileri (Frau Brenner)",
+        "labelEn": "Patient data (Frau Brenner)",
+        "keywords": ["brenner"]
+      },
+      {
+        "label": "Asosiy shikoyat: hansirash, uvishish va barmoqlar tortishishi (Parästhesien, Pfötchenstellung)",
+        "labelRu": "Основная жалоба: одышка, покалывание и спазм пальцев (Parästhesien, Pfötchenstellung)",
+        "labelTr": "Ana şikâyet: nefes darlığı, karıncalanma ve parmak spazmı (Parästhesien, Pfötchenstellung)",
+        "labelEn": "Main complaint: breathlessness, tingling and finger cramps (Parästhesien, Pfötchenstellung)",
+        "keywords": ["parästhesie", "pfötchenstellung"]
+      },
+      {
+        "label": "Stress omili (Prüfungssituation)",
+        "labelRu": "Стрессовый фактор (Prüfungssituation)",
+        "labelTr": "Stres faktörü (Prüfungssituation)",
+        "labelEn": "Stress trigger (Prüfungssituation)",
+        "keywords": ["prüfung"]
+      },
+      {
+        "label": "Gaz tahlili: respirator alkaloz (respiratorische Alkalose)",
+        "labelRu": "КЩС: дыхательный алкалоз (respiratorische Alkalose)",
+        "labelTr": "Kan gazı: respiratuvar alkaloz (respiratorische Alkalose)",
+        "labelEn": "Blood gas: respiratory alkalosis (respiratorische Alkalose)",
+        "keywords": ["alkalose", "pco2"]
+      },
+      {
+        "label": "O‘pka emboliyasi istisno qilingan (D-Dimere negativ)",
+        "labelRu": "ТЭЛА исключена (D-Dimere negativ)",
+        "labelTr": "Pulmoner emboli dışlandı (D-Dimere negativ)",
+        "labelEn": "Pulmonary embolism ruled out (D-Dimere negativ)",
+        "keywords": ["d-dimere", "wells"]
+      },
+      {
+        "label": "EKG va laboratoriya normal (EKG, TSH, Calcium)",
+        "labelRu": "ЭКГ и анализы в норме (EKG, TSH, Calcium)",
+        "labelTr": "EKG ve laboratuvar normal (EKG, TSH, Calcium)",
+        "labelEn": "Normal ECG and labs (EKG, TSH, Calcium)",
+        "keywords": ["ekg", "tsh", "calcium"]
+      },
+      {
+        "label": "Diagnoz: vahima xurujida giperventilyatsiya (Hyperventilationssyndrom)",
+        "labelRu": "Диагноз: гипервентиляция при панической атаке (Hyperventilationssyndrom)",
+        "labelTr": "Tanı: panik atakta hiperventilasyon (Hyperventilationssyndrom)",
+        "labelEn": "Diagnosis: hyperventilation during a panic attack (Hyperventilationssyndrom)",
+        "keywords": ["hyperventilation"]
+      },
+      {
+        "label": "Davolash: tinchlantirish va sekin nafas olish (Bauchatmung)",
+        "labelRu": "Лечение: успокоение и медленное дыхание (Bauchatmung)",
+        "labelTr": "Tedavi: sakinleştirme ve yavaş nefes (Bauchatmung)",
+        "labelEn": "Treatment: reassurance and slow breathing (Bauchatmung)",
+        "keywords": ["bauchatmung", "beruhigung"]
+      },
+      {
+        "label": "Tavsiya: psixoterapiya va kofeinni kamaytirish (Psychotherapie)",
+        "labelRu": "Рекомендация: психотерапия и меньше кофеина (Psychotherapie)",
+        "labelTr": "Öneri: psikoterapi ve kafeini azaltma (Psychotherapie)",
+        "labelEn": "Recommendation: psychotherapy and less caffeine (Psychotherapie)",
+        "keywords": ["psychotherapie", "koffein"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihre Patientin Frau Julia Brenner, 23 Jahre, die vom 07.10.2026 bis zum 07.10.2026 in unserer Notaufnahme (ambulant) behandelt wurde.\n\nAnamnese:\nDie Patientin stellte sich vor einer Prüfung mit akuter Dyspnoe, Tachypnoe, Parästhesien perioral und an beiden Händen mit Pfötchenstellung, Palpitationen und Todesangst vor. Ähnliche Episoden waren bereits in Prüfungssituationen aufgetreten. Sie nimmt eine orale Kontrazeption ein und hat einen hohen Koffeinkonsum.\n\nBefunde:\nIn der Blutgasanalyse zeigte sich eine respiratorische Alkalose mit pH 7,52 und pCO2 26 mmHg bei normalem pO2 von 105 mmHg. Im EKG fand sich eine Sinustachykardie von 112/min ohne weitere Auffälligkeiten. Bei niedrigem Wells-Score waren die D-Dimere negativ, eine Lungenembolie ist damit ausgeschlossen. TSH und Calcium waren normal.\n\nDiagnose:\nHyperventilationssyndrom im Rahmen einer Panikattacke.\n\nTherapie und Verlauf:\nNach Beruhigung und angeleiteter langsamer Bauchatmung klangen die Beschwerden innerhalb von 20 Minuten vollständig ab.\n\nProcedere:\nWir haben die Patientin über den gutartigen Charakter der Beschwerden aufgeklärt und Atemübungen gezeigt. Bei wiederholten Panikattacken empfehlen wir eine Psychotherapie (kognitive Verhaltenstherapie) und eine Reduktion des Koffeinkonsums.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab87",
+    "caseId": "c109",
+    "title": "Zöliakie",
+    "task": "Gastroenterologiya bo‘limidan uy shifokoriga Arztbrief yozing. Serologiya, biopsiya, glyutensiz parhez va oila a’zolarini tekshirishga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из гастроэнтерологии семейному врачу. Обратите внимание на серологию, биопсию, безглютеновую диету и обследование родственников.",
+    "taskTr": "Gastroenteroloji servisinden aile hekimine bir Arztbrief yazın. Serolojiye, biyopsiye, glutensiz diyete ve aile taramasına dikkat edin.",
+    "taskEn": "Write an Arztbrief from gastroenterology to the GP. Pay attention to serology, biopsy, the gluten-free diet and screening relatives.",
+    "facts": [
+      "Patientin: Anja Hofmann, 28 Jahre, weiblich",
+      "Vorstellung: 28.09.2026–01.10.2026, gastroenterologische Ambulanz",
+      "Seit 1 Jahr breiige übelriechende Diarrhöen, Blähungen, Bauchschmerzen nach glutenhaltiger Nahrung, Müdigkeit, Gewichtsverlust 6 kg",
+      "Therapierefraktäre Eisenmangelanämie, Hashimoto-Thyreoiditis; Schwester mit Diabetes Typ 1",
+      "Hb 10,1 g/dl, Ferritin 6 µg/l, Vitamin D 12 ng/ml, Folsäure erniedrigt",
+      "Transglutaminase-IgA > 10-fach erhöht bei normalem Gesamt-IgA",
+      "Gastroskopie mit Duodenalbiopsien: Zottenatrophie, Kryptenhyperplasie (Marsh 3b)"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patientin ma’lumotlari (Frau Hofmann)",
+        "labelRu": "Данные пациентки (Frau Hofmann)",
+        "labelTr": "Hasta bilgileri (Frau Hofmann)",
+        "labelEn": "Patient data (Frau Hofmann)",
+        "keywords": ["hofmann"]
+      },
+      {
+        "label": "Asosiy shikoyat: surunkali ich ketishi va meteorizm (Diarrhö, Blähungen)",
+        "labelRu": "Основная жалоба: хроническая диарея и вздутие (Diarrhö, Blähungen)",
+        "labelTr": "Ana şikâyet: kronik ishal ve şişkinlik (Diarrhö, Blähungen)",
+        "labelEn": "Main complaint: chronic diarrhoea and bloating (Diarrhö, Blähungen)",
+        "keywords": ["diarrhö", "blähungen"]
+      },
+      {
+        "label": "Glyuten bilan bog‘liqlik (glutenhaltige Nahrung)",
+        "labelRu": "Связь с глютеном (glutenhaltige Nahrung)",
+        "labelTr": "Glutenle ilişki (glutenhaltige Nahrung)",
+        "labelEn": "Link to gluten (glutenhaltige Nahrung)",
+        "keywords": ["gluten"]
+      },
+      {
+        "label": "Davolanmaydigan temir tanqisligi (Eisenmangelanämie)",
+        "labelRu": "Рефрактерный дефицит железа (Eisenmangelanämie)",
+        "labelTr": "Tedaviye dirençli demir eksikliği (Eisenmangelanämie)",
+        "labelEn": "Refractory iron deficiency (Eisenmangelanämie)",
+        "keywords": ["eisenmangel", "ferritin"]
+      },
+      {
+        "label": "Autoimmun kasalliklar (Hashimoto)",
+        "labelRu": "Аутоиммунные заболевания (Hashimoto)",
+        "labelTr": "Otoimmün hastalıklar (Hashimoto)",
+        "labelEn": "Autoimmune diseases (Hashimoto)",
+        "keywords": ["hashimoto"]
+      },
+      {
+        "label": "Serologiya: transglutaminaza antitanachalari (Transglutaminase-IgA)",
+        "labelRu": "Серология: антитела к трансглутаминазе (Transglutaminase-IgA)",
+        "labelTr": "Seroloji: transglutaminaz antikorları (Transglutaminase-IgA)",
+        "labelEn": "Serology: transglutaminase antibodies (Transglutaminase-IgA)",
+        "keywords": ["transglutaminase"]
+      },
+      {
+        "label": "Biopsiya: vorsinkalar atrofiyasi (Zottenatrophie)",
+        "labelRu": "Биопсия: атрофия ворсинок (Zottenatrophie)",
+        "labelTr": "Biyopsi: villus atrofisi (Zottenatrophie)",
+        "labelEn": "Biopsy: villous atrophy (Zottenatrophie)",
+        "keywords": ["zottenatrophie", "marsh"]
+      },
+      {
+        "label": "Diagnoz: seliakiya (Zöliakie)",
+        "labelRu": "Диагноз: целиакия (Zöliakie)",
+        "labelTr": "Tanı: çölyak hastalığı (Zöliakie)",
+        "labelEn": "Diagnosis: coeliac disease (Zöliakie)",
+        "keywords": ["zöliakie"]
+      },
+      {
+        "label": "Tavsiya: umrbod glyutensiz parhez va dietolog (glutenfreie Diät)",
+        "labelRu": "Рекомендация: пожизненная безглютеновая диета и диетолог (glutenfreie Diät)",
+        "labelTr": "Öneri: ömür boyu glutensiz diyet ve diyetisyen (glutenfreie Diät)",
+        "labelEn": "Recommendation: lifelong gluten-free diet and dietitian (glutenfreie Diät)",
+        "keywords": ["glutenfrei", "ernährungsberatung"]
+      },
+      {
+        "label": "Tavsiya: vitaminlar, oila a’zolarini tekshirish (Familienscreening)",
+        "labelRu": "Рекомендация: витамины, обследование родственников (Familienscreening)",
+        "labelTr": "Öneri: vitaminler, aile taraması (Familienscreening)",
+        "labelEn": "Recommendation: vitamins, screen relatives (Familienscreening)",
+        "keywords": ["vitamin d", "angehörige", "familien"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihre Patientin Frau Anja Hofmann, 28 Jahre, die vom 28.09.2026 bis zum 01.10.2026 in unserer gastroenterologischen Ambulanz behandelt wurde.\n\nAnamnese:\nDie Patientin berichtete über seit einem Jahr bestehende breiige, übelriechende Diarrhöen, Blähungen und Bauchschmerzen nach glutenhaltiger Nahrung, ausgeprägte Müdigkeit sowie einen Gewichtsverlust von 6 kg. Zudem besteht eine therapierefraktäre Eisenmangelanämie und eine Hashimoto-Thyreoiditis. Die Schwester hat einen Diabetes mellitus Typ 1.\n\nBefunde:\nLaborchemisch fanden sich ein Hb von 10,1 g/dl, ein Ferritin von 6 µg/l, ein Vitamin D von 12 ng/ml und eine erniedrigte Folsäure. Die Transglutaminase-IgA-Antikörper waren mehr als zehnfach erhöht bei normalem Gesamt-IgA. Die Duodenalbiopsien zeigten eine Zottenatrophie mit Kryptenhyperplasie (Marsh 3b).\n\nDiagnose:\nZöliakie mit Malabsorption, Eisenmangelanämie und Vitamin-D-Mangel.\n\nProcedere:\nWir empfehlen eine lebenslange strikt glutenfreie Diät; eine Ernährungsberatung wurde bereits vereinbart. Eisen, Folsäure und Vitamin D sollten substituiert werden. Den erstgradigen Angehörigen sollte ein Screening auf Transglutaminase-Antikörper angeboten werden (Familienscreening). Eine Kontrolle der Antikörper und Blutwerte ist in sechs Monaten vorgesehen.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab88",
+    "caseId": "c110",
+    "title": "Reizdarmsyndrom",
+    "task": "Gastroenterologiya ambulatoriyasidan uy shifokoriga Arztbrief yozing. Xavf belgilari yo‘qligi, istisno qilingan kasalliklar va davolash tavsiyalariga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из гастроэнтерологической амбулатории семейному врачу. Обратите внимание на отсутствие тревожных симптомов, исключённые болезни и рекомендации.",
+    "taskTr": "Gastroenteroloji polikliniğinden aile hekimine bir Arztbrief yazın. Alarm belirtilerinin yokluğuna, dışlanan hastalıklara ve önerilere dikkat edin.",
+    "taskEn": "Write an Arztbrief from the gastroenterology clinic to the GP. Pay attention to the absence of red flags, the excluded diseases and the recommendations.",
+    "facts": [
+      "Patient: Tobias Wendt, 31 Jahre, männlich",
+      "Vorstellung: 06.10.2026, gastroenterologische Ambulanz",
+      "Seit 8 Monaten krampfartige Unterbauchschmerzen, Besserung nach Defäkation, wechselndes Stuhlverhalten, Blähungen; Verschlechterung unter Stress",
+      "Keine Alarmsymptome: kein Blut, kein Gewichtsverlust, keine nächtlichen Symptome, kein Fieber, keine familiäre Belastung",
+      "Blutbild, CRP, TSH unauffällig; Transglutaminase-Antikörper negativ; Calprotectin 22 µg/g (normal)",
+      "Therapie: Aufklärung, FODMAP-arme Ernährung, Flohsamenschalen, Butylscopolamin bei Bedarf"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patient ma’lumotlari (Herr Wendt)",
+        "labelRu": "Данные пациента (Herr Wendt)",
+        "labelTr": "Hasta bilgileri (Herr Wendt)",
+        "labelEn": "Patient data (Herr Wendt)",
+        "keywords": ["wendt"]
+      },
+      {
+        "label": "Asosiy shikoyat: defekatsiyadan keyin kamayadigan qorin og‘rig‘i (Besserung nach Defäkation)",
+        "labelRu": "Основная жалоба: боль в животе, уменьшающаяся после дефекации (Besserung nach Defäkation)",
+        "labelTr": "Ana şikâyet: dışkılama sonrası azalan karın ağrısı (Besserung nach Defäkation)",
+        "labelEn": "Main complaint: abdominal pain relieved by defecation (Besserung nach Defäkation)",
+        "keywords": ["defäkation", "bauchschmerz"]
+      },
+      {
+        "label": "Almashinib turuvchi najas (wechselndes Stuhlverhalten)",
+        "labelRu": "Чередование стула (wechselndes Stuhlverhalten)",
+        "labelTr": "Değişken dışkılama (wechselndes Stuhlverhalten)",
+        "labelEn": "Alternating bowel habit (wechselndes Stuhlverhalten)",
+        "keywords": ["wechselnd"]
+      },
+      {
+        "label": "Xavf belgilari yo‘q (keine Alarmsymptome)",
+        "labelRu": "Тревожных симптомов нет (keine Alarmsymptome)",
+        "labelTr": "Alarm belirtisi yok (keine Alarmsymptome)",
+        "labelEn": "No red flags (keine Alarmsymptome)",
+        "keywords": ["alarmsymptom"]
+      },
+      {
+        "label": "Laboratoriya va kalprotektin normal (Calprotectin)",
+        "labelRu": "Анализы и кальпротектин в норме (Calprotectin)",
+        "labelTr": "Laboratuvar ve kalprotektin normal (Calprotectin)",
+        "labelEn": "Normal labs and calprotectin (Calprotectin)",
+        "keywords": ["calprotectin", "transglutaminase"]
+      },
+      {
+        "label": "Diagnoz: ta’sirlangan ichak sindromi (Reizdarmsyndrom)",
+        "labelRu": "Диагноз: синдром раздражённого кишечника (Reizdarmsyndrom)",
+        "labelTr": "Tanı: irritabl bağırsak sendromu (Reizdarmsyndrom)",
+        "labelEn": "Diagnosis: irritable bowel syndrome (Reizdarmsyndrom)",
+        "keywords": ["reizdarmsyndrom"]
+      },
+      {
+        "label": "Davolash: parhez, tola va spazmolitik (FODMAP, Flohsamenschalen)",
+        "labelRu": "Лечение: диета, клетчатка и спазмолитик (FODMAP, Flohsamenschalen)",
+        "labelTr": "Tedavi: diyet, lif ve spazmolitik (FODMAP, Flohsamenschalen)",
+        "labelEn": "Treatment: diet, fibre and antispasmodic (FODMAP, Flohsamenschalen)",
+        "keywords": ["fodmap", "flohsamen"]
+      },
+      {
+        "label": "Tavsiya: stressni boshqarish va xavf belgilarida qayta ko‘rik (Stressreduktion)",
+        "labelRu": "Рекомендация: управление стрессом и повторный осмотр при тревожных симптомах (Stressreduktion)",
+        "labelTr": "Öneri: stres yönetimi ve alarm belirtisinde tekrar başvuru (Stressreduktion)",
+        "labelEn": "Recommendation: stress management and review if red flags appear (Stressreduktion)",
+        "keywords": ["stress", "wiedervorstellung"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Tobias Wendt, 31 Jahre, der vom 06.10.2026 bis zum 06.10.2026 in unserer gastroenterologischen Ambulanz behandelt wurde.\n\nAnamnese:\nDer Patient berichtete über seit acht Monaten bestehende krampfartige Unterbauchschmerzen mit Besserung nach der Defäkation, ein wechselndes Stuhlverhalten zwischen Diarrhö und Obstipation sowie Blähungen. Unter Stress verschlechtern sich die Beschwerden. Alarmsymptome wie Blut im Stuhl, Gewichtsverlust, nächtliche Symptome, Fieber oder eine familiäre Belastung bestanden nicht.\n\nBefunde:\nBlutbild, CRP und TSH waren unauffällig. Die Transglutaminase-Antikörper waren negativ, das Calprotectin im Stuhl lag mit 22 µg/g im Normbereich.\n\nDiagnose:\nReizdarmsyndrom vom Mischtyp.\n\nTherapie:\nWir haben den Patienten ausführlich über die gutartige Natur der Erkrankung aufgeklärt. Wir empfehlen eine FODMAP-arme Ernährung für sechs Wochen, Flohsamenschalen zur Stuhlregulierung und Butylscopolamin bei krampfartigen Schmerzen.\n\nProcedere:\nZusätzlich raten wir zu Stressreduktion und regelmäßiger Bewegung. Eine Koloskopie ist derzeit nicht erforderlich. Bei Auftreten von Alarmsymptomen bitten wir um erneute Wiedervorstellung.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab89",
+    "caseId": "c111",
+    "title": "Schub einer Colitis ulcerosa",
+    "task": "Gastroenterologiya bo‘limidan uy shifokoriga Arztbrief yozing. Davolashni to‘xtatgani, NYQP, infeksiyani istisno qilish va qo‘llab-quvvatlovchi terapiyaga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из гастроэнтерологии семейному врачу. Обратите внимание на отмену терапии, НПВП, исключение инфекции и поддерживающую терапию.",
+    "taskTr": "Gastroenteroloji servisinden aile hekimine bir Arztbrief yazın. Tedavinin bırakılmasına, NSAİİ’lere, enfeksiyonun dışlanmasına ve idame tedavisine dikkat edin.",
+    "taskEn": "Write an Arztbrief from gastroenterology to the GP. Pay attention to stopping therapy, NSAIDs, ruling out infection and maintenance therapy.",
+    "facts": [
+      "Patient: Daniel Krämer, 27 Jahre, männlich",
+      "Aufnahme: 30.09.2026, gastroenterologische Station",
+      "Seit 2 Wochen 8–10 blutig-schleimige Diarrhöen täglich, auch nachts, Tenesmen, Fieber bis 38,2 °C, Gewichtsverlust 3 kg",
+      "Colitis ulcerosa (Pankolitis) seit 4 Jahren; Mesalazin vor 2 Monaten eigenmächtig abgesetzt; Ibuprofen in den letzten Wochen",
+      "Hb 10,8 g/dl, CRP 64 mg/l, Albumin 3,0 g/dl; Stuhlkulturen und C.-difficile-Toxin negativ; Calprotectin 1.850 µg/g",
+      "Sigmoidoskopie: kontinuierliche Entzündung mit Ulzerationen (Mayo 3); kein Megakolon",
+      "Therapie: Prednisolon 60 mg i. v., dann oral ausschleichend; Mesalazin oral und rektal wieder begonnen; Thromboseprophylaxe; Ibuprofen abgesetzt"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patient ma’lumotlari (Herr Krämer)",
+        "labelRu": "Данные пациента (Herr Krämer)",
+        "labelTr": "Hasta bilgileri (Herr Krämer)",
+        "labelEn": "Patient data (Herr Krämer)",
+        "keywords": ["krämer"]
+      },
+      {
+        "label": "Asosiy shikoyat: qonli ich ketishi va tenezm (blutig-schleimige Diarrhöen)",
+        "labelRu": "Основная жалоба: кровавая диарея и тенезмы (blutig-schleimige Diarrhöen)",
+        "labelTr": "Ana şikâyet: kanlı ishal ve tenesmus (blutig-schleimige Diarrhöen)",
+        "labelEn": "Main complaint: bloody diarrhoea and tenesmus (blutig-schleimige Diarrhöen)",
+        "keywords": ["blutig", "tenesmen"]
+      },
+      {
+        "label": "Mesalazin to‘xtatilgan (Mesalazin abgesetzt)",
+        "labelRu": "Месалазин отменён (Mesalazin abgesetzt)",
+        "labelTr": "Mesalazin bırakılmış (Mesalazin abgesetzt)",
+        "labelEn": "Mesalazine stopped (Mesalazin abgesetzt)",
+        "keywords": ["mesalazin"]
+      },
+      {
+        "label": "NYQP qabul qilgan (Ibuprofen)",
+        "labelRu": "Приём НПВП (Ibuprofen)",
+        "labelTr": "NSAİİ kullanımı (Ibuprofen)",
+        "labelEn": "NSAID use (Ibuprofen)",
+        "keywords": ["ibuprofen", "nsar"]
+      },
+      {
+        "label": "Infeksiya istisno qilingan (Stuhlkulturen, C. difficile)",
+        "labelRu": "Инфекция исключена (Stuhlkulturen, C. difficile)",
+        "labelTr": "Enfeksiyon dışlandı (Stuhlkulturen, C. difficile)",
+        "labelEn": "Infection ruled out (Stuhlkulturen, C. difficile)",
+        "keywords": ["stuhlkultur", "difficile"]
+      },
+      {
+        "label": "Sigmoidoskopiya: Mayo 3 (Ulzerationen)",
+        "labelRu": "Сигмоскопия: Mayo 3 (Ulzerationen)",
+        "labelTr": "Sigmoidoskopi: Mayo 3 (Ulzerationen)",
+        "labelEn": "Sigmoidoscopy: Mayo 3 (Ulzerationen)",
+        "keywords": ["sigmoidoskopie", "mayo"]
+      },
+      {
+        "label": "Diagnoz: yarali kolit qo‘zishi (Schub einer Colitis ulcerosa)",
+        "labelRu": "Диагноз: обострение язвенного колита (Schub einer Colitis ulcerosa)",
+        "labelTr": "Tanı: ülseratif kolit alevlenmesi (Schub einer Colitis ulcerosa)",
+        "labelEn": "Diagnosis: flare of ulcerative colitis (Schub einer Colitis ulcerosa)",
+        "keywords": ["colitis ulcerosa", "schub"]
+      },
+      {
+        "label": "Davolash: prednizolon va mesalazin (Prednisolon)",
+        "labelRu": "Лечение: преднизолон и месалазин (Prednisolon)",
+        "labelTr": "Tedavi: prednizolon ve mesalazin (Prednisolon)",
+        "labelEn": "Treatment: prednisolone and mesalazine (Prednisolon)",
+        "keywords": ["prednisolon"]
+      },
+      {
+        "label": "Tavsiya: davolashni to‘xtatmaslik, NYQPdan saqlanish, kolonoskopik nazorat (Dauertherapie, Überwachungskoloskopie)",
+        "labelRu": "Рекомендация: не прекращать терапию, избегать НПВП, контрольная колоноскопия (Dauertherapie, Überwachungskoloskopie)",
+        "labelTr": "Öneri: tedaviyi bırakmama, NSAİİ’den kaçınma, kolonoskopi takibi (Dauertherapie, Überwachungskoloskopie)",
+        "labelEn": "Recommendation: keep taking therapy, avoid NSAIDs, surveillance colonoscopy (Dauertherapie, Überwachungskoloskopie)",
+        "keywords": ["dauerhaft", "koloskopie"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Daniel Krämer, 27 Jahre, der vom 30.09.2026 bis zum 10.10.2026 in unserer gastroenterologischen Abteilung behandelt wurde.\n\nAnamnese:\nDer Patient stellte sich mit seit zwei Wochen bestehenden 8–10 blutig-schleimigen Diarrhöen täglich, auch nachts, Tenesmen, Fieber bis 38,2 °C und einem Gewichtsverlust von 3 kg vor. Seit vier Jahren besteht eine Colitis ulcerosa als Pankolitis. Vor zwei Monaten hatte er Mesalazin eigenmächtig abgesetzt; in den letzten Wochen nahm er wegen Rückenschmerzen Ibuprofen ein.\n\nBefunde:\nLaborchemisch fanden sich ein Hb von 10,8 g/dl, ein CRP von 64 mg/l und ein Albumin von 3,0 g/dl. Stuhlkulturen und C.-difficile-Toxin waren negativ, das Calprotectin lag bei 1.850 µg/g. In der Sigmoidoskopie zeigte sich eine kontinuierliche Entzündung mit Ulzerationen (Mayo 3), ein Megakolon bestand nicht.\n\nDiagnose:\nSchwerer Schub einer Colitis ulcerosa nach Absetzen der Erhaltungstherapie und NSAR-Einnahme.\n\nTherapie und Verlauf:\nWir behandelten mit Prednisolon 60 mg i. v. und stellten anschließend auf eine orale ausschleichende Gabe um. Mesalazin wurde oral und rektal wieder begonnen, Ibuprofen abgesetzt. Der Patient erhielt eine Thromboseprophylaxe. Die Stuhlfrequenz normalisierte sich auf zwei geformte Stühle ohne Blut.\n\nProcedere:\nMesalazin muss dauerhaft eingenommen werden, auch in beschwerdefreien Phasen. NSAR sollten vermieden werden. Bei erneutem Schub unter dem Ausschleichen ist eine Eskalation auf eine Biologikatherapie zu prüfen. Wegen der Pankolitis empfehlen wir regelmäßige Überwachungskoloskopien.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab90",
+    "caseId": "c112",
+    "title": "Ösophagusvarizenblutung bei Leberzirrhose",
+    "task": "Gastroenterologiya bo‘limidan uy shifokoriga Arztbrief yozing. Profilaktikani to‘xtatgani, endoskopik davolash va alkogolni tashlashga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из гастроэнтерологии семейному врачу. Обратите внимание на отмену профилактики, эндоскопическое лечение и отказ от алкоголя.",
+    "taskTr": "Gastroenteroloji servisinden aile hekimine bir Arztbrief yazın. Profilaksinin bırakılmasına, endoskopik tedaviye ve alkolün bırakılmasına dikkat edin.",
+    "taskEn": "Write an Arztbrief from gastroenterology to the GP. Pay attention to the stopped prophylaxis, endoscopic treatment and alcohol abstinence.",
+    "facts": [
+      "Patient: Manfred Kühn, 56 Jahre, männlich",
+      "Aufnahme: 05.10.2026, Notaufnahme",
+      "Zweimalige schwallartige Hämatemesis (ca. 500 ml), Meläna seit dem Vortag, Schwindel",
+      "Alkoholische Leberzirrhose Child B, Aszites; Propranolol vor 3 Monaten selbst abgesetzt; weiterer Alkoholkonsum",
+      "RR 90/55 mmHg, HF 118/min; Hb 7,2 g/dl, INR 1,6, Thrombozyten 68.000/µl",
+      "Therapie: Terlipressin, Ceftriaxon, 2 Erythrozytenkonzentrate; Gastroskopie: blutende Ösophagusvarizen → Gummibandligatur (4 Ligaturen)",
+      "Kein Rezidiv; Aszitespunktion ohne Hinweis auf SBP; leichte hepatische Enzephalopathie unter Lactulose rückläufig"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patient ma’lumotlari (Herr Kühn)",
+        "labelRu": "Данные пациента (Herr Kühn)",
+        "labelTr": "Hasta bilgileri (Herr Kühn)",
+        "labelEn": "Patient data (Herr Kühn)",
+        "keywords": ["kühn"]
+      },
+      {
+        "label": "Asosiy shikoyat: qon qusish va melena (Hämatemesis, Meläna)",
+        "labelRu": "Основная жалоба: рвота кровью и мелена (Hämatemesis, Meläna)",
+        "labelTr": "Ana şikâyet: kan kusma ve melena (Hämatemesis, Meläna)",
+        "labelEn": "Main complaint: vomiting blood and melaena (Hämatemesis, Meläna)",
+        "keywords": ["hämatemesis", "meläna"]
+      },
+      {
+        "label": "Jigar sirrozi va alkogol (Leberzirrhose Child B)",
+        "labelRu": "Цирроз печени и алкоголь (Leberzirrhose Child B)",
+        "labelTr": "Karaciğer sirozu ve alkol (Leberzirrhose Child B)",
+        "labelEn": "Liver cirrhosis and alcohol (Leberzirrhose Child B)",
+        "keywords": ["leberzirrhose", "alkohol"]
+      },
+      {
+        "label": "Propranolol to‘xtatilgan (Propranolol abgesetzt)",
+        "labelRu": "Пропранолол отменён (Propranolol abgesetzt)",
+        "labelTr": "Propranolol bırakılmış (Propranolol abgesetzt)",
+        "labelEn": "Propranolol stopped (Propranolol abgesetzt)",
+        "keywords": ["propranolol"]
+      },
+      {
+        "label": "Shok belgilari va laboratoriya (Hb 7,2 g/dl)",
+        "labelRu": "Признаки шока и анализы (Hb 7,2 g/dl)",
+        "labelTr": "Şok bulguları ve laboratuvar (Hb 7,2 g/dl)",
+        "labelEn": "Signs of shock and labs (Hb 7,2 g/dl)",
+        "keywords": ["90/55", "hb 7,2", "inr"]
+      },
+      {
+        "label": "Davolash: terlipressin, antibiotik va qon quyish (Terlipressin, Ceftriaxon)",
+        "labelRu": "Лечение: терлипрессин, антибиотик и трансфузия (Terlipressin, Ceftriaxon)",
+        "labelTr": "Tedavi: terlipressin, antibiyotik ve transfüzyon (Terlipressin, Ceftriaxon)",
+        "labelEn": "Treatment: terlipressin, antibiotics and transfusion (Terlipressin, Ceftriaxon)",
+        "keywords": ["terlipressin", "ceftriaxon"]
+      },
+      {
+        "label": "Davolash: endoskopik halqa bilan bog‘lash (Gummibandligatur)",
+        "labelRu": "Лечение: эндоскопическое лигирование (Gummibandligatur)",
+        "labelTr": "Tedavi: endoskopik band ligasyonu (Gummibandligatur)",
+        "labelEn": "Treatment: endoscopic band ligation (Gummibandligatur)",
+        "keywords": ["gummibandligatur", "ligatur"]
+      },
+      {
+        "label": "Diagnoz: qizilo‘ngach varikoz tomirlaridan qon ketish (Ösophagusvarizenblutung)",
+        "labelRu": "Диагноз: кровотечение из варикозных вен пищевода (Ösophagusvarizenblutung)",
+        "labelTr": "Tanı: özofagus varis kanaması (Ösophagusvarizenblutung)",
+        "labelEn": "Diagnosis: oesophageal variceal bleeding (Ösophagusvarizenblutung)",
+        "keywords": ["varizenblutung"]
+      },
+      {
+        "label": "Tavsiya: propranolol, takroriy ligatura va alkogolni tashlash (Alkoholkarenz)",
+        "labelRu": "Рекомендация: пропранолол, повторное лигирование и отказ от алкоголя (Alkoholkarenz)",
+        "labelTr": "Öneri: propranolol, tekrar ligasyon ve alkolü bırakma (Alkoholkarenz)",
+        "labelEn": "Recommendation: propranolol, repeat ligation and alcohol abstinence (Alkoholkarenz)",
+        "keywords": ["alkoholkarenz", "propranolol", "kontrollgastroskopie"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Manfred Kühn, 56 Jahre, der vom 05.10.2026 bis zum 14.10.2026 in unserer gastroenterologischen Abteilung behandelt wurde.\n\nAnamnese:\nDer Patient stellte sich nach zweimaliger schwallartiger Hämatemesis von etwa 500 ml und seit dem Vortag bestehender Meläna mit Schwindel vor. Bekannt ist eine alkoholische Leberzirrhose Child B mit Aszites und Ösophagusvarizen. Die Primärprophylaxe mit Propranolol hatte er vor drei Monaten selbst abgesetzt, der Alkoholkonsum wurde fortgesetzt.\n\nBefunde:\nBei Aufnahme war der Patient hypoton (RR 90/55 mmHg) und tachykard (HF 118/min). Laborchemisch zeigten sich ein Hb von 7,2 g/dl, eine INR von 1,6 und Thrombozyten von 68.000/µl.\n\nDiagnose:\nAkute Ösophagusvarizenblutung bei alkoholischer Leberzirrhose Child B.\n\nTherapie und Verlauf:\nWir begannen sofort Terlipressin und eine Antibiotikaprophylaxe mit Ceftriaxon und transfundierten zwei Erythrozytenkonzentrate. In der Notfall-Gastroskopie zeigten sich blutende Ösophagusvarizen, die mit vier Gummibandligaturen versorgt wurden. Eine Rezidivblutung trat nicht auf. Die diagnostische Aszitespunktion ergab keinen Hinweis auf eine SBP. Eine leichte hepatische Enzephalopathie war unter Lactulose rückläufig.\n\nProcedere:\nPropranolol wurde wieder angesetzt und muss dauerhaft eingenommen werden. Eine Kontrollgastroskopie zur erneuten Ligatur ist in zwei Wochen geplant. Entscheidend ist eine strikte Alkoholkarenz; der Kontakt zur Suchtberatung wurde hergestellt.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab91",
+    "caseId": "c113",
+    "title": "Paracetamol-Intoxikation",
+    "task": "Ichki kasalliklar bo‘limidan uy shifokori va psixiatrga Arztbrief yozing. Qabul qilingan miqdor va vaqt, antidot va suitsid xavfini baholashga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из терапевтического отделения семейному врачу и психиатру. Обратите внимание на дозу и время приёма, антидот и оценку суицидального риска.",
+    "taskTr": "Dahiliye servisinden aile hekimine ve psikiyatriste bir Arztbrief yazın. Alınan miktar ve zamana, antidota ve intihar riskinin değerlendirilmesine dikkat edin.",
+    "taskEn": "Write an Arztbrief from internal medicine to the GP and psychiatrist. Pay attention to the dose and timing, the antidote and the suicide risk assessment.",
+    "facts": [
+      "Patientin: Lisa Herrmann, 19 Jahre, weiblich",
+      "Aufnahme: 03.10.2026, Notaufnahme",
+      "Einnahme von 15 g Paracetamol vor ca. 6 Stunden in suizidaler Absicht nach Partnerkonflikt; Übelkeit, einmal Erbrechen",
+      "Keine Co-Ingestion; Alkohol- und Drogenscreening negativ; Schwangerschaftstest negativ",
+      "Paracetamolspiegel 4 h nach Einnahme: 210 mg/l (oberhalb der Behandlungslinie); GPT initial normal, INR 1,0",
+      "Therapie: Acetylcystein i. v. nach 21-Stunden-Schema, Überwachung mit Sitzwache; GPT-Maximum 180 U/l am Tag 2, INR stabil",
+      "Psychiatrisches Konsil: keine akute Suizidalität mehr, Distanzierung glaubhaft; Übernahme in ambulante psychiatrische Behandlung"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patientin ma’lumotlari (Frau Herrmann)",
+        "labelRu": "Данные пациентки (Frau Herrmann)",
+        "labelTr": "Hasta bilgileri (Frau Herrmann)",
+        "labelEn": "Patient data (Frau Herrmann)",
+        "keywords": ["herrmann"]
+      },
+      {
+        "label": "Qabul qilingan miqdor va vaqt (15 g vor 6 Stunden)",
+        "labelRu": "Принятая доза и время (15 g vor 6 Stunden)",
+        "labelTr": "Alınan doz ve zaman (15 g vor 6 Stunden)",
+        "labelEn": "Dose and timing (15 g vor 6 Stunden)",
+        "keywords": ["15 g", "stunden"]
+      },
+      {
+        "label": "Suitsidal maqsad (suizidale Absicht)",
+        "labelRu": "Суицидальное намерение (suizidale Absicht)",
+        "labelTr": "İntihar amacı (suizidale Absicht)",
+        "labelEn": "Suicidal intent (suizidale Absicht)",
+        "keywords": ["suizid"]
+      },
+      {
+        "label": "Boshqa moddalar yo‘q (Drogenscreening negativ)",
+        "labelRu": "Других веществ нет (Drogenscreening negativ)",
+        "labelTr": "Başka madde yok (Drogenscreening negativ)",
+        "labelEn": "No co-ingestion (Drogenscreening negativ)",
+        "keywords": ["drogenscreening", "alkohol"]
+      },
+      {
+        "label": "Paratsetamol darajasi (Paracetamolspiegel)",
+        "labelRu": "Уровень парацетамола (Paracetamolspiegel)",
+        "labelTr": "Parasetamol düzeyi (Paracetamolspiegel)",
+        "labelEn": "Paracetamol level (Paracetamolspiegel)",
+        "keywords": ["paracetamolspiegel", "behandlungslinie"]
+      },
+      {
+        "label": "Davolash: atsetiltsistein v/i (Acetylcystein)",
+        "labelRu": "Лечение: ацетилцистеин в/в (Acetylcystein)",
+        "labelTr": "Tedavi: IV asetilsistein (Acetylcystein)",
+        "labelEn": "Treatment: IV acetylcysteine (Acetylcystein)",
+        "keywords": ["acetylcystein"]
+      },
+      {
+        "label": "Jigar ko‘rsatkichlari dinamikasi (GPT, INR)",
+        "labelRu": "Динамика печёночных проб (GPT, INR)",
+        "labelTr": "Karaciğer enzimlerinin seyri (GPT, INR)",
+        "labelEn": "Course of liver enzymes (GPT, INR)",
+        "keywords": ["gpt", "inr"]
+      },
+      {
+        "label": "Diagnoz: paratsetamol bilan zaharlanish (Paracetamol-Intoxikation)",
+        "labelRu": "Диагноз: отравление парацетамолом (Paracetamol-Intoxikation)",
+        "labelTr": "Tanı: parasetamol zehirlenmesi (Paracetamol-Intoxikation)",
+        "labelEn": "Diagnosis: paracetamol overdose (Paracetamol-Intoxikation)",
+        "keywords": ["paracetamol-intoxikation"]
+      },
+      {
+        "label": "Tavsiya: psixiatrik yordam va dori zaxirasini cheklash (ambulante psychiatrische Behandlung)",
+        "labelRu": "Рекомендация: психиатрическая помощь и ограничение запаса лекарств (ambulante psychiatrische Behandlung)",
+        "labelTr": "Öneri: psikiyatrik destek ve ilaç stoğunun kısıtlanması (ambulante psychiatrische Behandlung)",
+        "labelEn": "Recommendation: psychiatric care and restricting access to medicines (ambulante psychiatrische Behandlung)",
+        "keywords": ["psychiatrische", "krisenplan", "medikamente"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihre Patientin Frau Lisa Herrmann, 19 Jahre, die vom 03.10.2026 bis zum 06.10.2026 in unserer internistischen Abteilung behandelt wurde.\n\nAnamnese:\nDie Patientin hatte etwa sechs Stunden vor Aufnahme nach einem Partnerkonflikt 15 g Paracetamol in suizidaler Absicht eingenommen. Es bestanden Übelkeit und einmaliges Erbrechen. Vor einem Jahr war eine depressive Episode behandelt worden; frühere Suizidversuche bestanden nicht.\n\nBefunde:\nAlkohol- und Drogenscreening sowie der Schwangerschaftstest waren negativ, eine Einnahme weiterer Substanzen ergab sich nicht. Der Paracetamolspiegel lag vier Stunden nach Einnahme bei 210 mg/l und damit oberhalb der Behandlungslinie. Die GPT war initial normal, die INR lag bei 1,0.\n\nDiagnose:\nAkute Paracetamol-Intoxikation in suizidaler Absicht.\n\nTherapie und Verlauf:\nWir behandelten mit Acetylcystein i. v. nach dem 21-Stunden-Schema unter Überwachung mit Sitzwache. Die GPT stieg maximal auf 180 U/l am zweiten Tag, die INR blieb stabil, ein Leberversagen trat nicht auf. Im psychiatrischen Konsil bestand keine akute Suizidalität mehr, die Distanzierung war glaubhaft.\n\nProcedere:\nDie Patientin wird in eine ambulante psychiatrische Behandlung übernommen; ein Krisenplan mit Notfallnummern wurde besprochen. Wir empfehlen, nur kleine Packungsgrößen von Medikamenten im Haushalt vorzuhalten. Eine Kontrolle der Leberwerte ist in einer Woche vorgesehen.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab92",
+    "caseId": "c114",
+    "title": "Clostridioides-difficile-Kolitis",
+    "task": "Ichki kasalliklar bo‘limidan uy shifokoriga Arztbrief yozing. Avvalgi antibiotik, PPI, izolyatsiya va qaytalanish xavfiga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из терапевтического отделения семейному врачу. Обратите внимание на предшествующий антибиотик, ИПП, изоляцию и риск рецидива.",
+    "taskTr": "Dahiliye servisinden aile hekimine bir Arztbrief yazın. Önceki antibiyotiğe, PPI’ye, izolasyona ve nüks riskine dikkat edin.",
+    "taskEn": "Write an Arztbrief from internal medicine to the GP. Pay attention to the previous antibiotic, the PPI, isolation and the risk of recurrence.",
+    "facts": [
+      "Patientin: Waltraud Engel, 79 Jahre, weiblich",
+      "Aufnahme: 04.10.2026, Notaufnahme",
+      "Seit 4 Tagen 8–10 wässrige Diarrhöen täglich, Unterbauchkrämpfe, Fieber bis 38,4 °C, Schwindel",
+      "Vor 2 Wochen Clindamycin über 10 Tage; Dauertherapie mit Omeprazol 40 mg",
+      "C.-difficile-Toxin positiv; Leukozyten 16.500/µl, Kreatinin 1,9 mg/dl (Ausgangswert 1,0), Albumin 2,8 g/dl",
+      "Therapie: Fidaxomicin 200 mg 1-0-1 für 10 Tage, Infusion, Kontaktisolation; Metformin, Torasemid und Ramipril pausiert; Omeprazol auf 20 mg reduziert",
+      "Stuhlfrequenz nach 5 Tagen normalisiert, Kreatinin 1,1 mg/dl"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patientin ma’lumotlari (Frau Engel)",
+        "labelRu": "Данные пациентки (Frau Engel)",
+        "labelTr": "Hasta bilgileri (Frau Engel)",
+        "labelEn": "Patient data (Frau Engel)",
+        "keywords": ["engel"]
+      },
+      {
+        "label": "Asosiy shikoyat: suvli ich ketishi va isitma (wässrige Diarrhöen)",
+        "labelRu": "Основная жалоба: водянистая диарея и лихорадка (wässrige Diarrhöen)",
+        "labelTr": "Ana şikâyet: sulu ishal ve ateş (wässrige Diarrhöen)",
+        "labelEn": "Main complaint: watery diarrhoea and fever (wässrige Diarrhöen)",
+        "keywords": ["wässrig", "diarrhö"]
+      },
+      {
+        "label": "Avvalgi antibiotik (Clindamycin)",
+        "labelRu": "Предшествующий антибиотик (Clindamycin)",
+        "labelTr": "Önceki antibiyotik (Clindamycin)",
+        "labelEn": "Previous antibiotic (Clindamycin)",
+        "keywords": ["clindamycin"]
+      },
+      {
+        "label": "PPI xavf omili sifatida (Omeprazol)",
+        "labelRu": "ИПП как фактор риска (Omeprazol)",
+        "labelTr": "Risk faktörü olarak PPI (Omeprazol)",
+        "labelEn": "PPI as a risk factor (Omeprazol)",
+        "keywords": ["omeprazol", "protonenpumpenhemmer"]
+      },
+      {
+        "label": "Toksin musbat (C.-difficile-Toxin)",
+        "labelRu": "Токсин положительный (C.-difficile-Toxin)",
+        "labelTr": "Toksin pozitif (C.-difficile-Toxin)",
+        "labelEn": "Toxin positive (C.-difficile-Toxin)",
+        "keywords": ["toxin"]
+      },
+      {
+        "label": "Suvsizlanish va buyrak (Kreatinin 1,9 mg/dl)",
+        "labelRu": "Обезвоживание и почки (Kreatinin 1,9 mg/dl)",
+        "labelTr": "Dehidratasyon ve böbrek (Kreatinin 1,9 mg/dl)",
+        "labelEn": "Dehydration and kidneys (Kreatinin 1,9 mg/dl)",
+        "keywords": ["kreatinin", "exsikkose"]
+      },
+      {
+        "label": "Diagnoz: C. difficile infeksiyasi (Clostridioides-difficile-Infektion)",
+        "labelRu": "Диагноз: инфекция C. difficile (Clostridioides-difficile-Infektion)",
+        "labelTr": "Tanı: C. difficile enfeksiyonu (Clostridioides-difficile-Infektion)",
+        "labelEn": "Diagnosis: C. difficile infection (Clostridioides-difficile-Infektion)",
+        "keywords": ["clostridioides"]
+      },
+      {
+        "label": "Davolash: fidaksomitsin, infuziya va izolyatsiya (Fidaxomicin)",
+        "labelRu": "Лечение: фидаксомицин, инфузия и изоляция (Fidaxomicin)",
+        "labelTr": "Tedavi: fidaksomisin, infüzyon ve izolasyon (Fidaxomicin)",
+        "labelEn": "Treatment: fidaxomicin, fluids and isolation (Fidaxomicin)",
+        "keywords": ["fidaxomicin", "isolation"]
+      },
+      {
+        "label": "Tavsiya: PPI ko‘rsatmasini qayta ko‘rish, antibiotiklarni ehtiyotkorlik bilan (Rezidiv)",
+        "labelRu": "Рекомендация: пересмотр ИПП, осторожность с антибиотиками (Rezidiv)",
+        "labelTr": "Öneri: PPI endikasyonunun gözden geçirilmesi, antibiyotiklerde dikkat (Rezidiv)",
+        "labelEn": "Recommendation: review PPI, cautious antibiotic use (Rezidiv)",
+        "keywords": ["rezidiv", "antibiotika", "indikation"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihre Patientin Frau Waltraud Engel, 79 Jahre, die vom 04.10.2026 bis zum 11.10.2026 in unserer internistischen Abteilung behandelt wurde.\n\nAnamnese:\nDie Patientin stellte sich mit seit vier Tagen bestehenden 8–10 wässrigen Diarrhöen täglich, Unterbauchkrämpfen, Fieber bis 38,4 °C und Schwindel vor. Vor zwei Wochen hatte sie wegen einer Zahnwurzelentzündung zehn Tage Clindamycin erhalten. Zudem besteht eine Dauertherapie mit dem Protonenpumpenhemmer Omeprazol 40 mg.\n\nBefunde:\nDas C.-difficile-Toxin im Stuhl war positiv. Laborchemisch fanden sich eine Leukozytose von 16.500/µl, ein Kreatinin von 1,9 mg/dl bei einem Ausgangswert von 1,0 mg/dl sowie ein Albumin von 2,8 g/dl, passend zu einer Exsikkose.\n\nDiagnose:\nClostridioides-difficile-Infektion nach Clindamycin-Therapie mit prärenalem Nierenversagen.\n\nTherapie und Verlauf:\nWir behandelten mit Fidaxomicin 200 mg zweimal täglich für zehn Tage und Infusionen unter Kontaktisolation. Metformin, Torasemid und Ramipril wurden pausiert, Omeprazol auf 20 mg reduziert. Nach fünf Tagen normalisierte sich die Stuhlfrequenz, das Kreatinin fiel auf 1,1 mg/dl.\n\nProcedere:\nDie pausierten Medikamente wurden schrittweise wieder angesetzt. Wir bitten, die Indikation für den Protonenpumpenhemmer zu überprüfen und Antibiotika künftig nur bei klarer Indikation einzusetzen. Bei erneuten Durchfällen ist ein Rezidiv auszuschließen, das in bis zu 25 % auftritt.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab93",
+    "caseId": "c115",
+    "title": "Achalasie",
+    "task": "Gastroenterologiya bo‘limidan uy shifokoriga Arztbrief yozing. Saratonni istisno qilish, manometriya va POEM davolashga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из гастроэнтерологии семейному врачу. Обратите внимание на исключение рака, манометрию и лечение POEM.",
+    "taskTr": "Gastroenteroloji servisinden aile hekimine bir Arztbrief yazın. Kanserin dışlanmasına, manometriye ve POEM tedavisine dikkat edin.",
+    "taskEn": "Write an Arztbrief from gastroenterology to the GP. Pay attention to ruling out cancer, manometry and POEM treatment.",
+    "facts": [
+      "Patientin: Yasemin Arslan, 41 Jahre, weiblich",
+      "Aufnahme: 29.09.2026, gastroenterologische Station",
+      "Seit 1 Jahr Dysphagie für feste und flüssige Speisen, nächtliche Regurgitation unverdauter Nahrung, Husten im Liegen, Gewichtsverlust 7 kg",
+      "Gastroskopie: dilatierter Ösophagus mit Speiseresten, Kardia mit leichtem Widerstand passierbar, kein Malignom (Biopsien unauffällig)",
+      "Breischluck: Sektglasform des distalen Ösophagus",
+      "Hochauflösende Manometrie: Achalasie Typ II (fehlende Peristaltik, unvollständige Relaxation des unteren Ösophagussphinkters)",
+      "Therapie: perorale endoskopische Myotomie (POEM) am 02.10.2026, komplikationslos"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patientin ma’lumotlari (Frau Arslan)",
+        "labelRu": "Данные пациентки (Frau Arslan)",
+        "labelTr": "Hasta bilgileri (Frau Arslan)",
+        "labelEn": "Patient data (Frau Arslan)",
+        "keywords": ["arslan"]
+      },
+      {
+        "label": "Asosiy shikoyat: qattiq va suyuq ovqatni yutishda qiyinlik (Dysphagie)",
+        "labelRu": "Основная жалоба: трудность глотания твёрдой и жидкой пищи (Dysphagie)",
+        "labelTr": "Ana şikâyet: katı ve sıvı yutma güçlüğü (Dysphagie)",
+        "labelEn": "Main complaint: difficulty swallowing solids and liquids (Dysphagie)",
+        "keywords": ["dysphagie"]
+      },
+      {
+        "label": "Tunda regurgitatsiya va yo‘tal (Regurgitation)",
+        "labelRu": "Ночная регургитация и кашель (Regurgitation)",
+        "labelTr": "Gece regürjitasyon ve öksürük (Regurgitation)",
+        "labelEn": "Nocturnal regurgitation and cough (Regurgitation)",
+        "keywords": ["regurgitation"]
+      },
+      {
+        "label": "Vazn yo‘qotish (Gewichtsverlust)",
+        "labelRu": "Потеря веса (Gewichtsverlust)",
+        "labelTr": "Kilo kaybı (Gewichtsverlust)",
+        "labelEn": "Weight loss (Gewichtsverlust)",
+        "keywords": ["gewichtsverlust"]
+      },
+      {
+        "label": "Saraton istisno qilingan (kein Malignom)",
+        "labelRu": "Рак исключён (kein Malignom)",
+        "labelTr": "Kanser dışlandı (kein Malignom)",
+        "labelEn": "Cancer ruled out (kein Malignom)",
+        "keywords": ["malignom", "biopsie"]
+      },
+      {
+        "label": "Rentgen: “shampan qadahi” shakli (Sektglasform)",
+        "labelRu": "Рентген: форма «бокала» (Sektglasform)",
+        "labelTr": "Röntgen: şampanya kadehi görünümü (Sektglasform)",
+        "labelEn": "Barium swallow: bird-beak sign (Sektglasform)",
+        "keywords": ["sektglas"]
+      },
+      {
+        "label": "Manometriya natijasi (Achalasie Typ II)",
+        "labelRu": "Результат манометрии (Achalasie Typ II)",
+        "labelTr": "Manometri sonucu (Achalasie Typ II)",
+        "labelEn": "Manometry result (Achalasie Typ II)",
+        "keywords": ["manometrie"]
+      },
+      {
+        "label": "Diagnoz: axalaziya (Achalasie)",
+        "labelRu": "Диагноз: ахалазия (Achalasie)",
+        "labelTr": "Tanı: akalazya (Achalasie)",
+        "labelEn": "Diagnosis: achalasia (Achalasie)",
+        "keywords": ["achalasie"]
+      },
+      {
+        "label": "Davolash: POEM miotomiya (POEM)",
+        "labelRu": "Лечение: миотомия POEM (POEM)",
+        "labelTr": "Tedavi: POEM miyotomi (POEM)",
+        "labelEn": "Treatment: POEM myotomy (POEM)",
+        "keywords": ["poem", "myotomie"]
+      },
+      {
+        "label": "Tavsiya: PPI va reflyuks nazorati (Refluxkontrolle)",
+        "labelRu": "Рекомендация: ИПП и контроль рефлюкса (Refluxkontrolle)",
+        "labelTr": "Öneri: PPI ve reflü takibi (Refluxkontrolle)",
+        "labelEn": "Recommendation: PPI and reflux follow-up (Refluxkontrolle)",
+        "keywords": ["reflux", "pantoprazol", "kontrollgastroskopie"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihre Patientin Frau Yasemin Arslan, 41 Jahre, die vom 29.09.2026 bis zum 05.10.2026 in unserer gastroenterologischen Abteilung behandelt wurde.\n\nAnamnese:\nDie Patientin berichtete über eine seit einem Jahr zunehmende Dysphagie für feste und flüssige Speisen, nächtliche Regurgitation unverdauter Nahrung, Husten im Liegen und einen Gewichtsverlust von 7 kg. Ein Protonenpumpenhemmer hatte keine Besserung gebracht.\n\nBefunde:\nIn der Gastroskopie zeigte sich ein dilatierter Ösophagus mit Speiseresten; die Kardia war mit leichtem Widerstand passierbar. Die Biopsien ergaben kein Malignom. Im Breischluck fand sich die typische Sektglasform des distalen Ösophagus. Die hochauflösende Manometrie zeigte eine fehlende Peristaltik und eine unvollständige Relaxation des unteren Ösophagussphinkters im Sinne einer Achalasie Typ II.\n\nDiagnose:\nAchalasie Typ II.\n\nTherapie und Verlauf:\nAm 02.10.2026 erfolgte eine perorale endoskopische Myotomie (POEM), die komplikationslos verlief. Nach schrittweisem Kostaufbau konnte die Patientin feste und flüssige Speisen ohne Beschwerden schlucken.\n\nProcedere:\nDa nach POEM häufig ein Reflux auftritt, empfehlen wir Pantoprazol 40 mg täglich und eine Kontrollgastroskopie in drei Monaten zur Refluxbeurteilung. Bei erneuter Dysphagie bitten wir um Wiedervorstellung.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab94",
+    "caseId": "c116",
+    "title": "Magenkarzinom",
+    "task": "Gastroenterologiya bo‘limidan uy shifokoriga Arztbrief yozing. Xavf omillari, biopsiya, staging va o‘sma kengashi qaroriga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из гастроэнтерологии семейному врачу. Обратите внимание на факторы риска, биопсию, стадирование и решение онкоконсилиума.",
+    "taskTr": "Gastroenteroloji servisinden aile hekimine bir Arztbrief yazın. Risk faktörlerine, biyopsiye, evrelemeye ve tümör konseyi kararına dikkat edin.",
+    "taskEn": "Write an Arztbrief from gastroenterology to the GP. Pay attention to risk factors, biopsy, staging and the tumour board decision.",
+    "facts": [
+      "Patient: Siegfried Bauer, 68 Jahre, männlich",
+      "Aufnahme: 01.10.2026, gastroenterologische Station",
+      "Seit 3 Monaten Oberbauchdruck, frühes Sättigungsgefühl, Fleischaversion, Gewichtsverlust 9 kg, Müdigkeit, intermittierend dunkler Stuhl",
+      "Risikofaktoren: unbehandelte Helicobacter-Infektion, Nikotin 40 py, Bruder mit Magenkarzinom",
+      "Hb 8,9 g/dl, Ferritin 5 µg/l",
+      "Gastroskopie: ulzerierter Tumor im Antrum; Histologie: Adenokarzinom vom intestinalen Typ, Helicobacter positiv",
+      "Endosonographie/CT: uT3 N1, keine Fernmetastasen; Tumorkonferenz: perioperative Chemotherapie (FLOT), danach Gastrektomie"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patient ma’lumotlari (Herr Bauer)",
+        "labelRu": "Данные пациента (Herr Bauer)",
+        "labelTr": "Hasta bilgileri (Herr Bauer)",
+        "labelEn": "Patient data (Herr Bauer)",
+        "keywords": ["bauer"]
+      },
+      {
+        "label": "Asosiy shikoyat: erta to‘yish, go‘shtdan jirkanish va vazn yo‘qotish (Gewichtsverlust, Fleischaversion)",
+        "labelRu": "Основная жалоба: раннее насыщение, отвращение к мясу и потеря веса (Gewichtsverlust, Fleischaversion)",
+        "labelTr": "Ana şikâyet: erken doyma, et isteksizliği ve kilo kaybı (Gewichtsverlust, Fleischaversion)",
+        "labelEn": "Main complaint: early satiety, meat aversion and weight loss (Gewichtsverlust, Fleischaversion)",
+        "keywords": ["gewichtsverlust", "fleischaversion", "sättigung"]
+      },
+      {
+        "label": "Xavf omillari (Helicobacter, Nikotin, Familienanamnese)",
+        "labelRu": "Факторы риска (Helicobacter, Nikotin, Familienanamnese)",
+        "labelTr": "Risk faktörleri (Helicobacter, Nikotin, Familienanamnese)",
+        "labelEn": "Risk factors (Helicobacter, Nikotin, Familienanamnese)",
+        "keywords": ["helicobacter", "nikotin", "bruder"]
+      },
+      {
+        "label": "Kamqonlik (Hb 8,9 g/dl)",
+        "labelRu": "Анемия (Hb 8,9 g/dl)",
+        "labelTr": "Anemi (Hb 8,9 g/dl)",
+        "labelEn": "Anaemia (Hb 8,9 g/dl)",
+        "keywords": ["hb 8,9", "anämie", "ferritin"]
+      },
+      {
+        "label": "Gastroskopiya va gistologiya (Adenokarzinom)",
+        "labelRu": "Гастроскопия и гистология (Adenokarzinom)",
+        "labelTr": "Gastroskopi ve histoloji (Adenokarzinom)",
+        "labelEn": "Gastroscopy and histology (Adenokarzinom)",
+        "keywords": ["adenokarzinom", "antrum"]
+      },
+      {
+        "label": "Staging (uT3 N1, keine Fernmetastasen)",
+        "labelRu": "Стадирование (uT3 N1, keine Fernmetastasen)",
+        "labelTr": "Evreleme (uT3 N1, keine Fernmetastasen)",
+        "labelEn": "Staging (uT3 N1, keine Fernmetastasen)",
+        "keywords": ["fernmetastasen", "t3"]
+      },
+      {
+        "label": "Diagnoz: oshqozon saratoni (Magenkarzinom)",
+        "labelRu": "Диагноз: рак желудка (Magenkarzinom)",
+        "labelTr": "Tanı: mide kanseri (Magenkarzinom)",
+        "labelEn": "Diagnosis: gastric cancer (Magenkarzinom)",
+        "keywords": ["magenkarzinom"]
+      },
+      {
+        "label": "Tavsiya: operatsiya oldi kimyoterapiyasi va gastrektomiya (FLOT, Gastrektomie)",
+        "labelRu": "Рекомендация: периоперационная химиотерапия и гастрэктомия (FLOT, Gastrektomie)",
+        "labelTr": "Öneri: perioperatif kemoterapi ve gastrektomi (FLOT, Gastrektomie)",
+        "labelEn": "Recommendation: perioperative chemotherapy and gastrectomy (FLOT, Gastrektomie)",
+        "keywords": ["flot", "gastrektomie"]
+      },
+      {
+        "label": "Tavsiya: temir, oziqlanish va qarindoshlarni tekshirish (Eisensubstitution, Ernährungsberatung)",
+        "labelRu": "Рекомендация: железо, питание и обследование родственников (Eisensubstitution, Ernährungsberatung)",
+        "labelTr": "Öneri: demir, beslenme ve akraba taraması (Eisensubstitution, Ernährungsberatung)",
+        "labelEn": "Recommendation: iron, nutrition and screening relatives (Eisensubstitution, Ernährungsberatung)",
+        "keywords": ["eisen", "ernährungsberatung", "angehörige"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Siegfried Bauer, 68 Jahre, der vom 01.10.2026 bis zum 08.10.2026 in unserer gastroenterologischen Abteilung behandelt wurde.\n\nAnamnese:\nDer Patient stellte sich mit seit drei Monaten bestehendem Oberbauchdruck, frühem Sättigungsgefühl, Fleischaversion, einem Gewichtsverlust von 9 kg, Müdigkeit und intermittierend dunklem Stuhl vor. Als Risikofaktoren bestehen eine nie behandelte Helicobacter-Infektion, ein Nikotinabusus von 40 py und ein Magenkarzinom beim Bruder.\n\nBefunde:\nLaborchemisch fand sich eine Eisenmangelanämie mit einem Hb von 8,9 g/dl und einem Ferritin von 5 µg/l. In der Gastroskopie zeigte sich ein ulzerierter Tumor im Antrum; histologisch handelt es sich um ein Adenokarzinom vom intestinalen Typ, Helicobacter war positiv. Endosonographie und CT ergaben ein Stadium uT3 N1 ohne Fernmetastasen.\n\nDiagnose:\nAdenokarzinom des Magens im Antrum, uT3 N1 M0, mit Tumoranämie.\n\nProcedere:\nDie Tumorkonferenz empfiehlt eine perioperative Chemotherapie nach dem FLOT-Schema mit anschließender Gastrektomie. Wir haben eine intravenöse Eisensubstitution begonnen und eine Ernährungsberatung veranlasst. Wegen der familiären Häufung empfehlen wir den erstgradigen Angehörigen eine Gastroskopie mit Helicobacter-Testung.\n\nMit freundlichen kollegialen Grüßen"
   }
 ]

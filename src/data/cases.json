@@ -11611,5 +11611,1115 @@
       "Influenza-/SARS-CoV-2-Schnelltest oder PCR",
       "Röntgen-Thorax (nur bei Verdacht auf Pneumonie)"
     ]
+  },
+  {
+    "id": "c107",
+    "title": "Infektexazerbation von Bronchiektasen",
+    "category": "Pneumologie",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Brigitte Seidel",
+      "age": 59,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Viel eitriger Auswurf und Fieber"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 5 Tagen deutlich vermehrter, grün-gelber, teils blutig tingierter Auswurf (ca. eine Tasse täglich), Fieber bis 38,6 °C, Belastungsdyspnoe. Seit Jahren chronischer produktiver Husten, morgens besonders viel Auswurf. Drei ähnliche Episoden im letzten Jahr.",
+      "vorerkrankungen": "Schwere Pneumonie im Kindesalter (Keuchhusten), Bronchiektasen beidseits basal bekannt, chronische Sinusitis.",
+      "medikamente": "Keine Dauertherapie. Gelegentlich Antibiotika vom Hausarzt.",
+      "allergien": "Penicillin (Urtikaria)",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Verheiratet, Sekretärin. Nichtraucherin."
+    },
+    "sprache": [
+      {
+        "patient": "Morgens huste ich eine ganze Tasse grünen Schleim ab.",
+        "fach": "Es besteht eine maulvolle Expektoration von purulentem Sputum am Morgen."
+      },
+      {
+        "patient": "Manchmal sind kleine Blutfäden im Schleim.",
+        "fach": "Es bestehen gelegentlich Hämoptysen."
+      },
+      {
+        "patient": "Als Kind hatte ich eine schwere Lungenentzündung nach Keuchhusten.",
+        "fach": "Anamnestisch besteht eine schwere Pneumonie nach Pertussis im Kindesalter."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Bronchiektasen",
+        "patient": "dauerhaft erweiterte Bronchien, in denen sich Schleim sammelt",
+        "uz": "bronxoektazlar",
+        "ru": "бронхоэктазы",
+        "tr": "bronşektazi",
+        "en": "bronchiectasis"
+      },
+      {
+        "de": "Expektoration",
+        "patient": "Abhusten von Schleim",
+        "uz": "balg‘am ko‘chishi",
+        "ru": "отхождение мокроты",
+        "tr": "balgam çıkarma",
+        "en": "coughing up sputum"
+      },
+      {
+        "de": "Pseudomonas",
+        "patient": "Bakterium, das schwer zu behandeln ist",
+        "uz": "psevdomonas",
+        "ru": "синегнойная палочка",
+        "tr": "Pseudomonas",
+        "en": "Pseudomonas"
+      },
+      {
+        "de": "Atemphysiotherapie",
+        "patient": "Atemübungen, um Schleim zu lösen",
+        "uz": "nafas fizioterapiyasi",
+        "ru": "дыхательная физиотерапия",
+        "tr": "solunum fizyoterapisi",
+        "en": "chest physiotherapy"
+      },
+      {
+        "de": "Exazerbation",
+        "patient": "Verschlechterung einer chronischen Krankheit",
+        "uz": "qo‘zish (ekzatserbatsiya)",
+        "ru": "обострение",
+        "tr": "alevlenme",
+        "en": "exacerbation"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich huste seit fünf Tagen wieder so viel grünen Schleim und habe Fieber.",
+      "answers": {
+        "beginn": "Vor fünf Tagen wurde es schlimmer. Husten mit Schleim habe ich aber schon seit Jahren.",
+        "lokalisation": "Die Brust fühlt sich unten beidseits voll an.",
+        "charakter": "Morgens huste ich eine ganze Tasse grünen Schleim ab. Manchmal sind kleine Blutfäden drin.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Fieber bis 38,6. Beim Treppensteigen bekomme ich schlechter Luft. Die Nase ist oft verstopft.",
+        "vegetativ": "Ich bin müde, Appetit ist etwas weniger.",
+        "vorerkrankungen": "Als Kind hatte ich Keuchhusten und danach eine schwere Lungenentzündung. Seitdem habe ich diese erweiterten Bronchien. Letztes Jahr hatte ich dreimal so einen Schub.",
+        "medikamente": "Regelmäßig nichts. Wenn es schlimm wird, gibt mir der Hausarzt Antibiotika.",
+        "allergien": "Auf Penicillin bekomme ich Quaddeln.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich bin verheiratet und Sekretärin.",
+        "noxen": "Ich habe nie geraucht."
+      }
+    },
+    "verdachtsdiagnose": "Infektexazerbation von Bronchiektasen (postinfektiös nach Pertussis)",
+    "diagnoseKeywords": ["bronchiektas"],
+    "differenzialdiagnosen": [
+      "Pneumonie",
+      "COPD-Exazerbation",
+      "Tuberkulose",
+      "Mukoviszidose",
+      "Bronchialkarzinom"
+    ],
+    "untersuchungen": [
+      "Sputumkultur mit Antibiogramm",
+      "Röntgen- bzw. HRCT-Thorax",
+      "Lungenfunktion",
+      "Labor (CRP, Blutbild, Immunglobuline)",
+      "Ausschluss Mukoviszidose (Schweißtest)"
+    ]
+  },
+  {
+    "id": "c108",
+    "title": "Hyperventilationssyndrom bei Panikattacke",
+    "category": "Pneumologie",
+    "difficulty": "leicht",
+    "patient": {
+      "name": "Julia Brenner",
+      "age": 23,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Atemnot, Kribbeln in Händen und um den Mund"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 30 Minuten Gefühl, nicht genug Luft zu bekommen, schnelles Atmen, Kribbeln in beiden Händen und um den Mund, Verkrampfung der Finger, Herzklopfen und Todesangst. Begonnen vor einer Prüfung. Keine Brustschmerzen bei Belastung.",
+      "vorerkrankungen": "Ähnliche Episoden in Prüfungssituationen. Keine Lungen- oder Herzkrankheiten.",
+      "medikamente": "Pille.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Mutter: Angststörung.",
+      "sozialanamnese": "Ledig, Jurastudentin, Staatsexamen nächste Woche. Nichtraucherin, viel Kaffee."
+    },
+    "sprache": [
+      {
+        "patient": "Ich habe das Gefühl, ich ersticke, obwohl ich ganz schnell atme.",
+        "fach": "Es besteht eine subjektive Dyspnoe mit Tachypnoe."
+      },
+      {
+        "patient": "Meine Finger verkrampfen sich und kribbeln.",
+        "fach": "Es bestehen Parästhesien und eine Pfötchenstellung der Hände."
+      },
+      {
+        "patient": "Ich hatte richtig Todesangst.",
+        "fach": "Die Patientin berichtet über ausgeprägte Angst."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Hyperventilation",
+        "patient": "zu schnelles und zu tiefes Atmen",
+        "uz": "giperventilyatsiya",
+        "ru": "гипервентиляция",
+        "tr": "hiperventilasyon",
+        "en": "hyperventilation"
+      },
+      {
+        "de": "Pfötchenstellung",
+        "patient": "Verkrampfung der Finger",
+        "uz": "barmoqlarning tortishib qolishi",
+        "ru": "«рука акушера»",
+        "tr": "karpopedal spazm",
+        "en": "carpopedal spasm"
+      },
+      {
+        "de": "Respiratorische Alkalose",
+        "patient": "zu wenig Kohlendioxid im Blut durch schnelles Atmen",
+        "uz": "respirator alkaloz",
+        "ru": "дыхательный алкалоз",
+        "tr": "respiratuvar alkaloz",
+        "en": "respiratory alkalosis"
+      },
+      {
+        "de": "Panikattacke",
+        "patient": "plötzliche, starke Angst mit körperlichen Beschwerden",
+        "uz": "vahima xuruji",
+        "ru": "паническая атака",
+        "tr": "panik atak",
+        "en": "panic attack"
+      },
+      {
+        "de": "Ausschlussdiagnose",
+        "patient": "Diagnose erst, wenn andere Ursachen ausgeschlossen sind",
+        "uz": "istisno tashxisi",
+        "ru": "диагноз исключения",
+        "tr": "dışlama tanısı",
+        "en": "diagnosis of exclusion"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich bekomme keine Luft! Meine Hände kribbeln und verkrampfen sich!",
+      "answers": {
+        "beginn": "Vor einer halben Stunde, als ich vor dem Prüfungsraum gewartet habe.",
+        "lokalisation": "Es kribbelt in beiden Händen und um den Mund herum. Die Brust ist eng.",
+        "charakter": "Ich atme ganz schnell, aber habe das Gefühl, ich ersticke. Ein Schmerz ist es nicht, eher ein Druck.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Mein Herz klopft, mir ist schwindelig und ich hatte Todesangst. Die Finger verkrampfen sich. Fieber oder Husten habe ich nicht.",
+        "vegetativ": "Ich schlafe vor den Prüfungen schlecht.",
+        "vorerkrankungen": "Das hatte ich schon zweimal vor Prüfungen, aber nicht so schlimm. Herz und Lunge sind gesund.",
+        "medikamente": "Nur die Pille. Lange Reisen oder Beinschwellungen hatte ich nicht.",
+        "allergien": "Nein.",
+        "familie": "Meine Mutter hat eine Angststörung.",
+        "sozial": "Ich studiere Jura, nächste Woche ist mein Staatsexamen.",
+        "noxen": "Ich rauche nicht. Ich trinke viel Kaffee, fünf Tassen am Tag, zurzeit noch mehr."
+      }
+    },
+    "verdachtsdiagnose": "Hyperventilationssyndrom bei Panikattacke (Ausschlussdiagnose)",
+    "diagnoseKeywords": ["hyperventilation", "panik"],
+    "differenzialdiagnosen": [
+      "Lungenembolie (Pille!)",
+      "Asthmaanfall",
+      "Hypokalzämie",
+      "Herzrhythmusstörung",
+      "Hyperthyreose"
+    ],
+    "untersuchungen": [
+      "Blutgasanalyse (respiratorische Alkalose)",
+      "EKG",
+      "Pulsoxymetrie",
+      "D-Dimere (Wells-Score)",
+      "Elektrolyte, TSH"
+    ]
+  },
+  {
+    "id": "c109",
+    "title": "Zöliakie",
+    "category": "Gastroenterologie",
+    "difficulty": "leicht",
+    "patient": {
+      "name": "Anja Hofmann",
+      "age": 28,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Chronischer Durchfall, Blähungen und Müdigkeit"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit ca. 1 Jahr breiige, übelriechende Durchfälle (3–4 × täglich), Blähungen, Bauchschmerzen nach dem Essen, ausgeprägte Müdigkeit, Gewichtsverlust 6 kg. Beschwerden besonders nach Brot und Nudeln.",
+      "vorerkrankungen": "Eisenmangelanämie (trotz Eisentabletten keine Besserung), Hashimoto-Thyreoiditis.",
+      "medikamente": "Eisen(II)-sulfat 100 mg 1-0-0, L-Thyroxin 50 µg 1-0-0.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Schwester: Diabetes mellitus Typ 1.",
+      "sozialanamnese": "Ledig, Grafikdesignerin. Nichtraucherin."
+    },
+    "sprache": [
+      {
+        "patient": "Nach Brot oder Nudeln bekomme ich Blähungen und Durchfall.",
+        "fach": "Die Beschwerden treten nach glutenhaltiger Nahrung auf."
+      },
+      {
+        "patient": "Der Stuhl ist breiig, glänzt und stinkt stark.",
+        "fach": "Es bestehen Steatorrhö-artige, übelriechende Stühle."
+      },
+      {
+        "patient": "Trotz Eisentabletten bin ich immer blutarm.",
+        "fach": "Es besteht eine therapierefraktäre Eisenmangelanämie."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Zöliakie",
+        "patient": "Unverträglichkeit von Gluten (Klebereiweiß im Getreide)",
+        "uz": "seliakiya (glyutenni ko‘tara olmaslik)",
+        "ru": "целиакия",
+        "tr": "çölyak hastalığı",
+        "en": "coeliac disease"
+      },
+      {
+        "de": "Gluten",
+        "patient": "Eiweiß in Weizen, Roggen und Gerste",
+        "uz": "glyuten (bug‘doy oqsili)",
+        "ru": "глютен",
+        "tr": "gluten",
+        "en": "gluten"
+      },
+      {
+        "de": "Malabsorption",
+        "patient": "der Darm nimmt Nährstoffe schlecht auf",
+        "uz": "malabsorbsiya (so‘rilishning buzilishi)",
+        "ru": "мальабсорбция",
+        "tr": "malabsorpsiyon",
+        "en": "malabsorption"
+      },
+      {
+        "de": "Zottenatrophie",
+        "patient": "Schwund der Darmzotten",
+        "uz": "ichak vorsinkalari atrofiyasi",
+        "ru": "атрофия ворсинок",
+        "tr": "villus atrofisi",
+        "en": "villous atrophy"
+      },
+      {
+        "de": "Transglutaminase-Antikörper",
+        "patient": "Bluttest für Zöliakie",
+        "uz": "transglutaminazaga antitanachalar",
+        "ru": "антитела к тканевой трансглутаминазе",
+        "tr": "doku transglutaminaz antikorları",
+        "en": "tissue transglutaminase antibodies"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe seit einem Jahr ständig Durchfall und Blähungen und bin immer müde.",
+      "answers": {
+        "beginn": "Vor etwa einem Jahr hat es angefangen, langsam schlimmer geworden.",
+        "lokalisation": "Im ganzen Bauch, vor allem um den Nabel.",
+        "charakter": "Krampfartige Bauchschmerzen nach dem Essen, vier von zehn. Der Stuhl ist breiig, glänzt und stinkt stark, drei-, viermal am Tag.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Ich bin ständig müde. Nach Brot oder Nudeln wird es schlimmer. Blut im Stuhl habe ich nicht gesehen.",
+        "vegetativ": "Ich habe sechs Kilo abgenommen, ohne es zu wollen.",
+        "vorerkrankungen": "Ich habe Eisenmangel, aber die Tabletten helfen nicht. Und eine Hashimoto-Schilddrüse.",
+        "medikamente": "Eisentabletten und L-Thyroxin 50.",
+        "allergien": "Nein.",
+        "familie": "Meine Schwester hat Typ-1-Diabetes.",
+        "sozial": "Ich bin Grafikdesignerin. Ich reise nicht viel.",
+        "noxen": "Ich rauche nicht, Alkohol selten."
+      }
+    },
+    "verdachtsdiagnose": "Zöliakie (glutensensitive Enteropathie) mit Malabsorption und Eisenmangelanämie",
+    "diagnoseKeywords": ["zöliakie", "sprue", "glutensensitiv"],
+    "differenzialdiagnosen": [
+      "Reizdarmsyndrom",
+      "Laktoseintoleranz",
+      "Morbus Crohn",
+      "Lambliasis",
+      "Mikroskopische Kolitis"
+    ],
+    "untersuchungen": [
+      "Transglutaminase-IgA-Antikörper mit Gesamt-IgA",
+      "Gastroskopie mit Duodenalbiopsien (vor glutenfreier Diät)",
+      "Blutbild, Ferritin, Folsäure, Vitamin B12",
+      "Vitamin D, Calcium, Albumin",
+      "Stuhlkultur und Calprotectin"
+    ]
+  },
+  {
+    "id": "c110",
+    "title": "Reizdarmsyndrom",
+    "category": "Gastroenterologie",
+    "difficulty": "leicht",
+    "patient": {
+      "name": "Tobias Wendt",
+      "age": 31,
+      "gender": "männlich",
+      "hauptbeschwerde": "Bauchschmerzen mit wechselndem Stuhlgang seit Monaten"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit ca. 8 Monaten wiederkehrende krampfartige Unterbauchschmerzen, die nach dem Stuhlgang besser werden, abwechselnd Durchfall und Verstopfung, Blähungen. Verschlechterung in Stressphasen. Kein Blut im Stuhl, kein Gewichtsverlust, kein nächtlicher Stuhldrang, kein Fieber.",
+      "vorerkrankungen": "Keine.",
+      "medikamente": "Gelegentlich Butylscopolamin.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Kein Darmkrebs, keine chronisch-entzündliche Darmerkrankung.",
+      "sozialanamnese": "Ledig, IT-Berater, viele Überstunden. Nichtraucher, Alkohol am Wochenende."
+    },
+    "sprache": [
+      {
+        "patient": "Nach dem Toilettengang sind die Schmerzen besser.",
+        "fach": "Die Schmerzen bessern sich nach der Defäkation."
+      },
+      {
+        "patient": "Mal habe ich Durchfall, mal Verstopfung.",
+        "fach": "Es besteht ein wechselndes Stuhlverhalten."
+      },
+      {
+        "patient": "Nachts werde ich nie vom Stuhldrang wach.",
+        "fach": "Nächtliche Symptome werden verneint."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Reizdarmsyndrom",
+        "patient": "empfindlicher Darm ohne organische Ursache",
+        "uz": "ta’sirlangan ichak sindromi",
+        "ru": "синдром раздражённого кишечника",
+        "tr": "irritabl bağırsak sendromu",
+        "en": "irritable bowel syndrome"
+      },
+      {
+        "de": "Alarmsymptome",
+        "patient": "Warnzeichen für eine ernste Krankheit",
+        "uz": "xavf belgilari",
+        "ru": "тревожные симптомы",
+        "tr": "alarm belirtileri",
+        "en": "red flags"
+      },
+      {
+        "de": "Calprotectin",
+        "patient": "Entzündungswert im Stuhl",
+        "uz": "kalprotektin (najasdagi yallig‘lanish ko‘rsatkichi)",
+        "ru": "кальпротектин",
+        "tr": "kalprotektin",
+        "en": "faecal calprotectin"
+      },
+      {
+        "de": "FODMAP-arme Ernährung",
+        "patient": "Diät mit wenig bestimmten Zuckern, die Blähungen machen",
+        "uz": "FODMAP kam parhez",
+        "ru": "диета с низким содержанием FODMAP",
+        "tr": "düşük FODMAP diyeti",
+        "en": "low-FODMAP diet"
+      },
+      {
+        "de": "Spasmolytikum",
+        "patient": "krampflösendes Medikament",
+        "uz": "spazmolitik",
+        "ru": "спазмолитик",
+        "tr": "spazmolitik",
+        "en": "antispasmodic"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe seit Monaten immer wieder Bauchschmerzen, mal Durchfall, mal Verstopfung.",
+      "answers": {
+        "beginn": "Seit etwa acht Monaten, in stressigen Wochen schlimmer.",
+        "lokalisation": "Im Unterbauch, mal links, mal rechts.",
+        "charakter": "Krampfartig, vier bis fünf von zehn. Nach dem Toilettengang wird es besser.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Ich habe viele Blähungen. Blut im Stuhl habe ich nie gesehen. Fieber nicht. Nachts werde ich nie vom Stuhldrang wach.",
+        "vegetativ": "Gewicht ist stabil, Appetit gut.",
+        "vorerkrankungen": "Ich bin sonst gesund.",
+        "medikamente": "Ab und zu Buscopan, das hilft ein bisschen.",
+        "allergien": "Nein.",
+        "familie": "In der Familie hat niemand Darmkrebs oder Morbus Crohn.",
+        "sozial": "Ich bin IT-Berater und mache viele Überstunden.",
+        "noxen": "Ich rauche nicht, am Wochenende trinke ich Bier."
+      }
+    },
+    "verdachtsdiagnose": "Reizdarmsyndrom (Mischtyp) ohne Alarmsymptome",
+    "diagnoseKeywords": ["reizdarm", "colon irritabile"],
+    "differenzialdiagnosen": [
+      "Zöliakie",
+      "Chronisch-entzündliche Darmerkrankung",
+      "Laktoseintoleranz",
+      "Mikroskopische Kolitis",
+      "Kolonkarzinom (bei Alarmsymptomen)"
+    ],
+    "untersuchungen": [
+      "Ausführliche Anamnese mit Alarmsymptomen",
+      "Blutbild, CRP, TSH",
+      "Transglutaminase-Antikörper",
+      "Calprotectin im Stuhl",
+      "Koloskopie nur bei Alarmsymptomen"
+    ]
+  },
+  {
+    "id": "c111",
+    "title": "Schub einer Colitis ulcerosa",
+    "category": "Gastroenterologie",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Daniel Krämer",
+      "age": 27,
+      "gender": "männlich",
+      "hauptbeschwerde": "Blutige Durchfälle und Bauchkrämpfe"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 2 Wochen 8–10 blutig-schleimige Durchfälle täglich, auch nachts, krampfartige Schmerzen im linken Unterbauch, schmerzhafter Stuhldrang (Tenesmen), Fieber bis 38,2 °C, Gewichtsverlust 3 kg.",
+      "vorerkrankungen": "Colitis ulcerosa seit 4 Jahren (Pankolitis), zuletzt in Remission. Vor 2 Monaten Mesalazin eigenmächtig abgesetzt.",
+      "medikamente": "Mesalazin 3 g/Tag (abgesetzt). Ibuprofen wegen Rückenschmerzen in den letzten Wochen.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Onkel: Morbus Crohn.",
+      "sozialanamnese": "Ledig, Student. Nichtraucher (nie geraucht), Alkohol gelegentlich."
+    },
+    "sprache": [
+      {
+        "patient": "Ich muss acht- bis zehnmal am Tag, mit Blut und Schleim.",
+        "fach": "Es bestehen 8–10 blutig-schleimige Diarrhöen täglich."
+      },
+      {
+        "patient": "Ich habe ständig Drang, aber es kommt kaum etwas.",
+        "fach": "Es bestehen Tenesmen."
+      },
+      {
+        "patient": "Die Tabletten habe ich vor zwei Monaten weggelassen, mir ging es ja gut.",
+        "fach": "Die Erhaltungstherapie mit Mesalazin wurde vor zwei Monaten eigenmächtig beendet."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Colitis ulcerosa",
+        "patient": "chronische Entzündung des Dickdarms",
+        "uz": "yarali kolit",
+        "ru": "язвенный колит",
+        "tr": "ülseratif kolit",
+        "en": "ulcerative colitis"
+      },
+      {
+        "de": "Remission",
+        "patient": "Phase ohne Beschwerden",
+        "uz": "remissiya (tinchlanish davri)",
+        "ru": "ремиссия",
+        "tr": "remisyon",
+        "en": "remission"
+      },
+      {
+        "de": "Mesalazin",
+        "patient": "entzündungshemmendes Darmmedikament",
+        "uz": "mesalazin",
+        "ru": "месалазин",
+        "tr": "mesalazin",
+        "en": "mesalazine"
+      },
+      {
+        "de": "Toxisches Megakolon",
+        "patient": "gefährliche Erweiterung des Dickdarms",
+        "uz": "toksik megakolon",
+        "ru": "токсический мегаколон",
+        "tr": "toksik megakolon",
+        "en": "toxic megacolon"
+      },
+      {
+        "de": "Tenesmen",
+        "patient": "schmerzhafter Stuhldrang",
+        "uz": "og‘riqli chaqiriq (tenezm)",
+        "ru": "тенезмы",
+        "tr": "tenesmus",
+        "en": "tenesmus"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe seit zwei Wochen blutige Durchfälle, acht- bis zehnmal am Tag.",
+      "answers": {
+        "beginn": "Vor zwei Wochen, langsam schlimmer geworden.",
+        "lokalisation": "Links unten im Bauch.",
+        "charakter": "Krampfartig, besonders vor dem Stuhlgang, sechs von zehn. Ich habe ständig Drang, aber es kommt kaum etwas.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Mit Blut und Schleim, auch nachts. Fieber bis 38,2. Ich bin sehr schwach.",
+        "vegetativ": "Ich habe drei Kilo abgenommen, esse kaum.",
+        "vorerkrankungen": "Ich habe seit vier Jahren Colitis ulcerosa, der ganze Dickdarm ist betroffen. Es war lange ruhig.",
+        "medikamente": "Mesalazin, aber das habe ich vor zwei Monaten weggelassen, mir ging es ja gut. Wegen Rückenschmerzen habe ich in den letzten Wochen Ibuprofen genommen.",
+        "allergien": "Nein.",
+        "familie": "Mein Onkel hat Morbus Crohn.",
+        "sozial": "Ich studiere Maschinenbau.",
+        "noxen": "Ich habe nie geraucht, Alkohol selten."
+      }
+    },
+    "verdachtsdiagnose": "Mittelschwerer bis schwerer Schub einer Colitis ulcerosa nach Absetzen von Mesalazin und NSAR-Einnahme",
+    "diagnoseKeywords": ["colitis ulcerosa", "kolitis", "schub"],
+    "differenzialdiagnosen": [
+      "Infektiöse Kolitis (Campylobacter, C. difficile)",
+      "Morbus Crohn",
+      "Ischämische Kolitis",
+      "CMV-Kolitis"
+    ],
+    "untersuchungen": [
+      "Labor (Blutbild, CRP, Albumin, Elektrolyte)",
+      "Stuhlkulturen und C.-difficile-Toxin",
+      "Calprotectin",
+      "Sigmoidoskopie mit Biopsie",
+      "Abdomenleeraufnahme (Megakolon)"
+    ]
+  },
+  {
+    "id": "c112",
+    "title": "Ösophagusvarizenblutung bei Leberzirrhose",
+    "category": "Gastroenterologie",
+    "difficulty": "schwer",
+    "patient": {
+      "name": "Manfred Kühn",
+      "age": 56,
+      "gender": "männlich",
+      "hauptbeschwerde": "Schwallartiges Bluterbrechen"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Vor 1 Stunde plötzlich schwallartiges Erbrechen von hellrotem Blut (ca. 500 ml), zweimal. Schwindel, Schwäche, schwarzer Stuhl seit gestern. Kein Bauchschmerz.",
+      "vorerkrankungen": "Alkoholische Leberzirrhose (Child B), Aszites, bekannte Ösophagusvarizen (Propranolol vor 3 Monaten selbst abgesetzt).",
+      "medikamente": "Spironolacton 100 mg 1-0-0, Furosemid 20 mg 1-0-0, Lactulose. Propranolol abgesetzt.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Geschieden, arbeitslos. Alkohol: trotz Diagnose weiter ca. 1 Flasche Wein täglich. Raucher (30 py)."
+    },
+    "sprache": [
+      {
+        "patient": "Ich habe zweimal einen Schwall hellrotes Blut erbrochen.",
+        "fach": "Es kam zu zweimaliger schwallartiger Hämatemesis."
+      },
+      {
+        "patient": "Seit gestern ist der Stuhl schwarz wie Teer.",
+        "fach": "Seit dem Vortag besteht Meläna."
+      },
+      {
+        "patient": "Die Tablette für die Krampfadern in der Speiseröhre habe ich weggelassen.",
+        "fach": "Die Primärprophylaxe mit Propranolol wurde eigenmächtig beendet."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Ösophagusvarizen",
+        "patient": "Krampfadern in der Speiseröhre",
+        "uz": "qizilo‘ngach varikoz tomirlari",
+        "ru": "варикозное расширение вен пищевода",
+        "tr": "özofagus varisleri",
+        "en": "oesophageal varices"
+      },
+      {
+        "de": "Portale Hypertension",
+        "patient": "Hochdruck im Pfortaderkreislauf der Leber",
+        "uz": "portal gipertenziya",
+        "ru": "портальная гипертензия",
+        "tr": "portal hipertansiyon",
+        "en": "portal hypertension"
+      },
+      {
+        "de": "Gummibandligatur",
+        "patient": "Abbinden der Krampfadern mit Gummiringen bei der Magenspiegelung",
+        "uz": "rezina halqa bilan bog‘lash",
+        "ru": "лигирование варикозных узлов",
+        "tr": "band ligasyonu",
+        "en": "band ligation"
+      },
+      {
+        "de": "Terlipressin",
+        "patient": "Medikament, das den Druck in der Pfortader senkt",
+        "uz": "terlipressin",
+        "ru": "терлипрессин",
+        "tr": "terlipressin",
+        "en": "terlipressin"
+      },
+      {
+        "de": "Hämatemesis",
+        "patient": "Bluterbrechen",
+        "uz": "qon qusish",
+        "ru": "рвота кровью",
+        "tr": "kan kusma",
+        "en": "vomiting blood"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe zweimal Blut erbrochen, ganz viel, hellrot!",
+      "answers": {
+        "beginn": "Vor einer Stunde, ganz plötzlich, zweimal hintereinander.",
+        "lokalisation": "Schmerzen habe ich keine.",
+        "charakter": "Ein ganzer Schwall hellrotes Blut, bestimmt ein halber Liter.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Mir ist schwindelig und ich bin ganz schwach. Seit gestern ist der Stuhl schwarz wie Teer.",
+        "vegetativ": "Der Bauch ist dick vom Wasser. Ich bin manchmal etwas durcheinander, sagt meine Schwester.",
+        "vorerkrankungen": "Ich habe eine Leberzirrhose vom Alkohol, Wasser im Bauch und Krampfadern in der Speiseröhre.",
+        "medikamente": "Spironolacton, Furosemid und Lactulose. Das Propranolol habe ich vor drei Monaten weggelassen, ich war immer so müde.",
+        "allergien": "Nein.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich bin geschieden und arbeitslos.",
+        "noxen": "Ich trinke leider noch jeden Tag eine Flasche Wein. Und ich rauche eine Schachtel."
+      }
+    },
+    "verdachtsdiagnose": "Akute Ösophagusvarizenblutung bei alkoholischer Leberzirrhose Child B",
+    "diagnoseKeywords": ["varizenblutung", "ösophagusvarizen", "varizen"],
+    "differenzialdiagnosen": ["Ulkusblutung", "Mallory-Weiss-Läsion", "Erosive Gastritis", "Magenkarzinom"],
+    "untersuchungen": [
+      "Notfall-Gastroskopie (innerhalb von 12 Stunden)",
+      "Blutbild, Gerinnung, Kreuzblut",
+      "Leberwerte, Kreatinin, Ammoniak",
+      "Vitalparameter und Schockindex",
+      "Aszitespunktion (SBP-Ausschluss)"
+    ],
+    "oberarzt": {
+      "therapie": [
+        "Terlipressin i. v. sofort",
+        "Antibiotika-Prophylaxe (Ceftriaxon)",
+        "Gummibandligatur in der Gastroskopie",
+        "Restriktive Transfusion (Hb-Ziel 7–8 g/dl)",
+        "TIPS bei Rezidivblutung",
+        "Propranolol und Alkoholkarenz danach"
+      ],
+      "komplikationen": [
+        "Hämorrhagischer Schock",
+        "Aspiration",
+        "Hepatische Enzephalopathie",
+        "Spontan bakterielle Peritonitis",
+        "Hepatorenales Syndrom",
+        "Rezidivblutung"
+      ]
+    }
+  },
+  {
+    "id": "c113",
+    "title": "Paracetamol-Intoxikation",
+    "category": "Gastroenterologie",
+    "difficulty": "schwer",
+    "patient": {
+      "name": "Lisa Herrmann",
+      "age": 19,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Übelkeit nach Einnahme vieler Tabletten"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Hat vor ca. 6 Stunden nach einem Streit mit dem Freund 30 Tabletten Paracetamol 500 mg (15 g) eingenommen. Jetzt Übelkeit, einmal Erbrechen, leichte Oberbauchschmerzen. Von der Mutter gebracht. Keine weiteren Substanzen, kein Alkohol.",
+      "vorerkrankungen": "Depressive Episode vor 1 Jahr, kein früherer Suizidversuch.",
+      "medikamente": "Keine regelmäßigen.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Mutter: Depression.",
+      "sozialanamnese": "Ledig, Auszubildende (Einzelhandel), wohnt bei der Mutter. Nichtraucherin."
+    },
+    "sprache": [
+      {
+        "patient": "Ich habe die ganze Packung Paracetamol geschluckt.",
+        "fach": "Die Patientin hat etwa 15 g Paracetamol in suizidaler Absicht eingenommen."
+      },
+      {
+        "patient": "Das war vor ungefähr sechs Stunden.",
+        "fach": "Die Einnahme erfolgte vor etwa sechs Stunden."
+      },
+      {
+        "patient": "Ich wollte in dem Moment einfach nicht mehr leben.",
+        "fach": "Es bestand eine akute Suizidalität."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Paracetamol-Intoxikation",
+        "patient": "Vergiftung mit Paracetamol",
+        "uz": "paratsetamol bilan zaharlanish",
+        "ru": "отравление парацетамолом",
+        "tr": "parasetamol zehirlenmesi",
+        "en": "paracetamol overdose"
+      },
+      {
+        "de": "Acetylcystein",
+        "patient": "Gegengift bei Paracetamol-Vergiftung",
+        "uz": "atsetiltsistein (antidot)",
+        "ru": "ацетилцистеин (антидот)",
+        "tr": "asetilsistein (antidot)",
+        "en": "acetylcysteine (antidote)"
+      },
+      {
+        "de": "Leberversagen",
+        "patient": "die Leber hört auf zu arbeiten",
+        "uz": "jigar yetishmovchiligi",
+        "ru": "печёночная недостаточность",
+        "tr": "karaciğer yetmezliği",
+        "en": "liver failure"
+      },
+      {
+        "de": "Nomogramm",
+        "patient": "Diagramm, das zeigt, ob ein Gegengift nötig ist",
+        "uz": "nomogramma",
+        "ru": "номограмма",
+        "tr": "nomogram",
+        "en": "nomogram"
+      },
+      {
+        "de": "Suizidversuch",
+        "patient": "Versuch, sich das Leben zu nehmen",
+        "uz": "o‘z joniga qasd qilishga urinish",
+        "ru": "попытка суицида",
+        "tr": "intihar girişimi",
+        "en": "suicide attempt"
+      }
+    ],
+    "simulation": {
+      "opening": "(leise) Ich habe Tabletten genommen … meine Mutter hat mich hergebracht.",
+      "answers": {
+        "beginn": "Vor ungefähr sechs Stunden, so um zwei Uhr nachmittags.",
+        "lokalisation": "Rechts oben im Bauch tut es ein bisschen weh.",
+        "charakter": "Mir ist schlecht, ich habe einmal gebrochen. Der Bauch drückt leicht, drei von zehn.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Sonst habe ich nichts. Ich bin nicht müde oder verwirrt.",
+        "vegetativ": "Ich habe heute nichts gegessen.",
+        "vorerkrankungen": "Letztes Jahr hatte ich eine Depression, ich war beim Psychologen. Versucht, mir etwas anzutun, habe ich noch nie.",
+        "medikamente": "Ich habe dreißig Tabletten Paracetamol 500 genommen, die ganze Packung. Andere Tabletten nicht, auch keinen Alkohol.",
+        "allergien": "Nein.",
+        "familie": "Meine Mutter hatte auch Depressionen.",
+        "sozial": "Ich mache eine Ausbildung im Einzelhandel und wohne bei meiner Mutter. (auf Nachfrage) Ich hatte Streit mit meinem Freund und wollte in dem Moment einfach nicht mehr leben. Jetzt bereue ich es.",
+        "noxen": "Ich rauche nicht, Drogen nehme ich keine."
+      }
+    },
+    "verdachtsdiagnose": "Akute Paracetamol-Intoxikation (ca. 15 g) in suizidaler Absicht mit drohender Leberschädigung",
+    "diagnoseKeywords": ["paracetamol", "intoxikation", "vergiftung"],
+    "differenzialdiagnosen": [
+      "Mischintoxikation (andere Medikamente, Alkohol)",
+      "Akute Virushepatitis",
+      "Gastritis",
+      "Pankreatitis"
+    ],
+    "untersuchungen": [
+      "Paracetamolspiegel (≥ 4 h nach Einnahme)",
+      "Leberwerte, INR, Bilirubin",
+      "Kreatinin, Laktat, Blutgasanalyse",
+      "Drogenscreening, Alkoholspiegel",
+      "Schwangerschaftstest",
+      "Psychiatrische Beurteilung"
+    ],
+    "oberarzt": {
+      "therapie": [
+        "Acetylcystein i. v. sofort (nach Nomogramm)",
+        "Giftnotruf kontaktieren",
+        "Überwachung auf Intensiv- oder Überwachungsstation",
+        "Psychiatrisches Konsil",
+        "Sitzwache bei Suizidalität",
+        "Lebertransplantationszentrum bei Leberversagen"
+      ],
+      "komplikationen": [
+        "Akutes Leberversagen",
+        "Hepatische Enzephalopathie",
+        "Gerinnungsstörung",
+        "Akutes Nierenversagen",
+        "Anaphylaktoide Reaktion auf Acetylcystein",
+        "Erneuter Suizidversuch"
+      ]
+    }
+  },
+  {
+    "id": "c114",
+    "title": "Clostridioides-difficile-Kolitis",
+    "category": "Gastroenterologie",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Waltraud Engel",
+      "age": 79,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Wässrige Durchfälle nach Antibiotikatherapie"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 4 Tagen 8–10 wässrige, übelriechende Durchfälle täglich, krampfartige Unterbauchschmerzen, Fieber bis 38,4 °C. Vor 2 Wochen Clindamycin für 10 Tage wegen Zahnwurzelentzündung.",
+      "vorerkrankungen": "Refluxkrankheit, Herzinsuffizienz, Diabetes mellitus Typ 2.",
+      "medikamente": "Omeprazol 40 mg 1-0-0, Torasemid 10 mg 1-0-0, Ramipril 2,5 mg 1-0-0, Metformin 500 mg 1-0-1.",
+      "allergien": "Penicillin (Exanthem)",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Verwitwet, lebt im betreuten Wohnen. Kein Nikotin, kein Alkohol."
+    },
+    "sprache": [
+      {
+        "patient": "Ich muss zehnmal am Tag, ganz wässrig, und es riecht furchtbar.",
+        "fach": "Es bestehen 8–10 wässrige, übelriechende Diarrhöen täglich."
+      },
+      {
+        "patient": "Vorher habe ich wegen eines Zahns zehn Tage Antibiotika genommen.",
+        "fach": "Vorausgegangen war eine zehntägige Therapie mit Clindamycin."
+      },
+      {
+        "patient": "Ich nehme schon lange einen Magenschutz.",
+        "fach": "Es besteht eine Dauertherapie mit einem Protonenpumpenhemmer."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Clostridioides difficile",
+        "patient": "Darmbakterium, das nach Antibiotika Durchfall macht",
+        "uz": "Clostridioides difficile bakteriyasi",
+        "ru": "Clostridioides difficile",
+        "tr": "Clostridioides difficile",
+        "en": "Clostridioides difficile"
+      },
+      {
+        "de": "Antibiotika-assoziierte Diarrhö",
+        "patient": "Durchfall nach Antibiotikaeinnahme",
+        "uz": "antibiotik bilan bog‘liq diareya",
+        "ru": "антибиотик-ассоциированная диарея",
+        "tr": "antibiyotiğe bağlı ishal",
+        "en": "antibiotic-associated diarrhoea"
+      },
+      {
+        "de": "Fidaxomicin",
+        "patient": "Antibiotikum gegen C. difficile",
+        "uz": "fidaksomitsin",
+        "ru": "фидаксомицин",
+        "tr": "fidaksomisin",
+        "en": "fidaxomicin"
+      },
+      {
+        "de": "Kontaktisolation",
+        "patient": "Schutzmaßnahmen, damit sich keine Keime verbreiten",
+        "uz": "kontakt izolyatsiyasi",
+        "ru": "контактная изоляция",
+        "tr": "temas izolasyonu",
+        "en": "contact precautions"
+      },
+      {
+        "de": "Pseudomembranöse Kolitis",
+        "patient": "schwere Darmentzündung mit Belägen",
+        "uz": "psevdomembranoz kolit",
+        "ru": "псевдомембранозный колит",
+        "tr": "psödomembranöz kolit",
+        "en": "pseudomembranous colitis"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe seit vier Tagen ständig Durchfall, ganz wässrig, und Bauchkrämpfe.",
+      "answers": {
+        "beginn": "Vor vier Tagen, ein paar Tage nachdem ich mit dem Antibiotikum fertig war.",
+        "lokalisation": "Im ganzen Unterbauch.",
+        "charakter": "Krampfartig vor dem Stuhlgang, fünf von zehn. Ich muss zehnmal am Tag, ganz wässrig, und es riecht furchtbar.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Fieber bis 38,4. Blut habe ich nicht gesehen. Mir ist schwindelig beim Aufstehen.",
+        "vegetativ": "Ich trinke zu wenig und lasse weniger Wasser.",
+        "vorerkrankungen": "Sodbrennen, ein schwaches Herz und Zucker.",
+        "medikamente": "Omeprazol 40, Torasemid, Ramipril und Metformin. Vor zwei Wochen zehn Tage Clindamycin wegen einer Zahnwurzelentzündung.",
+        "allergien": "Penicillin, da bekomme ich Ausschlag.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich bin Witwe und wohne im betreuten Wohnen.",
+        "noxen": "Ich rauche nicht und trinke keinen Alkohol."
+      }
+    },
+    "verdachtsdiagnose": "Clostridioides-difficile-Infektion (Kolitis) nach Clindamycin-Therapie mit Exsikkose",
+    "diagnoseKeywords": ["difficile", "clostridi", "pseudomembranös"],
+    "differenzialdiagnosen": [
+      "Virale Gastroenteritis (Norovirus)",
+      "Ischämische Kolitis",
+      "Chronisch-entzündliche Darmerkrankung",
+      "Medikamentös bedingte Diarrhö (Metformin)"
+    ],
+    "untersuchungen": [
+      "C.-difficile-Toxin bzw. PCR im Stuhl",
+      "Labor (Leukozyten, CRP, Kreatinin, Albumin, Laktat)",
+      "Elektrolyte",
+      "Abdomensonographie oder CT (bei schwerem Verlauf)",
+      "Vitalparameter"
+    ]
+  },
+  {
+    "id": "c115",
+    "title": "Achalasie",
+    "category": "Gastroenterologie",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Yasemin Arslan",
+      "age": 41,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Schluckbeschwerden für feste Speisen und Flüssigkeiten"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit ca. 1 Jahr zunehmende Schluckbeschwerden für feste Speisen und Getränke gleichermaßen, Essen „bleibt hinter dem Brustbein stecken“, nächtliches Hochwürgen unverdauter Speisereste, Husten im Liegen, Gewichtsverlust 7 kg. Gelegentlich krampfartige Brustschmerzen.",
+      "vorerkrankungen": "Keine.",
+      "medikamente": "Pantoprazol 40 mg ohne Besserung.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Verheiratet, zwei Kinder, Friseurin. Nichtraucherin."
+    },
+    "sprache": [
+      {
+        "patient": "Das Essen bleibt hinter dem Brustbein stecken, auch Wasser.",
+        "fach": "Es besteht eine Dysphagie für feste und flüssige Speisen gleichermaßen."
+      },
+      {
+        "patient": "Nachts kommt unverdautes Essen wieder hoch.",
+        "fach": "Es besteht eine nächtliche Regurgitation unverdauter Nahrung."
+      },
+      {
+        "patient": "Ich muss nach jedem Bissen Wasser nachtrinken.",
+        "fach": "Die Patientin benötigt Nachtrinken, um die Nahrung zu befördern."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Achalasie",
+        "patient": "der untere Schließmuskel der Speiseröhre öffnet sich nicht richtig",
+        "uz": "axalaziya",
+        "ru": "ахалазия",
+        "tr": "akalazya",
+        "en": "achalasia"
+      },
+      {
+        "de": "Dysphagie",
+        "patient": "Schluckstörung",
+        "uz": "yutish buzilishi",
+        "ru": "дисфагия",
+        "tr": "disfaji",
+        "en": "dysphagia"
+      },
+      {
+        "de": "Regurgitation",
+        "patient": "Hochkommen von Speisen ohne Erbrechen",
+        "uz": "regurgitatsiya (ovqatning qaytib chiqishi)",
+        "ru": "регургитация",
+        "tr": "regürjitasyon",
+        "en": "regurgitation"
+      },
+      {
+        "de": "Manometrie",
+        "patient": "Druckmessung in der Speiseröhre",
+        "uz": "manometriya",
+        "ru": "манометрия",
+        "tr": "manometri",
+        "en": "manometry"
+      },
+      {
+        "de": "POEM / Myotomie",
+        "patient": "Durchtrennung des Schließmuskels",
+        "uz": "miotomiya (POEM)",
+        "ru": "миотомия (POEM)",
+        "tr": "miyotomi (POEM)",
+        "en": "myotomy (POEM)"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich kann seit Monaten immer schlechter schlucken, das Essen bleibt einfach stecken.",
+      "answers": {
+        "beginn": "Vor ungefähr einem Jahr, ganz langsam schlimmer geworden.",
+        "lokalisation": "Hinter dem Brustbein, in der Mitte.",
+        "charakter": "Das Essen bleibt stecken, auch Wasser. Ich muss nach jedem Bissen nachtrinken. Manchmal krampft es in der Brust.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Nachts kommt unverdautes Essen wieder hoch, und ich huste im Liegen. Sodbrennen habe ich eigentlich nicht.",
+        "vegetativ": "Ich habe sieben Kilo abgenommen, weil ich weniger esse.",
+        "vorerkrankungen": "Ich bin sonst gesund.",
+        "medikamente": "Der Hausarzt hat Pantoprazol verschrieben, das hilft aber nicht.",
+        "allergien": "Nein.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich bin verheiratet, habe zwei Kinder und bin Friseurin.",
+        "noxen": "Ich rauche nicht, Alkohol selten."
+      }
+    },
+    "verdachtsdiagnose": "Achalasie (paradoxe Dysphagie für feste und flüssige Speisen)",
+    "diagnoseKeywords": ["achalasie"],
+    "differenzialdiagnosen": [
+      "Ösophaguskarzinom (Pseudoachalasie)",
+      "Eosinophile Ösophagitis",
+      "Peptische Stenose",
+      "Diffuser Ösophagusspasmus"
+    ],
+    "untersuchungen": [
+      "Gastroskopie (Ausschluss Karzinom)",
+      "Ösophagus-Breischluck (Sektglasform)",
+      "Hochauflösende Manometrie",
+      "CT-Thorax (bei Malignomverdacht)"
+    ]
+  },
+  {
+    "id": "c116",
+    "title": "Magenkarzinom",
+    "category": "Gastroenterologie",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Siegfried Bauer",
+      "age": 68,
+      "gender": "männlich",
+      "hauptbeschwerde": "Appetitlosigkeit, Gewichtsverlust und Druck im Oberbauch"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 3 Monaten Druckgefühl im Oberbauch, frühes Sättigungsgefühl, Abneigung gegen Fleisch, Gewichtsverlust 9 kg, zunehmende Müdigkeit und Belastungsdyspnoe. Kein Erbrechen. Stuhl manchmal dunkel.",
+      "vorerkrankungen": "Chronische Gastritis (vor Jahren Helicobacter positiv, nie behandelt), arterielle Hypertonie.",
+      "medikamente": "Amlodipin 5 mg 1-0-0, Pantoprazol 20 mg bei Bedarf.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Bruder: Magenkrebs mit 62 Jahren.",
+      "sozialanamnese": "Verheiratet, Rentner. Raucher (40 py), viel geräuchertes und gesalzenes Essen."
+    },
+    "sprache": [
+      {
+        "patient": "Nach ein paar Bissen bin ich schon satt.",
+        "fach": "Es besteht ein frühes Sättigungsgefühl."
+      },
+      {
+        "patient": "Fleisch mag ich plötzlich gar nicht mehr.",
+        "fach": "Der Patient berichtet über eine Fleischaversion."
+      },
+      {
+        "patient": "Ich habe in drei Monaten neun Kilo abgenommen.",
+        "fach": "Es besteht ein ungewollter Gewichtsverlust von 9 kg in drei Monaten."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Magenkarzinom",
+        "patient": "Magenkrebs",
+        "uz": "oshqozon saratoni",
+        "ru": "рак желудка",
+        "tr": "mide kanseri",
+        "en": "gastric cancer"
+      },
+      {
+        "de": "Fleischaversion",
+        "patient": "Widerwille gegen Fleisch",
+        "uz": "go‘shtdan jirkanish",
+        "ru": "отвращение к мясу",
+        "tr": "et yemeye isteksizlik",
+        "en": "aversion to meat"
+      },
+      {
+        "de": "Virchow-Lymphknoten",
+        "patient": "tastbarer Lymphknoten über dem linken Schlüsselbein",
+        "uz": "Virxov limfa tuguni",
+        "ru": "лимфоузел Вирхова",
+        "tr": "Virchow lenf nodu",
+        "en": "Virchow’s node"
+      },
+      {
+        "de": "Staging",
+        "patient": "Untersuchungen, um die Ausbreitung des Tumors festzustellen",
+        "uz": "o‘sma tarqalishini aniqlash (staging)",
+        "ru": "стадирование",
+        "tr": "evreleme",
+        "en": "staging"
+      },
+      {
+        "de": "Perioperative Chemotherapie",
+        "patient": "Chemotherapie vor und nach der Operation",
+        "uz": "operatsiya oldi va keyingi kimyoterapiya",
+        "ru": "периоперационная химиотерапия",
+        "tr": "perioperatif kemoterapi",
+        "en": "perioperative chemotherapy"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe keinen Appetit mehr und nehme immer weiter ab. Oben im Bauch drückt es.",
+      "answers": {
+        "beginn": "Seit ungefähr drei Monaten.",
+        "lokalisation": "Oben in der Mitte, unter dem Brustbein.",
+        "charakter": "Ein dumpfer Druck, vier von zehn. Nach ein paar Bissen bin ich schon satt.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Fleisch mag ich plötzlich gar nicht mehr. Ich bin sehr müde und bekomme beim Treppensteigen schlecht Luft. Erbrochen habe ich nicht.",
+        "vegetativ": "Ich habe in drei Monaten neun Kilo abgenommen. Der Stuhl ist manchmal dunkel.",
+        "vorerkrankungen": "Vor Jahren hatte ich eine Magenschleimhautentzündung mit diesem Bakterium, Helicobacter. Behandelt wurde das nie. Und Bluthochdruck.",
+        "medikamente": "Amlodipin und manchmal Pantoprazol.",
+        "allergien": "Nein.",
+        "familie": "Mein Bruder hatte mit 62 Magenkrebs.",
+        "sozial": "Ich bin verheiratet und Rentner.",
+        "noxen": "Ich rauche seit vierzig Jahren. Ich esse gern Geräuchertes und Salziges."
+      }
+    },
+    "verdachtsdiagnose": "Verdacht auf Magenkarzinom mit Tumoranämie",
+    "diagnoseKeywords": ["magenkarzinom", "magenkrebs", "adenokarzinom"],
+    "differenzialdiagnosen": ["Ulcus ventriculi", "MALT-Lymphom", "Chronische Gastritis", "Pankreaskarzinom"],
+    "untersuchungen": [
+      "Gastroskopie mit Biopsien",
+      "Endosonographie (Tiefeninfiltration)",
+      "CT Thorax/Abdomen (Staging)",
+      "Blutbild, Ferritin",
+      "Diagnostische Laparoskopie"
+    ]
   }
 ]
