@@ -73,21 +73,21 @@ function LoginWall() {
   return (
     <div className="card mx-auto max-w-xl text-center">
       <p className="text-4xl" aria-hidden>
-        🔐
+        ✈️
       </p>
       <h2 className="mt-3 h-title">
         {tr("Avval kiring", "Сначала войдите", "Önce giriş yapın", "Sign in first")}
       </h2>
       <p className="mt-2 text-sm muted">
         {tr(
-          "Materiallar akkaunt bilan ochiladi. Telegram yoki Google orqali kiring — birinchi 24 soat bepul: barcha materiallar va 1 ta imtihon.",
-          "Материалы открываются с аккаунтом. Войдите через Telegram или Google — первые 24 часа бесплатно: все материалы и 1 экзамен.",
-          "Materyaller hesapla açılır. Telegram veya Google ile giriş yapın — ilk 24 saat ücretsiz: tüm materyaller ve 1 sınav.",
-          "Materials open with an account. Sign in with Telegram or Google — the first 24 hours are free: all materials and 1 exam.",
+          "Materiallar akkaunt bilan ochiladi. Telegram orqali kiring — birinchi 24 soat bepul: barcha materiallar va 1 ta imtihon.",
+          "Материалы открываются с аккаунтом. Войдите через Telegram — первые 24 часа бесплатно: все материалы и 1 экзамен.",
+          "Materyaller hesapla açılır. Telegram ile giriş yapın — ilk 24 saat ücretsiz: tüm materyaller ve 1 sınav.",
+          "Materials open with an account. Sign in with Telegram — the first 24 hours are free: all materials and 1 exam.",
         )}
       </p>
       <Link href="/login" className="btn-primary mt-5 inline-flex">
-        {tr("Kirish", "Войти", "Giriş yap", "Sign in")}
+        {tr("Telegram orqali kirish", "Войти через Telegram", "Telegram ile giriş", "Sign in with Telegram")}
       </Link>
     </div>
   );
@@ -119,10 +119,10 @@ export function TrialBar() {
         className="block bg-teal-50 py-1.5 text-center text-xs font-medium text-teal-900 hover:bg-teal-100 dark:bg-teal-950/40 dark:text-teal-200"
       >
         {tr(
-          "🎁 Telegram yoki Google orqali kiring — 24 soat bepul →",
-          "🎁 Войдите через Telegram или Google — 24 часа бесплатно →",
-          "🎁 Telegram veya Google ile giriş yapın — 24 saat ücretsiz →",
-          "🎁 Sign in with Telegram or Google — 24 hours free →",
+          "🎁 Telegram orqali kiring — 24 soat bepul →",
+          "🎁 Войдите через Telegram — 24 часа бесплатно →",
+          "🎁 Telegram ile giriş yapın — 24 saat ücretsiz →",
+          "🎁 Sign in with Telegram — 24 hours free →",
         )}
       </Link>
     );

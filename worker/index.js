@@ -4,7 +4,6 @@
 // Sozlamalar (Cloudflare):
 //   GEMINI_API_KEY     — secret (dashboard: Settings → Variables and Secrets)
 //   TELEGRAM_BOT_TOKEN — secret, @BotFather bergan token (Telegram kirish imzosini tekshirish uchun)
-//   GOOGLE_CLIENT_ID   — [vars], Google Cloud OAuth "Web application" Client ID (maxfiy emas)
 //   GEMINI_MODELS      — [vars], vergul bilan: birinchisi asosiy, qolganlari zaxira
 //   ALLOWED_ORIGINS    — [vars], vergul bilan ajratilgan saytlar ro'yxati
 //   ADMIN_USERNAMES    — [vars], admin Telegram username'lari (vergul bilan, @ siz)
@@ -68,50 +67,6 @@ async function verifyTelegram(data, botToken) {
   };
 }
 
-// Google Sign-In: ID token (JWT, RS256) imzosini Google kalitlari bilan tekshiramiz
-// https://developers.google.com/identity/gsi/web/guides/verify-google-id-token
-let googleKeys = null;
-async function googleKey(kid, env) {
-  if (!googleKeys || googleKeys.until < Date.now() || !googleKeys.keys[kid]) {
-    let res = await fetch(env.GOOGLE_CERTS_URL || "https://www.googleapis.com/oauth2/v3/certs"),
-      { keys } = await res.json(),
-      map = {};
-    for (let k of keys)
-      map[k.kid] = await crypto.subtle.importKey("jwk", k, { name: "RSASSA-PKCS1-v1_5", hash: "SHA-256" }, false, [
-        "verify",
-      ]);
-    googleKeys = { keys: map, until: Date.now() + 3600e3 };
-  }
-  return googleKeys.keys[kid];
-}
-
-const fromB64url = (s) => Uint8Array.from(atob(s.replace(/-/g, "+").replace(/_/g, "/")), (c) => c.charCodeAt(0));
-
-async function verifyGoogle(credential, env) {
-  if (!env.GOOGLE_CLIENT_ID || typeof credential !== "string") return null;
-  let parts = credential.split(".");
-  if (parts.length !== 3) return null;
-  try {
-    let header = JSON.parse(new TextDecoder().decode(fromB64url(parts[0]))),
-      p = JSON.parse(new TextDecoder().decode(fromB64url(parts[1])));
-    if (header.alg !== "RS256") return null;
-    let key = await googleKey(header.kid, env);
-    if (!key) return null;
-    let valid = await crypto.subtle.verify("RSASSA-PKCS1-v1_5", key, fromB64url(parts[2]), enc.encode(`${parts[0]}.${parts[1]}`));
-    if (!valid) return null;
-    if (!["accounts.google.com", "https://accounts.google.com"].includes(p.iss)) return null;
-    if (p.aud !== env.GOOGLE_CLIENT_ID || !(p.exp * 1000 > Date.now()) || !p.sub || p.email_verified !== true) return null;
-    return {
-      sub: String(p.sub),
-      email: String(p.email ?? ""),
-      name: String(p.name || p.email || "Doctor").slice(0, 80),
-      photo: p.picture ? String(p.picture) : null,
-    };
-  } catch {
-    return null;
-  }
-}
-
 async function signSession(uid, keyB64) {
   let payload = b64url(enc.encode(JSON.stringify({ uid, exp: Date.now() + SESSION_DAYS * 864e5 }))),
     key = Uint8Array.from(atob(keyB64), (c) => c.charCodeAt(0));
@@ -152,7 +107,7 @@ function rights(u, env) {
 function account(u, env) {
   let r = rights(u, env);
   return {
-    user: { id: u.id, name: u.name, username: u.username, photo: u.photo, provider: u.provider ?? "telegram", email: u.email ?? null },
+    user: { id: u.id, name: u.name, username: u.username, photo: u.photo },
     isAdmin: r.isAdmin,
     trialEnd: new Date(u.trial_end).toISOString(),
     plan: r.planActive
@@ -261,13 +216,6 @@ export default {
       let tg = await verifyTelegram(body, env.TELEGRAM_BOT_TOKEN);
       if (!tg || !Number.isSafeInteger(tg.id)) return reply(401, { error: "bad_signature" });
       let u = await store.upsertUser(tg, TRIAL_HOURS * 36e5);
-      return reply(200, { token: await signSession(u.id, keyB64), account: account(u, env) });
-    }
-
-    if (path === "/auth/google" && req.method === "POST") {
-      let g = await verifyGoogle(body?.credential, env);
-      if (!g) return reply(401, { error: "bad_signature" });
-      let u = await store.upsertGoogleUser(g, TRIAL_HOURS * 36e5);
       return reply(200, { token: await signSession(u.id, keyB64), account: account(u, env) });
     }
 

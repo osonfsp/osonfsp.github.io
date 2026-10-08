@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { useRouter } from "../lib/router";
 import { useApp } from "../state/AppContext";
 import { LANG, tr } from "../lib/i18n";
-import { GOOGLE_CLIENT_ID, TG_BOT, loginWithGoogle, loginWithTelegram } from "../lib/account";
+import { TG_BOT, loginWithTelegram } from "../lib/account";
 
 // Telegram Login Widget: https://core.telegram.org/widgets/login
 // Telegram foydalanuvchi ma’lumotini imzolab beradi, imzoni server tekshiradi (worker/index.js).
@@ -29,42 +29,6 @@ function TelegramButton({ onAuth }) {
   return <div ref={ref} className="flex min-h-[48px] justify-center" />;
 }
 
-// Google Sign-In (Google Identity Services): https://developers.google.com/identity/gsi/web
-// Google ID token beradi, imzosini server tekshiradi (worker/index.js).
-function GoogleButton({ onCredential }) {
-  const ref = useRef(null);
-  useEffect(() => {
-    let cancelled = false;
-    const render = () => {
-      if (cancelled || !window.google?.accounts?.id || !ref.current) return;
-      window.google.accounts.id.initialize({
-        client_id: GOOGLE_CLIENT_ID,
-        callback: (res) => res.credential && onCredential(res.credential),
-      });
-      window.google.accounts.id.renderButton(ref.current, {
-        theme: "outline",
-        size: "large",
-        shape: "pill",
-        text: "signin_with",
-        width: 260,
-        locale: LANG === "uz" ? "en" : LANG,
-      });
-    };
-    if (window.google?.accounts?.id) render();
-    else {
-      const s = document.createElement("script");
-      s.src = "https://accounts.google.com/gsi/client";
-      s.async = true;
-      s.onload = render;
-      document.head.appendChild(s);
-    }
-    return () => {
-      cancelled = true;
-    };
-  }, []);
-  return <div ref={ref} className="flex min-h-[44px] justify-center" />;
-}
-
 export function LoginPage() {
   let { user, ready } = useApp(),
     router = useRouter(),
@@ -75,11 +39,11 @@ export function LoginPage() {
     if (ready && user) router.replace("/dashboard");
   }, [ready, user, router]);
 
-  async function finish(login) {
+  async function onAuth(tgUser) {
     setBusy(true);
     setError("");
     try {
-      await login();
+      await loginWithTelegram(tgUser);
       window.location.hash = "#/dashboard";
       window.location.reload();
     } catch {
@@ -99,32 +63,26 @@ export function LoginPage() {
     <div className="page flex justify-center">
       <div className="card w-full max-w-md text-center">
         <p className="text-4xl" aria-hidden>
-          🔐
+          ✈️
         </p>
-        <h1 className="mt-2 text-2xl font-bold">{tr("Kirish", "Вход", "Giriş", "Sign in")}</h1>
+        <h1 className="mt-2 text-2xl font-bold">
+          {tr("Telegram orqali kirish", "Вход через Telegram", "Telegram ile giriş", "Sign in with Telegram")}
+        </h1>
         <p className="mt-2 text-sm muted">
           {tr(
-            "Parol kerak emas — Telegram yoki Google akkauntingiz orqali kiring.",
-            "Пароль не нужен — войдите через Telegram или Google.",
-            "Şifre gerekmez — Telegram veya Google hesabınızla giriş yapın.",
-            "No password needed — sign in with Telegram or Google.",
+            "Parol kerak emas. Tugmani bosing, telefon raqamingizni kiriting va Telegram’ga kelgan xabarni tasdiqlang.",
+            "Пароль не нужен. Нажмите кнопку, введите номер телефона и подтвердите сообщение в Telegram.",
+            "Şifre gerekmez. Düğmeye basın, telefon numaranızı girin ve Telegram’a gelen mesajı onaylayın.",
+            "No password needed. Press the button, enter your phone number and confirm the message in Telegram.",
           )}
         </p>
         <div className="mt-6">
           {busy ? (
             <p className="text-sm muted">{tr("Kirilmoqda…", "Входим…", "Giriş yapılıyor…", "Signing in…")}</p>
+          ) : TG_BOT ? (
+            <TelegramButton onAuth={onAuth} />
           ) : (
-            <div className="space-y-3">
-              {TG_BOT && <TelegramButton onAuth={(u) => finish(() => loginWithTelegram(u))} />}
-              {TG_BOT && GOOGLE_CLIENT_ID && (
-                <div className="flex items-center gap-3 text-xs muted">
-                  <span className="h-px flex-1 bg-slate-200 dark:bg-slate-700" />
-                  {tr("yoki", "или", "veya", "or")}
-                  <span className="h-px flex-1 bg-slate-200 dark:bg-slate-700" />
-                </div>
-              )}
-              {GOOGLE_CLIENT_ID && <GoogleButton onCredential={(c) => finish(() => loginWithGoogle(c))} />}
-            </div>
+            <p className="text-sm text-rose-600">Telegram bot is not configured.</p>
           )}
         </div>
         {error && (

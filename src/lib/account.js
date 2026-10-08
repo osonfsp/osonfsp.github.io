@@ -2,12 +2,11 @@ import { useSyncExternalStore } from "react";
 import { loadBundledContent, setContent } from "../data/content";
 import { storage } from "./storage";
 
-// Akkaunt: Telegram yoki Google orqali kirish, sinov/tarif va materiallar — hammasi serverda (worker/index.js).
+// Akkaunt: Telegram orqali kirish, sinov/tarif va materiallar — hammasi serverda (worker/index.js).
 // Brauzerda faqat sessiya tokeni va tezroq ochilishi uchun keshlangan nusxa turadi; huquqlarni
 // har safar server tekshiradi, shuning uchun localStorage'ni o‘zgartirish hech narsa bermaydi.
 export const API_URL = import.meta.env.VITE_API_URL || "";
 export const TG_BOT = import.meta.env.VITE_TG_BOT || "";
-export const GOOGLE_CLIENT_ID = import.meta.env.VITE_GOOGLE_CLIENT_ID || "";
 export const ARTIFACT = import.meta.env.MODE === "artifact";
 
 const TOKEN_KEY = "fsp.token",
@@ -146,13 +145,8 @@ export async function refreshAccount() {
 }
 
 // Telegram Login Widget bergan ma’lumot → server imzoni tekshiradi → sessiya tokeni
-export const loginWithTelegram = (tgUser) => signIn("/auth/telegram", tgUser);
-
-// Google Sign-In bergan ID token (JWT) → server Google imzosini tekshiradi → sessiya tokeni
-export const loginWithGoogle = (credential) => signIn("/auth/google", { credential });
-
-async function signIn(path, body) {
-  let { token, account } = await api(path, { method: "POST", body });
+export async function loginWithTelegram(tgUser) {
+  let { token, account } = await api("/auth/telegram", { method: "POST", body: tgUser });
   storage.set(TOKEN_KEY, token);
   storage.set(ACCOUNT_KEY, account);
   storage.remove(CONTENT_KEY);

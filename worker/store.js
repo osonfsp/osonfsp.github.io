@@ -25,60 +25,14 @@ CREATE TABLE IF NOT EXISTS ai_usage (
 CREATE TABLE IF NOT EXISTS meta (k TEXT PRIMARY KEY, v TEXT NOT NULL);
 `;
 
-// Keyin qo'shilgan ustunlar (eski bazada yo'q bo'lsa qo'shiladi)
-const MIGRATIONS = [
-  "ALTER TABLE users ADD COLUMN provider TEXT NOT NULL DEFAULT 'telegram'",
-  "ALTER TABLE users ADD COLUMN google_sub TEXT",
-  "ALTER TABLE users ADD COLUMN email TEXT",
-  "CREATE UNIQUE INDEX IF NOT EXISTS users_google_sub ON users (google_sub)",
-];
-
-// Google foydalanuvchilari uchun ichki ID: Telegram ID'laridan (< 1e13) ancha katta oraliq
-const GOOGLE_ID_BASE = 9e15;
-
 const USER_COLS =
-  "id, username, name, photo, created_at, trial_end, plan_id, plan_until, exams_used, last_seen, provider, email";
+  "id, username, name, photo, created_at, trial_end, plan_id, plan_until, exams_used, last_seen";
 
 export class Store extends DurableObject {
   constructor(ctx, env) {
     super(ctx, env);
     this.sql = ctx.storage.sql;
     this.sql.exec(SCHEMA);
-    for (let m of MIGRATIONS)
-      try {
-        this.sql.exec(m);
-      } catch {}
-  }
-
-  // Google orqali kirish: google_sub bo'yicha topamiz yoki yangi foydalanuvchi (sinov shu paytdan)
-  upsertGoogleUser({ sub, email, name, photo }, trialMs) {
-    let now = Date.now(),
-      row = this.one("SELECT id FROM users WHERE google_sub = ?", sub);
-    if (row) {
-      this.sql.exec(
-        "UPDATE users SET name = ?, photo = ?, email = ?, last_seen = ? WHERE id = ?",
-        name,
-        photo,
-        email,
-        now,
-        row.id,
-      );
-      return this.getUser(row.id);
-    }
-    let id = Math.max(GOOGLE_ID_BASE, this.one("SELECT MAX(id) AS m FROM users")?.m ?? 0) + 1;
-    this.sql.exec(
-      `INSERT INTO users (id, username, name, photo, created_at, trial_end, last_seen, provider, google_sub, email)
-       VALUES (?, NULL, ?, ?, ?, ?, ?, 'google', ?, ?)`,
-      id,
-      name,
-      photo,
-      now,
-      now + trialMs,
-      now,
-      sub,
-      email,
-    );
-    return this.getUser(id);
   }
 
   one(query, ...args) {

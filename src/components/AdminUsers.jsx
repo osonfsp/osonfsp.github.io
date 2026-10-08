@@ -64,8 +64,7 @@ export function AdminUsers() {
         !s ||
         String(u.id).includes(s) ||
         u.name.toLowerCase().includes(s) ||
-        (u.username ?? "").toLowerCase().includes(s) ||
-        (u.email ?? "").toLowerCase().includes(s),
+        (u.username ?? "").toLowerCase().includes(s),
     );
   }, [users, q]);
 
@@ -115,7 +114,7 @@ export function AdminUsers() {
           <input
             className="input min-w-0 flex-1"
             placeholder={tr(
-              "Qidirish: ism, @username, email yoki ID",
+              "Qidirish: ism, @username yoki ID",
               "Поиск: имя, @username или ID",
               "Ara: ad, @kullanıcı adı veya ID",
               "Search: name, @username or ID",
@@ -136,10 +135,7 @@ export function AdminUsers() {
             <div key={u.id} className="card flex flex-col gap-3 p-3 sm:flex-row sm:items-center">
               <div className="min-w-0 flex-1">
                 <p className="truncate font-semibold">
-                  <span className="mr-1 text-xs" title={u.provider === "google" ? "Google" : "Telegram"}>
-                    {u.provider === "google" ? "🟢" : "✈️"}
-                  </span>
-                  {u.name} {u.email && <span className="font-normal muted">{u.email} </span>}
+                  {u.name}{" "}
                   {u.username && (
                     <a
                       href={`https://t.me/${u.username}`}

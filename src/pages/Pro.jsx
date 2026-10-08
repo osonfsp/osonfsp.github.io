@@ -217,14 +217,19 @@ export function ProPage() {
             <>
               <p className="mt-1">
                 {tr(
-                  "Tarif akkauntingizga yoqiladi — avval Telegram yoki Google orqali kiring.",
-                  "Тариф подключается к аккаунту — сначала войдите через Telegram или Google.",
-                  "Paket hesabınıza tanımlanır — önce Telegram veya Google ile giriş yapın.",
-                  "The plan is added to your account — sign in with Telegram or Google first.",
+                  "Tarif akkauntingizga yoqiladi — avval Telegram orqali kiring.",
+                  "Тариф подключается к аккаунту — сначала войдите через Telegram.",
+                  "Paket hesabınıza tanımlanır — önce Telegram ile giriş yapın.",
+                  "The plan is added to your account — sign in with Telegram first.",
                 )}
               </p>
               <Link href="/login" className="btn-primary mt-3 inline-flex">
-                {tr("Kirish", "Войти", "Giriş yap", "Sign in")}
+                {tr(
+                  "Telegram orqali kirish",
+                  "Войти через Telegram",
+                  "Telegram ile giriş",
+                  "Sign in with Telegram",
+                )}
               </Link>
             </>
           ) : (
