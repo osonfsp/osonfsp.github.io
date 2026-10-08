@@ -13856,5 +13856,1146 @@
       "cMRT mit Darstellung des Hirnstamms (Gefäß-Nerv-Kontakt, MS)",
       "Laborkontrollen vor Carbamazepin (Natrium, Leberwerte, Blutbild)"
     ]
+  },
+  {
+    "id": "c127",
+    "title": "Chronische Niereninsuffizienz – Erstdiagnose",
+    "category": "Nephrologie",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Klaus Dieter Schmidt",
+      "age": 63,
+      "gender": "männlich",
+      "hauptbeschwerde": "Müdigkeit, Juckreiz und nächtliches Wasserlassen"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit Monaten zunehmende Müdigkeit, Leistungsminderung, Juckreiz am ganzen Körper, Appetitlosigkeit, Nykturie (3×), Wadenkrämpfe. Hausarzt fand Kreatinin 3,8 mg/dl.",
+      "vorerkrankungen": "Diabetes mellitus Typ 2 seit 18 Jahren (schlecht eingestellt), arterielle Hypertonie, diabetische Retinopathie.",
+      "medikamente": "Metformin 1000 mg 1-0-1, Glimepirid 2 mg 1-0-0, Amlodipin 10 mg 1-0-0. Ibuprofen häufig wegen Knieschmerzen.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Mutter: Dialysepatientin.",
+      "sozialanamnese": "Verheiratet, Rentner (früher Lkw-Fahrer). Ex-Raucher. Salzreiche Ernährung."
+    },
+    "sprache": [
+      {
+        "patient": "Die Haut juckt überall, besonders nachts.",
+        "fach": "Es besteht ein generalisierter Pruritus."
+      },
+      {
+        "patient": "Ich muss nachts dreimal zur Toilette.",
+        "fach": "Es besteht eine Nykturie."
+      },
+      {
+        "patient": "Gegen die Knieschmerzen nehme ich oft Ibuprofen.",
+        "fach": "Es besteht eine regelmäßige NSAR-Einnahme."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Chronische Niereninsuffizienz",
+        "patient": "dauerhafte Nierenschwäche",
+        "uz": "surunkali buyrak yetishmovchiligi",
+        "ru": "хроническая почечная недостаточность",
+        "tr": "kronik böbrek yetmezliği",
+        "en": "chronic kidney disease"
+      },
+      {
+        "de": "Diabetische Nephropathie",
+        "patient": "Nierenschaden durch Zucker",
+        "uz": "diabetik nefropatiya",
+        "ru": "диабетическая нефропатия",
+        "tr": "diyabetik nefropati",
+        "en": "diabetic nephropathy"
+      },
+      {
+        "de": "Albuminurie",
+        "patient": "Eiweiß im Urin",
+        "uz": "albuminuriya",
+        "ru": "альбуминурия",
+        "tr": "albüminüri",
+        "en": "albuminuria"
+      },
+      {
+        "de": "eGFR",
+        "patient": "geschätzte Filterleistung der Nieren",
+        "uz": "koptokchalar filtratsiya tezligi",
+        "ru": "СКФ",
+        "tr": "eGFR (tahmini filtrasyon hızı)",
+        "en": "estimated GFR"
+      },
+      {
+        "de": "Renale Anämie",
+        "patient": "Blutarmut wegen kranker Nieren",
+        "uz": "buyrak kamqonligi",
+        "ru": "почечная анемия",
+        "tr": "renal anemi",
+        "en": "renal anaemia"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich bin seit Monaten ständig müde, und der Hausarzt sagt, meine Nieren sind schlecht.",
+      "answers": {
+        "beginn": "Seit einigen Monaten, schleichend.",
+        "lokalisation": "Schmerzen habe ich keine, nur die Knie tun manchmal weh.",
+        "charakter": "Ich bin so schlapp, schaffe nichts mehr. Die Haut juckt überall, besonders nachts.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Ich habe keinen Appetit, mir ist morgens manchmal übel. Nachts habe ich Wadenkrämpfe.",
+        "vegetativ": "Ich muss nachts dreimal zur Toilette. Der Urin schäumt etwas.",
+        "vorerkrankungen": "Zucker seit achtzehn Jahren, nicht gut eingestellt. Hoher Blutdruck. Die Augen sind auch vom Zucker angegriffen.",
+        "medikamente": "Metformin 1000 zweimal, Glimepirid, Amlodipin 10. Und für die Knie oft Ibuprofen.",
+        "allergien": "Nein.",
+        "familie": "Meine Mutter war an der Dialyse.",
+        "sozial": "Ich bin verheiratet und Rentner, war Lkw-Fahrer. Ich esse gern salzig.",
+        "noxen": "Früher habe ich geraucht, seit zehn Jahren nicht mehr."
+      }
+    },
+    "verdachtsdiagnose": "Chronische Niereninsuffizienz Stadium 4 bei diabetischer und hypertensiver Nephropathie, verstärkt durch NSAR",
+    "diagnoseKeywords": ["niereninsuffizienz", "nephropathie", "nierenerkrankung", "ckd"],
+    "differenzialdiagnosen": [
+      "Akutes Nierenversagen (NSAR)",
+      "Postrenales Nierenversagen bei Prostatahyperplasie",
+      "Glomerulonephritis",
+      "Nierenarterienstenose"
+    ],
+    "untersuchungen": [
+      "Kreatinin, eGFR, Harnstoff, Elektrolyte",
+      "Albumin/Kreatinin-Quotient im Urin",
+      "Sonographie der Nieren",
+      "Blutbild, Ferritin",
+      "Calcium, Phosphat, Parathormon, Vitamin D",
+      "Blutgasanalyse"
+    ]
+  },
+  {
+    "id": "c128",
+    "title": "Rhabdomyolyse mit akutem Nierenversagen",
+    "category": "Nephrologie",
+    "difficulty": "schwer",
+    "patient": {
+      "name": "Dennis Wagner",
+      "age": 24,
+      "gender": "männlich",
+      "hauptbeschwerde": "Starke Muskelschmerzen und cola-farbener Urin nach dem Training"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Vor 2 Tagen erstes „Crossfit“-Training nach langer Pause bei Hitze, kaum getrunken. Seitdem extreme Muskelschmerzen und Schwellung beider Oberschenkel und Arme, Schwäche, seit gestern dunkelbrauner, cola-farbener Urin, wenig Urin.",
+      "vorerkrankungen": "Keine.",
+      "medikamente": "Proteinpulver, Kreatin-Supplement. Ibuprofen 600 mg 3× täglich seit 2 Tagen.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Ledig, Student. Am Wochenende Alkohol. Keine Drogen (Kokain verneint)."
+    },
+    "sprache": [
+      {
+        "patient": "Mein Urin sieht aus wie Cola.",
+        "fach": "Es besteht eine dunkelbraune Urinverfärbung (Myoglobinurie)."
+      },
+      {
+        "patient": "Ich habe so starke Muskelschmerzen, dass ich kaum laufen kann.",
+        "fach": "Es bestehen ausgeprägte Myalgien mit Schwäche."
+      },
+      {
+        "patient": "Beim Training war es heiß und ich habe kaum getrunken.",
+        "fach": "Die Belastung erfolgte bei Hitze mit unzureichender Flüssigkeitszufuhr."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Rhabdomyolyse",
+        "patient": "Zerfall von Muskelgewebe",
+        "uz": "rabdomioliz (mushak to‘qimasining parchalanishi)",
+        "ru": "рабдомиолиз",
+        "tr": "rabdomiyoliz",
+        "en": "rhabdomyolysis"
+      },
+      {
+        "de": "Myoglobinurie",
+        "patient": "Muskelfarbstoff im Urin",
+        "uz": "mioglobinuriya",
+        "ru": "миоглобинурия",
+        "tr": "miyoglobinüri",
+        "en": "myoglobinuria"
+      },
+      {
+        "de": "Kreatinkinase",
+        "patient": "Muskelenzym im Blut",
+        "uz": "kreatinkinaza (KK)",
+        "ru": "креатинкиназа",
+        "tr": "kreatin kinaz",
+        "en": "creatine kinase"
+      },
+      {
+        "de": "Kompartmentsyndrom",
+        "patient": "gefährlich hoher Druck in der Muskulatur",
+        "uz": "kompartment sindromi",
+        "ru": "компартмент-синдром",
+        "tr": "kompartman sendromu",
+        "en": "compartment syndrome"
+      },
+      {
+        "de": "Forcierte Diurese",
+        "patient": "viel Flüssigkeit, damit die Nieren gespült werden",
+        "uz": "majburiy diurez",
+        "ru": "форсированный диурез",
+        "tr": "zorlu diürez",
+        "en": "forced diuresis"
+      }
+    ],
+    "simulation": {
+      "opening": "Seit dem Training vor zwei Tagen habe ich furchtbare Muskelschmerzen, und mein Urin sieht aus wie Cola.",
+      "answers": {
+        "beginn": "Vor zwei Tagen nach dem ersten Crossfit-Training seit einem Jahr.",
+        "lokalisation": "Beide Oberschenkel und die Oberarme.",
+        "charakter": "Die Muskeln sind hart, geschwollen und tun extrem weh, acht von zehn. Ich kann kaum laufen.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Ich bin ganz schwach. Seit gestern ist der Urin dunkelbraun wie Cola, und ich muss kaum Wasser lassen. Mir ist übel.",
+        "vegetativ": "Beim Training war es heiß und ich habe kaum getrunken.",
+        "vorerkrankungen": "Ich bin gesund.",
+        "medikamente": "Proteinpulver und Kreatin. Gegen die Schmerzen dreimal am Tag Ibuprofen 600.",
+        "allergien": "Nein.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich bin Student.",
+        "noxen": "Am Wochenende trinke ich Alkohol. Drogen nehme ich nicht, auch kein Kokain."
+      }
+    },
+    "verdachtsdiagnose": "Belastungsinduzierte Rhabdomyolyse mit akutem Nierenversagen (Myoglobinurie), verstärkt durch Exsikkose und NSAR",
+    "diagnoseKeywords": ["rhabdomyolyse", "myoglobin"],
+    "differenzialdiagnosen": [
+      "Hämaturie bei Glomerulonephritis",
+      "Hämolyse",
+      "Kompartmentsyndrom",
+      "Medikamentös-toxische Myopathie"
+    ],
+    "untersuchungen": [
+      "CK und Myoglobin",
+      "Kreatinin, Kalium, Calcium, Phosphat",
+      "Urinstatus (Teststreifen Blut positiv ohne Erythrozyten)",
+      "Blutgasanalyse",
+      "EKG (Hyperkaliämie)",
+      "Kompartmentdruck bei Verdacht"
+    ],
+    "oberarzt": {
+      "therapie": [
+        "Volumentherapie (Kristalloide, Ziel-Urin 200–300 ml/h)",
+        "NSAR und Kreatin absetzen",
+        "Kaliumkontrolle und -senkung",
+        "Bilanzierung",
+        "Dialyse bei Indikation",
+        "Fasziotomie bei Kompartmentsyndrom"
+      ],
+      "komplikationen": [
+        "Akutes Nierenversagen",
+        "Hyperkaliämie (Herzrhythmusstörungen)",
+        "Kompartmentsyndrom",
+        "Disseminierte intravasale Gerinnung",
+        "Hypokalzämie"
+      ]
+    }
+  },
+  {
+    "id": "c129",
+    "title": "Postinfektiöse Glomerulonephritis",
+    "category": "Nephrologie",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Leon Fischer",
+      "age": 19,
+      "gender": "männlich",
+      "hauptbeschwerde": "Blutiger Urin und geschwollene Augenlider"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 3 Tagen cola-farbener Urin, morgens geschwollene Augenlider, weniger Urin, Kopfschmerzen. Vor 2 Wochen eitrige Mandelentzündung, nicht behandelt.",
+      "vorerkrankungen": "Keine.",
+      "medikamente": "Keine.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Ledig, Auszubildender (Elektriker). Nichtraucher."
+    },
+    "sprache": [
+      {
+        "patient": "Vor zwei Wochen hatte ich eine eitrige Mandelentzündung.",
+        "fach": "Vor zwei Wochen bestand eine Tonsillitis."
+      },
+      {
+        "patient": "Morgens sind meine Augen ganz zugeschwollen.",
+        "fach": "Morgens bestehen ausgeprägte Lidödeme."
+      },
+      {
+        "patient": "Ich muss viel weniger pinkeln als sonst.",
+        "fach": "Es besteht eine Oligurie."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Glomerulonephritis",
+        "patient": "Entzündung der Nierenkörperchen",
+        "uz": "glomerulonefrit",
+        "ru": "гломерулонефрит",
+        "tr": "glomerülonefrit",
+        "en": "glomerulonephritis"
+      },
+      {
+        "de": "Nephritisches Syndrom",
+        "patient": "Blut im Urin, Bluthochdruck und Wasseransammlungen",
+        "uz": "nefritik sindrom",
+        "ru": "нефритический синдром",
+        "tr": "nefritik sendrom",
+        "en": "nephritic syndrome"
+      },
+      {
+        "de": "Streptokokken",
+        "patient": "Bakterien, z. B. Erreger der Mandelentzündung",
+        "uz": "streptokokklar",
+        "ru": "стрептококки",
+        "tr": "streptokoklar",
+        "en": "streptococci"
+      },
+      {
+        "de": "Komplement C3",
+        "patient": "Abwehreiweiß im Blut",
+        "uz": "komplement C3",
+        "ru": "комплемент C3",
+        "tr": "kompleman C3",
+        "en": "complement C3"
+      },
+      {
+        "de": "Erythrozytenzylinder",
+        "patient": "Abdrücke roter Blutkörperchen im Urin",
+        "uz": "eritrotsitar silindrlar",
+        "ru": "эритроцитарные цилиндры",
+        "tr": "eritrosit silendirleri",
+        "en": "red cell casts"
+      }
+    ],
+    "simulation": {
+      "opening": "Mein Urin ist seit drei Tagen ganz dunkel, wie Cola, und meine Augen sind morgens zugeschwollen.",
+      "answers": {
+        "beginn": "Vor drei Tagen.",
+        "lokalisation": "Schmerzen habe ich kaum, nur Kopfschmerzen.",
+        "charakter": "Der Urin ist dunkelbraun wie Cola. Die Augenlider sind morgens ganz dick.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Kopfschmerzen, vier von zehn. Ich muss viel weniger pinkeln. Fieber habe ich jetzt nicht.",
+        "vegetativ": "Die Schuhe sind abends etwas eng.",
+        "vorerkrankungen": "Vor zwei Wochen hatte ich eine eitrige Mandelentzündung, ich war aber nicht beim Arzt.",
+        "medikamente": "Keine.",
+        "allergien": "Nein.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich mache eine Ausbildung zum Elektriker.",
+        "noxen": "Ich rauche nicht. Alkohol selten."
+      }
+    },
+    "verdachtsdiagnose": "Akute Poststreptokokken-Glomerulonephritis (nephritisches Syndrom)",
+    "diagnoseKeywords": ["glomerulonephritis", "nephritisch"],
+    "differenzialdiagnosen": [
+      "IgA-Nephropathie",
+      "Rhabdomyolyse",
+      "ANCA-assoziierte Vaskulitis",
+      "Urolithiasis"
+    ],
+    "untersuchungen": [
+      "Urinstatus und Urinsediment (dysmorphe Erythrozyten, Zylinder)",
+      "Kreatinin, Elektrolyte",
+      "Komplement C3/C4",
+      "Antistreptolysin-O-Titer",
+      "Blutdruckmessung",
+      "Sonographie der Nieren"
+    ]
+  },
+  {
+    "id": "c130",
+    "title": "Autosomal-dominante polyzystische Nierenerkrankung",
+    "category": "Nephrologie",
+    "difficulty": "leicht",
+    "patient": {
+      "name": "Corinna Weber",
+      "age": 38,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Flankenschmerzen und hoher Blutdruck"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit Monaten dumpfe Schmerzen in beiden Flanken, zunehmender Bauchumfang, einmal rötlicher Urin. Beim Betriebsarzt Blutdruck 165/100 mmHg.",
+      "vorerkrankungen": "Rezidivierende Harnwegsinfekte.",
+      "medikamente": "Keine.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Vater: Dialyse mit 52 Jahren, „Zystennieren“; Großvater mit 45 an Hirnblutung verstorben.",
+      "sozialanamnese": "Verheiratet, zwei Kinder (8 und 11 Jahre), Bürokauffrau. Nichtraucherin."
+    },
+    "sprache": [
+      {
+        "patient": "Mein Vater hatte Zystennieren und musste an die Dialyse.",
+        "fach": "In der Familienanamnese besteht eine dialysepflichtige polyzystische Nierenerkrankung des Vaters."
+      },
+      {
+        "patient": "Mein Bauch ist dicker geworden, obwohl ich nicht zugenommen habe.",
+        "fach": "Es besteht eine Zunahme des Bauchumfangs."
+      },
+      {
+        "patient": "Mein Opa ist an einer Hirnblutung gestorben.",
+        "fach": "Der Großvater verstarb an einer intrakraniellen Blutung."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Zystennieren",
+        "patient": "Nieren mit vielen flüssigkeitsgefüllten Blasen",
+        "uz": "polikistoz buyraklar",
+        "ru": "поликистоз почек",
+        "tr": "polikistik böbrek",
+        "en": "polycystic kidneys"
+      },
+      {
+        "de": "Autosomal-dominant",
+        "patient": "Erbgang: jedes Kind hat 50 % Risiko",
+        "uz": "autosom-dominant irsiylanish",
+        "ru": "аутосомно-доминантный",
+        "tr": "otozomal dominant",
+        "en": "autosomal dominant"
+      },
+      {
+        "de": "Hirnaneurysma",
+        "patient": "Aussackung einer Hirnarterie",
+        "uz": "miya anevrizmasi",
+        "ru": "аневризма сосудов головного мозга",
+        "tr": "beyin anevrizması",
+        "en": "brain aneurysm"
+      },
+      {
+        "de": "Tolvaptan",
+        "patient": "Medikament, das das Zystenwachstum bremst",
+        "uz": "tolvaptan",
+        "ru": "толваптан",
+        "tr": "tolvaptan",
+        "en": "tolvaptan"
+      },
+      {
+        "de": "Genetische Beratung",
+        "patient": "Beratung zu erblichen Krankheiten",
+        "uz": "genetik maslahat",
+        "ru": "генетическое консультирование",
+        "tr": "genetik danışmanlık",
+        "en": "genetic counselling"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe Schmerzen in den Flanken, und der Betriebsarzt sagt, mein Blutdruck ist zu hoch.",
+      "answers": {
+        "beginn": "Die Schmerzen habe ich seit einigen Monaten.",
+        "lokalisation": "In beiden Flanken, links etwas mehr.",
+        "charakter": "Ein dumpfer Druck, drei bis vier von zehn.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Einmal war der Urin rötlich. Kopfschmerzen habe ich manchmal. Mein Bauch ist dicker geworden, obwohl ich nicht zugenommen habe.",
+        "vegetativ": "Ich hatte schon öfter Blasenentzündungen.",
+        "vorerkrankungen": "Nur die Blasenentzündungen.",
+        "medikamente": "Keine.",
+        "allergien": "Nein.",
+        "familie": "Mein Vater hatte Zystennieren und kam mit 52 an die Dialyse. Mein Opa ist mit 45 an einer Hirnblutung gestorben.",
+        "sozial": "Ich bin verheiratet, habe zwei Kinder, acht und elf, und arbeite im Büro.",
+        "noxen": "Ich rauche nicht, Alkohol selten."
+      }
+    },
+    "verdachtsdiagnose": "Autosomal-dominante polyzystische Nierenerkrankung (ADPKD) mit arterieller Hypertonie",
+    "diagnoseKeywords": ["zystennieren", "polyzystisch", "adpkd"],
+    "differenzialdiagnosen": [
+      "Einfache Nierenzysten",
+      "Nierenzellkarzinom",
+      "Tuberöse Sklerose",
+      "Pyelonephritis"
+    ],
+    "untersuchungen": [
+      "Sonographie der Nieren und Leber",
+      "MRT mit Nierenvolumen",
+      "Kreatinin, eGFR, Urinstatus",
+      "24-h-Blutdruckmessung",
+      "MR-Angiographie des Kopfes (positive Familienanamnese)"
+    ]
+  },
+  {
+    "id": "c131",
+    "title": "Nierenarterienstenose mit renovaskulärer Hypertonie",
+    "category": "Nephrologie",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Erwin Graf",
+      "age": 69,
+      "gender": "männlich",
+      "hauptbeschwerde": "Blutdruck trotz drei Medikamenten zu hoch und Luftnot"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 6 Monaten Blutdruck trotz 3 Medikamenten über 180/100 mmHg, wiederholt nächtliche Luftnot (Lungenödem, zweimal stationär). Nach Beginn von Ramipril Kreatinin von 1,1 auf 2,0 mg/dl angestiegen.",
+      "vorerkrankungen": "pAVK mit Stent der A. iliaca, KHK, Hypercholesterinämie, Diabetes mellitus Typ 2.",
+      "medikamente": "Ramipril 10 mg 1-0-0, Amlodipin 10 mg 1-0-0, Hydrochlorothiazid 25 mg 1-0-0, ASS 100 mg, Atorvastatin 40 mg.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Verheiratet, Rentner. Raucher (50 py)."
+    },
+    "sprache": [
+      {
+        "patient": "Trotz drei Blutdrucktabletten ist der Druck über 180.",
+        "fach": "Es besteht eine therapierefraktäre arterielle Hypertonie unter Dreifachtherapie."
+      },
+      {
+        "patient": "Nachts bekomme ich plötzlich keine Luft und muss mich aufsetzen.",
+        "fach": "Es bestehen rezidivierende nächtliche Lungenödeme (Flash-Lungenödem)."
+      },
+      {
+        "patient": "Nach der neuen Blutdrucktablette wurden die Nierenwerte schlechter.",
+        "fach": "Nach Beginn des ACE-Hemmers kam es zu einem Kreatininanstieg."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Nierenarterienstenose",
+        "patient": "Verengung der Nierenschlagader",
+        "uz": "buyrak arteriyasi stenozi",
+        "ru": "стеноз почечной артерии",
+        "tr": "renal arter stenozu",
+        "en": "renal artery stenosis"
+      },
+      {
+        "de": "Renovaskuläre Hypertonie",
+        "patient": "Bluthochdruck durch verengte Nierenarterie",
+        "uz": "renovaskulyar gipertoniya",
+        "ru": "реноваскулярная гипертензия",
+        "tr": "renovasküler hipertansiyon",
+        "en": "renovascular hypertension"
+      },
+      {
+        "de": "Strömungsgeräusch",
+        "patient": "Geräusch über einer verengten Arterie",
+        "uz": "tomir ustidagi shovqin",
+        "ru": "сосудистый шум",
+        "tr": "üfürüm (damar sesi)",
+        "en": "bruit"
+      },
+      {
+        "de": "Flash-Lungenödem",
+        "patient": "plötzlich auftretendes Wasser in der Lunge",
+        "uz": "to‘satdan o‘pka shishi",
+        "ru": "внезапный отёк лёгких",
+        "tr": "ani akciğer ödemi",
+        "en": "flash pulmonary oedema"
+      },
+      {
+        "de": "Duplexsonographie",
+        "patient": "Ultraschall der Blutgefäße mit Strömungsmessung",
+        "uz": "dupleks UTT",
+        "ru": "дуплексное сканирование",
+        "tr": "dupleks ultrasonografi",
+        "en": "duplex ultrasound"
+      }
+    ],
+    "simulation": {
+      "opening": "Mein Blutdruck ist trotz drei Tabletten ständig über 180, und nachts bekomme ich plötzlich keine Luft.",
+      "answers": {
+        "beginn": "Seit etwa einem halben Jahr. Zweimal war ich deswegen schon im Krankenhaus.",
+        "lokalisation": "Die Luftnot kommt nachts, die ganze Brust ist dann eng.",
+        "charakter": "Ich muss mich aufsetzen und ans Fenster. Es brodelt in der Brust.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Kopfschmerzen morgens. Beim Gehen schmerzen die Waden nach 200 Metern.",
+        "vegetativ": "Sonst nichts Besonderes.",
+        "vorerkrankungen": "Durchblutungsstörung in den Beinen mit Stent, verengte Herzkranzgefäße, Zucker und hohes Cholesterin. (auf Nachfrage) Nach der neuen Blutdrucktablette Ramipril sind die Nierenwerte schlechter geworden.",
+        "medikamente": "Ramipril 10, Amlodipin 10, HCT 25, ASS und Atorvastatin.",
+        "allergien": "Nein.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich bin verheiratet und Rentner.",
+        "noxen": "Ich rauche seit fünfzig Jahren eine Schachtel am Tag."
+      }
+    },
+    "verdachtsdiagnose": "Atherosklerotische Nierenarterienstenose mit therapierefraktärer renovaskulärer Hypertonie und Flash-Lungenödemen",
+    "diagnoseKeywords": ["nierenarterienstenose", "renovaskulär"],
+    "differenzialdiagnosen": [
+      "Primärer Hyperaldosteronismus",
+      "Schlafapnoesyndrom",
+      "Phäochromozytom",
+      "Mangelnde Therapieadhärenz",
+      "Hypertensive Herzerkrankung"
+    ],
+    "untersuchungen": [
+      "Duplexsonographie der Nierenarterien",
+      "CT- oder MR-Angiographie",
+      "Kreatinin, Kalium, Urinstatus",
+      "Aldosteron-Renin-Quotient",
+      "Echokardiographie"
+    ]
+  },
+  {
+    "id": "c132",
+    "title": "Primärer Hyperparathyreoidismus",
+    "category": "Endokrinologie",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Hildegard Sommer",
+      "age": 61,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Wiederholte Nierensteine, Müdigkeit und Knochenschmerzen"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Dritte Nierenkolik in 2 Jahren, dazu Müdigkeit, Konzentrationsstörungen, Verstopfung, Durst und diffuse Knochenschmerzen. Beim Hausarzt Calcium erhöht.",
+      "vorerkrankungen": "Rezidivierende Nephrolithiasis, Osteoporose (DXA vor 1 Jahr), Refluxkrankheit.",
+      "medikamente": "Pantoprazol 20 mg 1-0-0, Calcium/Vitamin D 1-0-0 (vom Hausarzt wegen Osteoporose).",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Verheiratet, Rentnerin. Nichtraucherin."
+    },
+    "sprache": [
+      {
+        "patient": "Das ist schon mein dritter Nierenstein in zwei Jahren.",
+        "fach": "Es besteht eine rezidivierende Nephrolithiasis."
+      },
+      {
+        "patient": "Mir tun die Knochen weh, und ich bin ständig müde und verstopft.",
+        "fach": "Es bestehen Knochenschmerzen, Abgeschlagenheit und Obstipation."
+      },
+      {
+        "patient": "Der Hausarzt hat gesagt, mein Kalzium ist zu hoch.",
+        "fach": "Laborchemisch fiel eine Hyperkalzämie auf."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Hyperparathyreoidismus",
+        "patient": "Überfunktion der Nebenschilddrüsen",
+        "uz": "giperparatireoz",
+        "ru": "гиперпаратиреоз",
+        "tr": "hiperparatiroidizm",
+        "en": "hyperparathyroidism"
+      },
+      {
+        "de": "Nebenschilddrüsenadenom",
+        "patient": "gutartiger Knoten der Nebenschilddrüse",
+        "uz": "qalqonsimon bez oldi bezi adenomasi",
+        "ru": "аденома паращитовидной железы",
+        "tr": "paratiroid adenomu",
+        "en": "parathyroid adenoma"
+      },
+      {
+        "de": "Parathormon",
+        "patient": "Hormon, das den Calciumspiegel steuert",
+        "uz": "paratgormon",
+        "ru": "паратгормон",
+        "tr": "parathormon",
+        "en": "parathyroid hormone"
+      },
+      {
+        "de": "Szintigraphie",
+        "patient": "Untersuchung mit schwach radioaktivem Mittel",
+        "uz": "sintigrafiya",
+        "ru": "сцинтиграфия",
+        "tr": "sintigrafi",
+        "en": "scintigraphy"
+      },
+      {
+        "de": "Parathyreoidektomie",
+        "patient": "operative Entfernung der Nebenschilddrüse",
+        "uz": "paratireoidektomiya",
+        "ru": "паратиреоидэктомия",
+        "tr": "paratiroidektomi",
+        "en": "parathyroidectomy"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich hatte schon wieder einen Nierenstein, den dritten in zwei Jahren. Und ich bin ständig müde.",
+      "answers": {
+        "beginn": "Die Müdigkeit habe ich seit über einem Jahr. Den letzten Stein hatte ich vor drei Wochen.",
+        "lokalisation": "Die Knochen tun überall ein bisschen weh, vor allem Rücken und Beine.",
+        "charakter": "Dumpfe Schmerzen, drei bis vier von zehn. Ich kann mich schlecht konzentrieren.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Ich habe ständig Durst, muss viel Wasser lassen und bin verstopft. Manchmal ist mir übel.",
+        "vegetativ": "Appetit ist schlechter.",
+        "vorerkrankungen": "Nierensteine, Osteoporose und Sodbrennen.",
+        "medikamente": "Pantoprazol und Calcium mit Vitamin D wegen der Osteoporose.",
+        "allergien": "Nein.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich bin verheiratet und Rentnerin.",
+        "noxen": "Ich rauche nicht."
+      }
+    },
+    "verdachtsdiagnose": "Primärer Hyperparathyreoidismus (am ehesten Nebenschilddrüsenadenom) mit Nephrolithiasis und Osteoporose",
+    "diagnoseKeywords": ["hyperparathyreoidismus", "parathormon", "nebenschilddrüse"],
+    "differenzialdiagnosen": [
+      "Tumorhyperkalzämie",
+      "Multiples Myelom",
+      "Vitamin-D-Überdosierung",
+      "Familiäre hypokalziurische Hyperkalzämie",
+      "Sarkoidose"
+    ],
+    "untersuchungen": [
+      "Calcium (albuminkorrigiert), Phosphat",
+      "Parathormon",
+      "Calcium im 24-h-Urin",
+      "Kreatinin, Vitamin D",
+      "Sonographie und Szintigraphie der Nebenschilddrüsen",
+      "Knochendichtemessung"
+    ]
+  },
+  {
+    "id": "c133",
+    "title": "Cushing-Syndrom",
+    "category": "Endokrinologie",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Nadine Kraft",
+      "age": 39,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Gewichtszunahme am Bauch, rotes rundes Gesicht und Bluthochdruck"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 1 Jahr Gewichtszunahme von 14 kg vor allem am Bauch und Nacken, rundes, gerötetes Gesicht, rötlich-violette Streifen am Bauch, blaue Flecken bei kleinen Stößen, Muskelschwäche beim Treppensteigen, Stimmungsschwankungen, unregelmäßige Regel. Neu aufgetretener Bluthochdruck und erhöhter Blutzucker.",
+      "vorerkrankungen": "Keine. Keine Kortisoneinnahme (auch keine Salben oder Spritzen).",
+      "medikamente": "Keine.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Verheiratet, ein Kind, Erzieherin. Nichtraucherin."
+    },
+    "sprache": [
+      {
+        "patient": "Mein Gesicht ist rund und rot geworden, wie ein Vollmond.",
+        "fach": "Es besteht ein Vollmondgesicht mit Plethora."
+      },
+      {
+        "patient": "Am Bauch habe ich breite lila Streifen bekommen.",
+        "fach": "Es bestehen livide Striae rubrae am Abdomen."
+      },
+      {
+        "patient": "Ich komme die Treppe kaum hoch, die Oberschenkel sind so schwach.",
+        "fach": "Es besteht eine proximale Muskelschwäche."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Cushing-Syndrom",
+        "patient": "zu viel Kortisol im Körper",
+        "uz": "Kushing sindromi",
+        "ru": "синдром Кушинга",
+        "tr": "Cushing sendromu",
+        "en": "Cushing’s syndrome"
+      },
+      {
+        "de": "Stammfettsucht",
+        "patient": "Fettansammlung an Bauch und Rumpf",
+        "uz": "tana markazida semirish",
+        "ru": "центральное ожирение",
+        "tr": "gövdesel obezite",
+        "en": "central obesity"
+      },
+      {
+        "de": "Striae rubrae",
+        "patient": "rötlich-violette Dehnungsstreifen",
+        "uz": "qizil-binafsha cho‘zilish izlari",
+        "ru": "багровые стрии",
+        "tr": "kırmızı-mor çatlaklar",
+        "en": "purple stretch marks"
+      },
+      {
+        "de": "Dexamethason-Hemmtest",
+        "patient": "Test, ob sich die Kortisonbildung unterdrücken lässt",
+        "uz": "deksametazon bilan supressiya testi",
+        "ru": "дексаметазоновая проба",
+        "tr": "deksametazon supresyon testi",
+        "en": "dexamethasone suppression test"
+      },
+      {
+        "de": "Hypophysenadenom",
+        "patient": "gutartiger Tumor der Hirnanhangsdrüse",
+        "uz": "gipofiz adenomasi",
+        "ru": "аденома гипофиза",
+        "tr": "hipofiz adenomu",
+        "en": "pituitary adenoma"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe in einem Jahr vierzehn Kilo zugenommen, vor allem am Bauch, und mein Gesicht ist ganz rund und rot.",
+      "answers": {
+        "beginn": "Seit ungefähr einem Jahr, langsam immer mehr.",
+        "lokalisation": "Vor allem am Bauch und im Nacken. Arme und Beine sind eher dünner geworden.",
+        "charakter": "Mein Gesicht ist rund wie ein Vollmond und rot. Am Bauch habe ich breite lila Streifen.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Ich bekomme schnell blaue Flecken. Die Oberschenkel sind so schwach, ich komme kaum die Treppe hoch. Ich bin gereizt und weinerlich.",
+        "vegetativ": "Die Regel ist unregelmäßig geworden. Der Hausarzt hat einen hohen Blutdruck und erhöhten Zucker gefunden.",
+        "vorerkrankungen": "Ich war bisher gesund.",
+        "medikamente": "Keine, auch kein Kortison, keine Salben, keine Spritzen.",
+        "allergien": "Nein.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich bin verheiratet, habe ein Kind und bin Erzieherin.",
+        "noxen": "Ich rauche nicht, Alkohol selten."
+      }
+    },
+    "verdachtsdiagnose": "Endogenes Cushing-Syndrom, am ehesten ACTH-abhängig (Morbus Cushing bei Hypophysenadenom)",
+    "diagnoseKeywords": ["cushing", "hyperkortisolismus"],
+    "differenzialdiagnosen": [
+      "Exogenes (iatrogenes) Cushing-Syndrom",
+      "Metabolisches Syndrom",
+      "Polyzystisches Ovarsyndrom",
+      "Pseudo-Cushing (Alkohol, Depression)"
+    ],
+    "untersuchungen": [
+      "1-mg-Dexamethason-Hemmtest",
+      "Cortisol im 24-h-Urin, spätabendliches Speichelcortisol",
+      "ACTH",
+      "MRT der Hypophyse",
+      "Blutzucker, HbA1c, Kalium",
+      "Knochendichtemessung"
+    ]
+  },
+  {
+    "id": "c134",
+    "title": "Phäochromozytom",
+    "category": "Endokrinologie",
+    "difficulty": "schwer",
+    "patient": {
+      "name": "Michael Hartung",
+      "age": 44,
+      "gender": "männlich",
+      "hauptbeschwerde": "Anfallsartiges Herzrasen mit Kopfschmerzen und Schweißausbrüchen"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 6 Monaten mehrmals wöchentlich Attacken von 10–30 Minuten mit pochenden Kopfschmerzen, Herzrasen, starkem Schwitzen, Blässe und Zittern; dabei Blutdruck bis 230/120 mmHg gemessen. Auslöser manchmal Bücken oder Pressen beim Stuhlgang. Gewichtsverlust 4 kg.",
+      "vorerkrankungen": "„Schwer einstellbarer Bluthochdruck“ seit 1 Jahr.",
+      "medikamente": "Metoprolol 95 mg 1-0-0 (neu vor 2 Wochen, seitdem Attacken schlimmer), Amlodipin 5 mg 1-0-0.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Vater: Schilddrüsenkrebs (medullär) mit 50 Jahren operiert.",
+      "sozialanamnese": "Verheiratet, Ingenieur. Nichtraucher, Kaffee mäßig."
+    },
+    "sprache": [
+      {
+        "patient": "Plötzlich pocht der Kopf, das Herz rast und ich bin klatschnass geschwitzt.",
+        "fach": "Es bestehen paroxysmale Attacken mit Kopfschmerzen, Palpitationen und Hyperhidrose."
+      },
+      {
+        "patient": "Bei einer Attacke hatte ich 230 zu 120.",
+        "fach": "Während der Attacken treten hypertensive Krisen bis 230/120 mmHg auf."
+      },
+      {
+        "patient": "Seit der neuen Blutdrucktablette ist es schlimmer geworden.",
+        "fach": "Seit Beginn eines Betablockers haben die Attacken zugenommen."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Phäochromozytom",
+        "patient": "Tumor der Nebenniere, der Stresshormone bildet",
+        "uz": "feoxromotsitoma",
+        "ru": "феохромоцитома",
+        "tr": "feokromositoma",
+        "en": "phaeochromocytoma"
+      },
+      {
+        "de": "Katecholamine",
+        "patient": "Stresshormone wie Adrenalin",
+        "uz": "katexolaminlar",
+        "ru": "катехоламины",
+        "tr": "katekolaminler",
+        "en": "catecholamines"
+      },
+      {
+        "de": "Metanephrine",
+        "patient": "Abbauprodukte der Stresshormone im Blut",
+        "uz": "metanefrinlar",
+        "ru": "метанефрины",
+        "tr": "metanefrinler",
+        "en": "metanephrines"
+      },
+      {
+        "de": "Alphablocker",
+        "patient": "Medikament, das die Gefäße erweitert (z. B. Phenoxybenzamin)",
+        "uz": "alfa-blokator",
+        "ru": "альфа-адреноблокатор",
+        "tr": "alfa bloker",
+        "en": "alpha blocker"
+      },
+      {
+        "de": "MEN 2",
+        "patient": "erbliches Syndrom mit mehreren Hormontumoren",
+        "uz": "MEN 2 sindromi",
+        "ru": "синдром МЭН 2",
+        "tr": "MEN 2 sendromu",
+        "en": "MEN 2 syndrome"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe immer wieder Anfälle mit Herzrasen, Kopfschmerzen und Schweißausbrüchen. Mein Blutdruck geht dann total hoch.",
+      "answers": {
+        "beginn": "Seit etwa einem halben Jahr, mehrmals pro Woche. Seit zwei Wochen öfter.",
+        "lokalisation": "Der Kopf pocht im ganzen Kopf, das Herz rast.",
+        "charakter": "Plötzlich, zehn bis dreißig Minuten. Ich bin dann klatschnass geschwitzt, blass und zittere. Kopfschmerzen acht von zehn.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Bei einer Attacke hatte ich 230 zu 120. Manchmal kommt es beim Bücken oder beim Pressen auf der Toilette. Ich habe Angst dabei.",
+        "vegetativ": "Ich habe vier Kilo abgenommen, obwohl ich normal esse.",
+        "vorerkrankungen": "Seit einem Jahr hoher Blutdruck, der Hausarzt bekommt ihn nicht gut eingestellt.",
+        "medikamente": "Amlodipin 5 und seit zwei Wochen Metoprolol 95. Seitdem ist es schlimmer geworden.",
+        "allergien": "Nein.",
+        "familie": "Mein Vater wurde mit 50 an Schilddrüsenkrebs operiert, eine seltene Form.",
+        "sozial": "Ich bin verheiratet und Ingenieur.",
+        "noxen": "Ich rauche nicht, Kaffee zwei Tassen am Tag, keine Drogen."
+      }
+    },
+    "verdachtsdiagnose": "Phäochromozytom mit paroxysmalen hypertensiven Krisen (Verdacht auf MEN 2 bei Familienanamnese)",
+    "diagnoseKeywords": ["phäochromozytom", "phäo", "paragangliom"],
+    "differenzialdiagnosen": [
+      "Hyperthyreose",
+      "Panikstörung",
+      "Drogenkonsum (Kokain, Amphetamine)",
+      "Essenzielle Hypertonie",
+      "Hypoglykämie"
+    ],
+    "untersuchungen": [
+      "Freie Metanephrine im Plasma",
+      "Metanephrine im 24-h-Urin",
+      "CT oder MRT der Nebennieren",
+      "MIBG- oder DOTATATE-PET",
+      "Calcitonin, Calcium, Gentest (RET)"
+    ],
+    "oberarzt": {
+      "therapie": [
+        "Betablocker absetzen (nie ohne Alphablocker)",
+        "Alphablocker (Phenoxybenzamin oder Doxazosin)",
+        "Erst danach Betablocker bei Tachykardie",
+        "Adrenalektomie (laparoskopisch)",
+        "Volumengabe vor der Operation",
+        "Genetische Beratung"
+      ],
+      "komplikationen": [
+        "Hypertensive Krise (Schlaganfall, Herzinfarkt)",
+        "Herzrhythmusstörungen",
+        "Katecholamin-Kardiomyopathie",
+        "Hypotonie nach Tumorentfernung",
+        "Hypoglykämie nach Operation"
+      ]
+    }
+  },
+  {
+    "id": "c135",
+    "title": "Thyreotoxische Krise",
+    "category": "Endokrinologie",
+    "difficulty": "schwer",
+    "patient": {
+      "name": "Aylin Demir",
+      "age": 37,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Hohes Fieber, rasender Puls und Verwirrtheit"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 2 Tagen Fieber bis 40 °C, Herzrasen, starkes Schwitzen, Durchfall, Erbrechen, Zittern, Unruhe und seit heute Verwirrtheit. Vor 1 Woche CT mit jodhaltigem Kontrastmittel nach Autounfall. Thiamazol vor 2 Monaten eigenmächtig abgesetzt.",
+      "vorerkrankungen": "Morbus Basedow seit 1 Jahr.",
+      "medikamente": "Thiamazol 10 mg (vor 2 Monaten abgesetzt).",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Mutter: Hashimoto-Thyreoiditis.",
+      "sozialanamnese": "Verheiratet, zwei Kinder, Friseurin. Raucherin (10 Zigaretten/Tag)."
+    },
+    "sprache": [
+      {
+        "patient": "Mein Herz rast, ich schwitze und zittere am ganzen Körper.",
+        "fach": "Es bestehen Tachykardie, Hyperhidrose und Tremor."
+      },
+      {
+        "patient": "Die Schilddrüsentabletten habe ich vor zwei Monaten weggelassen.",
+        "fach": "Die thyreostatische Therapie wurde vor zwei Monaten eigenmächtig beendet."
+      },
+      {
+        "patient": "Nach dem Unfall letzte Woche hatte ich ein CT mit Kontrastmittel.",
+        "fach": "Vor einer Woche erfolgte eine Jodexposition durch Kontrastmittel."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Thyreotoxische Krise",
+        "patient": "lebensbedrohliche Überfunktion der Schilddrüse",
+        "uz": "tireotoksik kriz",
+        "ru": "тиреотоксический криз",
+        "tr": "tiroid fırtınası",
+        "en": "thyroid storm"
+      },
+      {
+        "de": "Morbus Basedow",
+        "patient": "Autoimmunkrankheit mit Schilddrüsenüberfunktion",
+        "uz": "Bazedov kasalligi",
+        "ru": "болезнь Грейвса (Базедова)",
+        "tr": "Graves hastalığı",
+        "en": "Graves’ disease"
+      },
+      {
+        "de": "Thyreostatikum",
+        "patient": "Medikament, das die Schilddrüse bremst",
+        "uz": "tireostatik",
+        "ru": "тиреостатик",
+        "tr": "antitiroid ilaç",
+        "en": "antithyroid drug"
+      },
+      {
+        "de": "Jodexposition",
+        "patient": "Aufnahme von viel Jod, z. B. durch Kontrastmittel",
+        "uz": "yod ta’siri",
+        "ru": "йодная нагрузка",
+        "tr": "iyot maruziyeti",
+        "en": "iodine exposure"
+      },
+      {
+        "de": "Thyreoidektomie",
+        "patient": "Entfernung der Schilddrüse",
+        "uz": "tireoidektomiya",
+        "ru": "тиреоидэктомия",
+        "tr": "tiroidektomi",
+        "en": "thyroidectomy"
+      }
+    ],
+    "simulation": {
+      "opening": "(Ehemann) Meine Frau hat seit zwei Tagen hohes Fieber, das Herz rast, und heute ist sie ganz durcheinander.",
+      "answers": {
+        "beginn": "(Ehemann) Vor zwei Tagen fing es an, heute ist sie verwirrt.",
+        "lokalisation": "(Patientin) Mir ist überall heiß … das Herz klopft so.",
+        "charakter": "(Ehemann) Sie schwitzt stark, zittert und ist unruhig, läuft hin und her.",
+        "ausstrahlung": "(Patientin) —",
+        "begleit": "(Ehemann) Fieber bis 40, Durchfall, sie hat zweimal erbrochen. Sie bekommt etwas schlecht Luft.",
+        "vegetativ": "(Ehemann) Sie hat in den letzten Wochen abgenommen.",
+        "vorerkrankungen": "(Ehemann) Sie hat seit einem Jahr Morbus Basedow. Letzte Woche hatte sie einen Autounfall, nichts Schlimmes, aber sie hat ein CT mit Kontrastmittel bekommen.",
+        "medikamente": "(Ehemann) Thiamazol, aber das hat sie vor zwei Monaten weggelassen, weil es ihr gut ging.",
+        "allergien": "(Ehemann) Keine.",
+        "familie": "(Ehemann) Ihre Mutter hat Hashimoto.",
+        "sozial": "(Ehemann) Wir haben zwei Kinder, sie ist Friseurin.",
+        "noxen": "(Ehemann) Sie raucht zehn Zigaretten am Tag."
+      }
+    },
+    "verdachtsdiagnose": "Thyreotoxische Krise bei Morbus Basedow nach Absetzen von Thiamazol und Jodexposition",
+    "diagnoseKeywords": ["thyreotox", "krise", "basedow"],
+    "differenzialdiagnosen": [
+      "Sepsis",
+      "Phäochromozytom",
+      "Drogenintoxikation (Kokain, Amphetamine)",
+      "Malignes neuroleptisches Syndrom"
+    ],
+    "untersuchungen": [
+      "TSH, fT3, fT4",
+      "TRAK",
+      "Blutbild, CRP, Blutkulturen",
+      "Leberwerte, Elektrolyte, Blutzucker",
+      "EKG (Vorhofflimmern?)",
+      "Burch-Wartofsky-Score"
+    ],
+    "oberarzt": {
+      "therapie": [
+        "Thiamazol hochdosiert i. v.",
+        "Betablocker (Propranolol)",
+        "Glukokortikoide (Hydrocortison)",
+        "Perchlorat (nach Jodexposition)",
+        "Intensivüberwachung, Kühlung, Flüssigkeit",
+        "Thyreoidektomie bei Therapieversagen"
+      ],
+      "komplikationen": [
+        "Herzinsuffizienz (Lungenödem)",
+        "Vorhofflimmern",
+        "Koma",
+        "Leberversagen",
+        "Agranulozytose unter Thiamazol",
+        "Multiorganversagen (Letalität bis 30 %)"
+      ]
+    }
+  },
+  {
+    "id": "c136",
+    "title": "Erstmanifestation eines Diabetes mellitus Typ 1",
+    "category": "Endokrinologie",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Luca Bergmann",
+      "age": 18,
+      "gender": "männlich",
+      "hauptbeschwerde": "Großer Durst, viel Wasserlassen und Gewichtsverlust"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 4 Wochen starker Durst (5–6 Liter täglich), häufiges Wasserlassen auch nachts, Gewichtsverlust 7 kg trotz Heißhunger, Müdigkeit, verschwommenes Sehen. Seit gestern Übelkeit und Bauchschmerzen.",
+      "vorerkrankungen": "Keine.",
+      "medikamente": "Keine.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Tante: Diabetes mellitus Typ 1; Mutter: Hashimoto-Thyreoiditis.",
+      "sozialanamnese": "Ledig, Abiturient, spielt Handball. Nichtraucher, Alkohol am Wochenende."
+    },
+    "sprache": [
+      {
+        "patient": "Ich trinke fünf, sechs Liter am Tag und muss ständig pinkeln.",
+        "fach": "Es bestehen Polydipsie und Polyurie."
+      },
+      {
+        "patient": "Obwohl ich viel esse, habe ich sieben Kilo abgenommen.",
+        "fach": "Trotz Polyphagie besteht ein Gewichtsverlust von 7 kg."
+      },
+      {
+        "patient": "Seit gestern ist mir übel und der Bauch tut weh.",
+        "fach": "Seit gestern bestehen Übelkeit und Bauchschmerzen, Verdacht auf beginnende Ketoazidose."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Diabetes mellitus Typ 1",
+        "patient": "Zuckerkrankheit, bei der kein Insulin mehr gebildet wird",
+        "uz": "1-tip qandli diabet",
+        "ru": "сахарный диабет 1 типа",
+        "tr": "tip 1 diyabet",
+        "en": "type 1 diabetes"
+      },
+      {
+        "de": "Polydipsie",
+        "patient": "krankhaft großer Durst",
+        "uz": "polidipsiya (kuchli chanqoq)",
+        "ru": "полидипсия",
+        "tr": "polidipsi",
+        "en": "excessive thirst"
+      },
+      {
+        "de": "Ketoazidose",
+        "patient": "Übersäuerung des Blutes bei Insulinmangel",
+        "uz": "ketoatsidoz",
+        "ru": "кетоацидоз",
+        "tr": "ketoasidoz",
+        "en": "ketoacidosis"
+      },
+      {
+        "de": "Autoantikörper",
+        "patient": "Abwehrstoffe gegen eigenes Gewebe (z. B. GAD)",
+        "uz": "autoantitanachalar",
+        "ru": "аутоантитела",
+        "tr": "otoantikorlar",
+        "en": "autoantibodies"
+      },
+      {
+        "de": "Basis-Bolus-Therapie",
+        "patient": "Langzeitinsulin plus Insulin zu den Mahlzeiten",
+        "uz": "bazis-bolyus insulin terapiyasi",
+        "ru": "базис-болюсная терапия",
+        "tr": "bazal-bolus tedavi",
+        "en": "basal-bolus regimen"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe seit Wochen ständig Durst und muss dauernd pinkeln, und ich habe stark abgenommen.",
+      "answers": {
+        "beginn": "Seit ungefähr vier Wochen. Seit gestern ist mir auch übel.",
+        "lokalisation": "Seit gestern tut der Bauch weh, so in der Mitte.",
+        "charakter": "Ich trinke fünf, sechs Liter am Tag und muss ständig pinkeln, auch nachts zwei-, dreimal. Bauchschmerzen vier von zehn.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Ich bin total müde und sehe manchmal verschwommen. Einmal habe ich erbrochen. Atemnot habe ich nicht.",
+        "vegetativ": "Obwohl ich viel esse, habe ich sieben Kilo abgenommen.",
+        "vorerkrankungen": "Ich war immer gesund.",
+        "medikamente": "Keine.",
+        "allergien": "Nein.",
+        "familie": "Meine Tante hat Typ-1-Diabetes, meine Mutter Hashimoto.",
+        "sozial": "Ich mache Abitur und spiele Handball.",
+        "noxen": "Ich rauche nicht. Am Wochenende trinke ich manchmal Alkohol."
+      }
+    },
+    "verdachtsdiagnose": "Erstmanifestation eines Diabetes mellitus Typ 1 mit beginnender Ketoazidose",
+    "diagnoseKeywords": ["diabetes mellitus typ 1", "typ-1", "typ 1", "erstmanifestation"],
+    "differenzialdiagnosen": [
+      "Diabetes mellitus Typ 2 (MODY)",
+      "Diabetes insipidus",
+      "Hyperthyreose",
+      "Gastroenteritis"
+    ],
+    "untersuchungen": [
+      "Blutzucker, HbA1c",
+      "Blutgasanalyse und Ketone",
+      "Elektrolyte, Kreatinin",
+      "Autoantikörper (GAD, IA-2, ZnT8), C-Peptid",
+      "TSH, Transglutaminase-Antikörper"
+    ]
   }
 ]

@@ -9159,5 +9159,845 @@
       }
     ],
     "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihre Patientin Frau Gertrud Klein, 67 Jahre, die vom 06.10.2026 bis zum 06.10.2026 in unserer neurologischen Ambulanz behandelt wurde.\n\nAnamnese:\nDie Patientin berichtete über seit zwei Monaten bestehende blitzartige, elektrisierende Schmerzattacken rechts im Versorgungsgebiet von V2 und V3, die wenige Sekunden dauern und bis zu 30-mal täglich auftreten. Ausgelöst werden sie durch Kauen, Sprechen, Zähneputzen und kalten Wind. Eine Zahnextraktion brachte keine Besserung. Aus Angst vor dem Kauen hat sie 2 kg abgenommen.\n\nBefunde:\nNeurologisch fand sich keine Sensibilitätsstörung im Gesicht. Im cMRT zeigte sich ein Gefäß-Nerv-Kontakt der A. cerebelli superior mit dem N. trigeminus rechts ohne Hinweis auf MS-Läsionen. Natrium, Leberwerte und Blutbild waren normal.\n\nDiagnose:\nKlassische Trigeminusneuralgie rechts (V2/V3).\n\nTherapie:\nWir begannen eine Therapie mit Carbamazepin retard und dosierten langsam auf 200 mg zweimal täglich auf.\n\nProcedere:\nUnter Carbamazepin sind Kontrollen von Natrium, Leberwerten und Blutbild nach zwei Wochen und dann vierteljährlich erforderlich; wir haben auf mögliche Wechselwirkungen hingewiesen. Bei unzureichender Wirkung oder Unverträglichkeit ist eine neurochirurgische mikrovaskuläre Dekompression eine gute Option.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab105",
+    "caseId": "c127",
+    "title": "Chronische Niereninsuffizienz – Erstdiagnose",
+    "task": "Nefrologiya bo‘limidan uy shifokoriga Arztbrief yozing. Bosqich, sabablari, dori o‘zgarishlari va dializga tayyorgarlikka e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из нефрологии семейному врачу. Обратите внимание на стадию, причины, изменения терапии и подготовку к диализу.",
+    "taskTr": "Nefroloji servisinden aile hekimine bir Arztbrief yazın. Evreye, nedenlere, ilaç değişikliklerine ve diyalize hazırlığa dikkat edin.",
+    "taskEn": "Write an Arztbrief from nephrology to the GP. Pay attention to the stage, causes, medication changes and preparation for dialysis.",
+    "facts": [
+      "Patient: Klaus Dieter Schmidt, 63 Jahre, männlich",
+      "Aufnahme: 30.09.2026, nephrologische Station",
+      "Seit Monaten Müdigkeit, generalisierter Pruritus, Inappetenz, Nykturie, Wadenkrämpfe",
+      "Diabetes mellitus Typ 2 (HbA1c 8,9 %), Hypertonie, Retinopathie; regelmäßige NSAR-Einnahme; Mutter dialysepflichtig",
+      "Kreatinin 3,8 mg/dl, eGFR 16 ml/min, Kalium 5,6 mmol/l, Hb 9,8 g/dl, Phosphat erhöht, PTH 210 pg/ml, pH 7,31",
+      "Albumin/Kreatinin-Quotient 1.200 mg/g; Sonographie: beidseits verkleinerte Nieren mit verschmälertem Parenchym",
+      "Therapie: Metformin und Glimepirid abgesetzt → Insulin; Ibuprofen abgesetzt; Amlodipin + Torasemid; Natriumbicarbonat, Phosphatbinder; Erythropoetin begonnen"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patient ma’lumotlari (Herr Schmidt)",
+        "labelRu": "Данные пациента (Herr Schmidt)",
+        "labelTr": "Hasta bilgileri (Herr Schmidt)",
+        "labelEn": "Patient data (Herr Schmidt)",
+        "keywords": ["schmidt"]
+      },
+      {
+        "label": "Asosiy shikoyat: holsizlik, qichishish va tungi siyish (Pruritus, Nykturie)",
+        "labelRu": "Основная жалоба: слабость, зуд и никтурия (Pruritus, Nykturie)",
+        "labelTr": "Ana şikâyet: halsizlik, kaşıntı ve noktüri (Pruritus, Nykturie)",
+        "labelEn": "Main complaint: fatigue, itching and nocturia (Pruritus, Nykturie)",
+        "keywords": ["pruritus", "nykturie", "müdigkeit"]
+      },
+      {
+        "label": "Diabet va gipertoniya (Diabetes mellitus, Hypertonie)",
+        "labelRu": "Диабет и гипертония (Diabetes mellitus, Hypertonie)",
+        "labelTr": "Diyabet ve hipertansiyon (Diabetes mellitus, Hypertonie)",
+        "labelEn": "Diabetes and hypertension (Diabetes mellitus, Hypertonie)",
+        "keywords": ["diabetes", "hypertonie"]
+      },
+      {
+        "label": "NYQP qabul qilgan (Ibuprofen)",
+        "labelRu": "Приём НПВП (Ibuprofen)",
+        "labelTr": "NSAİİ kullanımı (Ibuprofen)",
+        "labelEn": "NSAID use (Ibuprofen)",
+        "keywords": ["ibuprofen", "nsar"]
+      },
+      {
+        "label": "eGFR, kaliy va kamqonlik (eGFR 16 ml/min)",
+        "labelRu": "СКФ, калий и анемия (eGFR 16 ml/min)",
+        "labelTr": "eGFR, potasyum ve anemi (eGFR 16 ml/min)",
+        "labelEn": "eGFR, potassium and anaemia (eGFR 16 ml/min)",
+        "keywords": ["egfr", "kalium", "hb 9,8"]
+      },
+      {
+        "label": "UTT: kichraygan buyraklar (verkleinerte Nieren)",
+        "labelRu": "УЗИ: уменьшенные почки (verkleinerte Nieren)",
+        "labelTr": "USG: küçülmüş böbrekler (verkleinerte Nieren)",
+        "labelEn": "Ultrasound: shrunken kidneys (verkleinerte Nieren)",
+        "keywords": ["verkleinert", "sonographie"]
+      },
+      {
+        "label": "Diagnoz: surunkali buyrak kasalligi, 4-bosqich (chronische Niereninsuffizienz Stadium 4)",
+        "labelRu": "Диагноз: ХБП 4 стадии (chronische Niereninsuffizienz Stadium 4)",
+        "labelTr": "Tanı: evre 4 kronik böbrek hastalığı (chronische Niereninsuffizienz Stadium 4)",
+        "labelEn": "Diagnosis: chronic kidney disease stage 4 (chronische Niereninsuffizienz Stadium 4)",
+        "keywords": ["niereninsuffizienz", "stadium 4"]
+      },
+      {
+        "label": "Davolash: Metformin va NYQPni to‘xtatish, insulin, eritropoetin (Medikationsanpassung)",
+        "labelRu": "Лечение: отмена метформина и НПВП, инсулин, эритропоэтин (Medikationsanpassung)",
+        "labelTr": "Tedavi: Metformin ve NSAİİ kesilmesi, insülin, eritropoetin (Medikationsanpassung)",
+        "labelEn": "Treatment: stop metformin and NSAIDs, insulin, erythropoietin (Medikationsanpassung)",
+        "keywords": ["metformin", "insulin", "erythropoetin"]
+      },
+      {
+        "label": "Tavsiya: dializga tayyorgarlik va shunt (Dialysevorbereitung, Shunt)",
+        "labelRu": "Рекомендация: подготовка к диализу и шунт (Dialysevorbereitung, Shunt)",
+        "labelTr": "Öneri: diyalize hazırlık ve fistül (Dialysevorbereitung, Shunt)",
+        "labelEn": "Recommendation: preparation for dialysis and fistula (Dialysevorbereitung, Shunt)",
+        "keywords": ["dialyse", "shunt"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Klaus Dieter Schmidt, 63 Jahre, der vom 30.09.2026 bis zum 09.10.2026 in unserer nephrologischen Abteilung behandelt wurde.\n\nAnamnese:\nDer Patient stellte sich mit seit Monaten bestehender Müdigkeit, generalisiertem Pruritus, Inappetenz, Nykturie und Wadenkrämpfen vor. Bekannt sind ein schlecht eingestellter Diabetes mellitus Typ 2 mit Retinopathie und eine arterielle Hypertonie. Wegen Knieschmerzen nahm er regelmäßig Ibuprofen ein (NSAR). Die Mutter war dialysepflichtig.\n\nBefunde:\nLaborchemisch zeigten sich ein Kreatinin von 3,8 mg/dl bei einer eGFR von 16 ml/min, ein Kalium von 5,6 mmol/l, ein Hb von 9,8 g/dl, ein erhöhtes Phosphat, ein PTH von 210 pg/ml und eine metabolische Azidose (pH 7,31). Der Albumin/Kreatinin-Quotient lag bei 1.200 mg/g. In der Sonographie fanden sich beidseits verkleinerte Nieren mit verschmälertem Parenchym.\n\nDiagnose:\nChronische Niereninsuffizienz Stadium 4 bei diabetischer und hypertensiver Nephropathie mit renaler Anämie und sekundärem Hyperparathyreoidismus.\n\nTherapie und Verlauf:\nMetformin und Glimepirid wurden abgesetzt und durch Insulin ersetzt, Ibuprofen wurde abgesetzt. Zur Blutdruckeinstellung erhielt der Patient Amlodipin und Torasemid. Zusätzlich begannen wir Natriumbicarbonat, einen Phosphatbinder und Erythropoetin.\n\nProcedere:\nWir empfehlen eine kaliumarme und salzarme Ernährung sowie den Verzicht auf NSAR. Wegen der fortgeschrittenen Niereninsuffizienz haben wir mit der Dialysevorbereitung begonnen: Die Anlage eines Shunts am linken Unterarm ist geplant, die Venen am linken Arm sollten geschont werden. Wir bitten um monatliche Kontrollen von Kreatinin, Kalium und Hb.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab106",
+    "caseId": "c128",
+    "title": "Rhabdomyolyse mit akutem Nierenversagen",
+    "task": "Nefrologiya bo‘limidan uy shifokoriga Arztbrief yozing. Sabab, KK va kreatinin dinamikasi hamda sportga qaytishga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из нефрологии семейному врачу. Обратите внимание на причину, динамику КК и креатинина и возвращение к спорту.",
+    "taskTr": "Nefroloji servisinden aile hekimine bir Arztbrief yazın. Nedene, CK ve kreatinin seyrine ve spora dönüşe dikkat edin.",
+    "taskEn": "Write an Arztbrief from nephrology to the GP. Pay attention to the cause, the course of CK and creatinine and return to sport.",
+    "facts": [
+      "Patient: Dennis Wagner, 24 Jahre, männlich",
+      "Aufnahme: 02.10.2026, Notaufnahme",
+      "Nach intensivem Training bei Hitze mit geringer Trinkmenge: Myalgien, Schwellung der Oberschenkel und Oberarme, cola-farbener Urin, Oligurie",
+      "Ibuprofen 600 mg 3×/Tag, Kreatin-Supplement",
+      "CK 86.000 U/l, Myoglobin stark erhöht, Kreatinin 3,4 mg/dl, Kalium 5,9 mmol/l; Urinstix Blut positiv ohne Erythrozyten im Sediment",
+      "Kompartmentdruck normal; EKG ohne Hyperkaliämiezeichen",
+      "Therapie: Volumentherapie 6–8 l/Tag mit Ziel-Urinausscheidung > 200 ml/h, NSAR und Kreatin abgesetzt, keine Dialyse nötig; Kreatinin bei Entlassung 1,2 mg/dl, CK 2.100 U/l"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patient ma’lumotlari (Herr Wagner)",
+        "labelRu": "Данные пациента (Herr Wagner)",
+        "labelTr": "Hasta bilgileri (Herr Wagner)",
+        "labelEn": "Patient data (Herr Wagner)",
+        "keywords": ["wagner"]
+      },
+      {
+        "label": "Asosiy shikoyat: mushak og‘rig‘i va kola rangidagi siydik (Myalgien, cola-farbener Urin)",
+        "labelRu": "Основная жалоба: мышечные боли и моча цвета колы (Myalgien, cola-farbener Urin)",
+        "labelTr": "Ana şikâyet: kas ağrısı ve kola renkli idrar (Myalgien, cola-farbener Urin)",
+        "labelEn": "Main complaint: muscle pain and cola-coloured urine (Myalgien, cola-farbener Urin)",
+        "keywords": ["myalgie", "cola"]
+      },
+      {
+        "label": "Issiqda intensiv mashg‘ulot va kam suyuqlik (Training bei Hitze)",
+        "labelRu": "Интенсивная нагрузка в жару и мало жидкости (Training bei Hitze)",
+        "labelTr": "Sıcakta yoğun egzersiz ve az sıvı (Training bei Hitze)",
+        "labelEn": "Intense exercise in heat and little fluid (Training bei Hitze)",
+        "keywords": ["training", "hitze"]
+      },
+      {
+        "label": "NYQP va kreatin (Ibuprofen, Kreatin)",
+        "labelRu": "НПВП и креатин (Ibuprofen, Kreatin)",
+        "labelTr": "NSAİİ ve kreatin (Ibuprofen, Kreatin)",
+        "labelEn": "NSAIDs and creatine (Ibuprofen, Kreatin)",
+        "keywords": ["ibuprofen", "kreatin"]
+      },
+      {
+        "label": "KK, kreatinin va kaliy (CK 86.000 U/l)",
+        "labelRu": "КК, креатинин и калий (CK 86.000 U/l)",
+        "labelTr": "CK, kreatinin ve potasyum (CK 86.000 U/l)",
+        "labelEn": "CK, creatinine and potassium (CK 86.000 U/l)",
+        "keywords": ["ck", "kreatinin", "kalium"]
+      },
+      {
+        "label": "Siydik: qon testi musbat, eritrotsit yo‘q (Myoglobinurie)",
+        "labelRu": "Моча: кровь положительна без эритроцитов (Myoglobinurie)",
+        "labelTr": "İdrar: kan pozitif, eritrosit yok (Myoglobinurie)",
+        "labelEn": "Urine: blood positive without red cells (Myoglobinurie)",
+        "keywords": ["myoglobin", "sediment"]
+      },
+      {
+        "label": "Diagnoz: rabdomioliz va o‘tkir buyrak yetishmovchiligi (Rhabdomyolyse)",
+        "labelRu": "Диагноз: рабдомиолиз и ОПП (Rhabdomyolyse)",
+        "labelTr": "Tanı: rabdomiyoliz ve akut böbrek hasarı (Rhabdomyolyse)",
+        "labelEn": "Diagnosis: rhabdomyolysis and acute kidney injury (Rhabdomyolyse)",
+        "keywords": ["rhabdomyolyse"]
+      },
+      {
+        "label": "Davolash: katta hajmda suyuqlik (Volumentherapie)",
+        "labelRu": "Лечение: массивная инфузия (Volumentherapie)",
+        "labelTr": "Tedavi: yoğun sıvı tedavisi (Volumentherapie)",
+        "labelEn": "Treatment: aggressive fluid therapy (Volumentherapie)",
+        "keywords": ["volumentherapie"]
+      },
+      {
+        "label": "Tavsiya: sportga asta qaytish, NYQP va qo‘shimchalardan saqlanish (langsamer Trainingsaufbau)",
+        "labelRu": "Рекомендация: постепенный возврат к спорту, избегать НПВП и добавок (langsamer Trainingsaufbau)",
+        "labelTr": "Öneri: spora kademeli dönüş, NSAİİ ve takviyelerden kaçınma (langsamer Trainingsaufbau)",
+        "labelEn": "Recommendation: gradual return to sport, avoid NSAIDs and supplements (langsamer Trainingsaufbau)",
+        "keywords": ["trainingsaufbau", "nsar", "trinkmenge"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Dennis Wagner, 24 Jahre, der vom 02.10.2026 bis zum 08.10.2026 in unserer nephrologischen Abteilung behandelt wurde.\n\nAnamnese:\nDer Patient stellte sich zwei Tage nach einem intensiven Training bei Hitze mit geringer Trinkmenge mit ausgeprägten Myalgien, Schwellung der Oberschenkel und Oberarme, cola-farbenem Urin und Oligurie vor. Er nahm dreimal täglich Ibuprofen 600 mg sowie ein Kreatin-Supplement ein.\n\nBefunde:\nLaborchemisch zeigten sich eine CK von 86.000 U/l, ein stark erhöhtes Myoglobin, ein Kreatinin von 3,4 mg/dl und ein Kalium von 5,9 mmol/l. Der Urinstix war positiv für Blut, im Sediment fanden sich jedoch keine Erythrozyten, passend zu einer Myoglobinurie. Der Kompartmentdruck war normal, das EKG ohne Hyperkaliämiezeichen.\n\nDiagnose:\nBelastungsinduzierte Rhabdomyolyse mit akutem Nierenversagen, begünstigt durch Exsikkose und NSAR.\n\nTherapie und Verlauf:\nWir führten eine Volumentherapie mit 6–8 Litern täglich durch, mit einer Ziel-Urinausscheidung über 200 ml/h. Ibuprofen und Kreatin wurden abgesetzt. Eine Dialyse war nicht erforderlich. Bei Entlassung lag das Kreatinin bei 1,2 mg/dl, die CK bei 2.100 U/l.\n\nProcedere:\nWir bitten um eine Kontrolle von Kreatinin und CK in einer Woche. Für mindestens vier Wochen sollte kein intensives Training erfolgen, danach empfehlen wir einen langsamen Trainingsaufbau mit ausreichender Trinkmenge. NSAR und Supplemente sollten gemieden werden.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab107",
+    "caseId": "c129",
+    "title": "Postinfektiöse Glomerulonephritis",
+    "task": "Nefrologiya bo‘limidan uy shifokoriga Arztbrief yozing. Oldingi angina, nefritik sindrom belgilari va qon bosimi nazoratiga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из нефрологии семейному врачу. Обратите внимание на предшествующую ангину, признаки нефритического синдрома и контроль давления.",
+    "taskTr": "Nefroloji servisinden aile hekimine bir Arztbrief yazın. Önceki anjine, nefritik sendrom bulgularına ve tansiyon kontrolüne dikkat edin.",
+    "taskEn": "Write an Arztbrief from nephrology to the GP. Pay attention to the preceding tonsillitis, signs of nephritic syndrome and blood pressure control.",
+    "facts": [
+      "Patient: Leon Fischer, 19 Jahre, männlich",
+      "Aufnahme: 03.10.2026, nephrologische Station",
+      "Seit 3 Tagen cola-farbener Urin, Lidödeme, Oligurie, Kopfschmerzen; vor 2 Wochen unbehandelte eitrige Tonsillitis",
+      "RR 165/100 mmHg; Kreatinin 1,8 mg/dl; Urinsediment: dysmorphe Erythrozyten, Erythrozytenzylinder, Proteinurie 1,2 g/Tag",
+      "Komplement C3 erniedrigt, C4 normal; Antistreptolysin-O-Titer erhöht",
+      "Sonographie: vergrößerte, echoreiche Nieren",
+      "Therapie: Furosemid, Amlodipin, Salz- und Flüssigkeitsrestriktion; Penicillin V für 10 Tage; Kreatinin bei Entlassung 1,1 mg/dl"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patient ma’lumotlari (Herr Fischer)",
+        "labelRu": "Данные пациента (Herr Fischer)",
+        "labelTr": "Hasta bilgileri (Herr Fischer)",
+        "labelEn": "Patient data (Herr Fischer)",
+        "keywords": ["fischer"]
+      },
+      {
+        "label": "Asosiy shikoyat: kola rangidagi siydik va qovoq shishi (Lidödeme)",
+        "labelRu": "Основная жалоба: моча цвета колы и отёк век (Lidödeme)",
+        "labelTr": "Ana şikâyet: kola renkli idrar ve göz kapağı ödemi (Lidödeme)",
+        "labelEn": "Main complaint: cola-coloured urine and eyelid swelling (Lidödeme)",
+        "keywords": ["lidödem", "cola"]
+      },
+      {
+        "label": "Oldingi angina (Tonsillitis)",
+        "labelRu": "Предшествующая ангина (Tonsillitis)",
+        "labelTr": "Önceki tonsillit (Tonsillitis)",
+        "labelEn": "Preceding tonsillitis (Tonsillitis)",
+        "keywords": ["tonsillitis"]
+      },
+      {
+        "label": "Gipertoniya va oliguriya (RR 165/100 mmHg)",
+        "labelRu": "Гипертония и олигурия (RR 165/100 mmHg)",
+        "labelTr": "Hipertansiyon ve oligüri (RR 165/100 mmHg)",
+        "labelEn": "Hypertension and oliguria (RR 165/100 mmHg)",
+        "keywords": ["165/100", "oligurie"]
+      },
+      {
+        "label": "Siydik cho‘kmasi: eritrotsitar silindrlar (Erythrozytenzylinder)",
+        "labelRu": "Осадок: эритроцитарные цилиндры (Erythrozytenzylinder)",
+        "labelTr": "Sediment: eritrosit silendirleri (Erythrozytenzylinder)",
+        "labelEn": "Sediment: red cell casts (Erythrozytenzylinder)",
+        "keywords": ["erythrozytenzylinder", "dysmorph"]
+      },
+      {
+        "label": "C3 pasaygan, ASL-O yuqori (Komplement C3)",
+        "labelRu": "C3 снижен, АСЛ-О повышен (Komplement C3)",
+        "labelTr": "C3 düşük, ASO yüksek (Komplement C3)",
+        "labelEn": "Low C3, raised ASO (Komplement C3)",
+        "keywords": ["c3", "antistreptolysin"]
+      },
+      {
+        "label": "Diagnoz: streptokokkdan keyingi glomerulonefrit (Poststreptokokken-Glomerulonephritis)",
+        "labelRu": "Диагноз: постстрептококковый гломерулонефрит (Poststreptokokken-Glomerulonephritis)",
+        "labelTr": "Tanı: poststreptokokal glomerülonefrit (Poststreptokokken-Glomerulonephritis)",
+        "labelEn": "Diagnosis: post-streptococcal glomerulonephritis (Poststreptokokken-Glomerulonephritis)",
+        "keywords": ["glomerulonephritis"]
+      },
+      {
+        "label": "Davolash: diuretik, gipotenziv dori va penitsillin (Furosemid, Penicillin)",
+        "labelRu": "Лечение: диуретик, гипотензивный и пенициллин (Furosemid, Penicillin)",
+        "labelTr": "Tedavi: diüretik, antihipertansif ve penisilin (Furosemid, Penicillin)",
+        "labelEn": "Treatment: diuretic, antihypertensive and penicillin (Furosemid, Penicillin)",
+        "keywords": ["furosemid", "penicillin"]
+      },
+      {
+        "label": "Tavsiya: qon bosimi, siydik va komplement nazorati (Kontrolle)",
+        "labelRu": "Рекомендация: контроль давления, мочи и комплемента (Kontrolle)",
+        "labelTr": "Öneri: tansiyon, idrar ve kompleman takibi (Kontrolle)",
+        "labelEn": "Recommendation: monitor blood pressure, urine and complement (Kontrolle)",
+        "keywords": ["blutdruck", "c3-kontrolle", "urinstatus"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Leon Fischer, 19 Jahre, der vom 03.10.2026 bis zum 10.10.2026 in unserer nephrologischen Abteilung behandelt wurde.\n\nAnamnese:\nDer Patient stellte sich mit seit drei Tagen bestehendem cola-farbenem Urin, Lidödemen, Oligurie und Kopfschmerzen vor. Zwei Wochen zuvor hatte er eine eitrige Tonsillitis, die nicht behandelt worden war.\n\nBefunde:\nDer Blutdruck lag bei 165/100 mmHg, das Kreatinin bei 1,8 mg/dl. Im Urinsediment fanden sich dysmorphe Erythrozyten und Erythrozytenzylinder bei einer Proteinurie von 1,2 g/Tag. Das Komplement C3 war erniedrigt, C4 normal, der Antistreptolysin-O-Titer erhöht. Sonographisch zeigten sich vergrößerte, echoreiche Nieren.\n\nDiagnose:\nAkute Poststreptokokken-Glomerulonephritis mit nephritischem Syndrom.\n\nTherapie und Verlauf:\nWir behandelten mit Furosemid und Amlodipin sowie einer Salz- und Flüssigkeitsrestriktion. Zur Eradikation der Streptokokken erhielt der Patient Penicillin V für zehn Tage. Ödeme und Hypertonie bildeten sich zurück, bei Entlassung lag das Kreatinin bei 1,1 mg/dl.\n\nProcedere:\nWir bitten um wöchentliche Kontrollen von Blutdruck, Kreatinin und Urinstatus. Eine C3-Kontrolle ist nach acht Wochen erforderlich; bleibt das C3 erniedrigt oder die Proteinurie bestehen, ist eine Nierenbiopsie indiziert. Die Prognose ist in der Regel sehr gut.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab108",
+    "caseId": "c130",
+    "title": "Autosomal-dominante polyzystische Nierenerkrankung",
+    "task": "Nefrologiya ambulatoriyasidan uy shifokoriga Arztbrief yozing. Oilaviy anamnez, miya anevrizmasini tekshirish va bolalar uchun genetik maslahatga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из нефрологической амбулатории семейному врачу. Обратите внимание на семейный анамнез, скрининг аневризмы и генетическое консультирование для детей.",
+    "taskTr": "Nefroloji polikliniğinden aile hekimine bir Arztbrief yazın. Aile öyküsüne, anevrizma taramasına ve çocuklar için genetik danışmanlığa dikkat edin.",
+    "taskEn": "Write an Arztbrief from the nephrology clinic to the GP. Pay attention to the family history, aneurysm screening and genetic counselling for the children.",
+    "facts": [
+      "Patientin: Corinna Weber, 38 Jahre, weiblich",
+      "Vorstellung: 05.10.2026, nephrologische Ambulanz",
+      "Seit Monaten beidseitige Flankenschmerzen, Zunahme des Bauchumfangs, einmalige Makrohämaturie; Blutdruck 165/100 mmHg",
+      "Familienanamnese: Vater mit Zystennieren dialysepflichtig mit 52 Jahren, Großvater an Hirnblutung mit 45 Jahren verstorben",
+      "Sonographie/MRT: beidseits vergrößerte Nieren mit zahlreichen Zysten, Leberzysten; Gesamtnierenvolumen 1.400 ml",
+      "eGFR 72 ml/min; MR-Angiographie des Kopfes: kein Aneurysma",
+      "Therapie: Ramipril (Ziel-Blutdruck < 130/80 mmHg); Prüfung einer Tolvaptan-Therapie"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patientin ma’lumotlari (Frau Weber)",
+        "labelRu": "Данные пациентки (Frau Weber)",
+        "labelTr": "Hasta bilgileri (Frau Weber)",
+        "labelEn": "Patient data (Frau Weber)",
+        "keywords": ["weber"]
+      },
+      {
+        "label": "Asosiy shikoyat: biqin og‘rig‘i va yuqori qon bosimi (Flankenschmerzen, Hypertonie)",
+        "labelRu": "Основная жалоба: боль в боках и высокое давление (Flankenschmerzen, Hypertonie)",
+        "labelTr": "Ana şikâyet: yan ağrısı ve yüksek tansiyon (Flankenschmerzen, Hypertonie)",
+        "labelEn": "Main complaint: flank pain and high blood pressure (Flankenschmerzen, Hypertonie)",
+        "keywords": ["flankenschmerz", "165/100"]
+      },
+      {
+        "label": "Oilaviy anamnez (Vater dialysepflichtig, Großvater Hirnblutung)",
+        "labelRu": "Семейный анамнез (Vater dialysepflichtig, Großvater Hirnblutung)",
+        "labelTr": "Aile öyküsü (Vater dialysepflichtig, Großvater Hirnblutung)",
+        "labelEn": "Family history (Vater dialysepflichtig, Großvater Hirnblutung)",
+        "keywords": ["vater", "großvater"]
+      },
+      {
+        "label": "UTT/MRT: ko‘p kistalar (Zysten)",
+        "labelRu": "УЗИ/МРТ: множественные кисты (Zysten)",
+        "labelTr": "USG/MR: çok sayıda kist (Zysten)",
+        "labelEn": "Ultrasound/MRI: multiple cysts (Zysten)",
+        "keywords": ["zysten", "nierenvolumen"]
+      },
+      {
+        "label": "Buyrak funksiyasi (eGFR 72 ml/min)",
+        "labelRu": "Функция почек (eGFR 72 ml/min)",
+        "labelTr": "Böbrek fonksiyonu (eGFR 72 ml/min)",
+        "labelEn": "Kidney function (eGFR 72 ml/min)",
+        "keywords": ["egfr"]
+      },
+      {
+        "label": "Miya anevrizmasi istisno qilingan (MR-Angiographie)",
+        "labelRu": "Аневризма сосудов мозга исключена (MR-Angiographie)",
+        "labelTr": "Beyin anevrizması dışlandı (MR-Angiographie)",
+        "labelEn": "Brain aneurysm ruled out (MR-Angiographie)",
+        "keywords": ["aneurysma", "mr-angiographie"]
+      },
+      {
+        "label": "Diagnoz: autosom-dominant polikistoz buyrak kasalligi (ADPKD)",
+        "labelRu": "Диагноз: аутосомно-доминантный поликистоз почек (ADPKD)",
+        "labelTr": "Tanı: otozomal dominant polikistik böbrek hastalığı (ADPKD)",
+        "labelEn": "Diagnosis: autosomal dominant polycystic kidney disease (ADPKD)",
+        "keywords": ["polyzystisch", "zystennieren"]
+      },
+      {
+        "label": "Davolash: ramipril va tolvaptanni ko‘rib chiqish (Ramipril, Tolvaptan)",
+        "labelRu": "Лечение: рамиприл и рассмотрение толваптана (Ramipril, Tolvaptan)",
+        "labelTr": "Tedavi: ramipril ve tolvaptan değerlendirmesi (Ramipril, Tolvaptan)",
+        "labelEn": "Treatment: ramipril and consider tolvaptan (Ramipril, Tolvaptan)",
+        "keywords": ["ramipril", "tolvaptan"]
+      },
+      {
+        "label": "Tavsiya: bolalar uchun genetik maslahat (genetische Beratung)",
+        "labelRu": "Рекомендация: генетическое консультирование детей (genetische Beratung)",
+        "labelTr": "Öneri: çocuklar için genetik danışmanlık (genetische Beratung)",
+        "labelEn": "Recommendation: genetic counselling for the children (genetische Beratung)",
+        "keywords": ["genetische beratung", "kinder"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihre Patientin Frau Corinna Weber, 38 Jahre, die vom 05.10.2026 bis zum 05.10.2026 in unserer nephrologischen Ambulanz behandelt wurde.\n\nAnamnese:\nDie Patientin berichtete über seit Monaten bestehende beidseitige Flankenschmerzen, eine Zunahme des Bauchumfangs und eine einmalige Makrohämaturie. Beim Betriebsarzt wurde ein Blutdruck von 165/100 mmHg gemessen. In der Familienanamnese ist der Vater wegen Zystennieren mit 52 Jahren dialysepflichtig geworden, der Großvater verstarb mit 45 Jahren an einer Hirnblutung.\n\nBefunde:\nSonographisch und im MRT zeigten sich beidseits vergrößerte Nieren mit zahlreichen Zysten sowie Leberzysten bei einem Gesamtnierenvolumen von 1.400 ml. Die eGFR lag bei 72 ml/min. In der MR-Angiographie des Kopfes fand sich kein Aneurysma.\n\nDiagnose:\nAutosomal-dominante polyzystische Nierenerkrankung (ADPKD) mit arterieller Hypertonie.\n\nTherapie:\nWir begannen eine Therapie mit Ramipril mit einem Ziel-Blutdruck unter 130/80 mmHg. Aufgrund des großen Nierenvolumens prüfen wir eine Therapie mit Tolvaptan.\n\nProcedere:\nWir empfehlen eine Trinkmenge von 2,5–3 Litern täglich, salzarme Kost und den Verzicht auf NSAR. Da die Erkrankung autosomal-dominant vererbt wird, haben wir für die beiden Kinder eine genetische Beratung angeboten. Eine nephrologische Kontrolle ist in sechs Monaten vorgesehen.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab109",
+    "caseId": "c131",
+    "title": "Nierenarterienstenose mit renovaskulärer Hypertonie",
+    "task": "Nefrologiya bo‘limidan uy shifokoriga Arztbrief yozing. ACE ingibitoridan keyin kreatinin oshgani, o‘pka shishi va stent qaroriga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из нефрологии семейному врачу. Обратите внимание на рост креатинина после иАПФ, отёк лёгких и решение о стентировании.",
+    "taskTr": "Nefroloji servisinden aile hekimine bir Arztbrief yazın. ACE inhibitörü sonrası kreatinin artışına, akciğer ödemine ve stent kararına dikkat edin.",
+    "taskEn": "Write an Arztbrief from nephrology to the GP. Pay attention to the creatinine rise after the ACE inhibitor, the pulmonary oedema and the stent decision.",
+    "facts": [
+      "Patient: Erwin Graf, 69 Jahre, männlich",
+      "Aufnahme: 01.10.2026, nephrologische Station",
+      "Therapierefraktäre Hypertonie (> 180/100 mmHg unter Dreifachtherapie), zwei Flash-Lungenödeme in 6 Monaten; Kreatininanstieg 1,1 → 2,0 mg/dl nach Ramipril",
+      "pAVK, KHK, Diabetes, Nikotin 50 py",
+      "Abdominelles Strömungsgeräusch; Duplexsonographie und CT-Angiographie: hochgradige ostiale Nierenarterienstenose links (80 %), rechts unauffällig; linke Niere 9 cm",
+      "Aldosteron-Renin-Quotient unauffällig; Echokardiographie: LVEF 55 %, linksventrikuläre Hypertrophie",
+      "Therapie: Ramipril abgesetzt; Stentimplantation der linken Nierenarterie am 05.10.2026 (Indikation: Flash-Lungenödeme); Blutdruck danach 145/85 mmHg"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patient ma’lumotlari (Herr Graf)",
+        "labelRu": "Данные пациента (Herr Graf)",
+        "labelTr": "Hasta bilgileri (Herr Graf)",
+        "labelEn": "Patient data (Herr Graf)",
+        "keywords": ["graf"]
+      },
+      {
+        "label": "Asosiy shikoyat: davolanmaydigan gipertoniya (therapierefraktäre Hypertonie)",
+        "labelRu": "Основная жалоба: резистентная гипертония (therapierefraktäre Hypertonie)",
+        "labelTr": "Ana şikâyet: dirençli hipertansiyon (therapierefraktäre Hypertonie)",
+        "labelEn": "Main complaint: resistant hypertension (therapierefraktäre Hypertonie)",
+        "keywords": ["therapierefraktär", "hypertonie"]
+      },
+      {
+        "label": "To‘satdan o‘pka shishi (Flash-Lungenödem)",
+        "labelRu": "Внезапный отёк лёгких (Flash-Lungenödem)",
+        "labelTr": "Ani akciğer ödemi (Flash-Lungenödem)",
+        "labelEn": "Flash pulmonary oedema (Flash-Lungenödem)",
+        "keywords": ["lungenödem"]
+      },
+      {
+        "label": "ACE ingibitoridan keyin kreatinin oshishi (Kreatininanstieg)",
+        "labelRu": "Рост креатинина после иАПФ (Kreatininanstieg)",
+        "labelTr": "ACE inhibitörü sonrası kreatinin artışı (Kreatininanstieg)",
+        "labelEn": "Creatinine rise after ACE inhibitor (Kreatininanstieg)",
+        "keywords": ["kreatininanstieg", "ramipril"]
+      },
+      {
+        "label": "Ateroskleroz xavf omillari (pAVK, KHK, Nikotin)",
+        "labelRu": "Факторы риска атеросклероза (pAVK, KHK, Nikotin)",
+        "labelTr": "Ateroskleroz risk faktörleri (pAVK, KHK, Nikotin)",
+        "labelEn": "Atherosclerotic risk factors (pAVK, KHK, Nikotin)",
+        "keywords": ["pavk", "khk", "nikotin"]
+      },
+      {
+        "label": "Dupleks UTT/KT-angiografiya (80 % Stenose)",
+        "labelRu": "Дуплекс/КТ-ангиография (80 % Stenose)",
+        "labelTr": "Dupleks USG/BT anjiyografi (80 % Stenose)",
+        "labelEn": "Duplex/CT angiography (80 % Stenose)",
+        "keywords": ["duplexsonographie", "ct-angiographie", "80 %"]
+      },
+      {
+        "label": "Diagnoz: buyrak arteriyasi stenozi (Nierenarterienstenose)",
+        "labelRu": "Диагноз: стеноз почечной артерии (Nierenarterienstenose)",
+        "labelTr": "Tanı: renal arter stenozu (Nierenarterienstenose)",
+        "labelEn": "Diagnosis: renal artery stenosis (Nierenarterienstenose)",
+        "keywords": ["nierenarterienstenose"]
+      },
+      {
+        "label": "Davolash: stent o‘rnatish (Stentimplantation)",
+        "labelRu": "Лечение: стентирование (Stentimplantation)",
+        "labelTr": "Tedavi: stent takılması (Stentimplantation)",
+        "labelEn": "Treatment: stenting (Stentimplantation)",
+        "keywords": ["stent"]
+      },
+      {
+        "label": "Tavsiya: chekishni tashlash, statin, bosim va buyrak nazorati (Nikotinkarenz)",
+        "labelRu": "Рекомендация: отказ от курения, статин, контроль давления и почек (Nikotinkarenz)",
+        "labelTr": "Öneri: sigarayı bırakma, statin, tansiyon ve böbrek takibi (Nikotinkarenz)",
+        "labelEn": "Recommendation: stop smoking, statin, monitor blood pressure and kidneys (Nikotinkarenz)",
+        "keywords": ["nikotinkarenz", "blutdruck", "duplex-kontrolle"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Erwin Graf, 69 Jahre, der vom 01.10.2026 bis zum 09.10.2026 in unserer nephrologischen Abteilung behandelt wurde.\n\nAnamnese:\nDer Patient wurde wegen einer therapierefraktären Hypertonie mit Werten über 180/100 mmHg unter Dreifachtherapie aufgenommen. In den letzten sechs Monaten traten zwei Flash-Lungenödeme auf. Nach Beginn von Ramipril war ein Kreatininanstieg von 1,1 auf 2,0 mg/dl beobachtet worden. Bekannt sind eine pAVK, eine KHK, ein Diabetes mellitus und ein Nikotinabusus von 50 py.\n\nBefunde:\nAuskultatorisch fand sich ein abdominelles Strömungsgeräusch. Duplexsonographie und CT-Angiographie zeigten eine hochgradige ostiale Nierenarterienstenose links von 80 % bei unauffälliger rechter Nierenarterie; die linke Niere misst 9 cm. Der Aldosteron-Renin-Quotient war unauffällig. Echokardiographisch fanden sich eine LVEF von 55 % und eine linksventrikuläre Hypertrophie.\n\nDiagnose:\nAtherosklerotische Nierenarterienstenose links mit renovaskulärer Hypertonie und rezidivierenden Flash-Lungenödemen.\n\nTherapie und Verlauf:\nRamipril wurde abgesetzt. Wegen der Flash-Lungenödeme erfolgte am 05.10.2026 eine Stentimplantation der linken Nierenarterie. Danach lag der Blutdruck bei 145/85 mmHg, das Kreatinin bei 1,4 mg/dl.\n\nProcedere:\nWir empfehlen eine konsequente Nikotinkarenz, die Fortführung von ASS und einem hochdosierten Statin sowie regelmäßige Kontrollen von Blutdruck und Kreatinin. Eine Duplex-Kontrolle der Nierenarterie ist in sechs Monaten vorgesehen.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab110",
+    "caseId": "c132",
+    "title": "Primärer Hyperparathyreoidismus",
+    "task": "Endokrinologiya bo‘limidan uy shifokoriga Arztbrief yozing. Simptomlar, kalsiy bilan davolashni to‘xtatish va operatsiya ko‘rsatmasiga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из эндокринологии семейному врачу. Обратите внимание на симптомы, отмену кальция и показания к операции.",
+    "taskTr": "Endokrinoloji servisinden aile hekimine bir Arztbrief yazın. Belirtilere, kalsiyumun kesilmesine ve ameliyat endikasyonuna dikkat edin.",
+    "taskEn": "Write an Arztbrief from endocrinology to the GP. Pay attention to the symptoms, stopping calcium supplements and the indication for surgery.",
+    "facts": [
+      "Patientin: Hildegard Sommer, 61 Jahre, weiblich",
+      "Aufnahme: 30.09.2026, endokrinologische Station",
+      "Dritte Nephrolithiasis in 2 Jahren, Müdigkeit, Konzentrationsstörungen, Obstipation, Polydipsie, Knochenschmerzen",
+      "Osteoporose; Calcium/Vitamin D durch den Hausarzt",
+      "Calcium 3,0 mmol/l, Phosphat erniedrigt, Parathormon 184 pg/ml, Calcium im 24-h-Urin erhöht, Kreatinin normal",
+      "Sonographie und Szintigraphie: Nebenschilddrüsenadenom links kaudal",
+      "DXA: T-Score −3,1 am Radius"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patientin ma’lumotlari (Frau Sommer)",
+        "labelRu": "Данные пациентки (Frau Sommer)",
+        "labelTr": "Hasta bilgileri (Frau Sommer)",
+        "labelEn": "Patient data (Frau Sommer)",
+        "keywords": ["sommer"]
+      },
+      {
+        "label": "Takrorlanuvchi buyrak toshlari (Nephrolithiasis)",
+        "labelRu": "Рецидивирующие камни почек (Nephrolithiasis)",
+        "labelTr": "Tekrarlayan böbrek taşları (Nephrolithiasis)",
+        "labelEn": "Recurrent kidney stones (Nephrolithiasis)",
+        "keywords": ["nephrolithiasis", "nierenstein"]
+      },
+      {
+        "label": "Umumiy simptomlar (Müdigkeit, Obstipation, Polydipsie)",
+        "labelRu": "Общие симптомы (Müdigkeit, Obstipation, Polydipsie)",
+        "labelTr": "Genel belirtiler (Müdigkeit, Obstipation, Polydipsie)",
+        "labelEn": "General symptoms (Müdigkeit, Obstipation, Polydipsie)",
+        "keywords": ["müdigkeit", "obstipation", "polydipsie"]
+      },
+      {
+        "label": "Kalsiy preparati qabul qilgan (Calcium/Vitamin D)",
+        "labelRu": "Принимала кальций (Calcium/Vitamin D)",
+        "labelTr": "Kalsiyum kullanımı (Calcium/Vitamin D)",
+        "labelEn": "Calcium supplements (Calcium/Vitamin D)",
+        "keywords": ["calcium/vitamin d", "absetzen"]
+      },
+      {
+        "label": "Kalsiy va paratgormon (Parathormon)",
+        "labelRu": "Кальций и паратгормон (Parathormon)",
+        "labelTr": "Kalsiyum ve parathormon (Parathormon)",
+        "labelEn": "Calcium and PTH (Parathormon)",
+        "keywords": ["parathormon", "3,0 mmol"]
+      },
+      {
+        "label": "Visualizatsiya: adenoma (Szintigraphie)",
+        "labelRu": "Визуализация: аденома (Szintigraphie)",
+        "labelTr": "Görüntüleme: adenom (Szintigraphie)",
+        "labelEn": "Imaging: adenoma (Szintigraphie)",
+        "keywords": ["szintigraphie", "adenom"]
+      },
+      {
+        "label": "Diagnoz: birlamchi giperparatireoz (primärer Hyperparathyreoidismus)",
+        "labelRu": "Диагноз: первичный гиперпаратиреоз (primärer Hyperparathyreoidismus)",
+        "labelTr": "Tanı: primer hiperparatiroidizm (primärer Hyperparathyreoidismus)",
+        "labelEn": "Diagnosis: primary hyperparathyroidism (primärer Hyperparathyreoidismus)",
+        "keywords": ["hyperparathyreoidismus"]
+      },
+      {
+        "label": "Tavsiya: paratireoidektomiya (Parathyreoidektomie)",
+        "labelRu": "Рекомендация: паратиреоидэктомия (Parathyreoidektomie)",
+        "labelTr": "Öneri: paratiroidektomi (Parathyreoidektomie)",
+        "labelEn": "Recommendation: parathyroidectomy (Parathyreoidektomie)",
+        "keywords": ["parathyreoidektomie", "operation"]
+      },
+      {
+        "label": "Tavsiya: ko‘p suyuqlik va kalsiy nazorati (Trinkmenge)",
+        "labelRu": "Рекомендация: достаточное питьё и контроль кальция (Trinkmenge)",
+        "labelTr": "Öneri: bol sıvı ve kalsiyum takibi (Trinkmenge)",
+        "labelEn": "Recommendation: good fluid intake and calcium monitoring (Trinkmenge)",
+        "keywords": ["trinkmenge", "kontrolle"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihre Patientin Frau Hildegard Sommer, 61 Jahre, die vom 30.09.2026 bis zum 04.10.2026 in unserer endokrinologischen Abteilung behandelt wurde.\n\nAnamnese:\nDie Patientin stellte sich nach der dritten Nephrolithiasis innerhalb von zwei Jahren vor. Zudem bestanden Müdigkeit, Konzentrationsstörungen, Obstipation, Polydipsie und diffuse Knochenschmerzen. Bekannt ist eine Osteoporose, wegen der der Hausarzt Calcium/Vitamin D verordnet hatte.\n\nBefunde:\nLaborchemisch zeigten sich ein Calcium von 3,0 mmol/l, ein erniedrigtes Phosphat und ein Parathormon von 184 pg/ml; das Calcium im 24-h-Urin war erhöht, das Kreatinin normal. Sonographie und Szintigraphie ergaben ein Nebenschilddrüsenadenom links kaudal. In der DXA lag der T-Score am Radius bei −3,1.\n\nDiagnose:\nPrimärer Hyperparathyreoidismus bei Nebenschilddrüsenadenom links mit rezidivierender Nephrolithiasis und Osteoporose.\n\nTherapie und Verlauf:\nDas Calcium-Präparat wurde abgesetzt, unter ausreichender Trinkmenge sank das Calcium auf 2,8 mmol/l.\n\nProcedere:\nAufgrund der symptomatischen Erkrankung mit Nierensteinen und Osteoporose besteht die Indikation zur Parathyreoidektomie; die Operation ist in der endokrinen Chirurgie in drei Wochen geplant. Bis dahin empfehlen wir eine Trinkmenge von mindestens 2,5 Litern täglich und eine Kontrolle des Calciums in einer Woche. Thiazide und Calcium-Präparate sollten gemieden werden.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab111",
+    "caseId": "c133",
+    "title": "Cushing-Syndrom",
+    "task": "Endokrinologiya bo‘limidan uy shifokoriga Arztbrief yozing. Klinik belgilar, ekzogen steroid istisno qilinishi, testlar va operatsiya rejasiga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из эндокринологии семейному врачу. Обратите внимание на клинические признаки, исключение экзогенных стероидов, тесты и план операции.",
+    "taskTr": "Endokrinoloji servisinden aile hekimine bir Arztbrief yazın. Klinik bulgulara, eksojen steroidin dışlanmasına, testlere ve ameliyat planına dikkat edin.",
+    "taskEn": "Write an Arztbrief from endocrinology to the GP. Pay attention to the clinical signs, exclusion of exogenous steroids, tests and the surgical plan.",
+    "facts": [
+      "Patientin: Nadine Kraft, 39 Jahre, weiblich",
+      "Aufnahme: 28.09.2026, endokrinologische Station",
+      "Seit 1 Jahr Gewichtszunahme 14 kg (Stammfettsucht), Vollmondgesicht, livide Striae, Hämatomneigung, proximale Muskelschwäche, Zyklusstörungen; neue Hypertonie und Hyperglykämie",
+      "Keine exogene Glukokortikoidzufuhr",
+      "1-mg-Dexamethason-Hemmtest: Cortisol nicht supprimiert (8,2 µg/dl); Cortisol im 24-h-Urin dreifach erhöht; ACTH erhöht",
+      "MRT Hypophyse: Mikroadenom 7 mm; HbA1c 7,0 %, Kalium 3,3 mmol/l",
+      "Neurochirurgie: transsphenoidale Adenomentfernung geplant"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patientin ma’lumotlari (Frau Kraft)",
+        "labelRu": "Данные пациентки (Frau Kraft)",
+        "labelTr": "Hasta bilgileri (Frau Kraft)",
+        "labelEn": "Patient data (Frau Kraft)",
+        "keywords": ["kraft"]
+      },
+      {
+        "label": "Tana markazida semirish va oy yuz (Stammfettsucht, Vollmondgesicht)",
+        "labelRu": "Центральное ожирение и лунообразное лицо (Stammfettsucht, Vollmondgesicht)",
+        "labelTr": "Gövdesel obezite ve ay yüzü (Stammfettsucht, Vollmondgesicht)",
+        "labelEn": "Central obesity and moon face (Stammfettsucht, Vollmondgesicht)",
+        "keywords": ["stammfettsucht", "vollmondgesicht"]
+      },
+      {
+        "label": "Striyalar va ko‘karishlar (Striae, Hämatome)",
+        "labelRu": "Стрии и синяки (Striae, Hämatome)",
+        "labelTr": "Stria ve morluklar (Striae, Hämatome)",
+        "labelEn": "Striae and bruising (Striae, Hämatome)",
+        "keywords": ["striae", "hämatom"]
+      },
+      {
+        "label": "Proksimal mushak kuchsizligi (Muskelschwäche)",
+        "labelRu": "Проксимальная мышечная слабость (Muskelschwäche)",
+        "labelTr": "Proksimal kas güçsüzlüğü (Muskelschwäche)",
+        "labelEn": "Proximal muscle weakness (Muskelschwäche)",
+        "keywords": ["muskelschwäche"]
+      },
+      {
+        "label": "Yangi gipertoniya va giperglikemiya (Hypertonie, HbA1c)",
+        "labelRu": "Новая гипертония и гипергликемия (Hypertonie, HbA1c)",
+        "labelTr": "Yeni hipertansiyon ve hiperglisemi (Hypertonie, HbA1c)",
+        "labelEn": "New hypertension and hyperglycaemia (Hypertonie, HbA1c)",
+        "keywords": ["hypertonie", "hba1c"]
+      },
+      {
+        "label": "Tashqi steroid yo‘q (keine exogene Zufuhr)",
+        "labelRu": "Без экзогенных стероидов (keine exogene Zufuhr)",
+        "labelTr": "Eksojen steroid yok (keine exogene Zufuhr)",
+        "labelEn": "No exogenous steroids (keine exogene Zufuhr)",
+        "keywords": ["exogen"]
+      },
+      {
+        "label": "Supressiya testi va AKTG (Dexamethason-Hemmtest)",
+        "labelRu": "Проба с дексаметазоном и АКТГ (Dexamethason-Hemmtest)",
+        "labelTr": "Supresyon testi ve ACTH (Dexamethason-Hemmtest)",
+        "labelEn": "Suppression test and ACTH (Dexamethason-Hemmtest)",
+        "keywords": ["dexamethason", "acth"]
+      },
+      {
+        "label": "Diagnoz: Kushing kasalligi (gipofiz adenomasi) (Morbus Cushing)",
+        "labelRu": "Диагноз: болезнь Кушинга (аденома гипофиза) (Morbus Cushing)",
+        "labelTr": "Tanı: Cushing hastalığı (hipofiz adenomu) (Morbus Cushing)",
+        "labelEn": "Diagnosis: Cushing’s disease (pituitary adenoma) (Morbus Cushing)",
+        "keywords": ["cushing"]
+      },
+      {
+        "label": "Tavsiya: transsfenoidal operatsiya, bosim va qand nazorati (transsphenoidale Operation)",
+        "labelRu": "Рекомендация: транссфеноидальная операция, контроль давления и сахара (transsphenoidale Operation)",
+        "labelTr": "Öneri: transsfenoidal ameliyat, tansiyon ve şeker takibi (transsphenoidale Operation)",
+        "labelEn": "Recommendation: transsphenoidal surgery, monitor BP and glucose (transsphenoidale Operation)",
+        "keywords": ["transsphenoidal", "blutzucker"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihre Patientin Frau Nadine Kraft, 39 Jahre, die vom 28.09.2026 bis zum 06.10.2026 in unserer endokrinologischen Abteilung behandelt wurde.\n\nAnamnese:\nDie Patientin berichtete über eine seit einem Jahr bestehende Gewichtszunahme von 14 kg im Sinne einer Stammfettsucht, ein Vollmondgesicht, livide Striae, eine Hämatomneigung, eine proximale Muskelschwäche und Zyklusstörungen. Neu aufgetreten sind eine arterielle Hypertonie und eine Hyperglykämie. Eine exogene Glukokortikoidzufuhr wurde ausgeschlossen.\n\nBefunde:\nIm 1-mg-Dexamethason-Hemmtest war das Cortisol mit 8,2 µg/dl nicht supprimiert, das Cortisol im 24-h-Urin war dreifach erhöht, das ACTH erhöht. Das MRT der Hypophyse zeigte ein Mikroadenom von 7 mm. Der HbA1c lag bei 7,0 %, das Kalium bei 3,3 mmol/l.\n\nDiagnose:\nACTH-abhängiges Cushing-Syndrom bei Hypophysenmikroadenom (Morbus Cushing).\n\nTherapie und Verlauf:\nZur Blutdrucksenkung begannen wir Ramipril, zur Kaliumsubstitution Spironolacton. Der Blutzucker wurde mit Metformin eingestellt.\n\nProcedere:\nIn der Neurochirurgie ist eine transsphenoidale Entfernung des Adenoms geplant. Bis dahin bitten wir um Kontrollen von Blutdruck, Blutzucker und Kalium. Nach der Operation ist vorübergehend eine Hydrocortison-Substitution erforderlich; eine Knochendichtemessung sollte ergänzt werden.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab112",
+    "caseId": "c134",
+    "title": "Phäochromozytom",
+    "task": "Endokrinologiya bo‘limidan uy shifokoriga Arztbrief yozing. Beta-blokator xavfi, alfa-blokator bilan tayyorgarlik va genetik tekshiruvga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из эндокринологии семейному врачу. Обратите внимание на опасность бета-блокатора, подготовку альфа-блокатором и генетическое обследование.",
+    "taskTr": "Endokrinoloji servisinden aile hekimine bir Arztbrief yazın. Beta bloker tehlikesine, alfa blokerle hazırlığa ve genetik incelemeye dikkat edin.",
+    "taskEn": "Write an Arztbrief from endocrinology to the GP. Pay attention to the danger of beta blockers, alpha-blocker preparation and genetic testing.",
+    "facts": [
+      "Patient: Michael Hartung, 44 Jahre, männlich",
+      "Aufnahme: 02.10.2026, endokrinologische Station",
+      "Seit 6 Monaten paroxysmale Attacken mit Kopfschmerzen, Palpitationen, Hyperhidrose, Blässe, Blutdruck bis 230/120 mmHg; Zunahme seit Beginn von Metoprolol",
+      "Vater mit medullärem Schilddrüsenkarzinom",
+      "Plasma-Metanephrine 12-fach erhöht; CT: Nebennierentumor rechts 4,5 cm",
+      "Calcitonin erhöht; Sonographie Schilddrüse: Knoten rechts; RET-Gentest eingeleitet",
+      "Therapie: Metoprolol abgesetzt, Phenoxybenzamin aufdosiert, danach Propranolol; reichliche Flüssigkeits- und Salzzufuhr; laparoskopische Adrenalektomie rechts am 16.10.2026 geplant"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patient ma’lumotlari (Herr Hartung)",
+        "labelRu": "Данные пациента (Herr Hartung)",
+        "labelTr": "Hasta bilgileri (Herr Hartung)",
+        "labelEn": "Patient data (Herr Hartung)",
+        "keywords": ["hartung"]
+      },
+      {
+        "label": "Asosiy shikoyat: xurujsimon bosh og‘rig‘i, yurak urishi va terlash (paroxysmale Attacken)",
+        "labelRu": "Основная жалоба: приступы головной боли, сердцебиения и потливости (paroxysmale Attacken)",
+        "labelTr": "Ana şikâyet: nöbet şeklinde baş ağrısı, çarpıntı ve terleme (paroxysmale Attacken)",
+        "labelEn": "Main complaint: attacks of headache, palpitations and sweating (paroxysmale Attacken)",
+        "keywords": ["attacke", "palpitation", "hyperhidrose"]
+      },
+      {
+        "label": "Gipertonik krizlar (230/120 mmHg)",
+        "labelRu": "Гипертонические кризы (230/120 mmHg)",
+        "labelTr": "Hipertansif krizler (230/120 mmHg)",
+        "labelEn": "Hypertensive crises (230/120 mmHg)",
+        "keywords": ["230/120"]
+      },
+      {
+        "label": "Beta-blokatordan keyin yomonlashuv (Metoprolol)",
+        "labelRu": "Ухудшение после бета-блокатора (Metoprolol)",
+        "labelTr": "Beta bloker sonrası kötüleşme (Metoprolol)",
+        "labelEn": "Worse after beta blocker (Metoprolol)",
+        "keywords": ["metoprolol"]
+      },
+      {
+        "label": "Metanefrinlar va KT (Nebennierentumor)",
+        "labelRu": "Метанефрины и КТ (Nebennierentumor)",
+        "labelTr": "Metanefrinler ve BT (Nebennierentumor)",
+        "labelEn": "Metanephrines and CT (Nebennierentumor)",
+        "keywords": ["metanephrin", "nebenniere"]
+      },
+      {
+        "label": "Oilaviy anamnez va kalsitonin (MEN 2)",
+        "labelRu": "Семейный анамнез и кальцитонин (MEN 2)",
+        "labelTr": "Aile öyküsü ve kalsitonin (MEN 2)",
+        "labelEn": "Family history and calcitonin (MEN 2)",
+        "keywords": ["calcitonin", "men 2", "medullär"]
+      },
+      {
+        "label": "Diagnoz: feoxromotsitoma (Phäochromozytom)",
+        "labelRu": "Диагноз: феохромоцитома (Phäochromozytom)",
+        "labelTr": "Tanı: feokromositoma (Phäochromozytom)",
+        "labelEn": "Diagnosis: phaeochromocytoma (Phäochromozytom)",
+        "keywords": ["phäochromozytom"]
+      },
+      {
+        "label": "Davolash: avval alfa-blokator, keyin beta-blokator (Phenoxybenzamin)",
+        "labelRu": "Лечение: сначала альфа-, затем бета-блокатор (Phenoxybenzamin)",
+        "labelTr": "Tedavi: önce alfa, sonra beta bloker (Phenoxybenzamin)",
+        "labelEn": "Treatment: alpha blocker first, then beta blocker (Phenoxybenzamin)",
+        "keywords": ["phenoxybenzamin", "alphablock"]
+      },
+      {
+        "label": "Tavsiya: adrenalektomiya va genetik tekshiruv (Adrenalektomie, RET)",
+        "labelRu": "Рекомендация: адреналэктомия и генетическое обследование (Adrenalektomie, RET)",
+        "labelTr": "Öneri: adrenalektomi ve genetik inceleme (Adrenalektomie, RET)",
+        "labelEn": "Recommendation: adrenalectomy and genetic testing (Adrenalektomie, RET)",
+        "keywords": ["adrenalektomie", "ret"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Michael Hartung, 44 Jahre, der vom 02.10.2026 bis zum 09.10.2026 in unserer endokrinologischen Abteilung behandelt wurde.\n\nAnamnese:\nDer Patient berichtete über seit sechs Monaten auftretende paroxysmale Attacken mit pochenden Kopfschmerzen, Palpitationen, Hyperhidrose und Blässe; dabei wurden Blutdruckwerte bis 230/120 mmHg gemessen. Seit Beginn einer Therapie mit Metoprolol vor zwei Wochen hatten die Attacken zugenommen. Der Vater wurde wegen eines medullären Schilddrüsenkarzinoms operiert.\n\nBefunde:\nDie Plasma-Metanephrine waren zwölffach erhöht. Im CT zeigte sich ein Nebennierentumor rechts von 4,5 cm. Das Calcitonin war erhöht, sonographisch fand sich ein Schilddrüsenknoten rechts. Ein RET-Gentest wurde eingeleitet.\n\nDiagnose:\nPhäochromozytom der rechten Nebenniere, Verdacht auf MEN 2.\n\nTherapie und Verlauf:\nMetoprolol wurde sofort abgesetzt, da Betablocker ohne vorherige Alphablockade eine hypertensive Krise auslösen können. Wir dosierten Phenoxybenzamin auf und ergänzten erst danach Propranolol gegen die Tachykardie. Zusätzlich erhielt der Patient eine reichliche Flüssigkeits- und Salzzufuhr. Darunter traten keine Attacken mehr auf.\n\nProcedere:\nDie laparoskopische Adrenalektomie rechts ist am 16.10.2026 geplant. Betablocker dürfen nie ohne Alphablocker gegeben werden. Je nach Ergebnis des RET-Gentests ist eine Thyreoidektomie erforderlich; eine genetische Beratung der Familie wurde angeboten.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab113",
+    "caseId": "c135",
+    "title": "Thyreotoxische Krise",
+    "task": "Endokrinologiya bo‘limidan uy shifokoriga Arztbrief yozing. Qo‘zg‘atuvchi omillar, intensiv davolash va qalqonsimon bezni olib tashlash rejasiga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из эндокринологии семейному врачу. Обратите внимание на провоцирующие факторы, интенсивное лечение и план тиреоидэктомии.",
+    "taskTr": "Endokrinoloji servisinden aile hekimine bir Arztbrief yazın. Tetikleyici faktörlere, yoğun tedaviye ve tiroidektomi planına dikkat edin.",
+    "taskEn": "Write an Arztbrief from endocrinology to the GP. Pay attention to the triggers, intensive treatment and the plan for thyroidectomy.",
+    "facts": [
+      "Patientin: Aylin Demir, 37 Jahre, weiblich",
+      "Aufnahme: 03.10.2026, Notaufnahme, danach Intensivstation",
+      "Seit 2 Tagen Fieber bis 40 °C, Tachykardie, Hyperhidrose, Diarrhö, Erbrechen, Tremor, Unruhe; heute Verwirrtheit",
+      "Morbus Basedow; Thiamazol vor 2 Monaten abgesetzt; vor 1 Woche Kontrastmittel-CT nach Autounfall",
+      "TSH < 0,01 mU/l, fT4 6,8 ng/dl, fT3 stark erhöht, TRAK erhöht; EKG: Vorhofflimmern 156/min; Burch-Wartofsky-Score 65",
+      "Infektfokus ausgeschlossen (Blutkulturen negativ)",
+      "Therapie: Thiamazol 80 mg i. v., Propranolol, Hydrocortison, Perchlorat, Kühlung, Flüssigkeit; Sinusrhythmus nach 3 Tagen; Bewusstsein klar"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patientin ma’lumotlari (Frau Demir)",
+        "labelRu": "Данные пациентки (Frau Demir)",
+        "labelTr": "Hasta bilgileri (Frau Demir)",
+        "labelEn": "Patient data (Frau Demir)",
+        "keywords": ["demir"]
+      },
+      {
+        "label": "Asosiy shikoyat: isitma, taxikardiya va ong chalkashligi (Fieber, Tachykardie, Verwirrtheit)",
+        "labelRu": "Основная жалоба: лихорадка, тахикардия и спутанность (Fieber, Tachykardie, Verwirrtheit)",
+        "labelTr": "Ana şikâyet: ateş, taşikardi ve bilinç bulanıklığı (Fieber, Tachykardie, Verwirrtheit)",
+        "labelEn": "Main complaint: fever, tachycardia and confusion (Fieber, Tachykardie, Verwirrtheit)",
+        "keywords": ["fieber", "tachykardie", "verwirrt"]
+      },
+      {
+        "label": "Tireostatik to‘xtatilgan (Thiamazol abgesetzt)",
+        "labelRu": "Тиреостатик отменён (Thiamazol abgesetzt)",
+        "labelTr": "Antitiroid ilaç bırakılmış (Thiamazol abgesetzt)",
+        "labelEn": "Antithyroid drug stopped (Thiamazol abgesetzt)",
+        "keywords": ["thiamazol", "abgesetzt"]
+      },
+      {
+        "label": "Yod ta’siri (kontrast) (Kontrastmittel)",
+        "labelRu": "Йодная нагрузка (контраст) (Kontrastmittel)",
+        "labelTr": "İyot maruziyeti (kontrast) (Kontrastmittel)",
+        "labelEn": "Iodine exposure (contrast) (Kontrastmittel)",
+        "keywords": ["kontrastmittel", "jod"]
+      },
+      {
+        "label": "Gormonlar va TRAK (fT4, TRAK)",
+        "labelRu": "Гормоны и TRAK (fT4, TRAK)",
+        "labelTr": "Hormonlar ve TRAK (fT4, TRAK)",
+        "labelEn": "Hormones and TRAb (fT4, TRAK)",
+        "keywords": ["ft4", "trak"]
+      },
+      {
+        "label": "Bo‘lmachalar fibrillyatsiyasi (Vorhofflimmern)",
+        "labelRu": "Фибрилляция предсердий (Vorhofflimmern)",
+        "labelTr": "Atriyal fibrilasyon (Vorhofflimmern)",
+        "labelEn": "Atrial fibrillation (Vorhofflimmern)",
+        "keywords": ["vorhofflimmern"]
+      },
+      {
+        "label": "Diagnoz: tireotoksik kriz (thyreotoxische Krise)",
+        "labelRu": "Диагноз: тиреотоксический криз (thyreotoxische Krise)",
+        "labelTr": "Tanı: tiroid fırtınası (thyreotoxische Krise)",
+        "labelEn": "Diagnosis: thyroid storm (thyreotoxische Krise)",
+        "keywords": ["thyreotoxische krise"]
+      },
+      {
+        "label": "Davolash: tiamazol, propranolol, gidrokortizon va perxlorat (Thiamazol i. v., Perchlorat)",
+        "labelRu": "Лечение: тиамазол, пропранолол, гидрокортизон и перхлорат (Thiamazol i. v., Perchlorat)",
+        "labelTr": "Tedavi: tiamazol, propranolol, hidrokortizon ve perklorat (Thiamazol i. v., Perchlorat)",
+        "labelEn": "Treatment: thiamazole, propranolol, hydrocortisone and perchlorate (Thiamazol i. v., Perchlorat)",
+        "keywords": ["perchlorat", "hydrocortison", "propranolol"]
+      },
+      {
+        "label": "Tavsiya: tireoidektomiya va qon tahlili nazorati (Thyreoidektomie, Blutbild)",
+        "labelRu": "Рекомендация: тиреоидэктомия и контроль крови (Thyreoidektomie, Blutbild)",
+        "labelTr": "Öneri: tiroidektomi ve kan sayımı takibi (Thyreoidektomie, Blutbild)",
+        "labelEn": "Recommendation: thyroidectomy and blood count monitoring (Thyreoidektomie, Blutbild)",
+        "keywords": ["thyreoidektomie", "blutbild"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihre Patientin Frau Aylin Demir, 37 Jahre, die vom 03.10.2026 bis zum 13.10.2026 in unserer endokrinologischen Abteilung behandelt wurde.\n\nAnamnese:\nDie Patientin wurde mit seit zwei Tagen bestehendem Fieber bis 40 °C, Tachykardie, Hyperhidrose, Diarrhö, Erbrechen, Tremor und Unruhe aufgenommen; am Aufnahmetag bestand zusätzlich Verwirrtheit. Bekannt ist ein Morbus Basedow; Thiamazol hatte sie vor zwei Monaten eigenmächtig abgesetzt. Vor einer Woche erfolgte nach einem Autounfall ein CT mit jodhaltigem Kontrastmittel.\n\nBefunde:\nDas TSH war supprimiert (< 0,01 mU/l), das fT4 lag bei 6,8 ng/dl, das fT3 war stark erhöht, ebenso der TRAK. Im EKG zeigte sich ein Vorhofflimmern mit 156/min. Der Burch-Wartofsky-Score lag bei 65 Punkten. Ein Infektfokus fand sich nicht, die Blutkulturen blieben negativ.\n\nDiagnose:\nThyreotoxische Krise bei Morbus Basedow nach Absetzen von Thiamazol und Jodexposition.\n\nTherapie und Verlauf:\nAuf der Intensivstation erhielt die Patientin Thiamazol 80 mg i. v., Propranolol, Hydrocortison und Perchlorat sowie Kühlung und Flüssigkeit. Nach drei Tagen bestand ein Sinusrhythmus, das Bewusstsein war klar.\n\nProcedere:\nWir empfehlen die Fortführung von Thiamazol mit wöchentlichen Kontrollen von Blutbild und Leberwerten (Agranulozytose-Risiko); bei Fieber oder Halsschmerzen ist sofort ein Blutbild erforderlich. Nach Erreichen einer Euthyreose ist eine Thyreoidektomie geplant. Eine Nikotinkarenz ist dringend angeraten.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab114",
+    "caseId": "c136",
+    "title": "Erstmanifestation eines Diabetes mellitus Typ 1",
+    "task": "Endokrinologiya bo‘limidan uy shifokoriga Arztbrief yozing. Ketoatsidoz, insulin sxemasi, o‘qitish va gipoglikemiyaga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из эндокринологии семейному врачу. Обратите внимание на кетоацидоз, схему инсулина, обучение и гипогликемию.",
+    "taskTr": "Endokrinoloji servisinden aile hekimine bir Arztbrief yazın. Ketoasidoza, insülin şemasına, eğitime ve hipoglisemiye dikkat edin.",
+    "taskEn": "Write an Arztbrief from endocrinology to the GP. Pay attention to ketoacidosis, the insulin regimen, education and hypoglycaemia.",
+    "facts": [
+      "Patient: Luca Bergmann, 18 Jahre, männlich",
+      "Aufnahme: 04.10.2026, Notaufnahme",
+      "Seit 4 Wochen Polydipsie, Polyurie, Nykturie, Gewichtsverlust 7 kg, Müdigkeit; seit 1 Tag Übelkeit, Bauchschmerzen",
+      "Familienanamnese: Tante mit Diabetes Typ 1, Mutter mit Hashimoto",
+      "Blutzucker 486 mg/dl, HbA1c 12,4 %, pH 7,28, Bikarbonat 16 mmol/l, Ketone positiv",
+      "GAD- und IA-2-Antikörper positiv, C-Peptid erniedrigt; TSH und Transglutaminase-Antikörper unauffällig",
+      "Therapie: Volumen, Insulin i. v., Kalium; danach Basis-Bolus-Therapie (Insulin glargin abends, Insulin lispro zu den Mahlzeiten); Diabetesschulung, kontinuierliches Glukosemessgerät (CGM)"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patient ma’lumotlari (Herr Bergmann)",
+        "labelRu": "Данные пациента (Herr Bergmann)",
+        "labelTr": "Hasta bilgileri (Herr Bergmann)",
+        "labelEn": "Patient data (Herr Bergmann)",
+        "keywords": ["bergmann"]
+      },
+      {
+        "label": "Asosiy shikoyat: chanqoq, ko‘p siyish va vazn yo‘qotish (Polydipsie, Polyurie)",
+        "labelRu": "Основная жалоба: жажда, полиурия и потеря веса (Polydipsie, Polyurie)",
+        "labelTr": "Ana şikâyet: susama, poliüri ve kilo kaybı (Polydipsie, Polyurie)",
+        "labelEn": "Main complaint: thirst, polyuria and weight loss (Polydipsie, Polyurie)",
+        "keywords": ["polydipsie", "polyurie", "gewichtsverlust"]
+      },
+      {
+        "label": "Oilaviy autoimmun anamnez (Familienanamnese)",
+        "labelRu": "Семейный аутоиммунный анамнез (Familienanamnese)",
+        "labelTr": "Ailede otoimmün öykü (Familienanamnese)",
+        "labelEn": "Family history of autoimmunity (Familienanamnese)",
+        "keywords": ["tante", "hashimoto"]
+      },
+      {
+        "label": "Giperglikemiya va HbA1c (Blutzucker 486 mg/dl)",
+        "labelRu": "Гипергликемия и HbA1c (Blutzucker 486 mg/dl)",
+        "labelTr": "Hiperglisemi ve HbA1c (Blutzucker 486 mg/dl)",
+        "labelEn": "Hyperglycaemia and HbA1c (Blutzucker 486 mg/dl)",
+        "keywords": ["486", "hba1c"]
+      },
+      {
+        "label": "Yengil ketoatsidoz (Ketoazidose)",
+        "labelRu": "Лёгкий кетоацидоз (Ketoazidose)",
+        "labelTr": "Hafif ketoasidoz (Ketoazidose)",
+        "labelEn": "Mild ketoacidosis (Ketoazidose)",
+        "keywords": ["ketoazidose", "ph 7,28"]
+      },
+      {
+        "label": "Autoantitanachalar va C-peptid (GAD, C-Peptid)",
+        "labelRu": "Аутоантитела и C-пептид (GAD, C-Peptid)",
+        "labelTr": "Otoantikorlar ve C-peptid (GAD, C-Peptid)",
+        "labelEn": "Autoantibodies and C-peptide (GAD, C-Peptid)",
+        "keywords": ["gad", "c-peptid"]
+      },
+      {
+        "label": "Diagnoz: 1-tip qandli diabet (Diabetes mellitus Typ 1)",
+        "labelRu": "Диагноз: сахарный диабет 1 типа (Diabetes mellitus Typ 1)",
+        "labelTr": "Tanı: tip 1 diyabet (Diabetes mellitus Typ 1)",
+        "labelEn": "Diagnosis: type 1 diabetes (Diabetes mellitus Typ 1)",
+        "keywords": ["typ 1"]
+      },
+      {
+        "label": "Davolash: bazis-bolyus insulin terapiyasi (Basis-Bolus)",
+        "labelRu": "Лечение: базис-болюсная терапия (Basis-Bolus)",
+        "labelTr": "Tedavi: bazal-bolus tedavi (Basis-Bolus)",
+        "labelEn": "Treatment: basal-bolus therapy (Basis-Bolus)",
+        "keywords": ["basis-bolus", "glargin"]
+      },
+      {
+        "label": "Tavsiya: o‘qitish, CGM va gipoglikemiyada harakat (Diabetesschulung)",
+        "labelRu": "Рекомендация: обучение, CGM и действия при гипогликемии (Diabetesschulung)",
+        "labelTr": "Öneri: eğitim, CGM ve hipoglisemide yapılacaklar (Diabetesschulung)",
+        "labelEn": "Recommendation: education, CGM and hypoglycaemia plan (Diabetesschulung)",
+        "keywords": ["schulung", "hypoglykämie", "traubenzucker"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Luca Bergmann, 18 Jahre, der vom 04.10.2026 bis zum 11.10.2026 in unserer endokrinologischen Abteilung behandelt wurde.\n\nAnamnese:\nDer Patient stellte sich mit seit vier Wochen bestehender Polydipsie, Polyurie und Nykturie, einem Gewichtsverlust von 7 kg und Müdigkeit vor; seit einem Tag bestanden Übelkeit und Bauchschmerzen. Eine Tante hat einen Diabetes mellitus Typ 1, die Mutter eine Hashimoto-Thyreoiditis.\n\nBefunde:\nDer Blutzucker lag bei 486 mg/dl, der HbA1c bei 12,4 %. In der Blutgasanalyse zeigte sich eine leichte Ketoazidose mit pH 7,28 und Bikarbonat 16 mmol/l bei positiven Ketonen. Die GAD- und IA-2-Antikörper waren positiv, das C-Peptid erniedrigt. TSH und Transglutaminase-Antikörper waren unauffällig.\n\nDiagnose:\nErstmanifestation eines Diabetes mellitus Typ 1 mit leichter diabetischer Ketoazidose.\n\nTherapie und Verlauf:\nNach Volumengabe, Insulin i. v. und Kaliumsubstitution normalisierte sich die Stoffwechsellage rasch. Wir stellten den Patienten auf eine Basis-Bolus-Therapie mit Insulin glargin abends und Insulin lispro zu den Mahlzeiten ein. Er erhielt eine ausführliche Diabetesschulung und ein kontinuierliches Glukosemessgerät (CGM).\n\nProcedere:\nDer Patient ist im Erkennen und Behandeln einer Hypoglykämie geschult und trägt immer Traubenzucker bei sich. Beim Sport und bei Alkohol muss die Insulindosis angepasst werden. Wir empfehlen die Anbindung an eine diabetologische Schwerpunktpraxis sowie jährliche Kontrollen von Augen, Nieren und Schilddrüse.\n\nMit freundlichen kollegialen Grüßen"
   }
 ]
