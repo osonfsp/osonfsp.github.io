@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { Link } from "./Link";
 import { usePathname } from "../lib/router";
 import { cx } from "../lib/utils";
@@ -69,26 +69,26 @@ const NAV_GROUPS = [
     title: tr("Asosiy", "Основное", "Temel", "Main"),
     items: [
       { href: "/", icon: "🏠", label: tr("Bosh sahifa", "Главная", "Ana sayfa", "Home") },
-      { href: "/faelle", icon: "🩺", label: tr("Fälle", "Кейсы", "Vakalar", "Cases") },
+      { href: "/faelle", icon: "🩺", label: tr("Klinik holatlar", "Кейсы", "Vakalar", "Cases") },
       {
         href: "/simulation",
         icon: "💬",
-        label: tr("Simulation", "Симуляция", "Simülasyon", "Simulation"),
+        label: tr("Simulyatsiya", "Симуляция", "Simülasyon", "Simulation"),
         tag: "Teil 1",
       },
       { href: "/arztbrief", icon: "✍️", label: "Arztbrief", tag: "Teil 2" },
-      { href: "/pruefung", icon: "🎯", label: tr("Prüfung", "Экзамен", "Sınav", "Exam"), tag: "1–3" },
+      { href: "/pruefung", icon: "🎯", label: tr("Imtihon", "Экзамен", "Sınav", "Exam"), tag: "1–3" },
     ],
   },
   {
     title: tr("Qo‘shimcha mashqlar", "Дополнительно", "Ek alıştırmalar", "Extra practice"),
     more: true,
     items: [
-      { href: "/woerter", icon: "📚", label: tr("Wörter", "Слова", "Kelimeler", "Words") },
+      { href: "/woerter", icon: "📚", label: tr("So‘zlar", "Слова", "Kelimeler", "Words") },
       { href: "/redemittel", icon: "🗣️", label: "Redemittel" },
       { href: "/fachsprache", icon: "🔁", label: "Fach ↔ Patient" },
       { href: "/aufklaerung", icon: "🗨️", label: tr("Aufklärung", "Aufklärung", "Aufklärung", "Aufklärung") },
-      { href: "/hoeren", icon: "🎧", label: tr("Hörverstehen", "Аудирование", "Dinleme", "Listening") },
+      { href: "/hoeren", icon: "🎧", label: tr("Tinglab tushunish", "Аудирование", "Dinleme", "Listening") },
     ],
   },
   {
@@ -285,6 +285,120 @@ function Sidebar({ onClose }) {
   );
 }
 
+// Telefondagi menyu: ochilish/yopilish silliq; barmoq bilan chapga tortib yopiladi,
+// ekranning chap chetidan o‘ngga surib ochiladi. Surish paytida panel barmoqqa ergashadi
+// (React qayta chizmaydi — to‘g‘ridan-to‘g‘ri style), qo‘yib yuborilganda yarmidan o‘tgan
+// yoki tez surilgan bo‘lsa — oxirigacha, aks holda joyiga qaytadi.
+const EDGE = 24, // chap chetdan ochish uchun zona (px)
+  EASE = "320ms cubic-bezier(0.32, 0.72, 0, 1)";
+
+function MobileDrawer({ open, setOpen, children }) {
+  let panel = useRef(null),
+    shade = useRef(null),
+    openRef = useRef(open),
+    first = useRef(true);
+  openRef.current = open;
+
+  // pct: 0 — to‘liq ochiq, 1 — to‘liq yopiq
+  let place = (pct, animate) => {
+    let p = panel.current,
+      sh = shade.current;
+    if (!p || !sh) return;
+    p.style.transition = animate ? `transform ${EASE}` : "none";
+    sh.style.transition = animate ? `opacity ${EASE}` : "none";
+    p.style.transform = `translateX(${-pct * 100}%)`;
+    sh.style.opacity = String(1 - pct);
+  };
+
+  useLayoutEffect(() => {
+    place(open ? 0 : 1, !first.current);
+    first.current = false;
+  }, [open]);
+
+  useEffect(() => {
+    let g = null;
+    let start = (e) => {
+      if (e.touches.length !== 1 || window.matchMedia("(min-width: 1024px)").matches) return;
+      let t = e.touches[0];
+      if (!openRef.current && t.clientX > EDGE) return;
+      g = {
+        x0: t.clientX,
+        y0: t.clientY,
+        from: openRef.current ? 0 : 1,
+        w: panel.current?.offsetWidth || 288,
+        dir: null,
+        pct: openRef.current ? 0 : 1,
+        v: 0,
+        lx: t.clientX,
+        lt: e.timeStamp,
+      };
+    };
+    let move = (e) => {
+      if (!g) return;
+      let t = e.touches[0],
+        dx = t.clientX - g.x0,
+        dy = t.clientY - g.y0;
+      if (!g.dir) {
+        if (Math.abs(dx) + Math.abs(dy) < 8) return;
+        g.dir = Math.abs(dx) > Math.abs(dy) ? "h" : "v";
+        if (g.dir === "v") return void (g = null); // vertikal — oddiy aylantirish (scroll)
+      }
+      // Brauzer bu surishni o‘zining harakati (scroll / orqaga) deb olib, to‘xtatib qo‘ymasin
+      if (e.cancelable) e.preventDefault();
+      g.pct = Math.min(1, Math.max(0, g.from - dx / g.w));
+      let dt = e.timeStamp - g.lt;
+      if (dt > 0) g.v = 0.8 * ((t.clientX - g.lx) / dt) + 0.2 * g.v; // px/ms, o‘ngga musbat
+      g.lx = t.clientX;
+      g.lt = e.timeStamp;
+      place(g.pct, false);
+    };
+    let end = () => {
+      if (!g) return;
+      let { pct, v, from, dir } = g;
+      g = null;
+      if (dir !== "h") return;
+      // Tez surish (flick) yo‘nalishni hal qiladi, aks holda — qaysi yarmida qolgani
+      let close = v < -0.35 ? true : v > 0.35 ? false : pct > 0.5;
+      if (close === (from === 1)) place(from, true);
+      else setOpen(!close);
+    };
+    window.addEventListener("touchstart", start, { passive: true });
+    window.addEventListener("touchmove", move, { passive: false });
+    window.addEventListener("touchend", end);
+    window.addEventListener("touchcancel", end);
+    return () => {
+      window.removeEventListener("touchstart", start);
+      window.removeEventListener("touchmove", move);
+      window.removeEventListener("touchend", end);
+      window.removeEventListener("touchcancel", end);
+    };
+  }, [setOpen]);
+
+  return (
+    <div
+      className={cx("fixed inset-0 z-50 lg:hidden", !open && "pointer-events-none")}
+      role="dialog"
+      aria-modal="true"
+      aria-hidden={!open}
+      inert={!open}
+    >
+      <button
+        ref={shade}
+        className="absolute inset-0 touch-none bg-black/50 opacity-0"
+        onClick={() => setOpen(false)}
+        tabIndex={-1}
+        aria-label={tr("Menyuni yopish", "Закрыть меню", "Menüyü kapat", "Close menu")}
+      />
+      <div
+        ref={panel}
+        className="absolute inset-y-0 left-0 w-72 max-w-[85vw] -translate-x-full touch-pan-y shadow-2xl will-change-transform"
+      >
+        {children}
+      </div>
+    </div>
+  );
+}
+
 function readOpen() {
   try {
     return localStorage.getItem(SIDEBAR_KEY) !== "closed";
@@ -326,18 +440,9 @@ export function AppShell({ children }) {
         <Sidebar onClose={() => setDesktopOpen(false)} />
       </aside>
       {/* Telefon: ustiga chiqadigan menyu */}
-      {mobileOpen && (
-        <div className="fixed inset-0 z-50 lg:hidden" role="dialog" aria-modal="true">
-          <button
-            className="absolute inset-0 bg-black/50"
-            onClick={() => setMobileOpen(false)}
-            aria-label={tr("Menyuni yopish", "Закрыть меню", "Menüyü kapat", "Close menu")}
-          />
-          <div className="absolute inset-y-0 left-0 w-72 max-w-[85vw] shadow-2xl">
-            <Sidebar onClose={() => setMobileOpen(false)} />
-          </div>
-        </div>
-      )}
+      <MobileDrawer open={mobileOpen} setOpen={setMobileOpen}>
+        <Sidebar onClose={() => setMobileOpen(false)} />
+      </MobileDrawer>
       <div
         className={cx(
           "flex min-h-screen flex-col transition-[padding] duration-200",

@@ -183,10 +183,10 @@ export function DashboardPage() {
           </div>
           <p className="mt-4 text-sm muted">
             {tr(
-              "Fälle, so‘zlar, kartochkalar, Arztbrief va Prüfung bo‘yicha o‘rtacha.",
+              "Klinik holatlar, so‘zlar, kartochkalar, Arztbrief va imtihon bo‘yicha o‘rtacha.",
               "Среднее по кейсам, словам, карточкам, Arztbrief и экзамену.",
-              "Vakalar, kelimeler, kartlar, Arztbrief ve Prüfung ortalaması.",
-              "Average across cases, words, flashcards, Arztbrief and Prüfung.",
+              "Vakalar, kelimeler, kartlar, Arztbrief ve sınav ortalaması.",
+              "Average across cases, words, flashcards, Arztbrief and the exam.",
             )}
           </p>
           {y && (
@@ -199,7 +199,7 @@ export function DashboardPage() {
         <div className="grid gap-4 sm:grid-cols-2">
           <StatCard
             icon="🩺"
-            label={tr("Yechilgan Fälle", "Решённые кейсы", "Çözülen vakalar", "Solved cases")}
+            label={tr("Yechilgan klinik holatlar", "Решённые кейсы", "Çözülen vakalar", "Solved cases")}
             value={`${a.solvedCases.length} / ${STATS.cases}`}
             progress={(a.solvedCases.length / STATS.cases) * 100}
           />
@@ -323,10 +323,10 @@ export function DashboardPage() {
           ) : (
             <div className="text-sm muted">
               {tr(
-                "Hali Prüfung simulyatsiyasi topshirilmagan. ",
+                "Hali imtihon simulyatsiyasi topshirilmagan. ",
                 "Пробный экзамен ещё не сдавали. ",
-                "Henüz Prüfung simülasyonuna girilmedi. ",
-                "You haven’t taken a Prüfung simulation yet. ",
+                "Henüz sınav simülasyonuna girilmedi. ",
+                "You haven’t taken a mock exam yet. ",
               )}
               <Link href="/pruefung" className="font-medium text-teal-600 hover:underline">
                 {tr("Boshlash →", "Начать →", "Başla →", "Start →")}
@@ -362,7 +362,7 @@ export function DashboardPage() {
       </div>
       <div className="card mt-4">
         <h2 className="section-title">
-          {tr("Fälle bo‘yicha holat", "Статус по кейсам", "Vakalara göre durum", "Status by case")}
+          {tr("Klinik holatlar bo‘yicha natija", "Статус по кейсам", "Vakalara göre durum", "Status by case")}
         </h2>
         <div className="space-y-3">
           {CASE_SECTIONS.map((sec) => {

@@ -34,7 +34,7 @@ const EXAM_PARTS = [
         "About 20 minutes. You present the patient to a colleague (Oberarzt) and discuss the Verdachtsdiagnose, Differenzialdiagnosen and further investigations; you may be asked to explain Fachbegriffe.",
       ),
       href: "/pruefung",
-      cta: tr("To‘liq Prüfung", "Полный экзамен", "Tam Prüfung", "Full Prüfung"),
+      cta: tr("To‘liq imtihon", "Полный экзамен", "Tam sınav", "Full exam"),
     },
   ],
   // O‘zbekiston — „Drittstaat“ (YeI’dan tashqari): Approbation’gacha bo‘lgan odatiy yo‘l

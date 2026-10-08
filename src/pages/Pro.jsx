@@ -22,16 +22,16 @@ const OFFERS = [
         `All materials — 1 day (${TRIAL_HOURS} hours)`,
       ),
       tr(
-        "Fälle, Simulation, Arztbrief, lug‘at, Redemittel",
+        "Klinik holatlar, simulyatsiya, Arztbrief, lug‘at, Redemittel",
         "Кейсы, симуляция, Arztbrief, словарь, Redemittel",
         "Vakalar, simülasyon, Arztbrief, sözlük, Redemittel",
         "Cases, simulation, Arztbrief, dictionary, Redemittel",
       ),
       tr(
-        `Prüfung simulyatsiyasi — ${FREE_LIMITS.exam} marta`,
+        `Imtihon simulyatsiyasi — ${FREE_LIMITS.exam} marta`,
         `Пробный экзамен — ${FREE_LIMITS.exam} раз`,
-        `Prüfung simülasyonu — ${FREE_LIMITS.exam} kez`,
-        `Prüfung simulation — ${FREE_LIMITS.exam} time(s)`,
+        `Sınav simülasyonu — ${FREE_LIMITS.exam} kez`,
+        `Mock exam — ${FREE_LIMITS.exam} time(s)`,
       ),
     ],
   },
@@ -48,10 +48,10 @@ const OFFERS = [
         "All materials — 7 days",
       ),
       tr(
-        "Prüfung simulyatsiyasi — cheklovsiz",
+        "Imtihon simulyatsiyasi — cheklovsiz",
         "Пробный экзамен — без ограничений",
-        "Prüfung simülasyonu — sınırsız",
-        "Prüfung simulation — unlimited",
+        "Sınav simülasyonu — sınırsız",
+        "Mock exam — unlimited",
       ),
       tr(
         "Imtihon oldidan jadal tayyorgarlik uchun",
@@ -75,10 +75,10 @@ const OFFERS = [
         "All materials — 30 days",
       ),
       tr(
-        "Prüfung simulyatsiyasi — cheklovsiz",
+        "Imtihon simulyatsiyasi — cheklovsiz",
         "Пробный экзамен — без ограничений",
-        "Prüfung simülasyonu — sınırsız",
-        "Prüfung simulation — unlimited",
+        "Sınav simülasyonu — sınırsız",
+        "Mock exam — unlimited",
       ),
       tr(
         "Haftalikdan 2 baravardan ko‘proq tejamli",
@@ -150,7 +150,7 @@ export function ProPage() {
             </div>
             <div className="rounded-xl bg-slate-50 p-3 dark:bg-slate-800/60">
               <div className="text-xs muted">
-                {tr("Prüfung simulyatsiyasi", "Пробный экзамен", "Prüfung simülasyonu", "Prüfung simulation")}
+                {tr("Imtihon simulyatsiyasi", "Пробный экзамен", "Sınav simülasyonu", "Mock exam")}
               </div>
               <b className="text-lg">
                 {left("exam")} / {limit("exam")}

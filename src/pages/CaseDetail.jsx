@@ -41,7 +41,9 @@ export function CaseDetailPage() {
         href={`/faelle?bolim=${sectionOf(t.category)?.id ?? ""}`}
         className="text-sm muted hover:text-teal-600"
       >
-        ← {sectionOf(t.category)?.label ?? tr("Barcha Fälle", "Все кейсы", "Tüm vakalar", "All cases")}
+        ←{" "}
+        {sectionOf(t.category)?.label ??
+          tr("Barcha klinik holatlar", "Все кейсы", "Tüm vakalar", "All cases")}
       </Link>
       <div className="mt-3 flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
         <div>

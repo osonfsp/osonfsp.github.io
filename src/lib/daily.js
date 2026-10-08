@@ -250,7 +250,7 @@ export function recommendation(p) {
       "Good timeline: 3 tasks every day, one exam a week.",
     ),
     "6m": tr(
-      "Vaqt yetarli: so‘z boyligi va Fälle’dan boshlab, sekin-asta imtihonga o‘tamiz.",
+      "Vaqt yetarli: so‘z boyligi va klinik holatlardan boshlab, sekin-asta imtihonga o‘tamiz.",
       "Времени достаточно: начнём со слов и кейсов, постепенно перейдём к экзамену.",
       "Süre yeterli: kelimeler ve vakalarla başlayıp yavaş yavaş sınava geçeceğiz.",
       "Plenty of time: we start with vocabulary and cases and gradually move on to the exam.",

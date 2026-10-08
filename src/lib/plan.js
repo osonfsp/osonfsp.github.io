@@ -8,7 +8,7 @@ export const TRIAL_HOURS = 24;
 export const FREE_LIMITS = { exam: 1 };
 
 export const PRACTICE = {
-  exam: tr("Prüfung simulyatsiyasi", "Пробный экзамен", "Prüfung simülasyonu", "Prüfung simulation"),
+  exam: tr("Imtihon simulyatsiyasi", "Пробный экзамен", "Sınav simülasyonu", "Mock exam"),
 };
 
 export const PLANS = [
