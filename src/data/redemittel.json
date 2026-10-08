@@ -343,6 +343,82 @@
     ]
   },
   {
+    "teil": "Teil 1 · Arzt-Patienten-Gespräch",
+    "group": "Schmerzanamnese genau erfragen",
+    "items": [
+      [
+        "Können Sie mir genau zeigen, wo es wehtut?",
+        "Qayeri og‘riyotganini aniq ko‘rsata olasizmi?",
+        "Можете точно показать, где болит?",
+        "Tam olarak nerenizin ağrıdığını gösterebilir misiniz?",
+        "Can you show me exactly where it hurts?"
+      ],
+      [
+        "Wie würden Sie den Schmerz beschreiben: stechend, drückend, brennend oder krampfartig?",
+        "Og‘riqni qanday ta’riflaysiz: sanchiqli, siquvchi, achishtiruvchi yoki tutqanoqsimon?",
+        "Как бы вы описали боль: колющая, давящая, жгучая или схваткообразная?",
+        "Ağrıyı nasıl tarif edersiniz: batıcı, sıkıştırıcı, yanıcı veya kramp şeklinde mi?",
+        "How would you describe the pain: stabbing, pressing, burning or cramping?"
+      ],
+      [
+        "Auf einer Skala von 0 bis 10 – wie stark ist der Schmerz jetzt?",
+        "0 dan 10 gacha shkalada hozir og‘riq qanchalik kuchli?",
+        "По шкале от 0 до 10 — насколько сильна боль сейчас?",
+        "0’dan 10’a kadar bir ölçekte ağrı şu an ne kadar şiddetli?",
+        "On a scale from 0 to 10, how strong is the pain now?"
+      ],
+      [
+        "Strahlt der Schmerz irgendwohin aus, zum Beispiel in den Arm, den Rücken oder die Schulter?",
+        "Og‘riq biror joyga tarqaladimi, masalan, qo‘lga, belga yoki yelkaga?",
+        "Отдаёт ли боль куда-нибудь, например в руку, спину или плечо?",
+        "Ağrı bir yere yayılıyor mu, örneğin kola, sırta veya omza?",
+        "Does the pain spread anywhere, for example to the arm, back or shoulder?"
+      ],
+      [
+        "Kam der Schmerz plötzlich oder hat er sich langsam entwickelt?",
+        "Og‘riq to‘satdan boshlandimi yoki asta-sekin kuchaydimi?",
+        "Боль возникла внезапно или нарастала постепенно?",
+        "Ağrı aniden mi başladı, yoksa yavaş yavaş mı gelişti?",
+        "Did the pain start suddenly or develop gradually?"
+      ],
+      [
+        "Ist der Schmerz dauerhaft da oder kommt er in Wellen?",
+        "Og‘riq doimiymi yoki to‘lqinsimon keladimi?",
+        "Боль постоянная или приходит волнами?",
+        "Ağrı sürekli mi, yoksa dalgalar halinde mi geliyor?",
+        "Is the pain constant or does it come in waves?"
+      ],
+      [
+        "Was macht den Schmerz besser, was macht ihn schlimmer?",
+        "Og‘riqni nima yengillashtiradi, nima kuchaytiradi?",
+        "Что облегчает боль, а что усиливает?",
+        "Ağrıyı ne hafifletiyor, ne kötüleştiriyor?",
+        "What makes the pain better, and what makes it worse?"
+      ],
+      [
+        "Hängt der Schmerz mit dem Essen, der Atmung oder der Bewegung zusammen?",
+        "Og‘riq ovqatlanish, nafas olish yoki harakat bilan bog‘liqmi?",
+        "Связана ли боль с едой, дыханием или движением?",
+        "Ağrı yemek, nefes alma veya hareketle ilişkili mi?",
+        "Is the pain related to eating, breathing or movement?"
+      ],
+      [
+        "Hatten Sie solche Schmerzen schon einmal?",
+        "Ilgari ham shunday og‘riq bo‘lganmi?",
+        "Была ли у вас такая боль раньше?",
+        "Daha önce de böyle bir ağrınız oldu mu?",
+        "Have you had pain like this before?"
+      ],
+      [
+        "Haben Sie schon etwas gegen die Schmerzen eingenommen, und hat es geholfen?",
+        "Og‘riqqa qarshi biror narsa ichdingizmi va u yordam berdimi?",
+        "Принимали ли вы что-нибудь от боли, и помогло ли это?",
+        "Ağrı için bir şey aldınız mı, işe yaradı mı?",
+        "Have you taken anything for the pain, and did it help?"
+      ]
+    ]
+  },
+  {
     "teil": "Teil 2 · Dokumentation",
     "group": "Arztbrief – Einleitung und Anamnese",
     "items": [
@@ -470,6 +546,82 @@
         "С уважением (по-коллегиальному)",
         "Saygılarımızla (meslektaşça selamlarla)",
         "Yours sincerely (with collegial regards)"
+      ]
+    ]
+  },
+  {
+    "teil": "Teil 2 · Dokumentation",
+    "group": "Arztbrief – Therapie, Verlauf und Entlassung",
+    "items": [
+      [
+        "Unter der eingeleiteten Therapie mit … besserte sich der Allgemeinzustand rasch.",
+        "Boshlangan … terapiyasi fonida umumiy holat tez yaxshilandi.",
+        "На фоне начатой терапии … общее состояние быстро улучшилось.",
+        "Başlanan … tedavisi altında genel durum hızla düzeldi.",
+        "Under the initiated therapy with …, the general condition improved quickly."
+      ],
+      [
+        "Der weitere stationäre Verlauf gestaltete sich komplikationslos.",
+        "Kasalxonadagi keyingi kechish asoratsiz o‘tdi.",
+        "Дальнейшее течение в стационаре было без осложнений.",
+        "Sonraki yatış süreci komplikasyonsuz seyretti.",
+        "The further inpatient course was uncomplicated."
+      ],
+      [
+        "Die Entzündungsparameter waren im Verlauf rückläufig.",
+        "Yallig‘lanish ko‘rsatkichlari keyinchalik pasaydi.",
+        "Воспалительные показатели в динамике снизились.",
+        "İnflamasyon belirteçleri seyir içinde geriledi.",
+        "The inflammatory markers decreased over time."
+      ],
+      [
+        "Wir konnten den Patienten in gutem Allgemeinzustand nach Hause entlassen.",
+        "Bemorni yaxshi umumiy holatda uyiga javob berdik.",
+        "Мы выписали пациента домой в хорошем общем состоянии.",
+        "Hastayı iyi genel durumda eve taburcu edebildik.",
+        "We were able to discharge the patient home in good general condition."
+      ],
+      [
+        "Die Medikation wurde wie folgt angepasst: …",
+        "Dori-darmonlar quyidagicha o‘zgartirildi: …",
+        "Медикаментозная терапия была скорректирована следующим образом: …",
+        "İlaç tedavisi şu şekilde düzenlendi: …",
+        "The medication was adjusted as follows: …"
+      ],
+      [
+        "… wurde abgesetzt, da …",
+        "… to‘xtatildi, chunki …",
+        "… был отменён, так как …",
+        "… kesildi, çünkü …",
+        "… was discontinued because …"
+      ],
+      [
+        "Wir empfehlen eine Kontrolle von … in … Tagen.",
+        "… kundan keyin … ni nazorat qilishni tavsiya qilamiz.",
+        "Рекомендуем контроль … через … дней.",
+        "… gün sonra … kontrolünü öneriyoruz.",
+        "We recommend a check of … in … days."
+      ],
+      [
+        "Bei erneuter Verschlechterung bitten wir um umgehende Wiedervorstellung.",
+        "Holat yana yomonlashsa, darhol qayta murojaat qilishni so‘raymiz.",
+        "При повторном ухудшении просим немедленно обратиться повторно.",
+        "Durum yeniden kötüleşirse derhal tekrar başvurulmasını rica ederiz.",
+        "In case of renewed deterioration, we ask for immediate re-presentation."
+      ],
+      [
+        "Eine ambulante Weiterbehandlung durch … ist bereits vereinbart.",
+        "… tomonidan ambulator davolanishni davom ettirish allaqachon kelishilgan.",
+        "Дальнейшее амбулаторное лечение у … уже согласовано.",
+        "… tarafından ayakta tedavinin sürdürülmesi zaten ayarlandı.",
+        "Further outpatient treatment by … has already been arranged."
+      ],
+      [
+        "Für Rückfragen stehen wir Ihnen jederzeit gerne zur Verfügung.",
+        "Savollaringiz bo‘lsa, istalgan vaqtda bajonidil javob beramiz.",
+        "По всем вопросам мы всегда к вашим услугам.",
+        "Sorularınız için her zaman memnuniyetle hizmetinizdeyiz.",
+        "We are always happy to answer any questions."
       ]
     ]
   },
@@ -772,6 +924,82 @@
         "В долгосрочной перспективе следует скорректировать факторы риска.",
         "Uzun vadede risk faktörleri iyileştirilmelidir.",
         "In the long term, the risk factors should be optimised."
+      ]
+    ]
+  },
+  {
+    "teil": "Teil 3 · Arzt-Arzt-Gespräch",
+    "group": "Übergabe und Rücksprache mit Kollegen",
+    "items": [
+      [
+        "Ich möchte Ihnen kurz einen Patienten übergeben.",
+        "Sizga bir bemorni qisqacha topshirmoqchiman.",
+        "Я хотел(а) бы коротко передать вам пациента.",
+        "Size kısaca bir hastayı devretmek istiyorum.",
+        "I would like to briefly hand over a patient to you."
+      ],
+      [
+        "Es handelt sich um Herrn/Frau …, … Jahre alt, der/die heute mit … aufgenommen wurde.",
+        "Gap bugun … bilan qabul qilingan … yoshli janob/xonim … haqida.",
+        "Речь идёт о господине/госпоже …, … лет, поступившем(ей) сегодня с …",
+        "Bugün … ile yatırılan … yaşındaki Bay/Bayan … hakkında.",
+        "This is Mr/Mrs …, aged …, who was admitted today with …"
+      ],
+      [
+        "Aktuell ist der Patient kreislaufstabil und schmerzfrei.",
+        "Hozir bemorning qon aylanishi barqaror va og‘rig‘i yo‘q.",
+        "Сейчас пациент гемодинамически стабилен и без боли.",
+        "Hasta şu an hemodinamik olarak stabil ve ağrısız.",
+        "At the moment, the patient is haemodynamically stable and pain-free."
+      ],
+      [
+        "Ausstehend sind noch die Ergebnisse von …",
+        "… natijalari hali kutilmoqda.",
+        "Ещё ожидаются результаты …",
+        "… sonuçları hâlâ bekleniyor.",
+        "The results of … are still pending."
+      ],
+      [
+        "Bitte achten Sie in der Nacht besonders auf …",
+        "Iltimos, tunda ayniqsa … ga e’tibor bering.",
+        "Пожалуйста, ночью обратите особое внимание на …",
+        "Lütfen gece özellikle … durumuna dikkat edin.",
+        "Please pay particular attention to … during the night."
+      ],
+      [
+        "Falls … auftritt, sollte … gegeben werden.",
+        "Agar … yuzaga kelsa, … berilishi kerak.",
+        "Если появится …, следует ввести …",
+        "… ortaya çıkarsa, … verilmelidir.",
+        "If … occurs, … should be given."
+      ],
+      [
+        "Ich hätte eine Frage zur weiteren Therapie und würde gern Ihre Meinung hören.",
+        "Keyingi davolash bo‘yicha savolim bor, fikringizni eshitmoqchiman.",
+        "У меня вопрос по дальнейшей терапии, хотел(а) бы услышать ваше мнение.",
+        "Sonraki tedaviyle ilgili bir sorum var, fikrinizi duymak isterim.",
+        "I have a question about the further treatment and would like your opinion."
+      ],
+      [
+        "Könnten Sie sich den Patienten bitte konsiliarisch ansehen?",
+        "Iltimos, bemorni konsultatsiya tariqasida ko‘rib bera olasizmi?",
+        "Не могли бы вы посмотреть пациента в качестве консультанта?",
+        "Hastayı konsültasyon olarak değerlendirebilir misiniz?",
+        "Could you please see the patient for a consultation?"
+      ],
+      [
+        "Ich bin mir bei … nicht ganz sicher und möchte das lieber mit Ihnen absprechen.",
+        "… bo‘yicha to‘liq ishonchim yo‘q, buni siz bilan kelishib olmoqchiman.",
+        "Я не совсем уверен(а) насчёт … и хотел(а) бы обсудить это с вами.",
+        "… konusunda tam emin değilim, bunu sizinle görüşmek isterim.",
+        "I am not entirely sure about … and would prefer to discuss it with you."
+      ],
+      [
+        "Vielen Dank, dann gehen wir so vor wie besprochen.",
+        "Rahmat, unda kelishilganidek ish tutamiz.",
+        "Спасибо, тогда действуем, как договорились.",
+        "Teşekkürler, o zaman konuştuğumuz gibi ilerleyelim.",
+        "Thank you, then we will proceed as discussed."
       ]
     ]
   }

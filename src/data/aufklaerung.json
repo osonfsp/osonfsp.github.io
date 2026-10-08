@@ -1894,5 +1894,965 @@
       }
     ],
     "sample": "In Ihrem Gallengang steckt ein Stein. Deshalb kann die Galle nicht abfließen, und Sie haben Schmerzen und eine gelbe Haut. Mit einer Spiegelung möchten wir den Stein entfernen, damit die Galle wieder abfließt. Wir führen einen dünnen Schlauch mit einer Kamera durch den Mund in den Magen und den Darm. Über den Schlauch geben wir Kontrastmittel und machen Röntgenbilder. Dann öffnen wir den Ausgang des Gallengangs ein kleines Stück und holen den Stein heraus. Bitte bleiben Sie vorher nüchtern. Sie bekommen eine Schlafspritze und merken nichts. Die Untersuchung dauert etwa 30 bis 60 Minuten. Selten kommt es zu einer Entzündung der Bauchspeicheldrüse, einer Blutung oder einer Verletzung des Darms. Haben Sie noch Fragen? Sind Sie einverstanden?"
+  },
+  {
+    "id": "cholezystektomie",
+    "name": "Laparoskopische Cholezystektomie",
+    "uz": "Laparoskopik xoletsistektomiya (o‘t pufagini olib tashlash)",
+    "ru": "Лапароскопическая холецистэктомия (удаление желчного пузыря)",
+    "tr": "Laparoskopik kolesistektomi (safra kesesinin alınması)",
+    "en": "Laparoscopic cholecystectomy (gallbladder removal)",
+    "icon": "🔪",
+    "question": "Kann ich denn ohne Gallenblase überhaupt normal leben und essen?",
+    "points": [
+      {
+        "uz": "Maqsad: nima uchun kerak",
+        "ru": "Цель: зачем это нужно",
+        "tr": "Amaç: neden gerekli",
+        "en": "Purpose: why it is needed",
+        "keywords": ["damit", "steine", "koliken", "entzündung", "wieder"]
+      },
+      {
+        "uz": "Jarayon: qorinda kichik kesiklar orqali kamera bilan",
+        "ru": "Ход: через маленькие разрезы с камерой",
+        "tr": "İşlem: küçük kesilerden kamerayla",
+        "en": "Procedure: small cuts with a camera",
+        "keywords": ["kleine schnitte", "kamera", "bauchnabel", "schlüsselloch"]
+      },
+      {
+        "uz": "Narkoz ostida",
+        "ru": "Под наркозом",
+        "tr": "Genel anestezi altında",
+        "en": "Under general anaesthetic",
+        "keywords": ["narkose", "schlafen"]
+      },
+      {
+        "uz": "O‘t pufagisiz ham normal hayot",
+        "ru": "Жизнь без желчного пузыря нормальна",
+        "tr": "Safra kesesi olmadan normal yaşam",
+        "en": "Normal life without a gallbladder",
+        "keywords": ["ohne gallenblase", "normal essen", "leber", "galle fließt"]
+      },
+      {
+        "uz": "Ochiq operatsiyaga o‘tish ehtimoli",
+        "ru": "Возможен переход на открытую операцию",
+        "tr": "Açık ameliyata geçiş olasılığı",
+        "en": "Possible conversion to open surgery",
+        "keywords": ["größeren schnitt", "offen", "umsteigen"]
+      },
+      {
+        "uz": "Xavflar: qon ketish, infeksiya, o‘t yo‘li shikastlanishi",
+        "ru": "Риски: кровотечение, инфекция, повреждение желчного протока",
+        "tr": "Riskler: kanama, enfeksiyon, safra yolu yaralanması",
+        "en": "Risks: bleeding, infection, bile duct injury",
+        "keywords": ["blutung", "infektion", "gallengang", "selten"]
+      },
+      {
+        "uz": "Kasalxonada yotish va tiklanish",
+        "ru": "Пребывание в больнице и восстановление",
+        "tr": "Hastanede kalış ve iyileşme",
+        "en": "Hospital stay and recovery",
+        "keywords": ["tage", "nach hause", "schonen"]
+      },
+      {
+        "uz": "Savollar va rozilik",
+        "ru": "Вопросы и согласие",
+        "tr": "Sorular ve onam",
+        "en": "Questions and consent",
+        "keywords": ["fragen", "einverstanden", "unterschreiben", "einwilligung"]
+      }
+    ],
+    "jargon": [
+      {
+        "re": "cholezyst",
+        "fach": "Cholezystektomie",
+        "simple": "Entfernung der Gallenblase"
+      },
+      {
+        "re": "laparoskop",
+        "fach": "Laparoskopie",
+        "simple": "Bauchspiegelung"
+      },
+      {
+        "re": "konversion",
+        "fach": "Konversion",
+        "simple": "Wechsel zu einem größeren Schnitt"
+      },
+      {
+        "re": "ductus choledochus|choledochus",
+        "fach": "Ductus choledochus",
+        "simple": "Hauptgallengang"
+      },
+      {
+        "re": "postoperativ",
+        "fach": "postoperativ",
+        "simple": "nach der Operation"
+      }
+    ],
+    "sample": "Ich verstehe Ihre Frage. Wir möchten die Gallenblase entfernen, damit die Steine keine Koliken und keine Entzündung mehr machen. Sie können ohne Gallenblase ganz normal leben und auch normal essen: Die Galle wird weiter in der Leber gebildet und fließt direkt in den Darm. Die Operation machen wir in Narkose, Sie schlafen also. Wir machen nur kleine Schnitte, einen davon am Bauchnabel, und arbeiten mit einer Kamera, man nennt das Schlüssellochtechnik. Selten müssen wir auf einen größeren Schnitt umsteigen, wenn es nicht anders geht. Mögliche Risiken sind eine Blutung, eine Infektion oder sehr selten eine Verletzung des Gallengangs. Meist können Sie nach zwei bis drei Tagen nach Hause gehen und sollten sich zwei Wochen schonen. Haben Sie noch Fragen? Wenn Sie einverstanden sind, unterschreiben Sie bitte hier."
+  },
+  {
+    "id": "appendektomie",
+    "name": "Laparoskopische Appendektomie",
+    "uz": "Laparoskopik appendektomiya (ko‘richak o‘simtasini olib tashlash)",
+    "ru": "Лапароскопическая аппендэктомия",
+    "tr": "Laparoskopik apendektomi",
+    "en": "Laparoscopic appendectomy",
+    "icon": "🩹",
+    "question": "Muss das wirklich sofort operiert werden? Kann man das nicht mit Tabletten behandeln?",
+    "points": [
+      {
+        "uz": "Maqsad: nima uchun kerak",
+        "ru": "Цель: зачем это нужно",
+        "tr": "Amaç: neden gerekli",
+        "en": "Purpose: why it is needed",
+        "keywords": ["damit", "entzündet", "platzen", "durchbruch", "bauchfell"]
+      },
+      {
+        "uz": "Nega hozir operatsiya qilish kerak",
+        "ru": "Почему нужна операция сейчас",
+        "tr": "Neden şimdi ameliyat gerekli",
+        "en": "Why surgery is needed now",
+        "keywords": ["heute", "dringend", "nicht warten", "jetzt"]
+      },
+      {
+        "uz": "Jarayon: kichik kesiklar va kamera",
+        "ru": "Ход: маленькие разрезы и камера",
+        "tr": "İşlem: küçük kesiler ve kamera",
+        "en": "Procedure: small cuts and camera",
+        "keywords": ["kleine schnitte", "kamera"]
+      },
+      {
+        "uz": "Narkoz ostida",
+        "ru": "Под наркозом",
+        "tr": "Genel anestezi altında",
+        "en": "Under general anaesthetic",
+        "keywords": ["narkose", "schlafen"]
+      },
+      {
+        "uz": "Ko‘richak o‘simtasiz ham muammo yo‘q",
+        "ru": "Без аппендикса можно жить",
+        "tr": "Apendikssiz yaşamak sorun değil",
+        "en": "No problem living without the appendix",
+        "keywords": ["brauchen", "nicht nötig", "ohne"]
+      },
+      {
+        "uz": "Xavflar: qon ketish, infeksiya, abssess",
+        "ru": "Риски: кровотечение, инфекция, абсцесс",
+        "tr": "Riskler: kanama, enfeksiyon, apse",
+        "en": "Risks: bleeding, infection, abscess",
+        "keywords": ["blutung", "infektion", "eiter", "selten"]
+      },
+      {
+        "uz": "Tiklanish va jismoniy faollik",
+        "ru": "Восстановление и нагрузка",
+        "tr": "İyileşme ve fiziksel aktivite",
+        "en": "Recovery and physical activity",
+        "keywords": ["tage", "nicht schwer heben", "sport"]
+      },
+      {
+        "uz": "Savollar va rozilik",
+        "ru": "Вопросы и согласие",
+        "tr": "Sorular ve onam",
+        "en": "Questions and consent",
+        "keywords": ["fragen", "einverstanden", "unterschreiben", "einwilligung"]
+      }
+    ],
+    "jargon": [
+      {
+        "re": "appendektomie",
+        "fach": "Appendektomie",
+        "simple": "Entfernung des Blinddarms"
+      },
+      {
+        "re": "appendizitis",
+        "fach": "Appendizitis",
+        "simple": "Blinddarmentzündung"
+      },
+      {
+        "re": "perforation",
+        "fach": "Perforation",
+        "simple": "Durchbruch"
+      },
+      {
+        "re": "peritonitis",
+        "fach": "Peritonitis",
+        "simple": "Bauchfellentzündung"
+      },
+      {
+        "re": "antibiose",
+        "fach": "Antibiose",
+        "simple": "Antibiotika-Behandlung"
+      }
+    ],
+    "sample": "Ich verstehe, dass Sie lieber keine Operation möchten. Ihr Blinddarm ist entzündet, und wenn wir warten, kann er platzen. Dann kommt es zu einem Durchbruch und einer gefährlichen Entzündung des Bauchfells. Deshalb ist es dringend, wir sollten heute operieren und nicht warten. Tabletten allein reichen hier nicht sicher aus. Den Blinddarm brauchen Sie nicht, Sie können ganz normal ohne ihn leben. Sie schlafen in Narkose, wir machen nur kleine Schnitte und arbeiten mit einer Kamera. Selten gibt es eine Blutung, eine Infektion oder eine Eiteransammlung im Bauch. Nach zwei bis drei Tagen können Sie meist nach Hause, für zwei Wochen bitte nicht schwer heben und keinen Sport machen. Haben Sie noch Fragen? Wenn Sie einverstanden sind, unterschreiben Sie bitte hier."
+  },
+  {
+    "id": "thyreoidektomie",
+    "name": "Schilddrüsenoperation (Thyreoidektomie)",
+    "uz": "Qalqonsimon bez operatsiyasi (tireoidektomiya)",
+    "ru": "Операция на щитовидной железе (тиреоидэктомия)",
+    "tr": "Tiroid ameliyatı (tiroidektomi)",
+    "en": "Thyroid surgery (thyroidectomy)",
+    "icon": "🦋",
+    "question": "Kann ich nach der Operation noch normal sprechen? Ich bin Lehrerin.",
+    "points": [
+      {
+        "uz": "Maqsad: nima uchun kerak",
+        "ru": "Цель: зачем это нужно",
+        "tr": "Amaç: neden gerekli",
+        "en": "Purpose: why it is needed",
+        "keywords": ["damit", "knoten", "vergrößert", "untersuchen", "druck"]
+      },
+      {
+        "uz": "Jarayon: bo‘yindagi kesik",
+        "ru": "Ход: разрез на шее",
+        "tr": "İşlem: boyunda kesi",
+        "en": "Procedure: a cut on the neck",
+        "keywords": ["schnitt", "hals", "narbe"]
+      },
+      {
+        "uz": "Ovoz nervi va ovoz o‘zgarishi xavfi",
+        "ru": "Риск повреждения голосового нерва",
+        "tr": "Ses siniri ve ses değişikliği riski",
+        "en": "Risk to the voice nerve",
+        "keywords": ["stimmnerv", "heiser", "stimme"]
+      },
+      {
+        "uz": "Nerv monitoringi",
+        "ru": "Мониторинг нерва",
+        "tr": "Sinir monitörizasyonu",
+        "en": "Nerve monitoring",
+        "keywords": ["überwachen", "gerät", "kontrollieren"]
+      },
+      {
+        "uz": "Kalsiy pasayishi xavfi",
+        "ru": "Риск снижения кальция",
+        "tr": "Kalsiyum düşmesi riski",
+        "en": "Risk of low calcium",
+        "keywords": ["kalzium", "calcium", "kribbeln", "nebenschilddrüse"]
+      },
+      {
+        "uz": "Keyin gormon tabletkasi",
+        "ru": "После — гормональные таблетки",
+        "tr": "Sonrasında hormon tableti",
+        "en": "Hormone tablets afterwards",
+        "keywords": ["tablette", "hormon", "lebenslang", "jeden morgen"]
+      },
+      {
+        "uz": "Narkoz va kasalxonada yotish",
+        "ru": "Наркоз и пребывание в больнице",
+        "tr": "Anestezi ve hastanede kalış",
+        "en": "Anaesthetic and hospital stay",
+        "keywords": ["narkose", "tage"]
+      },
+      {
+        "uz": "Savollar va rozilik",
+        "ru": "Вопросы и согласие",
+        "tr": "Sorular ve onam",
+        "en": "Questions and consent",
+        "keywords": ["fragen", "einverstanden", "unterschreiben", "einwilligung"]
+      }
+    ],
+    "jargon": [
+      {
+        "re": "thyreoidektomie",
+        "fach": "Thyreoidektomie",
+        "simple": "Entfernung der Schilddrüse"
+      },
+      {
+        "re": "rekurrens|recurrens",
+        "fach": "Nervus recurrens",
+        "simple": "Stimmnerv"
+      },
+      {
+        "re": "hypokalz",
+        "fach": "Hypokalzämie",
+        "simple": "zu wenig Kalzium im Blut"
+      },
+      {
+        "re": "parathyre|epithelkörper",
+        "fach": "Nebenschilddrüsen (Parathyreoidea)",
+        "simple": "Nebenschilddrüsen"
+      },
+      {
+        "re": "substitution",
+        "fach": "Substitution",
+        "simple": "Ersatz durch Tabletten"
+      }
+    ],
+    "sample": "Ihre Sorge um die Stimme ist sehr verständlich. Wir möchten die Schilddrüse entfernen, weil sie stark vergrößert ist und Knoten hat, die Druck machen und die wir genau untersuchen wollen. Die Operation machen wir in Narkose über einen kleinen Schnitt am Hals, die Narbe ist später meist kaum zu sehen. Ganz in der Nähe verläuft der Stimmnerv. Wir überwachen ihn während der Operation ständig mit einem speziellen Gerät, damit wir ihn schonen. Trotzdem kann die Stimme danach eine Zeit lang heiser sein, eine dauerhafte Heiserkeit ist selten. Außerdem können die Nebenschilddrüsen gereizt werden, dann ist das Kalzium im Blut zu niedrig und es kribbelt an Händen oder Mund; das behandeln wir mit Tabletten. Nach der Operation müssen Sie lebenslang jeden Morgen eine Hormontablette nehmen. Sie bleiben etwa zwei bis drei Tage im Krankenhaus. Haben Sie noch Fragen? Wenn Sie einverstanden sind, unterschreiben Sie bitte hier."
+  },
+  {
+    "id": "hueft-tep",
+    "name": "Hüftgelenkersatz (Hüft-TEP)",
+    "uz": "Son-chanoq bo‘g‘imini protezlash (TEP)",
+    "ru": "Эндопротезирование тазобедренного сустава",
+    "tr": "Kalça protezi (TEP)",
+    "en": "Total hip replacement",
+    "icon": "🦴",
+    "question": "Wie lange hält so ein künstliches Gelenk, und wann kann ich wieder laufen?",
+    "points": [
+      {
+        "uz": "Maqsad: nima uchun kerak",
+        "ru": "Цель: зачем это нужно",
+        "tr": "Amaç: neden gerekli",
+        "en": "Purpose: why it is needed",
+        "keywords": ["damit", "schmerzen", "verschlissen", "arthrose", "beweglich"]
+      },
+      {
+        "uz": "Jarayon: sun’iy bo‘g‘im o‘rnatish",
+        "ru": "Ход: установка искусственного сустава",
+        "tr": "İşlem: yapay eklem takılması",
+        "en": "Procedure: inserting an artificial joint",
+        "keywords": ["künstliches gelenk", "ersetzen", "kunststoff", "metall"]
+      },
+      {
+        "uz": "Narkoz yoki spinal og‘riqsizlantirish",
+        "ru": "Наркоз или спинальная анестезия",
+        "tr": "Genel veya spinal anestezi",
+        "en": "General or spinal anaesthetic",
+        "keywords": ["narkose", "rückenmarksnahe", "betäubung"]
+      },
+      {
+        "uz": "Xavflar: infeksiya, tromboz, chiqib ketish",
+        "ru": "Риски: инфекция, тромбоз, вывих",
+        "tr": "Riskler: enfeksiyon, tromboz, çıkık",
+        "en": "Risks: infection, thrombosis, dislocation",
+        "keywords": ["infektion", "thrombose", "blutgerinnsel", "ausrenken"]
+      },
+      {
+        "uz": "Protez qancha xizmat qiladi",
+        "ru": "Срок службы протеза",
+        "tr": "Protezin ömrü",
+        "en": "How long the prosthesis lasts",
+        "keywords": ["jahre", "hält"]
+      },
+      {
+        "uz": "Erta yurish va reabilitatsiya",
+        "ru": "Ранняя ходьба и реабилитация",
+        "tr": "Erken yürüme ve rehabilitasyon",
+        "en": "Early walking and rehabilitation",
+        "keywords": ["am ersten tag", "gehstützen", "reha", "krankengymnastik"]
+      },
+      {
+        "uz": "Tromboz profilaktikasi",
+        "ru": "Профилактика тромбоза",
+        "tr": "Tromboz profilaksisi",
+        "en": "Thrombosis prophylaxis",
+        "keywords": ["spritze", "blutverdünn", "thrombose"]
+      },
+      {
+        "uz": "Savollar va rozilik",
+        "ru": "Вопросы и согласие",
+        "tr": "Sorular ve onam",
+        "en": "Questions and consent",
+        "keywords": ["fragen", "einverstanden", "unterschreiben", "einwilligung"]
+      }
+    ],
+    "jargon": [
+      {
+        "re": "endoprothese|\\btep\\b",
+        "fach": "Totalendoprothese (TEP)",
+        "simple": "künstliches Hüftgelenk"
+      },
+      {
+        "re": "koxarthrose|coxarthrose",
+        "fach": "Koxarthrose",
+        "simple": "Hüftgelenkverschleiß"
+      },
+      {
+        "re": "luxation",
+        "fach": "Luxation",
+        "simple": "Ausrenken des Gelenks"
+      },
+      {
+        "re": "thromboembol",
+        "fach": "Thromboembolie",
+        "simple": "Blutgerinnsel"
+      },
+      {
+        "re": "spinalanästhesie",
+        "fach": "Spinalanästhesie",
+        "simple": "Betäubung über den Rücken"
+      }
+    ],
+    "sample": "Das ist eine sehr gute Frage. Ihr Hüftgelenk ist durch die Arthrose stark verschlissen, deshalb haben Sie die Schmerzen und sind kaum noch beweglich. Wir möchten das Gelenk durch ein künstliches Gelenk aus Metall und Kunststoff ersetzen, damit Sie wieder schmerzfrei gehen können. Die Operation erfolgt in Narkose oder mit einer rückenmarksnahen Betäubung, bei der nur die Beine betäubt sind. Mögliche Risiken sind eine Infektion, ein Blutgerinnsel in den Beinen, also eine Thrombose, oder dass das Gelenk ausrenkt. Dagegen bekommen Sie täglich eine Spritze zur Blutverdünnung. Ein künstliches Gelenk hält heute meist 20 Jahre oder länger. Schon am ersten Tag stehen Sie mit der Krankengymnastik auf und gehen an Gehstützen, danach folgt eine Reha von etwa drei Wochen. Haben Sie noch Fragen? Wenn Sie einverstanden sind, unterschreiben Sie bitte hier."
+  },
+  {
+    "id": "schrittmacher",
+    "name": "Herzschrittmacher-Implantation",
+    "uz": "Kardiostimulyator o‘rnatish",
+    "ru": "Имплантация кардиостимулятора",
+    "tr": "Kalp pili takılması",
+    "en": "Pacemaker implantation",
+    "icon": "🔋",
+    "question": "Kann ich mit einem Schrittmacher noch Handy benutzen und durch die Sicherheitskontrolle am Flughafen?",
+    "points": [
+      {
+        "uz": "Maqsad: nima uchun kerak",
+        "ru": "Цель: зачем это нужно",
+        "tr": "Amaç: neden gerekli",
+        "en": "Purpose: why it is needed",
+        "keywords": ["damit", "zu langsam", "ohnmacht", "aussetzer", "schwindel"]
+      },
+      {
+        "uz": "Jarayon: o‘mrov ostida kichik kesik, mahalliy og‘riqsizlantirish",
+        "ru": "Ход: небольшой разрез под ключицей, местная анестезия",
+        "tr": "İşlem: köprücük kemiği altında küçük kesi, lokal anestezi",
+        "en": "Procedure: small cut below the collarbone, local anaesthetic",
+        "keywords": ["schlüsselbein", "örtliche betäubung", "schnitt"]
+      },
+      {
+        "uz": "Elektrod vena orqali yurakka",
+        "ru": "Электрод через вену в сердце",
+        "tr": "Elektrot damar yoluyla kalbe",
+        "en": "Lead through a vein into the heart",
+        "keywords": ["kabel", "vene", "herz"]
+      },
+      {
+        "uz": "Davomiyligi",
+        "ru": "Длительность",
+        "tr": "Süresi",
+        "en": "Duration",
+        "keywords": ["stunde", "minuten", "dauert"]
+      },
+      {
+        "uz": "Xavflar: qon ketish, infeksiya, pnevmotoraks",
+        "ru": "Риски: кровотечение, инфекция, пневмоторакс",
+        "tr": "Riskler: kanama, enfeksiyon, pnömotoraks",
+        "en": "Risks: bleeding, infection, collapsed lung",
+        "keywords": ["blutung", "infektion", "lunge", "selten"]
+      },
+      {
+        "uz": "Kundalik hayot: telefon, aeroport",
+        "ru": "Повседневная жизнь: телефон, аэропорт",
+        "tr": "Günlük yaşam: telefon, havalimanı",
+        "en": "Daily life: phone, airport",
+        "keywords": ["handy", "flughafen", "ausweis", "abstand"]
+      },
+      {
+        "uz": "Bir necha hafta qo‘lni baland ko‘tarmaslik",
+        "ru": "Несколько недель не поднимать руку высоко",
+        "tr": "Birkaç hafta kolu yükseğe kaldırmama",
+        "en": "Avoid raising the arm for a few weeks",
+        "keywords": ["arm", "nicht über den kopf", "wochen"]
+      },
+      {
+        "uz": "Savollar va rozilik",
+        "ru": "Вопросы и согласие",
+        "tr": "Sorular ve onam",
+        "en": "Questions and consent",
+        "keywords": ["fragen", "einverstanden", "unterschreiben", "einwilligung"]
+      }
+    ],
+    "jargon": [
+      {
+        "re": "bradykard",
+        "fach": "Bradykardie",
+        "simple": "zu langsamer Herzschlag"
+      },
+      {
+        "re": "av-block",
+        "fach": "AV-Block",
+        "simple": "Störung der Reizleitung im Herzen"
+      },
+      {
+        "re": "sonde",
+        "fach": "Sonde",
+        "simple": "dünnes Kabel"
+      },
+      {
+        "re": "pneumothorax",
+        "fach": "Pneumothorax",
+        "simple": "zusammengefallene Lunge"
+      },
+      {
+        "re": "implantat",
+        "fach": "Implantation",
+        "simple": "Einsetzen"
+      }
+    ],
+    "sample": "Ich kann Sie beruhigen, beides ist möglich. Ihr Herz schlägt zeitweise zu langsam, deshalb haben Sie Schwindel und die Ohnmacht. Der Schrittmacher springt ein, wenn das Herz zu langsam wird oder Aussetzer hat. Wir machen unter örtlicher Betäubung einen kleinen Schnitt unter dem linken Schlüsselbein. Über eine Vene schieben wir ein dünnes Kabel bis ins Herz und verbinden es mit dem kleinen Gerät unter der Haut. Das dauert etwa eine Stunde. Selten kommt es zu einer Blutung, einer Infektion oder einer Verletzung der Lunge. Ein Handy können Sie normal benutzen, halten Sie nur etwas Abstand zum Gerät. Am Flughafen zeigen Sie Ihren Schrittmacherausweis. In den ersten Wochen sollten Sie den linken Arm nicht über den Kopf heben. Haben Sie noch Fragen? Wenn Sie einverstanden sind, unterschreiben Sie bitte hier."
+  },
+  {
+    "id": "knochenmarkpunktion",
+    "name": "Knochenmarkpunktion",
+    "uz": "Suyak iligi punksiyasi",
+    "ru": "Пункция костного мозга",
+    "tr": "Kemik iliği aspirasyonu (biyopsisi)",
+    "en": "Bone marrow biopsy",
+    "icon": "🧪",
+    "question": "Ist das nicht furchtbar schmerzhaft? Ich habe gehört, das ist schlimm.",
+    "points": [
+      {
+        "uz": "Maqsad: nima uchun kerak",
+        "ru": "Цель: зачем это нужно",
+        "tr": "Amaç: neden gerekli",
+        "en": "Purpose: why it is needed",
+        "keywords": ["damit", "blutbildung", "ursache", "blutwerte", "untersuchen"]
+      },
+      {
+        "uz": "Jarayon: chanoq suyagidan nina bilan",
+        "ru": "Ход: иглой из тазовой кости",
+        "tr": "İşlem: kalça kemiğinden iğneyle",
+        "en": "Procedure: needle into the hip bone",
+        "keywords": ["beckenknochen", "nadel", "hüfte"]
+      },
+      {
+        "uz": "Holat: yonboshlab yotish",
+        "ru": "Положение: лёжа на боку",
+        "tr": "Pozisyon: yan yatar",
+        "en": "Position: lying on the side",
+        "keywords": ["seite", "liegen", "bauch"]
+      },
+      {
+        "uz": "Mahalliy og‘riqsizlantirish va qisqa og‘riq",
+        "ru": "Местная анестезия и кратковременная боль",
+        "tr": "Lokal anestezi ve kısa süreli ağrı",
+        "en": "Local anaesthetic and brief pain",
+        "keywords": ["betäub", "kurz", "ziehen"]
+      },
+      {
+        "uz": "Davomiyligi",
+        "ru": "Длительность",
+        "tr": "Süresi",
+        "en": "Duration",
+        "keywords": ["minuten", "dauert"]
+      },
+      {
+        "uz": "Xavflar: qon ketish, ko‘karish, infeksiya",
+        "ru": "Риски: кровотечение, синяк, инфекция",
+        "tr": "Riskler: kanama, morluk, enfeksiyon",
+        "en": "Risks: bleeding, bruising, infection",
+        "keywords": ["bluterguss", "blutung", "infektion", "selten"]
+      },
+      {
+        "uz": "Keyin: bosib turish, natija muddati",
+        "ru": "После: прижатие, сроки результата",
+        "tr": "Sonrası: bası, sonuç süresi",
+        "en": "Afterwards: pressure, time to results",
+        "keywords": ["drücken", "ergebnis", "tagen"]
+      },
+      {
+        "uz": "Savollar va rozilik",
+        "ru": "Вопросы и согласие",
+        "tr": "Sorular ve onam",
+        "en": "Questions and consent",
+        "keywords": ["fragen", "einverstanden", "unterschreiben", "einwilligung"]
+      }
+    ],
+    "jargon": [
+      {
+        "re": "aspiration",
+        "fach": "Aspiration",
+        "simple": "Ansaugen"
+      },
+      {
+        "re": "beckenkamm|spina iliaca",
+        "fach": "Beckenkamm (Spina iliaca)",
+        "simple": "Beckenknochen"
+      },
+      {
+        "re": "hämatopoese",
+        "fach": "Hämatopoese",
+        "simple": "Blutbildung"
+      },
+      {
+        "re": "histolog",
+        "fach": "Histologie",
+        "simple": "Gewebeuntersuchung"
+      },
+      {
+        "re": "leukämie|lymphom",
+        "fach": "Leukämie / Lymphom",
+        "simple": "Blutkrebs / Lymphdrüsenkrebs"
+      }
+    ],
+    "sample": "Ich verstehe Ihre Angst, und ich erkläre Ihnen genau, was passiert. Ihre Blutwerte sind auffällig, und wir möchten die Blutbildung im Knochenmark untersuchen, damit wir die Ursache finden. Sie liegen dabei auf der Seite oder auf dem Bauch. Hinten am Beckenknochen, oberhalb der Hüfte, bekommen Sie zuerst eine gründliche örtliche Betäubung. Dann entnehmen wir mit einer speziellen Nadel etwas Knochenmark. Beim Ansaugen spüren Sie kurz ein unangenehmes Ziehen, das ist aber nach wenigen Sekunden vorbei. Das Ganze dauert etwa 15 Minuten. Danach drücken Sie eine Weile auf die Stelle. Selten entsteht ein Bluterguss oder eine Blutung, sehr selten eine Infektion. Das Ergebnis bekommen wir nach einigen Tagen. Haben Sie noch Fragen? Wenn Sie einverstanden sind, unterschreiben Sie bitte hier."
+  },
+  {
+    "id": "lysetherapie",
+    "name": "Systemische Lysetherapie beim Schlaganfall",
+    "uz": "Insultda tromboliz (laxtani eritish terapiyasi)",
+    "ru": "Системный тромболизис при инсульте",
+    "tr": "İnmede sistemik tromboliz",
+    "en": "Thrombolysis for stroke",
+    "icon": "⏱️",
+    "question": "(Ehefrau) Ist das nicht gefährlich? Mein Mann nimmt doch schon ASS.",
+    "points": [
+      {
+        "uz": "Maqsad: nima uchun kerak",
+        "ru": "Цель: зачем это нужно",
+        "tr": "Amaç: neden gerekli",
+        "en": "Purpose: why it is needed",
+        "keywords": ["damit", "gerinnsel", "auflösen", "durchblutung", "gehirn"]
+      },
+      {
+        "uz": "Vaqt muhim",
+        "ru": "Время критично",
+        "tr": "Zaman çok önemli",
+        "en": "Time is critical",
+        "keywords": ["zeit", "schnell", "jede minute", "stunden"]
+      },
+      {
+        "uz": "Jarayon: venaga infuziya",
+        "ru": "Ход: инфузия в вену",
+        "tr": "İşlem: damardan infüzyon",
+        "en": "Procedure: infusion into a vein",
+        "keywords": ["infusion", "vene", "medikament"]
+      },
+      {
+        "uz": "Asosiy xavf: miyaga qon quyilishi",
+        "ru": "Главный риск: кровоизлияние в мозг",
+        "tr": "Ana risk: beyin kanaması",
+        "en": "Main risk: bleeding in the brain",
+        "keywords": ["hirnblutung", "blutung im gehirn", "blutung"]
+      },
+      {
+        "uz": "Foyda va xavf nisbati",
+        "ru": "Соотношение пользы и риска",
+        "tr": "Yarar-risk dengesi",
+        "en": "Benefit versus risk",
+        "keywords": ["chance", "nutzen", "überwiegt", "behinderung"]
+      },
+      {
+        "uz": "KT qon quyilishini istisno qilgan",
+        "ru": "КТ исключила кровоизлияние",
+        "tr": "BT kanamayı dışladı",
+        "en": "CT has ruled out a bleed",
+        "keywords": ["ct", "keine blutung", "ausgeschlossen"]
+      },
+      {
+        "uz": "Keyin: insult bo‘limida kuzatuv",
+        "ru": "После: наблюдение в инсультном отделении",
+        "tr": "Sonrası: inme ünitesinde izlem",
+        "en": "Afterwards: monitoring on the stroke unit",
+        "keywords": ["stroke unit", "überwach", "beobacht"]
+      },
+      {
+        "uz": "Savollar va rozilik",
+        "ru": "Вопросы и согласие",
+        "tr": "Sorular ve onam",
+        "en": "Questions and consent",
+        "keywords": ["fragen", "einverstanden", "unterschreiben", "einwilligung"]
+      }
+    ],
+    "jargon": [
+      {
+        "re": "thrombolyse|\\blyse\\b",
+        "fach": "Lyse / Thrombolyse",
+        "simple": "Auflösen des Blutgerinnsels"
+      },
+      {
+        "re": "alteplase|rt-pa",
+        "fach": "Alteplase (rt-PA)",
+        "simple": "Medikament, das Gerinnsel auflöst"
+      },
+      {
+        "re": "ischäm",
+        "fach": "Ischämie",
+        "simple": "Durchblutungsstörung"
+      },
+      {
+        "re": "intrazerebral",
+        "fach": "intrazerebrale Blutung",
+        "simple": "Blutung im Gehirn"
+      },
+      {
+        "re": "thrombozytenaggregationshemm",
+        "fach": "Thrombozytenaggregationshemmer",
+        "simple": "Blutplättchenhemmer"
+      }
+    ],
+    "sample": "Ich verstehe Ihre Sorge sehr gut. Bei Ihrem Mann ist ein Blutgefäß im Gehirn durch ein Gerinnsel verschlossen. Wir möchten ihm ein Medikament als Infusion über die Vene geben, damit sich das Gerinnsel auflöst und die Durchblutung des Gehirns wieder besser wird. Dabei zählt jede Minute, das Medikament wirkt nur in den ersten Stunden. Im CT haben wir eine Blutung ausgeschlossen. Das wichtigste Risiko ist eine Blutung im Gehirn, die bei wenigen von hundert Patienten auftritt; ASS erhöht dieses Risiko nur leicht. Die Chance, dass Ihr Mann ohne bleibende Behinderung nach Hause geht, ist mit der Behandlung deutlich größer, der Nutzen überwiegt also. Danach überwachen wir ihn eng auf der Stroke Unit. Haben Sie noch Fragen? Sind Sie einverstanden, dass wir sofort beginnen?"
+  },
+  {
+    "id": "port",
+    "name": "Portimplantation für die Chemotherapie",
+    "uz": "Kimyoterapiya uchun port o‘rnatish",
+    "ru": "Установка порт-системы для химиотерапии",
+    "tr": "Kemoterapi için port takılması",
+    "en": "Port implantation for chemotherapy",
+    "icon": "🔌",
+    "question": "Warum kann man die Chemo nicht einfach in den Arm geben?",
+    "points": [
+      {
+        "uz": "Maqsad: nima uchun kerak",
+        "ru": "Цель: зачем это нужно",
+        "tr": "Amaç: neden gerekli",
+        "en": "Purpose: why it is needed",
+        "keywords": ["damit", "venen", "schonen", "nicht jedes mal stechen", "reizt"]
+      },
+      {
+        "uz": "Port nima: teri ostidagi kichik kamera",
+        "ru": "Что такое порт: камера под кожей",
+        "tr": "Port nedir: deri altında küçük hazne",
+        "en": "What a port is: a small chamber under the skin",
+        "keywords": ["kammer", "unter der haut", "klein"]
+      },
+      {
+        "uz": "Jarayon: mahalliy og‘riqsizlantirish, kichik kesik",
+        "ru": "Ход: местная анестезия, небольшой разрез",
+        "tr": "İşlem: lokal anestezi, küçük kesi",
+        "en": "Procedure: local anaesthetic, small cut",
+        "keywords": ["örtliche betäubung", "schnitt", "schlüsselbein"]
+      },
+      {
+        "uz": "Davomiyligi",
+        "ru": "Длительность",
+        "tr": "Süresi",
+        "en": "Duration",
+        "keywords": ["minuten", "dauert"]
+      },
+      {
+        "uz": "Xavflar: infeksiya, tromboz, pnevmotoraks",
+        "ru": "Риски: инфекция, тромбоз, пневмоторакс",
+        "tr": "Riskler: enfeksiyon, tromboz, pnömotoraks",
+        "en": "Risks: infection, thrombosis, collapsed lung",
+        "keywords": ["infektion", "gerinnsel", "lunge", "selten"]
+      },
+      {
+        "uz": "Kundalik hayot: dush, sport",
+        "ru": "Повседневная жизнь: душ, спорт",
+        "tr": "Günlük yaşam: duş, spor",
+        "en": "Daily life: shower, sport",
+        "keywords": ["duschen", "sport", "alltag"]
+      },
+      {
+        "uz": "Davolashdan keyin olib tashlash mumkin",
+        "ru": "Можно удалить после лечения",
+        "tr": "Tedaviden sonra çıkarılabilir",
+        "en": "Can be removed after treatment",
+        "keywords": ["entfernen", "nach der behandlung", "herausnehmen"]
+      },
+      {
+        "uz": "Savollar va rozilik",
+        "ru": "Вопросы и согласие",
+        "tr": "Sorular ve onam",
+        "en": "Questions and consent",
+        "keywords": ["fragen", "einverstanden", "unterschreiben", "einwilligung"]
+      }
+    ],
+    "jargon": [
+      {
+        "re": "portkatheter|port-a-cath",
+        "fach": "Portkatheter",
+        "simple": "Port mit dünnem Schlauch"
+      },
+      {
+        "re": "paravasat",
+        "fach": "Paravasat",
+        "simple": "Auslaufen der Chemo ins Gewebe"
+      },
+      {
+        "re": "vena subclavia|subclavia",
+        "fach": "Vena subclavia",
+        "simple": "große Vene unter dem Schlüsselbein"
+      },
+      {
+        "re": "zytostatik",
+        "fach": "Zytostatika",
+        "simple": "Chemotherapie-Medikamente"
+      },
+      {
+        "re": "thrombose",
+        "fach": "Thrombose",
+        "simple": "Blutgerinnsel"
+      }
+    ],
+    "sample": "Das ist eine berechtigte Frage. Die Chemotherapie reizt die kleinen Venen am Arm stark und kann sie schädigen. Ein Port schont Ihre Venen, und wir müssen nicht jedes Mal neu suchen und stechen. Der Port ist eine kleine Kammer, die unter der Haut liegt und über einen dünnen Schlauch mit einer großen Vene verbunden ist. Wir setzen ihn in örtlicher Betäubung über einen kleinen Schnitt unter dem Schlüsselbein ein. Das dauert etwa 30 bis 45 Minuten. Selten kommt es zu einer Infektion, einem Gerinnsel in der Vene oder einer Verletzung der Lunge. Im Alltag stört der Port kaum, Sie können duschen und auch leichten Sport machen. Nach dem Ende der Behandlung können wir ihn wieder entfernen. Haben Sie noch Fragen? Wenn Sie einverstanden sind, unterschreiben Sie bitte hier."
+  },
+  {
+    "id": "insulin",
+    "name": "Beginn einer Insulintherapie",
+    "uz": "Insulin bilan davolashni boshlash",
+    "ru": "Начало инсулинотерапии",
+    "tr": "İnsülin tedavisine başlama",
+    "en": "Starting insulin therapy",
+    "icon": "💉",
+    "question": "Muss ich jetzt mein ganzes Leben spritzen? Werde ich davon dick?",
+    "points": [
+      {
+        "uz": "Maqsad: nima uchun kerak",
+        "ru": "Цель: зачем это нужно",
+        "tr": "Amaç: neden gerekli",
+        "en": "Purpose: why it is needed",
+        "keywords": ["damit", "zucker", "zu hoch", "tabletten reichen nicht", "folgeschäden"]
+      },
+      {
+        "uz": "Qanday yuboriladi: qalam bilan qorin terisi ostiga",
+        "ru": "Как вводить: ручкой под кожу живота",
+        "tr": "Nasıl yapılır: kalemle karın derisi altına",
+        "en": "How: with a pen under the skin of the belly",
+        "keywords": ["pen", "bauch", "unter die haut", "spritzen"]
+      },
+      {
+        "uz": "Qachon va qancha",
+        "ru": "Когда и сколько",
+        "tr": "Ne zaman ve ne kadar",
+        "en": "When and how much",
+        "keywords": ["abends", "einheiten", "jeden tag"]
+      },
+      {
+        "uz": "Qand o‘lchash",
+        "ru": "Измерение сахара",
+        "tr": "Şeker ölçümü",
+        "en": "Measuring glucose",
+        "keywords": ["messen", "messgerät", "blutzucker"]
+      },
+      {
+        "uz": "Gipoglikemiya belgilari va nima qilish kerak",
+        "ru": "Признаки гипогликемии и что делать",
+        "tr": "Hipoglisemi belirtileri ve yapılacaklar",
+        "en": "Signs of low sugar and what to do",
+        "keywords": ["unterzucker", "zittern", "schwitzen", "traubenzucker"]
+      },
+      {
+        "uz": "Vazn haqida",
+        "ru": "О весе",
+        "tr": "Kilo hakkında",
+        "en": "About weight",
+        "keywords": ["gewicht", "zunehmen", "bewegung"]
+      },
+      {
+        "uz": "O‘qitish va nazorat",
+        "ru": "Обучение и контроль",
+        "tr": "Eğitim ve kontrol",
+        "en": "Training and follow-up",
+        "keywords": ["schulung", "kontrolle", "beratung"]
+      },
+      {
+        "uz": "Savollar",
+        "ru": "Вопросы",
+        "tr": "Sorular",
+        "en": "Questions",
+        "keywords": ["fragen", "verstanden"]
+      }
+    ],
+    "jargon": [
+      {
+        "re": "hypoglyk",
+        "fach": "Hypoglykämie",
+        "simple": "Unterzucker"
+      },
+      {
+        "re": "basalinsulin",
+        "fach": "Basalinsulin",
+        "simple": "Langzeit-Insulin"
+      },
+      {
+        "re": "hba1c",
+        "fach": "HbA1c",
+        "simple": "Langzeit-Zuckerwert"
+      },
+      {
+        "re": "subkutan",
+        "fach": "subkutan",
+        "simple": "unter die Haut"
+      },
+      {
+        "re": "glukose",
+        "fach": "Glukose",
+        "simple": "Zucker"
+      }
+    ],
+    "sample": "Ich verstehe, dass das zunächst ein Schreck ist. Ihr Zucker ist trotz der Tabletten zu hoch, die Tabletten reichen nicht mehr aus. Wir möchten mit Insulin beginnen, damit wir Folgeschäden an Augen, Nieren und Nerven vermeiden. Sie spritzen das Insulin jeden Tag abends mit einem Pen unter die Haut am Bauch; die Nadel ist sehr fein. Wir beginnen mit wenigen Einheiten und passen die Menge an. Dazu messen Sie morgens Ihren Blutzucker mit einem kleinen Messgerät. Wenn der Zucker zu niedrig wird, also Unterzucker, merken Sie Zittern, Schwitzen oder Heißhunger; dann essen Sie sofort Traubenzucker. Manche Patienten nehmen etwas an Gewicht zu, mit Bewegung und gesunder Ernährung kann man das verhindern. Ob Sie lebenslang spritzen müssen, hängt vom Verlauf ab. Sie bekommen eine Schulung bei unserer Diabetesberatung und regelmäßige Kontrollen. Haben Sie noch Fragen? Haben Sie alles verstanden?"
+  },
+  {
+    "id": "peg",
+    "name": "PEG-Sonde (Ernährungssonde durch die Bauchdecke)",
+    "uz": "PEG zond (qorin devori orqali oziqlantirish naychasi)",
+    "ru": "ЧЭГ (гастростома для питания)",
+    "tr": "PEG tüpü (karın duvarından beslenme tüpü)",
+    "en": "PEG feeding tube",
+    "icon": "🍼",
+    "question": "(Tochter) Darf meine Mutter dann gar nichts mehr essen? Ist das nicht unmenschlich?",
+    "points": [
+      {
+        "uz": "Maqsad: nima uchun kerak",
+        "ru": "Цель: зачем это нужно",
+        "tr": "Amaç: neden gerekli",
+        "en": "Purpose: why it is needed",
+        "keywords": ["damit", "schlucken", "verschluckt", "lungenentzündung", "ernährung", "genug"]
+      },
+      {
+        "uz": "Jarayon: gastroskopiya orqali, qorin devorida kichik teshik",
+        "ru": "Ход: через гастроскопию, маленькое отверстие в брюшной стенке",
+        "tr": "İşlem: gastroskopiyle, karın duvarında küçük delik",
+        "en": "Procedure: via gastroscopy, small opening in the belly",
+        "keywords": ["magenspiegelung", "bauchdecke", "schlauch"]
+      },
+      {
+        "uz": "Uyquli tinchlantirish ostida",
+        "ru": "Под седацией",
+        "tr": "Sedasyon altında",
+        "en": "Under sedation",
+        "keywords": ["schlafspritze", "schläft", "dämmer"]
+      },
+      {
+        "uz": "Og‘izdan oz-ozdan yeyish mumkin",
+        "ru": "Можно понемногу есть через рот",
+        "tr": "Ağızdan az miktarda yenebilir",
+        "en": "Small amounts by mouth may be allowed",
+        "keywords": ["kleine mengen", "probieren", "genuss", "weiter essen"]
+      },
+      {
+        "uz": "Xavflar: infeksiya, qon ketish, perforatsiya",
+        "ru": "Риски: инфекция, кровотечение, перфорация",
+        "tr": "Riskler: enfeksiyon, kanama, delinme",
+        "en": "Risks: infection, bleeding, perforation",
+        "keywords": ["infektion", "blutung", "verletzung", "selten"]
+      },
+      {
+        "uz": "Parvarish: teri atrofini tozalash",
+        "ru": "Уход: обработка кожи вокруг",
+        "tr": "Bakım: çevresindeki cildin temizliği",
+        "en": "Care: cleaning the skin around it",
+        "keywords": ["pflege", "reinigen", "verband"]
+      },
+      {
+        "uz": "Qaytariladigan qaror, bemorning xohishi",
+        "ru": "Обратимое решение, воля пациента",
+        "tr": "Geri döndürülebilir karar, hastanın isteği",
+        "en": "Reversible decision, patient’s wishes",
+        "keywords": ["entfernen", "wille", "wünsch", "jederzeit"]
+      },
+      {
+        "uz": "Savollar va rozilik",
+        "ru": "Вопросы и согласие",
+        "tr": "Sorular ve onam",
+        "en": "Questions and consent",
+        "keywords": ["fragen", "einverstanden", "unterschreiben", "einwilligung"]
+      }
+    ],
+    "jargon": [
+      {
+        "re": "perkutan|\\bpeg\\b",
+        "fach": "PEG (perkutane endoskopische Gastrostomie)",
+        "simple": "Ernährungssonde durch die Bauchdecke"
+      },
+      {
+        "re": "dysphagie",
+        "fach": "Dysphagie",
+        "simple": "Schluckstörung"
+      },
+      {
+        "re": "aspiration",
+        "fach": "Aspiration",
+        "simple": "Verschlucken in die Lunge"
+      },
+      {
+        "re": "sedierung",
+        "fach": "Sedierung",
+        "simple": "Schlafspritze"
+      },
+      {
+        "re": "enteral",
+        "fach": "enterale Ernährung",
+        "simple": "Ernährung über den Magen"
+      }
+    ],
+    "sample": "Ich verstehe Ihre Bedenken sehr gut. Ihre Mutter kann seit dem Schlaganfall schlecht schlucken, sie verschluckt sich oft und hatte deshalb schon eine Lungenentzündung. Außerdem bekommt sie nicht genug Ernährung. Wir möchten eine Ernährungssonde legen, damit sie ausreichend Nahrung und Flüssigkeit bekommt. Dazu machen wir eine Magenspiegelung und legen über eine kleine Öffnung in der Bauchdecke einen dünnen Schlauch in den Magen. Ihre Mutter bekommt dafür eine Schlafspritze und schläft. Sie darf, wenn die Logopädin zustimmt, weiterhin kleine Mengen zum Genuss probieren. Selten kommt es zu einer Infektion, einer Blutung oder einer Verletzung anderer Organe. Die Stelle muss regelmäßig gereinigt und der Verband gewechselt werden, das zeigt die Pflege Ihnen. Wichtig ist der Wille Ihrer Mutter, und die Sonde kann jederzeit wieder entfernt werden. Haben Sie noch Fragen? Wenn Sie als Betreuerin einverstanden sind, unterschreiben Sie bitte hier."
   }
 ]
