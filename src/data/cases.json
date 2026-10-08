@@ -9943,5 +9943,1673 @@
         "Dekubitus"
       ]
     }
+  },
+  {
+    "id": "c92",
+    "title": "Hypertrophe obstruktive Kardiomyopathie",
+    "category": "Kardiologie",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Jonas Klein",
+      "age": 19,
+      "gender": "männlich",
+      "hauptbeschwerde": "Kurze Bewusstlosigkeit beim Fußballtraining"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Beim Sprinttraining plötzlich Schwarzwerden vor den Augen und kurze Bewusstlosigkeit (ca. 20 Sekunden), danach sofort wieder orientiert. Seit Monaten Belastungsdyspnoe und Engegefühl in der Brust bei starker Belastung.",
+      "vorerkrankungen": "Keine. Ein Herzgeräusch wurde bei der Musterungsuntersuchung erwähnt.",
+      "medikamente": "Keine.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Onkel väterlicherseits mit 32 Jahren beim Joggen plötzlich verstorben (plötzlicher Herztod).",
+      "sozialanamnese": "Ledig, Abiturient, spielt Fußball im Verein (4× pro Woche). Kein Nikotin, kein Alkohol, keine Drogen."
+    },
+    "sprache": [
+      {
+        "patient": "Beim Sprinten wurde mir schwarz vor Augen, dann lag ich auf dem Rasen.",
+        "fach": "Unter maximaler Belastung kam es zu einer Synkope."
+      },
+      {
+        "patient": "Mein Onkel ist mit 32 beim Joggen einfach umgefallen und gestorben.",
+        "fach": "In der Familienanamnese findet sich ein plötzlicher Herztod mit 32 Jahren."
+      },
+      {
+        "patient": "Bei starker Anstrengung wird es eng in der Brust.",
+        "fach": "Es besteht eine Belastungsangina."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Kardiomyopathie",
+        "patient": "Erkrankung des Herzmuskels",
+        "uz": "kardiomiopatiya (yurak mushagi kasalligi)",
+        "ru": "кардиомиопатия",
+        "tr": "kardiyomiyopati",
+        "en": "cardiomyopathy"
+      },
+      {
+        "de": "Plötzlicher Herztod",
+        "patient": "unerwarteter Tod durch Herzstillstand",
+        "uz": "to‘satdan yurak o‘limi",
+        "ru": "внезапная сердечная смерть",
+        "tr": "ani kalp ölümü",
+        "en": "sudden cardiac death"
+      },
+      {
+        "de": "Septumhypertrophie",
+        "patient": "verdickte Herzscheidewand",
+        "uz": "yurak to‘sig‘ining qalinlashuvi",
+        "ru": "гипертрофия межжелудочковой перегородки",
+        "tr": "septum hipertrofisi",
+        "en": "septal hypertrophy"
+      },
+      {
+        "de": "ICD",
+        "patient": "Gerät, das gefährliche Herzrhythmusstörungen mit einem Stromstoß beendet",
+        "uz": "implantatsiya qilinadigan defibrillyator",
+        "ru": "имплантируемый кардиовертер-дефибриллятор",
+        "tr": "implante edilebilir defibrilatör",
+        "en": "implantable defibrillator"
+      },
+      {
+        "de": "Synkope",
+        "patient": "kurze Ohnmacht",
+        "uz": "hushdan ketish",
+        "ru": "обморок",
+        "tr": "bayılma",
+        "en": "fainting"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich bin beim Fußballtraining plötzlich umgekippt. Meine Mutter hat darauf bestanden, dass ich herkomme.",
+      "answers": {
+        "beginn": "Heute Nachmittag beim Sprinttraining, nach dem dritten Sprint.",
+        "lokalisation": "Vorher hat es in der Brust eng geworden, in der Mitte.",
+        "charakter": "Mir wurde schwarz vor Augen, dann lag ich auf dem Rasen. Laut Trainer war ich etwa zwanzig Sekunden weg. Danach war ich sofort wieder klar.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Ich habe nicht gekrampft, mir nicht in die Zunge gebissen und nicht eingenässt. Bei starker Anstrengung bekomme ich schon länger schlecht Luft und es wird eng in der Brust. Herzklopfen hatte ich manchmal.",
+        "vegetativ": "Sonst ist alles normal.",
+        "vorerkrankungen": "Ich war nie richtig krank. Bei der Musterung hat ein Arzt mal ein Herzgeräusch erwähnt, ich habe das nicht weiter verfolgt.",
+        "medikamente": "Keine.",
+        "allergien": "Nein.",
+        "familie": "Der Bruder von meinem Vater ist mit 32 beim Joggen einfach umgefallen und gestorben. Man hat gesagt, es war das Herz.",
+        "sozial": "Ich mache gerade Abitur und spiele viermal pro Woche Fußball im Verein.",
+        "noxen": "Ich rauche nicht, trinke keinen Alkohol und nehme keine Drogen oder Nahrungsergänzungsmittel."
+      }
+    },
+    "verdachtsdiagnose": "Hypertrophe obstruktive Kardiomyopathie (HOCM) mit Belastungssynkope bei positiver Familienanamnese für plötzlichen Herztod",
+    "diagnoseKeywords": ["kardiomyopathie", "hocm", "hcm", "hypertroph"],
+    "differenzialdiagnosen": [
+      "Aortenklappenstenose",
+      "Long-QT-Syndrom",
+      "Arrhythmogene rechtsventrikuläre Kardiomyopathie",
+      "Vasovagale Synkope",
+      "Sportlerherz"
+    ],
+    "untersuchungen": [
+      "EKG",
+      "Echokardiographie (mit Valsalva)",
+      "Kardio-MRT",
+      "Langzeit-EKG",
+      "Belastungstest unter Aufsicht",
+      "Genetische Untersuchung und Familienscreening"
+    ]
+  },
+  {
+    "id": "c93",
+    "title": "Dilatative Kardiomyopathie bei Alkoholabusus",
+    "category": "Kardiologie",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Bernd Wolff",
+      "age": 51,
+      "gender": "männlich",
+      "hauptbeschwerde": "Zunehmende Luftnot und geschwollene Beine"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 2 Monaten zunehmende Belastungsdyspnoe (jetzt nach 1 Stockwerk, NYHA III), Orthopnoe (3 Kissen), nächtliche Hustenattacken, Beinödeme und Gewichtszunahme von 6 kg. Gelegentlich Herzrasen.",
+      "vorerkrankungen": "Arterielle Hypertonie (keine Therapie), Fettleber.",
+      "medikamente": "Keine.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Geschieden, Kfz-Mechaniker. Alkohol: seit 15 Jahren täglich 6–8 Flaschen Bier und am Wochenende Schnaps. Raucher (30 py)."
+    },
+    "sprache": [
+      {
+        "patient": "Nachts muss ich mit drei Kissen schlafen, sonst bekomme ich keine Luft.",
+        "fach": "Es besteht eine Orthopnoe."
+      },
+      {
+        "patient": "Ich trinke jeden Tag sechs bis acht Flaschen Bier.",
+        "fach": "Es besteht ein Alkoholabusus von etwa 120 g Alkohol täglich."
+      },
+      {
+        "patient": "Die Hosen passen nicht mehr, die Beine sind dick.",
+        "fach": "Es bestehen Unterschenkelödeme und eine Gewichtszunahme von 6 kg."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Dilatative Kardiomyopathie",
+        "patient": "vergrößertes, geschwächtes Herz",
+        "uz": "dilatatsion kardiomiopatiya (yurak kengayishi)",
+        "ru": "дилатационная кардиомиопатия",
+        "tr": "dilate kardiyomiyopati",
+        "en": "dilated cardiomyopathy"
+      },
+      {
+        "de": "Ejektionsfraktion",
+        "patient": "Pumpleistung des Herzens in Prozent",
+        "uz": "yurakning otish fraksiyasi",
+        "ru": "фракция выброса",
+        "tr": "ejeksiyon fraksiyonu",
+        "en": "ejection fraction"
+      },
+      {
+        "de": "Orthopnoe",
+        "patient": "Luftnot im Liegen",
+        "uz": "yotganda hansirash",
+        "ru": "ортопноэ",
+        "tr": "ortopne",
+        "en": "breathlessness lying flat"
+      },
+      {
+        "de": "Alkoholkarenz",
+        "patient": "völliger Verzicht auf Alkohol",
+        "uz": "alkogoldan butunlay voz kechish",
+        "ru": "полный отказ от алкоголя",
+        "tr": "alkolü tamamen bırakma",
+        "en": "complete abstinence from alcohol"
+      },
+      {
+        "de": "Herzinsuffizienz",
+        "patient": "Herzschwäche",
+        "uz": "yurak yetishmovchiligi",
+        "ru": "сердечная недостаточность",
+        "tr": "kalp yetmezliği",
+        "en": "heart failure"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich bekomme seit Wochen immer schlechter Luft, und die Beine sind ganz dick.",
+      "answers": {
+        "beginn": "Vor ungefähr zwei Monaten hat es angefangen, seitdem wird es immer schlimmer.",
+        "lokalisation": "Die Luftnot ist überall. Manchmal drückt es auf der Brust.",
+        "charakter": "Früher konnte ich problemlos in den vierten Stock, jetzt muss ich nach einem Stockwerk stehen bleiben.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Nachts huste ich und muss mit drei Kissen schlafen, sonst bekomme ich keine Luft. Ab und zu rast mein Herz. Die Beine sind dick, ich habe sechs Kilo zugenommen.",
+        "vegetativ": "Nachts muss ich zweimal raus zum Wasserlassen. Appetit ist schlechter.",
+        "vorerkrankungen": "Hoher Blutdruck, aber ich nehme nichts dagegen. Der Hausarzt hat mal eine Fettleber gesehen.",
+        "medikamente": "Keine.",
+        "allergien": "Nein.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich bin geschieden und Kfz-Mechaniker.",
+        "noxen": "(zögert) Ich trinke jeden Tag sechs bis acht Flaschen Bier, am Wochenende auch mal Schnaps. Seit fünfzehn Jahren. Und ich rauche eine Schachtel am Tag."
+      }
+    },
+    "verdachtsdiagnose": "Dekompensierte Herzinsuffizienz bei dilatativer (äthyltoxischer) Kardiomyopathie",
+    "diagnoseKeywords": ["kardiomyopathie", "dilatativ", "herzinsuffizienz", "dcm"],
+    "differenzialdiagnosen": [
+      "Ischämische Kardiomyopathie (KHK)",
+      "Hypertensive Herzerkrankung",
+      "Myokarditis",
+      "Tachykardiomyopathie",
+      "Leberzirrhose mit Ödemen"
+    ],
+    "untersuchungen": [
+      "Echokardiographie",
+      "EKG",
+      "NT-proBNP",
+      "Röntgen-Thorax",
+      "Koronarangiographie (Ausschluss KHK)",
+      "Labor (Leberwerte, Elektrolyte, TSH)"
+    ]
+  },
+  {
+    "id": "c94",
+    "title": "Ventrikuläre Tachykardie nach Myokardinfarkt",
+    "category": "Kardiologie",
+    "difficulty": "schwer",
+    "patient": {
+      "name": "Horst Neumann",
+      "age": 67,
+      "gender": "männlich",
+      "hauptbeschwerde": "Herzrasen, Schwindel und Brustdruck seit einer Stunde"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit ca. 1 Stunde plötzlich einsetzendes, regelmäßiges Herzrasen mit Schwindel, Brustdruck und kaltem Schweiß. Keine Bewusstlosigkeit. Vor 4 Jahren Vorderwandinfarkt.",
+      "vorerkrankungen": "KHK mit Z. n. Vorderwandinfarkt 2022 (Stent RIVA), ischämische Kardiomyopathie mit LVEF 30 %, Diabetes mellitus Typ 2, Hypertonie.",
+      "medikamente": "ASS 100 mg 1-0-0, Bisoprolol 2,5 mg 1-0-0, Sacubitril/Valsartan 49/51 mg 1-0-1, Spironolacton 25 mg 1-0-0, Atorvastatin 80 mg 0-0-1, Metformin 1000 mg 1-0-1. Seit 1 Woche Furosemid 40 mg zusätzlich wegen Ödemen.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Bruder: Herzinfarkt mit 55.",
+      "sozialanamnese": "Verheiratet, Rentner. Ex-Raucher. Alkohol gelegentlich."
+    },
+    "sprache": [
+      {
+        "patient": "Mein Herz rast wie verrückt, ganz gleichmäßig.",
+        "fach": "Der Patient berichtet über regelmäßiges Herzrasen."
+      },
+      {
+        "patient": "Mir ist schwindelig und es drückt auf der Brust.",
+        "fach": "Begleitend bestehen Schwindel und Angina pectoris."
+      },
+      {
+        "patient": "Vor einer Woche hat der Hausarzt noch eine Wassertablette dazugegeben.",
+        "fach": "Vor einer Woche wurde Furosemid ergänzt."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Ventrikuläre Tachykardie",
+        "patient": "gefährliches Herzrasen aus der Herzkammer",
+        "uz": "qorincha taxikardiyasi",
+        "ru": "желудочковая тахикардия",
+        "tr": "ventriküler taşikardi",
+        "en": "ventricular tachycardia"
+      },
+      {
+        "de": "Kardioversion",
+        "patient": "Stromstoß, um den Herzrhythmus zu normalisieren",
+        "uz": "kardioversiya",
+        "ru": "кардиоверсия",
+        "tr": "kardiyoversiyon",
+        "en": "cardioversion"
+      },
+      {
+        "de": "Hypokaliämie",
+        "patient": "zu wenig Kalium im Blut",
+        "uz": "gipokaliyemiya",
+        "ru": "гипокалиемия",
+        "tr": "hipokalemi",
+        "en": "low potassium"
+      },
+      {
+        "de": "Ischämische Kardiomyopathie",
+        "patient": "Herzschwäche nach Herzinfarkt",
+        "uz": "ishemik kardiomiopatiya",
+        "ru": "ишемическая кардиомиопатия",
+        "tr": "iskemik kardiyomiyopati",
+        "en": "ischaemic cardiomyopathy"
+      },
+      {
+        "de": "Defibrillator",
+        "patient": "Gerät, das gefährliche Rhythmusstörungen durch Stromstoß beendet",
+        "uz": "defibrillyator",
+        "ru": "дефибриллятор",
+        "tr": "defibrilatör",
+        "en": "defibrillator"
+      }
+    ],
+    "simulation": {
+      "opening": "Mein Herz rast seit einer Stunde wie verrückt, mir ist schwindelig …",
+      "answers": {
+        "beginn": "Vor ungefähr einer Stunde, ganz plötzlich, beim Fernsehen.",
+        "lokalisation": "Es drückt in der Mitte der Brust.",
+        "charakter": "Das Herz rast ganz gleichmäßig und schnell. Der Druck ist fünf von zehn.",
+        "ausstrahlung": "Ein bisschen in den linken Arm.",
+        "begleit": "Mir ist schwindelig, ich schwitze kalt. Bewusstlos war ich nicht. Luft bekomme ich schlecht.",
+        "vegetativ": "Seit einer Woche muss ich viel Wasser lassen, wegen der neuen Tablette. Ich hatte ein paar Mal Wadenkrämpfe.",
+        "vorerkrankungen": "Ich hatte vor vier Jahren einen Herzinfarkt und habe einen Stent. Seitdem ist mein Herz schwach. Außerdem Zucker und Bluthochdruck.",
+        "medikamente": "ASS, Bisoprolol, Entresto zweimal, Spironolacton, Atorvastatin und Metformin. Seit einer Woche zusätzlich Furosemid 40 wegen der dicken Beine.",
+        "allergien": "Nein.",
+        "familie": "Mein Bruder hatte mit 55 einen Herzinfarkt.",
+        "sozial": "Ich bin verheiratet und Rentner.",
+        "noxen": "Früher habe ich geraucht, seit dem Infarkt nicht mehr. Alkohol nur selten."
+      }
+    },
+    "verdachtsdiagnose": "Anhaltende monomorphe ventrikuläre Tachykardie bei ischämischer Kardiomyopathie, begünstigt durch Hypokaliämie unter Furosemid",
+    "diagnoseKeywords": ["ventrikuläre tachykardie", "kammertachykardie", "vt"],
+    "differenzialdiagnosen": [
+      "Supraventrikuläre Tachykardie mit Schenkelblock",
+      "Akutes Koronarsyndrom",
+      "Vorhofflattern",
+      "Elektrolytstörung"
+    ],
+    "untersuchungen": [
+      "12-Kanal-EKG",
+      "Elektrolyte (Kalium, Magnesium)",
+      "Troponin",
+      "Echokardiographie",
+      "Koronarangiographie",
+      "Monitoring"
+    ],
+    "oberarzt": {
+      "therapie": [
+        "Elektrische Kardioversion (synchronisiert, Analgosedierung)",
+        "Amiodaron i. v.",
+        "Kalium- und Magnesiumsubstitution",
+        "Koronarangiographie (Ischämie ausschließen)",
+        "ICD-Implantation",
+        "Furosemid anpassen"
+      ],
+      "komplikationen": [
+        "Kammerflimmern (Herzstillstand)",
+        "Kardiogener Schock",
+        "Lungenödem",
+        "Plötzlicher Herztod",
+        "Amiodaron-Nebenwirkungen (Schilddrüse, Lunge)"
+      ]
+    }
+  },
+  {
+    "id": "c95",
+    "title": "Takotsubo-Kardiomyopathie",
+    "category": "Kardiologie",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Monika Huber",
+      "age": 68,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Starke Brustschmerzen nach der Beerdigung ihres Mannes"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 3 Stunden drückende retrosternale Schmerzen (NRS 7/10) mit Dyspnoe und Übelkeit, aufgetreten am Tag der Beerdigung ihres Ehemannes. Keine Synkope.",
+      "vorerkrankungen": "Osteopenie, Hypothyreose. Keine bekannte Herzerkrankung.",
+      "medikamente": "L-Thyroxin 50 µg 1-0-0, Vitamin D.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Seit 5 Tagen verwitwet, zwei erwachsene Kinder. Nichtraucherin, kein Alkohol."
+    },
+    "sprache": [
+      {
+        "patient": "Mein Mann ist letzte Woche gestorben, heute war die Beerdigung.",
+        "fach": "Die Beschwerden traten nach einem starken emotionalen Stressereignis auf."
+      },
+      {
+        "patient": "Es drückt so stark auf der Brust, wie ein Elefant.",
+        "fach": "Es bestehen starke retrosternale Druckschmerzen."
+      },
+      {
+        "patient": "Ich habe noch nie etwas mit dem Herzen gehabt.",
+        "fach": "Eine kardiale Vorgeschichte ist nicht bekannt."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Takotsubo-Kardiomyopathie",
+        "patient": "Herzmuskelschwäche nach starkem Stress („Broken-Heart-Syndrom“)",
+        "uz": "Takotsubo kardiomiopatiyasi (“siniq yurak” sindromi)",
+        "ru": "кардиомиопатия такоцубо (синдром разбитого сердца)",
+        "tr": "Takotsubo kardiyomiyopatisi (kırık kalp sendromu)",
+        "en": "takotsubo cardiomyopathy (broken heart syndrome)"
+      },
+      {
+        "de": "Apikales Ballooning",
+        "patient": "Herzspitze bewegt sich nicht und ist ballonartig erweitert",
+        "uz": "yurak cho‘qqisining sharsimon kengayishi",
+        "ru": "апикальное баллонирование",
+        "tr": "apikal balonlaşma",
+        "en": "apical ballooning"
+      },
+      {
+        "de": "Koronarangiographie",
+        "patient": "Herzkatheteruntersuchung",
+        "uz": "koronarografiya",
+        "ru": "коронарография",
+        "tr": "koroner anjiyografi",
+        "en": "coronary angiography"
+      },
+      {
+        "de": "Troponin",
+        "patient": "Herzmuskel-Eiweiß im Blut",
+        "uz": "troponin",
+        "ru": "тропонин",
+        "tr": "troponin",
+        "en": "troponin"
+      },
+      {
+        "de": "Stressereignis",
+        "patient": "sehr belastendes Erlebnis",
+        "uz": "kuchli stress hodisasi",
+        "ru": "стрессовое событие",
+        "tr": "stres olayı",
+        "en": "stressful event"
+      }
+    ],
+    "simulation": {
+      "opening": "(weint) Es drückt so auf der Brust … heute war die Beerdigung von meinem Mann.",
+      "answers": {
+        "beginn": "Vor etwa drei Stunden, auf dem Friedhof.",
+        "lokalisation": "In der Mitte der Brust.",
+        "charakter": "Ein starker Druck, wie ein Elefant auf der Brust, sieben von zehn.",
+        "ausstrahlung": "In beide Schultern.",
+        "begleit": "Ich bekomme schlecht Luft, mir ist übel und ich habe geschwitzt. Ohnmächtig war ich nicht.",
+        "vegetativ": "Seit mein Mann gestorben ist, habe ich kaum geschlafen und gegessen.",
+        "vorerkrankungen": "Ich habe eine Schilddrüsenunterfunktion und etwas schwache Knochen. Mit dem Herzen hatte ich noch nie etwas.",
+        "medikamente": "L-Thyroxin 50 und Vitamin D.",
+        "allergien": "Nein.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Mein Mann ist vor fünf Tagen gestorben, ganz plötzlich. Meine Kinder sind erwachsen.",
+        "noxen": "Ich rauche nicht und trinke keinen Alkohol."
+      }
+    },
+    "verdachtsdiagnose": "Takotsubo-Kardiomyopathie nach emotionalem Stress (Differenzialdiagnose akutes Koronarsyndrom)",
+    "diagnoseKeywords": ["takotsubo", "stresskardiomyopathie", "broken"],
+    "differenzialdiagnosen": [
+      "Akutes Koronarsyndrom (STEMI)",
+      "Myokarditis",
+      "Lungenembolie",
+      "Aortendissektion"
+    ],
+    "untersuchungen": [
+      "EKG",
+      "Troponin (seriell)",
+      "Koronarangiographie mit Lävokardiographie",
+      "Echokardiographie",
+      "Kardio-MRT"
+    ]
+  },
+  {
+    "id": "c96",
+    "title": "Paroxysmale supraventrikuläre Tachykardie (AVNRT)",
+    "category": "Kardiologie",
+    "difficulty": "leicht",
+    "patient": {
+      "name": "Lena Schröder",
+      "age": 26,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Plötzliches Herzrasen, das nicht aufhört"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 40 Minuten plötzlich einsetzendes, regelmäßiges Herzrasen mit Halspulsieren, leichtem Schwindel und Angst. Ähnliche, kürzere Episoden seit 2 Jahren, die durch Pressen oder kaltes Wasser von selbst aufhörten.",
+      "vorerkrankungen": "Keine.",
+      "medikamente": "Orale Kontrazeption.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Ledig, Krankenpflegerin im Schichtdienst. Viel Kaffee (5 Tassen/Tag), Energy-Drinks im Nachtdienst. Nichtraucherin."
+    },
+    "sprache": [
+      {
+        "patient": "Das Herzrasen fängt plötzlich an, wie ein Schalter.",
+        "fach": "Die Tachykardie beginnt schlagartig (On-off-Charakter)."
+      },
+      {
+        "patient": "Ich spüre das Klopfen bis in den Hals.",
+        "fach": "Die Patientin berichtet über Halsvenenpulsationen."
+      },
+      {
+        "patient": "Früher half es, wenn ich gepresst oder kaltes Wasser getrunken habe.",
+        "fach": "Bisher terminierten die Episoden durch vagale Manöver."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Supraventrikuläre Tachykardie",
+        "patient": "Herzrasen, das oberhalb der Herzkammern entsteht",
+        "uz": "supraventrikulyar taxikardiya",
+        "ru": "наджелудочковая тахикардия",
+        "tr": "supraventriküler taşikardi",
+        "en": "supraventricular tachycardia"
+      },
+      {
+        "de": "Vagusmanöver",
+        "patient": "Pressen oder kaltes Wasser, um den Herzschlag zu bremsen",
+        "uz": "vagus manyovri",
+        "ru": "вагусные пробы",
+        "tr": "vagal manevra",
+        "en": "vagal manoeuvre"
+      },
+      {
+        "de": "Adenosin",
+        "patient": "Medikament, das das Herzrasen sofort unterbricht",
+        "uz": "adenozin",
+        "ru": "аденозин",
+        "tr": "adenozin",
+        "en": "adenosine"
+      },
+      {
+        "de": "Katheterablation",
+        "patient": "Verödung der zusätzlichen Leitungsbahn im Herzen",
+        "uz": "kateter ablatsiyasi",
+        "ru": "катетерная абляция",
+        "tr": "kateter ablasyonu",
+        "en": "catheter ablation"
+      },
+      {
+        "de": "Paroxysmal",
+        "patient": "anfallsartig",
+        "uz": "xurujsimon",
+        "ru": "пароксизмальный",
+        "tr": "nöbet şeklinde",
+        "en": "paroxysmal"
+      }
+    ],
+    "simulation": {
+      "opening": "Mein Herz rast seit vierzig Minuten und hört einfach nicht auf!",
+      "answers": {
+        "beginn": "Vor vierzig Minuten, ganz plötzlich, als ich mich nach vorne gebückt habe.",
+        "lokalisation": "Ich spüre das Klopfen in der Brust und bis in den Hals.",
+        "charakter": "Ganz schnell und regelmäßig, wie ein Schalter, der umgelegt wurde. Schmerzen habe ich keine.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Mir ist etwas schwindelig und ich habe Angst. Ohnmächtig war ich nicht. Luftnot habe ich nur ein bisschen.",
+        "vegetativ": "Nach solchen Anfällen muss ich oft viel Wasser lassen. Sonst normal.",
+        "vorerkrankungen": "Ich bin gesund. Solche Anfälle habe ich seit zwei Jahren, aber kürzer. Wenn ich gepresst oder kaltes Wasser getrunken habe, hörte es auf. Heute hat das nicht geklappt.",
+        "medikamente": "Nur die Pille.",
+        "allergien": "Nein.",
+        "familie": "Nichts bekannt.",
+        "sozial": "Ich bin Krankenpflegerin im Schichtdienst.",
+        "noxen": "Ich trinke viel Kaffee, fünf Tassen am Tag, und im Nachtdienst Energy-Drinks. Ich rauche nicht, Alkohol selten."
+      }
+    },
+    "verdachtsdiagnose": "Paroxysmale supraventrikuläre Tachykardie, am ehesten AV-Knoten-Reentry-Tachykardie (AVNRT)",
+    "diagnoseKeywords": ["avnrt", "supraventrikulär", "svt", "reentry"],
+    "differenzialdiagnosen": [
+      "Vorhofflattern mit 2:1-Überleitung",
+      "WPW-Syndrom",
+      "Sinustachykardie (Hyperthyreose, Angst)",
+      "Ventrikuläre Tachykardie"
+    ],
+    "untersuchungen": [
+      "12-Kanal-EKG während der Tachykardie",
+      "EKG im Sinusrhythmus (Präexzitation?)",
+      "TSH und Elektrolyte",
+      "Echokardiographie",
+      "Elektrophysiologische Untersuchung"
+    ]
+  },
+  {
+    "id": "c97",
+    "title": "Perikardtamponade bei Bronchialkarzinom",
+    "category": "Kardiologie",
+    "difficulty": "schwer",
+    "patient": {
+      "name": "Karin Fuchs",
+      "age": 63,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Zunehmende Luftnot, kann nicht mehr flach liegen"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 1 Woche zunehmende Dyspnoe, heute schon in Ruhe; kann nur sitzend atmen, Druckgefühl in der Brust, Schwindel beim Aufstehen. Gestern fast kollabiert.",
+      "vorerkrankungen": "Nicht-kleinzelliges Bronchialkarzinom rechts (Erstdiagnose vor 4 Monaten, Chemotherapie), COPD.",
+      "medikamente": "Tiotropium, Pantoprazol 20 mg, Dexamethason an Chemotagen, Enoxaparin 40 mg s. c.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Vater: Lungenkrebs.",
+      "sozialanamnese": "Verheiratet, Rentnerin. Raucherin (45 py), seit der Diagnose aufgehört."
+    },
+    "sprache": [
+      {
+        "patient": "Ich kann nur noch im Sitzen atmen.",
+        "fach": "Es besteht eine Ruhedyspnoe mit Orthopnoe."
+      },
+      {
+        "patient": "Gestern bin ich beim Aufstehen fast umgekippt.",
+        "fach": "Es kam zu einer Präsynkope bei Orthostase."
+      },
+      {
+        "patient": "Ich habe Lungenkrebs und bekomme eine Chemo.",
+        "fach": "Bekannt ist ein Bronchialkarzinom unter laufender Chemotherapie."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Perikardtamponade",
+        "patient": "Flüssigkeit im Herzbeutel drückt das Herz zusammen",
+        "uz": "perikard tamponadasi",
+        "ru": "тампонада сердца",
+        "tr": "perikard tamponadı",
+        "en": "cardiac tamponade"
+      },
+      {
+        "de": "Perikarderguss",
+        "patient": "Flüssigkeit im Herzbeutel",
+        "uz": "perikardda suyuqlik",
+        "ru": "перикардиальный выпот",
+        "tr": "perikard efüzyonu",
+        "en": "pericardial effusion"
+      },
+      {
+        "de": "Perikardpunktion",
+        "patient": "Ablassen der Flüssigkeit aus dem Herzbeutel mit einer Nadel",
+        "uz": "perikard punksiyasi",
+        "ru": "пункция перикарда",
+        "tr": "perikardiyosentez",
+        "en": "pericardiocentesis"
+      },
+      {
+        "de": "Beck-Trias",
+        "patient": "niedriger Blutdruck, gestaute Halsvenen, leise Herztöne",
+        "uz": "Bek triadasi",
+        "ru": "триада Бека",
+        "tr": "Beck triadı",
+        "en": "Beck’s triad"
+      },
+      {
+        "de": "Pulsus paradoxus",
+        "patient": "Blutdruck fällt beim Einatmen stark ab",
+        "uz": "paradoksal puls",
+        "ru": "парадоксальный пульс",
+        "tr": "paradoks nabız",
+        "en": "pulsus paradoxus"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich bekomme kaum noch Luft … ich kann nur noch im Sitzen atmen.",
+      "answers": {
+        "beginn": "Vor ungefähr einer Woche fing es an, heute ist es ganz schlimm, auch in Ruhe.",
+        "lokalisation": "Es drückt auf der ganzen Brust.",
+        "charakter": "Ein Druckgefühl, als ob etwas auf dem Herzen liegt, fünf von zehn. Im Liegen bekomme ich gar keine Luft.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Mir ist schwindelig, gestern bin ich beim Aufstehen fast umgekippt. Das Herz rast. Fieber habe ich nicht.",
+        "vegetativ": "Ich bin furchtbar müde, esse kaum. Wasserlassen weniger.",
+        "vorerkrankungen": "Ich habe Lungenkrebs rechts, seit vier Monaten bekannt, und bekomme eine Chemo. Außerdem COPD.",
+        "medikamente": "Spiriva, Pantoprazol, an den Chemotagen Dexamethason und eine Thrombosespritze.",
+        "allergien": "Nein.",
+        "familie": "Mein Vater hatte auch Lungenkrebs.",
+        "sozial": "Ich bin verheiratet und Rentnerin.",
+        "noxen": "Ich habe 45 Jahre geraucht, seit der Diagnose nicht mehr."
+      }
+    },
+    "verdachtsdiagnose": "Perikardtamponade bei malignem Perikarderguss (Bronchialkarzinom)",
+    "diagnoseKeywords": ["tamponade", "perikarderguss"],
+    "differenzialdiagnosen": [
+      "Lungenembolie",
+      "Maligner Pleuraerguss",
+      "Dekompensierte Herzinsuffizienz",
+      "Vena-cava-superior-Syndrom"
+    ],
+    "untersuchungen": [
+      "Echokardiographie (sofort)",
+      "EKG (Niedervoltage, elektrischer Alternans)",
+      "Röntgen-Thorax",
+      "Blutdruck mit Pulsus paradoxus",
+      "Zytologie des Punktats"
+    ],
+    "oberarzt": {
+      "therapie": [
+        "Perikardpunktion (echogesteuert) sofort",
+        "Volumengabe",
+        "Perikarddrainage",
+        "Perikardfensterung bei Rezidiv",
+        "Onkologische Therapieanpassung"
+      ],
+      "komplikationen": [
+        "Kreislaufstillstand (pulslose elektrische Aktivität)",
+        "Rezidiverguss",
+        "Verletzung des Myokards oder der Koronarien",
+        "Pneumothorax",
+        "Herzrhythmusstörungen"
+      ]
+    }
+  },
+  {
+    "id": "c98",
+    "title": "Vasovagale Synkope",
+    "category": "Kardiologie",
+    "difficulty": "leicht",
+    "patient": {
+      "name": "Mia Wagner",
+      "age": 21,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Ohnmacht bei der Blutabnahme"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Beim Anblick der Nadel während einer Blutabnahme Übelkeit, Wärmegefühl, Schwitzen, Schwarzwerden vor Augen und kurze Bewusstlosigkeit (ca. 10 Sekunden), sofort wieder orientiert. Kein Krampfen, kein Einnässen.",
+      "vorerkrankungen": "Keine. Zwei ähnliche Episoden im Stehen (Konzert, Kirche).",
+      "medikamente": "Keine.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Kein plötzlicher Herztod in der Familie.",
+      "sozialanamnese": "Ledig, Studentin. Trinkt wenig (ca. 1 Liter/Tag). Nichtraucherin."
+    },
+    "sprache": [
+      {
+        "patient": "Mir wurde warm, schlecht, und dann wurde alles schwarz.",
+        "fach": "Es bestanden typische Prodromi mit Übelkeit, Wärmegefühl und Visusverlust."
+      },
+      {
+        "patient": "Ich war nur ganz kurz weg und sofort wieder klar.",
+        "fach": "Die Bewusstlosigkeit war kurz, die Reorientierung erfolgte sofort."
+      },
+      {
+        "patient": "Das passiert mir manchmal, wenn ich lange stehe.",
+        "fach": "Ähnliche Episoden traten nach längerem Stehen auf."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Vasovagale Synkope",
+        "patient": "harmlose Ohnmacht durch eine Reaktion des Nervensystems",
+        "uz": "vazovagal sinkope",
+        "ru": "вазовагальный обморок",
+        "tr": "vazovagal senkop",
+        "en": "vasovagal syncope"
+      },
+      {
+        "de": "Prodromi",
+        "patient": "Warnzeichen vor der Ohnmacht",
+        "uz": "oldindan keladigan belgilar",
+        "ru": "продромальные симптомы",
+        "tr": "prodromal belirtiler",
+        "en": "warning symptoms"
+      },
+      {
+        "de": "Schellong-Test",
+        "patient": "Blutdruck- und Pulsmessung im Liegen und Stehen",
+        "uz": "Shellong sinovi",
+        "ru": "проба Шеллонга",
+        "tr": "Schellong testi",
+        "en": "Schellong test"
+      },
+      {
+        "de": "Gegenmanöver",
+        "patient": "Beine überkreuzen und Muskeln anspannen, um die Ohnmacht zu verhindern",
+        "uz": "qarshi harakatlar",
+        "ru": "контрманёвры",
+        "tr": "karşı manevralar",
+        "en": "counter-manoeuvres"
+      },
+      {
+        "de": "Kipptisch-Untersuchung",
+        "patient": "Test auf einem kippbaren Liegebrett",
+        "uz": "aylanuvchi stol testi",
+        "ru": "тилт-тест",
+        "tr": "tilt masası testi",
+        "en": "tilt-table test"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich bin bei der Blutabnahme ohnmächtig geworden. Das ist mir total peinlich.",
+      "answers": {
+        "beginn": "Gerade eben, als ich die Nadel gesehen habe.",
+        "lokalisation": "Nichts tut weh.",
+        "charakter": "Mir wurde warm und schlecht, ich habe geschwitzt, dann wurde alles schwarz. Ich war nur ganz kurz weg.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Ich war sofort wieder klar. Ich habe nicht gekrampft, mir nicht auf die Zunge gebissen und nicht eingenässt. Herzrasen oder Brustschmerzen hatte ich nicht.",
+        "vegetativ": "Ich trinke eher wenig, so einen Liter am Tag. Heute habe ich nicht gefrühstückt.",
+        "vorerkrankungen": "Ich bin gesund. Zweimal ist mir das schon passiert, als ich lange gestanden habe, einmal auf einem Konzert und einmal in der Kirche.",
+        "medikamente": "Keine.",
+        "allergien": "Nein.",
+        "familie": "In meiner Familie ist niemand plötzlich gestorben, auch keine Herzkrankheiten.",
+        "sozial": "Ich studiere Lehramt.",
+        "noxen": "Ich rauche nicht, Alkohol nur selten."
+      }
+    },
+    "verdachtsdiagnose": "Vasovagale (reflexvermittelte) Synkope",
+    "diagnoseKeywords": ["vasovagal", "reflexsynkope", "neurokardiogen"],
+    "differenzialdiagnosen": [
+      "Kardiale Synkope (Rhythmusstörung)",
+      "Orthostatische Hypotonie",
+      "Epileptischer Anfall",
+      "Hypoglykämie"
+    ],
+    "untersuchungen": [
+      "Ausführliche Anamnese (Prodromi, Auslöser)",
+      "12-Kanal-EKG",
+      "Schellong-Test",
+      "Blutzucker und Blutbild",
+      "Kipptisch-Untersuchung (bei Rezidiven)"
+    ]
+  },
+  {
+    "id": "c99",
+    "title": "Digitalisintoxikation",
+    "category": "Kardiologie",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Elfriede Maier",
+      "age": 86,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Übelkeit, Appetitlosigkeit und Gelbsehen"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Fremdanamnestisch (Tochter) seit 1 Woche Übelkeit, Erbrechen, Appetitlosigkeit, Verwirrtheit; Patientin sieht „alles gelblich“. Langsamer Puls. Vor 2 Wochen Gastroenteritis mit wenig Trinken.",
+      "vorerkrankungen": "Vorhofflimmern, Herzinsuffizienz, chronische Niereninsuffizienz Stadium 3b.",
+      "medikamente": "Digitoxin 0,1 mg 1-0-0, Torasemid 20 mg 1-0-0, Ramipril 5 mg 1-0-0, Apixaban 2,5 mg 1-0-1. Vor 10 Tagen neu Clarithromycin wegen Bronchitis.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Nicht erhebbar.",
+      "sozialanamnese": "Verwitwet, lebt bei der Tochter. Kein Nikotin, kein Alkohol."
+    },
+    "sprache": [
+      {
+        "patient": "Mutter sagt, sie sieht alles gelb.",
+        "fach": "Die Patientin berichtet über Gelbsehen (Xanthopsie)."
+      },
+      {
+        "patient": "Sie hat keinen Appetit und erbricht seit Tagen.",
+        "fach": "Es bestehen Inappetenz, Nausea und Emesis."
+      },
+      {
+        "patient": "Sie nimmt jeden Morgen ihre Herztablette, Digitoxin.",
+        "fach": "Die Patientin nimmt Digitoxin 0,1 mg täglich ein."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Digitalis",
+        "patient": "Herzmedikament aus dem Fingerhut, verlangsamt den Herzschlag",
+        "uz": "digitalis (yurak dorisi)",
+        "ru": "дигиталис (сердечный гликозид)",
+        "tr": "digital (kalp ilacı)",
+        "en": "digitalis (cardiac glycoside)"
+      },
+      {
+        "de": "Intoxikation",
+        "patient": "Vergiftung",
+        "uz": "zaharlanish (intoksikatsiya)",
+        "ru": "интоксикация (отравление)",
+        "tr": "zehirlenme",
+        "en": "poisoning"
+      },
+      {
+        "de": "Xanthopsie",
+        "patient": "Gelbsehen",
+        "uz": "hamma narsani sariq ko‘rish",
+        "ru": "ксантопсия (видение в жёлтом цвете)",
+        "tr": "sarı görme",
+        "en": "yellow vision"
+      },
+      {
+        "de": "Bradykardie",
+        "patient": "zu langsamer Herzschlag",
+        "uz": "bradikardiya",
+        "ru": "брадикардия",
+        "tr": "bradikardi",
+        "en": "slow heart rate"
+      },
+      {
+        "de": "Arzneimittelinteraktion",
+        "patient": "zwei Medikamente beeinflussen sich gegenseitig",
+        "uz": "dorilarning o‘zaro ta’siri",
+        "ru": "лекарственное взаимодействие",
+        "tr": "ilaç etkileşimi",
+        "en": "drug interaction"
+      }
+    ],
+    "simulation": {
+      "opening": "(Tochter) Meiner Mutter ist seit einer Woche ständig übel, sie isst nichts und sagt, sie sieht alles gelb.",
+      "answers": {
+        "beginn": "(Tochter) Seit etwa einer Woche. Vorher hatte sie Magen-Darm und hat kaum getrunken.",
+        "lokalisation": "(Patientin) Der Bauch tut ein bisschen weh, so allgemein.",
+        "charakter": "(Patientin) Mir ist ständig übel. Und alles sieht so gelblich aus, wie durch eine gelbe Brille.",
+        "ausstrahlung": "(Tochter) —",
+        "begleit": "(Tochter) Sie erbricht zweimal am Tag und ist manchmal verwirrt. Der Puls ist so langsam, ich habe 44 gezählt.",
+        "vegetativ": "(Tochter) Sie isst fast nichts, trinkt wenig, und muss weniger Wasser lassen.",
+        "vorerkrankungen": "(Tochter) Vorhofflimmern, ein schwaches Herz und schwache Nieren.",
+        "medikamente": "(Tochter) Digitoxin 0,1 morgens, Torasemid, Ramipril und Eliquis. Vor zehn Tagen hat der Hausarzt wegen Bronchitis Clarithromycin verschrieben.",
+        "allergien": "(Tochter) Keine.",
+        "familie": "(Tochter) Weiß ich nicht.",
+        "sozial": "(Tochter) Sie wohnt bei mir.",
+        "noxen": "(Tochter) Sie raucht nicht und trinkt keinen Alkohol."
+      }
+    },
+    "verdachtsdiagnose": "Digitalisintoxikation mit Bradykardie, begünstigt durch Exsikkose, Niereninsuffizienz und Interaktion mit Clarithromycin",
+    "diagnoseKeywords": ["digitalis", "digitoxin", "intoxikation", "glykosid"],
+    "differenzialdiagnosen": ["Gastroenteritis", "Hyperkaliämie", "Urämie", "Delir anderer Ursache"],
+    "untersuchungen": [
+      "EKG (muldenförmige ST-Senkung, Bradykardie, AV-Block)",
+      "Digitoxinspiegel",
+      "Kalium, Kreatinin",
+      "Monitoring",
+      "Medikamentenanamnese"
+    ]
+  },
+  {
+    "id": "c100",
+    "title": "Instabile Angina pectoris",
+    "category": "Kardiologie",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Werner Albrecht",
+      "age": 62,
+      "gender": "männlich",
+      "hauptbeschwerde": "Brustschmerzen jetzt auch in Ruhe"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 3 Monaten Brustdruck beim Treppensteigen, der in Ruhe verschwand. Seit 1 Woche häufiger und schon bei kurzen Wegen, heute Nacht erstmals in Ruhe (ca. 15 Minuten). Jetzt beschwerdefrei.",
+      "vorerkrankungen": "Diabetes mellitus Typ 2, Hypercholesterinämie, arterielle Hypertonie, Adipositas.",
+      "medikamente": "Metformin 1000 mg 1-0-1, Amlodipin 5 mg 1-0-0. Statin vor 1 Jahr wegen Muskelschmerzen selbst abgesetzt.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Vater: Herzinfarkt mit 58 Jahren.",
+      "sozialanamnese": "Verheiratet, Busfahrer. Raucher (40 py). Wenig Bewegung."
+    },
+    "sprache": [
+      {
+        "patient": "Früher kam der Druck nur auf der Treppe, jetzt schon nach ein paar Schritten.",
+        "fach": "Es besteht eine Crescendo-Angina mit abnehmender Belastungstoleranz."
+      },
+      {
+        "patient": "Heute Nacht kam der Druck sogar im Liegen.",
+        "fach": "Heute trat erstmals eine Ruheangina auf."
+      },
+      {
+        "patient": "Die Cholesterintabletten habe ich weggelassen, weil die Muskeln wehtaten.",
+        "fach": "Das Statin wurde wegen Myalgien eigenmächtig abgesetzt."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Instabile Angina pectoris",
+        "patient": "neu auftretende oder zunehmende Herzschmerzen, Vorstufe eines Infarkts",
+        "uz": "nostabil stenokardiya",
+        "ru": "нестабильная стенокардия",
+        "tr": "kararsız anjina pektoris",
+        "en": "unstable angina"
+      },
+      {
+        "de": "Crescendo-Angina",
+        "patient": "Brustschmerzen, die immer häufiger und stärker werden",
+        "uz": "kuchayib boruvchi stenokardiya",
+        "ru": "прогрессирующая стенокардия",
+        "tr": "kreşendo anjina",
+        "en": "crescendo angina"
+      },
+      {
+        "de": "Koronarangiographie",
+        "patient": "Herzkatheteruntersuchung",
+        "uz": "koronarografiya",
+        "ru": "коронарография",
+        "tr": "koroner anjiyografi",
+        "en": "coronary angiography"
+      },
+      {
+        "de": "Stent",
+        "patient": "kleines Röhrchen, das ein Gefäß offen hält",
+        "uz": "stent",
+        "ru": "стент",
+        "tr": "stent",
+        "en": "stent"
+      },
+      {
+        "de": "Risikofaktoren",
+        "patient": "Dinge, die das Risiko für Herzkrankheiten erhöhen",
+        "uz": "xavf omillari",
+        "ru": "факторы риска",
+        "tr": "risk faktörleri",
+        "en": "risk factors"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe seit Monaten Druck auf der Brust, aber heute Nacht kam er sogar im Liegen.",
+      "answers": {
+        "beginn": "Vor drei Monaten nur beim Treppensteigen. Seit einer Woche schon nach ein paar Schritten. Heute Nacht um drei kam er im Liegen, etwa eine Viertelstunde.",
+        "lokalisation": "Hinter dem Brustbein.",
+        "charakter": "Ein Druck, wie ein Band um die Brust, sechs von zehn. Jetzt ist es weg.",
+        "ausstrahlung": "In den linken Arm und in den Hals.",
+        "begleit": "Heute Nacht habe ich geschwitzt und hatte Angst. Luftnot ein bisschen. Ohnmächtig war ich nie.",
+        "vegetativ": "Sonst ist alles normal.",
+        "vorerkrankungen": "Zucker, hohes Cholesterin, hoher Blutdruck und ich bin zu dick.",
+        "medikamente": "Metformin morgens und abends und Amlodipin. Die Cholesterintabletten habe ich vor einem Jahr weggelassen, die Muskeln taten weh.",
+        "allergien": "Nein.",
+        "familie": "Mein Vater hatte mit 58 einen Herzinfarkt.",
+        "sozial": "Ich bin verheiratet und Busfahrer.",
+        "noxen": "Ich rauche seit vierzig Jahren eine Schachtel am Tag. Sport mache ich keinen."
+      }
+    },
+    "verdachtsdiagnose": "Instabile Angina pectoris (Crescendo- und Ruheangina) bei hohem kardiovaskulärem Risikoprofil",
+    "diagnoseKeywords": ["instabile angina", "koronarsyndrom", "acs", "angina"],
+    "differenzialdiagnosen": ["NSTEMI", "Refluxösophagitis", "Lungenembolie", "Aortendissektion"],
+    "untersuchungen": [
+      "EKG (auch im Schmerz)",
+      "Troponin (hs, seriell)",
+      "Koronarangiographie",
+      "Echokardiographie",
+      "Labor (Lipide, HbA1c, Kreatinin)"
+    ]
+  },
+  {
+    "id": "c101",
+    "title": "Idiopathische Lungenfibrose",
+    "category": "Pneumologie",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Gerhard Pohl",
+      "age": 71,
+      "gender": "männlich",
+      "hauptbeschwerde": "Langsam zunehmende Luftnot und trockener Husten"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit ca. 1 Jahr langsam zunehmende Belastungsdyspnoe (jetzt nach 100 m), trockener Reizhusten, Müdigkeit. Gewichtsverlust 4 kg. Kein Fieber, kein Auswurf.",
+      "vorerkrankungen": "Refluxkrankheit, arterielle Hypertonie.",
+      "medikamente": "Pantoprazol 40 mg 1-0-0, Candesartan 8 mg 1-0-0.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Verheiratet, Rentner (früher Schreiner). Ex-Raucher (30 py, seit 15 Jahren rauchfrei). Keine Vögel, kein Asbestkontakt bekannt."
+    },
+    "sprache": [
+      {
+        "patient": "Ich huste trocken, ohne Schleim, schon seit einem Jahr.",
+        "fach": "Es besteht ein trockener Reizhusten seit einem Jahr."
+      },
+      {
+        "patient": "Nach hundert Metern muss ich stehen bleiben.",
+        "fach": "Die Gehstrecke ist auf 100 Meter eingeschränkt."
+      },
+      {
+        "patient": "Meine Fingerspitzen sind so dick geworden.",
+        "fach": "Es bestehen Trommelschlägelfinger."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Lungenfibrose",
+        "patient": "Vernarbung des Lungengewebes",
+        "uz": "o‘pka fibrozi",
+        "ru": "фиброз лёгких",
+        "tr": "akciğer fibrozu",
+        "en": "pulmonary fibrosis"
+      },
+      {
+        "de": "Knisterrasseln (Sklerosiphonie)",
+        "patient": "Geräusch wie Klettverschluss beim Abhören",
+        "uz": "“lipuchqich” xirillash",
+        "ru": "крепитация («треск липучки»)",
+        "tr": "cırt cırt sesi (velcro raller)",
+        "en": "velcro crackles"
+      },
+      {
+        "de": "Trommelschlägelfinger",
+        "patient": "verdickte Fingerendglieder",
+        "uz": "“baraban tayoqchasi” barmoqlar",
+        "ru": "пальцы в виде барабанных палочек",
+        "tr": "çomak parmak",
+        "en": "finger clubbing"
+      },
+      {
+        "de": "HRCT",
+        "patient": "hochauflösendes CT der Lunge",
+        "uz": "yuqori aniqlikdagi KT",
+        "ru": "КТ высокого разрешения",
+        "tr": "yüksek çözünürlüklü BT",
+        "en": "high-resolution CT"
+      },
+      {
+        "de": "Antifibrotische Therapie",
+        "patient": "Medikament, das die Vernarbung bremst",
+        "uz": "antifibrotik terapiya",
+        "ru": "антифибротическая терапия",
+        "tr": "antifibrotik tedavi",
+        "en": "antifibrotic therapy"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich bekomme seit einem Jahr immer schlechter Luft und huste ständig, aber ganz trocken.",
+      "answers": {
+        "beginn": "Vor etwa einem Jahr hat es schleichend angefangen.",
+        "lokalisation": "Die Luftnot ist überall, Schmerzen habe ich nicht.",
+        "charakter": "Nach hundert Metern muss ich stehen bleiben. Der Husten ist trocken, ohne Schleim, besonders beim Reden.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Ich bin immer müde. Meine Fingerspitzen sind so dick geworden. Fieber oder Nachtschweiß habe ich nicht.",
+        "vegetativ": "Ich habe vier Kilo abgenommen. Sodbrennen habe ich manchmal.",
+        "vorerkrankungen": "Ich habe Sodbrennen und hohen Blutdruck.",
+        "medikamente": "Pantoprazol 40 und Candesartan 8.",
+        "allergien": "Nein.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich bin verheiratet und Rentner, ich war Schreiner. Vögel habe ich keine. Mit Asbest hatte ich, soweit ich weiß, nichts zu tun.",
+        "noxen": "Ich habe dreißig Jahre geraucht, seit fünfzehn Jahren nicht mehr."
+      }
+    },
+    "verdachtsdiagnose": "Idiopathische Lungenfibrose (UIP-Muster)",
+    "diagnoseKeywords": ["lungenfibrose", "ipf", "fibrose", "interstitiell"],
+    "differenzialdiagnosen": [
+      "Exogen-allergische Alveolitis",
+      "Herzinsuffizienz",
+      "COPD",
+      "Sarkoidose",
+      "Asbestose"
+    ],
+    "untersuchungen": [
+      "HRCT der Lunge",
+      "Lungenfunktion mit Diffusionskapazität",
+      "6-Minuten-Gehtest",
+      "Blutgasanalyse",
+      "Autoantikörper (Ausschluss Kollagenose)",
+      "Echokardiographie (pulmonale Hypertonie)"
+    ]
+  },
+  {
+    "id": "c102",
+    "title": "Akute Sarkoidose (Löfgren-Syndrom)",
+    "category": "Pneumologie",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Elena Popescu",
+      "age": 32,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Schmerzhafte rote Knoten an den Schienbeinen und geschwollene Sprunggelenke"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 10 Tagen schmerzhafte, gerötete Knoten an beiden Unterschenkeln, Schwellung und Schmerzen beider Sprunggelenke, Fieber bis 38,3 °C, trockener Husten und Müdigkeit.",
+      "vorerkrankungen": "Keine.",
+      "medikamente": "Ibuprofen 400 mg bei Bedarf.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Verheiratet, Erzieherin, stammt aus Rumänien. Nichtraucherin."
+    },
+    "sprache": [
+      {
+        "patient": "An den Schienbeinen habe ich rote, schmerzhafte Beulen.",
+        "fach": "Es besteht ein Erythema nodosum an beiden Unterschenkeln."
+      },
+      {
+        "patient": "Beide Knöchel sind dick und tun weh.",
+        "fach": "Es bestehen eine Sprunggelenksarthritis beidseits."
+      },
+      {
+        "patient": "Ich huste trocken und bin ständig müde.",
+        "fach": "Begleitend bestehen trockener Husten und Abgeschlagenheit."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Sarkoidose",
+        "patient": "entzündliche Krankheit mit Knötchen in Lunge und anderen Organen",
+        "uz": "sarkoidoz",
+        "ru": "саркоидоз",
+        "tr": "sarkoidoz",
+        "en": "sarcoidosis"
+      },
+      {
+        "de": "Erythema nodosum",
+        "patient": "schmerzhafte rote Knoten unter der Haut, meist an den Schienbeinen",
+        "uz": "tugunli eritema",
+        "ru": "узловатая эритема",
+        "tr": "eritema nodozum",
+        "en": "erythema nodosum"
+      },
+      {
+        "de": "Bihiläre Lymphadenopathie",
+        "patient": "vergrößerte Lymphknoten an beiden Lungenwurzeln",
+        "uz": "ikki tomonlama o‘pka ildizi limfa tugunlari kattalashuvi",
+        "ru": "двусторонняя прикорневая лимфаденопатия",
+        "tr": "bilateral hiler lenfadenopati",
+        "en": "bilateral hilar lymphadenopathy"
+      },
+      {
+        "de": "Bronchoskopie",
+        "patient": "Spiegelung der Bronchien",
+        "uz": "bronxoskopiya",
+        "ru": "бронхоскопия",
+        "tr": "bronkoskopi",
+        "en": "bronchoscopy"
+      },
+      {
+        "de": "Spontanremission",
+        "patient": "Krankheit heilt von selbst aus",
+        "uz": "o‘z-o‘zidan tuzalish",
+        "ru": "спонтанная ремиссия",
+        "tr": "kendiliğinden iyileşme",
+        "en": "spontaneous remission"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe so schmerzhafte rote Beulen an den Schienbeinen, und meine Knöchel sind dick.",
+      "answers": {
+        "beginn": "Vor etwa zehn Tagen fing es an, zuerst die Knoten, dann die Knöchel.",
+        "lokalisation": "An beiden Schienbeinen und an beiden Sprunggelenken.",
+        "charakter": "Die Knoten sind rot, warm und tun beim Anfassen weh. Die Knöchel schmerzen beim Gehen, sechs von zehn.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Ich habe leichtes Fieber, bis 38,3, einen trockenen Husten und bin ständig müde. Halsschmerzen hatte ich vorher nicht.",
+        "vegetativ": "Appetit etwas weniger. Nachts schwitze ich ein bisschen.",
+        "vorerkrankungen": "Ich war bisher gesund.",
+        "medikamente": "Ibuprofen, wenn die Knöchel zu stark wehtun.",
+        "allergien": "Nein.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich bin verheiratet, Erzieherin, und komme aus Rumänien. Tuberkulose hatte in meiner Familie niemand.",
+        "noxen": "Ich rauche nicht, Alkohol selten."
+      }
+    },
+    "verdachtsdiagnose": "Akute Sarkoidose (Löfgren-Syndrom: Erythema nodosum, Sprunggelenksarthritis, bihiläre Lymphadenopathie)",
+    "diagnoseKeywords": ["sarkoidose", "löfgren"],
+    "differenzialdiagnosen": [
+      "Tuberkulose",
+      "Lymphom",
+      "Reaktive Arthritis",
+      "Streptokokken-assoziiertes Erythema nodosum"
+    ],
+    "untersuchungen": [
+      "Röntgen-Thorax",
+      "CT-Thorax",
+      "Bronchoskopie mit BAL (CD4/CD8-Quotient)",
+      "Labor (ACE, löslicher IL-2-Rezeptor, Calcium)",
+      "Interferon-Gamma-Test",
+      "Lungenfunktion"
+    ]
+  },
+  {
+    "id": "c103",
+    "title": "Maligner Pleuraerguss bei Mammakarzinom",
+    "category": "Pneumologie",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Ruth Kaiser",
+      "age": 66,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Zunehmende Luftnot und Druck in der rechten Brustseite"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 3 Wochen zunehmende Belastungsdyspnoe, jetzt schon beim Anziehen, Druckgefühl rechts thorakal, trockener Husten. Gewichtsverlust 5 kg in 2 Monaten. Kein Fieber.",
+      "vorerkrankungen": "Mammakarzinom rechts vor 6 Jahren (brusterhaltende OP, Bestrahlung, 5 Jahre Tamoxifen bis letztes Jahr).",
+      "medikamente": "Keine regelmäßigen.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Schwester: Brustkrebs mit 50.",
+      "sozialanamnese": "Verwitwet, Rentnerin. Nichtraucherin."
+    },
+    "sprache": [
+      {
+        "patient": "Schon beim Anziehen bekomme ich keine Luft.",
+        "fach": "Es besteht eine Belastungsdyspnoe bei geringer Belastung."
+      },
+      {
+        "patient": "Rechts in der Brust drückt es, als wäre da etwas Schweres.",
+        "fach": "Die Patientin berichtet über ein rechtsthorakales Druckgefühl."
+      },
+      {
+        "patient": "Vor sechs Jahren hatte ich Brustkrebs.",
+        "fach": "Anamnestisch besteht ein Mammakarzinom rechts."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Pleuraerguss",
+        "patient": "Flüssigkeit zwischen Lunge und Brustwand",
+        "uz": "plevra bo‘shlig‘ida suyuqlik",
+        "ru": "плевральный выпот",
+        "tr": "plevral efüzyon",
+        "en": "pleural effusion"
+      },
+      {
+        "de": "Pleurapunktion",
+        "patient": "Ablassen der Flüssigkeit mit einer Nadel",
+        "uz": "plevra punksiyasi",
+        "ru": "плевральная пункция",
+        "tr": "torasentez",
+        "en": "pleural tap"
+      },
+      {
+        "de": "Exsudat",
+        "patient": "eiweißreiche Flüssigkeit bei Entzündung oder Tumor",
+        "uz": "ekssudat",
+        "ru": "экссудат",
+        "tr": "eksüda",
+        "en": "exudate"
+      },
+      {
+        "de": "Pleurodese",
+        "patient": "Verkleben der Lungenfelle, damit kein Erguss nachläuft",
+        "uz": "plevrodez",
+        "ru": "плевродез",
+        "tr": "plörodez",
+        "en": "pleurodesis"
+      },
+      {
+        "de": "Metastasen",
+        "patient": "Tochtergeschwülste",
+        "uz": "metastazlar",
+        "ru": "метастазы",
+        "tr": "metastazlar",
+        "en": "metastases"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich bekomme seit drei Wochen immer schlechter Luft, und rechts in der Brust drückt es.",
+      "answers": {
+        "beginn": "Vor ungefähr drei Wochen, langsam zunehmend.",
+        "lokalisation": "Rechts in der Brust, eher unten und seitlich.",
+        "charakter": "Ein Druckgefühl, als wäre da etwas Schweres, vier von zehn. Schon beim Anziehen bekomme ich keine Luft.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Ich huste trocken. Fieber habe ich keins. Ich habe in zwei Monaten fünf Kilo abgenommen.",
+        "vegetativ": "Ich bin sehr müde, Appetit ist schlecht.",
+        "vorerkrankungen": "Vor sechs Jahren hatte ich Brustkrebs rechts, wurde operiert und bestrahlt. Fünf Jahre habe ich Tamoxifen genommen, bis letztes Jahr. Die Nachsorge war immer gut.",
+        "medikamente": "Zurzeit keine.",
+        "allergien": "Nein.",
+        "familie": "Meine Schwester hatte mit 50 Brustkrebs.",
+        "sozial": "Ich bin Witwe und Rentnerin, ich lebe allein.",
+        "noxen": "Ich habe nie geraucht."
+      }
+    },
+    "verdachtsdiagnose": "Maligner Pleuraerguss rechts bei Verdacht auf Rezidiv eines Mammakarzinoms (Pleurakarzinose)",
+    "diagnoseKeywords": ["pleuraerguss", "pleurakarzinose", "maligner erguss"],
+    "differenzialdiagnosen": [
+      "Herzinsuffizienz",
+      "Parapneumonischer Erguss",
+      "Tuberkulöse Pleuritis",
+      "Lungenembolie"
+    ],
+    "untersuchungen": [
+      "Sonographie des Thorax",
+      "Röntgen-Thorax",
+      "Pleurapunktion (Zytologie, Eiweiß, LDH)",
+      "CT Thorax/Abdomen (Staging)",
+      "Tumormarker CA 15-3",
+      "Thorakoskopie mit Biopsie"
+    ]
+  },
+  {
+    "id": "c104",
+    "title": "Pleuraempyem nach Pneumonie",
+    "category": "Pneumologie",
+    "difficulty": "schwer",
+    "patient": {
+      "name": "Udo Lehmann",
+      "age": 58,
+      "gender": "männlich",
+      "hauptbeschwerde": "Fieber und Brustschmerzen trotz Antibiotikum"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 10 Tagen Pneumonie links, ambulant mit Amoxicillin behandelt. Nach kurzer Besserung seit 4 Tagen erneut Fieber bis 39,5 °C, Schüttelfrost, atemabhängige Schmerzen links und zunehmende Dyspnoe.",
+      "vorerkrankungen": "Diabetes mellitus Typ 2 (schlecht eingestellt), Alkoholabusus, Zahnstatus schlecht.",
+      "medikamente": "Metformin 1000 mg 1-0-1, Amoxicillin 1 g 1-1-1 seit 10 Tagen.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Geschieden, arbeitslos. Raucher (35 py), 4–6 Bier täglich."
+    },
+    "sprache": [
+      {
+        "patient": "Das Fieber ist wiedergekommen, obwohl ich Antibiotika nehme.",
+        "fach": "Unter antibiotischer Therapie kam es zu einem erneuten Fieberanstieg."
+      },
+      {
+        "patient": "Links tut es beim Einatmen weh.",
+        "fach": "Es bestehen atemabhängige linksthorakale Schmerzen."
+      },
+      {
+        "patient": "Meine Zähne sind ziemlich kaputt.",
+        "fach": "Es besteht ein schlechter Zahnstatus."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Pleuraempyem",
+        "patient": "Eiter im Spalt zwischen Lunge und Brustwand",
+        "uz": "plevra empiyemasi (yiring to‘planishi)",
+        "ru": "эмпиема плевры",
+        "tr": "plevral ampiyem",
+        "en": "pleural empyema"
+      },
+      {
+        "de": "Thoraxdrainage",
+        "patient": "Schlauch in die Brusthöhle zum Ablassen von Flüssigkeit oder Luft",
+        "uz": "torakal drenaj",
+        "ru": "торакальный дренаж",
+        "tr": "göğüs tüpü",
+        "en": "chest drain"
+      },
+      {
+        "de": "Parapneumonischer Erguss",
+        "patient": "Flüssigkeit neben der Lunge bei Lungenentzündung",
+        "uz": "parapnevmonik suyuqlik",
+        "ru": "парапневмонический выпот",
+        "tr": "parapnömonik efüzyon",
+        "en": "parapneumonic effusion"
+      },
+      {
+        "de": "VATS",
+        "patient": "Schlüsselloch-Operation am Brustkorb",
+        "uz": "videotorakoskopik operatsiya",
+        "ru": "видеоторакоскопическая операция",
+        "tr": "VATS (video yardımlı torakoskopik cerrahi)",
+        "en": "video-assisted thoracoscopic surgery"
+      },
+      {
+        "de": "Fibrinolyse",
+        "patient": "Medikament, das Verklebungen auflöst",
+        "uz": "fibrinoliz",
+        "ru": "фибринолиз",
+        "tr": "fibrinoliz",
+        "en": "fibrinolysis"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe wieder hohes Fieber, obwohl ich seit zehn Tagen Antibiotika nehme, und links tut es beim Atmen weh.",
+      "answers": {
+        "beginn": "Die Lungenentzündung fing vor zehn Tagen an. Nach drei Tagen ging es besser, aber seit vier Tagen ist das Fieber wieder da.",
+        "lokalisation": "Links in der Brust, seitlich unten.",
+        "charakter": "Ein stechender Schmerz beim Einatmen, sieben von zehn.",
+        "ausstrahlung": "In die linke Schulter.",
+        "begleit": "Fieber bis 39,5 mit Schüttelfrost. Ich bekomme schlecht Luft. Ich huste gelb-grünen Schleim, der manchmal übel riecht.",
+        "vegetativ": "Ich schwitze nachts stark und habe abgenommen.",
+        "vorerkrankungen": "Zucker, schlecht eingestellt. Meine Zähne sind ziemlich kaputt.",
+        "medikamente": "Metformin morgens und abends, und das Amoxicillin dreimal am Tag seit zehn Tagen.",
+        "allergien": "Nein.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich bin geschieden und zurzeit arbeitslos.",
+        "noxen": "Ich rauche eine Schachtel am Tag. Ich trinke vier bis sechs Bier täglich."
+      }
+    },
+    "verdachtsdiagnose": "Pleuraempyem links nach ambulant erworbener Pneumonie (Risikofaktoren: Diabetes, Alkohol, schlechter Zahnstatus)",
+    "diagnoseKeywords": ["empyem", "pleuraempyem", "eitrig"],
+    "differenzialdiagnosen": [
+      "Lungenabszess",
+      "Therapieversagen der Pneumonie bei resistentem Erreger",
+      "Bronchialkarzinom mit Retentionspneumonie",
+      "Lungenembolie mit Infarktpneumonie"
+    ],
+    "untersuchungen": [
+      "Sonographie des Thorax",
+      "CT-Thorax mit Kontrastmittel",
+      "Pleurapunktion (pH, Glukose, LDH, Gram-Färbung, Kultur)",
+      "Blutkulturen",
+      "Labor (CRP, Leukozyten, Procalcitonin, HbA1c)"
+    ],
+    "oberarzt": {
+      "therapie": [
+        "Thoraxdrainage",
+        "Antibiotika (Ampicillin/Sulbactam) nach Antibiogramm",
+        "Intrapleurale Fibrinolyse",
+        "VATS-Dekortikation bei Versagen",
+        "Blutzuckereinstellung",
+        "Zahnsanierung"
+      ],
+      "komplikationen": [
+        "Sepsis",
+        "Fibrothorax (gefangene Lunge)",
+        "Bronchopleurale Fistel",
+        "Lungenabszess",
+        "Empyema necessitatis"
+      ]
+    }
+  },
+  {
+    "id": "c105",
+    "title": "COVID-19-Pneumonie",
+    "category": "Pneumologie",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Peter Brandl",
+      "age": 72,
+      "gender": "männlich",
+      "hauptbeschwerde": "Fieber, Husten und zunehmende Luftnot seit einer Woche"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 8 Tagen Fieber bis 39 °C, trockener Husten, Kopf- und Gliederschmerzen, Geschmacksverlust; seit 2 Tagen zunehmende Dyspnoe. Selbsttest vor 6 Tagen positiv. Enkelin war vorher erkrankt.",
+      "vorerkrankungen": "Diabetes mellitus Typ 2, arterielle Hypertonie, Adipositas (BMI 33), KHK.",
+      "medikamente": "Metformin 1000 mg 1-0-1, Ramipril 5 mg 1-0-0, ASS 100 mg 1-0-0, Atorvastatin 40 mg 0-0-1.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Verheiratet, Rentner. Letzte COVID-Impfung vor 3 Jahren. Ex-Raucher."
+    },
+    "sprache": [
+      {
+        "patient": "Ich schmecke und rieche nichts mehr.",
+        "fach": "Der Patient berichtet über Geschmacks- und Geruchsverlust."
+      },
+      {
+        "patient": "Der Corona-Test zu Hause war positiv.",
+        "fach": "Ein SARS-CoV-2-Antigen-Selbsttest war positiv."
+      },
+      {
+        "patient": "Seit zwei Tagen bekomme ich immer schlechter Luft.",
+        "fach": "Seit zwei Tagen besteht eine zunehmende Dyspnoe."
+      }
+    ],
+    "terms": [
+      {
+        "de": "COVID-19",
+        "patient": "Erkrankung durch das Coronavirus SARS-CoV-2",
+        "uz": "COVID-19 (koronavirus infeksiyasi)",
+        "ru": "COVID-19",
+        "tr": "COVID-19",
+        "en": "COVID-19"
+      },
+      {
+        "de": "Hypoxämie",
+        "patient": "zu wenig Sauerstoff im Blut",
+        "uz": "gipoksemiya (qonda kislorod kamligi)",
+        "ru": "гипоксемия",
+        "tr": "hipoksemi",
+        "en": "low blood oxygen"
+      },
+      {
+        "de": "Milchglastrübungen",
+        "patient": "milchige Verschattungen der Lunge im CT",
+        "uz": "“xira oyna” soyalari",
+        "ru": "затемнения по типу «матового стекла»",
+        "tr": "buzlu cam opasiteleri",
+        "en": "ground-glass opacities"
+      },
+      {
+        "de": "Dexamethason",
+        "patient": "Kortisonpräparat gegen die Entzündung",
+        "uz": "deksametazon",
+        "ru": "дексаметазон",
+        "tr": "deksametazon",
+        "en": "dexamethasone"
+      },
+      {
+        "de": "Isolation",
+        "patient": "räumliche Trennung, damit sich niemand ansteckt",
+        "uz": "izolyatsiya",
+        "ru": "изоляция",
+        "tr": "izolasyon",
+        "en": "isolation"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe seit über einer Woche Fieber und Husten, und jetzt bekomme ich immer schlechter Luft.",
+      "answers": {
+        "beginn": "Vor acht Tagen, mit Fieber und Gliederschmerzen. Die Luftnot seit zwei Tagen.",
+        "lokalisation": "Die Brust fühlt sich eng an.",
+        "charakter": "Ein trockener Husten. Beim Gehen in der Wohnung muss ich schon stehen bleiben.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Fieber bis 39, Kopfschmerzen, Gliederschmerzen. Ich schmecke und rieche nichts mehr. Durchfall hatte ich zweimal.",
+        "vegetativ": "Ich esse kaum, trinke wenig.",
+        "vorerkrankungen": "Zucker, hoher Blutdruck, Übergewicht und verengte Herzkranzgefäße.",
+        "medikamente": "Metformin, Ramipril, ASS und Atorvastatin.",
+        "allergien": "Nein.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich bin verheiratet. Meine Enkelin war vorher krank, danach war mein Selbsttest positiv. Die letzte Corona-Impfung war vor drei Jahren.",
+        "noxen": "Früher habe ich geraucht."
+      }
+    },
+    "verdachtsdiagnose": "COVID-19-Pneumonie mit Hypoxämie bei Risikopatient",
+    "diagnoseKeywords": ["covid", "sars-cov-2", "corona"],
+    "differenzialdiagnosen": [
+      "Bakterielle Pneumonie",
+      "Influenza-Pneumonie",
+      "Lungenembolie",
+      "Dekompensierte Herzinsuffizienz"
+    ],
+    "untersuchungen": [
+      "SARS-CoV-2-PCR",
+      "Pulsoxymetrie und Blutgasanalyse",
+      "Röntgen- oder CT-Thorax",
+      "Labor (CRP, D-Dimere, LDH, Ferritin, Procalcitonin)",
+      "EKG"
+    ]
+  },
+  {
+    "id": "c106",
+    "title": "Influenza",
+    "category": "Pneumologie",
+    "difficulty": "leicht",
+    "patient": {
+      "name": "Sarah Lindner",
+      "age": 34,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Plötzliches hohes Fieber mit starken Gliederschmerzen"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit gestern Mittag plötzlich hohes Fieber bis 39,8 °C, starke Kopf- und Gliederschmerzen, trockener Husten, Halsschmerzen, ausgeprägtes Krankheitsgefühl. Keine Luftnot. In der Kita ihres Sohnes viele Grippefälle.",
+      "vorerkrankungen": "Asthma bronchiale (leicht).",
+      "medikamente": "Salbutamol bei Bedarf.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Verheiratet, ein Sohn (4 J.), Bankangestellte. Nicht gegen Grippe geimpft. Nichtraucherin."
+    },
+    "sprache": [
+      {
+        "patient": "Es hat mich gestern Mittag wie ein Schlag getroffen.",
+        "fach": "Die Beschwerden begannen schlagartig."
+      },
+      {
+        "patient": "Mir tut jeder Knochen weh.",
+        "fach": "Es bestehen ausgeprägte Myalgien und Arthralgien."
+      },
+      {
+        "patient": "In der Kita meines Sohnes haben viele Kinder Grippe.",
+        "fach": "Es besteht eine Exposition über die Kindertagesstätte."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Influenza",
+        "patient": "echte Grippe",
+        "uz": "gripp (influenza)",
+        "ru": "грипп",
+        "tr": "grip (influenza)",
+        "en": "flu"
+      },
+      {
+        "de": "Myalgien",
+        "patient": "Muskelschmerzen",
+        "uz": "mushak og‘riqlari",
+        "ru": "миалгии",
+        "tr": "kas ağrıları",
+        "en": "muscle aches"
+      },
+      {
+        "de": "Neuraminidasehemmer",
+        "patient": "Medikament gegen Grippeviren",
+        "uz": "neyraminidaza ingibitori",
+        "ru": "ингибитор нейраминидазы",
+        "tr": "nöraminidaz inhibitörü",
+        "en": "neuraminidase inhibitor"
+      },
+      {
+        "de": "Grippeimpfung",
+        "patient": "jährliche Impfung gegen Grippe",
+        "uz": "grippga qarshi emlash",
+        "ru": "прививка от гриппа",
+        "tr": "grip aşısı",
+        "en": "flu vaccine"
+      },
+      {
+        "de": "Superinfektion",
+        "patient": "zusätzliche bakterielle Infektion",
+        "uz": "superinfeksiya",
+        "ru": "суперинфекция",
+        "tr": "süperenfeksiyon",
+        "en": "superinfection"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe seit gestern hohes Fieber, und mir tut jeder Knochen weh.",
+      "answers": {
+        "beginn": "Gestern Mittag im Büro, ganz plötzlich, wie ein Schlag.",
+        "lokalisation": "Alles tut weh: Kopf, Rücken, Arme, Beine.",
+        "charakter": "Ich fühle mich, als hätte mich ein Lastwagen überfahren. Kopfschmerzen sieben von zehn.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Fieber bis 39,8, trockener Husten, Halsschmerzen. Luftnot habe ich nicht. Das Asthma ist ruhig.",
+        "vegetativ": "Ich habe keinen Appetit, trinke aber genug.",
+        "vorerkrankungen": "Ich habe leichtes Asthma.",
+        "medikamente": "Salbutamol bei Bedarf, brauche ich selten.",
+        "allergien": "Nein.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich bin verheiratet, mein Sohn ist vier und geht in die Kita, da haben gerade viele Grippe. Ich arbeite in einer Bank. Gegen Grippe bin ich nicht geimpft.",
+        "noxen": "Ich rauche nicht."
+      }
+    },
+    "verdachtsdiagnose": "Influenza (Virusgrippe) ohne Komplikationen",
+    "diagnoseKeywords": ["influenza", "grippe"],
+    "differenzialdiagnosen": [
+      "COVID-19",
+      "Grippaler Infekt",
+      "Beginnende Pneumonie",
+      "Streptokokken-Pharyngitis"
+    ],
+    "untersuchungen": [
+      "Körperliche Untersuchung mit Auskultation",
+      "Pulsoxymetrie",
+      "Influenza-/SARS-CoV-2-Schnelltest oder PCR",
+      "Röntgen-Thorax (nur bei Verdacht auf Pneumonie)"
+    ]
   }
 ]
