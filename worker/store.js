@@ -46,6 +46,7 @@ const MIGRATIONS = [
 ];
 
 const DAY = 864e5,
+  REF_BONUS = 10 * 36e5, // taklif qilganga: +10 soat (yangi kelganga bonus yo'q)
   MAX_REF_BONUS = 30; // bitta odam taklif orqali ko'pi bilan shuncha bonus kun oladi
 
 const USER_COLS =
@@ -176,20 +177,25 @@ export class Store extends DurableObject {
     for (let id of ids) this.sql.exec("UPDATE chats SET blocked = 1 WHERE id = ?", id);
   }
 
-  // Taklif: yangi foydalanuvchiga +1 kun sinov, taklif qilganga +1 kun (tarif/sinov ustiga yoki bonus kun)
+  // Taklif: faqat taklif qilganga +10 soat (tarif/sinov ustiga, ikkalasi ham tugagan bo'lsa — bonus muddat)
   applyReferral(id) {
     let c = this.getChat(id),
       ref = c?.ref_by && c.ref_by !== id ? this.one("SELECT * FROM users WHERE id = ?", c.ref_by) : null;
     if (!ref) return null;
     let now = Date.now(),
       count = this.one("SELECT COUNT(*) AS n FROM users WHERE ref_by = ?", ref.id).n;
-    this.sql.exec("UPDATE users SET ref_by = ?, trial_end = trial_end + ? WHERE id = ?", ref.id, DAY, id);
+    this.sql.exec("UPDATE users SET ref_by = ? WHERE id = ?", ref.id, id);
     if (count >= MAX_REF_BONUS) return { refId: ref.id, rewarded: false };
     if ((ref.plan_until ?? 0) > now)
-      this.sql.exec("UPDATE users SET plan_until = plan_until + ? WHERE id = ?", DAY, ref.id);
+      this.sql.exec("UPDATE users SET plan_until = plan_until + ? WHERE id = ?", REF_BONUS, ref.id);
     else if (ref.trial_end > now)
-      this.sql.exec("UPDATE users SET trial_end = trial_end + ? WHERE id = ?", DAY, ref.id);
-    else this.sql.exec("UPDATE users SET plan_id = 'bonus', plan_until = ? WHERE id = ?", now + DAY, ref.id);
+      this.sql.exec("UPDATE users SET trial_end = trial_end + ? WHERE id = ?", REF_BONUS, ref.id);
+    else
+      this.sql.exec(
+        "UPDATE users SET plan_id = 'bonus', plan_until = ? WHERE id = ?",
+        now + REF_BONUS,
+        ref.id,
+      );
     return { refId: ref.id, rewarded: true };
   }
 

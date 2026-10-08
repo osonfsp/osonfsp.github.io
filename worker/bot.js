@@ -152,34 +152,28 @@ const T = {
   langSet: ["✅ Til: o‘zbekcha", "✅ Язык: русский", "✅ Dil: Türkçe", "✅ Language: English"],
   invite: [
     (link, n) =>
-      `🤝 Do‘stingizni taklif qiling!\n\nU shu havola orqali botga kirib, saytni ochsa — ikkalangizga +1 kun bepul.\n\nSizning havolangiz:\n${link}\n\nTaklif qilganlaringiz: ${n}`,
+      `🤝 Do‘stingizni taklif qiling!\n\nU shu havola orqali botga kirib, saytni ochsa — sizga +10 soat bepul qo‘shiladi.\n\nSizning havolangiz:\n${link}\n\nTaklif qilganlaringiz: ${n}`,
     (link, n) =>
-      `🤝 Пригласите друга!\n\nЕсли он зайдёт в бота по этой ссылке и откроет сайт — вам обоим +1 день бесплатно.\n\nВаша ссылка:\n${link}\n\nВы пригласили: ${n}`,
+      `🤝 Пригласите друга!\n\nЕсли он зайдёт в бота по этой ссылке и откроет сайт — вам добавится +10 часов бесплатно.\n\nВаша ссылка:\n${link}\n\nВы пригласили: ${n}`,
     (link, n) =>
-      `🤝 Arkadaşınızı davet edin!\n\nBu bağlantıyla bota girip siteyi açarsa — ikinize de +1 gün ücretsiz.\n\nBağlantınız:\n${link}\n\nDavet ettikleriniz: ${n}`,
+      `🤝 Arkadaşınızı davet edin!\n\nBu bağlantıyla bota girip siteyi açarsa — size +10 saat ücretsiz eklenir.\n\nBağlantınız:\n${link}\n\nDavet ettikleriniz: ${n}`,
     (link, n) =>
-      `🤝 Invite a friend!\n\nIf they join the bot with this link and open the site, you both get +1 free day.\n\nYour link:\n${link}\n\nPeople you invited: ${n}`,
+      `🤝 Invite a friend!\n\nIf they join the bot with this link and open the site, you get +10 free hours.\n\nYour link:\n${link}\n\nPeople you invited: ${n}`,
   ],
   shareBtn: ["📤 Ulashish", "📤 Поделиться", "📤 Paylaş", "📤 Share"],
   shareText: [
-    "FSP ga tayyorlanyapsizmi? OsonFSP — Fälle, Arztbrief, simulyatsiya va tibbiy nemis tili. Shu havola orqali kirsangiz, +1 kun bepul:",
-    "Готовитесь к FSP? OsonFSP — кейсы, Arztbrief, симуляция и медицинский немецкий. По этой ссылке +1 день бесплатно:",
-    "FSP’ye mi hazırlanıyorsunuz? OsonFSP — vakalar, Arztbrief, simülasyon ve tıbbi Almanca. Bu bağlantıyla +1 gün ücretsiz:",
-    "Preparing for the FSP? OsonFSP — cases, Arztbrief, simulation and medical German. Join with this link for +1 free day:",
+    "FSP ga tayyorlanyapsizmi? OsonFSP — Fälle, Arztbrief, simulyatsiya va tibbiy nemis tili. Birinchi 24 soat bepul:",
+    "Готовитесь к FSP? OsonFSP — кейсы, Arztbrief, симуляция и медицинский немецкий. Первые 24 часа бесплатно:",
+    "FSP’ye mi hazırlanıyorsunuz? OsonFSP — vakalar, Arztbrief, simülasyon ve tıbbi Almanca. İlk 24 saat ücretsiz:",
+    "Preparing for the FSP? OsonFSP — cases, Arztbrief, simulation and medical German. The first 24 hours are free:",
   ],
   refJoined: [
     (name, ok) =>
-      `🎉 Do‘stingiz ${name} sizning havolangiz orqali qo‘shildi${ok ? " — sizga +1 kun bepul!" : "."}`,
+      `🎉 Do‘stingiz ${name} sizning havolangiz orqali qo‘shildi${ok ? " — sizga +10 soat bepul!" : "."}`,
     (name, ok) =>
-      `🎉 Ваш друг ${name} присоединился по вашей ссылке${ok ? " — вам +1 день бесплатно!" : "."}`,
-    (name, ok) => `🎉 Arkadaşınız ${name} bağlantınızla katıldı${ok ? " — size +1 gün ücretsiz!" : "."}`,
-    (name, ok) => `🎉 Your friend ${name} joined with your link${ok ? " — you get +1 free day!" : "."}`,
-  ],
-  refBonus: [
-    "🎁 Do‘stingiz taklifi uchun sizga +1 kun bepul qo‘shildi (jami 48 soat).",
-    "🎁 За приглашение друга вам добавлен +1 день бесплатно (всего 48 часов).",
-    "🎁 Arkadaş daveti için size +1 gün ücretsiz eklendi (toplam 48 saat).",
-    "🎁 You got +1 free day for joining via a friend’s invite (48 hours in total).",
+      `🎉 Ваш друг ${name} присоединился по вашей ссылке${ok ? " — вам +10 часов бесплатно!" : "."}`,
+    (name, ok) => `🎉 Arkadaşınız ${name} bağlantınızla katıldı${ok ? " — size +10 saat ücretsiz!" : "."}`,
+    (name, ok) => `🎉 Your friend ${name} joined with your link${ok ? " — you get +10 free hours!" : "."}`,
   ],
   planMenu: [
     "💳 Tariflar:\n• 1 hafta — $9\n• 1 oy — $15\n\nTarifni tanlang — so‘rov adminga boradi, u siz bilan Telegram’da bog‘lanadi. To‘lovdan so‘ng tarif akkauntingizga yoqiladi va bot sizga xabar beradi.",
@@ -240,10 +234,10 @@ const T = {
     "The AI is busy right now. Please try again a little later.",
   ],
   help: [
-    "❓ Yordam\n\n📚 OsonFSP’ni ochish — sayt Telegram ichida ochiladi (pastki chapdagi «OsonFSP» tugmasi ham shu)\n🧠 Kun savoli — tibbiy so‘z bo‘yicha viktorina\n🎤 AI-mashq — nemischa ovozli xabar yoki matn yuboring, AI tekshiradi\n⏰ Eslatma — har kuni qaysi soatda eslatay\n🤝 Do‘stni taklif qilish — ikkalangizga +1 kun bepul\n💳 Tariflar — tarif tanlash va admin bilan bog‘lanish\n🌐 Til — bot va sayt tili\n\nSavollar bo‘yicha: @de_behzod",
-    "❓ Помощь\n\n📚 Открыть OsonFSP — сайт откроется прямо в Telegram (кнопка «OsonFSP» слева внизу делает то же)\n🧠 Вопрос дня — викторина по медицинскому слову\n🎤 ИИ-практика — отправьте голосовое или текст на немецком, ИИ проверит\n⏰ Напоминание — в какое время напоминать каждый день\n🤝 Пригласить друга — вам обоим +1 день бесплатно\n💳 Тарифы — выбор тарифа и связь с админом\n🌐 Язык — язык бота и сайта\n\nПо вопросам: @de_behzod",
-    "❓ Yardım\n\n📚 OsonFSP’yi aç — site Telegram içinde açılır (sol alttaki «OsonFSP» düğmesi de aynısını yapar)\n🧠 Günün sorusu — tıbbi kelime testi\n🎤 YZ alıştırması — Almanca sesli mesaj veya metin gönderin, yapay zekâ kontrol eder\n⏰ Hatırlatma — her gün saat kaçta hatırlatayım\n🤝 Arkadaş davet et — ikinize de +1 gün ücretsiz\n💳 Paketler — paket seçimi ve yöneticiyle iletişim\n🌐 Dil — bot ve site dili\n\nSorular için: @de_behzod",
-    "❓ Help\n\n📚 Open OsonFSP — the site opens right inside Telegram (the «OsonFSP» button at the bottom left does the same)\n🧠 Question of the day — a quiz on a medical word\n🎤 AI practice — send a voice message or text in German, the AI checks it\n⏰ Reminder — what time to remind you every day\n🤝 Invite a friend — you both get +1 free day\n💳 Plans — choose a plan and contact the admin\n🌐 Language — bot and site language\n\nQuestions: @de_behzod",
+    "❓ Yordam\n\n📚 OsonFSP’ni ochish — sayt Telegram ichida ochiladi (pastki chapdagi «OsonFSP» tugmasi ham shu)\n🧠 Kun savoli — tibbiy so‘z bo‘yicha viktorina\n🎤 AI-mashq — nemischa ovozli xabar yoki matn yuboring, AI tekshiradi\n⏰ Eslatma — har kuni qaysi soatda eslatay\n🤝 Do‘stni taklif qilish — har bir do‘st uchun sizga +10 soat bepul\n💳 Tariflar — tarif tanlash va admin bilan bog‘lanish\n🌐 Til — bot va sayt tili\n\nSavollar bo‘yicha: @de_behzod",
+    "❓ Помощь\n\n📚 Открыть OsonFSP — сайт откроется прямо в Telegram (кнопка «OsonFSP» слева внизу делает то же)\n🧠 Вопрос дня — викторина по медицинскому слову\n🎤 ИИ-практика — отправьте голосовое или текст на немецком, ИИ проверит\n⏰ Напоминание — в какое время напоминать каждый день\n🤝 Пригласить друга — за каждого друга вам +10 часов бесплатно\n💳 Тарифы — выбор тарифа и связь с админом\n🌐 Язык — язык бота и сайта\n\nПо вопросам: @de_behzod",
+    "❓ Yardım\n\n📚 OsonFSP’yi aç — site Telegram içinde açılır (sol alttaki «OsonFSP» düğmesi de aynısını yapar)\n🧠 Günün sorusu — tıbbi kelime testi\n🎤 YZ alıştırması — Almanca sesli mesaj veya metin gönderin, yapay zekâ kontrol eder\n⏰ Hatırlatma — her gün saat kaçta hatırlatayım\n🤝 Arkadaş davet et — her arkadaş için size +10 saat ücretsiz\n💳 Paketler — paket seçimi ve yöneticiyle iletişim\n🌐 Dil — bot ve site dili\n\nSorular için: @de_behzod",
+    "❓ Help\n\n📚 Open OsonFSP — the site opens right inside Telegram (the «OsonFSP» button at the bottom left does the same)\n🧠 Question of the day — a quiz on a medical word\n🎤 AI practice — send a voice message or text in German, the AI checks it\n⏰ Reminder — what time to remind you every day\n🤝 Invite a friend — +10 free hours for you for every friend\n💳 Plans — choose a plan and contact the admin\n🌐 Language — bot and site language\n\nQuestions: @de_behzod",
   ],
 };
 const L = (key, lang) => T[key][Math.max(0, LANGS.indexOf(lang))];
@@ -419,15 +413,11 @@ export async function onLogin(env, store, { user, created, referral }) {
     `🆕 Yangi foydalanuvchi: ${who(user)}${referral ? ` — taklif qilgan: ID ${referral.refId}` : ""}\nJami: ${total}`,
   );
   if (!referral) return;
-  let refLang = (await store.getChat(referral.refId))?.lang || "uz",
-    lang = (await store.getChat(user.id))?.lang || "uz";
-  await Promise.all([
-    tgApi(env, "sendMessage", {
-      chat_id: referral.refId,
-      text: L("refJoined", refLang)(user.name, referral.rewarded),
-    }),
-    tgApi(env, "sendMessage", { chat_id: user.id, text: L("refBonus", lang) }),
-  ]);
+  let refLang = (await store.getChat(referral.refId))?.lang || "uz";
+  await tgApi(env, "sendMessage", {
+    chat_id: referral.refId,
+    text: L("refJoined", refLang)(user.name, referral.rewarded),
+  });
 }
 
 // ---- Ovozli / matnli nemischa mashq (Gemini) ----

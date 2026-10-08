@@ -10,10 +10,10 @@ export function InviteCard() {
   if (ARTIFACT || !TG_BOT || !account?.user?.id) return null;
   let link = `https://t.me/${TG_BOT}?start=ref_${account.user.id}`,
     text = tr(
-      "FSP ga tayyorlanyapsizmi? OsonFSP — Fälle, Arztbrief, simulyatsiya va tibbiy nemis tili. Shu havola orqali kirsangiz, +1 kun bepul:",
-      "Готовитесь к FSP? OsonFSP — кейсы, Arztbrief, симуляция и медицинский немецкий. По этой ссылке +1 день бесплатно:",
-      "FSP’ye mi hazırlanıyorsunuz? OsonFSP — vakalar, Arztbrief, simülasyon ve tıbbi Almanca. Bu bağlantıyla +1 gün ücretsiz:",
-      "Preparing for the FSP? OsonFSP — cases, Arztbrief, simulation and medical German. Join with this link for +1 free day:",
+      "FSP ga tayyorlanyapsizmi? OsonFSP — Fälle, Arztbrief, simulyatsiya va tibbiy nemis tili. Birinchi 24 soat bepul:",
+      "Готовитесь к FSP? OsonFSP — кейсы, Arztbrief, симуляция и медицинский немецкий. Первые 24 часа бесплатно:",
+      "FSP’ye mi hazırlanıyorsunuz? OsonFSP — vakalar, Arztbrief, simülasyon ve tıbbi Almanca. İlk 24 saat ücretsiz:",
+      "Preparing for the FSP? OsonFSP — cases, Arztbrief, simulation and medical German. The first 24 hours are free:",
     ),
     share = `https://t.me/share/url?url=${encodeURIComponent(link)}&text=${encodeURIComponent(text)}`;
   return (
@@ -21,18 +21,18 @@ export function InviteCard() {
       <h2 className="h-title">
         🤝{" "}
         {tr(
-          "Do‘stni taklif qiling — ikkalangizga +1 kun",
-          "Пригласите друга — вам обоим +1 день",
-          "Arkadaşınızı davet edin — ikinize de +1 gün",
-          "Invite a friend — you both get +1 day",
+          "Do‘stni taklif qiling — har biri uchun +10 soat",
+          "Пригласите друга — +10 часов за каждого",
+          "Arkadaşınızı davet edin — her biri için +10 saat",
+          "Invite a friend — +10 hours for each one",
         )}
       </h2>
       <p className="mt-1 text-sm muted">
         {tr(
-          "Havolani do‘stingizga yuboring. U shu havola orqali botga kirib, saytni ochsa — ikkalangizga 1 kundan bepul qo‘shiladi.",
-          "Отправьте ссылку другу. Если он зайдёт по ней в бота и откроет сайт — вам обоим добавится по 1 дню бесплатно.",
-          "Bağlantıyı arkadaşınıza gönderin. Bununla bota girip siteyi açarsa — ikinize de 1’er gün ücretsiz eklenir.",
-          "Send the link to a friend. If they join the bot with it and open the site, you both get 1 extra free day.",
+          "Havolani do‘stingizga yuboring. U shu havola orqali botga kirib, saytni ochsa — sizga +10 soat bepul qo‘shiladi.",
+          "Отправьте ссылку другу. Если он зайдёт по ней в бота и откроет сайт — вам добавится +10 часов бесплатно.",
+          "Bağlantıyı arkadaşınıza gönderin. Bununla bota girip siteyi açarsa — size +10 saat ücretsiz eklenir.",
+          "Send the link to a friend. If they join the bot with it and open the site, you get +10 free hours.",
         )}
       </p>
       <div className="mt-3 flex flex-col gap-2 sm:flex-row">
