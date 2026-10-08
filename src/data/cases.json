@@ -389,7 +389,23 @@
     "verdachtsdiagnose": "Akuter ischämischer Schlaganfall (Apoplex) links, kardioembolisch bei Vorhofflimmern",
     "diagnoseKeywords": ["schlaganfall", "apoplex", "insult", "ischäm", "hirninfarkt"],
     "differenzialdiagnosen": ["Hirnblutung (intrazerebrale Blutung)", "TIA", "Hypoglykämie", "Todd-Parese"],
-    "untersuchungen": ["CT (cCT, CT-Angiographie)", "Blutzucker", "Gerinnung", "EKG", "MRT"]
+    "untersuchungen": ["CT (cCT, CT-Angiographie)", "Blutzucker", "Gerinnung", "EKG", "MRT"],
+    "oberarzt": {
+      "therapie": [
+        "Lysetherapie (Alteplase)",
+        "Thrombektomie",
+        "Stroke Unit",
+        "Blutdruckmanagement",
+        "Antikoagulation (Wiederbeginn)"
+      ],
+      "komplikationen": [
+        "Einblutung (hämorrhagische Transformation)",
+        "Hirnödem",
+        "Aspirationspneumonie",
+        "Rezidiv",
+        "Dysphagie"
+      ]
+    }
   },
   {
     "id": "c5",
@@ -991,7 +1007,24 @@
       "ACS (akutes Koronarsyndrom)",
       "Niereninsuffizienz"
     ],
-    "untersuchungen": ["NT-proBNP", "Echo (Echokardiographie)", "Röntgen-Thorax", "EKG", "Kreatinin"]
+    "untersuchungen": ["NT-proBNP", "Echo (Echokardiographie)", "Röntgen-Thorax", "EKG", "Kreatinin"],
+    "oberarzt": {
+      "therapie": [
+        "Diuretika (Furosemid i. v.)",
+        "Sauerstoff",
+        "Nitrate",
+        "Flüssigkeitsrestriktion",
+        "Gewichtskontrolle",
+        "Herzinsuffizienztherapie (ACE-Hemmer, Betablocker, SGLT2-Hemmer)"
+      ],
+      "komplikationen": [
+        "Lungenödem",
+        "Herzrhythmusstörungen",
+        "Elektrolytstörungen (Hypokaliämie)",
+        "Nierenversagen",
+        "Kardiogener Schock"
+      ]
+    }
   },
   {
     "id": "c11",
@@ -1092,7 +1125,24 @@
     "verdachtsdiagnose": "Lungenembolie bei V. a. tiefe Beinvenenthrombose links",
     "diagnoseKeywords": ["lungenembolie", "lungenarterienembolie", "embolie", "lae"],
     "differenzialdiagnosen": ["Pneumothorax", "Pneumonie", "Akutes Koronarsyndrom", "Pleuritis"],
-    "untersuchungen": ["D-Dimere", "CT-Angiographie", "EKG", "Blutgasanalyse", "Kompressionssonographie"]
+    "untersuchungen": ["D-Dimere", "CT-Angiographie", "EKG", "Blutgasanalyse", "Kompressionssonographie"],
+    "oberarzt": {
+      "therapie": [
+        "Antikoagulation (Heparin, DOAK)",
+        "Lysetherapie (bei Instabilität)",
+        "Sauerstoff",
+        "Kompressionstherapie",
+        "Mobilisation"
+      ],
+      "komplikationen": [
+        "Rechtsherzversagen",
+        "Kardiogener Schock",
+        "Rezidiv",
+        "Lungeninfarkt",
+        "Blutung unter Antikoagulation",
+        "CTEPH (pulmonale Hypertonie)"
+      ]
+    }
   },
   {
     "id": "c12",
@@ -1502,7 +1552,17 @@
       "Magenkarzinom",
       "Erosive Gastritis"
     ],
-    "untersuchungen": ["Gastroskopie", "Blutbild", "Gerinnung", "Blutgruppe und Kreuzprobe", "Harnstoff"]
+    "untersuchungen": ["Gastroskopie", "Blutbild", "Gerinnung", "Blutgruppe und Kreuzprobe", "Harnstoff"],
+    "oberarzt": {
+      "therapie": [
+        "Endoskopische Blutstillung (Clip, Unterspritzung)",
+        "Protonenpumpenhemmer (PPI i. v.)",
+        "Volumensubstitution",
+        "Transfusion (Erythrozytenkonzentrate)",
+        "NSAR absetzen"
+      ],
+      "komplikationen": ["Hämorrhagischer Schock", "Rezidivblutung", "Perforation", "Aspiration", "Anämie"]
+    }
   },
   {
     "id": "c16",
@@ -1912,7 +1972,24 @@
       "Inkarzerierte Hernie",
       "Mesenterialischämie"
     ],
-    "untersuchungen": ["Röntgen-Abdomen", "CT-Abdomen", "Sonographie (Abdomen)", "Blutbild", "Laktat"]
+    "untersuchungen": ["Röntgen-Abdomen", "CT-Abdomen", "Sonographie (Abdomen)", "Blutbild", "Laktat"],
+    "oberarzt": {
+      "therapie": [
+        "Nahrungskarenz",
+        "Magensonde (Entlastung)",
+        "Infusionstherapie (Elektrolyte)",
+        "Laparotomie (Adhäsiolyse)",
+        "Analgesie"
+      ],
+      "komplikationen": [
+        "Darmperforation",
+        "Peritonitis",
+        "Darmischämie (Nekrose)",
+        "Sepsis",
+        "Aspiration",
+        "Elektrolytentgleisung"
+      ]
+    }
   },
   {
     "id": "c20",
@@ -2623,7 +2700,24 @@
       "Pfortaderthrombose",
       "Spontan bakterielle Peritonitis"
     ],
-    "untersuchungen": ["Sonographie (Abdomen)", "Leberwerte", "Gerinnung", "Albumin", "Aszitespunktion"]
+    "untersuchungen": ["Sonographie (Abdomen)", "Leberwerte", "Gerinnung", "Albumin", "Aszitespunktion"],
+    "oberarzt": {
+      "therapie": [
+        "Parazentese (Aszitespunktion, Albumin)",
+        "Diuretika (Spironolacton)",
+        "Natriumrestriktion",
+        "Alkoholkarenz",
+        "Lactulose",
+        "Betablocker (Propranolol)"
+      ],
+      "komplikationen": [
+        "Spontan bakterielle Peritonitis",
+        "Ösophagusvarizenblutung",
+        "Hepatische Enzephalopathie",
+        "Hepatorenales Syndrom",
+        "Hepatozelluläres Karzinom"
+      ]
+    }
   },
   {
     "id": "c27",
@@ -3527,7 +3621,23 @@
     "verdachtsdiagnose": "Akute bakterielle Meningitis, V. a. Meningokokken-Infektion mit Petechien",
     "diagnoseKeywords": ["meningitis", "meningokokken", "hirnhautentzündung"],
     "differenzialdiagnosen": ["Subarachnoidalblutung", "Virale Enzephalitis", "Sepsis", "Migräne"],
-    "untersuchungen": ["Blutkulturen", "Lumbalpunktion", "CRP", "Blutbild", "cCT"]
+    "untersuchungen": ["Blutkulturen", "Lumbalpunktion", "CRP", "Blutbild", "cCT"],
+    "oberarzt": {
+      "therapie": [
+        "Antibiotika (Ceftriaxon, Ampicillin) sofort",
+        "Dexamethason",
+        "Isolation",
+        "Umgebungsprophylaxe",
+        "Intensivüberwachung"
+      ],
+      "komplikationen": [
+        "Hirnödem",
+        "Sepsis (Waterhouse-Friderichsen)",
+        "Hörverlust",
+        "Krampfanfälle",
+        "Hydrozephalus"
+      ]
+    }
   },
   {
     "id": "c36",
@@ -4044,7 +4154,23 @@
     "verdachtsdiagnose": "Urosepsis bei Pyelonephritis rechts",
     "diagnoseKeywords": ["urosepsis", "sepsis", "pyelonephritis"],
     "differenzialdiagnosen": ["Pneumonie", "Cholangitis", "Harnstauungsniere", "Endokarditis"],
-    "untersuchungen": ["Blutkulturen", "Laktat", "Urinkultur", "Blutbild", "Sonographie (Nieren)"]
+    "untersuchungen": ["Blutkulturen", "Laktat", "Urinkultur", "Blutbild", "Sonographie (Nieren)"],
+    "oberarzt": {
+      "therapie": [
+        "Antibiotika (Piperacillin/Tazobactam) innerhalb 1 Stunde",
+        "Volumentherapie (Kristalloide)",
+        "Blutkulturen vor Antibiose",
+        "Katecholamine (Noradrenalin)",
+        "Harnableitung (Fokussanierung)"
+      ],
+      "komplikationen": [
+        "Septischer Schock",
+        "Multiorganversagen",
+        "Akutes Nierenversagen",
+        "Gerinnungsstörung (DIC)",
+        "ARDS"
+      ]
+    }
   },
   {
     "id": "c41",
@@ -4452,7 +4578,23 @@
       "Kardiorenales Syndrom",
       "Rhabdomyolyse"
     ],
-    "untersuchungen": ["Kreatinin", "Kalium", "Blutgasanalyse", "Urinstatus", "Sonographie (Nieren)"]
+    "untersuchungen": ["Kreatinin", "Kalium", "Blutgasanalyse", "Urinstatus", "Sonographie (Nieren)"],
+    "oberarzt": {
+      "therapie": [
+        "Volumengabe (Infusion)",
+        "Nephrotoxische Medikamente absetzen (NSAR, ACE-Hemmer, Diuretika)",
+        "Bilanzierung",
+        "Kaliumsenkung",
+        "Dialyse (bei Indikation)"
+      ],
+      "komplikationen": [
+        "Hyperkaliämie (Herzrhythmusstörungen)",
+        "Überwässerung (Lungenödem)",
+        "Metabolische Azidose",
+        "Urämie",
+        "Chronische Niereninsuffizienz"
+      ]
+    }
   },
   {
     "id": "c45",
@@ -5178,7 +5320,24 @@
       "CT-Angiographie (Thorax und Abdomen)",
       "Transösophageale Echokardiographie",
       "Troponin, D-Dimere"
-    ]
+    ],
+    "oberarzt": {
+      "therapie": [
+        "Operation (Aorta-ascendens-Ersatz) notfallmäßig",
+        "Blutdrucksenkung (Betablocker i. v.)",
+        "Analgesie",
+        "Intensivüberwachung",
+        "Keine Antikoagulation"
+      ],
+      "komplikationen": [
+        "Aortenruptur",
+        "Perikardtamponade",
+        "Aortenklappeninsuffizienz",
+        "Myokardinfarkt",
+        "Schlaganfall",
+        "Malperfusion (Niere, Darm, Extremitäten)"
+      ]
+    }
   },
   {
     "id": "c52",
@@ -5497,7 +5656,24 @@
       "Ketone im Urin und Blut",
       "Elektrolyte (Kalium)",
       "HbA1c"
-    ]
+    ],
+    "oberarzt": {
+      "therapie": [
+        "Volumensubstitution (NaCl 0,9 %)",
+        "Insulin i. v. (Perfusor)",
+        "Kaliumsubstitution",
+        "Engmaschige BZ-Kontrollen",
+        "Intensivüberwachung"
+      ],
+      "komplikationen": [
+        "Hypokaliämie",
+        "Hirnödem",
+        "Hypoglykämie",
+        "Herzrhythmusstörungen",
+        "Aspiration",
+        "Thrombose"
+      ]
+    }
   },
   {
     "id": "c55",
@@ -5605,7 +5781,23 @@
       "Lumbalpunktion (bei unauffälligem CT)",
       "Gerinnung",
       "Blutdruckkontrolle"
-    ]
+    ],
+    "oberarzt": {
+      "therapie": [
+        "Aneurysmaversorgung (Coiling, Clipping)",
+        "Nimodipin",
+        "Blutdruckkontrolle",
+        "Intensivüberwachung",
+        "Analgesie"
+      ],
+      "komplikationen": [
+        "Vasospasmen (Ischämie)",
+        "Nachblutung (Rezidivblutung)",
+        "Hydrozephalus",
+        "Krampfanfälle",
+        "Hyponatriämie"
+      ]
+    }
   },
   {
     "id": "c56",
@@ -6246,7 +6438,24 @@
       "Blutbild, CRP, Procalcitonin",
       "Urinstatus",
       "EKG"
-    ]
+    ],
+    "oberarzt": {
+      "therapie": [
+        "Antibiotika (Ampicillin, Gentamicin, Vancomycin) über 4–6 Wochen",
+        "Blutkulturen vor Antibiose",
+        "Herzchirurgie (Klappenersatz)",
+        "Fokussanierung",
+        "Endokarditisprophylaxe"
+      ],
+      "komplikationen": [
+        "Septische Embolien (Schlaganfall)",
+        "Herzinsuffizienz",
+        "Klappendestruktion",
+        "Abszess",
+        "Sepsis",
+        "Niereninsuffizienz"
+      ]
+    }
   },
   {
     "id": "c62",
@@ -6349,5 +6558,1003 @@
       "Wundversorgung, Tetanusschutz prüfen",
       "Stationäre Überwachung 24 h"
     ]
+  },
+  {
+    "id": "c63",
+    "title": "NSTEMI mit atypischer Symptomatik",
+    "category": "Kardiologie",
+    "difficulty": "schwer",
+    "patient": {
+      "name": "Erika Schulz",
+      "age": 79,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Übelkeit, Schwäche und Luftnot seit dem Morgen"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit ca. 6 Stunden zunehmende Nausea, allgemeine Schwäche, Kaltschweißigkeit und Belastungsdyspnoe. Einmaliges Erbrechen, leichtes Druckgefühl im Epigastrium (NRS 3/10). Thorakale Schmerzen werden verneint.",
+      "vorerkrankungen": "Insulinpflichtiger Diabetes mellitus Typ 2 seit 20 Jahren mit diabetischer Polyneuropathie, chronische Niereninsuffizienz Stadium 3b, arterielle Hypertonie, Hypercholesterinämie.",
+      "medikamente": "Insulin glargin 18 IE abends, Metformin 500 mg 1-0-1, Ramipril 5 mg 1-0-0, Torasemid 10 mg 1-0-0, Atorvastatin 20 mg 0-0-1.",
+      "allergien": "Jodhaltiges Kontrastmittel (generalisierte Urtikaria)",
+      "familienanamnese": "Bruder mit 70 Jahren an Myokardinfarkt verstorben.",
+      "sozialanamnese": "Verwitwet, lebt allein im 2. Stock, die Tochter kommt täglich. Nie geraucht, kein Alkohol."
+    },
+    "sprache": [
+      {
+        "patient": "Mir ist so übel und ich bin ganz schlapp.",
+        "fach": "Die Patientin klagt über Nausea und eine allgemeine Schwäche."
+      },
+      {
+        "patient": "Schon beim Anziehen bekomme ich keine Luft.",
+        "fach": "Es besteht eine ausgeprägte Belastungsdyspnoe."
+      },
+      {
+        "patient": "Schmerzen in der Brust habe ich keine.",
+        "fach": "Thorakale Schmerzen werden verneint."
+      }
+    ],
+    "terms": [
+      {
+        "de": "NSTEMI",
+        "patient": "Herzinfarkt ohne typische Hebung im EKG",
+        "uz": "ST ko‘tarilmasiz miokard infarkti",
+        "ru": "инфаркт миокарда без подъёма ST",
+        "tr": "ST yükselmesiz miyokard enfarktüsü",
+        "en": "non-ST-elevation myocardial infarction"
+      },
+      {
+        "de": "Polyneuropathie",
+        "patient": "Nervenschaden, z. B. Taubheit in den Füßen",
+        "uz": "polineyropatiya (nervlar shikastlanishi)",
+        "ru": "полинейропатия (поражение нервов)",
+        "tr": "polinöropati (sinir hasarı)",
+        "en": "polyneuropathy (nerve damage)"
+      },
+      {
+        "de": "Troponin",
+        "patient": "Eiweiß aus dem Herzmuskel, das beim Herzinfarkt im Blut ansteigt",
+        "uz": "troponin (yurak mushagi oqsili)",
+        "ru": "тропонин (белок сердечной мышцы)",
+        "tr": "troponin (kalp kası proteini)",
+        "en": "troponin (heart muscle protein)"
+      },
+      {
+        "de": "Kontrastmittelallergie",
+        "patient": "Allergie gegen das Röntgen-Kontrastmittel",
+        "uz": "kontrast moddaga allergiya",
+        "ru": "аллергия на контрастное вещество",
+        "tr": "kontrast madde alerjisi",
+        "en": "contrast medium allergy"
+      },
+      {
+        "de": "Niereninsuffizienz",
+        "patient": "Nierenschwäche",
+        "uz": "buyrak yetishmovchiligi",
+        "ru": "почечная недостаточность",
+        "tr": "böbrek yetmezliği",
+        "en": "renal insufficiency"
+      }
+    ],
+    "simulation": {
+      "opening": "Ach, Herr Doktor … mir ist seit heute früh so übel, und ich bin ganz schlapp. Luft bekomme ich auch so schlecht.",
+      "answers": {
+        "beginn": "Heute Morgen gegen sieben, beim Aufstehen. Seitdem wird es eher schlimmer.",
+        "lokalisation": "So richtig weh tut nichts. Hier oben im Bauch drückt es ein bisschen, aber nicht stark.",
+        "charakter": "Eher ein Druck im Magen, vielleicht drei von zehn. Vor allem bin ich so schwach, und mir ist übel.",
+        "ausstrahlung": "Nein, in den Arm oder in den Hals zieht nichts.",
+        "begleit": "Ich habe einmal erbrochen und war ganz nass geschwitzt. Schon beim Anziehen bekomme ich keine Luft. Schmerzen in der Brust habe ich keine.",
+        "vegetativ": "Appetit habe ich heute keinen. Wasserlassen und Stuhlgang sind normal.",
+        "vorerkrankungen": "Ich habe seit zwanzig Jahren Zucker und spritze Insulin. Die Nieren sind auch nicht mehr so gut, und ich habe hohen Blutdruck und Cholesterin. In den Füßen spüre ich wegen dem Zucker nicht mehr viel.",
+        "medikamente": "Abends spritze ich 18 Einheiten Lantus. Dann Metformin morgens und abends, Ramipril und eine Wassertablette morgens und abends etwas fürs Cholesterin.",
+        "allergien": "Ja, auf das Kontrastmittel. Beim Röntgen vor ein paar Jahren habe ich Quaddeln am ganzen Körper bekommen.",
+        "familie": "Mein Bruder ist mit 70 an einem Herzinfarkt gestorben.",
+        "sozial": "Ich bin Witwe und wohne allein im zweiten Stock. Meine Tochter kommt jeden Tag vorbei.",
+        "noxen": "Geraucht habe ich nie, Alkohol trinke ich nicht."
+      }
+    },
+    "verdachtsdiagnose": "Nicht-ST-Hebungsinfarkt (NSTEMI) mit atypischer Symptomatik bei Diabetes mellitus",
+    "diagnoseKeywords": ["nstemi", "infarkt", "koronarsyndrom", "acs", "nicht-st"],
+    "differenzialdiagnosen": [
+      "Lungenembolie",
+      "Dekompensierte Herzinsuffizienz",
+      "Gastroenteritis",
+      "Pneumonie"
+    ],
+    "untersuchungen": [
+      "EKG (12-Kanal, Verlauf)",
+      "Troponin (hs, seriell)",
+      "Echokardiographie",
+      "Koronarangiographie (nach Prämedikation)",
+      "Labor (Kreatinin, Kalium, Blutzucker)"
+    ],
+    "oberarzt": {
+      "therapie": [
+        "Thrombozytenaggregationshemmung (ASS, Ticagrelor)",
+        "Antikoagulation (Heparin)",
+        "Koronarangiographie mit PCI",
+        "Metformin pausieren",
+        "Prämedikation (Prednisolon, Antihistaminikum)",
+        "Hydrierung (Nierenschutz)"
+      ],
+      "komplikationen": [
+        "Herzrhythmusstörungen (Kammerflimmern)",
+        "Kardiogener Schock",
+        "Kontrastmittelnephropathie",
+        "Anaphylaxie",
+        "Laktatazidose",
+        "Herzinsuffizienz"
+      ]
+    }
+  },
+  {
+    "id": "c64",
+    "title": "Schwere Hyponatriämie unter Thiaziddiuretikum",
+    "category": "Innere Medizin",
+    "difficulty": "schwer",
+    "patient": {
+      "name": "Margarete Wolf",
+      "age": 83,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Verwirrtheit und Stürze seit einigen Tagen"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Fremdanamnestisch (Sohn) seit ca. 4 Tagen zunehmende Verwirrtheit, Gangunsicherheit mit zwei Stürzen ohne Kopfanprall, Übelkeit und Kopfschmerzen. Wegen der Hitze trinkt die Patientin seit einer Woche 3–4 Liter Wasser täglich bei sehr salzarmer Kost.",
+      "vorerkrankungen": "Arterielle Hypertonie, Depression, Osteoporose.",
+      "medikamente": "Hydrochlorothiazid 25 mg 1-0-0 (vor 3 Wochen neu angesetzt), Citalopram 20 mg 1-0-0, Candesartan 8 mg 1-0-0, Calcium/Vitamin D 1-0-0.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Verwitwet, lebt allein, selbstständig mit Unterstützung des Sohnes. Kein Nikotin, kein Alkohol."
+    },
+    "sprache": [
+      {
+        "patient": "Mama ist seit ein paar Tagen ganz durcheinander.",
+        "fach": "Fremdanamnestisch besteht seit einigen Tagen eine Desorientiertheit."
+      },
+      {
+        "patient": "Sie ist zweimal hingefallen.",
+        "fach": "Es kam zu zwei Sturzereignissen ohne Kopfanprall."
+      },
+      {
+        "patient": "Wegen der Hitze trinkt sie literweise Wasser.",
+        "fach": "Es besteht eine erhöhte Trinkmenge von 3–4 Litern täglich."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Hyponatriämie",
+        "patient": "zu wenig Salz (Natrium) im Blut",
+        "uz": "giponatriyemiya (qonda natriy kamligi)",
+        "ru": "гипонатриемия (низкий натрий в крови)",
+        "tr": "hiponatremi (kanda düşük sodyum)",
+        "en": "hyponatraemia (low sodium in the blood)"
+      },
+      {
+        "de": "Thiaziddiuretikum",
+        "patient": "Wassertablette",
+        "uz": "tiazid diuretik (siydik haydovchi dori)",
+        "ru": "тиазидный диуретик (мочегонное)",
+        "tr": "tiyazid diüretik (idrar söktürücü)",
+        "en": "thiazide diuretic (water tablet)"
+      },
+      {
+        "de": "Fremdanamnese",
+        "patient": "Angaben von Angehörigen",
+        "uz": "yaqinlaridan olingan anamnez",
+        "ru": "анамнез со слов родственников",
+        "tr": "heteroanamnez (yakınlardan alınan öykü)",
+        "en": "collateral history"
+      },
+      {
+        "de": "Desorientiertheit",
+        "patient": "Verwirrtheit",
+        "uz": "ong chalkashligi",
+        "ru": "дезориентация",
+        "tr": "dezoryantasyon (bilinç bulanıklığı)",
+        "en": "disorientation"
+      },
+      {
+        "de": "Osmotische Demyelinisierung",
+        "patient": "Nervenschaden durch zu schnellen Salzausgleich",
+        "uz": "osmotik demiyelinizatsiya",
+        "ru": "осмотическая демиелинизация",
+        "tr": "osmotik demiyelinizasyon",
+        "en": "osmotic demyelination"
+      }
+    ],
+    "simulation": {
+      "opening": "(Sohn) Guten Tag, ich bin der Sohn. Meine Mutter ist seit ein paar Tagen ganz durcheinander und ist zweimal hingefallen. (Patientin) Mir ist so schwindlig und übel …",
+      "answers": {
+        "beginn": "(Sohn) Seit etwa vier Tagen. Es wird jeden Tag ein bisschen schlimmer.",
+        "lokalisation": "(Patientin) Der Kopf tut mir weh, so im ganzen Kopf. Und mir ist schwindlig.",
+        "charakter": "(Patientin) Ein dumpfer Kopfschmerz, nicht so schlimm, vielleicht vier von zehn. (Sohn) Sie weiß manchmal nicht, welcher Tag ist.",
+        "ausstrahlung": "(Patientin) Nein, das zieht nirgendwohin.",
+        "begleit": "(Sohn) Ihr ist übel, sie isst kaum. Sie ist zweimal gestürzt, aber nicht auf den Kopf. Gekrampft hat sie nicht, Fieber hat sie auch nicht.",
+        "vegetativ": "(Sohn) Wegen der Hitze trinkt sie seit einer Woche drei, vier Liter Wasser am Tag. Sie isst fast ohne Salz, weil der Hausarzt das wegen dem Blutdruck gesagt hat. Sie muss ständig auf die Toilette.",
+        "vorerkrankungen": "(Sohn) Sie hat hohen Blutdruck, eine Depression und Osteoporose.",
+        "medikamente": "(Sohn) Vor drei Wochen hat der Hausarzt eine neue Wassertablette angesetzt, HCT 25. Dann nimmt sie Citalopram 20, Candesartan 8 und Calcium mit Vitamin D.",
+        "allergien": "(Sohn) Nein, Allergien hat sie keine.",
+        "familie": "(Sohn) In der Familie gibt es nichts Besonderes.",
+        "sozial": "(Sohn) Sie ist Witwe und wohnt allein. Ich kaufe für sie ein und schaue jeden zweiten Tag vorbei.",
+        "noxen": "(Sohn) Sie raucht nicht und trinkt keinen Alkohol."
+      }
+    },
+    "verdachtsdiagnose": "Symptomatische schwere Hyponatriämie, medikamentös (Thiazid, SSRI) und durch hohe Trinkmenge bei salzarmer Kost",
+    "diagnoseKeywords": ["hyponatri", "natrium"],
+    "differenzialdiagnosen": ["Schlaganfall", "Subduralhämatom", "Hypoglykämie", "Delir bei Infekt", "SIADH"],
+    "untersuchungen": [
+      "Natrium (Serum, engmaschig)",
+      "Serumosmolalität",
+      "Urin-Natrium und Urinosmolalität",
+      "cCT (nach Stürzen)",
+      "TSH und Cortisol"
+    ],
+    "oberarzt": {
+      "therapie": [
+        "Hydrochlorothiazid absetzen",
+        "Langsamer Natriumausgleich (NaCl 0,9 %)",
+        "Natriumkontrollen engmaschig",
+        "Trinkmengenbeschränkung",
+        "Citalopram überprüfen"
+      ],
+      "komplikationen": [
+        "Osmotische Demyelinisierung (zu schneller Ausgleich)",
+        "Krampfanfälle",
+        "Hirnödem",
+        "Stürze (Frakturen)",
+        "Koma"
+      ]
+    }
+  },
+  {
+    "id": "c65",
+    "title": "Chronisches Subduralhämatom unter Antikoagulation",
+    "category": "Neurologie",
+    "difficulty": "schwer",
+    "patient": {
+      "name": "Heinz Krause",
+      "age": 81,
+      "gender": "männlich",
+      "hauptbeschwerde": "Zunehmende Kopfschmerzen und Wesensänderung seit drei Wochen"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit ca. 3 Wochen progrediente, holozephale Kopfschmerzen, Wesensänderung (Antriebslosigkeit, Vergesslichkeit) und Gangunsicherheit; seit 2 Tagen leichte Schwäche des linken Beines. Vor ca. 6 Wochen Sturz im Badezimmer mit Kopfanprall, damals keine ärztliche Vorstellung.",
+      "vorerkrankungen": "Vorhofflimmern, arterielle Hypertonie, Benigne Prostatahyperplasie.",
+      "medikamente": "Apixaban 5 mg 1-0-1, Metoprolol 47,5 mg 1-0-0, Ramipril 5 mg 1-0-0, Tamsulosin 0,4 mg 0-0-1.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Verheiratet, Rentner (Schlosser). Alkohol: 2–3 Flaschen Bier täglich. Ex-Raucher."
+    },
+    "sprache": [
+      {
+        "patient": "Mein Mann ist seit ein paar Wochen so anders, so teilnahmslos.",
+        "fach": "Fremdanamnestisch wird eine Wesensänderung mit Antriebsminderung berichtet."
+      },
+      {
+        "patient": "Vor ein paar Wochen ist er im Bad mit dem Kopf aufgeschlagen.",
+        "fach": "Vor ca. sechs Wochen erlitt der Patient ein Sturzereignis mit Kopfanprall."
+      },
+      {
+        "patient": "Das linke Bein will nicht mehr so richtig.",
+        "fach": "Es besteht eine diskrete Beinparese links."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Subduralhämatom",
+        "patient": "Bluterguss zwischen Hirnhaut und Gehirn",
+        "uz": "subdural gematoma",
+        "ru": "субдуральная гематома",
+        "tr": "subdural hematom",
+        "en": "subdural haematoma"
+      },
+      {
+        "de": "Wesensänderung",
+        "patient": "Veränderung der Persönlichkeit",
+        "uz": "xulq-atvor o‘zgarishi",
+        "ru": "изменение личности",
+        "tr": "kişilik değişikliği",
+        "en": "personality change"
+      },
+      {
+        "de": "Bohrlochtrepanation",
+        "patient": "kleine Operation, bei der durch ein Loch im Schädel das Blut abgelassen wird",
+        "uz": "trepanatsiya (bosh suyagini teshib qonni chiqarish)",
+        "ru": "трепанация с наложением фрезевого отверстия",
+        "tr": "burr hole trepanasyonu",
+        "en": "burr hole drainage"
+      },
+      {
+        "de": "Antagonisierung",
+        "patient": "Aufheben der Blutverdünnung",
+        "uz": "antikoagulyant ta’sirini bekor qilish",
+        "ru": "антагонизация (отмена действия антикоагулянта)",
+        "tr": "antikoagülan etkisinin geri çevrilmesi",
+        "en": "reversal of anticoagulation"
+      },
+      {
+        "de": "Holozephal",
+        "patient": "im ganzen Kopf",
+        "uz": "butun bosh bo‘ylab",
+        "ru": "по всей голове (голоцефалгия)",
+        "tr": "tüm başta",
+        "en": "affecting the whole head"
+      }
+    ],
+    "simulation": {
+      "opening": "(Ehefrau) Mein Mann ist seit ein paar Wochen so anders … (Patient) Ich hab halt Kopfweh, das ist alles.",
+      "answers": {
+        "beginn": "(Ehefrau) Seit etwa drei Wochen. Und seit vorgestern zieht er das linke Bein nach.",
+        "lokalisation": "(Patient) Der ganze Kopf tut weh, nicht an einer bestimmten Stelle.",
+        "charakter": "(Patient) Ein dumpfer Druck, jeden Tag ein bisschen mehr. Heute sechs von zehn.",
+        "ausstrahlung": "(Patient) Nein, das zieht nicht in den Nacken oder so.",
+        "begleit": "(Ehefrau) Er ist so teilnahmslos, vergisst viel und läuft unsicher. Erbrochen hat er nicht, Fieber auch nicht. (Patient) Ach, das ist das Alter.",
+        "vegetativ": "(Ehefrau) Er schläft viel mehr als sonst. Essen tut er weniger.",
+        "vorerkrankungen": "(Ehefrau) Er hat Vorhofflimmern, hohen Blutdruck und eine vergrößerte Prostata. (auf Nachfrage) Vor sechs Wochen ist er im Bad ausgerutscht und mit dem Kopf gegen die Wanne geschlagen. Zum Arzt ist er nicht gegangen.",
+        "medikamente": "(Ehefrau) Eliquis 5 morgens und abends, Metoprolol und Ramipril morgens, abends Tamsulosin.",
+        "allergien": "(Patient) Nein, keine Allergien.",
+        "familie": "(Patient) In der Familie ist nichts Besonderes.",
+        "sozial": "(Patient) Ich bin verheiratet und Rentner, war Schlosser.",
+        "noxen": "(Patient) Ein paar Bier am Abend, zwei, drei Flaschen. Geraucht habe ich früher."
+      }
+    },
+    "verdachtsdiagnose": "Chronisches Subduralhämatom rechts mit Hemiparese links, nach Bagatelltrauma unter oraler Antikoagulation",
+    "diagnoseKeywords": ["subdural", "hämatom"],
+    "differenzialdiagnosen": [
+      "Ischämischer Schlaganfall",
+      "Demenz",
+      "Hirntumor",
+      "Normaldruckhydrozephalus",
+      "Delir"
+    ],
+    "untersuchungen": [
+      "cCT (nativ)",
+      "Gerinnung (Anti-Xa-Spiegel)",
+      "Neurologische Untersuchung",
+      "Labor (Blutbild, Elektrolyte, Leberwerte)",
+      "MRT (bei Unklarheit)"
+    ],
+    "oberarzt": {
+      "therapie": [
+        "Antikoagulation pausieren (Antagonisierung)",
+        "Bohrlochtrepanation (Hämatomentleerung)",
+        "Neurochirurgie",
+        "Blutdruckkontrolle",
+        "Sturzprophylaxe"
+      ],
+      "komplikationen": [
+        "Einklemmung (Hirndruck)",
+        "Rezidiv (Nachblutung)",
+        "Krampfanfälle",
+        "Thromboembolie (Schlaganfall)",
+        "Pneumozephalus"
+      ]
+    }
+  },
+  {
+    "id": "c66",
+    "title": "Akute Mesenterialischämie",
+    "category": "Chirurgie",
+    "difficulty": "schwer",
+    "patient": {
+      "name": "Ingrid Lorenz",
+      "age": 76,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Plötzliche, sehr starke Bauchschmerzen"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit ca. 5 Stunden plötzlich einsetzende, stärkste periumbilikale Bauchschmerzen (NRS 10/10), einmal Erbrechen, seit 1 Stunde blutig tingierte Diarrhö. Bei der Untersuchung weiches Abdomen ohne Abwehrspannung – Schmerz und Befund stehen im Missverhältnis.",
+      "vorerkrankungen": "Vorhofflimmern (Antikoagulation wegen Sturzneigung vor 3 Monaten abgesetzt), Herzinsuffizienz, pAVK.",
+      "medikamente": "Bisoprolol 5 mg 1-0-0, Torasemid 10 mg 1-0-0, Ramipril 2,5 mg 1-0-0, ASS 100 mg 1-0-0.",
+      "allergien": "Penicillin (Exanthem)",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Verwitwet, lebt im Seniorenheim. Ex-Raucherin (40 py)."
+    },
+    "sprache": [
+      {
+        "patient": "Der Bauch tut so weh wie noch nie in meinem Leben.",
+        "fach": "Die Patientin berichtet über stärkste abdominelle Schmerzen (NRS 10/10)."
+      },
+      {
+        "patient": "Jetzt kommt auch Blut mit dem Durchfall.",
+        "fach": "Seit einer Stunde besteht eine blutige Diarrhö."
+      },
+      {
+        "patient": "Den Blutverdünner hat man mir abgesetzt, weil ich oft hinfalle.",
+        "fach": "Die orale Antikoagulation wurde wegen Sturzneigung abgesetzt."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Mesenterialischämie",
+        "patient": "Durchblutungsstörung des Darms",
+        "uz": "mezenterial ishemiya (ichak qon aylanishining buzilishi)",
+        "ru": "мезентериальная ишемия",
+        "tr": "mezenter iskemi",
+        "en": "mesenteric ischaemia"
+      },
+      {
+        "de": "Embolie",
+        "patient": "Verschluss eines Gefäßes durch ein verschlepptes Blutgerinnsel",
+        "uz": "emboliya",
+        "ru": "эмболия",
+        "tr": "emboli",
+        "en": "embolism"
+      },
+      {
+        "de": "Laktat",
+        "patient": "Milchsäure im Blut – erhöht bei Sauerstoffmangel im Gewebe",
+        "uz": "laktat (sut kislotasi)",
+        "ru": "лактат (молочная кислота)",
+        "tr": "laktat (süt asidi)",
+        "en": "lactate"
+      },
+      {
+        "de": "Darmnekrose",
+        "patient": "abgestorbener Darmabschnitt",
+        "uz": "ichak nekrozi (ichakning o‘lishi)",
+        "ru": "некроз кишки",
+        "tr": "bağırsak nekrozu",
+        "en": "bowel necrosis"
+      },
+      {
+        "de": "Abwehrspannung",
+        "patient": "harter, gespannter Bauch beim Abtasten",
+        "uz": "qorin devori taranglashuvi (himoya taranglashuvi)",
+        "ru": "мышечная защита",
+        "tr": "defans",
+        "en": "guarding"
+      }
+    ],
+    "simulation": {
+      "opening": "Ah … der Bauch! So weh hat es noch nie getan, Herr Doktor!",
+      "answers": {
+        "beginn": "Ganz plötzlich, vor etwa fünf Stunden, nach dem Mittagessen.",
+        "lokalisation": "Rund um den Bauchnabel, eigentlich im ganzen Bauch.",
+        "charakter": "Ganz furchtbar, zehn von zehn, die ganze Zeit. Es wird nicht besser.",
+        "ausstrahlung": "Nein, es bleibt im Bauch.",
+        "begleit": "Ich habe einmal erbrochen. Seit einer Stunde habe ich Durchfall, und da ist Blut dabei.",
+        "vegetativ": "Stuhlgang war bis heute normal. Wasserlassen kaum, ich habe heute wenig getrunken.",
+        "vorerkrankungen": "Ich habe Vorhofflimmern, ein schwaches Herz und Durchblutungsstörungen in den Beinen.",
+        "medikamente": "Bisoprolol, eine Wassertablette, Ramipril und ASS. (auf Nachfrage) Den Blutverdünner hat man mir vor drei Monaten abgesetzt, weil ich so oft hinfalle.",
+        "allergien": "Ja, auf Penicillin bekomme ich Ausschlag.",
+        "familie": "Da ist nichts Besonderes.",
+        "sozial": "Ich bin Witwe und wohne im Seniorenheim.",
+        "noxen": "Früher habe ich viel geraucht, seit zehn Jahren nicht mehr. Alkohol trinke ich nicht."
+      }
+    },
+    "verdachtsdiagnose": "Akute Mesenterialischämie, am ehesten embolisch bei Vorhofflimmern ohne Antikoagulation",
+    "diagnoseKeywords": ["mesenterial", "darmischämie", "mesenterialinfarkt", "ischämie"],
+    "differenzialdiagnosen": [
+      "Ileus",
+      "Perforiertes Ulkus",
+      "Akute Pankreatitis",
+      "Divertikulitis",
+      "Aortendissektion"
+    ],
+    "untersuchungen": [
+      "CT-Angiographie (Abdomen)",
+      "Laktat (Blutgasanalyse)",
+      "Labor (Blutbild, Lipase, Kreatinin, Gerinnung)",
+      "EKG",
+      "Diagnostische Laparoskopie/Laparotomie"
+    ],
+    "oberarzt": {
+      "therapie": [
+        "Laparotomie (Darmresektion)",
+        "Embolektomie (Revaskularisation)",
+        "Heparin",
+        "Volumentherapie",
+        "Antibiotika",
+        "Analgesie"
+      ],
+      "komplikationen": [
+        "Darmnekrose",
+        "Peritonitis",
+        "Sepsis (Multiorganversagen)",
+        "Kurzdarmsyndrom",
+        "Laktatazidose"
+      ]
+    }
+  },
+  {
+    "id": "c67",
+    "title": "Addison-Krise (akute Nebenniereninsuffizienz)",
+    "category": "Endokrinologie",
+    "difficulty": "schwer",
+    "patient": {
+      "name": "Julia Neumann",
+      "age": 34,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Starke Schwäche, Erbrechen und Schwindel"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 2 Tagen Erbrechen, Diarrhö und Bauchschmerzen, heute ausgeprägte Schwäche, Schwindel beim Aufstehen und Verwirrtheit. Seit Monaten Müdigkeit, Gewichtsverlust (6 kg), Heißhunger auf Salziges und auffallend dunkle Haut, obwohl kein Urlaub.",
+      "vorerkrankungen": "Hashimoto-Thyreoiditis, Vitiligo.",
+      "medikamente": "L-Thyroxin 75 µg 1-0-0.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Mutter: Diabetes mellitus Typ 1.",
+      "sozialanamnese": "Ledig, Grundschullehrerin. Gelegentlich Alkohol, Nichtraucherin."
+    },
+    "sprache": [
+      {
+        "patient": "Ich habe richtig Heißhunger auf Salzstangen und Chips.",
+        "fach": "Die Patientin berichtet über einen ausgeprägten Salzhunger."
+      },
+      {
+        "patient": "Meine Haut ist so braun, obwohl ich nicht in der Sonne war.",
+        "fach": "Es besteht eine Hyperpigmentierung der Haut ohne Sonnenexposition."
+      },
+      {
+        "patient": "Wenn ich aufstehe, wird mir schwarz vor Augen.",
+        "fach": "Es besteht ein orthostatischer Schwindel."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Nebenniereninsuffizienz",
+        "patient": "Schwäche der Nebennieren, die zu wenig Kortison bilden",
+        "uz": "buyrak usti bezi yetishmovchiligi",
+        "ru": "надпочечниковая недостаточность",
+        "tr": "böbrek üstü bezi yetmezliği",
+        "en": "adrenal insufficiency"
+      },
+      {
+        "de": "Hyperpigmentierung",
+        "patient": "dunklere Hautfarbe",
+        "uz": "teri giperpigmentatsiyasi (terining qorayishi)",
+        "ru": "гиперпигментация",
+        "tr": "hiperpigmentasyon",
+        "en": "hyperpigmentation"
+      },
+      {
+        "de": "Hydrocortison",
+        "patient": "Kortison-Medikament, ersetzt das körpereigene Hormon",
+        "uz": "gidrokortizon",
+        "ru": "гидрокортизон",
+        "tr": "hidrokortizon",
+        "en": "hydrocortisone"
+      },
+      {
+        "de": "Orthostatisch",
+        "patient": "beim Aufstehen",
+        "uz": "tik turganda (ortostatik)",
+        "ru": "ортостатический (при вставании)",
+        "tr": "ortostatik (ayağa kalkınca)",
+        "en": "orthostatic (on standing up)"
+      },
+      {
+        "de": "Hyperkaliämie",
+        "patient": "zu viel Kalium im Blut",
+        "uz": "giperkaliyemiya",
+        "ru": "гиперкалиемия",
+        "tr": "hiperkalemi",
+        "en": "hyperkalaemia"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich fühle mich so unglaublich schwach … mir ist ständig übel, und wenn ich aufstehe, wird mir schwarz vor Augen.",
+      "answers": {
+        "beginn": "Erbrechen und Durchfall habe ich seit vorgestern. Aber müde und schlapp bin ich eigentlich schon seit Monaten.",
+        "lokalisation": "Der Bauch tut so allgemein weh, nicht an einer Stelle.",
+        "charakter": "Krampfartig, so fünf von zehn. Am schlimmsten ist aber die Schwäche.",
+        "ausstrahlung": "Nein, das zieht nirgendwohin.",
+        "begleit": "Ich erbreche alles, auch das Wasser. Heute war ich ganz durcheinander. Fieber hatte ich leicht, 37,9.",
+        "vegetativ": "Ich habe in den letzten Monaten sechs Kilo abgenommen, ohne es zu wollen. Und ich habe ständig Heißhunger auf Salziges, Salzstangen und so. Meine Haut ist so braun geworden, obwohl ich gar nicht in der Sonne war.",
+        "vorerkrankungen": "Ich habe Hashimoto und weiße Flecken auf der Haut, Vitiligo.",
+        "medikamente": "Nur L-Thyroxin 75 morgens.",
+        "allergien": "Nein, Allergien habe ich keine.",
+        "familie": "Meine Mutter hat Typ-1-Diabetes.",
+        "sozial": "Ich bin ledig und Grundschullehrerin.",
+        "noxen": "Ich rauche nicht, Alkohol nur selten."
+      }
+    },
+    "verdachtsdiagnose": "Addison-Krise (akute primäre Nebenniereninsuffizienz), ausgelöst durch Gastroenteritis, bei Verdacht auf autoimmunen Morbus Addison",
+    "diagnoseKeywords": ["addison", "nebenniereninsuff", "nebennierenrinden"],
+    "differenzialdiagnosen": [
+      "Gastroenteritis mit Exsikkose",
+      "Sepsis",
+      "Diabetische Ketoazidose",
+      "Anorexia nervosa",
+      "Hyperthyreose"
+    ],
+    "untersuchungen": [
+      "Cortisol und ACTH (vor Hydrocortison-Gabe)",
+      "Elektrolyte (Natrium, Kalium)",
+      "Blutzucker",
+      "ACTH-Test (Synacthen-Test)",
+      "21-Hydroxylase-Antikörper"
+    ],
+    "oberarzt": {
+      "therapie": [
+        "Hydrocortison i. v. (100 mg Bolus) sofort",
+        "Volumensubstitution (NaCl 0,9 %, Glukose)",
+        "Elektrolytkontrolle",
+        "Dauertherapie (Hydrocortison, Fludrocortison)",
+        "Notfallausweis (Schulung zur Dosisanpassung)"
+      ],
+      "komplikationen": [
+        "Hypovolämischer Schock",
+        "Hypoglykämie",
+        "Hyperkaliämie (Herzrhythmusstörungen)",
+        "Erneute Krise (bei Infekt)",
+        "Tod"
+      ]
+    }
+  },
+  {
+    "id": "c68",
+    "title": "Malaria tropica nach Westafrika-Reise",
+    "category": "Infektiologie",
+    "difficulty": "schwer",
+    "patient": {
+      "name": "Daniel Mensah",
+      "age": 41,
+      "gender": "männlich",
+      "hauptbeschwerde": "Hohes Fieber mit Schüttelfrost seit drei Tagen"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 3 Tagen Fieber bis 40,1 °C mit Schüttelfrost, starke Kopf- und Gliederschmerzen, Übelkeit; seit heute Morgen leichte Benommenheit und dunkler Urin. Rückkehr vor 10 Tagen von einem 3-wöchigen Familienbesuch in Ghana, keine Malariaprophylaxe („bin ja dort aufgewachsen“).",
+      "vorerkrankungen": "Keine.",
+      "medikamente": "Ibuprofen 400 mg bei Bedarf (seit 3 Tagen).",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Verheiratet, zwei Kinder, Ingenieur. Lebt seit 15 Jahren in Deutschland. Kein Nikotin, gelegentlich Alkohol."
+    },
+    "sprache": [
+      {
+        "patient": "Ich habe so gezittert, dass das ganze Bett gewackelt hat.",
+        "fach": "Der Patient berichtet über ausgeprägten Schüttelfrost."
+      },
+      {
+        "patient": "Tabletten gegen Malaria habe ich nicht genommen, ich bin ja dort aufgewachsen.",
+        "fach": "Eine Malariaprophylaxe wurde nicht durchgeführt."
+      },
+      {
+        "patient": "Mein Urin ist so dunkel wie Cola.",
+        "fach": "Es besteht eine dunkle Verfärbung des Urins, Verdacht auf Hämoglobinurie."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Malaria tropica",
+        "patient": "gefährliche Form der Malaria durch Mückenstich",
+        "uz": "tropik bezgak (Malaria tropica)",
+        "ru": "тропическая малярия",
+        "tr": "tropikal sıtma (malaria tropica)",
+        "en": "falciparum malaria"
+      },
+      {
+        "de": "Plasmodium falciparum",
+        "patient": "Erreger der gefährlichsten Malaria",
+        "uz": "Plasmodium falciparum (bezgak qo‘zg‘atuvchisi)",
+        "ru": "Plasmodium falciparum (возбудитель малярии)",
+        "tr": "Plasmodium falciparum (sıtma etkeni)",
+        "en": "Plasmodium falciparum (malaria parasite)"
+      },
+      {
+        "de": "Parasitämie",
+        "patient": "Anteil der roten Blutkörperchen, die von Malaria befallen sind",
+        "uz": "parazitemiya",
+        "ru": "паразитемия",
+        "tr": "parazitemi",
+        "en": "parasitaemia"
+      },
+      {
+        "de": "Thrombozytopenie",
+        "patient": "zu wenig Blutplättchen",
+        "uz": "trombotsitopeniya",
+        "ru": "тромбоцитопения",
+        "tr": "trombositopeni",
+        "en": "thrombocytopenia"
+      },
+      {
+        "de": "Dicker Tropfen",
+        "patient": "Blutausstrich zum Nachweis von Malaria",
+        "uz": "qalin tomchi (bezgakka qon surtmasi)",
+        "ru": "толстая капля",
+        "tr": "kalın damla yayması",
+        "en": "thick blood film"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe seit drei Tagen hohes Fieber und so einen Schüttelfrost, dass das ganze Bett gewackelt hat.",
+      "answers": {
+        "beginn": "Vor drei Tagen, abends, ganz plötzlich mit Schüttelfrost.",
+        "lokalisation": "Der Kopf tut sehr weh, und alle Glieder. Der Rücken auch.",
+        "charakter": "Das Fieber kommt in Wellen, bis über 40 Grad. Dann friere ich, und dann schwitze ich alles nass. Der Kopf: sieben von zehn.",
+        "ausstrahlung": "Nein, das ist überall.",
+        "begleit": "Mir ist übel, gegessen habe ich kaum. Heute fühle ich mich etwas benommen. Und mein Urin ist so dunkel wie Cola.",
+        "vegetativ": "Appetit habe ich keinen. Stuhlgang ist normal, Wasserlassen weniger als sonst.",
+        "vorerkrankungen": "Ich bin eigentlich immer gesund. (auf Nachfrage) Ich war drei Wochen in Ghana bei meiner Familie, vor zehn Tagen bin ich zurückgekommen.",
+        "medikamente": "Nur Ibuprofen 400 gegen das Fieber, seit drei Tagen. Tabletten gegen Malaria habe ich nicht genommen, ich bin ja dort aufgewachsen.",
+        "allergien": "Nein, keine Allergien.",
+        "familie": "In der Familie ist nichts Besonderes.",
+        "sozial": "Ich bin verheiratet, habe zwei Kinder und arbeite als Ingenieur. Ich lebe seit 15 Jahren in Deutschland.",
+        "noxen": "Ich rauche nicht. Alkohol nur selten, ein Bier am Wochenende."
+      }
+    },
+    "verdachtsdiagnose": "Komplizierte Malaria tropica (Plasmodium falciparum) nach Reise nach Ghana ohne Prophylaxe",
+    "diagnoseKeywords": ["malaria", "plasmodium", "falciparum"],
+    "differenzialdiagnosen": [
+      "Dengue-Fieber",
+      "Typhus abdominalis",
+      "Influenza",
+      "Virushepatitis",
+      "Sepsis anderer Ursache"
+    ],
+    "untersuchungen": [
+      "Dicker Tropfen und Blutausstrich (Parasitämie)",
+      "Malaria-Schnelltest",
+      "Blutbild (Thrombozyten, Hämoglobin)",
+      "Labor (Kreatinin, Bilirubin, LDH, Blutzucker, Laktat)",
+      "Blutkulturen"
+    ],
+    "oberarzt": {
+      "therapie": [
+        "Artesunat i. v.",
+        "Intensivüberwachung",
+        "Parasitämie täglich kontrollieren",
+        "Blutzuckerkontrolle",
+        "Meldung an das Gesundheitsamt (nicht namentlich, RKI)"
+      ],
+      "komplikationen": [
+        "Zerebrale Malaria",
+        "Akutes Nierenversagen",
+        "Schwere Anämie (Hämolyse)",
+        "Lungenödem (ARDS)",
+        "Hypoglykämie",
+        "Schock"
+      ]
+    }
+  },
+  {
+    "id": "c69",
+    "title": "Multiples Myelom mit Hyperkalzämie",
+    "category": "Innere Medizin",
+    "difficulty": "schwer",
+    "patient": {
+      "name": "Günter Richter",
+      "age": 68,
+      "gender": "männlich",
+      "hauptbeschwerde": "Rückenschmerzen, starker Durst und Verwirrtheit"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit ca. 3 Monaten zunehmende Rückenschmerzen im Bereich der Lendenwirbelsäule, auch in Ruhe und nachts; seit 2 Wochen Polydipsie, Polyurie, Obstipation, Übelkeit und Müdigkeit; seit gestern zeitweise verwirrt. Ungewollter Gewichtsverlust von 7 kg in 3 Monaten, gehäufte Infekte.",
+      "vorerkrankungen": "Arterielle Hypertonie, Z. n. Cholezystektomie.",
+      "medikamente": "Amlodipin 5 mg 1-0-0, Ibuprofen 600 mg 1-1-1 (seit 4 Wochen, selbst gekauft).",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Vater: Prostatakarzinom.",
+      "sozialanamnese": "Verheiratet, Rentner (Busfahrer). Ex-Raucher seit 10 Jahren, kein Alkohol."
+    },
+    "sprache": [
+      {
+        "patient": "Der Rücken tut auch nachts weh, nicht nur beim Bewegen.",
+        "fach": "Es bestehen Ruhe- und Nachtschmerzen im Bereich der LWS."
+      },
+      {
+        "patient": "Ich habe ständig Durst und muss dauernd auf die Toilette.",
+        "fach": "Der Patient berichtet über Polydipsie und Polyurie."
+      },
+      {
+        "patient": "Ich habe dauernd Erkältungen.",
+        "fach": "Es besteht eine erhöhte Infektanfälligkeit."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Multiples Myelom",
+        "patient": "Krebs der Plasmazellen im Knochenmark",
+        "uz": "multipl miyeloma (plazmotsitoma)",
+        "ru": "множественная миелома",
+        "tr": "multipl miyelom",
+        "en": "multiple myeloma"
+      },
+      {
+        "de": "Hyperkalzämie",
+        "patient": "zu viel Calcium im Blut",
+        "uz": "giperkalsiyemiya",
+        "ru": "гиперкальциемия",
+        "tr": "hiperkalsemi",
+        "en": "hypercalcaemia"
+      },
+      {
+        "de": "Osteolyse",
+        "patient": "Auflösung von Knochen",
+        "uz": "osteoliz (suyak yemirilishi)",
+        "ru": "остеолиз",
+        "tr": "osteoliz",
+        "en": "osteolysis"
+      },
+      {
+        "de": "Paraprotein",
+        "patient": "krankhaftes Eiweiß im Blut",
+        "uz": "paraprotein",
+        "ru": "парапротеин",
+        "tr": "paraprotein",
+        "en": "paraprotein"
+      },
+      {
+        "de": "Polyurie",
+        "patient": "sehr viel Wasserlassen",
+        "uz": "poliuriya (ko‘p siyish)",
+        "ru": "полиурия",
+        "tr": "poliüri",
+        "en": "polyuria"
+      }
+    ],
+    "simulation": {
+      "opening": "Mein Rücken macht mir seit Monaten zu schaffen, und jetzt habe ich ständig Durst … meine Frau sagt, ich bin manchmal ganz durcheinander.",
+      "answers": {
+        "beginn": "Die Rückenschmerzen seit etwa drei Monaten. Der Durst seit zwei Wochen, und seit gestern bin ich manchmal verwirrt, sagt meine Frau.",
+        "lokalisation": "Unten im Rücken, in der Mitte. Auch in den Rippen tut es manchmal weh.",
+        "charakter": "Ein tiefer, bohrender Schmerz, sechs bis sieben von zehn. Auch nachts und in Ruhe, nicht nur bei Bewegung.",
+        "ausstrahlung": "Nein, in die Beine strahlt es nicht aus. Taubheit habe ich keine.",
+        "begleit": "Ich habe ständig Durst und muss dauernd auf die Toilette. Verstopfung habe ich auch, und mir ist oft übel. Ich bin so müde.",
+        "vegetativ": "Ich habe in drei Monaten sieben Kilo abgenommen, ohne Diät. Ich habe dauernd Erkältungen. Nachts schwitze ich nicht.",
+        "vorerkrankungen": "Ich habe hohen Blutdruck. Die Gallenblase wurde mir vor Jahren entfernt.",
+        "medikamente": "Amlodipin 5 morgens. Und wegen dem Rücken nehme ich seit vier Wochen dreimal am Tag Ibuprofen 600, das habe ich selbst gekauft.",
+        "allergien": "Nein, keine Allergien.",
+        "familie": "Mein Vater hatte Prostatakrebs.",
+        "sozial": "Ich bin verheiratet und Rentner, ich war Busfahrer.",
+        "noxen": "Ich habe vor zehn Jahren mit dem Rauchen aufgehört. Alkohol trinke ich nicht."
+      }
+    },
+    "verdachtsdiagnose": "Multiples Myelom mit Hyperkalzämie, Osteolysen und Nierenfunktionsverschlechterung",
+    "diagnoseKeywords": ["myelom", "plasmozytom", "plasmazell"],
+    "differenzialdiagnosen": [
+      "Knochenmetastasen (z. B. Prostatakarzinom)",
+      "Primärer Hyperparathyreoidismus",
+      "Osteoporotische Wirbelkörperfraktur",
+      "Bandscheibenvorfall",
+      "Sarkoidose"
+    ],
+    "untersuchungen": [
+      "Calcium und Albumin (Serum)",
+      "Serumeiweißelektrophorese und Immunfixation",
+      "Freie Leichtketten (Serum)",
+      "Ganzkörper-Low-Dose-CT",
+      "Knochenmarkpunktion",
+      "Labor (Kreatinin, Blutbild, Parathormon)"
+    ],
+    "oberarzt": {
+      "therapie": [
+        "Hydrierung (NaCl 0,9 %)",
+        "Bisphosphonate (Zoledronat)",
+        "Calcium- und Kreatininkontrollen",
+        "Hämatologie (Chemotherapie, Stammzelltransplantation)",
+        "Analgesie"
+      ],
+      "komplikationen": [
+        "Hyperkalzämische Krise",
+        "Nierenversagen (Myelomniere)",
+        "Pathologische Fraktur",
+        "Infektionen",
+        "Querschnittsyndrom (Wirbelkörper)"
+      ]
+    }
+  },
+  {
+    "id": "c70",
+    "title": "Riesenzellarteriitis (Arteriitis temporalis)",
+    "category": "Neurologie",
+    "difficulty": "schwer",
+    "patient": {
+      "name": "Renate Becker",
+      "age": 74,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Neue Kopfschmerzen an der Schläfe und kurzzeitige Sehstörung"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit ca. 3 Wochen neu aufgetretene, bitemporale Kopfschmerzen, Schmerzen beim Kämmen der Haare und beim Kauen (Claudicatio masticatoria). Heute Morgen für ca. 5 Minuten Sehverlust auf dem rechten Auge („wie ein Vorhang“). Zusätzlich Schulter- und Nackensteifigkeit morgens, subfebrile Temperaturen, Gewichtsverlust 3 kg.",
+      "vorerkrankungen": "Arterielle Hypertonie, Osteopenie, Katarakt-OP beidseits.",
+      "medikamente": "Candesartan 8 mg 1-0-0, Paracetamol 500 mg bei Bedarf.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Verheiratet, Rentnerin (Bibliothekarin). Nichtraucherin, kein Alkohol."
+    },
+    "sprache": [
+      {
+        "patient": "Beim Kauen tun mir nach kurzer Zeit die Kiefer weh.",
+        "fach": "Es besteht eine Claudicatio masticatoria."
+      },
+      {
+        "patient": "Heute Morgen war es auf dem rechten Auge kurz wie ein schwarzer Vorhang.",
+        "fach": "Heute Morgen trat eine transiente monokuläre Sehstörung rechts (Amaurosis fugax) auf."
+      },
+      {
+        "patient": "Morgens komme ich mit den Schultern kaum aus dem Bett.",
+        "fach": "Es besteht eine ausgeprägte Morgensteifigkeit des Schultergürtels."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Riesenzellarteriitis",
+        "patient": "Entzündung der Schlagadern, besonders an der Schläfe",
+        "uz": "gigant hujayrali arteriit (chakka arteriti)",
+        "ru": "гигантоклеточный артериит (височный артериит)",
+        "tr": "dev hücreli arterit (temporal arterit)",
+        "en": "giant cell arteritis"
+      },
+      {
+        "de": "Amaurosis fugax",
+        "patient": "kurzzeitige Blindheit auf einem Auge",
+        "uz": "vaqtincha bir ko‘zning ko‘rmay qolishi",
+        "ru": "преходящая слепота на один глаз",
+        "tr": "geçici tek gözde görme kaybı",
+        "en": "transient monocular vision loss"
+      },
+      {
+        "de": "Claudicatio masticatoria",
+        "patient": "Kieferschmerzen beim Kauen",
+        "uz": "chaynaganda jag‘ og‘rig‘i",
+        "ru": "перемежающаяся хромота жевательных мышц",
+        "tr": "çiğneme sırasında çene ağrısı",
+        "en": "jaw claudication"
+      },
+      {
+        "de": "Polymyalgia rheumatica",
+        "patient": "entzündliche Muskelschmerzen an Schultern und Becken",
+        "uz": "revmatik polimialgiya",
+        "ru": "ревматическая полимиалгия",
+        "tr": "polimiyalji romatika",
+        "en": "polymyalgia rheumatica"
+      },
+      {
+        "de": "Temporalisbiopsie",
+        "patient": "Gewebeprobe aus der Schläfenarterie",
+        "uz": "chakka arteriyasidan biopsiya",
+        "ru": "биопсия височной артерии",
+        "tr": "temporal arter biyopsisi",
+        "en": "temporal artery biopsy"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe seit ein paar Wochen so komische Kopfschmerzen an den Schläfen, und heute Morgen habe ich auf dem rechten Auge kurz nichts gesehen.",
+      "answers": {
+        "beginn": "Die Kopfschmerzen seit etwa drei Wochen. Das mit dem Auge war heute Morgen um sieben, ungefähr fünf Minuten lang.",
+        "lokalisation": "An beiden Schläfen, rechts mehr als links. Die Kopfhaut ist ganz empfindlich, das Kämmen tut weh.",
+        "charakter": "Ein pochender, dauerhafter Schmerz, sechs von zehn. So etwas hatte ich früher nie.",
+        "ausstrahlung": "Manchmal zieht es in den Kiefer. Beim Kauen tun mir nach kurzer Zeit die Kiefer weh, dann muss ich eine Pause machen.",
+        "begleit": "Auf dem rechten Auge war es kurz wie ein schwarzer Vorhang, dann ging es wieder. Doppelbilder habe ich nicht. Morgens sind meine Schultern und der Nacken ganz steif, ich komme kaum aus dem Bett.",
+        "vegetativ": "Ich habe abends oft leichte Temperatur, so 37,8. Abgenommen habe ich drei Kilo. Appetit ist schlechter.",
+        "vorerkrankungen": "Ich habe hohen Blutdruck und etwas schwache Knochen. An beiden Augen hatte ich den Grauen Star operiert.",
+        "medikamente": "Candesartan 8 morgens. Gegen die Kopfschmerzen Paracetamol, das hilft aber kaum.",
+        "allergien": "Nein, keine Allergien.",
+        "familie": "In der Familie ist nichts Besonderes.",
+        "sozial": "Ich bin verheiratet und Rentnerin, ich war Bibliothekarin.",
+        "noxen": "Ich rauche nicht und trinke keinen Alkohol."
+      }
+    },
+    "verdachtsdiagnose": "Riesenzellarteriitis (Arteriitis temporalis) mit Amaurosis fugax rechts und begleitender Polymyalgia rheumatica",
+    "diagnoseKeywords": ["riesenzell", "arteriitis", "temporalis", "horton"],
+    "differenzialdiagnosen": [
+      "Migräne",
+      "Transitorische ischämische Attacke",
+      "Trigeminusneuralgie",
+      "Akutes Winkelblockglaukom",
+      "Spannungskopfschmerz"
+    ],
+    "untersuchungen": [
+      "BSG und CRP",
+      "Duplexsonographie der Temporalarterien (Halo-Zeichen)",
+      "Temporalisbiopsie",
+      "Augenärztliche Untersuchung (Fundoskopie)",
+      "Blutbild"
+    ],
+    "oberarzt": {
+      "therapie": [
+        "Glukokortikoide (Prednisolon hochdosiert) sofort",
+        "Temporalisbiopsie",
+        "Augenärztliche Kontrolle",
+        "Osteoporoseprophylaxe (Calcium, Vitamin D)",
+        "Magenschutz (PPI)"
+      ],
+      "komplikationen": [
+        "Erblindung (Optikusischämie)",
+        "Schlaganfall",
+        "Aortenaneurysma",
+        "Steroidnebenwirkungen (Diabetes, Osteoporose)",
+        "Rezidiv"
+      ]
+    }
   }
 ]

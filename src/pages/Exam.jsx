@@ -16,9 +16,10 @@ import {
   correctArztbrief,
   evaluateAnamnese,
   evaluateArztArzt,
+  hardQuestions,
   termQuestion,
 } from "../lib/evaluation";
-import { avg, clamp, cx } from "../lib/utils";
+import { avg, clamp, cx, shuffle } from "../lib/utils";
 import { useApp } from "../state/AppContext";
 import { FreeLeft, Paywall } from "../components/Paywall";
 import { usePlan } from "../lib/plan";
@@ -66,6 +67,7 @@ const PART_MINUTES = 20,
   // Ärztekammer faqat „bestanden / nicht bestanden“ deydi, ball qo‘ymaydi. Bu yerda taxminiy chegara:
   // har bir qism kamida 60% bo‘lishi kerak — bitta qism yiqilsa, butun imtihon yiqiladi.
   PASS_MARK = 60,
+  HARD_PASS_MARK = 70, // Qiyin rejim: qattiqroq chegara
   PART_NAMES = {
     t1: "Teil 1 · Arzt-Patienten-Gespräch",
     t2: "Teil 2 · Dokumentation",
@@ -90,7 +92,17 @@ const PART_MINUTES = 20,
       ex: e,
       c: getCase(e.caseId),
     }))
-    .filter((e) => e.c);
+    .filter((e) => e.c),
+  // Qiyin rejim: faqat murakkab ("schwer") va Oberarzt uchun davolash/asoratlar ma'lumoti bor holatlar
+  isHard = (z) => z.c.difficulty === "schwer" && !!z.c.oberarzt,
+  LEVEL_KEY = "fsp.exam.level",
+  readLevel = () => {
+    try {
+      return localStorage.getItem(LEVEL_KEY) === "hard" ? "hard" : "normal";
+    } catch {
+      return "normal";
+    }
+  };
 
 export function ExamPage() {
   let { addExam: e } = useApp(),
@@ -104,16 +116,48 @@ export function ExamPage() {
     [w, D] = useState(false),
     [g, d] = useState(null),
     [m, v] = useState(null),
-    [term, setTerm] = useState(null),
+    [terms, setTerms] = useState([]),
+    [ddPick, setDdPick] = useState(0),
+    [facts, setFacts] = useState([]),
+    [level, setLevelState] = useState(readLevel),
+    setLevel = (lv) => {
+      setLevelState(lv);
+      try {
+        localStorage.setItem(LEVEL_KEY, lv);
+      } catch {}
+    },
     { canUse: CU } = usePlan(),
-    QS = term ? [...ARZT_ARZT_QUESTIONS, termQuestion(term)] : ARZT_ARZT_QUESTIONS;
+    hard = !!n?.c.hard,
+    passMark = hard ? HARD_PASS_MARK : PASS_MARK,
+    // Oberarzt savollari: asosiy 5 ta + (qiyin rejimda) davolash, asoratlar, DD + Fachbegriff(lar)
+    QS = n
+      ? [
+          ...ARZT_ARZT_QUESTIONS.map((q) => ({ q })),
+          ...(hard ? hardQuestions(n.c, ddPick) : []),
+          ...terms.map((tm) => ({ q: termQuestion(tm), term: tm })),
+        ]
+      : [];
   // Imtihon boshlanishini server hisoblaydi (bepul — 1 marta); rad etsa, Paywall ko‘rinadi
   async function N(z) {
     if (!(await startExam())) return;
-    let k = z ?? Math.floor(Math.random() * EXAM_CASES.length),
-      tr = EXAM_CASES[k].c.terms;
-    setTerm(tr[Math.floor(Math.random() * tr.length)]);
-    (i(EXAM_CASES[k]), s([]), c(""), f([]), b(0), A(""), d(null), v(null), a("t1"));
+    let H = level === "hard",
+      pool = EXAM_CASES.map((_, k) => k).filter((k) => !H || isHard(EXAM_CASES[k])),
+      k = z ?? pool[Math.floor(Math.random() * pool.length)],
+      ex = EXAM_CASES[k],
+      picked = shuffle(ex.c.terms).slice(0, H ? 2 : 1);
+    setTerms(picked);
+    setDdPick(Math.floor(Math.random() * ex.c.differenzialdiagnosen.length));
+    // Qiyin rejimda Teil 2 faktlari aralash tartibda (o'zingiz tartiblaysiz)
+    setFacts(H ? shuffle(ex.ex.facts.slice(1)) : ex.ex.facts.slice(1));
+    (i(H ? { ex: { ...ex.ex, hard: true }, c: { ...ex.c, hard: true } } : ex),
+      s([]),
+      c(""),
+      f([]),
+      b(0),
+      A(""),
+      d(null),
+      v(null),
+      a("t1"));
   }
   async function C(z) {
     if (!n) return;
@@ -123,10 +167,12 @@ export function ExamPage() {
         correctArztbrief(n.ex, r),
         evaluateArztArzt(
           n.c,
-          QS.map((Zs, rg) => ({
-            question: Zs,
+          QS.map((Q, rg) => ({
+            question: Q.q,
             answer: z[rg] ?? "",
-            term: rg === ARZT_ARZT_QUESTIONS.length ? term : undefined,
+            term: Q.term,
+            kind: Q.kind,
+            dd: Q.dd,
           })),
         ),
       ]),
@@ -148,13 +194,14 @@ export function ExamPage() {
       },
       va = clamp(avg(Object.values(Ze))),
       parts = { t1: k.score, t2: O.score, t3: te.score },
-      passed = Object.values(parts).every((P) => P >= PASS_MARK);
+      passed = Object.values(parts).every((P) => P >= passMark);
     (d({
       t1: k,
       t2: O,
       t3: te,
       parts,
       passed,
+      passMark,
     }),
       v(Ze),
       e({
@@ -164,6 +211,7 @@ export function ExamPage() {
         total: va,
         parts,
         passed,
+        level: hard ? "hard" : "normal",
       }),
       D(false),
       a("result"));
@@ -198,6 +246,52 @@ export function ExamPage() {
           </div>
         ) : (
           <div className="card mt-4">
+            <div className="mb-4 grid gap-2 sm:grid-cols-2" role="radiogroup">
+              {[
+                [
+                  "normal",
+                  "🎯",
+                  tr("Oddiy", "Обычный", "Normal", "Standard"),
+                  tr(
+                    "Barcha holatlar, Oberarzt 5 ta savol va 1 ta Fachbegriff so‘raydi. O‘tish chegarasi 60%.",
+                    "Все кейсы, Oberarzt задаёт 5 вопросов и 1 Fachbegriff. Порог — 60%.",
+                    "Tüm vakalar, Oberarzt 5 soru ve 1 Fachbegriff sorar. Geçme sınırı %60.",
+                    "All cases, the Oberarzt asks 5 questions and 1 Fachbegriff. Pass mark 60%.",
+                  ),
+                ],
+                [
+                  "hard",
+                  "🔥",
+                  tr("Qiyin", "Сложный", "Zor", "Hard"),
+                  tr(
+                    "Faqat murakkab holatlar. Bemor ma’lumotni o‘zi aytmaydi, aniq savol berish kerak. Oberarzt davolash, asoratlar va DD’ni ham so‘raydi, 2 ta Fachbegriff. Faktlar aralash tartibda. O‘tish chegarasi 70%.",
+                    "Только сложные кейсы. Пациент сам ничего не рассказывает — нужны точные вопросы. Oberarzt спрашивает и лечение, осложнения, ДД, 2 Fachbegriffe. Факты вперемешку. Порог — 70%.",
+                    "Yalnızca zor vakalar. Hasta bilgiyi kendiliğinden söylemez, net sorular gerekir. Oberarzt tedavi, komplikasyonlar ve ayırıcı tanıyı da sorar, 2 Fachbegriff. Bulgular karışık sırada. Geçme sınırı %70.",
+                    "Hard cases only. The patient volunteers nothing — you must ask precise questions. The Oberarzt also asks about treatment, complications and a DD, plus 2 Fachbegriffe. Facts are shuffled. Pass mark 70%.",
+                  ),
+                ],
+              ].map(([id, icon, name, desc]) => (
+                <button
+                  key={id}
+                  role="radio"
+                  aria-checked={level === id}
+                  onClick={() => setLevel(id)}
+                  className={cx(
+                    "rounded-xl border-2 p-3 text-left text-sm transition",
+                    level === id
+                      ? id === "hard"
+                        ? "border-rose-500 bg-rose-50 dark:bg-rose-950/30"
+                        : "border-teal-500 bg-teal-50 dark:bg-teal-950/30"
+                      : "border-slate-200 hover:border-slate-300 dark:border-slate-700",
+                  )}
+                >
+                  <span className="font-semibold">
+                    {icon} {name}
+                  </span>
+                  <span className="mt-1 block text-xs muted">{desc}</span>
+                </button>
+              ))}
+            </div>
             <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
               <h2 className="section-title mb-0">
                 {tr("Fall tanlang", "Выберите кейс", "Vaka seçin", "Choose a case")}
@@ -206,8 +300,8 @@ export function ExamPage() {
             </div>
             <div className="space-y-4">
               {CASE_SECTIONS.map((sec) => {
-                let items = EXAM_CASES.map((z, k) => [z, k]).filter(([z]) =>
-                  sec.categories.includes(z.c.category),
+                let items = EXAM_CASES.map((z, k) => [z, k]).filter(
+                  ([z]) => sec.categories.includes(z.c.category) && (level !== "hard" || isHard(z)),
                 );
                 return (
                   items.length > 0 && (
@@ -222,7 +316,14 @@ export function ExamPage() {
                             className="rounded-xl border border-slate-200 p-3 text-left text-sm transition hover:border-teal-400 dark:border-slate-700"
                             onClick={() => N(k)}
                           >
-                            <CategoryBadge category={z.c.category} className="!py-0.5 !text-xs" />
+                            <span className="flex items-center justify-between gap-2">
+                              <CategoryBadge category={z.c.category} className="!py-0.5 !text-xs" />
+                              {z.c.difficulty === "schwer" && (
+                                <span className="text-xs" title="schwer" aria-label="schwer">
+                                  🔥
+                                </span>
+                              )}
+                            </span>
                             <span className="mt-2 block font-medium">{z.c.patient.hauptbeschwerde}</span>
                           </button>
                         ))}
@@ -430,7 +531,7 @@ export function ExamPage() {
               )}
             </p>
             <ul className="space-y-2">
-              {n.ex.facts.slice(1).map((z) => (
+              {facts.map((z) => (
                 <li key={z} className="flex gap-2">
                   <span className="text-teal-600">•</span>
                   {z}
@@ -463,7 +564,7 @@ export function ExamPage() {
           <h2 className="section-title">Teil 3 · Arzt-Arzt-Gespräch</h2>
           <div className="space-y-3">
             {QS.slice(0, h + 1).map((z, k) => (
-              <div key={z} className="space-y-2">
+              <div key={z.q} className="space-y-2">
                 <div className="flex gap-2">
                   <span
                     className="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-slate-100 dark:bg-slate-800"
@@ -473,7 +574,7 @@ export function ExamPage() {
                   </span>
                   <p className="rounded-2xl rounded-tl-md bg-slate-100 px-3.5 py-2 text-sm dark:bg-slate-800">
                     <span className="block text-[11px] font-medium muted">Oberarzt</span>
-                    {z}
+                    {z.q}
                   </p>
                 </div>
                 {y[k] !== undefined && (
@@ -548,6 +649,11 @@ export function ExamPage() {
             >
               {g.passed ? "BESTANDEN" : "NICHT BESTANDEN"}
             </h2>
+            {hard && (
+              <p className="mt-1 text-sm font-semibold text-rose-700 dark:text-rose-300">
+                🔥 {tr("Qiyin rejim", "Сложный режим", "Zor mod", "Hard mode")}
+              </p>
+            )}
             <p className="mt-1 text-sm muted">
               {g.passed
                 ? tr(
@@ -569,7 +675,7 @@ export function ExamPage() {
                   key={z}
                   className={cx(
                     "rounded-xl border bg-white p-3 dark:bg-slate-900",
-                    k >= PASS_MARK
+                    k >= g.passMark
                       ? "border-emerald-300 dark:border-emerald-800"
                       : "border-rose-300 dark:border-rose-800",
                   )}
@@ -577,14 +683,14 @@ export function ExamPage() {
                   <div className="text-xs muted">{PART_NAMES[z]}</div>
                   <div className="mt-1 flex items-baseline justify-between">
                     <b className="text-lg">{k}%</b>
-                    <span className={k >= PASS_MARK ? "text-emerald-600" : "text-rose-600"}>
-                      {k >= PASS_MARK
+                    <span className={k >= g.passMark ? "text-emerald-600" : "text-rose-600"}>
+                      {k >= g.passMark
                         ? tr("✓ o‘tdi", "✓ сдано", "✓ geçti", "✓ passed")
                         : tr(
-                            `✗ ${PASS_MARK}% dan past`,
-                            `✗ ниже ${PASS_MARK}%`,
-                            `✗ %${PASS_MARK} altında`,
-                            `✗ below ${PASS_MARK}%`,
+                            `✗ ${g.passMark}% dan past`,
+                            `✗ ниже ${g.passMark}%`,
+                            `✗ %${g.passMark} altında`,
+                            `✗ below ${g.passMark}%`,
                           )}
                     </span>
                   </div>

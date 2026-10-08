@@ -3679,5 +3679,743 @@
       }
     ],
     "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Dieter Hoffmann, 59 Jahre, der sich vom 08.09.2026 bis zum 02.10.2026 in unserer stationären Behandlung befand.\n\nAnamnese:\nDer Patient stellte sich mit seit drei Wochen rezidivierendem Fieber bis 39 °C, Nachtschweiß, ausgeprägter Abgeschlagenheit und einem Gewichtsverlust von 4 kg vor. Fünf Wochen zuvor war eine Zahnextraktion ohne Antibiotikaprophylaxe erfolgt. Vor vier Jahren erhielt er einen biologischen Aortenklappenersatz. Zudem besteht eine arterielle Hypertonie.\n\nBefunde:\nAuskultatorisch fand sich ein neues Diastolikum über der Aortenklappe. An den Fingerkuppen zeigten sich Osler-Knötchen. Laborchemisch fanden sich ein CRP von 145 mg/l und ein Procalcitonin von 1,2 ng/ml. In allen drei Blutkulturpaaren wurde Streptococcus mitis nachgewiesen. In der transösophagealen Echokardiographie zeigte sich eine 9 mm große Vegetation an der Aortenklappenprothese ohne Abszess.\n\nDiagnose:\nProthesenendokarditis der Aortenklappe durch Streptococcus mitis nach Zahnextraktion.\n\nTherapie und Verlauf:\nWir leiteten eine intravenöse Antibiose mit Ceftriaxon ein, in den ersten zwei Wochen ergänzt durch Gentamicin. Ab dem vierten Tag war der Patient fieberfrei, die Entzündungswerte waren rückläufig. Die Antibiose wird für insgesamt sechs Wochen fortgeführt.\n\nProcedere:\nWir empfehlen wöchentliche Kontrollen von Blutbild, CRP und Nierenwerten, eine echokardiographische Kontrolle nach Abschluss der Therapie sowie künftig eine Endokarditisprophylaxe vor zahnärztlichen Eingriffen.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab41",
+    "caseId": "c63",
+    "title": "NSTEMI mit atypischer Symptomatik",
+    "task": "Kardiologiya bo‘limidan uy shifokoriga Arztbrief yozing. Atipik simptomlar, kontrast moddaga allergiya va Metformin bo‘yicha qaroringizni yoritib bering.",
+    "taskRu": "Напишите Arztbrief из кардиологии семейному врачу. Отразите атипичные симптомы, аллергию на контраст и решение по Metformin.",
+    "taskTr": "Kardiyoloji servisinden aile hekimine bir Arztbrief yazın. Atipik belirtileri, kontrast madde alerjisini ve Metformin ile ilgili kararınızı belirtin.",
+    "taskEn": "Write an Arztbrief from cardiology to the GP. Cover the atypical symptoms, the contrast allergy and your decision about metformin.",
+    "facts": [
+      "Patientin: Erika Schulz, 79 Jahre, weiblich",
+      "Aufnahme: 05.10.2026, 13:20 Uhr, Notaufnahme",
+      "Seit 6 h Nausea, Erbrechen, Schwäche, Kaltschweißigkeit, Belastungsdyspnoe; keine Thoraxschmerzen",
+      "Vorerkrankungen: insulinpflichtiger Diabetes mellitus Typ 2 mit Polyneuropathie, Niereninsuffizienz Stadium 3b (eGFR 38 ml/min), arterielle Hypertonie",
+      "Allergie: jodhaltiges Kontrastmittel (generalisierte Urtikaria)",
+      "EKG: ST-Senkungen in V4–V6, keine ST-Hebungen; hs-Troponin T 86 → 412 ng/l",
+      "Echokardiographie: Hypokinesie der Vorderwand, LVEF 45 %",
+      "Therapie: ASS, Ticagrelor, Heparin; Metformin pausiert; Prämedikation mit Prednisolon und Clemastin, Hydrierung; Koronarangiographie: 90%ige RIVA-Stenose → PCI mit Drug-eluting Stent; Kreatinin im Verlauf stabil"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patientin ma’lumotlari (Frau Schulz)",
+        "labelRu": "Данные пациентки (Frau Schulz)",
+        "labelTr": "Hasta bilgileri (Frau Schulz)",
+        "labelEn": "Patient data (Frau Schulz)",
+        "keywords": ["schulz"]
+      },
+      {
+        "label": "Atipik simptomlar: ko‘ngil aynishi, holsizlik, hansirash (atypische Symptomatik)",
+        "labelRu": "Атипичные симптомы: тошнота, слабость, одышка (atypische Symptomatik)",
+        "labelTr": "Atipik belirtiler: bulantı, halsizlik, nefes darlığı (atypische Symptomatik)",
+        "labelEn": "Atypical symptoms: nausea, weakness, breathlessness (atypische Symptomatik)",
+        "keywords": ["nausea", "übelkeit", "schwäche", "dyspnoe", "atypisch"]
+      },
+      {
+        "label": "Ko‘krak og‘rig‘i yo‘q (keine Thoraxschmerzen)",
+        "labelRu": "Боли в груди нет (keine Thoraxschmerzen)",
+        "labelTr": "Göğüs ağrısı yok (keine Thoraxschmerzen)",
+        "labelEn": "No chest pain (keine Thoraxschmerzen)",
+        "keywords": ["keine thoraxschmerzen", "verneint", "ohne thoraxschmerz", "keine thorakalen"]
+      },
+      {
+        "label": "Diabet va polineyropatiya (Diabetes mellitus, Polyneuropathie)",
+        "labelRu": "Диабет и полинейропатия (Diabetes mellitus, Polyneuropathie)",
+        "labelTr": "Diyabet ve polinöropati (Diabetes mellitus, Polyneuropathie)",
+        "labelEn": "Diabetes and polyneuropathy (Diabetes mellitus, Polyneuropathie)",
+        "keywords": ["diabetes", "polyneuropathie"]
+      },
+      {
+        "label": "Buyrak yetishmovchiligi (Niereninsuffizienz)",
+        "labelRu": "Почечная недостаточность (Niereninsuffizienz)",
+        "labelTr": "Böbrek yetmezliği (Niereninsuffizienz)",
+        "labelEn": "Renal insufficiency (Niereninsuffizienz)",
+        "keywords": ["niereninsuffizienz", "egfr", "nierenfunktion"]
+      },
+      {
+        "label": "Kontrast moddaga allergiya (Kontrastmittelallergie)",
+        "labelRu": "Аллергия на контрастное вещество (Kontrastmittelallergie)",
+        "labelTr": "Kontrast madde alerjisi (Kontrastmittelallergie)",
+        "labelEn": "Contrast medium allergy (Kontrastmittelallergie)",
+        "keywords": ["kontrastmittel", "urtikaria"]
+      },
+      {
+        "label": "EKG va troponin dinamikasi (ST-Senkungen, Troponin)",
+        "labelRu": "ЭКГ и динамика тропонина (ST-Senkungen, Troponin)",
+        "labelTr": "EKG ve troponin seyri (ST-Senkungen, Troponin)",
+        "labelEn": "ECG and troponin course (ST-Senkungen, Troponin)",
+        "keywords": ["st-senkung", "troponin"]
+      },
+      {
+        "label": "Diagnoz: NSTEMI",
+        "labelRu": "Диагноз: NSTEMI",
+        "labelTr": "Tanı: NSTEMI",
+        "labelEn": "Diagnosis: NSTEMI",
+        "keywords": ["nstemi", "nicht-st-hebung"]
+      },
+      {
+        "label": "Davolash: premedikatsiya, koronarografiya va stent (Prämedikation, PCI)",
+        "labelRu": "Лечение: премедикация, коронарография и стент (Prämedikation, PCI)",
+        "labelTr": "Tedavi: premedikasyon, koroner anjiyografi ve stent (Prämedikation, PCI)",
+        "labelEn": "Treatment: premedication, coronary angiography and stent (Prämedikation, PCI)",
+        "keywords": ["pci", "stent", "prämedikation"]
+      },
+      {
+        "label": "Tavsiya: Metformin va ikki xil antiagregant (duale Plättchenhemmung)",
+        "labelRu": "Рекомендация: Metformin и двойная антиагрегантная терапия (duale Plättchenhemmung)",
+        "labelTr": "Öneri: Metformin ve ikili antiagregan tedavi (duale Plättchenhemmung)",
+        "labelEn": "Recommendation: metformin and dual antiplatelet therapy (duale Plättchenhemmung)",
+        "keywords": ["metformin", "plättchenhemmung", "ticagrelor"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihre Patientin Frau Erika Schulz, 79 Jahre, die vom 05.10.2026 bis zum 09.10.2026 in unserer kardiologischen Abteilung stationär behandelt wurde.\n\nAnamnese:\nDie Patientin stellte sich mit seit sechs Stunden bestehender Nausea, einmaligem Erbrechen, allgemeiner Schwäche, Kaltschweißigkeit und Belastungsdyspnoe vor. Thorakale Schmerzen wurden verneint. Vorbekannt sind ein insulinpflichtiger Diabetes mellitus Typ 2 mit diabetischer Polyneuropathie, eine chronische Niereninsuffizienz Stadium 3b (eGFR 38 ml/min) sowie eine arterielle Hypertonie. Es besteht eine Allergie gegen jodhaltiges Kontrastmittel (generalisierte Urtikaria).\n\nBefunde:\nIm EKG zeigten sich ST-Senkungen in V4–V6 ohne ST-Hebungen. Das hs-Troponin T stieg von 86 auf 412 ng/l an. Echokardiographisch fand sich eine Hypokinesie der Vorderwand bei einer LVEF von 45 %.\n\nDiagnose:\nNicht-ST-Hebungsinfarkt (NSTEMI) mit atypischer Symptomatik bei diabetischer Polyneuropathie.\n\nTherapie und Verlauf:\nWir leiteten eine duale Plättchenhemmung mit ASS und Ticagrelor sowie eine Antikoagulation mit Heparin ein. Metformin wurde pausiert. Nach Prämedikation mit Prednisolon und Clemastin sowie Hydrierung erfolgte die Koronarangiographie. Hierbei zeigte sich eine 90%ige Stenose des RIVA, die mittels PCI und Implantation eines Drug-eluting Stents versorgt wurde. Eine allergische Reaktion trat nicht auf, das Kreatinin blieb im Verlauf stabil.\n\nProcedere:\nWir empfehlen die duale Plättchenhemmung mit ASS 100 mg und Ticagrelor 90 mg 1-0-1 für zwölf Monate. Metformin sollte erst nach erneuter Kontrolle der Nierenfunktion wieder angesetzt werden. Die Kontrastmittelallergie sollte im Allergiepass dokumentiert sein. Wir bitten um Kontrolle von Kreatinin und Blutzucker in einer Woche sowie um eine kardiologische Rehabilitation.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab42",
+    "caseId": "c64",
+    "title": "Schwere Hyponatriämie unter Thiaziddiuretikum",
+    "task": "Ichki kasalliklar bo‘limidan uy shifokoriga Arztbrief yozing. Giponatriyemiya sabablari va natriyni sekin tiklash muhimligini tushuntiring.",
+    "taskRu": "Напишите Arztbrief из терапевтического отделения семейному врачу. Объясните причины гипонатриемии и важность медленной коррекции натрия.",
+    "taskTr": "Dahiliye servisinden aile hekimine bir Arztbrief yazın. Hiponatreminin nedenlerini ve sodyumun yavaş düzeltilmesinin önemini açıklayın.",
+    "taskEn": "Write an Arztbrief from internal medicine to the GP. Explain the causes of the hyponatraemia and why sodium must be corrected slowly.",
+    "facts": [
+      "Patientin: Margarete Wolf, 83 Jahre, weiblich",
+      "Aufnahme: 03.10.2026, Notaufnahme (Fremdanamnese durch den Sohn)",
+      "Seit 4 Tagen Desorientiertheit, Gangunsicherheit, zwei Stürze ohne Kopfanprall, Nausea, Kopfschmerzen",
+      "Hydrochlorothiazid 25 mg vor 3 Wochen neu angesetzt; Citalopram 20 mg; Trinkmenge 3–4 l/Tag bei salzarmer Kost",
+      "Natrium 116 mmol/l, Serumosmolalität 245 mosmol/kg, Urin-Natrium 48 mmol/l, Kalium 3,2 mmol/l",
+      "cCT: keine Blutung, keine Ischämie; TSH und Cortisol unauffällig",
+      "Therapie: Absetzen von Hydrochlorothiazid, Trinkmengenbeschränkung, NaCl 0,9 %; Natriumanstieg max. 8 mmol/l in 24 h; Natrium bei Entlassung 131 mmol/l, Patientin wieder orientiert"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patientin ma’lumotlari (Frau Wolf)",
+        "labelRu": "Данные пациентки (Frau Wolf)",
+        "labelTr": "Hasta bilgileri (Frau Wolf)",
+        "labelEn": "Patient data (Frau Wolf)",
+        "keywords": ["wolf"]
+      },
+      {
+        "label": "Yaqinlaridan olingan anamnez (Fremdanamnese)",
+        "labelRu": "Анамнез со слов родственников (Fremdanamnese)",
+        "labelTr": "Yakınlardan alınan öykü (Fremdanamnese)",
+        "labelEn": "Collateral history (Fremdanamnese)",
+        "keywords": ["fremdanamnes", "sohn"]
+      },
+      {
+        "label": "Ong chalkashligi va yiqilishlar (Desorientiertheit, Stürze)",
+        "labelRu": "Спутанность сознания и падения (Desorientiertheit, Stürze)",
+        "labelTr": "Bilinç bulanıklığı ve düşmeler (Desorientiertheit, Stürze)",
+        "labelEn": "Confusion and falls (Desorientiertheit, Stürze)",
+        "keywords": ["desorient", "verwirr", "sturz", "stürze"]
+      },
+      {
+        "label": "Tiazid va SSRI dori (Hydrochlorothiazid, Citalopram)",
+        "labelRu": "Тиазид и СИОЗС (Hydrochlorothiazid, Citalopram)",
+        "labelTr": "Tiyazid ve SSRI (Hydrochlorothiazid, Citalopram)",
+        "labelEn": "Thiazide and SSRI (Hydrochlorothiazid, Citalopram)",
+        "keywords": ["hydrochlorothiazid", "thiazid", "citalopram", "hct"]
+      },
+      {
+        "label": "Ko‘p suv ichish, tuzsiz ovqat (Trinkmenge, salzarme Kost)",
+        "labelRu": "Большой объём питья, бессолевая диета (Trinkmenge, salzarme Kost)",
+        "labelTr": "Fazla sıvı alımı, tuzsuz diyet (Trinkmenge, salzarme Kost)",
+        "labelEn": "High fluid intake, low-salt diet (Trinkmenge, salzarme Kost)",
+        "keywords": ["trinkmenge", "salzarm", "liter"]
+      },
+      {
+        "label": "Natriy va osmolyallik (Natrium 116 mmol/l)",
+        "labelRu": "Натрий и осмоляльность (Natrium 116 mmol/l)",
+        "labelTr": "Sodyum ve osmolalite (Natrium 116 mmol/l)",
+        "labelEn": "Sodium and osmolality (Natrium 116 mmol/l)",
+        "keywords": ["116", "natrium", "osmolal"]
+      },
+      {
+        "label": "KT: qon quyilish yo‘q (cCT unauffällig)",
+        "labelRu": "КТ: кровоизлияния нет (cCT unauffällig)",
+        "labelTr": "BT: kanama yok (cCT unauffällig)",
+        "labelEn": "CT: no bleeding (cCT unauffällig)",
+        "keywords": ["cct", "keine blutung"]
+      },
+      {
+        "label": "Diagnoz: og‘ir giponatriyemiya (Hyponatriämie)",
+        "labelRu": "Диагноз: тяжёлая гипонатриемия (Hyponatriämie)",
+        "labelTr": "Tanı: ağır hiponatremi (Hyponatriämie)",
+        "labelEn": "Diagnosis: severe hyponatraemia (Hyponatriämie)",
+        "keywords": ["hyponatriämie"]
+      },
+      {
+        "label": "Natriyni sekin tiklash (max. 8 mmol/l in 24 h)",
+        "labelRu": "Медленная коррекция натрия (max. 8 mmol/l in 24 h)",
+        "labelTr": "Sodyumun yavaş düzeltilmesi (max. 8 mmol/l in 24 h)",
+        "labelEn": "Slow sodium correction (max. 8 mmol/l in 24 h)",
+        "keywords": ["8 mmol", "langsam", "demyelin"]
+      },
+      {
+        "label": "Tavsiya: tiazidni qayta bermaslik, natriyni nazorat (kein Thiazid, Natriumkontrolle)",
+        "labelRu": "Рекомендация: не назначать тиазид, контроль натрия (kein Thiazid, Natriumkontrolle)",
+        "labelTr": "Öneri: tiyazid verilmemeli, sodyum takibi (kein Thiazid, Natriumkontrolle)",
+        "labelEn": "Recommendation: avoid thiazides, monitor sodium (kein Thiazid, Natriumkontrolle)",
+        "keywords": [
+          "kein thiazid",
+          "keine thiazid",
+          "natriumkontrolle",
+          "kontrolle des natriums",
+          "nicht erneut"
+        ]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihre Patientin Frau Margarete Wolf, 83 Jahre, die vom 03.10.2026 bis zum 08.10.2026 in unserer internistischen Abteilung behandelt wurde.\n\nAnamnese:\nFremdanamnestisch berichtete der Sohn über eine seit vier Tagen zunehmende Desorientiertheit, Gangunsicherheit mit zwei Stürzen ohne Kopfanprall sowie Nausea und Kopfschmerzen. Vor drei Wochen war Hydrochlorothiazid 25 mg neu angesetzt worden. Zudem nimmt die Patientin Citalopram 20 mg ein. Wegen der Hitze hatte sie bei salzarmer Kost täglich 3–4 Liter Wasser getrunken.\n\nBefunde:\nLaborchemisch zeigte sich eine schwere Hyponatriämie mit einem Natrium von 116 mmol/l bei einer Serumosmolalität von 245 mosmol/kg und einem Urin-Natrium von 48 mmol/l. Das Kalium lag bei 3,2 mmol/l. In der cCT fanden sich keine Blutung und keine Ischämie. TSH und Cortisol waren unauffällig.\n\nDiagnose:\nSchwere symptomatische hypotone Hyponatriämie, medikamentös bedingt (Thiazid, SSRI) und begünstigt durch eine hohe Trinkmenge bei salzarmer Kost.\n\nTherapie und Verlauf:\nHydrochlorothiazid wurde abgesetzt, die Trinkmenge beschränkt und eine vorsichtige Substitution mit NaCl 0,9 % durchgeführt. Zur Vermeidung einer osmotischen Demyelinisierung wurde der Natriumanstieg auf maximal 8 mmol/l in 24 Stunden begrenzt. Bei Entlassung lag das Natrium bei 131 mmol/l, die Patientin war wieder vollständig orientiert.\n\nProcedere:\nWir empfehlen, kein Thiaziddiuretikum erneut anzusetzen. Die Blutdruckeinstellung erfolgt weiter mit Candesartan. Die Indikation für Citalopram sollte überprüft werden. Wir bitten um eine Kontrolle des Natriums in drei bis vier Tagen sowie um eine Trinkmenge von etwa 1,5 Litern täglich.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab43",
+    "caseId": "c65",
+    "title": "Chronisches Subduralhämatom unter Antikoagulation",
+    "task": "Neyroxirurgiya bo‘limidan uy shifokoriga Arztbrief yozing. Avvalgi yiqilish, antikoagulyatsiya va uni qayta boshlash rejasiga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из нейрохирургии семейному врачу. Обратите внимание на предшествующее падение, антикоагуляцию и план её возобновления.",
+    "taskTr": "Nöroşirürji servisinden aile hekimine bir Arztbrief yazın. Önceki düşmeye, antikoagülasyona ve yeniden başlama planına dikkat edin.",
+    "taskEn": "Write an Arztbrief from neurosurgery to the GP. Pay attention to the earlier fall, the anticoagulation and the plan for restarting it.",
+    "facts": [
+      "Patient: Heinz Krause, 81 Jahre, männlich",
+      "Aufnahme: 01.10.2026, Notaufnahme (Fremdanamnese durch die Ehefrau)",
+      "Seit 3 Wochen progrediente Kopfschmerzen, Wesensänderung, Gangunsicherheit; seit 2 Tagen Beinparese links",
+      "Sturz mit Kopfanprall vor 6 Wochen, damals keine ärztliche Vorstellung",
+      "Vorerkrankungen: Vorhofflimmern (Apixaban 5 mg 1-0-1), arterielle Hypertonie; Alkohol 2–3 Flaschen Bier/Tag",
+      "cCT: chronisches Subduralhämatom rechts frontoparietal, Breite 22 mm, Mittellinienverlagerung 8 mm",
+      "Therapie: Apixaban pausiert, Antagonisierung mit Andexanet alfa; Bohrlochtrepanation mit Drainage; Rückbildung der Parese, Kontroll-CT mit Restbefund"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patient ma’lumotlari (Herr Krause)",
+        "labelRu": "Данные пациента (Herr Krause)",
+        "labelTr": "Hasta bilgileri (Herr Krause)",
+        "labelEn": "Patient data (Herr Krause)",
+        "keywords": ["krause"]
+      },
+      {
+        "label": "Asta-sekin kuchayuvchi simptomlar (progrediente Kopfschmerzen, Wesensänderung)",
+        "labelRu": "Постепенно нарастающие симптомы (progrediente Kopfschmerzen, Wesensänderung)",
+        "labelTr": "Giderek artan belirtiler (progrediente Kopfschmerzen, Wesensänderung)",
+        "labelEn": "Gradually worsening symptoms (progrediente Kopfschmerzen, Wesensänderung)",
+        "keywords": ["progredient", "wesensänderung", "kopfschmerz"]
+      },
+      {
+        "label": "Chap oyoq falaji (Beinparese links)",
+        "labelRu": "Парез левой ноги (Beinparese links)",
+        "labelTr": "Sol bacakta parezi (Beinparese links)",
+        "labelEn": "Left leg weakness (Beinparese links)",
+        "keywords": ["parese", "links"]
+      },
+      {
+        "label": "Olti hafta oldin yiqilish (Sturz mit Kopfanprall)",
+        "labelRu": "Падение шесть недель назад (Sturz mit Kopfanprall)",
+        "labelTr": "Altı hafta önce düşme (Sturz mit Kopfanprall)",
+        "labelEn": "Fall six weeks ago (Sturz mit Kopfanprall)",
+        "keywords": ["sturz", "kopfanprall", "trauma"]
+      },
+      {
+        "label": "Antikoagulyatsiya (Apixaban)",
+        "labelRu": "Антикоагуляция (Apixaban)",
+        "labelTr": "Antikoagülasyon (Apixaban)",
+        "labelEn": "Anticoagulation (Apixaban)",
+        "keywords": ["apixaban", "antikoag", "eliquis"]
+      },
+      {
+        "label": "KT topilmasi (Mittellinienverlagerung)",
+        "labelRu": "Данные КТ (Mittellinienverlagerung)",
+        "labelTr": "BT bulgusu (Mittellinienverlagerung)",
+        "labelEn": "CT finding (Mittellinienverlagerung)",
+        "keywords": ["mittellinie", "22 mm", "cct"]
+      },
+      {
+        "label": "Diagnoz: surunkali subdural gematoma (chronisches Subduralhämatom)",
+        "labelRu": "Диагноз: хроническая субдуральная гематома (chronisches Subduralhämatom)",
+        "labelTr": "Tanı: kronik subdural hematom (chronisches Subduralhämatom)",
+        "labelEn": "Diagnosis: chronic subdural haematoma (chronisches Subduralhämatom)",
+        "keywords": ["subduralhämatom"]
+      },
+      {
+        "label": "Davolash: antikoagulyant ta’sirini bekor qilish va trepanatsiya (Antagonisierung, Bohrlochtrepanation)",
+        "labelRu": "Лечение: отмена антикоагуляции и трепанация (Antagonisierung, Bohrlochtrepanation)",
+        "labelTr": "Tedavi: antikoagülasyonun geri çevrilmesi ve trepanasyon (Antagonisierung, Bohrlochtrepanation)",
+        "labelEn": "Treatment: reversal and burr hole drainage (Antagonisierung, Bohrlochtrepanation)",
+        "keywords": ["andexanet", "antagonis", "bohrloch", "trepanation"]
+      },
+      {
+        "label": "Tavsiya: antikoagulyatsiyani qayta boshlash vaqti (Wiederbeginn der Antikoagulation)",
+        "labelRu": "Рекомендация: сроки возобновления антикоагуляции (Wiederbeginn der Antikoagulation)",
+        "labelTr": "Öneri: antikoagülasyona yeniden başlama zamanı (Wiederbeginn der Antikoagulation)",
+        "labelEn": "Recommendation: timing of restarting anticoagulation (Wiederbeginn der Antikoagulation)",
+        "keywords": ["wiederbeginn", "wieder angesetzt", "erneut", "wiederaufnahme"]
+      },
+      {
+        "label": "Tavsiya: alkogol va yiqilishning oldini olish (Alkoholkarenz, Sturzprophylaxe)",
+        "labelRu": "Рекомендация: алкоголь и профилактика падений (Alkoholkarenz, Sturzprophylaxe)",
+        "labelTr": "Öneri: alkol ve düşme önleme (Alkoholkarenz, Sturzprophylaxe)",
+        "labelEn": "Recommendation: alcohol and fall prevention (Alkoholkarenz, Sturzprophylaxe)",
+        "keywords": ["alkohol", "sturzprophylaxe", "sturzrisiko"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Heinz Krause, 81 Jahre, der vom 01.10.2026 bis zum 09.10.2026 in unserer neurochirurgischen Abteilung behandelt wurde.\n\nAnamnese:\nFremdanamnestisch berichtete die Ehefrau über seit drei Wochen progrediente holozephale Kopfschmerzen, eine Wesensänderung mit Antriebsminderung und eine Gangunsicherheit. Seit zwei Tagen bestand zusätzlich eine Beinparese links. Vor etwa sechs Wochen war der Patient im Badezimmer gestürzt und mit dem Kopf aufgeschlagen, eine ärztliche Vorstellung erfolgte damals nicht. Bei Vorhofflimmern wird der Patient mit Apixaban 5 mg 1-0-1 antikoaguliert. Es besteht ein Alkoholkonsum von 2–3 Flaschen Bier täglich.\n\nBefunde:\nIn der cCT zeigte sich ein chronisches Subduralhämatom rechts frontoparietal mit einer Breite von 22 mm und einer Mittellinienverlagerung von 8 mm.\n\nDiagnose:\nChronisches Subduralhämatom rechts mit Beinparese links nach Bagatelltrauma unter oraler Antikoagulation.\n\nTherapie und Verlauf:\nApixaban wurde pausiert und mit Andexanet alfa antagonisiert. Anschließend erfolgte eine Bohrlochtrepanation mit Drainage. Postoperativ bildete sich die Parese vollständig zurück. Das Kontroll-CT zeigte einen geringen Restbefund.\n\nProcedere:\nÜber den Wiederbeginn der Antikoagulation sollte nach einer erneuten cCT-Kontrolle in vier Wochen interdisziplinär entschieden werden. Wir empfehlen eine Alkoholkarenz sowie Maßnahmen zur Sturzprophylaxe. Bei erneuten Kopfschmerzen oder neurologischen Ausfällen bitten wir um sofortige Wiedervorstellung.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab44",
+    "caseId": "c66",
+    "title": "Akute Mesenterialischämie",
+    "task": "Xirurgiya bo‘limidan uy shifokoriga Arztbrief yozing. Og‘riq va ko‘rik topilmasi orasidagi nomuvofiqlik va antikoagulyatsiya bo‘yicha qarorni yoritib bering.",
+    "taskRu": "Напишите Arztbrief из хирургии семейному врачу. Отразите несоответствие боли и данных осмотра, а также решение по антикоагуляции.",
+    "taskTr": "Cerrahi servisinden aile hekimine bir Arztbrief yazın. Ağrı ile muayene bulgusu arasındaki uyumsuzluğu ve antikoagülasyon kararını belirtin.",
+    "taskEn": "Write an Arztbrief from surgery to the GP. Describe the mismatch between pain and examination findings and the decision on anticoagulation.",
+    "facts": [
+      "Patientin: Ingrid Lorenz, 76 Jahre, weiblich",
+      "Aufnahme: 04.10.2026, 17:40 Uhr, Notaufnahme",
+      "Seit 5 h plötzliche stärkste periumbilikale Bauchschmerzen (NRS 10/10), Erbrechen, seit 1 h blutige Diarrhö",
+      "Abdomen weich, keine Abwehrspannung (Missverhältnis zwischen Schmerz und Befund)",
+      "Vorerkrankungen: Vorhofflimmern, Antikoagulation vor 3 Monaten wegen Sturzneigung abgesetzt; Herzinsuffizienz; pAVK",
+      "Laktat 6,8 mmol/l, Leukozyten 19.000/µl; EKG: absolute Arrhythmie bei Vorhofflimmern",
+      "CT-Angiographie: embolischer Verschluss der A. mesenterica superior",
+      "Therapie: Heparin, notfallmäßige Embolektomie und Resektion von 60 cm nekrotischem Dünndarm, Second-Look-Operation nach 24 h unauffällig"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patientin ma’lumotlari (Frau Lorenz)",
+        "labelRu": "Данные пациентки (Frau Lorenz)",
+        "labelTr": "Hasta bilgileri (Frau Lorenz)",
+        "labelEn": "Patient data (Frau Lorenz)",
+        "keywords": ["lorenz"]
+      },
+      {
+        "label": "To‘satdan juda kuchli qorin og‘rig‘i (stärkste Bauchschmerzen)",
+        "labelRu": "Внезапная сильнейшая боль в животе (stärkste Bauchschmerzen)",
+        "labelTr": "Ani başlayan çok şiddetli karın ağrısı (stärkste Bauchschmerzen)",
+        "labelEn": "Sudden severe abdominal pain (stärkste Bauchschmerzen)",
+        "keywords": ["bauchschmerz", "nrs 10", "10/10"]
+      },
+      {
+        "label": "Og‘riq va ko‘rik topilmasi nomuvofiq (Missverhältnis)",
+        "labelRu": "Несоответствие боли и данных осмотра (Missverhältnis)",
+        "labelTr": "Ağrı ile muayene bulgusu uyumsuz (Missverhältnis)",
+        "labelEn": "Pain out of proportion to examination (Missverhältnis)",
+        "keywords": ["missverhältnis", "weich", "keine abwehrspannung"]
+      },
+      {
+        "label": "Qonli ich ketishi (blutige Diarrhö)",
+        "labelRu": "Кровавая диарея (blutige Diarrhö)",
+        "labelTr": "Kanlı ishal (blutige Diarrhö)",
+        "labelEn": "Bloody diarrhoea (blutige Diarrhö)",
+        "keywords": ["blutig", "diarrhö"]
+      },
+      {
+        "label": "Bo‘lmachalar fibrillyatsiyasi, antikoagulyatsiya to‘xtatilgan (Vorhofflimmern ohne Antikoagulation)",
+        "labelRu": "ФП, антикоагуляция отменена (Vorhofflimmern ohne Antikoagulation)",
+        "labelTr": "AF, antikoagülasyon kesilmiş (Vorhofflimmern ohne Antikoagulation)",
+        "labelEn": "AF, anticoagulation stopped (Vorhofflimmern ohne Antikoagulation)",
+        "keywords": ["vorhofflimmern", "abgesetzt"]
+      },
+      {
+        "label": "Laktat (Laktat 6,8 mmol/l)",
+        "labelRu": "Лактат (Laktat 6,8 mmol/l)",
+        "labelTr": "Laktat (Laktat 6,8 mmol/l)",
+        "labelEn": "Lactate (Laktat 6,8 mmol/l)",
+        "keywords": ["laktat", "6,8"]
+      },
+      {
+        "label": "KT-angiografiya topilmasi (A. mesenterica superior)",
+        "labelRu": "Данные КТ-ангиографии (A. mesenterica superior)",
+        "labelTr": "BT anjiyografi bulgusu (A. mesenterica superior)",
+        "labelEn": "CT angiography finding (A. mesenterica superior)",
+        "keywords": ["mesenterica", "verschluss", "ct-angiographie"]
+      },
+      {
+        "label": "Diagnoz: o‘tkir mezenterial ishemiya (Mesenterialischämie)",
+        "labelRu": "Диагноз: острая мезентериальная ишемия (Mesenterialischämie)",
+        "labelTr": "Tanı: akut mezenter iskemi (Mesenterialischämie)",
+        "labelEn": "Diagnosis: acute mesenteric ischaemia (Mesenterialischämie)",
+        "keywords": ["mesenterialischämie", "mesenterialinfarkt"]
+      },
+      {
+        "label": "Operatsiya: embolektomiya va ichak rezeksiyasi (Embolektomie, Dünndarmresektion)",
+        "labelRu": "Операция: эмболэктомия и резекция кишки (Embolektomie, Dünndarmresektion)",
+        "labelTr": "Ameliyat: embolektomi ve bağırsak rezeksiyonu (Embolektomie, Dünndarmresektion)",
+        "labelEn": "Surgery: embolectomy and bowel resection (Embolektomie, Dünndarmresektion)",
+        "keywords": ["embolektomie", "resektion", "second-look"]
+      },
+      {
+        "label": "Tavsiya: antikoagulyatsiyani qayta boshlash (Wiederbeginn der Antikoagulation)",
+        "labelRu": "Рекомендация: возобновить антикоагуляцию (Wiederbeginn der Antikoagulation)",
+        "labelTr": "Öneri: antikoagülasyona yeniden başlama (Wiederbeginn der Antikoagulation)",
+        "labelEn": "Recommendation: restart anticoagulation (Wiederbeginn der Antikoagulation)",
+        "keywords": ["antikoagulation", "doak", "apixaban"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihre Patientin Frau Ingrid Lorenz, 76 Jahre, die vom 04.10.2026 bis zum 15.10.2026 in unserer chirurgischen Abteilung behandelt wurde.\n\nAnamnese:\nDie Patientin stellte sich mit seit fünf Stunden bestehenden, plötzlich aufgetretenen stärksten periumbilikalen Bauchschmerzen (NRS 10/10), einmaligem Erbrechen und seit einer Stunde blutiger Diarrhö vor. Bei bekanntem Vorhofflimmern war die orale Antikoagulation vor drei Monaten wegen Sturzneigung abgesetzt worden. Zudem bestehen eine Herzinsuffizienz und eine pAVK.\n\nBefunde:\nKlinisch zeigte sich ein weiches Abdomen ohne Abwehrspannung, sodass ein deutliches Missverhältnis zwischen Schmerzintensität und Untersuchungsbefund bestand. Laborchemisch fanden sich ein Laktat von 6,8 mmol/l und eine Leukozytose von 19.000/µl. Im EKG zeigte sich eine absolute Arrhythmie bei Vorhofflimmern. Die CT-Angiographie ergab einen embolischen Verschluss der A. mesenterica superior.\n\nDiagnose:\nAkute embolische Mesenterialischämie bei Vorhofflimmern ohne Antikoagulation.\n\nTherapie und Verlauf:\nNach Einleitung einer Heparintherapie erfolgten notfallmäßig eine Embolektomie sowie die Resektion von 60 cm nekrotischem Dünndarm. Die Second-Look-Operation nach 24 Stunden war unauffällig. Der weitere Verlauf gestaltete sich komplikationslos, der Kostaufbau wurde gut toleriert.\n\nProcedere:\nAufgrund des hohen Embolierisikos empfehlen wir dringend den Wiederbeginn der oralen Antikoagulation mit Apixaban 5 mg 1-0-1; das Sturzrisiko allein stellt keine Kontraindikation dar. Wir bitten um Gewichtskontrollen und um eine Kontrolle von Blutbild und Elektrolyten in einer Woche.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab45",
+    "caseId": "c67",
+    "title": "Addison-Krise (akute Nebenniereninsuffizienz)",
+    "task": "Endokrinologiya bo‘limidan uy shifokoriga Arztbrief yozing. Kriz sababi, doimiy gormon terapiyasi va bemorni o‘qitishga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из эндокринологии семейному врачу. Обратите внимание на причину криза, постоянную гормональную терапию и обучение пациентки.",
+    "taskTr": "Endokrinoloji servisinden aile hekimine bir Arztbrief yazın. Krizin nedenine, kalıcı hormon tedavisine ve hasta eğitimine dikkat edin.",
+    "taskEn": "Write an Arztbrief from endocrinology to the GP. Pay attention to the trigger of the crisis, lifelong hormone therapy and patient education.",
+    "facts": [
+      "Patientin: Julia Neumann, 34 Jahre, weiblich",
+      "Aufnahme: 02.10.2026, Notaufnahme",
+      "Seit 2 Tagen Erbrechen, Diarrhö, Bauchschmerzen; heute Schwäche, orthostatischer Schwindel, Verwirrtheit",
+      "Seit Monaten Müdigkeit, Gewichtsverlust 6 kg, Salzhunger, Hyperpigmentierung (Handlinien, Mundschleimhaut)",
+      "Vorerkrankungen: Hashimoto-Thyreoiditis, Vitiligo",
+      "RR 78/45 mmHg, HF 118/min; Natrium 124 mmol/l, Kalium 6,1 mmol/l, Blutzucker 58 mg/dl",
+      "Cortisol basal 1,2 µg/dl, ACTH 980 pg/ml; 21-Hydroxylase-Antikörper positiv",
+      "Therapie: Hydrocortison 100 mg i. v. Bolus, danach 200 mg/24 h, NaCl 0,9 % und Glukose; Umstellung auf Hydrocortison 15-5-0 mg und Fludrocortison 0,1 mg; Schulung, Notfallausweis"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patientin ma’lumotlari (Frau Neumann)",
+        "labelRu": "Данные пациентки (Frau Neumann)",
+        "labelTr": "Hasta bilgileri (Frau Neumann)",
+        "labelEn": "Patient data (Frau Neumann)",
+        "keywords": ["neumann"]
+      },
+      {
+        "label": "Gastroenterit — krizni qo‘zg‘atgan omil (Gastroenteritis als Auslöser)",
+        "labelRu": "Гастроэнтерит как пусковой фактор (Gastroenteritis als Auslöser)",
+        "labelTr": "Krizi tetikleyen gastroenterit (Gastroenteritis als Auslöser)",
+        "labelEn": "Gastroenteritis as the trigger (Gastroenteritis als Auslöser)",
+        "keywords": ["gastroenteritis", "erbrechen", "diarrhö", "auslöser"]
+      },
+      {
+        "label": "Oylab davom etgan belgilar (Gewichtsverlust, Salzhunger)",
+        "labelRu": "Симптомы в течение месяцев (Gewichtsverlust, Salzhunger)",
+        "labelTr": "Aylardır süren belirtiler (Gewichtsverlust, Salzhunger)",
+        "labelEn": "Symptoms over months (Gewichtsverlust, Salzhunger)",
+        "keywords": ["gewichtsverlust", "salzhunger", "müdigkeit"]
+      },
+      {
+        "label": "Terining qorayishi (Hyperpigmentierung)",
+        "labelRu": "Гиперпигментация (Hyperpigmentierung)",
+        "labelTr": "Ciltte koyulaşma (Hyperpigmentierung)",
+        "labelEn": "Darker skin (Hyperpigmentierung)",
+        "keywords": ["hyperpigment"]
+      },
+      {
+        "label": "Gipotoniya va taxikardiya (RR 78/45 mmHg)",
+        "labelRu": "Гипотония и тахикардия (RR 78/45 mmHg)",
+        "labelTr": "Hipotansiyon ve taşikardi (RR 78/45 mmHg)",
+        "labelEn": "Hypotension and tachycardia (RR 78/45 mmHg)",
+        "keywords": ["78/45", "hypoton", "tachykard"]
+      },
+      {
+        "label": "Elektrolitlar va qondagi qand (Hyponatriämie, Hyperkaliämie, Hypoglykämie)",
+        "labelRu": "Электролиты и глюкоза (Hyponatriämie, Hyperkaliämie, Hypoglykämie)",
+        "labelTr": "Elektrolitler ve kan şekeri (Hyponatriämie, Hyperkaliämie, Hypoglykämie)",
+        "labelEn": "Electrolytes and glucose (Hyponatriämie, Hyperkaliämie, Hypoglykämie)",
+        "keywords": ["124", "6,1", "hyponatri", "hyperkali", "hypoglyk"]
+      },
+      {
+        "label": "Kortizol va AKTG (Cortisol, ACTH)",
+        "labelRu": "Кортизол и АКТГ (Cortisol, ACTH)",
+        "labelTr": "Kortizol ve ACTH (Cortisol, ACTH)",
+        "labelEn": "Cortisol and ACTH (Cortisol, ACTH)",
+        "keywords": ["cortisol", "acth"]
+      },
+      {
+        "label": "Diagnoz: Addison krizi (Addison-Krise)",
+        "labelRu": "Диагноз: аддисонический криз (Addison-Krise)",
+        "labelTr": "Tanı: Addison krizi (Addison-Krise)",
+        "labelEn": "Diagnosis: Addisonian crisis (Addison-Krise)",
+        "keywords": ["addison"]
+      },
+      {
+        "label": "Davolash: gidrokortizon v/i va suyuqlik (Hydrocortison i. v.)",
+        "labelRu": "Лечение: гидрокортизон в/в и инфузия (Hydrocortison i. v.)",
+        "labelTr": "Tedavi: IV hidrokortizon ve sıvı (Hydrocortison i. v.)",
+        "labelEn": "Treatment: IV hydrocortisone and fluids (Hydrocortison i. v.)",
+        "keywords": ["hydrocortison", "100 mg"]
+      },
+      {
+        "label": "Tavsiya: doimiy terapiya, o‘qitish va favqulodda karta (Fludrocortison, Notfallausweis)",
+        "labelRu": "Рекомендация: постоянная терапия, обучение и экстренный паспорт (Fludrocortison, Notfallausweis)",
+        "labelTr": "Öneri: kalıcı tedavi, eğitim ve acil durum kartı (Fludrocortison, Notfallausweis)",
+        "labelEn": "Recommendation: lifelong therapy, education and emergency card (Fludrocortison, Notfallausweis)",
+        "keywords": ["fludrocortison", "notfallausweis", "schulung", "dosisanpassung"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihre Patientin Frau Julia Neumann, 34 Jahre, die vom 02.10.2026 bis zum 08.10.2026 in unserer Klinik behandelt wurde.\n\nAnamnese:\nDie Patientin stellte sich mit seit zwei Tagen bestehendem Erbrechen, Diarrhö und Bauchschmerzen vor. Am Aufnahmetag bestanden eine ausgeprägte Schwäche, orthostatischer Schwindel und Verwirrtheit. Seit Monaten berichtete sie über Müdigkeit, einen ungewollten Gewichtsverlust von 6 kg, Salzhunger und eine Hyperpigmentierung der Haut. Vorbekannt sind eine Hashimoto-Thyreoiditis und eine Vitiligo.\n\nBefunde:\nBei Aufnahme war die Patientin hypoton (RR 78/45 mmHg) und tachykard (HF 118/min). Laborchemisch zeigten sich eine Hyponatriämie (124 mmol/l), eine Hyperkaliämie (6,1 mmol/l) und eine Hypoglykämie (58 mg/dl). Das basale Cortisol war mit 1,2 µg/dl erniedrigt, das ACTH mit 980 pg/ml deutlich erhöht. Die 21-Hydroxylase-Antikörper waren positiv.\n\nDiagnose:\nAddison-Krise bei Erstmanifestation eines autoimmunen Morbus Addison, ausgelöst durch eine Gastroenteritis.\n\nTherapie und Verlauf:\nNach Abnahme von Cortisol und ACTH erhielt die Patientin sofort Hydrocortison 100 mg i. v. als Bolus, gefolgt von 200 mg/24 h, sowie Volumen mit NaCl 0,9 % und Glukose. Darunter normalisierten sich Kreislauf, Elektrolyte und Blutzucker rasch. Anschließend erfolgte die Umstellung auf eine orale Dauertherapie mit Hydrocortison 15-5-0 mg und Fludrocortison 0,1 mg.\n\nProcedere:\nDie Patientin wurde zur Dosisanpassung bei Fieber, Erbrechen und Operationen geschult und erhielt einen Notfallausweis sowie ein Hydrocortison-Notfallset. Wir empfehlen regelmäßige Kontrollen von Elektrolyten und Blutdruck sowie eine endokrinologische Anbindung.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab46",
+    "caseId": "c68",
+    "title": "Malaria tropica nach Westafrika-Reise",
+    "task": "Yuqumli kasalliklar bo‘limidan uy shifokoriga Arztbrief yozing. Safar anamnezi, og‘ir kechish belgilari va xabar berish majburiyatiga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из инфекционного отделения семейному врачу. Обратите внимание на анамнез поездки, признаки тяжёлого течения и обязанность сообщения.",
+    "taskTr": "Enfeksiyon servisinden aile hekimine bir Arztbrief yazın. Seyahat öyküsüne, ağır seyir belirtilerine ve bildirim yükümlülüğüne dikkat edin.",
+    "taskEn": "Write an Arztbrief from infectious diseases to the GP. Pay attention to the travel history, signs of severe disease and the duty to notify.",
+    "facts": [
+      "Patient: Daniel Mensah, 41 Jahre, männlich",
+      "Aufnahme: 06.10.2026, Notaufnahme",
+      "Seit 3 Tagen Fieber bis 40,1 °C mit Schüttelfrost, Kopf- und Gliederschmerzen; seit heute Benommenheit, dunkler Urin",
+      "Reise: 3 Wochen Ghana (Familienbesuch), Rückkehr vor 10 Tagen, keine Malariaprophylaxe",
+      "Dicker Tropfen: Plasmodium falciparum, Parasitämie 6 %; Thrombozyten 42.000/µl, Hb 10,1 g/dl, Bilirubin 3,4 mg/dl, Kreatinin 1,9 mg/dl, Blutzucker 68 mg/dl",
+      "Therapie: Artesunat i. v. auf der Intensivstation, danach Artemether/Lumefantrin oral; Parasitämie nach 72 h negativ",
+      "Meldung an das Gesundheitsamt (nicht namentlich an das RKI) erfolgt"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patient ma’lumotlari (Herr Mensah)",
+        "labelRu": "Данные пациента (Herr Mensah)",
+        "labelTr": "Hasta bilgileri (Herr Mensah)",
+        "labelEn": "Patient data (Herr Mensah)",
+        "keywords": ["mensah"]
+      },
+      {
+        "label": "Qaltirash bilan yuqori isitma (Fieber, Schüttelfrost)",
+        "labelRu": "Высокая лихорадка с ознобом (Fieber, Schüttelfrost)",
+        "labelTr": "Titremeyle yüksek ateş (Fieber, Schüttelfrost)",
+        "labelEn": "High fever with chills (Fieber, Schüttelfrost)",
+        "keywords": ["fieber", "schüttelfrost"]
+      },
+      {
+        "label": "Safar anamnezi: Gana (Reiseanamnese)",
+        "labelRu": "Анамнез поездки: Гана (Reiseanamnese)",
+        "labelTr": "Seyahat öyküsü: Gana (Reiseanamnese)",
+        "labelEn": "Travel history: Ghana (Reiseanamnese)",
+        "keywords": ["ghana", "reise", "westafrika"]
+      },
+      {
+        "label": "Profilaktika qilinmagan (keine Malariaprophylaxe)",
+        "labelRu": "Профилактика не проводилась (keine Malariaprophylaxe)",
+        "labelTr": "Profilaksi yapılmamış (keine Malariaprophylaxe)",
+        "labelEn": "No prophylaxis (keine Malariaprophylaxe)",
+        "keywords": ["prophylaxe"]
+      },
+      {
+        "label": "Qalin tomchi: parazitemiya (Parasitämie 6 %)",
+        "labelRu": "Толстая капля: паразитемия (Parasitämie 6 %)",
+        "labelTr": "Kalın damla: parazitemi (Parasitämie 6 %)",
+        "labelEn": "Thick film: parasitaemia (Parasitämie 6 %)",
+        "keywords": ["parasitämie", "6 %", "dicker tropfen", "falciparum"]
+      },
+      {
+        "label": "Og‘ir kechish belgilari (Thrombozytopenie, Niereninsuffizienz, Benommenheit)",
+        "labelRu": "Признаки тяжёлого течения (Thrombozytopenie, Niereninsuffizienz, Benommenheit)",
+        "labelTr": "Ağır seyir belirtileri (Thrombozytopenie, Niereninsuffizienz, Benommenheit)",
+        "labelEn": "Signs of severe disease (Thrombozytopenie, Niereninsuffizienz, Benommenheit)",
+        "keywords": ["thrombozytopenie", "42.000", "kreatinin", "benommen", "bilirubin"]
+      },
+      {
+        "label": "Diagnoz: asoratli tropik bezgak (komplizierte Malaria tropica)",
+        "labelRu": "Диагноз: осложнённая тропическая малярия (komplizierte Malaria tropica)",
+        "labelTr": "Tanı: komplike tropikal sıtma (komplizierte Malaria tropica)",
+        "labelEn": "Diagnosis: complicated falciparum malaria (komplizierte Malaria tropica)",
+        "keywords": ["malaria tropica", "kompliziert"]
+      },
+      {
+        "label": "Davolash: artesunat v/i (Artesunat)",
+        "labelRu": "Лечение: артесунат в/в (Artesunat)",
+        "labelTr": "Tedavi: IV artesunat (Artesunat)",
+        "labelEn": "Treatment: IV artesunate (Artesunat)",
+        "keywords": ["artesunat"]
+      },
+      {
+        "label": "Sanitariya xizmatiga xabar berish (Meldung an das Gesundheitsamt)",
+        "labelRu": "Уведомление органов здравоохранения (Meldung an das Gesundheitsamt)",
+        "labelTr": "Sağlık müdürlüğüne bildirim (Meldung an das Gesundheitsamt)",
+        "labelEn": "Notification of the health office (Meldung an das Gesundheitsamt)",
+        "keywords": ["meldung", "gesundheitsamt", "rki"]
+      },
+      {
+        "label": "Tavsiya: keyingi safarlarda profilaktika (Reiseberatung)",
+        "labelRu": "Рекомендация: профилактика в будущих поездках (Reiseberatung)",
+        "labelTr": "Öneri: gelecekteki seyahatlerde profilaksi (Reiseberatung)",
+        "labelEn": "Recommendation: prophylaxis on future trips (Reiseberatung)",
+        "keywords": ["reiseberatung", "künftig", "zukünftig", "nächsten reise"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Daniel Mensah, 41 Jahre, der vom 06.10.2026 bis zum 13.10.2026 in unserer Klinik behandelt wurde.\n\nAnamnese:\nDer Patient stellte sich mit seit drei Tagen bestehendem Fieber bis 40,1 °C mit Schüttelfrost sowie Kopf- und Gliederschmerzen vor. Am Aufnahmetag bestanden zusätzlich eine Benommenheit und eine dunkle Verfärbung des Urins. Der Patient war vor zehn Tagen von einem dreiwöchigen Familienbesuch in Ghana zurückgekehrt. Eine Malariaprophylaxe war nicht eingenommen worden.\n\nBefunde:\nIm Dicken Tropfen wurde Plasmodium falciparum mit einer Parasitämie von 6 % nachgewiesen. Laborchemisch zeigten sich eine Thrombozytopenie von 42.000/µl, ein Hämoglobin von 10,1 g/dl, ein Bilirubin von 3,4 mg/dl, ein Kreatinin von 1,9 mg/dl und ein Blutzucker von 68 mg/dl.\n\nDiagnose:\nKomplizierte Malaria tropica (Plasmodium falciparum) nach Reise nach Ghana ohne Prophylaxe.\n\nTherapie und Verlauf:\nWir behandelten den Patienten auf der Intensivstation mit Artesunat i. v. und setzten die Therapie anschließend oral mit Artemether/Lumefantrin fort. Nach 72 Stunden war die Parasitämie negativ. Nierenfunktion, Bilirubin und Thrombozyten normalisierten sich im Verlauf. Die Meldung an das Gesundheitsamt ist erfolgt.\n\nProcedere:\nWir bitten um eine Kontrolle des Blutbildes in einer Woche, da eine verzögerte Hämolyse nach Artesunat auftreten kann. Vor künftigen Reisen in Malariagebiete empfehlen wir eine reisemedizinische Beratung und eine konsequente Chemoprophylaxe.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab47",
+    "caseId": "c69",
+    "title": "Multiples Myelom mit Hyperkalzämie",
+    "task": "Gematologiya bo‘limidan uy shifokoriga Arztbrief yozing. Giperkalsiyemiya, buyrak funksiyasi va NYQP dorilar bo‘yicha tavsiyalarni yoritib bering.",
+    "taskRu": "Напишите Arztbrief из гематологии семейному врачу. Отразите гиперкальциемию, функцию почек и рекомендации по НПВП.",
+    "taskTr": "Hematoloji servisinden aile hekimine bir Arztbrief yazın. Hiperkalsemiyi, böbrek fonksiyonunu ve NSAİİ önerilerini belirtin.",
+    "taskEn": "Write an Arztbrief from haematology to the GP. Cover the hypercalcaemia, kidney function and recommendations about NSAIDs.",
+    "facts": [
+      "Patient: Günter Richter, 68 Jahre, männlich",
+      "Aufnahme: 30.09.2026, Notaufnahme",
+      "Seit 3 Monaten Rückenschmerzen (LWS) mit Ruhe- und Nachtschmerz, Gewichtsverlust 7 kg, gehäufte Infekte",
+      "Seit 2 Wochen Polydipsie, Polyurie, Obstipation, Nausea; seit gestern zeitweise verwirrt",
+      "Ibuprofen 600 mg 1-1-1 seit 4 Wochen (Selbstmedikation)",
+      "Calcium 3,4 mmol/l, Kreatinin 2,3 mg/dl, Hb 9,2 g/dl, Gesamteiweiß erhöht; Elektrophorese: M-Gradient (IgG kappa)",
+      "Low-Dose-CT: multiple Osteolysen (LWK 2, Rippen, Schädel); Knochenmark: 40 % Plasmazellen",
+      "Therapie: NaCl 0,9 % (3 l/Tag), Zoledronat, Absetzen von Ibuprofen; Beginn einer Induktionschemotherapie; Calcium bei Entlassung 2,5 mmol/l, Kreatinin 1,5 mg/dl"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patient ma’lumotlari (Herr Richter)",
+        "labelRu": "Данные пациента (Herr Richter)",
+        "labelTr": "Hasta bilgileri (Herr Richter)",
+        "labelEn": "Patient data (Herr Richter)",
+        "keywords": ["richter"]
+      },
+      {
+        "label": "Tinch holatda va kechasi bel og‘rig‘i (Ruhe- und Nachtschmerz)",
+        "labelRu": "Боль в пояснице в покое и ночью (Ruhe- und Nachtschmerz)",
+        "labelTr": "İstirahatte ve gece bel ağrısı (Ruhe- und Nachtschmerz)",
+        "labelEn": "Back pain at rest and at night (Ruhe- und Nachtschmerz)",
+        "keywords": ["nachtschmerz", "ruheschmerz", "rückenschmerz"]
+      },
+      {
+        "label": "Kuchli chanqoq va ko‘p siyish (Polydipsie, Polyurie)",
+        "labelRu": "Сильная жажда и полиурия (Polydipsie, Polyurie)",
+        "labelTr": "Aşırı susama ve çok idrar (Polydipsie, Polyurie)",
+        "labelEn": "Excessive thirst and urination (Polydipsie, Polyurie)",
+        "keywords": ["polydipsie", "polyurie"]
+      },
+      {
+        "label": "Ong chalkashligi (Verwirrtheit)",
+        "labelRu": "Спутанность сознания (Verwirrtheit)",
+        "labelTr": "Bilinç bulanıklığı (Verwirrtheit)",
+        "labelEn": "Confusion (Verwirrtheit)",
+        "keywords": ["verwirr"]
+      },
+      {
+        "label": "Ibuprofen qabul qilgan (Ibuprofen)",
+        "labelRu": "Принимал ибупрофен (Ibuprofen)",
+        "labelTr": "İbuprofen kullanımı (Ibuprofen)",
+        "labelEn": "Ibuprofen use (Ibuprofen)",
+        "keywords": ["ibuprofen", "nsar"]
+      },
+      {
+        "label": "Giperkalsiyemiya va kreatinin (Calcium 3,4 mmol/l)",
+        "labelRu": "Гиперкальциемия и креатинин (Calcium 3,4 mmol/l)",
+        "labelTr": "Hiperkalsemi ve kreatinin (Calcium 3,4 mmol/l)",
+        "labelEn": "Hypercalcaemia and creatinine (Calcium 3,4 mmol/l)",
+        "keywords": ["3,4", "hyperkalz", "kreatinin"]
+      },
+      {
+        "label": "Paraprotein va osteolizlar (M-Gradient, Osteolysen)",
+        "labelRu": "Парапротеин и остеолизы (M-Gradient, Osteolysen)",
+        "labelTr": "Paraprotein ve osteolizler (M-Gradient, Osteolysen)",
+        "labelEn": "Paraprotein and osteolyses (M-Gradient, Osteolysen)",
+        "keywords": ["m-gradient", "osteolys", "igg", "plasmazell"]
+      },
+      {
+        "label": "Diagnoz: multipl miyeloma (Multiples Myelom)",
+        "labelRu": "Диагноз: множественная миелома (Multiples Myelom)",
+        "labelTr": "Tanı: multipl miyelom (Multiples Myelom)",
+        "labelEn": "Diagnosis: multiple myeloma (Multiples Myelom)",
+        "keywords": ["myelom", "plasmozytom"]
+      },
+      {
+        "label": "Davolash: suyuqlik va bisfosfonat (Hydrierung, Zoledronat)",
+        "labelRu": "Лечение: инфузия и бисфосфонат (Hydrierung, Zoledronat)",
+        "labelTr": "Tedavi: sıvı ve bifosfonat (Hydrierung, Zoledronat)",
+        "labelEn": "Treatment: fluids and bisphosphonate (Hydrierung, Zoledronat)",
+        "keywords": ["zoledronat", "bisphosphonat", "hydrierung"]
+      },
+      {
+        "label": "Tavsiya: NYQP ichmaslik, kalsiy va kreatinin nazorati (NSAR meiden)",
+        "labelRu": "Рекомендация: избегать НПВП, контроль кальция и креатинина (NSAR meiden)",
+        "labelTr": "Öneri: NSAİİ’lerden kaçınma, kalsiyum ve kreatinin takibi (NSAR meiden)",
+        "labelEn": "Recommendation: avoid NSAIDs, monitor calcium and creatinine (NSAR meiden)",
+        "keywords": ["nsar", "keine nsar", "ibuprofen", "nephrotox"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Günter Richter, 68 Jahre, der vom 30.09.2026 bis zum 10.10.2026 in unserer hämatologischen Abteilung behandelt wurde.\n\nAnamnese:\nDer Patient stellte sich mit seit drei Monaten bestehenden Rückenschmerzen im Bereich der LWS mit Ruhe- und Nachtschmerz vor. Seit zwei Wochen bestanden Polydipsie, Polyurie, Obstipation und Nausea, seit dem Vortag zeitweise Verwirrtheit. Zudem berichtete er über einen ungewollten Gewichtsverlust von 7 kg und gehäufte Infekte. Seit vier Wochen nahm er Ibuprofen 600 mg dreimal täglich in Selbstmedikation ein.\n\nBefunde:\nLaborchemisch zeigten sich eine Hyperkalzämie von 3,4 mmol/l, ein Kreatinin von 2,3 mg/dl und eine Anämie mit einem Hämoglobin von 9,2 g/dl. In der Serumeiweißelektrophorese fand sich ein M-Gradient (IgG kappa). Das Low-Dose-CT zeigte multiple Osteolysen in LWK 2, den Rippen und im Schädel. Im Knochenmark lag der Plasmazellanteil bei 40 %.\n\nDiagnose:\nMultiples Myelom (IgG kappa) mit Hyperkalzämie, Niereninsuffizienz, Anämie und Osteolysen.\n\nTherapie und Verlauf:\nWir behandelten die Hyperkalzämie mit forcierter Hydrierung mit NaCl 0,9 % und Zoledronat. Ibuprofen wurde abgesetzt. Darunter fiel das Calcium auf 2,5 mmol/l, das Kreatinin besserte sich auf 1,5 mg/dl, die Verwirrtheit bildete sich zurück. Die Induktionschemotherapie wurde begonnen.\n\nProcedere:\nWir empfehlen dringend, auf NSAR zu verzichten; zur Analgesie eignen sich Metamizol bzw. Opioide. Wir bitten um wöchentliche Kontrollen von Calcium, Kreatinin und Blutbild. Die Weiterbehandlung erfolgt in unserer hämatologischen Ambulanz, eine Stammzelltransplantation wird geprüft.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab48",
+    "caseId": "c70",
+    "title": "Riesenzellarteriitis (Arteriitis temporalis)",
+    "task": "Revmatologiya bo‘limidan uy shifokoriga Arztbrief yozing. Ko‘rish buzilishi, darhol boshlangan steroid terapiyasi va uning nojo‘ya ta’sirlari profilaktikasini yoritib bering.",
+    "taskRu": "Напишите Arztbrief из ревматологии семейному врачу. Отразите нарушение зрения, немедленно начатую терапию стероидами и профилактику её побочных эффектов.",
+    "taskTr": "Romatoloji servisinden aile hekimine bir Arztbrief yazın. Görme bozukluğunu, hemen başlanan steroid tedavisini ve yan etkilerinin önlenmesini belirtin.",
+    "taskEn": "Write an Arztbrief from rheumatology to the GP. Cover the visual disturbance, the immediately started steroid therapy and prevention of its side effects.",
+    "facts": [
+      "Patientin: Renate Becker, 74 Jahre, weiblich",
+      "Aufnahme: 07.10.2026, Notaufnahme",
+      "Seit 3 Wochen neue bitemporale Kopfschmerzen, Kopfhautempfindlichkeit, Claudicatio masticatoria",
+      "Heute 5 Minuten Amaurosis fugax rechts; morgendliche Steifigkeit im Schulter- und Nackenbereich, subfebrile Temperaturen, Gewichtsverlust 3 kg",
+      "A. temporalis rechts verdickt, druckdolent, Puls abgeschwächt",
+      "BSG 92 mm/h, CRP 68 mg/l; Duplexsonographie: Halo-Zeichen beidseits; Fundoskopie: kein Hinweis auf Optikusischämie",
+      "Therapie: sofort Prednisolon 1 mg/kg (60 mg) täglich; Temporalisbiopsie: Riesenzellarteriitis bestätigt; PPI, Calcium/Vitamin D; Kopfschmerzen rückläufig"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patientin ma’lumotlari (Frau Becker)",
+        "labelRu": "Данные пациентки (Frau Becker)",
+        "labelTr": "Hasta bilgileri (Frau Becker)",
+        "labelEn": "Patient data (Frau Becker)",
+        "keywords": ["becker"]
+      },
+      {
+        "label": "Yangi paydo bo‘lgan chakka og‘rig‘i (bitemporale Kopfschmerzen)",
+        "labelRu": "Впервые возникшая височная головная боль (bitemporale Kopfschmerzen)",
+        "labelTr": "Yeni başlayan şakak ağrısı (bitemporale Kopfschmerzen)",
+        "labelEn": "New temporal headache (bitemporale Kopfschmerzen)",
+        "keywords": ["temporal", "kopfschmerz", "schläfe"]
+      },
+      {
+        "label": "Chaynaganda jag‘ og‘rig‘i (Claudicatio masticatoria)",
+        "labelRu": "Боль в челюсти при жевании (Claudicatio masticatoria)",
+        "labelTr": "Çiğnerken çene ağrısı (Claudicatio masticatoria)",
+        "labelEn": "Jaw pain on chewing (Claudicatio masticatoria)",
+        "keywords": ["claudicatio", "kauen", "kiefer"]
+      },
+      {
+        "label": "Vaqtincha ko‘rish yo‘qolishi (Amaurosis fugax)",
+        "labelRu": "Преходящая потеря зрения (Amaurosis fugax)",
+        "labelTr": "Geçici görme kaybı (Amaurosis fugax)",
+        "labelEn": "Transient vision loss (Amaurosis fugax)",
+        "keywords": ["amaurosis", "sehverlust", "sehstörung"]
+      },
+      {
+        "label": "Yelka va bo‘yin qotishi (Polymyalgia rheumatica)",
+        "labelRu": "Скованность плеч и шеи (Polymyalgia rheumatica)",
+        "labelTr": "Omuz ve boyun sertliği (Polymyalgia rheumatica)",
+        "labelEn": "Shoulder and neck stiffness (Polymyalgia rheumatica)",
+        "keywords": ["polymyalgia", "morgensteifigkeit", "steifigkeit"]
+      },
+      {
+        "label": "ECHT va CRP (BSG 92 mm/h, CRP)",
+        "labelRu": "СОЭ и СРБ (BSG 92 mm/h, CRP)",
+        "labelTr": "Sedimantasyon ve CRP (BSG 92 mm/h, CRP)",
+        "labelEn": "ESR and CRP (BSG 92 mm/h, CRP)",
+        "keywords": ["bsg", "crp", "92"]
+      },
+      {
+        "label": "Dupleks UTT: halo belgisi (Halo-Zeichen)",
+        "labelRu": "Дуплексное УЗИ: симптом ореола (Halo-Zeichen)",
+        "labelTr": "Dupleks USG: halo işareti (Halo-Zeichen)",
+        "labelEn": "Duplex ultrasound: halo sign (Halo-Zeichen)",
+        "keywords": ["halo", "duplex"]
+      },
+      {
+        "label": "Diagnoz: gigant hujayrali arteriit (Riesenzellarteriitis)",
+        "labelRu": "Диагноз: гигантоклеточный артериит (Riesenzellarteriitis)",
+        "labelTr": "Tanı: dev hücreli arterit (Riesenzellarteriitis)",
+        "labelEn": "Diagnosis: giant cell arteritis (Riesenzellarteriitis)",
+        "keywords": ["riesenzell", "arteriitis temporalis", "horton"]
+      },
+      {
+        "label": "Darhol yuqori dozali steroid (Prednisolon sofort)",
+        "labelRu": "Немедленно высокие дозы стероидов (Prednisolon sofort)",
+        "labelTr": "Hemen yüksek doz steroid (Prednisolon sofort)",
+        "labelEn": "Immediate high-dose steroids (Prednisolon sofort)",
+        "keywords": ["prednisolon", "glukokortik", "kortison"]
+      },
+      {
+        "label": "Tavsiya: dozani asta kamaytirish va nojo‘ya ta’sirlar profilaktikasi (Ausschleichen, Osteoporoseprophylaxe)",
+        "labelRu": "Рекомендация: постепенное снижение дозы и профилактика побочных эффектов (Ausschleichen, Osteoporoseprophylaxe)",
+        "labelTr": "Öneri: dozun yavaş azaltılması ve yan etki önlemi (Ausschleichen, Osteoporoseprophylaxe)",
+        "labelEn": "Recommendation: slow taper and side-effect prevention (Ausschleichen, Osteoporoseprophylaxe)",
+        "keywords": ["ausschleich", "osteoporose", "vitamin d", "ppi", "blutzucker"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihre Patientin Frau Renate Becker, 74 Jahre, die vom 07.10.2026 bis zum 12.10.2026 in unserer rheumatologischen Abteilung behandelt wurde.\n\nAnamnese:\nDie Patientin stellte sich mit seit drei Wochen bestehenden, neu aufgetretenen bitemporalen Kopfschmerzen, Kopfhautempfindlichkeit und Claudicatio masticatoria vor. Am Aufnahmetag war für etwa fünf Minuten eine Amaurosis fugax rechts aufgetreten. Zusätzlich berichtete sie über eine morgendliche Steifigkeit im Schulter- und Nackenbereich, subfebrile Temperaturen und einen Gewichtsverlust von 3 kg.\n\nBefunde:\nKlinisch war die A. temporalis rechts verdickt und druckdolent bei abgeschwächtem Puls. Laborchemisch zeigten sich eine BSG von 92 mm/h und ein CRP von 68 mg/l. In der Duplexsonographie fand sich beidseits ein Halo-Zeichen. Die Fundoskopie ergab keinen Hinweis auf eine Optikusischämie.\n\nDiagnose:\nRiesenzellarteriitis (Arteriitis temporalis) mit Amaurosis fugax rechts und begleitender Polymyalgia rheumatica.\n\nTherapie und Verlauf:\nNoch vor der Biopsie begannen wir wegen der drohenden Erblindung sofort eine Therapie mit Prednisolon 60 mg täglich. Die Temporalisbiopsie bestätigte die Diagnose. Darunter waren die Kopfschmerzen rasch rückläufig, eine erneute Sehstörung trat nicht auf.\n\nProcedere:\nWir empfehlen ein langsames Ausschleichen des Prednisolons nach Schema unter Kontrolle von BSG und CRP. Zur Prophylaxe der Steroidnebenwirkungen erhält die Patientin einen PPI sowie Calcium und Vitamin D; wir bitten um regelmäßige Kontrollen von Blutzucker und Blutdruck sowie eine Knochendichtemessung. Bei erneuter Sehstörung ist eine sofortige Wiedervorstellung erforderlich.\n\nMit freundlichen kollegialen Grüßen"
   }
 ]

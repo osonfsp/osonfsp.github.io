@@ -1070,6 +1070,19 @@ export const ARZT_ARZT_QUESTIONS = [
   "Wie würden Sie dem Patienten die Diagnose in einfachen Worten erklären?",
 ];
 
+// Qiyin imtihon: Oberarzt qo'shimcha so'raydi — davolash, asoratlar va bitta DD nega kamroq ehtimol
+export const hardQuestions = (c, ddIndex = 0) => {
+  let dd = c.differenzialdiagnosen[ddIndex % c.differenzialdiagnosen.length];
+  return [
+    {
+      kind: "therapie",
+      q: "Wie würden Sie den Patienten initial behandeln? Bitte begründen Sie Ihr Vorgehen.",
+    },
+    { kind: "komplikationen", q: "Mit welchen Komplikationen müssen Sie in diesem Fall rechnen?" },
+    { kind: "ddwhy", dd, q: `Warum halten Sie „${dd}“ in diesem Fall für weniger wahrscheinlich?` },
+  ];
+};
+
 // Teil 3 da Oberarzt odatda bitta Fachbegriff’ni tushuntirishni so‘raydi
 export const termQuestion = (e) => `Was bedeutet der Fachbegriff „${e.de}“? Erklären Sie ihn bitte.`;
 
@@ -1150,9 +1163,10 @@ function evaluateArztArztLocal(e, t) {
     });
   let p = normalize(a(2)),
     A = e.differenzialdiagnosen.filter((E) => p.includes(stem(E))),
-    w = clamp((A.length / 2) * 100);
+    needDD = e.hard ? 3 : 2,
+    w = clamp((A.length / needDD) * 100);
   n.push({
-    status: A.length >= 2 ? "ok" : "warn",
+    status: A.length >= needDD ? "ok" : "warn",
     category: "Differenzialdiagnosen",
     message: tr(
       `${A.length} ta mos DD. Mumkin bo‘lganlar: ${e.differenzialdiagnosen.join(", ")}.`,
@@ -1163,9 +1177,10 @@ function evaluateArztArztLocal(e, t) {
   });
   let D = normalize(a(3)),
     g = e.untersuchungen.filter((E) => D.includes(stem(E))),
-    d = clamp((g.length / 3) * 100);
+    needU = e.hard ? 4 : 3,
+    d = clamp((g.length / needU) * 100);
   n.push({
-    status: g.length >= 3 ? "ok" : "warn",
+    status: g.length >= needU ? "ok" : "warn",
     category: tr("Diagnostika", "Диагностика", "Tanısal işlemler", "Diagnostics"),
     message: tr(
       `${g.length} ta mos tekshiruv. Tavsiya etiladi: ${e.untersuchungen.join(", ")}.`,
@@ -1217,8 +1232,56 @@ function evaluateArztArztLocal(e, t) {
               "The explanation is too short.",
             ),
     });
-  let T = t[5]?.term ? scoreTermAnswer(t[5].term, a(5)) : null;
-  if (T)
+  let extra = [];
+  for (let q of t.filter((x) => x.kind)) {
+    let ans = q.answer ?? "",
+      na = normalize(ans),
+      words = ans.split(/\s+/).filter(Boolean).length;
+    if (q.kind === "therapie" || q.kind === "komplikationen") {
+      let list = e.oberarzt?.[q.kind] ?? [],
+        hits = list.filter((E) => na.includes(stem(E))),
+        sc = clamp((hits.length / 3) * 100);
+      extra.push(sc);
+      n.push({
+        status: hits.length >= 3 ? "ok" : hits.length ? "warn" : "error",
+        category:
+          q.kind === "therapie"
+            ? tr("Davolash", "Лечение", "Tedavi", "Treatment")
+            : tr("Asoratlar", "Осложнения", "Komplikasyonlar", "Complications"),
+        message: tr(
+          `${hits.length} ta mos javob (kamida 3 ta kerak). Kutilgan: ${list.join(", ")}.`,
+          `Совпадений: ${hits.length} (нужно минимум 3). Ожидалось: ${list.join(", ")}.`,
+          `${hits.length} uygun cevap (en az 3 gerekli). Beklenen: ${list.join(", ")}.`,
+          `${hits.length} matching answers (at least 3 needed). Expected: ${list.join(", ")}.`,
+        ),
+      });
+    }
+    if (q.kind === "ddwhy") {
+      let reason = /(weil|\bda\b|spricht|gegen|unwahrscheinlich|fehl|kein|nicht|typisch|eher)/i.test(ans),
+        sc = clamp((reason ? 50 : 0) + (words >= 15 ? 50 : words * 3));
+      extra.push(sc);
+      n.push({
+        status: sc >= 70 ? "ok" : "warn",
+        category: tr("DD ni istisno qilish", "Исключение ДД", "Ayırıcı tanıyı dışlama", "Ruling out a DD"),
+        message:
+          sc >= 70
+            ? tr(
+                `„${q.dd}“ nega kamroq ehtimolligi asoslandi.`,
+                `Объяснено, почему „${q.dd}“ менее вероятен.`,
+                `„${q.dd}“ tanısının neden daha az olası olduğu gerekçelendirildi.`,
+                `You explained why „${q.dd}“ is less likely.`,
+              )
+            : tr(
+                `„${q.dd}“ ni aniq belgilar bilan rad eting: „Gegen … spricht, dass …“, „Es fehlen typische Befunde wie …“.`,
+                `Исключите „${q.dd}“ по конкретным признакам: „Gegen … spricht, dass …“, „Es fehlen typische Befunde wie …“.`,
+                `„${q.dd}“ tanısını somut bulgularla dışlayın: „Gegen … spricht, dass …“, „Es fehlen typische Befunde wie …“.`,
+                `Rule out „${q.dd}“ with specific findings: „Gegen … spricht, dass …“, „Es fehlen typische Befunde wie …“.`,
+              ),
+      });
+    }
+  }
+  let TS = t.filter((x) => x.term).map((x) => ({ x, r: scoreTermAnswer(x.term, x.answer ?? "") }));
+  for (let { x, r: T } of TS)
     n.push({
       status: T.hit && T.score >= 70 ? "ok" : "warn",
       category: tr(
@@ -1229,19 +1292,20 @@ function evaluateArztArztLocal(e, t) {
       ),
       message: T.hit
         ? tr(
-            `„${t[5].term.de}“ to‘g‘ri tushuntirildi.`,
-            `„${t[5].term.de}“ объяснён верно.`,
-            `„${t[5].term.de}“ doğru açıklandı.`,
-            `„${t[5].term.de}“ was explained correctly.`,
+            `„${x.term.de}“ to‘g‘ri tushuntirildi.`,
+            `„${x.term.de}“ объяснён верно.`,
+            `„${x.term.de}“ doğru açıklandı.`,
+            `„${x.term.de}“ was explained correctly.`,
           )
-        : `„${t[5].term.de}“ = „${t[5].term.patient}“ (${loc(t[5].term)}). ${tr("Masalan", "Например", "Örneğin", "For example")}: „Das bedeutet ${t[5].term.patient}.“`,
+        : `„${x.term.de}“ = „${x.term.patient}“ (${loc(x.term)}). ${tr("Masalan", "Например", "Örneğin", "For example")}: „Das bedeutet ${x.term.patient}.“`,
     });
-  let x = {
-    Kommunikation: clamp(avg([c, C])),
-    "Medizinisches Verständnis": clamp(avg(T ? [f, w, d, T.score] : [f, w, d])),
-  };
+  let termScores = TS.map((z) => z.r.score),
+    x = {
+      Kommunikation: clamp(avg([c, C])),
+      "Medizinisches Verständnis": clamp(avg([f, w, d, ...termScores, ...extra])),
+    };
   return {
-    score: clamp(avg(T ? [c, f, w, d, C, T.score] : [c, f, w, d, C])),
+    score: clamp(avg([c, f, w, d, C, ...termScores, ...extra])),
     criteria: x,
     feedback: n,
   };

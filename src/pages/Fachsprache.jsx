@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { PageHeader, ProgressBar } from "../components/ui";
-import { pairs } from "../data/index";
-import { cx, shuffle } from "../lib/utils";
+import { pairs, words } from "../data/index";
+import { cx } from "../lib/utils";
 import { useApp } from "../state/AppContext";
 import { Speak } from "../components/Speak";
-import { loc, tr } from "../lib/i18n";
+import { LANG, loc, tr } from "../lib/i18n";
+import { makeQuestion, quizItems } from "../lib/quiz";
 import { SectionIntro } from "../components/SectionIntro";
 
 function FlipCard({ p: e, known: t, onToggle: a }) {
@@ -72,83 +73,96 @@ function FlipCard({ p: e, known: t, onToggle: a }) {
   );
 }
 
+// Quiz: variantlar to'g'ri javobga o'xshash (src/lib/quiz.js), uch xil yo'nalishda; lug'at so'zlari ham qo'shilgan
+const QUIZ_ITEMS = quizItems(pairs, words),
+  QUIZ_TITLE = {
+    fp: () =>
+      tr(
+        "Fachbegriff’ni bemor tiliga o‘giring",
+        "Переведите Fachbegriff на язык пациента",
+        "Fachbegriff’i hasta diline çevirin",
+        "Translate the Fachbegriff into patient language",
+      ),
+    pf: () =>
+      tr(
+        "Bemor iborasiga mos Fachbegriff’ni tanlang",
+        "Выберите Fachbegriff для фразы пациента",
+        "Hasta ifadesine uygun Fachbegriff’i seçin",
+        "Choose the Fachbegriff for the patient’s phrase",
+      ),
+    lt: () =>
+      tr(
+        "Nemischa atamani tanlang",
+        "Выберите немецкий термин",
+        "Almanca terimi seçin",
+        "Choose the German term",
+      ),
+  };
+
 function PairQuiz() {
-  let e = () => {
-      let c = pairs[Math.floor(Math.random() * pairs.length)],
-        h = shuffle([c, ...shuffle(pairs.filter((b) => b.id !== c.id)).slice(0, 3)]);
-      return {
-        correct: c,
-        options: h,
-      };
-    },
-    [t, a] = useState(e),
+  let next = () => makeQuestion(QUIZ_ITEMS, { lang: LANG }),
+    [t, a] = useState(next),
     [n, i] = useState(null),
-    [l, s] = useState({
-      right: 0,
-      total: 0,
-    }),
-    r = (c) => {
-      if (n) return;
-      (i(c),
-        s((h) => ({
-          right: h.right + (c === t.correct.id ? 1 : 0),
-          total: h.total + 1,
-        })));
+    [l, s] = useState({ right: 0, total: 0 }),
+    r = (k) => {
+      if (n !== null) return;
+      (i(k), s((h) => ({ right: h.right + (k === t.answer ? 1 : 0), total: h.total + 1 })));
     };
   return (
     <div className="card mx-auto max-w-xl">
       <div className="flex items-center justify-between text-sm">
-        <span className="muted">
-          {tr(
-            "Fachbegriff’ni bemor tiliga o‘giring",
-            "Переведите Fachbegriff на язык пациента",
-            "Fachbegriff’i hasta diline çevirin",
-            "Translate the Fachbegriff into patient language",
-          )}
-        </span>
+        <span className="muted">{QUIZ_TITLE[t.kind]()}</span>
         <span className="font-semibold tabular-nums">
           {l.right}/{l.total}
         </span>
       </div>
-      <p className="mt-6 text-center text-3xl font-bold text-slate-900 dark:text-white">{t.correct.fach}</p>
+      <p
+        lang={t.kind === "lt" ? undefined : "de"}
+        className={cx(
+          "mt-6 text-center font-bold text-slate-900 dark:text-white",
+          t.kind === "fp" ? "text-3xl" : "text-xl",
+        )}
+      >
+        {t.kind === "pf" ? `„${t.prompt}“` : t.prompt}
+      </p>
       <div className="mt-6 grid gap-2">
-        {t.options.map((c) => {
-          let h = !n
-            ? ""
-            : c.id === t.correct.id
-              ? "border-emerald-400 bg-emerald-50 dark:bg-emerald-950/40"
-              : c.id === n
-                ? "border-rose-400 bg-rose-50 dark:bg-rose-950/40"
-                : "opacity-60";
+        {t.options.map((c, k) => {
+          let h =
+            n === null
+              ? ""
+              : k === t.answer
+                ? "border-emerald-400 bg-emerald-50 dark:bg-emerald-950/40"
+                : k === n
+                  ? "border-rose-400 bg-rose-50 dark:bg-rose-950/40"
+                  : "opacity-60";
           return (
             <button
-              key={c.id}
+              key={c.text}
+              lang="de"
               className={cx(
                 "rounded-xl border border-slate-200 px-4 py-3 text-left text-sm transition hover:border-teal-400 dark:border-slate-700",
                 h,
               )}
-              onClick={() => r(c.id)}
+              onClick={() => r(k)}
             >
-              {c.patient}
+              {c.text}
             </button>
           );
         })}
       </div>
-      {n && (
+      {n !== null && (
         <div className="mt-5 flex items-center justify-between gap-3">
           <p className="text-sm">
-            {n === t.correct.id
-              ? tr("✅ To‘g‘ri!", "✅ Верно!", "✅ Doğru!", "✅ Correct!")
-              : `❌ ${tr("To‘g‘ri javob", "Правильный ответ", "Doğru cevap", "Correct answer")}: ${t.correct.patient}`}{" "}
-            <span className="muted">
-              {"· "}
-              {loc(t.correct)}
-            </span>
+            {n === t.answer ? tr("✅ To‘g‘ri!", "✅ Верно!", "✅ Doğru!", "✅ Correct!") : "❌"}{" "}
+            <span lang="de">
+              <b>{t.correct.de}</b> = {t.correct.patient}
+            </span>{" "}
+            <span className="muted">· {loc(t.correct)}</span>
           </p>
           <button
             className="btn-primary shrink-0"
             onClick={() => {
-              (a(e()), i(null));
+              (a(next()), i(null));
             }}
           >
             {tr("Keyingi →", "Дальше →", "Sonraki →", "Next →")}

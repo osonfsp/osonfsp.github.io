@@ -2,6 +2,8 @@
 // botdagi ovozli/matnli nemischa mashq (Gemini), admin buyruqlari va ommaviy xabar.
 // Webhook so'rovlari handleUpdate ga, Cloudflare cron (har 5 daqiqa) runCron ga keladi.
 import words from "../src/data/words.json";
+import pairs from "../src/data/pairs.json";
+import { makeQuestion, quizItems, seededRandom } from "../src/lib/quiz.js";
 import { callGemini } from "./gemini.js";
 import { BOT_AI_DAILY_CAP, PLANS, PLAN_PRICES, adminNames, isAdminName, rights } from "./rules.js";
 
@@ -120,11 +122,28 @@ const T = {
     "📅 Bugünkü alıştırmanız hazır: 3 kısa görev (~15 dakika).\n\nHer gün biraz — sınava en iyi hazırlık! 💪",
     "📅 Your practice for today is ready: 3 short tasks (~15 minutes).\n\nA little every day is the best exam preparation! 💪",
   ],
+  // Kun savoli: uch xil yo‘nalish (src/lib/quiz.js makeQuestion)
   quizQ: [
-    (de) => `🧠 Kun savoli: „${de}“ — nima degani?`,
-    (de) => `🧠 Вопрос дня: что значит „${de}“?`,
-    (de) => `🧠 Günün sorusu: „${de}“ ne demek?`,
-    (de) => `🧠 Question of the day: what does „${de}“ mean?`,
+    {
+      fp: (x) => `🧠 Kun savoli: „${x}“ — bemor buni qanday aytadi?`,
+      pf: (x) => `🧠 Kun savoli: bemor „${x}“ desa — qaysi Fachbegriff?`,
+      lt: (x) => `🧠 Kun savoli: „${x}“ nemischa qanday?`,
+    },
+    {
+      fp: (x) => `🧠 Вопрос дня: как пациент скажет „${x}“?`,
+      pf: (x) => `🧠 Вопрос дня: пациент говорит „${x}“ — какой это Fachbegriff?`,
+      lt: (x) => `🧠 Вопрос дня: как по-немецки „${x}“?`,
+    },
+    {
+      fp: (x) => `🧠 Günün sorusu: hasta „${x}“ ifadesini nasıl söyler?`,
+      pf: (x) => `🧠 Günün sorusu: hasta „${x}“ diyorsa — hangi Fachbegriff?`,
+      lt: (x) => `🧠 Günün sorusu: „${x}“ Almancada nedir?`,
+    },
+    {
+      fp: (x) => `🧠 Question of the day: how would a patient say „${x}“?`,
+      pf: (x) => `🧠 Question of the day: the patient says „${x}“ — which Fachbegriff is it?`,
+      lt: (x) => `🧠 Question of the day: what is „${x}“ in German?`,
+    },
   ],
   remindMenu: [
     (cur) => `⏰ Har kuni qaysi soatda eslatma va kun savolini yuboray? (Toshkent vaqti)\n\nHozir: ${cur}`,
@@ -329,38 +348,23 @@ export async function setupBot(env, store, keyB64, workerOrigin) {
   else console.log("bot setup", JSON.stringify(results));
 }
 
-// ---- Kun savoli: lug'atdan so'z, 4 ta javob (to'g'risi + shu kategoriyadan 3 ta) ----
-function rng(seed) {
-  let h = 2166136261;
-  for (let c of String(seed)) h = Math.imul(h ^ c.charCodeAt(0), 16777619);
-  return () => {
-    h = Math.imul(h ^ (h >>> 15), 2246822507);
-    h = Math.imul(h ^ (h >>> 13), 3266489909);
-    return ((h ^= h >>> 16) >>> 0) / 4294967296;
-  };
-}
+// ---- Kun savoli: o‘xshash (chalg‘ituvchi) variantlar bilan, uch xil yo‘nalishda — src/lib/quiz.js ----
+const QUIZ_ITEMS = quizItems(pairs, words);
 
 function makeQuiz(lang, seed) {
-  let r = rng(seed),
-    pool = words.filter((w) => w.de && w[lang]),
-    w = pool[Math.floor(r() * pool.length)],
-    same = pool.filter((x) => x.category === w.category && x[lang] !== w[lang]),
-    others = (same.length >= 3 ? same : pool.filter((x) => x[lang] !== w[lang])).slice(),
-    wrong = [];
-  while (wrong.length < 3 && others.length) {
-    let x = others.splice(Math.floor(r() * others.length), 1)[0];
-    if (!wrong.includes(x[lang])) wrong.push(x[lang]);
-  }
-  let options = [w[lang], ...wrong]
-    .map((t) => [r(), t])
-    .sort((a, b) => a[0] - b[0])
-    .map((x) => x[1]);
+  let q = makeQuestion(QUIZ_ITEMS, { rnd: seededRandom(seed), lang }),
+    c = q.correct;
   return {
     type: "quiz",
-    question: L("quizQ", lang)(w.de),
-    options: options.map((text) => ({ text: text.slice(0, 100) })),
-    correct_option_id: options.indexOf(w[lang]),
-    explanation: (w.example ? `💬 ${w.example}` : w.de).slice(0, 200),
+    question: L("quizQ", lang)[q.kind](q.prompt).slice(0, 300),
+    options: q.options.map((o) => ({ text: o.text.slice(0, 100) })),
+    correct_option_id: q.answer,
+    explanation: `${c.de} = ${c.patient}${c[lang] ? ` · ${c[lang]}` : ""}${
+      c.example
+        ? `
+💬 ${c.example}`
+        : ""
+    }`.slice(0, 200),
   };
 }
 

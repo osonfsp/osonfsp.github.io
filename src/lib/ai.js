@@ -85,6 +85,16 @@ const caseFacts = (c) =>
     ...Object.entries(c.simulation.answers).map(([k, v]) => `- ${k}: ${v}`),
   ].join("\n");
 
+// Qiyin imtihon rejimi: bemor ma'lumotni o'zi bermaydi, chalg'iydi, noaniq javob beradi
+const HARD_PATIENT = `
+
+SCHWIERIGER PATIENT (Prüfungsmodus „schwer“):
+- Du bist nervös und schweifst manchmal kurz vom Thema ab (z. B. Arbeit, Familie, Haustier), kehrst aber zurück, wenn der Arzt nachfragt.
+- Auf offene oder ungenaue Fragen antwortest du vage („Irgendwas für den Blutdruck“, „So seit ein paar Tagen“). Genaue Angaben (Medikamentennamen, Dosierungen, Zeitpunkte, Mengen) nennst du NUR, wenn ausdrücklich und konkret danach gefragt wird.
+- Wichtige Details (abgesetzte Medikamente, Reisen, Stürze, Allergien, Alkohol) erwähnst du nur auf gezielte Nachfrage, nie von dir aus.
+- Ab und zu stellst du selbst besorgte Fragen („Ist das gefährlich?“, „Muss ich operiert werden?“) und erwartest eine einfühlsame Antwort.
+- Fachbegriffe verstehst du grundsätzlich nicht und fragst nach.`;
+
 // ---------- Virtual bemor ----------
 export async function aiPatientReply(caseData, history) {
   let sample = await getSample();
@@ -101,7 +111,7 @@ REGELN:
 - Bleib bei den Falldaten. Fehlt etwas in den Daten, antworte plausibel und unauffällig, ohne neue Krankheiten zu erfinden.
 - Nenne keine Diagnose. Wenn der Arzt nach deiner Vermutung fragt, sag, dass du es nicht weißt und Angst hast.
 - Benutzt der Arzt „du“, reagiere leicht irritiert. Benutzt er Fachbegriffe, frag nach, was das bedeutet.
-- Bei Begrüßung oder Vorstellung: begrüße kurz und nenne deine Hauptbeschwerde.`;
+- Bei Begrüßung oder Vorstellung: begrüße kurz und nenne deine Hauptbeschwerde.${caseData.hard ? HARD_PATIENT : ""}`;
   let turns = [{ role: "user", content: rules }];
   for (let m of history.slice(-24)) {
     let text = String(m.text ?? "").trim();
@@ -117,7 +127,7 @@ REGELN:
 }
 
 // ---------- Baholash: AI izohlari (ballni hozirgi tizim bilan birlashtiramiz) ----------
-async function aiReview(task) {
+async function aiReview(task, hard = false) {
   let sample = await getSample();
   if (!sample) return null;
   let prompt = `Du bist erfahrene/r Prüfer/in der Fachsprachprüfung (FSP, Niveau C1 Medizin) einer deutschen Ärztekammer.
@@ -127,7 +137,11 @@ Antworte NUR mit JSON in genau dieser Form:
 {"score": <Zahl 0-100>, "feedback": [{"status": "ok" | "warn" | "error", "message": "<Text>"}]}
 - Höchstens 7 feedback-Einträge, die wichtigsten zuerst; konkret und hilfreich.
 - Schreibe die message-Texte ${FEEDBACK_LANG}. Zitiere fehlerhafte deutsche Stellen wörtlich und gib die korrigierte deutsche Fassung an.
-- score: realistische Einschätzung nach FSP-Maßstab (60 = gerade bestanden).`;
+- score: realistische Einschätzung nach FSP-Maßstab (${hard ? 70 : 60} = gerade bestanden).${
+    hard
+      ? "\n- STRENGER MASSSTAB (schwere Prüfungssimulation): bewerte wie eine strenge Prüfungskommission. Ungenaue, unvollständige, unbegründete oder sprachlich fehlerhafte Antworten deutlich abwerten."
+      : ""
+  }`;
   try {
     let r = await sample.json(prompt, { modelTier: "default" });
     if (!r || typeof r.score !== "number" || !Array.isArray(r.feedback)) return null;
@@ -160,7 +174,8 @@ export function mergeAI(local, ai) {
 }
 
 export const aiReviewAnamnese = (c, messages, summary) =>
-  aiReview(`Bewerte die ANAMNESE (Teil 1, Arzt-Patienten-Gespräch). Kriterien: Vollständigkeit, Struktur, verständliche Patientensprache, korrekte Höflichkeitsform „Sie“, Grammatik der Fragen.
+  aiReview(
+    `Bewerte die ANAMNESE (Teil 1, Arzt-Patienten-Gespräch). Kriterien: Vollständigkeit, Struktur, verständliche Patientensprache, korrekte Höflichkeitsform „Sie“, Grammatik der Fragen.
 
 Fall: ${c.title} — ${c.patient.hauptbeschwerde}
 
@@ -170,24 +185,36 @@ ${messages
   .join("\n")
   .slice(0, 12000)}
 
-Zusammenfassung des Arztes in Fachsprache: ${summary?.trim() || "(keine)"}`);
+Zusammenfassung des Arztes in Fachsprache: ${summary?.trim() || "(keine)"}`,
+    c.hard,
+  );
 
 export const aiReviewArztbrief = (ex, text) =>
-  aiReview(`Bewerte diesen ARZTBRIEF (Teil 2, Dokumentation). Kriterien: Struktur (Anrede, Anamnese, Befunde, Diagnose, Therapie/Verlauf, Procedere, Grußformel), Vollständigkeit der wichtigen Fakten, Fachsprache, Grammatik und Satzbau.
+  aiReview(
+    `Bewerte diesen ARZTBRIEF (Teil 2, Dokumentation). Kriterien: Struktur (Anrede, Anamnese, Befunde, Diagnose, Therapie/Verlauf, Procedere, Grußformel), Vollständigkeit der wichtigen Fakten, Fachsprache, Grammatik und Satzbau.
 
 Aufgabe: ${ex.title}
 Gegebene Fakten:
 ${ex.facts.join("\n")}
 
 Text des Kandidaten:
-${text.slice(0, 10000)}`);
+${text.slice(0, 10000)}`,
+    ex.hard,
+  );
 
 export const aiReviewArztArzt = (c, answers) =>
-  aiReview(`Bewerte das ARZT-ARZT-GESPRÄCH (Teil 3). Der Kandidat beantwortet Fragen des Oberarztes. Kriterien: strukturierte Patientenvorstellung, begründete Verdachtsdiagnose, sinnvolle Differenzialdiagnosen und Diagnostik, Fachsprache, verständliche Erklärung für den Patienten.
+  aiReview(
+    `Bewerte das ARZT-ARZT-GESPRÄCH (Teil 3). Der Kandidat beantwortet Fragen des Oberarztes. Kriterien: strukturierte Patientenvorstellung, begründete Verdachtsdiagnose, sinnvolle Differenzialdiagnosen und Diagnostik, Fachsprache, verständliche Erklärung für den Patienten.
 
-Fall: ${c.title}. Erwartete Verdachtsdiagnose: ${c.verdachtsdiagnose}. Mögliche DD: ${c.differenzialdiagnosen.join(", ")}. Diagnostik: ${c.untersuchungen.join(", ")}.
+Fall: ${c.title}. Erwartete Verdachtsdiagnose: ${c.verdachtsdiagnose}. Mögliche DD: ${c.differenzialdiagnosen.join(", ")}. Diagnostik: ${c.untersuchungen.join(", ")}.${
+      c.hard && c.oberarzt
+        ? ` Erwartete Therapie: ${c.oberarzt.therapie.join(", ")}. Mögliche Komplikationen: ${c.oberarzt.komplikationen.join(", ")}.`
+        : ""
+    }
 
 ${answers
   .map((a, i) => `Frage ${i + 1}: ${a.question}\nAntwort: ${a.answer || "(keine)"}`)
   .join("\n\n")
-  .slice(0, 10000)}`);
+  .slice(0, 10000)}`,
+    c.hard,
+  );
