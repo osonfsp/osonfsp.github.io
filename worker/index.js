@@ -19,6 +19,7 @@ import redemittel from "../src/data/redemittel.json";
 
 import {
   botLang as botLangOf,
+  sendLangChanged,
   handleUpdate,
   notifyGranted,
   onLogin,
@@ -267,6 +268,17 @@ export default {
       let res = await store.startExam(u.id, FREE_EXAMS, r.planActive);
       if (!res.ok) return reply(402, { error: "exam_limit" });
       return reply(200, { account: account({ ...u, exams_used: res.used }, env) });
+    }
+
+    // Sayt tili ↔ bot tili (src/lib/account.js syncLang): keyinroq tanlangani yutadi
+    if (path === "/lang" && req.method === "POST") {
+      let lang = body?.lang,
+        at = Number(body?.at) || 0;
+      if (!["uz", "ru", "tr", "en"].includes(lang) || at < 0 || at > Date.now() + 864e5)
+        return reply(400, { error: "bad_lang" });
+      let res = await store.syncLang(u.id, lang, at);
+      if (res.changed) ctx.waitUntil(sendLangChanged(env, store, u.id, res.lang).catch(() => {}));
+      return reply(200, { lang: res.lang, at: res.at });
     }
 
     // Tarif so'rovi: adminga bot orqali tugmali xabar, foydalanuvchiga botda tasdiq

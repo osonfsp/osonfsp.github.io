@@ -6,7 +6,8 @@ import { callGemini } from "./gemini.js";
 import { BOT_AI_DAILY_CAP, PLANS, PLAN_PRICES, adminNames, isAdminName, rights } from "./rules.js";
 
 export const SITE_URL = "https://osonfsp.github.io/",
-  BOT_SETUP_VERSION = "2";
+  BOT_SETUP_VERSION = "3",
+  KB_VERSION = 1; // pastki tugmalar paneli versiyasi — o'zgarsa, cron hammaga yangisini yuboradi
 const ADMIN_CONTACT = "https://t.me/de_behzod",
   LANGS = ["uz", "ru", "tr", "en"];
 
@@ -61,10 +62,37 @@ const fmtDate = (ms) => {
 // ---- Matnlar: [uz, ru, tr, en] ----
 const T = {
   welcome: [
-    "Assalomu alaykum! 👋\n\nOsonFSP — shifokorlar uchun Fachsprachprüfung (FSP) ga tayyorgarlik: Fälle, Arztbrief, bemor bilan suhbat simulyatsiyasi, Aufklärung va tibbiy nemis tili.\n\nPastdagi tugmani bosing — sayt shu yerning o‘zida, Telegram ichida ochiladi. Birinchi 24 soat bepul.\n\nBotda yana:\n🎤 nemischa ovozli xabar yuboring — AI tekshirib, xatolarni tuzatib beradi\n🧠 /savol — kun savoli\n⏰ /eslatma — kunlik eslatma vaqti\n🤝 /taklif — do‘stni taklif qiling, ikkalangizga +1 kun\n💳 /tarif — tariflar\n🌐 /til — til",
-    "Здравствуйте! 👋\n\nOsonFSP — подготовка к Fachsprachprüfung (FSP) для врачей: клинические случаи (Fälle), Arztbrief, симуляция разговора с пациентом, Aufklärung и медицинский немецкий.\n\nНажмите кнопку ниже — сайт откроется прямо здесь, в Telegram. Первые 24 часа бесплатно.\n\nЕщё в боте:\n🎤 отправьте голосовое на немецком — ИИ проверит и исправит ошибки\n🧠 /savol — вопрос дня\n⏰ /eslatma — время ежедневного напоминания\n🤝 /taklif — пригласите друга, вам обоим +1 день\n💳 /tarif — тарифы\n🌐 /til — язык",
-    "Merhaba! 👋\n\nOsonFSP — doktorlar için Fachsprachprüfung (FSP) hazırlığı: vakalar (Fälle), Arztbrief, hasta görüşmesi simülasyonu, Aufklärung ve tıbbi Almanca.\n\nAşağıdaki düğmeye basın — site burada, Telegram içinde açılır. İlk 24 saat ücretsiz.\n\nBotta ayrıca:\n🎤 Almanca sesli mesaj gönderin — yapay zekâ kontrol edip hataları düzeltir\n🧠 /savol — günün sorusu\n⏰ /eslatma — günlük hatırlatma saati\n🤝 /taklif — arkadaşınızı davet edin, ikinize de +1 gün\n💳 /tarif — paketler\n🌐 /til — dil",
-    "Hello! 👋\n\nOsonFSP — Fachsprachprüfung (FSP) preparation for doctors: clinical cases (Fälle), Arztbrief, patient conversation simulation, Aufklärung and medical German.\n\nPress the button below — the site opens right here in Telegram. The first 24 hours are free.\n\nAlso in the bot:\n🎤 send a voice message in German — the AI checks it and corrects mistakes\n🧠 /savol — question of the day\n⏰ /eslatma — daily reminder time\n🤝 /taklif — invite a friend, you both get +1 day\n💳 /tarif — plans\n🌐 /til — language",
+    "Assalomu alaykum! 👋\n\nOsonFSP — shifokorlar uchun Fachsprachprüfung (FSP) ga tayyorgarlik: Fälle, Arztbrief, bemor bilan suhbat simulyatsiyasi, Aufklärung va tibbiy nemis tili.\n\nPastdagi tugmani bosing — sayt shu yerning o‘zida, Telegram ichida ochiladi. Birinchi 24 soat bepul.",
+    "Здравствуйте! 👋\n\nOsonFSP — подготовка к Fachsprachprüfung (FSP) для врачей: клинические случаи (Fälle), Arztbrief, симуляция разговора с пациентом, Aufklärung и медицинский немецкий.\n\nНажмите кнопку ниже — сайт откроется прямо здесь, в Telegram. Первые 24 часа бесплатно.",
+    "Merhaba! 👋\n\nOsonFSP — doktorlar için Fachsprachprüfung (FSP) hazırlığı: vakalar (Fälle), Arztbrief, hasta görüşmesi simülasyonu, Aufklärung ve tıbbi Almanca.\n\nAşağıdaki düğmeye basın — site burada, Telegram içinde açılır. İlk 24 saat ücretsiz.",
+    "Hello! 👋\n\nOsonFSP — Fachsprachprüfung (FSP) preparation for doctors: clinical cases (Fälle), Arztbrief, patient conversation simulation, Aufklärung and medical German.\n\nPress the button below — the site opens right here in Telegram. The first 24 hours are free.",
+  ],
+  // Pastki tugmalar paneli (reply keyboard)
+  menu: {
+    open: ["📚 OsonFSP’ni ochish", "📚 Открыть OsonFSP", "📚 OsonFSP’yi aç", "📚 Open OsonFSP"],
+    quiz: ["🧠 Kun savoli", "🧠 Вопрос дня", "🧠 Günün sorusu", "🧠 Question of the day"],
+    ai: ["🎤 AI-mashq", "🎤 ИИ-практика", "🎤 YZ alıştırması", "🎤 AI practice"],
+    remind: ["⏰ Eslatma", "⏰ Напоминание", "⏰ Hatırlatma", "⏰ Reminder"],
+    invite: ["🤝 Do‘stni taklif qilish", "🤝 Пригласить друга", "🤝 Arkadaş davet et", "🤝 Invite a friend"],
+    plans: ["💳 Tariflar", "💳 Тарифы", "💳 Paketler", "💳 Plans"],
+    lang: ["🌐 Til", "🌐 Язык", "🌐 Dil", "🌐 Language"],
+    help: ["❓ Yordam", "❓ Помощь", "❓ Yardım", "❓ Help"],
+  },
+  menuIntro: [
+    "👇 Bot menyusi pastdagi tugmalarda: kun savoli, AI-mashq, eslatma, do‘stni taklif qilish, tariflar va til.",
+    "👇 Меню бота — в кнопках внизу: вопрос дня, ИИ-практика, напоминание, приглашение друга, тарифы и язык.",
+    "👇 Bot menüsü aşağıdaki düğmelerde: günün sorusu, YZ alıştırması, hatırlatma, arkadaş daveti, paketler ve dil.",
+    "👇 The bot menu is in the buttons below: question of the day, AI practice, reminder, invite a friend, plans and language.",
+  ],
+  aiInfo: [
+    (n, cap) =>
+      `🎤 AI-mashq\n\nNemischa ovozli xabar yoki matn yuboring — masalan, bemordan anamnez so‘rang yoki tashxisni tushuntiring. AI nima deganingizni yozib beradi, to‘g‘ri variantini va izohini beradi.\n\nBugun qoldi: ${n} / ${cap}`,
+    (n, cap) =>
+      `🎤 ИИ-практика\n\nОтправьте голосовое или текст на немецком — например, соберите анамнез у пациента или объясните диагноз. ИИ запишет, что вы сказали, даст правильный вариант и комментарий.\n\nОсталось сегодня: ${n} / ${cap}`,
+    (n, cap) =>
+      `🎤 YZ alıştırması\n\nAlmanca sesli mesaj veya metin gönderin — örneğin hastadan anamnez alın veya tanıyı açıklayın. Yapay zekâ ne söylediğinizi yazar, doğru halini ve açıklamasını verir.\n\nBugün kalan: ${n} / ${cap}`,
+    (n, cap) =>
+      `🎤 AI practice\n\nSend a voice message or text in German — for example, take a patient’s history or explain a diagnosis. The AI writes down what you said and gives a corrected version with notes.\n\nLeft today: ${n} / ${cap}`,
   ],
   open: ["📚 OsonFSP’ni ochish", "📚 Открыть OsonFSP", "📚 OsonFSP’yi aç", "📚 Open OsonFSP"],
   today: ["📅 Bugungi mashq", "📅 Практика на сегодня", "📅 Bugünkü alıştırma", "📅 Today’s practice"],
@@ -115,10 +143,10 @@ const T = {
     (h) => `✅ The reminder will come every day at ${h}:00 (Tashkent time).`,
   ],
   remindOff: [
-    "🔕 Eslatmalar o‘chirildi. Qayta yoqish: /eslatma",
-    "🔕 Напоминания выключены. Включить снова: /eslatma",
-    "🔕 Hatırlatmalar kapatıldı. Tekrar açmak için: /eslatma",
-    "🔕 Reminders are off. To turn them on again: /eslatma",
+    "🔕 Eslatmalar o‘chirildi. Qayta yoqish: «⏰ Eslatma» tugmasi.",
+    "🔕 Напоминания выключены. Включить снова: кнопка «⏰ Напоминание».",
+    "🔕 Hatırlatmalar kapatıldı. Tekrar açmak için: «⏰ Hatırlatma» düğmesi.",
+    "🔕 Reminders are off. To turn them on again: the «⏰ Reminder» button.",
   ],
   langMenu: ["🌐 Tilni tanlang:", "🌐 Выберите язык:", "🌐 Dil seçin:", "🌐 Choose a language:"],
   langSet: ["✅ Til: o‘zbekcha", "✅ Язык: русский", "✅ Dil: Türkçe", "✅ Language: English"],
@@ -212,10 +240,10 @@ const T = {
     "The AI is busy right now. Please try again a little later.",
   ],
   help: [
-    "🎤 Nemischa ovozli xabar yoki matn yuboring — tekshirib beraman.\n\n/savol — kun savoli\n/eslatma — eslatma vaqti\n/taklif — do‘stni taklif qilish\n/tarif — tariflar\n/til — til",
-    "🎤 Отправьте голосовое или текст на немецком — я проверю.\n\n/savol — вопрос дня\n/eslatma — время напоминания\n/taklif — пригласить друга\n/tarif — тарифы\n/til — язык",
-    "🎤 Almanca sesli mesaj veya metin gönderin — kontrol edeyim.\n\n/savol — günün sorusu\n/eslatma — hatırlatma saati\n/taklif — arkadaş davet et\n/tarif — paketler\n/til — dil",
-    "🎤 Send a voice message or text in German — I’ll check it.\n\n/savol — question of the day\n/eslatma — reminder time\n/taklif — invite a friend\n/tarif — plans\n/til — language",
+    "❓ Yordam\n\n📚 OsonFSP’ni ochish — sayt Telegram ichida ochiladi (pastki chapdagi «OsonFSP» tugmasi ham shu)\n🧠 Kun savoli — tibbiy so‘z bo‘yicha viktorina\n🎤 AI-mashq — nemischa ovozli xabar yoki matn yuboring, AI tekshiradi\n⏰ Eslatma — har kuni qaysi soatda eslatay\n🤝 Do‘stni taklif qilish — ikkalangizga +1 kun bepul\n💳 Tariflar — tarif tanlash va admin bilan bog‘lanish\n🌐 Til — bot va sayt tili\n\nSavollar bo‘yicha: @de_behzod",
+    "❓ Помощь\n\n📚 Открыть OsonFSP — сайт откроется прямо в Telegram (кнопка «OsonFSP» слева внизу делает то же)\n🧠 Вопрос дня — викторина по медицинскому слову\n🎤 ИИ-практика — отправьте голосовое или текст на немецком, ИИ проверит\n⏰ Напоминание — в какое время напоминать каждый день\n🤝 Пригласить друга — вам обоим +1 день бесплатно\n💳 Тарифы — выбор тарифа и связь с админом\n🌐 Язык — язык бота и сайта\n\nПо вопросам: @de_behzod",
+    "❓ Yardım\n\n📚 OsonFSP’yi aç — site Telegram içinde açılır (sol alttaki «OsonFSP» düğmesi de aynısını yapar)\n🧠 Günün sorusu — tıbbi kelime testi\n🎤 YZ alıştırması — Almanca sesli mesaj veya metin gönderin, yapay zekâ kontrol eder\n⏰ Hatırlatma — her gün saat kaçta hatırlatayım\n🤝 Arkadaş davet et — ikinize de +1 gün ücretsiz\n💳 Paketler — paket seçimi ve yöneticiyle iletişim\n🌐 Dil — bot ve site dili\n\nSorular için: @de_behzod",
+    "❓ Help\n\n📚 Open OsonFSP — the site opens right inside Telegram (the «OsonFSP» button at the bottom left does the same)\n🧠 Question of the day — a quiz on a medical word\n🎤 AI practice — send a voice message or text in German, the AI checks it\n⏰ Reminder — what time to remind you every day\n🤝 Invite a friend — you both get +1 free day\n💳 Plans — choose a plan and contact the admin\n🌐 Language — bot and site language\n\nQuestions: @de_behzod",
   ],
 };
 const L = (key, lang) => T[key][Math.max(0, LANGS.indexOf(lang))];
@@ -232,41 +260,53 @@ const AI_HEAD = {
 // Mini App tugmasi: sahifa ?open=... bilan (src/lib/telegram.js uni ochadi)
 const appBtn = (text, page) => ({ text, web_app: { url: page ? `${SITE_URL}?open=${page}` : SITE_URL } });
 const kb = (...rows) => ({ reply_markup: { inline_keyboard: rows } });
+const li = (lang) => Math.max(0, LANGS.indexOf(lang));
+
+// Pastki tugmalar paneli (doim ko'rinib turadi)
+const menuKb = (lang) => {
+  let m = (k) => ({ text: T.menu[k][li(lang)] });
+  return {
+    reply_markup: {
+      keyboard: [
+        [m("open")],
+        [m("quiz"), m("ai")],
+        [m("remind"), m("invite")],
+        [m("plans"), m("lang"), m("help")],
+      ],
+      resize_keyboard: true,
+      is_persistent: true,
+    },
+  };
+};
+// Tugma matni (istalgan tilda) → amal
+const MENU_ACTION = Object.fromEntries(
+  Object.entries(T.menu).flatMap(([action, labels]) => labels.map((l) => [l, action])),
+);
+const langKb = () =>
+  kb(
+    [
+      { text: "🇺🇿 O‘zbekcha", callback_data: "lang:uz" },
+      { text: "🇷🇺 Русский", callback_data: "lang:ru" },
+    ],
+    [
+      { text: "🇹🇷 Türkçe", callback_data: "lang:tr" },
+      { text: "🇬🇧 English", callback_data: "lang:en" },
+    ],
+  );
+
+// Til o'zgardi (botda yoki saytda) — tasdiq va yangi tildagi tugmalar paneli
+export async function sendLangChanged(env, store, chatId, lang) {
+  let r = await tgApi(env, "sendMessage", { chat_id: chatId, text: L("langSet", lang), ...menuKb(lang) });
+  if (r?.ok) await store.markKb([chatId], KB_VERSION);
+}
 
 // ---- Bot sozlamasi (bir marta yoki BOT_SETUP_VERSION o'zgarganda): webhook, menyu tugmasi, buyruqlar ----
+// "/" menyusida faqat /start — qolgan hamma narsa pastki tugmalarda
 const COMMANDS = {
-  uz: [
-    ["start", "Bosh menyu"],
-    ["savol", "Kun savoli (tibbiy so‘z)"],
-    ["eslatma", "Kunlik eslatma vaqti"],
-    ["taklif", "Do‘stni taklif qilish (+1 kun)"],
-    ["tarif", "Tariflar va to‘lov"],
-    ["til", "Tilni o‘zgartirish"],
-  ],
-  ru: [
-    ["start", "Главное меню"],
-    ["savol", "Вопрос дня (медицинское слово)"],
-    ["eslatma", "Время ежедневного напоминания"],
-    ["taklif", "Пригласить друга (+1 день)"],
-    ["tarif", "Тарифы и оплата"],
-    ["til", "Сменить язык"],
-  ],
-  tr: [
-    ["start", "Ana menü"],
-    ["savol", "Günün sorusu (tıbbi kelime)"],
-    ["eslatma", "Günlük hatırlatma saati"],
-    ["taklif", "Arkadaşını davet et (+1 gün)"],
-    ["tarif", "Paketler ve ödeme"],
-    ["til", "Dili değiştir"],
-  ],
-  en: [
-    ["start", "Main menu"],
-    ["savol", "Question of the day (medical word)"],
-    ["eslatma", "Daily reminder time"],
-    ["taklif", "Invite a friend (+1 day)"],
-    ["tarif", "Plans and payment"],
-    ["til", "Change language"],
-  ],
+  uz: [["start", "Bosh menyu"]],
+  ru: [["start", "Главное меню"]],
+  tr: [["start", "Ana menü"]],
+  en: [["start", "Main menu"]],
 };
 
 export async function setupBot(env, store, keyB64, workerOrigin) {
@@ -512,16 +552,47 @@ export async function handleUpdate(env, store, upd) {
   )
     return adminCommand(env, store, cmd, args, id);
 
-  switch (cmd) {
-    case "start":
+  // Eski buyruqlar ham ishlayveradi (/savol, /eslatma, ...), lekin asosiysi — pastki tugmalar
+  let action =
+    MENU_ACTION[text] ??
+    {
+      start: "start",
+      savol: "quiz",
+      eslatma: "remind",
+      taklif: "invite",
+      tarif: "plans",
+      til: "lang",
+      help: "help",
+      yordam: "help",
+    }[cmd];
+
+  switch (action) {
+    case "start": {
       await send(L("welcome", lang), kb([appBtn(L("open", lang))]));
+      let r = await send(L("menuIntro", lang), menuKb(lang));
+      if (r?.ok) await store.markKb([id], KB_VERSION);
       if (args === "tarif") return showPlans(env, id, lang);
       return;
-    case "savol":
+    }
+    case "open":
+      return send(L("welcome", lang), kb([appBtn(L("open", lang))]));
+    case "quiz":
       return tgApi(env, "sendPoll", { chat_id: id, ...makeQuiz(lang, `${id}-${Date.now()}`) });
-    case "eslatma":
+    case "ai": {
+      let u = await store.getUser(id),
+        r = u && rights(u, env);
+      if (!r?.materials)
+        return send(
+          `${L("needAccess", lang)}${u ? "" : `\n\n${L("needAccount", lang)}`}`,
+          kb([appBtn(L("open", lang))], [{ text: L("plansBtn", lang), callback_data: "plan:menu" }]),
+        );
+      let used = await store.aiUsed(id, `bot-${tashkent(Date.now()).day}`),
+        cap = r.isAdmin ? "∞" : BOT_AI_DAILY_CAP;
+      return send(L("aiInfo", lang)(r.isAdmin ? "∞" : Math.max(0, BOT_AI_DAILY_CAP - used), cap));
+    }
+    case "remind":
       return showRemindMenu(env, id, lang, chat.remind_hour);
-    case "taklif": {
+    case "invite": {
       let link = `https://t.me/${(await botUsername(env, store)) || "osonfsp_bot"}?start=ref_${id}`,
         n = await store.referralCount(id);
       return send(
@@ -534,26 +605,16 @@ export async function handleUpdate(env, store, upd) {
         ]),
       );
     }
-    case "tarif":
+    case "plans":
       return showPlans(env, id, lang);
-    case "til":
-      return send(
-        L("langMenu", lang),
-        kb(
-          [
-            { text: "🇺🇿 O‘zbekcha", callback_data: "lang:uz" },
-            { text: "🇷🇺 Русский", callback_data: "lang:ru" },
-          ],
-          [
-            { text: "🇹🇷 Türkçe", callback_data: "lang:tr" },
-            { text: "🇬🇧 English", callback_data: "lang:en" },
-          ],
-        ),
-      );
+    case "lang":
+      return send(L("langMenu", lang), langKb());
+    case "help":
+      return send(L("help", lang), menuKb(lang));
   }
   if (msg.voice || msg.audio) return practice(env, store, msg, lang, { voice: msg.voice || msg.audio });
   if (text && !cmd) return practice(env, store, msg, lang, { text });
-  return send(L("help", lang), kb([appBtn(L("open", lang))]));
+  return send(L("help", lang), menuKb(lang));
 }
 
 async function botUsername(env, store) {
@@ -608,9 +669,9 @@ async function onCallback(env, store, q) {
     return send(h >= 0 ? L("remindSet", lang)(String(h).padStart(2, "0")) : L("remindOff", lang));
   }
   if (kind === "lang" && LANGS.includes(a)) {
-    await store.setChat(from.id, { lang: a });
+    await store.setChat(from.id, { lang: a, langAt: Date.now() });
     await answer();
-    return send(L("langSet", a), kb([appBtn(L("open", a))]));
+    return sendLangChanged(env, store, from.id, a);
   }
   if (kind === "plan") {
     await answer();
@@ -690,6 +751,18 @@ export async function runCron(env, store) {
       });
     }
     if (done.length) await store.markWarned(kind, done);
+  }
+
+  // 1b) Pastki tugmalar paneli hali bormaganlarga (yangi versiya chiqqanda ham) — bir marta
+  if (budget > 0) {
+    let ids = await store.kbPending(KB_VERSION, Math.min(budget, 12)),
+      done = [];
+    for (let c of ids) {
+      if (budget <= 0) break;
+      done.push(c.id);
+      await send(c.id, "sendMessage", { text: L("menuIntro", c.lang || "uz"), ...menuKb(c.lang || "uz") });
+    }
+    if (done.length) await store.markKb(done, KB_VERSION);
   }
 
   // 2) Ommaviy xabar (admin /xabar bilan boshlagan)

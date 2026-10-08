@@ -41,6 +41,8 @@ const MIGRATIONS = [
   "ALTER TABLE users ADD COLUMN trial_warned INTEGER NOT NULL DEFAULT 0",
   "ALTER TABLE users ADD COLUMN plan_warned INTEGER NOT NULL DEFAULT 0",
   "ALTER TABLE users ADD COLUMN ref_by INTEGER",
+  "ALTER TABLE chats ADD COLUMN lang_at INTEGER NOT NULL DEFAULT 0", // til qachon qo'lda tanlangan (0 — avtomatik)
+  "ALTER TABLE chats ADD COLUMN kb INTEGER NOT NULL DEFAULT 0", // yuborilgan tugmalar paneli versiyasi
 ];
 
 const DAY = 864e5,
@@ -138,11 +140,36 @@ export class Store extends DurableObject {
     return this.one("SELECT * FROM chats WHERE id = ?", id);
   }
 
-  setChat(id, { lang, remindHour }) {
-    if (lang) this.sql.exec("UPDATE chats SET lang = ? WHERE id = ?", lang, id);
+  setChat(id, { lang, langAt = 0, remindHour }) {
+    if (lang) this.sql.exec("UPDATE chats SET lang = ?, lang_at = ? WHERE id = ?", lang, langAt, id);
     if (remindHour !== undefined)
       this.sql.exec("UPDATE chats SET remind_hour = ? WHERE id = ?", remindHour, id);
     return this.getChat(id);
+  }
+
+  // Sayt va bot tili: qaysi biri keyinroq tanlangan bo'lsa — o'sha. at = 0 — avtomatik aniqlangan (tanlanmagan)
+  syncLang(id, lang, at) {
+    let c = this.getChat(id) ?? this.touchChat(id, lang),
+      serverAt = c.lang_at ?? 0;
+    if (at > serverAt || (!at && !serverAt)) {
+      this.sql.exec("UPDATE chats SET lang = ?, lang_at = ? WHERE id = ?", lang, at, id);
+      return { lang, at, changed: c.lang !== lang };
+    }
+    return { lang: c.lang || lang, at: serverAt, changed: false };
+  }
+
+  kbPending(version, limit) {
+    return this.sql
+      .exec("SELECT id, lang FROM chats WHERE blocked = 0 AND kb < ? ORDER BY id LIMIT ?", version, limit)
+      .toArray();
+  }
+
+  markKb(ids, version) {
+    for (let id of ids) this.sql.exec("UPDATE chats SET kb = ? WHERE id = ?", version, id);
+  }
+
+  aiUsed(id, day) {
+    return this.one("SELECT n FROM ai_usage WHERE user_id = ? AND day = ?", id, day)?.n ?? 0;
   }
 
   markBlocked(ids) {

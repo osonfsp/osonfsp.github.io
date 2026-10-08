@@ -1,6 +1,7 @@
 // Interfeys tili: o‘zbekcha (asosiy), ruscha, turkcha yoki inglizcha. Nemischa o‘quv kontenti tarjima qilinmaydi.
 // Til almashtirilganda sahifa qayta yuklanadi — shuning uchun modul darajasidagi matnlar ham to‘g‘ri tilda bo‘ladi.
-const KEY = "fsp.lang";
+const KEY = "fsp.lang",
+  KEY_AT = "fsp.lang_at"; // qachon qo'lda tanlangan — bot tili bilan sinxronlash uchun (src/lib/account.js)
 export const LANGS = [
   { id: "uz", label: "O‘zbekcha", short: "UZ" },
   { id: "ru", label: "Русский", short: "RU" },
@@ -11,7 +12,8 @@ export const LANGS = [
 function detect() {
   try {
     let q = new URLSearchParams(window.location.search).get("lang");
-    if (q && LANGS.some((l) => l.id === q)) return (localStorage.setItem(KEY, q), q);
+    if (q && LANGS.some((l) => l.id === q))
+      return (localStorage.setItem(KEY, q), localStorage.setItem(KEY_AT, String(Date.now())), q);
     let s = localStorage.getItem(KEY);
     if (s && LANGS.some((l) => l.id === s)) return s;
     // O‘zbekistonda telefonlar ko‘pincha ruscha sozlangan — u yerda doim o‘zbekchadan boshlaymiz.
@@ -50,10 +52,24 @@ const SUFFIX = { ru: "Ru", tr: "Tr", en: "En" };
 export const loc = (obj, field = "uz") =>
   LANG === "uz" ? obj?.[field] : (obj?.[field === "uz" ? LANG : field + SUFFIX[LANG]] ?? obj?.[field]);
 
+// Til almashganda serverga (bot tili) xabar beruvchi funksiya — account.js o'rnatadi
+let langHook = null;
+export const onLangChange = (f) => (langHook = f);
+
 export function setLang(id) {
+  let at = Date.now();
   try {
     localStorage.setItem(KEY, id);
+    localStorage.setItem(KEY_AT, String(at));
   } catch {}
+  // Server javobini ko'pi bilan 1.5 s kutamiz, keyin baribir qayta yuklaymiz
+  Promise.race([
+    Promise.resolve(langHook?.(id, at)).catch(() => {}),
+    new Promise((r) => setTimeout(r, 1500)),
+  ]).finally(() => reloadForLang());
+}
+
+function reloadForLang() {
   let u = new URL(window.location.href);
   if (u.searchParams.has("lang")) {
     u.searchParams.delete("lang");

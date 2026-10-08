@@ -2,6 +2,7 @@ import { useSyncExternalStore } from "react";
 import { loadBundledContent, setContent } from "../data/content";
 import { storage } from "./storage";
 import { TG } from "./telegram";
+import { LANG, LANGS, onLangChange } from "./i18n";
 
 // Akkaunt: Telegram orqali kirish (sayt yoki bot ichidagi Mini App), sinov/tarif va materiallar — hammasi serverda (worker/index.js).
 // Brauzerda faqat sessiya tokeni va tezroq ochilishi uchun keshlangan nusxa turadi; huquqlarni
@@ -95,6 +96,7 @@ export async function bootAccount() {
     setContent(cachedContent.data);
     update({ status: "ready", account: cached });
     verifyInBackground(cached);
+    syncLang();
     return;
   }
   try {
@@ -103,6 +105,7 @@ export async function bootAccount() {
     if (account.materials) await fetchContent(account);
     else storage.remove(CONTENT_KEY);
     update({ status: "ready", account, serverProgress: progress });
+    syncLang();
   } catch (e) {
     if (e.status === 401) {
       clearLocal();
@@ -116,6 +119,31 @@ export async function bootAccount() {
     );
   }
 }
+
+// Sayt tili ↔ bot tili: qaysi biri keyinroq qo'lda tanlangan bo'lsa — o'sha (server hal qiladi)
+const LANG_AT_KEY = "fsp.lang_at";
+const langAt = () => {
+  try {
+    return Number(localStorage.getItem(LANG_AT_KEY)) || 0;
+  } catch {
+    return 0;
+  }
+};
+async function syncLang() {
+  let at = langAt();
+  try {
+    let r = await api("/lang", { method: "POST", body: { lang: LANG, at } });
+    if (r.lang !== LANG && r.at > at && LANGS.some((l) => l.id === r.lang)) {
+      localStorage.setItem("fsp.lang", r.lang);
+      localStorage.setItem(LANG_AT_KEY, String(r.at));
+      window.location.reload();
+    }
+  } catch {}
+}
+if (!ARTIFACT)
+  onLangChange((lang, at) =>
+    state.status === "ready" ? api("/lang", { method: "POST", body: { lang, at } }) : null,
+  );
 
 async function verifyInBackground(cached) {
   try {
