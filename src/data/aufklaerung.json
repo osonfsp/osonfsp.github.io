@@ -2854,5 +2854,2880 @@
       }
     ],
     "sample": "Ich verstehe Ihre Bedenken sehr gut. Ihre Mutter kann seit dem Schlaganfall schlecht schlucken, sie verschluckt sich oft und hatte deshalb schon eine Lungenentzündung. Außerdem bekommt sie nicht genug Ernährung. Wir möchten eine Ernährungssonde legen, damit sie ausreichend Nahrung und Flüssigkeit bekommt. Dazu machen wir eine Magenspiegelung und legen über eine kleine Öffnung in der Bauchdecke einen dünnen Schlauch in den Magen. Ihre Mutter bekommt dafür eine Schlafspritze und schläft. Sie darf, wenn die Logopädin zustimmt, weiterhin kleine Mengen zum Genuss probieren. Selten kommt es zu einer Infektion, einer Blutung oder einer Verletzung anderer Organe. Die Stelle muss regelmäßig gereinigt und der Verband gewechselt werden, das zeigt die Pflege Ihnen. Wichtig ist der Wille Ihrer Mutter, und die Sonde kann jederzeit wieder entfernt werden. Haben Sie noch Fragen? Wenn Sie als Betreuerin einverstanden sind, unterschreiben Sie bitte hier."
+  },
+  {
+    "id": "leberbiopsie",
+    "name": "Leberbiopsie (Gewebeprobe aus der Leber)",
+    "uz": "Jigar biopsiyasi (jigardan to‘qima namunasi olish)",
+    "ru": "Биопсия печени (взятие ткани печени)",
+    "tr": "Karaciğer biyopsisi (karaciğerden doku örneği)",
+    "en": "Liver biopsy",
+    "icon": "🧫",
+    "question": "Tut das sehr weh, wenn Sie mit der Nadel in die Leber stechen?",
+    "points": [
+      {
+        "uz": "Maqsad: nima uchun kerak",
+        "ru": "Цель: зачем это нужно",
+        "tr": "Amaç: neden gerekli",
+        "en": "Purpose: why it is needed",
+        "keywords": ["ursache", "genau", "leberwerte", "unter dem mikroskop"]
+      },
+      {
+        "uz": "Jarayon: UTT nazoratida ingichka igna",
+        "ru": "Ход: тонкая игла под контролем УЗИ",
+        "tr": "İşlem: ultrason eşliğinde ince iğne",
+        "en": "Procedure: thin needle under ultrasound",
+        "keywords": ["ultraschall", "nadel", "rechts", "rippen"]
+      },
+      {
+        "uz": "Mahalliy og‘riqsizlantirish",
+        "ru": "Местное обезболивание",
+        "tr": "Lokal anestezi",
+        "en": "Local anaesthetic",
+        "keywords": ["betäub", "örtlich", "kurz"]
+      },
+      {
+        "uz": "Nafasni ushlab turish",
+        "ru": "Задержка дыхания",
+        "tr": "Nefesi tutma",
+        "en": "Holding your breath",
+        "keywords": ["luft anhalten", "atem"]
+      },
+      {
+        "uz": "Xavflar: qon ketish, og‘riq yelkaga",
+        "ru": "Риски: кровотечение, боль в плече",
+        "tr": "Riskler: kanama, omuza yayılan ağrı",
+        "en": "Risks: bleeding, shoulder pain",
+        "keywords": ["blutung", "schulter", "selten"]
+      },
+      {
+        "uz": "Qon ivishini tekshirish, qon suyultiruvchilarni to‘xtatish",
+        "ru": "Проверка свёртываемости, отмена антикоагулянтов",
+        "tr": "Pıhtılaşma kontrolü, kan sulandırıcıların kesilmesi",
+        "en": "Clotting check, pause blood thinners",
+        "keywords": ["gerinnung", "blutverdünn", "pausieren"]
+      },
+      {
+        "uz": "Keyin 4–6 soat yotish va kuzatuv",
+        "ru": "Затем лежать 4–6 часов под наблюдением",
+        "tr": "Sonra 4–6 saat yatış ve gözlem",
+        "en": "Bed rest and monitoring for 4–6 hours",
+        "keywords": ["liegen", "stunden", "beobachten"]
+      },
+      {
+        "uz": "Savollar va rozilik",
+        "ru": "Вопросы и согласие",
+        "tr": "Sorular ve onam",
+        "en": "Questions and consent",
+        "keywords": ["fragen", "einverstanden", "unterschreiben", "einwilligung"]
+      }
+    ],
+    "jargon": [
+      {
+        "re": "perkutan",
+        "fach": "perkutan",
+        "simple": "durch die Haut"
+      },
+      {
+        "re": "histolog",
+        "fach": "Histologie",
+        "simple": "Untersuchung unter dem Mikroskop"
+      },
+      {
+        "re": "koagul|gerinnungsstatus",
+        "fach": "Gerinnungsstatus",
+        "simple": "Blutgerinnung"
+      },
+      {
+        "re": "h[äa]matom",
+        "fach": "Hämatom",
+        "simple": "Bluterguss"
+      },
+      {
+        "re": "zirrhose",
+        "fach": "Zirrhose",
+        "simple": "Vernarbung der Leber"
+      }
+    ],
+    "sample": "Ich verstehe, dass Sie Angst vor der Nadel haben. Ihre Leberwerte sind seit Monaten erhöht, und wir kennen die Ursache noch nicht. Mit einer kleinen Gewebeprobe können wir die Leber unter dem Mikroskop genau untersuchen. Vorher prüfen wir Ihre Blutgerinnung. Ihr Blutverdünner muss einige Tage pausieren. Sie liegen auf dem Rücken. Wir suchen mit dem Ultraschall eine gute Stelle rechts zwischen den Rippen. Dann betäuben wir die Haut örtlich. Das brennt nur kurz. Die Nadel ist sehr dünn. Für wenige Sekunden müssen Sie die Luft anhalten. Die meisten Patienten spüren nur einen kurzen Druck. Selten kommt es zu einer Blutung. Manchmal ziehen leichte Schmerzen in die rechte Schulter. Danach bleiben Sie etwa sechs Stunden liegen, und wir beobachten Puls und Blutdruck. Haben Sie noch Fragen? Wenn Sie einverstanden sind, unterschreiben Sie bitte hier."
+  },
+  {
+    "id": "nierenbiopsie",
+    "name": "Nierenbiopsie (Gewebeprobe aus der Niere)",
+    "uz": "Buyrak biopsiyasi",
+    "ru": "Биопсия почки",
+    "tr": "Böbrek biyopsisi",
+    "en": "Kidney biopsy",
+    "icon": "🫘",
+    "question": "Kann meine Niere durch die Probe kaputtgehen?",
+    "points": [
+      {
+        "uz": "Maqsad: nima uchun kerak",
+        "ru": "Цель: зачем это нужно",
+        "tr": "Amaç: neden gerekli",
+        "en": "Purpose: why it is needed",
+        "keywords": ["eiweiß", "ursache", "behandlung", "unter dem mikroskop"]
+      },
+      {
+        "uz": "Qorin bilan yotib, UTT nazoratida",
+        "ru": "Лёжа на животе под УЗИ",
+        "tr": "Yüzüstü, ultrason eşliğinde",
+        "en": "Lying on your stomach, ultrasound-guided",
+        "keywords": ["bauch", "ultraschall", "rücken"]
+      },
+      {
+        "uz": "Mahalliy og‘riqsizlantirish",
+        "ru": "Местное обезболивание",
+        "tr": "Lokal anestezi",
+        "en": "Local anaesthetic",
+        "keywords": ["betäub", "örtlich"]
+      },
+      {
+        "uz": "Buyrakning juda kichik qismi olinadi",
+        "ru": "Берётся очень маленький кусочек",
+        "tr": "Çok küçük bir parça alınır",
+        "en": "Only a tiny piece is taken",
+        "keywords": ["kleines stück", "winzig", "kaputt", "nicht schaden"]
+      },
+      {
+        "uz": "Xavflar: siydikda qon, qon ketish",
+        "ru": "Риски: кровь в моче, кровотечение",
+        "tr": "Riskler: idrarda kan, kanama",
+        "en": "Risks: blood in urine, bleeding",
+        "keywords": ["blut im urin", "blutung", "selten"]
+      },
+      {
+        "uz": "Keyin 24 soat yotish va siydik nazorati",
+        "ru": "Затем 24 часа постельный режим и контроль мочи",
+        "tr": "Sonra 24 saat yatış ve idrar kontrolü",
+        "en": "24 hours bed rest and urine checks",
+        "keywords": ["24 stunden", "liegen", "urin"]
+      },
+      {
+        "uz": "2 hafta og‘ir yuk ko‘tarmaslik",
+        "ru": "2 недели не поднимать тяжести",
+        "tr": "2 hafta ağır kaldırmama",
+        "en": "No heavy lifting for 2 weeks",
+        "keywords": ["schwer heben", "sport", "zwei wochen"]
+      },
+      {
+        "uz": "Savollar va rozilik",
+        "ru": "Вопросы и согласие",
+        "tr": "Sorular ve onam",
+        "en": "Questions and consent",
+        "keywords": ["fragen", "einverstanden", "unterschreiben", "einwilligung"]
+      }
+    ],
+    "jargon": [
+      {
+        "re": "proteinurie",
+        "fach": "Proteinurie",
+        "simple": "Eiweiß im Urin"
+      },
+      {
+        "re": "glomerulo",
+        "fach": "Glomerulonephritis",
+        "simple": "Entzündung der Nierenkörperchen"
+      },
+      {
+        "re": "makroh[äa]maturie",
+        "fach": "Makrohämaturie",
+        "simple": "sichtbares Blut im Urin"
+      },
+      {
+        "re": "histolog",
+        "fach": "Histologie",
+        "simple": "Untersuchung unter dem Mikroskop"
+      }
+    ],
+    "sample": "Das ist eine berechtigte Frage. Ihre Niere verliert seit einigen Wochen viel Eiweiß. Wir wissen noch nicht, welche Entzündung die Ursache ist. Davon hängt Ihre Behandlung ab. Deshalb möchten wir ein winziges Stück Gewebe unter dem Mikroskop untersuchen. Ihre Niere hat über eine Million kleiner Filter. Das kleine Stück fehlt ihr nicht und wird ihr nicht schaden. Sie liegen auf dem Bauch. Wir suchen die Niere mit dem Ultraschall am Rücken. Die Haut betäuben wir örtlich. Dann nehmen wir mit einer dünnen Nadel zwei kleine Proben. Selten kommt es zu einer Blutung. Dann sehen Sie vielleicht etwas Blut im Urin. Deshalb bleiben Sie danach 24 Stunden liegen, und wir kontrollieren Ihren Urin und Blutdruck. Zwei Wochen sollten Sie nichts Schweres heben und keinen Sport machen. Haben Sie noch Fragen? Sind Sie einverstanden? Dann unterschreiben Sie bitte hier."
+  },
+  {
+    "id": "chemotherapie",
+    "name": "Chemotherapie",
+    "uz": "Kimyoterapiya",
+    "ru": "Химиотерапия",
+    "tr": "Kemoterapi",
+    "en": "Chemotherapy",
+    "icon": "💉",
+    "question": "Werden mir alle Haare ausfallen, und muss ich mich ständig übergeben?",
+    "points": [
+      {
+        "uz": "Maqsad: nima uchun kerak",
+        "ru": "Цель: зачем это нужно",
+        "tr": "Amaç: neden gerekli",
+        "en": "Purpose: why it is needed",
+        "keywords": ["krebszellen", "zerstören", "wachsen", "heilen"]
+      },
+      {
+        "uz": "Tomir orqali kurslar bilan, tanaffuslar bilan",
+        "ru": "Курсами через вену, с перерывами",
+        "tr": "Damardan, aralıklı kürler halinde",
+        "en": "In cycles through a vein, with breaks",
+        "keywords": ["vene", "zyklen", "pause", "infusion"]
+      },
+      {
+        "uz": "Sochning to‘kilishi vaqtinchalik",
+        "ru": "Выпадение волос временное",
+        "tr": "Saç dökülmesi geçici",
+        "en": "Hair loss is temporary",
+        "keywords": ["haare", "wachsen wieder", "perücke"]
+      },
+      {
+        "uz": "Ko‘ngil aynishiga qarshi dorilar",
+        "ru": "Препараты против тошноты",
+        "tr": "Bulantıya karşı ilaçlar",
+        "en": "Medicines against nausea",
+        "keywords": ["übelkeit", "medikamente dagegen", "gut behandeln"]
+      },
+      {
+        "uz": "Infeksiya xavfi, isitmada darhol kelish",
+        "ru": "Риск инфекций, при лихорадке — срочно",
+        "tr": "Enfeksiyon riski, ateşte hemen başvuru",
+        "en": "Infection risk, come at once with fever",
+        "keywords": ["abwehr", "fieber", "sofort"]
+      },
+      {
+        "uz": "Boshqa nojo‘ya ta’sirlar: charchoq, og‘iz yarasi",
+        "ru": "Другие эффекты: усталость, язвочки во рту",
+        "tr": "Diğer yan etkiler: yorgunluk, ağız yaraları",
+        "en": "Other side effects: tiredness, mouth sores",
+        "keywords": ["müdigkeit", "mund", "nebenwirkungen"]
+      },
+      {
+        "uz": "Muntazam qon tahlili",
+        "ru": "Регулярные анализы крови",
+        "tr": "Düzenli kan testleri",
+        "en": "Regular blood tests",
+        "keywords": ["blutbild", "kontroll", "blutwerte"]
+      },
+      {
+        "uz": "Savollar va rozilik",
+        "ru": "Вопросы и согласие",
+        "tr": "Sorular ve onam",
+        "en": "Questions and consent",
+        "keywords": ["fragen", "einverstanden", "unterschreiben", "einwilligung"]
+      }
+    ],
+    "jargon": [
+      {
+        "re": "zytostatik",
+        "fach": "Zytostatika",
+        "simple": "Medikamente gegen Krebszellen"
+      },
+      {
+        "re": "neutropen|leukopen",
+        "fach": "Neutropenie",
+        "simple": "zu wenige Abwehrzellen"
+      },
+      {
+        "re": "alopezie",
+        "fach": "Alopezie",
+        "simple": "Haarausfall"
+      },
+      {
+        "re": "emesis|antiemet",
+        "fach": "Antiemetika",
+        "simple": "Medikamente gegen Übelkeit"
+      },
+      {
+        "re": "mukositis",
+        "fach": "Mukositis",
+        "simple": "wunde Mundschleimhaut"
+      }
+    ],
+    "sample": "Ich verstehe Ihre Sorgen sehr gut. Die Chemotherapie soll die Krebszellen zerstören, die noch im Körper sein können. So möchten wir Sie heilen. Sie bekommen die Medikamente als Infusion über eine Vene. Das dauert einige Stunden. Danach machen Sie drei Wochen Pause. Insgesamt sind sechs Zyklen geplant. Ja, die Haare werden wahrscheinlich ausfallen. Sie wachsen nach der Therapie aber wieder nach. Wenn Sie möchten, verschreiben wir Ihnen eine Perücke. Übelkeit können wir heute gut behandeln. Sie bekommen vorher Medikamente dagegen. Weitere Nebenwirkungen sind Müdigkeit und manchmal wunde Stellen im Mund. Die Therapie schwächt auch Ihre Abwehr. Wenn Sie Fieber über 38 Grad haben, kommen Sie bitte sofort ins Krankenhaus. Vor jedem Zyklus kontrollieren wir Ihre Blutwerte. Was möchten Sie noch fragen? Wenn Sie einverstanden sind, unterschreiben Sie bitte die Einwilligung."
+  },
+  {
+    "id": "strahlentherapie",
+    "name": "Strahlentherapie",
+    "uz": "Nur terapiyasi",
+    "ru": "Лучевая терапия",
+    "tr": "Radyoterapi (ışın tedavisi)",
+    "en": "Radiotherapy",
+    "icon": "☢️",
+    "question": "Bin ich nach der Bestrahlung radioaktiv? Kann ich dann meine Enkel umarmen?",
+    "points": [
+      {
+        "uz": "Maqsad: nima uchun kerak",
+        "ru": "Цель: зачем это нужно",
+        "tr": "Amaç: neden gerekli",
+        "en": "Purpose: why it is needed",
+        "keywords": ["tumorzellen", "zerstören", "rückfall", "operation"]
+      },
+      {
+        "uz": "Har kuni bir necha daqiqa, bir necha hafta",
+        "ru": "Ежедневно по несколько минут, несколько недель",
+        "tr": "Her gün birkaç dakika, birkaç hafta",
+        "en": "A few minutes daily over several weeks",
+        "keywords": ["jeden tag", "minuten", "wochen", "werktag"]
+      },
+      {
+        "uz": "Og‘riqsiz, hech narsa sezilmaydi",
+        "ru": "Безболезненно, ничего не ощущается",
+        "tr": "Ağrısız, hiçbir şey hissedilmez",
+        "en": "Painless, you feel nothing",
+        "keywords": ["spüren nichts", "schmerzfrei", "tut nicht weh"]
+      },
+      {
+        "uz": "Radioaktiv bo‘lmaysiz",
+        "ru": "Вы не станете радиоактивным",
+        "tr": "Radyoaktif olmazsınız",
+        "en": "You do not become radioactive",
+        "keywords": ["nicht radioaktiv", "umarmen", "enkel"]
+      },
+      {
+        "uz": "Teri qizarishi va parvarishi",
+        "ru": "Покраснение кожи и уход",
+        "tr": "Cilt kızarıklığı ve bakımı",
+        "en": "Skin redness and care",
+        "keywords": ["haut", "rötung", "creme", "sonnenbrand"]
+      },
+      {
+        "uz": "Charchoq",
+        "ru": "Усталость",
+        "tr": "Yorgunluk",
+        "en": "Tiredness",
+        "keywords": ["müde", "erschöpft"]
+      },
+      {
+        "uz": "Belgilar terida qolishi kerak",
+        "ru": "Разметку на коже не смывать",
+        "tr": "Ciltteki işaretler silinmemeli",
+        "en": "Skin markings must stay",
+        "keywords": ["markierung", "nicht abwaschen"]
+      },
+      {
+        "uz": "Savollar va rozilik",
+        "ru": "Вопросы и согласие",
+        "tr": "Sorular ve onam",
+        "en": "Questions and consent",
+        "keywords": ["fragen", "einverstanden", "unterschreiben", "einwilligung"]
+      }
+    ],
+    "jargon": [
+      {
+        "re": "radiatio|radiotherap",
+        "fach": "Radiatio",
+        "simple": "Bestrahlung"
+      },
+      {
+        "re": "fraktion",
+        "fach": "Fraktionen",
+        "simple": "einzelne Sitzungen"
+      },
+      {
+        "re": "dermatitis",
+        "fach": "Radiodermatitis",
+        "simple": "Hautrötung durch die Bestrahlung"
+      },
+      {
+        "re": "fatigue",
+        "fach": "Fatigue",
+        "simple": "starke Müdigkeit"
+      },
+      {
+        "re": "adjuvant",
+        "fach": "adjuvant",
+        "simple": "zur Sicherheit nach der Operation"
+      }
+    ],
+    "sample": "Nein, keine Sorge. Sie werden durch die Bestrahlung nicht radioaktiv. Sie können Ihre Enkel ganz normal umarmen. Nach der Operation können noch einzelne Tumorzellen in der Brust sein. Die Bestrahlung soll diese Zellen zerstören und einen Rückfall verhindern. Sie kommen an jedem Werktag zu uns, insgesamt etwa fünf Wochen. Die Bestrahlung selbst dauert nur wenige Minuten. Sie spüren nichts, und es tut nicht weh. Vorher zeichnen wir Markierungen auf Ihre Haut. Bitte waschen Sie diese nicht ab. Die Haut kann wie bei einem Sonnenbrand rot werden. Wir geben Ihnen dafür eine Creme. Viele Patienten fühlen sich in dieser Zeit müde und schneller erschöpft. Das geht nach der Therapie wieder vorbei. Haben Sie noch Fragen dazu? Wenn Sie einverstanden sind, unterschreiben Sie bitte hier."
+  },
+  {
+    "id": "dialyse",
+    "name": "Hämodialyse (Blutwäsche)",
+    "uz": "Gemodializ (qonni tozalash)",
+    "ru": "Гемодиализ",
+    "tr": "Hemodiyaliz",
+    "en": "Haemodialysis",
+    "icon": "🩸",
+    "question": "Muss ich jetzt für immer an die Maschine? Kann ich dann noch arbeiten?",
+    "points": [
+      {
+        "uz": "Maqsad: nima uchun kerak",
+        "ru": "Цель: зачем это нужно",
+        "tr": "Amaç: neden gerekli",
+        "en": "Purpose: why it is needed",
+        "keywords": ["nieren", "giftstoffe", "wasser", "nicht mehr genug"]
+      },
+      {
+        "uz": "Haftasiga 3 marta, 4–5 soatdan",
+        "ru": "3 раза в неделю по 4–5 часов",
+        "tr": "Haftada 3 kez, 4–5 saat",
+        "en": "Three times a week, 4–5 hours",
+        "keywords": ["dreimal", "stunden", "woche"]
+      },
+      {
+        "uz": "Shunt yoki kateter orqali",
+        "ru": "Через шунт или катетер",
+        "tr": "Şant veya kateter yoluyla",
+        "en": "Via a shunt or catheter",
+        "keywords": ["shunt", "arm", "katheter"]
+      },
+      {
+        "uz": "Ish va hayot davom etadi",
+        "ru": "Работа и жизнь продолжаются",
+        "tr": "İş ve yaşam devam eder",
+        "en": "Work and life go on",
+        "keywords": ["arbeiten", "abends", "urlaub"]
+      },
+      {
+        "uz": "Ichimlik va ovqat cheklovlari",
+        "ru": "Ограничения питья и питания",
+        "tr": "Sıvı ve diyet kısıtlamaları",
+        "en": "Fluid and diet restrictions",
+        "keywords": ["trinkmenge", "kalium", "salz", "obst"]
+      },
+      {
+        "uz": "Nojo‘ya ta’sirlar: bosim tushishi, charchoq",
+        "ru": "Побочные эффекты: падение давления, усталость",
+        "tr": "Yan etkiler: tansiyon düşmesi, yorgunluk",
+        "en": "Side effects: low blood pressure, tiredness",
+        "keywords": ["blutdruck", "müde", "krämpfe"]
+      },
+      {
+        "uz": "Buyrak transplantatsiyasi imkoniyati",
+        "ru": "Возможность пересадки почки",
+        "tr": "Böbrek nakli olasılığı",
+        "en": "Possibility of kidney transplant",
+        "keywords": ["transplantation", "spenderniere", "warteliste"]
+      },
+      {
+        "uz": "Savollar va rozilik",
+        "ru": "Вопросы и согласие",
+        "tr": "Sorular ve onam",
+        "en": "Questions and consent",
+        "keywords": ["fragen", "einverstanden", "unterschreiben", "einwilligung"]
+      }
+    ],
+    "jargon": [
+      {
+        "re": "h[äa]modialyse",
+        "fach": "Hämodialyse",
+        "simple": "Blutwäsche"
+      },
+      {
+        "re": "urämi",
+        "fach": "Urämie",
+        "simple": "Vergiftung durch Harnstoff"
+      },
+      {
+        "re": "hyperkali",
+        "fach": "Hyperkaliämie",
+        "simple": "zu viel Kalium im Blut"
+      },
+      {
+        "re": "arteriovenös|av-fistel",
+        "fach": "AV-Fistel",
+        "simple": "Shunt am Arm"
+      },
+      {
+        "re": "niereninsuffizienz",
+        "fach": "Niereninsuffizienz",
+        "simple": "Nierenschwäche"
+      }
+    ],
+    "sample": "Ich kann gut verstehen, dass Sie das erschreckt. Ihre Nieren arbeiten nicht mehr genug. Deshalb sammeln sich Giftstoffe und Wasser in Ihrem Körper. Die Blutwäsche übernimmt diese Arbeit. Sie kommen dreimal pro Woche für etwa vier bis fünf Stunden zu uns. Dafür legen wir am Arm einen Shunt an. Das ist eine Verbindung zwischen einer Schlagader und einer Vene. Bis er fertig ist, nutzen wir einen Katheter am Hals. Viele Patienten arbeiten weiter. Sie können die Blutwäsche auch abends machen. Selbst Urlaub ist mit Dialyse möglich. Sie müssen aber auf Ihre Trinkmenge achten. Auch Salz und Obst mit viel Kalium sollten Sie einschränken. Während der Blutwäsche kann der Blutdruck fallen. Manche Patienten bekommen Krämpfe oder sind danach müde. Wir prüfen außerdem, ob Sie auf die Warteliste für eine Spenderniere kommen. Haben Sie noch Fragen? Wenn Sie einverstanden sind, unterschreiben Sie bitte hier."
+  },
+  {
+    "id": "antikoagulation",
+    "name": "Orale Antikoagulation (Blutverdünnung)",
+    "uz": "Og‘iz orqali antikoagulyatsiya (qon suyultirish)",
+    "ru": "Пероральная антикоагуляция",
+    "tr": "Oral antikoagülasyon (kan sulandırma)",
+    "en": "Oral anticoagulation",
+    "icon": "💊",
+    "question": "Ich habe Angst zu verbluten, wenn ich mich beim Kochen schneide.",
+    "points": [
+      {
+        "uz": "Maqsad: nima uchun kerak",
+        "ru": "Цель: зачем это нужно",
+        "tr": "Amaç: neden gerekli",
+        "en": "Purpose: why it is needed",
+        "keywords": ["schlaganfall", "gerinnsel", "herz", "verhindern"]
+      },
+      {
+        "uz": "Har kuni bir xil vaqtda qabul",
+        "ru": "Принимать ежедневно в одно время",
+        "tr": "Her gün aynı saatte alma",
+        "en": "Take daily at the same time",
+        "keywords": ["jeden tag", "gleichen zeit", "regelmäßig"]
+      },
+      {
+        "uz": "Kichik jarohatda qonni bosish bilan to‘xtatish",
+        "ru": "Мелкие порезы — прижать",
+        "tr": "Küçük kesiklerde bastırma",
+        "en": "Small cuts: apply pressure",
+        "keywords": ["drücken", "kleine schnitte", "länger bluten"]
+      },
+      {
+        "uz": "Xavf belgilari: qora najas, siydikda qon",
+        "ru": "Тревожные признаки: чёрный стул, кровь в моче",
+        "tr": "Uyarı belirtileri: siyah dışkı, idrarda kan",
+        "en": "Warning signs: black stool, blood in urine",
+        "keywords": ["schwarzer stuhl", "blut im urin", "sofort"]
+      },
+      {
+        "uz": "Boshga urilganda darhol shifokorga",
+        "ru": "При ударе головой — сразу к врачу",
+        "tr": "Kafa travmasında hemen doktora",
+        "en": "After a head injury see a doctor at once",
+        "keywords": ["kopf", "sturz"]
+      },
+      {
+        "uz": "Boshqa dorilar va og‘riq qoldiruvchilar bilan ehtiyot",
+        "ru": "Осторожно с другими препаратами и обезболивающими",
+        "tr": "Diğer ilaçlar ve ağrı kesicilerle dikkat",
+        "en": "Caution with other drugs and painkillers",
+        "keywords": ["ibuprofen", "aspirin", "andere medikamente"]
+      },
+      {
+        "uz": "Operatsiyadan oldin shifokorga aytish, pasport",
+        "ru": "Сообщать перед операциями, паспорт",
+        "tr": "Ameliyattan önce bildirme, kart",
+        "en": "Tell doctors before procedures, carry a card",
+        "keywords": ["ausweis", "zahnarzt", "operation"]
+      },
+      {
+        "uz": "Savollar va rozilik",
+        "ru": "Вопросы и согласие",
+        "tr": "Sorular ve onam",
+        "en": "Questions and consent",
+        "keywords": ["fragen", "einverstanden", "unterschreiben", "einwilligung"]
+      }
+    ],
+    "jargon": [
+      {
+        "re": "antikoagul",
+        "fach": "Antikoagulation",
+        "simple": "Blutverdünnung"
+      },
+      {
+        "re": "vorhofflimmern",
+        "fach": "Vorhofflimmern",
+        "simple": "unregelmäßiger Herzschlag"
+      },
+      {
+        "re": "thromb",
+        "fach": "Thrombus",
+        "simple": "Blutgerinnsel"
+      },
+      {
+        "re": "mel[äa]na|teerstuhl",
+        "fach": "Meläna",
+        "simple": "schwarzer Stuhl"
+      },
+      {
+        "re": "embol",
+        "fach": "Embolie",
+        "simple": "verschlepptes Gerinnsel"
+      }
+    ],
+    "sample": "Ihre Sorge ist verständlich, aber bei kleinen Schnitten verbluten Sie nicht. Ihr Herz schlägt unregelmäßig. Dadurch können sich im Herzen Gerinnsel bilden und einen Schlaganfall auslösen. Das neue Medikament soll das verhindern. Bitte nehmen Sie es jeden Tag zur gleichen Zeit. Kleine Schnitte können etwas länger bluten. Drücken Sie dann einige Minuten fest auf die Stelle. Kommen Sie bitte sofort, wenn Sie schwarzen Stuhl haben, Blut im Urin oder Blut erbrechen. Auch nach einem Sturz auf den Kopf sollten Sie sofort zum Arzt gehen. Nehmen Sie bitte kein Ibuprofen und kein Aspirin ohne Rücksprache. Fragen Sie auch bei anderen Medikamenten immer nach. Sagen Sie vor jeder Operation und beim Zahnarzt, dass Sie dieses Mittel nehmen. Dafür bekommen Sie einen Ausweis. Haben Sie noch Fragen? Sind Sie einverstanden?"
+  },
+  {
+    "id": "leistenhernie",
+    "name": "Operation eines Leistenbruchs",
+    "uz": "Chov churrasi operatsiyasi",
+    "ru": "Операция паховой грыжи",
+    "tr": "Kasık fıtığı ameliyatı",
+    "en": "Inguinal hernia repair",
+    "icon": "🩹",
+    "question": "Kann ich den Bruch nicht einfach mit einem Bruchband behandeln?",
+    "points": [
+      {
+        "uz": "Maqsad: nima uchun kerak",
+        "ru": "Цель: зачем это нужно",
+        "tr": "Amaç: neden gerekli",
+        "en": "Purpose: why it is needed",
+        "keywords": ["einklemm", "darm", "notfall", "größer"]
+      },
+      {
+        "uz": "Laparoskopik, kichik kesiklar",
+        "ru": "Лапароскопически, маленькие разрезы",
+        "tr": "Laparoskopik, küçük kesiler",
+        "en": "Keyhole surgery, small cuts",
+        "keywords": ["kleine schnitte", "kamera", "schlüsselloch"]
+      },
+      {
+        "uz": "To‘r (setka) bilan mustahkamlash",
+        "ru": "Укрепление сеткой",
+        "tr": "Yama (ağ) ile güçlendirme",
+        "en": "Reinforcement with a mesh",
+        "keywords": ["netz", "verstärk"]
+      },
+      {
+        "uz": "Narkoz ostida",
+        "ru": "Под наркозом",
+        "tr": "Genel anestezi altında",
+        "en": "Under general anaesthetic",
+        "keywords": ["narkose", "schlafen"]
+      },
+      {
+        "uz": "Bandaj davolamaydi",
+        "ru": "Бандаж не лечит",
+        "tr": "Fıtık bağı tedavi etmez",
+        "en": "A truss does not cure it",
+        "keywords": ["bruchband", "heilt nicht"]
+      },
+      {
+        "uz": "Xavflar: qon ketish, infeksiya, qaytalanish, og‘riq",
+        "ru": "Риски: кровотечение, инфекция, рецидив, боль",
+        "tr": "Riskler: kanama, enfeksiyon, nüks, ağrı",
+        "en": "Risks: bleeding, infection, recurrence, pain",
+        "keywords": ["blutung", "infektion", "wieder", "schmerzen"]
+      },
+      {
+        "uz": "2 hafta og‘ir yuk ko‘tarmaslik",
+        "ru": "2 недели не поднимать тяжести",
+        "tr": "2 hafta ağır kaldırmama",
+        "en": "No heavy lifting for 2 weeks",
+        "keywords": ["schwer heben", "zwei wochen"]
+      },
+      {
+        "uz": "Savollar va rozilik",
+        "ru": "Вопросы и согласие",
+        "tr": "Sorular ve onam",
+        "en": "Questions and consent",
+        "keywords": ["fragen", "einverstanden", "unterschreiben", "einwilligung"]
+      }
+    ],
+    "jargon": [
+      {
+        "re": "inkarzer",
+        "fach": "Inkarzeration",
+        "simple": "Einklemmung des Darms"
+      },
+      {
+        "re": "tapp|tep\\b",
+        "fach": "TAPP",
+        "simple": "Operation mit der Schlüssellochtechnik"
+      },
+      {
+        "re": "hernie",
+        "fach": "Hernie",
+        "simple": "Bruch"
+      },
+      {
+        "re": "rezidiv",
+        "fach": "Rezidiv",
+        "simple": "erneuter Bruch"
+      },
+      {
+        "re": "laparoskop",
+        "fach": "Laparoskopie",
+        "simple": "Bauchspiegelung"
+      }
+    ],
+    "sample": "Ein Bruchband hält den Bruch nur zurück, aber es heilt nicht. Der Bruch wird mit der Zeit meistens größer. Gefährlich ist, wenn sich der Darm im Bruch einklemmt. Das ist ein Notfall. Deshalb empfehlen wir die Operation. Sie schlafen dabei in einer Narkose. Wir operieren in der Schlüssellochtechnik über drei kleine Schnitte am Bauch. Mit einer Kamera sehen wir die Lücke in der Bauchwand. Wir legen ein feines Netz ein und verstärken so die Bauchwand. Wie bei jeder Operation kann es zu einer Blutung oder Infektion kommen. Selten bleiben Schmerzen in der Leiste, oder der Bruch kommt wieder. Meist können Sie am nächsten Tag nach Hause gehen. Zwei Wochen sollten Sie nichts Schweres heben. Haben Sie noch Fragen? Wenn Sie einverstanden sind, unterschreiben Sie bitte die Einwilligung."
+  },
+  {
+    "id": "knie-tep",
+    "name": "Künstliches Kniegelenk (Knie-TEP)",
+    "uz": "Sun’iy tizza bo‘g‘imi (tizza endoprotezi)",
+    "ru": "Эндопротезирование коленного сустава",
+    "tr": "Diz protezi",
+    "en": "Total knee replacement",
+    "icon": "🦵",
+    "question": "Wie lange dauert es, bis ich wieder ohne Krücken laufen kann?",
+    "points": [
+      {
+        "uz": "Maqsad: nima uchun kerak",
+        "ru": "Цель: зачем это нужно",
+        "tr": "Amaç: neden gerekli",
+        "en": "Purpose: why it is needed",
+        "keywords": ["schmerzen", "arthrose", "laufen", "knorpel"]
+      },
+      {
+        "uz": "Eskirgan bo‘g‘im yuzalarini almashtirish",
+        "ru": "Замена изношенных поверхностей сустава",
+        "tr": "Aşınmış eklem yüzeylerinin değiştirilmesi",
+        "en": "Replacing worn joint surfaces",
+        "keywords": ["ersetzen", "metall", "kunststoff", "oberfläche"]
+      },
+      {
+        "uz": "Narkoz yoki spinal anesteziya",
+        "ru": "Наркоз или спинальная анестезия",
+        "tr": "Genel veya spinal anestezi",
+        "en": "General or spinal anaesthetic",
+        "keywords": ["narkose", "rückenmark", "betäubung"]
+      },
+      {
+        "uz": "Xavflar: infeksiya, tromboz, harakatchanlik cheklanishi",
+        "ru": "Риски: инфекция, тромбоз, тугоподвижность",
+        "tr": "Riskler: enfeksiyon, tromboz, hareket kısıtlılığı",
+        "en": "Risks: infection, thrombosis, stiffness",
+        "keywords": ["infektion", "thrombose", "steif"]
+      },
+      {
+        "uz": "Tromboz profilaktikasi",
+        "ru": "Профилактика тромбоза",
+        "tr": "Tromboz profilaksisi",
+        "en": "Thromboprophylaxis",
+        "keywords": ["spritze", "gerinnsel", "thromboseprophylaxe"]
+      },
+      {
+        "uz": "Ertasi kuni turish va fizioterapiya",
+        "ru": "Вставать на следующий день, физиотерапия",
+        "tr": "Ertesi gün kalkma ve fizyoterapi",
+        "en": "Up the next day, physiotherapy",
+        "keywords": ["nächsten tag", "aufstehen", "physiotherapie"]
+      },
+      {
+        "uz": "Reabilitatsiya va qo‘ltiqtayoqlar 4–6 hafta",
+        "ru": "Реабилитация и костыли 4–6 недель",
+        "tr": "Rehabilitasyon ve koltuk değnekleri 4–6 hafta",
+        "en": "Rehab and crutches for 4–6 weeks",
+        "keywords": ["reha", "krücken", "wochen"]
+      },
+      {
+        "uz": "Savollar va rozilik",
+        "ru": "Вопросы и согласие",
+        "tr": "Sorular ve onam",
+        "en": "Questions and consent",
+        "keywords": ["fragen", "einverstanden", "unterschreiben", "einwilligung"]
+      }
+    ],
+    "jargon": [
+      {
+        "re": "\\btep\\b|endoprothese",
+        "fach": "TEP",
+        "simple": "künstliches Gelenk"
+      },
+      {
+        "re": "gonarthrose",
+        "fach": "Gonarthrose",
+        "simple": "Arthrose im Knie"
+      },
+      {
+        "re": "thromboembol",
+        "fach": "Thromboembolie",
+        "simple": "Blutgerinnsel"
+      },
+      {
+        "re": "spinalan[äa]sthesie",
+        "fach": "Spinalanästhesie",
+        "simple": "Betäubung über das Rückenmark"
+      },
+      {
+        "re": "mobilisation",
+        "fach": "Mobilisation",
+        "simple": "Aufstehen und Gehen"
+      }
+    ],
+    "sample": "Das ist von Patient zu Patient verschieden. Meist brauchen Sie die Krücken etwa vier bis sechs Wochen. Ihr Knorpel im Knie ist durch die Arthrose stark abgenutzt. Deshalb haben Sie beim Laufen große Schmerzen. Bei der Operation ersetzen wir die Oberfläche des Gelenks. Das neue Gelenk besteht aus Metall und Kunststoff. Sie schlafen in einer Narkose, oder wir machen eine Betäubung über das Rückenmark. Mögliche Risiken sind eine Infektion, ein Blutgerinnsel im Bein oder ein steifes Knie. Deshalb bekommen Sie täglich eine Spritze gegen Gerinnsel. Schon am nächsten Tag hilft Ihnen die Physiotherapie beim Aufstehen. Nach etwa einer Woche gehen Sie in eine Reha. Haben Sie noch Fragen? Wenn Sie einverstanden sind, unterschreiben Sie bitte hier."
+  },
+  {
+    "id": "karotis-op",
+    "name": "Operation der Halsschlagader (Karotis-TEA)",
+    "uz": "Uyqu arteriyasi operatsiyasi",
+    "ru": "Каротидная эндартерэктомия",
+    "tr": "Karotis endarterektomisi",
+    "en": "Carotid endarterectomy",
+    "icon": "🧠",
+    "question": "Kann ich durch die Operation selbst einen Schlaganfall bekommen?",
+    "points": [
+      {
+        "uz": "Maqsad: nima uchun kerak",
+        "ru": "Цель: зачем это нужно",
+        "tr": "Amaç: neden gerekli",
+        "en": "Purpose: why it is needed",
+        "keywords": ["schlaganfall", "verengung", "ablagerungen", "vorbeugen"]
+      },
+      {
+        "uz": "Bo‘yindagi kesik orqali tomirni tozalash",
+        "ru": "Очистка артерии через разрез на шее",
+        "tr": "Boyundaki kesiyle damarın temizlenmesi",
+        "en": "Cleaning the artery through a neck cut",
+        "keywords": ["schnitt", "hals", "ausschälen", "entfernen"]
+      },
+      {
+        "uz": "Narkoz yoki mahalliy og‘riqsizlantirish",
+        "ru": "Наркоз или местная анестезия",
+        "tr": "Genel veya lokal anestezi",
+        "en": "General or local anaesthetic",
+        "keywords": ["narkose", "örtlich"]
+      },
+      {
+        "uz": "Xavf: insult ehtimoli kam",
+        "ru": "Риск: небольшая вероятность инсульта",
+        "tr": "Risk: düşük inme olasılığı",
+        "en": "Risk: small chance of stroke",
+        "keywords": ["selbst", "prozent", "gering"]
+      },
+      {
+        "uz": "Boshqa xavflar: qon ketish, nerv shikastlanishi",
+        "ru": "Другие риски: кровотечение, повреждение нерва",
+        "tr": "Diğer riskler: kanama, sinir hasarı",
+        "en": "Other risks: bleeding, nerve damage",
+        "keywords": ["blutung", "nerv", "heiserkeit", "zunge"]
+      },
+      {
+        "uz": "ASK va statinni davom ettirish",
+        "ru": "Продолжать АСК и статин",
+        "tr": "ASA ve statine devam",
+        "en": "Continue aspirin and statin",
+        "keywords": ["ass", "cholesterin", "weiter"]
+      },
+      {
+        "uz": "Keyin 1–2 kun intensiv kuzatuv",
+        "ru": "Затем 1–2 дня наблюдения",
+        "tr": "Sonra 1–2 gün yakın gözlem",
+        "en": "1–2 days of close monitoring",
+        "keywords": ["überwach", "intensiv", "blutdruck"]
+      },
+      {
+        "uz": "Savollar va rozilik",
+        "ru": "Вопросы и согласие",
+        "tr": "Sorular ve onam",
+        "en": "Questions and consent",
+        "keywords": ["fragen", "einverstanden", "unterschreiben", "einwilligung"]
+      }
+    ],
+    "jargon": [
+      {
+        "re": "karotisstenose|stenose",
+        "fach": "Karotisstenose",
+        "simple": "Verengung der Halsschlagader"
+      },
+      {
+        "re": "endarteriektomie|\\btea\\b",
+        "fach": "Endarteriektomie",
+        "simple": "Ausschälen der Ablagerungen"
+      },
+      {
+        "re": "plaque",
+        "fach": "Plaque",
+        "simple": "Ablagerung"
+      },
+      {
+        "re": "apoplex|insult",
+        "fach": "Apoplex",
+        "simple": "Schlaganfall"
+      },
+      {
+        "re": "hypoglossus|rekurrens",
+        "fach": "Rekurrensparese",
+        "simple": "Stimmnervlähmung"
+      }
+    ],
+    "sample": "Das ist eine sehr wichtige Frage. Ja, das Risiko gibt es, aber es ist gering. Es liegt bei etwa zwei Prozent. Ohne Operation ist Ihr Risiko für einen Schlaganfall aber deutlich höher. Ihre Halsschlagader ist durch Ablagerungen stark verengt. Sie hatten schon eine kurze Lähmung am Arm. Mit der Operation möchten wir einem Schlaganfall vorbeugen. Wir machen einen Schnitt am Hals und entfernen die Ablagerungen aus der Schlagader. Dabei schlafen Sie in einer Narkose. Weitere Risiken sind eine Blutung oder eine Verletzung von Nerven. Dann können Sie vorübergehend heiser sein, oder die Zunge weicht etwas ab. Danach überwachen wir Sie eng auf der Intensivstation und kontrollieren Ihren Blutdruck. ASS und das Medikament gegen Cholesterin nehmen Sie bitte weiter. Haben Sie noch Fragen? Wenn Sie einverstanden sind, unterschreiben Sie bitte hier."
+  },
+  {
+    "id": "bypass-op",
+    "name": "Bypass-Operation am Herzen",
+    "uz": "Yurak shuntlash (bypass) operatsiyasi",
+    "ru": "Аортокоронарное шунтирование",
+    "tr": "Koroner bypass ameliyatı",
+    "en": "Coronary artery bypass surgery",
+    "icon": "❤️",
+    "question": "Warum bekomme ich keinen Stent wie mein Nachbar?",
+    "points": [
+      {
+        "uz": "Maqsad: nima uchun kerak",
+        "ru": "Цель: зачем это нужно",
+        "tr": "Amaç: neden gerekli",
+        "en": "Purpose: why it is needed",
+        "keywords": ["herzkranzgefäße", "umgehen", "durchblutung", "engstellen"]
+      },
+      {
+        "uz": "Nima uchun stent emas: ko‘p tomir torayishi",
+        "ru": "Почему не стент: поражены многие сосуды",
+        "tr": "Neden stent değil: çok damar daralması",
+        "en": "Why not a stent: many narrowed vessels",
+        "keywords": ["mehrere", "stent", "besser"]
+      },
+      {
+        "uz": "Oyoq venasi yoki ko‘krak arteriyasidan foydalanish",
+        "ru": "Используются вена ноги или грудная артерия",
+        "tr": "Bacak veni veya göğüs arteri kullanılır",
+        "en": "Using a leg vein or chest artery",
+        "keywords": ["bein", "brustwand", "vene"]
+      },
+      {
+        "uz": "Ko‘krak suyagi ochiladi, sun’iy qon aylanish",
+        "ru": "Вскрывается грудина, ИК",
+        "tr": "Göğüs kemiği açılır, kalp-akciğer makinesi",
+        "en": "Breastbone opened, heart-lung machine",
+        "keywords": ["brustbein", "herz-lungen-maschine", "narkose"]
+      },
+      {
+        "uz": "Xavflar: qon ketish, infeksiya, insult, aritmiya",
+        "ru": "Риски: кровотечение, инфекция, инсульт, аритмия",
+        "tr": "Riskler: kanama, enfeksiyon, inme, ritim bozukluğu",
+        "en": "Risks: bleeding, infection, stroke, arrhythmia",
+        "keywords": ["blutung", "infektion", "schlaganfall", "rhythmus"]
+      },
+      {
+        "uz": "Intensiv bo‘lim, 1–2 hafta kasalxona",
+        "ru": "Реанимация, 1–2 недели в больнице",
+        "tr": "Yoğun bakım, 1–2 hafta hastane",
+        "en": "ICU, 1–2 weeks in hospital",
+        "keywords": ["intensivstation", "wochen"]
+      },
+      {
+        "uz": "Reabilitatsiya, 3 oy og‘ir yuk ko‘tarmaslik",
+        "ru": "Реабилитация, 3 месяца без тяжестей",
+        "tr": "Rehabilitasyon, 3 ay ağır kaldırmama",
+        "en": "Rehab, no heavy lifting for 3 months",
+        "keywords": ["reha", "monate", "schwer heben"]
+      },
+      {
+        "uz": "Savollar va rozilik",
+        "ru": "Вопросы и согласие",
+        "tr": "Sorular ve onam",
+        "en": "Questions and consent",
+        "keywords": ["fragen", "einverstanden", "unterschreiben", "einwilligung"]
+      }
+    ],
+    "jargon": [
+      {
+        "re": "koronar",
+        "fach": "Koronarien",
+        "simple": "Herzkranzgefäße"
+      },
+      {
+        "re": "sternotomie",
+        "fach": "Sternotomie",
+        "simple": "Öffnung des Brustbeins"
+      },
+      {
+        "re": "extrakorporal",
+        "fach": "extrakorporale Zirkulation",
+        "simple": "Herz-Lungen-Maschine"
+      },
+      {
+        "re": "mammaria|lima\\b",
+        "fach": "A. mammaria interna",
+        "simple": "Schlagader an der Brustwand"
+      },
+      {
+        "re": "stenose",
+        "fach": "Stenose",
+        "simple": "Engstelle"
+      }
+    ],
+    "sample": "Bei Ihrem Nachbarn war vielleicht nur ein Gefäß verengt. Bei Ihnen sind mehrere Herzkranzgefäße an vielen Stellen verengt. In dieser Situation hilft eine Bypass-Operation langfristig besser als ein Stent. Mit den Bypässen umgehen wir die Engstellen. So wird Ihr Herz wieder gut durchblutet. Dafür nehmen wir eine Vene aus dem Bein und eine Schlagader von der Brustwand. Sie schlafen in einer Narkose. Wir öffnen das Brustbein. Während der Operation übernimmt eine Herz-Lungen-Maschine die Arbeit des Herzens. Mögliche Risiken sind Blutung, Infektion, ein Schlaganfall oder Störungen des Herzrhythmus. Danach kommen Sie für ein bis zwei Tage auf die Intensivstation. Insgesamt bleiben Sie etwa zwei Wochen im Krankenhaus. Danach folgt eine Reha. Drei Monate sollten Sie nichts Schweres heben, damit das Brustbein heilt. Haben Sie noch Fragen? Wenn Sie einverstanden sind, unterschreiben Sie bitte hier."
+  },
+  {
+    "id": "brust-stanzbiopsie",
+    "name": "Stanzbiopsie der Brust",
+    "uz": "Ko‘krak bezidan igna biopsiyasi",
+    "ru": "Трепан-биопсия молочной железы",
+    "tr": "Meme kalın iğne biyopsisi",
+    "en": "Breast core needle biopsy",
+    "icon": "🎗️",
+    "question": "Kann sich der Krebs durch die Nadel im Körper verteilen?",
+    "points": [
+      {
+        "uz": "Maqsad: nima uchun kerak",
+        "ru": "Цель: зачем это нужно",
+        "tr": "Amaç: neden gerekli",
+        "en": "Purpose: why it is needed",
+        "keywords": ["gutartig", "bösartig", "knoten", "sicher"]
+      },
+      {
+        "uz": "UTT nazoratida, mahalliy og‘riqsizlantirish",
+        "ru": "Под УЗИ, местное обезболивание",
+        "tr": "Ultrason eşliğinde, lokal anestezi",
+        "en": "Ultrasound-guided, local anaesthetic",
+        "keywords": ["ultraschall", "betäub"]
+      },
+      {
+        "uz": "Bir necha namuna, chertish ovozi",
+        "ru": "Несколько проб, щелчок",
+        "tr": "Birkaç örnek, tık sesi",
+        "en": "Several samples, a clicking sound",
+        "keywords": ["mehrere proben", "klick", "geräusch"]
+      },
+      {
+        "uz": "O‘sma tarqalmaydi",
+        "ru": "Опухоль не распространится",
+        "tr": "Tümör yayılmaz",
+        "en": "The tumour will not spread",
+        "keywords": ["nicht verteilen", "nicht streuen", "keine gefahr"]
+      },
+      {
+        "uz": "Xavflar: ko‘karish, kam hollarda infeksiya",
+        "ru": "Риски: гематома, редко инфекция",
+        "tr": "Riskler: morarma, nadiren enfeksiyon",
+        "en": "Risks: bruising, rarely infection",
+        "keywords": ["bluterguss", "infektion", "selten"]
+      },
+      {
+        "uz": "Keyin bosuvchi bog‘lam va sovutish",
+        "ru": "Затем давящая повязка и холод",
+        "tr": "Sonra baskılı pansuman ve soğutma",
+        "en": "Pressure dressing and cooling afterwards",
+        "keywords": ["druckverband", "kühlen"]
+      },
+      {
+        "uz": "Natija bir necha kunda, birga muhokama",
+        "ru": "Результат через несколько дней, обсудим вместе",
+        "tr": "Sonuç birkaç günde, birlikte konuşacağız",
+        "en": "Result in a few days, discussed together",
+        "keywords": ["ergebnis", "tagen", "gemeinsam"]
+      },
+      {
+        "uz": "Savollar va rozilik",
+        "ru": "Вопросы и согласие",
+        "tr": "Sorular ve onam",
+        "en": "Questions and consent",
+        "keywords": ["fragen", "einverstanden", "unterschreiben", "einwilligung"]
+      }
+    ],
+    "jargon": [
+      {
+        "re": "stanzbiopsie",
+        "fach": "Stanzbiopsie",
+        "simple": "Gewebeprobe mit einer Hohlnadel"
+      },
+      {
+        "re": "malign",
+        "fach": "maligne",
+        "simple": "bösartig"
+      },
+      {
+        "re": "benign",
+        "fach": "benigne",
+        "simple": "gutartig"
+      },
+      {
+        "re": "histolog",
+        "fach": "Histologie",
+        "simple": "Untersuchung unter dem Mikroskop"
+      },
+      {
+        "re": "h[äa]matom",
+        "fach": "Hämatom",
+        "simple": "Bluterguss"
+      }
+    ],
+    "sample": "Diese Sorge haben viele Frauen. Ich kann Sie beruhigen: Durch die Probe wird der Krebs nicht im Körper verteilt. Dafür gibt es keine Gefahr. Wir haben in Ihrer Brust einen Knoten gefunden. Nur mit einer Gewebeprobe können wir sicher sagen, ob er gutartig oder bösartig ist. Sie liegen auf dem Rücken. Wir suchen den Knoten mit dem Ultraschall. Dann betäuben wir die Haut. Mit einer Hohlnadel nehmen wir mehrere Proben. Dabei hören Sie ein lautes Klick-Geräusch. Das ist normal. Danach bekommen Sie einen Druckverband und sollen die Stelle kühlen. Es kann ein Bluterguss entstehen. Selten kommt es zu einer Infektion. Das Ergebnis haben wir in drei bis fünf Tagen. Dann besprechen wir es gemeinsam. Haben Sie noch Fragen? Wenn Sie einverstanden sind, unterschreiben Sie bitte hier."
+  },
+  {
+    "id": "prostatabiopsie",
+    "name": "Prostatabiopsie",
+    "uz": "Prostata biopsiyasi",
+    "ru": "Биопсия предстательной железы",
+    "tr": "Prostat biyopsisi",
+    "en": "Prostate biopsy",
+    "icon": "🔬",
+    "question": "Werde ich danach impotent oder inkontinent?",
+    "points": [
+      {
+        "uz": "Maqsad: nima uchun kerak",
+        "ru": "Цель: зачем это нужно",
+        "tr": "Amaç: neden gerekli",
+        "en": "Purpose: why it is needed",
+        "keywords": ["psa", "krebs", "ausschließen", "gewebe"]
+      },
+      {
+        "uz": "Oraliq yoki to‘g‘ri ichak orqali, MRT bilan birga",
+        "ru": "Через промежность или прямую кишку, с МРТ",
+        "tr": "Perine veya rektum yoluyla, MR ile",
+        "en": "Via perineum or rectum, MRI-guided",
+        "keywords": ["damm", "mrt", "ultraschall"]
+      },
+      {
+        "uz": "Og‘riqsizlantirish",
+        "ru": "Обезболивание",
+        "tr": "Anestezi",
+        "en": "Anaesthetic",
+        "keywords": ["betäub", "narkose"]
+      },
+      {
+        "uz": "Erektsiya va siydik tutishga ta’sir qilmaydi",
+        "ru": "Не влияет на эрекцию и удержание мочи",
+        "tr": "Ereksiyon ve idrar tutmayı etkilemez",
+        "en": "Does not affect erections or continence",
+        "keywords": ["impotent", "inkontinent", "nicht"]
+      },
+      {
+        "uz": "Xavflar: siydik, najas va urug‘da qon",
+        "ru": "Риски: кровь в моче, стуле, сперме",
+        "tr": "Riskler: idrar, dışkı ve meniden kan",
+        "en": "Risks: blood in urine, stool, semen",
+        "keywords": ["blut im urin", "sperma", "wochen"]
+      },
+      {
+        "uz": "Infeksiya xavfi, isitmada darhol kelish",
+        "ru": "Риск инфекции, при лихорадке — срочно",
+        "tr": "Enfeksiyon riski, ateşte hemen başvuru",
+        "en": "Infection risk, come at once with fever",
+        "keywords": ["fieber", "infektion", "sofort"]
+      },
+      {
+        "uz": "Qon suyultiruvchilarni to‘xtatish",
+        "ru": "Отмена антикоагулянтов",
+        "tr": "Kan sulandırıcıların kesilmesi",
+        "en": "Pause blood thinners",
+        "keywords": ["blutverdünn", "absetzen", "pausieren"]
+      },
+      {
+        "uz": "Savollar va rozilik",
+        "ru": "Вопросы и согласие",
+        "tr": "Sorular ve onam",
+        "en": "Questions and consent",
+        "keywords": ["fragen", "einverstanden", "unterschreiben", "einwilligung"]
+      }
+    ],
+    "jargon": [
+      {
+        "re": "transperineal",
+        "fach": "transperineal",
+        "simple": "über den Damm"
+      },
+      {
+        "re": "transrektal",
+        "fach": "transrektal",
+        "simple": "über den Enddarm"
+      },
+      {
+        "re": "h[äa]matospermie",
+        "fach": "Hämatospermie",
+        "simple": "Blut im Sperma"
+      },
+      {
+        "re": "erektile dysfunktion",
+        "fach": "erektile Dysfunktion",
+        "simple": "Erektionsstörung"
+      },
+      {
+        "re": "prostatitis",
+        "fach": "Prostatitis",
+        "simple": "Entzündung der Prostata"
+      }
+    ],
+    "sample": "Nein, durch die Probe werden Sie weder impotent noch inkontinent. Ihr PSA-Wert ist gestiegen, und im MRT sieht man eine verdächtige Stelle. Mit einer Gewebeprobe möchten wir Krebs nachweisen oder ausschließen. Sie bekommen eine kurze Narkose. Wir führen die Nadel über den Damm ein, also die Haut zwischen Hodensack und After. Mit Ultraschall und den MRT-Bildern treffen wir die Stelle genau. Wir nehmen etwa zwölf kleine Proben. Danach kann für einige Wochen Blut im Urin, im Stuhl oder im Sperma sein. Das ist harmlos. Selten kommt es zu einer Infektion. Wenn Sie Fieber bekommen, kommen Sie bitte sofort zu uns. Ihren Blutverdünner müssen Sie einige Tage vorher pausieren. Haben Sie noch Fragen? Sind Sie einverstanden? Dann unterschreiben Sie bitte hier."
+  },
+  {
+    "id": "zystoskopie",
+    "name": "Blasenspiegelung (Zystoskopie)",
+    "uz": "Siydik pufagi endoskopiyasi (sistoskopiya)",
+    "ru": "Цистоскопия",
+    "tr": "Sistoskopi (mesane endoskopisi)",
+    "en": "Cystoscopy",
+    "icon": "🔦",
+    "question": "Ist das nicht furchtbar unangenehm, einen Schlauch in die Harnröhre zu bekommen?",
+    "points": [
+      {
+        "uz": "Maqsad: nima uchun kerak",
+        "ru": "Цель: зачем это нужно",
+        "tr": "Amaç: neden gerekli",
+        "en": "Purpose: why it is needed",
+        "keywords": ["blut im urin", "ursache", "blase", "tumor"]
+      },
+      {
+        "uz": "Yumshoq ingichka kamera siydik yo‘li orqali",
+        "ru": "Гибкая тонкая камера через уретру",
+        "tr": "Esnek ince kamera üretradan",
+        "en": "Thin flexible camera through the urethra",
+        "keywords": ["harnröhre", "dünn", "kamera", "flexibel"]
+      },
+      {
+        "uz": "Og‘riqsizlantiruvchi gel",
+        "ru": "Обезболивающий гель",
+        "tr": "Uyuşturucu jel",
+        "en": "Numbing gel",
+        "keywords": ["gel", "betäub"]
+      },
+      {
+        "uz": "Davomiyligi bir necha daqiqa",
+        "ru": "Длится несколько минут",
+        "tr": "Birkaç dakika sürer",
+        "en": "Takes a few minutes",
+        "keywords": ["minuten", "kurz"]
+      },
+      {
+        "uz": "Keyin achishish va ko‘p ichish",
+        "ru": "Затем жжение, пить много",
+        "tr": "Sonra yanma, bol sıvı",
+        "en": "Burning afterwards, drink plenty",
+        "keywords": ["brennen", "viel trinken"]
+      },
+      {
+        "uz": "Xavflar: infeksiya, ozgina qon",
+        "ru": "Риски: инфекция, немного крови",
+        "tr": "Riskler: enfeksiyon, az kan",
+        "en": "Risks: infection, a little blood",
+        "keywords": ["infektion", "fieber", "etwas blut"]
+      },
+      {
+        "uz": "Natija darhol aytiladi",
+        "ru": "Результат сразу",
+        "tr": "Sonuç hemen söylenir",
+        "en": "Result straight away",
+        "keywords": ["direkt", "sofort sagen", "danach besprechen"]
+      },
+      {
+        "uz": "Savollar va rozilik",
+        "ru": "Вопросы и согласие",
+        "tr": "Sorular ve onam",
+        "en": "Questions and consent",
+        "keywords": ["fragen", "einverstanden", "unterschreiben", "einwilligung"]
+      }
+    ],
+    "jargon": [
+      {
+        "re": "zystoskop",
+        "fach": "Zystoskopie",
+        "simple": "Blasenspiegelung"
+      },
+      {
+        "re": "urethra",
+        "fach": "Urethra",
+        "simple": "Harnröhre"
+      },
+      {
+        "re": "h[äa]maturie",
+        "fach": "Hämaturie",
+        "simple": "Blut im Urin"
+      },
+      {
+        "re": "urothel",
+        "fach": "Urothelkarzinom",
+        "simple": "Blasenkrebs"
+      },
+      {
+        "re": "lokalan[äa]sthe",
+        "fach": "Lokalanästhetikum",
+        "simple": "Betäubungsgel"
+      }
+    ],
+    "sample": "Viele Patienten haben davor Angst, aber die Untersuchung ist meist gut auszuhalten. Sie hatten Blut im Urin. Wir möchten die Ursache finden und die Blase von innen ansehen. So können wir zum Beispiel einen Tumor ausschließen. Wir verwenden eine sehr dünne und flexible Kamera. Vorher geben wir ein Gel in die Harnröhre. Es betäubt und macht sie gleitfähig. Die Untersuchung dauert nur wenige Minuten. Sie spüren vielleicht einen Druck und das Gefühl, Wasser lassen zu müssen. Das Ergebnis kann ich Ihnen direkt danach sagen. Beim Wasserlassen kann es danach ein bis zwei Tage brennen, und es kann etwas Blut kommen. Bitte viel trinken. Selten entsteht eine Infektion. Wenn Sie Fieber bekommen, melden Sie sich bitte. Haben Sie noch Fragen? Wenn Sie einverstanden sind, unterschreiben Sie bitte hier."
+  },
+  {
+    "id": "langzeit-ekg",
+    "name": "Langzeit-EKG (24-Stunden-EKG)",
+    "uz": "Sutkalik EKG (Xolter monitoring)",
+    "ru": "Суточное мониторирование ЭКГ (Холтер)",
+    "tr": "24 saatlik EKG (Holter)",
+    "en": "24-hour ECG (Holter monitor)",
+    "icon": "📟",
+    "question": "Darf ich mit dem Gerät duschen und ganz normal arbeiten?",
+    "points": [
+      {
+        "uz": "Maqsad: nima uchun kerak",
+        "ru": "Цель: зачем это нужно",
+        "tr": "Amaç: neden gerekli",
+        "en": "Purpose: why it is needed",
+        "keywords": ["herzstolpern", "rhythmus", "schwindel", "aufzeichnen"]
+      },
+      {
+        "uz": "Ko‘krakka elektrodlar, kichik apparat",
+        "ru": "Электроды на груди, маленький прибор",
+        "tr": "Göğse elektrotlar, küçük cihaz",
+        "en": "Electrodes on the chest, small device",
+        "keywords": ["elektroden", "brust", "kleines gerät"]
+      },
+      {
+        "uz": "24 soat odatdagi hayot",
+        "ru": "24 часа обычной жизни",
+        "tr": "24 saat normal yaşam",
+        "en": "24 hours of normal life",
+        "keywords": ["24 stunden", "normal", "arbeiten"]
+      },
+      {
+        "uz": "Dush qabul qilmaslik",
+        "ru": "Не принимать душ",
+        "tr": "Duş almama",
+        "en": "No showering",
+        "keywords": ["nicht duschen", "nass"]
+      },
+      {
+        "uz": "Kundalik: faoliyat va shikoyatlarni yozish",
+        "ru": "Дневник: записывать активность и жалобы",
+        "tr": "Günlük: aktivite ve şikayetleri yazma",
+        "en": "Diary: note activities and symptoms",
+        "keywords": ["tagebuch", "aufschreiben", "beschwerden"]
+      },
+      {
+        "uz": "Og‘riqsiz, xavfsiz",
+        "ru": "Безболезненно, безопасно",
+        "tr": "Ağrısız, güvenli",
+        "en": "Painless and safe",
+        "keywords": ["schmerzfrei", "keine risiken", "harmlos"]
+      },
+      {
+        "uz": "Ertasi kuni qaytarish",
+        "ru": "Вернуть на следующий день",
+        "tr": "Ertesi gün iade",
+        "en": "Return it the next day",
+        "keywords": ["morgen", "zurückbringen", "abnehmen"]
+      },
+      {
+        "uz": "Savollar va rozilik",
+        "ru": "Вопросы и согласие",
+        "tr": "Sorular ve onam",
+        "en": "Questions and consent",
+        "keywords": ["fragen", "einverstanden", "unterschreiben", "einwilligung"]
+      }
+    ],
+    "jargon": [
+      {
+        "re": "palpitation",
+        "fach": "Palpitationen",
+        "simple": "Herzstolpern"
+      },
+      {
+        "re": "arrhythmi",
+        "fach": "Arrhythmie",
+        "simple": "Herzrhythmusstörung"
+      },
+      {
+        "re": "extrasystol",
+        "fach": "Extrasystolen",
+        "simple": "zusätzliche Herzschläge"
+      },
+      {
+        "re": "synkope",
+        "fach": "Synkope",
+        "simple": "kurze Ohnmacht"
+      },
+      {
+        "re": "vorhofflimmern",
+        "fach": "Vorhofflimmern",
+        "simple": "unregelmäßiger Herzschlag"
+      }
+    ],
+    "sample": "Arbeiten dürfen Sie ganz normal, nur duschen sollten Sie heute nicht. Sie haben öfter Herzstolpern und Schwindel. Ein normales EKG dauert nur wenige Sekunden. Das Langzeit-EKG soll Ihren Herzrhythmus über 24 Stunden aufzeichnen. So können wir seltene Störungen finden. Wir kleben fünf Elektroden auf Ihre Brust. Sie sind mit einem kleinen Gerät verbunden. Das tragen Sie am Gürtel. Bitte leben Sie ganz normal, gehen Sie arbeiten und auch spazieren. Das Gerät darf aber nicht nass werden. Deshalb dürfen Sie heute nicht duschen. Bitte schreiben Sie in dieses Tagebuch, was Sie wann gemacht haben. Notieren Sie auch Ihre Beschwerden mit Uhrzeit. Die Untersuchung ist schmerzfrei und harmlos. Morgen um dieselbe Zeit bringen Sie das Gerät zurück, und wir nehmen es ab. Haben Sie noch Fragen? Sind Sie einverstanden?"
+  },
+  {
+    "id": "pda-geburt",
+    "name": "Periduralanästhesie (PDA) unter der Geburt",
+    "uz": "Tug‘ruqda epidural og‘riqsizlantirish",
+    "ru": "Эпидуральная анестезия в родах",
+    "tr": "Doğumda epidural anestezi",
+    "en": "Epidural during labour",
+    "icon": "🤰",
+    "question": "Schadet die PDA meinem Baby? Und kann ich danach gelähmt sein?",
+    "points": [
+      {
+        "uz": "Maqsad: nima uchun kerak",
+        "ru": "Цель: зачем это нужно",
+        "tr": "Amaç: neden gerekli",
+        "en": "Purpose: why it is needed",
+        "keywords": ["wehenschmerzen", "lindern", "entspannen"]
+      },
+      {
+        "uz": "Belga ingichka kateter",
+        "ru": "Тонкий катетер в спину",
+        "tr": "Sırta ince kateter",
+        "en": "Thin catheter in the back",
+        "keywords": ["rücken", "katheter", "dünn"]
+      },
+      {
+        "uz": "Avval terini og‘riqsizlantirish",
+        "ru": "Сначала обезболивание кожи",
+        "tr": "Önce cildin uyuşturulması",
+        "en": "Skin numbed first",
+        "keywords": ["betäub", "haut", "pieks"]
+      },
+      {
+        "uz": "Bolaga deyarli ta’sir qilmaydi",
+        "ru": "Почти не влияет на ребёнка",
+        "tr": "Bebeği neredeyse etkilemez",
+        "en": "Hardly affects the baby",
+        "keywords": ["baby", "kaum", "schadet nicht"]
+      },
+      {
+        "uz": "Xavflar: bosim tushishi, bosh og‘rig‘i",
+        "ru": "Риски: падение давления, головная боль",
+        "tr": "Riskler: tansiyon düşmesi, baş ağrısı",
+        "en": "Risks: low blood pressure, headache",
+        "keywords": ["blutdruck", "kopfschmerzen"]
+      },
+      {
+        "uz": "Falaj juda kam uchraydi",
+        "ru": "Паралич крайне редок",
+        "tr": "Felç son derece nadir",
+        "en": "Paralysis is extremely rare",
+        "keywords": ["lähmung", "extrem selten", "sehr selten"]
+      },
+      {
+        "uz": "Oyoqlarda og‘irlik, kateter bilan siydik",
+        "ru": "Тяжесть в ногах, мочевой катетер",
+        "tr": "Bacaklarda ağırlık, idrar sondası",
+        "en": "Heavy legs, possible bladder catheter",
+        "keywords": ["beine", "schwer", "blase"]
+      },
+      {
+        "uz": "Savollar va rozilik",
+        "ru": "Вопросы и согласие",
+        "tr": "Sorular ve onam",
+        "en": "Questions and consent",
+        "keywords": ["fragen", "einverstanden", "unterschreiben", "einwilligung"]
+      }
+    ],
+    "jargon": [
+      {
+        "re": "periduralraum|epidural",
+        "fach": "Periduralraum",
+        "simple": "Raum am Rückenmark"
+      },
+      {
+        "re": "hypoton",
+        "fach": "Hypotonie",
+        "simple": "niedriger Blutdruck"
+      },
+      {
+        "re": "postpunktion",
+        "fach": "postpunktioneller Kopfschmerz",
+        "simple": "Kopfschmerzen nach dem Stich"
+      },
+      {
+        "re": "lokalan[äa]sthe",
+        "fach": "Lokalanästhetikum",
+        "simple": "Betäubungsmittel"
+      },
+      {
+        "re": "parese",
+        "fach": "Parese",
+        "simple": "Lähmung"
+      }
+    ],
+    "sample": "Ihre Fragen sind ganz verständlich. Die PDA schadet Ihrem Baby nicht. Nur sehr wenig Medikament kommt beim Baby an. Die PDA soll die Wehenschmerzen lindern, damit Sie sich besser entspannen können. Sie sitzen dafür mit rundem Rücken auf dem Bett. Zuerst betäuben wir die Haut. Das ist ein kleiner Pieks. Dann legen wir einen sehr dünnen Katheter in den Rücken, nahe am Rückenmark. Darüber geben wir das Schmerzmittel. Ihre Beine können sich schwer anfühlen. Manchmal brauchen Sie einen Katheter für die Blase. Der Blutdruck kann fallen. Das behandeln wir sofort. Selten entstehen danach starke Kopfschmerzen. Eine bleibende Lähmung ist extrem selten. Haben Sie noch Fragen? Wenn Sie einverstanden sind, unterschreiben Sie bitte hier."
+  },
+  {
+    "id": "kaiserschnitt",
+    "name": "Geplanter Kaiserschnitt",
+    "uz": "Rejalashtirilgan kesar kesish",
+    "ru": "Плановое кесарево сечение",
+    "tr": "Planlı sezaryen",
+    "en": "Planned caesarean section",
+    "icon": "👶",
+    "question": "Bekomme ich mein Baby gleich nach der Geburt zu sehen?",
+    "points": [
+      {
+        "uz": "Maqsad: nima uchun kerak",
+        "ru": "Цель: зачем это нужно",
+        "tr": "Amaç: neden gerekli",
+        "en": "Purpose: why it is needed",
+        "keywords": ["beckenendlage", "sicher", "baby", "steißlage"]
+      },
+      {
+        "uz": "Spinal anesteziya, ona hushida",
+        "ru": "Спинальная анестезия, мама в сознании",
+        "tr": "Spinal anestezi, anne uyanık",
+        "en": "Spinal anaesthetic, mother awake",
+        "keywords": ["wach", "rückenmark", "betäubung"]
+      },
+      {
+        "uz": "Qorin pastida ko‘ndalang kesik",
+        "ru": "Поперечный разрез внизу живота",
+        "tr": "Alt karında yatay kesi",
+        "en": "Horizontal cut low on the belly",
+        "keywords": ["schnitt", "schamhaar", "quer"]
+      },
+      {
+        "uz": "Bolani darhol ko‘rish, teriga teri",
+        "ru": "Сразу увидеть ребёнка, кожа к коже",
+        "tr": "Bebeği hemen görme, ten tene temas",
+        "en": "See the baby immediately, skin-to-skin",
+        "keywords": ["sofort", "haut-zu-haut", "brust"]
+      },
+      {
+        "uz": "Xavflar: qon ketish, infeksiya, tromboz",
+        "ru": "Риски: кровотечение, инфекция, тромбоз",
+        "tr": "Riskler: kanama, enfeksiyon, tromboz",
+        "en": "Risks: bleeding, infection, thrombosis",
+        "keywords": ["blutung", "infektion", "thrombose"]
+      },
+      {
+        "uz": "Kelajakdagi homiladorliklar",
+        "ru": "Будущие беременности",
+        "tr": "Gelecek gebelikler",
+        "en": "Future pregnancies",
+        "keywords": ["nächste schwangerschaft", "narbe"]
+      },
+      {
+        "uz": "Tez turish, 3–4 kun kasalxonada",
+        "ru": "Раннее вставание, 3–4 дня в больнице",
+        "tr": "Erken kalkma, 3–4 gün hastanede",
+        "en": "Early mobilisation, 3–4 days in hospital",
+        "keywords": ["aufstehen", "tage"]
+      },
+      {
+        "uz": "Savollar va rozilik",
+        "ru": "Вопросы и согласие",
+        "tr": "Sorular ve onam",
+        "en": "Questions and consent",
+        "keywords": ["fragen", "einverstanden", "unterschreiben", "einwilligung"]
+      }
+    ],
+    "jargon": [
+      {
+        "re": "sectio",
+        "fach": "Sectio",
+        "simple": "Kaiserschnitt"
+      },
+      {
+        "re": "spinalan[äa]sthesie",
+        "fach": "Spinalanästhesie",
+        "simple": "Betäubung über das Rückenmark"
+      },
+      {
+        "re": "pfannenstiel",
+        "fach": "Pfannenstiel-Schnitt",
+        "simple": "Querschnitt über dem Schamhaar"
+      },
+      {
+        "re": "uterusruptur",
+        "fach": "Uterusruptur",
+        "simple": "Riss der Gebärmutter"
+      },
+      {
+        "re": "bonding",
+        "fach": "Bonding",
+        "simple": "erster Hautkontakt mit dem Baby"
+      }
+    ],
+    "sample": "Ja, Sie sehen Ihr Baby sofort. Wenn es ihm gut geht, legen wir es Ihnen gleich zum Haut-zu-Haut-Kontakt auf die Brust. Ihr Baby liegt mit dem Po nach unten in einer Steißlage. Deshalb ist ein Kaiserschnitt für Sie und Ihr Baby der sichere Weg. Sie bekommen eine Betäubung über das Rückenmark. Dabei bleiben Sie wach, spüren aber keine Schmerzen. Ihr Partner darf dabei sein. Wir machen einen queren Schnitt direkt über dem Schamhaar. Mögliche Risiken sind eine Blutung, eine Infektion oder ein Blutgerinnsel in den Beinen, also eine Thrombose. Die Narbe an der Gebärmutter ist bei der nächsten Schwangerschaft wichtig. Schon am selben Tag helfen wir Ihnen beim Aufstehen. Meist bleiben Sie drei bis vier Tage bei uns. Haben Sie noch Fragen? Wenn Sie einverstanden sind, unterschreiben Sie bitte hier."
+  },
+  {
+    "id": "tonsillektomie",
+    "name": "Mandeloperation (Tonsillektomie)",
+    "uz": "Bodomcha bezlarini olib tashlash (tonzillektomiya)",
+    "ru": "Тонзиллэктомия",
+    "tr": "Bademcik ameliyatı",
+    "en": "Tonsillectomy",
+    "icon": "👄",
+    "question": "Ich habe gehört, dass man danach stark bluten kann. Stimmt das?",
+    "points": [
+      {
+        "uz": "Maqsad: nima uchun kerak",
+        "ru": "Цель: зачем это нужно",
+        "tr": "Amaç: neden gerekli",
+        "en": "Purpose: why it is needed",
+        "keywords": ["mandelentzündungen", "immer wieder", "antibiotika", "abszess"]
+      },
+      {
+        "uz": "Narkoz ostida og‘iz orqali",
+        "ru": "Под наркозом через рот",
+        "tr": "Genel anestezi altında ağızdan",
+        "en": "Through the mouth under general anaesthetic",
+        "keywords": ["narkose", "mund", "keine schnitte"]
+      },
+      {
+        "uz": "Kuchli og‘riq, og‘riq qoldiruvchilar",
+        "ru": "Сильная боль, обезболивающие",
+        "tr": "Şiddetli ağrı, ağrı kesiciler",
+        "en": "Strong pain, painkillers",
+        "keywords": ["schmerzen", "schmerzmittel"]
+      },
+      {
+        "uz": "Keyingi qon ketish, ayniqsa 5–8 kun",
+        "ru": "Поздние кровотечения, особенно 5–8 день",
+        "tr": "Geç kanama, özellikle 5–8. gün",
+        "en": "Delayed bleeding, especially days 5–8",
+        "keywords": ["nachblutung", "tag", "notaufnahme"]
+      },
+      {
+        "uz": "Qon ketsa darhol 112",
+        "ru": "При кровотечении сразу 112",
+        "tr": "Kanamada hemen 112",
+        "en": "If bleeding, call 112 at once",
+        "keywords": ["112", "sofort"]
+      },
+      {
+        "uz": "Yumshoq, sovuq ovqat",
+        "ru": "Мягкая, прохладная пища",
+        "tr": "Yumuşak, soğuk yiyecekler",
+        "en": "Soft, cool food",
+        "keywords": ["weich", "kühl", "keine scharfen"]
+      },
+      {
+        "uz": "2 hafta sport va issiq vannadan saqlanish",
+        "ru": "2 недели без спорта и горячих ванн",
+        "tr": "2 hafta spor ve sıcak banyodan kaçınma",
+        "en": "No sport or hot baths for 2 weeks",
+        "keywords": ["sport", "zwei wochen", "heiß"]
+      },
+      {
+        "uz": "Savollar va rozilik",
+        "ru": "Вопросы и согласие",
+        "tr": "Sorular ve onam",
+        "en": "Questions and consent",
+        "keywords": ["fragen", "einverstanden", "unterschreiben", "einwilligung"]
+      }
+    ],
+    "jargon": [
+      {
+        "re": "tonsill",
+        "fach": "Tonsillektomie",
+        "simple": "Entfernung der Mandeln"
+      },
+      {
+        "re": "peritonsill",
+        "fach": "Peritonsillarabszess",
+        "simple": "Eiter neben der Mandel"
+      },
+      {
+        "re": "odynophagie",
+        "fach": "Odynophagie",
+        "simple": "Schmerzen beim Schlucken"
+      },
+      {
+        "re": "analget",
+        "fach": "Analgetika",
+        "simple": "Schmerzmittel"
+      },
+      {
+        "re": "tonsillitis",
+        "fach": "Tonsillitis",
+        "simple": "Mandelentzündung"
+      }
+    ],
+    "sample": "Ja, das stimmt, und es ist gut, dass Sie danach fragen. Sie hatten in diesem Jahr immer wieder Mandelentzündungen und brauchten oft Antibiotika. Einmal hatten Sie sogar einen Abszess. Deshalb empfehlen wir, die Mandeln zu entfernen. Sie schlafen in einer Narkose. Wir operieren durch den Mund, es gibt also keine Schnitte außen. Danach haben Sie für etwa zehn Tage starke Halsschmerzen. Dagegen bekommen Sie regelmäßig Schmerzmittel. Eine Nachblutung kann auch noch nach Tagen auftreten, besonders am fünften bis achten Tag. Wenn Sie Blut spucken, rufen Sie bitte sofort die 112 an. Essen Sie weiche und kühle Speisen und keine scharfen Gewürze. Zwei Wochen dürfen Sie keinen Sport machen und nicht heiß baden. Haben Sie noch Fragen? Wenn Sie einverstanden sind, unterschreiben Sie bitte hier."
+  },
+  {
+    "id": "katarakt-op",
+    "name": "Operation des Grauen Stars (Katarakt)",
+    "uz": "Katarakta operatsiyasi",
+    "ru": "Операция катаракты",
+    "tr": "Katarakt ameliyatı",
+    "en": "Cataract surgery",
+    "icon": "👁️",
+    "question": "Bin ich während der Operation wach? Ich habe Angst, dass ich mit dem Auge zucke.",
+    "points": [
+      {
+        "uz": "Maqsad: nima uchun kerak",
+        "ru": "Цель: зачем это нужно",
+        "tr": "Amaç: neden gerekli",
+        "en": "Purpose: why it is needed",
+        "keywords": ["trüb", "linse", "besser sehen", "unscharf"]
+      },
+      {
+        "uz": "Xira gavhar sun’iy linzaga almashtiriladi",
+        "ru": "Замена мутного хрусталика искусственной линзой",
+        "tr": "Bulanık lensin yapay lensle değiştirilmesi",
+        "en": "Cloudy lens replaced by an artificial one",
+        "keywords": ["kunstlinse", "ersetzen", "künstliche"]
+      },
+      {
+        "uz": "Tomchilar bilan og‘riqsizlantirish, uyg‘oq",
+        "ru": "Обезболивание каплями, в сознании",
+        "tr": "Damla ile anestezi, uyanık",
+        "en": "Numbing drops, awake",
+        "keywords": ["tropfen", "wach", "betäub"]
+      },
+      {
+        "uz": "Ko‘z harakatlansa ham xavfsiz, 15–20 daqiqa",
+        "ru": "Безопасно даже при движении, 15–20 минут",
+        "tr": "Göz hareket etse de güvenli, 15–20 dakika",
+        "en": "Safe even if you move, 15–20 minutes",
+        "keywords": ["minuten", "kein problem", "beruhigungsmittel"]
+      },
+      {
+        "uz": "Xavflar: infeksiya, ko‘rishning yomonlashuvi (kam)",
+        "ru": "Риски: инфекция, ухудшение зрения (редко)",
+        "tr": "Riskler: enfeksiyon, görmede kötüleşme (nadir)",
+        "en": "Risks: infection, worse vision (rare)",
+        "keywords": ["infektion", "selten", "sehverschlechterung"]
+      },
+      {
+        "uz": "Tomchilar va himoya ko‘zoynagi",
+        "ru": "Капли и защитный щиток",
+        "tr": "Damlalar ve koruyucu kapak",
+        "en": "Drops and protective shield",
+        "keywords": ["augentropfen", "schutzkappe", "nicht reiben"]
+      },
+      {
+        "uz": "Keyinchalik o‘qish uchun ko‘zoynak",
+        "ru": "Потом очки для чтения",
+        "tr": "Sonra okuma gözlüğü",
+        "en": "Reading glasses may be needed later",
+        "keywords": ["lesebrille", "brille"]
+      },
+      {
+        "uz": "Savollar va rozilik",
+        "ru": "Вопросы и согласие",
+        "tr": "Sorular ve onam",
+        "en": "Questions and consent",
+        "keywords": ["fragen", "einverstanden", "unterschreiben", "einwilligung"]
+      }
+    ],
+    "jargon": [
+      {
+        "re": "katarakt",
+        "fach": "Katarakt",
+        "simple": "Grauer Star"
+      },
+      {
+        "re": "intraokular|iol\\b",
+        "fach": "Intraokularlinse",
+        "simple": "Kunstlinse"
+      },
+      {
+        "re": "phako",
+        "fach": "Phakoemulsifikation",
+        "simple": "Zerkleinern der Linse mit Ultraschall"
+      },
+      {
+        "re": "endophthalmitis",
+        "fach": "Endophthalmitis",
+        "simple": "Entzündung im Auge"
+      },
+      {
+        "re": "topisch",
+        "fach": "topische Anästhesie",
+        "simple": "Betäubung mit Tropfen"
+      }
+    ],
+    "sample": "Ja, Sie sind wach, aber das ist kein Problem. Ihre Linse im Auge ist trüb geworden. Deshalb sehen Sie alles unscharf und wie durch Nebel. Bei der Operation ersetzen wir die trübe Linse durch eine Kunstlinse. Danach können Sie meistens wieder deutlich besser sehen. Wir betäuben das Auge mit Tropfen. Sie spüren keine Schmerzen. Wenn Sie möchten, bekommen Sie ein leichtes Beruhigungsmittel. Die Operation dauert nur etwa 15 bis 20 Minuten. Ein kleines Zucken ist kein Problem. Sehr selten kommt es zu einer Infektion im Auge oder zu einer Sehverschlechterung. Danach bekommen Sie Augentropfen und eine Schutzkappe für die Nacht. Bitte reiben Sie nicht am Auge. Für das Lesen brauchen Sie vielleicht später eine Lesebrille. Haben Sie noch Fragen? Wenn Sie einverstanden sind, unterschreiben Sie bitte hier."
+  },
+  {
+    "id": "radiojodtherapie",
+    "name": "Radiojodtherapie",
+    "uz": "Radioyod terapiyasi",
+    "ru": "Радиойодтерапия",
+    "tr": "Radyoaktif iyot tedavisi",
+    "en": "Radioactive iodine therapy",
+    "icon": "🦋",
+    "question": "Warum muss ich dafür mehrere Tage auf eine besondere Station?",
+    "points": [
+      {
+        "uz": "Maqsad: nima uchun kerak",
+        "ru": "Цель: зачем это нужно",
+        "tr": "Amaç: neden gerekli",
+        "en": "Purpose: why it is needed",
+        "keywords": ["überfunktion", "schilddrüse", "knoten", "zerstören"]
+      },
+      {
+        "uz": "Kapsula shaklida radioaktiv yod",
+        "ru": "Радиоактивный йод в капсуле",
+        "tr": "Kapsül şeklinde radyoaktif iyot",
+        "en": "Radioactive iodine in a capsule",
+        "keywords": ["kapsel", "schlucken", "jod"]
+      },
+      {
+        "uz": "Maxsus bo‘limda bir necha kun",
+        "ru": "Несколько дней в специальном отделении",
+        "tr": "Özel serviste birkaç gün",
+        "en": "A few days on a special ward",
+        "keywords": ["station", "tage", "strahlung"]
+      },
+      {
+        "uz": "Homiladorlik istisno qilinishi, 6 oy kontratsepsiya",
+        "ru": "Исключить беременность, 6 месяцев контрацепции",
+        "tr": "Gebeliğin dışlanması, 6 ay korunma",
+        "en": "Exclude pregnancy, 6 months contraception",
+        "keywords": ["schwanger", "verhüt", "monate"]
+      },
+      {
+        "uz": "Yodli ovqat va kontrastdan saqlanish",
+        "ru": "Избегать йода и контрастных средств",
+        "tr": "İyotlu gıda ve kontrasttan kaçınma",
+        "en": "Avoid iodine and contrast agents",
+        "keywords": ["jodsalz", "kontrastmittel", "vorher"]
+      },
+      {
+        "uz": "Keyinroq gipoterioz, levotiroksin",
+        "ru": "Позже гипотиреоз, левотироксин",
+        "tr": "Daha sonra hipotiroidi, levotiroksin",
+        "en": "Later underactive thyroid, levothyroxine",
+        "keywords": ["unterfunktion", "tabletten", "hormon"]
+      },
+      {
+        "uz": "Nojo‘ya ta’sirlar: bo‘yinda og‘riq, quruq og‘iz",
+        "ru": "Побочные эффекты: боль в шее, сухость во рту",
+        "tr": "Yan etkiler: boyun ağrısı, ağız kuruluğu",
+        "en": "Side effects: neck pain, dry mouth",
+        "keywords": ["hals", "mundtrocken", "speichel"]
+      },
+      {
+        "uz": "Savollar va rozilik",
+        "ru": "Вопросы и согласие",
+        "tr": "Sorular ve onam",
+        "en": "Questions and consent",
+        "keywords": ["fragen", "einverstanden", "unterschreiben", "einwilligung"]
+      }
+    ],
+    "jargon": [
+      {
+        "re": "hyperthyreose",
+        "fach": "Hyperthyreose",
+        "simple": "Schilddrüsenüberfunktion"
+      },
+      {
+        "re": "autonom",
+        "fach": "Autonomie",
+        "simple": "Knoten, die selbst Hormone bilden"
+      },
+      {
+        "re": "hypothyreose",
+        "fach": "Hypothyreose",
+        "simple": "Schilddrüsenunterfunktion"
+      },
+      {
+        "re": "l-thyroxin|levothyrox",
+        "fach": "L-Thyroxin",
+        "simple": "Schilddrüsenhormon"
+      },
+      {
+        "re": "sialadenitis",
+        "fach": "Sialadenitis",
+        "simple": "Entzündung der Speicheldrüsen"
+      }
+    ],
+    "sample": "Nach der Kapsel geben Sie für einige Tage schwache Strahlung ab. Deshalb bleiben Sie auf einer besonderen Station, bis die Werte niedrig genug sind. So schützen wir andere Menschen. Sie haben eine Überfunktion der Schilddrüse durch Knoten, die zu viel Hormon bilden. Das radioaktive Jod wird nur von der Schilddrüse aufgenommen. Dort soll es die kranken Knoten zerstören. Sie schlucken einfach eine kleine Kapsel. Vorher müssen wir eine Schwangerschaft ausschließen. Danach sollten Sie sechs Monate sicher verhüten. Vier Wochen vorher dürfen Sie kein Jodsalz essen und kein Kontrastmittel bekommen. Nebenwirkungen sind selten, zum Beispiel ein Druckgefühl am Hals oder ein trockener Mund. Später kann eine Unterfunktion entstehen. Dann nehmen Sie täglich eine Tablette mit Hormon. Haben Sie noch Fragen? Wenn Sie einverstanden sind, unterschreiben Sie bitte hier."
+  },
+  {
+    "id": "gelenkpunktion",
+    "name": "Gelenkpunktion (Knie)",
+    "uz": "Bo‘g‘im punksiyasi (tizza)",
+    "ru": "Пункция сустава (колено)",
+    "tr": "Eklem ponksiyonu (diz)",
+    "en": "Joint aspiration (knee)",
+    "icon": "🦴",
+    "question": "Kann durch die Punktion eine Infektion im Knie entstehen?",
+    "points": [
+      {
+        "uz": "Maqsad: nima uchun kerak",
+        "ru": "Цель: зачем это нужно",
+        "tr": "Amaç: neden gerekli",
+        "en": "Purpose: why it is needed",
+        "keywords": ["flüssigkeit", "ursache", "entzündung", "druck"]
+      },
+      {
+        "uz": "Steril sharoitda, terini dezinfeksiya",
+        "ru": "Стерильно, дезинфекция кожи",
+        "tr": "Steril koşullarda, cilt dezenfeksiyonu",
+        "en": "Sterile, skin disinfected",
+        "keywords": ["steril", "desinfizier"]
+      },
+      {
+        "uz": "Mahalliy og‘riqsizlantirish, ingichka igna",
+        "ru": "Местное обезболивание, тонкая игла",
+        "tr": "Lokal anestezi, ince iğne",
+        "en": "Local anaesthetic, thin needle",
+        "keywords": ["betäub", "nadel"]
+      },
+      {
+        "uz": "Suyuqlik laboratoriyada tekshiriladi",
+        "ru": "Жидкость исследуется в лаборатории",
+        "tr": "Sıvı laboratuvarda incelenir",
+        "en": "Fluid is tested in the lab",
+        "keywords": ["labor", "bakterien", "kristalle"]
+      },
+      {
+        "uz": "Xavf: infeksiya juda kam",
+        "ru": "Риск: инфекция очень редка",
+        "tr": "Risk: enfeksiyon çok nadir",
+        "en": "Risk: infection is very rare",
+        "keywords": ["infektion", "sehr selten"]
+      },
+      {
+        "uz": "Keyin shish, qizarish, isitmada darhol kelish",
+        "ru": "При отёке, покраснении, лихорадке — срочно",
+        "tr": "Şişlik, kızarıklık, ateşte hemen başvuru",
+        "en": "Come at once with swelling, redness, fever",
+        "keywords": ["rötung", "fieber", "sofort"]
+      },
+      {
+        "uz": "1–2 kun tizzani ayash",
+        "ru": "1–2 дня беречь колено",
+        "tr": "1–2 gün dizi dinlendirme",
+        "en": "Rest the knee for 1–2 days",
+        "keywords": ["schonen", "tage", "pflaster"]
+      },
+      {
+        "uz": "Savollar va rozilik",
+        "ru": "Вопросы и согласие",
+        "tr": "Sorular ve onam",
+        "en": "Questions and consent",
+        "keywords": ["fragen", "einverstanden", "unterschreiben", "einwilligung"]
+      }
+    ],
+    "jargon": [
+      {
+        "re": "erguss",
+        "fach": "Erguss",
+        "simple": "Flüssigkeit im Gelenk"
+      },
+      {
+        "re": "arthritis",
+        "fach": "Arthritis",
+        "simple": "Gelenkentzündung"
+      },
+      {
+        "re": "synovia",
+        "fach": "Synovia",
+        "simple": "Gelenkflüssigkeit"
+      },
+      {
+        "re": "gicht|urat",
+        "fach": "Uratkristalle",
+        "simple": "Harnsäurekristalle"
+      },
+      {
+        "re": "septisch",
+        "fach": "septische Arthritis",
+        "simple": "bakterielle Gelenkentzündung"
+      }
+    ],
+    "sample": "Das ist eine berechtigte Frage. Eine Infektion ist möglich, aber sehr selten. Wir arbeiten deshalb ganz steril. In Ihrem Knie hat sich viel Flüssigkeit gesammelt. Das verursacht Druck und Schmerzen. Wir möchten die Flüssigkeit ablassen. So nimmt der Druck ab. Außerdem untersuchen wir die Flüssigkeit im Labor auf Bakterien und Kristalle. So finden wir die Ursache der Entzündung. Zuerst desinfizieren wir die Haut mehrmals. Dann betäuben wir die Stelle und stechen mit einer dünnen Nadel ins Gelenk. Das dauert nur wenige Minuten. Danach bekommen Sie ein Pflaster. Bitte schonen Sie das Knie ein bis zwei Tage. Wenn das Knie wieder dick wird, eine Rötung entsteht oder Sie Fieber bekommen, kommen Sie bitte sofort. Haben Sie noch Fragen? Sind Sie einverstanden? Dann unterschreiben Sie bitte hier."
+  },
+  {
+    "id": "kortisontherapie",
+    "name": "Kortisontherapie (Prednisolon-Tabletten)",
+    "uz": "Kortizon terapiyasi (prednizolon tabletkalari)",
+    "ru": "Терапия кортизоном (преднизолон)",
+    "tr": "Kortizon tedavisi (prednizolon tabletleri)",
+    "en": "Steroid treatment (prednisolone tablets)",
+    "icon": "💊",
+    "question": "Werde ich von Kortison dick? Ich habe so viel Schlechtes darüber gelesen.",
+    "points": [
+      {
+        "uz": "Maqsad: nima uchun kerak",
+        "ru": "Цель: зачем это нужно",
+        "tr": "Amaç: neden gerekli",
+        "en": "Purpose: why it is needed",
+        "keywords": ["entzündung", "schnell", "bremsen", "immunsystem"]
+      },
+      {
+        "uz": "Ertalab bir marta qabul",
+        "ru": "Приём утром один раз",
+        "tr": "Sabah tek doz",
+        "en": "Take once in the morning",
+        "keywords": ["morgens", "einmal"]
+      },
+      {
+        "uz": "Dozani asta kamaytirish, to‘satdan to‘xtatmaslik",
+        "ru": "Постепенно снижать, не отменять резко",
+        "tr": "Doz yavaşça azaltılır, aniden kesilmez",
+        "en": "Taper slowly, never stop suddenly",
+        "keywords": ["nicht plötzlich", "langsam", "reduzieren"]
+      },
+      {
+        "uz": "Nojo‘ya ta’sirlar: ishtaha, vazn, qand",
+        "ru": "Побочные эффекты: аппетит, вес, сахар",
+        "tr": "Yan etkiler: iştah, kilo, şeker",
+        "en": "Side effects: appetite, weight, blood sugar",
+        "keywords": ["appetit", "gewicht", "blutzucker"]
+      },
+      {
+        "uz": "Uzoq muddatda: suyak mo‘rtligi, infeksiya",
+        "ru": "Долгосрочно: остеопороз, инфекции",
+        "tr": "Uzun vadede: kemik erimesi, enfeksiyon",
+        "en": "Long-term: weak bones, infections",
+        "keywords": ["knochen", "infektion", "langfristig"]
+      },
+      {
+        "uz": "Oshqozon himoyasi, D vitamini va kalsiy",
+        "ru": "Защита желудка, витамин D и кальций",
+        "tr": "Mide koruyucu, D vitamini ve kalsiyum",
+        "en": "Stomach protection, vitamin D and calcium",
+        "keywords": ["magenschutz", "vitamin d", "kalzium"]
+      },
+      {
+        "uz": "Qand va qon bosimini nazorat qilish",
+        "ru": "Контроль сахара и давления",
+        "tr": "Şeker ve tansiyon kontrolü",
+        "en": "Monitoring sugar and blood pressure",
+        "keywords": ["kontroll", "blutdruck"]
+      },
+      {
+        "uz": "Savollar va rozilik",
+        "ru": "Вопросы и согласие",
+        "tr": "Sorular ve onam",
+        "en": "Questions and consent",
+        "keywords": ["fragen", "einverstanden", "unterschreiben", "einwilligung"]
+      }
+    ],
+    "jargon": [
+      {
+        "re": "glukokortikoid|steroid",
+        "fach": "Glukokortikoide",
+        "simple": "Kortison"
+      },
+      {
+        "re": "cushing",
+        "fach": "Cushing-Syndrom",
+        "simple": "Nebenwirkungen durch zu viel Kortison"
+      },
+      {
+        "re": "osteoporose",
+        "fach": "Osteoporose",
+        "simple": "Knochenschwund"
+      },
+      {
+        "re": "immunsuppress",
+        "fach": "Immunsuppression",
+        "simple": "geschwächte Abwehr"
+      },
+      {
+        "re": "ausschleichen",
+        "fach": "ausschleichen",
+        "simple": "langsam reduzieren"
+      }
+    ],
+    "sample": "Ich verstehe Ihre Sorge. Kortison hat einen schlechten Ruf, aber richtig eingesetzt hilft es sehr gut. Ihre Gelenke sind stark entzündet. Kortison bremst Ihr Immunsystem und kann die Entzündung schnell beruhigen. Sie nehmen die Tabletten einmal morgens nach dem Frühstück. In den nächsten Wochen werden wir die Dosis langsam reduzieren. Bitte setzen Sie Kortison nie plötzlich ab. Das kann gefährlich sein. Ja, der Appetit kann steigen, und Sie können an Gewicht zunehmen. Auch der Blutzucker kann steigen. Langfristig kann Kortison die Knochen schwächen, und Sie bekommen leichter eine Infektion. Deshalb geben wir Ihnen einen Magenschutz sowie Vitamin D und Kalzium. Wir kontrollieren regelmäßig Ihren Blutzucker und Blutdruck. Haben Sie noch Fragen? Sind Sie mit der Behandlung einverstanden?"
+  },
+  {
+    "id": "impfung",
+    "name": "Impfung gegen Pneumokokken und Grippe",
+    "uz": "Pnevmokokk va gripp emlashi",
+    "ru": "Вакцинация от пневмококка и гриппа",
+    "tr": "Pnömokok ve grip aşısı",
+    "en": "Pneumococcal and flu vaccination",
+    "icon": "💉",
+    "question": "Bekomme ich von der Grippeimpfung nicht die Grippe?",
+    "points": [
+      {
+        "uz": "Maqsad: nima uchun kerak",
+        "ru": "Цель: зачем это нужно",
+        "tr": "Amaç: neden gerekli",
+        "en": "Purpose: why it is needed",
+        "keywords": ["lungenentzündung", "schützen", "schwer", "copd"]
+      },
+      {
+        "uz": "Vaksinada tirik virus yo‘q",
+        "ru": "В вакцине нет живого вируса",
+        "tr": "Aşıda canlı virüs yok",
+        "en": "No live virus in the vaccine",
+        "keywords": ["keine grippe", "kein lebendes", "nicht krank"]
+      },
+      {
+        "uz": "Yelka mushagiga ukol",
+        "ru": "Укол в плечевую мышцу",
+        "tr": "Omuz kasına iğne",
+        "en": "Injection into the upper arm muscle",
+        "keywords": ["oberarm", "muskel", "spritze"]
+      },
+      {
+        "uz": "Mahalliy reaksiyalar: og‘riq, qizarish",
+        "ru": "Местные реакции: боль, покраснение",
+        "tr": "Lokal reaksiyonlar: ağrı, kızarıklık",
+        "en": "Local reactions: pain, redness",
+        "keywords": ["rötung", "schmerzen", "schwellung"]
+      },
+      {
+        "uz": "Umumiy reaksiyalar: holsizlik, yengil isitma 1–2 kun",
+        "ru": "Общие реакции: слабость, лёгкая температура 1–2 дня",
+        "tr": "Genel reaksiyonlar: halsizlik, hafif ateş 1–2 gün",
+        "en": "General reactions: tiredness, mild fever for 1–2 days",
+        "keywords": ["müde", "temperatur", "tage"]
+      },
+      {
+        "uz": "Allergik reaksiyalar juda kam",
+        "ru": "Аллергические реакции очень редки",
+        "tr": "Alerjik reaksiyonlar çok nadir",
+        "en": "Allergic reactions are very rare",
+        "keywords": ["allergi", "sehr selten", "15 minuten"]
+      },
+      {
+        "uz": "Gripp emlashi har yili",
+        "ru": "Прививка от гриппа ежегодно",
+        "tr": "Grip aşısı her yıl",
+        "en": "Flu vaccination every year",
+        "keywords": ["jedes jahr", "jährlich"]
+      },
+      {
+        "uz": "Savollar va rozilik",
+        "ru": "Вопросы и согласие",
+        "tr": "Sorular ve onam",
+        "en": "Questions and consent",
+        "keywords": ["fragen", "einverstanden", "unterschreiben", "einwilligung"]
+      }
+    ],
+    "jargon": [
+      {
+        "re": "pneumokokk",
+        "fach": "Pneumokokken",
+        "simple": "Bakterien, die Lungenentzündung machen"
+      },
+      {
+        "re": "influenza",
+        "fach": "Influenza",
+        "simple": "echte Grippe"
+      },
+      {
+        "re": "intramuskul",
+        "fach": "intramuskulär",
+        "simple": "in den Muskel"
+      },
+      {
+        "re": "totimpfstoff",
+        "fach": "Totimpfstoff",
+        "simple": "Impfstoff ohne lebende Erreger"
+      },
+      {
+        "re": "anaphyla",
+        "fach": "Anaphylaxie",
+        "simple": "schwere allergische Reaktion"
+      }
+    ],
+    "sample": "Nein, von der Impfung bekommen Sie keine Grippe. Der Impfstoff enthält kein lebendes Virus. Sie werden davon also nicht krank. Wegen Ihrer COPD haben Sie ein hohes Risiko für eine schwere Grippe oder eine Lungenentzündung. Die beiden Impfungen sollen Sie davor schützen. Wir geben Ihnen heute zwei Spritzen in den Muskel am Oberarm, eine an jedem Arm. Die Stelle kann ein bis zwei Tage wehtun. Auch eine Rötung oder Schwellung ist möglich. Manche Menschen sind danach müde oder haben leichte Temperatur. Das geht nach ein bis zwei Tagen vorbei. Eine allergische Reaktion ist sehr selten. Bitte bleiben Sie danach noch 15 Minuten im Wartezimmer. Die Grippeimpfung sollten Sie jedes Jahr im Herbst wiederholen. Haben Sie noch Fragen? Sind Sie einverstanden?"
+  },
+  {
+    "id": "schlaflabor",
+    "name": "Untersuchung im Schlaflabor und CPAP-Therapie",
+    "uz": "Uyqu laboratoriyasida tekshiruv va CPAP terapiyasi",
+    "ru": "Полисомнография и CPAP-терапия",
+    "tr": "Uyku laboratuvarı incelemesi ve CPAP tedavisi",
+    "en": "Sleep study and CPAP therapy",
+    "icon": "😴",
+    "question": "Mit einer Maske im Gesicht kann ich doch nie schlafen!",
+    "points": [
+      {
+        "uz": "Maqsad: nima uchun kerak",
+        "ru": "Цель: зачем это нужно",
+        "tr": "Amaç: neden gerekli",
+        "en": "Purpose: why it is needed",
+        "keywords": ["atemaussetzer", "schnarchen", "müde", "herz"]
+      },
+      {
+        "uz": "Laboratoriyada bir kecha, sensorlar",
+        "ru": "Ночь в лаборатории, датчики",
+        "tr": "Laboratuvarda bir gece, sensörler",
+        "en": "One night in the lab with sensors",
+        "keywords": ["nacht", "sensoren", "kabel"]
+      },
+      {
+        "uz": "Og‘riqsiz, oddiy uyqu",
+        "ru": "Безболезненно, обычный сон",
+        "tr": "Ağrısız, normal uyku",
+        "en": "Painless, normal sleep",
+        "keywords": ["schmerzfrei", "ganz normal schlafen"]
+      },
+      {
+        "uz": "CPAP: niqob orqali havo bosimi",
+        "ru": "CPAP: давление воздуха через маску",
+        "tr": "CPAP: maske ile hava basıncı",
+        "en": "CPAP: air pressure through a mask",
+        "keywords": ["maske", "luft", "atemwege offen"]
+      },
+      {
+        "uz": "Ko‘nikish vaqt oladi",
+        "ru": "Привыкание требует времени",
+        "tr": "Alışmak zaman alır",
+        "en": "Getting used to it takes time",
+        "keywords": ["gewöhnen", "wochen", "ausprobieren"]
+      },
+      {
+        "uz": "Foyda: dam olish, qon bosimi, avariya xavfi kamayadi",
+        "ru": "Польза: отдых, давление, меньше аварий",
+        "tr": "Fayda: dinlenme, tansiyon, kaza riski azalır",
+        "en": "Benefits: rest, blood pressure, fewer accidents",
+        "keywords": ["ausgeruht", "blutdruck", "unfall"]
+      },
+      {
+        "uz": "Nojo‘ya ta’sirlar: quruq burun, niqob bosimi",
+        "ru": "Побочные эффекты: сухость носа, давление маски",
+        "tr": "Yan etkiler: burun kuruluğu, maske baskısı",
+        "en": "Side effects: dry nose, mask pressure",
+        "keywords": ["trockene nase", "druckstellen", "befeuchter"]
+      },
+      {
+        "uz": "Savollar va rozilik",
+        "ru": "Вопросы и согласие",
+        "tr": "Sorular ve onam",
+        "en": "Questions and consent",
+        "keywords": ["fragen", "einverstanden", "unterschreiben", "einwilligung"]
+      }
+    ],
+    "jargon": [
+      {
+        "re": "apnoe",
+        "fach": "Schlafapnoe",
+        "simple": "Atemaussetzer im Schlaf"
+      },
+      {
+        "re": "polysomnograph",
+        "fach": "Polysomnographie",
+        "simple": "Untersuchung im Schlaflabor"
+      },
+      {
+        "re": "cpap",
+        "fach": "CPAP",
+        "simple": "Atemmaske mit leichtem Überdruck"
+      },
+      {
+        "re": "hypoxi|ents[äa]ttigung",
+        "fach": "Hypoxämie",
+        "simple": "zu wenig Sauerstoff im Blut"
+      },
+      {
+        "re": "tagesmüdigkeit|hypersomn",
+        "fach": "Hypersomnie",
+        "simple": "starke Müdigkeit am Tag"
+      }
+    ],
+    "sample": "Das sagen fast alle Patienten am Anfang. Die meisten gewöhnen sich aber nach einigen Wochen gut daran. Sie schnarchen laut, und Ihre Frau hat Atemaussetzer bemerkt. Am Tag sind Sie sehr müde. Diese Atemaussetzer belasten auf Dauer Ihr Herz. Deshalb untersuchen wir Sie eine Nacht im Schlaflabor. Wir kleben einige Sensoren mit Kabeln auf Ihre Haut. Das ist schmerzfrei, und Sie können ganz normal schlafen. Wenn sich die Atemaussetzer bestätigen, probieren Sie eine Atemmaske aus. Sie gibt leichten Druck mit Luft und hält so die Atemwege offen. Viele Patienten fühlen sich danach morgens endlich ausgeruht. Auch der Blutdruck sinkt oft, und das Risiko für einen Unfall am Steuer wird kleiner. Manchmal ist die Nase trocken, oder die Maske macht Druckstellen. Dagegen helfen ein Befeuchter und eine andere Maske. Haben Sie noch Fragen? Sind Sie einverstanden?"
+  },
+  {
+    "id": "lungenfunktion",
+    "name": "Lungenfunktionsprüfung (Spirometrie)",
+    "uz": "O‘pka funksiyasini tekshirish (spirometriya)",
+    "ru": "Исследование функции лёгких (спирометрия)",
+    "tr": "Solunum fonksiyon testi (spirometri)",
+    "en": "Lung function test (spirometry)",
+    "icon": "🌬️",
+    "question": "Was muss ich dabei machen? Ich bekomme doch jetzt schon schlecht Luft.",
+    "points": [
+      {
+        "uz": "Maqsad: nima uchun kerak",
+        "ru": "Цель: зачем это нужно",
+        "tr": "Amaç: neden gerekli",
+        "en": "Purpose: why it is needed",
+        "keywords": ["atemnot", "asthma", "copd", "lunge"]
+      },
+      {
+        "uz": "Burun qisqich, og‘izda naycha",
+        "ru": "Зажим на нос, мундштук во рту",
+        "tr": "Burun klipsi, ağızda ağızlık",
+        "en": "Nose clip, mouthpiece",
+        "keywords": ["nasenklammer", "mundstück"]
+      },
+      {
+        "uz": "Chuqur nafas olib, tez va kuchli chiqarish",
+        "ru": "Глубокий вдох, затем быстрый сильный выдох",
+        "tr": "Derin nefes, sonra hızlı ve güçlü verme",
+        "en": "Deep breath in, then fast hard breath out",
+        "keywords": ["tief einatmen", "kräftig", "ausatmen", "pusten"]
+      },
+      {
+        "uz": "Bir necha marta takrorlash",
+        "ru": "Повторить несколько раз",
+        "tr": "Birkaç kez tekrarlama",
+        "en": "Repeat several times",
+        "keywords": ["mehrmals", "wiederholen"]
+      },
+      {
+        "uz": "Bronxlarni kengaytiruvchi sprey bilan qayta test",
+        "ru": "Повтор после спрея-бронхолитика",
+        "tr": "Bronş genişletici spreyle tekrar test",
+        "en": "Repeat after a reliever spray",
+        "keywords": ["spray", "noch einmal"]
+      },
+      {
+        "uz": "Xavfsiz, biroz bosh aylanishi mumkin",
+        "ru": "Безопасно, может слегка кружиться голова",
+        "tr": "Güvenli, hafif baş dönmesi olabilir",
+        "en": "Safe, may feel slightly dizzy",
+        "keywords": ["schwindelig", "harmlos", "pause"]
+      },
+      {
+        "uz": "Tayyorgarlik: chekmaslik, spreylarni to‘xtatish",
+        "ru": "Подготовка: не курить, отменить спреи",
+        "tr": "Hazırlık: sigara içmeme, spreylere ara",
+        "en": "Preparation: no smoking, pause sprays",
+        "keywords": ["nicht rauchen", "spray weglassen", "vorher"]
+      },
+      {
+        "uz": "Savollar va rozilik",
+        "ru": "Вопросы и согласие",
+        "tr": "Sorular ve onam",
+        "en": "Questions and consent",
+        "keywords": ["fragen", "einverstanden", "unterschreiben", "einwilligung"]
+      }
+    ],
+    "jargon": [
+      {
+        "re": "spirometr",
+        "fach": "Spirometrie",
+        "simple": "Lungenfunktionstest"
+      },
+      {
+        "re": "fev1|einsekundenkapazit",
+        "fach": "FEV1",
+        "simple": "Luft, die man in einer Sekunde auspusten kann"
+      },
+      {
+        "re": "bronchodilat|broncholys",
+        "fach": "Bronchospasmolysetest",
+        "simple": "Test mit erweiterndem Spray"
+      },
+      {
+        "re": "obstrukt",
+        "fach": "Obstruktion",
+        "simple": "Verengung der Atemwege"
+      },
+      {
+        "re": "dyspnoe",
+        "fach": "Dyspnoe",
+        "simple": "Atemnot"
+      }
+    ],
+    "sample": "Das Wichtigste ist, dass Sie gut mitmachen. Ich erkläre Ihnen jeden Schritt. Sie haben seit Monaten Atemnot und Husten. Mit dem Test sehen wir, wie gut Ihre Lunge arbeitet. So können wir zum Beispiel Asthma oder COPD erkennen. Sie sitzen bequem und bekommen eine Nasenklammer. Dann nehmen Sie ein Mundstück in den Mund. Zuerst atmen Sie ruhig. Auf mein Zeichen atmen Sie ganz tief ein. Dann pusten Sie so kräftig und schnell wie möglich aus, bis keine Luft mehr kommt. Wir wiederholen das mehrmals. Danach bekommen Sie ein Spray, und wir messen noch einmal. Die Untersuchung ist harmlos. Manchmal wird man etwas schwindelig. Dann machen wir eine Pause. Bitte nicht rauchen und Ihr Spray am Morgen weglassen, wie vorher besprochen. Haben Sie noch Fragen? Sind Sie einverstanden?"
+  },
+  {
+    "id": "allergietest",
+    "name": "Allergietest (Pricktest)",
+    "uz": "Allergiya testi (prik test)",
+    "ru": "Аллергопроба (прик-тест)",
+    "tr": "Alerji testi (prik test)",
+    "en": "Allergy skin prick test",
+    "icon": "🌼",
+    "question": "Kann ich dabei einen allergischen Schock bekommen?",
+    "points": [
+      {
+        "uz": "Maqsad: nima uchun kerak",
+        "ru": "Цель: зачем это нужно",
+        "tr": "Amaç: neden gerekli",
+        "en": "Purpose: why it is needed",
+        "keywords": ["auslöser", "allergie", "pollen", "herausfinden"]
+      },
+      {
+        "uz": "Bilakka tomchilar va teriga kichik sanchish",
+        "ru": "Капли на предплечье и лёгкий укол",
+        "tr": "Ön kola damlalar ve küçük batırma",
+        "en": "Drops on the forearm and tiny pricks",
+        "keywords": ["unterarm", "tropfen", "pieks"]
+      },
+      {
+        "uz": "15–20 daqiqa kutish, qichishish",
+        "ru": "Подождать 15–20 минут, зуд",
+        "tr": "15–20 dakika bekleme, kaşıntı",
+        "en": "Wait 15–20 minutes, itching",
+        "keywords": ["minuten", "jucken", "quaddel"]
+      },
+      {
+        "uz": "Antigistaminlarni oldindan to‘xtatish",
+        "ru": "Заранее отменить антигистаминные",
+        "tr": "Antihistaminikleri önceden kesme",
+        "en": "Stop antihistamines beforehand",
+        "keywords": ["antihistaminikum", "tage vorher", "absetzen"]
+      },
+      {
+        "uz": "Og‘ir reaksiya juda kam, shifokor yonida",
+        "ru": "Тяжёлая реакция крайне редка, врач рядом",
+        "tr": "Ağır reaksiyon çok nadir, doktor yanında",
+        "en": "Severe reaction very rare, doctor present",
+        "keywords": ["sehr selten", "notfall", "vorbereitet"]
+      },
+      {
+        "uz": "Keyin davolash rejasi",
+        "ru": "Затем план лечения",
+        "tr": "Sonra tedavi planı",
+        "en": "Then a treatment plan",
+        "keywords": ["behandlung", "hyposensibil", "meiden"]
+      },
+      {
+        "uz": "Natija darhol ko‘rinadi",
+        "ru": "Результат виден сразу",
+        "tr": "Sonuç hemen görülür",
+        "en": "The result is seen immediately",
+        "keywords": ["direkt", "ergebnis"]
+      },
+      {
+        "uz": "Savollar va rozilik",
+        "ru": "Вопросы и согласие",
+        "tr": "Sorular ve onam",
+        "en": "Questions and consent",
+        "keywords": ["fragen", "einverstanden", "unterschreiben", "einwilligung"]
+      }
+    ],
+    "jargon": [
+      {
+        "re": "anaphyla",
+        "fach": "Anaphylaxie",
+        "simple": "allergischer Schock"
+      },
+      {
+        "re": "allergen",
+        "fach": "Allergen",
+        "simple": "Stoff, der die Allergie auslöst"
+      },
+      {
+        "re": "hyposensibilisierung|immuntherapie",
+        "fach": "Hyposensibilisierung",
+        "simple": "Gewöhnung des Körpers an den Auslöser"
+      },
+      {
+        "re": "antihistamin",
+        "fach": "Antihistaminikum",
+        "simple": "Tablette gegen Allergie"
+      },
+      {
+        "re": "urtikaria",
+        "fach": "Urtikaria",
+        "simple": "Nesselsucht"
+      }
+    ],
+    "sample": "Das ist extrem selten, und wir sind auf jeden Notfall vorbereitet. Ein Arzt ist die ganze Zeit in der Nähe. Sie haben jedes Frühjahr Schnupfen und juckende Augen. Mit dem Test wollen wir herausfinden, welche Auslöser Ihre Allergie verursachen, zum Beispiel Pollen oder Hausstaub. Wir geben kleine Tropfen auf Ihren Unterarm. Dann machen wir mit einer feinen Lanzette einen kleinen Pieks in die Haut. Das tut kaum weh. Nach 15 bis 20 Minuten sehen wir das Ergebnis direkt. Wenn Sie allergisch sind, juckt die Stelle, und es bildet sich eine kleine Quaddel. Bitte nehmen Sie Ihre Tablette gegen Allergie, also das Antihistaminikum, eine Woche vorher nicht mehr. Danach besprechen wir die Behandlung. Manchmal ist eine Gewöhnung des Körpers an den Auslöser sinnvoll. Haben Sie noch Fragen? Sind Sie einverstanden?"
+  },
+  {
+    "id": "stoma",
+    "name": "Anlage eines künstlichen Darmausgangs (Stoma)",
+    "uz": "Sun’iy ichak teshigi (stoma) qo‘yish",
+    "ru": "Наложение стомы (искусственного заднего прохода)",
+    "tr": "Stoma (yapay bağırsak çıkışı) açılması",
+    "en": "Creating a stoma",
+    "icon": "🩹",
+    "question": "Werde ich mit einem Beutel am Bauch noch ein normales Leben führen können?",
+    "points": [
+      {
+        "uz": "Maqsad: nima uchun kerak",
+        "ru": "Цель: зачем это нужно",
+        "tr": "Amaç: neden gerekli",
+        "en": "Purpose: why it is needed",
+        "keywords": ["darm", "heilen", "schonen", "naht"]
+      },
+      {
+        "uz": "Qorin devorida ichak teshigi, xalta",
+        "ru": "Отверстие кишки на животе, калоприёмник",
+        "tr": "Karın duvarında açıklık, torba",
+        "en": "Bowel opening on the belly with a bag",
+        "keywords": ["öffnung", "bauch", "beutel"]
+      },
+      {
+        "uz": "Vaqtinchalik, 3 oydan keyin yopish",
+        "ru": "Временно, закрытие через 3 месяца",
+        "tr": "Geçici, 3 ay sonra kapatma",
+        "en": "Temporary, closed after 3 months",
+        "keywords": ["vorübergehend", "monate", "zurückverlegen"]
+      },
+      {
+        "uz": "Stoma hamshirasi o‘rgatadi",
+        "ru": "Обучение у стоматерапевта",
+        "tr": "Stoma hemşiresi öğretir",
+        "en": "A stoma nurse will teach you",
+        "keywords": ["stomatherapeut", "zeigen", "üben"]
+      },
+      {
+        "uz": "Normal hayot: ish, sport, sayohat",
+        "ru": "Нормальная жизнь: работа, спорт, поездки",
+        "tr": "Normal yaşam: iş, spor, seyahat",
+        "en": "Normal life: work, sport, travel",
+        "keywords": ["normal", "arbeiten", "sport", "reisen"]
+      },
+      {
+        "uz": "Xavflar: teri qichishi, churra, torayish",
+        "ru": "Риски: раздражение кожи, грыжа, сужение",
+        "tr": "Riskler: cilt tahrişi, fıtık, daralma",
+        "en": "Risks: skin irritation, hernia, narrowing",
+        "keywords": ["haut", "bruch", "verengung"]
+      },
+      {
+        "uz": "Hech kim xaltani sezmaydi, hidi yo‘q",
+        "ru": "Никто не заметит мешок, нет запаха",
+        "tr": "Torbayı kimse fark etmez, koku yok",
+        "en": "Nobody notices the bag, no smell",
+        "keywords": ["niemand", "geruch", "kleidung"]
+      },
+      {
+        "uz": "Savollar va rozilik",
+        "ru": "Вопросы и согласие",
+        "tr": "Sorular ve onam",
+        "en": "Questions and consent",
+        "keywords": ["fragen", "einverstanden", "unterschreiben", "einwilligung"]
+      }
+    ],
+    "jargon": [
+      {
+        "re": "ileostoma|kolostoma",
+        "fach": "Ileostoma",
+        "simple": "künstlicher Darmausgang"
+      },
+      {
+        "re": "anastomose",
+        "fach": "Anastomose",
+        "simple": "Naht zwischen zwei Darmenden"
+      },
+      {
+        "re": "insuffizienz",
+        "fach": "Anastomoseninsuffizienz",
+        "simple": "undichte Darmnaht"
+      },
+      {
+        "re": "parastomal",
+        "fach": "parastomale Hernie",
+        "simple": "Bruch neben dem Stoma"
+      },
+      {
+        "re": "r[üu]ckverlagerung",
+        "fach": "Rückverlagerung",
+        "simple": "Verschluss des Stomas"
+      }
+    ],
+    "sample": "Ja, die meisten Menschen leben mit einem Stoma ganz normal. Wir haben bei Ihnen ein Stück Darm entfernt und die Enden wieder zusammengenäht. Diese Naht soll in Ruhe heilen. Deshalb leiten wir den Stuhl vorübergehend über eine kleine Öffnung am Bauch ab. Den Stuhl fängt ein Beutel auf. So schonen wir die Naht. Nach etwa drei Monaten können wir den Darm meist wieder zurückverlegen. Eine Stomatherapeutin wird Ihnen alles zeigen. Sie üben mit ihr, den Beutel zu wechseln. Sie können arbeiten, Sport machen und reisen. Unter der Kleidung sieht niemand den Beutel, und moderne Beutel halten den Geruch zurück. Mögliche Probleme sind gereizte Haut, ein Bruch neben dem Stoma oder eine Verengung. Haben Sie noch Fragen? Wenn Sie einverstanden sind, unterschreiben Sie bitte hier."
+  },
+  {
+    "id": "gipsverband",
+    "name": "Ruhigstellung im Gips",
+    "uz": "Gips bilan harakatsizlantirish",
+    "ru": "Иммобилизация гипсом",
+    "tr": "Alçı ile sabitleme",
+    "en": "Immobilisation in a cast",
+    "icon": "🦴",
+    "question": "Worauf muss ich achten, damit mit dem Gips nichts passiert?",
+    "points": [
+      {
+        "uz": "Maqsad: nima uchun kerak",
+        "ru": "Цель: зачем это нужно",
+        "tr": "Amaç: neden gerekli",
+        "en": "Purpose: why it is needed",
+        "keywords": ["bruch", "ruhig", "zusammenwachsen", "heilen"]
+      },
+      {
+        "uz": "Birinchi kunlar balandga ko‘tarish",
+        "ru": "Первые дни держать возвышенно",
+        "tr": "İlk günler yukarıda tutma",
+        "en": "Keep raised for the first days",
+        "keywords": ["hochlagern", "herz", "schwellung"]
+      },
+      {
+        "uz": "Xavf belgilari: kuchli og‘riq, uvishish, ko‘karish",
+        "ru": "Тревожные признаки: боль, онемение, синюшность",
+        "tr": "Uyarı belirtileri: şiddetli ağrı, uyuşma, morarma",
+        "en": "Warning signs: severe pain, numbness, blue fingers",
+        "keywords": ["taub", "blau", "kribbeln", "sofort"]
+      },
+      {
+        "uz": "Barmoqlarni harakatlantirish",
+        "ru": "Двигать пальцами",
+        "tr": "Parmakları hareket ettirme",
+        "en": "Move your fingers",
+        "keywords": ["bewegen sie die finger", "finger oft", "zehen bewegen"]
+      },
+      {
+        "uz": "Gipsni quruq saqlash",
+        "ru": "Держать гипс сухим",
+        "tr": "Alçıyı kuru tutma",
+        "en": "Keep the cast dry",
+        "keywords": ["trocken", "nass", "duschen"]
+      },
+      {
+        "uz": "Ichiga hech narsa tiqmaslik",
+        "ru": "Ничего не засовывать внутрь",
+        "tr": "İçine bir şey sokmama",
+        "en": "Do not put anything inside",
+        "keywords": ["kratzen", "nichts hineinstecken"]
+      },
+      {
+        "uz": "Nazorat va rentgen",
+        "ru": "Контроль и рентген",
+        "tr": "Kontrol ve röntgen",
+        "en": "Follow-up and X-ray",
+        "keywords": ["kontrolle", "röntgen", "morgen"]
+      },
+      {
+        "uz": "Savollar va rozilik",
+        "ru": "Вопросы и согласие",
+        "tr": "Sorular ve onam",
+        "en": "Questions and consent",
+        "keywords": ["fragen", "einverstanden", "unterschreiben", "einwilligung"]
+      }
+    ],
+    "jargon": [
+      {
+        "re": "immobilis",
+        "fach": "Immobilisation",
+        "simple": "Ruhigstellung"
+      },
+      {
+        "re": "kompartment",
+        "fach": "Kompartmentsyndrom",
+        "simple": "gefährlicher Druck im Gewebe"
+      },
+      {
+        "re": "dms\\b|sensibilit[äa]t",
+        "fach": "Sensibilität",
+        "simple": "Gefühl"
+      },
+      {
+        "re": "ödem",
+        "fach": "Ödem",
+        "simple": "Schwellung"
+      },
+      {
+        "re": "konsolid",
+        "fach": "Konsolidierung",
+        "simple": "Zusammenwachsen des Knochens"
+      }
+    ],
+    "sample": "Gut, dass Sie fragen. Ihr Unterarm ist gebrochen, aber die Knochen stehen gut. Der Gips hält den Bruch ruhig, damit die Knochen gut zusammenwachsen. In den ersten Tagen ist das Wichtigste: Bitte lagern Sie den Arm hoch, am besten über dem Herzen. So verhindern Sie eine Schwellung. Bewegen Sie die Finger oft. Kommen Sie bitte sofort, wenn die Finger taub werden, kribbeln, blau werden oder die Schmerzen stark zunehmen. Dann kann der Gips zu eng sein. Der Gips muss trocken bleiben. Zum Duschen ziehen Sie bitte eine Plastiktüte darüber. Wenn es juckt, sollten Sie nicht mit Gegenständen kratzen. Bitte nichts hineinstecken. Morgen kommen Sie zur Kontrolle, und in einer Woche machen wir ein Röntgenbild. Haben Sie noch Fragen? Sind Sie einverstanden?"
+  },
+  {
+    "id": "icd",
+    "name": "Implantierbarer Defibrillator (ICD)",
+    "uz": "Implantatsiya qilinadigan defibrillyator (ICD)",
+    "ru": "Имплантируемый кардиовертер-дефибриллятор (ИКД)",
+    "tr": "İmplante edilebilir defibrilatör (ICD)",
+    "en": "Implantable cardioverter-defibrillator (ICD)",
+    "icon": "⚡",
+    "question": "Was passiert, wenn das Gerät mir einen Schock gibt? Tut das weh?",
+    "points": [
+      {
+        "uz": "Maqsad: nima uchun kerak",
+        "ru": "Цель: зачем это нужно",
+        "tr": "Amaç: neden gerekli",
+        "en": "Purpose: why it is needed",
+        "keywords": ["plötzlichen herztod", "gefährliche rhythmusstörung", "schützen"]
+      },
+      {
+        "uz": "Ko‘krak terisi ostiga, simlar yurakka",
+        "ru": "Под кожу груди, провода в сердце",
+        "tr": "Göğüs derisi altına, teller kalbe",
+        "en": "Under the chest skin, wires to the heart",
+        "keywords": ["unter die haut", "schlüsselbein", "kabel"]
+      },
+      {
+        "uz": "Mahalliy og‘riqsizlantirish va tinchlantiruvchi",
+        "ru": "Местное обезболивание и седация",
+        "tr": "Lokal anestezi ve sedasyon",
+        "en": "Local anaesthetic and sedation",
+        "keywords": ["betäub", "beruhigungsmittel"]
+      },
+      {
+        "uz": "Shok — qisqa kuchli zarba, xavfsiz",
+        "ru": "Шок — короткий сильный удар, безопасен",
+        "tr": "Şok — kısa güçlü darbe, güvenli",
+        "en": "A shock is a short strong kick, safe",
+        "keywords": ["schlag", "kurz", "tritt"]
+      },
+      {
+        "uz": "Shokdan keyin nima qilish kerak",
+        "ru": "Что делать после шока",
+        "tr": "Şoktan sonra ne yapılmalı",
+        "en": "What to do after a shock",
+        "keywords": ["melden", "112", "mehrere schocks"]
+      },
+      {
+        "uz": "Xavflar: qon ketish, infeksiya, sim siljishi",
+        "ru": "Риски: кровотечение, инфекция, смещение электрода",
+        "tr": "Riskler: kanama, enfeksiyon, kablo yer değiştirmesi",
+        "en": "Risks: bleeding, infection, lead displacement",
+        "keywords": ["blutung", "infektion", "verrutsch"]
+      },
+      {
+        "uz": "Haydash, magnitlar, nazorat",
+        "ru": "Вождение, магниты, контроль",
+        "tr": "Araç kullanma, mıknatıslar, kontrol",
+        "en": "Driving, magnets, check-ups",
+        "keywords": ["autofahren", "magnet", "kontrolle"]
+      },
+      {
+        "uz": "Savollar va rozilik",
+        "ru": "Вопросы и согласие",
+        "tr": "Sorular ve onam",
+        "en": "Questions and consent",
+        "keywords": ["fragen", "einverstanden", "unterschreiben", "einwilligung"]
+      }
+    ],
+    "jargon": [
+      {
+        "re": "\\bicd\\b|defibrillator",
+        "fach": "ICD",
+        "simple": "Gerät, das gefährliche Herzrhythmen beendet"
+      },
+      {
+        "re": "kammerflimmern|ventrikul",
+        "fach": "Kammerflimmern",
+        "simple": "lebensgefährliche Herzrhythmusstörung"
+      },
+      {
+        "re": "ejektionsfraktion|\\bef\\b",
+        "fach": "Ejektionsfraktion",
+        "simple": "Pumpkraft des Herzens"
+      },
+      {
+        "re": "sondendislokation|dislokation",
+        "fach": "Sondendislokation",
+        "simple": "Verrutschen des Kabels"
+      },
+      {
+        "re": "kardiomyopath",
+        "fach": "Kardiomyopathie",
+        "simple": "Herzmuskelschwäche"
+      }
+    ],
+    "sample": "Ein Schock fühlt sich wie ein kurzer, kräftiger Tritt gegen die Brust an. Das ist unangenehm, dauert aber nur eine Sekunde. Ihr Herz pumpt nach dem Infarkt nur noch schwach. Dadurch haben Sie ein erhöhtes Risiko für eine gefährliche Rhythmusstörung. Das Gerät soll Sie vor dem plötzlichen Herztod schützen. Es erkennt den gefährlichen Rhythmus und beendet ihn mit einem Schlag. Wir setzen das Gerät unter dem Schlüsselbein unter die Haut. Ein Kabel führen wir über eine Vene ins Herz. Sie bekommen eine örtliche Betäubung und ein Beruhigungsmittel. Mögliche Risiken sind Blutung, Infektion oder ein Verrutschen des Kabels. Nach einem einzelnen Schock melden Sie sich bitte bei uns. Bei mehreren Schocks rufen Sie die 112. In den ersten Monaten dürfen Sie nicht Autofahren. Halten Sie starke Magnete fern. Alle sechs Monate kommen Sie zur Kontrolle. Haben Sie noch Fragen? Sind Sie einverstanden? Dann unterschreiben Sie bitte hier."
+  },
+  {
+    "id": "muttermal-exzision",
+    "name": "Entfernung eines Muttermals",
+    "uz": "Xolni olib tashlash",
+    "ru": "Удаление родинки",
+    "tr": "Ben (nevüs) alınması",
+    "en": "Mole removal",
+    "icon": "🔍",
+    "question": "Bleibt danach eine große Narbe?",
+    "points": [
+      {
+        "uz": "Maqsad: nima uchun kerak",
+        "ru": "Цель: зачем это нужно",
+        "tr": "Amaç: neden gerekli",
+        "en": "Purpose: why it is needed",
+        "keywords": ["verdächtig", "hautkrebs", "ausschließen", "verändert"]
+      },
+      {
+        "uz": "Mahalliy og‘riqsizlantirish",
+        "ru": "Местное обезболивание",
+        "tr": "Lokal anestezi",
+        "en": "Local anaesthetic",
+        "keywords": ["betäub", "pieks"]
+      },
+      {
+        "uz": "Ellips shaklida kesib olish va chok",
+        "ru": "Иссечение овалом и шов",
+        "tr": "Elips şeklinde kesip dikiş",
+        "en": "Cut out in an oval and stitched",
+        "keywords": ["herausschneiden", "naht", "fäden"]
+      },
+      {
+        "uz": "Kichik chandiq qoladi",
+        "ru": "Останется небольшой рубец",
+        "tr": "Küçük bir iz kalır",
+        "en": "A small scar will remain",
+        "keywords": ["narbe", "klein", "verblasst"]
+      },
+      {
+        "uz": "Gistologik tekshiruv",
+        "ru": "Гистологическое исследование",
+        "tr": "Histolojik inceleme",
+        "en": "Examined under the microscope",
+        "keywords": ["mikroskop", "labor", "ergebnis"]
+      },
+      {
+        "uz": "Xavflar: qon ketish, infeksiya",
+        "ru": "Риски: кровотечение, инфекция",
+        "tr": "Riskler: kanama, enfeksiyon",
+        "en": "Risks: bleeding, infection",
+        "keywords": ["blutung", "infektion"]
+      },
+      {
+        "uz": "Chokni olish 10–14 kunda, quyosh himoyasi",
+        "ru": "Снятие швов через 10–14 дней, защита от солнца",
+        "tr": "10–14 günde dikiş alma, güneş koruması",
+        "en": "Stitches out after 10–14 days, sun protection",
+        "keywords": ["tagen", "sonnenschutz", "fäden ziehen"]
+      },
+      {
+        "uz": "Savollar va rozilik",
+        "ru": "Вопросы и согласие",
+        "tr": "Sorular ve onam",
+        "en": "Questions and consent",
+        "keywords": ["fragen", "einverstanden", "unterschreiben", "einwilligung"]
+      }
+    ],
+    "jargon": [
+      {
+        "re": "exzision",
+        "fach": "Exzision",
+        "simple": "Herausschneiden"
+      },
+      {
+        "re": "n[äa]vus",
+        "fach": "Nävus",
+        "simple": "Muttermal"
+      },
+      {
+        "re": "melanom",
+        "fach": "Melanom",
+        "simple": "schwarzer Hautkrebs"
+      },
+      {
+        "re": "histolog",
+        "fach": "Histologie",
+        "simple": "Untersuchung unter dem Mikroskop"
+      },
+      {
+        "re": "sicherheitsabstand",
+        "fach": "Sicherheitsabstand",
+        "simple": "etwas gesunde Haut drumherum"
+      }
+    ],
+    "sample": "Es bleibt eine kleine Narbe, die mit der Zeit meistens verblasst. Ihr Muttermal am Rücken hat sich verändert. Es ist größer und unregelmäßiger geworden. Das ist verdächtig. Wir möchten es entfernen, um Hautkrebs sicher auszuschließen. Zuerst betäuben wir die Haut. Das ist nur ein kleiner Pieks. Danach spüren Sie nichts mehr. Wir schneiden das Muttermal mit etwas gesunder Haut drumherum heraus. Dann verschließen wir die Wunde mit einer Naht. Das Gewebe schicken wir ins Labor und untersuchen es unter dem Mikroskop. Das Ergebnis besprechen wir in etwa einer Woche. Selten kommt es zu einer Blutung oder einer Infektion. Die Fäden ziehen wir nach 10 bis 14 Tagen. Bitte achten Sie danach auf guten Sonnenschutz für die Narbe. Haben Sie noch Fragen? Sind Sie einverstanden?"
+  },
+  {
+    "id": "katheterablation",
+    "name": "Katheterablation bei Vorhofflimmern",
+    "uz": "Bo‘lmachalar fibrillyatsiyasida kateter ablatsiyasi",
+    "ru": "Катетерная абляция при фибрилляции предсердий",
+    "tr": "Atriyal fibrilasyonda kateter ablasyonu",
+    "en": "Catheter ablation for atrial fibrillation",
+    "icon": "❤️‍🔥",
+    "question": "Ist das eine Operation am offenen Herzen?",
+    "points": [
+      {
+        "uz": "Maqsad: nima uchun kerak",
+        "ru": "Цель: зачем это нужно",
+        "tr": "Amaç: neden gerekli",
+        "en": "Purpose: why it is needed",
+        "keywords": ["herzstolpern", "rhythmus", "medikamente", "beschwerden"]
+      },
+      {
+        "uz": "Chov venasi orqali kateter, ochiq operatsiya emas",
+        "ru": "Катетер через паховую вену, не открытая операция",
+        "tr": "Kasık veninden kateter, açık ameliyat değil",
+        "en": "Catheter via the groin vein, not open surgery",
+        "keywords": ["leiste", "vene", "kein offener"]
+      },
+      {
+        "uz": "Yurakdagi kichik sohalar kuydiriladi yoki muzlatiladi",
+        "ru": "Прижигание или замораживание участков",
+        "tr": "Küçük alanlar yakılır veya dondurulur",
+        "en": "Small areas are burnt or frozen",
+        "keywords": ["veröd", "kälte", "hitze"]
+      },
+      {
+        "uz": "Uyquli tinchlantirish yoki narkoz",
+        "ru": "Седация или наркоз",
+        "tr": "Sedasyon veya genel anestezi",
+        "en": "Sedation or general anaesthetic",
+        "keywords": ["schlaf", "narkose"]
+      },
+      {
+        "uz": "Xavflar: qon ketish, perikard suyuqligi, insult",
+        "ru": "Риски: кровотечение, выпот в перикарде, инсульт",
+        "tr": "Riskler: kanama, perikard sıvısı, inme",
+        "en": "Risks: bleeding, fluid around the heart, stroke",
+        "keywords": ["blutung", "herzbeutel", "schlaganfall"]
+      },
+      {
+        "uz": "Qayta aritmiya mumkin, ba’zan takroriy",
+        "ru": "Возможен рецидив, иногда повтор",
+        "tr": "Nüks olabilir, bazen tekrar",
+        "en": "Arrhythmia may return; sometimes repeated",
+        "keywords": ["wiederkommen", "zweite"]
+      },
+      {
+        "uz": "Antikoagulyatsiya davom etadi",
+        "ru": "Антикоагуляция продолжается",
+        "tr": "Antikoagülasyon sürer",
+        "en": "Anticoagulation continues",
+        "keywords": ["blutverdünn", "weiter"]
+      },
+      {
+        "uz": "Savollar va rozilik",
+        "ru": "Вопросы и согласие",
+        "tr": "Sorular ve onam",
+        "en": "Questions and consent",
+        "keywords": ["fragen", "einverstanden", "unterschreiben", "einwilligung"]
+      }
+    ],
+    "jargon": [
+      {
+        "re": "ablation",
+        "fach": "Ablation",
+        "simple": "Verödung von Herzgewebe"
+      },
+      {
+        "re": "pulmonalvenen",
+        "fach": "Pulmonalvenenisolation",
+        "simple": "Verödung um die Lungenvenen"
+      },
+      {
+        "re": "perikarderguss|tamponade",
+        "fach": "Perikardtamponade",
+        "simple": "Blut im Herzbeutel"
+      },
+      {
+        "re": "vorhofflimmern",
+        "fach": "Vorhofflimmern",
+        "simple": "unregelmäßiger Herzschlag"
+      },
+      {
+        "re": "antiarrhythm",
+        "fach": "Antiarrhythmika",
+        "simple": "Medikamente gegen Rhythmusstörungen"
+      }
+    ],
+    "sample": "Nein, es ist kein offener Eingriff am Herzen. Sie haben seit Jahren immer wieder Herzstolpern, also einen unregelmäßigen Herzschlag. Die Medikamente helfen nicht genug. Mit dem Eingriff möchten wir den Rhythmus dauerhaft verbessern und Ihre Beschwerden lindern. Wir schieben dünne Katheter über eine Vene in der Leiste bis ins Herz. Dort veröden wir kleine Bereiche mit Hitze oder Kälte. So können die falschen Signale nicht mehr weitergeleitet werden. Sie bekommen dabei ein Schlafmittel oder eine Narkose. Mögliche Risiken sind Blutung an der Leiste, Blut im Herzbeutel oder sehr selten ein Schlaganfall. Das Herzstolpern kann wiederkommen. Dann ist manchmal ein zweiter Eingriff nötig. Ihren Blutverdünner nehmen Sie bitte weiter. Haben Sie noch Fragen? Wenn Sie einverstanden sind, unterschreiben Sie bitte hier."
   }
 ]
