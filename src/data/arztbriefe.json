@@ -10836,5 +10836,827 @@
       }
     ],
     "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihre Patientin Frau Sabine Kraft, 61 Jahre, die vom 06.10.2026 bis zum 06.10.2026 in unserer angiologischen Ambulanz behandelt wurde.\n\nAnamnese:\nDie Patientin stellte sich mit einem seit drei Tagen bestehenden schmerzhaften, geröteten Strang an der Innenseite des rechten Unterschenkels vor. Vorausgegangen war eine lange Busreise. Es besteht eine Varikosis beidseits bei Adipositas und stehendem Beruf.\n\nBefunde:\nEine Umfangsdifferenz der Beine bestand nicht. In der Duplexsonographie zeigte sich eine Thrombose der V. saphena magna am Unterschenkel über 8 cm mit einem Abstand von 25 cm zur Mündung. Die tiefen Venen waren frei.\n\nDiagnose:\nOberflächliche Thrombophlebitis der V. saphena magna rechts bei Varikosis.\n\nTherapie:\nWir begannen eine Antikoagulation mit Fondaparinux 2,5 mg s.c. einmal täglich für 45 Tage. Zusätzlich empfehlen wir eine Kompression mit einem Strumpf der Klasse II sowie Ibuprofen bei Bedarf. Bewegung ist ausdrücklich erwünscht.\n\nProcedere:\nEine Kontrolle der Duplexsonographie ist in zehn Tagen vorgesehen. Bei Schwellung des ganzen Beins, Atemnot oder Brustschmerzen bitten wir um sofortige Vorstellung. Nach Abheilung empfehlen wir die Planung einer Varizensanierung.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab125",
+    "caseId": "c147",
+    "title": "Polytrauma",
+    "task": "Travmatologiya bo‘limidan reabilitatsiya klinikasiga Arztbrief yozing. Barcha jarohatlar, bosqichma-bosqich davolash va splenektomiyadan keyingi emlashga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из травматологии в реабилитационную клинику. Обратите внимание на все травмы, поэтапное лечение и вакцинацию после спленэктомии.",
+    "taskTr": "Travmatoloji servisinden rehabilitasyon kliniğine bir Arztbrief yazın. Tüm yaralanmalara, aşamalı tedaviye ve splenektomi sonrası aşılamaya dikkat edin.",
+    "taskEn": "Write an Arztbrief from trauma surgery to the rehabilitation clinic. Pay attention to all injuries, staged treatment and vaccination after splenectomy.",
+    "facts": [
+      "Patient: Jonas Kessler, 27 Jahre, männlich",
+      "Aufenthalt: 14.09.2026–08.10.2026, Unfallchirurgie und Intensivstation",
+      "Hochrasanzunfall als Motorradfahrer (ca. 80 km/h); bei Aufnahme RR 85/50 mmHg, HF 132/min, SpO₂ 88 %",
+      "Ganzkörper-CT: Rippenserienfraktur links (4.–8. Rippe) mit Pneumothorax, Milzruptur Grad IV mit freier Flüssigkeit, Femurschaftfraktur rechts; kein Schädel-Hirn-Trauma",
+      "Damage Control: Thoraxdrainage links, Notfallsplenektomie, Fixateur externe Femur; 6 Erythrozytenkonzentrate, Tranexamsäure",
+      "Am 19.09.2026 Verfahrenswechsel auf Marknagel; Intensivaufenthalt 6 Tage, Extubation am 4. Tag",
+      "Impfungen nach Splenektomie (Pneumokokken, Meningokokken, Haemophilus) am 28.09.2026 begonnen"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patient ma’lumotlari (Herr Kessler)",
+        "labelRu": "Данные пациента (Herr Kessler)",
+        "labelTr": "Hasta bilgileri (Herr Kessler)",
+        "labelEn": "Patient data (Herr Kessler)",
+        "keywords": ["kessler"]
+      },
+      {
+        "label": "Jarohat mexanizmi (Hochrasanzunfall)",
+        "labelRu": "Механизм травмы (Hochrasanzunfall)",
+        "labelTr": "Yaralanma mekanizması (Hochrasanzunfall)",
+        "labelEn": "Mechanism of injury (Hochrasanzunfall)",
+        "keywords": ["hochrasanzunfall", "motorrad"]
+      },
+      {
+        "label": "Kelishdagi shok (RR 85/50 mmHg)",
+        "labelRu": "Шок при поступлении (RR 85/50 mmHg)",
+        "labelTr": "Başvuruda şok (RR 85/50 mmHg)",
+        "labelEn": "Shock on admission (RR 85/50 mmHg)",
+        "keywords": ["85/50", "schock"]
+      },
+      {
+        "label": "Diagnoz: qovurg‘a sinishi va pnevmotoraks (Rippenserienfraktur)",
+        "labelRu": "Диагноз: переломы рёбер и пневмоторакс (Rippenserienfraktur)",
+        "labelTr": "Tanı: kot kırıkları ve pnömotoraks (Rippenserienfraktur)",
+        "labelEn": "Diagnosis: rib fractures and pneumothorax (Rippenserienfraktur)",
+        "keywords": ["rippenserienfraktur", "pneumothorax"]
+      },
+      {
+        "label": "Diagnoz: taloq yorilishi (Milzruptur)",
+        "labelRu": "Диагноз: разрыв селезёнки (Milzruptur)",
+        "labelTr": "Tanı: dalak yırtılması (Milzruptur)",
+        "labelEn": "Diagnosis: splenic rupture (Milzruptur)",
+        "keywords": ["milzruptur"]
+      },
+      {
+        "label": "Diagnoz: son suyagi sinishi (Femurschaftfraktur)",
+        "labelRu": "Диагноз: перелом бедра (Femurschaftfraktur)",
+        "labelTr": "Tanı: femur kırığı (Femurschaftfraktur)",
+        "labelEn": "Diagnosis: femoral fracture (Femurschaftfraktur)",
+        "keywords": ["femurschaftfraktur"]
+      },
+      {
+        "label": "Davolash: Damage control: drenaj, splenektomiya, fiksator (Damage Control)",
+        "labelRu": "Лечение: Damage control: дренаж, спленэктомия, фиксатор (Damage Control)",
+        "labelTr": "Tedavi: Hasar kontrol: dren, splenektomi, fiksatör (Damage Control)",
+        "labelEn": "Treatment: Damage control: drain, splenectomy, external fixator (Damage Control)",
+        "keywords": ["damage control", "splenektomie", "fixateur"]
+      },
+      {
+        "label": "Davolash: intramedullyar mix (Marknagel)",
+        "labelRu": "Лечение: интрамедуллярный штифт (Marknagel)",
+        "labelTr": "Tedavi: intramedüller çivi (Marknagel)",
+        "labelEn": "Treatment: intramedullary nail (Marknagel)",
+        "keywords": ["marknagel"]
+      },
+      {
+        "label": "Tavsiya: splenektomiyadan keyingi emlash va isitmada antibiotik (Impfungen)",
+        "labelRu": "Рекомендация: вакцинация после спленэктомии и антибиотик при лихорадке (Impfungen)",
+        "labelTr": "Öneri: splenektomi sonrası aşılar ve ateşte antibiyotik (Impfungen)",
+        "labelEn": "Recommendation: post-splenectomy vaccination and antibiotics for fever (Impfungen)",
+        "keywords": ["impfung", "fieber"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Jonas Kessler, 27 Jahre, der vom 14.09.2026 bis zum 08.10.2026 in unserer Klinik für Unfallchirurgie behandelt wurde.\n\nAnamnese:\nDer Patient wurde nach einem Hochrasanzunfall als Motorradfahrer mit etwa 80 km/h in den Schockraum eingeliefert. Bei Aufnahme bestand ein Schock mit einem Blutdruck von 85/50 mmHg, einer Herzfrequenz von 132/min und einer Sauerstoffsättigung von 88 %.\n\nBefunde:\nIm Ganzkörper-CT zeigten sich eine Rippenserienfraktur links (4.–8. Rippe) mit Pneumothorax, eine Milzruptur Grad IV mit freier Flüssigkeit sowie eine Femurschaftfraktur rechts. Ein Schädel-Hirn-Trauma lag nicht vor.\n\nDiagnosen:\nPolytrauma mit Rippenserienfraktur links und Pneumothorax, Milzruptur Grad IV und Femurschaftfraktur rechts.\n\nTherapie und Verlauf:\nNach dem Prinzip der Damage Control erfolgten die Anlage einer Thoraxdrainage links, eine Notfallsplenektomie und die Versorgung des Femurs mit einem Fixateur externe. Der Patient erhielt sechs Erythrozytenkonzentrate und Tranexamsäure. Nach Stabilisierung erfolgte am 19.09.2026 der Verfahrenswechsel auf einen Marknagel. Der Intensivaufenthalt dauerte sechs Tage, die Extubation gelang am vierten Tag. Die Impfungen gegen Pneumokokken, Meningokokken und Haemophilus influenzae wurden am 28.09.2026 begonnen.\n\nProcedere:\nWir bitten um Fortführung der Mobilisation mit 20 kg Teilbelastung rechts für sechs Wochen und der Thromboseprophylaxe. Die Impfserie sollte nach Schema vervollständigt werden. Der Patient wurde über das Infektionsrisiko nach Splenektomie aufgeklärt und erhält einen Notfallausweis; bei Fieber ist eine sofortige Antibiotikagabe und ärztliche Vorstellung erforderlich.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab126",
+    "caseId": "c148",
+    "title": "OSG-Fraktur (Weber B)",
+    "task": "Travmatologiya bo‘limidan uy shifokoriga Arztbrief yozing. Sinish turi, operatsiya va yuklama hamda tromboz profilaktikasiga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из травматологии семейному врачу. Обратите внимание на тип перелома, операцию, нагрузку и профилактику тромбоза.",
+    "taskTr": "Travmatoloji servisinden aile hekimine bir Arztbrief yazın. Kırık tipine, ameliyata, yüklenmeye ve tromboz profilaksisine dikkat edin.",
+    "taskEn": "Write an Arztbrief from trauma surgery to the GP. Pay attention to the fracture type, the operation, weight-bearing and thromboprophylaxis.",
+    "facts": [
+      "Patientin: Claudia Neumann, 44 Jahre, weiblich",
+      "Aufenthalt: 02.10.2026–06.10.2026, Unfallchirurgie",
+      "Supinationstrauma rechts auf der Treppe, Schwellung am Außenknöchel, nicht belastbar; Durchblutung, Motorik und Sensibilität intakt",
+      "Röntgen OSG: Weber-B-Fraktur rechts, Sprunggelenksgabel disloziert; Syndesmose intraoperativ stabil",
+      "Operation am 03.10.2026 nach Abschwellung: offene Reposition und Plattenosteosynthese der Fibula",
+      "Thromboseprophylaxe mit Enoxaparin 40 mg s.c."
+    ],
+    "keyPoints": [
+      {
+        "label": "Patientin ma’lumotlari (Frau Neumann)",
+        "labelRu": "Данные пациентки (Frau Neumann)",
+        "labelTr": "Hasta bilgileri (Frau Neumann)",
+        "labelEn": "Patient data (Frau Neumann)",
+        "keywords": ["neumann"]
+      },
+      {
+        "label": "Asosiy shikoyat: burilishdan keyin to‘piqda og‘riq va shish (Supinationstrauma)",
+        "labelRu": "Основная жалоба: боль и отёк голеностопа после подворачивания (Supinationstrauma)",
+        "labelTr": "Ana şikâyet: burkulma sonrası ayak bileğinde ağrı ve şişlik (Supinationstrauma)",
+        "labelEn": "Main complaint: ankle pain and swelling after twisting (Supinationstrauma)",
+        "keywords": ["supinationstrauma"]
+      },
+      {
+        "label": "Qon aylanishi, harakat va sezgi saqlangan (DMS intakt)",
+        "labelRu": "Кровообращение, моторика и чувствительность сохранены (DMS intakt)",
+        "labelTr": "Dolaşım, motor ve duyu sağlam (DMS intakt)",
+        "labelEn": "Circulation, motor and sensation intact (DMS intakt)",
+        "keywords": ["sensibilität", "intakt"]
+      },
+      {
+        "label": "Rentgen: Weber B (Weber-B-Fraktur)",
+        "labelRu": "Рентген: Weber B (Weber-B-Fraktur)",
+        "labelTr": "Röntgen: Weber B (Weber-B-Fraktur)",
+        "labelEn": "X-ray: Weber B (Weber-B-Fraktur)",
+        "keywords": ["weber-b", "röntgen"]
+      },
+      {
+        "label": "Sindesmoz barqaror (Syndesmose stabil)",
+        "labelRu": "Синдесмоз стабилен (Syndesmose stabil)",
+        "labelTr": "Sindezmoz stabil (Syndesmose stabil)",
+        "labelEn": "Syndesmosis stable (Syndesmose stabil)",
+        "keywords": ["syndesmose"]
+      },
+      {
+        "label": "Diagnoz: o‘ng to‘piq sinishi Weber B (Sprunggelenksfraktur)",
+        "labelRu": "Диагноз: перелом лодыжки Weber B справа (Sprunggelenksfraktur)",
+        "labelTr": "Tanı: sağ ayak bileği Weber B kırığı (Sprunggelenksfraktur)",
+        "labelEn": "Diagnosis: right ankle fracture Weber B (Sprunggelenksfraktur)",
+        "keywords": ["sprunggelenksfraktur"]
+      },
+      {
+        "label": "Davolash: plastinali osteosintez (Plattenosteosynthese)",
+        "labelRu": "Лечение: остеосинтез пластиной (Plattenosteosynthese)",
+        "labelTr": "Tedavi: plak osteosentezi (Plattenosteosynthese)",
+        "labelEn": "Treatment: plate osteosynthesis (Plattenosteosynthese)",
+        "keywords": ["plattenosteosynthese"]
+      },
+      {
+        "label": "Tavsiya: 6 hafta qisman yuklama (Teilbelastung)",
+        "labelRu": "Рекомендация: частичная нагрузка 6 недель (Teilbelastung)",
+        "labelTr": "Öneri: 6 hafta kısmi yük (Teilbelastung)",
+        "labelEn": "Recommendation: partial weight-bearing for 6 weeks (Teilbelastung)",
+        "keywords": ["teilbelastung", "sechs wochen"]
+      },
+      {
+        "label": "Tavsiya: tromboz profilaktikasi va chok olish (Enoxaparin, Fadenzug)",
+        "labelRu": "Рекомендация: профилактика тромбоза и снятие швов (Enoxaparin, Fadenzug)",
+        "labelTr": "Öneri: tromboz profilaksisi ve dikiş alma (Enoxaparin, Fadenzug)",
+        "labelEn": "Recommendation: thromboprophylaxis and suture removal (Enoxaparin, Fadenzug)",
+        "keywords": ["enoxaparin", "fadenzug"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihre Patientin Frau Claudia Neumann, 44 Jahre, die vom 02.10.2026 bis zum 06.10.2026 in unserer Klinik für Unfallchirurgie behandelt wurde.\n\nAnamnese:\nDie Patientin erlitt beim Treppenabgang ein Supinationstrauma des rechten Sprunggelenks mit hörbarem Knacken. Das Bein war seitdem nicht belastbar.\n\nBefunde:\nKlinisch bestand eine deutliche Schwellung über dem Außenknöchel. Durchblutung, Motorik und Sensibilität waren intakt. Im Röntgen des oberen Sprunggelenks zeigte sich eine dislozierte Weber-B-Fraktur rechts.\n\nDiagnose:\nSprunggelenksfraktur rechts Typ Weber B.\n\nTherapie und Verlauf:\nNach Abschwellung erfolgte am 03.10.2026 die offene Reposition und Plattenosteosynthese der Fibula. Die Syndesmose war intraoperativ stabil. Der postoperative Verlauf war komplikationslos, die Röntgenkontrolle zeigte eine regelrechte Stellung. Die Thromboseprophylaxe erfolgte mit Enoxaparin 40 mg s.c.\n\nProcedere:\nWir empfehlen eine Teilbelastung mit 20 kg an Unterarmgehstützen für sechs Wochen in einer Orthese sowie die Fortführung von Enoxaparin bis zur Vollbelastung. Der Fadenzug kann am 14. postoperativen Tag erfolgen. Eine Röntgenkontrolle ist nach sechs Wochen vorgesehen. Physiotherapie und Lymphdrainage sind verordnet.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab127",
+    "caseId": "c149",
+    "title": "Skaphoidfraktur",
+    "task": "Travmatologiya ambulatoriyasidan uy shifokoriga Arztbrief yozing. Nima uchun KT kerak bo‘lgani, davolash va soxta bo‘g‘im xavfiga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из травматологической амбулатории семейному врачу. Обратите внимание, зачем понадобилась КТ, на лечение и риск ложного сустава.",
+    "taskTr": "Travmatoloji polikliniğinden aile hekimine bir Arztbrief yazın. BT’nin neden gerektiğine, tedaviye ve kaynamama riskine dikkat edin.",
+    "taskEn": "Write an Arztbrief from the trauma clinic to the GP. Pay attention to why a CT was needed, the treatment and the risk of non-union.",
+    "facts": [
+      "Patient: Lukas Wendt, 19 Jahre, männlich",
+      "Vorstellung: 07.10.2026, unfallchirurgische Ambulanz",
+      "Sturz auf die ausgestreckte rechte Hand vor 3 Tagen; Schmerzen radialseitig am Handgelenk",
+      "Druckschmerz in der Tabatière, Stauchungsschmerz des Daumens",
+      "Röntgen mit Kahnbeinserie: kein sicherer Frakturnachweis; CT: nicht dislozierte Fraktur im mittleren Drittel des Skaphoids",
+      "Therapie: Unterarmgips mit Daumeneinschluss für 6 Wochen"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patient ma’lumotlari (Herr Wendt)",
+        "labelRu": "Данные пациента (Herr Wendt)",
+        "labelTr": "Hasta bilgileri (Herr Wendt)",
+        "labelEn": "Patient data (Herr Wendt)",
+        "keywords": ["wendt"]
+      },
+      {
+        "label": "Asosiy shikoyat: qo‘l cho‘zilgan holda yiqilgandan keyin bilakda og‘riq (Sturz auf die ausgestreckte Hand)",
+        "labelRu": "Основная жалоба: боль в запястье после падения на вытянутую руку (Sturz auf die ausgestreckte Hand)",
+        "labelTr": "Ana şikâyet: elin üzerine düşme sonrası bilek ağrısı (Sturz auf die ausgestreckte Hand)",
+        "labelEn": "Main complaint: wrist pain after a fall on the outstretched hand (Sturz auf die ausgestreckte Hand)",
+        "keywords": ["ausgestreckte", "sturz"]
+      },
+      {
+        "label": "Tabakerka sohasida og‘riq (Tabatière)",
+        "labelRu": "Боль в табакерке (Tabatière)",
+        "labelTr": "Enfiye kutusunda ağrı (Tabatière)",
+        "labelEn": "Snuffbox tenderness (Tabatière)",
+        "keywords": ["tabatière"]
+      },
+      {
+        "label": "Rentgen manfiy (kein sicherer Frakturnachweis)",
+        "labelRu": "Рентген без перелома (kein sicherer Frakturnachweis)",
+        "labelTr": "Röntgen negatif (kein sicherer Frakturnachweis)",
+        "labelEn": "X-ray negative (kein sicherer Frakturnachweis)",
+        "keywords": ["kein sicherer", "röntgen"]
+      },
+      {
+        "label": "KT: siljimagan sinish (CT)",
+        "labelRu": "КТ: перелом без смещения (CT)",
+        "labelTr": "BT: deplase olmayan kırık (CT)",
+        "labelEn": "CT: undisplaced fracture (CT)",
+        "keywords": ["ct", "nicht disloziert"]
+      },
+      {
+        "label": "Diagnoz: qayiqsimon suyak sinishi (Skaphoidfraktur)",
+        "labelRu": "Диагноз: перелом ладьевидной кости (Skaphoidfraktur)",
+        "labelTr": "Tanı: skafoid kırığı (Skaphoidfraktur)",
+        "labelEn": "Diagnosis: scaphoid fracture (Skaphoidfraktur)",
+        "keywords": ["skaphoidfraktur"]
+      },
+      {
+        "label": "Davolash: bosh barmoqli gips 6 hafta (Unterarmgips mit Daumeneinschluss)",
+        "labelRu": "Лечение: гипс с большим пальцем 6 недель (Unterarmgips mit Daumeneinschluss)",
+        "labelTr": "Tedavi: 6 hafta başparmaklı alçı (Unterarmgips mit Daumeneinschluss)",
+        "labelEn": "Treatment: thumb spica cast for 6 weeks (Unterarmgips mit Daumeneinschluss)",
+        "keywords": ["daumeneinschluss"]
+      },
+      {
+        "label": "Tavsiya: KT nazorati (CT-Kontrolle)",
+        "labelRu": "Рекомендация: КТ-контроль (CT-Kontrolle)",
+        "labelTr": "Öneri: BT kontrolü (CT-Kontrolle)",
+        "labelEn": "Recommendation: follow-up CT (CT-Kontrolle)",
+        "keywords": ["ct-kontrolle"]
+      },
+      {
+        "label": "Soxta bo‘g‘im xavfi (Pseudarthrose)",
+        "labelRu": "Риск ложного сустава (Pseudarthrose)",
+        "labelTr": "Kaynamama riski (Pseudarthrose)",
+        "labelEn": "Risk of non-union (Pseudarthrose)",
+        "keywords": ["pseudarthrose"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Lukas Wendt, 19 Jahre, der vom 07.10.2026 bis zum 07.10.2026 in unserer unfallchirurgischen Ambulanz behandelt wurde.\n\nAnamnese:\nDer Patient stellte sich drei Tage nach einem Sturz auf die ausgestreckte rechte Hand beim Inlineskaten mit Schmerzen radialseitig am Handgelenk vor.\n\nBefunde:\nKlinisch bestanden ein Druckschmerz in der Tabatière und ein Stauchungsschmerz des Daumens. Durchblutung, Motorik und Sensibilität waren intakt. Im Röntgen mit Kahnbeinserie fand sich kein sicherer Frakturnachweis. Aufgrund des klinischen Verdachts führten wir ein CT durch, das eine nicht dislozierte Fraktur im mittleren Drittel des Skaphoids zeigte.\n\nDiagnose:\nNicht dislozierte Skaphoidfraktur rechts im mittleren Drittel.\n\nTherapie:\nWir legten einen Unterarmgips mit Daumeneinschluss für sechs Wochen an.\n\nProcedere:\nEine Gipskontrolle ist in einer Woche vorgesehen. Nach sechs Wochen empfehlen wir eine CT-Kontrolle zur Beurteilung der Konsolidierung. Der Patient wurde darüber aufgeklärt, dass bei Skaphoidfrakturen ein Risiko für eine Pseudarthrose besteht, insbesondere bei vorzeitiger Belastung. Bei ausbleibender Heilung ist eine Verschraubung mit einer Herbert-Schraube zu erwägen. Arbeitsunfähigkeit als Tischler besteht für die Dauer der Ruhigstellung.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab128",
+    "caseId": "c150",
+    "title": "Schulterluxation",
+    "task": "Shoshilinch yordam bo‘limidan uy shifokoriga Arztbrief yozing. Repozitsiyadan oldin va keyin nerv tekshiruvi hamda keyingi MRTga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из приёмного отделения семейному врачу. Обратите внимание на проверку нерва до и после вправления и последующую МРТ.",
+    "taskTr": "Acil servisten aile hekimine bir Arztbrief yazın. Redüksiyon öncesi ve sonrası sinir muayenesine ve ardından MR’a dikkat edin.",
+    "taskEn": "Write an Arztbrief from the emergency department to the GP. Pay attention to the nerve check before and after reduction and the follow-up MRI.",
+    "facts": [
+      "Patient: Marco Seidel, 24 Jahre, männlich",
+      "Vorstellung: 05.10.2026, zentrale Notaufnahme",
+      "Erstluxation der rechten Schulter beim Handball (Außenrotation und Abduktion)",
+      "Leere Gelenkpfanne, federnde Fixation; Hypästhesie über dem M. deltoideus, periphere Durchblutung intakt",
+      "Röntgen: vordere Schulterluxation ohne Fraktur",
+      "Reposition nach Arlt in Analgosedierung; danach Sensibilität normalisiert; Röntgenkontrolle regelrecht",
+      "Ruhigstellung im Gilchrist-Verband"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patient ma’lumotlari (Herr Seidel)",
+        "labelRu": "Данные пациента (Herr Seidel)",
+        "labelTr": "Hasta bilgileri (Herr Seidel)",
+        "labelEn": "Patient data (Herr Seidel)",
+        "keywords": ["seidel"]
+      },
+      {
+        "label": "Jarohat mexanizmi (Handball)",
+        "labelRu": "Механизм травмы (Handball)",
+        "labelTr": "Yaralanma mekanizması (Handball)",
+        "labelEn": "Mechanism of injury (Handball)",
+        "keywords": ["handball"]
+      },
+      {
+        "label": "Birinchi marta chiqish (Erstluxation)",
+        "labelRu": "Первичный вывих (Erstluxation)",
+        "labelTr": "İlk çıkık (Erstluxation)",
+        "labelEn": "First dislocation (Erstluxation)",
+        "keywords": ["erstluxation"]
+      },
+      {
+        "label": "Deltasimon soha sezgisi pasaygan (Hypästhesie)",
+        "labelRu": "Гипестезия над дельтовидной мышцей (Hypästhesie)",
+        "labelTr": "Deltoid üzerinde his azalması (Hypästhesie)",
+        "labelEn": "Reduced sensation over deltoid (Hypästhesie)",
+        "keywords": ["hypästhesie", "deltoideus"]
+      },
+      {
+        "label": "Rentgen: sinish yo‘q (ohne Fraktur)",
+        "labelRu": "Рентген: перелома нет (ohne Fraktur)",
+        "labelTr": "Röntgen: kırık yok (ohne Fraktur)",
+        "labelEn": "X-ray: no fracture (ohne Fraktur)",
+        "keywords": ["ohne fraktur"]
+      },
+      {
+        "label": "Diagnoz: yelkaning oldingi chiqishi (Schulterluxation)",
+        "labelRu": "Диагноз: передний вывих плеча (Schulterluxation)",
+        "labelTr": "Tanı: ön omuz çıkığı (Schulterluxation)",
+        "labelEn": "Diagnosis: anterior shoulder dislocation (Schulterluxation)",
+        "keywords": ["schulterluxation"]
+      },
+      {
+        "label": "Davolash: analgoseddatsiyada repozitsiya (Reposition)",
+        "labelRu": "Лечение: вправление под седацией (Reposition)",
+        "labelTr": "Tedavi: sedasyon altında redüksiyon (Reposition)",
+        "labelEn": "Treatment: reduction under sedation (Reposition)",
+        "keywords": ["reposition", "analgosedierung"]
+      },
+      {
+        "label": "Tavsiya: bog‘lam, fizioterapiya va MRT (MRT)",
+        "labelRu": "Рекомендация: повязка, физиотерапия и МРТ (MRT)",
+        "labelTr": "Öneri: bandaj, fizyoterapi ve MR (MRT)",
+        "labelEn": "Recommendation: sling, physiotherapy and MRI (MRT)",
+        "keywords": ["mrt", "gilchrist", "physiotherapie"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Marco Seidel, 24 Jahre, der vom 05.10.2026 bis zum 05.10.2026 in unserer zentralen Notaufnahme behandelt wurde.\n\nAnamnese:\nDer Patient stellte sich nach einem Sturz beim Handball mit forcierter Außenrotation und Abduktion des rechten Arms vor. Es handelt sich um eine Erstluxation.\n\nBefunde:\nKlinisch zeigten sich eine leere Gelenkpfanne und eine federnde Fixation. Es bestand eine Hypästhesie über dem M. deltoideus, die periphere Durchblutung war intakt. Im Röntgen fand sich eine vordere Schulterluxation ohne Fraktur.\n\nDiagnose:\nVordere Schulterluxation rechts (Erstluxation).\n\nTherapie und Verlauf:\nIn Analgosedierung erfolgte die Reposition nach Arlt. Danach hatte sich die Sensibilität normalisiert, die Röntgenkontrolle zeigte eine regelrechte Gelenkstellung. Wir stellten den Arm im Gilchrist-Verband ruhig.\n\nProcedere:\nWir empfehlen die Ruhigstellung für etwa eine Woche und danach eine Physiotherapie mit Vermeidung von Außenrotation und Abduktion für sechs Wochen. Da bei jungen Sportlern ein hohes Rezidivrisiko besteht, empfehlen wir ein MRT der Schulter zur Beurteilung von Labrum und Rotatorenmanschette sowie eine Vorstellung in unserer Schultersprechstunde. Sport ist frühestens nach drei Monaten wieder möglich.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab129",
+    "caseId": "c151",
+    "title": "Vordere Kreuzbandruptur",
+    "task": "Sport travmatologiyasi ambulatoriyasidan uy shifokoriga Arztbrief yozing. Klinik testlar, MRT va operatsiya rejasiga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из амбулатории спортивной травматологии семейному врачу. Обратите внимание на клинические тесты, МРТ и план операции.",
+    "taskTr": "Spor travmatolojisi polikliniğinden aile hekimine bir Arztbrief yazın. Klinik testlere, MR’a ve ameliyat planına dikkat edin.",
+    "taskEn": "Write an Arztbrief from the sports trauma clinic to the GP. Pay attention to the clinical tests, the MRI and the surgical plan.",
+    "facts": [
+      "Patientin: Laura Fischer, 23 Jahre, weiblich",
+      "Vorstellung: 08.10.2026, sporttraumatologische Ambulanz",
+      "Rotationstrauma des linken Knies beim Fußball, Knacken, rascher Erguss, Giving-way",
+      "Lachman-Test positiv, Pivot-Shift positiv; Erguss, Punktion: 60 ml Blut (Hämarthros)",
+      "Röntgen: keine Fraktur; MRT: komplette Ruptur des vorderen Kreuzbands, Innenmeniskus intakt",
+      "Leistungssportlerin mit Wunsch nach Rückkehr in den Sport: Kreuzbandplastik geplant"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patientin ma’lumotlari (Frau Fischer)",
+        "labelRu": "Данные пациентки (Frau Fischer)",
+        "labelTr": "Hasta bilgileri (Frau Fischer)",
+        "labelEn": "Patient data (Frau Fischer)",
+        "keywords": ["fischer"]
+      },
+      {
+        "label": "Asosiy shikoyat: tizza burilgandan keyin og‘riq va beqarorlik (Rotationstrauma)",
+        "labelRu": "Основная жалоба: боль и нестабильность после скручивания колена (Rotationstrauma)",
+        "labelTr": "Ana şikâyet: dizin dönmesi sonrası ağrı ve instabilite (Rotationstrauma)",
+        "labelEn": "Main complaint: pain and instability after a twisting injury (Rotationstrauma)",
+        "keywords": ["rotationstrauma"]
+      },
+      {
+        "label": "Tez paydo bo‘lgan suyuqlik (Hämarthros)",
+        "labelRu": "Быстрый выпот (Hämarthros)",
+        "labelTr": "Hızlı efüzyon (Hämarthros)",
+        "labelEn": "Rapid effusion (Hämarthros)",
+        "keywords": ["hämarthros"]
+      },
+      {
+        "label": "Lachman va pivot-shift musbat (Lachman-Test positiv)",
+        "labelRu": "Лахман и pivot-shift положительны (Lachman-Test positiv)",
+        "labelTr": "Lachman ve pivot-shift pozitif (Lachman-Test positiv)",
+        "labelEn": "Lachman and pivot shift positive (Lachman-Test positiv)",
+        "keywords": ["lachman", "pivot-shift"]
+      },
+      {
+        "label": "MRT natijasi (komplette Ruptur, Meniskus intakt)",
+        "labelRu": "Результат МРТ (komplette Ruptur, Meniskus intakt)",
+        "labelTr": "MR sonucu (komplette Ruptur, Meniskus intakt)",
+        "labelEn": "MRI result (komplette Ruptur, Meniskus intakt)",
+        "keywords": ["mrt", "innenmeniskus"]
+      },
+      {
+        "label": "Diagnoz: oldingi xochsimon boylam yorilishi (Kreuzbandruptur)",
+        "labelRu": "Диагноз: разрыв передней крестообразной связки (Kreuzbandruptur)",
+        "labelTr": "Tanı: ön çapraz bağ yırtığı (Kreuzbandruptur)",
+        "labelEn": "Diagnosis: anterior cruciate ligament rupture (Kreuzbandruptur)",
+        "keywords": ["kreuzband"]
+      },
+      {
+        "label": "Davolash: xochsimon boylam plastikasi (Kreuzbandplastik)",
+        "labelRu": "Лечение: пластика крестообразной связки (Kreuzbandplastik)",
+        "labelTr": "Tedavi: ön çapraz bağ rekonstrüksiyonu (Kreuzbandplastik)",
+        "labelEn": "Treatment: ACL reconstruction (Kreuzbandplastik)",
+        "keywords": ["kreuzbandplastik"]
+      },
+      {
+        "label": "Tavsiya: operatsiyagacha fizioterapiya, sovutish, tromboz profilaktikasi (Physiotherapie)",
+        "labelRu": "Рекомендация: до операции — физиотерапия, холод, профилактика тромбоза (Physiotherapie)",
+        "labelTr": "Öneri: ameliyat öncesi fizyoterapi, soğuk uygulama, tromboz profilaksisi (Physiotherapie)",
+        "labelEn": "Recommendation: pre-op physiotherapy, cooling and thromboprophylaxis (Physiotherapie)",
+        "keywords": ["physiotherapie", "kühlung", "thromboseprophylaxe"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihre Patientin Frau Laura Fischer, 23 Jahre, die vom 08.10.2026 bis zum 08.10.2026 in unserer sporttraumatologischen Ambulanz behandelt wurde.\n\nAnamnese:\nDie Patientin erlitt beim Fußball ein Rotationstrauma des linken Knies mit hörbarem Knacken. Innerhalb weniger Stunden entwickelte sich ein Erguss. Seitdem besteht ein Instabilitätsgefühl (Giving-way).\n\nBefunde:\nKlinisch zeigten sich ein deutlicher Erguss sowie ein positiver Lachman-Test und ein positiver Pivot-Shift-Test. Die Punktion ergab 60 ml Blut (Hämarthros). Im Röntgen fand sich keine Fraktur. Das MRT zeigte eine komplette Ruptur des vorderen Kreuzbands bei intaktem Innenmeniskus und Außenmeniskus.\n\nDiagnose:\nKomplette Ruptur des vorderen Kreuzbands links mit Hämarthros.\n\nProcedere:\nDa die Patientin Leistungssportlerin ist und in den Sport zurückkehren möchte, planen wir nach Abklingen der Schwellung in etwa vier bis sechs Wochen eine arthroskopische Kreuzbandplastik. Bis dahin empfehlen wir Kühlung, Hochlagerung, Physiotherapie zum Erhalt der Beweglichkeit und Muskelkraft sowie eine Thromboseprophylaxe bei eingeschränkter Belastung. Fußball ist bis zur Operation nicht erlaubt.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab130",
+    "caseId": "c152",
+    "title": "Rippenserienfraktur mit Hämatopneumothorax",
+    "task": "Torakal xirurgiya bo‘limidan uy shifokoriga Arztbrief yozing. Antikoagulyatsiya bilan bog‘liq muammo, drenaj, og‘riqsizlantirish va apiksabanni qayta boshlashga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из торакальной хирургии семейному врачу. Обратите внимание на проблему антикоагуляции, дренаж, обезболивание и возобновление апиксабана.",
+    "taskTr": "Göğüs cerrahisinden aile hekimine bir Arztbrief yazın. Antikoagülasyon sorununa, drene, analjeziye ve apiksabanın yeniden başlanmasına dikkat edin.",
+    "taskEn": "Write an Arztbrief from thoracic surgery to the GP. Pay attention to the anticoagulation issue, drainage, analgesia and restarting apixaban.",
+    "facts": [
+      "Patient: Helmut Arnold, 71 Jahre, männlich",
+      "Aufenthalt: 26.09.2026–08.10.2026, Thoraxchirurgie",
+      "Sturz von der Leiter (2,5 m) auf die rechte Thoraxseite; Schonatmung, SpO₂ 89 %",
+      "Antikoagulation mit Apixaban wegen Vorhofflimmern; COPD",
+      "CT: Rippenserienfraktur rechts (5.–9. Rippe), Hämatopneumothorax rechts; keine abdominelle Verletzung",
+      "Thoraxdrainage rechts: initial 600 ml Blut, danach rückläufig; Apixaban pausiert; Periduralkatheter für 5 Tage; Atemtherapie",
+      "Drainage am 03.10.2026 entfernt; Röntgen: Lunge entfaltet; Apixaban am 06.10.2026 wieder begonnen"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patient ma’lumotlari (Herr Arnold)",
+        "labelRu": "Данные пациента (Herr Arnold)",
+        "labelTr": "Hasta bilgileri (Herr Arnold)",
+        "labelEn": "Patient data (Herr Arnold)",
+        "keywords": ["arnold"]
+      },
+      {
+        "label": "Narvondan yiqilish (Sturz von der Leiter)",
+        "labelRu": "Падение с лестницы (Sturz von der Leiter)",
+        "labelTr": "Merdivenden düşme (Sturz von der Leiter)",
+        "labelEn": "Fall from ladder (Sturz von der Leiter)",
+        "keywords": ["leiter"]
+      },
+      {
+        "label": "Antikoagulyatsiya (Apixaban)",
+        "labelRu": "Антикоагуляция (Apixaban)",
+        "labelTr": "Antikoagülasyon (Apixaban)",
+        "labelEn": "Anticoagulation (Apixaban)",
+        "keywords": ["apixaban"]
+      },
+      {
+        "label": "KT topilmasi (5.–9. Rippe)",
+        "labelRu": "Данные КТ (5.–9. Rippe)",
+        "labelTr": "BT bulgusu (5.–9. Rippe)",
+        "labelEn": "CT findings (5.–9. Rippe)",
+        "keywords": ["5.–9. rippe", "ct"]
+      },
+      {
+        "label": "Diagnoz: qovurg‘alar sinishi va gemopnevmotoraks (Hämatopneumothorax)",
+        "labelRu": "Диагноз: множественный перелом рёбер и гемопневмоторакс (Hämatopneumothorax)",
+        "labelTr": "Tanı: seri kot kırığı ve hemopnömotoraks (Hämatopneumothorax)",
+        "labelEn": "Diagnosis: multiple rib fractures and haemopneumothorax (Hämatopneumothorax)",
+        "keywords": ["hämatopneumothorax", "rippenserienfraktur"]
+      },
+      {
+        "label": "Davolash: plevra drenaji (Thoraxdrainage)",
+        "labelRu": "Лечение: плевральный дренаж (Thoraxdrainage)",
+        "labelTr": "Tedavi: göğüs tüpü (Thoraxdrainage)",
+        "labelEn": "Treatment: chest drain (Thoraxdrainage)",
+        "keywords": ["thoraxdrainage", "600 ml"]
+      },
+      {
+        "label": "Davolash: epidural kateter va nafas terapiyasi (Periduralkatheter)",
+        "labelRu": "Лечение: эпидуральный катетер и дыхательная гимнастика (Periduralkatheter)",
+        "labelTr": "Tedavi: epidural kateter ve solunum terapisi (Periduralkatheter)",
+        "labelEn": "Treatment: epidural catheter and breathing physiotherapy (Periduralkatheter)",
+        "keywords": ["periduralkatheter", "atemtherapie"]
+      },
+      {
+        "label": "Apiksaban qayta boshlandi (wieder begonnen)",
+        "labelRu": "Апиксабан возобновлён (wieder begonnen)",
+        "labelTr": "Apiksaban yeniden başlandı (wieder begonnen)",
+        "labelEn": "Apixaban restarted (wieder begonnen)",
+        "keywords": ["wieder begonnen"]
+      },
+      {
+        "label": "Tavsiya: nafas mashqlari va pnevmoniya belgilari (Pneumonie)",
+        "labelRu": "Рекомендация: дыхательные упражнения и признаки пневмонии (Pneumonie)",
+        "labelTr": "Öneri: solunum egzersizleri ve pnömoni belirtileri (Pneumonie)",
+        "labelEn": "Recommendation: breathing exercises and signs of pneumonia (Pneumonie)",
+        "keywords": ["pneumonie", "atemtrainer"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Helmut Arnold, 71 Jahre, der vom 26.09.2026 bis zum 08.10.2026 in unserer Klinik für Thoraxchirurgie behandelt wurde.\n\nAnamnese:\nDer Patient stürzte beim Obstpflücken aus etwa 2,5 m Höhe von der Leiter auf die rechte Thoraxseite. Er ist wegen Vorhofflimmerns mit Apixaban antikoaguliert; zudem besteht eine COPD.\n\nBefunde:\nBei Aufnahme bestanden eine schmerzbedingte Schonatmung und eine Sauerstoffsättigung von 89 %. Im CT zeigten sich eine Rippenserienfraktur rechts (5.–9. Rippe) und ein Hämatopneumothorax rechts. Eine abdominelle Verletzung lag nicht vor.\n\nDiagnose:\nRippenserienfraktur rechts mit Hämatopneumothorax unter oraler Antikoagulation.\n\nTherapie und Verlauf:\nWir legten eine Thoraxdrainage rechts, über die sich initial 600 ml Blut entleerten; danach war die Fördermenge rückläufig. Apixaban wurde pausiert. Zur Analgesie erhielt der Patient für fünf Tage einen Periduralkatheter, sodass eine intensive Atemtherapie möglich war. Am 03.10.2026 wurde die Drainage entfernt; im Röntgen war die Lunge vollständig entfaltet. Apixaban wurde am 06.10.2026 wieder begonnen.\n\nProcedere:\nWir empfehlen die Fortführung der Analgesie mit Metamizol und Tapentadol in absteigender Dosis sowie täglich Übungen mit dem Atemtrainer. Bei Fieber, Husten mit Auswurf oder zunehmender Atemnot sollte an eine Pneumonie gedacht werden. Eine Röntgenkontrolle ist in zwei Wochen vorgesehen.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab131",
+    "caseId": "c153",
+    "title": "Proximale Humerusfraktur",
+    "task": "Geriatrik travmatologiya bo‘limidan uy shifokoriga Arztbrief yozing. Konservativ davolash, osteoporoz va yiqilishning oldini olishga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из гериатрической травматологии семейному врачу. Обратите внимание на консервативное лечение, остеопороз и профилактику падений.",
+    "taskTr": "Geriatrik travmatoloji servisinden aile hekimine bir Arztbrief yazın. Konservatif tedaviye, osteoporoza ve düşme önlemeye dikkat edin.",
+    "taskEn": "Write an Arztbrief from orthogeriatrics to the GP. Pay attention to non-operative treatment, osteoporosis and falls prevention.",
+    "facts": [
+      "Patientin: Irmgard Baumann, 79 Jahre, weiblich",
+      "Aufenthalt: 30.09.2026–07.10.2026, Alterstraumatologie",
+      "Häuslicher Sturz auf den linken Arm; rezidivierende Stürze; lebt allein im 2. Stock ohne Aufzug",
+      "Röntgen: gering dislozierte subkapitale Humerusfraktur links; N. axillaris intakt",
+      "Osteoporose; DXA: T-Score −3,1; Vitamin D 14 ng/ml",
+      "Sturzursachen: Zopiclon, Orthostase unter Torasemid; Zopiclon ausgeschlichen",
+      "Therapie: konservativ im Gilchrist-Verband, Frühfunktionelle Physiotherapie ab Tag 7"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patientin ma’lumotlari (Frau Baumann)",
+        "labelRu": "Данные пациентки (Frau Baumann)",
+        "labelTr": "Hasta bilgileri (Frau Baumann)",
+        "labelEn": "Patient data (Frau Baumann)",
+        "keywords": ["baumann"]
+      },
+      {
+        "label": "Asosiy shikoyat: yiqilishdan keyin yelkada og‘riq (Sturz)",
+        "labelRu": "Основная жалоба: боль в плече после падения (Sturz)",
+        "labelTr": "Ana şikâyet: düşme sonrası omuz ağrısı (Sturz)",
+        "labelEn": "Main complaint: shoulder pain after a fall (Sturz)",
+        "keywords": ["sturz"]
+      },
+      {
+        "label": "Takroriy yiqilishlar va yolg‘iz yashash (rezidivierende Stürze)",
+        "labelRu": "Повторные падения, живёт одна (rezidivierende Stürze)",
+        "labelTr": "Tekrarlayan düşmeler, yalnız yaşıyor (rezidivierende Stürze)",
+        "labelEn": "Recurrent falls, lives alone (rezidivierende Stürze)",
+        "keywords": ["rezidivierende", "allein"]
+      },
+      {
+        "label": "Diagnoz: yelka suyagi yuqori qismi sinishi (Humerusfraktur)",
+        "labelRu": "Диагноз: перелом проксимального плеча (Humerusfraktur)",
+        "labelTr": "Tanı: proksimal humerus kırığı (Humerusfraktur)",
+        "labelEn": "Diagnosis: proximal humerus fracture (Humerusfraktur)",
+        "keywords": ["humerusfraktur"]
+      },
+      {
+        "label": "Osteoporoz va D vitamini kamligi (T-Score −3,1)",
+        "labelRu": "Остеопороз и дефицит витамина D (T-Score −3,1)",
+        "labelTr": "Osteoporoz ve D vitamini eksikliği (T-Score −3,1)",
+        "labelEn": "Osteoporosis and vitamin D deficiency (T-Score −3,1)",
+        "keywords": ["t-score", "vitamin d"]
+      },
+      {
+        "label": "Yiqilish sabablari: dori va ortostaz (Zopiclon, Orthostase)",
+        "labelRu": "Причины падений: препараты и ортостаз (Zopiclon, Orthostase)",
+        "labelTr": "Düşme nedenleri: ilaç ve ortostaz (Zopiclon, Orthostase)",
+        "labelEn": "Causes: drugs and orthostasis (Zopiclon, Orthostase)",
+        "keywords": ["zopiclon", "orthostase"]
+      },
+      {
+        "label": "Davolash: konservativ davolash va erta fizioterapiya (konservativ)",
+        "labelRu": "Лечение: консервативное лечение и ранняя физиотерапия (konservativ)",
+        "labelTr": "Tedavi: konservatif tedavi ve erken fizyoterapi (konservativ)",
+        "labelEn": "Treatment: non-operative treatment and early physiotherapy (konservativ)",
+        "keywords": ["konservativ", "physiotherapie"]
+      },
+      {
+        "label": "Davolash: osteoporoz terapiyasi (Alendronat)",
+        "labelRu": "Лечение: терапия остеопороза (Alendronat)",
+        "labelTr": "Tedavi: osteoporoz tedavisi (Alendronat)",
+        "labelEn": "Treatment: osteoporosis treatment (Alendronat)",
+        "keywords": ["alendronat"]
+      },
+      {
+        "label": "Tavsiya: uyda yordam va yiqilish profilaktikasi (Pflegedienst, Hausnotruf)",
+        "labelRu": "Рекомендация: помощь на дому и профилактика падений (Pflegedienst, Hausnotruf)",
+        "labelTr": "Öneri: evde destek ve düşme önleme (Pflegedienst, Hausnotruf)",
+        "labelEn": "Recommendation: home support and falls prevention (Pflegedienst, Hausnotruf)",
+        "keywords": ["pflegedienst", "hausnotruf"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihre Patientin Frau Irmgard Baumann, 79 Jahre, die vom 30.09.2026 bis zum 07.10.2026 in unserer Klinik für Alterstraumatologie behandelt wurde.\n\nAnamnese:\nDie Patientin stürzte zu Hause im Badezimmer auf den linken Arm. Im vergangenen Jahr waren bereits zwei weitere Stürze aufgetreten, es bestehen also rezidivierende Stürze. Sie lebt allein im zweiten Stock ohne Aufzug.\n\nBefunde:\nIm Röntgen zeigte sich eine gering dislozierte subkapitale Humerusfraktur links. Durchblutung, Motorik und Sensibilität einschließlich des N. axillaris waren intakt. Die Osteodensitometrie ergab einen T-Score von −3,1, das Vitamin D lag bei 14 ng/ml. Als Sturzursachen identifizierten wir die Einnahme von Zopiclon sowie eine Orthostase unter Torasemid.\n\nDiagnosen:\nGering dislozierte proximale Humerusfraktur links. Manifeste Osteoporose. Vitamin-D-Mangel. Rezidivierende Stürze.\n\nTherapie und Verlauf:\nDie Fraktur wurde konservativ im Gilchrist-Verband behandelt; ab dem siebten Tag begann eine frühfunktionelle Physiotherapie. Zopiclon wurde ausgeschlichen, die Torasemid-Dosis auf 5 mg reduziert. Wir begannen eine Therapie mit Alendronat 70 mg einmal wöchentlich sowie Vitamin D 20.000 IE wöchentlich und Kalzium.\n\nProcedere:\nEine Röntgenkontrolle ist nach drei und sechs Wochen vorgesehen. Wir haben einen Pflegedienst und einen Hausnotruf organisiert und empfehlen eine Wohnraumanpassung zur Sturzprophylaxe.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab132",
+    "caseId": "c154",
+    "title": "Prostatakarzinom",
+    "task": "Urologiya bo‘limidan uy shifokoriga Arztbrief yozing. Diagnostika bosqichlari, xavf guruhi va o‘sma kengashi tavsiyasiga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из урологии семейному врачу. Обратите внимание на этапы диагностики, группу риска и рекомендацию онкоконсилиума.",
+    "taskTr": "Üroloji servisinden aile hekimine bir Arztbrief yazın. Tanı aşamalarına, risk grubuna ve tümör konseyi önerisine dikkat edin.",
+    "taskEn": "Write an Arztbrief from urology to the GP. Pay attention to the diagnostic steps, risk group and the tumour board recommendation.",
+    "facts": [
+      "Patient: Heinrich Lange, 66 Jahre, männlich",
+      "Vorstellung: 22.09.2026–06.10.2026, urologische Ambulanz",
+      "PSA-Anstieg von 3,1 auf 9,8 ng/ml in 2 Jahren; Vater mit Prostatakarzinom",
+      "Digital-rektale Untersuchung: derber Knoten rechts",
+      "MRT Prostata: PI-RADS-5-Läsion rechts; Fusionsbiopsie: Adenokarzinom Gleason 3+4=7 in 5 von 14 Stanzen",
+      "PSMA-PET-CT: keine Metastasen; Tumorkonferenz: intermediäres Risiko, radikale Prostatektomie empfohlen"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patient ma’lumotlari (Herr Lange)",
+        "labelRu": "Данные пациента (Herr Lange)",
+        "labelTr": "Hasta bilgileri (Herr Lange)",
+        "labelEn": "Patient data (Herr Lange)",
+        "keywords": ["lange"]
+      },
+      {
+        "label": "PSA oshishi (PSA 9,8 ng/ml)",
+        "labelRu": "Рост ПСА (PSA 9,8 ng/ml)",
+        "labelTr": "PSA artışı (PSA 9,8 ng/ml)",
+        "labelEn": "Rising PSA (PSA 9,8 ng/ml)",
+        "keywords": ["psa", "9,8"]
+      },
+      {
+        "label": "Oilaviy anamnez (Vater)",
+        "labelRu": "Семейный анамнез (Vater)",
+        "labelTr": "Aile öyküsü (Vater)",
+        "labelEn": "Family history (Vater)",
+        "keywords": ["vater"]
+      },
+      {
+        "label": "Rektal tekshiruvda tugun (derber Knoten)",
+        "labelRu": "Узел при ректальном исследовании (derber Knoten)",
+        "labelTr": "Rektal muayenede nodül (derber Knoten)",
+        "labelEn": "Nodule on DRE (derber Knoten)",
+        "keywords": ["knoten"]
+      },
+      {
+        "label": "MRT va fuzion biopsiya (PI-RADS 5, Fusionsbiopsie)",
+        "labelRu": "МРТ и фьюжн-биопсия (PI-RADS 5, Fusionsbiopsie)",
+        "labelTr": "MR ve füzyon biyopsi (PI-RADS 5, Fusionsbiopsie)",
+        "labelEn": "MRI and fusion biopsy (PI-RADS 5, Fusionsbiopsie)",
+        "keywords": ["pi-rads", "fusionsbiopsie"]
+      },
+      {
+        "label": "Diagnoz: prostata saratoni Gleason 7 (Prostatakarzinom)",
+        "labelRu": "Диагноз: рак простаты Глисон 7 (Prostatakarzinom)",
+        "labelTr": "Tanı: prostat kanseri Gleason 7 (Prostatakarzinom)",
+        "labelEn": "Diagnosis: prostate cancer Gleason 7 (Prostatakarzinom)",
+        "keywords": ["prostatakarzinom", "gleason"]
+      },
+      {
+        "label": "Metastaz yo‘q (keine Metastasen)",
+        "labelRu": "Метастазов нет (keine Metastasen)",
+        "labelTr": "Metastaz yok (keine Metastasen)",
+        "labelEn": "No metastases (keine Metastasen)",
+        "keywords": ["keine metastasen"]
+      },
+      {
+        "label": "Davolash: radikal prostatektomiya (Prostatektomie)",
+        "labelRu": "Лечение: радикальная простатэктомия (Prostatektomie)",
+        "labelTr": "Tedavi: radikal prostatektomi (Prostatektomie)",
+        "labelEn": "Treatment: radical prostatectomy (Prostatektomie)",
+        "keywords": ["prostatektomie"]
+      },
+      {
+        "label": "Tavsiya: inkontinensiya va erektsiya haqida tushuntirish, muqobil nur terapiyasi (Strahlentherapie)",
+        "labelRu": "Рекомендация: информирование о недержании и эрекции, альтернатива облучение (Strahlentherapie)",
+        "labelTr": "Öneri: inkontinans ve ereksiyon hakkında bilgi, alternatif radyoterapi (Strahlentherapie)",
+        "labelEn": "Recommendation: counselling on incontinence and erection, alternative radiotherapy (Strahlentherapie)",
+        "keywords": ["strahlentherapie", "inkontinenz"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Heinrich Lange, 66 Jahre, der vom 22.09.2026 bis zum 06.10.2026 in unserer urologischen Ambulanz behandelt wurde.\n\nAnamnese:\nDer Patient wurde wegen eines PSA-Anstiegs von 3,1 auf 9,8 ng/ml innerhalb von zwei Jahren überwiesen. Er berichtete lediglich über einen leicht abgeschwächten Harnstrahl. Sein Vater erkrankte mit 70 Jahren an einem Prostatakarzinom.\n\nBefunde:\nIn der digital-rektalen Untersuchung tastete sich rechts ein derber Knoten. Das MRT der Prostata zeigte rechts eine PI-RADS-5-Läsion. Die MRT-gestützte Fusionsbiopsie ergab ein Adenokarzinom mit Gleason-Score 3+4=7 in 5 von 14 Stanzen. Im PSMA-PET-CT fanden sich keine Metastasen.\n\nDiagnose:\nProstatakarzinom rechts, Gleason 3+4=7, cT2b cN0 M0, intermediäres Risiko.\n\nProcedere:\nDie Tumorkonferenz empfiehlt eine roboterassistierte radikale Prostatektomie mit Lymphadenektomie. Als gleichwertige Alternative wurde eine Strahlentherapie mit kurzzeitiger Hormontherapie besprochen. Der Patient wurde ausführlich über Risiken wie Inkontinenz und Erektionsstörungen aufgeklärt und möchte sich für die Operation entscheiden. Der Termin ist für den 03.11.2026 geplant. Metformin sollte am OP-Tag pausiert werden.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab133",
+    "caseId": "c155",
+    "title": "Nierenzellkarzinom",
+    "task": "Urologiya bo‘limidan uy shifokoriga Arztbrief yozing. Gematuriya tekshiruvi, operatsiya turi va buyrak funksiyasini kuzatishga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из урологии семейному врачу. Обратите внимание на обследование гематурии, вид операции и контроль функции почек.",
+    "taskTr": "Üroloji servisinden aile hekimine bir Arztbrief yazın. Hematüri incelemesine, ameliyat tipine ve böbrek fonksiyonu takibine dikkat edin.",
+    "taskEn": "Write an Arztbrief from urology to the GP. Pay attention to the haematuria work-up, the type of surgery and renal function monitoring.",
+    "facts": [
+      "Patient: Thomas Engel, 62 Jahre, männlich",
+      "Aufenthalt: 28.09.2026–06.10.2026, Urologie",
+      "Schmerzlose Makrohämaturie, dumpfer Flankenschmerz links, 5 kg Gewichtsverlust, Nachtschweiß",
+      "Nikotin 35 Packungsjahre, Adipositas, Hypertonie",
+      "Sonographie und CT: 6,5 cm großer kontrastmittelaufnehmender Tumor der linken Niere, Nierenvene frei, keine Metastasen; Zystoskopie unauffällig",
+      "Radikale Nephrektomie links am 30.09.2026 (Tumor zentral, Teilresektion nicht möglich)",
+      "Histologie: klarzelliges Nierenzellkarzinom pT1b pN0, R0; Kreatinin bei Entlassung 1,4 mg/dl"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patient ma’lumotlari (Herr Engel)",
+        "labelRu": "Данные пациента (Herr Engel)",
+        "labelTr": "Hasta bilgileri (Herr Engel)",
+        "labelEn": "Patient data (Herr Engel)",
+        "keywords": ["engel"]
+      },
+      {
+        "label": "Asosiy shikoyat: og‘riqsiz gematuriya (Makrohämaturie)",
+        "labelRu": "Основная жалоба: безболезненная гематурия (Makrohämaturie)",
+        "labelTr": "Ana şikâyet: ağrısız hematüri (Makrohämaturie)",
+        "labelEn": "Main complaint: painless haematuria (Makrohämaturie)",
+        "keywords": ["makrohämaturie"]
+      },
+      {
+        "label": "Vazn yo‘qotish va tungi terlash (B-Symptomatik)",
+        "labelRu": "Потеря веса и ночная потливость (B-Symptomatik)",
+        "labelTr": "Kilo kaybı ve gece terlemesi (B-Symptomatik)",
+        "labelEn": "Weight loss and night sweats (B-Symptomatik)",
+        "keywords": ["gewichtsverlust", "nachtschweiß"]
+      },
+      {
+        "label": "Xavf omili: chekish (Nikotin)",
+        "labelRu": "Фактор риска: курение (Nikotin)",
+        "labelTr": "Risk faktörü: sigara (Nikotin)",
+        "labelEn": "Risk factor: smoking (Nikotin)",
+        "keywords": ["nikotin", "packungsjahre"]
+      },
+      {
+        "label": "KT va sistoskopiya (6,5 cm, Zystoskopie)",
+        "labelRu": "КТ и цистоскопия (6,5 cm, Zystoskopie)",
+        "labelTr": "BT ve sistoskopi (6,5 cm, Zystoskopie)",
+        "labelEn": "CT and cystoscopy (6,5 cm, Zystoskopie)",
+        "keywords": ["6,5 cm", "zystoskopie"]
+      },
+      {
+        "label": "Diagnoz: buyrak hujayrali saraton (Nierenzellkarzinom)",
+        "labelRu": "Диагноз: почечно-клеточный рак (Nierenzellkarzinom)",
+        "labelTr": "Tanı: böbrek hücreli kanser (Nierenzellkarzinom)",
+        "labelEn": "Diagnosis: renal cell carcinoma (Nierenzellkarzinom)",
+        "keywords": ["nierenzellkarzinom"]
+      },
+      {
+        "label": "Davolash: radikal nefrektomiya (Nephrektomie)",
+        "labelRu": "Лечение: радикальная нефрэктомия (Nephrektomie)",
+        "labelTr": "Tedavi: radikal nefrektomi (Nephrektomie)",
+        "labelEn": "Treatment: radical nephrectomy (Nephrektomie)",
+        "keywords": ["nephrektomie"]
+      },
+      {
+        "label": "Gistologiya va R0 (klarzellig, R0)",
+        "labelRu": "Гистология и R0 (klarzellig, R0)",
+        "labelTr": "Histoloji ve R0 (klarzellig, R0)",
+        "labelEn": "Histology and R0 (klarzellig, R0)",
+        "keywords": ["klarzellig", "r0"]
+      },
+      {
+        "label": "Tavsiya: buyrak funksiyasi, nefrotoksik dorilardan saqlanish, kuzatuv KT (Nachsorge)",
+        "labelRu": "Рекомендация: контроль почек, избегать нефротоксичных препаратов, КТ-наблюдение (Nachsorge)",
+        "labelTr": "Öneri: böbrek fonksiyonu, nefrotoksik ilaçlardan kaçınma, BT takibi (Nachsorge)",
+        "labelEn": "Recommendation: renal function, avoid nephrotoxic drugs, CT follow-up (Nachsorge)",
+        "keywords": ["nachsorge", "nsar", "kreatinin"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Thomas Engel, 62 Jahre, der vom 28.09.2026 bis zum 06.10.2026 in unserer Klinik für Urologie behandelt wurde.\n\nAnamnese:\nDer Patient stellte sich mit einer schmerzlosen Makrohämaturie, einem seit Monaten bestehenden dumpfen Flankenschmerz links, einem Gewichtsverlust von 5 kg und Nachtschweiß vor. Es besteht ein Nikotinkonsum von 35 Packungsjahren.\n\nBefunde:\nSonographisch und im CT zeigte sich ein 6,5 cm großer kontrastmittelaufnehmender Tumor der linken Niere. Die Nierenvene war frei, Metastasen fanden sich nicht. Die Zystoskopie war unauffällig.\n\nDiagnose:\nKlarzelliges Nierenzellkarzinom links, pT1b pN0 M0, R0.\n\nTherapie und Verlauf:\nAufgrund der zentralen Lage des Tumors war eine Teilresektion nicht möglich, sodass wir am 30.09.2026 eine radikale Nephrektomie links durchführten. Die Histologie bestätigte ein klarzelliges Nierenzellkarzinom mit tumorfreien Resektionsrändern (R0). Der Verlauf war komplikationslos; das Kreatinin lag bei Entlassung bei 1,4 mg/dl.\n\nProcedere:\nWir bitten um eine Kontrolle des Kreatinins in einer Woche und eine gute Blutdruckeinstellung. NSAR und andere nephrotoxische Medikamente sollten vermieden werden. Die onkologische Nachsorge mit CT erfolgt nach sechs Monaten in unserer Ambulanz. Wir empfehlen dringend einen Rauchstopp.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab134",
+    "caseId": "c156",
+    "title": "Akute Prostatitis",
+    "task": "Urologiya bo‘limidan uy shifokoriga Arztbrief yozing. Penitsillin allergiyasini hisobga olgan antibiotik tanlovi, davomiyligi va abssessni istisno qilishga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из урологии семейному врачу. Обратите внимание на выбор антибиотика с учётом аллергии на пенициллин, длительность и исключение абсцесса.",
+    "taskTr": "Üroloji servisinden aile hekimine bir Arztbrief yazın. Penisilin alerjisine göre antibiyotik seçimine, süresine ve apsenin dışlanmasına dikkat edin.",
+    "taskEn": "Write an Arztbrief from urology to the GP. Pay attention to antibiotic choice given the penicillin allergy, its duration and excluding an abscess.",
+    "facts": [
+      "Patient: Florian Busch, 41 Jahre, männlich",
+      "Aufenthalt: 01.10.2026–05.10.2026, Urologie",
+      "Fieber bis 39,4 °C mit Schüttelfrost, Dysurie, Pollakisurie, perineale Schmerzen",
+      "Penicillinallergie",
+      "DRU: druckschmerzhafte, überwärmte Prostata; CRP 168 mg/l, Leukozyten 17/nl; Restharn 120 ml",
+      "Urinkultur und Blutkultur: E. coli, sensibel auf Ciprofloxacin; transrektaler Ultraschall: kein Abszess",
+      "Therapie: Ciprofloxacin i.v., dann oral; Einmalkatheter bei Restharn; nach 48 h entfiebert"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patient ma’lumotlari (Herr Busch)",
+        "labelRu": "Данные пациента (Herr Busch)",
+        "labelTr": "Hasta bilgileri (Herr Busch)",
+        "labelEn": "Patient data (Herr Busch)",
+        "keywords": ["busch"]
+      },
+      {
+        "label": "Asosiy shikoyat: isitma, dizuriya va oraliqda og‘riq (perineale Schmerzen)",
+        "labelRu": "Основная жалоба: лихорадка, дизурия и боль в промежности (perineale Schmerzen)",
+        "labelTr": "Ana şikâyet: ateş, dizüri ve perine ağrısı (perineale Schmerzen)",
+        "labelEn": "Main complaint: fever, dysuria and perineal pain (perineale Schmerzen)",
+        "keywords": ["perineal", "dysurie"]
+      },
+      {
+        "label": "Penitsillinga allergiya (Penicillinallergie)",
+        "labelRu": "Аллергия на пенициллин (Penicillinallergie)",
+        "labelTr": "Penisilin alerjisi (Penicillinallergie)",
+        "labelEn": "Penicillin allergy (Penicillinallergie)",
+        "keywords": ["penicillinallergie"]
+      },
+      {
+        "label": "Rektal tekshiruv: og‘riqli prostata (druckschmerzhafte Prostata)",
+        "labelRu": "Ректально: болезненная простата (druckschmerzhafte Prostata)",
+        "labelTr": "Rektal: hassas prostat (druckschmerzhafte Prostata)",
+        "labelEn": "DRE: tender prostate (druckschmerzhafte Prostata)",
+        "keywords": ["druckschmerzhaft"]
+      },
+      {
+        "label": "Kultura: E. coli (E. coli)",
+        "labelRu": "Посев: E. coli (E. coli)",
+        "labelTr": "Kültür: E. coli (E. coli)",
+        "labelEn": "Culture: E. coli (E. coli)",
+        "keywords": ["e. coli"]
+      },
+      {
+        "label": "Abssess yo‘q (kein Abszess)",
+        "labelRu": "Абсцесса нет (kein Abszess)",
+        "labelTr": "Apse yok (kein Abszess)",
+        "labelEn": "No abscess (kein Abszess)",
+        "keywords": ["kein abszess"]
+      },
+      {
+        "label": "Diagnoz: o‘tkir bakterial prostatit (Prostatitis)",
+        "labelRu": "Диагноз: острый бактериальный простатит (Prostatitis)",
+        "labelTr": "Tanı: akut bakteriyel prostatit (Prostatitis)",
+        "labelEn": "Diagnosis: acute bacterial prostatitis (Prostatitis)",
+        "keywords": ["prostatitis"]
+      },
+      {
+        "label": "Davolash: siprofloksatsin (Ciprofloxacin)",
+        "labelRu": "Лечение: ципрофлоксацин (Ciprofloxacin)",
+        "labelTr": "Tedavi: siprofloksasin (Ciprofloxacin)",
+        "labelEn": "Treatment: ciprofloxacin (Ciprofloxacin)",
+        "keywords": ["ciprofloxacin"]
+      },
+      {
+        "label": "Tavsiya: antibiotik jami 4 hafta va nazorat (vier Wochen)",
+        "labelRu": "Рекомендация: антибиотик всего 4 недели и контроль (vier Wochen)",
+        "labelTr": "Öneri: toplam 4 hafta antibiyotik ve kontrol (vier Wochen)",
+        "labelEn": "Recommendation: 4 weeks of antibiotics in total and follow-up (vier Wochen)",
+        "keywords": ["vier wochen", "urinkontrolle"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Florian Busch, 41 Jahre, der vom 01.10.2026 bis zum 05.10.2026 in unserer Klinik für Urologie behandelt wurde.\n\nAnamnese:\nDer Patient stellte sich mit seit zwei Tagen bestehendem Fieber bis 39,4 °C mit Schüttelfrost, Dysurie, Pollakisurie und perinealen Schmerzen vor. Es besteht eine Penicillinallergie.\n\nBefunde:\nIn der vorsichtigen digital-rektalen Untersuchung zeigte sich eine druckschmerzhafte, überwärmte Prostata. Das CRP lag bei 168 mg/l, die Leukozyten bei 17/nl. Der Restharn betrug 120 ml. In Urin- und Blutkultur wuchs E. coli, sensibel auf Ciprofloxacin. Im transrektalen Ultraschall fand sich kein Abszess.\n\nDiagnose:\nAkute bakterielle Prostatitis durch E. coli mit Bakteriämie.\n\nTherapie und Verlauf:\nWir begannen eine Therapie mit Ciprofloxacin i.v. und stellten nach Entfieberung innerhalb von 48 Stunden auf die orale Gabe um. Der Restharn wurde einmalig mittels Einmalkatheter entlastet und war danach rückläufig.\n\nProcedere:\nWir empfehlen die Fortführung von Ciprofloxacin 500 mg zweimal täglich für insgesamt vier Wochen, um einen Übergang in eine chronische Prostatitis zu vermeiden. Der Patient wurde über mögliche Sehnenbeschwerden unter Ciprofloxacin aufgeklärt. Eine Urinkontrolle ist nach Therapieende vorgesehen. Bei erneutem Fieber oder Harnverhalt bitten wir um sofortige Vorstellung.\n\nMit freundlichen kollegialen Grüßen"
   }
 ]

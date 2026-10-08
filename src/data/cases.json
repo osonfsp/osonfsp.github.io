@@ -16122,5 +16122,1112 @@
       "Ggf. D-Dimere",
       "Klinische Untersuchung auf Erysipel"
     ]
+  },
+  {
+    "id": "c147",
+    "title": "Polytrauma",
+    "category": "Unfallchirurgie",
+    "difficulty": "schwer",
+    "patient": {
+      "name": "Jonas Kessler",
+      "age": 27,
+      "gender": "männlich",
+      "hauptbeschwerde": "Motorradunfall mit Schmerzen in Brust, Bauch und Oberschenkel"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Vor 40 Minuten als Motorradfahrer mit ca. 80 km/h gegen ein Auto geprallt, mehrere Meter weggeschleudert. Helm getragen. Starke Schmerzen links im Brustkorb, im linken Oberbauch und im rechten Oberschenkel, Atemnot. Kurze Bewusstlosigkeit fraglich.",
+      "vorerkrankungen": "Keine.",
+      "medikamente": "Keine.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Ledig, Mechatroniker. Gelegentlich Alkohol, kein Drogenkonsum angegeben. Letzte Mahlzeit vor 3 Stunden."
+    },
+    "sprache": [
+      {
+        "patient": "Ich bin mit dem Motorrad gegen ein Auto geknallt.",
+        "fach": "Es handelt sich um einen Hochrasanzunfall als Motorradfahrer."
+      },
+      {
+        "patient": "Links im Brustkorb tut jeder Atemzug weh, und ich bekomme schlecht Luft.",
+        "fach": "Es bestehen atemabhängige linksthorakale Schmerzen mit Dyspnoe."
+      },
+      {
+        "patient": "Mein rechtes Bein ist ganz verdreht.",
+        "fach": "Es besteht eine Fehlstellung des rechten Oberschenkels."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Polytrauma",
+        "patient": "mehrere gleichzeitige Verletzungen, von denen mindestens eine lebensbedrohlich ist",
+        "uz": "politravma",
+        "ru": "политравма",
+        "tr": "politravma",
+        "en": "polytrauma"
+      },
+      {
+        "de": "Schockraum",
+        "patient": "Raum in der Notaufnahme für Schwerverletzte",
+        "uz": "shok xonasi",
+        "ru": "противошоковая палата",
+        "tr": "şok odası",
+        "en": "trauma bay"
+      },
+      {
+        "de": "Milzruptur",
+        "patient": "Riss der Milz",
+        "uz": "taloq yorilishi",
+        "ru": "разрыв селезёнки",
+        "tr": "dalak yırtılması",
+        "en": "splenic rupture"
+      },
+      {
+        "de": "Femurschaftfraktur",
+        "patient": "Bruch des Oberschenkelknochens",
+        "uz": "son suyagi tanasi sinishi",
+        "ru": "перелом диафиза бедра",
+        "tr": "femur cisim kırığı",
+        "en": "femoral shaft fracture"
+      },
+      {
+        "de": "Damage Control",
+        "patient": "nur die lebensrettende Notversorgung zuerst",
+        "uz": "“zararni nazorat qilish” jarrohligi",
+        "ru": "тактика damage control",
+        "tr": "hasar kontrol cerrahisi",
+        "en": "damage control surgery"
+      }
+    ],
+    "simulation": {
+      "opening": "(Notarzt) Motorradfahrer, Frontalzusammenstoß mit einem Pkw, etwa 80 km/h. Patient ist ansprechbar, klagt über Brust- und Bauchschmerzen.",
+      "answers": {
+        "beginn": "(Patient) Vor ungefähr 40 Minuten. Ein Auto ist mir die Vorfahrt genommen.",
+        "lokalisation": "(Patient) Links im Brustkorb, links oben im Bauch und am rechten Oberschenkel.",
+        "charakter": "(Patient) Stechend in der Brust bei jedem Atemzug, im Bein unerträglich, neun von zehn.",
+        "ausstrahlung": "(Patient) In die linke Schulter.",
+        "begleit": "(Patient) Ich kriege schlecht Luft und mir ist schwindelig. Ob ich bewusstlos war, weiß ich nicht genau.",
+        "vegetativ": "(Patient) Mir ist übel. Gegessen habe ich vor drei Stunden.",
+        "vorerkrankungen": "(Patient) Ich bin gesund.",
+        "medikamente": "(Patient) Keine.",
+        "allergien": "(Patient) Nein.",
+        "familie": "(Patient) Nichts Besonderes.",
+        "sozial": "(Patient) Ich bin Mechatroniker und wohne allein. Bitte rufen Sie meine Mutter an.",
+        "noxen": "(Patient) Heute habe ich nichts getrunken. Drogen nehme ich nicht."
+      }
+    },
+    "verdachtsdiagnose": "Polytrauma nach Hochrasanzunfall: Rippenserienfraktur links mit Pneumothorax, Milzruptur, Femurschaftfraktur rechts",
+    "diagnoseKeywords": ["polytrauma", "milzruptur", "femurschaftfraktur"],
+    "differenzialdiagnosen": [
+      "Spannungspneumothorax",
+      "Hämatothorax",
+      "Leberruptur",
+      "Beckenfraktur",
+      "Schädel-Hirn-Trauma",
+      "Wirbelsäulenverletzung"
+    ],
+    "untersuchungen": [
+      "Schockraumversorgung nach ATLS (ABCDE)",
+      "eFAST-Sonographie",
+      "Ganzkörper-CT (Traumaspirale)",
+      "Blutgruppe, Kreuzblut, Hb, Gerinnung, Laktat",
+      "Blutgasanalyse"
+    ],
+    "oberarzt": {
+      "therapie": [
+        "Thoraxdrainage links",
+        "Notfallsplenektomie oder Embolisation je nach Kreislauf",
+        "Damage-Control-Prinzip",
+        "Fixateur externe am Femur, später Marknagel",
+        "Gerinnungsmanagement mit Tranexamsäure"
+      ],
+      "komplikationen": [
+        "Hämorrhagischer Schock",
+        "Fettembolie",
+        "ARDS",
+        "Multiorganversagen",
+        "Postsplenektomie-Sepsis (OPSI)"
+      ]
+    }
+  },
+  {
+    "id": "c148",
+    "title": "OSG-Fraktur (Weber B)",
+    "category": "Unfallchirurgie",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Claudia Neumann",
+      "age": 44,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Schmerzen und Schwellung am rechten Sprunggelenk nach Umknicken"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Heute beim Treppenabgang mit dem rechten Fuß nach außen umgeknickt, hörbares Knacken, sofort starke Schmerzen am Außenknöchel, rasche Schwellung, Auftreten nicht möglich.",
+      "vorerkrankungen": "Hypothyreose.",
+      "medikamente": "L-Thyroxin 75 µg.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Verheiratet, Erzieherin. Nichtraucherin."
+    },
+    "sprache": [
+      {
+        "patient": "Ich bin auf der Treppe umgeknickt und habe es knacken gehört.",
+        "fach": "Es erfolgte ein Supinationstrauma mit hörbarem Krachen."
+      },
+      {
+        "patient": "Ich kann gar nicht mehr auftreten.",
+        "fach": "Das Bein ist nicht belastbar."
+      },
+      {
+        "patient": "Der Knöchel ist ganz dick geworden.",
+        "fach": "Es besteht eine deutliche Schwellung über dem Außenknöchel."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Sprunggelenk",
+        "patient": "Gelenk zwischen Unterschenkel und Fuß",
+        "uz": "to‘piq bo‘g‘imi",
+        "ru": "голеностопный сустав",
+        "tr": "ayak bileği eklemi",
+        "en": "ankle joint"
+      },
+      {
+        "de": "Weber-Klassifikation",
+        "patient": "Einteilung der Außenknöchelbrüche nach Höhe zur Syndesmose",
+        "uz": "Weber tasnifi",
+        "ru": "классификация Вебера",
+        "tr": "Weber sınıflaması",
+        "en": "Weber classification"
+      },
+      {
+        "de": "Syndesmose",
+        "patient": "Bandverbindung zwischen Schien- und Wadenbein",
+        "uz": "sindesmoz",
+        "ru": "синдесмоз",
+        "tr": "sindezmoz",
+        "en": "syndesmosis"
+      },
+      {
+        "de": "Osteosynthese",
+        "patient": "operative Fixierung eines Knochenbruchs",
+        "uz": "osteosintez",
+        "ru": "остеосинтез",
+        "tr": "osteosentez",
+        "en": "internal fixation"
+      },
+      {
+        "de": "Thromboseprophylaxe",
+        "patient": "Vorbeugung von Blutgerinnseln",
+        "uz": "tromboz profilaktikasi",
+        "ru": "профилактика тромбоза",
+        "tr": "tromboz profilaksisi",
+        "en": "thromboprophylaxis"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich bin auf der Treppe umgeknickt, und jetzt ist mein Knöchel dick und ich kann nicht mehr auftreten.",
+      "answers": {
+        "beginn": "Heute Mittag, vor zwei Stunden.",
+        "lokalisation": "Außen am rechten Knöchel.",
+        "charakter": "Stechend, sehr stark, acht von zehn. Bei jeder Bewegung schlimmer.",
+        "ausstrahlung": "Etwas in den Fußrücken.",
+        "begleit": "Ich habe es knacken gehört. Der Knöchel ist sofort dick geworden. Kribbeln im Fuß habe ich nicht.",
+        "vegetativ": "Sonst geht es mir gut.",
+        "vorerkrankungen": "Eine Schilddrüsenunterfunktion.",
+        "medikamente": "L-Thyroxin 75.",
+        "allergien": "Keine.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich bin verheiratet und Erzieherin im Kindergarten.",
+        "noxen": "Ich rauche nicht, Alkohol selten."
+      }
+    },
+    "verdachtsdiagnose": "Sprunggelenksfraktur rechts Typ Weber B",
+    "diagnoseKeywords": ["weber", "sprunggelenksfraktur", "außenknöchelfraktur", "osg-fraktur"],
+    "differenzialdiagnosen": [
+      "Außenbandruptur",
+      "Fraktur der Basis des 5. Mittelfußknochens",
+      "Syndesmosenverletzung",
+      "Maisonneuve-Fraktur"
+    ],
+    "untersuchungen": [
+      "Klinische Untersuchung (Ottawa Ankle Rules, Durchblutung, Sensibilität)",
+      "Röntgen OSG in zwei Ebenen",
+      "Ggf. CT bei Gelenkbeteiligung",
+      "Röntgen proximale Fibula bei Verdacht auf Maisonneuve"
+    ]
+  },
+  {
+    "id": "c149",
+    "title": "Skaphoidfraktur",
+    "category": "Unfallchirurgie",
+    "difficulty": "leicht",
+    "patient": {
+      "name": "Lukas Wendt",
+      "age": 19,
+      "gender": "männlich",
+      "hauptbeschwerde": "Schmerzen im Handgelenk nach Sturz auf die ausgestreckte Hand"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Vor 3 Tagen beim Inlineskaten auf die ausgestreckte rechte Hand gestürzt. Seitdem Schmerzen am Handgelenk auf der Daumenseite, besonders beim Greifen und Abstützen. Leichte Schwellung, keine Fehlstellung.",
+      "vorerkrankungen": "Keine.",
+      "medikamente": "Ibuprofen 400 mg bei Bedarf.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Ledig, Auszubildender zum Tischler, Rechtshänder. Nichtraucher."
+    },
+    "sprache": [
+      {
+        "patient": "Ich bin auf die ausgestreckte Hand gefallen.",
+        "fach": "Es erfolgte ein Sturz auf das dorsalextendierte Handgelenk."
+      },
+      {
+        "patient": "Auf der Daumenseite des Handgelenks tut es weh, wenn ich drücke.",
+        "fach": "Es besteht ein Druckschmerz in der Tabatière."
+      },
+      {
+        "patient": "Ich kann nicht richtig zugreifen.",
+        "fach": "Die Grobkraft ist schmerzbedingt eingeschränkt."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Skaphoid",
+        "patient": "Kahnbein, kleiner Handwurzelknochen",
+        "uz": "qayiqsimon suyak",
+        "ru": "ладьевидная кость",
+        "tr": "skafoid kemik",
+        "en": "scaphoid"
+      },
+      {
+        "de": "Tabatière",
+        "patient": "kleine Grube auf der Daumenseite des Handgelenks",
+        "uz": "“anatomik tamaki qutisi”",
+        "ru": "анатомическая табакерка",
+        "tr": "anatomik enfiye kutusu",
+        "en": "anatomical snuffbox"
+      },
+      {
+        "de": "Pseudarthrose",
+        "patient": "Bruch, der nicht zusammenwächst",
+        "uz": "soxta bo‘g‘im",
+        "ru": "ложный сустав",
+        "tr": "kaynamama (psödoartroz)",
+        "en": "non-union"
+      },
+      {
+        "de": "Herbert-Schraube",
+        "patient": "spezielle Schraube für das Kahnbein",
+        "uz": "Herbert vinti",
+        "ru": "винт Герберта",
+        "tr": "Herbert vidası",
+        "en": "Herbert screw"
+      },
+      {
+        "de": "Unterarmgips mit Daumeneinschluss",
+        "patient": "Gips, der auch den Daumen ruhigstellt",
+        "uz": "bosh barmoqni ham o‘z ichiga olgan gips",
+        "ru": "гипс с захватом большого пальца",
+        "tr": "başparmağı içine alan alçı",
+        "en": "thumb spica cast"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich bin vor drei Tagen beim Inlineskaten auf die Hand gefallen, und das Handgelenk tut immer noch weh.",
+      "answers": {
+        "beginn": "Vor drei Tagen. Ich dachte, es ist nur verstaucht.",
+        "lokalisation": "Rechtes Handgelenk, auf der Daumenseite.",
+        "charakter": "Dumpf, beim Greifen und Abstützen stechend, fünf von zehn.",
+        "ausstrahlung": "Ein bisschen in den Daumen.",
+        "begleit": "Leicht geschwollen. Kein Kribbeln, die Finger kann ich bewegen.",
+        "vegetativ": "Sonst nichts.",
+        "vorerkrankungen": "Ich bin gesund.",
+        "medikamente": "Ibuprofen 400, wenn es sehr weh tut.",
+        "allergien": "Nein.",
+        "familie": "Nichts.",
+        "sozial": "Ich mache eine Ausbildung zum Tischler und bin Rechtshänder.",
+        "noxen": "Ich rauche nicht."
+      }
+    },
+    "verdachtsdiagnose": "Skaphoidfraktur rechts (mittleres Drittel)",
+    "diagnoseKeywords": ["skaphoidfraktur", "kahnbeinfraktur", "skaphoid"],
+    "differenzialdiagnosen": [
+      "Distale Radiusfraktur",
+      "Distorsion des Handgelenks",
+      "Skapholunäre Bandverletzung",
+      "Rhizarthrose"
+    ],
+    "untersuchungen": [
+      "Druckschmerz in der Tabatière, Stauchungsschmerz des Daumens",
+      "Röntgen Handgelenk mit Kahnbeinserie",
+      "CT bei negativem Röntgen und klinischem Verdacht",
+      "Alternativ MRT"
+    ]
+  },
+  {
+    "id": "c150",
+    "title": "Schulterluxation",
+    "category": "Unfallchirurgie",
+    "difficulty": "leicht",
+    "patient": {
+      "name": "Marco Seidel",
+      "age": 24,
+      "gender": "männlich",
+      "hauptbeschwerde": "Schulter nach Sturz beim Handball herausgesprungen"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Beim Handball vor 1 Stunde Wurfarm nach hinten gerissen, sofort stärkste Schmerzen in der rechten Schulter, Arm kann nicht bewegt werden, Patient hält ihn mit der anderen Hand fest. Erstmaliges Ereignis.",
+      "vorerkrankungen": "Keine.",
+      "medikamente": "Keine.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Ledig, Bankkaufmann, spielt Handball im Verein. Nichtraucher."
+    },
+    "sprache": [
+      {
+        "patient": "Die Schulter ist rausgesprungen.",
+        "fach": "Es besteht der Verdacht auf eine Schulterluxation."
+      },
+      {
+        "patient": "Ich kann den Arm überhaupt nicht bewegen.",
+        "fach": "Es besteht eine schmerzhafte Bewegungseinschränkung mit federnder Fixation."
+      },
+      {
+        "patient": "Außen am Oberarm fühlt sich die Haut taub an.",
+        "fach": "Es besteht eine Hypästhesie über dem M. deltoideus."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Luxation",
+        "patient": "Verrenkung eines Gelenks",
+        "uz": "chiqish (lyuksatsiya)",
+        "ru": "вывих",
+        "tr": "çıkık",
+        "en": "dislocation"
+      },
+      {
+        "de": "Reposition",
+        "patient": "Einrenken",
+        "uz": "joyiga solish",
+        "ru": "вправление",
+        "tr": "redüksiyon",
+        "en": "reduction"
+      },
+      {
+        "de": "Nervus axillaris",
+        "patient": "Nerv, der den Deltamuskel versorgt",
+        "uz": "qo‘ltiq osti nervi",
+        "ru": "подмышечный нерв",
+        "tr": "aksiller sinir",
+        "en": "axillary nerve"
+      },
+      {
+        "de": "Bankart-Läsion",
+        "patient": "Abriss der Gelenklippe vorne an der Pfanne",
+        "uz": "Bankart shikastlanishi",
+        "ru": "повреждение Банкарта",
+        "tr": "Bankart lezyonu",
+        "en": "Bankart lesion"
+      },
+      {
+        "de": "Gilchrist-Verband",
+        "patient": "Verband, der den Arm am Körper hält",
+        "uz": "Gilchrist bog‘lami",
+        "ru": "повязка Гилкриста",
+        "tr": "Gilchrist bandajı",
+        "en": "shoulder immobiliser"
+      }
+    ],
+    "simulation": {
+      "opening": "Beim Handball ist mir die Schulter rausgesprungen, ich kann den Arm nicht mehr bewegen!",
+      "answers": {
+        "beginn": "Vor einer Stunde beim Training, beim Wurf hat mir jemand den Arm nach hinten gerissen.",
+        "lokalisation": "Rechte Schulter.",
+        "charakter": "Extrem stark, neun von zehn. Ich halte den Arm, sonst ist es nicht auszuhalten.",
+        "ausstrahlung": "In den Oberarm.",
+        "begleit": "Außen am Oberarm fühlt sich die Haut etwas taub an. Die Finger kann ich bewegen.",
+        "vegetativ": "Mir ist etwas übel vor Schmerzen.",
+        "vorerkrankungen": "Ich bin gesund. Die Schulter ist zum ersten Mal raus.",
+        "medikamente": "Keine.",
+        "allergien": "Nein.",
+        "familie": "Nichts.",
+        "sozial": "Ich bin Bankkaufmann und spiele Handball im Verein, Rückraum rechts.",
+        "noxen": "Ich rauche nicht. Gegessen habe ich vor vier Stunden."
+      }
+    },
+    "verdachtsdiagnose": "Vordere Schulterluxation rechts (Erstluxation)",
+    "diagnoseKeywords": ["schulterluxation", "luxation"],
+    "differenzialdiagnosen": [
+      "Proximale Humerusfraktur",
+      "Luxationsfraktur",
+      "AC-Gelenksprengung",
+      "Rotatorenmanschettenruptur"
+    ],
+    "untersuchungen": [
+      "Prüfung von Durchblutung, Motorik und Sensibilität (N. axillaris) vor und nach Reposition",
+      "Röntgen Schulter in zwei Ebenen vor Reposition",
+      "Röntgenkontrolle nach Reposition",
+      "MRT zur Beurteilung von Labrum und Rotatorenmanschette"
+    ]
+  },
+  {
+    "id": "c151",
+    "title": "Vordere Kreuzbandruptur",
+    "category": "Unfallchirurgie",
+    "difficulty": "leicht",
+    "patient": {
+      "name": "Laura Fischer",
+      "age": 23,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Knieschmerzen und Instabilität nach Verdrehtrauma beim Fußball"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Gestern beim Fußball bei einer schnellen Drehbewegung mit fixiertem Fuß das linke Knie verdreht, Knacken gehört, sofort Schmerzen, Spiel abgebrochen. Innerhalb weniger Stunden starke Schwellung. Seitdem Unsicherheitsgefühl, als würde das Knie wegknicken.",
+      "vorerkrankungen": "Keine.",
+      "medikamente": "Hormonelle Verhütung.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Ledig, Sportstudentin, spielt Fußball in der Regionalliga. Nichtraucherin."
+    },
+    "sprache": [
+      {
+        "patient": "Ich habe mir das Knie verdreht und es hat geknackt.",
+        "fach": "Es erfolgte ein Rotationstrauma mit hörbarem Knacken."
+      },
+      {
+        "patient": "Das Knie ist innerhalb von Stunden dick geworden.",
+        "fach": "Es entwickelte sich rasch ein Kniegelenkserguss."
+      },
+      {
+        "patient": "Ich habe das Gefühl, das Knie knickt weg.",
+        "fach": "Es besteht ein Instabilitätsgefühl (Giving-way)."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Vorderes Kreuzband",
+        "patient": "Band im Knie, das den Unterschenkel nach vorne stabilisiert",
+        "uz": "oldingi xochsimon boylam",
+        "ru": "передняя крестообразная связка",
+        "tr": "ön çapraz bağ",
+        "en": "anterior cruciate ligament"
+      },
+      {
+        "de": "Lachman-Test",
+        "patient": "Test zur Prüfung des vorderen Kreuzbands",
+        "uz": "Lachman testi",
+        "ru": "тест Лахмана",
+        "tr": "Lachman testi",
+        "en": "Lachman test"
+      },
+      {
+        "de": "Hämarthros",
+        "patient": "Blut im Gelenk",
+        "uz": "bo‘g‘imga qon quyilishi",
+        "ru": "гемартроз",
+        "tr": "hemartroz",
+        "en": "haemarthrosis"
+      },
+      {
+        "de": "Kreuzbandplastik",
+        "patient": "Ersatz des Kreuzbands durch eine Sehne",
+        "uz": "xochsimon boylam plastikasi",
+        "ru": "пластика крестообразной связки",
+        "tr": "ön çapraz bağ rekonstrüksiyonu",
+        "en": "ACL reconstruction"
+      },
+      {
+        "de": "Meniskus",
+        "patient": "Knorpelscheibe im Knie",
+        "uz": "menisk",
+        "ru": "мениск",
+        "tr": "menisküs",
+        "en": "meniscus"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe mir gestern beim Fußball das linke Knie verdreht, es ist dick und fühlt sich wackelig an.",
+      "answers": {
+        "beginn": "Gestern Nachmittag im Spiel.",
+        "lokalisation": "Linkes Knie, eher innen im Gelenk.",
+        "charakter": "Dumpf, sechs von zehn. Beim Belasten unsicher.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Ich habe es knacken gehört. Nach ein paar Stunden war das Knie ganz dick. Es blockiert nicht, aber es knickt manchmal weg.",
+        "vegetativ": "Sonst geht es mir gut.",
+        "vorerkrankungen": "Keine. Das Knie war vorher nie verletzt.",
+        "medikamente": "Nur die Pille.",
+        "allergien": "Nein.",
+        "familie": "Nichts.",
+        "sozial": "Ich studiere Sport und spiele Fußball in der Regionalliga. Ich möchte unbedingt weiterspielen.",
+        "noxen": "Ich rauche nicht."
+      }
+    },
+    "verdachtsdiagnose": "Ruptur des vorderen Kreuzbands links mit Hämarthros",
+    "diagnoseKeywords": ["kreuzbandruptur", "kreuzband", "vkb"],
+    "differenzialdiagnosen": ["Meniskusläsion", "Innenbandruptur", "Patellaluxation", "Tibiakopffraktur"],
+    "untersuchungen": [
+      "Lachman-Test, vordere Schublade, Pivot-Shift-Test",
+      "Röntgen Knie in zwei Ebenen",
+      "MRT Knie",
+      "Punktion bei schmerzhaftem Erguss"
+    ]
+  },
+  {
+    "id": "c152",
+    "title": "Rippenserienfraktur mit Hämatopneumothorax",
+    "category": "Unfallchirurgie",
+    "difficulty": "schwer",
+    "patient": {
+      "name": "Helmut Arnold",
+      "age": 71,
+      "gender": "männlich",
+      "hauptbeschwerde": "Starke Brustschmerzen und Atemnot nach Sturz von der Leiter"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Vor 2 Stunden beim Obstpflücken aus ca. 2,5 m Höhe von der Leiter auf die rechte Brustkorbseite gestürzt. Seitdem stärkste atemabhängige Schmerzen rechts, zunehmende Atemnot, kann nur flach atmen. Kein Bewusstseinsverlust.",
+      "vorerkrankungen": "Vorhofflimmern, arterielle Hypertonie, COPD Stadium II.",
+      "medikamente": "Apixaban 5 mg 1-0-1, Bisoprolol 5 mg, Ramipril 5 mg, Tiotropium-Spray.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Verheiratet, Rentner, Hobbygärtner. Ehemaliger Raucher (40 Packungsjahre, seit 10 Jahren rauchfrei)."
+    },
+    "sprache": [
+      {
+        "patient": "Bei jedem Atemzug sticht es rechts in der Brust.",
+        "fach": "Es bestehen atemabhängige rechtsthorakale Schmerzen."
+      },
+      {
+        "patient": "Ich kann nur ganz flach atmen.",
+        "fach": "Es besteht eine schmerzbedingte Schonatmung."
+      },
+      {
+        "patient": "Ich nehme ein Blutverdünnungsmittel wegen Herzstolpern.",
+        "fach": "Der Patient ist wegen Vorhofflimmerns mit Apixaban antikoaguliert."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Rippenserienfraktur",
+        "patient": "Bruch von drei oder mehr benachbarten Rippen",
+        "uz": "ketma-ket qovurg‘a sinishi",
+        "ru": "множественный перелом рёбер",
+        "tr": "seri kot kırığı",
+        "en": "multiple rib fractures"
+      },
+      {
+        "de": "Hämatopneumothorax",
+        "patient": "Blut und Luft im Pleuraspalt",
+        "uz": "gemopnevmotoraks",
+        "ru": "гемопневмоторакс",
+        "tr": "hemopnömotoraks",
+        "en": "haemopneumothorax"
+      },
+      {
+        "de": "Thoraxdrainage",
+        "patient": "Schlauch in den Brustkorb zum Ablassen von Luft und Blut",
+        "uz": "plevra drenaji",
+        "ru": "плевральный дренаж",
+        "tr": "göğüs tüpü",
+        "en": "chest drain"
+      },
+      {
+        "de": "Periduralkatheter",
+        "patient": "dünner Schlauch am Rückenmark für Schmerzmittel",
+        "uz": "epidural kateter",
+        "ru": "эпидуральный катетер",
+        "tr": "epidural kateter",
+        "en": "epidural catheter"
+      },
+      {
+        "de": "Atemtherapie",
+        "patient": "Übungen zur Verbesserung der Atmung",
+        "uz": "nafas terapiyasi",
+        "ru": "дыхательная гимнастика",
+        "tr": "solunum terapisi",
+        "en": "breathing physiotherapy"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich bin von der Leiter gefallen, und jetzt tut mir die rechte Brust so weh, dass ich kaum atmen kann.",
+      "answers": {
+        "beginn": "Vor zwei Stunden beim Äpfelpflücken. Die Atemnot wird langsam schlimmer.",
+        "lokalisation": "Rechts seitlich am Brustkorb.",
+        "charakter": "Stechend, bei jedem Atemzug und beim Husten, neun von zehn.",
+        "ausstrahlung": "In den Rücken rechts.",
+        "begleit": "Ich bekomme schlecht Luft und kann nur flach atmen. Den Kopf habe ich mir nicht gestoßen.",
+        "vegetativ": "Mir ist etwas schwindelig.",
+        "vorerkrankungen": "Herzstolpern, Bluthochdruck und COPD.",
+        "medikamente": "Eliquis 5 morgens und abends, Bisoprolol, Ramipril und ein Spray für die Lunge.",
+        "allergien": "Keine.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich bin verheiratet und Rentner, der Garten ist mein Hobby.",
+        "noxen": "Ich habe vor zehn Jahren mit dem Rauchen aufgehört, vorher 40 Jahre eine Schachtel. Alkohol wenig."
+      }
+    },
+    "verdachtsdiagnose": "Rippenserienfraktur rechts mit Hämatopneumothorax unter oraler Antikoagulation",
+    "diagnoseKeywords": ["rippenserienfraktur", "hämatopneumothorax", "pneumothorax", "hämatothorax"],
+    "differenzialdiagnosen": [
+      "Spannungspneumothorax",
+      "Lungenkontusion",
+      "Leberverletzung",
+      "Wirbelkörperfraktur",
+      "Instabiler Thorax"
+    ],
+    "untersuchungen": [
+      "eFAST-Sonographie",
+      "CT Thorax und Abdomen",
+      "Blutgasanalyse",
+      "Blutbild, Gerinnung, Kreuzblut",
+      "Röntgen-Thorax nach Drainage"
+    ],
+    "oberarzt": {
+      "therapie": [
+        "Thoraxdrainage rechts",
+        "Pausieren von Apixaban, ggf. Antagonisierung bei Blutung",
+        "Periduralkatheter oder Regionalanästhesie zur Analgesie",
+        "Atemtherapie und Frühmobilisation",
+        "Operative Rippenstabilisierung bei instabilem Thorax"
+      ],
+      "komplikationen": [
+        "Spannungspneumothorax",
+        "Pneumonie",
+        "Respiratorische Insuffizienz",
+        "Massiver Hämatothorax",
+        "Pleuraempyem"
+      ]
+    }
+  },
+  {
+    "id": "c153",
+    "title": "Proximale Humerusfraktur",
+    "category": "Unfallchirurgie",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Irmgard Baumann",
+      "age": 79,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Schulterschmerzen nach Sturz auf den ausgestreckten Arm"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Heute Morgen im Badezimmer auf nassem Boden ausgerutscht und auf den linken Arm gefallen. Starke Schmerzen in der linken Schulter, Arm kann nicht gehoben werden. Bluterguss am Oberarm. Kein Kopfanprall.",
+      "vorerkrankungen": "Osteoporose, Herzinsuffizienz, Gonarthrose beidseits, zwei Stürze im letzten Jahr.",
+      "medikamente": "Torasemid 10 mg, Ramipril 2,5 mg, Vitamin D 1000 IE. Zopiclon 7,5 mg zur Nacht.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Mutter: Oberschenkelhalsbruch.",
+      "sozialanamnese": "Verwitwet, lebt allein im zweiten Stock ohne Aufzug, Tochter kommt zweimal wöchentlich. Nichtraucherin. Linkshänderin."
+    },
+    "sprache": [
+      {
+        "patient": "Ich bin im Bad ausgerutscht und auf den Arm gefallen.",
+        "fach": "Es erfolgte ein häuslicher Sturz auf den ausgestreckten linken Arm."
+      },
+      {
+        "patient": "Ich kann den Arm nicht heben.",
+        "fach": "Es besteht eine schmerzbedingte Bewegungseinschränkung der linken Schulter."
+      },
+      {
+        "patient": "Ich bin dieses Jahr schon zweimal gestürzt.",
+        "fach": "Es bestehen rezidivierende Stürze."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Proximale Humerusfraktur",
+        "patient": "Bruch des Oberarmknochens nahe der Schulter",
+        "uz": "yelka suyagining yuqori qismi sinishi",
+        "ru": "перелом проксимального отдела плечевой кости",
+        "tr": "proksimal humerus kırığı",
+        "en": "proximal humerus fracture"
+      },
+      {
+        "de": "Osteoporose",
+        "patient": "Knochenschwund",
+        "uz": "osteoporoz",
+        "ru": "остеопороз",
+        "tr": "osteoporoz",
+        "en": "osteoporosis"
+      },
+      {
+        "de": "Konservative Therapie",
+        "patient": "Behandlung ohne Operation",
+        "uz": "konservativ davolash",
+        "ru": "консервативное лечение",
+        "tr": "konservatif tedavi",
+        "en": "non-operative treatment"
+      },
+      {
+        "de": "Sturzprophylaxe",
+        "patient": "Maßnahmen zur Vermeidung von Stürzen",
+        "uz": "yiqilishning oldini olish",
+        "ru": "профилактика падений",
+        "tr": "düşme önleme",
+        "en": "falls prevention"
+      },
+      {
+        "de": "Bisphosphonat",
+        "patient": "Medikament gegen Knochenschwund",
+        "uz": "bisfosfonat",
+        "ru": "бисфосфонат",
+        "tr": "bifosfonat",
+        "en": "bisphosphonate"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich bin heute Morgen im Bad ausgerutscht und auf die linke Schulter gefallen. Jetzt kann ich den Arm nicht mehr heben.",
+      "answers": {
+        "beginn": "Heute Morgen um sieben.",
+        "lokalisation": "Linke Schulter und Oberarm.",
+        "charakter": "Stark, sieben von zehn, bei jeder Bewegung schlimmer.",
+        "ausstrahlung": "Bis zum Ellenbogen.",
+        "begleit": "Am Oberarm ist ein großer blauer Fleck. Die Finger kann ich bewegen und spüren. Den Kopf habe ich mir nicht gestoßen.",
+        "vegetativ": "Vor dem Sturz war mir nicht schwindelig, der Boden war nass.",
+        "vorerkrankungen": "Osteoporose, schwaches Herz und Arthrose in den Knien. Ich bin dieses Jahr schon zweimal gestürzt.",
+        "medikamente": "Torasemid, Ramipril, Vitamin D und eine Schlaftablette, Zopiclon.",
+        "allergien": "Keine.",
+        "familie": "Meine Mutter hatte einen Oberschenkelhalsbruch.",
+        "sozial": "Ich bin Witwe und lebe allein im zweiten Stock ohne Aufzug. Meine Tochter kommt zweimal in der Woche. Ich bin Linkshänderin.",
+        "noxen": "Ich rauche nicht und trinke keinen Alkohol."
+      }
+    },
+    "verdachtsdiagnose": "Gering dislozierte proximale Humerusfraktur links bei Osteoporose",
+    "diagnoseKeywords": ["humerusfraktur", "humeruskopffraktur", "oberarmfraktur"],
+    "differenzialdiagnosen": [
+      "Schulterluxation",
+      "Luxationsfraktur",
+      "Rotatorenmanschettenruptur",
+      "Pathologische Fraktur"
+    ],
+    "untersuchungen": [
+      "Prüfung von Durchblutung, Motorik und Sensibilität (N. axillaris)",
+      "Röntgen Schulter in zwei Ebenen",
+      "CT bei komplexer Fraktur",
+      "Osteodensitometrie (DXA)",
+      "Sturzabklärung (Medikamente, Orthostase, EKG)"
+    ]
+  },
+  {
+    "id": "c154",
+    "title": "Prostatakarzinom",
+    "category": "Urologie",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Heinrich Lange",
+      "age": 66,
+      "gender": "männlich",
+      "hauptbeschwerde": "Erhöhter PSA-Wert bei der Vorsorgeuntersuchung"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Beim Hausarzt im Rahmen der Vorsorge PSA 9,8 ng/ml (vor 2 Jahren 3,1). Leicht abgeschwächter Harnstrahl, nachts einmal Wasserlassen. Keine Knochenschmerzen, kein Gewichtsverlust, kein Blut im Urin.",
+      "vorerkrankungen": "Diabetes mellitus Typ 2, Hyperlipidämie.",
+      "medikamente": "Metformin 1000 mg 1-0-1, Simvastatin 20 mg.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Vater: Prostatakrebs mit 70 Jahren.",
+      "sozialanamnese": "Verheiratet, Rentner (früher Ingenieur), sexuell aktiv. Nichtraucher."
+    },
+    "sprache": [
+      {
+        "patient": "Mein Hausarzt sagt, der Prostatawert ist stark gestiegen.",
+        "fach": "Es besteht ein PSA-Anstieg von 3,1 auf 9,8 ng/ml innerhalb von zwei Jahren."
+      },
+      {
+        "patient": "Der Strahl ist etwas schwächer geworden.",
+        "fach": "Es besteht ein leicht abgeschwächter Harnstrahl."
+      },
+      {
+        "patient": "Mein Vater hatte auch Prostatakrebs.",
+        "fach": "Es besteht eine positive Familienanamnese für ein Prostatakarzinom."
+      }
+    ],
+    "terms": [
+      {
+        "de": "PSA",
+        "patient": "Eiweiß, das die Prostata bildet; Tumormarker",
+        "uz": "PSA (prostata-spetsifik antigen)",
+        "ru": "ПСА",
+        "tr": "PSA",
+        "en": "prostate-specific antigen"
+      },
+      {
+        "de": "Prostatakarzinom",
+        "patient": "Prostatakrebs",
+        "uz": "prostata saratoni",
+        "ru": "рак предстательной железы",
+        "tr": "prostat kanseri",
+        "en": "prostate cancer"
+      },
+      {
+        "de": "Gleason-Score",
+        "patient": "Maß für die Bösartigkeit des Prostatakrebses",
+        "uz": "Gleason shkalasi",
+        "ru": "шкала Глисона",
+        "tr": "Gleason skoru",
+        "en": "Gleason score"
+      },
+      {
+        "de": "Radikale Prostatektomie",
+        "patient": "Entfernung der gesamten Prostata",
+        "uz": "radikal prostatektomiya",
+        "ru": "радикальная простатэктомия",
+        "tr": "radikal prostatektomi",
+        "en": "radical prostatectomy"
+      },
+      {
+        "de": "Fusionsbiopsie",
+        "patient": "Gewebeprobe gezielt nach MRT-Bild",
+        "uz": "MRT-fuzion biopsiya",
+        "ru": "фьюжн-биопсия",
+        "tr": "füzyon biyopsi",
+        "en": "MRI fusion biopsy"
+      }
+    ],
+    "simulation": {
+      "opening": "Mein Hausarzt hat mich geschickt, weil mein Prostatawert stark gestiegen ist.",
+      "answers": {
+        "beginn": "Den Wert hat er vor zwei Wochen gemessen. Beschwerden habe ich kaum.",
+        "lokalisation": "Schmerzen habe ich keine.",
+        "charakter": "Der Strahl ist etwas schwächer geworden.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Nachts muss ich einmal raus. Blut im Urin habe ich nicht gesehen. Knochenschmerzen habe ich nicht.",
+        "vegetativ": "Gewicht ist stabil, Appetit gut.",
+        "vorerkrankungen": "Zucker und erhöhte Blutfette.",
+        "medikamente": "Metformin 1000 morgens und abends, Simvastatin 20.",
+        "allergien": "Nein.",
+        "familie": "Mein Vater hatte mit 70 Prostatakrebs.",
+        "sozial": "Ich bin verheiratet und Rentner, früher Ingenieur. Erektionsprobleme habe ich nicht, das ist mir auch wichtig.",
+        "noxen": "Ich rauche nicht, abends mal ein Bier."
+      }
+    },
+    "verdachtsdiagnose": "Verdacht auf Prostatakarzinom bei PSA-Anstieg",
+    "diagnoseKeywords": ["prostatakarzinom", "prostatakrebs", "karzinom"],
+    "differenzialdiagnosen": [
+      "Benigne Prostatahyperplasie",
+      "Prostatitis",
+      "PSA-Erhöhung nach Manipulation oder Radfahren"
+    ],
+    "untersuchungen": [
+      "Digital-rektale Untersuchung",
+      "PSA-Kontrolle",
+      "Multiparametrisches MRT der Prostata",
+      "MRT-gestützte Fusionsbiopsie",
+      "Staging je nach Risiko (PSMA-PET-CT)"
+    ]
+  },
+  {
+    "id": "c155",
+    "title": "Nierenzellkarzinom",
+    "category": "Urologie",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Thomas Engel",
+      "age": 62,
+      "gender": "männlich",
+      "hauptbeschwerde": "Schmerzloses Blut im Urin"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 1 Woche zweimal rötlicher Urin ohne Schmerzen beim Wasserlassen. Seit Monaten dumpfer Druck in der linken Flanke, ungewollter Gewichtsverlust von 5 kg in 3 Monaten, Nachtschweiß.",
+      "vorerkrankungen": "Arterielle Hypertonie, Adipositas (BMI 33).",
+      "medikamente": "Amlodipin 10 mg.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Verheiratet, Lagerarbeiter. Raucher (35 Packungsjahre). Alkohol gelegentlich."
+    },
+    "sprache": [
+      {
+        "patient": "Mein Urin war zweimal rot, aber es hat nicht wehgetan.",
+        "fach": "Es bestand eine schmerzlose Makrohämaturie."
+      },
+      {
+        "patient": "In der linken Seite drückt es schon länger.",
+        "fach": "Es besteht ein dumpfer linksseitiger Flankenschmerz."
+      },
+      {
+        "patient": "Ich habe fünf Kilo abgenommen, ohne es zu wollen.",
+        "fach": "Es besteht ein ungewollter Gewichtsverlust von 5 kg in drei Monaten."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Nierenzellkarzinom",
+        "patient": "bösartiger Nierentumor",
+        "uz": "buyrak hujayrali saraton",
+        "ru": "почечно-клеточный рак",
+        "tr": "böbrek hücreli kanser",
+        "en": "renal cell carcinoma"
+      },
+      {
+        "de": "Makrohämaturie",
+        "patient": "sichtbares Blut im Urin",
+        "uz": "ko‘zga ko‘rinadigan gematuriya",
+        "ru": "макрогематурия",
+        "tr": "makroskopik hematüri",
+        "en": "visible haematuria"
+      },
+      {
+        "de": "Teilnephrektomie",
+        "patient": "Entfernung nur des Tumors mit einem Teil der Niere",
+        "uz": "buyrak qisman rezeksiyasi",
+        "ru": "резекция почки",
+        "tr": "parsiyel nefrektomi",
+        "en": "partial nephrectomy"
+      },
+      {
+        "de": "B-Symptomatik",
+        "patient": "Fieber, Nachtschweiß und Gewichtsverlust",
+        "uz": "B-simptomlar",
+        "ru": "B-симптомы",
+        "tr": "B semptomları",
+        "en": "B symptoms"
+      },
+      {
+        "de": "Zystoskopie",
+        "patient": "Blasenspiegelung",
+        "uz": "sistoskopiya",
+        "ru": "цистоскопия",
+        "tr": "sistoskopi",
+        "en": "cystoscopy"
+      }
+    ],
+    "simulation": {
+      "opening": "Mein Urin war diese Woche zweimal ganz rot.",
+      "answers": {
+        "beginn": "Vor einer Woche das erste Mal, vorgestern wieder.",
+        "lokalisation": "Ein Druck in der linken Seite, schon seit Monaten.",
+        "charakter": "Dumpf, zwei bis drei von zehn. Beim Wasserlassen brennt nichts.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Ich habe fünf Kilo abgenommen und schwitze nachts. Fieber habe ich nicht gemessen.",
+        "vegetativ": "Appetit ist schlechter geworden.",
+        "vorerkrankungen": "Bluthochdruck und Übergewicht.",
+        "medikamente": "Amlodipin 10.",
+        "allergien": "Keine.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich bin verheiratet und arbeite im Lager.",
+        "noxen": "Ich rauche seit 35 Jahren eine Schachtel am Tag. Alkohol ab und zu."
+      }
+    },
+    "verdachtsdiagnose": "Verdacht auf Nierenzellkarzinom links",
+    "diagnoseKeywords": ["nierenzellkarzinom", "nierentumor", "nierenkarzinom"],
+    "differenzialdiagnosen": [
+      "Urothelkarzinom der Blase",
+      "Nierenstein",
+      "Angiomyolipom",
+      "Nierenzyste",
+      "Glomerulonephritis"
+    ],
+    "untersuchungen": [
+      "Urinstatus und Urinzytologie",
+      "Sonographie der Nieren",
+      "CT Abdomen und Thorax mit Kontrastmittel",
+      "Zystoskopie zum Ausschluss eines Blasentumors",
+      "Kreatinin, Blutbild, Kalzium"
+    ]
+  },
+  {
+    "id": "c156",
+    "title": "Akute Prostatitis",
+    "category": "Urologie",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Florian Busch",
+      "age": 41,
+      "gender": "männlich",
+      "hauptbeschwerde": "Fieber, Brennen beim Wasserlassen und Schmerzen im Damm"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 2 Tagen Fieber bis 39,4 °C mit Schüttelfrost, Brennen beim Wasserlassen, häufiger Harndrang, schwacher Strahl, Schmerzen im Damm und beim Stuhlgang. Gliederschmerzen.",
+      "vorerkrankungen": "Keine.",
+      "medikamente": "Paracetamol seit gestern.",
+      "allergien": "Penicillin (Hautausschlag)",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Verheiratet, Bauleiter. Radfahrer. Nichtraucher."
+    },
+    "sprache": [
+      {
+        "patient": "Beim Wasserlassen brennt es, und ich muss ständig auf Toilette.",
+        "fach": "Es bestehen Dysurie und Pollakisurie."
+      },
+      {
+        "patient": "Zwischen Hodensack und After tut es weh.",
+        "fach": "Es bestehen perineale Schmerzen."
+      },
+      {
+        "patient": "Ich hatte Schüttelfrost mit hohem Fieber.",
+        "fach": "Es bestand Fieber bis 39,4 °C mit Schüttelfrost."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Prostatitis",
+        "patient": "Entzündung der Prostata",
+        "uz": "prostatit",
+        "ru": "простатит",
+        "tr": "prostatit",
+        "en": "prostatitis"
+      },
+      {
+        "de": "Perineum",
+        "patient": "Damm, Bereich zwischen Hodensack und After",
+        "uz": "oraliq (perineum)",
+        "ru": "промежность",
+        "tr": "perine",
+        "en": "perineum"
+      },
+      {
+        "de": "Prostatamassage",
+        "patient": "Massage der Prostata (bei akuter Entzündung verboten)",
+        "uz": "prostata massaji",
+        "ru": "массаж простаты",
+        "tr": "prostat masajı",
+        "en": "prostatic massage"
+      },
+      {
+        "de": "Fluorchinolon",
+        "patient": "Antibiotikagruppe, gut wirksam in der Prostata",
+        "uz": "ftorxinolon",
+        "ru": "фторхинолон",
+        "tr": "florokinolon",
+        "en": "fluoroquinolone"
+      },
+      {
+        "de": "Restharn",
+        "patient": "Urin, der nach dem Wasserlassen in der Blase bleibt",
+        "uz": "qoldiq siydik",
+        "ru": "остаточная моча",
+        "tr": "rezidü idrar",
+        "en": "post-void residual"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe hohes Fieber, und beim Wasserlassen brennt es furchtbar. Außerdem tut es unten zwischen den Beinen weh.",
+      "answers": {
+        "beginn": "Seit zwei Tagen, ziemlich plötzlich.",
+        "lokalisation": "Im Damm, zwischen Hodensack und After, und in der Blase.",
+        "charakter": "Dumpf und drückend im Damm, sechs von zehn. Beim Wasserlassen brennend.",
+        "ausstrahlung": "In die Leiste und beim Stuhlgang nach hinten.",
+        "begleit": "Fieber bis 39,4 mit Schüttelfrost. Der Strahl ist schwach, ich muss ständig. Blut im Urin habe ich nicht gesehen.",
+        "vegetativ": "Gliederschmerzen, ich bin total schlapp.",
+        "vorerkrankungen": "Ich war immer gesund.",
+        "medikamente": "Seit gestern Paracetamol.",
+        "allergien": "Penicillin, da bekomme ich Ausschlag.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich bin verheiratet und Bauleiter. In der Freizeit fahre ich viel Rad.",
+        "noxen": "Ich rauche nicht. Alkohol am Wochenende."
+      }
+    },
+    "verdachtsdiagnose": "Akute bakterielle Prostatitis",
+    "diagnoseKeywords": ["prostatitis"],
+    "differenzialdiagnosen": [
+      "Akute Pyelonephritis",
+      "Epididymitis",
+      "Zystitis",
+      "Prostataabszess",
+      "Urethritis"
+    ],
+    "untersuchungen": [
+      "Vorsichtige digital-rektale Untersuchung (keine Massage)",
+      "Urinstatus und Urinkultur",
+      "Blutkulturen",
+      "Blutbild, CRP, Kreatinin",
+      "Sonographie mit Restharn, ggf. transrektal bei Abszessverdacht"
+    ]
   }
 ]
