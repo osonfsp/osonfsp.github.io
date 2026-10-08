@@ -419,6 +419,538 @@
     ]
   },
   {
+    "teil": "Teil 1 · Arzt-Patienten-Gespräch",
+    "group": "Körperliche Untersuchung ankündigen",
+    "items": [
+      [
+        "Ich würde Sie jetzt gerne untersuchen. Sind Sie damit einverstanden?",
+        "Endi sizni ko‘rikdan o‘tkazmoqchiman. Rozimisiz?",
+        "Сейчас я хотел(а) бы вас осмотреть. Вы согласны?",
+        "Şimdi sizi muayene etmek istiyorum. Kabul ediyor musunuz?",
+        "I would like to examine you now. Is that all right with you?"
+      ],
+      [
+        "Bitte machen Sie den Oberkörper frei.",
+        "Iltimos, ustki kiyimingizni yeching.",
+        "Пожалуйста, разденьтесь до пояса.",
+        "Lütfen üst bedeninizi açın.",
+        "Please undress your upper body."
+      ],
+      [
+        "Legen Sie sich bitte flach auf den Rücken.",
+        "Iltimos, chalqancha tekis yoting.",
+        "Лягте, пожалуйста, ровно на спину.",
+        "Lütfen sırtüstü düz uzanın.",
+        "Please lie flat on your back."
+      ],
+      [
+        "Ich drücke jetzt vorsichtig auf Ihren Bauch. Sagen Sie mir bitte, wenn es wehtut.",
+        "Hozir qorningizga ehtiyotkorlik bilan bosaman. Og‘risa, ayting.",
+        "Сейчас я осторожно надавлю на живот. Скажите, если будет больно.",
+        "Şimdi karnınıza dikkatlice bastıracağım. Ağrırsa lütfen söyleyin.",
+        "I will now press gently on your tummy. Please tell me if it hurts."
+      ],
+      [
+        "Atmen Sie bitte tief ein und aus – durch den Mund.",
+        "Iltimos, og‘iz orqali chuqur nafas oling va chiqaring.",
+        "Пожалуйста, глубоко вдохните и выдохните ртом.",
+        "Lütfen ağızdan derin nefes alıp verin.",
+        "Please breathe in and out deeply through your mouth."
+      ],
+      [
+        "Halten Sie bitte kurz die Luft an.",
+        "Iltimos, nafasingizni bir oz ushlab turing.",
+        "Пожалуйста, ненадолго задержите дыхание.",
+        "Lütfen nefesinizi kısa bir süre tutun.",
+        "Please hold your breath for a moment."
+      ],
+      [
+        "Ich schaue mir jetzt Ihre Beine an, ob sie geschwollen sind.",
+        "Endi oyoqlaringiz shishmaganini tekshiraman.",
+        "Сейчас посмотрю, нет ли отёков на ногах.",
+        "Şimdi bacaklarınızda şişlik var mı diye bakacağım.",
+        "I will now check your legs for swelling."
+      ],
+      [
+        "Folgen Sie bitte meinem Finger nur mit den Augen.",
+        "Iltimos, barmog‘imni faqat ko‘zingiz bilan kuzating.",
+        "Следите, пожалуйста, за моим пальцем только глазами.",
+        "Lütfen parmağımı sadece gözlerinizle takip edin.",
+        "Please follow my finger with your eyes only."
+      ],
+      [
+        "Drücken Sie bitte so fest Sie können meine Hände.",
+        "Iltimos, qo‘llarimni imkon qadar qattiq siqing.",
+        "Сожмите, пожалуйста, мои руки как можно сильнее.",
+        "Lütfen ellerimi olabildiğince sıkı sıkın.",
+        "Please squeeze my hands as hard as you can."
+      ],
+      [
+        "Vielen Dank, Sie können sich wieder anziehen.",
+        "Rahmat, kiyinishingiz mumkin.",
+        "Спасибо, можете одеваться.",
+        "Teşekkürler, tekrar giyinebilirsiniz.",
+        "Thank you, you can get dressed again."
+      ]
+    ]
+  },
+  {
+    "teil": "Teil 1 · Arzt-Patienten-Gespräch",
+    "group": "Verständnis sichern und Missverständnisse klären",
+    "items": [
+      [
+        "Entschuldigung, das habe ich nicht ganz verstanden. Können Sie das bitte wiederholen?",
+        "Kechirasiz, buni to‘liq tushunmadim. Iltimos, takrorlay olasizmi?",
+        "Извините, я не совсем понял(а). Можете повторить?",
+        "Affedersiniz, tam anlayamadım. Lütfen tekrar eder misiniz?",
+        "Sorry, I didn’t quite understand that. Could you repeat it, please?"
+      ],
+      [
+        "Meinen Sie damit, dass …?",
+        "Bu bilan … demoqchimisiz?",
+        "Вы имеете в виду, что …?",
+        "Bununla … demek mi istiyorsunuz?",
+        "Do you mean that …?"
+      ],
+      [
+        "Habe ich Sie richtig verstanden, dass die Schmerzen nachts schlimmer sind?",
+        "To‘g‘ri tushundimmi, og‘riq kechasi kuchayadimi?",
+        "Правильно ли я понял(а), что ночью боль сильнее?",
+        "Doğru mu anladım, ağrılar geceleri mi artıyor?",
+        "Have I understood correctly that the pain is worse at night?"
+      ],
+      [
+        "Können Sie mir das bitte mit anderen Worten beschreiben?",
+        "Iltimos, buni boshqa so‘zlar bilan tasvirlab bera olasizmi?",
+        "Можете описать это другими словами?",
+        "Bunu başka kelimelerle anlatabilir misiniz?",
+        "Could you describe that in other words, please?"
+      ],
+      [
+        "Was verstehen Sie unter „Kreislauf“?",
+        "“Kreislauf” deganda nimani tushunasiz?",
+        "Что вы понимаете под словом «Kreislauf»?",
+        "„Kreislauf“ derken neyi kastediyorsunuz?",
+        "What do you mean by “circulation problems”?"
+      ],
+      [
+        "Können Sie mir zeigen, wo genau?",
+        "Aynan qayerda ekanini ko‘rsata olasizmi?",
+        "Можете показать, где именно?",
+        "Tam olarak nerede olduğunu gösterebilir misiniz?",
+        "Can you show me exactly where?"
+      ],
+      [
+        "Ich fasse kurz zusammen, was ich verstanden habe.",
+        "Tushunganlarimni qisqacha xulosa qilaman.",
+        "Коротко подытожу, что я понял(а).",
+        "Anladıklarımı kısaca özetleyeyim.",
+        "Let me briefly summarise what I have understood."
+      ],
+      [
+        "Ist das so richtig, oder möchten Sie etwas ergänzen?",
+        "Shundaymi, yoki biror narsa qo‘shmoqchimisiz?",
+        "Это верно, или вы хотите что-то добавить?",
+        "Böyle mi, yoksa eklemek istediğiniz bir şey var mı?",
+        "Is that right, or would you like to add anything?"
+      ],
+      [
+        "Können Sie mir bitte in Ihren eigenen Worten sagen, was wir besprochen haben?",
+        "Iltimos, nimani muhokama qilganimizni o‘z so‘zlaringiz bilan ayta olasizmi?",
+        "Можете своими словами пересказать, что мы обсудили?",
+        "Konuştuklarımızı kendi kelimelerinizle anlatabilir misiniz?",
+        "Could you tell me in your own words what we have discussed?"
+      ],
+      [
+        "Wenn Sie etwas nicht verstehen, unterbrechen Sie mich bitte jederzeit.",
+        "Biror narsa tushunarsiz bo‘lsa, istalgan vaqtda meni to‘xtating.",
+        "Если что-то непонятно, перебивайте меня в любой момент.",
+        "Bir şey anlamazsanız, lütfen beni istediğiniz zaman durdurun.",
+        "If you don’t understand something, please interrupt me at any time."
+      ]
+    ]
+  },
+  {
+    "teil": "Teil 1 · Arzt-Patienten-Gespräch",
+    "group": "Schlechte Nachrichten überbringen",
+    "items": [
+      [
+        "Ich habe leider keine guten Nachrichten für Sie.",
+        "Afsuski, sizga yaxshi xabarim yo‘q.",
+        "К сожалению, у меня для вас нехорошие новости.",
+        "Maalesef size iyi haberlerim yok.",
+        "I’m afraid I don’t have good news for you."
+      ],
+      [
+        "Möchten Sie, dass jemand bei diesem Gespräch dabei ist?",
+        "Bu suhbatda yoningizda kimdir bo‘lishini xohlaysizmi?",
+        "Хотите, чтобы при этом разговоре кто-то присутствовал?",
+        "Bu görüşmede yanınızda birinin olmasını ister misiniz?",
+        "Would you like someone to be with you for this conversation?"
+      ],
+      [
+        "Was wissen Sie bisher über Ihre Erkrankung?",
+        "Hozircha kasalligingiz haqida nimalarni bilasiz?",
+        "Что вы уже знаете о своём заболевании?",
+        "Şu ana kadar hastalığınız hakkında ne biliyorsunuz?",
+        "What do you know about your illness so far?"
+      ],
+      [
+        "Die Gewebeprobe hat leider gezeigt, dass es sich um einen bösartigen Tumor handelt.",
+        "Afsuski, to‘qima namunasi bu xavfli o‘sma ekanini ko‘rsatdi.",
+        "К сожалению, биопсия показала злокачественную опухоль.",
+        "Maalesef doku örneği bunun kötü huylu bir tümör olduğunu gösterdi.",
+        "Unfortunately, the biopsy has shown that it is a malignant tumour."
+      ],
+      [
+        "Ich sehe, dass Sie das sehr trifft.",
+        "Bu sizga juda og‘ir botganini ko‘ryapman.",
+        "Я вижу, что это вас очень потрясло.",
+        "Bunun sizi çok sarstığını görüyorum.",
+        "I can see that this is very hard for you."
+      ],
+      [
+        "Nehmen Sie sich ruhig Zeit. Ich bin für Sie da.",
+        "Shoshilmang. Men yoningizdaman.",
+        "Не торопитесь. Я рядом.",
+        "Acele etmeyin. Ben buradayım.",
+        "Take your time. I’m here for you."
+      ],
+      [
+        "Wie viel möchten Sie heute über die nächsten Schritte erfahren?",
+        "Bugun keyingi qadamlar haqida qanchalik ko‘p bilmoqchisiz?",
+        "Сколько вы хотите сегодня узнать о дальнейших шагах?",
+        "Bugün sonraki adımlar hakkında ne kadar bilgi almak istersiniz?",
+        "How much would you like to hear about the next steps today?"
+      ],
+      [
+        "Es gibt gute Behandlungsmöglichkeiten, die wir gemeinsam besprechen werden.",
+        "Yaxshi davolash imkoniyatlari bor, ularni birgalikda muhokama qilamiz.",
+        "Есть хорошие варианты лечения, которые мы обсудим вместе.",
+        "Birlikte konuşacağımız iyi tedavi seçenekleri var.",
+        "There are good treatment options that we will discuss together."
+      ],
+      [
+        "Sie sind mit dieser Situation nicht allein.",
+        "Bu vaziyatda yolg‘iz emassiz.",
+        "Вы не одни в этой ситуации.",
+        "Bu durumda yalnız değilsiniz.",
+        "You are not alone in this situation."
+      ],
+      [
+        "Wir können uns morgen noch einmal in Ruhe zusammensetzen.",
+        "Ertaga yana xotirjam o‘tirib gaplashishimiz mumkin.",
+        "Мы можем завтра ещё раз спокойно поговорить.",
+        "Yarın tekrar sakin bir şekilde oturup konuşabiliriz.",
+        "We can sit down together again calmly tomorrow."
+      ]
+    ]
+  },
+  {
+    "teil": "Teil 1 · Arzt-Patienten-Gespräch",
+    "group": "Gynäkologische und urologische Anamnese",
+    "items": [
+      [
+        "Wann war Ihre letzte Regelblutung?",
+        "Oxirgi hayzingiz qachon bo‘lgan?",
+        "Когда были последние месячные?",
+        "Son adetiniz ne zamandı?",
+        "When was your last period?"
+      ],
+      [
+        "Ist Ihre Regel regelmäßig?",
+        "Hayzingiz muntazammi?",
+        "Месячные у вас регулярные?",
+        "Adetiniz düzenli mi?",
+        "Are your periods regular?"
+      ],
+      [
+        "Könnten Sie schwanger sein?",
+        "Homilador bo‘lishingiz mumkinmi?",
+        "Можете ли вы быть беременны?",
+        "Hamile olabilir misiniz?",
+        "Could you be pregnant?"
+      ],
+      [
+        "Wie verhüten Sie?",
+        "Qanday himoyalanasiz?",
+        "Как вы предохраняетесь?",
+        "Nasıl korunuyorsunuz?",
+        "What contraception do you use?"
+      ],
+      [
+        "Wie viele Schwangerschaften und Geburten hatten Sie?",
+        "Necha marta homilador bo‘lgansiz va tug‘gansiz?",
+        "Сколько у вас было беременностей и родов?",
+        "Kaç gebelik ve doğum geçirdiniz?",
+        "How many pregnancies and births have you had?"
+      ],
+      [
+        "Haben Sie Ausfluss aus der Scheide bemerkt?",
+        "Qindan ajralma sezdingizmi?",
+        "Вы замечали выделения из влагалища?",
+        "Vajinal akıntı fark ettiniz mi?",
+        "Have you noticed any vaginal discharge?"
+      ],
+      [
+        "Brennt es beim Wasserlassen, oder müssen Sie häufiger zur Toilette?",
+        "Siydik chiqarishda achishadimi yoki tez-tez hojatxonaga borasizmi?",
+        "Жжёт ли при мочеиспускании, ходите ли вы чаще в туалет?",
+        "İdrar yaparken yanma var mı, ya da daha sık tuvalete mi gidiyorsunuz?",
+        "Does it burn when you pass urine, or do you need to go more often?"
+      ],
+      [
+        "Ist der Harnstrahl schwächer geworden?",
+        "Siydik oqimi kuchsizlanganmi?",
+        "Струя мочи стала слабее?",
+        "İdrar akımı zayıfladı mı?",
+        "Has your urine stream become weaker?"
+      ],
+      [
+        "Müssen Sie nachts aufstehen, um Wasser zu lassen? Wie oft?",
+        "Kechasi siydik chiqarish uchun turasizmi? Necha marta?",
+        "Встаёте ли вы ночью в туалет? Сколько раз?",
+        "Gece idrar için kalkıyor musunuz? Kaç kez?",
+        "Do you have to get up at night to pass urine? How often?"
+      ],
+      [
+        "Wurde bei Ihnen schon einmal eine Vorsorgeuntersuchung gemacht?",
+        "Sizda ilgari profilaktik tekshiruv o‘tkazilganmi?",
+        "Проходили ли вы когда-нибудь профилактический осмотр?",
+        "Daha önce tarama muayenesi yapıldı mı?",
+        "Have you ever had a screening examination?"
+      ]
+    ]
+  },
+  {
+    "teil": "Teil 1 · Arzt-Patienten-Gespräch",
+    "group": "Fremdanamnese mit Angehörigen",
+    "items": [
+      [
+        "In welcher Beziehung stehen Sie zum Patienten?",
+        "Bemorga kim bo‘lasiz?",
+        "Кем вы приходитесь пациенту?",
+        "Hastayla yakınlığınız nedir?",
+        "What is your relationship to the patient?"
+      ],
+      [
+        "Seit wann ist Ihnen die Veränderung aufgefallen?",
+        "O‘zgarishni qachondan beri sezdingiz?",
+        "С какого времени вы заметили изменения?",
+        "Değişikliği ne zamandan beri fark ettiniz?",
+        "Since when have you noticed the change?"
+      ],
+      [
+        "Wie war Ihre Mutter vorher im Alltag?",
+        "Onangiz ilgari kundalik hayotda qanday edi?",
+        "Как ваша мама справлялась раньше в быту?",
+        "Anneniz önceden günlük hayatta nasıldı?",
+        "How was your mother managing day to day before?"
+      ],
+      [
+        "Kann er sich selbst waschen und anziehen?",
+        "U o‘zi yuvinib, kiyina oladimi?",
+        "Может ли он сам мыться и одеваться?",
+        "Kendi başına yıkanıp giyinebiliyor mu?",
+        "Can he wash and dress himself?"
+      ],
+      [
+        "Welche Medikamente nimmt Ihr Vater? Haben Sie einen Medikamentenplan dabei?",
+        "Otangiz qaysi dorilarni ichadi? Dorilar rejasi yoningizdami?",
+        "Какие лекарства принимает ваш отец? У вас есть план приёма?",
+        "Babanız hangi ilaçları kullanıyor? İlaç listesi yanınızda mı?",
+        "Which medicines does your father take? Do you have his medication plan?"
+      ],
+      [
+        "Gibt es eine Patientenverfügung oder eine Vorsorgevollmacht?",
+        "Bemor vasiyatnomasi yoki ishonchnoma bormi?",
+        "Есть ли распоряжение пациента или доверенность?",
+        "Hasta vasiyeti veya vekaletname var mı?",
+        "Is there an advance directive or a power of attorney?"
+      ],
+      [
+        "Wer ist der gesetzliche Betreuer?",
+        "Qonuniy vasiy kim?",
+        "Кто законный опекун?",
+        "Yasal vasi kim?",
+        "Who is the legal guardian?"
+      ],
+      [
+        "Ist er in letzter Zeit gestürzt?",
+        "U yaqinda yiqilganmi?",
+        "Падал ли он в последнее время?",
+        "Son zamanlarda düştü mü?",
+        "Has he fallen recently?"
+      ],
+      [
+        "Hat sie genug getrunken und gegessen?",
+        "U yetarli ichib, ovqatlanganmi?",
+        "Достаточно ли она пила и ела?",
+        "Yeterince yiyip içti mi?",
+        "Has she been eating and drinking enough?"
+      ],
+      [
+        "Danke, Ihre Informationen helfen uns sehr.",
+        "Rahmat, ma’lumotlaringiz bizga juda yordam beradi.",
+        "Спасибо, ваша информация нам очень помогает.",
+        "Teşekkürler, bilgileriniz bize çok yardımcı oluyor.",
+        "Thank you, your information helps us a lot."
+      ]
+    ]
+  },
+  {
+    "teil": "Teil 1 · Arzt-Patienten-Gespräch",
+    "group": "Psychische Anamnese und Stimmung",
+    "items": [
+      [
+        "Wie ist Ihre Stimmung in letzter Zeit?",
+        "So‘nggi paytlarda kayfiyatingiz qanday?",
+        "Какое у вас настроение в последнее время?",
+        "Son zamanlarda ruh haliniz nasıl?",
+        "How has your mood been recently?"
+      ],
+      [
+        "Können Sie sich noch über Dinge freuen?",
+        "Hali ham biror narsadan quvona olasizmi?",
+        "Можете ли вы ещё чему-то радоваться?",
+        "Hâlâ bir şeylere sevinebiliyor musunuz?",
+        "Can you still enjoy things?"
+      ],
+      [
+        "Können Sie nachts ein- und durchschlafen?",
+        "Kechasi uxlab qola olasizmi va uyg‘onmay uxlaysizmi?",
+        "Можете ли вы ночью заснуть и спать не просыпаясь?",
+        "Geceleri uykuya dalıp deliksiz uyuyabiliyor musunuz?",
+        "Can you fall asleep and stay asleep at night?"
+      ],
+      [
+        "Haben Sie viel Stress bei der Arbeit oder in der Familie?",
+        "Ishda yoki oilada stress ko‘pmi?",
+        "Много ли у вас стресса на работе или в семье?",
+        "İşte veya ailede çok stresiniz var mı?",
+        "Do you have a lot of stress at work or at home?"
+      ],
+      [
+        "Fühlen Sie sich oft ängstlich oder unruhig?",
+        "Tez-tez xavotir yoki bezovtalik his qilasizmi?",
+        "Часто ли вы чувствуете тревогу или беспокойство?",
+        "Sık sık kaygılı veya huzursuz hissediyor musunuz?",
+        "Do you often feel anxious or restless?"
+      ],
+      [
+        "Manche Menschen in Ihrer Situation denken daran, nicht mehr leben zu wollen. Kennen Sie solche Gedanken?",
+        "Sizning holatingizdagi ba’zi odamlar yashashni istamaslik haqida o‘ylaydi. Sizda shunday fikrlar bormi?",
+        "Некоторые люди в вашей ситуации думают о том, что не хотят жить. Бывают ли у вас такие мысли?",
+        "Sizin durumunuzdaki bazı insanlar artık yaşamak istemediklerini düşünür. Böyle düşünceleriniz oluyor mu?",
+        "Some people in your situation think about not wanting to live any more. Do you have such thoughts?"
+      ],
+      [
+        "Haben Sie konkrete Pläne, sich etwas anzutun?",
+        "O‘zingizga zarar yetkazish bo‘yicha aniq rejalaringiz bormi?",
+        "Есть ли у вас конкретные планы причинить себе вред?",
+        "Kendinize zarar vermek için somut planlarınız var mı?",
+        "Do you have specific plans to harm yourself?"
+      ],
+      [
+        "Wer unterstützt Sie im Moment?",
+        "Hozir sizni kim qo‘llab-quvvatlaydi?",
+        "Кто вас сейчас поддерживает?",
+        "Şu anda size kim destek oluyor?",
+        "Who is supporting you at the moment?"
+      ],
+      [
+        "Waren Sie schon einmal in psychotherapeutischer Behandlung?",
+        "Ilgari psixoterapevtda davolanganmisiz?",
+        "Вы когда-нибудь лечились у психотерапевта?",
+        "Daha önce psikoterapi aldınız mı?",
+        "Have you ever had psychotherapy?"
+      ],
+      [
+        "Es ist gut, dass Sie darüber sprechen. Wir finden gemeinsam Hilfe.",
+        "Bu haqida gapirganingiz yaxshi. Birgalikda yordam topamiz.",
+        "Хорошо, что вы об этом говорите. Вместе мы найдём помощь.",
+        "Bunu konuşmanız iyi. Birlikte yardım bulacağız.",
+        "It’s good that you are talking about it. We will find help together."
+      ]
+    ]
+  },
+  {
+    "teil": "Teil 1 · Arzt-Patienten-Gespräch",
+    "group": "Umgang mit schwierigen Gesprächssituationen",
+    "items": [
+      [
+        "Ich verstehe, dass Sie verärgert sind, weil Sie so lange warten mussten.",
+        "Uzoq kutganingiz uchun jahlingiz chiqqanini tushunaman.",
+        "Я понимаю, что вы раздражены из-за долгого ожидания.",
+        "Bu kadar uzun beklediğiniz için kızgın olduğunuzu anlıyorum.",
+        "I understand that you are annoyed because you had to wait so long."
+      ],
+      [
+        "Bitte lassen Sie uns ruhig darüber sprechen.",
+        "Iltimos, bu haqida xotirjam gaplashaylik.",
+        "Давайте, пожалуйста, спокойно об этом поговорим.",
+        "Lütfen bunu sakin bir şekilde konuşalım.",
+        "Let’s talk about this calmly, please."
+      ],
+      [
+        "Ich nehme Ihre Beschwerde ernst und kümmere mich darum.",
+        "Shikoyatingizni jiddiy qabul qilaman va hal qilaman.",
+        "Я серьёзно отношусь к вашей жалобе и займусь этим.",
+        "Şikayetinizi ciddiye alıyorum ve ilgileneceğim.",
+        "I take your complaint seriously and will deal with it."
+      ],
+      [
+        "Ich kann Ihnen leider kein Antibiotikum verschreiben, weil es bei einer Virusinfektion nicht hilft.",
+        "Afsuski, sizga antibiotik yozib bera olmayman, chunki virusli infeksiyada u yordam bermaydi.",
+        "К сожалению, я не могу выписать антибиотик, так как при вирусной инфекции он не помогает.",
+        "Maalesef antibiyotik yazamam, çünkü viral enfeksiyonda işe yaramaz.",
+        "I’m afraid I can’t prescribe an antibiotic, because it doesn’t help with a viral infection."
+      ],
+      [
+        "Ich respektiere Ihre Entscheidung, möchte Ihnen aber die Risiken erklären.",
+        "Qaroringizni hurmat qilaman, lekin xavflarni tushuntirmoqchiman.",
+        "Я уважаю ваше решение, но хочу объяснить риски.",
+        "Kararınıza saygı duyuyorum ama riskleri açıklamak istiyorum.",
+        "I respect your decision, but I would like to explain the risks."
+      ],
+      [
+        "Wenn Sie gegen ärztlichen Rat gehen möchten, bitte ich Sie, das zu unterschreiben.",
+        "Agar shifokor maslahatiga qarshi ketmoqchi bo‘lsangiz, buni imzolashingizni so‘rayman.",
+        "Если вы хотите уйти вопреки совету врача, прошу это подписать.",
+        "Doktor tavsiyesine rağmen ayrılmak istiyorsanız, bunu imzalamanızı rica ediyorum.",
+        "If you wish to leave against medical advice, I must ask you to sign this."
+      ],
+      [
+        "Ich sehe, dass Sie große Angst haben. Was macht Ihnen am meisten Sorgen?",
+        "Juda qo‘rqayotganingizni ko‘ryapman. Sizni eng ko‘p nima tashvishlantiradi?",
+        "Я вижу, что вам очень страшно. Что вас больше всего беспокоит?",
+        "Çok korktuğunuzu görüyorum. Sizi en çok ne endişelendiriyor?",
+        "I can see you are very frightened. What worries you most?"
+      ],
+      [
+        "Ich möchte Ihnen helfen, aber dafür brauche ich ehrliche Antworten.",
+        "Sizga yordam bermoqchiman, lekin buning uchun samimiy javoblar kerak.",
+        "Я хочу вам помочь, но для этого мне нужны честные ответы.",
+        "Size yardım etmek istiyorum ama bunun için dürüst cevaplara ihtiyacım var.",
+        "I want to help you, but for that I need honest answers."
+      ],
+      [
+        "Das, was Sie mir sagen, bleibt selbstverständlich unter uns.",
+        "Menga aytganlaringiz, albatta, oramizda qoladi.",
+        "Всё, что вы мне скажете, конечно, останется между нами.",
+        "Bana söyledikleriniz elbette aramızda kalacak.",
+        "Of course, what you tell me stays between us."
+      ],
+      [
+        "Ich hole einen Dolmetscher, damit wir uns gut verständigen können.",
+        "Yaxshi tushunishishimiz uchun tarjimon chaqiraman.",
+        "Я позову переводчика, чтобы мы хорошо понимали друг друга.",
+        "İyi anlaşabilmemiz için bir tercüman çağıracağım.",
+        "I will get an interpreter so that we can understand each other well."
+      ]
+    ]
+  },
+  {
     "teil": "Teil 2 · Dokumentation",
     "group": "Arztbrief – Einleitung und Anamnese",
     "items": [
@@ -622,6 +1154,158 @@
         "По всем вопросам мы всегда к вашим услугам.",
         "Sorularınız için her zaman memnuniyetle hizmetinizdeyiz.",
         "We are always happy to answer any questions."
+      ]
+    ]
+  },
+  {
+    "teil": "Teil 2 · Dokumentation",
+    "group": "Arztbrief – Körperlicher Untersuchungsbefund",
+    "items": [
+      [
+        "Bei Aufnahme präsentierte sich ein … -jähriger Patient in reduziertem Allgemeinzustand und adipösem Ernährungszustand.",
+        "Qabul qilinganda … yoshli bemor umumiy ahvoli pasaygan va semizlik holatida edi.",
+        "При поступлении … -летний пациент в сниженном общем состоянии, повышенного питания.",
+        "Başvuruda … yaşında, genel durumu bozuk ve obez bir hasta görüldü.",
+        "On admission, a … -year-old patient in reduced general condition and obese nutritional state."
+      ],
+      [
+        "Der Patient war wach, allseits orientiert und kooperativ.",
+        "Bemor hushida, to‘liq mo‘ljalli va hamkorlikka tayyor edi.",
+        "Пациент в сознании, полностью ориентирован, контактен.",
+        "Hasta uyanık, tam oryante ve koopere idi.",
+        "The patient was awake, fully orientated and cooperative."
+      ],
+      [
+        "Herz: Herztöne rein, rhythmisch, keine pathologischen Geräusche.",
+        "Yurak: tonlari toza, ritmik, patologik shovqinlar yo‘q.",
+        "Сердце: тоны ясные, ритмичные, патологических шумов нет.",
+        "Kalp: sesler temiz, ritmik, patolojik üfürüm yok.",
+        "Heart: heart sounds clear and regular, no pathological murmurs."
+      ],
+      [
+        "Lunge: vesikuläres Atemgeräusch beidseits, keine Rasselgeräusche.",
+        "O‘pka: ikki tomonda vezikulyar nafas, xirillashlar yo‘q.",
+        "Лёгкие: везикулярное дыхание с обеих сторон, хрипов нет.",
+        "Akciğer: iki tarafta veziküler solunum, ral yok.",
+        "Lungs: vesicular breath sounds on both sides, no crackles."
+      ],
+      [
+        "Abdomen: weich, Druckschmerz im rechten Unterbauch, keine Abwehrspannung, Darmgeräusche regelrecht.",
+        "Qorin: yumshoq, o‘ng pastki qismda bosganda og‘riq, mushak himoyasi yo‘q, ichak shovqinlari normal.",
+        "Живот: мягкий, болезненный в правой подвздошной области, без мышечной защиты, перистальтика нормальная.",
+        "Karın: yumuşak, sağ alt kadranda hassasiyet, defans yok, bağırsak sesleri normal.",
+        "Abdomen: soft, tender in the right lower quadrant, no guarding, normal bowel sounds."
+      ],
+      [
+        "Nierenlager beidseits frei.",
+        "Ikki tomonda buyrak sohasi og‘riqsiz.",
+        "Поколачивание по поясничной области безболезненно с обеих сторон.",
+        "Böbrek lojları iki tarafta hassas değil.",
+        "No renal angle tenderness on either side."
+      ],
+      [
+        "Extremitäten: keine Ödeme, periphere Pulse allseits tastbar.",
+        "Oyoq-qo‘llar: shish yo‘q, periferik puls hamma joyda seziladi.",
+        "Конечности: отёков нет, периферический пульс определяется везде.",
+        "Ekstremiteler: ödem yok, periferik nabızlar her yerde alınıyor.",
+        "Limbs: no oedema, peripheral pulses palpable throughout."
+      ],
+      [
+        "Neurologisch orientierend unauffällig.",
+        "Nevrologik jihatdan taxminan normal.",
+        "Ориентировочно неврологически без особенностей.",
+        "Nörolojik olarak kabaca normal.",
+        "Neurologically grossly normal."
+      ],
+      [
+        "Vitalparameter: RR 145/90 mmHg, HF 96/min, SpO₂ 94 % unter Raumluft, Temperatur 38,4 °C.",
+        "Hayotiy ko‘rsatkichlar: QB 145/90 mmHg, YUQS 96/min, SpO₂ xona havosida 94 %, harorat 38,4 °C.",
+        "Витальные показатели: АД 145/90 мм рт. ст., ЧСС 96/мин, SpO₂ 94 % на воздухе, температура 38,4 °C.",
+        "Vital bulgular: TA 145/90 mmHg, nabız 96/dk, oda havasında SpO₂ %94, ateş 38,4 °C.",
+        "Vital signs: BP 145/90 mmHg, HR 96/min, SpO₂ 94% on room air, temperature 38.4 °C."
+      ],
+      [
+        "Die übrige körperliche Untersuchung war unauffällig.",
+        "Qolgan jismoniy ko‘rik normal edi.",
+        "В остальном физикальный осмотр без особенностей.",
+        "Fizik muayenenin geri kalanı normaldi.",
+        "The rest of the physical examination was unremarkable."
+      ]
+    ]
+  },
+  {
+    "teil": "Teil 2 · Dokumentation",
+    "group": "Arztbrief – Empfehlungen und Medikation",
+    "items": [
+      [
+        "Wir bitten um Fortführung der Medikation wie im Entlassungsplan aufgeführt.",
+        "Chiqarish rejasida ko‘rsatilganidek dorilarni davom ettirishni so‘raymiz.",
+        "Просим продолжить терапию согласно плану выписки.",
+        "Taburcu planında belirtildiği gibi ilaçların sürdürülmesini rica ederiz.",
+        "We ask that the medication be continued as listed in the discharge plan."
+      ],
+      [
+        "Die Medikation wurde wie folgt umgestellt: …",
+        "Dori rejimi quyidagicha o‘zgartirildi: …",
+        "Терапия была изменена следующим образом: …",
+        "İlaç tedavisi şu şekilde değiştirildi: …",
+        "The medication was changed as follows: …"
+      ],
+      [
+        "Neu angesetzt wurde …, abgesetzt wurde …",
+        "Yangi tayinlandi: …, to‘xtatildi: …",
+        "Впервые назначено …, отменено …",
+        "Yeni başlanan: …, kesilen: …",
+        "Newly started: …, discontinued: …"
+      ],
+      [
+        "Wir empfehlen eine Kontrolle der Nierenwerte und Elektrolyte in einer Woche.",
+        "Bir haftadan keyin buyrak ko‘rsatkichlari va elektrolitlarni tekshirishni tavsiya qilamiz.",
+        "Рекомендуем контроль почечных показателей и электролитов через неделю.",
+        "Bir hafta sonra böbrek değerleri ve elektrolitlerin kontrolünü öneririz.",
+        "We recommend checking renal function and electrolytes in one week."
+      ],
+      [
+        "Eine Wiedervorstellung in unserer Ambulanz ist am … vorgesehen.",
+        "… sanada ambulatoriyamizga qayta kelish rejalashtirilgan.",
+        "Повторный визит в нашу амбулаторию запланирован на …",
+        "Polikliniğimize … tarihinde kontrol randevusu planlandı.",
+        "A follow-up appointment in our clinic is scheduled for …"
+      ],
+      [
+        "Eine Befundkopie wurde dem Patienten mitgegeben.",
+        "Natijalar nusxasi bemorga berildi.",
+        "Копия заключения выдана пациенту на руки.",
+        "Bulguların bir kopyası hastaya verildi.",
+        "A copy of the findings was given to the patient."
+      ],
+      [
+        "Der Patient wurde über die Diagnose und die weitere Therapie ausführlich aufgeklärt.",
+        "Bemorga tashxis va keyingi davolash haqida batafsil tushuntirildi.",
+        "Пациент подробно проинформирован о диагнозе и дальнейшем лечении.",
+        "Hastaya tanı ve sonraki tedavi hakkında ayrıntılı bilgi verildi.",
+        "The patient was informed in detail about the diagnosis and further treatment."
+      ],
+      [
+        "Eine Arbeitsunfähigkeit besteht bis einschließlich …",
+        "… sanagacha (shu kun ham) mehnatga layoqatsiz.",
+        "Нетрудоспособен по … включительно.",
+        "… tarihine kadar (dahil) iş göremezlik raporu verildi.",
+        "The patient is unfit for work up to and including …"
+      ],
+      [
+        "Wir danken für die freundliche Zuweisung und stehen für Rückfragen gerne zur Verfügung.",
+        "Bemorni yuborganingiz uchun rahmat, savollar bo‘lsa, doimo tayyormiz.",
+        "Благодарим за направление и охотно ответим на вопросы.",
+        "Hastayı yönlendirdiğiniz için teşekkür eder, sorularınız için her zaman hazırız.",
+        "Thank you for the kind referral; we are happy to answer any questions."
+      ],
+      [
+        "Die Laborwerte bei Entlassung finden Sie in der Anlage.",
+        "Chiqarishdagi laboratoriya ko‘rsatkichlari ilovada keltirilgan.",
+        "Лабораторные показатели при выписке — в приложении.",
+        "Taburculuktaki laboratuvar değerleri ektedir.",
+        "The laboratory values at discharge are attached."
       ]
     ]
   },
@@ -1000,6 +1684,310 @@
         "Спасибо, тогда действуем, как договорились.",
         "Teşekkürler, o zaman konuştuğumuz gibi ilerleyelim.",
         "Thank you, then we will proceed as discussed."
+      ]
+    ]
+  },
+  {
+    "teil": "Teil 3 · Arzt-Arzt-Gespräch",
+    "group": "Notfall telefonisch an den Oberarzt melden",
+    "items": [
+      [
+        "Entschuldigen Sie die Störung, hier spricht … von der Station 3. Ich brauche Ihre Hilfe.",
+        "Bezovta qilganim uchun kechirasiz, 3-bo‘limdan … gapiryapman. Yordamingiz kerak.",
+        "Извините за беспокойство, это … из 3-го отделения. Мне нужна ваша помощь.",
+        "Rahatsız ettiğim için özür dilerim, 3. servisten … konuşuyor. Yardımınıza ihtiyacım var.",
+        "Sorry to disturb you, this is … from ward 3. I need your help."
+      ],
+      [
+        "Ich rufe wegen eines akut verschlechterten Patienten an.",
+        "Ahvoli keskin yomonlashgan bemor sababli qo‘ng‘iroq qilyapman.",
+        "Я звоню по поводу пациента с острым ухудшением.",
+        "Durumu aniden kötüleşen bir hasta nedeniyle arıyorum.",
+        "I’m calling about a patient who has suddenly deteriorated."
+      ],
+      [
+        "Es handelt sich um Herrn …, 74 Jahre, am zweiten Tag nach einer Hüftoperation.",
+        "Bu … janoblari, 74 yosh, son operatsiyasidan keyingi ikkinchi kun.",
+        "Речь о господине …, 74 года, второй день после операции на бедре.",
+        "Söz konusu … Bey, 74 yaşında, kalça ameliyatından sonraki ikinci gün.",
+        "It is Mr …, 74 years old, on day two after hip surgery."
+      ],
+      [
+        "Er ist plötzlich kaltschweißig, der Blutdruck liegt bei 85/50 mmHg.",
+        "U to‘satdan sovuq terga botdi, qon bosimi 85/50 mmHg.",
+        "У него внезапно холодный пот, давление 85/50 мм рт. ст.",
+        "Aniden soğuk terleme başladı, tansiyonu 85/50 mmHg.",
+        "He is suddenly cold and sweaty; blood pressure is 85/50 mmHg."
+      ],
+      [
+        "Ich habe bereits zwei Zugänge gelegt, Blut abgenommen und eine Infusion angehängt.",
+        "Allaqachon ikkita venoz yo‘l o‘rnatdim, qon oldim va infuziya qo‘ydim.",
+        "Я уже поставил(а) два венозных доступа, взял(а) кровь и поставил(а) инфузию.",
+        "İki damar yolu açtım, kan aldım ve infüzyon başladım.",
+        "I have already placed two IV lines, taken blood and started an infusion."
+      ],
+      [
+        "Ich vermute eine Lungenembolie, kann aber eine Blutung nicht ausschließen.",
+        "O‘pka emboliyasi deb taxmin qilaman, lekin qon ketishni istisno qila olmayman.",
+        "Подозреваю ТЭЛА, но не могу исключить кровотечение.",
+        "Akciğer embolisinden şüpheleniyorum ama kanamayı dışlayamıyorum.",
+        "I suspect a pulmonary embolism but cannot rule out bleeding."
+      ],
+      [
+        "Könnten Sie bitte sofort vorbeikommen?",
+        "Iltimos, darhol kela olasizmi?",
+        "Могли бы вы сразу подойти?",
+        "Lütfen hemen gelebilir misiniz?",
+        "Could you come straight away, please?"
+      ],
+      [
+        "Soll ich bis dahin schon ein CT anmelden?",
+        "Shu vaqtgacha KTga yozib qo‘yaymi?",
+        "Мне уже записать пациента на КТ?",
+        "O zamana kadar BT için kayıt yapayım mı?",
+        "Should I book a CT scan in the meantime?"
+      ],
+      [
+        "Ich wiederhole: 1 Liter Ringer, Sauerstoff 4 Liter, CT-Angiographie anmelden – richtig?",
+        "Takrorlayman: 1 litr Ringer, kislorod 4 litr, KT-angiografiyaga yozish – to‘g‘rimi?",
+        "Повторяю: 1 литр Рингера, кислород 4 литра, записать на КТ-ангиографию — верно?",
+        "Tekrar ediyorum: 1 litre Ringer, 4 litre oksijen, BT anjiyografi kaydı – doğru mu?",
+        "Let me repeat: 1 litre Ringer’s, oxygen 4 litres, book a CT angiogram – correct?"
+      ],
+      [
+        "Danke, ich melde mich, sobald sich etwas ändert.",
+        "Rahmat, biror narsa o‘zgarishi bilan xabar beraman.",
+        "Спасибо, я сообщу, как только что-то изменится.",
+        "Teşekkürler, bir şey değişirse hemen haber vereceğim.",
+        "Thank you, I’ll call back as soon as anything changes."
+      ]
+    ]
+  },
+  {
+    "teil": "Teil 3 · Arzt-Arzt-Gespräch",
+    "group": "Laborwerte und Bildgebung kommentieren",
+    "items": [
+      [
+        "Laborchemisch zeigte sich eine Leukozytose von 16/nl bei einem CRP von 180 mg/l.",
+        "Laboratoriyada 16/nl leykotsitoz va CRP 180 mg/l aniqlandi.",
+        "Лабораторно — лейкоцитоз 16/нл при СРБ 180 мг/л.",
+        "Laboratuvarda CRP 180 mg/l ile 16/nl lökositoz görüldü.",
+        "Laboratory tests showed leucocytosis of 16/nl with a CRP of 180 mg/l."
+      ],
+      [
+        "Die Nierenretentionswerte sind im Vergleich zur Voruntersuchung angestiegen.",
+        "Buyrak ko‘rsatkichlari oldingi tekshiruvga nisbatan oshgan.",
+        "Азотистые показатели выросли по сравнению с предыдущим анализом.",
+        "Böbrek değerleri önceki tetkike göre yükseldi.",
+        "Renal parameters have risen compared with the previous test."
+      ],
+      [
+        "Das Troponin war initial negativ, nach drei Stunden jedoch deutlich erhöht.",
+        "Troponin dastlab manfiy, lekin uch soatdan keyin aniq oshgan.",
+        "Тропонин сначала был отрицательным, но через три часа значительно повысился.",
+        "Troponin başta negatifti, ancak üç saat sonra belirgin yükseldi.",
+        "Troponin was initially negative but clearly raised after three hours."
+      ],
+      [
+        "Der Kaliumwert ist mit 6,2 mmol/l kritisch erhöht.",
+        "Kaliy 6,2 mmol/l bilan kritik darajada yuqori.",
+        "Калий критически повышен — 6,2 ммоль/л.",
+        "Potasyum 6,2 mmol/l ile kritik derecede yüksek.",
+        "Potassium is critically raised at 6.2 mmol/l."
+      ],
+      [
+        "Im Röntgen-Thorax zeigt sich ein Infiltrat im rechten Unterlappen.",
+        "Ko‘krak rentgenida o‘ng pastki bo‘lakda infiltrat ko‘rinadi.",
+        "На рентгенограмме — инфильтрат в нижней доле справа.",
+        "Akciğer grafisinde sağ alt lobda infiltrat görülüyor.",
+        "The chest X-ray shows an infiltrate in the right lower lobe."
+      ],
+      [
+        "Sonographisch kein Hinweis auf freie Flüssigkeit.",
+        "UTTda erkin suyuqlik belgisi yo‘q.",
+        "По УЗИ свободной жидкости нет.",
+        "Ultrasonda serbest sıvı bulgusu yok.",
+        "Ultrasound shows no evidence of free fluid."
+      ],
+      [
+        "Im CT ließ sich eine Blutung ausschließen.",
+        "KTda qon quyilishi istisno qilindi.",
+        "КТ исключила кровоизлияние.",
+        "BT’de kanama dışlandı.",
+        "A haemorrhage was ruled out on CT."
+      ],
+      [
+        "Das EKG zeigt ST-Hebungen in den Ableitungen II, III und aVF.",
+        "EKGda II, III va aVF tarmoqlarda ST ko‘tarilishi bor.",
+        "На ЭКГ подъёмы ST в отведениях II, III и aVF.",
+        "EKG’de II, III ve aVF derivasyonlarında ST yükselmesi var.",
+        "The ECG shows ST elevation in leads II, III and aVF."
+      ],
+      [
+        "Der Befund ist vereinbar mit einer akuten Cholezystitis.",
+        "Topilma o‘tkir xoletsistitga mos keladi.",
+        "Находка соответствует острому холециститу.",
+        "Bulgu akut kolesistitle uyumlu.",
+        "The finding is consistent with acute cholecystitis."
+      ],
+      [
+        "Die Werte sollten wir morgen früh kontrollieren.",
+        "Ko‘rsatkichlarni ertaga ertalab qayta tekshirishimiz kerak.",
+        "Показатели следует проконтролировать завтра утром.",
+        "Değerleri yarın sabah kontrol etmeliyiz.",
+        "We should recheck the values tomorrow morning."
+      ]
+    ]
+  },
+  {
+    "teil": "Teil 3 · Arzt-Arzt-Gespräch",
+    "group": "Höflich widersprechen und Vorschläge machen",
+    "items": [
+      [
+        "Darf ich dazu eine Überlegung äußern?",
+        "Bu borada bir fikr bildirsam maylimi?",
+        "Можно мне высказать одно соображение?",
+        "Bu konuda bir düşüncemi söyleyebilir miyim?",
+        "May I share a thought on that?"
+      ],
+      [
+        "Ich hätte eher an … gedacht, weil …",
+        "Men ko‘proq … haqida o‘ylagan bo‘lardim, chunki …",
+        "Я бы скорее подумал(а) о …, потому что …",
+        "Ben daha çok … diye düşünürdüm, çünkü …",
+        "I would rather have thought of …, because …"
+      ],
+      [
+        "Wäre es nicht sinnvoll, zuerst … auszuschließen?",
+        "Avval …ni istisno qilish maqsadga muvofiq emasmi?",
+        "Не стоит ли сначала исключить …?",
+        "Önce …’i dışlamak mantıklı olmaz mı?",
+        "Wouldn’t it make sense to rule out … first?"
+      ],
+      [
+        "Ich bin mir nicht ganz sicher, ob die Dosis bei der Nierenfunktion passt.",
+        "Buyrak funksiyasini hisobga olsak, doza mosligiga to‘liq ishonchim yo‘q.",
+        "Я не совсем уверен(а), подходит ли доза при такой функции почек.",
+        "Böbrek fonksiyonu göz önüne alındığında dozun uygun olduğundan tam emin değilim.",
+        "I’m not entirely sure the dose is right for this kidney function."
+      ],
+      [
+        "Was halten Sie davon, wenn wir zusätzlich ein CT machen?",
+        "Qo‘shimcha KT qilsak, bunga qanday qaraysiz?",
+        "Как вы смотрите на то, чтобы дополнительно сделать КТ?",
+        "Ek olarak bir BT çekmemize ne dersiniz?",
+        "What do you think about doing a CT scan as well?"
+      ],
+      [
+        "Laut aktueller Leitlinie wird in diesem Fall … empfohlen.",
+        "Amaldagi klinik tavsiyaga ko‘ra, bu holatda … tavsiya etiladi.",
+        "Согласно актуальным рекомендациям, в этом случае рекомендуется …",
+        "Güncel kılavuza göre bu durumda … önerilmektedir.",
+        "According to the current guideline, … is recommended in this case."
+      ],
+      [
+        "Da haben Sie recht, das hatte ich nicht bedacht.",
+        "Siz haqsiz, buni hisobga olmagan edim.",
+        "Вы правы, я это не учёл(а).",
+        "Haklısınız, bunu düşünmemiştim.",
+        "You’re right, I hadn’t considered that."
+      ],
+      [
+        "Könnten wir das bei der Visite noch einmal besprechen?",
+        "Buni vizitda yana bir bor muhokama qila olamizmi?",
+        "Могли бы мы ещё раз обсудить это на обходе?",
+        "Bunu vizitte tekrar konuşabilir miyiz?",
+        "Could we discuss this again on the ward round?"
+      ],
+      [
+        "Ich schlage vor, dass wir zunächst abwarten und morgen neu bewerten.",
+        "Avval kutib, ertaga qayta baholashni taklif qilaman.",
+        "Предлагаю пока подождать и завтра оценить заново.",
+        "Önce bekleyip yarın yeniden değerlendirmemizi öneriyorum.",
+        "I suggest we wait for now and reassess tomorrow."
+      ],
+      [
+        "Mir ist wichtig, dass wir die Entscheidung gut dokumentieren.",
+        "Qarorni yaxshi hujjatlashtirishimiz men uchun muhim.",
+        "Для меня важно, чтобы мы хорошо задокументировали решение.",
+        "Kararı iyi belgelememiz benim için önemli.",
+        "It is important to me that we document the decision well."
+      ]
+    ]
+  },
+  {
+    "teil": "Teil 3 · Arzt-Arzt-Gespräch",
+    "group": "Fallvorstellung strukturiert abschließen",
+    "items": [
+      [
+        "Zusammenfassend handelt es sich um einen … -jährigen Patienten mit …",
+        "Xulosa qilib aytganda, bu … yoshli, … bilan og‘rigan bemor.",
+        "Подводя итог, речь идёт о … -летнем пациенте с …",
+        "Özetle, … yaşında, … olan bir hasta söz konusu.",
+        "In summary, this is a … -year-old patient with …"
+      ],
+      [
+        "Unsere Verdachtsdiagnose ist …",
+        "Taxminiy tashxisimiz – …",
+        "Наш предварительный диагноз — …",
+        "Ön tanımız …",
+        "Our working diagnosis is …"
+      ],
+      [
+        "Wichtige Differenzialdiagnosen, die wir ausschließen müssen, sind … und …",
+        "Istisno qilishimiz kerak bo‘lgan muhim differensial tashxislar – … va …",
+        "Важные дифференциальные диагнозы, которые нужно исключить, — … и …",
+        "Dışlamamız gereken önemli ayırıcı tanılar … ve …",
+        "Important differential diagnoses we must rule out are … and …"
+      ],
+      [
+        "Dafür spricht …, dagegen spricht …",
+        "Buning foydasiga … dalolat qiladi, qarshi …",
+        "За это говорит …, против — …",
+        "Bunu destekleyen …, karşı olan …",
+        "In favour of this is …, against it is …"
+      ],
+      [
+        "Als nächste Schritte planen wir …",
+        "Keyingi qadamlar sifatida … rejalashtiryapmiz.",
+        "В качестве следующих шагов мы планируем …",
+        "Sonraki adımlar olarak … planlıyoruz.",
+        "As next steps we are planning …"
+      ],
+      [
+        "Therapeutisch haben wir bereits … begonnen.",
+        "Davolash sifatida allaqachon … boshladik.",
+        "Из лечения мы уже начали …",
+        "Tedavi olarak … başladık bile.",
+        "In terms of treatment, we have already started …"
+      ],
+      [
+        "Offen ist noch die Frage, ob …",
+        "… degan savol hali ochiq.",
+        "Остаётся открытым вопрос, …",
+        "… sorusu henüz açık.",
+        "It is still unclear whether …"
+      ],
+      [
+        "Den Patienten haben wir über das Vorgehen aufgeklärt; er ist einverstanden.",
+        "Bemorga rejani tushuntirdik; u rozi.",
+        "Пациент проинформирован о плане и согласен.",
+        "Hastayı yapılacaklar hakkında bilgilendirdik; kabul ediyor.",
+        "We have informed the patient about the plan and he agrees."
+      ],
+      [
+        "Haben Sie noch Fragen zu dem Patienten?",
+        "Bemor haqida yana savollaringiz bormi?",
+        "Есть ли у вас ещё вопросы по пациенту?",
+        "Hasta hakkında başka sorunuz var mı?",
+        "Do you have any further questions about the patient?"
+      ],
+      [
+        "Vielen Dank für Ihre Aufmerksamkeit.",
+        "E’tiboringiz uchun katta rahmat.",
+        "Большое спасибо за внимание.",
+        "İlginiz için çok teşekkürler.",
+        "Thank you very much for your attention."
       ]
     ]
   }
