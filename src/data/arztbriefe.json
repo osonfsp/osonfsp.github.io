@@ -9999,5 +9999,842 @@
       }
     ],
     "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Luca Bergmann, 18 Jahre, der vom 04.10.2026 bis zum 11.10.2026 in unserer endokrinologischen Abteilung behandelt wurde.\n\nAnamnese:\nDer Patient stellte sich mit seit vier Wochen bestehender Polydipsie, Polyurie und Nykturie, einem Gewichtsverlust von 7 kg und Müdigkeit vor; seit einem Tag bestanden Übelkeit und Bauchschmerzen. Eine Tante hat einen Diabetes mellitus Typ 1, die Mutter eine Hashimoto-Thyreoiditis.\n\nBefunde:\nDer Blutzucker lag bei 486 mg/dl, der HbA1c bei 12,4 %. In der Blutgasanalyse zeigte sich eine leichte Ketoazidose mit pH 7,28 und Bikarbonat 16 mmol/l bei positiven Ketonen. Die GAD- und IA-2-Antikörper waren positiv, das C-Peptid erniedrigt. TSH und Transglutaminase-Antikörper waren unauffällig.\n\nDiagnose:\nErstmanifestation eines Diabetes mellitus Typ 1 mit leichter diabetischer Ketoazidose.\n\nTherapie und Verlauf:\nNach Volumengabe, Insulin i. v. und Kaliumsubstitution normalisierte sich die Stoffwechsellage rasch. Wir stellten den Patienten auf eine Basis-Bolus-Therapie mit Insulin glargin abends und Insulin lispro zu den Mahlzeiten ein. Er erhielt eine ausführliche Diabetesschulung und ein kontinuierliches Glukosemessgerät (CGM).\n\nProcedere:\nDer Patient ist im Erkennen und Behandeln einer Hypoglykämie geschult und trägt immer Traubenzucker bei sich. Beim Sport und bei Alkohol muss die Insulindosis angepasst werden. Wir empfehlen die Anbindung an eine diabetologische Schwerpunktpraxis sowie jährliche Kontrollen von Augen, Nieren und Schilddrüse.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab115",
+    "caseId": "c137",
+    "title": "Prolaktinom",
+    "task": "Endokrinologiya ambulatoriyasidan ginekologga Arztbrief yozing. Boshqa sabablarni istisno qilish, MRT natijasi va kabergolin bilan davolashga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из эндокринологической амбулатории гинекологу. Обратите внимание на исключение других причин, МРТ и лечение каберголином.",
+    "taskTr": "Endokrinoloji polikliniğinden jinekoloğa bir Arztbrief yazın. Diğer nedenlerin dışlanmasına, MR sonucuna ve kabergolin tedavisine dikkat edin.",
+    "taskEn": "Write an Arztbrief from the endocrinology clinic to the gynaecologist. Pay attention to excluding other causes, the MRI and cabergoline treatment.",
+    "facts": [
+      "Patientin: Melanie Vogt, 29 Jahre, weiblich",
+      "Vorstellung: 05.10.2026, endokrinologische Ambulanz",
+      "Sekundäre Amenorrhö seit 8 Monaten, beidseitige Galaktorrhö, Libidoverlust, unerfüllter Kinderwunsch",
+      "Keine prolaktinerhöhenden Medikamente; β-HCG negativ; TSH normal",
+      "Prolaktin 186 ng/ml (kein Makroprolaktin)",
+      "MRT Hypophyse: Mikroadenom 8 mm, kein Kontakt zum Chiasma; Gesichtsfeld unauffällig",
+      "Therapie: Cabergolin 0,25 mg zweimal wöchentlich"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patientin ma’lumotlari (Frau Vogt)",
+        "labelRu": "Данные пациентки (Frau Vogt)",
+        "labelTr": "Hasta bilgileri (Frau Vogt)",
+        "labelEn": "Patient data (Frau Vogt)",
+        "keywords": ["vogt"]
+      },
+      {
+        "label": "Asosiy shikoyat: hayz kelmasligi va galaktoreya (Amenorrhö, Galaktorrhö)",
+        "labelRu": "Основная жалоба: аменорея и галакторея (Amenorrhö, Galaktorrhö)",
+        "labelTr": "Ana şikâyet: amenore ve galaktore (Amenorrhö, Galaktorrhö)",
+        "labelEn": "Main complaint: absent periods and galactorrhoea (Amenorrhö, Galaktorrhö)",
+        "keywords": ["amenorrhö", "galaktorrhö"]
+      },
+      {
+        "label": "Farzand ko‘rish istagi (Kinderwunsch)",
+        "labelRu": "Желание иметь ребёнка (Kinderwunsch)",
+        "labelTr": "Çocuk isteği (Kinderwunsch)",
+        "labelEn": "Wish to conceive (Kinderwunsch)",
+        "keywords": ["kinderwunsch"]
+      },
+      {
+        "label": "Homiladorlik, dori va gipoteriozni istisno qilish (β-HCG, TSH)",
+        "labelRu": "Исключение беременности, лекарств и гипотиреоза (β-HCG, TSH)",
+        "labelTr": "Gebelik, ilaç ve hipotiroidinin dışlanması (β-HCG, TSH)",
+        "labelEn": "Pregnancy, drugs and hypothyroidism excluded (β-HCG, TSH)",
+        "keywords": ["hcg", "tsh", "medikamente"]
+      },
+      {
+        "label": "Prolaktin darajasi (Prolaktin 186 ng/ml)",
+        "labelRu": "Уровень пролактина (Prolaktin 186 ng/ml)",
+        "labelTr": "Prolaktin düzeyi (Prolaktin 186 ng/ml)",
+        "labelEn": "Prolactin level (Prolaktin 186 ng/ml)",
+        "keywords": ["prolaktin 186", "186"]
+      },
+      {
+        "label": "MRT: mikroadenoma, ko‘rish maydoni normal (Mikroadenom)",
+        "labelRu": "МРТ: микроаденома, поля зрения в норме (Mikroadenom)",
+        "labelTr": "MR: mikroadenom, görme alanı normal (Mikroadenom)",
+        "labelEn": "MRI: microadenoma, visual fields normal (Mikroadenom)",
+        "keywords": ["mikroadenom", "gesichtsfeld"]
+      },
+      {
+        "label": "Diagnoz: prolaktinoma (Prolaktinom)",
+        "labelRu": "Диагноз: пролактинома (Prolaktinom)",
+        "labelTr": "Tanı: prolaktinoma (Prolaktinom)",
+        "labelEn": "Diagnosis: prolactinoma (Prolaktinom)",
+        "keywords": ["prolaktinom"]
+      },
+      {
+        "label": "Davolash: kabergolin (Cabergolin)",
+        "labelRu": "Лечение: каберголин (Cabergolin)",
+        "labelTr": "Tedavi: kabergolin (Cabergolin)",
+        "labelEn": "Treatment: cabergoline (Cabergolin)",
+        "keywords": ["cabergolin"]
+      },
+      {
+        "label": "Tavsiya: homiladorlikda dorini to‘xtatish va prolaktin nazorati (Prolaktinkontrolle)",
+        "labelRu": "Рекомендация: отмена при беременности и контроль пролактина (Prolaktinkontrolle)",
+        "labelTr": "Öneri: gebelikte ilacın kesilmesi ve prolaktin takibi (Prolaktinkontrolle)",
+        "labelEn": "Recommendation: stop if pregnant and monitor prolactin (Prolaktinkontrolle)",
+        "keywords": ["schwanger", "prolaktinkontrolle"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihre Patientin Frau Melanie Vogt, 29 Jahre, die vom 05.10.2026 bis zum 05.10.2026 in unserer endokrinologischen Ambulanz behandelt wurde.\n\nAnamnese:\nDie Patientin berichtete über eine seit acht Monaten bestehende sekundäre Amenorrhö, eine beidseitige Galaktorrhö, Libidoverlust und einen seit einem Jahr unerfüllten Kinderwunsch. Prolaktinerhöhende Medikamente werden nicht eingenommen.\n\nBefunde:\nDas β-HCG war negativ, das TSH normal. Das Prolaktin lag bei 186 ng/ml ohne Nachweis von Makroprolaktin. Im MRT der Hypophyse zeigte sich ein Mikroadenom von 8 mm ohne Kontakt zum Chiasma opticum. Das Gesichtsfeld war unauffällig.\n\nDiagnose:\nProlaktinom (Mikroadenom) mit sekundärer Amenorrhö, Galaktorrhö und Infertilität.\n\nTherapie:\nWir begannen eine Therapie mit Cabergolin 0,25 mg zweimal wöchentlich.\n\nProcedere:\nWir rechnen mit einer Normalisierung des Zyklus innerhalb weniger Monate. Eine Prolaktinkontrolle ist in vier Wochen vorgesehen. Bei Eintritt einer Schwangerschaft sollte Cabergolin in Rücksprache mit uns abgesetzt werden. Bei Sehstörungen oder starken Kopfschmerzen bitten wir um sofortige Vorstellung.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab116",
+    "caseId": "c138",
+    "title": "Perianalabszess",
+    "task": "Xirurgiya bo‘limidan uy shifokoriga Arztbrief yozing. Diabet, abssessni ochish va keyingi parvarishga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из хирургии семейному врачу. Обратите внимание на диабет, вскрытие абсцесса и дальнейший уход.",
+    "taskTr": "Cerrahi servisinden aile hekimine bir Arztbrief yazın. Diyabete, apse drenajına ve sonraki bakıma dikkat edin.",
+    "taskEn": "Write an Arztbrief from surgery to the GP. Pay attention to the diabetes, the abscess drainage and further wound care.",
+    "facts": [
+      "Patient: Sven Hoffmann, 36 Jahre, männlich",
+      "Aufnahme: 06.10.2026, chirurgische Notaufnahme",
+      "Seit 4 Tagen zunehmende pochende Schmerzen perianal links, Schwellung, Fieber bis 38,6 °C",
+      "Diabetes mellitus Typ 2 (Blutzucker 268 mg/dl), Nikotin, Adipositas, sitzende Tätigkeit",
+      "Gerötete, überwärmte, fluktuierende Schwellung perianal links bei 4 Uhr in Steinschnittlage; CRP 112 mg/l",
+      "Therapie: Inzision und Drainage in Spinalanästhesie, Eiterabstrich; kein Fistelnachweis; offene Wundbehandlung; keine Antibiose erforderlich"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patient ma’lumotlari (Herr Hoffmann)",
+        "labelRu": "Данные пациента (Herr Hoffmann)",
+        "labelTr": "Hasta bilgileri (Herr Hoffmann)",
+        "labelEn": "Patient data (Herr Hoffmann)",
+        "keywords": ["hoffmann"]
+      },
+      {
+        "label": "Asosiy shikoyat: anus yonida og‘riq va shish (perianale Schmerzen)",
+        "labelRu": "Основная жалоба: боль и отёк у ануса (perianale Schmerzen)",
+        "labelTr": "Ana şikâyet: anüs çevresinde ağrı ve şişlik (perianale Schmerzen)",
+        "labelEn": "Main complaint: pain and swelling near the anus (perianale Schmerzen)",
+        "keywords": ["perianal", "schmerzen"]
+      },
+      {
+        "label": "Isitma (Fieber)",
+        "labelRu": "Лихорадка (Fieber)",
+        "labelTr": "Ateş (Fieber)",
+        "labelEn": "Fever (Fieber)",
+        "keywords": ["fieber"]
+      },
+      {
+        "label": "Xavf omillari: diabet, chekish (Diabetes mellitus)",
+        "labelRu": "Факторы риска: диабет, курение (Diabetes mellitus)",
+        "labelTr": "Risk faktörleri: diyabet, sigara (Diabetes mellitus)",
+        "labelEn": "Risk factors: diabetes, smoking (Diabetes mellitus)",
+        "keywords": ["diabetes", "nikotin"]
+      },
+      {
+        "label": "Fluktuatsiyali shish (Fluktuation)",
+        "labelRu": "Флюктуирующий инфильтрат (Fluktuation)",
+        "labelTr": "Fluktuasyonlu şişlik (Fluktuation)",
+        "labelEn": "Fluctuant swelling (Fluktuation)",
+        "keywords": ["fluktu"]
+      },
+      {
+        "label": "Diagnoz: perianal abssess (Perianalabszess)",
+        "labelRu": "Диагноз: перианальный абсцесс (Perianalabszess)",
+        "labelTr": "Tanı: perianal apse (Perianalabszess)",
+        "labelEn": "Diagnosis: perianal abscess (Perianalabszess)",
+        "keywords": ["perianalabszess"]
+      },
+      {
+        "label": "Davolash: ochish va drenaj (Inzision)",
+        "labelRu": "Лечение: вскрытие и дренирование (Inzision)",
+        "labelTr": "Tedavi: insizyon ve drenaj (Inzision)",
+        "labelEn": "Treatment: incision and drainage (Inzision)",
+        "keywords": ["inzision", "drainage"]
+      },
+      {
+        "label": "Tavsiya: yarani yuvish va o‘tirib vanna (Wundpflege)",
+        "labelRu": "Рекомендация: промывание раны и сидячие ванночки (Wundpflege)",
+        "labelTr": "Öneri: yara yıkama ve oturma banyosu (Wundpflege)",
+        "labelEn": "Recommendation: wound irrigation and sitz baths (Wundpflege)",
+        "keywords": ["auszuduschen", "sitzbäder"]
+      },
+      {
+        "label": "Tavsiya: qand nazorati va oqma xavfi (Blutzuckereinstellung, Fistel)",
+        "labelRu": "Рекомендация: контроль сахара и риск свища (Blutzuckereinstellung, Fistel)",
+        "labelTr": "Öneri: şeker kontrolü ve fistül riski (Blutzuckereinstellung, Fistel)",
+        "labelEn": "Recommendation: glucose control and risk of fistula (Blutzuckereinstellung, Fistel)",
+        "keywords": ["blutzucker", "fistel"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Sven Hoffmann, 36 Jahre, der vom 06.10.2026 bis zum 08.10.2026 in unserer chirurgischen Abteilung behandelt wurde.\n\nAnamnese:\nDer Patient stellte sich mit seit vier Tagen zunehmenden pochenden perianalen Schmerzen links, Schwellung und Fieber bis 38,6 °C vor. Es besteht ein Diabetes mellitus Typ 2; weitere Risikofaktoren sind Nikotin, Adipositas und eine sitzende Tätigkeit.\n\nBefunde:\nKlinisch zeigte sich eine gerötete, überwärmte Schwellung mit Fluktuation perianal links bei 4 Uhr in Steinschnittlage. Das CRP lag bei 112 mg/l, der Blutzucker bei 268 mg/dl.\n\nDiagnose:\nPerianalabszess links.\n\nTherapie und Verlauf:\nIn Spinalanästhesie erfolgten die Inzision und Drainage des Abszesses mit Entnahme eines Abstrichs. Eine Fistel ließ sich nicht nachweisen. Die Wunde wurde offen belassen, eine Antibiose war nicht erforderlich. Der Patient war rasch schmerzarm und fieberfrei.\n\nProcedere:\nWir empfehlen, die Wunde zweimal täglich und nach jedem Stuhlgang auszuduschen sowie Sitzbäder. Eine Wundkontrolle ist in drei Tagen vorgesehen. Eine bessere Blutzuckereinstellung ist für die Wundheilung wichtig. Bei erneuter Schwellung oder anhaltender Sekretion sollte eine Fistel ausgeschlossen werden.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab117",
+    "caseId": "c139",
+    "title": "Hämorrhoidalleiden",
+    "task": "Proktologiya ambulatoriyasidan uy shifokoriga Arztbrief yozing. Qon ketishning boshqa sabablarini istisno qilish (kolonoskopiya) va davolashga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из проктологической амбулатории семейному врачу. Обратите внимание на исключение других причин кровотечения (колоноскопия) и лечение.",
+    "taskTr": "Proktoloji polikliniğinden aile hekimine bir Arztbrief yazın. Kanamanın diğer nedenlerinin dışlanmasına (kolonoskopi) ve tedaviye dikkat edin.",
+    "taskEn": "Write an Arztbrief from the proctology clinic to the GP. Pay attention to excluding other causes of bleeding (colonoscopy) and treatment.",
+    "facts": [
+      "Patientin: Gabriele Roth, 54 Jahre, weiblich",
+      "Vorstellung: 07.10.2026, proktologische Ambulanz",
+      "Seit Monaten rezidivierende hellrote peranale Blutauflagerungen, Pruritus, Nässen, spontan reponibler Prolaps beim Pressen",
+      "Chronische Obstipation, ballaststoffarme Ernährung; bisher keine Vorsorgekoloskopie",
+      "Proktoskopie: Hämorrhoiden Grad II bei 3, 7 und 11 Uhr; digital-rektale Untersuchung unauffällig; Hb normal",
+      "Koloskopie: kein Tumor, keine Polypen",
+      "Therapie: Gummibandligatur der Hämorrhoiden bei 7 Uhr; Stuhlregulierung mit Flohsamenschalen"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patientin ma’lumotlari (Frau Roth)",
+        "labelRu": "Данные пациентки (Frau Roth)",
+        "labelTr": "Hasta bilgileri (Frau Roth)",
+        "labelEn": "Patient data (Frau Roth)",
+        "keywords": ["roth"]
+      },
+      {
+        "label": "Asosiy shikoyat: anusdan och qizil qon (peranale Blutung)",
+        "labelRu": "Основная жалоба: алая кровь из ануса (peranale Blutung)",
+        "labelTr": "Ana şikâyet: anüsten açık kırmızı kan (peranale Blutung)",
+        "labelEn": "Main complaint: bright red rectal bleeding (peranale Blutung)",
+        "keywords": ["hellrot", "blut"]
+      },
+      {
+        "label": "Qichishish va prolaps (Pruritus, Prolaps)",
+        "labelRu": "Зуд и выпадение (Pruritus, Prolaps)",
+        "labelTr": "Kaşıntı ve sarkma (Pruritus, Prolaps)",
+        "labelEn": "Itching and prolapse (Pruritus, Prolaps)",
+        "keywords": ["pruritus", "prolaps"]
+      },
+      {
+        "label": "Surunkali qabziyat (Obstipation)",
+        "labelRu": "Хронический запор (Obstipation)",
+        "labelTr": "Kronik kabızlık (Obstipation)",
+        "labelEn": "Chronic constipation (Obstipation)",
+        "keywords": ["obstipation"]
+      },
+      {
+        "label": "Proktoskopiya: II daraja (Hämorrhoiden Grad II)",
+        "labelRu": "Проктоскопия: II степень (Hämorrhoiden Grad II)",
+        "labelTr": "Proktoskopi: evre II (Hämorrhoiden Grad II)",
+        "labelEn": "Proctoscopy: grade II (Hämorrhoiden Grad II)",
+        "keywords": ["proktoskopie", "grad ii"]
+      },
+      {
+        "label": "Kolonoskopiya: o‘sma yo‘q (Koloskopie)",
+        "labelRu": "Колоноскопия: опухоли нет (Koloskopie)",
+        "labelTr": "Kolonoskopi: tümör yok (Koloskopie)",
+        "labelEn": "Colonoscopy: no tumour (Koloskopie)",
+        "keywords": ["koloskopie", "kein tumor"]
+      },
+      {
+        "label": "Diagnoz: II darajali gemorroy (Hämorrhoidalleiden)",
+        "labelRu": "Диагноз: геморрой II степени (Hämorrhoidalleiden)",
+        "labelTr": "Tanı: evre II hemoroid (Hämorrhoidalleiden)",
+        "labelEn": "Diagnosis: grade II haemorrhoids (Hämorrhoidalleiden)",
+        "keywords": ["hämorrhoid"]
+      },
+      {
+        "label": "Davolash: rezina halqa bilan bog‘lash (Gummibandligatur)",
+        "labelRu": "Лечение: лигирование кольцами (Gummibandligatur)",
+        "labelTr": "Tedavi: lastik bant ligasyonu (Gummibandligatur)",
+        "labelEn": "Treatment: rubber band ligation (Gummibandligatur)",
+        "keywords": ["gummibandligatur"]
+      },
+      {
+        "label": "Tavsiya: tolaga boy ovqat, ko‘p suyuqlik, kuchanmaslik (Ballaststoffe)",
+        "labelRu": "Рекомендация: клетчатка, жидкость, не тужиться (Ballaststoffe)",
+        "labelTr": "Öneri: lifli beslenme, sıvı, ıkınmama (Ballaststoffe)",
+        "labelEn": "Recommendation: fibre, fluids and no straining (Ballaststoffe)",
+        "keywords": ["ballaststoff", "trinkmenge", "pressen"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihre Patientin Frau Gabriele Roth, 54 Jahre, die vom 07.10.2026 bis zum 07.10.2026 in unserer proktologischen Ambulanz behandelt wurde.\n\nAnamnese:\nDie Patientin berichtete über seit Monaten rezidivierende hellrote peranale Blutauflagerungen, Pruritus und Nässen sowie einen spontan reponiblen Prolaps beim Pressen. Es besteht eine chronische Obstipation bei ballaststoffarmer Ernährung. Eine Vorsorgekoloskopie war bisher nicht erfolgt.\n\nBefunde:\nDie digital-rektale Untersuchung war unauffällig. In der Proktoskopie zeigten sich Hämorrhoiden Grad II bei 3, 7 und 11 Uhr in Steinschnittlage. Das Hb war normal. Die ergänzende Koloskopie ergab keinen Tumor und keine Polypen.\n\nDiagnose:\nHämorrhoidalleiden Grad II mit rezidivierender peranaler Blutung.\n\nTherapie:\nWir führten eine Gummibandligatur der Hämorrhoide bei 7 Uhr durch. Zur Stuhlregulierung empfehlen wir Flohsamenschalen.\n\nProcedere:\nWir empfehlen eine ballaststoffreiche Ernährung, eine Trinkmenge von mindestens 2 Litern täglich, mehr Bewegung sowie langes Sitzen und starkes Pressen auf der Toilette zu vermeiden. Weitere Ligaturen sind in vier Wochen geplant. Bei starker Blutung oder Schmerzen bitten wir um Wiedervorstellung.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab118",
+    "caseId": "c140",
+    "title": "Sigmavolvulus",
+    "task": "Xirurgiya bo‘limidan pansionat shifokoriga Arztbrief yozing. Endoskopik davolash, qaytalanish xavfi va rejalashtirilgan operatsiyaga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из хирургии врачу дома престарелых. Обратите внимание на эндоскопическое лечение, риск рецидива и плановую операцию.",
+    "taskTr": "Cerrahi servisinden huzurevi hekimine bir Arztbrief yazın. Endoskopik tedaviye, nüks riskine ve planlı ameliyata dikkat edin.",
+    "taskEn": "Write an Arztbrief from surgery to the nursing home doctor. Pay attention to the endoscopic treatment, risk of recurrence and the planned operation.",
+    "facts": [
+      "Patient: Otto Brandt, 82 Jahre, männlich",
+      "Aufnahme: 04.10.2026, Notaufnahme aus dem Pflegeheim",
+      "Seit 2 Tagen Stuhl- und Windverhalt, massiv distendiertes Abdomen, krampfartige Schmerzen, einmal Erbrechen; Vorepisode vor 6 Monaten",
+      "Chronische Obstipation, Morbus Parkinson, Demenz; Amitriptylin",
+      "Abdomenübersicht: Kaffeebohnenzeichen; CT: Sigmavolvulus ohne Perforation oder Ischämiezeichen; Laktat 1,4 mmol/l",
+      "Therapie: endoskopische Detorquierung mit Einlage eines Darmrohrs; vitale Schleimhaut",
+      "Geriatrisches Konsil und Gespräch mit dem Betreuer: elektive Sigmaresektion am 12.10.2026 komplikationslos"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patient ma’lumotlari (Herr Brandt)",
+        "labelRu": "Данные пациента (Herr Brandt)",
+        "labelTr": "Hasta bilgileri (Herr Brandt)",
+        "labelEn": "Patient data (Herr Brandt)",
+        "keywords": ["brandt"]
+      },
+      {
+        "label": "Asosiy shikoyat: qorin dam bo‘lishi, najas va gaz chiqmasligi (Stuhl- und Windverhalt)",
+        "labelRu": "Основная жалоба: вздутие, задержка стула и газов (Stuhl- und Windverhalt)",
+        "labelTr": "Ana şikâyet: karın şişliği, gaita ve gaz çıkaramama (Stuhl- und Windverhalt)",
+        "labelEn": "Main complaint: distension, no stool or wind (Stuhl- und Windverhalt)",
+        "keywords": ["windverhalt", "distendiert"]
+      },
+      {
+        "label": "Oldingi epizod (Vorepisode)",
+        "labelRu": "Предыдущий эпизод (Vorepisode)",
+        "labelTr": "Önceki atak (Vorepisode)",
+        "labelEn": "Previous episode (Vorepisode)",
+        "keywords": ["vorepisode", "6 monaten"]
+      },
+      {
+        "label": "Xavf omillari: qabziyat, Parkinson, dorilar (Obstipation, Amitriptylin)",
+        "labelRu": "Факторы риска: запор, Паркинсон, препараты (Obstipation, Amitriptylin)",
+        "labelTr": "Risk faktörleri: kabızlık, Parkinson, ilaçlar (Obstipation, Amitriptylin)",
+        "labelEn": "Risk factors: constipation, Parkinson’s, drugs (Obstipation, Amitriptylin)",
+        "keywords": ["obstipation", "amitriptylin", "parkinson"]
+      },
+      {
+        "label": "Rentgen va KT topilmasi (Kaffeebohnenzeichen)",
+        "labelRu": "Данные рентгена и КТ (Kaffeebohnenzeichen)",
+        "labelTr": "Röntgen ve BT bulgusu (Kaffeebohnenzeichen)",
+        "labelEn": "X-ray and CT findings (Kaffeebohnenzeichen)",
+        "keywords": ["kaffeebohnen", "ischämie"]
+      },
+      {
+        "label": "Diagnoz: sigmasimon ichak volvulusi (Sigmavolvulus)",
+        "labelRu": "Диагноз: заворот сигмовидной кишки (Sigmavolvulus)",
+        "labelTr": "Tanı: sigmoid volvulus (Sigmavolvulus)",
+        "labelEn": "Diagnosis: sigmoid volvulus (Sigmavolvulus)",
+        "keywords": ["sigmavolvulus"]
+      },
+      {
+        "label": "Davolash: endoskopik orqaga burash (Detorquierung)",
+        "labelRu": "Лечение: эндоскопическая деторсия (Detorquierung)",
+        "labelTr": "Tedavi: endoskopik detorsiyon (Detorquierung)",
+        "labelEn": "Treatment: endoscopic detorsion (Detorquierung)",
+        "keywords": ["detorquierung", "darmrohr"]
+      },
+      {
+        "label": "Davolash: rejali sigma rezeksiyasi (Sigmaresektion)",
+        "labelRu": "Лечение: плановая резекция сигмы (Sigmaresektion)",
+        "labelTr": "Tedavi: elektif sigmoid rezeksiyonu (Sigmaresektion)",
+        "labelEn": "Treatment: elective sigmoid resection (Sigmaresektion)",
+        "keywords": ["sigmaresektion"]
+      },
+      {
+        "label": "Tavsiya: najasni muntazamlash va antixolinergik dorilarni ko‘rib chiqish (Stuhlregulierung)",
+        "labelRu": "Рекомендация: регуляция стула и пересмотр антихолинергиков (Stuhlregulierung)",
+        "labelTr": "Öneri: dışkı düzenleme ve antikolinerjiklerin gözden geçirilmesi (Stuhlregulierung)",
+        "labelEn": "Recommendation: bowel regulation and review anticholinergics (Stuhlregulierung)",
+        "keywords": ["stuhlregulierung", "macrogol"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Otto Brandt, 82 Jahre, der vom 04.10.2026 bis zum 19.10.2026 in unserer chirurgischen Abteilung behandelt wurde.\n\nAnamnese:\nDer Patient wurde aus dem Pflegeheim mit seit zwei Tagen bestehendem Stuhl- und Windverhalt, massiv distendiertem Abdomen, krampfartigen Bauchschmerzen und einmaligem Erbrechen eingewiesen. Eine ähnliche, spontan rückläufige Vorepisode war vor 6 Monaten aufgetreten. Es bestehen eine chronische Obstipation, ein Morbus Parkinson und eine Demenz; der Patient erhält Amitriptylin.\n\nBefunde:\nIn der Abdomenübersicht zeigte sich ein Kaffeebohnenzeichen. Das CT bestätigte einen Sigmavolvulus ohne Perforation oder Zeichen einer Ischämie. Das Laktat lag bei 1,4 mmol/l.\n\nDiagnose:\nSigmavolvulus mit mechanischem Dickdarmileus.\n\nTherapie und Verlauf:\nWir führten eine endoskopische Detorquierung mit Einlage eines Darmrohrs durch; die Schleimhaut war vital. Wegen des hohen Rezidivrisikos erfolgte nach geriatrischem Konsil und Gespräch mit dem Betreuer am 12.10.2026 eine elektive Sigmaresektion mit primärer Anastomose, die komplikationslos verlief.\n\nProcedere:\nWir empfehlen eine konsequente Stuhlregulierung mit Macrogol und eine ausreichende Trinkmenge. Amitriptylin wurde wegen seiner anticholinergen Wirkung abgesetzt. Eine Wundkontrolle ist in einer Woche vorgesehen.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab119",
+    "caseId": "c141",
+    "title": "Mammakarzinom",
+    "task": "Ko‘krak markazidan ginekolog va uy shifokoriga Arztbrief yozing. Biopsiya natijasi, o‘sma kengashi qarori va genetik maslahatga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из маммологического центра гинекологу и семейному врачу. Обратите внимание на результат биопсии, решение онкоконсилиума и генетическую консультацию.",
+    "taskTr": "Meme merkezinden jinekoloğa ve aile hekimine bir Arztbrief yazın. Biyopsi sonucuna, tümör konseyi kararına ve genetik danışmanlığa dikkat edin.",
+    "taskEn": "Write an Arztbrief from the breast centre to the gynaecologist and GP. Pay attention to the biopsy result, the tumour board decision and genetic counselling.",
+    "facts": [
+      "Patientin: Andrea Lorenz, 52 Jahre, weiblich",
+      "Vorstellung: 01.10.2026–09.10.2026, Brustzentrum",
+      "Selbst ertasteter, harter, schmerzloser Knoten links oben außen mit Hauteinziehung",
+      "Familienanamnese: Mutter Mammakarzinom mit 48, Tante Ovarialkarzinom; Hormonersatztherapie seit 5 Jahren",
+      "Mammographie/Sonographie: 2,1 cm große suspekte Raumforderung links, Axilla sonographisch unauffällig",
+      "Stanzbiopsie: invasives Karzinom NST, G2, Östrogen- und Progesteronrezeptor positiv, HER2 negativ, Ki-67 15 %",
+      "Staging unauffällig; Tumorkonferenz: brusterhaltende Operation mit Sentinel-Lymphknotenbiopsie, anschließend Bestrahlung und endokrine Therapie"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patientin ma’lumotlari (Frau Lorenz)",
+        "labelRu": "Данные пациентки (Frau Lorenz)",
+        "labelTr": "Hasta bilgileri (Frau Lorenz)",
+        "labelEn": "Patient data (Frau Lorenz)",
+        "keywords": ["lorenz"]
+      },
+      {
+        "label": "Asosiy shikoyat: ko‘krakda qattiq tugun va teri tortilishi (Knoten, Hauteinziehung)",
+        "labelRu": "Основная жалоба: твёрдый узел и втяжение кожи (Knoten, Hauteinziehung)",
+        "labelTr": "Ana şikâyet: memede sert kitle ve cilt çekintisi (Knoten, Hauteinziehung)",
+        "labelEn": "Main complaint: hard lump and skin retraction (Knoten, Hauteinziehung)",
+        "keywords": ["knoten", "hauteinziehung"]
+      },
+      {
+        "label": "Oilaviy anamnez (Mutter, Tante)",
+        "labelRu": "Семейный анамнез (Mutter, Tante)",
+        "labelTr": "Aile öyküsü (Mutter, Tante)",
+        "labelEn": "Family history (Mutter, Tante)",
+        "keywords": ["mutter", "tante"]
+      },
+      {
+        "label": "Gormon o‘rnini bosuvchi terapiya (Hormonersatztherapie)",
+        "labelRu": "Заместительная гормональная терапия (Hormonersatztherapie)",
+        "labelTr": "Hormon replasman tedavisi (Hormonersatztherapie)",
+        "labelEn": "Hormone replacement therapy (Hormonersatztherapie)",
+        "keywords": ["hormonersatztherapie"]
+      },
+      {
+        "label": "Mammografiya/UTT (2,1 cm)",
+        "labelRu": "Маммография/УЗИ (2,1 cm)",
+        "labelTr": "Mamografi/USG (2,1 cm)",
+        "labelEn": "Mammography/ultrasound (2,1 cm)",
+        "keywords": ["mammographie", "2,1 cm"]
+      },
+      {
+        "label": "Biopsiya va retseptorlar (Hormonrezeptor positiv, HER2 negativ)",
+        "labelRu": "Биопсия и рецепторы (Hormonrezeptor positiv, HER2 negativ)",
+        "labelTr": "Biyopsi ve reseptörler (Hormonrezeptor positiv, HER2 negativ)",
+        "labelEn": "Biopsy and receptors (Hormonrezeptor positiv, HER2 negativ)",
+        "keywords": ["stanzbiopsie", "her2", "östrogen"]
+      },
+      {
+        "label": "Diagnoz: ko‘krak bezi saratoni (Mammakarzinom)",
+        "labelRu": "Диагноз: рак молочной железы (Mammakarzinom)",
+        "labelTr": "Tanı: meme kanseri (Mammakarzinom)",
+        "labelEn": "Diagnosis: breast cancer (Mammakarzinom)",
+        "keywords": ["mammakarzinom", "karzinom"]
+      },
+      {
+        "label": "Davolash: ko‘krakni saqlovchi operatsiya, nur va endokrin terapiya (brusterhaltende Operation)",
+        "labelRu": "Лечение: органосохраняющая операция, облучение и эндокринная терапия (brusterhaltende Operation)",
+        "labelTr": "Tedavi: meme koruyucu cerrahi, radyoterapi ve endokrin tedavi (brusterhaltende Operation)",
+        "labelEn": "Treatment: breast-conserving surgery, radiotherapy and endocrine therapy (brusterhaltende Operation)",
+        "keywords": ["brusterhaltend", "bestrahlung", "endokrin"]
+      },
+      {
+        "label": "Tavsiya: gormon terapiyasini to‘xtatish va genetik maslahat (BRCA)",
+        "labelRu": "Рекомендация: отмена ЗГТ и генетическая консультация (BRCA)",
+        "labelTr": "Öneri: HRT’nin kesilmesi ve genetik danışmanlık (BRCA)",
+        "labelEn": "Recommendation: stop HRT and genetic counselling (BRCA)",
+        "keywords": ["brca", "genetische", "absetzen"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihre Patientin Frau Andrea Lorenz, 52 Jahre, die vom 01.10.2026 bis zum 09.10.2026 in unserer Brustzentrum behandelt wurde.\n\nAnamnese:\nDie Patientin ertastete selbst einen harten, schmerzlosen Knoten in der linken Brust oben außen mit Hauteinziehung. In der Familie erkrankte die Mutter mit 48 Jahren an einem Mammakarzinom, die Tante an einem Ovarialkarzinom. Seit fünf Jahren erhält die Patientin eine Hormonersatztherapie.\n\nBefunde:\nIn Mammographie und Sonographie zeigte sich eine 2,1 cm große suspekte Raumforderung links, die Axilla war sonographisch unauffällig. Die Stanzbiopsie ergab ein invasives Karzinom NST, G2, Östrogen- und Progesteronrezeptor positiv, HER2 negativ, Ki-67 15 %. Das Staging war unauffällig.\n\nDiagnose:\nInvasives Mammakarzinom links, hormonrezeptorpositiv, HER2-negativ, cT2 cN0 M0.\n\nProcedere:\nDie Tumorkonferenz empfiehlt eine brusterhaltende Operation mit Sentinel-Lymphknotenbiopsie, anschließend eine Bestrahlung und eine endokrine Therapie über mindestens fünf Jahre. Die Hormonersatztherapie sollte sofort abgesetzt werden. Aufgrund der familiären Belastung empfehlen wir eine genetische Beratung mit Testung auf BRCA-Mutationen. Psychoonkologische Unterstützung wurde angeboten.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab120",
+    "caseId": "c142",
+    "title": "Struma nodosa",
+    "task": "Endokrin xirurgiya bo‘limidan uy shifokoriga Arztbrief yozing. Tekshiruvlar, operatsiya va kalsiy hamda levotiroksin bilan keyingi kuzatuvga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из отделения эндокринной хирургии семейному врачу. Обратите внимание на обследования, операцию и дальнейшее наблюдение (кальций, левотироксин).",
+    "taskTr": "Endokrin cerrahi servisinden aile hekimine bir Arztbrief yazın. Tetkiklere, ameliyata ve kalsiyum ile levotiroksin takibine dikkat edin.",
+    "taskEn": "Write an Arztbrief from endocrine surgery to the GP. Pay attention to the work-up, surgery and follow-up of calcium and levothyroxine.",
+    "facts": [
+      "Patientin: Renate Krüger, 58 Jahre, weiblich",
+      "Aufenthalt: 01.10.2026–04.10.2026, Klinik für Endokrine Chirurgie",
+      "Langsam progrediente Struma, Globusgefühl, Schluckbeschwerden; keine Heiserkeit",
+      "Euthyreot (TSH 1,2 mU/l), Kalzitonin normal",
+      "Sonographie: Struma nodosa beidseits, Volumen 58 ml, mehrere Knoten bis 3 cm; Szintigraphie: kalter Knoten rechts; Feinnadelpunktion benigne",
+      "Präoperative Laryngoskopie: Stimmbänder beidseits beweglich",
+      "Totale Thyreoidektomie am 02.10.2026 mit Neuromonitoring; Histologie benigne; postoperativ Stimmbänder beweglich; Kalzium kurzzeitig 1,98 mmol/l"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patientin ma’lumotlari (Frau Krüger)",
+        "labelRu": "Данные пациентки (Frau Krüger)",
+        "labelTr": "Hasta bilgileri (Frau Krüger)",
+        "labelEn": "Patient data (Frau Krüger)",
+        "keywords": ["krüger"]
+      },
+      {
+        "label": "Asosiy shikoyat: bo‘yinda shish va yutishda bo‘g‘ilish (Globusgefühl, Schluckbeschwerden)",
+        "labelRu": "Основная жалоба: увеличение шеи и затруднённое глотание (Globusgefühl, Schluckbeschwerden)",
+        "labelTr": "Ana şikâyet: boyunda şişlik ve yutma güçlüğü (Globusgefühl, Schluckbeschwerden)",
+        "labelEn": "Main complaint: neck swelling and difficulty swallowing (Globusgefühl, Schluckbeschwerden)",
+        "keywords": ["globusgefühl", "schluckbeschwerden"]
+      },
+      {
+        "label": "Eutireoz (euthyreot)",
+        "labelRu": "Эутиреоз (euthyreot)",
+        "labelTr": "Ötiroid (euthyreot)",
+        "labelEn": "Euthyroid (euthyreot)",
+        "keywords": ["euthyreot", "tsh"]
+      },
+      {
+        "label": "UTT, ssintigrafiya va punksiya (kalter Knoten, Feinnadelpunktion)",
+        "labelRu": "УЗИ, сцинтиграфия и пункция (kalter Knoten, Feinnadelpunktion)",
+        "labelTr": "USG, sintigrafi ve biyopsi (kalter Knoten, Feinnadelpunktion)",
+        "labelEn": "Ultrasound, scintigraphy and FNA (kalter Knoten, Feinnadelpunktion)",
+        "keywords": ["kalter knoten", "feinnadelpunktion"]
+      },
+      {
+        "label": "Diagnoz: tugunli buqoq (Struma nodosa)",
+        "labelRu": "Диагноз: узловой зоб (Struma nodosa)",
+        "labelTr": "Tanı: nodüler guatr (Struma nodosa)",
+        "labelEn": "Diagnosis: nodular goitre (Struma nodosa)",
+        "keywords": ["struma nodosa"]
+      },
+      {
+        "label": "Davolash: to‘liq tireoidektomiya (Thyreoidektomie)",
+        "labelRu": "Лечение: тотальная тиреоидэктомия (Thyreoidektomie)",
+        "labelTr": "Tedavi: total tiroidektomi (Thyreoidektomie)",
+        "labelEn": "Treatment: total thyroidectomy (Thyreoidektomie)",
+        "keywords": ["thyreoidektomie"]
+      },
+      {
+        "label": "Gistologiya: xavfsiz (Histologie benigne)",
+        "labelRu": "Гистология: доброкачественно (Histologie benigne)",
+        "labelTr": "Histoloji: benign (Histologie benigne)",
+        "labelEn": "Histology benign (Histologie benigne)",
+        "keywords": ["histologie", "benigne"]
+      },
+      {
+        "label": "Operatsiyadan keyin kalsiy pasayishi (Kalzium)",
+        "labelRu": "Послеоперационная гипокальциемия (Kalzium)",
+        "labelTr": "Ameliyat sonrası kalsiyum düşüklüğü (Kalzium)",
+        "labelEn": "Postoperative low calcium (Kalzium)",
+        "keywords": ["kalzium"]
+      },
+      {
+        "label": "Tavsiya: levotiroksin va TSH nazorati (L-Thyroxin)",
+        "labelRu": "Рекомендация: левотироксин и контроль ТТГ (L-Thyroxin)",
+        "labelTr": "Öneri: levotiroksin ve TSH takibi (L-Thyroxin)",
+        "labelEn": "Recommendation: levothyroxine and TSH monitoring (L-Thyroxin)",
+        "keywords": ["l-thyroxin", "tsh-kontrolle"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihre Patientin Frau Renate Krüger, 58 Jahre, die vom 01.10.2026 bis zum 04.10.2026 in unserer Klinik für Endokrine Chirurgie behandelt wurde.\n\nAnamnese:\nDie Patientin stellte sich mit einer seit zwei Jahren langsam progredienten Struma, Globusgefühl und Schluckbeschwerden bei festen Speisen vor. Heiserkeit oder Atemnot bestanden nicht.\n\nBefunde:\nLaborchemisch war die Patientin euthyreot (TSH 1,2 mU/l), das Kalzitonin war normal. Sonographisch zeigte sich eine Struma nodosa beidseits mit einem Volumen von 58 ml und mehreren Knoten bis 3 cm. In der Szintigraphie fand sich rechts ein kalter Knoten; die Feinnadelpunktion war benigne. Präoperativ waren beide Stimmbänder beweglich.\n\nDiagnose:\nEuthyreote Struma nodosa beidseits mit lokalen Kompressionsbeschwerden.\n\nTherapie und Verlauf:\nAm 02.10.2026 führten wir eine totale Thyreoidektomie mit Neuromonitoring durch. Die Histologie war benigne. Postoperativ waren beide Stimmbänder beweglich. Das Kalzium fiel kurzzeitig auf 1,98 mmol/l ab und normalisierte sich unter oraler Substitution.\n\nProcedere:\nWir empfehlen eine lebenslange Substitution mit L-Thyroxin 100 µg morgens nüchtern und eine TSH-Kontrolle in sechs Wochen. Das Kalzium sollte in einer Woche kontrolliert und die Substitution dann ausgeschlichen werden. Bei Kribbeln um den Mund oder in den Fingern bitten wir um sofortige Vorstellung.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab121",
+    "caseId": "c143",
+    "title": "Sinus pilonidalis",
+    "task": "Xirurgiya bo‘limidan uy shifokoriga Arztbrief yozing. Operatsiya usuli, yarani parvarish qilish va qaytalanishning oldini olishga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из хирургии семейному врачу. Обратите внимание на метод операции, уход за раной и профилактику рецидива.",
+    "taskTr": "Cerrahi servisinden aile hekimine bir Arztbrief yazın. Ameliyat yöntemine, yara bakımına ve nüksün önlenmesine dikkat edin.",
+    "taskEn": "Write an Arztbrief from surgery to the GP. Pay attention to the surgical technique, wound care and prevention of recurrence.",
+    "facts": [
+      "Patient: Kevin Schuster, 22 Jahre, männlich",
+      "Aufenthalt: 05.10.2026–07.10.2026, chirurgische Abteilung",
+      "Seit 5 Tagen schmerzhafte Schwellung über dem Steißbein mit Eiterabsonderung; Rezidiv nach Episode vor einem Jahr",
+      "Risikofaktoren: starke Behaarung, Übergewicht, sitzende Tätigkeit, Nikotin",
+      "Befund: gerötete Schwellung in der Rima ani mit zwei Pori in der Mittellinie; kein Fieber",
+      "Therapie: Exzision des Sinus mit offener Wundbehandlung (Pit-Picking nicht ausreichend)"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patient ma’lumotlari (Herr Schuster)",
+        "labelRu": "Данные пациента (Herr Schuster)",
+        "labelTr": "Hasta bilgileri (Herr Schuster)",
+        "labelEn": "Patient data (Herr Schuster)",
+        "keywords": ["schuster"]
+      },
+      {
+        "label": "Asosiy shikoyat: dumg‘aza ustida og‘riqli shish (Schwellung über dem Steißbein)",
+        "labelRu": "Основная жалоба: болезненная припухлость над копчиком (Schwellung über dem Steißbein)",
+        "labelTr": "Ana şikâyet: kuyruk sokumu üzerinde ağrılı şişlik (Schwellung über dem Steißbein)",
+        "labelEn": "Main complaint: painful swelling over the coccyx (Schwellung über dem Steißbein)",
+        "keywords": ["steißbein", "schwellung"]
+      },
+      {
+        "label": "Qaytalanish (Rezidiv)",
+        "labelRu": "Рецидив (Rezidiv)",
+        "labelTr": "Nüks (Rezidiv)",
+        "labelEn": "Recurrence (Rezidiv)",
+        "keywords": ["rezidiv"]
+      },
+      {
+        "label": "Xavf omillari (Behaarung, sitzende Tätigkeit)",
+        "labelRu": "Факторы риска (Behaarung, sitzende Tätigkeit)",
+        "labelTr": "Risk faktörleri (Behaarung, sitzende Tätigkeit)",
+        "labelEn": "Risk factors (Behaarung, sitzende Tätigkeit)",
+        "keywords": ["behaarung", "sitzende"]
+      },
+      {
+        "label": "O‘rta chiziqda teshikchalar (Pori)",
+        "labelRu": "Отверстия по средней линии (Pori)",
+        "labelTr": "Orta hatta delikler (Pori)",
+        "labelEn": "Midline pits (Pori)",
+        "keywords": ["pori", "mittellinie"]
+      },
+      {
+        "label": "Diagnoz: pilonidal sinus (Sinus pilonidalis)",
+        "labelRu": "Диагноз: пилонидальный синус (Sinus pilonidalis)",
+        "labelTr": "Tanı: pilonidal sinüs (Sinus pilonidalis)",
+        "labelEn": "Diagnosis: pilonidal sinus (Sinus pilonidalis)",
+        "keywords": ["pilonidalis"]
+      },
+      {
+        "label": "Davolash: ekssiziya va ochiq yara (Exzision)",
+        "labelRu": "Лечение: иссечение и открытое ведение раны (Exzision)",
+        "labelTr": "Tedavi: eksizyon ve açık yara tedavisi (Exzision)",
+        "labelEn": "Treatment: excision and open wound management (Exzision)",
+        "keywords": ["exzision", "offen"]
+      },
+      {
+        "label": "Tavsiya: yarani kuniga yuvish (Ausduschen)",
+        "labelRu": "Рекомендация: ежедневное промывание раны (Ausduschen)",
+        "labelTr": "Öneri: yaranın günlük yıkanması (Ausduschen)",
+        "labelEn": "Recommendation: daily wound irrigation (Ausduschen)",
+        "keywords": ["auszuduschen"]
+      },
+      {
+        "label": "Tavsiya: sochni olib tashlash va chekishni tashlash (Haarentfernung)",
+        "labelRu": "Рекомендация: удаление волос и отказ от курения (Haarentfernung)",
+        "labelTr": "Öneri: epilasyon ve sigarayı bırakma (Haarentfernung)",
+        "labelEn": "Recommendation: hair removal and stopping smoking (Haarentfernung)",
+        "keywords": ["haarentfernung", "nikotinkarenz"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Kevin Schuster, 22 Jahre, der vom 05.10.2026 bis zum 07.10.2026 in unserer chirurgischen Abteilung behandelt wurde.\n\nAnamnese:\nDer Patient stellte sich mit einer seit fünf Tagen bestehenden schmerzhaften Schwellung über dem Steißbein mit Eiterabsonderung vor. Vor einem Jahr war bereits eine ähnliche Episode aufgetreten, sodass es sich um ein Rezidiv handelt. Risikofaktoren sind eine starke Behaarung, Übergewicht, eine sitzende Tätigkeit und Nikotinkonsum.\n\nBefunde:\nKlinisch zeigte sich eine gerötete Schwellung in der Rima ani mit zwei Pori in der Mittellinie. Der Patient war fieberfrei.\n\nDiagnose:\nAbszedierender Sinus pilonidalis (Rezidiv).\n\nTherapie und Verlauf:\nAm 05.10.2026 erfolgte die Exzision des Sinus. Die Wunde wurde offen belassen. Der postoperative Verlauf war komplikationslos.\n\nProcedere:\nWir empfehlen, die Wunde zweimal täglich und nach jedem Stuhlgang auszuduschen und anschließend locker zu verbinden. Wundkontrollen sollten zweimal wöchentlich beim Hausarzt erfolgen; die Heilung dauert erfahrungsgemäß sechs bis zehn Wochen. Zur Rezidivprophylaxe empfehlen wir eine regelmäßige Haarentfernung im Bereich der Gesäßfalte, eine Gewichtsreduktion und Nikotinkarenz. Arbeitsunfähigkeit besteht für zwei Wochen.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab122",
+    "caseId": "c144",
+    "title": "Boerhaave-Syndrom",
+    "task": "Xirurgik intensiv bo‘limidan uy shifokoriga Arztbrief yozing. Tashxis qanday qo‘yilgani, stent bilan davolash va alkogol muammosiga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из хирургической реанимации семейному врачу. Обратите внимание на постановку диагноза, лечение стентом и проблему алкоголя.",
+    "taskTr": "Cerrahi yoğun bakımdan aile hekimine bir Arztbrief yazın. Tanının nasıl konduğuna, stent tedavisine ve alkol sorununa dikkat edin.",
+    "taskEn": "Write an Arztbrief from surgical intensive care to the GP. Pay attention to how the diagnosis was made, the stent treatment and the alcohol problem.",
+    "facts": [
+      "Patient: Dirk Hartwig, 49 Jahre, männlich",
+      "Aufenthalt: 27.09.2026–09.10.2026, Chirurgie und Intensivstation",
+      "Nach heftigem Erbrechen plötzlich stärkste retrosternale Schmerzen mit Rückenausstrahlung, Atemnot, Odynophagie, zervikales Hautemphysem",
+      "Alkoholabusus, Nikotin",
+      "EKG und Troponin unauffällig; CT Thorax mit oralem Kontrastmittel: Kontrastmittelaustritt aus dem distalen Ösophagus links, Pneumomediastinum, Pleuraerguss links",
+      "Therapie: endoskopischer Ösophagusstent innerhalb von 8 Stunden, Thoraxdrainage links, Piperacillin/Tazobactam und Fluconazol, parenterale Ernährung",
+      "Stententfernung am 07.10.2026; Kontrolle: Ruptur verschlossen; Kostaufbau problemlos; Alkoholentzug ohne Delir unter Clomethiazol"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patient ma’lumotlari (Herr Hartwig)",
+        "labelRu": "Данные пациента (Herr Hartwig)",
+        "labelTr": "Hasta bilgileri (Herr Hartwig)",
+        "labelEn": "Patient data (Herr Hartwig)",
+        "keywords": ["hartwig"]
+      },
+      {
+        "label": "Asosiy shikoyat: qusishdan keyin ko‘krakda kuchli og‘riq (retrosternale Schmerzen nach Erbrechen)",
+        "labelRu": "Основная жалоба: сильная боль в груди после рвоты (retrosternale Schmerzen nach Erbrechen)",
+        "labelTr": "Ana şikâyet: kusma sonrası şiddetli göğüs ağrısı (retrosternale Schmerzen nach Erbrechen)",
+        "labelEn": "Main complaint: severe chest pain after vomiting (retrosternale Schmerzen nach Erbrechen)",
+        "keywords": ["erbrechen", "retrosternal"]
+      },
+      {
+        "label": "Teri osti emfizemasi (Hautemphysem)",
+        "labelRu": "Подкожная эмфизема (Hautemphysem)",
+        "labelTr": "Cilt altı amfizem (Hautemphysem)",
+        "labelEn": "Subcutaneous emphysema (Hautemphysem)",
+        "keywords": ["hautemphysem"]
+      },
+      {
+        "label": "Koronar sindromni istisno qilish (EKG, Troponin)",
+        "labelRu": "Исключение коронарного синдрома (EKG, Troponin)",
+        "labelTr": "Koroner sendromun dışlanması (EKG, Troponin)",
+        "labelEn": "ACS excluded (EKG, Troponin)",
+        "keywords": ["troponin", "ekg"]
+      },
+      {
+        "label": "KT: kontrast chiqishi (Kontrastmittelaustritt)",
+        "labelRu": "КТ: выход контраста (Kontrastmittelaustritt)",
+        "labelTr": "BT: kontrast kaçağı (Kontrastmittelaustritt)",
+        "labelEn": "CT: contrast leak (Kontrastmittelaustritt)",
+        "keywords": ["kontrastmittelaustritt", "pneumomediastinum"]
+      },
+      {
+        "label": "Diagnoz: Boerhaave sindromi (Boerhaave-Syndrom)",
+        "labelRu": "Диагноз: синдром Бурхаве (Boerhaave-Syndrom)",
+        "labelTr": "Tanı: Boerhaave sendromu (Boerhaave-Syndrom)",
+        "labelEn": "Diagnosis: Boerhaave syndrome (Boerhaave-Syndrom)",
+        "keywords": ["boerhaave"]
+      },
+      {
+        "label": "Davolash: endoskopik stent va drenaj (Ösophagusstent)",
+        "labelRu": "Лечение: эндоскопический стент и дренаж (Ösophagusstent)",
+        "labelTr": "Tedavi: endoskopik stent ve dren (Ösophagusstent)",
+        "labelEn": "Treatment: endoscopic stent and drainage (Ösophagusstent)",
+        "keywords": ["stent", "thoraxdrainage"]
+      },
+      {
+        "label": "Davolash: antibiotik va antimikotik (Antibiose)",
+        "labelRu": "Лечение: антибиотики и антимикотик (Antibiose)",
+        "labelTr": "Tedavi: antibiyotik ve antifungal (Antibiose)",
+        "labelEn": "Treatment: antibiotics and antifungal (Antibiose)",
+        "keywords": ["piperacillin", "fluconazol"]
+      },
+      {
+        "label": "Tavsiya: alkogoldan voz kechish va qayta kuzatuv (Alkoholkarenz)",
+        "labelRu": "Рекомендация: отказ от алкоголя и наблюдение (Alkoholkarenz)",
+        "labelTr": "Öneri: alkolden uzak durma ve takip (Alkoholkarenz)",
+        "labelEn": "Recommendation: alcohol abstinence and follow-up (Alkoholkarenz)",
+        "keywords": ["alkoholkarenz", "entwöhnung"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Dirk Hartwig, 49 Jahre, der vom 27.09.2026 bis zum 09.10.2026 in unserer Klinik für Allgemein- und Viszeralchirurgie behandelt wurde.\n\nAnamnese:\nDer Patient stellte sich nachts nach mehrfachem heftigem Erbrechen im Rahmen eines Alkoholexzesses mit plötzlich aufgetretenen stärksten retrosternalen Schmerzen mit Ausstrahlung in den Rücken, Atemnot und Odynophagie vor. Klinisch bestand ein zervikales Hautemphysem. Es besteht ein Alkoholabusus.\n\nBefunde:\nEKG und Troponin waren unauffällig. Im CT Thorax mit oralem Kontrastmittel zeigte sich ein Kontrastmittelaustritt aus dem distalen Ösophagus nach links mit Pneumomediastinum und Pleuraerguss links.\n\nDiagnose:\nBoerhaave-Syndrom (spontane Ösophagusruptur) mit Mediastinitis und Pleuraerguss links.\n\nTherapie und Verlauf:\nInnerhalb von acht Stunden erfolgte die endoskopische Einlage eines gecoverten Ösophagusstents. Zusätzlich legten wir eine Thoraxdrainage links und begannen eine Therapie mit Piperacillin/Tazobactam und Fluconazol bei parenteraler Ernährung. Der Alkoholentzug verlief unter Clomethiazol ohne Delir. Am 07.10.2026 wurde der Stent entfernt; die Kontrolle zeigte eine verschlossene Ruptur. Der Kostaufbau verlief problemlos.\n\nProcedere:\nWir empfehlen strikte Alkoholkarenz und eine Entwöhnungsbehandlung, für die der Patient sich bereits angemeldet hat. Eine Röntgenkontrolle des Thorax ist in zwei Wochen vorgesehen. Bei Fieber oder erneuten Brustschmerzen bitten wir um sofortige Vorstellung.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab123",
+    "caseId": "c145",
+    "title": "Rupturiertes Bauchaortenaneurysma",
+    "task": "Qon tomir xirurgiyasidan uy shifokoriga Arztbrief yozing. Shoshilinch davolash, asoratlar va oiladagi skriningga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из сосудистой хирургии семейному врачу. Обратите внимание на экстренное лечение, осложнения и скрининг родственников.",
+    "taskTr": "Damar cerrahisinden aile hekimine bir Arztbrief yazın. Acil tedaviye, komplikasyonlara ve aile taramasına dikkat edin.",
+    "taskEn": "Write an Arztbrief from vascular surgery to the GP. Pay attention to the emergency treatment, complications and screening of relatives.",
+    "facts": [
+      "Patient: Werner Pohl, 76 Jahre, männlich",
+      "Aufenthalt: 22.09.2026–08.10.2026, Gefäßchirurgie und Intensivstation",
+      "Plötzliche stärkste Bauch- und Rückenschmerzen links, Synkope; RR 78/45 mmHg, HF 128/min; pulsierender Tumor im Abdomen",
+      "Bekanntes Bauchaortenaneurysma 4,8 cm, keine Kontrollen; Nikotin 60 Packungsjahre; Bruder an Aneurysmaruptur verstorben",
+      "CT-Angiographie: rupturiertes infrarenales Aneurysma 7,2 cm mit retroperitonealem Hämatom; Hb 7,8 g/dl",
+      "Therapie: permissive Hypotonie, Massivtransfusion, notfallmäßige EVAR",
+      "Verlauf: akutes Nierenversagen, ohne Dialyse rückläufig (Kreatinin bei Entlassung 1,5 mg/dl); kein Kompartmentsyndrom"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patient ma’lumotlari (Herr Pohl)",
+        "labelRu": "Данные пациента (Herr Pohl)",
+        "labelTr": "Hasta bilgileri (Herr Pohl)",
+        "labelEn": "Patient data (Herr Pohl)",
+        "keywords": ["pohl"]
+      },
+      {
+        "label": "Asosiy shikoyat: qorin va belda keskin og‘riq, hushdan ketish (Synkope)",
+        "labelRu": "Основная жалоба: внезапная боль в животе и спине, обморок (Synkope)",
+        "labelTr": "Ana şikâyet: ani karın-sırt ağrısı, senkop (Synkope)",
+        "labelEn": "Main complaint: sudden abdominal and back pain, syncope (Synkope)",
+        "keywords": ["synkope", "rückenschmerzen"]
+      },
+      {
+        "label": "Shok belgilari (RR 78/45 mmHg)",
+        "labelRu": "Признаки шока (RR 78/45 mmHg)",
+        "labelTr": "Şok bulguları (RR 78/45 mmHg)",
+        "labelEn": "Signs of shock (RR 78/45 mmHg)",
+        "keywords": ["78/45", "schock"]
+      },
+      {
+        "label": "Ma’lum anevrizma, nazorat qilinmagan (4,8 cm)",
+        "labelRu": "Известная аневризма без контроля (4,8 cm)",
+        "labelTr": "Bilinen, takip edilmemiş anevrizma (4,8 cm)",
+        "labelEn": "Known aneurysm without follow-up (4,8 cm)",
+        "keywords": ["4,8 cm"]
+      },
+      {
+        "label": "KT-angiografiya (7,2 cm, retroperitoneales Hämatom)",
+        "labelRu": "КТ-ангиография (7,2 cm, retroperitoneales Hämatom)",
+        "labelTr": "BT anjiyografi (7,2 cm, retroperitoneales Hämatom)",
+        "labelEn": "CT angiography (7,2 cm, retroperitoneales Hämatom)",
+        "keywords": ["7,2 cm", "retroperitoneal"]
+      },
+      {
+        "label": "Diagnoz: yorilgan qorin aortasi anevrizmasi (rupturiertes Bauchaortenaneurysma)",
+        "labelRu": "Диагноз: разрыв аневризмы брюшной аорты (rupturiertes Bauchaortenaneurysma)",
+        "labelTr": "Tanı: rüptüre abdominal aort anevrizması (rupturiertes Bauchaortenaneurysma)",
+        "labelEn": "Diagnosis: ruptured abdominal aortic aneurysm (rupturiertes Bauchaortenaneurysma)",
+        "keywords": ["rupturiert", "bauchaortenaneurysma"]
+      },
+      {
+        "label": "Davolash: shoshilinch EVAR va qon quyish (EVAR)",
+        "labelRu": "Лечение: экстренный EVAR и трансфузия (EVAR)",
+        "labelTr": "Tedavi: acil EVAR ve transfüzyon (EVAR)",
+        "labelEn": "Treatment: emergency EVAR and transfusion (EVAR)",
+        "keywords": ["evar", "transfusion"]
+      },
+      {
+        "label": "Asorat: o‘tkir buyrak yetishmovchiligi (akutes Nierenversagen)",
+        "labelRu": "Осложнение: острое почечное повреждение (akutes Nierenversagen)",
+        "labelTr": "Komplikasyon: akut böbrek hasarı (akutes Nierenversagen)",
+        "labelEn": "Complication: acute kidney injury (akutes Nierenversagen)",
+        "keywords": ["nierenversagen"]
+      },
+      {
+        "label": "Tavsiya: KT nazorati, chekishni tashlash, aka-uka skriningi (Screening)",
+        "labelRu": "Рекомендация: КТ-контроль, отказ от курения, скрининг родственников (Screening)",
+        "labelTr": "Öneri: BT takibi, sigarayı bırakma, akraba taraması (Screening)",
+        "labelEn": "Recommendation: CT follow-up, smoking cessation, screening of relatives (Screening)",
+        "keywords": ["screening", "nikotinkarenz", "ct-kontrolle"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihren Patienten Herrn Werner Pohl, 76 Jahre, der vom 22.09.2026 bis zum 08.10.2026 in unserer Klinik für Gefäßchirurgie behandelt wurde.\n\nAnamnese:\nDer Patient wurde mit plötzlich aufgetretenen stärksten Bauch- und Rückenschmerzen links und einer Synkope eingeliefert. Ein Bauchaortenaneurysma von 4,8 cm war seit zwei Jahren bekannt, Kontrollen erfolgten nicht. Es besteht ein Nikotinkonsum von 60 Packungsjahren; der Bruder verstarb an einer Aneurysmaruptur.\n\nBefunde:\nBei Aufnahme bestand ein Schock mit einem Blutdruck von 78/45 mmHg und einer Herzfrequenz von 128/min. Abdominell tastete sich ein pulsierender Tumor. Das Hb lag bei 7,8 g/dl. Die CT-Angiographie zeigte ein rupturiertes infrarenales Aneurysma von 7,2 cm mit retroperitonealem Hämatom.\n\nDiagnose:\nRupturiertes infrarenales Bauchaortenaneurysma mit hämorrhagischem Schock.\n\nTherapie und Verlauf:\nUnter permissiver Hypotonie und Massivtransfusion erfolgte eine notfallmäßige EVAR. Postoperativ entwickelte sich ein akutes Nierenversagen, das ohne Dialyse rückläufig war; bei Entlassung lag das Kreatinin bei 1,5 mg/dl. Ein abdominelles Kompartmentsyndrom trat nicht auf.\n\nProcedere:\nEine CT-Kontrolle der Prothese ist in vier Wochen und danach jährlich vorgesehen. Wir empfehlen strikte Nikotinkarenz, eine gute Blutdruckeinstellung und die Fortführung von ASS und Statin. Nierenwerte sollten in einer Woche kontrolliert werden. Aufgrund der familiären Belastung empfehlen wir ein Ultraschall-Screening der Kinder und Geschwister ab 50 Jahren.\n\nMit freundlichen kollegialen Grüßen"
+  },
+  {
+    "id": "ab124",
+    "caseId": "c146",
+    "title": "Thrombophlebitis bei Varikosis",
+    "task": "Angiologiya ambulatoriyasidan uy shifokoriga Arztbrief yozing. Chuqur trombozni istisno qilish, davolash va varikozni keyinchalik davolashga e’tibor bering.",
+    "taskRu": "Напишите Arztbrief из ангиологической амбулатории семейному врачу. Обратите внимание на исключение тромбоза глубоких вен, лечение и дальнейшую терапию варикоза.",
+    "taskTr": "Anjiyoloji polikliniğinden aile hekimine bir Arztbrief yazın. Derin ven trombozunun dışlanmasına, tedaviye ve varisin ileri tedavisine dikkat edin.",
+    "taskEn": "Write an Arztbrief from the angiology clinic to the GP. Pay attention to excluding DVT, the treatment and later treatment of the varicose veins.",
+    "facts": [
+      "Patientin: Sabine Kraft, 61 Jahre, weiblich",
+      "Vorstellung: 06.10.2026, angiologische Ambulanz",
+      "Seit 3 Tagen schmerzhafter, geröteter Strang am rechten Unterschenkel innen; nach langer Busreise",
+      "Varikosis beidseits, Adipositas, stehender Beruf",
+      "Keine Umfangsdifferenz; Duplexsonographie: Thrombose der V. saphena magna am Unterschenkel über 8 cm, Abstand zur Mündung 25 cm, tiefe Venen frei",
+      "Therapie: Fondaparinux 2,5 mg s.c. für 45 Tage, Kompressionsstrumpf, Ibuprofen bei Bedarf"
+    ],
+    "keyPoints": [
+      {
+        "label": "Patientin ma’lumotlari (Frau Kraft)",
+        "labelRu": "Данные пациентки (Frau Kraft)",
+        "labelTr": "Hasta bilgileri (Frau Kraft)",
+        "labelEn": "Patient data (Frau Kraft)",
+        "keywords": ["kraft"]
+      },
+      {
+        "label": "Asosiy shikoyat: boldirda og‘riqli qizil tasma (geröteter Strang)",
+        "labelRu": "Основная жалоба: болезненный красный тяж на голени (geröteter Strang)",
+        "labelTr": "Ana şikâyet: baldırda ağrılı kırmızı şerit (geröteter Strang)",
+        "labelEn": "Main complaint: painful red cord on the lower leg (geröteter Strang)",
+        "keywords": ["strang"]
+      },
+      {
+        "label": "Xavf omillari: varikoz, uzoq safar (Busreise, Varikosis)",
+        "labelRu": "Факторы риска: варикоз, долгая поездка (Busreise, Varikosis)",
+        "labelTr": "Risk faktörleri: varis, uzun yolculuk (Busreise, Varikosis)",
+        "labelEn": "Risk factors: varicose veins, long journey (Busreise, Varikosis)",
+        "keywords": ["busreise", "varikosis"]
+      },
+      {
+        "label": "Dupleks UTT: chuqur venalar toza (tiefe Venen frei)",
+        "labelRu": "Дуплекс: глубокие вены свободны (tiefe Venen frei)",
+        "labelTr": "Dupleks: derin venler açık (tiefe Venen frei)",
+        "labelEn": "Duplex: deep veins patent (tiefe Venen frei)",
+        "keywords": ["tiefe venen", "duplexsonographie"]
+      },
+      {
+        "label": "Trombning uzunligi va mansabgacha masofa (8 cm, 25 cm)",
+        "labelRu": "Длина тромба и расстояние до устья (8 cm, 25 cm)",
+        "labelTr": "Trombüs uzunluğu ve ağza mesafe (8 cm, 25 cm)",
+        "labelEn": "Thrombus length and distance to junction (8 cm, 25 cm)",
+        "keywords": ["8 cm", "25 cm"]
+      },
+      {
+        "label": "Diagnoz: yuzaki tromboflebit (Thrombophlebitis)",
+        "labelRu": "Диагноз: поверхностный тромбофлебит (Thrombophlebitis)",
+        "labelTr": "Tanı: yüzeyel tromboflebit (Thrombophlebitis)",
+        "labelEn": "Diagnosis: superficial thrombophlebitis (Thrombophlebitis)",
+        "keywords": ["thrombophlebitis"]
+      },
+      {
+        "label": "Davolash: fondaparinuks 45 kun (Fondaparinux)",
+        "labelRu": "Лечение: фондапаринукс 45 дней (Fondaparinux)",
+        "labelTr": "Tedavi: 45 gün fondaparinuks (Fondaparinux)",
+        "labelEn": "Treatment: fondaparinux for 45 days (Fondaparinux)",
+        "keywords": ["fondaparinux", "45 tage"]
+      },
+      {
+        "label": "Davolash: kompression paypoq (Kompression)",
+        "labelRu": "Лечение: компрессионный чулок (Kompression)",
+        "labelTr": "Tedavi: kompresyon çorabı (Kompression)",
+        "labelEn": "Treatment: compression stocking (Kompression)",
+        "keywords": ["kompression"]
+      },
+      {
+        "label": "Tavsiya: oyoq shishsa yoki nafas qisilsa darhol kelish, keyinchalik varikozni davolash (Varizensanierung)",
+        "labelRu": "Рекомендация: при отёке ноги или одышке — срочно, затем лечение варикоза (Varizensanierung)",
+        "labelTr": "Öneri: bacak şişerse veya nefes darlığında hemen başvuru, sonra varis tedavisi (Varizensanierung)",
+        "labelEn": "Recommendation: return urgently if leg swells or breathless; later varicose vein treatment (Varizensanierung)",
+        "keywords": ["varizensanierung", "atemnot"]
+      }
+    ],
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihre Patientin Frau Sabine Kraft, 61 Jahre, die vom 06.10.2026 bis zum 06.10.2026 in unserer angiologischen Ambulanz behandelt wurde.\n\nAnamnese:\nDie Patientin stellte sich mit einem seit drei Tagen bestehenden schmerzhaften, geröteten Strang an der Innenseite des rechten Unterschenkels vor. Vorausgegangen war eine lange Busreise. Es besteht eine Varikosis beidseits bei Adipositas und stehendem Beruf.\n\nBefunde:\nEine Umfangsdifferenz der Beine bestand nicht. In der Duplexsonographie zeigte sich eine Thrombose der V. saphena magna am Unterschenkel über 8 cm mit einem Abstand von 25 cm zur Mündung. Die tiefen Venen waren frei.\n\nDiagnose:\nOberflächliche Thrombophlebitis der V. saphena magna rechts bei Varikosis.\n\nTherapie:\nWir begannen eine Antikoagulation mit Fondaparinux 2,5 mg s.c. einmal täglich für 45 Tage. Zusätzlich empfehlen wir eine Kompression mit einem Strumpf der Klasse II sowie Ibuprofen bei Bedarf. Bewegung ist ausdrücklich erwünscht.\n\nProcedere:\nEine Kontrolle der Duplexsonographie ist in zehn Tagen vorgesehen. Bei Schwellung des ganzen Beins, Atemnot oder Brustschmerzen bitten wir um sofortige Vorstellung. Nach Abheilung empfehlen wir die Planung einer Varizensanierung.\n\nMit freundlichen kollegialen Grüßen"
   }
 ]

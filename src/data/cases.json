@@ -14997,5 +14997,1130 @@
       "Autoantikörper (GAD, IA-2, ZnT8), C-Peptid",
       "TSH, Transglutaminase-Antikörper"
     ]
+  },
+  {
+    "id": "c137",
+    "title": "Prolaktinom",
+    "category": "Endokrinologie",
+    "difficulty": "leicht",
+    "patient": {
+      "name": "Melanie Vogt",
+      "age": 29,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Ausbleibende Regelblutung und Milchfluss aus der Brust"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 8 Monaten keine Regelblutung mehr, seit 3 Monaten milchige Absonderung aus beiden Brustwarzen, Libidoverlust, unerfüllter Kinderwunsch seit 1 Jahr. Gelegentlich Kopfschmerzen. Schwangerschaftstest negativ.",
+      "vorerkrankungen": "Keine.",
+      "medikamente": "Keine (Pille vor 1,5 Jahren abgesetzt). Keine Psychopharmaka, kein Metoclopramid.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Verheiratet, Steuerfachangestellte. Nichtraucherin."
+    },
+    "sprache": [
+      {
+        "patient": "Seit acht Monaten habe ich keine Regel mehr.",
+        "fach": "Es besteht eine sekundäre Amenorrhö seit acht Monaten."
+      },
+      {
+        "patient": "Aus beiden Brüsten kommt milchige Flüssigkeit, obwohl ich nicht schwanger bin.",
+        "fach": "Es besteht eine beidseitige Galaktorrhö."
+      },
+      {
+        "patient": "Wir versuchen seit einem Jahr, ein Kind zu bekommen.",
+        "fach": "Es besteht ein unerfüllter Kinderwunsch seit einem Jahr."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Prolaktinom",
+        "patient": "gutartiger Tumor der Hirnanhangsdrüse, der Prolaktin bildet",
+        "uz": "prolaktinoma",
+        "ru": "пролактинома",
+        "tr": "prolaktinoma",
+        "en": "prolactinoma"
+      },
+      {
+        "de": "Galaktorrhö",
+        "patient": "Milchfluss aus der Brust außerhalb der Stillzeit",
+        "uz": "galaktoreya",
+        "ru": "галакторея",
+        "tr": "galaktore",
+        "en": "galactorrhoea"
+      },
+      {
+        "de": "Amenorrhö",
+        "patient": "Ausbleiben der Regelblutung",
+        "uz": "amenoreya (hayz kelmasligi)",
+        "ru": "аменорея",
+        "tr": "amenore",
+        "en": "absence of periods"
+      },
+      {
+        "de": "Dopaminagonist",
+        "patient": "Medikament, das Prolaktin senkt (z. B. Cabergolin)",
+        "uz": "dofamin agonisti",
+        "ru": "агонист дофамина",
+        "tr": "dopamin agonisti",
+        "en": "dopamine agonist"
+      },
+      {
+        "de": "Gesichtsfeld",
+        "patient": "Bereich, den man sieht, ohne die Augen zu bewegen",
+        "uz": "ko‘rish maydoni",
+        "ru": "поле зрения",
+        "tr": "görme alanı",
+        "en": "visual field"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe seit acht Monaten keine Regel mehr, und aus der Brust kommt Milch, obwohl ich nicht schwanger bin.",
+      "answers": {
+        "beginn": "Die Regel ist vor acht Monaten ausgeblieben, die Milch kommt seit drei Monaten.",
+        "lokalisation": "Aus beiden Brustwarzen. Manchmal habe ich Kopfschmerzen an der Stirn.",
+        "charakter": "Milchige Flüssigkeit, wenn ich drücke, manchmal auch von selbst. Die Kopfschmerzen sind leicht, drei von zehn.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Ich habe keine Lust mehr auf Sex. Sehstörungen habe ich nicht bemerkt, manchmal stoße ich mich an Türrahmen.",
+        "vegetativ": "Gewicht ist stabil. Hitzewallungen habe ich nicht.",
+        "vorerkrankungen": "Ich bin gesund.",
+        "medikamente": "Ich nehme nichts. Die Pille habe ich vor anderthalb Jahren abgesetzt, weil wir ein Kind wollen. Keine Psychopharmaka.",
+        "allergien": "Nein.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich bin verheiratet und Steuerfachangestellte. Wir versuchen seit einem Jahr schwanger zu werden.",
+        "noxen": "Ich rauche nicht, Alkohol selten."
+      }
+    },
+    "verdachtsdiagnose": "Prolaktinom (Mikroadenom der Hypophyse) mit sekundärer Amenorrhö, Galaktorrhö und Infertilität",
+    "diagnoseKeywords": ["prolaktinom", "hyperprolaktinämie", "hypophysenadenom"],
+    "differenzialdiagnosen": [
+      "Schwangerschaft",
+      "Medikamentöse Hyperprolaktinämie",
+      "Hypothyreose",
+      "Polyzystisches Ovarsyndrom",
+      "Makroprolaktinämie"
+    ],
+    "untersuchungen": [
+      "Prolaktin (Makroprolaktin)",
+      "β-HCG",
+      "TSH",
+      "MRT der Hypophyse",
+      "Gesichtsfelduntersuchung",
+      "Weitere Hypophysenhormone"
+    ]
+  },
+  {
+    "id": "c138",
+    "title": "Perianalabszess",
+    "category": "Chirurgie",
+    "difficulty": "leicht",
+    "patient": {
+      "name": "Sven Hoffmann",
+      "age": 36,
+      "gender": "männlich",
+      "hauptbeschwerde": "Starke Schmerzen und Schwellung am After"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 4 Tagen zunehmende pochende Schmerzen links neben dem After, Schwellung und Rötung, Sitzen kaum möglich, seit gestern Fieber bis 38,6 °C. Kein Blut im Stuhl.",
+      "vorerkrankungen": "Diabetes mellitus Typ 2.",
+      "medikamente": "Metformin 1000 mg 1-0-1.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Verheiratet, Lkw-Fahrer (sitzende Tätigkeit). Raucher (15 Zigaretten/Tag). Adipositas."
+    },
+    "sprache": [
+      {
+        "patient": "Ich kann vor Schmerzen kaum sitzen.",
+        "fach": "Es bestehen starke perianale Schmerzen, Sitzen ist kaum möglich."
+      },
+      {
+        "patient": "Neben dem After ist eine harte, heiße Beule.",
+        "fach": "Es zeigt sich eine gerötete, überwärmte, fluktuierende Schwellung perianal links."
+      },
+      {
+        "patient": "Seit gestern habe ich Fieber.",
+        "fach": "Seit dem Vortag besteht Fieber."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Perianalabszess",
+        "patient": "Eiteransammlung neben dem After",
+        "uz": "anus yonidagi abssess",
+        "ru": "перианальный абсцесс",
+        "tr": "perianal apse",
+        "en": "perianal abscess"
+      },
+      {
+        "de": "Fluktuation",
+        "patient": "tastbare Flüssigkeit unter der Haut",
+        "uz": "fluktuatsiya (suyuqlik sezilishi)",
+        "ru": "флюктуация",
+        "tr": "fluktuasyon",
+        "en": "fluctuation"
+      },
+      {
+        "de": "Inzision",
+        "patient": "Aufschneiden, um den Eiter abzulassen",
+        "uz": "kesish (insiziya)",
+        "ru": "вскрытие (инцизия)",
+        "tr": "insizyon",
+        "en": "incision"
+      },
+      {
+        "de": "Analfistel",
+        "patient": "kleiner Gang zwischen Darm und Haut",
+        "uz": "anal oqma (fistula)",
+        "ru": "анальный свищ",
+        "tr": "anal fistül",
+        "en": "anal fistula"
+      },
+      {
+        "de": "Sitzbad",
+        "patient": "Bad nur für das Gesäß",
+        "uz": "o‘tirib qilinadigan vanna",
+        "ru": "сидячая ванночка",
+        "tr": "oturma banyosu",
+        "en": "sitz bath"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe eine schmerzhafte Beule am After, ich kann kaum noch sitzen.",
+      "answers": {
+        "beginn": "Vor vier Tagen fing es an, jeden Tag schlimmer.",
+        "lokalisation": "Links neben dem After.",
+        "charakter": "Pochend, Tag und Nacht, acht von zehn. Beim Sitzen und beim Stuhlgang am schlimmsten.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Seit gestern Fieber bis 38,6. Die Stelle ist rot, heiß und hart. Blut im Stuhl habe ich nicht.",
+        "vegetativ": "Stuhlgang tut weh, ich halte ihn eher zurück.",
+        "vorerkrankungen": "Ich habe Zucker.",
+        "medikamente": "Metformin 1000 morgens und abends.",
+        "allergien": "Nein.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich bin verheiratet und fahre Lkw, sitze also den ganzen Tag.",
+        "noxen": "Ich rauche 15 Zigaretten am Tag. Alkohol selten."
+      }
+    },
+    "verdachtsdiagnose": "Perianalabszess links",
+    "diagnoseKeywords": ["perianalabszess", "abszess", "periproktitisch"],
+    "differenzialdiagnosen": [
+      "Thrombosierte Hämorrhoide",
+      "Pilonidalsinus",
+      "Morbus Crohn mit Fistel",
+      "Furunkel"
+    ],
+    "untersuchungen": [
+      "Inspektion und Palpation",
+      "Digital-rektale Untersuchung",
+      "Blutzucker, CRP, Leukozyten",
+      "Endosonographie bei Unklarheit"
+    ]
+  },
+  {
+    "id": "c139",
+    "title": "Hämorrhoidalleiden",
+    "category": "Chirurgie",
+    "difficulty": "leicht",
+    "patient": {
+      "name": "Gabriele Roth",
+      "age": 54,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Hellrotes Blut auf dem Toilettenpapier und Jucken am After"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit Monaten immer wieder hellrotes Blut auf dem Toilettenpapier und auf dem Stuhl, Jucken und Nässen am After, Gefühl eines Vorfalls beim Pressen, der sich von selbst zurückzieht. Keine Schmerzen, kein Gewichtsverlust, keine Änderung der Stuhlgewohnheiten.",
+      "vorerkrankungen": "Chronische Obstipation.",
+      "medikamente": "Gelegentlich Abführmittel.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Kein Darmkrebs in der Familie.",
+      "sozialanamnese": "Verheiratet, Sachbearbeiterin. Ballaststoffarme Ernährung, wenig Bewegung. Nichtraucherin. Letzte Koloskopie nie."
+    },
+    "sprache": [
+      {
+        "patient": "Auf dem Klopapier ist hellrotes Blut.",
+        "fach": "Es bestehen peranale Blutauflagerungen von hellrotem Blut."
+      },
+      {
+        "patient": "Beim Pressen tritt etwas heraus, das von selbst wieder zurückgeht.",
+        "fach": "Es besteht ein spontan reponibler Prolaps beim Pressen."
+      },
+      {
+        "patient": "Ich bin oft verstopft und muss stark pressen.",
+        "fach": "Es besteht eine chronische Obstipation mit starkem Pressen."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Hämorrhoiden",
+        "patient": "vergrößerte Gefäßpolster am After",
+        "uz": "gemorroy",
+        "ru": "геморрой",
+        "tr": "hemoroid",
+        "en": "haemorrhoids"
+      },
+      {
+        "de": "Proktoskopie",
+        "patient": "Spiegelung des Afters",
+        "uz": "proktoskopiya",
+        "ru": "проктоскопия",
+        "tr": "proktoskopi",
+        "en": "proctoscopy"
+      },
+      {
+        "de": "Gummibandligatur",
+        "patient": "Abbinden der Hämorrhoiden mit einem Gummiring",
+        "uz": "rezina halqa bilan bog‘lash",
+        "ru": "лигирование латексными кольцами",
+        "tr": "lastik bant ligasyonu",
+        "en": "rubber band ligation"
+      },
+      {
+        "de": "Prolaps",
+        "patient": "Vorfall, Heraustreten",
+        "uz": "tushish (prolaps)",
+        "ru": "выпадение (пролапс)",
+        "tr": "prolapsus (sarkma)",
+        "en": "prolapse"
+      },
+      {
+        "de": "Ballaststoffe",
+        "patient": "Faserstoffe in der Nahrung",
+        "uz": "kletchatka (tola)",
+        "ru": "пищевые волокна",
+        "tr": "lifli gıdalar",
+        "en": "dietary fibre"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe seit Monaten immer wieder hellrotes Blut auf dem Toilettenpapier.",
+      "answers": {
+        "beginn": "Seit einigen Monaten, immer mal wieder, besonders bei hartem Stuhl.",
+        "lokalisation": "Am After.",
+        "charakter": "Hellrotes Blut auf dem Papier und manchmal auf dem Stuhl. Es juckt und nässt. Schmerzen habe ich keine.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Beim Pressen tritt etwas heraus, das von selbst wieder zurückgeht. Schleim im Stuhl habe ich nicht.",
+        "vegetativ": "Ich bin oft verstopft und muss stark pressen. Gewicht ist stabil.",
+        "vorerkrankungen": "Ich bin eigentlich gesund, nur die Verstopfung.",
+        "medikamente": "Ab und zu ein Abführmittel.",
+        "allergien": "Nein.",
+        "familie": "Darmkrebs hatte in der Familie niemand.",
+        "sozial": "Ich bin verheiratet und Sachbearbeiterin, sitze viel. Ich esse wenig Vollkorn und bewege mich wenig. Eine Darmspiegelung hatte ich noch nie.",
+        "noxen": "Ich rauche nicht."
+      }
+    },
+    "verdachtsdiagnose": "Hämorrhoidalleiden Grad II mit peranaler Blutung",
+    "diagnoseKeywords": ["hämorrhoid"],
+    "differenzialdiagnosen": [
+      "Kolorektales Karzinom",
+      "Analfissur",
+      "Analkarzinom",
+      "Chronisch-entzündliche Darmerkrankung",
+      "Polyp"
+    ],
+    "untersuchungen": [
+      "Inspektion und digital-rektale Untersuchung",
+      "Proktoskopie",
+      "Koloskopie (ab 50 Jahren und bei Blutung)",
+      "Blutbild"
+    ]
+  },
+  {
+    "id": "c140",
+    "title": "Sigmavolvulus",
+    "category": "Chirurgie",
+    "difficulty": "schwer",
+    "patient": {
+      "name": "Otto Brandt",
+      "age": 82,
+      "gender": "männlich",
+      "hauptbeschwerde": "Stark aufgeblähter Bauch und seit zwei Tagen kein Stuhlgang"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Fremdanamnestisch (Pflegeheim) seit 2 Tagen kein Stuhl und keine Winde, zunehmend stark aufgeblähter Bauch, krampfartige Bauchschmerzen, einmal Erbrechen. Ähnliche, weniger schwere Episode vor 6 Monaten, die sich spontan löste.",
+      "vorerkrankungen": "Chronische Obstipation, Morbus Parkinson, Demenz.",
+      "medikamente": "Levodopa/Benserazid, Macrogol, Amitriptylin 25 mg zur Nacht.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Nicht erhebbar.",
+      "sozialanamnese": "Verwitwet, lebt im Pflegeheim, mit Rollator mobil."
+    },
+    "sprache": [
+      {
+        "patient": "Sein Bauch ist aufgebläht wie ein Ballon.",
+        "fach": "Es besteht ein massiv distendiertes Abdomen."
+      },
+      {
+        "patient": "Seit zwei Tagen kein Stuhl und keine Winde.",
+        "fach": "Es besteht ein Stuhl- und Windverhalt seit zwei Tagen."
+      },
+      {
+        "patient": "Das hatte er vor einem halben Jahr schon einmal, ging aber von selbst weg.",
+        "fach": "Vor sechs Monaten bestand eine ähnliche, spontan rückläufige Episode."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Volvulus",
+        "patient": "Verdrehung eines Darmabschnitts",
+        "uz": "volvulus (ichak buralishi)",
+        "ru": "заворот кишки",
+        "tr": "volvulus (bağırsak dönmesi)",
+        "en": "volvulus"
+      },
+      {
+        "de": "Kaffeebohnenzeichen",
+        "patient": "typisches Röntgenbild des verdrehten Sigmas",
+        "uz": "“kofe donasi” belgisi",
+        "ru": "симптом «кофейного зерна»",
+        "tr": "kahve çekirdeği işareti",
+        "en": "coffee bean sign"
+      },
+      {
+        "de": "Endoskopische Detorquierung",
+        "patient": "Zurückdrehen des Darms mit dem Endoskop",
+        "uz": "endoskopik orqaga burash",
+        "ru": "эндоскопическая деторсия",
+        "tr": "endoskopik detorsiyon",
+        "en": "endoscopic detorsion"
+      },
+      {
+        "de": "Sigmaresektion",
+        "patient": "Entfernung des Sigmas",
+        "uz": "sigmasimon ichak rezeksiyasi",
+        "ru": "резекция сигмовидной кишки",
+        "tr": "sigmoid rezeksiyonu",
+        "en": "sigmoid resection"
+      },
+      {
+        "de": "Darmgangrän",
+        "patient": "abgestorbener Darm",
+        "uz": "ichak gangrenasi",
+        "ru": "гангрена кишки",
+        "tr": "bağırsak gangreni",
+        "en": "bowel gangrene"
+      }
+    ],
+    "simulation": {
+      "opening": "(Pflegekraft) Herr Brandt hat seit zwei Tagen keinen Stuhlgang, und sein Bauch ist aufgebläht wie ein Ballon.",
+      "answers": {
+        "beginn": "(Pflegekraft) Seit zwei Tagen, heute ist es viel schlimmer.",
+        "lokalisation": "(Patient) Der ganze Bauch tut weh … vor allem links.",
+        "charakter": "(Pflegekraft) Krampfartige Schmerzen, er stöhnt immer wieder. Der Bauch ist prall und hart.",
+        "ausstrahlung": "(Pflegekraft) —",
+        "begleit": "(Pflegekraft) Keine Winde, kein Stuhl. Heute einmal Erbrechen. Fieber nicht.",
+        "vegetativ": "(Pflegekraft) Er trinkt wenig. Verstopfung hat er schon immer.",
+        "vorerkrankungen": "(Pflegekraft) Parkinson, Demenz und chronische Verstopfung. Vor einem halben Jahr hatte er so etwas schon einmal, das ging von selbst weg.",
+        "medikamente": "(Pflegekraft) Madopar, Macrogol und abends Amitriptylin 25.",
+        "allergien": "(Pflegekraft) Keine.",
+        "familie": "(Pflegekraft) Nicht bekannt.",
+        "sozial": "(Pflegekraft) Er ist Witwer und lebt bei uns im Heim, läuft mit Rollator.",
+        "noxen": "(Pflegekraft) Er raucht nicht und trinkt keinen Alkohol."
+      }
+    },
+    "verdachtsdiagnose": "Sigmavolvulus mit mechanischem Dickdarmileus",
+    "diagnoseKeywords": ["volvulus", "dickdarmileus", "ileus"],
+    "differenzialdiagnosen": [
+      "Kolonkarzinom mit Obstruktion",
+      "Pseudoobstruktion (Ogilvie-Syndrom)",
+      "Koprostase",
+      "Toxisches Megakolon"
+    ],
+    "untersuchungen": [
+      "Abdomenübersicht (Kaffeebohnenzeichen)",
+      "CT Abdomen",
+      "Labor (Laktat, Leukozyten, Elektrolyte, Kreatinin)",
+      "Flexible Sigmoidoskopie"
+    ],
+    "oberarzt": {
+      "therapie": [
+        "Endoskopische Detorquierung mit Darmrohr",
+        "Elektive Sigmaresektion im Intervall",
+        "Notfallresektion (Hartmann-Operation) bei Ischämie",
+        "Volumen- und Elektrolytausgleich",
+        "Anticholinerge Medikamente überprüfen"
+      ],
+      "komplikationen": [
+        "Darmgangrän (Ischämie)",
+        "Perforation mit Peritonitis",
+        "Sepsis",
+        "Rezidiv",
+        "Aspiration"
+      ]
+    }
+  },
+  {
+    "id": "c141",
+    "title": "Mammakarzinom",
+    "category": "Chirurgie",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Andrea Lorenz",
+      "age": 52,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Tastbarer Knoten in der linken Brust"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Vor 3 Wochen beim Duschen einen schmerzlosen, harten Knoten in der linken Brust oben außen ertastet. Seitdem eingezogene Haut über dem Knoten. Keine Absonderung aus der Brustwarze. Kein Gewichtsverlust.",
+      "vorerkrankungen": "Keine.",
+      "medikamente": "Hormonersatztherapie wegen Wechseljahresbeschwerden seit 5 Jahren.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Mutter: Brustkrebs mit 48 Jahren; Tante: Eierstockkrebs.",
+      "sozialanamnese": "Verheiratet, zwei Kinder (erstes Kind mit 34), Lehrerin. Nichtraucherin, Alkohol abends ein Glas Wein. Letzte Mammographie vor 3 Jahren."
+    },
+    "sprache": [
+      {
+        "patient": "Beim Duschen habe ich einen harten Knoten in der linken Brust gefühlt.",
+        "fach": "Die Patientin ertastete einen derben Knoten in der linken Mamma."
+      },
+      {
+        "patient": "Die Haut über dem Knoten ist eingezogen.",
+        "fach": "Es besteht eine Hauteinziehung über dem Befund."
+      },
+      {
+        "patient": "Meine Mutter hatte mit 48 Brustkrebs und meine Tante Eierstockkrebs.",
+        "fach": "Es besteht eine familiäre Belastung für Mamma- und Ovarialkarzinom."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Mammakarzinom",
+        "patient": "Brustkrebs",
+        "uz": "ko‘krak bezi saratoni",
+        "ru": "рак молочной железы",
+        "tr": "meme kanseri",
+        "en": "breast cancer"
+      },
+      {
+        "de": "Stanzbiopsie",
+        "patient": "Gewebeprobe mit einer Hohlnadel",
+        "uz": "igna biopsiyasi",
+        "ru": "трепан-биопсия",
+        "tr": "kalın iğne biyopsisi",
+        "en": "core needle biopsy"
+      },
+      {
+        "de": "Hormonrezeptoren",
+        "patient": "Andockstellen für Hormone auf den Tumorzellen",
+        "uz": "gormon retseptorlari",
+        "ru": "гормональные рецепторы",
+        "tr": "hormon reseptörleri",
+        "en": "hormone receptors"
+      },
+      {
+        "de": "Brusterhaltende Therapie",
+        "patient": "Operation, bei der die Brust erhalten bleibt",
+        "uz": "ko‘krakni saqlovchi operatsiya",
+        "ru": "органосохраняющая операция",
+        "tr": "meme koruyucu cerrahi",
+        "en": "breast-conserving surgery"
+      },
+      {
+        "de": "Wächterlymphknoten",
+        "patient": "erster Lymphknoten im Abflussgebiet des Tumors",
+        "uz": "qo‘riqchi limfa tuguni",
+        "ru": "сторожевой лимфоузел",
+        "tr": "sentinel lenf nodu",
+        "en": "sentinel lymph node"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe vor drei Wochen beim Duschen einen Knoten in der linken Brust gefunden.",
+      "answers": {
+        "beginn": "Vor drei Wochen habe ich ihn bemerkt. Wie lange er schon da ist, weiß ich nicht.",
+        "lokalisation": "Linke Brust, oben außen, zur Achsel hin.",
+        "charakter": "Hart, etwa so groß wie eine Haselnuss, tut nicht weh. Die Haut darüber ist eingezogen.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Aus der Brustwarze kommt nichts. In der Achsel habe ich nichts getastet. Knochenschmerzen habe ich nicht.",
+        "vegetativ": "Gewicht und Appetit sind normal.",
+        "vorerkrankungen": "Ich war bisher gesund.",
+        "medikamente": "Seit fünf Jahren Hormone wegen der Wechseljahre.",
+        "allergien": "Nein.",
+        "familie": "Meine Mutter hatte mit 48 Brustkrebs, meine Tante Eierstockkrebs.",
+        "sozial": "Ich bin verheiratet, habe zwei Kinder, das erste mit 34. Ich bin Lehrerin. Die letzte Mammographie war vor drei Jahren.",
+        "noxen": "Ich rauche nicht. Abends trinke ich ein Glas Wein."
+      }
+    },
+    "verdachtsdiagnose": "Verdacht auf Mammakarzinom links (oberer äußerer Quadrant) bei familiärer Belastung",
+    "diagnoseKeywords": ["mammakarzinom", "brustkrebs", "karzinom"],
+    "differenzialdiagnosen": [
+      "Fibroadenom",
+      "Mastopathie mit Zyste",
+      "Fettgewebsnekrose",
+      "Phylloides-Tumor"
+    ],
+    "untersuchungen": [
+      "Klinische Untersuchung beider Brüste und Lymphknoten",
+      "Mammographie und Mammasonographie",
+      "Stanzbiopsie (Histologie, Hormonrezeptoren, HER2, Ki-67)",
+      "Staging je nach Befund",
+      "Genetische Beratung (BRCA)"
+    ]
+  },
+  {
+    "id": "c142",
+    "title": "Struma nodosa",
+    "category": "Chirurgie",
+    "difficulty": "leicht",
+    "patient": {
+      "name": "Renate Krüger",
+      "age": 58,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Kloßgefühl im Hals und sichtbare Schwellung am Hals"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 2 Jahren langsam zunehmende Schwellung vorne am Hals, seit einigen Monaten Kloßgefühl und Druckgefühl beim Schlucken fester Speisen, enge Kragen stören. Keine Heiserkeit, keine Atemnot, keine Zeichen einer Über- oder Unterfunktion.",
+      "vorerkrankungen": "Arterielle Hypertonie.",
+      "medikamente": "Candesartan 8 mg 1-0-0.",
+      "allergien": "Kontrastmittelallergie (Hautausschlag) bekannt",
+      "familienanamnese": "Mutter und Schwester: Kropf.",
+      "sozialanamnese": "Verheiratet, Verkäuferin. Nichtraucherin. Aufgewachsen in Süddeutschland (Jodmangelgebiet)."
+    },
+    "sprache": [
+      {
+        "patient": "Ich habe ein Kloßgefühl im Hals, wenn ich schlucke.",
+        "fach": "Es besteht ein Globusgefühl mit Schluckbeschwerden."
+      },
+      {
+        "patient": "Mein Hals ist dicker geworden, die Kragen passen nicht mehr.",
+        "fach": "Es besteht eine langsam progrediente Halsumfangsvermehrung."
+      },
+      {
+        "patient": "Meine Mutter und meine Schwester hatten auch einen Kropf.",
+        "fach": "Es besteht eine familiäre Häufung einer Struma."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Struma",
+        "patient": "Vergrößerung der Schilddrüse, Kropf",
+        "uz": "buqoq (struma)",
+        "ru": "зоб",
+        "tr": "guatr",
+        "en": "goitre"
+      },
+      {
+        "de": "Szintigraphie",
+        "patient": "Untersuchung der Schilddrüse mit schwach radioaktivem Stoff",
+        "uz": "ssintigrafiya",
+        "ru": "сцинтиграфия",
+        "tr": "sintigrafi",
+        "en": "scintigraphy"
+      },
+      {
+        "de": "Kalter Knoten",
+        "patient": "Knoten, der wenig Jod aufnimmt",
+        "uz": "“sovuq” tugun",
+        "ru": "«холодный» узел",
+        "tr": "soğuk nodül",
+        "en": "cold nodule"
+      },
+      {
+        "de": "Thyreoidektomie",
+        "patient": "Entfernung der Schilddrüse",
+        "uz": "qalqonsimon bezni olib tashlash",
+        "ru": "тиреоидэктомия",
+        "tr": "tiroidektomi",
+        "en": "thyroidectomy"
+      },
+      {
+        "de": "Rekurrensparese",
+        "patient": "Lähmung des Stimmbandnervs",
+        "uz": "qaytuvchi nerv falaji",
+        "ru": "парез возвратного нерва",
+        "tr": "rekürren sinir felci",
+        "en": "recurrent laryngeal nerve palsy"
+      }
+    ],
+    "simulation": {
+      "opening": "Mein Hals ist in den letzten zwei Jahren immer dicker geworden, und jetzt habe ich beim Schlucken ein Kloßgefühl.",
+      "answers": {
+        "beginn": "Die Schwellung bemerke ich seit etwa zwei Jahren, das Kloßgefühl seit ein paar Monaten.",
+        "lokalisation": "Vorne am Hals, rechts etwas mehr.",
+        "charakter": "Ein Druck- und Kloßgefühl, vor allem bei Brot oder Fleisch. Schmerzen habe ich nicht.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Keine Heiserkeit, keine Atemnot, auch nicht im Liegen.",
+        "vegetativ": "Kein Herzrasen, kein Zittern, kein Schwitzen. Gewicht ist stabil, ich friere nicht mehr als sonst.",
+        "vorerkrankungen": "Ich habe hohen Blutdruck.",
+        "medikamente": "Candesartan 8 mg morgens.",
+        "allergien": "Auf Kontrastmittel habe ich mal einen Ausschlag bekommen.",
+        "familie": "Meine Mutter und meine Schwester hatten auch einen Kropf.",
+        "sozial": "Ich bin verheiratet und Verkäuferin. Aufgewachsen bin ich in Bayern.",
+        "noxen": "Ich rauche nicht. Alkohol selten."
+      }
+    },
+    "verdachtsdiagnose": "Euthyreote Struma nodosa mit lokalen Kompressionsbeschwerden",
+    "diagnoseKeywords": ["struma", "knotenstruma", "kropf"],
+    "differenzialdiagnosen": [
+      "Schilddrüsenkarzinom",
+      "Morbus Basedow",
+      "Hashimoto-Thyreoiditis",
+      "Schilddrüsenautonomie",
+      "Halszyste"
+    ],
+    "untersuchungen": [
+      "TSH, fT3, fT4, Kalzitonin",
+      "Schilddrüsensonographie",
+      "Szintigraphie bei Knoten über 1 cm",
+      "Feinnadelpunktion suspekter Knoten",
+      "Laryngoskopie vor Operation"
+    ]
+  },
+  {
+    "id": "c143",
+    "title": "Sinus pilonidalis",
+    "category": "Chirurgie",
+    "difficulty": "leicht",
+    "patient": {
+      "name": "Kevin Schuster",
+      "age": 22,
+      "gender": "männlich",
+      "hauptbeschwerde": "Schmerzhafte Schwellung über dem Steißbein"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 5 Tagen schmerzhafte, gerötete Schwellung in der Gesäßfalte über dem Steißbein, Sitzen schmerzhaft, seit gestern Eiterabsonderung. Vor einem Jahr ähnliche Beschwerden, die von selbst abklangen. Kein Fieber.",
+      "vorerkrankungen": "Keine.",
+      "medikamente": "Keine.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Ledig, Student der Informatik, sitzt viel. Starke Körperbehaarung, Übergewicht. Raucher (10 Zigaretten/Tag)."
+    },
+    "sprache": [
+      {
+        "patient": "Über dem Steißbein ist eine schmerzhafte Beule.",
+        "fach": "Es besteht eine schmerzhafte Schwellung in der Rima ani über dem Os coccygis."
+      },
+      {
+        "patient": "Seit gestern kommt Eiter heraus.",
+        "fach": "Seit dem Vortag besteht eine eitrige Sekretion."
+      },
+      {
+        "patient": "Das hatte ich vor einem Jahr schon einmal.",
+        "fach": "Es handelt sich um ein Rezidiv; die Erstmanifestation war vor einem Jahr."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Sinus pilonidalis",
+        "patient": "Entzündung in der Gesäßfalte durch eingewachsene Haare",
+        "uz": "pilonidal sinus (dumg‘aza oqmasi)",
+        "ru": "пилонидальный синус (эпителиальный копчиковый ход)",
+        "tr": "pilonidal sinüs",
+        "en": "pilonidal sinus"
+      },
+      {
+        "de": "Rima ani",
+        "patient": "Gesäßfalte",
+        "uz": "dumba burmasi",
+        "ru": "межъягодичная складка",
+        "tr": "kalça arası yarık",
+        "en": "natal cleft"
+      },
+      {
+        "de": "Exzision",
+        "patient": "Herausschneiden von Gewebe",
+        "uz": "kesib olib tashlash (ekssiziya)",
+        "ru": "иссечение",
+        "tr": "eksizyon",
+        "en": "excision"
+      },
+      {
+        "de": "Sekundäre Wundheilung",
+        "patient": "offene Wunde heilt von unten zu",
+        "uz": "ikkilamchi yara bitishi",
+        "ru": "заживление вторичным натяжением",
+        "tr": "sekonder yara iyileşmesi",
+        "en": "healing by secondary intention"
+      },
+      {
+        "de": "Rezidiv",
+        "patient": "Wiederauftreten einer Krankheit",
+        "uz": "qaytalanish (residiv)",
+        "ru": "рецидив",
+        "tr": "nüks",
+        "en": "recurrence"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe seit fünf Tagen eine schmerzhafte Beule über dem Steißbein, und jetzt kommt Eiter raus.",
+      "answers": {
+        "beginn": "Vor fünf Tagen fing es an. Seit gestern kommt Eiter heraus.",
+        "lokalisation": "Oben in der Pofalte, über dem Steißbein.",
+        "charakter": "Pochend, beim Sitzen am schlimmsten, sechs von zehn. Seit der Eiter rauskommt, ist es etwas besser.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Fieber habe ich nicht. Die Stelle ist rot und warm.",
+        "vegetativ": "Sonst geht es mir gut.",
+        "vorerkrankungen": "Ich bin gesund. Vor einem Jahr hatte ich so etwas schon einmal, das ging aber von selbst weg.",
+        "medikamente": "Keine.",
+        "allergien": "Nein.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich studiere Informatik und sitze den ganzen Tag am Rechner. Ich bin ziemlich behaart.",
+        "noxen": "Ich rauche zehn Zigaretten am Tag, Alkohol am Wochenende."
+      }
+    },
+    "verdachtsdiagnose": "Abszedierender Sinus pilonidalis (Rezidiv)",
+    "diagnoseKeywords": ["pilonidal", "steißbeinfistel"],
+    "differenzialdiagnosen": ["Perianalabszess", "Analfistel", "Furunkel", "Hidradenitis suppurativa"],
+    "untersuchungen": [
+      "Inspektion (Porus in der Mittellinie)",
+      "Palpation",
+      "Digital-rektale Untersuchung",
+      "Entzündungswerte"
+    ]
+  },
+  {
+    "id": "c144",
+    "title": "Boerhaave-Syndrom",
+    "category": "Chirurgie",
+    "difficulty": "schwer",
+    "patient": {
+      "name": "Dirk Hartwig",
+      "age": 49,
+      "gender": "männlich",
+      "hauptbeschwerde": "Plötzliche stärkste Brustschmerzen nach heftigem Erbrechen"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Nach einer Feier mit reichlich Alkohol und Essen heute Nacht mehrfach heftiges Erbrechen, danach plötzlich stärkste retrosternale und epigastrische Schmerzen mit Ausstrahlung in den Rücken, Atemnot, Schmerzen beim Schlucken. Knistern unter der Haut am Hals.",
+      "vorerkrankungen": "Alkoholabusus, Refluxkrankheit.",
+      "medikamente": "Pantoprazol 20 mg bei Bedarf.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Geschieden, Gastwirt. Alkohol täglich 4–5 Bier, Raucher (20 Zigaretten/Tag)."
+    },
+    "sprache": [
+      {
+        "patient": "Nach dem Erbrechen kam ein Schmerz in der Brust, als würde etwas zerreißen.",
+        "fach": "Nach heftigem Erbrechen traten plötzlich vernichtende retrosternale Schmerzen auf."
+      },
+      {
+        "patient": "Am Hals knistert es unter der Haut.",
+        "fach": "Es besteht ein zervikales Hautemphysem."
+      },
+      {
+        "patient": "Schlucken tut furchtbar weh.",
+        "fach": "Es besteht eine ausgeprägte Odynophagie."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Boerhaave-Syndrom",
+        "patient": "Riss der ganzen Speiseröhrenwand durch Erbrechen",
+        "uz": "Boerhaave sindromi (qizilo‘ngach yorilishi)",
+        "ru": "синдром Бурхаве",
+        "tr": "Boerhaave sendromu",
+        "en": "Boerhaave syndrome"
+      },
+      {
+        "de": "Mediastinitis",
+        "patient": "Entzündung des Raums zwischen den Lungen",
+        "uz": "mediastinit",
+        "ru": "медиастинит",
+        "tr": "mediastinit",
+        "en": "mediastinitis"
+      },
+      {
+        "de": "Hautemphysem",
+        "patient": "Luft unter der Haut",
+        "uz": "teri osti emfizemasi",
+        "ru": "подкожная эмфизема",
+        "tr": "cilt altı amfizem",
+        "en": "subcutaneous emphysema"
+      },
+      {
+        "de": "Ösophagusstent",
+        "patient": "Röhrchen, das die Speiseröhre von innen abdichtet",
+        "uz": "qizilo‘ngach stenti",
+        "ru": "стент пищевода",
+        "tr": "özofagus stenti",
+        "en": "oesophageal stent"
+      },
+      {
+        "de": "Odynophagie",
+        "patient": "Schmerzen beim Schlucken",
+        "uz": "yutishda og‘riq",
+        "ru": "боль при глотании",
+        "tr": "yutkunma ağrısı",
+        "en": "painful swallowing"
+      }
+    ],
+    "simulation": {
+      "opening": "Nach dem Erbrechen habe ich furchtbare Schmerzen in der Brust bekommen, ich kriege kaum Luft!",
+      "answers": {
+        "beginn": "Heute Nacht gegen drei Uhr, direkt nach heftigem Erbrechen.",
+        "lokalisation": "Hinter dem Brustbein und im Oberbauch.",
+        "charakter": "Als würde etwas zerreißen, zehn von zehn. Beim Atmen und Schlucken noch schlimmer.",
+        "ausstrahlung": "In den Rücken zwischen die Schulterblätter.",
+        "begleit": "Atemnot. Am Hals knistert es unter der Haut. Ich schwitze stark.",
+        "vegetativ": "Ich habe vier-, fünfmal heftig erbrochen, erst Essen, zuletzt etwas Blut.",
+        "vorerkrankungen": "Sodbrennen schon lange.",
+        "medikamente": "Pantoprazol, wenn ich es brauche.",
+        "allergien": "Keine.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich bin geschieden und Gastwirt. Gestern war eine große Feier.",
+        "noxen": "Ich trinke jeden Tag vier, fünf Bier, gestern deutlich mehr. Ich rauche eine Schachtel am Tag."
+      }
+    },
+    "verdachtsdiagnose": "Boerhaave-Syndrom (spontane Ösophagusruptur) mit beginnender Mediastinitis",
+    "diagnoseKeywords": ["boerhaave", "ösophagusruptur", "ösophagusperforation"],
+    "differenzialdiagnosen": [
+      "Mallory-Weiss-Syndrom",
+      "Akutes Koronarsyndrom",
+      "Aortendissektion",
+      "Perforiertes Ulkus",
+      "Spontanpneumothorax",
+      "Akute Pankreatitis"
+    ],
+    "untersuchungen": [
+      "CT Thorax mit oralem wasserlöslichem Kontrastmittel",
+      "Röntgen-Thorax (Pneumomediastinum, Pleuraerguss)",
+      "EKG und Troponin",
+      "Labor (Leukozyten, CRP, Lipase, Laktat)",
+      "Blutgasanalyse"
+    ],
+    "oberarzt": {
+      "therapie": [
+        "Nahrungskarenz und Magensonde",
+        "Breitbandantibiose und Antimykotikum",
+        "Endoskopischer Stent oder Clip bei früher Diagnose",
+        "Thoraxdrainage bei Pleuraerguss",
+        "Operative Übernähung bei ausgedehnter Ruptur"
+      ],
+      "komplikationen": [
+        "Mediastinitis",
+        "Sepsis und septischer Schock",
+        "Pleuraempyem",
+        "Hohe Letalität bei verzögerter Therapie"
+      ]
+    }
+  },
+  {
+    "id": "c145",
+    "title": "Rupturiertes Bauchaortenaneurysma",
+    "category": "Chirurgie",
+    "difficulty": "schwer",
+    "patient": {
+      "name": "Werner Pohl",
+      "age": 76,
+      "gender": "männlich",
+      "hauptbeschwerde": "Plötzliche starke Bauch- und Rückenschmerzen mit Kreislaufschwäche"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Vor 1 Stunde plötzlich stärkste Bauch- und Rückenschmerzen links, kurz danach Schwindel und Kollaps im Badezimmer. Kaltschweißig, blass. Vor 2 Jahren beim Hausarzt ein Aneurysma von 4,8 cm festgestellt, Kontrollen nicht wahrgenommen.",
+      "vorerkrankungen": "Arterielle Hypertonie, COPD, KHK.",
+      "medikamente": "Ramipril 5 mg, ASS 100 mg, Atorvastatin 40 mg, Tiotropium-Spray.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Bruder: an „geplatzter Bauchschlagader“ verstorben.",
+      "sozialanamnese": "Verheiratet, Rentner (früher Schlosser). Raucher seit 55 Jahren (60 Packungsjahre)."
+    },
+    "sprache": [
+      {
+        "patient": "Mir ist schwarz vor Augen geworden, und ich bin umgekippt.",
+        "fach": "Es kam zu einer Synkope."
+      },
+      {
+        "patient": "Der Schmerz geht vom Bauch in den Rücken.",
+        "fach": "Die abdominellen Schmerzen strahlen in den Rücken aus."
+      },
+      {
+        "patient": "Der Hausarzt hat vor zwei Jahren eine Erweiterung der Bauchschlagader gefunden.",
+        "fach": "Vor zwei Jahren wurde ein infrarenales Bauchaortenaneurysma von 4,8 cm diagnostiziert."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Bauchaortenaneurysma",
+        "patient": "Aussackung der Bauchschlagader",
+        "uz": "qorin aortasi anevrizmasi",
+        "ru": "аневризма брюшной аорты",
+        "tr": "abdominal aort anevrizması",
+        "en": "abdominal aortic aneurysm"
+      },
+      {
+        "de": "Ruptur",
+        "patient": "Riss, Platzen",
+        "uz": "yorilish",
+        "ru": "разрыв",
+        "tr": "yırtılma (rüptür)",
+        "en": "rupture"
+      },
+      {
+        "de": "Permissive Hypotonie",
+        "patient": "bewusst niedriger Blutdruck bis zur Operation",
+        "uz": "ruxsat etilgan gipotoniya",
+        "ru": "допустимая гипотония",
+        "tr": "permisif hipotansiyon",
+        "en": "permissive hypotension"
+      },
+      {
+        "de": "EVAR",
+        "patient": "Stentprothese, die über die Leiste eingeführt wird",
+        "uz": "endovaskulyar aorta protezi (EVAR)",
+        "ru": "эндоваскулярное протезирование (EVAR)",
+        "tr": "endovasküler aort onarımı (EVAR)",
+        "en": "endovascular aneurysm repair"
+      },
+      {
+        "de": "Pulsierender Tumor",
+        "patient": "tastbare pulsierende Schwellung im Bauch",
+        "uz": "pulslanuvchi tuzilma",
+        "ru": "пульсирующее образование",
+        "tr": "nabız atan kitle",
+        "en": "pulsatile mass"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe plötzlich so starke Schmerzen im Bauch und im Rücken … mir ist ganz schwindelig.",
+      "answers": {
+        "beginn": "Vor einer Stunde, ganz plötzlich, im Bad.",
+        "lokalisation": "Im ganzen Bauch, links mehr, und im unteren Rücken.",
+        "charakter": "Reißend, sehr stark, neun von zehn, dauernd.",
+        "ausstrahlung": "In den Rücken und in die linke Leiste.",
+        "begleit": "Mir wurde schwarz vor Augen und ich bin umgekippt. Jetzt ist mir kalt und ich schwitze.",
+        "vegetativ": "Mir ist übel. Wasserlassen war heute normal.",
+        "vorerkrankungen": "Bluthochdruck, COPD, Herzkranzgefäße. Vor zwei Jahren hat der Hausarzt eine Erweiterung der Bauchschlagader gefunden, 4,8 Zentimeter. Zur Kontrolle bin ich nicht gegangen.",
+        "medikamente": "Ramipril, ASS 100, Atorvastatin und ein Spray für die Lunge.",
+        "allergien": "Keine.",
+        "familie": "Mein Bruder ist an einer geplatzten Bauchschlagader gestorben.",
+        "sozial": "Ich bin verheiratet und Rentner, früher Schlosser.",
+        "noxen": "Ich rauche seit 55 Jahren, etwa eine Schachtel am Tag."
+      }
+    },
+    "verdachtsdiagnose": "Rupturiertes infrarenales Bauchaortenaneurysma mit hämorrhagischem Schock",
+    "diagnoseKeywords": ["aortenaneurysma", "aneurysma", "ruptur"],
+    "differenzialdiagnosen": [
+      "Aortendissektion",
+      "Nierenkolik",
+      "Mesenterialischämie",
+      "Perforiertes Ulkus",
+      "Akute Pankreatitis",
+      "Myokardinfarkt"
+    ],
+    "untersuchungen": [
+      "Notfallsonographie Abdomen (FAST)",
+      "CT-Angiographie (bei stabilem Kreislauf)",
+      "Blutgruppe, Kreuzblut, Blutbild, Gerinnung",
+      "Blutgasanalyse mit Laktat",
+      "EKG"
+    ],
+    "oberarzt": {
+      "therapie": [
+        "Sofortige Alarmierung der Gefäßchirurgie",
+        "Permissive Hypotonie (systolisch 80–90 mmHg)",
+        "Massivtransfusionsprotokoll",
+        "Notfallmäßige EVAR oder offene Operation",
+        "Postoperative Intensivtherapie"
+      ],
+      "komplikationen": [
+        "Hämorrhagischer Schock",
+        "Abdominelles Kompartmentsyndrom",
+        "Akutes Nierenversagen",
+        "Kolonischämie",
+        "Hohe Letalität"
+      ]
+    }
+  },
+  {
+    "id": "c146",
+    "title": "Thrombophlebitis bei Varikosis",
+    "category": "Chirurgie",
+    "difficulty": "leicht",
+    "patient": {
+      "name": "Sabine Kraft",
+      "age": 61,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Schmerzhafter, geröteter Strang am Unterschenkel"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit 3 Tagen schmerzhafter, geröteter, verhärteter Strang an der Innenseite des rechten Unterschenkels entlang einer Krampfader. Keine Schwellung des ganzen Beins, keine Atemnot. Vorher lange Busreise.",
+      "vorerkrankungen": "Varikosis beidseits seit Jahren, Adipositas.",
+      "medikamente": "Keine.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Mutter: Krampfadern, Beinvenenthrombose.",
+      "sozialanamnese": "Verheiratet, Friseurin (langes Stehen). Nichtraucherin."
+    },
+    "sprache": [
+      {
+        "patient": "An meiner Krampfader ist ein harter, roter Strang, der wehtut.",
+        "fach": "Es besteht ein druckschmerzhafter, geröteter, derber Venenstrang entlang einer Varize."
+      },
+      {
+        "patient": "Das ganze Bein ist nicht dick.",
+        "fach": "Eine Umfangsdifferenz der Beine besteht nicht."
+      },
+      {
+        "patient": "Vorher war ich zehn Stunden im Bus.",
+        "fach": "Vorausgegangen war eine lange Busreise."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Thrombophlebitis",
+        "patient": "Entzündung einer oberflächlichen Vene mit Gerinnsel",
+        "uz": "tromboflebit",
+        "ru": "тромбофлебит",
+        "tr": "tromboflebit",
+        "en": "thrombophlebitis"
+      },
+      {
+        "de": "Varikosis",
+        "patient": "Krampfadern",
+        "uz": "varikoz kengayish",
+        "ru": "варикозное расширение вен",
+        "tr": "varis",
+        "en": "varicose veins"
+      },
+      {
+        "de": "Duplexsonographie",
+        "patient": "Ultraschall der Gefäße mit Blutfluss",
+        "uz": "dupleks UTT",
+        "ru": "дуплексное сканирование",
+        "tr": "dupleks ultrason",
+        "en": "duplex ultrasound"
+      },
+      {
+        "de": "Fondaparinux",
+        "patient": "Spritze gegen Blutgerinnsel",
+        "uz": "fondaparinuks",
+        "ru": "фондапаринукс",
+        "tr": "fondaparinuks",
+        "en": "fondaparinux"
+      },
+      {
+        "de": "Kompressionsstrumpf",
+        "patient": "eng anliegender Strumpf für die Venen",
+        "uz": "kompression paypoq",
+        "ru": "компрессионный чулок",
+        "tr": "kompresyon çorabı",
+        "en": "compression stocking"
+      }
+    ],
+    "simulation": {
+      "opening": "An meinem rechten Unterschenkel ist eine Krampfader rot, hart und tut weh.",
+      "answers": {
+        "beginn": "Seit drei Tagen, nach einer langen Busreise.",
+        "lokalisation": "Innen am rechten Unterschenkel, etwa eine Handbreit lang.",
+        "charakter": "Brennend und druckschmerzhaft, vier von zehn. Der Strang ist hart wie eine Schnur.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Das Bein ist nicht dick. Atemnot oder Brustschmerzen habe ich nicht. Fieber nicht.",
+        "vegetativ": "Sonst geht es mir gut.",
+        "vorerkrankungen": "Krampfadern an beiden Beinen seit Jahren. Ich bin übergewichtig.",
+        "medikamente": "Ich nehme keine Medikamente, auch keine Hormone.",
+        "allergien": "Nein.",
+        "familie": "Meine Mutter hatte Krampfadern und eine Thrombose.",
+        "sozial": "Ich bin verheiratet und Friseurin, ich stehe den ganzen Tag.",
+        "noxen": "Ich rauche nicht."
+      }
+    },
+    "verdachtsdiagnose": "Oberflächliche Thrombophlebitis (Varikophlebitis) der V. saphena magna rechts",
+    "diagnoseKeywords": ["thrombophlebitis", "varikophlebitis", "phlebitis"],
+    "differenzialdiagnosen": [
+      "Tiefe Beinvenenthrombose",
+      "Erysipel",
+      "Lymphangitis",
+      "Rupturierte Baker-Zyste"
+    ],
+    "untersuchungen": [
+      "Duplexsonographie (Abstand zur Mündung, tiefe Venen)",
+      "Messung der Beinumfänge",
+      "Ggf. D-Dimere",
+      "Klinische Untersuchung auf Erysipel"
+    ]
   }
 ]
