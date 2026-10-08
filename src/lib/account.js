@@ -1,6 +1,7 @@
 import { useSyncExternalStore } from "react";
 import { loadBundledContent, setContent } from "../data/content";
 import { storage } from "./storage";
+import { contentCache } from "./contentCache";
 import { TG } from "./telegram";
 import { LANG, LANGS, onLangChange } from "./i18n";
 
@@ -12,8 +13,7 @@ export const TG_BOT = import.meta.env.VITE_TG_BOT || "";
 export const ARTIFACT = import.meta.env.MODE === "artifact";
 
 const TOKEN_KEY = "fsp.token",
-  ACCOUNT_KEY = "fsp.account",
-  CONTENT_KEY = "fsp.content";
+  ACCOUNT_KEY = "fsp.account";
 
 // Artifact versiyasi faqat egasi uchun (shaxsiy): hech qanday cheklov yo‘q
 const OWNER = {
@@ -62,16 +62,17 @@ export const sessionToken = () => storage.get(TOKEN_KEY, null);
 const stillValid = (a) =>
   !!a?.materials && (new Date(a.plan?.until ?? 0) > new Date() || new Date(a.trialEnd) > new Date());
 
+// Materiallar keshi IndexedDB da (src/lib/contentCache.js) — o‘chirilishini kutish uchun Promise qaytaradi
 function clearLocal() {
   storage.remove(TOKEN_KEY);
   storage.remove(ACCOUNT_KEY);
-  storage.remove(CONTENT_KEY);
+  return contentCache.remove();
 }
 
 async function fetchContent(account) {
   let data = await api("/content");
   setContent(data);
-  storage.set(CONTENT_KEY, { uid: account.user.id, data });
+  await contentCache.set({ uid: account.user.id, data });
 }
 
 // Ilova yuklanishidan oldin chaqiriladi (src/main.jsx): materiallar sahifalardan oldin tayyor bo‘lishi kerak
@@ -90,7 +91,7 @@ export async function bootAccount() {
   if (!storage.get(TOKEN_KEY, null)) return update({ status: "guest" });
 
   let cached = storage.get(ACCOUNT_KEY, null),
-    cachedContent = storage.get(CONTENT_KEY, null);
+    cachedContent = await contentCache.get();
   // Tez yo‘l: keshdan darhol ochamiz, server bilan fonda tekshiramiz
   if (stillValid(cached) && cachedContent?.uid === cached.user.id) {
     setContent(cachedContent.data);
@@ -103,12 +104,12 @@ export async function bootAccount() {
     let { account, progress } = await api("/me");
     storage.set(ACCOUNT_KEY, account);
     if (account.materials) await fetchContent(account);
-    else storage.remove(CONTENT_KEY);
+    else await contentCache.remove();
     update({ status: "ready", account, serverProgress: progress });
     syncLang();
   } catch (e) {
     if (e.status === 401) {
-      clearLocal();
+      await clearLocal();
       return update({ status: "guest" });
     }
     // Internet yo‘q: oxirgi ma’lum holat bilan (materiallarsiz)
@@ -152,17 +153,17 @@ async function verifyInBackground(cached) {
     update({ account, serverProgress: progress });
     // Huquq tugagan (yoki boshqa foydalanuvchi) — materiallarni olib tashlab qayta ochamiz
     if (!account.materials || account.user.id !== cached.user.id) {
-      storage.remove(CONTENT_KEY);
+      await contentCache.remove();
       window.location.reload();
       return;
     }
     // Materiallar yangilangan bo‘lsa — keyingi ochilishda yangisi bo‘ladi
     api("/content")
-      .then((data) => storage.set(CONTENT_KEY, { uid: account.user.id, data }))
+      .then((data) => contentCache.set({ uid: account.user.id, data }))
       .catch(() => {});
   } catch (e) {
     if (e.status === 401) {
-      clearLocal();
+      await clearLocal();
       window.location.reload();
     }
   }
@@ -184,7 +185,7 @@ async function signIn(path, body) {
   let { token, account } = await api(path, { method: "POST", body });
   storage.set(TOKEN_KEY, token);
   storage.set(ACCOUNT_KEY, account);
-  storage.remove(CONTENT_KEY);
+  await contentCache.remove();
 }
 
 // Telegram Login Widget bergan ma’lumot → server imzoni tekshiradi → sessiya tokeni
@@ -193,8 +194,8 @@ export const loginWithTelegram = (tgUser) => signIn("/auth/telegram", tgUser);
 // Bot ichidagi Mini App: Telegram imzolagan initData → server tekshiradi → sessiya tokeni
 export const loginWithTelegramApp = () => signIn("/auth/webapp", { initData: TG?.initData ?? "" });
 
-export function logout() {
-  clearLocal();
+export async function logout() {
+  await clearLocal();
   // Progress serverda saqlangan; shu qurilmada keyin boshqa odam kirsa, unga o‘tib ketmasin
   storage.remove("fsp.progress");
   window.location.hash = "#/";
