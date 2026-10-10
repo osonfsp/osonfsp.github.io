@@ -1,6 +1,10 @@
 // Gemini so'rovi: asosiy model, band bo'lsa — zaxira modellar (GEMINI_MODELS), har urinishga vaqt chegarasi
-export async function callGemini(env, contents, { json = false, tries, timeout = 12_000 } = {}) {
-  let models = (env.GEMINI_MODELS || "gemini-flash-lite-latest").split(",").map((m) => m.trim()),
+export async function callGemini(
+  env,
+  contents,
+  { json = false, tries, timeout = 12_000, models: only } = {},
+) {
+  let models = only ?? (env.GEMINI_MODELS || "gemini-flash-lite-latest").split(",").map((m) => m.trim()),
     payload = JSON.stringify({
       contents,
       generationConfig: {

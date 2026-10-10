@@ -29,11 +29,15 @@ import {
   webhookSecret,
 } from "./bot.js";
 import { callGemini } from "./gemini.js";
+import { getNews, refreshNews } from "./news.js";
 import { AI_DAILY_CAP, FREE_EXAMS, PLANS, SESSION_DAYS, TRIAL_HOURS, rights } from "./rules.js";
 
 export { Store } from "./store.js";
 
 const CONTENT = JSON.stringify({ cases, words, pairs, arztbriefe, aufklaerung, redemittel });
+
+// wrangler.toml [triggers] dagi bilan bir xil bo'lishi kerak
+const NEWS_CRON = "7 */3 * * *";
 
 const MAX_BODY = 300_000,
   MAX_AI_BODY = 60_000;
@@ -219,6 +223,10 @@ export default {
       return d?.ok ? reply(200, { username: d.result.username }) : reply(503, { error: "bot" });
     }
 
+    // ---- Ochiq: Germaniya tibbiyot yangiliklari (bosh sahifa; news.js) ----
+    if (path === "/news" && req.method === "GET")
+      return reply(200, await getNews(env, store, ctx), { "Cache-Control": "public, max-age=600" });
+
     // ---- Kirish ----
     if (path === "/auth/telegram" && req.method === "POST") {
       let tg = await verifyTelegram(body, env.TELEGRAM_BOT_TOKEN);
@@ -326,8 +334,15 @@ export default {
     return reply(404, { error: "not_found" });
   },
 
-  // Cloudflare cron (wrangler.toml [triggers]): eslatmalar, kun savoli, ommaviy xabar — bot.js
+  // Cloudflare cron (wrangler.toml [triggers]): eslatmalar, kun savoli, ommaviy xabar — bot.js;
+  // har 3 soatda — tibbiyot yangiliklari (news.js), alohida ishga tushadi, bot cron'i chegarasini yemaydi
   async scheduled(event, env, ctx) {
+    if (event.cron === NEWS_CRON)
+      return ctx.waitUntil(
+        refreshNews(env, env.STORE.get(env.STORE.idFromName("main"))).catch((e) =>
+          console.log("news", e?.stack || e),
+        ),
+      );
     ctx.waitUntil(
       runCron(env, env.STORE.get(env.STORE.idFromName("main"))).catch((e) =>
         console.log("cron", e?.stack || e),

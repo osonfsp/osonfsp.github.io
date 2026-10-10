@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { Helix3D } from "../components/Helix3D";
 import { Icon } from "../components/Icon";
 import { Link } from "../components/Link";
+import { MedNews } from "../components/MedNews";
 import { CASE_SECTIONS, STATS } from "../data/index";
 import { loc, tr } from "../lib/i18n";
 import { FREE_LIMITS, TRIAL_HOURS } from "../lib/plan";
@@ -338,6 +339,9 @@ export function HomePage() {
           ))}
         </div>
       </section>
+
+      {/* Germaniya tibbiyot yangiliklari (serverdan, avtomatik) */}
+      <MedNews />
 
       {/* Narx + chaqiruv */}
       <section className="container-app pb-16">

@@ -24,4 +24,5 @@ simple = { limit = 60, period = 60 }
 
 # Bot: har 5 daqiqada — kunlik eslatma va kun savoli, sinov/tarif eslatmasi, ommaviy xabar (bot.js runCron)
 [triggers]
-crons = ["*/5 * * * *"]
+# Har 3 soatda (7-daqiqada) — tibbiyot yangiliklari (news.js); index.js dagi NEWS_CRON bilan bir xil
+crons = ["*/5 * * * *", "7 */3 * * *"]
