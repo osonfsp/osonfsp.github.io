@@ -88,8 +88,16 @@ const NAV_GROUPS = [
       { href: "/woerter", icon: "book", label: tr("So‘zlar", "Слова", "Kelimeler", "Words") },
       { href: "/redemittel", icon: "quote", label: "Redemittel" },
       { href: "/fachsprache", icon: "swap", label: "Fach ↔ Patient" },
-      { href: "/aufklaerung", icon: "info", label: tr("Aufklärung", "Aufklärung", "Aufklärung", "Aufklärung") },
-      { href: "/hoeren", icon: "headphones", label: tr("Tinglab tushunish", "Аудирование", "Dinleme", "Listening") },
+      {
+        href: "/aufklaerung",
+        icon: "info",
+        label: tr("Aufklärung", "Aufklärung", "Aufklärung", "Aufklärung"),
+      },
+      {
+        href: "/hoeren",
+        icon: "headphones",
+        label: tr("Tinglab tushunish", "Аудирование", "Dinleme", "Listening"),
+      },
     ],
   },
   {
@@ -114,7 +122,10 @@ function NavItem({ l, on }) {
       )}
       aria-current={on ? "page" : undefined}
     >
-      <Icon name={l.icon} className={cx("h-[18px] w-[18px] shrink-0", on ? "text-teal-300" : "text-white/55")} />
+      <Icon
+        name={l.icon}
+        className={cx("h-[18px] w-[18px] shrink-0", on ? "text-teal-300" : "text-white/55")}
+      />
       <span className="flex-1">{l.label}</span>
       {l.tag && (
         <span className="rounded-md bg-white/10 px-1.5 py-0.5 text-[10px] font-semibold text-teal-200/80">
@@ -221,7 +232,11 @@ function Sidebar({ onClose }) {
                   {g.title}
                   <span className="flex items-center gap-1 normal-case tracking-normal">
                     {!open && g.items.length}
-                    <Icon name={open ? "chevronDown" : "chevronRight"} className="h-3.5 w-3.5" strokeWidth={2.2} />
+                    <Icon
+                      name={open ? "chevronDown" : "chevronRight"}
+                      className="h-3.5 w-3.5"
+                      strokeWidth={2.2}
+                    />
                   </span>
                 </button>
               ) : (
@@ -409,7 +424,7 @@ function BottomNav() {
     active = (h) => (h === "/" ? path === "/" : path === h || path.startsWith(`${h}/`));
   return (
     <nav
-      className="fixed inset-x-0 bottom-0 z-40 border-t border-slate-900/10 bg-white/85 pb-[env(safe-area-inset-bottom)] backdrop-blur-xl dark:border-white/10 dark:bg-slate-950/85 lg:hidden"
+      className="app-chrome fixed inset-x-0 bottom-0 z-40 border-t border-slate-900/10 bg-white/85 pb-[env(safe-area-inset-bottom)] backdrop-blur-xl dark:border-white/10 dark:bg-slate-950/85 lg:hidden"
       aria-label={tr("Asosiy bo‘limlar", "Основные разделы", "Ana bölümler", "Main sections")}
     >
       <div className="mx-auto grid h-16 max-w-md grid-cols-5">
@@ -421,13 +436,13 @@ function BottomNav() {
               href={t.href}
               className={cx(
                 "relative flex flex-col items-center justify-center gap-1 text-[11px] font-medium transition-colors",
-                on ? "text-teal-700 dark:text-teal-300" : "text-slate-500 active:text-slate-800 dark:text-slate-400",
+                on
+                  ? "text-teal-700 dark:text-teal-300"
+                  : "text-slate-500 active:text-slate-800 dark:text-slate-400",
               )}
               aria-current={on ? "page" : undefined}
             >
-              {on && (
-                <span className="absolute top-0 h-0.5 w-8 rounded-full bg-teal-500" aria-hidden />
-              )}
+              {on && <span className="absolute top-0 h-0.5 w-8 rounded-full bg-teal-500" aria-hidden />}
               <span
                 className={cx(
                   "grid h-7 w-12 place-items-center rounded-full transition-colors",
@@ -478,7 +493,7 @@ export function AppShell({ children }) {
       {/* Kompyuter: chapda qotirilgan panel */}
       <aside
         className={cx(
-          "fixed inset-y-0 left-0 z-40 hidden w-64 transition-transform duration-200 lg:block",
+          "app-chrome fixed inset-y-0 left-0 z-40 hidden w-64 transition-transform duration-200 lg:block",
           !desktopOpen && "-translate-x-full",
         )}
         aria-hidden={!desktopOpen}
@@ -491,11 +506,11 @@ export function AppShell({ children }) {
       </MobileDrawer>
       <div
         className={cx(
-          "flex min-h-screen flex-col pb-[calc(4rem+env(safe-area-inset-bottom))] transition-[padding] duration-200 lg:pb-0",
+          "app-body flex min-h-screen flex-col pb-[calc(4rem+env(safe-area-inset-bottom))] transition-[padding] duration-200 lg:pb-0",
           desktopOpen && "lg:pl-64",
         )}
       >
-        <header className="sticky top-0 z-30 flex h-14 items-center gap-3 border-b border-teal-900/10 bg-white/70 px-4 backdrop-blur dark:border-white/5 dark:bg-slate-950/70">
+        <header className="app-chrome sticky top-0 z-30 flex h-14 items-center gap-3 border-b border-teal-900/10 bg-white/70 px-4 backdrop-blur dark:border-white/5 dark:bg-slate-950/70">
           <button
             onClick={toggle}
             className={cx(
@@ -517,9 +532,13 @@ export function AppShell({ children }) {
             </Link>
           </div>
         </header>
-        <TrialBar />
+        <div className="app-chrome">
+          <TrialBar />
+        </div>
         <main className="flex-1">{children}</main>
-        <Footer />
+        <div className="app-chrome">
+          <Footer />
+        </div>
       </div>
       <BottomNav />
     </div>

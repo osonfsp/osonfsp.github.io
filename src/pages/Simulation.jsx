@@ -1,7 +1,15 @@
 import { Suspense, useEffect, useState } from "react";
 import { Link } from "../components/Link";
 import { PatientChat } from "../components/PatientChat";
-import { Disclaimer, FeedbackList, PageHeader, ProgressRing, ScoreBars, Spinner } from "../components/ui";
+import {
+  Disclaimer,
+  FeedbackList,
+  PageHeader,
+  PageSkeleton,
+  ProgressRing,
+  ScoreBars,
+  Spinner,
+} from "../components/ui";
 import { CASE_SECTIONS, cases, getCase } from "../data/index";
 import { evaluateAnamnese } from "../lib/evaluation";
 import { useRouter, useSearchParams } from "../lib/router";
@@ -237,13 +245,7 @@ function SimulationView() {
 
 export function SimulationPage() {
   return (
-    <Suspense
-      fallback={
-        <div className="page">
-          <Spinner label={tr("Yuklanmoqda…", "Загрузка…", "Yükleniyor…", "Loading…")} />
-        </div>
-      }
-    >
+    <Suspense fallback={<PageSkeleton />}>
       <SimulationView />
     </Suspense>
   );

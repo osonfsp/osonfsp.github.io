@@ -5,6 +5,7 @@ import { cx } from "../lib/utils";
 import { Speak, canSpeak, speak, stopSpeaking } from "./Speak";
 import { tr } from "../lib/i18n";
 import { TG, openInBrowser } from "../lib/telegram";
+import { Icon } from "./Icon";
 
 const VOICE_KEY = "fsp.voice";
 
@@ -219,24 +220,40 @@ export function PatientChat({ caseData, messages, onMessages, showHints = true, 
   sendRef.current = send;
 
   const { patient } = caseData;
+  const surname = patient.name.split(" ").slice(-1)[0],
+    female = patient.gender === "weiblich",
+    initials = patient.name
+      .split(" ")
+      .map((w) => w[0])
+      .slice(0, 2)
+      .join(""),
+    Avatar = ({ small }) => (
+      <span
+        className={cx(
+          "grid shrink-0 place-items-center rounded-full bg-gradient-to-br font-semibold text-white",
+          female ? "from-rose-400 to-fuchsia-500" : "from-sky-400 to-indigo-500",
+          small ? "h-7 w-7 text-[10px]" : "h-10 w-10 text-sm",
+        )}
+        aria-hidden
+      >
+        {initials}
+      </span>
+    );
   return (
     <div className="card flex min-w-0 flex-col p-0">
       <div className="flex items-center gap-3 border-b border-slate-200 px-4 py-3 dark:border-slate-800">
-        <span
-          className="grid h-10 w-10 place-items-center rounded-full bg-slate-100 text-lg dark:bg-slate-800"
-          aria-hidden
-        >
-          🧑
+        <span className="relative">
+          <Avatar />
+          <span className="absolute bottom-0 right-0 h-2.5 w-2.5 rounded-full border-2 border-white bg-emerald-500 dark:border-slate-900" />
         </span>
         <div className="min-w-0">
           <p className="truncate text-sm font-semibold">
-            {patient.gender === "weiblich" ? "Frau" : "Herr"} {patient.name.split(" ").slice(-1)[0]}{" "}
-            <span className="font-normal muted">· Patient</span>
+            {female ? "Frau" : "Herr"} {surname} <span className="font-normal muted">· Patient</span>
           </p>
-          <p className="truncate text-xs muted">
-            {patient.age}
-            {" J. · "}
-            {patient.hauptbeschwerde}
+          <p className={cx("truncate text-xs", waiting ? "text-teal-600 dark:text-teal-400" : "muted")}>
+            {waiting
+              ? tr("yozmoqda…", "печатает…", "yazıyor…", "typing…")
+              : `${patient.age} J. · ${patient.hauptbeschwerde}`}
           </p>
         </div>
         <div className="ml-auto flex items-center gap-2">
@@ -254,8 +271,13 @@ export function PatientChat({ caseData, messages, onMessages, showHints = true, 
               )}
               aria-pressed={talk}
             >
-              🗣{" "}
-              {talk ? tr("To‘xtatish", "Стоп", "Durdur", "Stop") : tr("Suhbat", "Разговор", "Sohbet", "Talk")}
+              🗣
+              <span className="hidden sm:inline">
+                {" "}
+                {talk
+                  ? tr("To‘xtatish", "Стоп", "Durdur", "Stop")
+                  : tr("Suhbat", "Разговор", "Sohbet", "Talk")}
+              </span>
             </button>
           )}
           {canSpeak() && !talk && (
@@ -271,17 +293,28 @@ export function PatientChat({ caseData, messages, onMessages, showHints = true, 
               )}
               aria-pressed={voice}
             >
-              {voice ? "🔊" : "🔇"} {tr("Ovoz", "Звук", "Ses", "Sound")}
+              {voice ? "🔊" : "🔇"}
+              <span className="hidden sm:inline"> {tr("Ovoz", "Звук", "Ses", "Sound")}</span>
             </button>
           )}
-          <span className="text-xs muted tabular-nums">
+          <span
+            className="text-xs muted tabular-nums"
+            title={tr("So‘ralgan mavzular", "Затронутые темы", "Sorulan konular", "Topics covered")}
+          >
             {asked.size}/{ANAMNESE_TOPICS.length}
           </span>
         </div>
       </div>
+      {/* Anamnez mavzulari bo‘yicha jarayon: ingichka chiziq */}
+      <div className="h-0.5 bg-slate-100 dark:bg-slate-800" aria-hidden>
+        <div
+          className="h-full bg-gradient-to-r from-teal-500 to-cyan-400 transition-all duration-500"
+          style={{ width: `${(asked.size / ANAMNESE_TOPICS.length) * 100}%` }}
+        />
+      </div>
       <div
         ref={scrollRef}
-        className="h-[52vh] min-h-[280px] space-y-3 overflow-y-auto px-4 py-4 sm:h-[420px]"
+        className="chat-bg h-[52vh] min-h-[280px] space-y-3 overflow-y-auto px-4 py-4 sm:h-[420px]"
       >
         {!messages.length && (
           <div className="rounded-xl bg-slate-50 p-4 text-sm muted dark:bg-slate-800/50">
@@ -342,13 +375,17 @@ export function PatientChat({ caseData, messages, onMessages, showHints = true, 
           </div>
         )}
         {messages.map((m, i) => (
-          <div key={i} className={cx("flex", m.role === "arzt" ? "justify-end" : "justify-start")}>
+          <div
+            key={i}
+            className={cx("msg-in flex items-end gap-2", m.role === "arzt" ? "justify-end" : "justify-start")}
+          >
+            {m.role === "patient" && <Avatar small />}
             <div
               className={cx(
-                "max-w-[85%] rounded-2xl px-3.5 py-2 text-sm",
+                "max-w-[85%] rounded-2xl px-3.5 py-2 text-sm shadow-sm",
                 m.role === "arzt"
-                  ? "rounded-br-md bg-teal-600 text-white"
-                  : "rounded-bl-md bg-slate-100 dark:bg-slate-800",
+                  ? "rounded-br-md bg-gradient-to-br from-teal-600 to-teal-700 text-white"
+                  : "rounded-bl-md border border-slate-200/70 bg-white dark:border-slate-700/60 dark:bg-slate-800",
               )}
             >
               <p
@@ -370,8 +407,9 @@ export function PatientChat({ caseData, messages, onMessages, showHints = true, 
           </div>
         ))}
         {waiting && (
-          <div className="flex justify-start">
-            <div className="rounded-2xl rounded-bl-md bg-slate-100 px-4 py-3 dark:bg-slate-800">
+          <div className="msg-in flex items-end justify-start gap-2">
+            <Avatar small />
+            <div className="rounded-2xl rounded-bl-md border border-slate-200/70 bg-white px-4 py-3 shadow-sm dark:border-slate-700/60 dark:bg-slate-800">
               <span className="inline-flex gap-1">
                 <span className="h-1.5 w-1.5 animate-bounce rounded-full bg-slate-400" />
                 <span className="h-1.5 w-1.5 animate-bounce rounded-full bg-slate-400 [animation-delay:150ms]" />
@@ -466,7 +504,7 @@ export function PatientChat({ caseData, messages, onMessages, showHints = true, 
             className={cx(
               "btn h-[44px] w-[44px] shrink-0 px-0",
               dictation.listening
-                ? "animate-pulse bg-rose-600 text-white hover:bg-rose-700"
+                ? "bg-rose-600 text-white shadow-lg shadow-rose-600/30 hover:bg-rose-700"
                 : "border border-slate-300 bg-white hover:bg-slate-50 dark:border-slate-700 dark:bg-slate-900 dark:hover:bg-slate-800",
             )}
             onClick={() => dictation.toggle(draft)}
@@ -487,15 +525,29 @@ export function PatientChat({ caseData, messages, onMessages, showHints = true, 
                 : tr("Ovozda savol berish", "Задать вопрос голосом", "Soruyu sesli sor", "Ask by voice")
             }
           >
-            {dictation.listening ? "⏹" : "🎤"}
+            {dictation.listening ? (
+              <span className="flex h-4 items-center gap-[3px]" aria-hidden>
+                {[0, 1, 2, 3].map((k) => (
+                  <span
+                    key={k}
+                    className="wave-bar w-[3px] rounded-full bg-white"
+                    style={{ animationDelay: `${k * 120}ms` }}
+                  />
+                ))}
+              </span>
+            ) : (
+              <Icon name="mic" />
+            )}
           </button>
         )}
         <button
           type="submit"
-          className="btn-primary h-[44px] shrink-0"
+          className="btn-primary h-[44px] w-[44px] shrink-0 rounded-full px-0 sm:w-auto sm:rounded-xl sm:px-4"
           disabled={waiting || !draft.trim() || disabled}
+          aria-label={tr("Yuborish", "Отправить", "Gönder", "Send")}
         >
-          {tr("Yuborish", "Отправить", "Gönder", "Send")}
+          <Icon name="send" className="h-[18px] w-[18px] sm:hidden" />
+          <span className="hidden sm:inline">{tr("Yuborish", "Отправить", "Gönder", "Send")}</span>
         </button>
       </form>
       {(talk || talkNote) && (

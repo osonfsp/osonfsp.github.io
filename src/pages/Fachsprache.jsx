@@ -6,6 +6,7 @@ import { useApp } from "../state/AppContext";
 import { Speak } from "../components/Speak";
 import { LANG, loc, tr } from "../lib/i18n";
 import { makeQuestion, quizItems } from "../lib/quiz";
+import { Icon } from "../components/Icon";
 import { SectionIntro } from "../components/SectionIntro";
 
 function FlipCard({ p: e, known: t, onToggle: a }) {
@@ -127,25 +128,46 @@ function PairQuiz() {
       </p>
       <div className="mt-6 grid gap-2">
         {t.options.map((c, k) => {
-          let h =
-            n === null
-              ? ""
-              : k === t.answer
-                ? "border-emerald-400 bg-emerald-50 dark:bg-emerald-950/40"
-                : k === n
-                  ? "border-rose-400 bg-rose-50 dark:bg-rose-950/40"
-                  : "opacity-60";
+          let ok = n !== null && k === t.answer,
+            bad = n !== null && k === n && !ok,
+            h =
+              n === null
+                ? "hover:border-teal-400 hover:bg-teal-50/50 active:scale-[0.99] dark:hover:bg-teal-950/20"
+                : ok
+                  ? cx("border-emerald-400 bg-emerald-50 dark:bg-emerald-950/40", k === n && "pop-in")
+                  : bad
+                    ? "shake border-rose-400 bg-rose-50 dark:bg-rose-950/40"
+                    : "opacity-50";
           return (
             <button
               key={c.text}
               lang="de"
               className={cx(
-                "rounded-xl border border-slate-200 px-4 py-3 text-left text-sm transition hover:border-teal-400 dark:border-slate-700",
+                "flex items-center gap-3 rounded-xl border border-slate-200 px-3 py-3 text-left text-sm transition dark:border-slate-700",
                 h,
               )}
               onClick={() => r(k)}
             >
-              {c.text}
+              <span
+                className={cx(
+                  "grid h-7 w-7 shrink-0 place-items-center rounded-lg text-xs font-bold transition",
+                  ok
+                    ? "bg-emerald-500 text-white"
+                    : bad
+                      ? "bg-rose-500 text-white"
+                      : "bg-slate-100 text-slate-500 dark:bg-slate-800 dark:text-slate-400",
+                )}
+                aria-hidden
+              >
+                {ok ? (
+                  <Icon name="check" className="h-4 w-4" strokeWidth={3} />
+                ) : bad ? (
+                  <Icon name="x" className="h-4 w-4" strokeWidth={3} />
+                ) : (
+                  "ABCDEF"[k]
+                )}
+              </span>
+              <span className="min-w-0 flex-1">{c.text}</span>
             </button>
           );
         })}

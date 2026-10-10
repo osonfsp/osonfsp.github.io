@@ -26,6 +26,8 @@ import { usePlan } from "../lib/plan";
 import { startExam } from "../lib/account";
 import { tr } from "../lib/i18n";
 import { SectionIntro } from "../components/SectionIntro";
+import { Icon } from "../components/Icon";
+import { Confetti, ShareResult } from "../components/Celebrate";
 
 function Timer({ minutes: e, resetKey: t, onExpire: o }) {
   let [a, n] = useState(e * 60);
@@ -39,20 +41,30 @@ function Timer({ minutes: e, resetKey: t, onExpire: o }) {
     if (a === 0 && o) o();
   }, [a]);
   let i = String(Math.floor(a / 60)).padStart(2, "0"),
-    l = String(a % 60).padStart(2, "0");
+    l = String(a % 60).padStart(2, "0"),
+    left = a / (e * 60),
+    tone = a === 0 ? "#e11d48" : a < 120 ? "#d97706" : "#0d9488";
   return (
     <span
       className={cx(
-        "inline-flex items-center gap-1.5 rounded-lg px-3 py-1.5 font-mono text-sm font-semibold tabular-nums",
+        "inline-flex items-center gap-2 rounded-full py-1 pl-1 pr-3.5 font-mono text-sm font-semibold tabular-nums",
         a === 0
           ? "bg-rose-100 text-rose-700 dark:bg-rose-950 dark:text-rose-300"
           : a < 120
             ? "bg-amber-100 text-amber-800 dark:bg-amber-950 dark:text-amber-300"
-            : "bg-slate-100 dark:bg-slate-800",
+            : "bg-white text-slate-800 shadow-sm dark:bg-slate-800 dark:text-slate-100",
       )}
       aria-live="polite"
     >
-      {"⏱ "}
+      <span
+        className={cx("grid h-7 w-7 place-items-center rounded-full", a > 0 && a < 120 && "animate-pulse")}
+        style={{ background: `conic-gradient(${tone} ${left * 360}deg, var(--track) 0)` }}
+        aria-hidden
+      >
+        <span className="grid h-5 w-5 place-items-center rounded-full bg-white dark:bg-slate-900">
+          <Icon name="clock" className="h-3.5 w-3.5" strokeWidth={2.2} />
+        </span>
+      </span>
       {i}:{l}
       {a === 0 && (
         <span className="font-sans font-medium">
@@ -216,6 +228,14 @@ export function ExamPage() {
       D(false),
       a("result"));
   }
+  // Imtihon davomida — chalg‘ituvchi menyularsiz "imtihon xonasi"
+  let inRoom = t === "t1" || t === "t2" || t === "t3",
+    [leaving, setLeaving] = useState(false);
+  useEffect(() => {
+    document.documentElement.classList.toggle("exam-focus", inRoom);
+    if (!inRoom) setLeaving(false);
+    return () => document.documentElement.classList.remove("exam-focus");
+  }, [inRoom]);
   function expire() {
     if (t === "t1") a("t2");
     else if (t === "t2") a("t3");
@@ -471,25 +491,93 @@ export function ExamPage() {
     );
   let E = EXAM_STEPS.findIndex((z) => z.key === t);
   return (
-    <div className="page">
+    <div className={cx("page", inRoom && "!pt-4 sm:!pt-6")}>
+      {inRoom && (
+        <div className="mb-4 flex items-center justify-between gap-3">
+          <p className="flex min-w-0 items-center gap-2 text-sm font-semibold text-slate-700 dark:text-slate-200">
+            <span className="relative flex h-2.5 w-2.5 shrink-0">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-rose-400 opacity-60" />
+              <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-rose-500" />
+            </span>
+            <span className="truncate">
+              {tr("Imtihon ketmoqda", "Идёт экзамен", "Sınav sürüyor", "Exam in progress")}
+              {hard && " · 🔥"}
+            </span>
+          </p>
+          {leaving ? (
+            <span className="flex shrink-0 items-center gap-1.5 text-xs">
+              <span className="muted hidden sm:inline">
+                {tr(
+                  "Natija saqlanmaydi.",
+                  "Результат не сохранится.",
+                  "Sonuç kaydedilmez.",
+                  "Progress is lost.",
+                )}
+              </span>
+              <button
+                className="btn !rounded-lg bg-rose-600 !px-2.5 !py-1.5 text-white hover:bg-rose-700"
+                onClick={() => a("intro")}
+              >
+                {tr("Ha, chiqish", "Да, выйти", "Evet, çık", "Yes, leave")}
+              </button>
+              <button className="btn-ghost !px-2.5 !py-1.5" onClick={() => setLeaving(false)}>
+                {tr("Davom etish", "Продолжить", "Devam et", "Continue")}
+              </button>
+            </span>
+          ) : (
+            <button className="btn-ghost shrink-0 !px-2.5 !py-1.5 text-xs" onClick={() => setLeaving(true)}>
+              <Icon name="x" className="h-4 w-4" />
+              {tr("Chiqish", "Выйти", "Çık", "Leave")}
+            </button>
+          )}
+        </div>
+      )}
       <div className="mb-6 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-        <ol className="no-scrollbar flex min-w-0 gap-2 overflow-x-auto">
-          {EXAM_STEPS.map((z, k) => (
-            <li
-              key={z.key}
-              className={cx(
-                "chip whitespace-nowrap",
-                t === "result" || k < E
-                  ? "border-emerald-300 bg-emerald-50 text-emerald-700 dark:border-emerald-900 dark:bg-emerald-950 dark:text-emerald-300"
-                  : k === E
-                    ? "border-teal-600 bg-teal-600 text-white"
-                    : "border-slate-300 muted dark:border-slate-700",
-              )}
-            >
-              {t === "result" || k < E ? "✓ " : ""}
-              {z.label}
-            </li>
-          ))}
+        <ol className="flex min-w-0 flex-1 items-center">
+          {EXAM_STEPS.map((z, k) => {
+            let done = t === "result" || k < E,
+              cur = k === E;
+            return (
+              <li
+                key={z.key}
+                className={cx("flex min-w-0 items-center", k < EXAM_STEPS.length - 1 && "flex-1")}
+              >
+                <span className="flex min-w-0 items-center gap-2">
+                  <span
+                    className={cx(
+                      "grid h-8 w-8 shrink-0 place-items-center rounded-full text-sm font-bold transition",
+                      done
+                        ? "bg-emerald-500 text-white"
+                        : cur
+                          ? "bg-teal-600 text-white ring-4 ring-teal-500/20"
+                          : "bg-slate-200 text-slate-500 dark:bg-slate-800 dark:text-slate-400",
+                    )}
+                    aria-current={cur ? "step" : undefined}
+                  >
+                    {done ? <Icon name="check" className="h-4 w-4" strokeWidth={3} /> : k + 1}
+                  </span>
+                  <span
+                    className={cx(
+                      "truncate text-xs font-semibold sm:text-sm",
+                      cur ? "text-slate-900 dark:text-white" : "muted",
+                      !cur && "hidden sm:inline",
+                    )}
+                  >
+                    {z.label}
+                  </span>
+                </span>
+                {k < EXAM_STEPS.length - 1 && (
+                  <span
+                    className={cx(
+                      "mx-2 h-0.5 min-w-[1rem] flex-1 rounded-full sm:mx-3",
+                      done ? "bg-emerald-400" : "bg-slate-200 dark:bg-slate-800",
+                    )}
+                    aria-hidden
+                  />
+                )}
+              </li>
+            );
+          })}
         </ol>
         {t !== "result" && <Timer minutes={PART_MINUTES} resetKey={`${n.c.id}-${t}`} onExpire={expire} />}
       </div>
@@ -631,6 +719,7 @@ export function ExamPage() {
       )}
       {t === "result" && m && g && (
         <div className="space-y-4">
+          {g.passed && <Confetti />}
           <div
             className={cx(
               "card border-2 text-center",
@@ -640,7 +729,15 @@ export function ExamPage() {
             )}
             role="status"
           >
-            <p className="text-4xl">{g.passed ? "✅" : "❌"}</p>
+            <span
+              className={cx(
+                "pop-in mx-auto grid h-16 w-16 place-items-center rounded-full text-white shadow-lg",
+                g.passed ? "bg-emerald-500 shadow-emerald-500/30" : "bg-rose-500 shadow-rose-500/30",
+              )}
+              aria-hidden
+            >
+              <Icon name={g.passed ? "check" : "x"} className="h-8 w-8" strokeWidth={3} />
+            </span>
             <h2
               className={cx(
                 "mt-2 text-2xl font-extrabold tracking-wide",
@@ -745,6 +842,22 @@ export function ExamPage() {
             <button className="btn-primary" onClick={() => a("intro")}>
               {tr("Yangi imtihon", "Новый экзамен", "Yeni sınav", "New exam")}
             </button>
+            <ShareResult
+              result={{
+                passed: g.passed,
+                parts: g.parts,
+                passMark: g.passMark,
+                hard,
+                title: n.c.title,
+                date: new Date().toLocaleDateString(),
+              }}
+              label={
+                <>
+                  <Icon name="share" className="h-4 w-4" />
+                  {tr("Natijani ulashish", "Поделиться результатом", "Sonucu paylaş", "Share result")}
+                </>
+              }
+            />
             <Link href="/dashboard" className="btn-outline">
               Dashboard
             </Link>

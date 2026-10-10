@@ -306,6 +306,26 @@ export function Spinner({
   );
 }
 
+// Yuklanayotgan sahifa o‘rniga "skelet": sahifa qanday ko‘rinishini oldindan ko‘rsatadi
+export function PageSkeleton({ label = tr("Yuklanmoqda…", "Загрузка…", "Yükleniyor…", "Loading…") }) {
+  return (
+    <div className="page" role="status" aria-label={label}>
+      <div className="skeleton h-4 w-28" />
+      <div className="skeleton mt-3 h-8 w-2/3 max-w-md" />
+      <div className="skeleton mt-3 h-4 w-1/2 max-w-sm" />
+      <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        {[0, 1, 2, 3, 4, 5].map((i) => (
+          <div key={i} className="card space-y-3">
+            <div className="skeleton h-5 w-20" />
+            <div className="skeleton h-4 w-full" />
+            <div className="skeleton h-4 w-4/5" />
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 // Buyrak belgisi — Unicode’da buyrak emojisi yo‘q, shuning uchun o‘zimiz chizamiz
 function KidneyIcon() {
   return (

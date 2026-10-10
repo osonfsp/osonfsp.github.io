@@ -285,6 +285,107 @@ header.sticky {
 .flip3d-back {
   transform: rotateY(180deg);
 }
+/* ===== Imtihon xonasi: menyular yashiriladi ===== */
+.exam-focus .app-chrome {
+  display: none !important;
+}
+.exam-focus .app-body {
+  padding-left: 0 !important;
+  padding-bottom: 0 !important;
+}
+/* ===== Natija: konfetti va paydo bo‘lish ===== */
+@keyframes confetti-fall {
+  0% {
+    transform: translate3d(0, -10vh, 0) rotate(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(var(--drift), 105vh, 0) rotate(var(--spin));
+    opacity: 0.9;
+  }
+}
+.confetti-bit {
+  position: absolute;
+  top: 0;
+  animation: confetti-fall 3s cubic-bezier(0.25, 0.6, 0.5, 1) forwards;
+}
+@keyframes pop-in {
+  0% {
+    transform: scale(0.4);
+    opacity: 0;
+  }
+  70% {
+    transform: scale(1.12);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.pop-in {
+  animation: pop-in 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  20%,
+  60% {
+    transform: translateX(-5px);
+  }
+  40%,
+  80% {
+    transform: translateX(5px);
+  }
+}
+.shake {
+  animation: shake 0.4s ease-in-out;
+}
+/* Yuklanayotgan joy uchun "skelet" */
+@keyframes shimmer {
+  to {
+    background-position: -200% 0;
+  }
+}
+.skeleton {
+  border-radius: 0.75rem;
+  background: linear-gradient(90deg, rgb(148 163 184 / 0.15) 25%, rgb(148 163 184 / 0.3) 50%, rgb(148 163 184 / 0.15) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.4s linear infinite;
+}
+
+/* ===== Simulyatsiya chati ===== */
+.chat-bg {
+  background-color: rgb(248 250 252 / 0.6);
+  background-image: radial-gradient(rgb(13 148 136 / 0.07) 1px, transparent 1px);
+  background-size: 18px 18px;
+}
+.dark .chat-bg {
+  background-color: rgb(2 6 23 / 0.35);
+  background-image: radial-gradient(rgb(45 212 191 / 0.06) 1px, transparent 1px);
+}
+@keyframes msg-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px) scale(0.98);
+  }
+}
+.msg-in {
+  animation: msg-in 0.25s ease-out;
+}
+@keyframes wave {
+  0%,
+  100% {
+    height: 4px;
+  }
+  50% {
+    height: 16px;
+  }
+}
+.wave-bar {
+  height: 4px;
+  animation: wave 0.9s ease-in-out infinite;
+}
 .tilt {
   transition: transform 0.25s ease;
   transform-style: preserve-3d;

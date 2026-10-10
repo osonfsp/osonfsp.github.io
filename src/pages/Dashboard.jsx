@@ -1,3 +1,4 @@
+import { ActivityCalendar } from "../components/ActivityCalendar";
 import { useEffect } from "react";
 import { Link } from "../components/Link";
 import { ProgressTransfer } from "../components/ProgressTransfer";
@@ -8,6 +9,7 @@ import {
   ProgressBar,
   ProgressRing,
   ScoreBars,
+  PageSkeleton,
   Spinner,
   StatCard,
 } from "../components/ui";
@@ -29,11 +31,7 @@ export function DashboardPage() {
     }, [e, t, s]),
     !e || !t)
   )
-    return (
-      <div className="page">
-        <Spinner label={tr("Yuklanmoqda…", "Загрузка…", "Yükleniyor…", "Loading…")} />
-      </div>
-    );
+    return <PageSkeleton />;
   let r = new Set(a.arztbrief.map((f) => f.id)).size,
     c = Math.round(avg(a.arztbrief.map((f) => f.score))),
     h = Math.round(avg(a.simulations.map((f) => f.score))),
@@ -158,6 +156,7 @@ export function DashboardPage() {
           </Link>
         );
       })()}
+      <ActivityCalendar progress={a} />
       <div className="grid gap-4 lg:grid-cols-[320px_1fr]">
         <div className="card flex flex-col items-center text-center">
           <ProgressRing
