@@ -5,3 +5,4 @@ dist-artifact/
 worker/.env
 worker/.dev.vars
 worker/.wrangler/
+OsonFSP.html
