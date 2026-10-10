@@ -7,6 +7,7 @@ import { LANG, LANGS, setLang, tr } from "../lib/i18n";
 import { TrialBar } from "./Paywall";
 import { buildPlan } from "../lib/daily";
 import { FEEDBACK_TELEGRAM } from "../lib/config";
+import { Icon, LogoMark } from "./Icon";
 
 const SIDEBAR_KEY = "fsp.sidebar";
 
@@ -31,7 +32,7 @@ function ThemeToggle() {
       )}
       title={tr("Kun/tun rejimi", "Светлая/тёмная тема", "Açık/koyu tema", "Light/dark theme")}
     >
-      <span aria-hidden>{e ? "☀️" : "🌙"}</span>
+      <Icon name={e ? "sun" : "moon"} className="h-[18px] w-[18px]" />
     </button>
   );
 }
@@ -68,34 +69,34 @@ const NAV_GROUPS = [
   {
     title: tr("Asosiy", "Основное", "Temel", "Main"),
     items: [
-      { href: "/", icon: "🏠", label: tr("Bosh sahifa", "Главная", "Ana sayfa", "Home") },
-      { href: "/faelle", icon: "🩺", label: tr("Klinik holatlar", "Кейсы", "Vakalar", "Cases") },
+      { href: "/", icon: "home", label: tr("Bosh sahifa", "Главная", "Ana sayfa", "Home") },
+      { href: "/faelle", icon: "stethoscope", label: tr("Klinik holatlar", "Кейсы", "Vakalar", "Cases") },
       {
         href: "/simulation",
-        icon: "💬",
+        icon: "chat",
         label: tr("Simulyatsiya", "Симуляция", "Simülasyon", "Simulation"),
         tag: "Teil 1",
       },
-      { href: "/arztbrief", icon: "✍️", label: "Arztbrief", tag: "Teil 2" },
-      { href: "/pruefung", icon: "🎯", label: tr("Imtihon", "Экзамен", "Sınav", "Exam"), tag: "1–3" },
+      { href: "/arztbrief", icon: "pen", label: "Arztbrief", tag: "Teil 2" },
+      { href: "/pruefung", icon: "target", label: tr("Imtihon", "Экзамен", "Sınav", "Exam"), tag: "1–3" },
     ],
   },
   {
     title: tr("Qo‘shimcha mashqlar", "Дополнительно", "Ek alıştırmalar", "Extra practice"),
     more: true,
     items: [
-      { href: "/woerter", icon: "📚", label: tr("So‘zlar", "Слова", "Kelimeler", "Words") },
-      { href: "/redemittel", icon: "🗣️", label: "Redemittel" },
-      { href: "/fachsprache", icon: "🔁", label: "Fach ↔ Patient" },
-      { href: "/aufklaerung", icon: "🗨️", label: tr("Aufklärung", "Aufklärung", "Aufklärung", "Aufklärung") },
-      { href: "/hoeren", icon: "🎧", label: tr("Tinglab tushunish", "Аудирование", "Dinleme", "Listening") },
+      { href: "/woerter", icon: "book", label: tr("So‘zlar", "Слова", "Kelimeler", "Words") },
+      { href: "/redemittel", icon: "quote", label: "Redemittel" },
+      { href: "/fachsprache", icon: "swap", label: "Fach ↔ Patient" },
+      { href: "/aufklaerung", icon: "info", label: tr("Aufklärung", "Aufklärung", "Aufklärung", "Aufklärung") },
+      { href: "/hoeren", icon: "headphones", label: tr("Tinglab tushunish", "Аудирование", "Dinleme", "Listening") },
     ],
   },
   {
     title: tr("Boshqa", "Прочее", "Diğer", "Other"),
     items: [
-      { href: "/pro", icon: "💳", label: tr("Tariflar", "Тарифы", "Paketler", "Plans") },
-      { href: "/fsp", icon: "🏛️", label: tr("FSP haqida", "Об FSP", "FSP hakkında", "About FSP") },
+      { href: "/pro", icon: "card", label: tr("Tariflar", "Тарифы", "Paketler", "Plans") },
+      { href: "/fsp", icon: "landmark", label: tr("FSP haqida", "Об FSP", "FSP hakkında", "About FSP") },
     ],
   },
 ];
@@ -113,9 +114,7 @@ function NavItem({ l, on }) {
       )}
       aria-current={on ? "page" : undefined}
     >
-      <span className="w-5 text-center" aria-hidden>
-        {l.icon}
-      </span>
+      <Icon name={l.icon} className={cx("h-[18px] w-[18px] shrink-0", on ? "text-teal-300" : "text-white/55")} />
       <span className="flex-1">{l.label}</span>
       {l.tag && (
         <span className="rounded-md bg-white/10 px-1.5 py-0.5 text-[10px] font-semibold text-teal-200/80">
@@ -129,9 +128,7 @@ function NavItem({ l, on }) {
 function Logo() {
   return (
     <Link href="/" className="flex items-center gap-2.5">
-      <span className="grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-teal-500 text-sm font-extrabold text-white">
-        O
-      </span>
+      <LogoMark className="h-9 w-9 shrink-0" />
       <span className="leading-tight">
         <span className="block text-sm font-semibold text-white">OsonFSP</span>
         <span className="block text-xs text-white/50">
@@ -204,9 +201,7 @@ function Sidebar({ onClose }) {
           )}
           aria-current={active("/bugun") ? "page" : undefined}
         >
-          <span className="w-5 text-center" aria-hidden>
-            📅
-          </span>
+          <Icon name="calendar" className="h-[18px] w-[18px] shrink-0" />
           {tr("Bugungi mashq", "Практика на сегодня", "Bugünkü alıştırma", "Today’s practice")}
           <span className="ml-auto rounded-full bg-white/15 px-2 py-0.5 text-xs">
             {plan.doneCount}/{plan.tasks.length}
@@ -224,7 +219,10 @@ function Sidebar({ onClose }) {
                   aria-expanded={open}
                 >
                   {g.title}
-                  <span className="normal-case tracking-normal">{open ? "▾" : `▸ ${g.items.length}`}</span>
+                  <span className="flex items-center gap-1 normal-case tracking-normal">
+                    {!open && g.items.length}
+                    <Icon name={open ? "chevronDown" : "chevronRight"} className="h-3.5 w-3.5" strokeWidth={2.2} />
+                  </span>
                 </button>
               ) : (
                 <p className="px-3 pb-1 text-[11px] font-semibold uppercase tracking-wider text-white/40">
@@ -244,9 +242,7 @@ function Sidebar({ onClose }) {
             rel="noopener noreferrer"
             className="flex items-center gap-3 rounded-xl border border-sky-400/30 bg-sky-500/10 px-3 py-2.5 text-sm font-medium text-sky-100 transition hover:bg-sky-500/20"
           >
-            <span className="w-5 text-center" aria-hidden>
-              ✉️
-            </span>
+            <Icon name="send" className="h-[18px] w-[18px] shrink-0 text-sky-300" />
             <span className="flex-1">
               {tr(
                 "Admin bilan bog‘lanish",
@@ -256,7 +252,7 @@ function Sidebar({ onClose }) {
               )}
               <span className="block text-[11px] font-normal text-sky-200/70">Telegram · @de_behzod</span>
             </span>
-            <span aria-hidden>↗</span>
+            <Icon name="external" className="h-4 w-4 text-sky-200/60" />
           </a>
         </div>
       )}
@@ -399,6 +395,56 @@ function MobileDrawer({ open, setOpen, children }) {
   );
 }
 
+// Telefonda pastki menyu (Telegram/Instagram uslubida): 5 ta asosiy bo‘lim doim qo‘l ostida
+const TABS = [
+  { href: "/", icon: "home", label: tr("Bosh", "Главная", "Ana", "Home") },
+  { href: "/faelle", icon: "stethoscope", label: tr("Holatlar", "Кейсы", "Vakalar", "Cases") },
+  { href: "/simulation", icon: "chat", label: tr("Suhbat", "Диалог", "Sohbet", "Talk") },
+  { href: "/arztbrief", icon: "pen", label: "Arztbrief" },
+  { href: "/pruefung", icon: "target", label: tr("Imtihon", "Экзамен", "Sınav", "Exam") },
+];
+
+function BottomNav() {
+  let path = usePathname(),
+    active = (h) => (h === "/" ? path === "/" : path === h || path.startsWith(`${h}/`));
+  return (
+    <nav
+      className="fixed inset-x-0 bottom-0 z-40 border-t border-slate-900/10 bg-white/85 pb-[env(safe-area-inset-bottom)] backdrop-blur-xl dark:border-white/10 dark:bg-slate-950/85 lg:hidden"
+      aria-label={tr("Asosiy bo‘limlar", "Основные разделы", "Ana bölümler", "Main sections")}
+    >
+      <div className="mx-auto grid h-16 max-w-md grid-cols-5">
+        {TABS.map((t) => {
+          let on = active(t.href);
+          return (
+            <Link
+              key={t.href}
+              href={t.href}
+              className={cx(
+                "relative flex flex-col items-center justify-center gap-1 text-[11px] font-medium transition-colors",
+                on ? "text-teal-700 dark:text-teal-300" : "text-slate-500 active:text-slate-800 dark:text-slate-400",
+              )}
+              aria-current={on ? "page" : undefined}
+            >
+              {on && (
+                <span className="absolute top-0 h-0.5 w-8 rounded-full bg-teal-500" aria-hidden />
+              )}
+              <span
+                className={cx(
+                  "grid h-7 w-12 place-items-center rounded-full transition-colors",
+                  on && "bg-teal-500/15",
+                )}
+              >
+                <Icon name={t.icon} className="h-[21px] w-[21px]" strokeWidth={on ? 2.1 : 1.8} />
+              </span>
+              <span className="max-w-full truncate px-0.5">{t.label}</span>
+            </Link>
+          );
+        })}
+      </div>
+    </nav>
+  );
+}
+
 function readOpen() {
   try {
     return localStorage.getItem(SIDEBAR_KEY) !== "closed";
@@ -445,7 +491,7 @@ export function AppShell({ children }) {
       </MobileDrawer>
       <div
         className={cx(
-          "flex min-h-screen flex-col transition-[padding] duration-200",
+          "flex min-h-screen flex-col pb-[calc(4rem+env(safe-area-inset-bottom))] transition-[padding] duration-200 lg:pb-0",
           desktopOpen && "lg:pl-64",
         )}
       >
@@ -462,9 +508,7 @@ export function AppShell({ children }) {
             <SidebarIcon />
           </button>
           <Link href="/" className={cx("flex items-center gap-2", desktopOpen && "lg:hidden")}>
-            <span className="grid h-8 w-8 place-items-center rounded-lg bg-teal-600 text-xs font-extrabold text-white">
-              O
-            </span>
+            <LogoMark className="h-8 w-8" />
             <span className="text-sm font-semibold text-slate-900 dark:text-white">OsonFSP</span>
           </Link>
           <div className="ml-auto">
@@ -477,6 +521,7 @@ export function AppShell({ children }) {
         <main className="flex-1">{children}</main>
         <Footer />
       </div>
+      <BottomNav />
     </div>
   );
 }

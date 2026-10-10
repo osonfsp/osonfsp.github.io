@@ -679,7 +679,7 @@ function ContentAdmin() {
         </div>
       )}
       {w && (
-        <div className="fixed bottom-4 left-1/2 z-50 -translate-x-1/2 rounded-xl bg-slate-900 px-4 py-2 text-sm text-white shadow-lg dark:bg-white dark:text-slate-900">
+        <div className="fixed bottom-20 left-1/2 z-50 lg:bottom-4 -translate-x-1/2 rounded-xl bg-slate-900 px-4 py-2 text-sm text-white shadow-lg dark:bg-white dark:text-slate-900">
           {w}
         </div>
       )}
