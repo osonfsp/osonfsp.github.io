@@ -373,7 +373,7 @@ export function HomePage() {
             </div>
             <div className="grid grid-cols-3 gap-3">
               {[
-                [tr("Sinov", "Пробный", "Deneme", "Trial"), "$0", `${TRIAL_HOURS}h`],
+                [tr("Sinov", "Пробный", "Deneme", "Trial"), "$0", `${TRIAL_DAYS} ${tr("kun", "дня", "gün", "days")}`],
                 [tr("Hafta", "Неделя", "Hafta", "Week"), "$9", "7d"],
                 [tr("Oy", "Месяц", "Ay", "Month"), "$15", "30d"],
               ].map(([n, p, d], i) => (
