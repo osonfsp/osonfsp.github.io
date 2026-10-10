@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Helix3D } from "../components/Helix3D";
+import { Icon } from "../components/Icon";
 import { Link } from "../components/Link";
 import { CASE_SECTIONS, STATS } from "../data/index";
 import { loc, tr } from "../lib/i18n";
@@ -41,44 +42,6 @@ function CountUp({ to, suffix = "" }) {
 }
 
 // Sichqoncha ostida 3D egiladigan kartochka
-function Tilt({ className, children, href }) {
-  const ref = useRef(null);
-  const move = (e) => {
-    const el = ref.current;
-    if (!el || e.pointerType === "touch") return;
-    const r = el.getBoundingClientRect(),
-      x = (e.clientX - r.left) / r.width - 0.5,
-      y = (e.clientY - r.top) / r.height - 0.5;
-    el.style.transform = `perspective(900px) rotateX(${-y * 8}deg) rotateY(${x * 10}deg) translateZ(0)`;
-    el.style.setProperty("--mx", `${(x + 0.5) * 100}%`);
-    el.style.setProperty("--my", `${(y + 0.5) * 100}%`);
-  };
-  const leave = () => ref.current && (ref.current.style.transform = "");
-  return (
-    <div
-      ref={ref}
-      className={cx("tilt group relative overflow-hidden", className)}
-      onPointerMove={move}
-      onPointerLeave={leave}
-    >
-      <span
-        className="pointer-events-none absolute inset-0 opacity-0 transition group-hover:opacity-100"
-        style={{
-          background:
-            "radial-gradient(300px circle at var(--mx) var(--my), rgba(255,255,255,0.35), transparent 60%)",
-        }}
-        aria-hidden
-      />
-      <Link href={href} className="relative block h-full">
-        {children}
-      </Link>
-    </div>
-  );
-}
-
-const GLASS =
-  "rounded-3xl border border-white/60 bg-white/55 shadow-xl shadow-teal-900/5 backdrop-blur-xl dark:border-white/10 dark:bg-slate-900/50";
-
 export function HomePage() {
   const marquee = STATS.marquee,
     // yangi odam → 3 ta savol; qaytgan foydalanuvchi → bugungi vazifalar
@@ -141,34 +104,64 @@ export function HomePage() {
       grad: "from-amber-400 to-rose-500",
     },
   ];
-  const [flipped, setFlipped] = useState(null);
+  const features = [
+    {
+      href: "/aufklaerung",
+      icon: "info",
+      title: "Aufklärung",
+      desc: tr(
+        `${STATS.aufklaerung} ta tekshiruvni bemorga tushuntirish`,
+        `Объяснение ${STATS.aufklaerung} обследований пациенту`,
+        `${STATS.aufklaerung} tetkiki hastaya açıklama`,
+        `Explaining ${STATS.aufklaerung} examinations to the patient`,
+      ),
+    },
+    {
+      href: "/woerter",
+      icon: "book",
+      title: tr("Kartochkalar", "Карточки", "Kartlar", "Flashcards"),
+      desc: tr(
+        "Aqlli takrorlash: 1-3-7-14-30 kun",
+        "Умное повторение: 1-3-7-14-30 дней",
+        "Akıllı tekrar: 1-3-7-14-30 gün",
+        "Smart review: 1-3-7-14-30 days",
+      ),
+    },
+    {
+      href: "/redemittel",
+      icon: "quote",
+      title: "Redemittel",
+      desc: tr(
+        `${PHRASES} ta ibora, talaffuz bilan`,
+        `${PHRASES} фраз с произношением`,
+        `Telaffuzlu ${PHRASES} kalıp ifade`,
+        `${PHRASES} phrases with pronunciation`,
+      ),
+    },
+    {
+      href: "/fachsprache",
+      icon: "swap",
+      title: "Fach ↔ Patient",
+      desc: "„Dyspnoe“ → „schlecht Luft bekommen“",
+    },
+  ];
 
   return (
-    <div className="relative overflow-hidden">
-      {/* Suzib yuruvchi rangli fon */}
-      <div className="pointer-events-none absolute inset-0 -z-0" aria-hidden>
-        <span className="blob left-[-10%] top-[-8%] h-[38rem] w-[38rem] bg-teal-300" />
-        <span className="blob right-[-12%] top-[10%] h-[34rem] w-[34rem] bg-violet-300 [animation-delay:-6s]" />
-        <span className="blob bottom-[-10%] left-[25%] h-[30rem] w-[30rem] bg-amber-200 [animation-delay:-12s]" />
-      </div>
-
+    <div className="relative">
       {/* HERO */}
-      <section className="container-app relative grid items-center gap-8 py-10 sm:py-16 lg:grid-cols-[1.05fr_0.95fr]">
+      <section className="container-app grid items-center gap-10 py-12 sm:py-16 lg:grid-cols-[1.1fr_0.9fr]">
         <div>
-          <span className="inline-flex items-center gap-2 rounded-full border border-teal-600/20 bg-white/70 px-3 py-1 text-xs font-semibold text-teal-800 backdrop-blur dark:bg-slate-900/60 dark:text-teal-300">
-            <span className="relative flex h-2 w-2">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-teal-400 opacity-75" />
-              <span className="relative inline-flex h-2 w-2 rounded-full bg-teal-500" />
-            </span>
+          <span className="inline-flex items-center gap-2 rounded-full border border-teal-600/20 bg-white/70 px-3 py-1 text-xs font-semibold text-teal-800 dark:border-teal-400/20 dark:bg-slate-900/60 dark:text-teal-300">
+            <span className="h-1.5 w-1.5 rounded-full bg-teal-500" />
             Fachsprachprüfung · C1 Medizin
           </span>
-          <h1 className="mt-5 text-4xl font-black leading-[1.05] tracking-tight sm:text-6xl">
+          <h1 className="mt-5 text-4xl font-extrabold leading-[1.08] sm:text-6xl">
             {tr("Tibbiy nemis tili", "Медицинский немецкий", "Tıbbi Almanca", "Medical German")}
-            <span className="block bg-gradient-to-r from-teal-600 via-cyan-600 to-violet-600 bg-clip-text pb-1 text-transparent dark:from-teal-300 dark:via-cyan-300 dark:to-violet-300">
+            <span className="block text-teal-700 dark:text-teal-300">
               {tr("endi oson.", "теперь просто.", "artık kolay.", "made easy.")}
             </span>
           </h1>
-          <p className="mt-5 max-w-xl text-lg text-slate-600 dark:text-slate-300">
+          <p className="mt-5 max-w-xl text-lg leading-relaxed text-slate-600 dark:text-slate-300">
             {tr(
               "FSP’ga o‘zbek tilida tayyorlaning: virtual bemor bilan suhbat, Arztbrief, Oberarzt’ga taqdimot va haqiqiy formatdagi imtihon.",
               "Готовьтесь к FSP на родном языке: беседа с виртуальным пациентом, Arztbrief, представление Oberarzt и экзамен в реальном формате.",
@@ -176,18 +169,13 @@ export function HomePage() {
               "Prepare for the FSP in English: talk to a virtual patient, write the Arztbrief, present to the Oberarzt and take an exam in the real format.",
             )}
           </p>
-          <div className="mt-7 flex flex-col gap-3 sm:flex-row">
-            <Link
-              href={startHref}
-              className="btn bg-gradient-to-r from-teal-600 to-cyan-600 px-7 py-3.5 text-base text-white shadow-lg shadow-teal-600/30 transition hover:-translate-y-0.5 hover:shadow-xl hover:shadow-teal-600/40"
-            >
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+            <Link href={startHref} className="btn-primary px-7 py-3.5 text-base shadow-sm">
               {startLabel} →
             </Link>
-            <Link
-              href="/pruefung"
-              className="btn border border-slate-300 bg-white/70 px-7 py-3.5 text-base text-slate-800 backdrop-blur hover:bg-white dark:border-slate-700 dark:bg-slate-900/60 dark:text-slate-100"
-            >
-              🎯 {tr("Mashq imtihoni", "Пробный экзамен", "Deneme sınavı", "Practice exam")}
+            <Link href="/pruefung" className="btn-outline px-7 py-3.5 text-base">
+              <Icon name="target" className="h-[18px] w-[18px] text-teal-600 dark:text-teal-400" />
+              {tr("Mashq imtihoni", "Пробный экзамен", "Deneme sınavı", "Practice exam")}
             </Link>
           </div>
           <p className="mt-3 text-xs muted">
@@ -198,27 +186,26 @@ export function HomePage() {
               `${TRIAL_HOURS} hours free · no card required`,
             )}
           </p>
-          <dl className="mt-8 grid max-w-lg grid-cols-3 gap-3">
+          <dl className="mt-10 flex max-w-lg divide-x divide-slate-900/10 dark:divide-white/10">
             {[
               [STATS.cases, tr("klinik Fall", "клинических кейсов", "klinik vaka", "clinical cases")],
               [STATS.words, tr("tibbiy termin", "терминов", "tıbbi terim", "medical terms")],
               [PHRASES, "Redemittel"],
             ].map(([v, l]) => (
-              <div key={l} className={cx(GLASS, "rounded-2xl p-3")}>
-                <dt className="text-2xl font-black text-slate-900 dark:text-white">
+              <div key={l} className="flex-1 px-4 first:pl-0">
+                <dt className="font-display text-3xl font-extrabold text-slate-900 dark:text-white">
                   <CountUp to={v} />
                 </dt>
-                <dd className="text-xs muted">{l}</dd>
+                <dd className="mt-0.5 text-xs muted">{l}</dd>
               </div>
             ))}
           </dl>
         </div>
 
-        {/* 3D sahna */}
-        <div className="relative mx-auto aspect-square w-full max-w-[520px]">
-          <div className="absolute inset-[8%] rounded-full bg-gradient-to-br from-teal-200/60 via-white/30 to-violet-200/60 blur-2xl dark:from-teal-900/40 dark:to-violet-900/40" />
+        {/* 3D sahna — faqat katta ekranda (telefonda joy va batareyani tejaymiz) */}
+        <div className="relative mx-auto hidden aspect-square w-full max-w-[480px] lg:block">
           <Helix3D className="absolute inset-0 h-full w-full" />
-          <div className={cx(GLASS, "float-y absolute left-0 top-[12%] rounded-2xl px-3.5 py-2.5 text-sm")}>
+          <div className="absolute left-0 top-[14%] rounded-xl border border-slate-200 bg-white/90 px-3.5 py-2.5 text-sm shadow-sm dark:border-slate-700 dark:bg-slate-900/90">
             <p
               lang="de"
               className="text-[11px] font-semibold uppercase tracking-wider text-teal-700 dark:text-teal-300"
@@ -227,211 +214,137 @@ export function HomePage() {
             </p>
             <p className="font-semibold">12/12 ✓</p>
           </div>
-          <div
-            className={cx(
-              GLASS,
-              "float-y absolute bottom-[14%] left-[4%] rounded-2xl px-3.5 py-2.5 text-sm [animation-delay:-2s]",
-            )}
-          >
-            <p
-              lang="de"
-              className="text-[11px] font-semibold uppercase tracking-wider text-violet-700 dark:text-violet-300"
-            >
-              Arztbrief
+          <div className="absolute right-0 top-[44%] rounded-xl border border-slate-200 bg-white/90 px-4 py-3 text-sm shadow-sm dark:border-slate-700 dark:bg-slate-900/90">
+            <p className="font-display text-lg font-extrabold text-emerald-600 dark:text-emerald-400">
+              BESTANDEN
             </p>
-            <p className="font-semibold">92%</p>
-          </div>
-          <div
-            className={cx(
-              GLASS,
-              "float-y absolute right-0 top-[40%] rounded-2xl px-4 py-3 text-sm [animation-delay:-3.5s]",
-            )}
-          >
-            <p className="text-lg font-black text-emerald-600 dark:text-emerald-400">BESTANDEN</p>
             <p className="text-[11px] muted">FSP-Simulation</p>
           </div>
         </div>
       </section>
 
-      {/* Tibbiy so‘zlar oqimi */}
+      {/* Tibbiy so‘zlar oqimi — sekin va xira */}
       <section
-        className="marquee relative border-y border-teal-900/10 bg-white/40 py-4 backdrop-blur dark:border-white/5 dark:bg-slate-900/40"
+        className="marquee relative overflow-hidden border-y border-slate-900/5 py-3 dark:border-white/5"
         aria-label={tr("Tibbiy terminlar", "Медицинские термины", "Tıbbi terimler", "Medical terms")}
       >
-        <div className="marquee-track gap-3">
+        <div className="marquee-track gap-8 [animation-duration:120s]">
           {[...marquee, ...marquee].map((w, i) => (
             <span
               key={i}
-              className="flex shrink-0 items-center gap-2 rounded-full border border-slate-200 bg-white/80 px-4 py-1.5 text-sm dark:border-slate-700 dark:bg-slate-900/80"
+              className="flex shrink-0 items-center gap-1.5 text-sm text-slate-500 dark:text-slate-400"
               aria-hidden={i >= marquee.length}
             >
-              <b className="font-semibold">{w.de}</b>
-              <span className="muted">· {loc(w)}</span>
+              <b lang="de" className="font-semibold text-slate-700 dark:text-slate-200">
+                {w.de}
+              </b>
+              <span>· {loc(w)}</span>
             </span>
           ))}
         </div>
       </section>
 
-      {/* Bento */}
-      <section className="container-app relative py-14">
-        <h2 className="text-3xl font-black tracking-tight sm:text-4xl">
+      {/* Bo‘limlar */}
+      <section className="container-app py-16">
+        <h2 className="text-3xl font-extrabold sm:text-4xl">
           {tr("Bitta joyda —", "Всё в одном месте —", "Tek bir yerde —", "In one place —")}{" "}
-          <span className="bg-gradient-to-r from-teal-600 to-violet-600 bg-clip-text text-transparent dark:from-teal-300 dark:to-violet-300">
+          <span className="text-teal-700 dark:text-teal-300">
             {tr("butun FSP", "весь FSP", "FSP’nin tamamı", "the whole FSP")}
           </span>
         </h2>
-        <div className="mt-8 grid auto-rows-[minmax(150px,auto)] gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          <Tilt href="/faelle" className={cx(GLASS, "sm:col-span-2 lg:row-span-2")}>
-            <div className="flex h-full flex-col p-6">
-              <span className="text-4xl">🩺</span>
-              <h3 className="mt-3 text-2xl font-bold">
-                {tr(
-                  `${STATS.cases} ta klinik Fall`,
-                  `${STATS.cases} клинических кейсов`,
-                  `${STATS.cases} klinik vaka`,
-                  `${STATS.cases} clinical cases`,
-                )}
-              </h3>
-              <p className="mt-2 muted">
-                {tr(
-                  "Mutaxassislik bo‘yicha bo‘limlarga ajratilgan:",
-                  "Разделены по специальностям:",
-                  "Uzmanlık alanlarına göre bölümlere ayrılmış:",
-                  "Grouped by specialty:",
-                )}
-              </p>
-              <div className="mt-4 flex flex-wrap gap-2">
-                {CASE_SECTIONS.map((s) => (
-                  <span
-                    key={s.id}
-                    className="rounded-full bg-teal-600/10 px-3 py-1 text-sm font-medium text-teal-800 dark:bg-teal-400/10 dark:text-teal-200"
-                  >
-                    {s.icon} {s.label} · {s.categories.reduce((n, c) => n + (STATS.byCategory[c] ?? 0), 0)}
+        <div className="mt-8 grid gap-4 lg:grid-cols-[1.15fr_1fr]">
+          <Link href="/faelle" className="card card-hover flex flex-col p-6">
+            <span className="grid h-11 w-11 place-items-center rounded-xl bg-teal-600/10 text-teal-700 dark:bg-teal-400/10 dark:text-teal-300">
+              <Icon name="stethoscope" className="h-6 w-6" />
+            </span>
+            <h3 className="mt-4 text-2xl font-bold">
+              {tr(
+                `${STATS.cases} ta klinik Fall`,
+                `${STATS.cases} клинических кейсов`,
+                `${STATS.cases} klinik vaka`,
+                `${STATS.cases} clinical cases`,
+              )}
+            </h3>
+            <p className="mt-2 muted">
+              {tr(
+                "Mutaxassislik bo‘yicha bo‘limlarga ajratilgan:",
+                "Разделены по специальностям:",
+                "Uzmanlık alanlarına göre bölümlere ayrılmış:",
+                "Grouped by specialty:",
+              )}
+            </p>
+            <div className="mt-4 flex flex-wrap gap-2">
+              {CASE_SECTIONS.map((s) => (
+                <span
+                  key={s.id}
+                  className="rounded-full border border-slate-200 px-3 py-1 text-sm text-slate-700 dark:border-slate-700 dark:text-slate-200"
+                >
+                  {s.icon} {s.label}{" "}
+                  <span className="muted">
+                    · {s.categories.reduce((n, c) => n + (STATS.byCategory[c] ?? 0), 0)}
                   </span>
-                ))}
-              </div>
-              <span className="mt-auto pt-6 text-sm font-semibold text-teal-700 dark:text-teal-300">
-                {tr("Fall tanlash →", "Выбрать кейс →", "Vaka seç →", "Choose a case →")}
-              </span>
+                </span>
+              ))}
             </div>
-          </Tilt>
-          <Tilt
-            href="/aufklaerung"
-            className={cx(GLASS, "bg-gradient-to-br from-violet-500/15 to-transparent")}
-          >
-            <div className="p-5">
-              <span className="text-3xl">🗨️</span>
-              <h3 className="mt-2 font-bold">Aufklärung</h3>
-              <p className="mt-1 text-sm muted">
-                {tr(
-                  `${STATS.aufklaerung} ta tekshiruvni bemorga tushuntirish`,
-                  `Объяснение ${STATS.aufklaerung} обследований пациенту`,
-                  `${STATS.aufklaerung} tetkiki hastaya açıklama`,
-                  `Explaining ${STATS.aufklaerung} examinations to the patient`,
-                )}
-              </p>
-            </div>
-          </Tilt>
-          <Tilt href="/woerter" className={cx(GLASS, "bg-gradient-to-br from-amber-400/15 to-transparent")}>
-            <div className="p-5">
-              <span className="text-3xl">📇</span>
-              <h3 className="mt-2 font-bold">{tr("Kartochkalar", "Карточки", "Kartlar", "Flashcards")}</h3>
-              <p className="mt-1 text-sm muted">
-                {tr(
-                  "Aqlli takrorlash: 1-3-7-14-30 kun",
-                  "Умное повторение: 1-3-7-14-30 дней",
-                  "Akıllı tekrar: 1-3-7-14-30 gün",
-                  "Smart review: 1-3-7-14-30 days",
-                )}
-              </p>
-            </div>
-          </Tilt>
-          <Tilt href="/redemittel" className={cx(GLASS, "bg-gradient-to-br from-cyan-400/15 to-transparent")}>
-            <div className="p-5">
-              <span className="text-3xl">🗣️</span>
-              <h3 className="mt-2 font-bold">Redemittel</h3>
-              <p className="mt-1 text-sm muted">
-                {tr(
-                  `${PHRASES} ta ibora, talaffuz bilan`,
-                  `${PHRASES} фраз с произношением`,
-                  `Telaffuzlu ${PHRASES} kalıp ifade`,
-                  `${PHRASES} phrases with pronunciation`,
-                )}
-              </p>
-            </div>
-          </Tilt>
-          <Tilt
-            href="/fachsprache"
-            className={cx(GLASS, "bg-gradient-to-br from-rose-400/15 to-transparent")}
-          >
-            <div className="p-5">
-              <span className="text-3xl">🔁</span>
-              <h3 className="mt-2 font-bold">Fach ↔ Patient</h3>
-              <p className="mt-1 text-sm muted">„Dyspnoe“ → „schlecht Luft bekommen“</p>
-            </div>
-          </Tilt>
+            <span className="mt-auto pt-6 text-sm font-semibold text-teal-700 dark:text-teal-300">
+              {tr("Fall tanlash →", "Выбрать кейс →", "Vaka seç →", "Choose a case →")}
+            </span>
+          </Link>
+          <div className="grid gap-4 sm:grid-cols-2">
+            {features.map((f) => (
+              <Link key={f.href} href={f.href} className="card card-hover p-5">
+                <span className="grid h-10 w-10 place-items-center rounded-xl bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-200">
+                  <Icon name={f.icon} className="h-5 w-5" />
+                </span>
+                <h3 className="mt-3 font-bold">{f.title}</h3>
+                <p className="mt-1 text-sm muted">{f.desc}</p>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 
-      {/* 3 qism — aylanuvchi 3D kartochkalar */}
-      <section className="container-app relative pb-14">
+      {/* Imtihon tuzilishi: 3 qism */}
+      <section className="container-app pb-16">
         <p className="text-xs font-bold uppercase tracking-[0.2em] text-teal-700 dark:text-teal-400">
           {tr("Imtihon tuzilishi", "Структура экзамена", "Sınavın yapısı", "Exam structure")}
         </p>
-        <h2 className="mt-2 text-3xl font-black tracking-tight sm:text-4xl">
+        <h2 className="mt-2 text-3xl font-extrabold sm:text-4xl">
           {tr("3 qism × 20 daqiqa", "3 части × 20 минут", "3 bölüm × 20 dakika", "3 parts × 20 minutes")}
         </h2>
-        <p className="mt-2 muted">
-          {tr(
-            "Kartochka ustiga boring yoki bosing.",
-            "Наведите на карточку или нажмите.",
-            "Kartın üzerine gelin veya basın.",
-            "Hover over or tap a card.",
-          )}
-        </p>
-        <div className="mt-8 grid gap-5 md:grid-cols-3">
+        <div className="mt-8 grid gap-4 md:grid-cols-3">
           {teile.map((t) => (
-            <div
+            <Link
               key={t.n}
-              className={cx("flip3d h-64 cursor-pointer", flipped === t.n && "is-flipped")}
-              onClick={() => setFlipped((f) => (f === t.n ? null : t.n))}
+              href={t.href}
+              className="card card-hover relative flex flex-col overflow-hidden p-6"
             >
-              <div className="flip3d-inner">
-                <div
-                  className={cx(
-                    "flip3d-face flex flex-col justify-between rounded-3xl bg-gradient-to-br p-6 text-white shadow-xl",
-                    t.grad,
-                  )}
-                >
-                  <span className="text-6xl font-black opacity-30">Teil {t.n}</span>
-                  <div>
-                    <span className="text-3xl">{t.icon}</span>
-                    <h3 className="mt-2 text-xl font-bold text-white">{t.title}</h3>
-                    <p className="mt-1 text-sm text-white/85">{t.front}</p>
-                  </div>
-                </div>
-                <div className={cx(GLASS, "flip3d-face flip3d-back flex flex-col p-6")}>
-                  <h3 className="font-bold">
-                    Teil {t.n} · {t.title}
-                  </h3>
-                  <p className="mt-3 flex-1 text-sm text-slate-600 dark:text-slate-300">{t.back}</p>
-                  <Link href={t.href} className="btn-primary self-start" onClick={(e) => e.stopPropagation()}>
-                    {tr("Mashq qilish →", "Тренироваться →", "Alıştırma yap →", "Practise →")}
-                  </Link>
-                </div>
-              </div>
-            </div>
+              <span className={cx("absolute inset-x-0 top-0 h-1 bg-gradient-to-r", t.grad)} aria-hidden />
+              <span className="flex items-center gap-3">
+                <span className="grid h-9 w-9 place-items-center rounded-full bg-slate-900 font-display text-sm font-extrabold text-white dark:bg-white dark:text-slate-900">
+                  {t.n}
+                </span>
+                <span className="text-xs font-semibold uppercase tracking-wider muted">Teil {t.n}</span>
+              </span>
+              <h3 lang="de" className="mt-4 text-lg font-bold">
+                {t.title}
+              </h3>
+              <p className="mt-1 text-sm font-medium text-slate-700 dark:text-slate-200">{t.front}</p>
+              <p className="mt-3 flex-1 text-sm muted">{t.back}</p>
+              <span className="mt-5 text-sm font-semibold text-teal-700 dark:text-teal-300">
+                {tr("Mashq qilish →", "Тренироваться →", "Alıştırma yap →", "Practise →")}
+              </span>
+            </Link>
           ))}
         </div>
       </section>
 
       {/* Narx + chaqiruv */}
-      <section className="container-app relative pb-16">
-        <div className="relative overflow-hidden rounded-[2rem] bg-gradient-to-br from-teal-600 via-cyan-700 to-violet-700 p-8 text-white shadow-2xl sm:p-12">
-          <span className="blob right-[-10%] top-[-30%] h-80 w-80 bg-white/40" aria-hidden />
-          <div className="relative grid items-center gap-8 lg:grid-cols-[1.2fr_1fr]">
+      <section className="container-app pb-16">
+        <div className="rounded-3xl bg-[#0b1f26] p-8 text-white sm:p-12">
+          <div className="grid items-center gap-8 lg:grid-cols-[1.2fr_1fr]">
             <div>
-              <h2 className="text-3xl font-black text-white sm:text-4xl">
+              <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
                 {tr(
                   "Bugun boshlang — birinchi kun bepul",
                   "Начните сегодня — первый день бесплатно",
@@ -439,7 +352,7 @@ export function HomePage() {
                   "Start today — the first day is free",
                 )}
               </h2>
-              <p className="mt-3 max-w-md text-white/80">
+              <p className="mt-3 max-w-md text-white/70">
                 {tr(
                   `${TRIAL_HOURS} soat barcha materiallar va ${FREE_LIMITS.exam} ta to‘liq imtihon. Keyin — haftasiga yoki oyiga.`,
                   `${TRIAL_HOURS} ч все материалы и ${FREE_LIMITS.exam} полный экзамен. Дальше — на неделю или месяц.`,
@@ -449,7 +362,7 @@ export function HomePage() {
               </p>
               <Link
                 href={startHref}
-                className="btn mt-6 bg-white px-7 py-3.5 text-base font-semibold text-teal-800 shadow-lg hover:bg-teal-50"
+                className="btn mt-6 bg-teal-500 px-7 py-3.5 text-base font-semibold text-white hover:bg-teal-400"
               >
                 {startLabel} →
               </Link>
@@ -464,13 +377,13 @@ export function HomePage() {
                   key={n}
                   href="/pro"
                   className={cx(
-                    "rounded-2xl border border-white/25 bg-white/10 p-4 text-center backdrop-blur transition hover:-translate-y-1 hover:bg-white/20",
-                    i === 2 && "ring-2 ring-white",
+                    "rounded-2xl border p-4 text-center transition hover:bg-white/10",
+                    i === 2 ? "border-teal-400 bg-teal-400/10" : "border-white/15",
                   )}
                 >
-                  <p className="text-[11px] font-bold uppercase tracking-wider text-white/70">{n}</p>
-                  <p className="mt-1 text-2xl font-black">{p}</p>
-                  <p className="text-xs text-white/60">{d}</p>
+                  <p className="text-[11px] font-bold uppercase tracking-wider text-white/60">{n}</p>
+                  <p className="mt-1 font-display text-2xl font-extrabold">{p}</p>
+                  <p className="text-xs text-white/50">{d}</p>
                 </Link>
               ))}
             </div>
