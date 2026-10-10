@@ -4,7 +4,8 @@ import { useAccount } from "./account";
 // Bepul rejim: Telegram orqali birinchi kirishdan boshlab TRIAL_HOURS soat davomida barcha materiallar
 // ochiq, Prüfung simulyatsiyasi esa FREE_LIMITS bo‘yicha (faqat sinov ichida). Haftalik/oylik tarif faol
 // bo‘lsa — hammasi cheklovsiz. Haqiqiy hisob serverda (worker/index.js) — bu yerda faqat ko‘rsatish.
-export const TRIAL_HOURS = 24;
+export const TRIAL_HOURS = 48;
+export const TRIAL_DAYS = TRIAL_HOURS / 24;
 export const FREE_LIMITS = { exam: 1 };
 
 export const PRACTICE = {

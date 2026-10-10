@@ -5,7 +5,7 @@ import { Link } from "../components/Link";
 import { MedNews } from "../components/MedNews";
 import { CASE_SECTIONS, STATS } from "../data/index";
 import { loc, tr } from "../lib/i18n";
-import { FREE_LIMITS, TRIAL_HOURS } from "../lib/plan";
+import { FREE_LIMITS, TRIAL_DAYS } from "../lib/plan";
 import { cx } from "../lib/utils";
 import { getProfile } from "../lib/daily";
 
@@ -181,10 +181,10 @@ export function HomePage() {
           </div>
           <p className="mt-3 text-xs muted">
             {tr(
-              `${TRIAL_HOURS} soat bepul · karta talab qilinmaydi`,
-              `${TRIAL_HOURS} ч бесплатно · без карты`,
-              `${TRIAL_HOURS} saat ücretsiz · kart gerekmez`,
-              `${TRIAL_HOURS} hours free · no card required`,
+              `${TRIAL_DAYS} kun bepul · karta talab qilinmaydi`,
+              `${TRIAL_DAYS} дня бесплатно · без карты`,
+              `${TRIAL_DAYS} gün ücretsiz · kart gerekmez`,
+              `${TRIAL_DAYS} days free · no card required`,
             )}
           </p>
           <dl className="mt-10 flex max-w-lg divide-x divide-slate-900/10 dark:divide-white/10">
@@ -358,10 +358,10 @@ export function HomePage() {
               </h2>
               <p className="mt-3 max-w-md text-white/70">
                 {tr(
-                  `${TRIAL_HOURS} soat barcha materiallar va ${FREE_LIMITS.exam} ta to‘liq imtihon. Keyin — haftasiga yoki oyiga.`,
-                  `${TRIAL_HOURS} ч все материалы и ${FREE_LIMITS.exam} полный экзамен. Дальше — на неделю или месяц.`,
-                  `${TRIAL_HOURS} saat tüm materyaller ve ${FREE_LIMITS.exam} tam sınav. Sonrası — haftalık veya aylık.`,
-                  `${TRIAL_HOURS} hours of all materials and ${FREE_LIMITS.exam} full exam. After that — weekly or monthly.`,
+                  `${TRIAL_DAYS} kun barcha materiallar va ${FREE_LIMITS.exam} ta to‘liq imtihon. Keyin — haftasiga yoki oyiga.`,
+                  `${TRIAL_DAYS} дня все материалы и ${FREE_LIMITS.exam} полный экзамен. Дальше — на неделю или месяц.`,
+                  `${TRIAL_DAYS} gün tüm materyaller ve ${FREE_LIMITS.exam} tam sınav. Sonrası — haftalık veya aylık.`,
+                  `${TRIAL_DAYS} days of all materials and ${FREE_LIMITS.exam} full exam. After that — weekly or monthly.`,
                 )}
               </p>
               <Link

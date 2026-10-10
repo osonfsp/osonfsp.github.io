@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "../components/Link";
 import { PageHeader } from "../components/ui";
 import { trackEvent } from "../lib/analytics";
-import { FREE_LIMITS, TRIAL_HOURS, usePlan } from "../lib/plan";
+import { FREE_LIMITS, TRIAL_DAYS, TRIAL_HOURS, usePlan } from "../lib/plan";
 import { cx } from "../lib/utils";
 import { formatDay, LANG, tr } from "../lib/i18n";
 import { api, refreshAccount, useAccount } from "../lib/account";
@@ -16,10 +16,10 @@ const OFFERS = [
     note: tr("sinov", "пробный", "deneme", "trial"),
     items: [
       tr(
-        `Barcha materiallar — 1 kun (${TRIAL_HOURS} soat)`,
-        `Все материалы — 1 день (${TRIAL_HOURS} ч)`,
-        `Tüm materyaller — 1 gün (${TRIAL_HOURS} saat)`,
-        `All materials — 1 day (${TRIAL_HOURS} hours)`,
+        `Barcha materiallar — ${TRIAL_DAYS} kun (${TRIAL_HOURS} soat)`,
+        `Все материалы — ${TRIAL_DAYS} дня (${TRIAL_HOURS} ч)`,
+        `Tüm materyaller — ${TRIAL_DAYS} gün (${TRIAL_HOURS} saat)`,
+        `All materials — ${TRIAL_DAYS} days (${TRIAL_HOURS} hours)`,
       ),
       tr(
         "Klinik holatlar, simulyatsiya, Arztbrief, lug‘at, Redemittel",

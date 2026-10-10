@@ -10,10 +10,10 @@ export function InviteCard() {
   if (ARTIFACT || !TG_BOT || !account?.user?.id) return null;
   let link = `https://t.me/${TG_BOT}?start=ref_${account.user.id}`,
     text = tr(
-      "FSP ga tayyorlanyapsizmi? OsonFSP — Fälle, Arztbrief, simulyatsiya va tibbiy nemis tili. Birinchi 24 soat bepul:",
-      "Готовитесь к FSP? OsonFSP — кейсы, Arztbrief, симуляция и медицинский немецкий. Первые 24 часа бесплатно:",
-      "FSP’ye mi hazırlanıyorsunuz? OsonFSP — vakalar, Arztbrief, simülasyon ve tıbbi Almanca. İlk 24 saat ücretsiz:",
-      "Preparing for the FSP? OsonFSP — cases, Arztbrief, simulation and medical German. The first 24 hours are free:",
+      "FSP ga tayyorlanyapsizmi? OsonFSP — Fälle, Arztbrief, simulyatsiya va tibbiy nemis tili. Birinchi 2 kun bepul:",
+      "Готовитесь к FSP? OsonFSP — кейсы, Arztbrief, симуляция и медицинский немецкий. Первые 2 дня бесплатно:",
+      "FSP’ye mi hazırlanıyorsunuz? OsonFSP — vakalar, Arztbrief, simülasyon ve tıbbi Almanca. İlk 2 gün ücretsiz:",
+      "Preparing for the FSP? OsonFSP — cases, Arztbrief, simulation and medical German. The first 2 days are free:",
     ),
     share = `https://t.me/share/url?url=${encodeURIComponent(link)}&text=${encodeURIComponent(text)}`;
   return (

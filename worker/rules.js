@@ -1,7 +1,7 @@
 // Sinov, tarif va limitlar — sayt bilan bir xil bo'lishi kerak (src/lib/plan.js)
-export const TRIAL_HOURS = 24,
+export const TRIAL_HOURS = 48,
   FREE_EXAMS = 1,
-  AI_DAILY_CAP = 150,
+  AI_DAILY_CAP = 40, // Gemini bepul tarifi umumiy — bitta odam hammaniki tugatib qo'ymasin
   BOT_AI_DAILY_CAP = 20, // botdagi ovozli/matnli mashq (Gemini) — kuniga
   SESSION_DAYS = 60,
   PLANS = { week: 7, month: 30 },

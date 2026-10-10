@@ -249,6 +249,25 @@ function Sidebar({ onClose }) {
           );
         })}
       </nav>
+      <div className="shrink-0 px-3 pb-2">
+        <Link
+          href="/fikr"
+          className={cx(
+            "flex items-center gap-3 rounded-xl border px-3 py-2.5 text-sm font-medium transition",
+            active("/fikr")
+              ? "border-amber-300/50 bg-amber-400/20 text-white"
+              : "border-amber-300/30 bg-amber-400/10 text-amber-50 hover:bg-amber-400/20",
+          )}
+        >
+          <Icon name="chat" className="h-[18px] w-[18px] shrink-0 text-amber-300" />
+          <span className="flex-1">
+            {tr("Fikr va takliflar", "Отзывы и предложения", "Görüş ve öneriler", "Feedback")}
+            <span className="block text-[11px] font-normal text-amber-100/70">
+              {tr("Beta — fikringiz muhim", "Бета — ваш отзыв важен", "Beta — görüşünüz önemli", "Beta — your input matters")}
+            </span>
+          </span>
+        </Link>
+      </div>
       {FEEDBACK_TELEGRAM && (
         <div className="shrink-0 px-3 pb-2">
           <a
@@ -568,6 +587,9 @@ export function Footer() {
           </Link>
           <Link href="/dashboard" className="hover:text-teal-300">
             Dashboard
+          </Link>
+          <Link href="/fikr" className="hover:text-teal-300">
+            {tr("Fikr va takliflar", "Отзывы и предложения", "Görüş ve öneriler", "Feedback")}
           </Link>
         </nav>
       </div>

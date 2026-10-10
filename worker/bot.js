@@ -64,10 +64,10 @@ const fmtDate = (ms) => {
 // ---- Matnlar: [uz, ru, tr, en] ----
 const T = {
   welcome: [
-    "Assalomu alaykum! 👋\n\nOsonFSP — shifokorlar uchun Fachsprachprüfung (FSP) ga tayyorgarlik: Fälle, Arztbrief, bemor bilan suhbat simulyatsiyasi, Aufklärung va tibbiy nemis tili.\n\nPastdagi tugmani bosing — sayt shu yerning o‘zida, Telegram ichida ochiladi. Birinchi 24 soat bepul.",
-    "Здравствуйте! 👋\n\nOsonFSP — подготовка к Fachsprachprüfung (FSP) для врачей: клинические случаи (Fälle), Arztbrief, симуляция разговора с пациентом, Aufklärung и медицинский немецкий.\n\nНажмите кнопку ниже — сайт откроется прямо здесь, в Telegram. Первые 24 часа бесплатно.",
-    "Merhaba! 👋\n\nOsonFSP — doktorlar için Fachsprachprüfung (FSP) hazırlığı: vakalar (Fälle), Arztbrief, hasta görüşmesi simülasyonu, Aufklärung ve tıbbi Almanca.\n\nAşağıdaki düğmeye basın — site burada, Telegram içinde açılır. İlk 24 saat ücretsiz.",
-    "Hello! 👋\n\nOsonFSP — Fachsprachprüfung (FSP) preparation for doctors: clinical cases (Fälle), Arztbrief, patient conversation simulation, Aufklärung and medical German.\n\nPress the button below — the site opens right here in Telegram. The first 24 hours are free.",
+    "Assalomu alaykum! 👋\n\nOsonFSP — shifokorlar uchun Fachsprachprüfung (FSP) ga tayyorgarlik: Fälle, Arztbrief, bemor bilan suhbat simulyatsiyasi, Aufklärung va tibbiy nemis tili.\n\nPastdagi tugmani bosing — sayt shu yerning o‘zida, Telegram ichida ochiladi. Birinchi 2 kun bepul.",
+    "Здравствуйте! 👋\n\nOsonFSP — подготовка к Fachsprachprüfung (FSP) для врачей: клинические случаи (Fälle), Arztbrief, симуляция разговора с пациентом, Aufklärung и медицинский немецкий.\n\nНажмите кнопку ниже — сайт откроется прямо здесь, в Telegram. Первые 2 дня бесплатно.",
+    "Merhaba! 👋\n\nOsonFSP — doktorlar için Fachsprachprüfung (FSP) hazırlığı: vakalar (Fälle), Arztbrief, hasta görüşmesi simülasyonu, Aufklärung ve tıbbi Almanca.\n\nAşağıdaki düğmeye basın — site burada, Telegram içinde açılır. İlk 2 gün ücretsiz.",
+    "Hello! 👋\n\nOsonFSP — Fachsprachprüfung (FSP) preparation for doctors: clinical cases (Fälle), Arztbrief, patient conversation simulation, Aufklärung and medical German.\n\nPress the button below — the site opens right here in Telegram. The first 2 days are free.",
   ],
   // Pastki tugmalar paneli (reply keyboard)
   menu: {
@@ -181,10 +181,10 @@ const T = {
   ],
   shareBtn: ["📤 Ulashish", "📤 Поделиться", "📤 Paylaş", "📤 Share"],
   shareText: [
-    "FSP ga tayyorlanyapsizmi? OsonFSP — Fälle, Arztbrief, simulyatsiya va tibbiy nemis tili. Birinchi 24 soat bepul:",
-    "Готовитесь к FSP? OsonFSP — кейсы, Arztbrief, симуляция и медицинский немецкий. Первые 24 часа бесплатно:",
-    "FSP’ye mi hazırlanıyorsunuz? OsonFSP — vakalar, Arztbrief, simülasyon ve tıbbi Almanca. İlk 24 saat ücretsiz:",
-    "Preparing for the FSP? OsonFSP — cases, Arztbrief, simulation and medical German. The first 24 hours are free:",
+    "FSP ga tayyorlanyapsizmi? OsonFSP — Fälle, Arztbrief, simulyatsiya va tibbiy nemis tili. Birinchi 2 kun bepul:",
+    "Готовитесь к FSP? OsonFSP — кейсы, Arztbrief, симуляция и медицинский немецкий. Первые 2 дня бесплатно:",
+    "FSP’ye mi hazırlanıyorsunuz? OsonFSP — vakalar, Arztbrief, simülasyon ve tıbbi Almanca. İlk 2 gün ücretsiz:",
+    "Preparing for the FSP? OsonFSP — cases, Arztbrief, simulation and medical German. The first 2 days are free:",
   ],
   refJoined: [
     (name, ok) =>
@@ -207,10 +207,10 @@ const T = {
     custom: ["maxsus", "особый", "özel", "custom"],
   },
   needAccount: [
-    "Avval saytni bir marta oching — akkauntingiz yaratiladi (birinchi 24 soat bepul).",
-    "Сначала откройте сайт один раз — аккаунт будет создан (первые 24 часа бесплатно).",
-    "Önce siteyi bir kez açın — hesabınız oluşturulur (ilk 24 saat ücretsiz).",
-    "Open the site once first — your account will be created (the first 24 hours are free).",
+    "Avval saytni bir marta oching — akkauntingiz yaratiladi (birinchi 2 kun bepul).",
+    "Сначала откройте сайт один раз — аккаунт будет создан (первые 2 дня бесплатно).",
+    "Önce siteyi bir kez açın — hesabınız oluşturulur (ilk 2 gün ücretsiz).",
+    "Open the site once first — your account will be created (the first 2 days are free).",
   ],
   planRequested: [
     (p) =>
@@ -394,6 +394,21 @@ export async function requestPlan(env, store, user, planId) {
     ...kb([{ text: L("adminBtn", lang), url: ADMIN_CONTACT }]),
   });
   return true;
+}
+
+// Saytdagi "Fikr va takliflar" formasi (src/components/Feedback.jsx): adminlarga matn + kimdan, qayerdan
+const FB_KINDS = { idea: "💡 Taklif", bug: "🐞 Kamchilik", other: "💬 Fikr" };
+export async function sendFeedback(env, store, user, { kind, text, context }) {
+  let head = `${FB_KINDS[kind] ?? FB_KINDS.other} — ${who(user)}${context ? `
+📍 ${context}` : ""}`;
+  await notifyAdmins(
+    env,
+    store,
+    `${head}
+
+${text}`.slice(0, 4000),
+    user.username ? kb([{ text: "✈️ Javob yozish", url: `https://t.me/${user.username}` }]) : {},
+  );
 }
 
 // Admin tarif yoqqanda (botdagi tugma, /grant yoki sayt admin paneli) — foydalanuvchiga xabar

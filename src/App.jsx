@@ -16,6 +16,7 @@ import { TodayPage } from "./pages/Today";
 import { HoerenListPage, HoerenPage } from "./pages/Hoeren";
 import { LoginPage } from "./pages/Login";
 import { ProPage } from "./pages/Pro";
+import { FeedbackPage } from "./pages/Feedback";
 import { RedemittelPage } from "./pages/Redemittel";
 import { SimulationPage } from "./pages/Simulation";
 import { WordsPage } from "./pages/Words";
@@ -55,6 +56,7 @@ const ROUTES = [
   [/^\/hoeren$/, HoerenListPage],
   [/^\/hoeren\/[^/]+$/, HoerenPage],
   [/^\/pro$/, ProPage],
+  [/^\/fikr$/, FeedbackPage],
   [/^\/pruefung$/, ExamPage],
   [/^\/admin$/, AdminPage],
 ];

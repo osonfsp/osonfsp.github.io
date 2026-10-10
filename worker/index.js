@@ -24,6 +24,7 @@ import {
   notifyGranted,
   onLogin,
   requestPlan,
+  sendFeedback,
   runCron,
   setupBot,
   webhookSecret,
@@ -294,6 +295,17 @@ export default {
       if (!PLANS[body?.planId]) return reply(400, { error: "bad_plan" });
       let ok = await requestPlan(env, store, u, body.planId);
       return reply(ok ? 200 : 502, { ok });
+    }
+
+    // Fikr va takliflar: adminga bot orqali. Kuniga 10 tagacha (hisob ai_usage jadvalida, alohida kun kaliti bilan)
+    if (path === "/feedback" && req.method === "POST") {
+      let text = typeof body?.text === "string" ? body.text.trim() : "",
+        context = typeof body?.context === "string" ? body.context.trim().slice(0, 200) : "";
+      if (text.length < 3 || text.length > 3000) return reply(400, { error: "bad_text" });
+      let tick = await store.aiTick(u.id, `fb:${today()}`, r.isAdmin ? 0 : 10);
+      if (!tick.ok) return reply(429, { error: "feedback_limit" });
+      await sendFeedback(env, store, u, { kind: body?.kind, text, context });
+      return reply(200, { ok: true });
     }
 
     if (path === "/ai" && req.method === "POST") {

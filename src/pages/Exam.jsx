@@ -28,6 +28,7 @@ import { tr } from "../lib/i18n";
 import { SectionIntro } from "../components/SectionIntro";
 import { Icon } from "../components/Icon";
 import { Confetti, ShareResult } from "../components/Celebrate";
+import { FeedbackForm } from "../components/Feedback";
 
 function Timer({ minutes: e, resetKey: t, onExpire: o }) {
   let [a, n] = useState(e * 60);
@@ -862,6 +863,21 @@ export function ExamPage() {
               Dashboard
             </Link>
           </div>
+          <FeedbackForm
+            title={tr(
+              "Imtihon qanday o‘tdi? Fikringizni yozing",
+              "Как прошёл экзамен? Напишите отзыв",
+              "Sınav nasıl geçti? Görüşünüzü yazın",
+              "How was the exam? Tell us",
+            )}
+            subtitle={tr(
+              "Nima qo‘shaylik, qanday kamchiliklar bor? Xabaringiz to‘g‘ridan-to‘g‘ri sayt egasiga boradi.",
+              "Что добавить, какие есть недочёты? Сообщение придёт напрямую владельцу сайта.",
+              "Ne ekleyelim, hangi eksikler var? Mesajınız doğrudan site sahibine gider.",
+              "What should we add, what's missing? Your message goes straight to the site owner.",
+            )}
+            context={`Imtihon${hard ? " (qiyin)" : ""}: ${n.c.title} — ${g.passed ? "o‘tdi" : "o‘tmadi"} (${Object.values(g.parts).join("/")}%)`}
+          />
         </div>
       )}
     </div>
