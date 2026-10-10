@@ -77,11 +77,35 @@ self.addEventListener("fetch", (e) => {
   };
 }
 
+// Artifact tashqi serverga so‘rov yubora olmaydi — yangiliklar yig‘ish paytida olinib, sahifaga yoziladi
+// (Artifact qayta chiqarilganda yangilanadi). Olinmasa, yangiliklar bo‘limi ko‘rinmaydi.
+async function newsSnapshot() {
+  const env = readFileSync(new URL("./.env", import.meta.url), "utf8");
+  const api = env.match(/^VITE_API_URL=(.+)$/m)?.[1]?.trim();
+  if (!api) return null;
+  try {
+    const r = await fetch(`${api}/news`, {
+      headers: { Origin: "https://osonfsp.github.io" },
+      signal: AbortSignal.timeout(15000),
+    });
+    if (!r.ok) throw new Error(`HTTP ${r.status}`);
+    const items = (await r.json()).items ?? [];
+    console.log(`news snapshot: ${items.length} items`);
+    return items;
+  } catch (e) {
+    console.warn(`news snapshot failed: ${e.message}`);
+    return null;
+  }
+}
+
 // `npm run build:artifact` -> dist-artifact/index.html: one self-contained file,
 // ready to publish again as a claude.ai Artifact or to open without a server.
-export default defineConfig(({ mode }) => ({
+export default defineConfig(async ({ mode }) => ({
   plugins: mode === "artifact" ? [react(), viteSingleFile()] : [react(), serviceWorker()],
   base: "./",
-  define: { __CONTENT_STATS__: JSON.stringify(contentStats()) },
+  define: {
+    __CONTENT_STATS__: JSON.stringify(contentStats()),
+    __NEWS_SNAPSHOT__: JSON.stringify(mode === "artifact" ? await newsSnapshot() : null),
+  },
   build: mode === "artifact" ? { outDir: "dist-artifact" } : {},
 }));

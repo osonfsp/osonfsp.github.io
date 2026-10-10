@@ -16,8 +16,12 @@ function ago(ms) {
 
 // Bosh sahifa pastida: Germaniyadan tibbiyot yangiliklari (server har 3 soatda yangilaydi — worker/news.js).
 // Nemischa sarlavha + tarjima: yangilik ham, o‘qish mashqi ham.
+// Artifact'da serverga so‘rov yo‘q — yig‘ish paytidagi nusxa ko‘rsatiladi (vite.config.js, newsSnapshot).
+const SNAPSHOT = typeof __NEWS_SNAPSHOT__ !== "undefined" ? __NEWS_SNAPSHOT__ : null;
+
 export function MedNews() {
   let [items, setItems] = useState(() => {
+      if (ARTIFACT) return SNAPSHOT;
       try {
         return JSON.parse(sessionStorage.getItem(CACHE_KEY)) ?? null;
       } catch {
@@ -43,7 +47,7 @@ export function MedNews() {
     return () => (off = true);
   }, []);
 
-  if (ARTIFACT || !API_URL || (failed && !items) || items?.length === 0) return null;
+  if (ARTIFACT ? !SNAPSHOT?.length : !API_URL || (failed && !items) || items?.length === 0) return null;
   let shown = items ? (all ? items : items.slice(0, 6)) : [];
 
   return (
