@@ -1,5 +1,5 @@
 // Germaniya tibbiyot yangiliklari (bosh sahifa uchun): ochiq RSS lentalardan sarlavha, qisqa kirish qismi va
-// manba havolasi olinadi, sarlavhalar Gemini bilan 4 tilga tarjima qilinadi. Natija meta jadvalida turadi;
+// rasm va manba havolasi olinadi, sarlavhalar Gemini bilan 4 tilga tarjima qilinadi. Natija meta jadvalida turadi;
 // har 3 soatda cron yangilaydi (refreshNews), /news esa tayyorini darhol beradi (getNews).
 import { callGemini } from "./gemini.js";
 
@@ -29,6 +29,12 @@ const text = (s) =>
 const tag = (xml, name) => xml.match(new RegExp(`<${name}\\b[^>]*>([\\s\\S]*?)</${name}>`, "i"))?.[1] ?? "";
 // Saytdagidek: o‘ va g‘ — U+2018, tutuq belgisi — ’
 const uzQuotes = (s) => s.replace(/([oOgG])[ʻ'’`]/g, "$1‘").replace(/[ʼ']/g, "’");
+// Rasm faqat https va kichikroq o'lchamda (karta uchun 640px yetadi)
+const imgUrl = (u) => {
+  u = decode(u || "").trim();
+  if (!/^https:\/\/[^\s"'<>]+$/.test(u)) return null;
+  return u.replace(/([?&])width=\d+/, "$1width=640").replace(/([?&])w=\d+/, "$1w=640");
+};
 const short = (s, n) => (s.length > n ? `${s.slice(0, n).replace(/\s+\S*$/, "")}…` : s);
 
 function parseFeed(xml, source) {
@@ -40,10 +46,33 @@ function parseFeed(xml, source) {
       date = Date.parse(text(tag(it, "pubDate"))) || 0;
     // Faqat https havolalar (sahifaga xavfli href tushmasin)
     if (!title || !/^https:\/\//.test(link)) continue;
-    items.push({ title, link, date, source, snippet: short(text(tag(it, "description")), SNIPPET) });
+    // tagesschau: rasm content:encoded ichida (<img src=...>); Ärzteblatt lentasida rasm yo'q — keyin sahifadan
+    let img = imgUrl(decode(tag(it, "content:encoded") + tag(it, "description")).match(/<img[^>]*src="([^"]+)"/i)?.[1]);
+    items.push({ title, link, date, source, img, snippet: short(text(tag(it, "description")), SNIPPET) });
     if (items.length >= PER_FEED) break;
   }
   return items;
+}
+
+// Lentada rasmi yo'q yangilik uchun maqola sahifasidagi og:image olinadi (avval topilgani qayta so'ralmaydi)
+async function addImages(items, old) {
+  let known = new Map((old?.items || []).filter((x) => x.img !== undefined).map((x) => [x.link, x.img]));
+  return Promise.all(
+    items.map(async (x) => {
+      if (x.img) return x;
+      if (known.has(x.link)) return { ...x, img: known.get(x.link) };
+      let html = await fetch(x.link, {
+        headers: { "User-Agent": "OsonFSP/1.0 (+https://osonfsp.github.io)" },
+        signal: AbortSignal.timeout(8_000),
+      })
+        .then((r) => (r.ok ? r.text() : ""))
+        .catch(() => "");
+      let m =
+        html.match(/<meta[^>]+property="og:image"[^>]+content="([^"]+)"/i) ||
+        html.match(/<meta[^>]+content="([^"]+)"[^>]+property="og:image"/i);
+      return { ...x, img: imgUrl(m?.[1]) };
+    }),
+  );
 }
 
 // Sarlavhalarni bitta so'rovda tarjima qilamiz; avval tarjima qilinganlari qayta yuborilmaydi
@@ -112,6 +141,7 @@ async function refresh(env, store, old) {
   }
   // Lentalar ishlamay qolsa — eski yangiliklar qoladi
   if (!items.length) return old;
+  items = await addImages(items, old);
   let tr = await translate(env, items, old),
     // Tarjima chiqmagan bo'lsa (Gemini band) — 3 soat emas, ~20 daqiqadan keyin yana urinib ko'ramiz
     at = tr.some((x) => !x.tr) ? Date.now() - NEWS_TTL + 20 * 60_000 : Date.now(),
@@ -124,7 +154,8 @@ export async function getNews(env, store, ctx) {
   let raw = await store.getMeta("news"),
     data = raw ? JSON.parse(raw) : null,
     // Odatda cron yangilaydi; u o'tkazib yuborgan bo'lsa yoki tarjima chiqmagan bo'lsa — shu yerda, fonda
-    stale = !data || Date.now() - data.at > NEWS_TTL + 30 * 60_000;
+    // (rasmlar qo'shilishidan oldingi ma'lumotda img maydoni yo'q — u ham yangilanadi)
+    stale = !data || Date.now() - data.at > NEWS_TTL + 30 * 60_000 || data.items.some((x) => !("img" in x));
   if (stale) {
     let lock = Number((await store.getMeta("news_lock")) || 0);
     if (Date.now() - lock > LOCK_MS) {

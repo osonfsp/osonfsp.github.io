@@ -14,6 +14,25 @@ function ago(ms) {
   return tr(`${d} kun oldin`, `${d} дн. назад`, `${d} gün önce`, `${d} d ago`);
 }
 
+// Manbadagi rasm (worker/news.js topadi); yuklanmasa — yashiriladi, karta rasmsiz qoladi
+function NewsImg({ src }) {
+  let [ok, setOk] = useState(true);
+  if (!src || !ok) return null;
+  return (
+    <div className="-mx-5 -mt-5 mb-4 aspect-[16/9] overflow-hidden bg-slate-100 dark:bg-slate-800">
+      <img
+        src={src}
+        alt=""
+        loading="lazy"
+        decoding="async"
+        referrerPolicy="no-referrer"
+        onError={() => setOk(false)}
+        className="h-full w-full object-cover transition duration-300 group-hover:scale-[1.03]"
+      />
+    </div>
+  );
+}
+
 // Bosh sahifa pastida: Germaniyadan tibbiyot yangiliklari (server har 3 soatda yangilaydi — worker/news.js).
 // Nemischa sarlavha + tarjima: yangilik ham, o‘qish mashqi ham.
 // Artifact'da serverga so‘rov yo‘q — yig‘ish paytidagi nusxa ko‘rsatiladi (vite.config.js, newsSnapshot).
@@ -74,6 +93,7 @@ export function MedNews() {
         {!items
           ? [0, 1, 2].map((i) => (
               <div key={i} className="card space-y-3">
+                <div className="skeleton -mx-5 -mt-5 mb-4 aspect-[16/9] rounded-none" />
                 <div className="skeleton h-3 w-32" />
                 <div className="skeleton h-5 w-full" />
                 <div className="skeleton h-4 w-4/5" />
@@ -85,8 +105,9 @@ export function MedNews() {
                 href={n.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="card card-hover group flex flex-col"
+                className="card card-hover group flex flex-col overflow-hidden"
               >
+                <NewsImg src={n.img} />
                 <span className="flex items-center gap-2 text-xs muted">
                   <span className="font-semibold text-slate-700 dark:text-slate-200">{n.source}</span>
                   {n.date > 0 && <span>· {ago(n.date)}</span>}
