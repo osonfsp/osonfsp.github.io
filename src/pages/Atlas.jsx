@@ -2,7 +2,8 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { Icon, Ic } from "../components/Icon";
 import { Speak, speak } from "../components/Speak";
 import { PageHeader } from "../components/ui";
-import { BODY, ORGANS, REGIONS } from "../data/atlas";
+import { ATLAS_CREDIT, ORGANS, REGIONS } from "../data/atlas";
+import LAYOUT from "../data/atlas-layout.json";
 import { trackEvent } from "../lib/analytics";
 import { tr } from "../lib/i18n";
 import { shuffleWith } from "../lib/quiz";
@@ -13,6 +14,31 @@ import { cx } from "../lib/utils";
 //   zeigen — "Zeigen Sie mir …" — so‘ralgan a’zo yoki sohani topish (10 savol)
 //   bemor  — bemor og‘riq joyini aytadi, siz sohani ko‘rsatasiz (8 savol)
 const ROUNDS = { zeigen: 10, bemor: 8 };
+
+// Qatlam rasmlari (Servier Medical Art) — Artifact versiyasida sahifaga ichiga joylanadi
+const IMG = Object.fromEntries(
+  Object.entries(import.meta.glob("../assets/atlas/*.webp", { eager: true, import: "default" })).map(
+    ([k, v]) => [k.split("/").pop().replace(".webp", ""), v],
+  ),
+);
+// Bosish tartibi: kattalar pastda, kichiklar ustida (bir-birini qoplasa, kichigi tanlanadi)
+const HIT_ORDER = [
+  "lunge",
+  "leber",
+  "magen",
+  "dickdarm",
+  "duenndarm",
+  "pankreas",
+  "milz",
+  "gallenblase",
+  "appendix",
+  "niere",
+  "herz",
+  "luftroehre",
+  "blase",
+  "schilddruese",
+  "gehirn",
+];
 
 // [id, ikon, to‘liq nom, telefondagi qisqa nom]
 const MODES = [
@@ -157,8 +183,19 @@ export function AtlasPage() {
       </div>
 
       <div className="grid gap-5 lg:grid-cols-[minmax(0,430px)_minmax(0,1fr)]">
-        <div className="card relative overflow-hidden bg-gradient-to-b from-slate-50 to-teal-50/60 p-3 dark:from-slate-900 dark:to-teal-950/30">
+        <div className="card relative overflow-hidden !bg-gradient-to-b from-white to-teal-50 p-3 dark:border-slate-700">
           <BodySvg layer={activeLayer} items={items} stateOf={stateOf} onPick={pick} />
+          <p className="mt-1 text-center text-[10px] muted">
+            {tr("Rasmlar", "Иллюстрации", "Görseller", "Illustrations")}:{" "}
+            <a href={ATLAS_CREDIT.url} target="_blank" rel="noopener noreferrer" className="underline">
+              {ATLAS_CREDIT.text}
+            </a>
+            ,{" "}
+            <a href={ATLAS_CREDIT.licenseUrl} target="_blank" rel="noopener noreferrer" className="underline">
+              {ATLAS_CREDIT.license}
+            </a>{" "}
+            · {tr("moslashtirilgan", "адаптировано", "uyarlanmıştır", "adapted")}
+          </p>
           <div className="pointer-events-none absolute inset-x-4 top-3 flex justify-between text-[11px] font-semibold uppercase tracking-wider text-slate-400">
             <span>
               rechts
@@ -196,100 +233,79 @@ export function AtlasPage() {
       </div>
 
       <style>{`
-        .atlas-shape{cursor:pointer;transition:opacity .2s;transform-box:fill-box;transform-origin:center}
-        .atlas-shape:hover{opacity:.85}
+        .atlas-shape{cursor:pointer}
         .atlas-shape:focus{outline:none}
+        .atlas-shape path,.atlas-shape rect{transition:fill-opacity .15s}
+        .atlas-idle:hover path,.atlas-idle:hover rect,.atlas-idle:focus-visible path{fill-opacity:.22}
         .atlas-sel,.atlas-ok{animation:atlas-pulse 1.1s ease-in-out infinite}
-        .atlas-bad{animation:atlas-shake .35s ease-in-out 2}
-        @keyframes atlas-pulse{0%,100%{opacity:1}50%{opacity:.55}}
-        @keyframes atlas-shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-3px)}75%{transform:translateX(3px)}}
+        .atlas-bad{animation:atlas-blink .3s ease-in-out 3}
+        @keyframes atlas-pulse{0%,100%{opacity:1}50%{opacity:.5}}
+        @keyframes atlas-blink{0%,100%{opacity:1}50%{opacity:.3}}
         @media (prefers-reduced-motion: reduce){.atlas-sel,.atlas-ok,.atlas-bad{animation:none}}
       `}</style>
     </div>
   );
 }
 
+// Holat → ustki qatlam rangi (a’zo konturi rasm ustida yarim shaffof bo‘yaladi)
+const FILL = {
+  "": ["#ffffff", 0],
+  sel: ["#14b8a6", 0.38],
+  ok: ["#10b981", 0.5],
+  bad: ["#0f172a", 0.45],
+  dim: ["#ffffff", 0],
+};
+
 function BodySvg({ layer, items, stateOf, onPick }) {
-  let organs = layer === "organs";
-  // Kattalar avval, kichiklar keyin chiziladi — kichik a’zolar ustida qolib, bosilishi oson bo‘ladi
-  let ordered = useMemo(() => [...items].sort((a, b) => (b.behind ? 1 : 0) - (a.behind ? 1 : 0)), [items]);
+  let organs = layer === "organs",
+    [vx, vy, vw, vh] = LAYOUT.view,
+    byId = useMemo(() => Object.fromEntries(ORGANS.map((o) => [o.id, o])), []);
   let key = (e, item) => (e.key === "Enter" || e.key === " ") && (e.preventDefault(), onPick(item));
   return (
     <svg
-      viewBox="0 0 300 620"
-      className="mx-auto block h-auto max-h-[52vh] w-full max-w-[400px] lg:max-h-[78vh]"
+      viewBox={`${vx} ${vy} ${vw} ${vh}`}
+      className="mx-auto block h-auto max-h-[52vh] w-full max-w-[420px] lg:max-h-[80vh]"
       role="img"
+      aria-label={tr("Inson tanasi atlasi", "Атлас тела человека", "İnsan vücudu atlası", "Human body atlas")}
     >
-      <defs>
-        <linearGradient id="atlas-skin" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0" stopColor="#ccfbf1" />
-          <stop offset="1" stopColor="#e0f2fe" />
-        </linearGradient>
-      </defs>
-      {BODY.map((d, i) => (
-        <path key={i} d={d} fill="url(#atlas-skin)" stroke="#5eead4" strokeOpacity=".6" strokeWidth="1.2" />
-      ))}
-      {/* Qovurg‘a yoyi va diafragma — mo‘ljal uchun */}
-      <path
-        d="M92 262c20-14 96-14 116 0"
-        fill="none"
-        stroke="#94a3b8"
-        strokeDasharray="3 4"
-        strokeOpacity=".7"
-      />
+      <image href={IMG.bg} x={vx} y={vy} width={vw} height={vh} />
+      <g opacity={organs ? 1 : 0.55}>
+        {LAYOUT.order.map((n) => {
+          let L = LAYOUT.layers[n];
+          return <image key={n} href={IMG[n]} x={L.x} y={L.y} width={L.w} height={L.h} />;
+        })}
+      </g>
 
-      {/* A’zolar: sohalar rejimida xira fon sifatida */}
-      <g opacity={organs ? 1 : 0.28} pointerEvents={organs ? "auto" : "none"}>
-        {(organs ? ordered : ORGANS).map((o) => {
-          let st = organs ? stateOf(o) : "";
+      {organs &&
+        HIT_ORDER.map((id) => {
+          let o = byId[id],
+            st = stateOf(o),
+            [fill, op] = FILL[st];
           return (
             <g
-              key={o.id}
-              className={cx("atlas-shape", st && `atlas-${st}`)}
-              opacity={st === "dim" ? 0.35 : 1}
-              role={organs ? "button" : undefined}
-              tabIndex={organs ? 0 : undefined}
-              aria-label={organs ? o.de : undefined}
-              onClick={() => organs && onPick(o)}
-              onKeyDown={(e) => organs && key(e, o)}
+              key={id}
+              className={cx("atlas-shape", st ? `atlas-${st}` : "atlas-idle")}
+              role="button"
+              tabIndex={0}
+              aria-label={o.de}
+              onClick={() => onPick(o)}
+              onKeyDown={(e) => key(e, o)}
             >
               <title>{o.de}</title>
-              {o.paths.map((d, i) =>
-                o.stroke ? (
-                  <g key={i}>
-                    <path
-                      d={d}
-                      fill="none"
-                      stroke="transparent"
-                      strokeWidth={o.stroke + 10}
-                      strokeLinecap="round"
-                    />
-                    <path
-                      d={d}
-                      fill="none"
-                      stroke={st === "ok" ? "#10b981" : st === "bad" ? "#334155" : o.color}
-                      strokeWidth={o.stroke}
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </g>
-                ) : (
-                  <path
-                    key={i}
-                    d={d}
-                    fill={st === "ok" ? "#10b981" : st === "bad" ? "#334155" : o.color}
-                    fillOpacity={o.behind ? 0.6 : 0.9}
-                    stroke={st === "bad" ? "#ef4444" : st === "sel" || st === "ok" ? "#fff" : "#0f172a"}
-                    strokeOpacity={st && st !== "dim" ? 1 : 0.18}
-                    strokeWidth={st === "bad" ? 2.5 : st === "sel" || st === "ok" ? 2 : 1}
-                    strokeDasharray={o.behind ? "3 2" : undefined}
-                  />
-                ),
-              )}
+              <path
+                d={LAYOUT.organs[id]}
+                fill={fill}
+                fillOpacity={op}
+                stroke={
+                  st === "bad" ? "#ef4444" : st === "sel" ? "#0d9488" : st === "ok" ? "#059669" : "none"
+                }
+                strokeWidth={st ? 2 : 0}
+                strokeLinejoin="round"
+                pointerEvents="all"
+              />
             </g>
           );
         })}
-      </g>
 
       {/* Qorin sohalari (3×3) va retrosternal */}
       {!organs &&
@@ -298,7 +314,7 @@ function BodySvg({ layer, items, stateOf, onPick }) {
           return (
             <g
               key={r.id}
-              className={cx("atlas-shape", st && `atlas-${st}`)}
+              className={cx("atlas-shape", st ? `atlas-${st}` : "atlas-idle")}
               role="button"
               tabIndex={0}
               aria-label={r.de}
@@ -311,13 +327,13 @@ function BodySvg({ layer, items, stateOf, onPick }) {
                 y={r.y + 1}
                 width={r.w - 2}
                 height={r.h - 2}
-                rx="7"
-                fill={st === "ok" ? "#10b981" : st === "bad" ? "#334155" : "#14b8a6"}
-                fillOpacity={st === "ok" || st === "bad" ? 0.55 : st === "sel" ? 0.45 : 0.12}
-                stroke="#0d9488"
-                strokeOpacity={st === "sel" || st === "ok" ? 0.9 : 0.45}
-                strokeWidth={st === "sel" || st === "ok" ? 2 : 1}
-                strokeDasharray={st ? undefined : "4 3"}
+                rx="8"
+                fill={st === "ok" ? "#10b981" : st === "bad" ? "#0f172a" : "#14b8a6"}
+                fillOpacity={st === "ok" ? 0.5 : st === "bad" ? 0.45 : st === "sel" ? 0.4 : 0.08}
+                stroke={st === "bad" ? "#ef4444" : "#0d9488"}
+                strokeOpacity={st && st !== "dim" ? 1 : 0.55}
+                strokeWidth={st && st !== "dim" ? 2.5 : 1.2}
+                strokeDasharray={st && st !== "dim" ? undefined : "5 4"}
               />
             </g>
           );

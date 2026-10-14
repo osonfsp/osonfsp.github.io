@@ -1,0 +1,426 @@
+{
+ "_note": "Servier Medical Art (CC BY 4.0) rasmlari: sources'dagi fayllarni bitta papkaga yuklab, `python scripts/atlas/build.py <papka> scripts/atlas/layout.json <chiqish>` ishga tushiring; natijani src/assets/atlas/ va src/data/atlas-layout.json ga ko'chiring.",
+ "sources": {
+  "c_skeleton-face.png": "https://smart.servier.com/wp-content/uploads/2016/10/squelette_03.png",
+  "poumons_01.png": "https://smart.servier.com/wp-content/uploads/2016/10/poumons_01.png",
+  "coeur.png": "https://smart.servier.com/wp-content/uploads/2016/10/coeur.png",
+  "App_urinaire_homme.png": "https://smart.servier.com/wp-content/uploads/2016/10/App_urinaire_homme.png",
+  "syst_dig_complet.png": "https://smart.servier.com/wp-content/uploads/2016/10/syst_dig_complet.png",
+  "thyroide_face.png": "https://smart.servier.com/wp-content/uploads/2016/10/thyroide_face.png",
+  "cerveau_05.png": "https://smart.servier.com/wp-content/uploads/2016/10/cerveau_05.png",
+  "c_adult-woman.png": "https://smart.servier.com/wp-content/uploads/2016/10/F45nue.png"
+ },
+ "canvas": [
+  600,
+  1300
+ ],
+ "bg": {
+  "body": null,
+  "skel": "c_skeleton-face.png",
+  "skel_h": 1250,
+  "skel_xy": [
+   38,
+   24
+  ],
+  "skel_alpha": 0.55,
+  "body_h": 1262,
+  "body_xy": [
+   123,
+   18
+  ],
+  "fill": [
+   214,
+   238,
+   240
+  ],
+  "edge": [
+   150,
+   200,
+   205
+  ]
+ },
+ "layers": {
+  "lungs": {
+   "src": "poumons_01.png",
+   "x": 192,
+   "y": 222,
+   "w": 216
+  },
+  "heart": {
+   "src": "coeur.png",
+   "x": 270,
+   "y": 288,
+   "w": 104
+  },
+  "urinary": {
+   "src": "App_urinaire_homme.png",
+   "crop": [
+    0,
+    0,
+    795,
+    1270
+   ],
+   "x": 226,
+   "y": 498,
+   "w": 148
+  },
+  "digestive": {
+   "src": "syst_dig_complet.png",
+   "crop": [
+    0,
+    1120,
+    670,
+    2250
+   ],
+   "x": 208,
+   "y": 388,
+   "w": 184,
+   "squash": 0.88
+  },
+  "kidneys": {
+   "src": "App_urinaire_homme.png",
+   "crop": [
+    0,
+    0,
+    795,
+    420
+   ],
+   "x": 226,
+   "y": 498,
+   "w": 148,
+   "alpha": 0.55
+  },
+  "bladder": {
+   "src": "App_urinaire_homme.png",
+   "crop": [
+    230,
+    960,
+    570,
+    1270
+   ],
+   "x": 269,
+   "y": 634,
+   "w": 63
+  },
+  "thyroid": {
+   "src": "thyroide_face.png",
+   "x": 280,
+   "y": 224,
+   "w": 40
+  },
+  "brain": {
+   "src": "cerveau_05.png",
+   "x": 248,
+   "y": 32,
+   "w": 104
+  }
+ },
+ "order": [
+  "lungs",
+  "urinary",
+  "digestive",
+  "heart",
+  "kidneys",
+  "bladder",
+  "thyroid",
+  "brain"
+ ],
+ "organs": {
+  "gehirn": {
+   "layer": "brain"
+  },
+  "schilddruese": {
+   "layer": "thyroid"
+  },
+  "luftroehre": {
+   "layer": "lungs",
+   "box": [
+    170,
+    0,
+    240,
+    105
+   ]
+  },
+  "lunge": {
+   "layer": "lungs",
+   "minus": [
+    170,
+    0,
+    240,
+    105
+   ]
+  },
+  "herz": {
+   "layer": "heart"
+  },
+  "leber": {
+   "layer": "digestive",
+   "seeds": [
+    [
+     100,
+     180
+    ],
+    [
+     300,
+     110
+    ],
+    [
+     480,
+     100
+    ],
+    [
+     330,
+     190
+    ],
+    [
+     60,
+     360
+    ],
+    [
+     180,
+     380
+    ]
+   ]
+  },
+  "gallenblase": {
+   "layer": "digestive",
+   "seeds": [
+    [
+     115,
+     300
+    ],
+    [
+     150,
+     280
+    ]
+   ]
+  },
+  "magen": {
+   "layer": "digestive",
+   "seeds": [
+    [
+     450,
+     280
+    ],
+    [
+     300,
+     460
+    ],
+    [
+     520,
+     440
+    ],
+    [
+     180,
+     480
+    ],
+    [
+     400,
+     440
+    ]
+   ]
+  },
+  "milz": {
+   "layer": "digestive",
+   "seeds": [
+    [
+     630,
+     310
+    ],
+    [
+     610,
+     380
+    ]
+   ]
+  },
+  "pankreas": {
+   "layer": "digestive",
+   "seeds": [
+    [
+     230,
+     510
+    ],
+    [
+     580,
+     390
+    ]
+   ]
+  },
+  "niere": {
+   "layer": "kidneys"
+  },
+  "duenndarm": {
+   "layer": "digestive",
+   "seeds": [
+    [
+     250,
+     780
+    ],
+    [
+     450,
+     780
+    ],
+    [
+     300,
+     880
+    ],
+    [
+     250,
+     960
+    ],
+    [
+     450,
+     1000
+    ],
+    [
+     350,
+     1030
+    ],
+    [
+     480,
+     880
+    ]
+   ],
+   "within": [
+    [
+     132,
+     732
+    ],
+    [
+     562,
+     732
+    ],
+    [
+     562,
+     1000
+    ],
+    [
+     525,
+     1068
+    ],
+    [
+     300,
+     1082
+    ],
+    [
+     160,
+     1062
+    ],
+    [
+     128,
+     980
+    ]
+   ]
+  },
+  "dickdarm": {
+   "layer": "digestive",
+   "seeds": [
+    [
+     60,
+     680
+    ],
+    [
+     50,
+     830
+    ],
+    [
+     60,
+     980
+    ],
+    [
+     100,
+     580
+    ],
+    [
+     250,
+     670
+    ],
+    [
+     400,
+     670
+    ],
+    [
+     530,
+     580
+    ],
+    [
+     600,
+     580
+    ],
+    [
+     600,
+     780
+    ],
+    [
+     610,
+     930
+    ],
+    [
+     560,
+     1060
+    ],
+    [
+     420,
+     1110
+    ]
+   ],
+   "outside": [
+    [
+     132,
+     732
+    ],
+    [
+     562,
+     732
+    ],
+    [
+     562,
+     1000
+    ],
+    [
+     525,
+     1068
+    ],
+    [
+     300,
+     1082
+    ],
+    [
+     160,
+     1062
+    ],
+    [
+     128,
+     980
+    ]
+   ]
+  },
+  "appendix": {
+   "layer": "digestive",
+   "seeds": [
+    [
+     215,
+     1088
+    ],
+    [
+     200,
+     1083
+    ],
+    [
+     235,
+     1090
+    ]
+   ]
+  },
+  "blase": {
+   "layer": "bladder"
+  }
+ },
+ "res": 2,
+ "view": [
+  100,
+  14,
+  400,
+  746
+ ]
+}

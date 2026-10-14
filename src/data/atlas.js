@@ -1,19 +1,16 @@
-// Tana atlasi (src/pages/Atlas.jsx): a’zolar va qorin sohalari — SVG shakllari bilan.
+// Tana atlasi (src/pages/Atlas.jsx): a’zolar va qorin sohalari.
 // Hamma uchun ochiq (kirishsiz), shuning uchun yopiq lug‘atdan emas, alohida tuzilgan.
-// Koordinatalar: viewBox 0 0 300 620, tana old tomondan. Bemorning o‘ng tomoni — rasmda CHAP tomonda.
+// Rasmlar: Servier Medical Art (CC BY 4.0) — scripts/atlas/build.py yig‘adi → src/assets/atlas/*.webp va
+// src/data/atlas-layout.json (qatlamlar joyi va har bir a’zoning bosiladigan konturi).
+// Koordinatalar: kanvas 600×1300, tana old tomondan. Bemorning o‘ng tomoni — rasmda CHAP tomonda.
 import { tr } from "../lib/i18n";
 
-// paths: SVG "d" (bir nechta bo‘lishi mumkin); stroke: chiziq bilan chiziladigan a’zo (ichaklar)
 export const ORGANS = [
   {
     id: "gehirn",
     de: "das Gehirn",
     fach: "Zerebrum / Cerebrum",
     name: tr("bosh miya", "головной мозг", "beyin", "brain"),
-    color: "#f9a8d4",
-    paths: [
-      "M150 18c-20 0-34 13-34 30 0 14 8 24 20 27 4 1 9 2 14 2s10-1 14-2c12-3 20-13 20-27 0-17-14-30-34-30Z",
-    ],
     sick: ["Apoplex (Schlaganfall)", "Meningitis", "Migräne", "Subarachnoidalblutung"],
   },
   {
@@ -21,10 +18,6 @@ export const ORGANS = [
     de: "die Schilddrüse",
     fach: "Glandula thyreoidea",
     name: tr("qalqonsimon bez", "щитовидная железа", "tiroid bezi", "thyroid gland"),
-    color: "#c084fc",
-    paths: [
-      "M141 104c-7 1-9 8-6 13 3 4 9 4 12 0l3-4 3 4c3 4 9 4 12 0 3-5 1-12-6-13-3 1-6 4-9 7-3-3-6-6-9-7Z",
-    ],
     sick: ["Hyperthyreose", "Hypothyreose", "Struma", "Morbus Basedow"],
   },
   {
@@ -32,8 +25,6 @@ export const ORGANS = [
     de: "die Luftröhre",
     fach: "Trachea",
     name: tr("traxeya (kekirdak)", "трахея", "soluk borusu", "windpipe (trachea)"),
-    color: "#93c5fd",
-    paths: ["M146 120h8v34l10 10-3 3-11-10-11 10-3-3 10-10Z"],
     sick: ["Tracheitis", "Stridor", "Fremdkörperaspiration"],
   },
   {
@@ -41,11 +32,6 @@ export const ORGANS = [
     de: "die Lunge",
     fach: "Pulmo",
     name: tr("o‘pka", "лёгкие", "akciğer", "lungs"),
-    color: "#fda4af",
-    paths: [
-      "M141 158c-22 0-44 16-48 44-3 22-1 44 5 60l42-5c2-30 2-66 1-99Z",
-      "M159 158c22 0 44 16 48 44 3 22 1 44-5 60l-26-4c-6-10-14-17-17-28 0-24 0-48 0-72Z",
-    ],
     sick: ["Pneumonie", "Asthma bronchiale", "COPD", "Lungenembolie", "Pneumothorax"],
   },
   {
@@ -53,10 +39,6 @@ export const ORGANS = [
     de: "das Herz",
     fach: "Cor",
     name: tr("yurak", "сердце", "kalp", "heart"),
-    color: "#ef4444",
-    paths: [
-      "M148 206c-6-10-22-8-22 6 0 14 16 28 38 40 12-12 22-24 22-36 0-14-16-18-24-8-4 5-6 8-7 10-2-4-4-8-7-12Z",
-    ],
     sick: ["Myokardinfarkt", "Herzinsuffizienz", "Vorhofflimmern", "Angina pectoris"],
   },
   {
@@ -64,8 +46,6 @@ export const ORGANS = [
     de: "die Leber",
     fach: "Hepar",
     name: tr("jigar", "печень", "karaciğer", "liver"),
-    color: "#b45309",
-    paths: ["M94 266c22-8 58-8 84 0-6 18-24 30-46 34-18 3-32-2-38-12-3-6-3-14 0-22Z"],
     sick: ["Hepatitis", "Leberzirrhose", "Fettleber", "Ikterus"],
   },
   {
@@ -73,8 +53,6 @@ export const ORGANS = [
     de: "die Gallenblase",
     fach: "Vesica biliaris",
     name: tr("o‘t pufagi", "желчный пузырь", "safra kesesi", "gallbladder"),
-    color: "#22c55e",
-    paths: ["M126 292c5-2 10 1 11 7 1 7-3 13-8 13-5 0-8-5-7-11 0-4 1-7 4-9Z"],
     sick: ["Cholezystitis", "Cholezystolithiasis (Gallensteine)", "Gallenkolik"],
   },
   {
@@ -82,8 +60,6 @@ export const ORGANS = [
     de: "der Magen",
     fach: "Gaster / Ventriculus",
     name: tr("oshqozon", "желудок", "mide", "stomach"),
-    color: "#fb923c",
-    paths: ["M170 268c14-10 34-6 38 10 4 18-8 34-26 36-12 1-20-6-16-14 4-6 12-8 12-16 0-6-4-10-8-12Z"],
     sick: ["Gastritis", "Ulcus ventriculi", "Refluxkrankheit", "Magenkarzinom"],
   },
   {
@@ -91,8 +67,6 @@ export const ORGANS = [
     de: "die Milz",
     fach: "Lien / Splen",
     name: tr("taloq", "селезёнка", "dalak", "spleen"),
-    color: "#7c3aed",
-    paths: ["M206 270c7 2 11 10 10 20-1 10-6 18-12 18-4 0-6-6-5-14 1-10 3-20 7-24Z"],
     sick: ["Splenomegalie", "Milzruptur"],
   },
   {
@@ -100,8 +74,6 @@ export const ORGANS = [
     de: "die Bauchspeicheldrüse",
     fach: "Pankreas",
     name: tr("oshqozon osti bezi", "поджелудочная железа", "pankreas", "pancreas"),
-    color: "#facc15",
-    paths: ["M132 318c18-6 44-8 66-16 6 4 4 12-4 15-20 7-42 10-60 10-6 0-8-6-2-9Z"],
     sick: ["Pankreatitis", "Pankreaskarzinom", "Diabetes mellitus"],
   },
   {
@@ -109,12 +81,6 @@ export const ORGANS = [
     de: "die Niere",
     fach: "Ren / Nephros",
     name: tr("buyrak", "почка", "böbrek", "kidney"),
-    color: "#be123c",
-    behind: true,
-    paths: [
-      "M104 312c8-6 18-2 18 10 0 6-4 8-4 12s4 6 4 12c0 12-12 16-18 8-6-8-8-34 0-42Z",
-      "M196 312c-8-6-18-2-18 10 0 6 4 8 4 12s-4 6-4 12c0 12 12 16 18 8 6-8 8-34 0-42Z",
-    ],
     sick: ["Pyelonephritis", "Nephrolithiasis (Nierensteine)", "Niereninsuffizienz"],
   },
   {
@@ -122,10 +88,6 @@ export const ORGANS = [
     de: "der Dünndarm",
     fach: "Intestinum tenue",
     name: tr("ingichka ichak", "тонкая кишка", "ince bağırsak", "small intestine"),
-    color: "#f9a8d4",
-    paths: [
-      "M124 348c8-6 18-4 26 0s18 6 26 0c8 4 10 12 6 18 4 8 2 16-6 20 2 10-6 16-16 14-8 4-18 4-26 0-10 2-16-6-14-14-6-6-6-14 0-18-4-8 0-16 4-20Z",
-    ],
     sick: ["Ileus", "Morbus Crohn", "Zöliakie"],
   },
   {
@@ -133,9 +95,6 @@ export const ORGANS = [
     de: "der Dickdarm",
     fach: "Kolon",
     name: tr("yo‘g‘on ichak", "толстая кишка", "kalın bağırsak", "large intestine (colon)"),
-    color: "#a16207",
-    stroke: 11,
-    paths: ["M110 412V352c0-12 6-18 18-18h46c12 0 18 6 18 18v44c0 12-8 18-18 20l-14 2"],
     sick: ["Divertikulitis", "Colitis ulcerosa", "Kolonkarzinom", "Obstipation"],
   },
   {
@@ -143,9 +102,6 @@ export const ORGANS = [
     de: "der Wurmfortsatz",
     fach: "Appendix vermiformis",
     name: tr("chuvalchangsimon o‘simta (appendiks)", "аппендикс", "apandis", "appendix"),
-    color: "#dc2626",
-    stroke: 5,
-    paths: ["M110 414c-2 8 0 14 6 18"],
     sick: ["Appendizitis (Blinddarmentzündung)"],
   },
   {
@@ -153,17 +109,15 @@ export const ORGANS = [
     de: "die Harnblase",
     fach: "Vesica urinaria",
     name: tr("siydik pufagi", "мочевой пузырь", "idrar kesesi", "urinary bladder"),
-    color: "#38bdf8",
-    paths: ["M150 418c12 0 20 6 20 14 0 9-9 14-20 14s-20-5-20-14c0-8 8-14 20-14Z"],
     sick: ["Zystitis (Blasenentzündung)", "Harnverhalt", "Harninkontinenz"],
   },
 ];
 
 // Qorinning 9 sohasi + retrosternal — og‘riq joyi (Lokalisation) uchun.
-// x: 92–208 (3 ustun), y: 262–442 (3 qator). Bemorning o‘ngi — chapda.
-const COL = [92, 131, 170],
-  ROW = [262, 322, 382],
-  cell = (c, r) => ({ x: COL[c], y: ROW[r], w: 38, h: 60 });
+// x: 208–392 (3 ustun), y: 398–662 (3 qator). Bemorning o‘ngi — chapda.
+const COL = [208, 270, 331],
+  ROW = [398, 486, 574],
+  cell = (c, r) => ({ x: COL[c], y: ROW[r], w: 61, h: 88 });
 
 export const REGIONS = [
   {
@@ -249,10 +203,10 @@ export const REGIONS = [
   },
   {
     id: "retro",
-    x: 134,
-    y: 168,
-    w: 32,
-    h: 88,
+    x: 285,
+    y: 262,
+    w: 30,
+    h: 132,
     de: "hinter dem Brustbein",
     fach: "retrosternal",
     name: tr("to‘sh orqasi", "за грудиной", "sternum arkası", "behind the breastbone"),
@@ -261,12 +215,10 @@ export const REGIONS = [
   },
 ];
 
-// Tana konturi: bosh, bo‘yin, gavda, qo‘llar, oyoqlar
-export const BODY = [
-  "M150 8c-24 0-42 18-42 44 0 22 12 40 28 46v14h28V98c16-6 28-24 28-46 0-26-18-44-42-44Z",
-  "M132 116c-22 2-50 8-62 24-10 12-12 34-10 60l6 100c2 30 8 60 18 92 8 28 12 48 14 60h104c2-12 6-32 14-60 10-32 16-62 18-92l6-100c2-26 0-48-10-60-12-16-40-22-62-24Z",
-  "M70 140c-18 8-24 48-26 98l-6 92c-2 30-4 60-2 90h16c2-30 6-58 10-88l8-80Z",
-  "M230 140c18 8 24 48 26 98l6 92c2 30 4 60 2 90h-16c-2-30-6-58-10-88l-8-80Z",
-  "M98 450c-3 50-1 104 5 160h38l7-142 2-18Z",
-  "M202 450c3 50 1 104-5 160h-38l-7-142-2-18Z",
-];
+// CC BY 4.0 talabi: muallif, litsenziya va o‘zgartirilgani
+export const ATLAS_CREDIT = {
+  text: "Servier Medical Art",
+  url: "https://smart.servier.com/",
+  license: "CC BY 4.0",
+  licenseUrl: "https://creativecommons.org/licenses/by/4.0/",
+};
