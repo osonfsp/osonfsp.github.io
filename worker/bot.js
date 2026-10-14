@@ -399,8 +399,12 @@ export async function requestPlan(env, store, user, planId) {
 // Saytdagi "Fikr va takliflar" formasi (src/components/Feedback.jsx): adminlarga matn + kimdan, qayerdan
 const FB_KINDS = { idea: "💡 Taklif", bug: "🐞 Kamchilik", other: "💬 Fikr" };
 export async function sendFeedback(env, store, user, { kind, text, context }) {
-  let head = `${FB_KINDS[kind] ?? FB_KINDS.other} — ${who(user)}${context ? `
-📍 ${context}` : ""}`;
+  let head = `${FB_KINDS[kind] ?? FB_KINDS.other} — ${who(user)}${
+    context
+      ? `
+📍 ${context}`
+      : ""
+  }`;
   await notifyAdmins(
     env,
     store,
@@ -527,6 +531,7 @@ const ADMIN_MENU = kb(
     { text: "🔎 Foydalanuvchi topish", callback_data: "ad:find" },
     { text: "📢 Hammaga xabar", callback_data: "ad:bc" },
   ],
+  [{ text: "📈 Sayt tashriflari (GoatCounter)", url: "https://osonfsp.goatcounter.com" }],
 );
 
 async function adminStatsText(store) {

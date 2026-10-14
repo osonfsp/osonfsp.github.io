@@ -67,10 +67,10 @@ const MATERIALS =
 export function Router() {
   const pathname = usePathname();
   const Page = ROUTES.find(([re]) => re.test(pathname))?.[1] ?? NotFoundPage;
-  // O‘quv materiallari: akkaunt + 1 kunlik bepul sinov yoki faol tarif (materiallar serverdan keladi)
+  // O‘quv materiallari: akkaunt + bepul sinov yoki faol tarif (materiallar serverdan keladi); mehmonga — namuna
   if (MATERIALS.test(pathname))
     return (
-      <MaterialsGate>
+      <MaterialsGate pathname={pathname}>
         <Page key={pathname} />
       </MaterialsGate>
     );

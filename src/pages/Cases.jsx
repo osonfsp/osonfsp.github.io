@@ -111,7 +111,7 @@ export function CasesPage() {
             label: tr("Barcha bo‘limlar", "Все разделы", "Tüm bölümler", "All sections"),
             categories: null,
           },
-          ...CASE_SECTIONS,
+          ...CASE_SECTIONS.filter((s) => cases.some((c) => s.categories.includes(c.category))),
         ].map((s) => {
           let list = s.categories ? cases.filter((c) => s.categories.includes(c.category)) : cases,
             done = list.filter(solved).length,

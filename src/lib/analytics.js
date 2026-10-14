@@ -12,7 +12,10 @@ function send(params) {
     let q = new URLSearchParams({ ...params, rnd: Math.random().toString(36).slice(2) });
     if (document.referrer && !params.e) q.set("r", document.referrer);
     q.set("s", `${screen.width},${screen.height},${window.devicePixelRatio || 1}`);
-    new Image().src = `${ENDPOINT}?${q}`;
+    // Reklama havolasi: ?ref=instagram yoki ?utm_campaign=... — GoatCounter'da "Campaigns" bo‘limida
+    if (window.location.search) q.set("q", window.location.search);
+    let url = `${ENDPOINT}?${q}`;
+    if (!navigator.sendBeacon?.(url)) new Image().src = url;
   } catch {}
 }
 

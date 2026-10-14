@@ -8,6 +8,7 @@ import { loc, tr } from "../lib/i18n";
 import { FREE_LIMITS, TRIAL_DAYS } from "../lib/plan";
 import { cx } from "../lib/utils";
 import { getProfile } from "../lib/daily";
+import { useAccount } from "../lib/account";
 
 const PHRASES = STATS.phrases;
 
@@ -47,6 +48,7 @@ export function HomePage() {
   const marquee = STATS.marquee,
     // yangi odam → 3 ta savol; qaytgan foydalanuvchi → bugungi vazifalar
     returning = !!getProfile(),
+    guest = !useAccount().account,
     startHref = returning ? "/bugun" : "/start",
     startLabel = returning
       ? tr("Bugungi mashq", "Практика на сегодня", "Bugünkü alıştırma", "Today’s practice")
@@ -174,10 +176,22 @@ export function HomePage() {
             <Link href={startHref} className="btn-primary px-7 py-3.5 text-base shadow-sm">
               {startLabel} →
             </Link>
-            <Link href="/pruefung" className="btn-outline px-7 py-3.5 text-base">
-              <Icon name="target" className="h-[18px] w-[18px] text-teal-600 dark:text-teal-400" />
-              {tr("Mashq imtihoni", "Пробный экзамен", "Deneme sınavı", "Practice exam")}
-            </Link>
+            {guest ? (
+              <Link href="/simulation?case=c1" className="btn-outline px-7 py-3.5 text-base">
+                <Icon name="chat" className="h-[18px] w-[18px] text-teal-600 dark:text-teal-400" />
+                {tr(
+                  "Kirmasdan sinab ko‘rish",
+                  "Попробовать без входа",
+                  "Giriş yapmadan dene",
+                  "Try without signing in",
+                )}
+              </Link>
+            ) : (
+              <Link href="/pruefung" className="btn-outline px-7 py-3.5 text-base">
+                <Icon name="target" className="h-[18px] w-[18px] text-teal-600 dark:text-teal-400" />
+                {tr("Mashq imtihoni", "Пробный экзамен", "Deneme sınavı", "Practice exam")}
+              </Link>
+            )}
           </div>
           <p className="mt-3 text-xs muted">
             {tr(

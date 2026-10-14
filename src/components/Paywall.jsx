@@ -1,10 +1,12 @@
-import { PRACTICE, usePlan } from "../lib/plan";
+import { PRACTICE, TRIAL_DAYS, usePlan } from "../lib/plan";
+import { STATS, arztbriefe, aufklaerung, cases, demo } from "../data/index";
+import { trackEvent } from "../lib/analytics";
 import { Link } from "./Link";
 import { tr } from "../lib/i18n";
 import { Icon } from "./Icon";
 
 // Bepul imkoniyat tugaganda sahifa o‘rniga ko‘rsatiladi.
-// kind: "materials" — 1 kunlik sinov tugadi; "exam" — bepul imtihon ishlatildi.
+// kind: "materials" — bepul sinov tugadi; "exam" — bepul imtihon ishlatildi.
 export function Paywall({ kind = "materials" }) {
   if (kind === "login") return <LoginWall />;
   let { limit } = usePlan(),
@@ -21,10 +23,10 @@ export function Paywall({ kind = "materials" }) {
               "Free exam used",
             )
           : tr(
-              "1 kunlik sinov muddati tugadi",
-              "Пробный день закончился",
-              "1 günlük deneme süresi doldu",
-              "The 1-day trial has ended",
+              "Bepul sinov muddati tugadi",
+              "Пробный период закончился",
+              "Ücretsiz deneme süresi doldu",
+              "The free trial has ended",
             )}
       </h2>
       <p className="mt-2 text-sm muted">
@@ -36,10 +38,10 @@ export function Paywall({ kind = "materials" }) {
               `The practice exam was available ${limit("exam")} time(s) in free mode.`,
             )
           : tr(
-              "Materiallar bepul rejimda 1 kun davomida ochiq edi.",
-              "В бесплатном режиме материалы доступны 1 день.",
-              "Materyaller ücretsiz modda 1 gün boyunca açıktı.",
-              "Materials were available for 1 day in free mode.",
+              `Materiallar bepul rejimda ${TRIAL_DAYS} kun davomida ochiq edi.`,
+              `В бесплатном режиме материалы доступны ${TRIAL_DAYS} дня.`,
+              `Materyaller ücretsiz modda ${TRIAL_DAYS} gün boyunca açıktı.`,
+              `Materials were available for ${TRIAL_DAYS} days in free mode.`,
             )}{" "}
         {tr(
           "Davom etish uchun tarif tanlang — 1 haftalik yoki 1 oylik.",
@@ -55,14 +57,56 @@ export function Paywall({ kind = "materials" }) {
   );
 }
 
-// Material sahifalarini o‘raydi: sinov yoki tarif bo‘lmasa — Paywall
-export function MaterialsGate({ children }) {
+// Mehmonga namuna ochiq bo‘limlar (imtihon va kunlik reja — faqat akkaunt bilan)
+const DEMO_OPEN = /^\/(faelle|simulation|arztbrief|aufklaerung|hoeren|woerter|fachsprache|redemittel)(\/|$)/;
+
+// Namunada bormi: ro‘yxat sahifalari — ha; alohida Fall/Arztbrief/Aufklärung — faqat namunadagilari
+function inDemo(pathname) {
+  let [, section, id] = pathname.split("/");
+  if (!id) return true;
+  let list = { faelle: cases, hoeren: cases, arztbrief: arztbriefe, aufklaerung }[section];
+  return !list || list.some((x) => x.id === id);
+}
+
+// Material sahifalarini o‘raydi: sinov yoki tarif bo‘lmasa — Paywall; kirmagan mehmonga — namuna
+export function MaterialsGate({ pathname, children }) {
   let { hasMaterials, loggedIn } = usePlan();
-  return hasMaterials ? (
-    children
-  ) : (
+  if (hasMaterials) return children;
+  if (!loggedIn && demo && DEMO_OPEN.test(pathname) && inDemo(pathname)) {
+    trackEvent("demo", { once: true });
+    return (
+      <>
+        <DemoBar />
+        {children}
+      </>
+    );
+  }
+  return (
     <div className="page">
       <Paywall kind={loggedIn ? "materials" : "login"} />
+    </div>
+  );
+}
+
+// Namuna rejimi haqida: nima ochiq va hammasini qanday olish mumkin
+function DemoBar() {
+  return (
+    <div className="page !pb-0">
+      <div className="card flex flex-col gap-3 border-teal-300 bg-teal-50 p-4 text-sm sm:flex-row sm:items-center dark:border-teal-800 dark:bg-teal-950/40">
+        <Icon name="gift" className="h-7 w-7 shrink-0 text-teal-600 dark:text-teal-400" />
+        <p className="flex-1">
+          <b>{tr("Namuna rejimi.", "Демо-режим.", "Deneme modu.", "Demo mode.")}</b>{" "}
+          {tr(
+            `Kirmasdan ${cases.length} ta Fall, Arztbrief, Aufklärung va bir qism so‘zlarni sinab ko‘rishingiz mumkin. Hammasi (${STATS.cases} ta Fall, ${STATS.arztbriefe} ta Arztbrief, ${STATS.words} ta so‘z) va imtihon — Telegram orqali kirgandan keyin, ${TRIAL_DAYS} kun bepul.`,
+            `Без входа можно попробовать ${cases.length} кейса, Arztbrief, Aufklärung и часть слов. Всё (${STATS.cases} кейсов, ${STATS.arztbriefe} Arztbriefe, ${STATS.words} слов) и экзамен — после входа через Telegram, ${TRIAL_DAYS} дня бесплатно.`,
+            `Giriş yapmadan ${cases.length} vaka, Arztbrief, Aufklärung ve kelimelerin bir kısmını deneyebilirsiniz. Hepsi (${STATS.cases} vaka, ${STATS.arztbriefe} Arztbrief, ${STATS.words} kelime) ve sınav — Telegram ile girişten sonra, ${TRIAL_DAYS} gün ücretsiz.`,
+            `Without signing in you can try ${cases.length} cases, Arztbriefe, Aufklärung and some of the words. Everything (${STATS.cases} cases, ${STATS.arztbriefe} Arztbriefe, ${STATS.words} words) and the exam — after signing in with Telegram, ${TRIAL_DAYS} days free.`,
+          )}
+        </p>
+        <Link href="/login" className="btn-primary shrink-0 justify-center">
+          {tr("Kirish — bepul", "Войти — бесплатно", "Giriş — ücretsiz", "Sign in — free")}
+        </Link>
+      </div>
     </div>
   );
 }
@@ -137,10 +181,10 @@ export function TrialBar() {
             `Free trial: materials open for another ${h} h · Plans →`,
           )
         : tr(
-            "⏳ Bepul sinov tugadi · Tarif tanlang →",
-            "⏳ Пробный доступ закончился · Выберите тариф →",
-            "⏳ Ücretsiz deneme sona erdi · Paket seçin →",
-            "⏳ Free trial has ended · Choose a plan →",
+            "Bepul sinov tugadi · Tarif tanlang →",
+            "Пробный доступ закончился · Выберите тариф →",
+            "Ücretsiz deneme sona erdi · Paket seçin →",
+            "Free trial has ended · Choose a plan →",
           )}
     </Link>
   );

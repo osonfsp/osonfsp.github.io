@@ -365,6 +365,13 @@ const P = {
       <path d="M11.5 12H8a4 4 0 0 0-4 4v5.5" />
     </>
   ),
+  play: <path d="M7 4.5v15l12-7.5Z" />,
+  search: (
+    <>
+      <circle cx="11" cy="11" r="7" />
+      <path d="m20 20-4-4" />
+    </>
+  ),
   hospital: (
     <>
       <path d="M4 21V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v16M2.5 21h19" />

@@ -1,7 +1,7 @@
 import { arztbriefe, cases } from "./content";
 import { tr } from "../lib/i18n";
 
-export { cases, words, pairs, arztbriefe, aufklaerung, redemittel, STATS } from "./content";
+export { cases, words, pairs, arztbriefe, aufklaerung, redemittel, demo, STATS } from "./content";
 
 export const CASE_CATEGORIES = [
     "Innere Medizin",

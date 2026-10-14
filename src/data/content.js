@@ -8,6 +8,9 @@ export let cases = [],
   aufklaerung = [],
   redemittel = [];
 
+// Kirmagan mehmon: serverdan faqat namuna keladi (worker/index.js → /demo)
+export let demo = false;
+
 // Bosh sahifa va progress uchun sonlar (build paytida vite.config.js hisoblaydi, materiallarsiz)
 export const STATS = __CONTENT_STATS__;
 
@@ -18,6 +21,7 @@ export function setContent(c) {
   arztbriefe = c.arztbriefe ?? [];
   aufklaerung = c.aufklaerung ?? [];
   redemittel = c.redemittel ?? [];
+  demo = !!c.demo;
 }
 
 export async function loadBundledContent() {

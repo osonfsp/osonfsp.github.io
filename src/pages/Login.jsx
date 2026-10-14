@@ -5,6 +5,7 @@ import { LANG, tr } from "../lib/i18n";
 import { TG_BOT, loginWithTelegram, loginWithTelegramApp } from "../lib/account";
 import { TG } from "../lib/telegram";
 import { Icon, Ic } from "../components/Icon";
+import { TRIAL_DAYS } from "../lib/plan";
 
 // Telegram Login Widget: https://core.telegram.org/widgets/login
 // Telegram foydalanuvchi ma’lumotini imzolab beradi, imzoni server tekshiradi (worker/index.js).
@@ -104,10 +105,10 @@ export function LoginPage() {
           <li>
             <Ic name="checkCircle" className="text-emerald-600" />{" "}
             {tr(
-              "Birinchi kirishda — 24 soat bepul: barcha materiallar va 1 ta imtihon",
-              "При первом входе — 24 часа бесплатно: все материалы и 1 экзамен",
-              "İlk girişte — 24 saat ücretsiz: tüm materyaller ve 1 sınav",
-              "On first sign-in — 24 hours free: all materials and 1 exam",
+              `Birinchi kirishda — ${TRIAL_DAYS} kun bepul: barcha materiallar va 1 ta imtihon`,
+              `При первом входе — ${TRIAL_DAYS} дня бесплатно: все материалы и 1 экзамен`,
+              `İlk girişte — ${TRIAL_DAYS} gün ücretsiz: tüm materyaller ve 1 sınav`,
+              `On first sign-in — ${TRIAL_DAYS} days free: all materials and 1 exam`,
             )}
           </li>
           <li>

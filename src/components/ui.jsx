@@ -159,7 +159,7 @@ export function SearchInput({ value: e, onChange: t, placeholder: a }) {
         className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-slate-400"
         aria-hidden
       >
-        ⌕
+        <Icon name="search" className="h-4 w-4" />
       </span>
       <input
         type="search"

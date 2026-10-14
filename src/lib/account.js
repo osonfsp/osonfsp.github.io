@@ -4,6 +4,7 @@ import { storage } from "./storage";
 import { contentCache } from "./contentCache";
 import { TG } from "./telegram";
 import { LANG, LANGS, onLangChange } from "./i18n";
+import { trackEvent } from "./analytics";
 
 // Akkaunt: Telegram orqali kirish (sayt yoki bot ichidagi Mini App), sinov/tarif va materiallar — hammasi serverda (worker/index.js).
 // Brauzerda faqat sessiya tokeni va tezroq ochilishi uchun keshlangan nusxa turadi; huquqlarni
@@ -69,6 +70,13 @@ function clearLocal() {
   return contentCache.remove();
 }
 
+// Kirmagan mehmon uchun namuna materiallar (bir nechta Fall va h.k.) — sinab ko‘rish uchun
+async function loadDemo() {
+  try {
+    setContent(await api("/demo"));
+  } catch {}
+}
+
 async function fetchContent(account) {
   let data = await api("/content");
   setContent(data);
@@ -88,7 +96,10 @@ export async function bootAccount() {
       storage.get(ACCOUNT_KEY, null)?.user?.id !== TG.initDataUnsafe?.user?.id)
   )
     await loginWithTelegramApp().catch(() => {});
-  if (!storage.get(TOKEN_KEY, null)) return update({ status: "guest" });
+  if (!storage.get(TOKEN_KEY, null)) {
+    await loadDemo();
+    return update({ status: "guest" });
+  }
 
   let cached = storage.get(ACCOUNT_KEY, null),
     cachedContent = await contentCache.get();
@@ -110,6 +121,7 @@ export async function bootAccount() {
   } catch (e) {
     if (e.status === 401) {
       await clearLocal();
+      await loadDemo();
       return update({ status: "guest" });
     }
     // Internet yo‘q: oxirgi ma’lum holat bilan (materiallarsiz)
@@ -182,7 +194,8 @@ export async function refreshAccount() {
 }
 
 async function signIn(path, body) {
-  let { token, account } = await api(path, { method: "POST", body });
+  let { token, account, created } = await api(path, { method: "POST", body });
+  trackEvent(created ? "signup" : "login");
   storage.set(TOKEN_KEY, token);
   storage.set(ACCOUNT_KEY, account);
   await contentCache.remove();

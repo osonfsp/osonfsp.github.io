@@ -37,6 +37,18 @@ export { Store } from "./store.js";
 
 const CONTENT = JSON.stringify({ cases, words, pairs, arztbriefe, aufklaerung, redemittel });
 
+// Kirmasdan sinab ko'rish uchun namuna: 3 ta Fall (o'z Arztbrief'lari bilan) va har bo'limdan ozgina
+const DEMO_CASES = ["c1", "c2", "c7"];
+const DEMO = JSON.stringify({
+  demo: true,
+  cases: cases.filter((c) => DEMO_CASES.includes(c.id)),
+  arztbriefe: arztbriefe.filter((a) => DEMO_CASES.includes(a.caseId)),
+  aufklaerung: aufklaerung.slice(0, 2),
+  words: words.slice(0, 40),
+  pairs: pairs.slice(0, 15),
+  redemittel: redemittel.slice(0, 4),
+});
+
 // wrangler.toml [triggers] dagi bilan bir xil bo'lishi kerak
 const NEWS_CRON = "7 */3 * * *";
 
@@ -228,13 +240,21 @@ export default {
     if (path === "/news" && req.method === "GET")
       return reply(200, await getNews(env, store, ctx), { "Cache-Control": "public, max-age=600" });
 
+    // ---- Ochiq: kirmagan mehmon uchun namuna materiallar ----
+    if (path === "/demo" && req.method === "GET")
+      return reply(200, DEMO, { "Cache-Control": "public, max-age=3600" });
+
     // ---- Kirish ----
     if (path === "/auth/telegram" && req.method === "POST") {
       let tg = await verifyTelegram(body, env.TELEGRAM_BOT_TOKEN);
       if (!tg || !Number.isSafeInteger(tg.id)) return reply(401, { error: "bad_signature" });
       let res = await store.login(tg, TRIAL_HOURS * 36e5, null);
       ctx.waitUntil(onLogin(env, store, res).catch(() => {}));
-      return reply(200, { token: await signSession(res.user.id, keyB64), account: account(res.user, env) });
+      return reply(200, {
+        token: await signSession(res.user.id, keyB64),
+        account: account(res.user, env),
+        created: res.created,
+      });
     }
 
     // Bot ichidagi Mini App orqali kirish
@@ -243,7 +263,11 @@ export default {
       if (!tg || !Number.isSafeInteger(tg.id)) return reply(401, { error: "bad_signature" });
       let res = await store.login(tg, TRIAL_HOURS * 36e5, tg.lang && botLangOf(tg.lang));
       ctx.waitUntil(onLogin(env, store, res).catch(() => {}));
-      return reply(200, { token: await signSession(res.user.id, keyB64), account: account(res.user, env) });
+      return reply(200, {
+        token: await signSession(res.user.id, keyB64),
+        account: account(res.user, env),
+        created: res.created,
+      });
     }
 
     // Qolgan hamma narsa — faqat kirgan foydalanuvchi uchun

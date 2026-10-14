@@ -43,7 +43,7 @@ export function HoerenListPage() {
         </p>
       )}
       <div className="space-y-6">
-        {CASE_SECTIONS.map((sec) => {
+        {CASE_SECTIONS.filter((s) => cases.some((c) => s.categories.includes(c.category))).map((sec) => {
           let list = cases.filter((c) => sec.categories.includes(c.category));
           return (
             <section key={sec.id}>
@@ -155,7 +155,7 @@ export function HoerenPage() {
                 : tr("Tinglash", "Слушать", "Dinle", "Listen")
             }
           >
-            {playing ? "⏹" : "▶"}
+            <Icon name={playing ? "stop" : "play"} className="h-4 w-4" />
           </button>
           <div className="flex-1">
             <p className="font-semibold">
