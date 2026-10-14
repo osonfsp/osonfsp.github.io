@@ -7061,7 +7061,7 @@
     "category": "Endokrinologie",
     "difficulty": "schwer",
     "patient": {
-      "name": "Julia Neumann",
+      "name": "Julia Wolter",
       "age": 34,
       "gender": "weiblich",
       "hauptbeschwerde": "Starke Schwäche, Erbrechen und Schwindel"
@@ -9141,7 +9141,7 @@
     "category": "Allgemeinmedizin",
     "difficulty": "leicht",
     "patient": {
-      "name": "Laura Becker",
+      "name": "Laura Böhm",
       "age": 19,
       "gender": "weiblich",
       "hauptbeschwerde": "Starke Halsschmerzen und Fieber"
@@ -10404,7 +10404,7 @@
     "category": "Kardiologie",
     "difficulty": "leicht",
     "patient": {
-      "name": "Lena Schröder",
+      "name": "Lena Brückner",
       "age": 26,
       "gender": "weiblich",
       "hauptbeschwerde": "Plötzliches Herzrasen, das nicht aufhört"
@@ -19246,7 +19246,7 @@
     "category": "Innere Medizin",
     "difficulty": "schwer",
     "patient": {
-      "name": "Petra Schuster",
+      "name": "Petra Dietrich",
       "age": 58,
       "gender": "weiblich",
       "hauptbeschwerde": "Müdigkeit, blaue Flecken und Fieber seit Wochen"
@@ -19606,7 +19606,7 @@
     "category": "Innere Medizin",
     "difficulty": "mittel",
     "patient": {
-      "name": "Aylin Demir",
+      "name": "Aylin Yıldız",
       "age": 27,
       "gender": "weiblich",
       "hauptbeschwerde": "Gelenkschmerzen, Ausschlag im Gesicht und Müdigkeit"

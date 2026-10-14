@@ -4061,7 +4061,7 @@
     "taskTr": "Endokrinoloji servisinden aile hekimine bir Arztbrief yazın. Krizin nedenine, kalıcı hormon tedavisine ve hasta eğitimine dikkat edin.",
     "taskEn": "Write an Arztbrief from endocrinology to the GP. Pay attention to the trigger of the crisis, lifelong hormone therapy and patient education.",
     "facts": [
-      "Patientin: Julia Neumann, 34 Jahre, weiblich",
+      "Patientin: Julia Wolter, 34 Jahre, weiblich",
       "Aufnahme: 02.10.2026, Notaufnahme",
       "Seit 2 Tagen Erbrechen, Diarrhö, Bauchschmerzen; heute Schwäche, orthostatischer Schwindel, Verwirrtheit",
       "Seit Monaten Müdigkeit, Gewichtsverlust 6 kg, Salzhunger, Hyperpigmentierung (Handlinien, Mundschleimhaut)",
@@ -4072,11 +4072,11 @@
     ],
     "keyPoints": [
       {
-        "label": "Patientin ma’lumotlari (Frau Neumann)",
-        "labelRu": "Данные пациентки (Frau Neumann)",
-        "labelTr": "Hasta bilgileri (Frau Neumann)",
-        "labelEn": "Patient data (Frau Neumann)",
-        "keywords": ["neumann"]
+        "label": "Patientin ma’lumotlari (Frau Wolter)",
+        "labelRu": "Данные пациентки (Frau Wolter)",
+        "labelTr": "Hasta bilgileri (Frau Wolter)",
+        "labelEn": "Patient data (Frau Wolter)",
+        "keywords": ["wolter"]
       },
       {
         "label": "Gastroenterit — krizni qo‘zg‘atgan omil (Gastroenteritis als Auslöser)",
@@ -4142,7 +4142,7 @@
         "keywords": ["fludrocortison", "notfallausweis", "schulung", "dosisanpassung"]
       }
     ],
-    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihre Patientin Frau Julia Neumann, 34 Jahre, die vom 02.10.2026 bis zum 08.10.2026 in unserer Klinik behandelt wurde.\n\nAnamnese:\nDie Patientin stellte sich mit seit zwei Tagen bestehendem Erbrechen, Diarrhö und Bauchschmerzen vor. Am Aufnahmetag bestanden eine ausgeprägte Schwäche, orthostatischer Schwindel und Verwirrtheit. Seit Monaten berichtete sie über Müdigkeit, einen ungewollten Gewichtsverlust von 6 kg, Salzhunger und eine Hyperpigmentierung der Haut. Vorbekannt sind eine Hashimoto-Thyreoiditis und eine Vitiligo.\n\nBefunde:\nBei Aufnahme war die Patientin hypoton (RR 78/45 mmHg) und tachykard (HF 118/min). Laborchemisch zeigten sich eine Hyponatriämie (124 mmol/l), eine Hyperkaliämie (6,1 mmol/l) und eine Hypoglykämie (58 mg/dl). Das basale Cortisol war mit 1,2 µg/dl erniedrigt, das ACTH mit 980 pg/ml deutlich erhöht. Die 21-Hydroxylase-Antikörper waren positiv.\n\nDiagnose:\nAddison-Krise bei Erstmanifestation eines autoimmunen Morbus Addison, ausgelöst durch eine Gastroenteritis.\n\nTherapie und Verlauf:\nNach Abnahme von Cortisol und ACTH erhielt die Patientin sofort Hydrocortison 100 mg i. v. als Bolus, gefolgt von 200 mg/24 h, sowie Volumen mit NaCl 0,9 % und Glukose. Darunter normalisierten sich Kreislauf, Elektrolyte und Blutzucker rasch. Anschließend erfolgte die Umstellung auf eine orale Dauertherapie mit Hydrocortison 15-5-0 mg und Fludrocortison 0,1 mg.\n\nProcedere:\nDie Patientin wurde zur Dosisanpassung bei Fieber, Erbrechen und Operationen geschult und erhielt einen Notfallausweis sowie ein Hydrocortison-Notfallset. Wir empfehlen regelmäßige Kontrollen von Elektrolyten und Blutdruck sowie eine endokrinologische Anbindung.\n\nMit freundlichen kollegialen Grüßen"
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihre Patientin Frau Julia Wolter, 34 Jahre, die vom 02.10.2026 bis zum 08.10.2026 in unserer Klinik behandelt wurde.\n\nAnamnese:\nDie Patientin stellte sich mit seit zwei Tagen bestehendem Erbrechen, Diarrhö und Bauchschmerzen vor. Am Aufnahmetag bestanden eine ausgeprägte Schwäche, orthostatischer Schwindel und Verwirrtheit. Seit Monaten berichtete sie über Müdigkeit, einen ungewollten Gewichtsverlust von 6 kg, Salzhunger und eine Hyperpigmentierung der Haut. Vorbekannt sind eine Hashimoto-Thyreoiditis und eine Vitiligo.\n\nBefunde:\nBei Aufnahme war die Patientin hypoton (RR 78/45 mmHg) und tachykard (HF 118/min). Laborchemisch zeigten sich eine Hyponatriämie (124 mmol/l), eine Hyperkaliämie (6,1 mmol/l) und eine Hypoglykämie (58 mg/dl). Das basale Cortisol war mit 1,2 µg/dl erniedrigt, das ACTH mit 980 pg/ml deutlich erhöht. Die 21-Hydroxylase-Antikörper waren positiv.\n\nDiagnose:\nAddison-Krise bei Erstmanifestation eines autoimmunen Morbus Addison, ausgelöst durch eine Gastroenteritis.\n\nTherapie und Verlauf:\nNach Abnahme von Cortisol und ACTH erhielt die Patientin sofort Hydrocortison 100 mg i. v. als Bolus, gefolgt von 200 mg/24 h, sowie Volumen mit NaCl 0,9 % und Glukose. Darunter normalisierten sich Kreislauf, Elektrolyte und Blutzucker rasch. Anschließend erfolgte die Umstellung auf eine orale Dauertherapie mit Hydrocortison 15-5-0 mg und Fludrocortison 0,1 mg.\n\nProcedere:\nDie Patientin wurde zur Dosisanpassung bei Fieber, Erbrechen und Operationen geschult und erhielt einen Notfallausweis sowie ein Hydrocortison-Notfallset. Wir empfehlen regelmäßige Kontrollen von Elektrolyten und Blutdruck sowie eine endokrinologische Anbindung.\n\nMit freundlichen kollegialen Grüßen"
   },
   {
     "id": "ab46",
@@ -5621,7 +5621,7 @@
     "taskTr": "Aile hekimi olarak KBB uzmanına bir sevk mektubu (Überweisungsbrief) yazın. Centor kriterlerine, tedaviye ve sık tekrarlamaya dikkat edin.",
     "taskEn": "As the GP, write a referral letter (Überweisungsbrief) to the ENT specialist. Pay attention to the Centor criteria, treatment and frequent recurrences.",
     "facts": [
-      "Patientin: Laura Becker, 19 Jahre, weiblich",
+      "Patientin: Laura Böhm, 19 Jahre, weiblich",
       "Vorstellung: 06.10.2026, Hausarztpraxis",
       "Seit 2 Tagen Halsschmerzen, Odynophagie, Fieber bis 39,2 °C, geschwollene zervikale Lymphknoten; kein Husten",
       "Tonsillen beidseits gerötet und geschwollen mit Stippchen; keine Kieferklemme, Uvula mittelständig",
@@ -5631,11 +5631,11 @@
     ],
     "keyPoints": [
       {
-        "label": "Patientin ma’lumotlari (Frau Becker)",
-        "labelRu": "Данные пациентки (Frau Becker)",
-        "labelTr": "Hasta bilgileri (Frau Becker)",
-        "labelEn": "Patient data (Frau Becker)",
-        "keywords": ["becker"]
+        "label": "Patientin ma’lumotlari (Frau Böhm)",
+        "labelRu": "Данные пациентки (Frau Böhm)",
+        "labelTr": "Hasta bilgileri (Frau Böhm)",
+        "labelEn": "Patient data (Frau Böhm)",
+        "keywords": ["böhm"]
       },
       {
         "label": "Asosiy shikoyat: tomoq og‘rig‘i va isitma (Halsschmerzen, Fieber)",
@@ -5694,7 +5694,7 @@
         "keywords": ["tonsillektomie", "rezidiv"]
       }
     ],
-    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir überweisen Ihnen unsere Patientin Frau Laura Becker, 19 Jahre, mit der Bitte um Mitbeurteilung bei rezidivierender Tonsillitis.\n\nAnamnese:\nDie Patientin stellte sich am 06.10.2026 mit seit zwei Tagen bestehenden Halsschmerzen, Odynophagie, Fieber bis 39,2 °C und geschwollenen zervikalen Lymphknoten vor. Ein Husten bestand nicht. Es handelt sich um die dritte Tonsillitis innerhalb von zwölf Monaten. Zudem besteht ein leichtes Asthma bronchiale.\n\nBefunde:\nDie Tonsillen waren beidseits gerötet und geschwollen mit Stippchen. Eine Kieferklemme bestand nicht, die Uvula war mittelständig. Der Centor-Score lag bei 4 Punkten, der Streptokokken-Schnelltest war positiv.\n\nDiagnose:\nAkute Streptokokken-Tonsillitis, rezidivierend.\n\nTherapie:\nWir haben eine Therapie mit Penicillin V 1,5 Mio. IE dreimal täglich für sieben Tage sowie Ibuprofen bei Bedarf eingeleitet.\n\nFragestellung:\nWir bitten um Prüfung der Indikation zur Tonsillektomie bei rezidivierender Tonsillitis nach Abklingen der akuten Entzündung.\n\nMit freundlichen kollegialen Grüßen"
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir überweisen Ihnen unsere Patientin Frau Laura Böhm, 19 Jahre, mit der Bitte um Mitbeurteilung bei rezidivierender Tonsillitis.\n\nAnamnese:\nDie Patientin stellte sich am 06.10.2026 mit seit zwei Tagen bestehenden Halsschmerzen, Odynophagie, Fieber bis 39,2 °C und geschwollenen zervikalen Lymphknoten vor. Ein Husten bestand nicht. Es handelt sich um die dritte Tonsillitis innerhalb von zwölf Monaten. Zudem besteht ein leichtes Asthma bronchiale.\n\nBefunde:\nDie Tonsillen waren beidseits gerötet und geschwollen mit Stippchen. Eine Kieferklemme bestand nicht, die Uvula war mittelständig. Der Centor-Score lag bei 4 Punkten, der Streptokokken-Schnelltest war positiv.\n\nDiagnose:\nAkute Streptokokken-Tonsillitis, rezidivierend.\n\nTherapie:\nWir haben eine Therapie mit Penicillin V 1,5 Mio. IE dreimal täglich für sieben Tage sowie Ibuprofen bei Bedarf eingeleitet.\n\nFragestellung:\nWir bitten um Prüfung der Indikation zur Tonsillektomie bei rezidivierender Tonsillitis nach Abklingen der akuten Entzündung.\n\nMit freundlichen kollegialen Grüßen"
   },
   {
     "id": "ab64",
@@ -6567,7 +6567,7 @@
     "taskTr": "Kardiyoloji polikliniğinden aile hekimine bir Arztbrief yazın. Vagal manevraları, adenozini ve ablasyon önerisini belirtin.",
     "taskEn": "Write an Arztbrief from the cardiology department to the GP. Cover the vagal manoeuvres, adenosine and the offer of ablation.",
     "facts": [
-      "Patientin: Lena Schröder, 26 Jahre, weiblich",
+      "Patientin: Lena Brückner, 26 Jahre, weiblich",
       "Vorstellung: 08.10.2026, Notaufnahme (ambulant)",
       "Seit 40 Minuten schlagartig einsetzendes regelmäßiges Herzrasen mit Halspulsieren und Schwindel; seit 2 Jahren kürzere Episoden",
       "Hoher Koffeinkonsum, Energy-Drinks im Nachtdienst",
@@ -6577,11 +6577,11 @@
     ],
     "keyPoints": [
       {
-        "label": "Patientin ma’lumotlari (Frau Schröder)",
-        "labelRu": "Данные пациентки (Frau Schröder)",
-        "labelTr": "Hasta bilgileri (Frau Schröder)",
-        "labelEn": "Patient data (Frau Schröder)",
-        "keywords": ["schröder"]
+        "label": "Patientin ma’lumotlari (Frau Brückner)",
+        "labelRu": "Данные пациентки (Frau Brückner)",
+        "labelTr": "Hasta bilgileri (Frau Brückner)",
+        "labelEn": "Patient data (Frau Brückner)",
+        "keywords": ["brückner"]
       },
       {
         "label": "Asosiy shikoyat: to‘satdan boshlanadigan muntazam yurak urishi (Herzrasen)",
@@ -6640,7 +6640,7 @@
         "keywords": ["ablation", "vagusmanöver"]
       }
     ],
-    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihre Patientin Frau Lena Schröder, 26 Jahre, die vom 08.10.2026 bis zum 08.10.2026 in unserer Notaufnahme (ambulant) behandelt wurde.\n\nAnamnese:\nDie Patientin stellte sich mit seit 40 Minuten bestehendem, schlagartig einsetzendem regelmäßigem Herzrasen mit Halspulsieren und Schwindel vor. Seit zwei Jahren treten ähnliche, kürzere Episoden auf, die bisher durch Pressen oder kaltes Wasser terminierten. Es besteht ein hoher Koffeinkonsum mit Kaffee und Energy-Drinks im Nachtdienst.\n\nBefunde:\nIm EKG zeigte sich eine Schmalkomplextachykardie mit 210/min ohne sichtbare P-Wellen. Ein modifiziertes Valsalva-Manöver blieb erfolglos. Nach Gabe von Adenosin 6 mg i. v. terminierte die Tachykardie in einen Sinusrhythmus. Das EKG im Sinusrhythmus zeigte keine Präexzitation. TSH, Kalium und Echokardiographie waren unauffällig.\n\nDiagnose:\nParoxysmale supraventrikuläre Tachykardie, am ehesten AV-Knoten-Reentry-Tachykardie (AVNRT).\n\nTherapie und Verlauf:\nNach Terminierung war die Patientin beschwerdefrei und wurde nach Überwachung entlassen.\n\nProcedere:\nWir haben die Patientin in der Durchführung von Vagusmanövern geschult und eine Reduktion von Koffein und Energy-Drinks empfohlen. Bei wiederholten Episoden empfehlen wir eine elektrophysiologische Untersuchung mit Katheterablation, die eine Heilungschance von über 95 % bietet. Bei Synkopen oder länger anhaltendem Herzrasen ist eine sofortige Vorstellung erforderlich.\n\nMit freundlichen kollegialen Grüßen"
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihre Patientin Frau Lena Brückner, 26 Jahre, die vom 08.10.2026 bis zum 08.10.2026 in unserer Notaufnahme (ambulant) behandelt wurde.\n\nAnamnese:\nDie Patientin stellte sich mit seit 40 Minuten bestehendem, schlagartig einsetzendem regelmäßigem Herzrasen mit Halspulsieren und Schwindel vor. Seit zwei Jahren treten ähnliche, kürzere Episoden auf, die bisher durch Pressen oder kaltes Wasser terminierten. Es besteht ein hoher Koffeinkonsum mit Kaffee und Energy-Drinks im Nachtdienst.\n\nBefunde:\nIm EKG zeigte sich eine Schmalkomplextachykardie mit 210/min ohne sichtbare P-Wellen. Ein modifiziertes Valsalva-Manöver blieb erfolglos. Nach Gabe von Adenosin 6 mg i. v. terminierte die Tachykardie in einen Sinusrhythmus. Das EKG im Sinusrhythmus zeigte keine Präexzitation. TSH, Kalium und Echokardiographie waren unauffällig.\n\nDiagnose:\nParoxysmale supraventrikuläre Tachykardie, am ehesten AV-Knoten-Reentry-Tachykardie (AVNRT).\n\nTherapie und Verlauf:\nNach Terminierung war die Patientin beschwerdefrei und wurde nach Überwachung entlassen.\n\nProcedere:\nWir haben die Patientin in der Durchführung von Vagusmanövern geschult und eine Reduktion von Koffein und Energy-Drinks empfohlen. Bei wiederholten Episoden empfehlen wir eine elektrophysiologische Untersuchung mit Katheterablation, die eine Heilungschance von über 95 % bietet. Bei Synkopen oder länger anhaltendem Herzrasen ist eine sofortige Vorstellung erforderlich.\n\nMit freundlichen kollegialen Grüßen"
   },
   {
     "id": "ab75",
@@ -13176,7 +13176,7 @@
     "taskTr": "Hematoloji servisinden aile hekimine bir Arztbrief yazın. Tanıya, nedene (önceki kemoterapi), indüksiyon tedavisine ve sonraki plana dikkat edin.",
     "taskEn": "Write an Arztbrief from haematology to the GP. Pay attention to the diagnosis, cause (previous chemotherapy), induction treatment and further plan.",
     "facts": [
-      "Patientin: Petra Schuster, 58 Jahre, weiblich",
+      "Patientin: Petra Dietrich, 58 Jahre, weiblich",
       "Aufenthalt: 26.08.2026–08.10.2026, Hämatologie und Onkologie",
       "Schwäche, Hämatome, Petechien, Zahnfleischbluten, Fieber trotz Antibiotikum; Z. n. Chemotherapie bei Mammakarzinom vor 4 Jahren",
       "Hb 6,8 g/dl, Thrombozyten 14/nl, Leukozyten 38/nl mit 72 % Blasten, Neutrophile 0,3/nl; Fibrinogen normal",
@@ -13186,11 +13186,11 @@
     ],
     "keyPoints": [
       {
-        "label": "Patientin ma’lumotlari (Frau Schuster)",
-        "labelRu": "Данные пациентки (Frau Schuster)",
-        "labelTr": "Hasta bilgileri (Frau Schuster)",
-        "labelEn": "Patient data (Frau Schuster)",
-        "keywords": ["schuster"]
+        "label": "Patientin ma’lumotlari (Frau Dietrich)",
+        "labelRu": "Данные пациентки (Frau Dietrich)",
+        "labelTr": "Hasta bilgileri (Frau Dietrich)",
+        "labelEn": "Patient data (Frau Dietrich)",
+        "keywords": ["dietrich"]
       },
       {
         "label": "Asosiy shikoyat: holsizlik, ko‘karishlar va isitma (Hämatome, Fieber)",
@@ -13256,7 +13256,7 @@
         "keywords": ["38 °c", "infektionsschutz"]
       }
     ],
-    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihre Patientin Frau Petra Schuster, 58 Jahre, die vom 26.08.2026 bis zum 08.10.2026 in unserer Klinik für Hämatologie und Onkologie behandelt wurde.\n\nAnamnese:\nDie Patientin stellte sich mit seit drei Wochen zunehmender Schwäche, spontanen Hämatomen, Petechien, Zahnfleischbluten und Fieber trotz antibiotischer Therapie vor. Vor vier Jahren war ein Mammakarzinom mit Chemotherapie und Bestrahlung behandelt worden.\n\nBefunde:\nDas Hb lag bei 6,8 g/dl, die Thrombozyten bei 14/nl, die Leukozyten bei 38/nl mit 72 % Blasten; die Neutrophilen betrugen 0,3/nl. Das Fibrinogen war normal. Die Knochenmarkpunktion ergab eine akute myeloische Leukämie mit Komplexkaryotyp.\n\nDiagnose:\nTherapieassoziierte akute myeloische Leukämie (AML) mit Komplexkaryotyp, Hochrisiko. Febrile Neutropenie.\n\nTherapie und Verlauf:\nWir begannen sofort eine Breitbandantibiose bei febriler Neutropenie sowie eine Transfusion von Erythrozyten- und Thrombozytenkonzentraten und eine Tumorlyseprophylaxe mit Allopurinol. Ab dem 29.08.2026 erhielt die Patientin eine Induktionschemotherapie nach dem 7+3-Schema. Die Aplasiephase verlief ohne schwere Infektion. Am Tag 28 zeigte das Knochenmark eine komplette Remission.\n\nProcedere:\nAufgrund des hohen Rückfallrisikos ist eine allogene Stammzelltransplantation geplant; ihr Bruder wurde als HLA-identischer Spender gefunden. Bis dahin sind wöchentliche Blutbildkontrollen erforderlich. Bei Fieber über 38 °C muss sich die Patientin sofort in unserer Klinik vorstellen. Wir haben sie über Maßnahmen zum Infektionsschutz aufgeklärt.\n\nMit freundlichen kollegialen Grüßen"
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihre Patientin Frau Petra Dietrich, 58 Jahre, die vom 26.08.2026 bis zum 08.10.2026 in unserer Klinik für Hämatologie und Onkologie behandelt wurde.\n\nAnamnese:\nDie Patientin stellte sich mit seit drei Wochen zunehmender Schwäche, spontanen Hämatomen, Petechien, Zahnfleischbluten und Fieber trotz antibiotischer Therapie vor. Vor vier Jahren war ein Mammakarzinom mit Chemotherapie und Bestrahlung behandelt worden.\n\nBefunde:\nDas Hb lag bei 6,8 g/dl, die Thrombozyten bei 14/nl, die Leukozyten bei 38/nl mit 72 % Blasten; die Neutrophilen betrugen 0,3/nl. Das Fibrinogen war normal. Die Knochenmarkpunktion ergab eine akute myeloische Leukämie mit Komplexkaryotyp.\n\nDiagnose:\nTherapieassoziierte akute myeloische Leukämie (AML) mit Komplexkaryotyp, Hochrisiko. Febrile Neutropenie.\n\nTherapie und Verlauf:\nWir begannen sofort eine Breitbandantibiose bei febriler Neutropenie sowie eine Transfusion von Erythrozyten- und Thrombozytenkonzentraten und eine Tumorlyseprophylaxe mit Allopurinol. Ab dem 29.08.2026 erhielt die Patientin eine Induktionschemotherapie nach dem 7+3-Schema. Die Aplasiephase verlief ohne schwere Infektion. Am Tag 28 zeigte das Knochenmark eine komplette Remission.\n\nProcedere:\nAufgrund des hohen Rückfallrisikos ist eine allogene Stammzelltransplantation geplant; ihr Bruder wurde als HLA-identischer Spender gefunden. Bis dahin sind wöchentliche Blutbildkontrollen erforderlich. Bei Fieber über 38 °C muss sich die Patientin sofort in unserer Klinik vorstellen. Wir haben sie über Maßnahmen zum Infektionsschutz aufgeklärt.\n\nMit freundlichen kollegialen Grüßen"
   },
   {
     "id": "ab154",
@@ -13442,7 +13442,7 @@
     "taskTr": "Romatoloji servisinden aile hekimine bir Arztbrief yazın. Tanı ölçütlerine, böbrek incelemesine, tedaviye ve gebelik planlamasına dikkat edin.",
     "taskEn": "Write an Arztbrief from rheumatology to the GP. Pay attention to the diagnostic criteria, kidney assessment, treatment and pregnancy planning.",
     "facts": [
-      "Patientin: Aylin Demir, 27 Jahre, weiblich",
+      "Patientin: Aylin Yıldız, 27 Jahre, weiblich",
       "Aufenthalt: 29.09.2026–06.10.2026, Rheumatologie",
       "Polyarthritis der Hand- und Fingergelenke, Schmetterlingserythem nach Sonnenexposition, Haarausfall, orale Ulzera, Pleuritis, Müdigkeit; Fehlgeburt vor einem Jahr",
       "ANA 1:1280, Anti-dsDNA stark positiv, C3 und C4 erniedrigt; Leukozyten 3,1/nl; Antiphospholipid-Antikörper negativ",
@@ -13451,11 +13451,11 @@
     ],
     "keyPoints": [
       {
-        "label": "Patientin ma’lumotlari (Frau Demir)",
-        "labelRu": "Данные пациентки (Frau Demir)",
-        "labelTr": "Hasta bilgileri (Frau Demir)",
-        "labelEn": "Patient data (Frau Demir)",
-        "keywords": ["demir"]
+        "label": "Patientin ma’lumotlari (Frau Yıldız)",
+        "labelRu": "Данные пациентки (Frau Yıldız)",
+        "labelTr": "Hasta bilgileri (Frau Yıldız)",
+        "labelEn": "Patient data (Frau Yıldız)",
+        "keywords": ["yıldız"]
       },
       {
         "label": "Asosiy shikoyat: bo‘g‘im og‘riqlari, yuzda toshma va charchoq (Polyarthritis, Schmetterlingserythem)",
@@ -13514,7 +13514,7 @@
         "keywords": ["sonnenschutz", "augenärztliche", "schwangerschaft"]
       }
     ],
-    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihre Patientin Frau Aylin Demir, 27 Jahre, die vom 29.09.2026 bis zum 06.10.2026 in unserer Klinik für Rheumatologie behandelt wurde.\n\nAnamnese:\nDie Patientin stellte sich mit einer seit drei Monaten bestehenden Polyarthritis der Hand- und Fingergelenke, einem nach Sonnenexposition aufgetretenen Schmetterlingserythem, Haarausfall, schmerzlosen oralen Ulzera, atemabhängigen Thoraxschmerzen bei Pleuritis und ausgeprägter Müdigkeit vor. Vor einem Jahr hatte sie eine Fehlgeburt.\n\nBefunde:\nDie ANA lagen bei 1:1280, die Anti-dsDNA-Antikörper waren stark positiv, C3 und C4 erniedrigt. Die Leukozyten betrugen 3,1/nl. Die Antiphospholipid-Antikörper waren negativ. Im Urin lag der Protein-Kreatinin-Quotient bei 180 mg/g ohne aktives Sediment, das Kreatinin war normal; eine Lupusnephritis liegt derzeit nicht vor. Die Echokardiographie zeigte einen kleinen Perikarderguss.\n\nDiagnose:\nSystemischer Lupus erythematodes (SLE) mit Arthritis, Haut- und Schleimhautbeteiligung, Serositis (Pleuritis, Perikarderguss) und Leukopenie.\n\nTherapie:\nWir begannen eine Therapie mit Hydroxychloroquin 200 mg zweimal täglich und Prednisolon 20 mg in absteigender Dosis. Darunter besserten sich Gelenk- und Thoraxschmerzen deutlich.\n\nProcedere:\nWir empfehlen konsequenten Sonnenschutz, eine augenärztliche Kontrolle vor und jährlich unter Hydroxychloroquin sowie Urinkontrollen alle drei Monate. Eine Schwangerschaft sollte erst nach mindestens sechs Monaten stabiler Remission und in Absprache mit uns geplant werden. Hydroxychloroquin darf in der Schwangerschaft weitergenommen werden.\n\nMit freundlichen kollegialen Grüßen"
+    "sample": "Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir berichten über Ihre Patientin Frau Aylin Yıldız, 27 Jahre, die vom 29.09.2026 bis zum 06.10.2026 in unserer Klinik für Rheumatologie behandelt wurde.\n\nAnamnese:\nDie Patientin stellte sich mit einer seit drei Monaten bestehenden Polyarthritis der Hand- und Fingergelenke, einem nach Sonnenexposition aufgetretenen Schmetterlingserythem, Haarausfall, schmerzlosen oralen Ulzera, atemabhängigen Thoraxschmerzen bei Pleuritis und ausgeprägter Müdigkeit vor. Vor einem Jahr hatte sie eine Fehlgeburt.\n\nBefunde:\nDie ANA lagen bei 1:1280, die Anti-dsDNA-Antikörper waren stark positiv, C3 und C4 erniedrigt. Die Leukozyten betrugen 3,1/nl. Die Antiphospholipid-Antikörper waren negativ. Im Urin lag der Protein-Kreatinin-Quotient bei 180 mg/g ohne aktives Sediment, das Kreatinin war normal; eine Lupusnephritis liegt derzeit nicht vor. Die Echokardiographie zeigte einen kleinen Perikarderguss.\n\nDiagnose:\nSystemischer Lupus erythematodes (SLE) mit Arthritis, Haut- und Schleimhautbeteiligung, Serositis (Pleuritis, Perikarderguss) und Leukopenie.\n\nTherapie:\nWir begannen eine Therapie mit Hydroxychloroquin 200 mg zweimal täglich und Prednisolon 20 mg in absteigender Dosis. Darunter besserten sich Gelenk- und Thoraxschmerzen deutlich.\n\nProcedere:\nWir empfehlen konsequenten Sonnenschutz, eine augenärztliche Kontrolle vor und jährlich unter Hydroxychloroquin sowie Urinkontrollen alle drei Monate. Eine Schwangerschaft sollte erst nach mindestens sechs Monaten stabiler Remission und in Absprache mit uns geplant werden. Hydroxychloroquin darf in der Schwangerschaft weitergenommen werden.\n\nMit freundlichen kollegialen Grüßen"
   },
   {
     "id": "ab157",
