@@ -143,3 +143,50 @@ export function makeQuestion(items, { rnd = Math.random, lang = "uz", kinds = ["
     answer: options.indexOf(correct),
   };
 }
+
+// ---- Yozib javob berish (so‘zlar trenajyori) ----
+// Umlaut va ß o‘rniga ae/oe/ue/ss ham qabul qilinadi; tinish belgilari va katta-kichik harf hisobga olinmaydi
+const fold = (s) =>
+  String(s ?? "")
+    .toLowerCase()
+    .replace(/ä/g, "ae")
+    .replace(/ö/g, "oe")
+    .replace(/ü/g, "ue")
+    .replace(/ß/g, "ss")
+    .replace(/[^a-z0-9γ]+/g, " ")
+    .trim();
+
+function distance(a, b) {
+  let row = Array.from({ length: b.length + 1 }, (_, j) => j);
+  for (let i = 1; i <= a.length; i++) {
+    let prev = row[0];
+    row[0] = i;
+    for (let j = 1; j <= b.length; j++) {
+      let tmp = row[j];
+      row[j] = Math.min(row[j] + 1, row[j - 1] + 1, prev + (a[i - 1] === b[j - 1] ? 0 : 1));
+      prev = tmp;
+    }
+  }
+  return row[b.length];
+}
+
+// "die PCI (perkutane Koronarintervention)" → "PCI" ham, "perkutane Koronarintervention" ham to‘g‘ri.
+// ok — qabul qilindi (1–2 harf xato kechiriladi, uzun so‘zlarda); exact — aynan to‘g‘ri;
+// articleWrong — artikl yozilgan, lekin noto‘g‘ri.
+export function checkTyped(input, de) {
+  let m = /^(der|die|das)\s+(.*)$/i.exec(String(de).trim()),
+    article = m?.[1].toLowerCase(),
+    body = m ? m[2] : String(de),
+    forms = [
+      body.replace(/\s*\([^)]*\)\s*/g, " ").trim(),
+      ...[...body.matchAll(/\(([^)]+)\)/g)].map((x) => x[1]),
+    ]
+      .map(fold)
+      .filter(Boolean),
+    t = /^(der|die|das)\s+(.*)$/i.exec(String(input).trim()),
+    typed = fold(t ? t[2] : input);
+  if (!typed) return { ok: false, exact: false, articleWrong: false };
+  let best = Math.min(...forms.map((f) => distance(typed, f))),
+    ok = best === 0 || (best === 1 && typed.length >= 5) || (best === 2 && typed.length >= 10);
+  return { ok, exact: best === 0, articleWrong: ok && !!t && !!article && t[1].toLowerCase() !== article };
+}
