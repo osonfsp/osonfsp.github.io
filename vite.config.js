@@ -2,6 +2,7 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import { viteSingleFile } from "vite-plugin-singlefile";
 import { readFileSync } from "node:fs";
+import { articles } from "./articles/plugin.mjs";
 
 // Materiallarning o‘zi sayt kodiga kirmaydi (serverdan keladi) — bosh sahifa uchun faqat sonlar va
 // lug‘atdan 40 ta namuna so‘z (yugurib o‘tuvchi qator) qo‘shiladi.
@@ -101,7 +102,7 @@ async function newsSnapshot() {
 // `npm run build:artifact` -> dist-artifact/index.html: one self-contained file,
 // ready to publish again as a claude.ai Artifact or to open without a server.
 export default defineConfig(async ({ mode }) => ({
-  plugins: mode === "artifact" ? [react(), viteSingleFile()] : [react(), serviceWorker()],
+  plugins: mode === "artifact" ? [react(), viteSingleFile()] : [react(), serviceWorker(), articles()],
   base: "./",
   define: {
     __CONTENT_STATS__: JSON.stringify(contentStats()),

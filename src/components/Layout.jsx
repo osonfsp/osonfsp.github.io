@@ -8,6 +8,7 @@ import { TrialBar } from "./Paywall";
 import { buildPlan } from "../lib/daily";
 import { FEEDBACK_TELEGRAM } from "../lib/config";
 import { Icon, LogoMark } from "./Icon";
+import { ARTIFACT } from "../lib/account";
 
 const SIDEBAR_KEY = "fsp.sidebar";
 
@@ -591,6 +592,12 @@ export function Footer() {
           <Link href="/fikr" className="hover:text-teal-300">
             {tr("Fikr va takliflar", "Отзывы и предложения", "Görüş ve öneriler", "Feedback")}
           </Link>
+          {/* Ochiq maqolalar (articles/) — alohida HTML sahifalar, Artifact versiyasida yo‘q */}
+          {!ARTIFACT && (
+            <a href={LANG === "ru" ? "./maqola/ru/" : "./maqola/"} className="hover:text-teal-300">
+              {tr("Maqolalar", "Статьи", "Makaleler", "Articles")}
+            </a>
+          )}
         </nav>
       </div>
     </footer>
