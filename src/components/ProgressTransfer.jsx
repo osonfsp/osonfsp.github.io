@@ -58,10 +58,10 @@ export function ProgressTransfer() {
           s({
             ok: true,
             text: tr(
-              "Progress muvaffaqiyatli yuklandi ✅",
-              "Прогресс успешно загружен ✅",
-              "İlerleme başarıyla yüklendi ✅",
-              "Progress loaded successfully ✅",
+              "Progress muvaffaqiyatli yuklandi",
+              "Прогресс успешно загружен",
+              "İlerleme başarıyla yüklendi",
+              "Progress loaded successfully",
             ),
           }));
       } catch {

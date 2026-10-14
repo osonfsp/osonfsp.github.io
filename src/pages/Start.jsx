@@ -4,6 +4,7 @@ import { EXAM_IN, LEVELS, WEAK, getProfile, recommendation, saveProfile } from "
 import { loc, tr } from "../lib/i18n";
 import { useRouter } from "../lib/router";
 import { cx } from "../lib/utils";
+import { Icon, Ic } from "../components/Icon";
 
 // Birinchi kirish: 3 ta savol (30 soniya) → shaxsiy tavsiya → "Bugungi mashq"
 export function StartPage() {
@@ -99,7 +100,9 @@ export function StartPage() {
                       : "border-slate-200 dark:border-slate-700",
                   )}
                 >
-                  {o.icon && <span className="text-xl">{o.icon}</span>}
+                  {o.icon && (
+                    <Icon name={o.icon} className="h-5 w-5 shrink-0 text-teal-600 dark:text-teal-400" />
+                  )}
                   {loc(o)}
                 </button>
               ))}
@@ -119,7 +122,11 @@ export function StartPage() {
           </>
         ) : (
           <div className="text-center">
-            <p className="text-5xl">🎯</p>
+            <Icon
+              name="target"
+              className="mx-auto h-14 w-14 text-teal-600 dark:text-teal-400"
+              strokeWidth={1.5}
+            />
             <h1 className="mt-3 text-2xl font-bold">
               {tr("Rejangiz tayyor!", "Ваш план готов!", "Planınız hazır!", "Your plan is ready!")}
             </h1>
@@ -135,7 +142,7 @@ export function StartPage() {
               </p>
               <ul className="mt-2 space-y-1">
                 <li>
-                  📇{" "}
+                  <Ic name="cards" className="text-teal-600" />{" "}
                   {tr(
                     "So‘z takrorlash — 5 daqiqa",
                     "Повторение слов — 5 минут",
@@ -144,7 +151,7 @@ export function StartPage() {
                   )}
                 </li>
                 <li>
-                  💬{" "}
+                  <Ic name="chat" className="text-teal-600" />{" "}
                   {tr(
                     "Bemor bilan suhbat — 10 daqiqa",
                     "Беседа с пациентом — 10 минут",
@@ -153,7 +160,10 @@ export function StartPage() {
                   )}
                 </li>
                 <li>
-                  {WEAK.find((w) => w.id === getProfile()?.weak)?.icon ?? "⭐"}{" "}
+                  <Ic
+                    name={WEAK.find((w) => w.id === getProfile()?.weak)?.icon ?? "star"}
+                    className="text-teal-600"
+                  />{" "}
                   {tr(
                     "Zaif qismingizga mashq — 5–15 daqiqa",
                     "Задание на слабую часть — 5–15 минут",

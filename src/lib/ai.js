@@ -152,7 +152,7 @@ Antworte NUR mit JSON in genau dieser Form:
         .slice(0, 7)
         .map((f) => ({
           status: ["ok", "warn", "error"].includes(f.status) ? f.status : "warn",
-          category: "🤖 AI",
+          category: "AI",
           message: f.message,
         })),
     };
@@ -167,7 +167,7 @@ export function mergeAI(local, ai) {
   return {
     ...local,
     score: clamp((local.score + ai.score) / 2),
-    criteria: { ...local.criteria, "🤖 AI": ai.score },
+    criteria: { ...local.criteria, AI: ai.score },
     feedback: [...ai.feedback, ...local.feedback],
     ai: true,
   };

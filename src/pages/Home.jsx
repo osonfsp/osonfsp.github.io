@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Helix3D } from "../components/Helix3D";
-import { Icon } from "../components/Icon";
+import { Icon, Ic } from "../components/Icon";
 import { Link } from "../components/Link";
 import { MedNews } from "../components/MedNews";
 import { CASE_SECTIONS, STATS } from "../data/index";
@@ -49,12 +49,12 @@ export function HomePage() {
     returning = !!getProfile(),
     startHref = returning ? "/bugun" : "/start",
     startLabel = returning
-      ? tr("📅 Bugungi mashq", "📅 Практика на сегодня", "📅 Bugünkü alıştırma", "📅 Today’s practice")
+      ? tr("Bugungi mashq", "Практика на сегодня", "Bugünkü alıştırma", "Today’s practice")
       : tr("Bepul boshlash", "Начать бесплатно", "Ücretsiz başla", "Start for free");
   const teile = [
     {
       n: "1",
-      icon: "💬",
+      icon: "chat",
       title: "Arzt-Patienten-Gespräch",
       front: tr(
         "Bemordan anamnez olish va tekshiruvni tushuntirish",
@@ -73,7 +73,7 @@ export function HomePage() {
     },
     {
       n: "2",
-      icon: "✍️",
+      icon: "pen",
       title: "Dokumentation",
       front: tr("Arztbrief yozish", "Написание Arztbrief", "Arztbrief yazma", "Writing the Arztbrief"),
       back: tr(
@@ -87,7 +87,7 @@ export function HomePage() {
     },
     {
       n: "3",
-      icon: "👨‍⚕️",
+      icon: "doctor",
       title: "Arzt-Arzt-Gespräch",
       front: tr(
         "Oberarzt’ga bemorni taqdim etish",
@@ -280,7 +280,7 @@ export function HomePage() {
                   key={s.id}
                   className="rounded-full border border-slate-200 px-3 py-1 text-sm text-slate-700 dark:border-slate-700 dark:text-slate-200"
                 >
-                  {s.icon} {s.label}{" "}
+                  <Ic name={s.icon} className="text-teal-600 dark:text-teal-400" /> {s.label}{" "}
                   <span className="muted">
                     · {s.categories.reduce((n, c) => n + (STATS.byCategory[c] ?? 0), 0)}
                   </span>
@@ -373,7 +373,11 @@ export function HomePage() {
             </div>
             <div className="grid grid-cols-3 gap-3">
               {[
-                [tr("Sinov", "Пробный", "Deneme", "Trial"), "$0", `${TRIAL_DAYS} ${tr("kun", "дня", "gün", "days")}`],
+                [
+                  tr("Sinov", "Пробный", "Deneme", "Trial"),
+                  "$0",
+                  `${TRIAL_DAYS} ${tr("kun", "дня", "gün", "days")}`,
+                ],
                 [tr("Hafta", "Неделя", "Hafta", "Week"), "$9", "7d"],
                 [tr("Oy", "Месяц", "Ay", "Month"), "$15", "30d"],
               ].map(([n, p, d], i) => (

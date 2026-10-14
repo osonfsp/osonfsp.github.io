@@ -16,6 +16,7 @@ import { useRouter, useSearchParams } from "../lib/router";
 import { useApp } from "../state/AppContext";
 import { tr } from "../lib/i18n";
 import { SectionIntro } from "../components/SectionIntro";
+import { Ic } from "../components/Icon";
 
 // Tasodifiy Fall: avval hali yechilmaganlardan, joriy Fall’dan boshqasi
 function randomCase(solved, exclude) {
@@ -87,7 +88,7 @@ function SimulationView() {
             "Another random case",
           )}
         >
-          🎲 {tr("Tasodifiy", "Случайный", "Rastgele", "Random")}
+          <Ic name="dice" /> {tr("Tasodifiy", "Случайный", "Rastgele", "Random")}
         </button>
         <select
           className="input min-w-0 flex-1 sm:w-80 sm:flex-none"

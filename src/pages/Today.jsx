@@ -5,6 +5,7 @@ import { buildPlan, getProfile, markDone } from "../lib/daily";
 import { formatDay, LANG, tr } from "../lib/i18n";
 import { cx } from "../lib/utils";
 import { streakOf, useApp } from "../state/AppContext";
+import { Icon, Ic } from "../components/Icon";
 
 // "Bugungi mashq": har kuni 3 ta aniq vazifa — o‘ylab o‘tirmasdan bosib bajariladi
 export function TodayPage() {
@@ -29,7 +30,7 @@ export function TodayPage() {
         )}
       >
         <span className="badge bg-amber-100 text-amber-800">
-          🔥 {streak} {tr("kun ketma-ket", "дней подряд", "gün art arda", "day streak")}
+          <Ic name="flame" /> {streak} {tr("kun ketma-ket", "дней подряд", "gün art arda", "day streak")}
         </span>
       </PageHeader>
 
@@ -38,7 +39,7 @@ export function TodayPage() {
           href="/start"
           className="card mb-4 flex items-center gap-3 border-teal-300 bg-teal-50 text-sm transition hover:border-teal-500 dark:bg-teal-950/30"
         >
-          <span className="text-2xl">🧭</span>
+          <Icon name="compass" className="h-7 w-7 shrink-0 text-teal-600 dark:text-teal-400" />
           <span className="flex-1">
             <b>
               {tr(
@@ -66,10 +67,10 @@ export function TodayPage() {
           <span className="font-semibold">
             {all
               ? tr(
-                  "🎉 Bugungi reja bajarildi!",
-                  "🎉 План на сегодня выполнен!",
-                  "🎉 Bugünkü plan tamamlandı!",
-                  "🎉 Today’s plan done!",
+                  "Bugungi reja bajarildi!",
+                  "План на сегодня выполнен!",
+                  "Bugünkü plan tamamlandı!",
+                  "Today’s plan done!",
                 )
               : tr("Bugungi progress", "Прогресс за сегодня", "Bugünkü ilerleme", "Today’s progress")}
           </span>
@@ -94,12 +95,12 @@ export function TodayPage() {
             >
               <span
                 className={cx(
-                  "grid h-11 w-11 shrink-0 place-items-center rounded-full text-xl",
-                  t.done ? "bg-emerald-500 text-white" : "bg-teal-600/10",
+                  "grid h-11 w-11 shrink-0 place-items-center rounded-full",
+                  t.done ? "bg-emerald-500 text-white" : "bg-teal-600/10 text-teal-700 dark:text-teal-300",
                 )}
                 aria-hidden
               >
-                {t.done ? "✓" : t.icon}
+                <Icon name={t.done ? "check" : t.icon} className="h-5 w-5" strokeWidth={t.done ? 2.4 : 1.8} />
               </span>
               <div className="min-w-0 flex-1">
                 <p className="text-xs muted">

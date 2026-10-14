@@ -15,6 +15,7 @@ import { useParams } from "../lib/router";
 import { useApp } from "../state/AppContext";
 import { loc, tr } from "../lib/i18n";
 import { SectionIntro } from "../components/SectionIntro";
+import { Ic } from "../components/Icon";
 
 export function ArztbriefListPage() {
   let { progress: e } = useApp();
@@ -113,7 +114,8 @@ function ArztbriefEditor({ exercise: e, onResult: t }) {
       <div className="card">
         <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
           <h2 className="h-title">
-            ✍️ {tr("Arztbrief editori", "Редактор Arztbrief", "Arztbrief editörü", "Arztbrief editor")}
+            <Ic name="pen" />{" "}
+            {tr("Arztbrief editori", "Редактор Arztbrief", "Arztbrief editörü", "Arztbrief editor")}
           </h2>
           <div className="flex gap-2">
             <button className="btn-ghost text-xs" onClick={() => n(ARZTBRIEF_TEMPLATE)}>
@@ -178,7 +180,7 @@ function ArztbriefEditor({ exercise: e, onResult: t }) {
           onClick={() => h((f) => !f)}
           aria-expanded={c}
         >
-          📄 {tr("Namuna yechim", "Образец", "Örnek çözüm", "Model answer")} (Musterlösung)
+          <Ic name="file" /> {tr("Namuna yechim", "Образец", "Örnek çözüm", "Model answer")} (Musterlösung)
           <span className="muted">{c ? "▲" : "▼"}</span>
         </button>
         {c ? (

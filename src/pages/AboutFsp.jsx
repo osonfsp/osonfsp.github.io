@@ -1,6 +1,7 @@
 import { Link } from "../components/Link";
 import { PageHeader } from "../components/ui";
 import { LANG, tr } from "../lib/i18n";
+import { Ic } from "../components/Icon";
 
 const EXAM_PARTS = [
     {
@@ -163,7 +164,6 @@ export function AboutFspPage() {
       </div>
       <div className="card mt-6">
         <h2 className="h-title">
-          🇩🇪{" "}
           {tr(
             "Approbation’gacha yo‘l (YeI’dan tashqari davlatlar)",
             "Путь к Approbation (страны вне ЕС)",
@@ -289,14 +289,14 @@ export function AboutFspPage() {
         <ul className="mt-3 space-y-2 text-sm">
           {TIPS.map((e) => (
             <li key={e} className="flex gap-2">
-              <span aria-hidden>💡</span>
+              <Ic name="bulb" className="mt-0.5 text-amber-500" />
               {e}
             </li>
           ))}
         </ul>
       </div>
       <p className="mt-6 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-900 dark:border-amber-900/60 dark:bg-amber-950/30 dark:text-amber-200">
-        ⚠️{" "}
+        <Ic name="alert" />{" "}
         {tr(
           "Imtihon formati, davomiyligi va talablar Ärztekammer’ga qarab farq qilishi mumkin. Ro‘yxatdan o‘tishdan oldin o‘z yeringizdagi palatadan rasmiy ma’lumotni tekshiring.",
           "Формат, длительность и требования экзамена могут отличаться в разных Ärztekammer. Перед регистрацией уточните официальную информацию в палате своей земли.",

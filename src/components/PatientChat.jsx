@@ -5,7 +5,7 @@ import { cx } from "../lib/utils";
 import { Speak, canSpeak, speak, stopSpeaking } from "./Speak";
 import { tr } from "../lib/i18n";
 import { TG, openInBrowser } from "../lib/telegram";
-import { Icon } from "./Icon";
+import { Icon, Ic } from "./Icon";
 
 const VOICE_KEY = "fsp.voice";
 
@@ -49,10 +49,10 @@ function dictationError(code) {
     );
   if (code === "not-allowed" || code === "service-not-allowed")
     return tr(
-      "Mikrofonga ruxsat berilmagan. Brauzer manzil satridagi 🔒 belgisidan mikrofonga ruxsat bering.",
-      "Нет доступа к микрофону. Разрешите его через значок 🔒 в адресной строке браузера.",
-      "Mikrofon izni verilmedi. Tarayıcının adres çubuğundaki 🔒 simgesinden mikrofona izin verin.",
-      "Microphone access was denied. Allow it via the 🔒 icon in the browser’s address bar.",
+      "Mikrofonga ruxsat berilmagan. Brauzer manzil satridagi qulf belgisidan mikrofonga ruxsat bering.",
+      "Нет доступа к микрофону. Разрешите его через значок замка в адресной строке браузера.",
+      "Mikrofon izni verilmedi. Tarayıcının adres çubuğundaki kilit simgesinden mikrofona izin verin.",
+      "Microphone access was denied. Allow it via the lock icon in the browser’s address bar.",
     );
   if (code === "network")
     return tr(
@@ -156,10 +156,10 @@ export function PatientChat({ caseData, messages, onMessages, showHints = true, 
       } else if (err === "no-speech" || !err) {
         stopTalk(
           tr(
-            "Suhbat to‘xtatildi — ovoz eshitilmadi. Davom etish uchun 🗣 tugmasini bosing.",
-            "Разговор приостановлен — голос не слышен. Нажмите 🗣, чтобы продолжить.",
-            "Sohbet duraklatıldı — ses duyulmadı. Devam etmek için 🗣 düğmesine basın.",
-            "Conversation paused — no voice heard. Press 🗣 to continue.",
+            "Suhbat to‘xtatildi — ovoz eshitilmadi. Davom etish uchun “Suhbat” tugmasini bosing.",
+            "Разговор приостановлен — голос не слышен. Нажмите «Разговор», чтобы продолжить.",
+            "Sohbet duraklatıldı — ses duyulmadı. Devam etmek için “Sohbet” düğmesine basın.",
+            "Conversation paused — no voice heard. Press “Talk” to continue.",
           ),
         );
       } else stopTalk();
@@ -271,7 +271,7 @@ export function PatientChat({ caseData, messages, onMessages, showHints = true, 
               )}
               aria-pressed={talk}
             >
-              🗣
+              <Ic name="waves" />
               <span className="hidden sm:inline">
                 {" "}
                 {talk
@@ -293,7 +293,7 @@ export function PatientChat({ caseData, messages, onMessages, showHints = true, 
               )}
               aria-pressed={voice}
             >
-              {voice ? "🔊" : "🔇"}
+              <Ic name={voice ? "volume" : "volumeOff"} />
               <span className="hidden sm:inline"> {tr("Ovoz", "Звук", "Ses", "Sound")}</span>
             </button>
           )}
@@ -336,10 +336,10 @@ export function PatientChat({ caseData, messages, onMessages, showHints = true, 
               <>
                 <br />
                 {tr(
-                  "🎤 tugmasi bilan savolni ovozda ham berishingiz mumkin.",
-                  "Кнопкой 🎤 можно задавать вопросы голосом.",
-                  "🎤 düğmesiyle soruyu sesli de sorabilirsiniz.",
-                  "You can also ask your question by voice with the 🎤 button.",
+                  "Mikrofon tugmasi bilan savolni ovozda ham berishingiz mumkin.",
+                  "Кнопкой микрофона можно задавать вопросы голосом.",
+                  "Mikrofon düğmesiyle soruyu sesli de sorabilirsiniz.",
+                  "You can also ask your question by voice with the microphone button.",
                 )}
               </>
             )}
@@ -353,10 +353,10 @@ export function PatientChat({ caseData, messages, onMessages, showHints = true, 
                   onClick={openInBrowser}
                 >
                   {tr(
-                    "🎤 Ovozda gaplashish uchun brauzerda oching",
-                    "🎤 Чтобы говорить голосом, откройте в браузере",
-                    "🎤 Sesli konuşmak için tarayıcıda açın",
-                    "🎤 Open in the browser to talk by voice",
+                    "Ovozda gaplashish uchun brauzerda oching",
+                    "Чтобы говорить голосом, откройте в браузере",
+                    "Sesli konuşmak için tarayıcıda açın",
+                    "Open in the browser to talk by voice",
                   )}
                 </button>
               </>
@@ -365,10 +365,10 @@ export function PatientChat({ caseData, messages, onMessages, showHints = true, 
               <>
                 <br />
                 {tr(
-                  "🗣 Suhbat — imtihondagidek uzluksiz ovozli suhbat: gapirasiz, bemor ovozda javob beradi.",
-                  "🗣 Разговор — непрерывный голосовой диалог, как на экзамене: вы говорите, пациент отвечает голосом.",
-                  "🗣 Sohbet — sınavdaki gibi kesintisiz sesli konuşma: siz konuşursunuz, hasta sesli cevap verir.",
-                  "🗣 Talk — a continuous voice conversation like in the exam: you speak, the patient answers aloud.",
+                  "Suhbat — imtihondagidek uzluksiz ovozli suhbat: gapirasiz, bemor ovozda javob beradi.",
+                  "Разговор — непрерывный голосовой диалог, как на экзамене: вы говорите, пациент отвечает голосом.",
+                  "Sohbet — sınavdaki gibi kesintisiz sesli konuşma: siz konuşursunuz, hasta sesli cevap verir.",
+                  "Talk — a continuous voice conversation like in the exam: you speak, the patient answers aloud.",
                 )}
               </>
             )}
@@ -427,7 +427,7 @@ export function PatientChat({ caseData, messages, onMessages, showHints = true, 
             onClick={() => setHintsOpen((o) => !o)}
             aria-expanded={hintsOpen}
           >
-            💡{" "}
+            <Ic name="bulb" className="text-amber-500" />{" "}
             {hintsOpen
               ? tr("Namunalarni yashirish", "Скрыть подсказки", "Örnekleri gizle", "Hide examples")
               : tr("Savol namunalari", "Примеры вопросов", "Örnek sorular", "Example questions")}
@@ -452,10 +452,10 @@ export function PatientChat({ caseData, messages, onMessages, showHints = true, 
           {asked.size === ANAMNESE_TOPICS.length && (
             <span className="text-xs text-emerald-600">
               {tr(
-                "✅ Barcha asosiy mavzular so‘raldi",
-                "✅ Все основные темы затронуты",
-                "✅ Tüm temel konular soruldu",
-                "✅ All key topics covered",
+                "Barcha asosiy mavzular so‘raldi",
+                "Все основные темы затронуты",
+                "Tüm temel konular soruldu",
+                "All key topics covered",
               )}
             </span>
           )}
@@ -558,24 +558,14 @@ export function PatientChat({ caseData, messages, onMessages, showHints = true, 
           {talk
             ? dictation.listening
               ? tr(
-                  "🎙 Tinglayapman… nemischa gapiring",
-                  "🎙 Слушаю… говорите по-немецки",
-                  "🎙 Dinliyorum… Almanca konuşun",
-                  "🎙 Listening… speak German",
+                  "Tinglayapman… nemischa gapiring",
+                  "Слушаю… говорите по-немецки",
+                  "Dinliyorum… Almanca konuşun",
+                  "Listening… speak German",
                 )
               : waiting
-                ? tr(
-                    "💭 Bemor o‘ylayapti…",
-                    "💭 Пациент думает…",
-                    "💭 Hasta düşünüyor…",
-                    "💭 The patient is thinking…",
-                  )
-                : tr(
-                    "🔊 Bemor gapiryapti…",
-                    "🔊 Пациент говорит…",
-                    "🔊 Hasta konuşuyor…",
-                    "🔊 The patient is speaking…",
-                  )
+                ? tr("Bemor o‘ylayapti…", "Пациент думает…", "Hasta düşünüyor…", "The patient is thinking…")
+                : tr("Bemor gapiryapti…", "Пациент говорит…", "Hasta konuşuyor…", "The patient is speaking…")
             : talkNote}
         </p>
       )}
@@ -584,7 +574,7 @@ export function PatientChat({ caseData, messages, onMessages, showHints = true, 
           className="border-t border-slate-200 px-4 py-2 text-xs text-rose-600 dark:border-slate-800"
           role="alert"
         >
-          🎤 {dictation.error}
+          <Ic name="mic" /> {dictation.error}
         </p>
       )}
     </div>

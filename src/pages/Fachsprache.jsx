@@ -6,8 +6,8 @@ import { useApp } from "../state/AppContext";
 import { Speak } from "../components/Speak";
 import { LANG, loc, tr } from "../lib/i18n";
 import { makeQuestion, quizItems } from "../lib/quiz";
-import { Icon } from "../components/Icon";
 import { SectionIntro } from "../components/SectionIntro";
+import { Icon, Ic } from "../components/Icon";
 
 function FlipCard({ p: e, known: t, onToggle: a }) {
   let [n, i] = useState(false);
@@ -175,7 +175,13 @@ function PairQuiz() {
       {n !== null && (
         <div className="mt-5 flex items-center justify-between gap-3">
           <p className="text-sm">
-            {n === t.answer ? tr("✅ To‘g‘ri!", "✅ Верно!", "✅ Doğru!", "✅ Correct!") : "❌"}{" "}
+            {n === t.answer ? (
+              <>
+                <Ic name="checkCircle" /> {tr("To‘g‘ri!", "Верно!", "Doğru!", "Correct!")}
+              </>
+            ) : (
+              <Ic name="xCircle" />
+            )}{" "}
             <span lang="de">
               <b>{t.correct.de}</b> = {t.correct.patient}
             </span>{" "}
@@ -217,10 +223,10 @@ export function FachsprachePage() {
         )}
       >
         <button className={a === "cards" ? "chip-on" : "chip-off"} onClick={() => n("cards")}>
-          🗂 {tr("Kartochkalar", "Карточки", "Kartlar", "Flashcards")}
+          <Ic name="cards" /> {tr("Kartochkalar", "Карточки", "Kartlar", "Flashcards")}
         </button>
         <button className={a === "quiz" ? "chip-on" : "chip-off"} onClick={() => n("quiz")}>
-          🎯 Test
+          <Ic name="target" /> Test
         </button>
       </PageHeader>
       <SectionIntro id="fachsprache" />

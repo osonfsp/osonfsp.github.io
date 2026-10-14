@@ -1,6 +1,7 @@
 import { PRACTICE, usePlan } from "../lib/plan";
 import { Link } from "./Link";
 import { tr } from "../lib/i18n";
+import { Icon } from "./Icon";
 
 // Bepul imkoniyat tugaganda sahifa o‘rniga ko‘rsatiladi.
 // kind: "materials" — 1 kunlik sinov tugadi; "exam" — bepul imtihon ishlatildi.
@@ -10,9 +11,7 @@ export function Paywall({ kind = "materials" }) {
     exam = kind === "exam";
   return (
     <div className="card mx-auto max-w-xl text-center">
-      <p className="text-4xl" aria-hidden>
-        🔒
-      </p>
+      <Icon name="lock" className="mx-auto h-11 w-11 text-teal-600 dark:text-teal-400" strokeWidth={1.5} />
       <h2 className="mt-3 h-title">
         {exam
           ? tr(
@@ -72,9 +71,7 @@ export function MaterialsGate({ children }) {
 function LoginWall() {
   return (
     <div className="card mx-auto max-w-xl text-center">
-      <p className="text-4xl" aria-hidden>
-        ✈️
-      </p>
+      <Icon name="send" className="mx-auto h-11 w-11 text-sky-500" strokeWidth={1.5} />
       <h2 className="mt-3 h-title">
         {tr("Avval kiring", "Сначала войдите", "Önce giriş yapın", "Sign in first")}
       </h2>
@@ -119,10 +116,10 @@ export function TrialBar() {
         className="block bg-teal-50 py-1.5 text-center text-xs font-medium text-teal-900 hover:bg-teal-100 dark:bg-teal-950/40 dark:text-teal-200"
       >
         {tr(
-          "🎁 Telegram orqali kiring — 2 kun bepul →",
-          "🎁 Войдите через Telegram — 2 дня бесплатно →",
-          "🎁 Telegram ile giriş yapın — 2 gün ücretsiz →",
-          "🎁 Sign in with Telegram — 2 days free →",
+          "Telegram orqali kiring — 2 kun bepul →",
+          "Войдите через Telegram — 2 дня бесплатно →",
+          "Telegram ile giriş yapın — 2 gün ücretsiz →",
+          "Sign in with Telegram — 2 days free →",
         )}
       </Link>
     );
@@ -134,10 +131,10 @@ export function TrialBar() {
     >
       {trialActive
         ? tr(
-            `🎁 Bepul sinov: materiallar yana ${h} soat ochiq · Tariflar →`,
-            `🎁 Пробный доступ: материалы открыты ещё ${h} ч · Тарифы →`,
-            `🎁 Ücretsiz deneme: materyaller ${h} saat daha açık · Paketler →`,
-            `🎁 Free trial: materials open for another ${h} h · Plans →`,
+            `Bepul sinov: materiallar yana ${h} soat ochiq · Tariflar →`,
+            `Пробный доступ: материалы открыты ещё ${h} ч · Тарифы →`,
+            `Ücretsiz deneme: materyaller ${h} saat daha açık · Paketler →`,
+            `Free trial: materials open for another ${h} h · Plans →`,
           )
         : tr(
             "⏳ Bepul sinov tugadi · Tarif tanlang →",

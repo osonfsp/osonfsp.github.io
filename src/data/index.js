@@ -21,13 +21,13 @@ export const CASE_CATEGORIES = [
   CASE_SECTIONS = [
     {
       id: "kardiologie",
-      icon: "❤️",
+      icon: "heart",
       label: tr("Kardiologiya", "Кардиология", "Kardiyoloji", "Cardiology"),
       categories: ["Kardiologie"],
     },
     {
       id: "innere",
-      icon: "💊",
+      icon: "stethoscope",
       label: tr(
         "Terapiya (ichki kasalliklar)",
         "Терапия (внутренние болезни)",
@@ -45,19 +45,19 @@ export const CASE_CATEGORIES = [
     },
     {
       id: "chirurgie",
-      icon: "🔪",
+      icon: "scissors",
       label: tr("Xirurgiya", "Хирургия", "Cerrahi", "Surgery"),
       categories: ["Chirurgie", "Unfallchirurgie", "Urologie"],
     },
     {
       id: "neurologie",
-      icon: "🧠",
+      icon: "brain",
       label: tr("Nevrologiya", "Неврология", "Nöroloji", "Neurology"),
       categories: ["Neurologie"],
     },
     {
       id: "allgemein",
-      icon: "🏥",
+      icon: "hospital",
       label: tr("Umumiy amaliyot", "Общая практика", "Aile hekimliği", "General practice"),
       categories: ["Allgemeinmedizin"],
     },

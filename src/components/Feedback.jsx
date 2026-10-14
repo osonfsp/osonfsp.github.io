@@ -6,9 +6,9 @@ import { cx } from "../lib/utils";
 import { Icon } from "./Icon";
 
 const KINDS = [
-  { id: "idea", label: () => tr("💡 Taklif", "💡 Предложение", "💡 Öneri", "💡 Idea") },
-  { id: "bug", label: () => tr("🐞 Kamchilik", "🐞 Недочёт", "🐞 Hata", "🐞 Problem") },
-  { id: "other", label: () => tr("💬 Fikr", "💬 Отзыв", "💬 Görüş", "💬 Comment") },
+  { id: "idea", label: () => tr("Taklif", "Предложение", "Öneri", "Idea") },
+  { id: "bug", label: () => tr("Kamchilik", "Недочёт", "Hata", "Problem") },
+  { id: "other", label: () => tr("Fikr", "Отзыв", "Görüş", "Comment") },
 ];
 
 // "Fikr va takliflar": matn bot orqali to‘g‘ridan-to‘g‘ri adminga boradi (worker/index.js, /feedback).
@@ -54,7 +54,12 @@ export function FeedbackForm({ title, subtitle, context = "", className = "" }) 
       {state === "sent" ? (
         <div className="mt-4 rounded-xl bg-teal-50 p-4 text-sm text-teal-900 dark:bg-teal-950/40 dark:text-teal-100">
           <p className="font-semibold">
-            {tr("Rahmat! Xabaringiz yuborildi.", "Спасибо! Сообщение отправлено.", "Teşekkürler! Mesajınız gönderildi.", "Thank you! Your message was sent.")}
+            {tr(
+              "Rahmat! Xabaringiz yuborildi.",
+              "Спасибо! Сообщение отправлено.",
+              "Teşekkürler! Mesajınız gönderildi.",
+              "Thank you! Your message was sent.",
+            )}
           </p>
           <p className="mt-1">
             {tr(
@@ -118,7 +123,11 @@ export function FeedbackForm({ title, subtitle, context = "", className = "" }) 
                   )}
             </p>
           )}
-          <button type="submit" className="btn-primary mt-3" disabled={text.trim().length < 3 || state === "sending"}>
+          <button
+            type="submit"
+            className="btn-primary mt-3"
+            disabled={text.trim().length < 3 || state === "sending"}
+          >
             <Icon name="send" className="h-4 w-4" />
             {state === "sending"
               ? tr("Yuborilmoqda…", "Отправка…", "Gönderiliyor…", "Sending…")

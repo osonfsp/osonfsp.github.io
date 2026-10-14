@@ -8,6 +8,7 @@ import { loc, tr } from "../lib/i18n";
 import { useParams } from "../lib/router";
 import { useApp } from "../state/AppContext";
 import { SectionIntro } from "../components/SectionIntro";
+import { Icon, Ic } from "../components/Icon";
 
 const best = (list, id) => Math.max(0, ...(list ?? []).filter((x) => x.id === id).map((x) => x.score));
 
@@ -36,8 +37,11 @@ export function AufklaerungListPage() {
           let s = best(e.aufklaerung, p.id);
           return (
             <Link key={p.id} href={`/aufklaerung/${p.id}`} className="card card-hover flex flex-col">
-              <span className="text-2xl" aria-hidden>
-                {p.icon}
+              <span
+                className="grid h-10 w-10 place-items-center rounded-xl bg-teal-600/10 text-teal-700 dark:text-teal-300"
+                aria-hidden
+              >
+                <Icon name="clipboard" className="h-5 w-5" />
               </span>
               <h2 className="mt-2 text-lg font-bold text-teal-900 dark:text-teal-100">{p.name}</h2>
               <p className="mt-1 flex-1 text-sm muted">{loc(p)}</p>
@@ -94,9 +98,7 @@ export function AufklaerungPage() {
       <Link href="/aufklaerung" className="text-sm muted hover:text-teal-600">
         ← {tr("Barcha tekshiruvlar", "Все обследования", "Tüm tetkikler", "All examinations")}
       </Link>
-      <h1 className="mt-3 text-2xl font-bold sm:text-3xl">
-        {p.icon} {p.name}
-      </h1>
+      <h1 className="mt-3 text-2xl font-bold sm:text-3xl">{p.name}</h1>
       <p className="mt-1 muted">{loc(p)}</p>
 
       <div className="mt-6 grid gap-4 lg:grid-cols-[minmax(0,1fr)_320px]">
@@ -106,8 +108,11 @@ export function AufklaerungPage() {
               {tr("Bemor so‘raydi", "Пациент спрашивает", "Hasta soruyor", "The patient asks")}
             </p>
             <div className="mt-2 flex items-start gap-2">
-              <span className="text-2xl" aria-hidden>
-                🧑
+              <span
+                className="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-300"
+                aria-hidden
+              >
+                <Icon name="user" className="h-5 w-5" />
               </span>
               <p className="flex-1 rounded-2xl rounded-tl-md bg-slate-100 px-3.5 py-2 dark:bg-slate-800">
                 „{p.question}“
@@ -165,7 +170,8 @@ export function AufklaerungPage() {
               onClick={() => setShowSample((v) => !v)}
               aria-expanded={showSample}
             >
-              📄 {tr("Namuna tushuntirish", "Образец объяснения", "Örnek açıklama", "Model explanation")}
+              <Ic name="file" />{" "}
+              {tr("Namuna tushuntirish", "Образец объяснения", "Örnek açıklama", "Model explanation")}
               <span className="muted">{showSample ? "▲" : "▼"}</span>
             </button>
             {showSample ? (
@@ -200,7 +206,7 @@ export function AufklaerungPage() {
             ))}
           </ul>
           <p className="mt-4 rounded-lg bg-amber-50 p-3 text-xs text-amber-900 dark:bg-amber-950/40 dark:text-amber-200">
-            💡{" "}
+            <Ic name="bulb" className="text-amber-500" />{" "}
             {tr(
               "Fachbegriff ishlatsangiz, darhol sodda so‘z bilan izohlang: „eine Gastroskopie, also eine Magenspiegelung“.",
               "Если используете Fachbegriff, сразу поясните простым словом: „eine Gastroskopie, also eine Magenspiegelung“.",

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { tr } from "../lib/i18n";
 import { storage } from "../lib/storage";
+import { Ic } from "./Icon";
 
 // Bo‘limga birinchi kirganda: "Bu yerda nima qilasiz?" — 3 qadam. Yopilgach qayta chiqmaydi
 // (lekin sarlavha yonidagi "?" tugmasi bilan yana ochiladi).
@@ -216,10 +217,10 @@ const INTROS = {
         "Choose an exam part (Teil 1, 2 or 3)",
       ),
       tr(
-        "🔊 bilan tinglang va ovoz chiqarib takrorlang",
-        "Слушайте 🔊 и повторяйте вслух",
-        "🔊 ile dinleyin ve sesli tekrarlayın",
-        "Listen with 🔊 and repeat aloud",
+        "Karnay tugmasi bilan tinglang va ovoz chiqarib takrorlang",
+        "Слушайте кнопкой динамика и повторяйте вслух",
+        "Hoparlör düğmesiyle dinleyin ve sesli tekrarlayın",
+        "Listen with the speaker button and repeat aloud",
       ),
       tr(
         "„Tarjimani yashirish“ bilan o‘zingizni tekshiring",
@@ -271,7 +272,7 @@ export function SectionIntro({ id }) {
         onClick={() => setOpen(true)}
         className="mb-4 inline-flex items-center gap-1.5 rounded-full border border-slate-200 bg-white/70 px-3 py-1 text-xs muted hover:text-teal-700 dark:border-slate-700 dark:bg-slate-900/60"
       >
-        ❔{" "}
+        <Ic name="help" />{" "}
         {tr(
           "Bu bo‘lim qanday ishlaydi?",
           "Как работает этот раздел?",
@@ -284,7 +285,7 @@ export function SectionIntro({ id }) {
     <div className="card mb-5 border-teal-200 bg-gradient-to-br from-teal-50 to-white p-4 dark:border-teal-900 dark:from-teal-950/40 dark:to-slate-900">
       <div className="flex items-start justify-between gap-3">
         <p className="text-sm font-semibold">
-          🧭{" "}
+          <Ic name="compass" className="text-teal-600" />{" "}
           {tr(
             "Bu yerda nima qilasiz?",
             "Что здесь делать?",

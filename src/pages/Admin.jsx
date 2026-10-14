@@ -259,8 +259,8 @@ export function AdminPage() {
         <div className="page !pb-0">
           <div className="flex gap-2">
             {[
-              ["users", tr("👥 Foydalanuvchilar", "👥 Пользователи", "👥 Kullanıcılar", "👥 Users")],
-              ["content", tr("📝 Kontent", "📝 Контент", "📝 İçerik", "📝 Content")],
+              ["users", tr("Foydalanuvchilar", "Пользователи", "Kullanıcılar", "Users")],
+              ["content", tr("Kontent", "Контент", "İçerik", "Content")],
             ].map(([id, label]) => (
               <button key={id} className={tab === id ? "chip-on" : "chip-off"} onClick={() => setTab(id)}>
                 {label}
@@ -446,7 +446,7 @@ function ContentAdmin() {
         <div className="space-y-4">
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             <StatCard
-              icon="👥"
+              icon="users"
               label={tr("Foydalanuvchilar", "Пользователи", "Kullanıcılar", "Users")}
               value={DEMO_USERS.length + (a ? 1 : 0)}
               hint={tr(
@@ -457,17 +457,17 @@ function ContentAdmin() {
               )}
             />
             <StatCard
-              icon="📈"
+              icon="chart"
               label={tr("O‘rtacha progress", "Средний прогресс", "Ortalama ilerleme", "Average progress")}
               value={`${Math.round((DEMO_USERS.reduce((z, k) => z + k.progress, 0) + (a ? t : 0)) / (DEMO_USERS.length + (a ? 1 : 0)))}%`}
             />
             <StatCard
-              icon="🎯"
+              icon="target"
               label={tr("Jami imtihonlar", "Всего экзаменов", "Toplam sınav", "Total exams")}
               value={DEMO_USERS.reduce((z, k) => z + k.exams, 0) + e.exams.length}
             />
             <StatCard
-              icon="✍️"
+              icon="pen"
               label={tr(
                 "Arztbrief urinishlari",
                 "Попытки Arztbrief",

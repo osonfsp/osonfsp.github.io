@@ -4,6 +4,7 @@ import { useApp } from "../state/AppContext";
 import { LANG, tr } from "../lib/i18n";
 import { TG_BOT, loginWithTelegram, loginWithTelegramApp } from "../lib/account";
 import { TG } from "../lib/telegram";
+import { Icon, Ic } from "../components/Icon";
 
 // Telegram Login Widget: https://core.telegram.org/widgets/login
 // Telegram foydalanuvchi ma’lumotini imzolab beradi, imzoni server tekshiradi (worker/index.js).
@@ -63,9 +64,7 @@ export function LoginPage() {
   return (
     <div className="page flex justify-center">
       <div className="card w-full max-w-md text-center">
-        <p className="text-4xl" aria-hidden>
-          ✈️
-        </p>
+        <Icon name="send" className="mx-auto h-11 w-11 text-sky-500" strokeWidth={1.5} />
         <h1 className="mt-2 text-2xl font-bold">
           {tr("Telegram orqali kirish", "Вход через Telegram", "Telegram ile giriş", "Sign in with Telegram")}
         </h1>
@@ -103,7 +102,7 @@ export function LoginPage() {
         )}
         <ul className="mt-6 space-y-1.5 rounded-xl bg-slate-50 p-4 text-left text-sm dark:bg-slate-800/50">
           <li>
-            ✅{" "}
+            <Ic name="checkCircle" className="text-emerald-600" />{" "}
             {tr(
               "Birinchi kirishda — 24 soat bepul: barcha materiallar va 1 ta imtihon",
               "При первом входе — 24 часа бесплатно: все материалы и 1 экзамен",
@@ -112,7 +111,7 @@ export function LoginPage() {
             )}
           </li>
           <li>
-            ✅{" "}
+            <Ic name="checkCircle" className="text-emerald-600" />{" "}
             {tr(
               "Progress telefon va kompyuterda bir xil saqlanadi",
               "Прогресс синхронизируется между телефоном и компьютером",
@@ -121,7 +120,7 @@ export function LoginPage() {
             )}
           </li>
           <li>
-            ✅{" "}
+            <Ic name="checkCircle" className="text-emerald-600" />{" "}
             {tr(
               "Shu qurilmadagi avvalgi progressingiz akkauntga o‘tadi",
               "Прежний прогресс на этом устройстве перейдёт в аккаунт",

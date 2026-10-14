@@ -7,6 +7,7 @@ import { cx } from "../lib/utils";
 import { formatDay, LANG, tr } from "../lib/i18n";
 import { api, refreshAccount, useAccount } from "../lib/account";
 import { FEEDBACK_TELEGRAM } from "../lib/config";
+import { Ic } from "../components/Icon";
 
 const OFFERS = [
   {
@@ -121,7 +122,7 @@ export function ProPage() {
       />
       {plan ? (
         <p className="card mb-4 border-emerald-300 bg-emerald-50 text-sm dark:border-emerald-900 dark:bg-emerald-950/30">
-          ✅ {tr("Faol tarif", "Активный тариф", "Aktif paket", "Active plan")}:{" "}
+          <Ic name="checkCircle" /> {tr("Faol tarif", "Активный тариф", "Aktif paket", "Active plan")}:{" "}
           <b>
             {plan.id === "owner" || plan.id === "admin"
               ? tr(
@@ -280,7 +281,7 @@ export function ProPage() {
                   disabled={req === "sending" || req === "sent"}
                   onClick={sendRequest}
                 >
-                  📨{" "}
+                  <Ic name="mail" />{" "}
                   {tr(
                     "Adminga so‘rov yuborish",
                     "Отправить запрос админу",
@@ -295,16 +296,18 @@ export function ProPage() {
                     rel="noopener noreferrer"
                     className="btn-outline"
                   >
-                    ✈️ {tr("Adminga yozish", "Написать админу", "Yöneticiye yaz", "Message the admin")}
+                    <Ic name="send" />{" "}
+                    {tr("Adminga yozish", "Написать админу", "Yöneticiye yaz", "Message the admin")}
                   </a>
                 )}
                 <button type="button" className="btn-outline" onClick={() => refreshAccount()}>
-                  🔄 {tr("Tarifni tekshirish", "Проверить тариф", "Paketi kontrol et", "Check my plan")}
+                  <Ic name="refresh" />{" "}
+                  {tr("Tarifni tekshirish", "Проверить тариф", "Paketi kontrol et", "Check my plan")}
                 </button>
               </div>
               {req === "sent" && (
                 <p className="mt-2 font-medium text-teal-700 dark:text-teal-300">
-                  ✅{" "}
+                  <Ic name="checkCircle" />{" "}
                   {tr(
                     "So‘rov yuborildi. Admin Telegram’da siz bilan bog‘lanadi; tarif yoqilganda bot xabar beradi.",
                     "Запрос отправлен. Админ свяжется с вами в Telegram; когда тариф подключится, бот сообщит.",

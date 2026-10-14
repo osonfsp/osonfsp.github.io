@@ -3,6 +3,7 @@ import { today, useApp } from "../state/AppContext";
 import { cx } from "../lib/utils";
 import { speak, Speak } from "./Speak";
 import { loc, tr } from "../lib/i18n";
+import { Icon, Ic } from "./Icon";
 
 const SESSION_SIZE = 10;
 
@@ -47,7 +48,11 @@ export function WordTrainer({ pool, onClose }) {
     let total = stats.known + stats.again;
     return (
       <div className="card mx-auto max-w-xl text-center">
-        <p className="text-4xl">{total ? "🎉" : "✅"}</p>
+        <Icon
+          name={total ? "sparkles" : "checkCircle"}
+          className="mx-auto h-12 w-12 text-teal-600 dark:text-teal-400"
+          strokeWidth={1.5}
+        />
         <h2 className="mt-3 h-title">
           {total
             ? tr("Sessiya tugadi!", "Сессия завершена!", "Oturum bitti!", "Session finished!")
@@ -145,7 +150,9 @@ export function WordTrainer({ pool, onClose }) {
             {/* Orqa tomon: javob + yordamchi ma’lumotlar, har biri nomi bilan */}
             {front ? (
               <span className="wf-fach block">
-                <span className="wf-label">🩺 Fachsprache</span>
+                <span className="wf-label">
+                  <Ic name="stethoscope" /> Fachsprache
+                </span>
                 <span className="flex items-center gap-1 text-2xl font-semibold">
                   {w.de}
                   <Speak text={w.de} />
@@ -153,13 +160,15 @@ export function WordTrainer({ pool, onClose }) {
               </span>
             ) : (
               <span className="wf-uz block">
-                <span className="wf-label">📗 {tr("O‘zbekcha", "Перевод", "Türkçe", "English")}</span>
+                <span className="wf-label">
+                  <Ic name="translate" /> {tr("O‘zbekcha", "Перевод", "Türkçe", "English")}
+                </span>
                 <span className="block text-2xl font-semibold">{loc(w)}</span>
               </span>
             )}
             <span className="wf-pat block">
               <span className="wf-label">
-                🧑{" "}
+                <Ic name="user" />{" "}
                 {tr(
                   "Bemor tilida (Patientensprache)",
                   "Языком пациента (Patientensprache)",
@@ -170,7 +179,9 @@ export function WordTrainer({ pool, onClose }) {
               <span className="block">„{w.patient}“</span>
             </span>
             <span className="wf-ex block">
-              <span className="wf-label">💬 {tr("Misol", "Пример", "Örnek", "Example")}</span>
+              <span className="wf-label">
+                <Ic name="chat" /> {tr("Misol", "Пример", "Örnek", "Example")}
+              </span>
               <span className="block text-sm italic">{w.example}</span>
             </span>
           </span>

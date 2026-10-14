@@ -2,6 +2,7 @@ import { useMemo, useState } from "react";
 import { cx } from "../lib/utils";
 import { tr } from "../lib/i18n";
 import { CATEGORY_LABELS } from "../data/index";
+import { Icon, Ic } from "./Icon";
 
 export function ProgressBar({ value: e, auto: t = false, className: a }) {
   let n = Math.max(0, Math.min(100, Math.round(e))),
@@ -89,9 +90,7 @@ export function StatCard({ icon: e, label: t, value: a, hint: n, progress: i }) 
     <div className="card">
       <div className="flex items-center justify-between">
         <span className="text-sm muted">{t}</span>
-        <span className="text-xl" aria-hidden>
-          {e}
-        </span>
+        <Icon name={e} className="h-5 w-5 text-teal-600 dark:text-teal-400" />
       </div>
       <div className="mt-2 text-2xl font-bold text-slate-900 dark:text-white">{a}</div>
       {n && <div className="mt-0.5 text-xs muted">{n}</div>}
@@ -175,9 +174,9 @@ export function SearchInput({ value: e, onChange: t, placeholder: a }) {
 }
 
 const STATUS_ICONS = {
-    ok: "✅",
-    warn: "⚠️",
-    error: "❌",
+    ok: <Ic name="checkCircle" className="text-emerald-600 dark:text-emerald-400" />,
+    warn: <Ic name="alert" className="text-amber-600 dark:text-amber-400" />,
+    error: <Ic name="xCircle" className="text-rose-600 dark:text-rose-400" />,
   },
   STATUS_LABELS = {
     ok: tr("To‘g‘ri", "Верно", "Doğru", "Correct"),
@@ -326,92 +325,69 @@ export function PageSkeleton({ label = tr("Yuklanmoqda…", "Загрузка…
   );
 }
 
-// Buyrak belgisi — Unicode’da buyrak emojisi yo‘q, shuning uchun o‘zimiz chizamiz
-function KidneyIcon() {
-  return (
-    <svg viewBox="0 0 24 24" className="inline-block h-[1.15em] w-[1.15em] align-[-0.2em]" aria-hidden>
-      <path
-        d="M8.4 12.2C6 13.2 4.6 15.8 4.2 21.5"
-        fill="none"
-        stroke="#f59e0b"
-        strokeWidth="1.8"
-        strokeLinecap="round"
-      />
-      <path
-        d="M12.5 2.5c4 0 6.5 4 6.5 9.5s-2.5 9.5-6.5 9.5c-3.4 0-6-2.3-6-5.1 0-2.2 2.5-2.6 2.5-4.4S6.5 9.8 6.5 7.6c0-2.8 2.6-5.1 6-5.1z"
-        fill="#be123c"
-      />
-      <path
-        d="M14.6 5.6c1.6.9 2.5 3.3 2.5 6.4"
-        fill="none"
-        stroke="#fda4af"
-        strokeWidth="1.3"
-        strokeLinecap="round"
-      />
-    </svg>
-  );
-}
-
 // Fan (mutaxassislik) belgisi: har bir fan o‘z belgisi va rangida — ro‘yxatlarda tez ajratish uchun
 export const CATEGORY_STYLE = {
   Kardiologie: [
-    "❤️",
+    "heart",
     "bg-rose-100 text-rose-800 ring-rose-200 dark:bg-rose-500/15 dark:text-rose-200 dark:ring-rose-500/30",
   ],
   "Innere Medizin": [
-    "🩺",
+    "stethoscope",
     "bg-slate-100 text-slate-800 ring-slate-300 dark:bg-slate-500/20 dark:text-slate-200 dark:ring-slate-500/40",
   ],
   Pneumologie: [
-    "🌬️",
+    "wind",
     "bg-cyan-100 text-cyan-800 ring-cyan-200 dark:bg-cyan-500/15 dark:text-cyan-200 dark:ring-cyan-500/30",
   ],
   Gastroenterologie: [
-    "🍽️",
+    "utensils",
     "bg-orange-100 text-orange-800 ring-orange-200 dark:bg-orange-500/15 dark:text-orange-200 dark:ring-orange-500/30",
   ],
   Nephrologie: [
-    "💧",
+    "droplet",
     "bg-blue-100 text-blue-800 ring-blue-200 dark:bg-blue-500/15 dark:text-blue-200 dark:ring-blue-500/30",
   ],
   Endokrinologie: [
-    "🧪",
+    "flask",
     "bg-fuchsia-100 text-fuchsia-800 ring-fuchsia-200 dark:bg-fuchsia-500/15 dark:text-fuchsia-200 dark:ring-fuchsia-500/30",
   ],
   Infektiologie: [
-    "🦠",
+    "virus",
     "bg-lime-100 text-lime-800 ring-lime-200 dark:bg-lime-500/15 dark:text-lime-200 dark:ring-lime-500/30",
   ],
   Chirurgie: [
-    "🔪",
+    "scissors",
     "bg-amber-100 text-amber-900 ring-amber-200 dark:bg-amber-500/15 dark:text-amber-200 dark:ring-amber-500/30",
   ],
   Unfallchirurgie: [
-    "🦴",
+    "bone",
     "bg-stone-200 text-stone-800 ring-stone-300 dark:bg-stone-500/20 dark:text-stone-200 dark:ring-stone-500/40",
   ],
   Urologie: [
-    <KidneyIcon key="k" />,
+    "kidney",
     "bg-yellow-100 text-yellow-900 ring-yellow-300 dark:bg-yellow-500/15 dark:text-yellow-200 dark:ring-yellow-500/30",
   ],
   Neurologie: [
-    "🧠",
+    "brain",
     "bg-violet-100 text-violet-800 ring-violet-200 dark:bg-violet-500/15 dark:text-violet-200 dark:ring-violet-500/30",
   ],
   Allgemeinmedizin: [
-    "🏥",
+    "hospital",
     "bg-emerald-100 text-emerald-800 ring-emerald-200 dark:bg-emerald-500/15 dark:text-emerald-200 dark:ring-emerald-500/30",
   ],
 };
-export const categoryIcon = (c) => CATEGORY_STYLE[c]?.[0] ?? "🩺";
+export const categoryIcon = (c) => {
+  let i = CATEGORY_STYLE[c]?.[0] ?? "stethoscope";
+  return typeof i === "string" ? <Ic name={i} /> : i;
+};
 
 export function CategoryBadge({ category, className = "" }) {
-  let [icon, color] = CATEGORY_STYLE[category] ?? CATEGORY_STYLE["Innere Medizin"];
+  let color = (CATEGORY_STYLE[category] ?? CATEGORY_STYLE["Innere Medizin"])[1];
   return (
     <span
       className={`inline-flex items-center gap-1.5 self-start rounded-full px-2.5 py-1 text-sm font-semibold ring-1 ${color} ${className}`}
     >
-      <span aria-hidden>{icon}</span>
+      <span aria-hidden>{categoryIcon(category)}</span>
       {CATEGORY_LABELS[category] ?? category}
     </span>
   );

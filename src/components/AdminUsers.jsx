@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import { api } from "../lib/account";
 import { formatDay, tr } from "../lib/i18n";
 import { cx } from "../lib/utils";
+import { Icon } from "./Icon";
 
 // Admin: foydalanuvchilar ro‘yxati va tarifni qo‘lda yoqish (to‘lov admin orqali qabul qilinadi).
 // Hamma amallarni server tekshiradi (worker/index.js → /admin/*) — faqat ADMIN_USERNAMES uchun.
@@ -49,10 +50,10 @@ export function AdminUsers() {
     try {
       let { user } = await api(path, { method: "POST", body });
       setUsers((list) => list.map((x) => (x.id === user.id ? { ...x, ...user } : x)));
-      setNote(`✅ ${user.name}: ${label}`);
+      setNote(`✓ ${user.name}: ${label}`);
       setTimeout(() => setNote(""), 3000);
     } catch (e) {
-      setNote(`❌ ${e.message}`);
+      setNote(`✗ ${e.message}`);
     }
     setBusy(null);
   }
@@ -122,8 +123,8 @@ export function AdminUsers() {
             value={q}
             onChange={(e) => setQ(e.target.value)}
           />
-          <button type="button" className="btn-outline" onClick={load}>
-            🔄
+          <button type="button" className="btn-outline" onClick={load} aria-label="Refresh">
+            <Icon name="refresh" className="h-4 w-4" />
           </button>
         </div>
         {note && <p className="mt-2 text-sm">{note}</p>}

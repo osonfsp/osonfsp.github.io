@@ -21,6 +21,7 @@ import { streakOf, useApp } from "../state/AppContext";
 import { dueCount } from "../components/WordTrainer";
 import { tr } from "../lib/i18n";
 import { buildPlan } from "../lib/daily";
+import { Icon, Ic } from "../components/Icon";
 
 export function DashboardPage() {
   let { ready: e, user: t, progress: a, overall: n, logout: i, resetProgress: l } = useApp(),
@@ -44,7 +45,7 @@ export function DashboardPage() {
     ready =
       last3.length === 3 && last3.every((f) => f.passed)
         ? [
-            "🟢",
+            <span key="d" className="inline-block h-2.5 w-2.5 rounded-full bg-emerald-500 align-middle" />,
             tr(
               "Imtihonga tayyorsiz",
               "Вы готовы к экзамену",
@@ -60,7 +61,7 @@ export function DashboardPage() {
           ]
         : passN
           ? [
-              "🟡",
+              <span key="d" className="inline-block h-2.5 w-2.5 rounded-full bg-amber-400 align-middle" />,
               tr(
                 "Tayyorlanish davom etmoqda",
                 "Подготовка продолжается",
@@ -76,7 +77,7 @@ export function DashboardPage() {
             ]
           : ex.length
             ? [
-                "🔴",
+                <span key="d" className="inline-block h-2.5 w-2.5 rounded-full bg-rose-500 align-middle" />,
                 tr("Hali tayyor emas", "Пока не готовы", "Henüz hazır değil", "Not ready yet"),
                 tr(
                   "„Nicht bestanden“ bo‘lgan qismlarni alohida mashq qiling va qayta topshiring.",
@@ -86,7 +87,10 @@ export function DashboardPage() {
                 ),
               ]
             : [
-                "⚪",
+                <span
+                  key="d"
+                  className="inline-block h-2.5 w-2.5 rounded-full bg-slate-300 dark:bg-slate-600 align-middle"
+                />,
                 tr("Hali baholanmagan", "Пока без оценки", "Henüz değerlendirilmedi", "Not assessed yet"),
                 tr(
                   "Mashq imtihonini topshiring va natijangizni ko‘ring.",
@@ -131,9 +135,7 @@ export function DashboardPage() {
             href="/bugun"
             className="card mb-4 flex items-center gap-4 border-2 border-teal-500 p-4 transition hover:shadow-lg"
           >
-            <span className="text-3xl" aria-hidden>
-              📅
-            </span>
+            <Icon name="calendar" className="h-8 w-8 shrink-0 text-teal-600 dark:text-teal-400" />
             <span className="min-w-0 flex-1">
               <span className="block font-semibold">
                 {tr("Bugungi mashq", "Практика на сегодня", "Bugünkü alıştırma", "Today’s practice")} ·{" "}
@@ -143,10 +145,10 @@ export function DashboardPage() {
                 {next
                   ? `${tr("Keyingisi", "Следующее", "Sıradaki", "Next")}: ${next.title} — ${next.desc}`
                   : tr(
-                      "Bugungi reja bajarildi 🎉",
-                      "План на сегодня выполнен 🎉",
-                      "Bugünkü plan tamamlandı 🎉",
-                      "Today’s plan done 🎉",
+                      "Bugungi reja bajarildi",
+                      "План на сегодня выполнен",
+                      "Bugünkü plan tamamlandı",
+                      "Today’s plan done",
                     )}
               </span>
             </span>
@@ -166,7 +168,9 @@ export function DashboardPage() {
           />
           <div className="mt-4 grid w-full grid-cols-2 gap-2 text-sm">
             <div className="rounded-xl bg-amber-50 p-2.5 dark:bg-amber-950/40">
-              <div className="text-xl font-bold">🔥 {K}</div>
+              <div className="text-xl font-bold">
+                <Ic name="flame" className="text-orange-500" /> {K}
+              </div>
               <div className="text-xs muted">
                 {tr("ketma-ket kun", "дней подряд", "gün art arda", "day streak")}
               </div>
@@ -175,7 +179,9 @@ export function DashboardPage() {
               href="/woerter"
               className="rounded-xl bg-teal-50 p-2.5 transition hover:bg-teal-100 dark:bg-teal-950/40"
             >
-              <div className="text-xl font-bold">📇 {Q}</div>
+              <div className="text-xl font-bold">
+                <Ic name="cards" className="text-teal-600" /> {Q}
+              </div>
               <div className="text-xs muted">
                 {tr("bugun takrorlash", "повторить сегодня", "bugün tekrar", "to review today")}
               </div>
@@ -198,19 +204,19 @@ export function DashboardPage() {
         </div>
         <div className="grid gap-4 sm:grid-cols-2">
           <StatCard
-            icon="🩺"
+            icon="stethoscope"
             label={tr("Yechilgan klinik holatlar", "Решённые кейсы", "Çözülen vakalar", "Solved cases")}
             value={`${a.solvedCases.length} / ${STATS.cases}`}
             progress={(a.solvedCases.length / STATS.cases) * 100}
           />
           <StatCard
-            icon="📚"
+            icon="book"
             label={tr("O‘rganilgan so‘zlar", "Выученные слова", "Öğrenilen kelimeler", "Words learned")}
             value={`${a.learnedWords.length} / ${STATS.words}`}
             progress={(a.learnedWords.length / STATS.words) * 100}
           />
           <StatCard
-            icon="✍️"
+            icon="pen"
             label={tr(
               "Arztbrief mashqlari",
               "Упражнения Arztbrief",
@@ -226,7 +232,7 @@ export function DashboardPage() {
             progress={(r / STATS.arztbriefe) * 100}
           />
           <StatCard
-            icon="💬"
+            icon="chat"
             label="Patienten-Simulation"
             value={a.simulations.length}
             hint={
@@ -236,7 +242,7 @@ export function DashboardPage() {
             }
           />
           <StatCard
-            icon="🔁"
+            icon="refresh"
             label={tr(
               "Fach ↔ Patient kartochkalar",
               "Карточки Fach ↔ Patient",
@@ -247,13 +253,13 @@ export function DashboardPage() {
             progress={(a.knownPairs.length / STATS.pairs) * 100}
           />
           <StatCard
-            icon="🎯"
+            icon="target"
             label="FSP simulation"
             value={a.exams.length}
             hint={
               b
                 ? typeof b.passed == "boolean"
-                  ? `${tr("Oxirgi", "Последний", "Son", "Latest")}: ${b.passed ? "bestanden ✅" : "nicht bestanden ❌"}`
+                  ? `${tr("Oxirgi", "Последний", "Son", "Latest")}: ${b.passed ? "bestanden ✓" : "nicht bestanden ✗"}`
                   : `${tr("Oxirgi", "Последний", "Son", "Latest")}: ${b.total}%`
                 : tr("Hali topshirilmagan", "Ещё не сдавали", "Henüz girilmedi", "Not taken yet")
             }
@@ -276,7 +282,8 @@ export function DashboardPage() {
                 <p
                   className={`mb-2 text-lg font-extrabold ${b.passed ? "text-emerald-600" : "text-rose-600"}`}
                 >
-                  {b.passed ? "✅ BESTANDEN" : "❌ NICHT BESTANDEN"}
+                  <Ic name={b.passed ? "checkCircle" : "xCircle"} />{" "}
+                  {b.passed ? "BESTANDEN" : "NICHT BESTANDEN"}
                 </p>
               )}
               <div className="mb-4 rounded-xl bg-slate-50 p-3 text-sm dark:bg-slate-800/60">
@@ -374,9 +381,7 @@ export function DashboardPage() {
                 className="group rounded-xl border border-slate-200 p-3 dark:border-slate-800"
               >
                 <summary className="flex cursor-pointer list-none items-center gap-3">
-                  <span className="text-xl" aria-hidden>
-                    {sec.icon}
-                  </span>
+                  <Icon name={sec.icon} className="h-5 w-5 shrink-0 text-teal-600 dark:text-teal-400" />
                   <span className="min-w-0 flex-1">
                     <span className="flex items-center justify-between gap-2 text-sm font-semibold">
                       {sec.label}
@@ -405,7 +410,7 @@ export function DashboardPage() {
                       >
                         <div className="flex items-center justify-between gap-2 text-sm">
                           <span className="truncate font-medium">
-                            {p ? "✅" : "○"} {f.title}
+                            {p ? <Ic name="checkCircle" className="text-emerald-600" /> : "○"} {f.title}
                           </span>
                           <span className="shrink-0 text-xs muted">{A ? `${A}%` : "—"}</span>
                         </div>

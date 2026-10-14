@@ -9,6 +9,7 @@ import { useParams } from "../lib/router";
 import { cx } from "../lib/utils";
 import { useApp } from "../state/AppContext";
 import { SectionIntro } from "../components/SectionIntro";
+import { Icon, Ic } from "../components/Icon";
 
 const RATES = [
   [0.8, "0.8×"],
@@ -47,7 +48,7 @@ export function HoerenListPage() {
           return (
             <section key={sec.id}>
               <h2 className="mb-3 text-xl font-bold text-teal-900 dark:text-teal-100">
-                {sec.icon} {sec.label}
+                <Ic name={sec.icon} className="text-teal-600 dark:text-teal-400" /> {sec.label}
               </h2>
               <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
                 {list.map((c) => (
@@ -57,10 +58,10 @@ export function HoerenListPage() {
                     className="card card-hover flex items-center gap-3 p-4"
                   >
                     <span
-                      className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-teal-600/10 text-lg"
+                      className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-teal-600/10 text-teal-700 dark:text-teal-300"
                       aria-hidden
                     >
-                      🎧
+                      <Icon name="headphones" className="h-5 w-5" />
                     </span>
                     <span className="min-w-0">
                       <span className="block truncate font-semibold">{c.patient.hauptbeschwerde}</span>
@@ -133,7 +134,7 @@ export function HoerenPage() {
       <Link href="/hoeren" className="text-sm muted hover:text-teal-600">
         ← {tr("Barcha mashqlar", "Все упражнения", "Tüm alıştırmalar", "All exercises")}
       </Link>
-      <h1 className="mt-3 text-2xl font-bold sm:text-3xl">🎧 {c.patient.hauptbeschwerde}</h1>
+      <h1 className="mt-3 text-2xl font-bold sm:text-3xl">{c.patient.hauptbeschwerde}</h1>
       <p className="mt-1 muted">
         {c.patient.name}, {c.patient.age} J. · {c.category}
       </p>
@@ -335,7 +336,7 @@ export function HoerenPage() {
           </div>
           <details className="mt-4">
             <summary className="cursor-pointer text-sm font-semibold">
-              {tr("📄 To‘liq matn", "📄 Полный текст", "📄 Tam metin", "📄 Full text")}
+              {tr("To‘liq matn", "Полный текст", "Tam metin", "Full text")}
             </summary>
             <p
               lang="de"

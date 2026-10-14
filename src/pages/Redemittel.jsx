@@ -41,8 +41,8 @@ export function RedemittelPage() {
       >
         <button className={i ? "btn-outline" : "btn-primary"} onClick={() => (l(!i), r({}))}>
           {i
-            ? tr("🙈 Tarjimani yashirish", "🙈 Скрыть перевод", "🙈 Çeviriyi gizle", "🙈 Hide translation")
-            : tr("👁 Tarjimani ko‘rsatish", "👁 Показать перевод", "👁 Çeviriyi göster", "👁 Show translation")}
+            ? tr("Tarjimani yashirish", "Скрыть перевод", "Çeviriyi gizle", "Hide translation")
+            : tr("Tarjimani ko‘rsatish", "Показать перевод", "Çeviriyi göster", "Show translation")}
         </button>
       </PageHeader>
       <SectionIntro id="redemittel" />

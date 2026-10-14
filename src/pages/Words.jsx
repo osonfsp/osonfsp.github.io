@@ -8,6 +8,7 @@ import { dueCount, WordTrainer } from "../components/WordTrainer";
 import { loc, tr } from "../lib/i18n";
 import { useSearchParams } from "../lib/router";
 import { SectionIntro } from "../components/SectionIntro";
+import { Ic } from "../components/Icon";
 
 const PAGE = 12;
 
@@ -48,7 +49,8 @@ export function WordsPage() {
       >
         {!T && (
           <button className="btn-primary" onClick={() => (setT(true), window.scrollTo({ top: 0 }))}>
-            📇 {tr("Kartochka mashqi", "Тренировка карточками", "Kart alıştırması", "Flashcard practice")}
+            <Ic name="cards" />{" "}
+            {tr("Kartochka mashqi", "Тренировка карточками", "Kart alıştırması", "Flashcard practice")}
             {due > 0 && <span className="ml-1.5 rounded-full bg-white/25 px-2 text-xs">{due}</span>}
           </button>
         )}
@@ -134,12 +136,14 @@ export function WordsPage() {
                   </div>
                   <dl className="mt-3 space-y-2 text-sm">
                     <div className="wf-uz">
-                      <dt className="wf-label">📗 {tr("O‘zbekcha", "Перевод", "Türkçe", "English")}</dt>
+                      <dt className="wf-label">
+                        <Ic name="translate" /> {tr("O‘zbekcha", "Перевод", "Türkçe", "English")}
+                      </dt>
                       <dd className="font-semibold">{loc(b)}</dd>
                     </div>
                     <div className="wf-pat">
                       <dt className="wf-label">
-                        🧑{" "}
+                        <Ic name="user" />{" "}
                         {tr(
                           "Bemor tilida (Patientensprache)",
                           "Языком пациента",
@@ -150,7 +154,9 @@ export function WordsPage() {
                       <dd>„{b.patient}“</dd>
                     </div>
                     <div className="wf-ex">
-                      <dt className="wf-label">💬 {tr("Misol", "Пример", "Örnek", "Example")}</dt>
+                      <dt className="wf-label">
+                        <Ic name="chat" /> {tr("Misol", "Пример", "Örnek", "Example")}
+                      </dt>
                       <dd className="flex items-start gap-1 italic">
                         <span className="flex-1">{b.example}</span>
                         <Speak text={b.example} className="-mt-1 not-italic" />

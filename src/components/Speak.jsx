@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { cx } from "../lib/utils";
 import { tr } from "../lib/i18n";
+import { Icon } from "./Icon";
 
 // Brauzerning o'z nemischa ovozi (Web Speech API) — bepul, internet va AI talab qilmaydi.
 const synth = typeof window !== "undefined" ? window.speechSynthesis : undefined;
@@ -56,7 +57,7 @@ export function speakSequence(sentences, { rate = 1, onProgress, onEnd } = {}) {
 // Qaysi ovoz ishlatilayotgani (foydalanuvchiga ko‘rsatish uchun)
 export const voiceName = () => germanVoice()?.name ?? "";
 
-// Kichik 🔊 tugma. <button> ichida ham ishlatish mumkin bo'lishi uchun <span role="button">.
+// Kichik karnay tugmasi. <button> ichida ham ishlatish mumkin bo'lishi uchun <span role="button">.
 export function Speak({
   text,
   className,
@@ -90,7 +91,7 @@ export function Speak({
         className,
       )}
     >
-      <span aria-hidden>{playing ? "⏹" : "🔊"}</span>
+      <Icon name={playing ? "stop" : "volume"} className="h-4 w-4" />
     </span>
   );
 }

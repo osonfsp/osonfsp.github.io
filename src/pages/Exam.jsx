@@ -26,7 +26,7 @@ import { usePlan } from "../lib/plan";
 import { startExam } from "../lib/account";
 import { tr } from "../lib/i18n";
 import { SectionIntro } from "../components/SectionIntro";
-import { Icon } from "../components/Icon";
+import { Icon, Ic } from "../components/Icon";
 import { Confetti, ShareResult } from "../components/Celebrate";
 import { FeedbackForm } from "../components/Feedback";
 
@@ -271,7 +271,7 @@ export function ExamPage() {
               {[
                 [
                   "normal",
-                  "🎯",
+                  "target",
                   tr("Oddiy", "Обычный", "Normal", "Standard"),
                   tr(
                     "Barcha holatlar, Oberarzt 5 ta savol va 1 ta Fachbegriff so‘raydi. O‘tish chegarasi 60%.",
@@ -282,7 +282,7 @@ export function ExamPage() {
                 ],
                 [
                   "hard",
-                  "🔥",
+                  "flame",
                   tr("Qiyin", "Сложный", "Zor", "Hard"),
                   tr(
                     "Faqat murakkab holatlar. Bemor ma’lumotni o‘zi aytmaydi, aniq savol berish kerak. Oberarzt davolash, asoratlar va DD’ni ham so‘raydi, 2 ta Fachbegriff. Faktlar aralash tartibda. O‘tish chegarasi 70%.",
@@ -307,7 +307,7 @@ export function ExamPage() {
                   )}
                 >
                   <span className="font-semibold">
-                    {icon} {name}
+                    <Ic name={icon} className={id === "hard" ? "text-rose-600" : "text-teal-600"} /> {name}
                   </span>
                   <span className="mt-1 block text-xs muted">{desc}</span>
                 </button>
@@ -328,7 +328,8 @@ export function ExamPage() {
                   items.length > 0 && (
                     <div key={sec.id}>
                       <p className="mb-2 flex items-center gap-2 text-base font-bold text-teal-900 dark:text-teal-100">
-                        <span aria-hidden>{sec.icon}</span> {sec.label}
+                        <Icon name={sec.icon} className="h-5 w-5 text-teal-600 dark:text-teal-400" />{" "}
+                        {sec.label}
                       </p>
                       <div className="grid gap-2 sm:grid-cols-2">
                         {items.map(([z, k]) => (
@@ -340,8 +341,8 @@ export function ExamPage() {
                             <span className="flex items-center justify-between gap-2">
                               <CategoryBadge category={z.c.category} className="!py-0.5 !text-xs" />
                               {z.c.difficulty === "schwer" && (
-                                <span className="text-xs" title="schwer" aria-label="schwer">
-                                  🔥
+                                <span className="text-rose-500" title="schwer" aria-label="schwer">
+                                  <Ic name="flame" />
                                 </span>
                               )}
                             </span>
@@ -355,7 +356,7 @@ export function ExamPage() {
               })}
             </div>
             <button className="btn-primary mt-4 w-full sm:w-auto" onClick={() => N()}>
-              🎲{" "}
+              <Ic name="dice" />{" "}
               {tr(
                 "Tasodifiy Fall bilan boshlash",
                 "Начать со случайного кейса",
@@ -367,7 +368,7 @@ export function ExamPage() {
         )}
         <details className="card mt-4 text-sm">
           <summary className="cursor-pointer font-semibold">
-            📖{" "}
+            <Ic name="book" />{" "}
             {tr(
               "Imtihon qanday o‘tadi? (3 qism va qoidalar)",
               "Как проходит экзамен? (3 части и правила)",
@@ -379,7 +380,7 @@ export function ExamPage() {
             <div className="grid gap-4 sm:grid-cols-3">
               {[
                 [
-                  "\uD83D\uDCAC",
+                  "chat",
                   "Teil 1",
                   "Patienten-Anamnese",
                   tr(
@@ -390,7 +391,7 @@ export function ExamPage() {
                   ),
                 ],
                 [
-                  "✍️",
+                  "pen",
                   "Teil 2",
                   "Dokumentation",
                   tr(
@@ -401,7 +402,7 @@ export function ExamPage() {
                   ),
                 ],
                 [
-                  "\uD83D\uDC68‍⚕️",
+                  "doctor",
                   "Teil 3",
                   "Arzt-Arzt-Gespräch",
                   tr(
@@ -413,8 +414,11 @@ export function ExamPage() {
                 ],
               ].map(([z, k, O, te]) => (
                 <div key={k} className="card">
-                  <span className="text-2xl" aria-hidden>
-                    {z}
+                  <span
+                    className="grid h-10 w-10 place-items-center rounded-xl bg-teal-600/10 text-teal-700 dark:text-teal-300"
+                    aria-hidden
+                  >
+                    <Icon name={z} className="h-5 w-5" />
                   </span>
                   <p
                     lang="de"
@@ -429,7 +433,6 @@ export function ExamPage() {
             </div>
             <div className="card mt-4 border-teal-200 bg-teal-50/60 text-sm dark:border-teal-900 dark:bg-teal-950/30">
               <h2 className="section-title">
-                🇩🇪{" "}
                 {tr(
                   "Haqiqiy FSP qoidalari bo‘yicha",
                   "По правилам настоящего FSP",
@@ -502,7 +505,12 @@ export function ExamPage() {
             </span>
             <span className="truncate">
               {tr("Imtihon ketmoqda", "Идёт экзамен", "Sınav sürüyor", "Exam in progress")}
-              {hard && " · 🔥"}
+              {hard && (
+                <>
+                  {" "}
+                  · <Ic name="flame" className="text-rose-500" />
+                </>
+              )}
             </span>
           </p>
           {leaving ? (
@@ -659,7 +667,7 @@ export function ExamPage() {
                     className="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-slate-100 dark:bg-slate-800"
                     aria-hidden
                   >
-                    👨‍⚕️
+                    <Icon name="doctor" className="h-4 w-4" />
                   </span>
                   <p className="rounded-2xl rounded-tl-md bg-slate-100 px-3.5 py-2 text-sm dark:bg-slate-800">
                     <span className="block text-[11px] font-medium muted">Oberarzt</span>
@@ -749,7 +757,7 @@ export function ExamPage() {
             </h2>
             {hard && (
               <p className="mt-1 text-sm font-semibold text-rose-700 dark:text-rose-300">
-                🔥 {tr("Qiyin rejim", "Сложный режим", "Zor mod", "Hard mode")}
+                <Ic name="flame" /> {tr("Qiyin rejim", "Сложный режим", "Zor mod", "Hard mode")}
               </p>
             )}
             <p className="mt-1 text-sm muted">
@@ -836,7 +844,9 @@ export function ExamPage() {
             </details>
           ))}
           <details className="card">
-            <summary className="cursor-pointer font-semibold">📄 Musterlösung (Arztbrief)</summary>
+            <summary className="cursor-pointer font-semibold">
+              <Ic name="file" /> Musterlösung (Arztbrief)
+            </summary>
             <pre className="mt-4 whitespace-pre-wrap font-sans text-sm leading-relaxed">{n.ex.sample}</pre>
           </details>
           <div className="flex flex-wrap gap-2">

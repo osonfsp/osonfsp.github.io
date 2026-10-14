@@ -44,7 +44,7 @@ export const LEVELS = [
 export const WEAK = [
   {
     id: "teil1",
-    icon: "💬",
+    icon: "chat",
     uz: "Bemor bilan gaplashish (Teil 1)",
     ru: "Разговор с пациентом (Teil 1)",
     tr: "Hastayla konuşma (Teil 1)",
@@ -52,7 +52,7 @@ export const WEAK = [
   },
   {
     id: "hoeren",
-    icon: "🎧",
+    icon: "headphones",
     uz: "Bemorni eshitib tushunish",
     ru: "Понимать пациента на слух",
     tr: "Hastayı dinleyerek anlama",
@@ -60,7 +60,7 @@ export const WEAK = [
   },
   {
     id: "arztbrief",
-    icon: "✍️",
+    icon: "pen",
     uz: "Arztbrief yozish (Teil 2)",
     ru: "Писать Arztbrief (Teil 2)",
     tr: "Arztbrief yazma (Teil 2)",
@@ -68,13 +68,13 @@ export const WEAK = [
   },
   {
     id: "teil3",
-    icon: "👨‍⚕️",
+    icon: "doctor",
     uz: "Oberarzt bilan gaplashish (Teil 3)",
     ru: "Разговор с Oberarzt (Teil 3)",
     tr: "Oberarzt ile konuşma (Teil 3)",
     en: "Talking to the Oberarzt (Teil 3)",
   },
-  { id: "unknown", icon: "🤷", uz: "Bilmayman", ru: "Не знаю", tr: "Bilmiyorum", en: "I don’t know" },
+  { id: "unknown", icon: "help", uz: "Bilmayman", ru: "Не знаю", tr: "Bilmiyorum", en: "I don’t know" },
 ];
 
 // ---------- Kunlik reja ----------
@@ -117,7 +117,7 @@ export function buildPlan(progress) {
   // 1. So‘zlar — har kuni
   tasks.push({
     id: "words",
-    icon: "📇",
+    icon: "cards",
     title: tr("So‘zlarni takrorlash", "Повторение слов", "Kelime tekrarı", "Word review"),
     desc: due
       ? tr(
@@ -143,7 +143,7 @@ export function buildPlan(progress) {
     simDone = (progress.simulations ?? []).some((s) => isToday(s.date));
   tasks.push({
     id: "case",
-    icon: "💬",
+    icon: "chat",
     title: tr("Bemor bilan suhbat", "Беседа с пациентом", "Hastayla görüşme", "Talking with the patient"),
     desc: `${c.title} — „${c.patient.hauptbeschwerde}“`,
     minutes: 10,
@@ -156,7 +156,7 @@ export function buildPlan(progress) {
   if (day % examEvery === examEvery - 1) {
     tasks.push({
       id: "exam",
-      icon: "🎯",
+      icon: "target",
       title: tr("Mashq imtihoni", "Пробный экзамен", "Deneme sınavı", "Practice exam"),
       desc: tr(
         "3 qism, taymer bilan — haftalik tekshiruv",
@@ -174,7 +174,7 @@ export function buildPlan(progress) {
       let h = nextCase(progress, [c.id]);
       tasks.push({
         id: "hoeren",
-        icon: "🎧",
+        icon: "headphones",
         title: tr("Eshitib tushunish", "Аудирование", "Dinlediğini anlama", "Listening comprehension"),
         desc:
           `„${h.patient.hauptbeschwerde}“` +
@@ -191,7 +191,7 @@ export function buildPlan(progress) {
         arztbriefe[day % arztbriefe.length];
       tasks.push({
         id: "arztbrief",
-        icon: "✍️",
+        icon: "pen",
         title: "Arztbrief",
         desc: ab.title,
         minutes: 15,
@@ -202,7 +202,7 @@ export function buildPlan(progress) {
       let a = aufklaerung[day % aufklaerung.length];
       tasks.push({
         id: "aufklaerung",
-        icon: "🗨️",
+        icon: "quote",
         title: tr(
           "Bemorga tushuntirish",
           "Объяснение пациенту",
@@ -217,7 +217,7 @@ export function buildPlan(progress) {
     } else {
       tasks.push({
         id: "fach",
-        icon: "🔁",
+        icon: "refresh",
         title: "Fach ↔ Patient",
         desc: tr(
           "Testda 10 ta savolga javob bering",

@@ -6,6 +6,7 @@ import { useApp } from "../state/AppContext";
 import { Speak } from "../components/Speak";
 import { loc, tr } from "../lib/i18n";
 import { CategoryBadge } from "../components/ui";
+import { Ic } from "../components/Icon";
 
 const ANAMNESE_FIELDS = [
   ["aktuelleBeschwerden", "Aktuelle Beschwerden"],
@@ -57,11 +58,11 @@ export function CaseDetailPage() {
         </div>
         <div className="flex flex-wrap gap-2">
           <Link href={`/simulation?case=${t.id}`} className="btn-primary">
-            💬 {tr("Simulyatsiya", "Симуляция", "Simülasyon", "Simulation")}
+            <Ic name="chat" /> {tr("Simulyatsiya", "Симуляция", "Simülasyon", "Simulation")}
           </Link>
           {c && (
             <Link href={`/arztbrief/${c.id}`} className="btn-outline">
-              ✍️ Arztbrief
+              <Ic name="pen" /> Arztbrief
             </Link>
           )}
           <button
@@ -70,14 +71,18 @@ export function CaseDetailPage() {
             }
             onClick={() => n(t.id)}
           >
-            {h
-              ? tr("✅ Yechilgan", "✅ Решено", "✅ Çözüldü", "✅ Solved")
-              : tr(
-                  "Yechildi deb belgilash",
-                  "Отметить как решённый",
-                  "Çözüldü olarak işaretle",
-                  "Mark as solved",
-                )}
+            {h ? (
+              <>
+                <Ic name="checkCircle" /> {tr("Yechilgan", "Решено", "Çözüldü", "Solved")}
+              </>
+            ) : (
+              tr(
+                "Yechildi deb belgilash",
+                "Отметить как решённый",
+                "Çözüldü olarak işaretle",
+                "Mark as solved",
+              )
+            )}
           </button>
         </div>
       </div>
@@ -98,7 +103,7 @@ export function CaseDetailPage() {
             ))}
           </dl>
           <p className="mt-4 rounded-lg bg-teal-50 p-3 text-xs text-teal-800 dark:bg-teal-950/40 dark:text-teal-200">
-            💡{" "}
+            <Ic name="bulb" className="text-amber-500" />{" "}
             {tr(
               "Maslahat: avval simulyatsiyada anamnezni o‘zingiz yig‘ing, keyin quyidagi ma’lumot bilan solishtiring.",
               "Совет: сначала соберите анамнез сами в симуляции, затем сравните с данными ниже.",

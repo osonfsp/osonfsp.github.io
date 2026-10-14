@@ -2,6 +2,7 @@ import { useState } from "react";
 import { tr } from "../lib/i18n";
 import { ARTIFACT, TG_BOT, useAccount } from "../lib/account";
 import { TG } from "../lib/telegram";
+import { Ic } from "./Icon";
 
 // Do‘stni taklif qilish: havola bot orqali (t.me/<bot>?start=ref_<id>); bonusni server beradi (worker/store.js applyReferral)
 export function InviteCard() {
@@ -19,7 +20,7 @@ export function InviteCard() {
   return (
     <div className="card mt-4">
       <h2 className="h-title">
-        🤝{" "}
+        <Ic name="users" className="text-teal-600" />{" "}
         {tr(
           "Do‘stni taklif qiling — har biri uchun +10 soat",
           "Пригласите друга — +10 часов за каждого",
@@ -53,14 +54,14 @@ export function InviteCard() {
                 .catch(() => {})
             }
           >
-            {copied ? "✅" : "📋"} {tr("Nusxa", "Копировать", "Kopyala", "Copy")}
+            <Ic name={copied ? "check" : "copy"} /> {tr("Nusxa", "Копировать", "Kopyala", "Copy")}
           </button>
           <button
             type="button"
             className="btn-primary"
             onClick={() => (TG ? TG.openTelegramLink(share) : window.open(share, "_blank", "noopener"))}
           >
-            📤 {tr("Ulashish", "Поделиться", "Paylaş", "Share")}
+            <Ic name="share" /> {tr("Ulashish", "Поделиться", "Paylaş", "Share")}
           </button>
         </div>
       </div>

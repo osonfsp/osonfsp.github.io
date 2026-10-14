@@ -8,6 +8,7 @@ import { useApp } from "../state/AppContext";
 import { tr } from "../lib/i18n";
 import { SectionIntro } from "../components/SectionIntro";
 import { CategoryBadge, categoryIcon } from "../components/ui";
+import { Icon, Ic } from "../components/Icon";
 
 const DIFFICULTY_STYLES = {
   leicht: "bg-emerald-50 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300",
@@ -33,9 +34,13 @@ function CaseCard({ c, solved }) {
       </p>
       <div className="mt-auto flex items-center justify-between pt-4 text-sm">
         <span className={solved ? "text-emerald-600" : "muted"}>
-          {solved
-            ? tr("✅ Yechilgan", "✅ Решено", "✅ Çözüldü", "✅ Solved")
-            : tr("○ Yechilmagan", "○ Не решено", "○ Çözülmedi", "○ Not solved")}
+          {solved ? (
+            <>
+              <Ic name="checkCircle" /> {tr("Yechilgan", "Решено", "Çözüldü", "Solved")}
+            </>
+          ) : (
+            tr("○ Yechilmagan", "○ Не решено", "○ Çözülmedi", "○ Not solved")
+          )}
         </span>
         <span className="font-medium text-teal-600 dark:text-teal-400">
           {tr("Ochish →", "Открыть →", "Aç →", "Open →")}
@@ -102,7 +107,7 @@ export function CasesPage() {
         {[
           {
             id: "all",
-            icon: "📋",
+            icon: "grid",
             label: tr("Barcha bo‘limlar", "Все разделы", "Tüm bölümler", "All sections"),
             categories: null,
           },
@@ -123,9 +128,10 @@ export function CasesPage() {
               )}
               aria-pressed={on}
             >
-              <span className="text-xl" aria-hidden>
-                {s.icon}
-              </span>
+              <Icon
+                name={s.icon}
+                className={cx("h-6 w-6", on ? "text-white" : "text-teal-600 dark:text-teal-400")}
+              />
               <span className="mt-1 block text-sm font-semibold leading-tight">{s.label}</span>
               <span className={cx("mt-1 block text-xs", on ? "text-teal-100" : "muted")}>
                 {done}/{list.length} {tr("yechildi", "решено", "çözüldü", "solved")}
@@ -193,7 +199,7 @@ export function CasesPage() {
       )}
       {!section && !q.trim() && (
         <p className="card text-center text-sm muted">
-          👆{" "}
+          <Ic name="pointer" />{" "}
           {tr(
             "Yuqoridan mutaxassislikni tanlang — shu bo‘limdagi Fall’lar ochiladi.",
             "Выберите специальность выше — откроются кейсы этого раздела.",
