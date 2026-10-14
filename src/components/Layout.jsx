@@ -6,7 +6,7 @@ import { useApp } from "../state/AppContext";
 import { LANG, LANGS, setLang, tr } from "../lib/i18n";
 import { TrialBar } from "./Paywall";
 import { buildPlan } from "../lib/daily";
-import { FEEDBACK_TELEGRAM } from "../lib/config";
+import { FEEDBACK_TELEGRAM, TELEGRAM_CHANNEL } from "../lib/config";
 import { Icon, LogoMark } from "./Icon";
 import { ARTIFACT } from "../lib/account";
 
@@ -264,11 +264,39 @@ function Sidebar({ onClose }) {
           <span className="flex-1">
             {tr("Fikr va takliflar", "Отзывы и предложения", "Görüş ve öneriler", "Feedback")}
             <span className="block text-[11px] font-normal text-amber-100/70">
-              {tr("Beta — fikringiz muhim", "Бета — ваш отзыв важен", "Beta — görüşünüz önemli", "Beta — your input matters")}
+              {tr(
+                "Beta — fikringiz muhim",
+                "Бета — ваш отзыв важен",
+                "Beta — görüşünüz önemli",
+                "Beta — your input matters",
+              )}
             </span>
           </span>
         </Link>
       </div>
+      {TELEGRAM_CHANNEL && (
+        <div className="shrink-0 px-3 pb-1">
+          <a
+            href={TELEGRAM_CHANNEL}
+            target="_blank"
+            rel="noopener noreferrer"
+            title={tr(
+              "Har kuni yangi so‘z",
+              "Новое слово каждый день",
+              "Her gün yeni kelime",
+              "A new word every day",
+            )}
+            className="flex items-center gap-3 rounded-xl px-3 py-1.5 text-sm font-medium text-white/80 transition hover:bg-white/10 hover:text-white"
+          >
+            <Icon name="send" className="h-[18px] w-[18px] shrink-0 text-sky-300" />
+            <span className="flex-1 truncate">
+              {tr("Kanal", "Канал", "Kanal", "Channel")}{" "}
+              <span className="font-normal text-white/50">@osonfsp</span>
+            </span>
+            <Icon name="external" className="h-4 w-4 text-white/40" />
+          </a>
+        </div>
+      )}
       {FEEDBACK_TELEGRAM && (
         <div className="shrink-0 px-3 pb-2">
           <a
@@ -592,6 +620,16 @@ export function Footer() {
           <Link href="/fikr" className="hover:text-teal-300">
             {tr("Fikr va takliflar", "Отзывы и предложения", "Görüş ve öneriler", "Feedback")}
           </Link>
+          {TELEGRAM_CHANNEL && (
+            <a
+              href={TELEGRAM_CHANNEL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-teal-300"
+            >
+              {tr("Telegram kanal", "Telegram-канал", "Telegram kanalı", "Telegram channel")}
+            </a>
+          )}
           {/* Ochiq maqolalar (articles/) — alohida HTML sahifalar, Artifact versiyasida yo‘q */}
           {!ARTIFACT && (
             <a href={LANG === "ru" ? "./maqola/ru/" : "./maqola/"} className="hover:text-teal-300">

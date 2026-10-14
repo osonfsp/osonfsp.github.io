@@ -9,6 +9,7 @@ import { callGemini } from "./gemini.js";
 import { BOT_AI_DAILY_CAP, PLANS, PLAN_PRICES, adminNames, isAdminName, rights } from "./rules.js";
 
 export const SITE_URL = "https://osonfsp.github.io/",
+  CHANNEL_URL = "https://t.me/osonfsp",
   BOT_SETUP_VERSION = "4",
   KB_VERSION = 1; // pastki tugmalar paneli versiyasi — o'zgarsa, cron hammaga yangisini yuboradi
 const ADMIN_CONTACT = "https://t.me/de_behzod",
@@ -69,6 +70,12 @@ const T = {
     "Здравствуйте! 👋\n\nOsonFSP — подготовка к Fachsprachprüfung (FSP) для врачей: клинические случаи (Fälle), Arztbrief, симуляция разговора с пациентом, Aufklärung и медицинский немецкий.\n\nНажмите кнопку ниже — сайт откроется прямо здесь, в Telegram. Первые 2 дня бесплатно.",
     "Merhaba! 👋\n\nOsonFSP — doktorlar için Fachsprachprüfung (FSP) hazırlığı: vakalar (Fälle), Arztbrief, hasta görüşmesi simülasyonu, Aufklärung ve tıbbi Almanca.\n\nAşağıdaki düğmeye basın — site burada, Telegram içinde açılır. İlk 2 gün ücretsiz.",
     "Hello! 👋\n\nOsonFSP — Fachsprachprüfung (FSP) preparation for doctors: clinical cases (Fälle), Arztbrief, patient conversation simulation, Aufklärung and medical German.\n\nPress the button below — the site opens right here in Telegram. The first 2 days are free.",
+  ],
+  channel: [
+    "📢 Kanalimiz — har kuni yangi so‘z",
+    "📢 Наш канал — новое слово каждый день",
+    "📢 Kanalımız — her gün yeni kelime",
+    "📢 Our channel — a new word every day",
   ],
   // Pastki tugmalar paneli (reply keyboard)
   menu: {
@@ -778,7 +785,10 @@ export async function handleUpdate(env, store, upd) {
 
   switch (action) {
     case "start": {
-      await send(L("welcome", lang), kb([appBtn(L("open", lang))]));
+      await send(
+        L("welcome", lang),
+        kb([appBtn(L("open", lang))], [{ text: L("channel", lang), url: CHANNEL_URL }]),
+      );
       let r = await send(L("menuIntro", lang), menuKb(lang, admin));
       if (r?.ok) await store.markKb([id], KB_VERSION);
       if (admin) await store.setMeta(`admin_kb:${id}`, ADMIN_KB_VERSION);
@@ -786,7 +796,10 @@ export async function handleUpdate(env, store, upd) {
       return;
     }
     case "open":
-      return send(L("welcome", lang), kb([appBtn(L("open", lang))]));
+      return send(
+        L("welcome", lang),
+        kb([appBtn(L("open", lang))], [{ text: L("channel", lang), url: CHANNEL_URL }]),
+      );
     case "quiz":
       return tgApi(env, "sendPoll", { chat_id: id, ...makeQuiz(lang, `${id}-${Date.now()}`) });
     case "ai": {

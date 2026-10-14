@@ -34,6 +34,7 @@ const T = {
     facts: "Berilgan ma’lumotlar (imtihondagidek)",
     sample: "Namuna xat (Musterlösung)",
     footer: "OsonFSP — o‘zbek shifokorlari uchun FSP tayyorgarlik platformasi.",
+    channel: "Telegram kanal: @osonfsp",
   },
   ru: {
     articles: "Статьи",
@@ -53,6 +54,7 @@ const T = {
     facts: "Исходные данные (как на экзамене)",
     sample: "Образец письма (Musterlösung)",
     footer: "OsonFSP — платформа подготовки к FSP для врачей из Узбекистана и СНГ.",
+    channel: "Telegram-канал: @osonfsp",
   },
 };
 
@@ -157,7 +159,7 @@ ${extraHead}
 <main>
 ${body}
 </main>
-<footer>${t.footer} <a href="${root}?ref=maqola">osonfsp.github.io</a></footer>
+<footer>${t.footer} <a href="${root}?ref=maqola">osonfsp.github.io</a> · <a href="https://t.me/osonfsp">${t.channel}</a></footer>
 <script data-goatcounter="https://osonfsp.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </body>
 </html>
