@@ -1,5 +1,6 @@
 import { avg, clamp, normalize, sleep, stem } from "./utils";
 import { loc, tr } from "./i18n";
+import { pairs, words } from "../data/index";
 import { aiPatientReply, aiReviewAnamnese, aiReviewArztArzt, aiReviewArztbrief, mergeAI } from "./ai";
 
 export const ANAMNESE_TOPICS = [
@@ -136,14 +137,112 @@ export function askedTopics(e) {
   return (e.forEach((a) => detectTopics(a).forEach((n) => t.add(n))), t);
 }
 
-function localPatientReply(e, t) {
+// Bemor tushunmaydigan Fachbegriffe (masalan "Dyspnoe" — "Atemnot"): Fach↔Patient juftliklari va lug‘atdagi
+// lotin/yunoncha tuzilishli bir so‘zli atamalar. Savolda shular bo‘lsa, AI’siz bemor ham imtihondagidek qayta so‘raydi.
+// Oddiy nemischa so‘zlar (Magen, Sodbrennen) va dori nomlari kirmaydi.
+const LATIN_TERM =
+  /(itis|ose|osis|ie|ämie|om|algie|urie|skopie|graphie|ektomie|pathie|plegie|parese|penie|zytose|ikum|ismus|ia|us|um|ax|oe|ö|ation|ase|ex|ix)$/;
+// Bemorlar odatda tushunadigan so‘zlar
+const PATIENT_KNOWS = new Set(
+  "schüttelfrost befund psychotherapie antibiotikum thrombose diabetes asthma migräne infektion narkose insulin operation therapie diagnose impfung chemotherapie tumor allergie untersuchung infusion dialyse prostata demenz depression koma reanimation rehabilitation influenza malaria grippe virus".split(
+    " ",
+  ),
+);
+let jargonCache = null;
+const escapeRe = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+function jargonIn(text) {
+  if (jargonCache?.n !== words.length + pairs.length)
+    jargonCache = {
+      n: words.length + pairs.length,
+      list: [
+        ...pairs.map((p) => ({ de: p.fach, patient: p.patient, curated: true })),
+        ...words.map((w) => ({ de: w.de, patient: w.patient })),
+      ]
+        .map((w) => {
+          let term = w.de
+            .replace(/^(der|die|das)\s+/i, "")
+            .replace(/\s*\(.*?\)/g, "")
+            .trim();
+          return {
+            curated: w.curated,
+            term,
+            key: term.toLowerCase().slice(0, term.length <= 7 ? term.length : term.length - 1),
+            patient: w.patient,
+            // Bemor tilidagi birinchi variant: "Magenspiegelung, Spiegelung des Magens" → "magenspiegelung"
+            simple: String(w.patient ?? "")
+              .toLowerCase()
+              .split(/[,/;(]/)[0]
+              .trim(),
+          };
+        })
+        .filter(
+          (j) =>
+            j.term.length >= 4 &&
+            !/[\s-]/.test(j.term) &&
+            (j.curated || LATIN_TERM.test(j.term.toLowerCase())) &&
+            !PATIENT_KNOWS.has(j.term.toLowerCase()) &&
+            !String(j.patient).toLowerCase().includes(j.key),
+        ),
+    };
+  // So‘z boshida (umlautli harflar ham hisobga olinadi): "hypertonie" — ha, so‘z o‘rtasidagisi — yo‘q.
+  // Shifokor shu gapda sodda so‘z bilan tushuntirgan bo‘lsa ("Magenspiegelung (Gastroskopie)") — tushunadi.
+  return jargonCache.list.find(
+    (j) =>
+      new RegExp(`(?<![a-zäöüß])${escapeRe(j.key)}`).test(text) &&
+      !(j.simple.length >= 4 && text.includes(j.simple)),
+  );
+}
+
+// Savollar turi bo‘yicha qo‘shimcha javoblar (ANAMNESE_TOPICS’dan tashqari)
+const EXTRA_REPLIES = [
+  [
+    /schon (einmal|mal|öfter|früher)|zum ersten mal|kennen sie (das|diese)|früher schon/,
+    (e) => e.simulation.answers.vorerkrankungen,
+  ],
+  [
+    /besser|schlimmer|verstärk|linder|verschlimmer|was hilft|hilft (es|etwas)/,
+    () => "Das habe ich ehrlich gesagt nicht so genau beobachtet.",
+  ],
+  [/schmerz|tut (es|etwas|das) weh|wehtun/, (e) => e.simulation.answers.charakter],
+  [/wie geht es ihnen|wie fühlen sie sich|was kann ich für sie tun/, (e) => e.simulation.opening],
+  [
+    /untersuchen|abhören|abtasten|anschauen|ansehen|darf ich (sie|mal)|frei machen|oberkörper/,
+    () => "Ja, natürlich. Was soll ich machen?",
+  ],
+  [
+    /verstanden|verstehen sie|verständlich|ist das klar/,
+    () => "Ja, ich glaube, ich habe es verstanden. Danke für die Erklärung.",
+  ],
+  [
+    /ekg|blut abnehmen|blutabnahme|blutentnahme|ultraschall|röntgen|\bct\b|\bmrt\b|untersuchung|spiegelung|aufnehmen|stationär|wir (machen|werden|möchten|würden)/,
+    () => "Ist das schlimm? Und tut die Untersuchung weh?",
+  ],
+];
+
+const NOT_UNDERSTOOD = [
+  "Entschuldigung, das habe ich nicht ganz verstanden. Können Sie die Frage bitte anders stellen?",
+  "Wie bitte? Können Sie das noch einmal einfacher sagen?",
+  "Das verstehe ich leider nicht. Was meinen Sie genau?",
+];
+
+function localPatientReply(e, t, history = []) {
   let a = t.toLowerCase(),
     n = /\b(du|dich|dir|dein|deine|hast|bist)\b/.test(a)
       ? "Ähm … Sie duzen mich? Das bin ich vom Arzt nicht gewohnt. "
       : "",
-    i = detectTopics(a),
+    said = history.filter((m) => m.role === "patient").map((m) => m.text),
+    jargon = jargonIn(a),
+    i = jargon ? [] : detectTopics(a),
+    extra = EXTRA_REPLIES.find(([re]) => re.test(a)),
     l;
-  if (i.length) l = i.map((s) => e.simulation.answers[s]).join(" ");
+  if (jargon) l = `Entschuldigung, was bedeutet „${jargon.term}“? Das Wort kenne ich nicht.`;
+  else if (i.length)
+    // Bir mavzu ikkinchi marta so‘ralsa — "Wie gesagt"
+    l = i
+      .map((s) => e.simulation.answers[s])
+      .filter(Boolean)
+      .map((ans) => (said.some((x) => x.includes(ans)) ? `Wie gesagt: ${ans}` : ans))
+      .join(" ");
   else if (/wie heißen|ihr name|ihren namen|wie ist ihr name/.test(a)) l = `Ich heiße ${e.patient.name}.`;
   else if (/wie alt|ihr alter|geburtsdatum|geboren/.test(a)) l = `Ich bin ${e.patient.age} Jahre alt.`;
   else if (
@@ -159,9 +258,10 @@ function localPatientReply(e, t) {
   else if (/noch etwas|sonst etwas|noch fragen|etwas vergessen|möchten sie noch|wollen sie noch/.test(a))
     l = "Nein, ich glaube, das ist alles. Was habe ich denn? Ist das etwas Schlimmes?";
   else if (/danke|auf wiedersehen|tschüss/.test(a)) l = "Ich danke Ihnen!";
-  else l = "Entschuldigung, das habe ich nicht ganz verstanden. Können Sie die Frage bitte anders stellen?";
+  else if (extra) l = extra[1](e);
+  else l = NOT_UNDERSTOOD[said.length % NOT_UNDERSTOOD.length];
   return {
-    reply: n + l,
+    reply: n + (l || NOT_UNDERSTOOD[0]),
     topics: i,
   };
 }
@@ -169,7 +269,7 @@ function localPatientReply(e, t) {
 export async function askPatient(e, t, a) {
   let reply = await aiPatientReply(e, t);
   if (reply) return { reply, ai: true };
-  return (await sleep(450), localPatientReply(e, a));
+  return (await sleep(450), localPatientReply(e, a, t));
 }
 
 const FACH_TO_SIMPLE = [
