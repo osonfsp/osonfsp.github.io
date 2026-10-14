@@ -2,6 +2,7 @@ import { Link } from "./components/Link";
 import { MaterialsGate } from "./components/Paywall";
 import { usePathname } from "./lib/router";
 import { AboutFspPage } from "./pages/AboutFsp";
+import { AboutPage } from "./pages/About";
 import { AdminPage } from "./pages/Admin";
 import { ArztbriefListPage, ArztbriefPage } from "./pages/Arztbrief";
 import { AufklaerungListPage, AufklaerungPage } from "./pages/Aufklaerung";
@@ -57,6 +58,7 @@ const ROUTES = [
   [/^\/hoeren\/[^/]+$/, HoerenPage],
   [/^\/pro$/, ProPage],
   [/^\/fikr$/, FeedbackPage],
+  [/^\/biz$/, AboutPage],
   [/^\/pruefung$/, ExamPage],
   [/^\/admin$/, AdminPage],
 ];
