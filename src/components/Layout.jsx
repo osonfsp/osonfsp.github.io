@@ -105,6 +105,7 @@ const NAV_GROUPS = [
     items: [
       { href: "/pro", icon: "card", label: tr("Tariflar", "Тарифы", "Paketler", "Plans") },
       { href: "/fsp", icon: "landmark", label: tr("FSP haqida", "Об FSP", "FSP hakkında", "About FSP") },
+      { href: "/kitoblar", icon: "file", label: tr("Kitoblar", "Книги", "Kitaplar", "Books") },
       { href: "/biz", icon: "users", label: tr("Biz haqimizda", "О нас", "Hakkımızda", "About us") },
     ],
   },
@@ -547,6 +548,9 @@ export function Footer() {
           </Link>
           <Link href="/dashboard" className="hover:text-teal-300">
             Dashboard
+          </Link>
+          <Link href="/kitoblar" className="hover:text-teal-300">
+            {tr("Kitoblar va PDF", "Книги и PDF", "Kitaplar ve PDF", "Books & PDFs")}
           </Link>
           <Link href="/biz" className="hover:text-teal-300">
             {tr("Biz haqimizda", "О нас", "Hakkımızda", "About us")}

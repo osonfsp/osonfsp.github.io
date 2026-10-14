@@ -9,6 +9,7 @@
     "build": "vite build",
     "build:artifact": "vite build --mode artifact",
     "preview": "vite preview",
+    "pdfs": "node scripts/pdfs.mjs",
     "format": "prettier --write \"src/**/*.{js,jsx,css}\""
   },
   "dependencies": {

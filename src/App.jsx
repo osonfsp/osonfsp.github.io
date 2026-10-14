@@ -3,6 +3,7 @@ import { MaterialsGate } from "./components/Paywall";
 import { usePathname } from "./lib/router";
 import { AboutFspPage } from "./pages/AboutFsp";
 import { AboutPage } from "./pages/About";
+import { BooksPage } from "./pages/Books";
 import { AdminPage } from "./pages/Admin";
 import { ArztbriefListPage, ArztbriefPage } from "./pages/Arztbrief";
 import { AufklaerungListPage, AufklaerungPage } from "./pages/Aufklaerung";
@@ -59,6 +60,7 @@ const ROUTES = [
   [/^\/pro$/, ProPage],
   [/^\/fikr$/, FeedbackPage],
   [/^\/biz$/, AboutPage],
+  [/^\/kitoblar$/, BooksPage],
   [/^\/pruefung$/, ExamPage],
   [/^\/admin$/, AdminPage],
 ];
