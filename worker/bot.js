@@ -3,12 +3,13 @@
 // Webhook so'rovlari handleUpdate ga, Cloudflare cron (har 5 daqiqa) runCron ga keladi.
 import words from "../src/data/words.json";
 import pairs from "../src/data/pairs.json";
-import { makeQuestion, quizItems, seededRandom } from "../src/lib/quiz.js";
+import redemittel from "../src/data/redemittel.json";
+import { makeQuestion, quizItems, seededRandom, shuffleWith } from "../src/lib/quiz.js";
 import { callGemini } from "./gemini.js";
 import { BOT_AI_DAILY_CAP, PLANS, PLAN_PRICES, adminNames, isAdminName, rights } from "./rules.js";
 
 export const SITE_URL = "https://osonfsp.github.io/",
-  BOT_SETUP_VERSION = "3",
+  BOT_SETUP_VERSION = "4",
   KB_VERSION = 1; // pastki tugmalar paneli versiyasi — o'zgarsa, cron hammaga yangisini yuboradi
 const ADMIN_CONTACT = "https://t.me/de_behzod",
   LANGS = ["uz", "ru", "tr", "en"];
@@ -336,7 +337,7 @@ export async function setupBot(env, store, keyB64, workerOrigin) {
       tgApi(env, "setWebhook", {
         url: `${workerOrigin}/tg/webhook`,
         secret_token: await webhookSecret(keyB64),
-        allowed_updates: ["message", "callback_query"],
+        allowed_updates: ["message", "callback_query", "my_chat_member"],
       }),
       tgApi(env, "setChatMenuButton", {
         menu_button: { type: "web_app", text: "OsonFSP", web_app: { url: SITE_URL } },
@@ -366,6 +367,74 @@ function makeQuiz(lang, seed) {
         : ""
     }`.slice(0, 200),
   };
+}
+
+// ---- Telegram kanal: bot kanalga admin qilinsa (botning admini qo'shgan bo'lsa) — har kuni bitta post ----
+// Navbat bilan: kun so'zi, kun savoli (viktorina), kun iborasi (Redemittel). Saytga havola ?ref=kanal bilan.
+const CHANNEL_HOUR = 9; // Toshkent vaqti
+const esc = (s) => String(s ?? "").replace(/[&<>]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" })[c]);
+const CHANNEL_WORDS = shuffleWith(words, seededRandom("kanal-words")),
+  CHANNEL_PHRASES = shuffleWith(
+    redemittel.flatMap((g) => g.items.map((it) => [g, it])),
+    seededRandom("kanal-phrases"),
+  );
+
+function channelPost(day) {
+  let n = Math.floor(Date.parse(day) / 864e5),
+    btn = kb([{ text: "📲 Saytda bepul mashq qilish", url: `${SITE_URL}?ref=kanal` }]);
+  if (n % 3 === 1) return ["sendPoll", { ...makeQuiz("uz", `kanal-${day}`), ...btn }];
+  if (n % 3 === 2) {
+    let [g, it] = CHANNEL_PHRASES[Math.floor(n / 3) % CHANNEL_PHRASES.length];
+    return [
+      "sendMessage",
+      {
+        parse_mode: "HTML",
+        text: `💬 <b>Kun iborasi</b> · ${esc(g.teil.split(" · ")[0])}\n<i>${esc(g.group)}</i>\n\n🇩🇪 <b>${esc(it[0])}</b>\n🇺🇿 ${esc(it[1])}\n🇷🇺 ${esc(it[2])}\n\n#Redemittel #FSP`,
+        ...btn,
+      },
+    ];
+  }
+  let w = CHANNEL_WORDS[Math.floor(n / 3) % CHANNEL_WORDS.length];
+  return [
+    "sendMessage",
+    {
+      parse_mode: "HTML",
+      text: `📘 <b>Kun so‘zi:</b> ${esc(w.de)}\n\n🇺🇿 ${esc(w.uz)}\n🇷🇺 ${esc(w.ru)}\n🗣 Bemor tilida: „${esc(w.patient)}“\n\n💬 <i>${esc(w.example)}</i>\n\n#Fachsprache #FSP`,
+      ...btn,
+    },
+  ];
+}
+
+const getChannel = async (store) => JSON.parse((await store.getMeta("channel")) || "null");
+
+// Bot kanalga admin qilindi yoki chiqarildi
+async function onChannelMember(env, store, u) {
+  if (u.chat?.type !== "channel") return;
+  let m = u.new_chat_member,
+    canPost = m?.status === "administrator" && m.can_post_messages !== false,
+    cur = await getChannel(store);
+  if (canPost) {
+    if (!isAdminName(env, u.from?.username))
+      return notifyAdmins(
+        env,
+        store,
+        `⚠️ Botni boshqa odam o‘z kanaliga admin qildi: ${u.chat.title} (${u.from?.username ? "@" + u.from.username : u.from?.id}). E’tiborsiz qoldirildi.`,
+      );
+    await store.setMeta("channel", JSON.stringify({ id: u.chat.id, title: u.chat.title }));
+    return notifyAdmins(
+      env,
+      store,
+      `✅ Kanal ulandi: ${u.chat.title}\n\nHar kuni soat ${CHANNEL_HOUR}:00 da (Toshkent) avtomatik post chiqadi: kun so‘zi, kun savoli yoki kun iborasi.\nHozir sinab ko‘rish: /kanal`,
+    );
+  }
+  if (cur?.id === u.chat.id) {
+    await store.setMeta("channel", "");
+    return notifyAdmins(
+      env,
+      store,
+      `⛔ Bot kanaldan chiqarildi (${u.chat.title}). Avtomatik postlar to‘xtadi.`,
+    );
+  }
 }
 
 // ---- Tarif so'rovi (botdan yoki saytdan): adminlarga tugmali xabar, foydalanuvchiga tasdiq ----
@@ -610,7 +679,7 @@ const ADMIN_PROMPT = {
 
 // ---- Admin buyruqlari (eski, yozib ishlatiladigan) ----
 const ADMIN_HELP =
-  "🛠 Admin buyruqlari:\n/stat — statistika\n/grant @username week|month|<kun> — tarif yoqish (0 — bekor qilish)\n/reset @username — bepul imtihonni qayta berish\n/xabar <matn> — hammaga xabar (avval ko‘rib chiqasiz)";
+  "🛠 Admin buyruqlari:\n/stat — statistika\n/grant @username week|month|<kun> — tarif yoqish (0 — bekor qilish)\n/reset @username — bepul imtihonni qayta berish\n/xabar <matn> — hammaga xabar (avval ko‘rib chiqasiz)\n/kanal — Telegram kanalga bugungi postni hozir yuborish";
 
 async function adminCommand(env, store, cmd, args, chatId) {
   let send = (text, extra = {}) => tgApi(env, "sendMessage", { chat_id: chatId, text, ...extra });
@@ -623,6 +692,16 @@ async function adminCommand(env, store, cmd, args, chatId) {
       `📊 Statistika\n\n👥 Foydalanuvchilar: ${s.users}\n🆕 Bugun yangi: ${s.newToday}\n🔥 Bugun faol: ${s.activeToday}\n💳 Faol tarif: ${s.plans}\n🎁 Sinovda: ${s.trials}\n🤖 Bot obunachilari: ${s.chats} (bloklagan: ${s.blocked})` +
         (bc ? `\n\n📢 Xabar yuborilmoqda: ${bc.sent}/${bc.total}` : ""),
     );
+  }
+  if (cmd === "kanal") {
+    let ch = await getChannel(store);
+    if (!ch)
+      return send(
+        "Kanal ulanmagan. Telegram'da kanal oching va botni unga admin qiling (“Xabar joylash” huquqi bilan) — bot o‘zi sezadi.",
+      );
+    let [method, body] = channelPost(tashkent(Date.now()).day),
+      r = await tgApi(env, method, { chat_id: ch.id, ...body });
+    return send(r?.ok ? `✅ Post yuborildi: ${ch.title}` : `❌ Yuborilmadi: ${r?.description ?? "xato"}`);
   }
   if (cmd === "grant" || cmd === "reset") {
     let [q, p] = args.split(/\s+/),
@@ -656,6 +735,7 @@ async function adminCommand(env, store, cmd, args, chatId) {
 // ---- Webhook: xabarlar va tugmalar ----
 export async function handleUpdate(env, store, upd) {
   if (upd.callback_query) return onCallback(env, store, upd.callback_query);
+  if (upd.my_chat_member) return onChannelMember(env, store, upd.my_chat_member);
   let msg = upd.message;
   if (!msg?.from || msg.chat?.type !== "private") return;
   let text = (msg.text ?? "").trim(),
@@ -671,7 +751,7 @@ export async function handleUpdate(env, store, upd) {
   let admin = isAdminName(env, msg.from.username);
   if (admin) {
     if (text === ADMIN_BTN) return adminPanel(env, store, id);
-    if (cmd && ["admin", "stat", "grant", "reset", "xabar"].includes(cmd))
+    if (cmd && ["admin", "stat", "grant", "reset", "xabar", "kanal"].includes(cmd))
       return adminCommand(env, store, cmd, args, id);
     // Panel so'ragan javob: qidiruv so'zi yoki xabar matni
     let wait = await store.getMeta(`astate:${id}`);
@@ -912,6 +992,18 @@ export async function runCron(env, store) {
       return !!r?.ok;
     },
     due = await store.due({ now, hour: t.hour, today: t.day, limit: budget });
+
+  // 0) Telegram kanal: kuniga bitta post (soat CHANNEL_HOUR dan keyingi birinchi cron'da)
+  if (t.hour >= CHANNEL_HOUR && budget > 0) {
+    let ch = await getChannel(store);
+    if (ch && (await store.getMeta("channel_day")) !== t.day) {
+      await store.setMeta("channel_day", t.day);
+      let [method, body] = channelPost(t.day);
+      budget--;
+      let r = await tgApi(env, method, { chat_id: ch.id, ...body });
+      if (!r?.ok) console.log("channel", JSON.stringify(r));
+    }
+  }
 
   // 1) Sinov tugashiga 2 soat / tarif tugashiga 1 kun qolganlar (adminlarga emas)
   for (let kind of ["trial", "plan"]) {
