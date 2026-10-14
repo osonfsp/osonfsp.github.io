@@ -4,6 +4,7 @@ import { usePathname } from "./lib/router";
 import { AboutFspPage } from "./pages/AboutFsp";
 import { AboutPage } from "./pages/About";
 import { BooksPage } from "./pages/Books";
+import { AtlasPage } from "./pages/Atlas";
 import { AdminPage } from "./pages/Admin";
 import { ArztbriefListPage, ArztbriefPage } from "./pages/Arztbrief";
 import { AufklaerungListPage, AufklaerungPage } from "./pages/Aufklaerung";
@@ -61,6 +62,7 @@ const ROUTES = [
   [/^\/fikr$/, FeedbackPage],
   [/^\/biz$/, AboutPage],
   [/^\/kitoblar$/, BooksPage],
+  [/^\/atlas$/, AtlasPage],
   [/^\/pruefung$/, ExamPage],
   [/^\/admin$/, AdminPage],
 ];

@@ -85,6 +85,12 @@ const NAV_GROUPS = [
     title: tr("Qo‘shimcha mashqlar", "Дополнительно", "Ek alıştırmalar", "Extra practice"),
     more: true,
     items: [
+      {
+        href: "/atlas",
+        icon: "body",
+        label: tr("Tana atlasi", "Атлас тела", "Vücut atlası", "Body atlas"),
+        tag: "NEU",
+      },
       { href: "/woerter", icon: "book", label: tr("So‘zlar", "Слова", "Kelimeler", "Words") },
       { href: "/redemittel", icon: "quote", label: "Redemittel" },
       { href: "/fachsprache", icon: "swap", label: "Fach ↔ Patient" },

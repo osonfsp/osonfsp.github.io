@@ -1,0 +1,612 @@
+import { useEffect, useMemo, useRef, useState } from "react";
+import { Icon, Ic } from "../components/Icon";
+import { Speak, speak } from "../components/Speak";
+import { PageHeader } from "../components/ui";
+import { BODY, ORGANS, REGIONS } from "../data/atlas";
+import { trackEvent } from "../lib/analytics";
+import { tr } from "../lib/i18n";
+import { shuffleWith } from "../lib/quiz";
+import { cx } from "../lib/utils";
+
+// Tana atlasi (Körper-Atlas): a’zolar va qorin sohalari. Uch rejim:
+//   atlas  — bosib o‘rganish (nemischa nomi, Fachbegriff, tarjima, talaffuz, kasalliklar / DD)
+//   zeigen — "Zeigen Sie mir …" — so‘ralgan a’zo yoki sohani topish (10 savol)
+//   bemor  — bemor og‘riq joyini aytadi, siz sohani ko‘rsatasiz (8 savol)
+const ROUNDS = { zeigen: 10, bemor: 8 };
+
+// [id, ikon, to‘liq nom, telefondagi qisqa nom]
+const MODES = [
+  ["atlas", "grid", () => tr("Atlas", "Атлас", "Atlas", "Atlas"), () => "Atlas"],
+  ["zeigen", "target", () => "Zeigen Sie mir…", () => "Zeigen"],
+  [
+    "bemor",
+    "chat",
+    () => tr("Qayerda og‘riyapti?", "Где болит?", "Nerede ağrıyor?", "Where does it hurt?"),
+    () => tr("Og‘riq", "Боль", "Ağrı", "Pain"),
+  ],
+];
+
+export function AtlasPage() {
+  let [mode, setMode] = useState("atlas"),
+    [layer, setLayer] = useState("organs"),
+    [selected, setSelected] = useState(null),
+    [quiz, setQuiz] = useState(null),
+    timer = useRef(null);
+
+  useEffect(() => {
+    trackEvent("atlas", { once: true });
+    return () => clearTimeout(timer.current);
+  }, []);
+
+  let activeLayer = mode === "bemor" ? "regions" : layer,
+    items = activeLayer === "organs" ? ORGANS : REGIONS;
+
+  // Yangi o‘yin: savollar tartibi aralashtiriladi
+  let start = (m = mode, l = activeLayer) => {
+    let pool = m === "bemor" || l === "regions" ? REGIONS : ORGANS,
+      order = shuffleWith(pool).slice(0, ROUNDS[m]);
+    while (order.length < ROUNDS[m]) order.push(...shuffleWith(pool).slice(0, ROUNDS[m] - order.length));
+    setSelected(null);
+    setQuiz({ order, i: 0, score: 0, streak: 0, best: 0, picked: null, done: false });
+    ask(m, order[0]);
+  };
+  let ask = (m, item) => speak(m === "bemor" ? item.says : `Zeigen Sie mir bitte: ${item.de}`);
+
+  let switchMode = (m) => {
+    clearTimeout(timer.current);
+    setMode(m);
+    setSelected(null);
+    setQuiz(null);
+  };
+  let switchLayer = (l) => {
+    setLayer(l);
+    setSelected(null);
+    if (mode === "zeigen") setQuiz(null);
+  };
+
+  let target = quiz && !quiz.done ? quiz.order[quiz.i] : null;
+
+  let pick = (item) => {
+    if (mode === "atlas") {
+      setSelected(item.id);
+      speak(item.de);
+      return;
+    }
+    if (!quiz || quiz.done || quiz.picked) return;
+    let ok = item.id === target.id,
+      streak = ok ? quiz.streak + 1 : 0;
+    setQuiz({
+      ...quiz,
+      picked: item.id,
+      ok,
+      score: quiz.score + (ok ? 1 : 0),
+      streak,
+      best: Math.max(quiz.best, streak),
+    });
+    if (ok) speak(mode === "bemor" ? target.de : "Richtig!");
+  };
+
+  let next = () => {
+    let i = quiz.i + 1;
+    if (i >= quiz.order.length) return setQuiz({ ...quiz, done: true, picked: null });
+    setQuiz({ ...quiz, i, picked: null, ok: undefined });
+    ask(mode, quiz.order[i]);
+  };
+
+  // Har bir shakl qanday ko‘rinadi: tanlangan / to‘g‘ri / noto‘g‘ri / xira
+  let stateOf = (item) => {
+    if (mode === "atlas") return selected === item.id ? "sel" : "";
+    if (!quiz?.picked) return "";
+    if (item.id === target.id) return "ok";
+    if (item.id === quiz.picked) return "bad";
+    return "dim";
+  };
+
+  let sel = mode === "atlas" && items.find((x) => x.id === selected);
+
+  return (
+    <div className="page max-w-6xl">
+      <PageHeader
+        eyebrow="Körper-Atlas"
+        eyebrowLang="de"
+        title={tr("Tana atlasi", "Атлас тела", "Vücut atlası", "Body atlas")}
+        subtitle={tr(
+          "A’zolar va qorin sohalarining nemischa nomlari — bosing, eshiting, o‘zingizni sinang. FSP’da og‘riq joyini (Lokalisation) aniq aytish uchun.",
+          "Немецкие названия органов и областей живота — нажимайте, слушайте, проверяйте себя. Чтобы на FSP точно называть локализацию боли.",
+          "Organların ve karın bölgelerinin Almanca adları — tıklayın, dinleyin, kendinizi sınayın. FSP’de ağrının yerini doğru söylemek için.",
+          "German names of organs and abdominal regions — tap, listen, test yourself. To name the pain location precisely in the FSP.",
+        )}
+      />
+
+      <div className="mb-4 flex flex-wrap items-center gap-3">
+        <div className="grid flex-1 grid-cols-3 gap-1 rounded-xl bg-slate-100 p-1 sm:max-w-xl dark:bg-slate-800/60">
+          {MODES.map(([id, icon, label, short]) => (
+            <button
+              key={id}
+              onClick={() => switchMode(id)}
+              aria-pressed={mode === id}
+              className={cx(
+                "flex items-center justify-center gap-1.5 rounded-lg px-2 py-2 text-sm font-medium transition",
+                mode === id
+                  ? "bg-white text-teal-700 shadow-sm dark:bg-slate-900 dark:text-teal-300"
+                  : "muted hover:text-teal-700",
+              )}
+            >
+              <Icon name={icon} className="h-4 w-4 shrink-0" />
+              <span className="truncate sm:hidden">{short()}</span>
+              <span className="hidden truncate sm:inline">{label()}</span>
+            </button>
+          ))}
+        </div>
+        {mode !== "bemor" && (
+          <div className="flex gap-1">
+            {[
+              ["organs", tr("A’zolar", "Органы", "Organlar", "Organs")],
+              ["regions", tr("Qorin sohalari", "Области живота", "Karın bölgeleri", "Abdominal regions")],
+            ].map(([id, label]) => (
+              <button
+                key={id}
+                className={layer === id ? "chip-on" : "chip-off"}
+                onClick={() => switchLayer(id)}
+              >
+                {label}
+              </button>
+            ))}
+          </div>
+        )}
+      </div>
+
+      <div className="grid gap-5 lg:grid-cols-[minmax(0,430px)_minmax(0,1fr)]">
+        <div className="card relative overflow-hidden bg-gradient-to-b from-slate-50 to-teal-50/60 p-3 dark:from-slate-900 dark:to-teal-950/30">
+          <BodySvg layer={activeLayer} items={items} stateOf={stateOf} onPick={pick} />
+          <div className="pointer-events-none absolute inset-x-4 top-3 flex justify-between text-[11px] font-semibold uppercase tracking-wider text-slate-400">
+            <span>
+              rechts
+              <span className="block font-normal normal-case tracking-normal">
+                {tr("bemorning o‘ngi", "справа у пациента", "hastanın sağı", "patient’s right")}
+              </span>
+            </span>
+            <span className="text-right">
+              links
+              <span className="block font-normal normal-case tracking-normal">
+                {tr("bemorning chapi", "слева у пациента", "hastanın solu", "patient’s left")}
+              </span>
+            </span>
+          </div>
+        </div>
+
+        <div className="order-first lg:sticky lg:top-20 lg:order-none lg:self-start">
+          {mode === "atlas" ? (
+            sel ? (
+              <InfoCard item={sel} region={activeLayer === "regions"} />
+            ) : (
+              <Hint layer={activeLayer} />
+            )
+          ) : (
+            <QuizPanel
+              mode={mode}
+              quiz={quiz}
+              target={target}
+              layer={activeLayer}
+              onStart={() => start()}
+              onNext={next}
+            />
+          )}
+        </div>
+      </div>
+
+      <style>{`
+        .atlas-shape{cursor:pointer;transition:opacity .2s;transform-box:fill-box;transform-origin:center}
+        .atlas-shape:hover{opacity:.85}
+        .atlas-shape:focus{outline:none}
+        .atlas-sel,.atlas-ok{animation:atlas-pulse 1.1s ease-in-out infinite}
+        .atlas-bad{animation:atlas-shake .35s ease-in-out 2}
+        @keyframes atlas-pulse{0%,100%{opacity:1}50%{opacity:.55}}
+        @keyframes atlas-shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-3px)}75%{transform:translateX(3px)}}
+        @media (prefers-reduced-motion: reduce){.atlas-sel,.atlas-ok,.atlas-bad{animation:none}}
+      `}</style>
+    </div>
+  );
+}
+
+function BodySvg({ layer, items, stateOf, onPick }) {
+  let organs = layer === "organs";
+  // Kattalar avval, kichiklar keyin chiziladi — kichik a’zolar ustida qolib, bosilishi oson bo‘ladi
+  let ordered = useMemo(() => [...items].sort((a, b) => (b.behind ? 1 : 0) - (a.behind ? 1 : 0)), [items]);
+  let key = (e, item) => (e.key === "Enter" || e.key === " ") && (e.preventDefault(), onPick(item));
+  return (
+    <svg
+      viewBox="0 0 300 620"
+      className="mx-auto block h-auto max-h-[52vh] w-full max-w-[400px] lg:max-h-[78vh]"
+      role="img"
+    >
+      <defs>
+        <linearGradient id="atlas-skin" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stopColor="#ccfbf1" />
+          <stop offset="1" stopColor="#e0f2fe" />
+        </linearGradient>
+      </defs>
+      {BODY.map((d, i) => (
+        <path key={i} d={d} fill="url(#atlas-skin)" stroke="#5eead4" strokeOpacity=".6" strokeWidth="1.2" />
+      ))}
+      {/* Qovurg‘a yoyi va diafragma — mo‘ljal uchun */}
+      <path
+        d="M92 262c20-14 96-14 116 0"
+        fill="none"
+        stroke="#94a3b8"
+        strokeDasharray="3 4"
+        strokeOpacity=".7"
+      />
+
+      {/* A’zolar: sohalar rejimida xira fon sifatida */}
+      <g opacity={organs ? 1 : 0.28} pointerEvents={organs ? "auto" : "none"}>
+        {(organs ? ordered : ORGANS).map((o) => {
+          let st = organs ? stateOf(o) : "";
+          return (
+            <g
+              key={o.id}
+              className={cx("atlas-shape", st && `atlas-${st}`)}
+              opacity={st === "dim" ? 0.35 : 1}
+              role={organs ? "button" : undefined}
+              tabIndex={organs ? 0 : undefined}
+              aria-label={organs ? o.de : undefined}
+              onClick={() => organs && onPick(o)}
+              onKeyDown={(e) => organs && key(e, o)}
+            >
+              <title>{o.de}</title>
+              {o.paths.map((d, i) =>
+                o.stroke ? (
+                  <g key={i}>
+                    <path
+                      d={d}
+                      fill="none"
+                      stroke="transparent"
+                      strokeWidth={o.stroke + 10}
+                      strokeLinecap="round"
+                    />
+                    <path
+                      d={d}
+                      fill="none"
+                      stroke={st === "ok" ? "#10b981" : st === "bad" ? "#334155" : o.color}
+                      strokeWidth={o.stroke}
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </g>
+                ) : (
+                  <path
+                    key={i}
+                    d={d}
+                    fill={st === "ok" ? "#10b981" : st === "bad" ? "#334155" : o.color}
+                    fillOpacity={o.behind ? 0.6 : 0.9}
+                    stroke={st === "bad" ? "#ef4444" : st === "sel" || st === "ok" ? "#fff" : "#0f172a"}
+                    strokeOpacity={st && st !== "dim" ? 1 : 0.18}
+                    strokeWidth={st === "bad" ? 2.5 : st === "sel" || st === "ok" ? 2 : 1}
+                    strokeDasharray={o.behind ? "3 2" : undefined}
+                  />
+                ),
+              )}
+            </g>
+          );
+        })}
+      </g>
+
+      {/* Qorin sohalari (3×3) va retrosternal */}
+      {!organs &&
+        items.map((r) => {
+          let st = stateOf(r);
+          return (
+            <g
+              key={r.id}
+              className={cx("atlas-shape", st && `atlas-${st}`)}
+              role="button"
+              tabIndex={0}
+              aria-label={r.de}
+              onClick={() => onPick(r)}
+              onKeyDown={(e) => key(e, r)}
+            >
+              <title>{r.de}</title>
+              <rect
+                x={r.x + 1}
+                y={r.y + 1}
+                width={r.w - 2}
+                height={r.h - 2}
+                rx="7"
+                fill={st === "ok" ? "#10b981" : st === "bad" ? "#334155" : "#14b8a6"}
+                fillOpacity={st === "ok" || st === "bad" ? 0.55 : st === "sel" ? 0.45 : 0.12}
+                stroke="#0d9488"
+                strokeOpacity={st === "sel" || st === "ok" ? 0.9 : 0.45}
+                strokeWidth={st === "sel" || st === "ok" ? 2 : 1}
+                strokeDasharray={st ? undefined : "4 3"}
+              />
+            </g>
+          );
+        })}
+    </svg>
+  );
+}
+
+function Hint({ layer }) {
+  return (
+    <div className="card flex flex-col items-center justify-center p-8 text-center">
+      <Icon name="pointer" className="h-10 w-10 text-teal-600 dark:text-teal-400" strokeWidth={1.5} />
+      <p className="mt-3 text-lg font-semibold">
+        {layer === "organs"
+          ? tr("A’zoni bosing", "Нажмите на орган", "Bir organa tıklayın", "Tap an organ")
+          : tr("Sohani bosing", "Нажмите на область", "Bir bölgeye tıklayın", "Tap a region")}
+      </p>
+      <p className="mt-1 max-w-sm text-sm muted">
+        {tr(
+          "Nemischa nomi artikli bilan, Fachbegriff, tarjimasi va talaffuzi chiqadi. Keyin «Zeigen Sie mir…» rejimida o‘zingizni sinang.",
+          "Появится немецкое название с артиклем, Fachbegriff, перевод и произношение. Потом проверьте себя в режиме «Zeigen Sie mir…».",
+          "Artikeliyle Almanca adı, Fachbegriff, çevirisi ve telaffuzu görünür. Sonra «Zeigen Sie mir…» modunda kendinizi sınayın.",
+          "You will see the German name with its article, the Fachbegriff, the translation and the pronunciation. Then test yourself in «Zeigen Sie mir…» mode.",
+        )}
+      </p>
+    </div>
+  );
+}
+
+function InfoCard({ item, region }) {
+  return (
+    <div className="card">
+      <p
+        className="text-xs font-semibold uppercase tracking-wider text-teal-600 dark:text-teal-400"
+        lang="la"
+      >
+        {item.fach}
+      </p>
+      <h2 className="mt-1 flex items-center gap-2 text-3xl font-bold" lang="de">
+        {item.de}
+        <Speak text={item.de} />
+      </h2>
+      <p className="mt-1 text-lg muted">{item.name}</p>
+      {region && (
+        <div className="mt-5 rounded-xl bg-slate-50 p-4 dark:bg-slate-800/60">
+          <p className="text-xs font-semibold uppercase tracking-wider muted">
+            {tr("Bemor shunday deydi", "Пациент говорит так", "Hasta şöyle der", "The patient says")}
+          </p>
+          <p className="mt-1 flex items-start gap-2 italic" lang="de">
+            „{item.says}“
+            <Speak text={item.says} />
+          </p>
+        </div>
+      )}
+      <div className="mt-5">
+        <p className="text-xs font-semibold uppercase tracking-wider muted">
+          {region
+            ? tr(
+                "Nimalarni o‘ylash kerak (DD)",
+                "О чём подумать (ДД)",
+                "Akla gelmesi gerekenler (DD)",
+                "What to think of (DD)",
+              )
+            : tr(
+                "Ko‘p uchraydigan kasalliklar",
+                "Частые заболевания",
+                "Sık görülen hastalıklar",
+                "Common diseases",
+              )}
+        </p>
+        <div className="mt-2 flex flex-wrap gap-2">
+          {(region ? item.dd : item.sick).map((d) => (
+            <span
+              key={d}
+              lang="de"
+              className="badge bg-teal-50 text-teal-800 dark:bg-teal-950/50 dark:text-teal-200"
+            >
+              {d}
+            </span>
+          ))}
+        </div>
+      </div>
+      {region && (
+        <p className="mt-5 text-xs muted">
+          {tr(
+            "Arztbrief’da: „Der Patient berichtet über Schmerzen im … “ — sohani aniq yozing.",
+            "В Arztbrief: „Der Patient berichtet über Schmerzen im …“ — указывайте область точно.",
+            "Arztbrief’te: „Der Patient berichtet über Schmerzen im …“ — bölgeyi net yazın.",
+            "In the Arztbrief: “Der Patient berichtet über Schmerzen im …” — name the region precisely.",
+          )}
+        </p>
+      )}
+    </div>
+  );
+}
+
+function QuizPanel({ mode, quiz, target, layer, onStart, onNext }) {
+  let total = ROUNDS[mode];
+  if (!quiz)
+    return (
+      <div className="card flex flex-col items-center justify-center p-8 text-center">
+        <Icon
+          name={mode === "bemor" ? "chat" : "target"}
+          className="h-12 w-12 text-teal-600 dark:text-teal-400"
+          strokeWidth={1.5}
+        />
+        <h2 className="mt-3 text-xl font-bold">
+          {mode === "bemor"
+            ? tr(
+                "Bemor qayerda og‘riyapti?",
+                "Где болит у пациента?",
+                "Hastanın neresi ağrıyor?",
+                "Where does the patient hurt?",
+              )
+            : "Zeigen Sie mir…"}
+        </h2>
+        <p className="mt-2 max-w-sm text-sm muted">
+          {mode === "bemor"
+            ? tr(
+                `Bemor og‘riq joyini nemischa aytadi — siz rasmda sohani ko‘rsatasiz. ${total} ta savol.`,
+                `Пациент описывает место боли по-немецки — вы показываете область на рисунке. ${total} вопросов.`,
+                `Hasta ağrının yerini Almanca söyler — siz resimde bölgeyi gösterirsiniz. ${total} soru.`,
+                `The patient describes where it hurts in German — you point to the region. ${total} questions.`,
+              )
+            : tr(
+                `Nemischa nomni eshitasiz — rasmdan topasiz. ${total} ta savol, seriya va ochko bilan.`,
+                `Вы слышите немецкое название — находите на рисунке. ${total} вопросов, серии и очки.`,
+                `Almanca adı duyarsınız — resimde bulursunuz. ${total} soru, seri ve puanla.`,
+                `You hear the German name — find it in the picture. ${total} questions, with streaks and points.`,
+              )}
+        </p>
+        <button className="btn-primary mt-5" onClick={onStart}>
+          {tr("Boshlash", "Начать", "Başla", "Start")} →
+        </button>
+      </div>
+    );
+
+  if (quiz.done) {
+    let pct = Math.round((quiz.score / total) * 100);
+    return (
+      <div className="card flex flex-col items-center justify-center p-8 text-center">
+        <Icon
+          name={pct >= 80 ? "sparkles" : pct >= 50 ? "checkCircle" : "refresh"}
+          className="h-12 w-12 text-teal-600 dark:text-teal-400"
+          strokeWidth={1.5}
+        />
+        <p className="mt-3 font-display text-5xl font-extrabold">
+          {quiz.score}
+          <span className="text-2xl muted">/{total}</span>
+        </p>
+        <p className="mt-1 text-sm muted">
+          {tr("Eng uzun seriya", "Лучшая серия", "En uzun seri", "Best streak")}: <b>{quiz.best}</b>
+        </p>
+        <p className="mt-3 font-semibold">
+          {pct === 100
+            ? "Ausgezeichnet!"
+            : pct >= 80
+              ? tr("Juda yaxshi!", "Очень хорошо!", "Çok iyi!", "Very good!")
+              : pct >= 50
+                ? tr(
+                    "Yomon emas — yana bir marta!",
+                    "Неплохо — ещё раз!",
+                    "Fena değil — bir daha!",
+                    "Not bad — once more!",
+                  )
+                : tr(
+                    "Atlas rejimida takrorlab, qayta urinib ko‘ring",
+                    "Повторите в режиме атласа и попробуйте снова",
+                    "Atlas modunda tekrar edip yeniden deneyin",
+                    "Review in atlas mode and try again",
+                  )}
+        </p>
+        <button className="btn-primary mt-5" onClick={onStart}>
+          <Icon name="refresh" className="h-4 w-4" />{" "}
+          {tr("Yana o‘ynash", "Играть снова", "Tekrar oyna", "Play again")}
+        </button>
+      </div>
+    );
+  }
+
+  let answered = !!quiz.picked;
+  return (
+    <div className="card">
+      <div className="mb-3 flex items-center justify-between text-sm">
+        <span className="muted">
+          {quiz.i + 1} / {total}
+        </span>
+        <span className="flex items-center gap-3">
+          <span className="flex items-center gap-1 font-semibold text-orange-500">
+            <Ic name="flame" /> {quiz.streak}
+          </span>
+          <span className="font-semibold text-teal-700 dark:text-teal-300">
+            <Ic name="star" /> {quiz.score}
+          </span>
+        </span>
+      </div>
+      <div className="mb-4 h-1.5 overflow-hidden rounded-full bg-slate-200 dark:bg-slate-800">
+        <div
+          className="h-full rounded-full bg-teal-500 transition-all"
+          style={{ width: `${(quiz.i / total) * 100}%` }}
+        />
+      </div>
+
+      {mode === "bemor" ? (
+        <>
+          <p className="text-xs font-semibold uppercase tracking-wider muted">
+            {tr("Bemor", "Пациент", "Hasta", "Patient")}
+          </p>
+          <p className="mt-1 flex items-start gap-2 text-xl font-semibold italic" lang="de">
+            „{target.says}“
+            <Speak text={target.says} />
+          </p>
+          <p className="mt-3 text-sm muted">
+            {tr(
+              "Rasmda shu sohani ko‘rsating.",
+              "Покажите эту область на рисунке.",
+              "Bu bölgeyi resimde gösterin.",
+              "Point to this region in the picture.",
+            )}
+          </p>
+        </>
+      ) : (
+        <>
+          <p className="text-xs font-semibold uppercase tracking-wider muted">Oberarzt</p>
+          <p className="mt-1 flex items-center gap-2 text-2xl font-bold" lang="de">
+            Zeigen Sie mir bitte: {target.de}
+            <Speak text={`Zeigen Sie mir bitte: ${target.de}`} />
+          </p>
+          <p className="mt-2 text-sm muted">
+            {layer === "organs"
+              ? tr(
+                  "A’zoni rasmda bosing.",
+                  "Нажмите на орган на рисунке.",
+                  "Organa resimde tıklayın.",
+                  "Tap the organ in the picture.",
+                )
+              : tr(
+                  "Sohani rasmda bosing.",
+                  "Нажмите на область на рисунке.",
+                  "Bölgeye resimde tıklayın.",
+                  "Tap the region in the picture.",
+                )}
+          </p>
+        </>
+      )}
+
+      {answered && (
+        <div
+          className={cx(
+            "mt-5 rounded-xl border-2 p-4",
+            quiz.ok
+              ? "border-emerald-400 bg-emerald-50 dark:bg-emerald-950/30"
+              : "border-rose-400 bg-rose-50 dark:bg-rose-950/30",
+          )}
+        >
+          <p
+            className={cx(
+              "flex items-center gap-2 font-semibold",
+              quiz.ok ? "text-emerald-700" : "text-rose-700",
+            )}
+          >
+            <Ic name={quiz.ok ? "checkCircle" : "xCircle"} />
+            {quiz.ok
+              ? "Richtig!"
+              : tr(
+                  "Noto‘g‘ri — to‘g‘risi yashil",
+                  "Неверно — правильный ответ зелёным",
+                  "Yanlış — doğrusu yeşil",
+                  "Wrong — the correct one is green",
+                )}
+          </p>
+          <p className="mt-2" lang="de">
+            <b>{target.de}</b> <span className="muted">· {target.fach}</span>
+          </p>
+          <p className="text-sm muted">{target.name}</p>
+          {mode === "bemor" && (
+            <p className="mt-2 text-sm">
+              <span className="muted">DD: </span>
+              <span lang="de">{target.dd.join(", ")}</span>
+            </p>
+          )}
+          <button className="btn-primary mt-4 w-full" autoFocus onClick={onNext}>
+            {quiz.i + 1 < total
+              ? tr("Keyingisi", "Дальше", "Sonraki", "Next")
+              : tr("Natija", "Результат", "Sonuç", "Result")}{" "}
+            →
+          </button>
+        </div>
+      )}
+    </div>
+  );
+}

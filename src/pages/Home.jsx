@@ -109,6 +109,17 @@ export function HomePage() {
   ];
   const features = [
     {
+      href: "/atlas",
+      icon: "body",
+      title: tr("Tana atlasi", "Атлас тела", "Vücut atlası", "Body atlas"),
+      desc: tr(
+        "A’zolar va og‘riq joyi: bosing, eshiting, o‘ynang",
+        "Органы и место боли: нажимайте, слушайте, играйте",
+        "Organlar ve ağrı yeri: tıkla, dinle, oyna",
+        "Organs and pain location: tap, listen, play",
+      ),
+    },
+    {
       href: "/aufklaerung",
       icon: "info",
       title: "Aufklärung",
