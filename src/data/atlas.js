@@ -446,3 +446,167 @@ export const ATLAS_CREDIT = {
   license: "CC BY 4.0",
   licenseUrl: "https://creativecommons.org/licenses/by/4.0/",
 };
+
+// A’zo kartasidagi qo‘shimcha ma’lumot (hammasi nemischa namuna — FSP’da aynan shunday aytiladi):
+//   lay — bemor tilidagi so‘z (Laienbegriff), leit — asosiy simptomlar,
+//   ask — anamnezdagi savol, exam — ko‘rik usuli, befund — Arztbrief’dagi normal topilma.
+export const ORGAN_EXTRA = {
+  gehirn: {
+    lay: "der Kopf",
+    leit: ["Kopfschmerzen", "Schwindel", "Lähmungen", "Sprachstörungen", "Bewusstseinsstörung"],
+    ask: "Haben Sie Kopfschmerzen, Sehstörungen oder Taubheitsgefühle bemerkt?",
+    exam: "Neurologische Untersuchung: Pupillen, Hirnnerven, Kraft, Sensibilität, Reflexe",
+    befund: "Pupillen isokor, prompte Lichtreaktion. Keine fokal-neurologischen Defizite.",
+  },
+  schilddruese: {
+    lay: "die Schilddrüse",
+    leit: ["Gewichtsveränderung", "Herzrasen", "Wärme- oder Kälteintoleranz", "Schwellung am Hals"],
+    ask: "Haben Sie in letzter Zeit ohne Grund zu- oder abgenommen?",
+    exam: "Inspektion und Palpation des Halses beim Schlucken",
+    befund: "Schilddrüse nicht vergrößert, schluckverschieblich, keine tastbaren Knoten.",
+  },
+  luftroehre: {
+    lay: "die Luftröhre",
+    leit: ["Husten", "Heiserkeit", "Stridor", "Atemnot"],
+    ask: "Haben Sie Husten? Mit oder ohne Auswurf?",
+    exam: "Inspektion, Auskultation über der Trachea",
+    befund: "Trachea mittelständig, kein Stridor.",
+  },
+  lunge: {
+    lay: "die Lunge",
+    leit: ["Husten", "Auswurf", "Atemnot (Dyspnoe)", "atemabhängige Thoraxschmerzen", "Fieber"],
+    ask: "Bekommen Sie schlecht Luft? In Ruhe oder bei Belastung?",
+    exam: "Perkussion und Auskultation der Lunge",
+    befund: "Vesikuläres Atemgeräusch beidseits, keine Rasselgeräusche, sonorer Klopfschall.",
+  },
+  herz: {
+    lay: "das Herz",
+    leit: ["Brustschmerzen", "Herzrasen (Palpitationen)", "Atemnot", "Beinödeme"],
+    ask: "Haben Sie Schmerzen oder ein Engegefühl in der Brust? Strahlen sie irgendwohin aus?",
+    exam: "Auskultation des Herzens, Puls und Blutdruck",
+    befund: "Herztöne rein, rhythmisch, normofrequent, keine pathologischen Geräusche.",
+  },
+  leber: {
+    lay: "die Leber",
+    leit: ["Gelbfärbung der Haut (Ikterus)", "Müdigkeit", "Juckreiz", "dunkler Urin"],
+    ask: "Ist Ihnen aufgefallen, dass Ihre Haut oder Ihre Augen gelb sind?",
+    exam: "Palpation und Perkussion der Leber (Lebergröße)",
+    befund: "Leber am Rippenbogen tastbar, nicht vergrößert, glatt.",
+  },
+  gallenblase: {
+    lay: "die Galle",
+    leit: [
+      "kolikartige Schmerzen rechts oben",
+      "Ausstrahlung in die rechte Schulter",
+      "Übelkeit nach fettem Essen",
+    ],
+    ask: "Treten die Schmerzen nach fettreichem Essen auf?",
+    exam: "Palpation unter dem rechten Rippenbogen, Murphy-Zeichen",
+    befund: "Murphy-Zeichen negativ, kein Druckschmerz im rechten Oberbauch.",
+  },
+  magen: {
+    lay: "der Magen",
+    leit: ["Oberbauchschmerzen", "Sodbrennen", "Übelkeit", "Erbrechen", "Teerstuhl"],
+    ask: "Haben Sie Sodbrennen oder ein Völlegefühl nach dem Essen?",
+    exam: "Palpation des Epigastriums",
+    befund: "Bauchdecke weich, kein Druckschmerz im Epigastrium.",
+  },
+  milz: {
+    lay: "die Milz",
+    leit: ["Schmerzen links oben", "Infektanfälligkeit", "Schmerzen nach Trauma"],
+    ask: "Hatten Sie in letzter Zeit einen Unfall oder einen Schlag auf den Bauch?",
+    exam: "Palpation unter dem linken Rippenbogen",
+    befund: "Milz nicht tastbar.",
+  },
+  pankreas: {
+    lay: "die Bauchspeicheldrüse",
+    leit: ["gürtelförmige Oberbauchschmerzen", "Ausstrahlung in den Rücken", "Übelkeit", "Fettstühle"],
+    ask: "Wie viel Alkohol trinken Sie pro Woche?",
+    exam: "Palpation des Oberbauchs, Labor: Lipase",
+    befund: "Kein Druckschmerz im Oberbauch, Lipase im Normbereich.",
+  },
+  niere: {
+    lay: "die Niere",
+    leit: ["Flankenschmerzen", "Brennen beim Wasserlassen", "Blut im Urin (Hämaturie)", "Fieber"],
+    ask: "Haben Sie Schmerzen beim Wasserlassen oder Blut im Urin bemerkt?",
+    exam: "Nierenlager abklopfen",
+    befund: "Nierenlager beidseits klopfschmerzfrei.",
+  },
+  duenndarm: {
+    lay: "der Darm",
+    leit: ["krampfartige Bauchschmerzen", "Durchfall", "Blähungen", "Gewichtsverlust"],
+    ask: "Wie oft haben Sie Stuhlgang? Hat sich etwas verändert?",
+    exam: "Auskultation der Darmgeräusche",
+    befund: "Regelrechte Darmgeräusche über allen vier Quadranten.",
+  },
+  dickdarm: {
+    lay: "der Darm",
+    leit: ["Stuhlunregelmäßigkeiten", "Blut im Stuhl", "Verstopfung", "Schmerzen links unten"],
+    ask: "Haben Sie Blut im Stuhl bemerkt?",
+    exam: "Palpation des Abdomens, digital-rektale Untersuchung",
+    befund: "Abdomen weich, keine Resistenzen tastbar.",
+  },
+  appendix: {
+    lay: "der Blinddarm",
+    leit: [
+      "Schmerzen zuerst um den Nabel, dann rechts unten",
+      "Appetitlosigkeit",
+      "Übelkeit",
+      "leichtes Fieber",
+    ],
+    ask: "Wo haben die Schmerzen angefangen? Sind sie gewandert?",
+    exam: "McBurney-, Lanz-, Blumberg- und Psoas-Zeichen prüfen",
+    befund: "Kein Druckschmerz am McBurney-Punkt, Blumberg-Zeichen negativ.",
+  },
+  blase: {
+    lay: "die Blase",
+    leit: ["häufiges Wasserlassen (Pollakisurie)", "Brennen beim Wasserlassen (Dysurie)", "Harndrang"],
+    ask: "Müssen Sie öfter als sonst zur Toilette? Brennt es beim Wasserlassen?",
+    exam: "Palpation und Perkussion oberhalb des Schambeins",
+    befund: "Keine suprapubische Druckschmerzhaftigkeit, Blase nicht gefüllt tastbar.",
+  },
+};
+
+// "Bemor" rejimi uchun qo‘shimcha gaplar — bemor har safar boshqacha gapiradi
+export const REGION_SAYS = {
+  ro: [
+    "Rechts oben im Bauch habe ich Schmerzen, die bis in die Schulter ziehen.",
+    "Nach dem fettigen Essen hat es rechts unter dem Rippenbogen angefangen.",
+  ],
+  epi: [
+    "Es brennt hier oben, direkt unter dem Brustbein, besonders nach dem Essen.",
+    "Der Schmerz ist oben in der Mitte und geht wie ein Gürtel in den Rücken.",
+  ],
+  lo: [
+    "Ich bin vom Fahrrad gefallen, und jetzt tut es links oben im Bauch weh.",
+    "Links oben unter den Rippen sticht es beim Einatmen.",
+  ],
+  rf: [
+    "Es tut rechts seitlich so stark weh, dass ich nicht still liegen kann.",
+    "Ich habe Schmerzen in der rechten Seite und Blut im Urin.",
+  ],
+  nabel: [
+    "Der Schmerz sitzt genau um den Nabel herum.",
+    "Ich habe krampfartige Bauchschmerzen in der Mitte, rund um den Nabel.",
+  ],
+  lf: [
+    "Links seitlich tut es weh, und der Schmerz kommt in Wellen.",
+    "Ich habe Schmerzen in der linken Seite, die bis in die Leiste ziehen.",
+  ],
+  ru: [
+    "Erst tat es am Nabel weh, jetzt ist der Schmerz nach rechts unten gewandert.",
+    "Rechts unten im Bauch tut es weh, besonders wenn ich gehe oder huste.",
+  ],
+  supra: [
+    "Ich habe Druck ganz unten im Bauch und muss ständig auf die Toilette.",
+    "Unten in der Mitte tut es weh, und ich kann kein Wasser lassen.",
+  ],
+  lu: [
+    "Links unten im Bauch habe ich Schmerzen und seit Tagen keinen Stuhlgang.",
+    "Es tut links unten weh, und ich habe leichtes Fieber.",
+  ],
+  retro: [
+    "Ich habe ein Engegefühl in der Brust, das in den linken Arm ausstrahlt.",
+    "Hinter dem Brustbein brennt es, vor allem im Liegen nach dem Essen.",
+  ],
+};

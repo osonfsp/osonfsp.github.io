@@ -2,18 +2,62 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { Icon, Ic } from "../components/Icon";
 import { Speak, speak } from "../components/Speak";
 import { PageHeader } from "../components/ui";
-import { ATLAS_CREDIT, ORGANS, POINTS, REGIONS, SYSTEMS } from "../data/atlas";
+import { ATLAS_CREDIT, ORGAN_EXTRA, ORGANS, POINTS, REGION_SAYS, REGIONS, SYSTEMS } from "../data/atlas";
 import LAYOUT from "../data/atlas-layout.json";
 import { trackEvent } from "../lib/analytics";
 import { tr } from "../lib/i18n";
 import { shuffleWith } from "../lib/quiz";
+import { storage } from "../lib/storage";
 import { cx } from "../lib/utils";
 
-// Tana atlasi (Körper-Atlas): a’zolar, qorin sohalari va klinik nuqtalar (3 qatlam). Uch rejim:
-//   atlas  — bosib o‘rganish (nemischa nomi, Fachbegriff, tarjima, talaffuz, kasalliklar / DD)
-//   zeigen — "Zeigen Sie mir …" — so‘ralgan a’zo yoki sohani topish (10 savol)
-//   bemor  — bemor og‘riq joyini aytadi, siz sohani ko‘rsatasiz (8 savol)
-const ROUNDS = { zeigen: 10, bemor: 8 };
+// Tana atlasi (Körper-Atlas): a’zolar, qorin sohalari va klinik nuqtalar (3 qatlam). To‘rt rejim:
+//   atlas  — bosib o‘rganish (nemischa nomi, Fachbegriff, tarjima, talaffuz, kasalliklar / DD, ko‘rik)
+//   zeigen — "Zeigen Sie mir …" — so‘ralgan a’zo yoki sohani topish (nemischa nomi yoki Fachbegriff bilan)
+//   nima   — "Was ist das?" — rasmda belgilangan joyning nomini artikli bilan 4 variantdan tanlash
+//   bemor  — bemor og‘riq joyini aytadi (har safar boshqacha), siz sohani ko‘rsatasiz
+const ROUNDS = { zeigen: 10, nima: 10, bemor: 8 };
+
+// Xatolar xotirasi: {id: necha marta xato}. Keyingi o‘yinda shular birinchi so‘raladi.
+const MISS_KEY = "fsp.atlas.miss";
+const loadMiss = () => storage.get(MISS_KEY, {});
+function noteMiss(id, wrong) {
+  let m = loadMiss(),
+    n = (m[id] || 0) + (wrong ? 1 : -1);
+  if (n > 0) m[id] = Math.min(n, 3);
+  else delete m[id];
+  storage.set(MISS_KEY, m);
+}
+
+const ARTICLES = ["der", "die", "das"];
+// Fachbegriff qisqa shaklda: "Gaster / Ventriculus" → "Gaster", "Regio umbilicalis (periumbilikal)" → "Regio umbilicalis"
+const shortFach = (f) => f?.split(" / ")[0].replace(/\s*\(.*\)$/, "");
+
+// Bitta savol: item, aytiladigan gap (say) va "nima" rejimi uchun variantlar (opts)
+function makeQuestion(m, item, pool) {
+  if (m === "bemor") {
+    let all = [item.says, ...(REGION_SAYS[item.id] || [])];
+    return { item, say: all[Math.floor(Math.random() * all.length)] };
+  }
+  if (m === "zeigen") {
+    let f = shortFach(item.fach),
+      useFach = f && /^[A-Z]/.test(f) && f !== item.de && Math.random() < 0.35;
+    return {
+      item,
+      name: useFach ? f : item.de,
+      fach: useFach,
+      say: `Zeigen Sie mir bitte: ${useFach ? f : item.de}`,
+    };
+  }
+  // nima: to‘g‘ri nom + boshqa artikl bilan bitta "tuzoq" + boshqa a’zolar nomlari
+  let opts = [item.de],
+    art = item.de.match(/^(der|die|das) (.+)$/);
+  if (art) opts.push(`${shuffleWith(ARTICLES.filter((a) => a !== art[1]))[0]} ${art[2]}`);
+  for (let o of shuffleWith(pool)) {
+    if (opts.length >= 4) break;
+    if (!opts.includes(o.de)) opts.push(o.de);
+  }
+  return { item, opts: shuffleWith(opts), say: "Was ist das?" };
+}
 
 // Qatlam rasmlari (Servier Medical Art) — Artifact versiyasida sahifaga ichiga joylanadi
 const IMG = Object.fromEntries(
@@ -44,6 +88,7 @@ const HIT_ORDER = [
 const MODES = [
   ["atlas", "grid", () => tr("Atlas", "Атлас", "Atlas", "Atlas"), () => "Atlas"],
   ["zeigen", "target", () => "Zeigen Sie mir…", () => "Zeigen"],
+  ["nima", "help", () => "Was ist das?", () => tr("Nima?", "Что?", "Ne?", "What?")],
   [
     "bemor",
     "chat",
@@ -68,16 +113,20 @@ export function AtlasPage() {
     activeLayer = mode === "bemor" ? "regions" : layer,
     items = activeLayer === "organs" ? ORGANS : activeLayer === "points" ? POINTS : REGIONS;
 
-  // Yangi o‘yin: savollar tartibi aralashtiriladi
+  // Yangi o‘yin: avval oldin xato qilinganlar, keyin qolganlari; so‘ng tartib aralashtiriladi
   let start = (m = mode, l = activeLayer) => {
     let pool = m === "bemor" || l === "regions" ? REGIONS : l === "points" ? POINTS : ORGANS,
-      order = shuffleWith(pool).slice(0, ROUNDS[m]);
+      miss = loadMiss(),
+      order = [
+        ...shuffleWith(pool.filter((x) => miss[x.id])),
+        ...shuffleWith(pool.filter((x) => !miss[x.id])),
+      ].slice(0, ROUNDS[m]);
     while (order.length < ROUNDS[m]) order.push(...shuffleWith(pool).slice(0, ROUNDS[m] - order.length));
+    let qs = shuffleWith(order).map((it) => makeQuestion(m, it, pool));
     setSelected(null);
-    setQuiz({ order, i: 0, score: 0, streak: 0, best: 0, picked: null, done: false });
-    ask(m, order[0]);
+    setQuiz({ qs, i: 0, score: 0, streak: 0, best: 0, picked: null, done: false, missed: [] });
+    if (m !== "nima") speak(qs[0].say);
   };
-  let ask = (m, item) => speak(m === "bemor" ? item.says : `Zeigen Sie mir bitte: ${item.de}`);
 
   let switchMode = (m) => {
     clearTimeout(timer.current);
@@ -92,7 +141,24 @@ export function AtlasPage() {
     if (mode === "zeigen") setQuiz(null);
   };
 
-  let target = quiz && !quiz.done ? quiz.order[quiz.i] : null;
+  let question = quiz && !quiz.done ? quiz.qs[quiz.i] : null,
+    target = question?.item;
+
+  // Javob: rasmda bosilgan joy (zeigen, bemor) yoki tanlangan variant (nima)
+  let answer = (picked, ok) => {
+    let streak = ok ? quiz.streak + 1 : 0;
+    noteMiss(target.id, !ok);
+    setQuiz({
+      ...quiz,
+      picked,
+      ok,
+      score: quiz.score + (ok ? 1 : 0),
+      streak,
+      best: Math.max(quiz.best, streak),
+      missed: ok || quiz.missed.includes(target) ? quiz.missed : [...quiz.missed, target],
+    });
+    if (ok) speak(mode === "zeigen" ? "Richtig!" : target.de);
+  };
 
   let pick = (item) => {
     if (mode === "atlas") {
@@ -100,30 +166,22 @@ export function AtlasPage() {
       speak(item.de);
       return;
     }
-    if (!quiz || quiz.done || quiz.picked) return;
-    let ok = item.id === target.id,
-      streak = ok ? quiz.streak + 1 : 0;
-    setQuiz({
-      ...quiz,
-      picked: item.id,
-      ok,
-      score: quiz.score + (ok ? 1 : 0),
-      streak,
-      best: Math.max(quiz.best, streak),
-    });
-    if (ok) speak(mode === "bemor" ? target.de : "Richtig!");
+    if (mode === "nima" || !quiz || quiz.done || quiz.picked) return;
+    answer(item.id, item.id === target.id);
   };
+  let choose = (opt) => quiz && !quiz.done && !quiz.picked && answer(opt, opt === target.de);
 
   let next = () => {
     let i = quiz.i + 1;
-    if (i >= quiz.order.length) return setQuiz({ ...quiz, done: true, picked: null });
+    if (i >= quiz.qs.length) return setQuiz({ ...quiz, done: true, picked: null });
     setQuiz({ ...quiz, i, picked: null, ok: undefined });
-    ask(mode, quiz.order[i]);
+    if (mode !== "nima") speak(quiz.qs[i].say);
   };
 
   // Har bir shakl qanday ko‘rinadi: tanlangan / to‘g‘ri / noto‘g‘ri / xira
   let stateOf = (item) => {
     if (mode === "atlas") return selected === item.id ? "sel" : "";
+    if (mode === "nima") return target?.id === item.id ? (quiz.picked ? "ok" : "sel") : "";
     if (!quiz?.picked) return "";
     if (item.id === target.id) return "ok";
     if (item.id === quiz.picked) return "bad";
@@ -147,7 +205,7 @@ export function AtlasPage() {
       />
 
       <div className="mb-4 flex flex-wrap items-center gap-3">
-        <div className="grid w-full grid-cols-3 gap-1 rounded-xl bg-slate-100 p-1 sm:w-auto sm:max-w-xl sm:flex-1 dark:bg-slate-800/60">
+        <div className="grid w-full grid-cols-4 gap-1 rounded-xl bg-slate-100 p-1 sm:w-auto sm:max-w-2xl sm:flex-1 dark:bg-slate-800/60">
           {MODES.map(([id, icon, label, short]) => (
             <button
               key={id}
@@ -221,7 +279,7 @@ export function AtlasPage() {
           </div>
         </div>
 
-        <div className="order-first lg:order-none">
+        <div className={cx("lg:order-none", mode !== "nima" && "order-first")}>
           {mode === "atlas" ? (
             sel ? (
               activeLayer === "points" ? (
@@ -236,10 +294,11 @@ export function AtlasPage() {
             <QuizPanel
               mode={mode}
               quiz={quiz}
-              target={target}
+              question={question}
               layer={activeLayer}
               onStart={() => start()}
               onNext={next}
+              onChoose={choose}
             />
           )}
         </div>
@@ -499,6 +558,7 @@ function InfoCard({ item, region }) {
           ))}
         </div>
       </div>
+      {!region && ORGAN_EXTRA[item.id] && <OrganExtra x={ORGAN_EXTRA[item.id]} de={item.de} />}
       {region && (
         <p className="mt-5 text-xs muted">
           {tr(
@@ -509,6 +569,66 @@ function InfoCard({ item, region }) {
           )}
         </p>
       )}
+    </div>
+  );
+}
+
+// A’zo kartasining davomi: bemor tili, simptomlar, anamnez savoli, ko‘rik va normal topilma
+function OrganExtra({ x, de }) {
+  let label = (t) => <p className="text-xs font-semibold uppercase tracking-wider muted">{t}</p>;
+  return (
+    <div className="mt-5 space-y-4 border-t border-slate-200 pt-4 dark:border-slate-700">
+      {x.lay !== de && (
+        <div>
+          {label(tr("Bemor shunday ataydi", "Пациент называет так", "Hasta şöyle der", "Patients call it"))}
+          <p className="mt-1 font-medium" lang="de">
+            {x.lay} <span className="text-sm font-normal muted">(Laienbegriff)</span>
+          </p>
+        </div>
+      )}
+      <div>
+        {label(
+          tr("Asosiy simptomlar", "Ведущие симптомы", "Ana belirtiler", "Key symptoms") + " (Leitsymptome)",
+        )}
+        <div className="mt-2 flex flex-wrap gap-2">
+          {x.leit.map((s) => (
+            <span
+              key={s}
+              lang="de"
+              className="badge bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-200"
+            >
+              {s}
+            </span>
+          ))}
+        </div>
+      </div>
+      <div className="rounded-xl bg-slate-50 p-4 dark:bg-slate-800/60">
+        {label(tr("Anamnezda so‘rang", "Спросите в анамнезе", "Anamnezde sorun", "Ask in the history"))}
+        <p className="mt-1 flex items-start gap-2 italic" lang="de">
+          „{x.ask}“
+          <Speak text={x.ask} />
+        </p>
+      </div>
+      <div>
+        {label(tr("Ko‘rik", "Осмотр", "Muayene", "Examination") + " (Untersuchung)")}
+        <p className="mt-1 text-sm" lang="de">
+          {x.exam}
+        </p>
+      </div>
+      <div className="rounded-xl bg-teal-50 p-4 dark:bg-teal-950/40">
+        {label(
+          tr(
+            "Normal topilma — Arztbrief’da",
+            "Норма — в Arztbrief",
+            "Normal bulgu — Arztbrief’te",
+            "Normal finding — in the Arztbrief",
+          ),
+        )}
+        <p className="mt-1 flex items-start gap-2 font-medium" lang="de">
+          „{x.befund}“
+          <Speak text={x.befund} />
+        </p>
+      </div>
     </div>
   );
 }
@@ -606,13 +726,15 @@ function ItemList({ layer, selected, system, setSystem, onPick }) {
   );
 }
 
-function QuizPanel({ mode, quiz, target, layer, onStart, onNext }) {
-  let total = ROUNDS[mode];
-  if (!quiz)
+function QuizPanel({ mode, quiz, question, layer, onStart, onNext, onChoose }) {
+  let total = ROUNDS[mode],
+    target = question?.item;
+  if (!quiz) {
+    let weak = Object.keys(loadMiss()).length;
     return (
       <div className="card flex flex-col items-center justify-center p-8 text-center">
         <Icon
-          name={mode === "bemor" ? "chat" : "target"}
+          name={mode === "bemor" ? "chat" : mode === "nima" ? "help" : "target"}
           className="h-12 w-12 text-teal-600 dark:text-teal-400"
           strokeWidth={1.5}
         />
@@ -624,28 +746,48 @@ function QuizPanel({ mode, quiz, target, layer, onStart, onNext }) {
                 "Hastanın neresi ağrıyor?",
                 "Where does the patient hurt?",
               )
-            : "Zeigen Sie mir…"}
+            : mode === "nima"
+              ? "Was ist das?"
+              : "Zeigen Sie mir…"}
         </h2>
         <p className="mt-2 max-w-sm text-sm muted">
-          {mode === "bemor"
+          {mode === "nima"
             ? tr(
-                `Bemor og‘riq joyini nemischa aytadi — siz rasmda sohani ko‘rsatasiz. ${total} ta savol.`,
-                `Пациент описывает место боли по-немецки — вы показываете область на рисунке. ${total} вопросов.`,
-                `Hasta ağrının yerini Almanca söyler — siz resimde bölgeyi gösterirsiniz. ${total} soru.`,
-                `The patient describes where it hurts in German — you point to the region. ${total} questions.`,
+                `Rasmda bir joy belgilanadi — uning nemischa nomini artikli bilan tanlang. Ehtiyot bo‘ling: variantlarda artikli noto‘g‘ri nomlar ham bor. ${total} ta savol.`,
+                `На рисунке выделяется место — выберите его немецкое название с артиклем. Осторожно: среди вариантов есть названия с неверным артиклем. ${total} вопросов.`,
+                `Resimde bir yer işaretlenir — Almanca adını artikeliyle seçin. Dikkat: seçeneklerde yanlış artikelli adlar da var. ${total} soru.`,
+                `A spot is highlighted in the picture — choose its German name with the article. Careful: some options have the wrong article. ${total} questions.`,
               )
-            : tr(
-                `Nemischa nomni eshitasiz — rasmdan topasiz. ${total} ta savol, seriya va ochko bilan.`,
-                `Вы слышите немецкое название — находите на рисунке. ${total} вопросов, серии и очки.`,
-                `Almanca adı duyarsınız — resimde bulursunuz. ${total} soru, seri ve puanla.`,
-                `You hear the German name — find it in the picture. ${total} questions, with streaks and points.`,
-              )}
+            : mode === "bemor"
+              ? tr(
+                  `Bemor og‘riq joyini nemischa aytadi — siz rasmda sohani ko‘rsatasiz. ${total} ta savol.`,
+                  `Пациент описывает место боли по-немецки — вы показываете область на рисунке. ${total} вопросов.`,
+                  `Hasta ağrının yerini Almanca söyler — siz resimde bölgeyi gösterirsiniz. ${total} soru.`,
+                  `The patient describes where it hurts in German — you point to the region. ${total} questions.`,
+                )
+              : tr(
+                  `Nemischa nomni eshitasiz — rasmdan topasiz. ${total} ta savol, seriya va ochko bilan.`,
+                  `Вы слышите немецкое название — находите на рисунке. ${total} вопросов, серии и очки.`,
+                  `Almanca adı duyarsınız — resimde bulursunuz. ${total} soru, seri ve puanla.`,
+                  `You hear the German name — find it in the picture. ${total} questions, with streaks and points.`,
+                )}
         </p>
         <button className="btn-primary mt-5" onClick={onStart}>
           {tr("Boshlash", "Начать", "Başla", "Start")} →
         </button>
+        {weak > 0 && (
+          <p className="mt-3 text-xs muted">
+            {tr(
+              `Oldin xato qilingan ${weak} ta joy birinchi navbatda so‘raladi.`,
+              `Сначала будут вопросы по ${weak} местам, где вы ошибались.`,
+              `Önce daha önce yanıldığınız ${weak} yer sorulacak.`,
+              `The ${weak} spots you got wrong before come first.`,
+            )}
+          </p>
+        )}
       </div>
     );
+  }
 
   if (quiz.done) {
     let pct = Math.round((quiz.score / total) * 100);
@@ -682,6 +824,26 @@ function QuizPanel({ mode, quiz, target, layer, onStart, onNext }) {
                     "Review in atlas mode and try again",
                   )}
         </p>
+        {quiz.missed.length > 0 && (
+          <div className="mt-5 w-full max-w-sm text-left">
+            <p className="text-xs font-semibold uppercase tracking-wider muted">
+              {tr("Takrorlash kerak", "Повторить", "Tekrar edilecekler", "To review")}
+            </p>
+            <ul className="mt-2 divide-y divide-slate-200 rounded-xl border border-slate-200 dark:divide-slate-700 dark:border-slate-700">
+              {quiz.missed.map((x) => (
+                <li key={x.id} className="flex items-center justify-between gap-2 px-3 py-2 text-sm">
+                  <span className="min-w-0">
+                    <span className="block font-medium" lang="de">
+                      {x.de}
+                    </span>
+                    <span className="block text-xs muted">{x.name}</span>
+                  </span>
+                  <Speak text={x.de} />
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
         <button className="btn-primary mt-5" onClick={onStart}>
           <Icon name="refresh" className="h-4 w-4" />{" "}
           {tr("Yana o‘ynash", "Играть снова", "Tekrar oyna", "Play again")}
@@ -719,8 +881,8 @@ function QuizPanel({ mode, quiz, target, layer, onStart, onNext }) {
             {tr("Bemor", "Пациент", "Hasta", "Patient")}
           </p>
           <p className="mt-1 flex items-start gap-2 text-xl font-semibold italic" lang="de">
-            „{target.says}“
-            <Speak text={target.says} />
+            „{question.say}“
+            <Speak text={question.say} />
           </p>
           <p className="mt-3 text-sm muted">
             {tr(
@@ -731,13 +893,64 @@ function QuizPanel({ mode, quiz, target, layer, onStart, onNext }) {
             )}
           </p>
         </>
+      ) : mode === "nima" ? (
+        <>
+          <p className="text-xs font-semibold uppercase tracking-wider muted">Oberarzt</p>
+          <p className="mt-1 text-2xl font-bold" lang="de">
+            Was ist das?
+          </p>
+          <p className="mt-2 text-sm muted">
+            {tr(
+              "Rasmda belgilangan joyning nomini tanlang.",
+              "Выберите название выделенного места.",
+              "Resimde işaretlenen yerin adını seçin.",
+              "Choose the name of the highlighted spot.",
+            )}
+          </p>
+          <div className="mt-4 grid gap-2">
+            {question.opts.map((o) => {
+              let right = answered && o === target.de,
+                wrong = answered && o === quiz.picked && !quiz.ok;
+              return (
+                <button
+                  key={o}
+                  lang="de"
+                  disabled={answered}
+                  onClick={() => onChoose(o)}
+                  className={cx(
+                    "rounded-xl border-2 px-4 py-3 text-left font-medium transition",
+                    right
+                      ? "border-emerald-400 bg-emerald-50 dark:bg-emerald-950/30"
+                      : wrong
+                        ? "border-rose-400 bg-rose-50 dark:bg-rose-950/30"
+                        : answered
+                          ? "border-slate-200 opacity-60 dark:border-slate-700"
+                          : "border-slate-200 hover:border-teal-400 dark:border-slate-700",
+                  )}
+                >
+                  {o}
+                </button>
+              );
+            })}
+          </div>
+        </>
       ) : (
         <>
           <p className="text-xs font-semibold uppercase tracking-wider muted">Oberarzt</p>
           <p className="mt-1 flex items-center gap-2 text-2xl font-bold" lang="de">
-            Zeigen Sie mir bitte: {target.de}
-            <Speak text={`Zeigen Sie mir bitte: ${target.de}`} />
+            {question.say}
+            <Speak text={question.say} />
           </p>
+          {question.fach && (
+            <p className="mt-1 text-xs font-medium text-teal-700 dark:text-teal-300">
+              {tr(
+                "Fachbegriff bilan so‘raldi",
+                "Спросили медицинским термином",
+                "Tıbbi terimle soruldu",
+                "Asked with the medical term",
+              )}
+            </p>
+          )}
           <p className="mt-2 text-sm muted">
             {layer === "organs"
               ? tr(
@@ -789,7 +1002,7 @@ function QuizPanel({ mode, quiz, target, layer, onStart, onNext }) {
                 )}
           </p>
           <p className="mt-2" lang="de">
-            <b>{target.de}</b> <span className="muted">· {target.fach}</span>
+            <b>{target.de}</b> {target.fach && <span className="muted">· {target.fach}</span>}
           </p>
           <p className="text-sm muted">{target.name}</p>
           {mode === "bemor" && (
