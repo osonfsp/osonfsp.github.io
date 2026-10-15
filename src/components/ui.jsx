@@ -375,6 +375,10 @@ export const CATEGORY_STYLE = {
     "hospital",
     "bg-emerald-100 text-emerald-800 ring-emerald-200 dark:bg-emerald-500/15 dark:text-emerald-200 dark:ring-emerald-500/30",
   ],
+  Gynäkologie: [
+    "body",
+    "bg-pink-100 text-pink-800 ring-pink-200 dark:bg-pink-500/15 dark:text-pink-200 dark:ring-pink-500/30",
+  ],
 };
 export const categoryIcon = (c) => {
   let i = CATEGORY_STYLE[c]?.[0] ?? "stethoscope";

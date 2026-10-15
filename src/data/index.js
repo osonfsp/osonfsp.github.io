@@ -61,6 +61,12 @@ export const CASE_CATEGORIES = [
       label: tr("Umumiy amaliyot", "Общая практика", "Aile hekimliği", "General practice"),
       categories: ["Allgemeinmedizin"],
     },
+    {
+      id: "gynaekologie",
+      icon: "body",
+      label: tr("Ginekologiya", "Гинекология", "Kadın hastalıkları", "Gynaecology"),
+      categories: ["Gynäkologie"],
+    },
   ],
   CATEGORY_LABELS = {
     Kardiologie: tr("Kardiologiya", "Кардиология", "Kardiyoloji", "Cardiology"),
@@ -80,6 +86,7 @@ export const CASE_CATEGORIES = [
     Urologie: tr("Urologiya", "Урология", "Üroloji", "Urology"),
     Neurologie: tr("Nevrologiya", "Неврология", "Nöroloji", "Neurology"),
     Allgemeinmedizin: tr("Umumiy amaliyot", "Общая практика", "Aile hekimliği", "General practice"),
+    Gynäkologie: tr("Ginekologiya", "Гинекология", "Kadın hastalıkları", "Gynaecology"),
   },
   sectionOf = (category) => CASE_SECTIONS.find((s) => s.categories.includes(category)),
   WORD_CATEGORIES = [

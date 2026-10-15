@@ -20147,5 +20147,2285 @@
       "Knochenmarkpunktion",
       "Bildgebung des Gehirns und der Halsgefäße nach TIA"
     ]
+  },
+  {
+    "id": "c183",
+    "title": "Tubare Extrauteringravidität",
+    "category": "Gynäkologie",
+    "difficulty": "schwer",
+    "patient": {
+      "name": "Miriam Brandauer",
+      "age": 29,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Plötzliche starke Unterbauchschmerzen rechts und leichte Blutung"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit heute Morgen zunehmende, stechende Unterbauchschmerzen rechts, seit einer Stunde ausstrahlend in die rechte Schulter. Leichte dunkle Schmierblutung seit zwei Tagen. Letzte Regelblutung vor 7 Wochen, Zyklus sonst regelmäßig. Schwindel beim Aufstehen, einmal kurz schwarz vor Augen.",
+      "vorerkrankungen": "Chlamydien-Infektion vor 4 Jahren, behandelt. Appendektomie mit 12 Jahren.",
+      "medikamente": "Keine. Keine hormonelle Verhütung seit einem Jahr (Kinderwunsch).",
+      "allergien": "Penicillin (Hautausschlag)",
+      "familienanamnese": "Mutter Hypertonie, sonst unauffällig.",
+      "sozialanamnese": "Verheiratet, keine Kinder, Grundschullehrerin. Nichtraucherin, kein Alkohol."
+    },
+    "sprache": [
+      {
+        "patient": "Meine Periode ist seit drei Wochen überfällig.",
+        "fach": "Es besteht eine sekundäre Amenorrhö von sieben Wochen."
+      },
+      {
+        "patient": "Der Schmerz zieht bis in die rechte Schulter.",
+        "fach": "Die Schmerzen strahlen in die rechte Schulter aus (Kehr-Zeichen) – Hinweis auf ein Hämoperitoneum."
+      },
+      {
+        "patient": "Mir wird schwarz vor Augen, wenn ich aufstehe.",
+        "fach": "Es bestehen orthostatische Beschwerden mit Präsynkope."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Extrauteringravidität",
+        "patient": "Schwangerschaft außerhalb der Gebärmutter",
+        "uz": "bachadondan tashqari homiladorlik",
+        "ru": "внематочная беременность",
+        "tr": "dış gebelik",
+        "en": "ectopic pregnancy"
+      },
+      {
+        "de": "Beta-hCG",
+        "patient": "Schwangerschaftshormon im Blut",
+        "uz": "beta-XGCh (homiladorlik gormoni)",
+        "ru": "бета-ХГЧ",
+        "tr": "beta-hCG",
+        "en": "beta-hCG"
+      },
+      {
+        "de": "Hämoperitoneum",
+        "patient": "Blut im Bauchraum",
+        "uz": "qorin bo‘shlig‘ida qon",
+        "ru": "гемоперитонеум",
+        "tr": "hemoperiton",
+        "en": "haemoperitoneum"
+      },
+      {
+        "de": "Transvaginale Sonographie",
+        "patient": "Ultraschall über die Scheide",
+        "uz": "transvaginal UTT",
+        "ru": "трансвагинальное УЗИ",
+        "tr": "transvajinal ultrason",
+        "en": "transvaginal ultrasound"
+      },
+      {
+        "de": "Laparoskopische Salpingotomie",
+        "patient": "Bauchspiegelung, bei der der Eileiter geöffnet wird",
+        "uz": "laparoskopik salpingotomiya",
+        "ru": "лапароскопическая сальпинготомия",
+        "tr": "laparoskopik salpingotomi",
+        "en": "laparoscopic salpingotomy"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe seit heute früh ganz starke Schmerzen rechts unten im Bauch, und mir ist schwindelig.",
+      "answers": {
+        "beginn": "Heute Morgen beim Aufstehen fing es an, und es wird immer schlimmer.",
+        "lokalisation": "Rechts unten im Bauch. Seit einer Stunde tut auch die rechte Schulter weh.",
+        "charakter": "Stechend, wie ein Messer. Acht von zehn.",
+        "ausstrahlung": "Ja, in die rechte Schulter, das ist komisch.",
+        "begleit": "Seit zwei Tagen habe ich eine leichte, dunkle Blutung. Mir ist übel, und beim Aufstehen wurde mir einmal schwarz vor Augen.",
+        "vegetativ": "Meine letzte Periode war vor sieben Wochen, sonst kommt sie pünktlich. Stuhlgang und Wasserlassen sind normal.",
+        "vorerkrankungen": "Vor vier Jahren hatte ich Chlamydien, das wurde mit Antibiotika behandelt. Der Blinddarm ist raus, seit ich zwölf bin.",
+        "medikamente": "Ich nehme nichts. Die Pille habe ich vor einem Jahr abgesetzt, wir wünschen uns ein Kind.",
+        "allergien": "Gegen Penicillin, da bekomme ich Ausschlag.",
+        "familie": "Meine Mutter hat hohen Blutdruck, sonst nichts.",
+        "sozial": "Ich bin verheiratet, wir haben noch keine Kinder. Ich bin Grundschullehrerin.",
+        "noxen": "Ich rauche nicht und trinke keinen Alkohol."
+      }
+    },
+    "verdachtsdiagnose": "Rupturierte tubare Extrauteringravidität rechts mit Hämoperitoneum",
+    "diagnoseKeywords": ["extrauteringravidität", "eileiterschwangerschaft", "tubargravidität", "eug"],
+    "differenzialdiagnosen": [
+      "Rupturierte Ovarialzyste (Corpus-luteum-Zyste)",
+      "Ovarialtorsion",
+      "Akute Appendizitis (hier Z. n. Appendektomie)",
+      "Abort (Abortus incompletus)",
+      "Adnexitis"
+    ],
+    "untersuchungen": [
+      "Beta-hCG im Serum (quantitativ)",
+      "Transvaginale Sonographie (leerer Uterus, Adnexbefund, freie Flüssigkeit im Douglas-Raum)",
+      "Vitalparameter, Schockindex",
+      "Blutbild, Gerinnung, Blutgruppe und Kreuzblut",
+      "Rhesusfaktor"
+    ],
+    "oberarzt": {
+      "therapie": [
+        "Zwei großlumige Zugänge, Volumen, Blutprodukte bereitstellen",
+        "Notfall-Laparoskopie (Salpingotomie oder Salpingektomie)",
+        "Anti-D-Prophylaxe bei Rhesus-negativ",
+        "Methotrexat nur bei stabiler Patientin ohne Ruptur"
+      ],
+      "komplikationen": [
+        "Hämorrhagischer Schock",
+        "Tubenruptur",
+        "Persistierende Trophoblastreste (hCG-Kontrolle)",
+        "Erhöhtes Risiko erneuter EUG",
+        "Eingeschränkte Fertilität"
+      ]
+    }
+  },
+  {
+    "id": "c184",
+    "title": "Ovarialtorsion",
+    "category": "Gynäkologie",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Selin Kaya",
+      "age": 24,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Plötzliche, sehr starke Schmerzen links im Unterbauch mit Erbrechen"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Vor 4 Stunden beim Sport plötzlich einsetzende, krampfartige, wellenförmige Schmerzen im linken Unterbauch. Zweimal Erbrechen. Kein Fieber. Keine vaginale Blutung. Letzte Regelblutung vor 2 Wochen. Bekannte Ovarialzyste links (5 cm) beim Frauenarzt vor 3 Monaten.",
+      "vorerkrankungen": "Ovarialzyste links. Sonst gesund.",
+      "medikamente": "Keine (Verhütung mit Kondom).",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Ledig, Studentin (Sport), wohnt in einer WG. Nichtraucherin, Alkohol gelegentlich."
+    },
+    "sprache": [
+      {
+        "patient": "Der Schmerz kam ganz plötzlich, mitten beim Joggen.",
+        "fach": "Die Schmerzen setzten akut unter körperlicher Belastung ein."
+      },
+      {
+        "patient": "Ich musste zweimal brechen.",
+        "fach": "Es kam zu zweimaligem Erbrechen."
+      },
+      {
+        "patient": "Die Frauenärztin hat links eine Zyste am Eierstock gesehen.",
+        "fach": "Bekannt ist eine Ovarialzyste links von 5 cm."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Ovarialtorsion",
+        "patient": "Verdrehung des Eierstocks",
+        "uz": "tuxumdon buralishi",
+        "ru": "перекрут яичника",
+        "tr": "over torsiyonu",
+        "en": "ovarian torsion"
+      },
+      {
+        "de": "Adnexe",
+        "patient": "Eierstöcke und Eileiter",
+        "uz": "bachadon ortiqlari",
+        "ru": "придатки матки",
+        "tr": "adneksler",
+        "en": "adnexa"
+      },
+      {
+        "de": "Dopplersonographie",
+        "patient": "Ultraschall, der die Durchblutung zeigt",
+        "uz": "dopplerografiya",
+        "ru": "допплерография",
+        "tr": "Doppler ultrason",
+        "en": "Doppler ultrasound"
+      },
+      {
+        "de": "Detorquierung",
+        "patient": "Zurückdrehen des Eierstocks bei der Operation",
+        "uz": "buralishni qayta to‘g‘rilash",
+        "ru": "деторсия",
+        "tr": "detorsiyon",
+        "en": "detorsion"
+      },
+      {
+        "de": "Ovarialzyste",
+        "patient": "mit Flüssigkeit gefüllte Blase am Eierstock",
+        "uz": "tuxumdon kistasi",
+        "ru": "киста яичника",
+        "tr": "over kisti",
+        "en": "ovarian cyst"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe ganz plötzlich so starke Schmerzen links unten im Bauch bekommen, und ich musste brechen.",
+      "answers": {
+        "beginn": "Vor ungefähr vier Stunden, ganz plötzlich beim Joggen.",
+        "lokalisation": "Links unten im Bauch.",
+        "charakter": "Krampfartig, es kommt in Wellen. Manchmal neun von zehn.",
+        "ausstrahlung": "Ein bisschen in die linke Leiste und den Oberschenkel.",
+        "begleit": "Ich musste zweimal brechen und mir ist übel. Fieber habe ich nicht, und ich blute nicht.",
+        "vegetativ": "Meine letzte Periode war vor zwei Wochen, ganz normal. Wasserlassen und Stuhlgang sind normal.",
+        "vorerkrankungen": "Vor drei Monaten hat meine Frauenärztin links eine Zyste am Eierstock gesehen, fünf Zentimeter. Sie wollte das kontrollieren.",
+        "medikamente": "Keine. Wir verhüten mit Kondom.",
+        "allergien": "Nein.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich studiere Sport und wohne in einer WG.",
+        "noxen": "Ich rauche nicht. Alkohol nur mal auf Partys."
+      }
+    },
+    "verdachtsdiagnose": "Ovarialtorsion links bei bekannter Ovarialzyste",
+    "diagnoseKeywords": ["ovarialtorsion", "adnextorsion", "torsion"],
+    "differenzialdiagnosen": [
+      "Rupturierte Ovarialzyste",
+      "Extrauteringravidität",
+      "Nierenkolik links",
+      "Sigmadivertikulitis (untypisch im Alter)",
+      "Adnexitis"
+    ],
+    "untersuchungen": [
+      "Beta-hCG (Schwangerschaft ausschließen)",
+      "Transvaginale Sonographie mit Doppler (vergrößertes Ovar, fehlender Blutfluss)",
+      "Blutbild, CRP",
+      "Urinstatus",
+      "Diagnostische Laparoskopie"
+    ]
+  },
+  {
+    "id": "c185",
+    "title": "Schwere Präeklampsie",
+    "category": "Gynäkologie",
+    "difficulty": "schwer",
+    "patient": {
+      "name": "Johanna Pietsch",
+      "age": 34,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Starke Kopfschmerzen, Augenflimmern und geschwollene Hände in der 34. Schwangerschaftswoche"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Erste Schwangerschaft, 34+2 SSW. Seit gestern starke Stirnkopfschmerzen, seit heute Flimmern vor den Augen. Seit einer Woche deutlich geschwollene Hände, Gesicht und Beine, 3 kg Gewichtszunahme in einer Woche. Heute Druckschmerz im rechten Oberbauch. Beim Frauenarzt RR 165/108 mmHg, Eiweiß im Urin.",
+      "vorerkrankungen": "Keine. Adipositas (BMI 32).",
+      "medikamente": "Folsäure, Jod.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Mutter hatte in der Schwangerschaft eine Präeklampsie.",
+      "sozialanamnese": "Verheiratet, Bankkauffrau, im Mutterschutz. Nichtraucherin, kein Alkohol."
+    },
+    "sprache": [
+      {
+        "patient": "Ich sehe so ein Flimmern vor den Augen.",
+        "fach": "Die Patientin berichtet über Flimmerskotome."
+      },
+      {
+        "patient": "Meine Ringe passen nicht mehr, alles ist geschwollen.",
+        "fach": "Es bestehen generalisierte Ödeme mit rascher Gewichtszunahme."
+      },
+      {
+        "patient": "Rechts oben unter den Rippen tut es weh.",
+        "fach": "Es besteht ein Oberbauchschmerz rechts – Verdacht auf beginnendes HELLP-Syndrom."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Präeklampsie",
+        "patient": "Schwangerschaftsvergiftung mit hohem Blutdruck und Eiweiß im Urin",
+        "uz": "preeklampsiya",
+        "ru": "преэклампсия",
+        "tr": "preeklampsi",
+        "en": "pre-eclampsia"
+      },
+      {
+        "de": "Proteinurie",
+        "patient": "Eiweiß im Urin",
+        "uz": "siydikda oqsil",
+        "ru": "протеинурия",
+        "tr": "proteinüri",
+        "en": "proteinuria"
+      },
+      {
+        "de": "HELLP-Syndrom",
+        "patient": "gefährliche Komplikation mit Leber- und Blutwerten",
+        "uz": "HELLP sindromi",
+        "ru": "HELLP-синдром",
+        "tr": "HELLP sendromu",
+        "en": "HELLP syndrome"
+      },
+      {
+        "de": "Magnesiumsulfat",
+        "patient": "Medikament gegen Krampfanfälle in der Schwangerschaft",
+        "uz": "magniy sulfat",
+        "ru": "сульфат магния",
+        "tr": "magnezyum sülfat",
+        "en": "magnesium sulphate"
+      },
+      {
+        "de": "Lungenreifeinduktion",
+        "patient": "Spritze, damit die Lunge des Babys schneller reif wird",
+        "uz": "chaqaloq o‘pkasini yetiltirish",
+        "ru": "профилактика РДС плода (созревание лёгких)",
+        "tr": "akciğer maturasyonu",
+        "en": "antenatal corticosteroids for lung maturation"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich bin in der 34. Woche schwanger und habe seit gestern furchtbare Kopfschmerzen und sehe Flimmern.",
+      "answers": {
+        "beginn": "Die Kopfschmerzen seit gestern Abend, das Flimmern seit heute Morgen. Geschwollen bin ich seit einer Woche.",
+        "lokalisation": "Die Kopfschmerzen sind vorne an der Stirn. Und heute tut es rechts oben im Bauch weh.",
+        "charakter": "Drückend und pochend, sieben von zehn. Tabletten helfen nicht.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Hände, Gesicht und Beine sind dick geschwollen, ich habe in einer Woche drei Kilo zugenommen. Mir ist ein bisschen übel. Das Baby bewegt sich normal.",
+        "vegetativ": "Ich muss weniger Wasser lassen als sonst. Stuhlgang normal.",
+        "vorerkrankungen": "Ich hatte keine Krankheiten, nur Übergewicht. Es ist meine erste Schwangerschaft.",
+        "medikamente": "Nur Folsäure und Jod.",
+        "allergien": "Nein.",
+        "familie": "Meine Mutter hatte in der Schwangerschaft auch so etwas, eine Schwangerschaftsvergiftung.",
+        "sozial": "Ich bin verheiratet und Bankkauffrau, jetzt im Mutterschutz.",
+        "noxen": "Ich rauche nicht und trinke keinen Alkohol."
+      }
+    },
+    "verdachtsdiagnose": "Schwere Präeklampsie in der 34+2 SSW mit Verdacht auf beginnendes HELLP-Syndrom",
+    "diagnoseKeywords": ["präeklampsie", "praeeklampsie", "gestose", "hellp"],
+    "differenzialdiagnosen": [
+      "Gestationshypertonie ohne Proteinurie",
+      "HELLP-Syndrom",
+      "Akute Schwangerschaftsfettleber",
+      "Migräne",
+      "Sinusvenenthrombose"
+    ],
+    "untersuchungen": [
+      "Wiederholte Blutdruckmessung",
+      "Urin: Protein-Kreatinin-Quotient",
+      "Labor: Blutbild (Thrombozyten), LDH, Haptoglobin, Transaminasen, Kreatinin, Harnsäure",
+      "sFlt-1/PlGF-Quotient",
+      "CTG und Dopplersonographie (Fetus, Plazenta)",
+      "Neurologische Untersuchung"
+    ],
+    "oberarzt": {
+      "therapie": [
+        "Stationäre Aufnahme im Perinatalzentrum",
+        "Magnesiumsulfat i. v. (Eklampsieprophylaxe)",
+        "Antihypertensiva: Urapidil i. v., Nifedipin, Alpha-Methyldopa",
+        "Lungenreifeinduktion mit Betamethason",
+        "Entbindung (bei HELLP oder Verschlechterung)"
+      ],
+      "komplikationen": [
+        "Eklampsie (Krampfanfall)",
+        "HELLP-Syndrom",
+        "Vorzeitige Plazentalösung",
+        "Lungenödem",
+        "Intrauterine Wachstumsrestriktion"
+      ]
+    }
+  },
+  {
+    "id": "c186",
+    "title": "Akute interstitielle Nephritis nach NSAR",
+    "category": "Nephrologie",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Gerhard Möllenkamp",
+      "age": 58,
+      "gender": "männlich",
+      "hauptbeschwerde": "Müdigkeit, wenig Urin und Ausschlag nach mehreren Wochen Schmerztabletten"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit drei Wochen wegen Rückenschmerzen Ibuprofen 800 mg dreimal täglich und Omeprazol. Seit einer Woche zunehmende Müdigkeit, Appetitlosigkeit, deutlich weniger Urin. Seit vier Tagen juckender, fleckiger Ausschlag an Rumpf und Armen. Leichtes Fieber bis 38 °C. Hausarzt: Kreatinin 3,1 mg/dl (vor einem Jahr 0,9).",
+      "vorerkrankungen": "Chronische Rückenschmerzen, arterielle Hypertonie.",
+      "medikamente": "Ibuprofen 800 mg 1-1-1, Omeprazol 20 mg, Candesartan 8 mg.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Vater Dialyse wegen Diabetes.",
+      "sozialanamnese": "Verheiratet, Lagerist. Raucher, 25 Packungsjahre. Alkohol am Wochenende."
+    },
+    "sprache": [
+      {
+        "patient": "Ich muss kaum noch Wasser lassen.",
+        "fach": "Es besteht eine Oligurie."
+      },
+      {
+        "patient": "Ich nehme seit drei Wochen dreimal am Tag Ibuprofen 800.",
+        "fach": "Seit drei Wochen besteht eine NSAR-Einnahme in hoher Dosis (Ibuprofen 2400 mg/d)."
+      },
+      {
+        "patient": "Ich habe so roten, juckenden Ausschlag bekommen.",
+        "fach": "Es zeigt sich ein makulopapulöses, juckendes Exanthem."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Interstitielle Nephritis",
+        "patient": "Entzündung des Nierengewebes, oft durch Medikamente",
+        "uz": "interstitsial nefrit",
+        "ru": "интерстициальный нефрит",
+        "tr": "interstisyel nefrit",
+        "en": "interstitial nephritis"
+      },
+      {
+        "de": "NSAR",
+        "patient": "Schmerzmittel wie Ibuprofen oder Diclofenac",
+        "uz": "nosteroid yallig‘lanishga qarshi dorilar (NYaQD)",
+        "ru": "НПВС",
+        "tr": "NSAİİ",
+        "en": "NSAIDs"
+      },
+      {
+        "de": "Oligurie",
+        "patient": "sehr wenig Urin",
+        "uz": "siydik kam ajralishi (oliguriya)",
+        "ru": "олигурия",
+        "tr": "oligüri",
+        "en": "oliguria"
+      },
+      {
+        "de": "Eosinophilurie",
+        "patient": "bestimmte Abwehrzellen im Urin",
+        "uz": "siydikda eozinofillar",
+        "ru": "эозинофилурия",
+        "tr": "eozinofilüri",
+        "en": "eosinophiluria"
+      },
+      {
+        "de": "Nierenbiopsie",
+        "patient": "Entnahme einer kleinen Gewebeprobe aus der Niere",
+        "uz": "buyrak biopsiyasi",
+        "ru": "биопсия почки",
+        "tr": "böbrek biyopsisi",
+        "en": "kidney biopsy"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich bin seit einer Woche so schlapp, muss kaum noch Wasser lassen und habe jetzt auch noch Ausschlag.",
+      "answers": {
+        "beginn": "Die Müdigkeit seit etwa einer Woche, der Ausschlag seit vier Tagen.",
+        "lokalisation": "Der Ausschlag ist am Bauch, am Rücken und an den Armen.",
+        "charakter": "Rote Flecken, die jucken. Schmerzen habe ich eigentlich nur im Rücken, das ist alt.",
+        "ausstrahlung": "—",
+        "begleit": "Ich habe leichtes Fieber, so 38 Grad, und keinen Appetit. Mir ist manchmal übel.",
+        "vegetativ": "Ich muss viel weniger Wasser lassen als früher, der Urin ist dunkel. Stuhlgang normal.",
+        "vorerkrankungen": "Ich habe seit Jahren Rückenschmerzen und hohen Blutdruck.",
+        "medikamente": "Wegen dem Rücken nehme ich seit drei Wochen dreimal Ibuprofen 800 und dazu Omeprazol für den Magen. Und Candesartan für den Blutdruck.",
+        "allergien": "Nein, bisher nicht.",
+        "familie": "Mein Vater war an der Dialyse, wegen Zucker.",
+        "sozial": "Ich bin verheiratet und arbeite im Lager, das geht auf den Rücken.",
+        "noxen": "Ich rauche eine Schachtel am Tag, seit 25 Jahren. Bier am Wochenende."
+      }
+    },
+    "verdachtsdiagnose": "Akutes Nierenversagen bei akuter interstitieller Nephritis, am ehesten durch NSAR (DD Omeprazol)",
+    "diagnoseKeywords": ["interstitiell", "tubulointerstitiell"],
+    "differenzialdiagnosen": [
+      "Prärenales Nierenversagen (NSAR + Sartan, Exsikkose)",
+      "Rasch progrediente Glomerulonephritis",
+      "Postrenales Nierenversagen (Harnstau)",
+      "Cholesterinembolien",
+      "Akute Tubulusnekrose"
+    ],
+    "untersuchungen": [
+      "Kreatinin, Harnstoff, Kalium, Blutgasanalyse",
+      "Blutbild mit Differenzialblutbild (Eosinophilie)",
+      "Urinstatus und Sediment (sterile Leukozyturie, Eosinophilurie)",
+      "Proteinurie quantifizieren",
+      "Nierensonographie (Harnstau ausschließen)",
+      "Nierenbiopsie bei unklarem Verlauf"
+    ]
+  },
+  {
+    "id": "c187",
+    "title": "IgA-Nephropathie",
+    "category": "Nephrologie",
+    "difficulty": "leicht",
+    "patient": {
+      "name": "Timo Rautenberg",
+      "age": 22,
+      "gender": "männlich",
+      "hauptbeschwerde": "Colafarbener Urin seit einem Tag während einer Halsentzündung"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit drei Tagen Halsschmerzen und Schnupfen. Seit gestern dunkelbrauner, colafarbener Urin ohne Schmerzen beim Wasserlassen. Leichte Flankenschmerzen beidseits. Vor einem Jahr schon einmal kurz roter Urin bei einer Erkältung. Kein Fieber über 38 °C.",
+      "vorerkrankungen": "Keine.",
+      "medikamente": "Keine.",
+      "allergien": "Hausstaubmilben",
+      "familienanamnese": "Keine Nierenerkrankungen bekannt.",
+      "sozialanamnese": "Ledig, Informatikstudent. Nichtraucher, Alkohol selten. Fitnessstudio."
+    },
+    "sprache": [
+      {
+        "patient": "Mein Urin sieht aus wie Cola.",
+        "fach": "Es besteht eine schmerzlose Makrohämaturie."
+      },
+      {
+        "patient": "Das kam gleichzeitig mit der Halsentzündung.",
+        "fach": "Die Hämaturie trat synpharyngitisch auf."
+      },
+      {
+        "patient": "Das hatte ich vor einem Jahr bei einer Erkältung schon mal.",
+        "fach": "Anamnestisch bestand bereits eine rezidivierende Makrohämaturie im Rahmen eines Infekts."
+      }
+    ],
+    "terms": [
+      {
+        "de": "IgA-Nephropathie",
+        "patient": "Nierenentzündung durch bestimmte Antikörper (IgA)",
+        "uz": "IgA-nefropatiya",
+        "ru": "IgA-нефропатия",
+        "tr": "IgA nefropatisi",
+        "en": "IgA nephropathy"
+      },
+      {
+        "de": "Makrohämaturie",
+        "patient": "sichtbares Blut im Urin",
+        "uz": "ko‘zga ko‘rinadigan qonli siydik",
+        "ru": "макрогематурия",
+        "tr": "makroskopik hematüri",
+        "en": "visible haematuria"
+      },
+      {
+        "de": "Glomerulonephritis",
+        "patient": "Entzündung der Nierenkörperchen",
+        "uz": "glomerulonefrit",
+        "ru": "гломерулонефрит",
+        "tr": "glomerülonefrit",
+        "en": "glomerulonephritis"
+      },
+      {
+        "de": "Akanthozyten",
+        "patient": "veränderte rote Blutkörperchen im Urin, typisch für Nierenentzündung",
+        "uz": "akantotsitlar (shakli o‘zgargan eritrotsitlar)",
+        "ru": "акантоциты",
+        "tr": "akantositler",
+        "en": "acanthocytes"
+      },
+      {
+        "de": "ACE-Hemmer",
+        "patient": "Blutdruckmittel, das auch die Niere schützt",
+        "uz": "AAF ingibitori",
+        "ru": "ингибитор АПФ",
+        "tr": "ACE inhibitörü",
+        "en": "ACE inhibitor"
+      }
+    ],
+    "simulation": {
+      "opening": "Mein Urin ist seit gestern ganz dunkel, wie Cola. Das macht mir Angst.",
+      "answers": {
+        "beginn": "Seit gestern früh. Halsschmerzen habe ich schon seit drei Tagen.",
+        "lokalisation": "Im Rücken links und rechts drückt es ein bisschen.",
+        "charakter": "Ein leichtes Drücken, zwei von zehn. Beim Wasserlassen tut nichts weh.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Halsschmerzen und Schnupfen. Fieber nur leicht, unter 38.",
+        "vegetativ": "Ich muss normal oft Wasser lassen, nur die Farbe ist braun. Stuhlgang normal.",
+        "vorerkrankungen": "Eigentlich nichts. Aber vor einem Jahr war der Urin bei einer Erkältung auch mal kurz rot.",
+        "medikamente": "Ich nehme keine Medikamente.",
+        "allergien": "Gegen Hausstaubmilben.",
+        "familie": "Mit der Niere hat in der Familie niemand etwas.",
+        "sozial": "Ich studiere Informatik und gehe ins Fitnessstudio.",
+        "noxen": "Ich rauche nicht, Alkohol selten. Keine Proteinpulver oder sonstige Mittel."
+      }
+    },
+    "verdachtsdiagnose": "IgA-Nephropathie mit synpharyngitischer Makrohämaturie",
+    "diagnoseKeywords": ["iga-nephropathie", "iga nephropathie", "morbus berger"],
+    "differenzialdiagnosen": [
+      "Postinfektiöse Glomerulonephritis (Latenz 1–3 Wochen)",
+      "Alport-Syndrom",
+      "Urolithiasis",
+      "Rhabdomyolyse (Myoglobinurie nach Training)",
+      "Harnwegsinfekt"
+    ],
+    "untersuchungen": [
+      "Urinstatus und Sediment (dysmorphe Erythrozyten, Akanthozyten, Erythrozytenzylinder)",
+      "Proteinurie (Albumin-Kreatinin-Quotient)",
+      "Kreatinin, eGFR, CK",
+      "Blutdruckmessung",
+      "Nierensonographie",
+      "Nierenbiopsie (IgA-Ablagerungen)"
+    ]
+  },
+  {
+    "id": "c188",
+    "title": "Metformin-assoziierte Laktatazidose",
+    "category": "Nephrologie",
+    "difficulty": "schwer",
+    "patient": {
+      "name": "Ursula Hainbach",
+      "age": 74,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Schwäche, schnelle tiefe Atmung und Bauchschmerzen nach mehreren Tagen Durchfall"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit vier Tagen wässriger Durchfall und Erbrechen nach einem Familienfest, kaum getrunken. Seit gestern zunehmende Schwäche, diffuse Bauchschmerzen, Muskelschmerzen, schnelle tiefe Atmung. Heute verwirrt laut Tochter. Metformin und Ramipril wurden weiter eingenommen.",
+      "vorerkrankungen": "Diabetes mellitus Typ 2, arterielle Hypertonie, chronische Niereninsuffizienz Stadium 3a (eGFR 50 ml/min).",
+      "medikamente": "Metformin 1000 mg 1-0-1, Ramipril 10 mg, Torasemid 10 mg, Simvastatin 20 mg.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Verwitwet, lebt allein, Tochter in der Nähe. Nichtraucherin, kein Alkohol."
+    },
+    "sprache": [
+      {
+        "patient": "Sie atmet so schnell und tief, als wäre sie gerannt.",
+        "fach": "Es besteht eine Kussmaul-Atmung als respiratorische Kompensation einer metabolischen Azidose."
+      },
+      {
+        "patient": "Ich habe die Zuckertabletten trotz Durchfall weiter genommen.",
+        "fach": "Die Metformin-Einnahme wurde trotz Gastroenteritis und Exsikkose fortgesetzt."
+      },
+      {
+        "patient": "Meine Mutter ist heute ganz durcheinander.",
+        "fach": "Die Patientin ist zeitlich und örtlich desorientiert (Vigilanzminderung)."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Laktatazidose",
+        "patient": "Übersäuerung des Blutes durch Milchsäure",
+        "uz": "laktatatsidoz",
+        "ru": "лактатацидоз",
+        "tr": "laktik asidoz",
+        "en": "lactic acidosis"
+      },
+      {
+        "de": "Kussmaul-Atmung",
+        "patient": "sehr tiefe, schnelle Atmung",
+        "uz": "Kussmaul nafasi",
+        "ru": "дыхание Куссмауля",
+        "tr": "Kussmaul solunumu",
+        "en": "Kussmaul breathing"
+      },
+      {
+        "de": "Anionenlücke",
+        "patient": "Laborwert, der bestimmte Säuren im Blut anzeigt",
+        "uz": "anion oralig‘i",
+        "ru": "анионный интервал",
+        "tr": "anyon açığı",
+        "en": "anion gap"
+      },
+      {
+        "de": "Exsikkose",
+        "patient": "Austrocknung des Körpers",
+        "uz": "suvsizlanish (ekssikkoz)",
+        "ru": "эксикоз (обезвоживание)",
+        "tr": "dehidratasyon",
+        "en": "dehydration"
+      },
+      {
+        "de": "Hämodialyse",
+        "patient": "Blutwäsche",
+        "uz": "gemodializ",
+        "ru": "гемодиализ",
+        "tr": "hemodiyaliz",
+        "en": "haemodialysis"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich bin so schwach, ich bekomme kaum Luft, und der Bauch tut weh.",
+      "answers": {
+        "beginn": "Der Durchfall fing vor vier Tagen nach der Geburtstagsfeier an. Seit gestern bin ich so schwach.",
+        "lokalisation": "Der ganze Bauch tut weh, und die Muskeln überall.",
+        "charakter": "Ein dumpfer Schmerz, fünf von zehn.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Ich habe Durchfall und habe gebrochen. Ich atme so schnell. Meine Tochter sagt, ich bin heute durcheinander.",
+        "vegetativ": "Ich habe kaum getrunken und muss fast kein Wasser lassen.",
+        "vorerkrankungen": "Ich habe Zucker, hohen Blutdruck und die Nieren sind nicht mehr so gut.",
+        "medikamente": "Metformin morgens und abends 1000, Ramipril, eine Wassertablette und Simvastatin. Ich habe alles weiter genommen.",
+        "allergien": "Nein.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich bin verwitwet und lebe allein. Meine Tochter wohnt um die Ecke.",
+        "noxen": "Ich rauche nicht und trinke keinen Alkohol."
+      }
+    },
+    "verdachtsdiagnose": "Metformin-assoziierte Laktatazidose bei akutem prärenalem Nierenversagen durch Exsikkose",
+    "diagnoseKeywords": ["laktatazidose", "lactatazidose"],
+    "differenzialdiagnosen": [
+      "Diabetische Ketoazidose",
+      "Septischer Schock",
+      "Mesenterialischämie",
+      "Urämische Azidose",
+      "Intoxikation (z. B. Methanol, Ethylenglykol)"
+    ],
+    "untersuchungen": [
+      "Blutgasanalyse mit Laktat und Anionenlücke",
+      "Kreatinin, Harnstoff, Kalium, Natrium",
+      "Blutzucker, Ketone",
+      "Blutbild, CRP, Blutkulturen",
+      "Metforminspiegel",
+      "EKG (Hyperkaliämie)"
+    ],
+    "oberarzt": {
+      "therapie": [
+        "Metformin, Ramipril und Torasemid sofort absetzen",
+        "Volumentherapie mit kristalloiden Lösungen",
+        "Intensivmedizinische Überwachung",
+        "Hämodialyse bei schwerer Azidose oder Nierenversagen",
+        "Natriumbikarbonat nur bei sehr niedrigem pH (zurückhaltend)"
+      ],
+      "komplikationen": [
+        "Kreislaufversagen, Herzrhythmusstörungen",
+        "Hyperkaliämie",
+        "Dialysepflichtiges Nierenversagen",
+        "Multiorganversagen",
+        "Hohe Letalität"
+      ]
+    }
+  },
+  {
+    "id": "c189",
+    "title": "Primärer Hyperaldosteronismus (Conn-Syndrom)",
+    "category": "Endokrinologie",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Volker Assmann",
+      "age": 46,
+      "gender": "männlich",
+      "hauptbeschwerde": "Schwer einstellbarer Bluthochdruck, Muskelschwäche und Wadenkrämpfe"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit zwei Jahren Bluthochdruck, trotz drei Medikamenten Werte um 170/100 mmHg. Seit Monaten Muskelschwäche, nächtliche Wadenkrämpfe, viel Durst und häufiges nächtliches Wasserlassen. Kopfschmerzen morgens. Hausarzt: Kalium 2,9 mmol/l.",
+      "vorerkrankungen": "Arterielle Hypertonie seit 2 Jahren.",
+      "medikamente": "Amlodipin 10 mg, Candesartan 16 mg, Hydrochlorothiazid 25 mg.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Mutter Schlaganfall mit 62 Jahren.",
+      "sozialanamnese": "Verheiratet, zwei Kinder, Versicherungskaufmann. Nichtraucher, Alkohol gelegentlich. Kein Lakritzkonsum."
+    },
+    "sprache": [
+      {
+        "patient": "Mein Blutdruck geht trotz drei Tabletten nicht runter.",
+        "fach": "Es besteht eine therapieresistente arterielle Hypertonie unter Dreifachtherapie."
+      },
+      {
+        "patient": "Ich habe nachts oft Krämpfe in den Waden.",
+        "fach": "Der Patient klagt über nächtliche Wadenkrämpfe, passend zu einer Hypokaliämie."
+      },
+      {
+        "patient": "Ich muss nachts drei-, viermal zur Toilette.",
+        "fach": "Es bestehen Polyurie, Nykturie und Polydipsie."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Hyperaldosteronismus",
+        "patient": "zu viel von einem Hormon aus der Nebenniere (Aldosteron)",
+        "uz": "giperaldosteronizm",
+        "ru": "гиперальдостеронизм",
+        "tr": "hiperaldosteronizm",
+        "en": "hyperaldosteronism"
+      },
+      {
+        "de": "Hypokaliämie",
+        "patient": "zu wenig Kalium im Blut",
+        "uz": "qonda kaliy kamligi",
+        "ru": "гипокалиемия",
+        "tr": "hipokalemi",
+        "en": "hypokalaemia"
+      },
+      {
+        "de": "Aldosteron-Renin-Quotient",
+        "patient": "Bluttest für die Nebennierenhormone",
+        "uz": "aldosteron-renin nisbati",
+        "ru": "альдостерон-рениновое соотношение",
+        "tr": "aldosteron-renin oranı",
+        "en": "aldosterone-to-renin ratio"
+      },
+      {
+        "de": "Nebennierenadenom",
+        "patient": "gutartiger Knoten in der Nebenniere",
+        "uz": "buyrak usti bezi adenomasi",
+        "ru": "аденома надпочечника",
+        "tr": "adrenal adenom",
+        "en": "adrenal adenoma"
+      },
+      {
+        "de": "Spironolacton",
+        "patient": "Medikament, das Aldosteron blockiert",
+        "uz": "spironolakton",
+        "ru": "спиронолактон",
+        "tr": "spironolakton",
+        "en": "spironolactone"
+      }
+    ],
+    "simulation": {
+      "opening": "Mein Blutdruck ist immer zu hoch, obwohl ich drei Tabletten nehme, und ich bin so schlapp.",
+      "answers": {
+        "beginn": "Den hohen Blutdruck habe ich seit zwei Jahren. Die Schwäche und die Krämpfe seit ein paar Monaten.",
+        "lokalisation": "Die Krämpfe sind in den Waden. Die Schwäche ist eher in den Beinen und Armen.",
+        "charakter": "Die Krämpfe sind sehr schmerzhaft, nachts. Kopfschmerzen morgens, drückend, drei von zehn.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Ich habe viel Durst und muss nachts drei-, viermal zur Toilette. Manchmal Herzstolpern.",
+        "vegetativ": "Appetit normal, Gewicht stabil. Stuhlgang normal.",
+        "vorerkrankungen": "Nur der Blutdruck.",
+        "medikamente": "Amlodipin 10, Candesartan 16 und Hydrochlorothiazid 25.",
+        "allergien": "Keine.",
+        "familie": "Meine Mutter hatte mit 62 einen Schlaganfall.",
+        "sozial": "Ich bin verheiratet, zwei Kinder, und arbeite im Büro bei einer Versicherung.",
+        "noxen": "Ich rauche nicht. Alkohol selten. Lakritz esse ich nicht."
+      }
+    },
+    "verdachtsdiagnose": "Primärer Hyperaldosteronismus (Conn-Syndrom) mit therapieresistenter Hypertonie und Hypokaliämie",
+    "diagnoseKeywords": ["hyperaldosteronismus", "conn"],
+    "differenzialdiagnosen": [
+      "Diuretikainduzierte Hypokaliämie",
+      "Nierenarterienstenose (sekundärer Hyperaldosteronismus)",
+      "Cushing-Syndrom",
+      "Phäochromozytom",
+      "Lakritzabusus"
+    ],
+    "untersuchungen": [
+      "Kalium, Natrium, Kreatinin",
+      "Aldosteron-Renin-Quotient (nach Medikamentenumstellung)",
+      "Bestätigungstest (Kochsalzbelastungstest)",
+      "CT oder MRT der Nebennieren",
+      "Selektive Nebennierenvenenblutentnahme",
+      "24-h-Blutdruckmessung, EKG"
+    ]
+  },
+  {
+    "id": "c190",
+    "title": "Diabetisches Fußsyndrom mit Infektion",
+    "category": "Endokrinologie",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Branko Jovanović",
+      "age": 67,
+      "gender": "männlich",
+      "hauptbeschwerde": "Eiternde Wunde an der Fußsohle, die er kaum spürt"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit drei Wochen Wunde unter dem rechten Großzehenballen, entstanden durch neue Schuhe. Kaum Schmerzen. Seit vier Tagen Rötung und Schwellung des Vorfußes, eitriges Sekret, übler Geruch. Fieber bis 38,4 °C. Blutzucker zuletzt über 300 mg/dl. Seit Jahren Taubheitsgefühl und Kribbeln in beiden Füßen.",
+      "vorerkrankungen": "Diabetes mellitus Typ 2 seit 18 Jahren (HbA1c 9,6 %), diabetische Polyneuropathie, KHK mit Stent 2021, arterielle Hypertonie.",
+      "medikamente": "Insulin glargin 30 IE abends, Metformin 1000 mg 1-0-1, ASS 100 mg, Atorvastatin 40 mg, Ramipril 5 mg.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Mutter Diabetes, Amputation des Unterschenkels.",
+      "sozialanamnese": "Verheiratet, Rentner (Bauarbeiter). Raucher, 40 Packungsjahre. Bier abends."
+    },
+    "sprache": [
+      {
+        "patient": "Ich spüre meine Füße kaum noch, nur so ein Kribbeln.",
+        "fach": "Es besteht eine sensible diabetische Polyneuropathie mit Parästhesien."
+      },
+      {
+        "patient": "Die Wunde riecht schlecht, und es kommt Eiter raus.",
+        "fach": "Das Ulkus sezerniert eitrig und ist foetide."
+      },
+      {
+        "patient": "Die Wunde ist von den neuen Schuhen gekommen.",
+        "fach": "Das Ulkus entstand druckbedingt durch ungeeignetes Schuhwerk."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Diabetisches Fußsyndrom",
+        "patient": "Wunden und Entzündungen am Fuß durch Zucker",
+        "uz": "diabetik oyoq sindromi",
+        "ru": "синдром диабетической стопы",
+        "tr": "diyabetik ayak sendromu",
+        "en": "diabetic foot syndrome"
+      },
+      {
+        "de": "Polyneuropathie",
+        "patient": "Nervenschaden, man spürt die Füße schlechter",
+        "uz": "polineyropatiya",
+        "ru": "полинейропатия",
+        "tr": "polinöropati",
+        "en": "polyneuropathy"
+      },
+      {
+        "de": "Osteomyelitis",
+        "patient": "Knochenentzündung",
+        "uz": "osteomiyelit (suyak yallig‘lanishi)",
+        "ru": "остеомиелит",
+        "tr": "osteomiyelit",
+        "en": "osteomyelitis"
+      },
+      {
+        "de": "Débridement",
+        "patient": "Entfernung von abgestorbenem Gewebe aus der Wunde",
+        "uz": "o‘lik to‘qimani olib tashlash (debridman)",
+        "ru": "хирургическая обработка раны (дебридмент)",
+        "tr": "debridman",
+        "en": "debridement"
+      },
+      {
+        "de": "Druckentlastung",
+        "patient": "den Fuß nicht belasten, z. B. mit Spezialschuh",
+        "uz": "oyoqqa bosimni kamaytirish",
+        "ru": "разгрузка стопы",
+        "tr": "basının kaldırılması (yük boşaltma)",
+        "en": "offloading"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe eine Wunde unter dem Fuß, die nicht heilt, und jetzt ist der Fuß ganz rot und dick.",
+      "answers": {
+        "beginn": "Die Wunde habe ich seit drei Wochen, die Rötung seit vier Tagen.",
+        "lokalisation": "Unten am rechten Fuß, am Ballen vom großen Zeh.",
+        "charakter": "Es tut kaum weh, das ist ja das Komische. Vielleicht zwei von zehn.",
+        "ausstrahlung": "Die Rötung geht jetzt bis zum Fußrücken.",
+        "begleit": "Es kommt Eiter raus und es riecht schlecht. Ich hatte Fieber, 38,4. Der Zucker ist über 300.",
+        "vegetativ": "Ich habe Durst und muss viel Wasser lassen. Sonst normal.",
+        "vorerkrankungen": "Ich habe seit 18 Jahren Zucker, die Füße sind seit Jahren taub. Ich habe einen Stent im Herzen seit 2021 und hohen Blutdruck.",
+        "medikamente": "Insulin Lantus 30 Einheiten abends, Metformin, ASS, Atorvastatin und Ramipril.",
+        "allergien": "Nein.",
+        "familie": "Meine Mutter hatte auch Zucker, ihr wurde das Bein abgenommen.",
+        "sozial": "Ich bin verheiratet und Rentner, früher war ich Bauarbeiter.",
+        "noxen": "Ich rauche seit 40 Jahren eine Schachtel. Abends zwei Bier."
+      }
+    },
+    "verdachtsdiagnose": "Infiziertes diabetisches Fußsyndrom rechts (Wagner 3) mit Verdacht auf Osteomyelitis bei Polyneuropathie",
+    "diagnoseKeywords": [
+      "diabetisches fußsyndrom",
+      "diabetischer fuß",
+      "diabetisches fusssyndrom",
+      "malum perforans"
+    ],
+    "differenzialdiagnosen": [
+      "Charcot-Fuß (diabetische Neuroosteoarthropathie)",
+      "Erysipel",
+      "Ischämisches Ulkus bei pAVK",
+      "Gichtarthritis",
+      "Nekrotisierende Fasziitis"
+    ],
+    "untersuchungen": [
+      "Wundinspektion, Sondierung bis auf den Knochen (Probe-to-bone)",
+      "Wundabstrich und Blutkulturen",
+      "Röntgen des Fußes, ggf. MRT (Osteomyelitis)",
+      "Fußpulse, Knöchel-Arm-Index, Duplexsonographie",
+      "Blutzucker, HbA1c, CRP, Blutbild, Kreatinin",
+      "Monofilament- und Stimmgabeltest"
+    ]
+  },
+  {
+    "id": "c191",
+    "title": "Exogen-allergische Alveolitis (Vogelhalterlunge)",
+    "category": "Pneumologie",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Reinhard Kowalczyk",
+      "age": 55,
+      "gender": "männlich",
+      "hauptbeschwerde": "Wiederkehrender Husten, Fieber und Atemnot einige Stunden nach dem Taubenschlag"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit drei Monaten immer wieder trockener Husten, Fieber bis 38,5 °C, Schüttelfrost, Gliederschmerzen und Atemnot, jeweils 4–8 Stunden nachdem er seine Brieftauben versorgt hat. Am Wochenende im Urlaub ohne Tauben beschwerdefrei. Zunehmende Belastungsdyspnoe, 4 kg Gewichtsverlust. Zweimal Antibiotika vom Hausarzt ohne Wirkung.",
+      "vorerkrankungen": "Keine.",
+      "medikamente": "Keine.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Verheiratet, Elektriker. Hobby: Brieftaubenzucht seit 3 Jahren (40 Tauben). Nichtraucher, Alkohol selten."
+    },
+    "sprache": [
+      {
+        "patient": "Immer abends, nachdem ich bei den Tauben war, bekomme ich Fieber und Husten.",
+        "fach": "Die Beschwerden treten 4–8 Stunden nach Antigenexposition (Vogelkot, Federstaub) auf."
+      },
+      {
+        "patient": "Im Urlaub ging es mir gut.",
+        "fach": "Bei Expositionskarenz besteht Beschwerdefreiheit."
+      },
+      {
+        "patient": "Treppensteigen schaffe ich kaum noch.",
+        "fach": "Es besteht eine zunehmende Belastungsdyspnoe."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Exogen-allergische Alveolitis",
+        "patient": "Lungenentzündung durch eine Allergie auf eingeatmeten Staub",
+        "uz": "ekzogen allergik alveolit",
+        "ru": "экзогенный аллергический альвеолит",
+        "tr": "hipersensitivite pnömonisi",
+        "en": "hypersensitivity pneumonitis"
+      },
+      {
+        "de": "Präzipitierende Antikörper",
+        "patient": "Abwehrstoffe im Blut gegen Vogelstaub",
+        "uz": "pretsipitatsiyalovchi antitanachalar",
+        "ru": "преципитирующие антитела",
+        "tr": "presipitan antikorlar",
+        "en": "precipitating antibodies"
+      },
+      {
+        "de": "Bronchoalveoläre Lavage",
+        "patient": "Spülung der Lunge bei einer Lungenspiegelung",
+        "uz": "bronxoalveolyar lavaj",
+        "ru": "бронхоальвеолярный лаваж",
+        "tr": "bronkoalveolar lavaj",
+        "en": "bronchoalveolar lavage"
+      },
+      {
+        "de": "Diffusionskapazität",
+        "patient": "wie gut der Sauerstoff aus der Lunge ins Blut geht",
+        "uz": "diffuziya qobiliyati",
+        "ru": "диффузионная способность лёгких",
+        "tr": "difüzyon kapasitesi",
+        "en": "diffusing capacity"
+      },
+      {
+        "de": "Antigenkarenz",
+        "patient": "den Auslöser konsequent meiden",
+        "uz": "allergenni butunlay chetlash",
+        "ru": "элиминация антигена",
+        "tr": "antijenden kaçınma",
+        "en": "antigen avoidance"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe seit Monaten immer wieder Fieber und Husten, und die Antibiotika helfen nicht.",
+      "answers": {
+        "beginn": "Seit etwa drei Monaten, immer wieder. Meistens abends.",
+        "lokalisation": "In der Brust, und die Glieder tun weh.",
+        "charakter": "Trockener Husten, und ich fühle mich wie bei einer Grippe.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Fieber bis 38,5, Schüttelfrost und Luftnot. Beim Treppensteigen muss ich stehen bleiben. Ich habe vier Kilo abgenommen.",
+        "vegetativ": "Appetit ist weniger. Nachtschweiß manchmal.",
+        "vorerkrankungen": "Ich war nie krank.",
+        "medikamente": "Nichts, nur zweimal Antibiotika vom Hausarzt, hat nichts gebracht.",
+        "allergien": "Nicht dass ich wüsste.",
+        "familie": "Nichts.",
+        "sozial": "Ich bin Elektriker. Mein Hobby sind Brieftauben, ich habe 40 Stück, seit drei Jahren. Das Komische ist: Es geht immer los, nachdem ich den Schlag sauber gemacht habe. Im Urlaub war alles gut.",
+        "noxen": "Ich habe nie geraucht. Alkohol selten."
+      }
+    },
+    "verdachtsdiagnose": "Exogen-allergische Alveolitis (Vogelhalterlunge) bei Brieftaubenhaltung",
+    "diagnoseKeywords": [
+      "alveolitis",
+      "vogelhalterlunge",
+      "taubenzüchterlunge",
+      "hypersensitivitätspneumonitis"
+    ],
+    "differenzialdiagnosen": [
+      "Atypische Pneumonie",
+      "Ornithose (Psittakose)",
+      "Sarkoidose",
+      "Idiopathische Lungenfibrose",
+      "Asthma bronchiale"
+    ],
+    "untersuchungen": [
+      "Röntgen-Thorax, hochauflösendes CT (Milchglas, Mosaik)",
+      "Lungenfunktion mit Diffusionskapazität",
+      "Präzipitierende IgG-Antikörper gegen Vogelantigene",
+      "Bronchoskopie mit BAL (Lymphozytose, CD4/CD8 erniedrigt)",
+      "Blutgasanalyse",
+      "Blutbild, CRP"
+    ]
+  },
+  {
+    "id": "c192",
+    "title": "Malignes Pleuramesotheliom",
+    "category": "Pneumologie",
+    "difficulty": "schwer",
+    "patient": {
+      "name": "Heinrich Stellmacher",
+      "age": 71,
+      "gender": "männlich",
+      "hauptbeschwerde": "Zunehmende Atemnot und dumpfe Schmerzen in der rechten Brustseite"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit vier Monaten zunehmende Belastungsdyspnoe, inzwischen schon beim Anziehen. Dumpfe, ständige Schmerzen rechts im Brustkorb, nachts schlimmer. 8 kg ungewollter Gewichtsverlust, Nachtschweiß. Trockener Reizhusten. Kein Fieber.",
+      "vorerkrankungen": "Pleuraplaques bekannt (Zufallsbefund 2019), arterielle Hypertonie.",
+      "medikamente": "Ramipril 5 mg, Ibuprofen bei Bedarf.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Verheiratet, Rentner. 1972–1990 Werftarbeiter, Isolierung mit Asbest ohne Schutz. Ehemaliger Raucher, 20 Packungsjahre, seit 25 Jahren rauchfrei."
+    },
+    "sprache": [
+      {
+        "patient": "Früher auf der Werft haben wir mit Asbest gearbeitet, ohne Maske.",
+        "fach": "Es besteht eine langjährige berufliche Asbestexposition."
+      },
+      {
+        "patient": "Ich habe ohne Diät acht Kilo abgenommen und schwitze nachts.",
+        "fach": "Es liegt eine B-Symptomatik mit ungewolltem Gewichtsverlust von 8 kg und Nachtschweiß vor."
+      },
+      {
+        "patient": "Rechts in der Brust tut es dumpf weh, nachts mehr.",
+        "fach": "Es bestehen persistierende, dumpfe Thoraxschmerzen rechts mit nächtlicher Zunahme."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Pleuramesotheliom",
+        "patient": "bösartiger Tumor des Rippenfells",
+        "uz": "plevra mezoteliomasi",
+        "ru": "мезотелиома плевры",
+        "tr": "plevral mezotelyoma",
+        "en": "pleural mesothelioma"
+      },
+      {
+        "de": "Pleuraerguss",
+        "patient": "Flüssigkeit zwischen Lunge und Brustwand",
+        "uz": "plevra bo‘shlig‘ida suyuqlik",
+        "ru": "плевральный выпот",
+        "tr": "plevral efüzyon",
+        "en": "pleural effusion"
+      },
+      {
+        "de": "Thorakoskopie",
+        "patient": "Spiegelung des Brustraums mit Gewebeentnahme",
+        "uz": "torakoskopiya",
+        "ru": "торакоскопия",
+        "tr": "torakoskopi",
+        "en": "thoracoscopy"
+      },
+      {
+        "de": "Pleurodese",
+        "patient": "Verkleben von Rippenfell und Lungenfell, damit kein Wasser nachläuft",
+        "uz": "plevrodez",
+        "ru": "плевродез",
+        "tr": "plörodez",
+        "en": "pleurodesis"
+      },
+      {
+        "de": "Berufskrankheit",
+        "patient": "Krankheit durch die Arbeit, wird bei der Berufsgenossenschaft gemeldet",
+        "uz": "kasb kasalligi",
+        "ru": "профессиональное заболевание",
+        "tr": "meslek hastalığı",
+        "en": "occupational disease"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich bekomme immer schlechter Luft, und rechts in der Brust tut es dauernd weh.",
+      "answers": {
+        "beginn": "Seit etwa vier Monaten, es wird langsam immer schlimmer.",
+        "lokalisation": "Rechts in der Brust, eher seitlich.",
+        "charakter": "Dumpf und ständig da, nachts schlimmer. Sechs von zehn.",
+        "ausstrahlung": "Manchmal in die rechte Schulter.",
+        "begleit": "Ich bekomme schon beim Anziehen Luftnot. Trockener Husten. Kein Fieber.",
+        "vegetativ": "Ich habe acht Kilo abgenommen, ohne es zu wollen, und schwitze nachts.",
+        "vorerkrankungen": "Hoher Blutdruck. 2019 hat man auf dem Röntgenbild Plaques am Rippenfell gesehen.",
+        "medikamente": "Ramipril 5, und gegen die Schmerzen Ibuprofen.",
+        "allergien": "Nein.",
+        "familie": "Nichts.",
+        "sozial": "Ich bin verheiratet und Rentner. Von 1972 bis 1990 war ich auf der Werft, da haben wir Rohre mit Asbest isoliert, ohne Maske.",
+        "noxen": "Ich habe 20 Jahre geraucht, aber vor 25 Jahren aufgehört."
+      }
+    },
+    "verdachtsdiagnose": "Malignes Pleuramesotheliom rechts mit Pleuraerguss nach beruflicher Asbestexposition",
+    "diagnoseKeywords": ["mesotheliom"],
+    "differenzialdiagnosen": [
+      "Bronchialkarzinom mit Pleurakarzinose",
+      "Pleurametastasen anderer Tumoren",
+      "Tuberkulöse Pleuritis",
+      "Benigner Asbestpleuraerguss",
+      "Herzinsuffizienz mit Pleuraerguss"
+    ],
+    "untersuchungen": [
+      "Röntgen-Thorax und CT-Thorax mit Kontrastmittel",
+      "Pleurapunktion mit Zytologie",
+      "Thorakoskopie mit Pleurabiopsie (Histologie)",
+      "Lungenfunktion",
+      "PET-CT zum Staging",
+      "Meldung als Berufskrankheit"
+    ],
+    "oberarzt": {
+      "therapie": [
+        "Entlastungspunktion bzw. Pleurodese (Talkum)",
+        "Dauerhafter Pleurakatheter",
+        "Systemtherapie: Immuntherapie (Nivolumab plus Ipilimumab) oder Chemotherapie",
+        "Interdisziplinäre Tumorkonferenz",
+        "Palliativmedizin, Schmerztherapie"
+      ],
+      "komplikationen": [
+        "Rezidivierender Pleuraerguss",
+        "Respiratorische Insuffizienz",
+        "Tumorinfiltration der Brustwand (Schmerzen)",
+        "Kachexie",
+        "Impfmetastasen im Punktionskanal"
+      ]
+    }
+  },
+  {
+    "id": "c193",
+    "title": "Benigner paroxysmaler Lagerungsschwindel",
+    "category": "Allgemeinmedizin",
+    "difficulty": "leicht",
+    "patient": {
+      "name": "Gisela Brückner",
+      "age": 66,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Kurze heftige Drehschwindelattacken beim Umdrehen im Bett"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit fünf Tagen heftiger Drehschwindel für jeweils 20–30 Sekunden, ausgelöst beim Hinlegen, beim Umdrehen nach rechts im Bett und beim Blick nach oben. Dabei Übelkeit, einmal Erbrechen. Zwischen den Attacken beschwerdefrei. Kein Hörverlust, kein Tinnitus, keine Doppelbilder, keine Lähmungen, keine Sprachstörungen.",
+      "vorerkrankungen": "Arterielle Hypertonie, Osteoporose. Vor drei Wochen Sturz auf den Hinterkopf ohne Bewusstlosigkeit.",
+      "medikamente": "Candesartan 8 mg, Alendronsäure 70 mg wöchentlich, Vitamin D.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Verwitwet, lebt allein, pensionierte Sekretärin. Nichtraucherin, Alkohol selten."
+    },
+    "sprache": [
+      {
+        "patient": "Wenn ich mich im Bett nach rechts drehe, dreht sich alles.",
+        "fach": "Es besteht ein lageabhängiger Drehschwindel bei Rechtsseitenlage."
+      },
+      {
+        "patient": "Das dauert nur so eine halbe Minute.",
+        "fach": "Die Schwindelattacken dauern unter einer Minute."
+      },
+      {
+        "patient": "Ich höre gut und habe kein Ohrensausen.",
+        "fach": "Hörminderung und Tinnitus werden verneint."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Lagerungsschwindel",
+        "patient": "Schwindel, der bei bestimmten Kopfbewegungen kommt",
+        "uz": "holatga bog‘liq bosh aylanishi",
+        "ru": "позиционное головокружение",
+        "tr": "pozisyonel vertigo",
+        "en": "positional vertigo"
+      },
+      {
+        "de": "Nystagmus",
+        "patient": "unwillkürliches Augenzucken",
+        "uz": "nistagm (ko‘z soqqasining ixtiyorsiz harakati)",
+        "ru": "нистагм",
+        "tr": "nistagmus",
+        "en": "nystagmus"
+      },
+      {
+        "de": "Dix-Hallpike-Manöver",
+        "patient": "Lagerungstest, bei dem der Kopf schnell nach hinten gelegt wird",
+        "uz": "Dix-Hallpike sinovi",
+        "ru": "проба Дикса–Холлпайка",
+        "tr": "Dix-Hallpike manevrası",
+        "en": "Dix-Hallpike manoeuvre"
+      },
+      {
+        "de": "Epley-Manöver",
+        "patient": "Lagerungsübung, die die Kristalle im Ohr zurückbringt",
+        "uz": "Epley manevri",
+        "ru": "манёвр Эпли",
+        "tr": "Epley manevrası",
+        "en": "Epley manoeuvre"
+      },
+      {
+        "de": "Otolithen",
+        "patient": "kleine Kristalle im Innenohr",
+        "uz": "otolitlar (ichki quloqdagi kristallar)",
+        "ru": "отолиты",
+        "tr": "otolitler",
+        "en": "otoliths"
+      }
+    ],
+    "simulation": {
+      "opening": "Mir wird so schwindelig, wenn ich mich im Bett umdrehe, als ob sich alles dreht.",
+      "answers": {
+        "beginn": "Seit fünf Tagen. Zum ersten Mal morgens beim Aufstehen.",
+        "lokalisation": "Es ist im Kopf, alles dreht sich wie im Karussell.",
+        "charakter": "Ein Drehschwindel, sehr heftig, aber nur eine halbe Minute.",
+        "ausstrahlung": "—",
+        "begleit": "Mir ist dabei übel, einmal musste ich brechen. Hören tue ich gut, kein Ohrensausen. Keine Doppelbilder, keine Lähmung.",
+        "vegetativ": "Sonst ist alles normal, Appetit, Stuhlgang, Wasserlassen.",
+        "vorerkrankungen": "Hoher Blutdruck und Osteoporose. Vor drei Wochen bin ich gestürzt und auf den Hinterkopf gefallen, war aber nicht bewusstlos.",
+        "medikamente": "Candesartan 8, einmal in der Woche Alendronsäure und Vitamin D.",
+        "allergien": "Nein.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich bin verwitwet und lebe allein, früher war ich Sekretärin.",
+        "noxen": "Ich rauche nicht, Alkohol ganz selten."
+      }
+    },
+    "verdachtsdiagnose": "Benigner paroxysmaler Lagerungsschwindel des rechten posterioren Bogengangs",
+    "diagnoseKeywords": ["lagerungsschwindel", "bppv", "bpls"],
+    "differenzialdiagnosen": [
+      "Neuritis vestibularis",
+      "Morbus Menière",
+      "Zentraler Schwindel (Kleinhirninfarkt, Hirnstamm-TIA)",
+      "Orthostatische Hypotonie",
+      "Vestibuläre Migräne"
+    ],
+    "untersuchungen": [
+      "Dix-Hallpike-Manöver (torsioneller Nystagmus)",
+      "Neurologische Untersuchung inkl. HINTS (Kopfimpulstest, Nystagmus, Skew)",
+      "Otoskopie, Stimmgabeltests",
+      "Blutdruck im Liegen und Stehen (Schellong-Test)",
+      "Bildgebung nur bei zentralen Zeichen"
+    ]
+  },
+  {
+    "id": "c194",
+    "title": "Erythema migrans nach Zeckenstich",
+    "category": "Allgemeinmedizin",
+    "difficulty": "leicht",
+    "patient": {
+      "name": "Florian Eckhardt",
+      "age": 38,
+      "gender": "männlich",
+      "hauptbeschwerde": "Größer werdender roter Ring am Oberschenkel nach Waldspaziergang"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Vor etwa drei Wochen Zecke am linken Oberschenkel nach Wanderung entfernt. Seit einer Woche dort eine sich langsam ausbreitende, nicht juckende Rötung, inzwischen 8 cm groß, in der Mitte blasser. Leichte Müdigkeit, Gliederschmerzen, kein Fieber. Keine Gelenkschwellungen, keine Lähmungen im Gesicht, keine Herzbeschwerden.",
+      "vorerkrankungen": "Keine.",
+      "medikamente": "Keine.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Verheiratet, Förster. Nichtraucher, Alkohol gelegentlich."
+    },
+    "sprache": [
+      {
+        "patient": "Der rote Kreis wird jeden Tag größer.",
+        "fach": "Es zeigt sich ein zentrifugal wanderndes Erythem."
+      },
+      {
+        "patient": "In der Mitte ist die Haut wieder heller.",
+        "fach": "Das Erythem ist zentral abgeblasst."
+      },
+      {
+        "patient": "Ich hatte vor drei Wochen eine Zecke.",
+        "fach": "Vor drei Wochen erfolgte ein Zeckenstich."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Erythema migrans",
+        "patient": "wandernde Rötung nach Zeckenstich",
+        "uz": "ko‘chib yuruvchi eritema",
+        "ru": "мигрирующая эритема",
+        "tr": "eritema migrans",
+        "en": "erythema migrans"
+      },
+      {
+        "de": "Lyme-Borreliose",
+        "patient": "durch Zecken übertragene Infektion mit Borrelien",
+        "uz": "Layme borreliozi",
+        "ru": "болезнь Лайма (боррелиоз)",
+        "tr": "Lyme hastalığı",
+        "en": "Lyme disease"
+      },
+      {
+        "de": "Doxycyclin",
+        "patient": "Antibiotikum",
+        "uz": "doksitsiklin",
+        "ru": "доксициклин",
+        "tr": "doksisiklin",
+        "en": "doxycycline"
+      },
+      {
+        "de": "Blickdiagnose",
+        "patient": "Diagnose, die man schon beim Anschauen stellen kann",
+        "uz": "ko‘rib qo‘yiladigan tashxis",
+        "ru": "диагноз по внешнему виду",
+        "tr": "görsel tanı",
+        "en": "spot diagnosis"
+      },
+      {
+        "de": "Fotosensibilität",
+        "patient": "Haut reagiert stärker auf Sonne",
+        "uz": "quyoshga sezuvchanlik",
+        "ru": "фоточувствительность",
+        "tr": "ışığa duyarlılık",
+        "en": "photosensitivity"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe so einen roten Fleck am Oberschenkel, der immer größer wird.",
+      "answers": {
+        "beginn": "Den Fleck habe ich seit ungefähr einer Woche. Die Zecke war vor drei Wochen.",
+        "lokalisation": "Am linken Oberschenkel, innen, da wo die Zecke war.",
+        "charakter": "Es tut nicht weh und juckt nicht. Er ist rund, jetzt so acht Zentimeter, und in der Mitte heller.",
+        "ausstrahlung": "Er wird jeden Tag ein bisschen größer.",
+        "begleit": "Ich bin etwas müde und die Glieder tun weh. Fieber habe ich nicht.",
+        "vegetativ": "Sonst ist alles normal.",
+        "vorerkrankungen": "Ich bin gesund.",
+        "medikamente": "Keine.",
+        "allergien": "Keine.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich bin verheiratet und arbeite als Förster, ich bin jeden Tag im Wald.",
+        "noxen": "Ich rauche nicht. Alkohol mal ein Bier."
+      }
+    },
+    "verdachtsdiagnose": "Erythema migrans (frühe lokalisierte Lyme-Borreliose) links am Oberschenkel",
+    "diagnoseKeywords": ["erythema migrans", "borreliose", "lyme"],
+    "differenzialdiagnosen": [
+      "Lokale Stichreaktion (unter 5 cm, früh)",
+      "Erysipel",
+      "Tinea corporis",
+      "Granuloma anulare",
+      "Kontaktdermatitis"
+    ],
+    "untersuchungen": [
+      "Inspektion und Ausmessen des Erythems (Blickdiagnose)",
+      "Keine Serologie nötig bei typischem Erythema migrans",
+      "Gelenk-, neurologische und kardiale Untersuchung",
+      "EKG bei Herzbeschwerden (AV-Block)",
+      "Fotodokumentation"
+    ]
+  },
+  {
+    "id": "c195",
+    "title": "Orthostatische Hypotonie bei Polypharmazie",
+    "category": "Allgemeinmedizin",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Wilhelm Ostendorf",
+      "age": 81,
+      "gender": "männlich",
+      "hauptbeschwerde": "Schwarzwerden vor Augen beim Aufstehen und zwei Stürze"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit drei Wochen beim Aufstehen aus dem Bett oder Sessel Schwindel und Schwarzwerden vor den Augen. Zweimal gestürzt, dabei Prellung der Hüfte, kurz keine Bewusstlosigkeit. Im Liegen beschwerdefrei. Vor vier Wochen vom Urologen Tamsulosin neu, vom Kardiologen Torasemid erhöht. Trinkt wenig (ca. 800 ml/Tag). Nächtliches Wasserlassen 3–4 mal.",
+      "vorerkrankungen": "Herzinsuffizienz (EF 45 %), arterielle Hypertonie, Benigne Prostatahyperplasie, Diabetes mellitus Typ 2, leichte Demenz.",
+      "medikamente": "Ramipril 10 mg, Bisoprolol 5 mg, Torasemid 20 mg (vorher 10 mg), Amlodipin 5 mg, Tamsulosin 0,4 mg (neu), Metformin 500 mg, Mirtazapin 15 mg zur Nacht.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Nicht erhebbar.",
+      "sozialanamnese": "Verheiratet, lebt mit Ehefrau im Haus, Pflegegrad 1. Rentner (Schlosser). Nichtraucher, kein Alkohol."
+    },
+    "sprache": [
+      {
+        "patient": "Wenn ich aufstehe, wird mir schwarz vor Augen.",
+        "fach": "Es bestehen orthostatische Beschwerden mit Präsynkopen."
+      },
+      {
+        "patient": "Ich nehme jeden Tag sieben verschiedene Tabletten.",
+        "fach": "Es besteht eine Polypharmazie mit sieben Dauermedikamenten."
+      },
+      {
+        "patient": "Ich trinke nicht viel, sonst muss ich nachts so oft raus.",
+        "fach": "Die Trinkmenge ist wegen Nykturie auf ca. 800 ml pro Tag reduziert."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Orthostatische Hypotonie",
+        "patient": "Blutdruckabfall beim Aufstehen",
+        "uz": "ortostatik gipotoniya",
+        "ru": "ортостатическая гипотензия",
+        "tr": "ortostatik hipotansiyon",
+        "en": "orthostatic hypotension"
+      },
+      {
+        "de": "Schellong-Test",
+        "patient": "Blutdruck- und Pulsmessung im Liegen und im Stehen",
+        "uz": "Schellong sinovi",
+        "ru": "проба Шеллонга",
+        "tr": "Schellong testi",
+        "en": "Schellong test (active stand test)"
+      },
+      {
+        "de": "Polypharmazie",
+        "patient": "Einnahme von vielen Medikamenten gleichzeitig",
+        "uz": "ko‘p dori ichish (polipragmaziya)",
+        "ru": "полипрагмазия",
+        "tr": "polifarmasi",
+        "en": "polypharmacy"
+      },
+      {
+        "de": "Präsynkope",
+        "patient": "Gefühl, gleich ohnmächtig zu werden",
+        "uz": "hushdan ketish oldi holati",
+        "ru": "предобморочное состояние",
+        "tr": "presenkop",
+        "en": "presyncope"
+      },
+      {
+        "de": "Medikationsplan",
+        "patient": "Liste aller Medikamente mit Dosis",
+        "uz": "dori-darmonlar rejasi",
+        "ru": "план приёма лекарств",
+        "tr": "ilaç planı",
+        "en": "medication plan"
+      }
+    ],
+    "simulation": {
+      "opening": "Herr Doktor, immer wenn ich aufstehe, wird mir schwarz vor Augen, und ich bin schon zweimal hingefallen.",
+      "answers": {
+        "beginn": "Seit ungefähr drei Wochen. Seitdem ich die neue Tablette vom Urologen nehme, glaube ich.",
+        "lokalisation": "Im Kopf wird es so leer. Die Hüfte tut weh vom Sturz.",
+        "charakter": "Mir wird schwarz vor Augen und die Beine werden weich, ein paar Sekunden.",
+        "ausstrahlung": "—",
+        "begleit": "Wenn ich liege, ist alles gut. Kein Herzrasen, keine Brustschmerzen. Bewusstlos war ich nicht.",
+        "vegetativ": "Ich muss nachts drei-, viermal Wasser lassen. Deshalb trinke ich wenig, vielleicht vier Tassen am Tag.",
+        "vorerkrankungen": "Ich habe ein schwaches Herz, hohen Blutdruck, Zucker und die Prostata. Und meine Frau sagt, ich werde vergesslich.",
+        "medikamente": "Das sind viele: Ramipril, Bisoprolol, die Wassertablette Torasemid, die wurde auf 20 erhöht, Amlodipin, die neue Prostatatablette Tamsulosin, Metformin und abends Mirtazapin zum Schlafen.",
+        "allergien": "Nein.",
+        "familie": "Das weiß ich nicht mehr.",
+        "sozial": "Ich wohne mit meiner Frau im Haus. Wir haben Pflegegrad 1. Früher war ich Schlosser.",
+        "noxen": "Ich rauche nicht und trinke keinen Alkohol."
+      }
+    },
+    "verdachtsdiagnose": "Orthostatische Hypotonie mit Stürzen bei Polypharmazie (Tamsulosin, Diuretika, Antihypertensiva) und Exsikkose",
+    "diagnoseKeywords": ["orthostatische hypotonie", "orthostase", "orthostatisch"],
+    "differenzialdiagnosen": [
+      "Kardiale Synkope (Bradykardie, Aortenstenose)",
+      "Hypoglykämie",
+      "Autonome Neuropathie bei Diabetes",
+      "Karotissinussyndrom",
+      "Morbus Parkinson"
+    ],
+    "untersuchungen": [
+      "Schellong-Test",
+      "EKG, Langzeit-EKG",
+      "Echokardiographie",
+      "Labor: Natrium, Kalium, Kreatinin, Blutzucker, Hb",
+      "Medikationsanalyse (z. B. PRISCUS-Liste)",
+      "Röntgen der Hüfte nach Sturz"
+    ]
+  },
+  {
+    "id": "c196",
+    "title": "Spondylitis ankylosans (Morbus Bechterew)",
+    "category": "Innere Medizin",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Dennis Wiegand",
+      "age": 27,
+      "gender": "männlich",
+      "hauptbeschwerde": "Tiefsitzende Rückenschmerzen in der zweiten Nachthälfte mit Morgensteifigkeit"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit über einem Jahr tiefsitzende Rückenschmerzen, die in der zweiten Nachthälfte aufwecken. Morgens über eine Stunde steif. Besserung durch Bewegung, nicht durch Ruhe. Wechselnde Gesäßschmerzen links und rechts. Vor 6 Monaten rotes, schmerzhaftes linkes Auge (Augenarzt: Iritis). Ibuprofen hilft gut.",
+      "vorerkrankungen": "Iritis links vor 6 Monaten.",
+      "medikamente": "Ibuprofen 400 mg bei Bedarf.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Onkel väterlicherseits hat einen \"steifen Rücken\".",
+      "sozialanamnese": "Ledig, Kfz-Mechatroniker. Raucher, 8 Packungsjahre. Alkohol am Wochenende."
+    },
+    "sprache": [
+      {
+        "patient": "Nachts gegen vier wache ich vor Rückenschmerzen auf.",
+        "fach": "Es bestehen nächtliche Rückenschmerzen in der zweiten Nachthälfte."
+      },
+      {
+        "patient": "Wenn ich mich bewege, wird es besser.",
+        "fach": "Die Beschwerden bessern sich unter Bewegung – entzündlicher Rückenschmerz."
+      },
+      {
+        "patient": "Vor einem halben Jahr hatte ich ein rotes, schmerzendes Auge.",
+        "fach": "Anamnestisch bestand vor sechs Monaten eine Uveitis anterior."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Spondylitis ankylosans",
+        "patient": "chronische Entzündung der Wirbelsäule, die sie versteifen kann",
+        "uz": "ankilozlovchi spondilit (Bexterev kasalligi)",
+        "ru": "анкилозирующий спондилит (болезнь Бехтерева)",
+        "tr": "ankilozan spondilit",
+        "en": "ankylosing spondylitis"
+      },
+      {
+        "de": "Sakroiliitis",
+        "patient": "Entzündung der Kreuz-Darmbein-Gelenke",
+        "uz": "sakroileit",
+        "ru": "сакроилеит",
+        "tr": "sakroileit",
+        "en": "sacroiliitis"
+      },
+      {
+        "de": "HLA-B27",
+        "patient": "Erbmerkmal, das bei dieser Krankheit oft vorkommt",
+        "uz": "HLA-B27 geni",
+        "ru": "антиген HLA-B27",
+        "tr": "HLA-B27",
+        "en": "HLA-B27"
+      },
+      {
+        "de": "Entzündlicher Rückenschmerz",
+        "patient": "Rückenschmerz durch Entzündung, besser bei Bewegung",
+        "uz": "yallig‘lanishli bel og‘rig‘i",
+        "ru": "воспалительная боль в спине",
+        "tr": "inflamatuvar bel ağrısı",
+        "en": "inflammatory back pain"
+      },
+      {
+        "de": "TNF-alpha-Blocker",
+        "patient": "Spritze, die die Entzündung im Körper bremst",
+        "uz": "TNF-alfa blokatori",
+        "ru": "ингибитор ФНО-альфа",
+        "tr": "TNF-alfa blokeri",
+        "en": "TNF-alpha blocker"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe seit über einem Jahr Rückenschmerzen, und nachts wache ich davon auf.",
+      "answers": {
+        "beginn": "Seit über einem Jahr, langsam angefangen, ohne Unfall.",
+        "lokalisation": "Unten im Kreuz, und im Po mal links, mal rechts.",
+        "charakter": "Ein tiefer, dumpfer Schmerz, fünf von zehn. Morgens bin ich über eine Stunde steif.",
+        "ausstrahlung": "In den Po, aber nicht bis in die Beine.",
+        "begleit": "Wenn ich mich bewege, wird es besser, im Liegen schlimmer. Vor einem halben Jahr hatte ich ein rotes, schmerzendes Auge, der Augenarzt sagte Iritis.",
+        "vegetativ": "Ich bin oft müde. Gewicht, Stuhlgang, Wasserlassen normal.",
+        "vorerkrankungen": "Nur das mit dem Auge.",
+        "medikamente": "Ibuprofen 400, wenn es schlimm ist. Das hilft richtig gut.",
+        "allergien": "Nein.",
+        "familie": "Mein Onkel hat einen ganz steifen Rücken, der kann sich kaum bücken.",
+        "sozial": "Ich bin ledig und arbeite als Kfz-Mechatroniker.",
+        "noxen": "Ich rauche, so eine halbe Schachtel am Tag. Alkohol am Wochenende."
+      }
+    },
+    "verdachtsdiagnose": "Axiale Spondyloarthritis (Spondylitis ankylosans, Morbus Bechterew) mit Z. n. Uveitis anterior",
+    "diagnoseKeywords": ["spondylitis ankylosans", "bechterew", "spondyloarthritis"],
+    "differenzialdiagnosen": [
+      "Unspezifischer (mechanischer) Rückenschmerz",
+      "Bandscheibenvorfall",
+      "Psoriasis-Arthritis",
+      "Reaktive Arthritis",
+      "Enteropathische Arthritis (Morbus Crohn)"
+    ],
+    "untersuchungen": [
+      "Körperliche Untersuchung: Schober-Zeichen, Finger-Boden-Abstand, Mennell-Zeichen",
+      "CRP, BSG",
+      "HLA-B27",
+      "MRT der Iliosakralgelenke (Knochenmarködem)",
+      "Röntgen der Iliosakralgelenke",
+      "Augenärztliche Kontrolle"
+    ]
+  },
+  {
+    "id": "c197",
+    "title": "Polymyalgia rheumatica",
+    "category": "Innere Medizin",
+    "difficulty": "leicht",
+    "patient": {
+      "name": "Margarete Schultheiß",
+      "age": 72,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Schmerzen und Steifigkeit in Schultern und Hüften, kann morgens kaum aufstehen"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit sechs Wochen beidseitige Schmerzen und Steifigkeit in Schultern, Oberarmen, Hüften und Oberschenkeln. Morgensteifigkeit über zwei Stunden; kann die Arme nicht über den Kopf heben, kaum aus dem Bett. Müdigkeit, Appetitlosigkeit, 3 kg Gewichtsverlust, subfebrile Temperaturen. Keine Kopfschmerzen, keine Kauschmerzen, keine Sehstörungen.",
+      "vorerkrankungen": "Hypothyreose, Gonarthrose beidseits.",
+      "medikamente": "L-Thyroxin 75 µg.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Verheiratet, Rentnerin (Bäckereifachverkäuferin). Nichtraucherin, kein Alkohol."
+    },
+    "sprache": [
+      {
+        "patient": "Morgens komme ich kaum aus dem Bett, alles ist steif.",
+        "fach": "Es besteht eine Morgensteifigkeit von über zwei Stunden."
+      },
+      {
+        "patient": "Ich kann meine Arme nicht mehr über den Kopf heben.",
+        "fach": "Die Elevation der Arme ist schmerzbedingt eingeschränkt."
+      },
+      {
+        "patient": "Kopfschmerzen oder Probleme mit den Augen habe ich nicht.",
+        "fach": "Hinweise auf eine Riesenzellarteriitis (Kopfschmerz, Claudicatio masticatoria, Sehstörungen) bestehen nicht."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Polymyalgia rheumatica",
+        "patient": "entzündliche Muskelschmerzen an Schultern und Hüften im Alter",
+        "uz": "revmatik polimialgiya",
+        "ru": "ревматическая полимиалгия",
+        "tr": "polimiyalji romatika",
+        "en": "polymyalgia rheumatica"
+      },
+      {
+        "de": "BSG",
+        "patient": "Blutsenkung, Entzündungswert",
+        "uz": "EChT (eritrotsitlar cho‘kish tezligi)",
+        "ru": "СОЭ",
+        "tr": "sedimentasyon hızı",
+        "en": "ESR"
+      },
+      {
+        "de": "Glukokortikoide",
+        "patient": "Kortison",
+        "uz": "glyukokortikoidlar",
+        "ru": "глюкокортикоиды",
+        "tr": "glukokortikoidler",
+        "en": "glucocorticoids"
+      },
+      {
+        "de": "Riesenzellarteriitis",
+        "patient": "Entzündung von Blutgefäßen am Kopf, kann zur Erblindung führen",
+        "uz": "gigant hujayrali arteriit",
+        "ru": "гигантоклеточный артериит",
+        "tr": "dev hücreli arterit",
+        "en": "giant cell arteritis"
+      },
+      {
+        "de": "Osteoporoseprophylaxe",
+        "patient": "Vorbeugung gegen Knochenschwund",
+        "uz": "osteoporozning oldini olish",
+        "ru": "профилактика остеопороза",
+        "tr": "osteoporoz profilaksisi",
+        "en": "osteoporosis prevention"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe solche Schmerzen in den Schultern und Hüften, morgens komme ich kaum aus dem Bett.",
+      "answers": {
+        "beginn": "Seit ungefähr sechs Wochen, ziemlich schnell angefangen.",
+        "lokalisation": "Beide Schultern und Oberarme, und beide Hüften und Oberschenkel.",
+        "charakter": "Ein ziehender Schmerz und alles ist steif, morgens über zwei Stunden. Sechs von zehn.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Ich bin müde, habe keinen Appetit und etwas Temperatur. Kopfschmerzen habe ich nicht, beim Kauen tut nichts weh, und ich sehe gut.",
+        "vegetativ": "Ich habe drei Kilo abgenommen. Stuhlgang und Wasserlassen normal.",
+        "vorerkrankungen": "Die Schilddrüse ist zu langsam, und ich habe Arthrose in den Knien.",
+        "medikamente": "Nur L-Thyroxin 75.",
+        "allergien": "Nein.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich bin verheiratet und Rentnerin, ich war Verkäuferin in einer Bäckerei.",
+        "noxen": "Ich rauche nicht und trinke keinen Alkohol."
+      }
+    },
+    "verdachtsdiagnose": "Polymyalgia rheumatica",
+    "diagnoseKeywords": ["polymyalgia", "polymyalgie"],
+    "differenzialdiagnosen": [
+      "Late-Onset rheumatoide Arthritis",
+      "Riesenzellarteriitis (Begleiterkrankung)",
+      "Hypothyreote Myopathie",
+      "Paraneoplastisches Syndrom",
+      "Statin-Myopathie, Polymyositis (CK erhöht)"
+    ],
+    "untersuchungen": [
+      "BSG und CRP",
+      "Blutbild, CK, TSH, Rheumafaktor, Anti-CCP",
+      "Sonographie der Schultern (Bursitis subdeltoidea)",
+      "Klinische Untersuchung der Temporalarterien",
+      "Tumorsuche nach Klinik (Röntgen-Thorax)",
+      "Knochendichtemessung vor Steroidtherapie"
+    ]
+  },
+  {
+    "id": "c198",
+    "title": "Infizierte Harnstauungsniere bei Harnleiterstein",
+    "category": "Urologie",
+    "difficulty": "schwer",
+    "patient": {
+      "name": "Sabine Lindqvist",
+      "age": 48,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Starke Flankenschmerzen links mit hohem Fieber und Schüttelfrost"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit drei Tagen kolikartige Schmerzen in der linken Flanke mit Ausstrahlung in die Leiste. Seit gestern Fieber bis 39,6 °C und Schüttelfrost, heute Schwindel und Verwirrtheit laut Ehemann. Übelkeit und Erbrechen. Brennen beim Wasserlassen, trüber Urin.",
+      "vorerkrankungen": "Nierensteine 2019 (spontaner Abgang), Diabetes mellitus Typ 2.",
+      "medikamente": "Metformin 1000 mg 1-0-1, Sitagliptin 100 mg.",
+      "allergien": "Sulfonamide (Exanthem)",
+      "familienanamnese": "Vater Nierensteine.",
+      "sozialanamnese": "Verheiratet, zwei Kinder, Bürokauffrau. Nichtraucherin, Alkohol selten. Trinkt wenig."
+    },
+    "sprache": [
+      {
+        "patient": "Der Schmerz kommt in Wellen und zieht bis in die Leiste.",
+        "fach": "Es bestehen kolikartige Flankenschmerzen links mit Ausstrahlung in die Leiste."
+      },
+      {
+        "patient": "Ich habe gezittert und hatte fast 40 Grad Fieber.",
+        "fach": "Es bestehen Fieber bis 39,6 °C mit Schüttelfrost."
+      },
+      {
+        "patient": "Mein Mann sagt, ich bin heute ganz durcheinander.",
+        "fach": "Fremdanamnestisch besteht eine neu aufgetretene Verwirrtheit – Hinweis auf eine Sepsis."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Harnstauungsniere",
+        "patient": "gestaute Niere, weil der Urin nicht abfließen kann",
+        "uz": "siydik dimlangan buyrak (gidronefroz)",
+        "ru": "гидронефроз (застой мочи в почке)",
+        "tr": "hidronefroz",
+        "en": "hydronephrosis"
+      },
+      {
+        "de": "Urosepsis",
+        "patient": "Blutvergiftung, die von den Harnwegen ausgeht",
+        "uz": "urosepsis",
+        "ru": "уросепсис",
+        "tr": "ürosepsis",
+        "en": "urosepsis"
+      },
+      {
+        "de": "Harnleiterschiene (DJ-Katheter)",
+        "patient": "dünner Schlauch, der den Urin von der Niere in die Blase leitet",
+        "uz": "siydik yo‘li stenti (DJ kateter)",
+        "ru": "мочеточниковый стент (DJ-катетер)",
+        "tr": "üreteral stent (DJ kateter)",
+        "en": "ureteric stent (JJ stent)"
+      },
+      {
+        "de": "Nephrostomie",
+        "patient": "Schlauch durch die Haut direkt in die Niere",
+        "uz": "nefrostomiya",
+        "ru": "нефростома",
+        "tr": "nefrostomi",
+        "en": "nephrostomy"
+      },
+      {
+        "de": "Ureterorenoskopie",
+        "patient": "Spiegelung des Harnleiters zur Steinentfernung",
+        "uz": "ureterorenoskopiya",
+        "ru": "уретерореноскопия",
+        "tr": "üreterorenoskopi",
+        "en": "ureteroscopy"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe so starke Schmerzen links in der Seite, und ich habe hohes Fieber mit Schüttelfrost.",
+      "answers": {
+        "beginn": "Die Schmerzen seit drei Tagen, das Fieber seit gestern Abend.",
+        "lokalisation": "Links in der Flanke, hinten an der Seite.",
+        "charakter": "Krampfartig, in Wellen, acht von zehn.",
+        "ausstrahlung": "Es zieht nach vorne in die linke Leiste.",
+        "begleit": "Fieber bis 39,6, Schüttelfrost, Übelkeit, ich habe zweimal gebrochen. Mir ist schwindelig. Mein Mann sagt, ich rede wirr.",
+        "vegetativ": "Es brennt beim Wasserlassen, der Urin ist trüb. Ich trinke eher wenig.",
+        "vorerkrankungen": "2019 hatte ich schon mal einen Nierenstein, der ist von allein abgegangen. Und ich habe Zucker.",
+        "medikamente": "Metformin morgens und abends und Sitagliptin.",
+        "allergien": "Gegen Sulfonamide, da bekam ich Ausschlag.",
+        "familie": "Mein Vater hatte auch Nierensteine.",
+        "sozial": "Ich bin verheiratet, zwei Kinder, und arbeite im Büro.",
+        "noxen": "Ich rauche nicht, Alkohol selten."
+      }
+    },
+    "verdachtsdiagnose": "Infizierte Harnstauungsniere links bei Harnleiterstein mit beginnender Urosepsis",
+    "diagnoseKeywords": ["harnstauungsniere", "harnstau", "urosepsis", "pyelonephritis"],
+    "differenzialdiagnosen": [
+      "Unkomplizierte akute Pyelonephritis",
+      "Nierenabszess",
+      "Sigmadivertikulitis",
+      "Adnexitis / Tuboovarialabszess",
+      "Akute Pankreatitis"
+    ],
+    "untersuchungen": [
+      "Vitalparameter, qSOFA",
+      "Nierensonographie (Harnstau)",
+      "Blutkulturen und Urinkultur vor Antibiose",
+      "Labor: Blutbild, CRP, PCT, Laktat, Kreatinin, Gerinnung",
+      "Low-Dose-CT ohne Kontrastmittel (Steinlage und -größe)",
+      "Schwangerschaftstest"
+    ],
+    "oberarzt": {
+      "therapie": [
+        "Sofortige Harnableitung: DJ-Katheter oder perkutane Nephrostomie",
+        "Kalkulierte Antibiose i. v. (z. B. Ceftriaxon) nach Kulturen",
+        "Volumentherapie, ggf. Intensivstation",
+        "Metformin pausieren",
+        "Steinsanierung erst nach Abklingen der Infektion (Ureterorenoskopie)"
+      ],
+      "komplikationen": [
+        "Septischer Schock",
+        "Nierenabszess, Pyonephrose",
+        "Akutes Nierenversagen",
+        "Disseminierte intravasale Gerinnung",
+        "Steinrezidiv"
+      ]
+    }
+  },
+  {
+    "id": "c199",
+    "title": "Pertussis beim Erwachsenen",
+    "category": "Infektiologie",
+    "difficulty": "leicht",
+    "patient": {
+      "name": "Katrin Habermehl",
+      "age": 41,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Seit drei Wochen heftige Hustenanfälle, nachts mit Erbrechen"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Vor vier Wochen Schnupfen und leichter Husten. Seit drei Wochen anfallsartiger, stakkatoartiger Husten, besonders nachts, danach ziehendes Einatmen und zweimal Erbrechen. Zwischen den Anfällen fühlt sie sich fast gesund. Kein Fieber. Einmal fast ohnmächtig während eines Anfalls. Ihr Sohn (8 Jahre) hustet auch.",
+      "vorerkrankungen": "Keine.",
+      "medikamente": "Hustensaft (Ambroxol) ohne Wirkung.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Verheiratet, zwei Kinder (8 Jahre und 3 Monate). Erzieherin in einer Kita. Nichtraucherin. Letzte Impfung gegen Keuchhusten als Kind."
+    },
+    "sprache": [
+      {
+        "patient": "Ich huste so lange hintereinander, bis ich keine Luft mehr bekomme.",
+        "fach": "Es bestehen stakkatoartige Hustenanfälle."
+      },
+      {
+        "patient": "Danach ziehe ich ganz laut die Luft ein.",
+        "fach": "Nach den Anfällen kommt es zu einem inspiratorischen Ziehen (Juchzen)."
+      },
+      {
+        "patient": "Nachts muss ich vom Husten brechen.",
+        "fach": "Es kommt zu posttussivem Erbrechen."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Pertussis",
+        "patient": "Keuchhusten",
+        "uz": "ko‘kyo‘tal",
+        "ru": "коклюш",
+        "tr": "boğmaca",
+        "en": "whooping cough (pertussis)"
+      },
+      {
+        "de": "Bordetella pertussis",
+        "patient": "Bakterium, das Keuchhusten macht",
+        "uz": "Bordetella pertussis bakteriyasi",
+        "ru": "коклюшная палочка",
+        "tr": "Bordetella pertussis",
+        "en": "Bordetella pertussis"
+      },
+      {
+        "de": "PCR-Abstrich",
+        "patient": "Abstrich aus dem Nasenrachen für einen Erregernachweis",
+        "uz": "PZR surtmasi",
+        "ru": "ПЦР-мазок",
+        "tr": "PCR sürüntüsü",
+        "en": "PCR swab"
+      },
+      {
+        "de": "Makrolid",
+        "patient": "Gruppe von Antibiotika, z. B. Azithromycin",
+        "uz": "makrolid antibiotik",
+        "ru": "макролид",
+        "tr": "makrolid",
+        "en": "macrolide"
+      },
+      {
+        "de": "Chemoprophylaxe",
+        "patient": "vorbeugende Antibiotika für Kontaktpersonen",
+        "uz": "dori bilan profilaktika",
+        "ru": "химиопрофилактика",
+        "tr": "kemoprofilaksi",
+        "en": "chemoprophylaxis"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe seit drei Wochen so schlimme Hustenanfälle, dass ich nachts brechen muss.",
+      "answers": {
+        "beginn": "Vor vier Wochen fing es mit Schnupfen an, seit drei Wochen kommen diese Anfälle.",
+        "lokalisation": "Es kommt aus der Brust, und vom Husten tun die Rippen weh.",
+        "charakter": "Ich huste ganz viele Male hintereinander, bis ich keine Luft mehr bekomme, und dann ziehe ich laut die Luft ein.",
+        "ausstrahlung": "—",
+        "begleit": "Nachts muss ich danach manchmal brechen. Einmal wurde mir fast schwarz vor Augen. Fieber habe ich nicht. Zwischen den Anfällen geht es mir eigentlich gut.",
+        "vegetativ": "Ich schlafe kaum. Sonst ist alles normal.",
+        "vorerkrankungen": "Ich war immer gesund.",
+        "medikamente": "Ambroxol-Hustensaft, der hilft gar nicht.",
+        "allergien": "Nein.",
+        "familie": "Mein Sohn, acht Jahre, hustet jetzt auch.",
+        "sozial": "Ich bin Erzieherin in einer Kita. Wir haben ein Baby, drei Monate alt. Gegen Keuchhusten bin ich nur als Kind geimpft.",
+        "noxen": "Ich rauche nicht."
+      }
+    },
+    "verdachtsdiagnose": "Pertussis (Keuchhusten) im Stadium convulsivum",
+    "diagnoseKeywords": ["pertussis", "keuchhusten"],
+    "differenzialdiagnosen": [
+      "Postinfektiöser Husten",
+      "Mykoplasmen-Infektion",
+      "Asthma bronchiale",
+      "Gastroösophagealer Reflux",
+      "ACE-Hemmer-Husten (hier keine Einnahme)"
+    ],
+    "untersuchungen": [
+      "Nasopharyngealabstrich: PCR auf Bordetella pertussis",
+      "Serologie (IgG/IgA gegen Pertussistoxin) bei Husten über drei Wochen",
+      "Blutbild (Lymphozytose)",
+      "Auskultation, ggf. Röntgen-Thorax (Pneumonie ausschließen)",
+      "Impfstatus der Familie"
+    ]
+  },
+  {
+    "id": "c200",
+    "title": "Akute Analfissur",
+    "category": "Chirurgie",
+    "difficulty": "leicht",
+    "patient": {
+      "name": "Nadine Reimers",
+      "age": 31,
+      "gender": "weiblich",
+      "hauptbeschwerde": "Stechende Schmerzen beim Stuhlgang und hellrotes Blut am Toilettenpapier"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Seit zwei Wochen messerstichartige Schmerzen beim Stuhlgang, die danach noch 1–2 Stunden brennend anhalten. Hellrotes Blut auf dem Toilettenpapier, nicht mit dem Stuhl vermischt. Seit Monaten harter Stuhl, Pressen beim Stuhlgang. Aus Angst vor Schmerzen vermeidet sie den Stuhlgang. Kein Gewichtsverlust, kein Fieber.",
+      "vorerkrankungen": "Keine. Geburt vor 8 Monaten.",
+      "medikamente": "Keine.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Keine Darmkrebserkrankungen.",
+      "sozialanamnese": "Verheiratet, ein Kind (8 Monate), in Elternzeit, sonst Grafikdesignerin. Nichtraucherin. Trinkt wenig, isst wenig Ballaststoffe."
+    },
+    "sprache": [
+      {
+        "patient": "Beim Stuhlgang ist es wie ein Messerstich.",
+        "fach": "Es bestehen stechende Defäkationsschmerzen."
+      },
+      {
+        "patient": "Hinterher brennt es noch lange.",
+        "fach": "Die Schmerzen persistieren postdefäkatorisch über ein bis zwei Stunden."
+      },
+      {
+        "patient": "Es ist hellrotes Blut auf dem Papier.",
+        "fach": "Es zeigen sich hellrote peranale Blutauflagerungen."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Analfissur",
+        "patient": "kleiner Einriss am After",
+        "uz": "orqa teshik yorig‘i (anal yoriq)",
+        "ru": "анальная трещина",
+        "tr": "anal fissür",
+        "en": "anal fissure"
+      },
+      {
+        "de": "Obstipation",
+        "patient": "Verstopfung",
+        "uz": "ich qotishi",
+        "ru": "запор",
+        "tr": "kabızlık",
+        "en": "constipation"
+      },
+      {
+        "de": "Sphinkterspasmus",
+        "patient": "Verkrampfung des Schließmuskels",
+        "uz": "sfinkter spazmi",
+        "ru": "спазм сфинктера",
+        "tr": "sfinkter spazmı",
+        "en": "sphincter spasm"
+      },
+      {
+        "de": "Diltiazem-Salbe",
+        "patient": "Salbe, die den Schließmuskel entspannt",
+        "uz": "diltiazem malhami",
+        "ru": "мазь с дилтиаземом",
+        "tr": "diltiazem merhemi",
+        "en": "diltiazem ointment"
+      },
+      {
+        "de": "Stuhlregulierung",
+        "patient": "dafür sorgen, dass der Stuhl weich ist",
+        "uz": "axlatni yumshatish",
+        "ru": "нормализация стула",
+        "tr": "dışkı düzenleme",
+        "en": "stool softening"
+      }
+    ],
+    "simulation": {
+      "opening": "Es ist mir etwas unangenehm … Ich habe beim Stuhlgang ganz starke Schmerzen, und da ist Blut.",
+      "answers": {
+        "beginn": "Seit ungefähr zwei Wochen.",
+        "lokalisation": "Am After, eher hinten.",
+        "charakter": "Beim Stuhlgang wie ein Messerstich, neun von zehn. Danach brennt es noch ein, zwei Stunden.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Hellrotes Blut auf dem Toilettenpapier, nicht im Stuhl. Fieber habe ich nicht.",
+        "vegetativ": "Ich habe seit Monaten harten Stuhl und muss pressen. Jetzt traue ich mich kaum noch auf die Toilette. Gewicht ist stabil.",
+        "vorerkrankungen": "Nichts. Vor acht Monaten habe ich mein Kind bekommen.",
+        "medikamente": "Keine.",
+        "allergien": "Nein.",
+        "familie": "Darmkrebs hatte niemand.",
+        "sozial": "Ich bin verheiratet, gerade in Elternzeit, sonst Grafikdesignerin.",
+        "noxen": "Ich rauche nicht. Ich trinke wohl zu wenig und esse wenig Vollkorn."
+      }
+    },
+    "verdachtsdiagnose": "Akute Analfissur bei 6 Uhr in Steinschnittlage bei chronischer Obstipation",
+    "diagnoseKeywords": ["analfissur", "fissur"],
+    "differenzialdiagnosen": [
+      "Hämorrhoidalleiden",
+      "Perianalvenenthrombose",
+      "Perianalabszess",
+      "Morbus Crohn (atypische Lage)",
+      "Analkarzinom"
+    ],
+    "untersuchungen": [
+      "Inspektion durch vorsichtiges Spreizen der Gesäßbacken",
+      "Keine rektal-digitale Untersuchung im akuten Schmerzstadium",
+      "Proktoskopie nach Abheilung",
+      "Bei atypischer Lage: Abklärung Morbus Crohn, Koloskopie"
+    ]
+  },
+  {
+    "id": "c201",
+    "title": "Innenmeniskusläsion",
+    "category": "Unfallchirurgie",
+    "difficulty": "mittel",
+    "patient": {
+      "name": "Marcel Dobrindt",
+      "age": 34,
+      "gender": "männlich",
+      "hauptbeschwerde": "Knieschmerzen innen nach Verdrehtrauma beim Fußball, Knie blockiert"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Vor fünf Tagen beim Fußball mit feststehendem Fuß das rechte Knie verdreht. Sofort Schmerzen an der Innenseite, am nächsten Tag Schwellung. Seitdem Schmerzen beim Treppensteigen und in der Hocke. Zweimal plötzlich konnte er das Knie nicht mehr ganz strecken, nach Schütteln ging es wieder. Kein Instabilitätsgefühl.",
+      "vorerkrankungen": "Keine.",
+      "medikamente": "Ibuprofen 600 mg bei Bedarf.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Verheiratet, Fliesenleger (viel kniende Tätigkeit). Hobbyfußballer. Raucher, 10 Zigaretten täglich."
+    },
+    "sprache": [
+      {
+        "patient": "Ich habe das Knie verdreht, der Fuß stand fest.",
+        "fach": "Es erfolgte ein Rotationstrauma des rechten Kniegelenks bei fixiertem Fuß."
+      },
+      {
+        "patient": "Manchmal kann ich das Bein plötzlich nicht ganz strecken.",
+        "fach": "Es kommt zu rezidivierenden Streckhemmungen (Blockaden)."
+      },
+      {
+        "patient": "Innen am Knie tut es am meisten weh.",
+        "fach": "Es besteht ein Druckschmerz über dem medialen Gelenkspalt."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Meniskus",
+        "patient": "Knorpelscheibe im Kniegelenk",
+        "uz": "menisk",
+        "ru": "мениск",
+        "tr": "menisküs",
+        "en": "meniscus"
+      },
+      {
+        "de": "Gelenkerguss",
+        "patient": "Flüssigkeit im Gelenk, das Knie ist geschwollen",
+        "uz": "bo‘g‘imda suyuqlik yig‘ilishi",
+        "ru": "выпот в суставе",
+        "tr": "eklem efüzyonu",
+        "en": "joint effusion"
+      },
+      {
+        "de": "Streckhemmung",
+        "patient": "das Knie lässt sich nicht ganz gerade machen",
+        "uz": "tizzani to‘liq yozib bo‘lmasligi",
+        "ru": "ограничение разгибания",
+        "tr": "ekstansiyon kısıtlılığı",
+        "en": "extension deficit"
+      },
+      {
+        "de": "Arthroskopie",
+        "patient": "Gelenkspiegelung mit kleiner Kamera",
+        "uz": "artroskopiya",
+        "ru": "артроскопия",
+        "tr": "artroskopi",
+        "en": "arthroscopy"
+      },
+      {
+        "de": "Meniskusnaht",
+        "patient": "der gerissene Meniskus wird genäht",
+        "uz": "meniskni tikish",
+        "ru": "шов мениска",
+        "tr": "menisküs tamiri (dikiş)",
+        "en": "meniscal repair"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich habe mir beim Fußball das rechte Knie verdreht, und jetzt bleibt es manchmal hängen.",
+      "answers": {
+        "beginn": "Vor fünf Tagen, beim Fußball am Sonntag.",
+        "lokalisation": "Rechtes Knie, innen.",
+        "charakter": "Stechend, besonders beim Treppensteigen und in der Hocke. Fünf von zehn.",
+        "ausstrahlung": "Nein.",
+        "begleit": "Am nächsten Tag war das Knie dick. Zweimal konnte ich es plötzlich nicht mehr ganz gerade machen, nach Schütteln ging es wieder. Weggeknickt bin ich nicht.",
+        "vegetativ": "Alles normal.",
+        "vorerkrankungen": "Ich hatte noch nie etwas am Knie.",
+        "medikamente": "Ibuprofen 600, wenn es weh tut.",
+        "allergien": "Nein.",
+        "familie": "Nichts Besonderes.",
+        "sozial": "Ich bin verheiratet und Fliesenleger, ich knie den ganzen Tag. Am Wochenende spiele ich Fußball.",
+        "noxen": "Ich rauche zehn Zigaretten am Tag. Alkohol wenig."
+      }
+    },
+    "verdachtsdiagnose": "Traumatische Innenmeniskusläsion rechts (Verdacht auf Korbhenkelriss) mit Blockadesymptomatik",
+    "diagnoseKeywords": ["meniskus", "innenmeniskus", "korbhenkel"],
+    "differenzialdiagnosen": [
+      "Vordere Kreuzbandruptur",
+      "Innenbandläsion",
+      "Knorpelschaden, freier Gelenkkörper",
+      "Patellaluxation",
+      "Tibiakopffraktur"
+    ],
+    "untersuchungen": [
+      "Klinische Meniskuszeichen (Steinmann I und II, Payr, McMurray)",
+      "Prüfung der Bänder (Lachman, Schublade, Valgusstress)",
+      "Röntgen Knie in zwei Ebenen",
+      "MRT des Kniegelenks",
+      "Sonographie (Erguss)"
+    ]
+  },
+  {
+    "id": "c202",
+    "title": "Klavikulaschaftfraktur",
+    "category": "Unfallchirurgie",
+    "difficulty": "leicht",
+    "patient": {
+      "name": "Jannik Weißhaupt",
+      "age": 19,
+      "gender": "männlich",
+      "hauptbeschwerde": "Schmerzen am linken Schlüsselbein nach Sturz vom Fahrrad"
+    },
+    "anamnese": {
+      "aktuelleBeschwerden": "Vor zwei Stunden mit dem Mountainbike gestürzt, auf die linke Schulter gefallen. Sofort starke Schmerzen am Schlüsselbein, sichtbare Stufe. Hält den linken Arm mit der rechten Hand fest. Kein Kopfanprall (Helm), keine Bewusstlosigkeit. Kein Kribbeln oder Taubheit im Arm, keine Atemnot.",
+      "vorerkrankungen": "Keine.",
+      "medikamente": "Keine.",
+      "allergien": "Keine bekannt",
+      "familienanamnese": "Unauffällig.",
+      "sozialanamnese": "Ledig, Auszubildender (Elektroniker), Rechtshänder. Nichtraucher, Alkohol am Wochenende."
+    },
+    "sprache": [
+      {
+        "patient": "Ich bin mit dem Fahrrad auf die linke Schulter gefallen.",
+        "fach": "Es erfolgte ein direktes Anpralltrauma der linken Schulter."
+      },
+      {
+        "patient": "Man sieht am Schlüsselbein eine Stufe.",
+        "fach": "Es zeigt sich eine Stufenbildung im Bereich der linken Klavikula."
+      },
+      {
+        "patient": "Mein Arm kribbelt nicht und ist nicht taub.",
+        "fach": "Durchblutung, Motorik und Sensibilität (DMS) des linken Arms sind intakt."
+      }
+    ],
+    "terms": [
+      {
+        "de": "Klavikulafraktur",
+        "patient": "Schlüsselbeinbruch",
+        "uz": "o‘mrov suyagi sinishi",
+        "ru": "перелом ключицы",
+        "tr": "klavikula kırığı",
+        "en": "clavicle fracture"
+      },
+      {
+        "de": "Dislokation",
+        "patient": "die Bruchenden sind verschoben",
+        "uz": "suyak bo‘laklarining siljishi",
+        "ru": "смещение отломков",
+        "tr": "deplasman",
+        "en": "displacement"
+      },
+      {
+        "de": "Rucksackverband",
+        "patient": "Verband wie ein Rucksack, der die Schultern nach hinten zieht",
+        "uz": "ryukzaksimon bog‘lam",
+        "ru": "повязка-«рюкзак»",
+        "tr": "sekiz bandajı",
+        "en": "figure-of-eight bandage"
+      },
+      {
+        "de": "Plattenosteosynthese",
+        "patient": "Operation, bei der der Knochen mit einer Metallplatte fixiert wird",
+        "uz": "plastinka bilan osteosintez",
+        "ru": "накостный остеосинтез пластиной",
+        "tr": "plak ile osteosentez",
+        "en": "plate fixation"
+      },
+      {
+        "de": "DMS",
+        "patient": "Durchblutung, Bewegung und Gefühl im Arm",
+        "uz": "qon aylanishi, harakat va sezgi",
+        "ru": "кровообращение, движение, чувствительность",
+        "tr": "dolaşım, motor ve duyu",
+        "en": "circulation, motor function and sensation"
+      }
+    ],
+    "simulation": {
+      "opening": "Ich bin mit dem Fahrrad gestürzt, und mein linkes Schlüsselbein tut höllisch weh.",
+      "answers": {
+        "beginn": "Vor ungefähr zwei Stunden, beim Mountainbiken im Wald.",
+        "lokalisation": "Links am Schlüsselbein, in der Mitte.",
+        "charakter": "Stechend, sieben von zehn, bei jeder Bewegung vom Arm schlimmer.",
+        "ausstrahlung": "Ein bisschen in die Schulter.",
+        "begleit": "Man sieht da eine Stufe. Der Arm kribbelt nicht und ist nicht taub. Luft bekomme ich gut. Den Kopf habe ich nicht angeschlagen, ich hatte einen Helm.",
+        "vegetativ": "Alles normal.",
+        "vorerkrankungen": "Keine.",
+        "medikamente": "Keine.",
+        "allergien": "Keine.",
+        "familie": "Nichts.",
+        "sozial": "Ich mache eine Ausbildung zum Elektroniker. Ich bin Rechtshänder.",
+        "noxen": "Ich rauche nicht. Am Wochenende mal Alkohol."
+      }
+    },
+    "verdachtsdiagnose": "Geschlossene Klavikulaschaftfraktur links (mittleres Drittel)",
+    "diagnoseKeywords": ["klavikula", "schlüsselbein", "clavicula"],
+    "differenzialdiagnosen": [
+      "AC-Gelenksprengung",
+      "Schulterluxation",
+      "Proximale Humerusfraktur",
+      "Schulterprellung",
+      "Pneumothorax (Begleitverletzung)"
+    ],
+    "untersuchungen": [
+      "Inspektion und Palpation (Stufe, Hautspannung)",
+      "DMS-Prüfung des Arms",
+      "Auskultation der Lunge (Pneumothorax)",
+      "Röntgen Klavikula in zwei Ebenen",
+      "Röntgen-Thorax bei Verdacht auf Begleitverletzung"
+    ]
   }
 ]
