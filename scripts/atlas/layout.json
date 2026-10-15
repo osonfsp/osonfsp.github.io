@@ -75,7 +75,7 @@
    "x": 208,
    "y": 388,
    "w": 184,
-   "squash": 0.88
+   "squash": 0.8
   },
   "kidneys": {
    "src": "App_urinaire_homme.png",
@@ -99,7 +99,7 @@
     1270
    ],
    "x": 272,
-   "y": 590,
+   "y": 600,
    "w": 56
   },
   "thyroid": {

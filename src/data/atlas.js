@@ -8,6 +8,7 @@ import { tr } from "../lib/i18n";
 export const ORGANS = [
   {
     id: "gehirn",
+    systems: ["nerven"],
     de: "das Gehirn",
     fach: "Zerebrum / Cerebrum",
     name: tr("bosh miya", "головной мозг", "beyin", "brain"),
@@ -15,6 +16,7 @@ export const ORGANS = [
   },
   {
     id: "schilddruese",
+    systems: ["hormone"],
     de: "die Schilddrüse",
     fach: "Glandula thyreoidea",
     name: tr("qalqonsimon bez", "щитовидная железа", "tiroid bezi", "thyroid gland"),
@@ -22,6 +24,7 @@ export const ORGANS = [
   },
   {
     id: "luftroehre",
+    systems: ["atmung"],
     de: "die Luftröhre",
     fach: "Trachea",
     name: tr("traxeya (kekirdak)", "трахея", "soluk borusu", "windpipe (trachea)"),
@@ -29,6 +32,7 @@ export const ORGANS = [
   },
   {
     id: "lunge",
+    systems: ["atmung"],
     de: "die Lunge",
     fach: "Pulmo",
     name: tr("o‘pka", "лёгкие", "akciğer", "lungs"),
@@ -36,6 +40,7 @@ export const ORGANS = [
   },
   {
     id: "herz",
+    systems: ["kreislauf"],
     de: "das Herz",
     fach: "Cor",
     name: tr("yurak", "сердце", "kalp", "heart"),
@@ -43,6 +48,7 @@ export const ORGANS = [
   },
   {
     id: "leber",
+    systems: ["verdauung"],
     de: "die Leber",
     fach: "Hepar",
     name: tr("jigar", "печень", "karaciğer", "liver"),
@@ -50,6 +56,7 @@ export const ORGANS = [
   },
   {
     id: "gallenblase",
+    systems: ["verdauung"],
     de: "die Gallenblase",
     fach: "Vesica biliaris",
     name: tr("o‘t pufagi", "желчный пузырь", "safra kesesi", "gallbladder"),
@@ -57,6 +64,7 @@ export const ORGANS = [
   },
   {
     id: "magen",
+    systems: ["verdauung"],
     de: "der Magen",
     fach: "Gaster / Ventriculus",
     name: tr("oshqozon", "желудок", "mide", "stomach"),
@@ -64,6 +72,7 @@ export const ORGANS = [
   },
   {
     id: "milz",
+    systems: ["lymphe"],
     de: "die Milz",
     fach: "Lien / Splen",
     name: tr("taloq", "селезёнка", "dalak", "spleen"),
@@ -71,6 +80,7 @@ export const ORGANS = [
   },
   {
     id: "pankreas",
+    systems: ["verdauung", "hormone"],
     de: "die Bauchspeicheldrüse",
     fach: "Pankreas",
     name: tr("oshqozon osti bezi", "поджелудочная железа", "pankreas", "pancreas"),
@@ -78,6 +88,7 @@ export const ORGANS = [
   },
   {
     id: "niere",
+    systems: ["harn"],
     de: "die Niere",
     fach: "Ren / Nephros",
     name: tr("buyrak", "почка", "böbrek", "kidney"),
@@ -85,6 +96,7 @@ export const ORGANS = [
   },
   {
     id: "duenndarm",
+    systems: ["verdauung"],
     de: "der Dünndarm",
     fach: "Intestinum tenue",
     name: tr("ingichka ichak", "тонкая кишка", "ince bağırsak", "small intestine"),
@@ -92,6 +104,7 @@ export const ORGANS = [
   },
   {
     id: "dickdarm",
+    systems: ["verdauung"],
     de: "der Dickdarm",
     fach: "Kolon",
     name: tr("yo‘g‘on ichak", "толстая кишка", "kalın bağırsak", "large intestine (colon)"),
@@ -99,6 +112,7 @@ export const ORGANS = [
   },
   {
     id: "appendix",
+    systems: ["verdauung"],
     de: "der Wurmfortsatz",
     fach: "Appendix vermiformis",
     name: tr("chuvalchangsimon o‘simta (appendiks)", "аппендикс", "apandis", "appendix"),
@@ -106,6 +120,7 @@ export const ORGANS = [
   },
   {
     id: "blase",
+    systems: ["harn"],
     de: "die Harnblase",
     fach: "Vesica urinaria",
     name: tr("siydik pufagi", "мочевой пузырь", "idrar kesesi", "urinary bladder"),
@@ -113,11 +128,220 @@ export const ORGANS = [
   },
 ];
 
+// A’zolar tizimlari — ro‘yxatda guruh, rasmda tanlangan tizimdan boshqasi xiralashadi
+export const SYSTEMS = [
+  {
+    id: "atmung",
+    de: "Atmungssystem",
+    name: tr("Nafas olish tizimi", "Дыхательная система", "Solunum sistemi", "Respiratory system"),
+  },
+  {
+    id: "kreislauf",
+    de: "Herz-Kreislauf-System",
+    name: tr(
+      "Yurak-qon tomir tizimi",
+      "Сердечно-сосудистая система",
+      "Kalp-damar sistemi",
+      "Cardiovascular system",
+    ),
+  },
+  {
+    id: "verdauung",
+    de: "Verdauungssystem",
+    name: tr("Hazm qilish tizimi", "Пищеварительная система", "Sindirim sistemi", "Digestive system"),
+  },
+  {
+    id: "harn",
+    de: "Harnsystem",
+    name: tr("Siydik chiqarish tizimi", "Мочевыделительная система", "Üriner sistem", "Urinary system"),
+  },
+  {
+    id: "hormone",
+    de: "Hormonsystem",
+    name: tr("Endokrin tizim", "Эндокринная система", "Endokrin sistem", "Endocrine system"),
+  },
+  {
+    id: "nerven",
+    de: "Nervensystem",
+    name: tr("Asab tizimi", "Нервная система", "Sinir sistemi", "Nervous system"),
+  },
+  {
+    id: "lymphe",
+    de: "Lymphatisches System",
+    name: tr("Limfa tizimi", "Лимфатическая система", "Lenfatik sistem", "Lymphatic system"),
+  },
+];
+
+// Klinik nuqtalar (ko‘rik va auskultatsiya) — rasmdagi a’zolarga moslab qo‘yilgan.
+// lage — nemischa joylashuvi; befund — Arztbrief’ga yoziladigan namuna gap.
+export const POINTS = [
+  {
+    id: "mcburney",
+    x: 252,
+    y: 604,
+    de: "der McBurney-Punkt",
+    lage: "Grenze zwischen äußerem und mittlerem Drittel der Linie Spina iliaca anterior superior rechts – Nabel",
+    name: tr("McBurney nuqtasi", "точка Мак-Бёрни", "McBurney noktası", "McBurney’s point"),
+    what: tr(
+      "Bosganda og‘riq — appenditsitning klassik belgisi.",
+      "Боль при надавливании — классический признак аппендицита.",
+      "Basınca ağrı — apandisitin klasik belirtisi.",
+      "Tenderness on pressure — the classic sign of appendicitis.",
+    ),
+    befund: "Druckschmerz am McBurney-Punkt.",
+  },
+  {
+    id: "lanz",
+    x: 268,
+    y: 620,
+    de: "der Lanz-Punkt",
+    lage: "Grenze zwischen rechtem und mittlerem Drittel der Linie zwischen beiden Spinae iliacae anteriores superiores",
+    name: tr("Lanz nuqtasi", "точка Ланца", "Lanz noktası", "Lanz’s point"),
+    what: tr(
+      "Appendiks pastroq (kichik chanoqda) joylashganda og‘riq shu yerda bo‘ladi.",
+      "Боль здесь — при низком (тазовом) расположении аппендикса.",
+      "Apendiks aşağıda (pelviste) olduğunda ağrı burada olur.",
+      "Pain here when the appendix lies low (in the pelvis).",
+    ),
+    befund: "Druckschmerz am Lanz-Punkt.",
+  },
+  {
+    id: "blumberg",
+    x: 348,
+    y: 604,
+    de: "das Blumberg-Zeichen",
+    lage: "linker Unterbauch, spiegelbildlich zum McBurney-Punkt",
+    name: tr(
+      "Blumberg belgisi",
+      "симптом Блюмберга (контралатеральный)",
+      "Blumberg belirtisi",
+      "Blumberg’s sign",
+    ),
+    what: tr(
+      "Chap pastda bosib, qo‘l keskin qo‘yib yuborilganda o‘ng pastda og‘riq paydo bo‘ladi — appenditsit yoki qorin pardasi ta’sirlanishi.",
+      "Надавить слева внизу и резко отпустить — боль справа внизу: аппендицит или раздражение брюшины.",
+      "Sol altta bastırıp elini aniden çekince sağ altta ağrı — apandisit veya periton irritasyonu.",
+      "Press the left lower abdomen and release suddenly — pain on the right: appendicitis or peritoneal irritation.",
+    ),
+    befund: "Positives Blumberg-Zeichen (kontralateraler Loslassschmerz).",
+  },
+  {
+    id: "murphy",
+    x: 250,
+    y: 466,
+    de: "das Murphy-Zeichen",
+    lage: "rechter Rippenbogen in der Medioklavikularlinie (Gallenblasenpunkt)",
+    name: tr("Murphy belgisi", "симптом Мерфи", "Murphy belirtisi", "Murphy’s sign"),
+    what: tr(
+      "Shu nuqtani bosib turib, bemordan chuqur nafas olishni so‘raysiz. Og‘riqdan nafasini to‘xtatsa — xoletsistit belgisi.",
+      "Надавив на точку, просите пациента глубоко вдохнуть. Если он прерывает вдох от боли — признак холецистита.",
+      "Bu noktaya bastırırken hastadan derin nefes almasını istersiniz. Ağrıdan nefesini keserse — kolesistit belirtisi.",
+      "Press here and ask the patient to breathe in deeply. If they stop breathing in because of pain — sign of cholecystitis.",
+    ),
+    befund: "Positives Murphy-Zeichen.",
+  },
+  {
+    id: "aorta",
+    x: 284,
+    y: 300,
+    de: "die Aortenklappe",
+    lage: "2. ICR rechts parasternal",
+    name: tr(
+      "Aortal klapanni eshitish nuqtasi",
+      "точка аускультации аортального клапана",
+      "Aort kapağı dinleme noktası",
+      "Aortic valve auscultation point",
+    ),
+    what: tr(
+      "Aortal klapan shovqinlari shu yerda yaxshi eshitiladi, masalan aortal stenozda.",
+      "Здесь лучше всего слышны шумы аортального клапана, например при аортальном стенозе.",
+      "Aort kapağı üfürümleri en iyi burada duyulur, örneğin aort darlığında.",
+      "Aortic valve murmurs are heard best here, e.g. in aortic stenosis.",
+    ),
+    befund: "Systolikum mit Punctum maximum im 2. ICR rechts parasternal.",
+  },
+  {
+    id: "pulmonal",
+    x: 316,
+    y: 300,
+    de: "die Pulmonalklappe",
+    lage: "2. ICR links parasternal",
+    name: tr(
+      "O‘pka arteriyasi klapani nuqtasi",
+      "точка аускультации клапана лёгочной артерии",
+      "Pulmoner kapak dinleme noktası",
+      "Pulmonary valve auscultation point",
+    ),
+    what: tr(
+      "O‘pka arteriyasi klapani tovushlari shu yerda eshitiladi.",
+      "Здесь выслушивается клапан лёгочной артерии.",
+      "Pulmoner kapak sesleri burada dinlenir.",
+      "The pulmonary valve is auscultated here.",
+    ),
+    befund: "Herzgeräusch mit Punctum maximum im 2. ICR links parasternal.",
+  },
+  {
+    id: "erb",
+    x: 316,
+    y: 322,
+    de: "der Erb-Punkt",
+    lage: "3. ICR links parasternal",
+    name: tr("Erb nuqtasi", "точка Эрба", "Erb noktası", "Erb’s point"),
+    what: tr(
+      "Barcha klapanlarni eshitish mumkin bo‘lgan umumiy nuqta; aortal yetishmovchilikning diastolik shovqini shu yerda yaxshi eshitiladi.",
+      "Общая точка, где слышны все клапаны; диастолический шум аортальной недостаточности лучше всего слышен здесь.",
+      "Tüm kapakların duyulabildiği ortak nokta; aort yetmezliğinin diyastolik üfürümü en iyi burada duyulur.",
+      "A general point where all valves can be heard; the diastolic murmur of aortic regurgitation is best heard here.",
+    ),
+    befund: "Diastolikum über dem Erb-Punkt.",
+  },
+  {
+    id: "trikuspidal",
+    x: 284,
+    y: 345,
+    de: "die Trikuspidalklappe",
+    lage: "4. ICR rechts parasternal",
+    name: tr(
+      "Trikuspidal klapan nuqtasi",
+      "точка аускультации трёхстворчатого клапана",
+      "Triküspit kapak dinleme noktası",
+      "Tricuspid valve auscultation point",
+    ),
+    what: tr(
+      "Uch tavaqali klapan tovushlari shu yerda eshitiladi.",
+      "Здесь выслушивается трёхстворчатый клапан.",
+      "Triküspit kapak sesleri burada dinlenir.",
+      "The tricuspid valve is auscultated here.",
+    ),
+    befund: "Herzgeräusch mit Punctum maximum im 4. ICR rechts parasternal.",
+  },
+  {
+    id: "mitral",
+    x: 356,
+    y: 392,
+    de: "die Mitralklappe (Herzspitze)",
+    lage: "5. ICR links medioklavikulär",
+    name: tr(
+      "Mitral klapan nuqtasi (yurak cho‘qqisi)",
+      "точка митрального клапана (верхушка)",
+      "Mitral kapak noktası (kalp apeksi)",
+      "Mitral valve point (apex)",
+    ),
+    what: tr(
+      "Mitral klapan shovqinlari: mitral yetishmovchilikda sistolik shovqin qo‘ltiq ostiga tarqaladi.",
+      "Шумы митрального клапана: при митральной недостаточности систолический шум проводится в подмышку.",
+      "Mitral kapak üfürümleri: mitral yetmezlikte sistolik üfürüm koltuk altına yayılır.",
+      "Mitral valve murmurs: in mitral regurgitation the systolic murmur radiates to the axilla.",
+    ),
+    befund: "Systolikum über der Herzspitze mit Fortleitung in die Axilla.",
+  },
+];
+
 // Qorinning 9 sohasi + retrosternal — og‘riq joyi (Lokalisation) uchun.
-// x: 208–392 (3 ustun), y: 398–662 (3 qator). Bemorning o‘ngi — chapda.
+// x: 208–392 (3 ustun), y: 398–632 (3 qator). Bemorning o‘ngi — chapda.
 const COL = [208, 270, 331],
-  ROW = [398, 486, 574],
-  cell = (c, r) => ({ x: COL[c], y: ROW[r], w: 61, h: 88 });
+  ROW = [398, 476, 554],
+  cell = (c, r) => ({ x: COL[c], y: ROW[r], w: 61, h: 78 });
 
 export const REGIONS = [
   {

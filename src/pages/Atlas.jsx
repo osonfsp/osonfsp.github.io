@@ -2,14 +2,14 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { Icon, Ic } from "../components/Icon";
 import { Speak, speak } from "../components/Speak";
 import { PageHeader } from "../components/ui";
-import { ATLAS_CREDIT, ORGANS, REGIONS } from "../data/atlas";
+import { ATLAS_CREDIT, ORGANS, POINTS, REGIONS, SYSTEMS } from "../data/atlas";
 import LAYOUT from "../data/atlas-layout.json";
 import { trackEvent } from "../lib/analytics";
 import { tr } from "../lib/i18n";
 import { shuffleWith } from "../lib/quiz";
 import { cx } from "../lib/utils";
 
-// Tana atlasi (Körper-Atlas): a’zolar va qorin sohalari. Uch rejim:
+// Tana atlasi (Körper-Atlas): a’zolar, qorin sohalari va klinik nuqtalar (3 qatlam). Uch rejim:
 //   atlas  — bosib o‘rganish (nemischa nomi, Fachbegriff, tarjima, talaffuz, kasalliklar / DD)
 //   zeigen — "Zeigen Sie mir …" — so‘ralgan a’zo yoki sohani topish (10 savol)
 //   bemor  — bemor og‘riq joyini aytadi, siz sohani ko‘rsatasiz (8 savol)
@@ -64,12 +64,13 @@ export function AtlasPage() {
     return () => clearTimeout(timer.current);
   }, []);
 
-  let activeLayer = mode === "bemor" ? "regions" : layer,
-    items = activeLayer === "organs" ? ORGANS : REGIONS;
+  let [system, setSystem] = useState(null),
+    activeLayer = mode === "bemor" ? "regions" : layer,
+    items = activeLayer === "organs" ? ORGANS : activeLayer === "points" ? POINTS : REGIONS;
 
   // Yangi o‘yin: savollar tartibi aralashtiriladi
   let start = (m = mode, l = activeLayer) => {
-    let pool = m === "bemor" || l === "regions" ? REGIONS : ORGANS,
+    let pool = m === "bemor" || l === "regions" ? REGIONS : l === "points" ? POINTS : ORGANS,
       order = shuffleWith(pool).slice(0, ROUNDS[m]);
     while (order.length < ROUNDS[m]) order.push(...shuffleWith(pool).slice(0, ROUNDS[m] - order.length));
     setSelected(null);
@@ -87,6 +88,7 @@ export function AtlasPage() {
   let switchLayer = (l) => {
     setLayer(l);
     setSelected(null);
+    setSystem(null);
     if (mode === "zeigen") setQuiz(null);
   };
 
@@ -145,7 +147,7 @@ export function AtlasPage() {
       />
 
       <div className="mb-4 flex flex-wrap items-center gap-3">
-        <div className="grid flex-1 grid-cols-3 gap-1 rounded-xl bg-slate-100 p-1 sm:max-w-xl dark:bg-slate-800/60">
+        <div className="grid w-full grid-cols-3 gap-1 rounded-xl bg-slate-100 p-1 sm:w-auto sm:max-w-xl sm:flex-1 dark:bg-slate-800/60">
           {MODES.map(([id, icon, label, short]) => (
             <button
               key={id}
@@ -165,10 +167,11 @@ export function AtlasPage() {
           ))}
         </div>
         {mode !== "bemor" && (
-          <div className="flex gap-1">
+          <div className="flex flex-wrap gap-1">
             {[
               ["organs", tr("A’zolar", "Органы", "Organlar", "Organs")],
               ["regions", tr("Qorin sohalari", "Области живота", "Karın bölgeleri", "Abdominal regions")],
+              ["points", tr("Klinik nuqtalar", "Клинические точки", "Klinik noktalar", "Clinical points")],
             ].map(([id, label]) => (
               <button
                 key={id}
@@ -183,8 +186,14 @@ export function AtlasPage() {
       </div>
 
       <div className="grid gap-5 lg:grid-cols-[minmax(0,430px)_minmax(0,1fr)]">
-        <div className="card relative overflow-hidden !bg-gradient-to-b from-white to-teal-50 p-3 dark:border-slate-700">
-          <BodySvg layer={activeLayer} items={items} stateOf={stateOf} onPick={pick} />
+        <div className="card relative overflow-hidden !bg-gradient-to-b lg:row-span-2 lg:self-start from-white to-teal-50 p-3 dark:border-slate-700">
+          <BodySvg
+            layer={activeLayer}
+            items={items}
+            stateOf={stateOf}
+            onPick={pick}
+            system={mode === "atlas" ? system : null}
+          />
           <p className="mt-1 text-center text-[10px] muted">
             {tr("Rasmlar", "Иллюстрации", "Görseller", "Illustrations")}:{" "}
             <a href={ATLAS_CREDIT.url} target="_blank" rel="noopener noreferrer" className="underline">
@@ -212,10 +221,14 @@ export function AtlasPage() {
           </div>
         </div>
 
-        <div className="order-first lg:sticky lg:top-20 lg:order-none lg:self-start">
+        <div className="order-first lg:order-none">
           {mode === "atlas" ? (
             sel ? (
-              <InfoCard item={sel} region={activeLayer === "regions"} />
+              activeLayer === "points" ? (
+                <PointCard item={sel} />
+              ) : (
+                <InfoCard item={sel} region={activeLayer === "regions"} />
+              )
             ) : (
               <Hint layer={activeLayer} />
             )
@@ -230,6 +243,18 @@ export function AtlasPage() {
             />
           )}
         </div>
+        {/* Telefonda ro‘yxat rasmdan keyin, kompyuterda — o‘ng ustunda ma’lumot ostida */}
+        {mode === "atlas" && activeLayer !== "regions" && (
+          <div className="lg:col-start-2">
+            <ItemList
+              layer={activeLayer}
+              selected={selected}
+              system={system}
+              setSystem={setSystem}
+              onPick={pick}
+            />
+          </div>
+        )}
       </div>
 
       <style>{`
@@ -241,7 +266,9 @@ export function AtlasPage() {
         .atlas-bad{animation:atlas-blink .3s ease-in-out 3}
         @keyframes atlas-pulse{0%,100%{opacity:1}50%{opacity:.5}}
         @keyframes atlas-blink{0%,100%{opacity:1}50%{opacity:.3}}
-        @media (prefers-reduced-motion: reduce){.atlas-sel,.atlas-ok,.atlas-bad{animation:none}}
+        .atlas-in{animation:atlas-in .35s ease-out both}
+        @keyframes atlas-in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+        @media (prefers-reduced-motion: reduce){.atlas-sel,.atlas-ok,.atlas-bad,.atlas-in{animation:none}}
       `}</style>
     </div>
   );
@@ -256,8 +283,9 @@ const FILL = {
   dim: ["#ffffff", 0],
 };
 
-function BodySvg({ layer, items, stateOf, onPick }) {
+function BodySvg({ layer, items, stateOf, onPick, system }) {
   let organs = layer === "organs",
+    points = layer === "points",
     [vx, vy, vw, vh] = LAYOUT.view,
     byId = useMemo(() => Object.fromEntries(ORGANS.map((o) => [o.id, o])), []);
   let key = (e, item) => (e.key === "Enter" || e.key === " ") && (e.preventDefault(), onPick(item));
@@ -269,12 +297,25 @@ function BodySvg({ layer, items, stateOf, onPick }) {
       aria-label={tr("Inson tanasi atlasi", "Атлас тела человека", "İnsan vücudu atlası", "Human body atlas")}
     >
       <image href={IMG.bg} x={vx} y={vy} width={vw} height={vh} />
-      <g opacity={organs ? 1 : 0.55}>
+      <g opacity={organs || points ? 1 : 0.55}>
         {LAYOUT.order.map((n) => {
           let L = LAYOUT.layers[n];
           return <image key={n} href={IMG[n]} x={L.x} y={L.y} width={L.w} height={L.h} />;
         })}
       </g>
+
+      {/* Tanlangan tizimdan tashqaridagi a’zolar xiralashadi */}
+      {organs &&
+        system &&
+        HIT_ORDER.filter((id) => !byId[id].systems.includes(system)).map((id) => (
+          <path
+            key={`f-${id}`}
+            d={LAYOUT.organs[id]}
+            fill="#ffffff"
+            fillOpacity="0.72"
+            pointerEvents="none"
+          />
+        ))}
 
       {organs &&
         HIT_ORDER.map((id) => {
@@ -307,8 +348,48 @@ function BodySvg({ layer, items, stateOf, onPick }) {
           );
         })}
 
+      {/* Klinik nuqtalar: raqamli doirachalar */}
+      {points &&
+        items.map((p, i) => {
+          let st = stateOf(p),
+            color = st === "ok" ? "#10b981" : st === "bad" ? "#0f172a" : st === "sel" ? "#0d9488" : "#0f766e";
+          return (
+            <g
+              key={p.id}
+              className={cx("atlas-shape", st ? `atlas-${st}` : "atlas-idle")}
+              role="button"
+              tabIndex={0}
+              aria-label={p.de}
+              onClick={() => onPick(p)}
+              onKeyDown={(e) => key(e, p)}
+            >
+              <title>{p.de}</title>
+              <circle cx={p.x} cy={p.y} r="14" fill="#ffffff" fillOpacity="0" pointerEvents="all" />
+              <circle
+                cx={p.x}
+                cy={p.y}
+                r={st === "sel" || st === "ok" ? 9 : 7.5}
+                fill={color}
+                stroke={st === "bad" ? "#ef4444" : "#ffffff"}
+                strokeWidth="2.2"
+              />
+              <text
+                x={p.x}
+                y={p.y + 3.2}
+                textAnchor="middle"
+                fontSize="9"
+                fontWeight="700"
+                fill="#ffffff"
+                pointerEvents="none"
+              >
+                {i + 1}
+              </text>
+            </g>
+          );
+        })}
+
       {/* Qorin sohalari (3×3) va retrosternal */}
-      {!organs &&
+      {layer === "regions" &&
         items.map((r) => {
           let st = stateOf(r);
           return (
@@ -349,7 +430,9 @@ function Hint({ layer }) {
       <p className="mt-3 text-lg font-semibold">
         {layer === "organs"
           ? tr("A’zoni bosing", "Нажмите на орган", "Bir organa tıklayın", "Tap an organ")
-          : tr("Sohani bosing", "Нажмите на область", "Bir bölgeye tıklayın", "Tap a region")}
+          : layer === "points"
+            ? tr("Nuqtani bosing", "Нажмите на точку", "Bir noktaya tıklayın", "Tap a point")
+            : tr("Sohani bosing", "Нажмите на область", "Bir bölgeye tıklayın", "Tap a region")}
       </p>
       <p className="mt-1 max-w-sm text-sm muted">
         {tr(
@@ -426,6 +509,99 @@ function InfoCard({ item, region }) {
           )}
         </p>
       )}
+    </div>
+  );
+}
+
+function PointCard({ item }) {
+  return (
+    <div className="card">
+      <p
+        className="text-xs font-semibold uppercase tracking-wider text-teal-600 dark:text-teal-400"
+        lang="de"
+      >
+        {item.lage}
+      </p>
+      <h2 className="mt-1 flex items-center gap-2 text-3xl font-bold" lang="de">
+        {item.de}
+        <Speak text={item.de} />
+      </h2>
+      <p className="mt-1 text-lg muted">{item.name}</p>
+      <p className="mt-4">{item.what}</p>
+      <div className="mt-5 rounded-xl bg-slate-50 p-4 dark:bg-slate-800/60">
+        <p className="text-xs font-semibold uppercase tracking-wider muted">
+          {tr(
+            "Arztbrief’da shunday yoziladi",
+            "В Arztbrief пишут так",
+            "Arztbrief’te şöyle yazılır",
+            "In the Arztbrief",
+          )}
+        </p>
+        <p className="mt-1 flex items-start gap-2 font-medium" lang="de">
+          „{item.befund}“
+          <Speak text={item.befund} />
+        </p>
+      </div>
+    </div>
+  );
+}
+
+// Ro‘yxat: a’zolar tizimlar bo‘yicha (tizimni tanlasa — rasmda faqat o‘sha qoladi) yoki klinik nuqtalar
+function ItemList({ layer, selected, system, setSystem, onPick }) {
+  let points = layer === "points",
+    list = points ? POINTS : ORGANS.filter((o) => !system || o.systems.includes(system));
+  return (
+    <div className="card">
+      <p className="text-xs font-semibold uppercase tracking-wider muted">
+        {points
+          ? tr("Klinik nuqtalar", "Клинические точки", "Klinik noktalar", "Clinical points")
+          : tr("Tizimlar va a’zolar", "Системы и органы", "Sistemler ve organlar", "Systems and organs")}
+      </p>
+      {!points && (
+        <div className="mt-2 flex flex-wrap gap-1.5">
+          <button className={!system ? "chip-on" : "chip-off"} onClick={() => setSystem(null)}>
+            {tr("Hammasi", "Все", "Tümü", "All")}
+          </button>
+          {SYSTEMS.map((sy) => (
+            <button
+              key={sy.id}
+              className={system === sy.id ? "chip-on" : "chip-off"}
+              title={sy.name}
+              onClick={() => setSystem(system === sy.id ? null : sy.id)}
+            >
+              <span lang="de">{sy.de}</span>
+            </button>
+          ))}
+        </div>
+      )}
+      {system && <p className="mt-2 text-sm muted">{SYSTEMS.find((x) => x.id === system).name}</p>}
+      <div key={`${layer}-${system}`} className="mt-3 grid grid-cols-2 gap-1.5">
+        {list.map((o, i) => (
+          <button
+            key={o.id}
+            onClick={() => onPick(o)}
+            style={{ animationDelay: `${i * 35}ms` }}
+            className={cx(
+              "atlas-in flex items-center gap-2 rounded-lg border px-3 py-2 text-left text-sm transition",
+              selected === o.id
+                ? "border-teal-500 bg-teal-50 dark:bg-teal-950/40"
+                : "border-slate-200 hover:border-teal-400 dark:border-slate-700",
+            )}
+          >
+            {points && (
+              <span className="grid h-5 w-5 shrink-0 place-items-center rounded-full bg-teal-700 text-[10px] font-bold text-white">
+                {i + 1}
+              </span>
+            )}
+            <span className="min-w-0">
+              <span className="block truncate font-medium" lang="de">
+                {o.de}
+              </span>
+              <span className="block truncate text-xs muted">{points ? o.lage : o.name}</span>
+            </span>
+          </button>
+        ))}
+      </div>
     </div>
   );
 }
@@ -570,12 +746,19 @@ function QuizPanel({ mode, quiz, target, layer, onStart, onNext }) {
                   "Organa resimde tıklayın.",
                   "Tap the organ in the picture.",
                 )
-              : tr(
-                  "Sohani rasmda bosing.",
-                  "Нажмите на область на рисунке.",
-                  "Bölgeye resimde tıklayın.",
-                  "Tap the region in the picture.",
-                )}
+              : layer === "points"
+                ? tr(
+                    "Nuqtani rasmda bosing.",
+                    "Нажмите на точку на рисунке.",
+                    "Noktaya resimde tıklayın.",
+                    "Tap the point in the picture.",
+                  )
+                : tr(
+                    "Sohani rasmda bosing.",
+                    "Нажмите на область на рисунке.",
+                    "Bölgeye resimde tıklayın.",
+                    "Tap the region in the picture.",
+                  )}
           </p>
         </>
       )}
