@@ -101,12 +101,14 @@ const QUIZ_ITEMS = quizItems(pairs, words),
   };
 
 function PairQuiz() {
-  let next = () => makeQuestion(QUIZ_ITEMS, { lang: LANG }),
+  let { reviewItem } = useApp(),
+    next = () => makeQuestion(QUIZ_ITEMS, { lang: LANG }),
     [t, a] = useState(next),
     [n, i] = useState(null),
     [l, s] = useState({ right: 0, total: 0 }),
     r = (k) => {
       if (n !== null) return;
+      reviewItem(`q:${t.correct.id}`, k === t.answer);
       (i(k), s((h) => ({ right: h.right + (k === t.answer ? 1 : 0), total: h.total + 1 })));
     };
   return (

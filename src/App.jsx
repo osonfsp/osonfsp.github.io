@@ -5,6 +5,7 @@ import { AboutFspPage } from "./pages/AboutFsp";
 import { AboutPage } from "./pages/About";
 import { BooksPage } from "./pages/Books";
 import { AtlasPage } from "./pages/Atlas";
+import { ReviewPage } from "./pages/Review";
 import { AdminPage } from "./pages/Admin";
 import { ArztbriefListPage, ArztbriefPage } from "./pages/Arztbrief";
 import { AufklaerungListPage, AufklaerungPage } from "./pages/Aufklaerung";
@@ -63,6 +64,7 @@ const ROUTES = [
   [/^\/biz$/, AboutPage],
   [/^\/kitoblar$/, BooksPage],
   [/^\/atlas$/, AtlasPage],
+  [/^\/takrorlash$/, ReviewPage],
   [/^\/pruefung$/, ExamPage],
   [/^\/admin$/, AdminPage],
 ];

@@ -5,12 +5,18 @@ import { redemittel } from "../data/index";
 import { cx } from "../lib/utils";
 import { tr } from "../lib/i18n";
 import { SectionIntro } from "../components/SectionIntro";
+import { Ic } from "../components/Icon";
+import { Link } from "../components/Link";
+import { useApp } from "../state/AppContext";
 
 const TEILE = [...new Set(redemittel.map((g) => g.teil))];
 
 export function RedemittelPage() {
   // Hammasi birdan emas: Teil 1 dan boshlanadi
-  let [e, t] = useState(TEILE[0]),
+  let { progress, reviewItem } = useApp(),
+    review = progress.review ?? {},
+    marked = Object.keys(review).filter((k) => k.startsWith("rm:")).length,
+    [e, t] = useState(TEILE[0]),
     [a, n] = useState(""),
     [i, l] = useState(true),
     [s, r] = useState({}),
@@ -58,6 +64,29 @@ export function RedemittelPage() {
           )}
         />
         <FilterChips options={TEILE} value={e} onChange={t} />
+        <p className="text-xs muted">
+          <Ic name="refresh" />{" "}
+          {tr(
+            "Eslab qolish qiyin iborani belgilang — u «Takrorlash» bo‘limiga tushadi va o‘z vaqtida qaytib keladi.",
+            "Отметьте фразу, которую трудно запомнить, — она попадёт в «Повторение» и вернётся вовремя.",
+            "Hatırlaması zor ifadeyi işaretleyin — «Tekrar» bölümüne girer ve zamanında geri gelir.",
+            "Mark a phrase that is hard to remember — it goes to «Review» and comes back at the right time.",
+          )}
+          {marked > 0 && (
+            <>
+              {" "}
+              <Link href="/takrorlash" className="font-medium text-teal-700 underline dark:text-teal-300">
+                {tr(
+                  `Belgilangan: ${marked}`,
+                  `Отмечено: ${marked}`,
+                  `İşaretli: ${marked}`,
+                  `Marked: ${marked}`,
+                )}{" "}
+                →
+              </Link>
+            </>
+          )}
+        </p>
         {!i && (
           <p className="text-xs muted">
             {tr(
@@ -98,6 +127,10 @@ export function RedemittelPage() {
                       </span>
                     </button>
                     <Speak text={y.replace(/…/g, "")} />
+                    <MarkButton
+                      on={!!review[`rm:${y}`]}
+                      onClick={() => reviewItem(`rm:${y}`, review[`rm:${y}`] ? null : false)}
+                    />
                   </li>
                 );
               })}
@@ -111,5 +144,29 @@ export function RedemittelPage() {
         )}
       </div>
     </div>
+  );
+}
+
+// Iborani takrorlash navbatiga qo‘shish / olib tashlash
+function MarkButton({ on, onClick }) {
+  let label = on
+    ? tr("Takrorlashdan olib tashlash", "Убрать из повторения", "Tekrardan çıkar", "Remove from review")
+    : tr("Takrorlashga qo‘shish", "Добавить в повторение", "Tekrara ekle", "Add to review");
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      title={label}
+      aria-label={label}
+      aria-pressed={on}
+      className={cx(
+        "grid h-8 w-8 shrink-0 place-items-center rounded-lg transition",
+        on
+          ? "bg-teal-600 text-white"
+          : "text-slate-400 hover:bg-teal-50 hover:text-teal-600 dark:hover:bg-teal-950/40",
+      )}
+    >
+      <Ic name="refresh" />
+    </button>
   );
 }

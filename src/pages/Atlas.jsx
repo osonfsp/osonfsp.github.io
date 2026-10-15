@@ -7,8 +7,9 @@ import LAYOUT from "../data/atlas-layout.json";
 import { trackEvent } from "../lib/analytics";
 import { tr } from "../lib/i18n";
 import { shuffleWith } from "../lib/quiz";
-import { storage } from "../lib/storage";
 import { cx } from "../lib/utils";
+import { useApp } from "../state/AppContext";
+import { Link } from "../components/Link";
 
 // Tana atlasi (Körper-Atlas): a’zolar, qorin sohalari va klinik nuqtalar (3 qatlam). To‘rt rejim:
 //   atlas  — bosib o‘rganish (nemischa nomi, Fachbegriff, tarjima, talaffuz, kasalliklar / DD, ko‘rik)
@@ -17,16 +18,9 @@ import { cx } from "../lib/utils";
 //   bemor  — bemor og‘riq joyini aytadi (har safar boshqacha), siz sohani ko‘rsatasiz
 const ROUNDS = { zeigen: 10, nima: 10, bemor: 8 };
 
-// Xatolar xotirasi: {id: necha marta xato}. Keyingi o‘yinda shular birinchi so‘raladi.
-const MISS_KEY = "fsp.atlas.miss";
-const loadMiss = () => storage.get(MISS_KEY, {});
-function noteMiss(id, wrong) {
-  let m = loadMiss(),
-    n = (m[id] || 0) + (wrong ? 1 : -1);
-  if (n > 0) m[id] = Math.min(n, 3);
-  else delete m[id];
-  storage.set(MISS_KEY, m);
-}
+// Xatolar umumiy takrorlash navbatiga tushadi (progress.review, "atlas:<id>", src/lib/review.js).
+// O‘yinda hali yaxshi o‘zlashtirilmaganlari (1-qutigacha) birinchi so‘raladi.
+const isWeak = (review, id) => (review?.[`atlas:${id}`]?.box ?? 9) < 2;
 
 const ARTICLES = ["der", "die", "das"];
 // Fachbegriff qisqa shaklda: "Gaster / Ventriculus" → "Gaster", "Regio umbilicalis (periumbilikal)" → "Regio umbilicalis"
@@ -98,7 +92,8 @@ const MODES = [
 ];
 
 export function AtlasPage() {
-  let [mode, setMode] = useState("atlas"),
+  let { progress, reviewItem } = useApp(),
+    [mode, setMode] = useState("atlas"),
     [layer, setLayer] = useState("organs"),
     [selected, setSelected] = useState(null),
     [quiz, setQuiz] = useState(null),
@@ -116,10 +111,10 @@ export function AtlasPage() {
   // Yangi o‘yin: avval oldin xato qilinganlar, keyin qolganlari; so‘ng tartib aralashtiriladi
   let start = (m = mode, l = activeLayer) => {
     let pool = m === "bemor" || l === "regions" ? REGIONS : l === "points" ? POINTS : ORGANS,
-      miss = loadMiss(),
+      review = progress.review,
       order = [
-        ...shuffleWith(pool.filter((x) => miss[x.id])),
-        ...shuffleWith(pool.filter((x) => !miss[x.id])),
+        ...shuffleWith(pool.filter((x) => isWeak(review, x.id))),
+        ...shuffleWith(pool.filter((x) => !isWeak(review, x.id))),
       ].slice(0, ROUNDS[m]);
     while (order.length < ROUNDS[m]) order.push(...shuffleWith(pool).slice(0, ROUNDS[m] - order.length));
     let qs = shuffleWith(order).map((it) => makeQuestion(m, it, pool));
@@ -147,7 +142,7 @@ export function AtlasPage() {
   // Javob: rasmda bosilgan joy (zeigen, bemor) yoki tanlangan variant (nima)
   let answer = (picked, ok) => {
     let streak = ok ? quiz.streak + 1 : 0;
-    noteMiss(target.id, !ok);
+    reviewItem(`atlas:${target.id}`, ok);
     setQuiz({
       ...quiz,
       picked,
@@ -299,6 +294,10 @@ export function AtlasPage() {
               onStart={() => start()}
               onNext={next}
               onChoose={choose}
+              weak={
+                Object.entries(progress.review ?? {}).filter(([k, r]) => k.startsWith("atlas:") && r.box < 2)
+                  .length
+              }
             />
           )}
         </div>
@@ -726,11 +725,10 @@ function ItemList({ layer, selected, system, setSystem, onPick }) {
   );
 }
 
-function QuizPanel({ mode, quiz, question, layer, onStart, onNext, onChoose }) {
+function QuizPanel({ mode, quiz, question, layer, onStart, onNext, onChoose, weak }) {
   let total = ROUNDS[mode],
     target = question?.item;
-  if (!quiz) {
-    let weak = Object.keys(loadMiss()).length;
+  if (!quiz)
     return (
       <div className="card flex flex-col items-center justify-center p-8 text-center">
         <Icon
@@ -787,7 +785,6 @@ function QuizPanel({ mode, quiz, question, layer, onStart, onNext, onChoose }) {
         )}
       </div>
     );
-  }
 
   if (quiz.done) {
     let pct = Math.round((quiz.score / total) * 100);
@@ -842,6 +839,17 @@ function QuizPanel({ mode, quiz, question, layer, onStart, onNext, onChoose }) {
                 </li>
               ))}
             </ul>
+            <p className="mt-2 text-xs muted">
+              {tr(
+                "Bular «Takrorlash» bo‘limida o‘z vaqtida qaytib keladi.",
+                "Они вернутся вовремя в разделе «Повторение».",
+                "Bunlar «Tekrar» bölümünde zamanında geri gelecek.",
+                "These come back at the right time in «Review».",
+              )}{" "}
+              <Link href="/takrorlash" className="font-medium text-teal-700 underline dark:text-teal-300">
+                {tr("Takrorlash", "Повторение", "Tekrar", "Review")} →
+              </Link>
+            </p>
           </div>
         )}
         <button className="btn-primary mt-5" onClick={onStart}>

@@ -1,6 +1,7 @@
 import { CASE_SECTIONS, arztbriefe, aufklaerung, cases, getCase, words } from "../data/index";
 import { today } from "../state/AppContext";
 import { tr } from "./i18n";
+import { reviewStats } from "./review";
 import { storage } from "./storage";
 
 // ---------- Profil (birinchi kirishdagi 3 savol) ----------
@@ -137,6 +138,26 @@ export function buildPlan(progress) {
     done: reviewedToday >= (due ? Math.min(wordGoal, due) : wordGoal) || manual.includes("words"),
     progress: `${Math.min(reviewedToday, wordGoal)}/${wordGoal}`,
   });
+
+  // 1b. Xatolarni takrorlash (testlar, Redemittel, atlas) — navbatda muddati kelganlari bo‘lsa
+  let rv = reviewStats(progress.review);
+  if (rv.due > 0 || rv.doneToday > 0)
+    tasks.push({
+      id: "review",
+      icon: "refresh",
+      title: tr("Xatolarni takrorlash", "Повторение ошибок", "Hataları tekrar", "Review your mistakes"),
+      desc: rv.due
+        ? tr(
+            `Bugun qaytgan: ${rv.due} ta (test, Redemittel, atlas)`,
+            `Вернулось сегодня: ${rv.due} (тесты, Redemittel, атлас)`,
+            `Bugün geri gelen: ${rv.due} (test, Redemittel, atlas)`,
+            `Back today: ${rv.due} (tests, Redemittel, atlas)`,
+          )
+        : tr("Bugun takrorlandi", "Сегодня повторено", "Bugün tekrar edildi", "Reviewed today"),
+      minutes: 5,
+      href: "/takrorlash",
+      done: rv.due === 0,
+    });
 
   // 2. Bemor bilan suhbat — har kuni boshqa Fall
   let c = nextCase(progress),

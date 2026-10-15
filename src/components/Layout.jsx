@@ -6,6 +6,7 @@ import { useApp } from "../state/AppContext";
 import { LANG, LANGS, setLang, tr } from "../lib/i18n";
 import { TrialBar } from "./Paywall";
 import { buildPlan } from "../lib/daily";
+import { reviewStats } from "../lib/review";
 import { Icon, LogoMark } from "./Icon";
 import { ARTIFACT } from "../lib/account";
 
@@ -85,6 +86,11 @@ const NAV_GROUPS = [
     title: tr("Qo‘shimcha mashqlar", "Дополнительно", "Ek alıştırmalar", "Extra practice"),
     more: true,
     items: [
+      {
+        href: "/takrorlash",
+        icon: "refresh",
+        label: tr("Takrorlash", "Повторение", "Tekrar", "Review"),
+      },
       {
         href: "/atlas",
         icon: "body",
@@ -180,6 +186,7 @@ function Sidebar({ onClose }) {
     { user, progress } = useApp(),
     active = (h) => (h === "/" ? path === "/" : path === h || path.startsWith(`${h}/`)),
     plan = buildPlan(progress),
+    reviewDue = plan.tasks.find((t) => t.id === "review" && !t.done) ? reviewStats(progress.review).due : 0,
     [more, setMore] = useState(() => {
       try {
         return localStorage.getItem(MORE_KEY) === "1";
@@ -252,7 +259,14 @@ function Sidebar({ onClose }) {
                   {g.title}
                 </p>
               )}
-              {open && g.items.map((l) => <NavItem key={l.href} l={l} on={active(l.href)} />)}
+              {open &&
+                g.items.map((l) => (
+                  <NavItem
+                    key={l.href}
+                    l={l.href === "/takrorlash" && reviewDue ? { ...l, tag: reviewDue } : l}
+                    on={active(l.href)}
+                  />
+                ))}
             </div>
           );
         })}

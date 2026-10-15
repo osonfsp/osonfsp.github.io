@@ -15,6 +15,7 @@ const EMPTY_PROGRESS = {
     exams: [],
     activity: [],
     wordReview: {},
+    review: {},
     days: [],
   },
   PROGRESS_KEY = "fsp.progress",
@@ -136,6 +137,27 @@ export function AppProvider({ children: e }) {
         })),
       [r],
     ),
+    // Umumiy takrorlash (src/lib/review.js): xato → navbatga (bugun), to‘g‘ri → keyingi quti.
+    // Navbatda yo‘q narsani to‘g‘ri topsa — qo‘shilmaydi; oxirgi qutida yana to‘g‘ri bo‘lsa — o‘zlashtirildi, chiqadi.
+    // ok === null — navbatdan qo‘lda olib tashlash (Redemittel’dagi belgi).
+    RV = useCallback(
+      (key, ok) =>
+        r((N) => {
+          let all = N.review ?? {},
+            cur = all[key];
+          if (!cur && ok !== false) return N;
+          let rest = { ...all };
+          delete rest[key];
+          if (ok === null || (ok && cur.box >= REVIEW_DAYS.length - 1))
+            return withDay({ ...N, review: rest });
+          let box = ok ? cur.box + 1 : 0;
+          return withDay({
+            ...N,
+            review: { ...rest, [key]: { box, due: addDays(today(), REVIEW_DAYS[box]), last: today() } },
+          });
+        }),
+      [r],
+    ),
     HO = useCallback(
       (m, v) =>
         r((N) =>
@@ -224,13 +246,14 @@ export function AppProvider({ children: e }) {
         toggleWord: f,
         reviewWord: R,
         togglePair: p,
+        reviewItem: RV,
         addArztbrief: A,
         addAufklaerung: AK,
         addHoeren: HO,
         addSimulation: w,
         addExam: D,
       }),
-      [t, n, l, g, h, b, x, y, f, R, p, A, AK, HO, w, D],
+      [t, n, l, g, h, b, x, y, f, R, p, RV, A, AK, HO, w, D],
     );
   return <AppContext.Provider value={d}>{e}</AppContext.Provider>;
 }
