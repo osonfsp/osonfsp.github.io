@@ -47,7 +47,7 @@ const MODES = [
   [
     "bemor",
     "chat",
-    () => tr("Qayerda og‘riyapti?", "Где болит?", "Nerede ağrıyor?", "Where does it hurt?"),
+    () => tr("Og‘riq qayerda?", "Где болит?", "Nerede ağrıyor?", "Where does it hurt?"),
     () => tr("Og‘riq", "Боль", "Ağrı", "Pain"),
   ],
 ];
@@ -443,7 +443,7 @@ function QuizPanel({ mode, quiz, target, layer, onStart, onNext }) {
         <h2 className="mt-3 text-xl font-bold">
           {mode === "bemor"
             ? tr(
-                "Bemor qayerda og‘riyapti?",
+                "Bemorning qayeri og‘riyapti?",
                 "Где болит у пациента?",
                 "Hastanın neresi ağrıyor?",
                 "Where does the patient hurt?",
