@@ -282,7 +282,7 @@
     "caseId": "c4",
     "title": "Ischämischer Schlaganfall",
     "task": "Stroke Unit’dan nevrolog/uy shifokoriga Arztbrief yozing. Vaqt oynasi (Zeitfenster) va antikoagulyatsiyaga e’tibor bering.",
-    "taskRu": "Напишите Arztbrief из Stroke Unit неврологу/семейному врачу. Обратите внимание на временное окно (Zeitfenster) и антикоагуляцию.",
+    "taskRu": "Напишите Arztbrief из инсультного отделения (Stroke Unit) неврологу/семейному врачу. Обратите внимание на временное окно (Zeitfenster) и антикоагуляцию.",
     "taskTr": "Stroke Unit’ten nöroloğa/aile hekimine bir Arztbrief yazın. Zaman penceresine (Zeitfenster) ve antikoagülasyona dikkat edin.",
     "taskEn": "Write an Arztbrief from the Stroke Unit to the neurologist/GP. Pay attention to the time window (Zeitfenster) and anticoagulation.",
     "facts": [
@@ -1232,10 +1232,10 @@
         "keywords": ["sturz", "gestürzt"]
       },
       {
-        "label": "Klinik: verkürzt, außenrotiert",
-        "labelRu": "Клиника: укорочение, наружная ротация",
-        "labelTr": "Klinik: verkürzt, außenrotiert",
-        "labelEn": "Klinik: verkürzt, außenrotiert",
+        "label": "Klinika: oyoq qisqargan va tashqariga burilgan (verkürzt, außenrotiert)",
+        "labelRu": "Клиника: укорочение и наружная ротация ноги (verkürzt, außenrotiert)",
+        "labelTr": "Klinik: bacak kısalmış ve dışa dönük (verkürzt, außenrotiert)",
+        "labelEn": "Clinical: leg shortened and externally rotated (verkürzt, außenrotiert)",
         "keywords": ["verkürzt", "außenrotiert"]
       },
       {
@@ -1316,10 +1316,10 @@
         "keywords": ["peters"]
       },
       {
-        "label": "Rötung / Überwärmung",
-        "labelRu": "Покраснение / гипертермия",
-        "labelTr": "Rötung / Überwärmung",
-        "labelEn": "Rötung / Überwärmung",
+        "label": "Qizarish / mahalliy issiqlik (Rötung, Überwärmung)",
+        "labelRu": "Покраснение / местное повышение температуры (Rötung, Überwärmung)",
+        "labelTr": "Kızarıklık / lokal ısı artışı (Rötung, Überwärmung)",
+        "labelEn": "Redness / local warmth (Rötung, Überwärmung)",
         "keywords": ["rötung", "überwärm"]
       },
       {
@@ -1463,10 +1463,10 @@
         "keywords": ["gesundheitsamt", "meldung"]
       },
       {
-        "label": "Chemoprophylaxe der Kontaktpersonen",
-        "labelRu": "Химиопрофилактика контактных лиц",
-        "labelTr": "Chemoprophylaxe der Kontaktpersonen",
-        "labelEn": "Chemoprophylaxe der Kontaktpersonen",
+        "label": "Kontaktdagi shaxslarga profilaktik antibiotik (Chemoprophylaxe)",
+        "labelRu": "Химиопрофилактика контактных лиц (Chemoprophylaxe)",
+        "labelTr": "Temaslılara koruyucu antibiyotik (Chemoprophylaxe)",
+        "labelEn": "Antibiotic prophylaxis for close contacts (Chemoprophylaxe)",
         "keywords": ["prophylaxe", "kontaktperson"]
       }
     ],
@@ -3685,7 +3685,7 @@
     "caseId": "c63",
     "title": "NSTEMI mit atypischer Symptomatik",
     "task": "Kardiologiya bo‘limidan uy shifokoriga Arztbrief yozing. Atipik simptomlar, kontrast moddaga allergiya va Metformin bo‘yicha qaroringizni yoritib bering.",
-    "taskRu": "Напишите Arztbrief из кардиологии семейному врачу. Отразите атипичные симптомы, аллергию на контраст и решение по Metformin.",
+    "taskRu": "Напишите Arztbrief из кардиологии семейному врачу. Отразите атипичные симптомы, аллергию на контраст и решение по метформину.",
     "taskTr": "Kardiyoloji servisinden aile hekimine bir Arztbrief yazın. Atipik belirtileri, kontrast madde alerjisini ve Metformin ile ilgili kararınızı belirtin.",
     "taskEn": "Write an Arztbrief from cardiology to the GP. Cover the atypical symptoms, the contrast allergy and your decision about metformin.",
     "facts": [
@@ -3763,9 +3763,9 @@
         "keywords": ["pci", "stent", "prämedikation"]
       },
       {
-        "label": "Tavsiya: Metformin va ikki xil antiagregant (duale Plättchenhemmung)",
-        "labelRu": "Рекомендация: Metformin и двойная антиагрегантная терапия (duale Plättchenhemmung)",
-        "labelTr": "Öneri: Metformin ve ikili antiagregan tedavi (duale Plättchenhemmung)",
+        "label": "Tavsiya: metformin va ikki xil antiagregant (duale Plättchenhemmung)",
+        "labelRu": "Рекомендация: метформин и двойная антиагрегантная терапия (duale Plättchenhemmung)",
+        "labelTr": "Öneri: metformin ve ikili antiagregan tedavi (duale Plättchenhemmung)",
         "labelEn": "Recommendation: metformin and dual antiplatelet therapy (duale Plättchenhemmung)",
         "keywords": ["metformin", "plättchenhemmung", "ticagrelor"]
       }
@@ -4917,7 +4917,7 @@
       },
       {
         "label": "Metformin to‘xtatilgan (Metformin pausiert)",
-        "labelRu": "Metformin отменён (Metformin pausiert)",
+        "labelRu": "Метформин отменён (Metformin pausiert)",
         "labelTr": "Metformin kesildi (Metformin pausiert)",
         "labelEn": "Metformin paused (Metformin pausiert)",
         "keywords": ["metformin"]
@@ -6031,9 +6031,9 @@
         "keywords": ["insulinperfusor", "nacl", "kalium"]
       },
       {
-        "label": "Tavsiya: bazal insulin, Metforminsiz, glyukoza nazorati (Basalinsulin)",
-        "labelRu": "Рекомендация: базальный инсулин, без Metformin, контроль глюкозы (Basalinsulin)",
-        "labelTr": "Öneri: bazal insülin, Metforminsiz, şeker takibi (Basalinsulin)",
+        "label": "Tavsiya: bazal insulin, metforminsiz, glyukoza nazorati (Basalinsulin)",
+        "labelRu": "Рекомендация: базальный инсулин, без метформина, контроль глюкозы (Basalinsulin)",
+        "labelTr": "Öneri: bazal insülin, metforminsiz, şeker takibi (Basalinsulin)",
         "labelEn": "Recommendation: basal insulin, no metformin, glucose monitoring (Basalinsulin)",
         "keywords": ["basalinsulin", "metformin", "blutzucker"]
       }

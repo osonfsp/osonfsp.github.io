@@ -5008,7 +5008,23 @@
       "Chronisch-entzündliche Darmerkrankung",
       "Angiodysplasie"
     ],
-    "untersuchungen": ["Koloskopie mit Biopsie", "Blutbild", "CEA", "CT (Thorax und Abdomen)", "Leberwerte"]
+    "untersuchungen": ["Koloskopie mit Biopsie", "Blutbild", "CEA", "CT (Thorax und Abdomen)", "Leberwerte"],
+    "oberarzt": {
+      "therapie": [
+        "Hemikolektomie links bzw. Sigmaresektion mit Lymphadenektomie",
+        "Staging (CT Thorax/Abdomen, CEA)",
+        "Tumorkonferenz",
+        "Adjuvante Chemotherapie (FOLFOX) ab UICC-Stadium III",
+        "Nachsorge mit Koloskopie und CEA"
+      ],
+      "komplikationen": [
+        "Ileus",
+        "Tumorperforation",
+        "Anastomoseninsuffizienz",
+        "Lebermetastasen",
+        "Anämie durch Blutung"
+      ]
+    }
   },
   {
     "id": "c49",
@@ -5440,7 +5456,23 @@
       "Bronchoskopie mit Biopsie",
       "Blutbild, CRP",
       "Lungenfunktionsprüfung"
-    ]
+    ],
+    "oberarzt": {
+      "therapie": [
+        "Histologische Sicherung (Bronchoskopie, Biopsie)",
+        "Staging (CT, PET-CT, Schädel-MRT)",
+        "Tumorkonferenz",
+        "Lobektomie bei operablem Befund",
+        "Radiochemotherapie bzw. Immuntherapie"
+      ],
+      "komplikationen": [
+        "Rekurrensparese",
+        "Obere Einflussstauung (Vena-cava-superior-Syndrom)",
+        "Hämoptysen",
+        "Hirnmetastasen",
+        "Paraneoplastisches Syndrom (SIADH)"
+      ]
+    }
   },
   {
     "id": "c53",
@@ -6120,7 +6152,23 @@
       "CA 19-9",
       "CT-Abdomen",
       "Endosonographie / ERCP"
-    ]
+    ],
+    "oberarzt": {
+      "therapie": [
+        "Endosonographie mit Punktion zur Histologie",
+        "ERCP mit Stent bei Cholangitis oder vor Chemotherapie",
+        "Tumorkonferenz",
+        "Whipple-Operation (pyloruserhaltend) bei Resektabilität",
+        "(Neo)adjuvante Chemotherapie (FOLFIRINOX)"
+      ],
+      "komplikationen": [
+        "Cholangitis",
+        "Diabetes mellitus (endokrine Insuffizienz)",
+        "Exokrine Insuffizienz mit Steatorrhö",
+        "Thrombosen (Trousseau-Syndrom)",
+        "Magenausgangsstenose"
+      ]
+    }
   },
   {
     "id": "c59",
